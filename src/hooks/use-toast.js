@@ -12,12 +12,7 @@ const TOAST_REMOVE_DELAY = 1000000;
 
 
 
-const actionTypes = {
-  ADD_TOAST: "ADD_TOAST",
-  UPDATE_TOAST: "UPDATE_TOAST",
-  DISMISS_TOAST: "DISMISS_TOAST",
-  REMOVE_TOAST: "REMOVE_TOAST"
-};
+
 
 let count = 0;
 
@@ -82,31 +77,31 @@ export const reducer = (state, action) => {
         toasts: state.toasts.map((t) => t.id === action.toast.id ? { ...t, ...action.toast } : t)
       };
 
-    case "DISMISS_TOAST":{
-        const { toastId } = action;
+    case "DISMISS_TOAST": {
+      const { toastId } = action;
 
-        // ! Side effects ! - This could be extracted into a dismissToast() action,
-        // but I'll keep it here for simplicity
-        if (toastId) {
-          addToRemoveQueue(toastId);
-        } else {
-          state.toasts.forEach((toast) => {
-            addToRemoveQueue(toast.id);
-          });
-        }
-
-        return {
-          ...state,
-          toasts: state.toasts.map((t) =>
-          t.id === toastId || toastId === undefined ?
-          {
-            ...t,
-            open: false
-          } :
-          t
-          )
-        };
+      // ! Side effects ! - This could be extracted into a dismissToast() action,
+      // but I'll keep it here for simplicity
+      if (toastId) {
+        addToRemoveQueue(toastId);
+      } else {
+        state.toasts.forEach((toast) => {
+          addToRemoveQueue(toast.id);
+        });
       }
+
+      return {
+        ...state,
+        toasts: state.toasts.map((t) =>
+          t.id === toastId || toastId === undefined ?
+            {
+              ...t,
+              open: false
+            } :
+            t
+        )
+      };
+    }
     case "REMOVE_TOAST":
       if (action.toastId === undefined) {
         return {
@@ -138,10 +133,10 @@ function toast({ ...props }) {
   const id = genId();
 
   const update = (props) =>
-  dispatch({
-    type: "UPDATE_TOAST",
-    toast: { ...props, id }
-  });
+    dispatch({
+      type: "UPDATE_TOAST",
+      toast: { ...props, id }
+    });
   const dismiss = () => dispatch({ type: "DISMISS_TOAST", toastId: id });
 
   dispatch({
