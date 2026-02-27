@@ -29,15 +29,8 @@ export default [
       "react-refresh": reactRefresh,
     },
     rules: {
-      ...react.configs.recommended.rules,
-      ...react.configs["jsx-runtime"].rules,
       ...reactHooks.configs.recommended.rules,
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
-      "react/prop-types": "off",
-      "react/no-unescaped-entities": "off",
-      "no-unused-vars": ["error", { "varsIgnorePattern": "^React$|^_", "argsIgnorePattern": "^_" }],
-      "react/no-unknown-property": ["error", { "ignore": ["cmdk-input-wrapper"] }],
-      "react-hooks/purity": "off",
     },
     settings: {
       react: {
