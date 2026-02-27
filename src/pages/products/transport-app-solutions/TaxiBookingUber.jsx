@@ -1,70 +1,57 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+
+// Import modular sections
+import UberHero from '@/components/transport-uber/UberHero';
+import UberCloneForBusiness from '@/components/transport-uber/UberCloneForBusiness';
+import UberRiderFeatures from '@/components/transport-uber/UberRiderFeatures';
+import UberDriverFeatures from '@/components/transport-uber/UberDriverFeatures';
+import UberAIGrowth from '@/components/transport-uber/UberAIGrowth';
+import UberlaunchCTA from '@/components/transport-uber/UberlaunchCTA';
+import UberAdminPanel from '@/components/transport-uber/UberAdminPanel';
+import UberWhatYouGet from '@/components/transport-uber/UberWhatYouGet';
+import UberStrategy from '@/components/transport-uber/UberStrategy';
+import UberWhyUs from '@/components/transport-uber/UberWhyUs';
+import UberCTA2 from '@/components/transport-uber/UberCTA2';
+import UberServices from '@/components/transport-uber/UberServices';
+import UberCustomerFeatures from '@/components/transport-uber/UberCustomerFeatures';
+import UberTechStack from '@/components/transport-uber/UberTechStack';
+import UberContactForm from '@/components/transport-uber/UberContactForm';
+import UberFAQ from '@/components/transport-uber/UberFAQ';
 
 const TaxiBookingUber = () => {
+    // Scroll to top on mount
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
-        <div className="product-page">
+        <div className="uber-clone-page bg-white">
             <Helmet>
-                <title>Taxi Booking App Like Uber | KryossWork</title>
-                <meta name="description" content="Launch your own car booking platform with our Uber clone script." />
+                <title>Uber Clone App | AI-Powered Taxi Booking Script | KryossWork</title>
+                <meta name="description" content="Launch your own AI-powered taxi booking platform with our scalable Uber clone script. Features for customers, drivers, and admin panel." />
+                <meta name="keywords" content="uber clone, taxi booking app, ride hailing script, taxi app development, uber clone script" />
             </Helmet>
 
-            {/* Hero Section */}
-            <section className="bg-orange-50 py-20">
-                <div className="container mx-auto px-4 grid md:grid-cols-2 items-center gap-12">
-                    <div className="space-y-6">
-                        <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
-                            Taxi Booking App Like <span className="text-primary">Uber</span>
-                        </h1>
-                        <p className="text-lg text-gray-600">
-                            Launch your own high-performance ride-hailing business with our ready-made, scalable Uber clone solution.
-                        </p>
-                        <div className="flex gap-4">
-                            <button className="bg-primary text-white px-8 py-3 rounded-md font-bold hover:bg-orange-600 transition-all">Get a Free Quote</button>
-                            <button className="border border-primary text-primary px-8 py-3 rounded-md font-bold hover:bg-orange-50 transition-all">Download Brochure</button>
-                        </div>
-                    </div>
-                    <div className="rounded-2xl overflow-hidden shadow-2xl">
-                        <img src="/placeholder.svg" alt="Uber Clone" className="w-full h-auto" />
-                    </div>
-                </div>
-            </section>
+            <main>
+                <UberHero />
+                <UberCloneForBusiness />
+                <UberRiderFeatures />
+                <UberDriverFeatures />
+                <UberAIGrowth />
+                <UberlaunchCTA />
+                <UberAdminPanel />
+                <UberWhatYouGet />
+                <UberStrategy />
+                <UberWhyUs />
+                <UberCTA2 />
 
-            {/* Features Section */}
-            <section className="py-20">
-                <div className="container mx-auto px-4 text-center mb-16">
-                    <h2 className="text-3xl font-bold mb-4">Core Features</h2>
-                    <p className="text-gray-500">Everything you need to run a successful taxi business.</p>
-                </div>
-                <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8">
-                    {[
-                        { title: "Real-time Tracking", desc: "Live location of drivers for users" },
-                        { title: "Multiple Payments", desc: "Cash, Card, Wallet and more" },
-                        { title: "In-App Chat", desc: "Seamless communication" },
-                        { title: "Admin Panel", desc: "Powerful backend to manage everything" },
-                        { title: "Driver App", desc: "Dedicated app for driver partners" },
-                        { title: "Promo Codes", desc: "Discounts and referral systems" }
-                    ].map((item, idx) => (
-                        <div key={idx} className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all space-y-3">
-                            <CheckCircle className="text-primary" />
-                            <h3 className="font-bold text-xl">{item.title}</h3>
-                            <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-                        </div>
-                    ))}
-                </div>
-            </section>
-
-            {/* CTA Section */}
-            <section className="bg-primary py-16">
-                <div className="container mx-auto px-4 text-center space-y-6 text-white">
-                    <h2 className="text-3xl lg:text-4xl font-bold">Ready To Launch Your App?</h2>
-                    <p className="text-white/80 max-w-2xl mx-auto">Join the 250+ businesses that have scaled with KryossWork software solutions.</p>
-                    <button className="bg-white text-primary px-10 py-4 rounded-md font-bold hover:bg-gray-100 transition-all inline-flex items-center gap-2">
-                        Talk To Our Experts <ArrowRight />
-                    </button>
-                </div>
-            </section>
+                <UberServices />
+                <UberCustomerFeatures />
+                <UberTechStack />
+                <UberFAQ />
+                <UberContactForm />
+            </main>
         </div>
     );
 };
