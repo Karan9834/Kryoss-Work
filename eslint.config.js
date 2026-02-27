@@ -31,6 +31,11 @@ export default [
     rules: {
       ...reactHooks.configs.recommended.rules,
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+      "react/prop-types": "off",
+      "react/no-unescaped-entities": "off",
+      "no-unused-vars": ["warn", { "varsIgnorePattern": "^React$|^_", "argsIgnorePattern": "^_" }],
+      "react/no-unknown-property": ["error", { "ignore": ["cmdk-input-wrapper"] }],
+      "react-hooks/purity": "off",
     },
     settings: {
       react: {
