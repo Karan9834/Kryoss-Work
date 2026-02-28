@@ -1,6 +1,6 @@
 import React from "react";
 
-import mainImage from "../../../assets/Bidding.webp";
+import mainImage from "../../../assets/bidding.webp";
 
 const BiddingSection = () => {
   return (
