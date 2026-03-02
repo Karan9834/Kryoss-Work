@@ -4,6 +4,7 @@ import TaxiBookingUber from '../pages/products/transport-app-solutions/TaxiBooki
 import TaxiBiddingApp from '../pages/products/transport-app-solutions/TaxiBiddingApp';
 import BikeRidingApp from '../pages/products/transport-app-solutions/BikeRidingApp';
 import FoodDeliveryApp from '../pages/products/delivery-app-solutions/FoodDeliveryApp';
+import CarPoolingApp from "../pages/products/transport-app-solutions/CarPoolingApp";
 import CarRental from "../pages/products/transport-app-solutions/CarRental"
 
 export const ProductRoutes = [
@@ -13,4 +14,9 @@ export const ProductRoutes = [
     <Route key="food-delivery" path="products/delivery/food-delivery" element={<FoodDeliveryApp />} />,
     <Route key="car-rental" path="/products/transport/car-rental" element={<CarRental/>}/>,
     // Add other product routes here
+   <Route 
+  key="car-pooling"
+  path="products/transport/blablacar-clone"
+  element={<CarPoolingApp />}
+/>
 ];
