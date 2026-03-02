@@ -1,5 +1,5 @@
 import React from "react";
-import carr from "../../assets/Car-rental/carrental.webp"
+import carr from "../../assets/Car-rental/Carrental.webp"
 import biker from "../../assets/Car-rental/bikerental.webp"
 import carvanr from "../../assets/Car-rental/carvanrental.webp"
 import boatr from "../../assets/Car-rental/boatrental.webp"
