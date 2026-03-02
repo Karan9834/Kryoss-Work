@@ -11,7 +11,7 @@ const AboutAppSection = () => {
                         <div className="h-[570px] rounded-[24px] bg-gradient-to-b from-[#0b3d2e] to-[#062016] flex items-center justify-center text-white/40 text-sm">
                             <img src={aboutapp}
                                 alt="About the App"
-                                ClassName="h-full w-full object-cover" />
+                                className="h-full w-full object-cover" />
                         </div>
                     </div>
 

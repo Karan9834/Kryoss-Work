@@ -194,11 +194,7 @@ const BikeAppPreview = () => {
                 </div>
             </div>
 
-            <style jsx="true">{`
-                .no-scrollbar::-webkit-scrollbar {
-                    display: none;
-                }
-            `}</style>
+
         </section>
     );
 };

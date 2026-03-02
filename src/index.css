@@ -181,6 +181,17 @@
   animation: scroll 30s linear infinite;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 .flip-card {
   perspective: 1000px;
   height: 250px;

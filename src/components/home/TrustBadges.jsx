@@ -1,28 +1,28 @@
 const badges = [
   {
     name: "Clutch",
-    image: "/whitelabel-assets/assets/images/awards/clutch.png",
+    image: "/whitelabel-assets/assets/images/awards/clutch.webp",
     fallback: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Clutch_logo.svg/320px-Clutch_logo.svg.png",
     href: "https://clutch.co",
     label: "Top App Developer"
   },
   {
     name: "Trustpilot",
-    image: "/whitelabel-assets/assets/images/awards/trustpilot.png",
+    image: "/whitelabel-assets/assets/images/awards/trustpilot.webp",
     fallback: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Trustpilot_Logo_%282022%29.svg/320px-Trustpilot_Logo_%282022%29.svg.png",
     href: "https://trustpilot.com",
     label: "Excellent Rating"
   },
   {
     name: "GoodFirms",
-    image: "/whitelabel-assets/assets/images/awards/goodfirms.png",
+    image: "/whitelabel-assets/assets/images/awards/goodfirms.webp",
     fallback: "https://www.goodfirms.co/images/goodfirms-logo.png",
     href: "https://goodfirms.co",
     label: "Top IT Company"
   },
   {
     name: "DesignRush",
-    image: "/whitelabel-assets/assets/images/awards/designrush.png",
+    image: "/whitelabel-assets/assets/images/awards/designrush.webp",
     fallback: "https://www.designrush.com/images/designrush-logo.png",
     href: "https://designrush.com",
     label: "Best App Agency"
