@@ -11,15 +11,15 @@ const BikeDigitalFootprints = () => {
                 <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[620px]">
 
                     {/* LEFT : IMAGE (TOP-LEFT START) */}
-                    <div className="relative pt-20">
+                    <div className="relative pt-4  lg:pt-6 px-0 lg:px-0">
                         {/* 👉 ONLY ONE IMAGE */}
-                        <div className="w-[90%] h-[560px]">
+                        <div className="w-[90%] h-auto lg:h-[560px]">
                             <div className="w-full h-full  rounded-3xl overflow-hidden ">
 
                                 <img
                                     src={digitalfootprint}
                                     alt="Digital Footprints"
-                                    className="w-full max-w-[520px] rounded-xl object-cover"
+                                    className="w-full max-w-[550px] rounded-xl object-cover "
                                 />
 
                             </div>
@@ -27,7 +27,7 @@ const BikeDigitalFootprints = () => {
                     </div>
 
                     {/* RIGHT : CONTENT */}
-                    <div className="flex flex-col justify-center px-6 lg:px-16 py-20 text-white">
+                    <div className="flex flex-col justify-center px-6 lg:px-16 pt-4 lg:pt-0 pb-20 lg:py-20 text-white">
 
                         {/* Chip */}
                         <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/40 text-sm mb-6 w-fit">
