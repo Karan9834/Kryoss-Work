@@ -21,8 +21,6 @@ export const ProductRoutes = [
     // Add other product routes here
     <Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
     <Route key="tutor-booking" path="/products/home-service/tutor" element={<TutorBookingApp />} />,
-];
-    <Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
     <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
     <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />
 ];
