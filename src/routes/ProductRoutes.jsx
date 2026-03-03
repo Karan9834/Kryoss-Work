@@ -18,8 +18,9 @@ export const ProductRoutes = [
     <Route key="food-delivery" path="products/delivery/food-delivery" element={<FoodDeliveryApp />} />,
     <Route key="car-rental" path="products/transport/car-rental" element={<CarRental />} />,
     <Route key="grocery-delivery" path="products/delivery/grocery-delivery" element={<GroceryDeliveryApp />} />,
+    // Add other product routes here
     <Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
-    <Route key="tutor-booking" path="/products/home-service/tutor" element={<TutorBookingApp />} />,
+    <Route key="tutor-booking" path="products/home-service/tutor" element={<TutorBookingApp />} />,
     <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
     <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />
 ];
