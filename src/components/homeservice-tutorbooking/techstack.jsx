@@ -83,9 +83,7 @@ const TechStackSection = () => {
 
                             {/* hover popup */}
                             <div className="absolute -top-10 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 transition-transform duration-200">
-                                {/* <div className="px-3 py-1 text-xs text-white bg-black rounded-md shadow-lg">
-                                    {item.name}
-                                </div> */}
+
                             </div>
                         </div>
                     ))}
