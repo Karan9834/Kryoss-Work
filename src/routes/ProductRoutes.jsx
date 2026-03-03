@@ -5,6 +5,8 @@ import TaxiBiddingApp from '../pages/products/transport-app-solutions/TaxiBiddin
 import FoodDeliveryApp from '../pages/products/delivery-app-solutions/FoodDeliveryApp';
 import CarPoolingApp from "../pages/products/transport-app-solutions/CarPoolingApp";
 
+import HomeCleaning from "../pages/products/Ondemand-homeservice/HomeCleaning";
+
 export const ProductRoutes = [
     <Route key="taxi-uber" path="products/transport/uber-clone" element={<TaxiBookingUber />} />,
     <Route key="taxi-bidding" path="products/transport/indrive-clone" element={<TaxiBiddingApp />} />,
@@ -14,5 +16,7 @@ export const ProductRoutes = [
   key="car-pooling"
   path="products/transport/blablacar-clone"
   element={<CarPoolingApp />}
-/>
+/>,
+
+ <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />
 ];
