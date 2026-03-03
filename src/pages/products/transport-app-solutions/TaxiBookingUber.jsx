@@ -34,39 +34,27 @@ const TaxiBookingUber = () => {
     }, []);
 
     return (
-        <div className="uber-clone-page bg-white overflow-x-hidden w-full relative">
-            <Helmet>
-                <title>Uber Clone App | AI-Powered Taxi Booking Script | KryossWork</title>
-                <meta name="description" content="Launch your own AI-powered taxi booking platform with our scalable Uber clone script. Features for customers, drivers, and admin panel." />
-                <meta name="keywords" content="uber clone, taxi booking app, ride hailing script, taxi app development, uber clone script" />
-            </Helmet>
+        <>
+            <UberHero />
+            <UberCloneForBusiness />
+            <UberServices />
+            <UberRiderFeatures />
+            <UberDriverFeatures />
+            <UberAIGrowth />
+            <UberlaunchCTA />
+            <UberAppScreenshots />
+            <UberAdminPanel />
+            <UberWhatYouGet />
+            <UberStrategy />
+            <UberWhyUs />
+            <UberCTA2 />
+            <UberAward />
+            <UberIndustries />
 
-            <main>
-                <UberHero />
-                <UberCloneForBusiness />
-                <UberServices />
-                <UberRiderFeatures />
-                <UberDriverFeatures />
-                <UberAIGrowth />
-                <UberlaunchCTA />
-                <UberAppScreenshots />
-                <UberAdminPanel />
-                <UberWhatYouGet />
-                <UberStrategy />
-                <UberWhyUs />
-                <UberCTA2 />
-                <UberAward />
-                <UberIndustries />
+            <UberFAQ />
+            <UberContactForm />
+        </>
 
-
-
-
-
-
-                <UberFAQ />
-                <UberContactForm />
-            </main>
-        </div>
     );
 };
 
