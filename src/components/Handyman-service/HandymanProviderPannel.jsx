@@ -6,7 +6,7 @@ import {
   CalendarCheck,
 } from "lucide-react";
 
-import monitorImage from "../../assets/Handyman/handymanmonitor.webp";
+import monitorImage from "../../assets/Handyman/Handymanmonitor.webp";
 
 const features = [
   {
