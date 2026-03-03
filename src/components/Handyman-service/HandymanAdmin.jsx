@@ -8,7 +8,7 @@ import {
   Star,
 } from "lucide-react";
 
-import adminImage from "../../assets/Handyman/handymanservice.webp";
+import adminImage from "../../assets/Handyman/Handymanservice.webp";
 
 const features = [
   {
