@@ -76,3 +76,20 @@ const DigitalFootprintSection = () => {
 };
 
 export default DigitalFootprintSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,19 +1,13 @@
 import React from "react";
 
-const WhyChooseUsSection = () => {
+const HomeCleaningChooseUs = () => {
   const points = [
-    "With our Carpooling Clone Script, you can have your carpooling app live in just 5 working days—enabling you to start offering ride-sharing services immediately without the typical delays of custom development.",
-
-    "The Carpooling App Script is highly adaptable, allowing you to tailor it to your business needs, from services to branding, giving you a unique, branded experience for both passengers and drivers.",
-
-    "The app features a clean, intuitive interface, providing a smooth and seamless experience for users. Whether it’s passengers booking a ride or drivers accepting it, the process is simple and easy to follow.",
-
-    "Our Carpooling Clone Script is designed for scalability, allowing you to grow your business efficiently. With robust security features, your platform remains reliable and safe for users, ensuring data protection.",
-
-    "Keep both passengers and drivers updated with instant notifications about ride status, cancellations, and other important updates. This helps boost customer satisfaction and trust in your service.",
-
-    "Manage everything effortlessly with the built-in admin dashboard. Track rides, payments, driver and passenger data, and more—all from a single, easy-to-use platform.",
-  ];
+    "Get your on-demand house cleaning app live in just 5 working days, enabling customers to connect instantly with professional cleaners.",
+    "Customize the app to suit your business requirements, incorporating unique features and branding that enhance the user experience and make it truly yours.",
+    "Designed with both homeowners and cleaners in mind, the app ensures a smooth, seamless experience for all users, making it easy for everyone to navigate.",
+    "Our Uber for House Cleaning App is built to scale as your business grows. With robust security features, your users' data is always protected, ensuring the app’s reliability.",
+    "Keep users informed with real-time notifications about new service requests, cleaning updates, and important alerts, ensuring communication is always clear.",
+    "Effortlessly manage your entire business through an intuitive admin panel, overseeing user management, payments, bookings, and more in one central location." ];
 
   return (
     <section className="py-14 bg-[#00101A] text-white">
@@ -28,8 +22,9 @@ const WhyChooseUsSection = () => {
           </div>
 
           <h2 className="text-[38px] font-semibold">
-            Why Choose Our Carpooling Clone Script?
+           <span className="text-[#55D7FF]"> Why Choose Our Uber for</span> House Cleaning App?
           </h2>
+          <p>Our Uber for House Cleaning App is the perfect solution for launching your on-demand cleaning services quickly and efficiently. Here’s why our app is the best choice for your business</p>
 
         </div>
 
@@ -61,7 +56,7 @@ const WhyChooseUsSection = () => {
   );
 };
 
-export default WhyChooseUsSection;
+export default HomeCleaningChooseUs;
 
 
 

@@ -9,6 +9,8 @@ import CarRental from "../pages/products/transport-app-solutions/CarRental"
 import GroceryDeliveryApp from '../pages/products/delivery-app-solutions/GroceryDeliveryApp';
 import Handyman from "../pages/products/Ondemand-homeservice/Handyman_service"
 
+import HomeCleaning from "../pages/products/Ondemand-homeservice/HomeCleaning";
+
 export const ProductRoutes = [
     <Route key="taxi-uber" path="products/transport/uber-clone" element={<TaxiBookingUber />} />,
     <Route key="taxi-bidding" path="products/transport/indrive-clone" element={<TaxiBiddingApp />} />,
@@ -17,7 +19,21 @@ export const ProductRoutes = [
     <Route key="car-rental" path="products/transport/car-rental" element={<CarRental />} />,
     <Route key="grocery-delivery" path="products/delivery/grocery-delivery" element={<GroceryDeliveryApp />} />,
     // Add other product routes here
-    <Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
-     <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />
+<Route
+  key="car-pooling"
+  path="products/transport/blablacar-clone"
+  element={<CarPoolingApp />}
+/>
 
+<Route
+  key="handyman"
+  path="products/home-service/handyman"
+  element={<Handyman />}
+/>
+
+<Route
+  key="home-cleaning"
+  path="products/home-service/cleaning"
+  element={<HomeCleaning />}
+/>
 ];

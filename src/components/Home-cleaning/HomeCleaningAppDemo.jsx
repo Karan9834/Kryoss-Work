@@ -1,6 +1,6 @@
 import React from "react";
 
-const AppWorkflowSection = () => {
+const HomeCleaningAppDemo = () => {
   return (
     <section className="py-24 bg-white text-black">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
@@ -8,7 +8,7 @@ const AppWorkflowSection = () => {
         {/* Left Side Image / Video Thumbnail */}
         <div className="relative flex justify-center">
           <img
-            src="https://whitelabelfox.com/assets/images/carpooling-clone-script/Capool-step-by-step-video-image.webp"
+            src="https://whitelabelfox.com/assets/images/uber-house-cleaning-app/video-section-image.webp"
             alt="Carpooling App Workflow"
             className="w-full max-w-xl rounded-2xl shadow-lg"
           />
@@ -26,17 +26,16 @@ const AppWorkflowSection = () => {
 
           <div className="inline-flex items-center gap-2 bg-[#eaf4fd] px-4 py-1.5 rounded-full border border-[#b7d4f6] text-sm text-gray-700 mb-6 w-fit">
             <span className="w-2.5 h-2.5 bg-blue-500 rounded-full "></span>
-            App Workflow
+            Home Cleaning App Demo
           </div>
 
           <h2 className="text-[38px] font-semibold mb-6 leading-tight">
-            Carpooling App Workflow: A Step-by-Step Guide
+  <span className="text-cyan-300">
+Home Cleaning App</span> Work Flow Video
           </h2>
 
           <p className="text-gray-600 leading-relaxed text-lg">
-            Watch our detailed video to understand the seamless step-by-step
-            workflow of the Carpooling App and how it simplifies the
-            ride-sharing process.
+            Watch the step-by-step workflow of our home cleaning app, showcasing the seamless process from booking to tracking, ensuring a smooth user experience.
           </p>
 
         </div>
@@ -46,7 +45,7 @@ const AppWorkflowSection = () => {
   );
 };
 
-export default AppWorkflowSection;
+export default HomeCleaningAppDemo;
 
 
 
