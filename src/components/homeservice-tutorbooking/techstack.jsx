@@ -1,5 +1,5 @@
 import React from "react";
-import ios from "../../assets/homeservice-tutor-img/ios.webp"
+import ios from "../../assets/homeservice-tutor-img/iOS.webp"
 import android from "../../assets/homeservice-tutor-img/android.webp"
 import googlemaps from "../../assets/homeservice-tutor-img/googlemaps.webp"
 import androidstudio from "../../assets/homeservice-tutor-img/androidstudio.webp"
