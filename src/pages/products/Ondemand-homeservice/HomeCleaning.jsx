@@ -21,6 +21,9 @@ import HomeCleaningAwardRecognition from "../../../components/Home-cleaning/Home
 import HomeCleaningFAQ from "../../../components/Home-cleaning/HomeCleaningFAQ";
 import HomeCleaningTechStack from "../../../components/Home-cleaning/HomeCleaningTechStack";
 import HomeCleaningContact from "../../../components/Home-cleaning/HomeCleaningContact";
+import HomeCleaningBlogsSection from "../../../components/Home-cleaning/HomeCleaningBlogsSection";
+import HomeCleaningNewsletterSection from "../../../components/Home-cleaning/HomeCleaningNewsletterSection";
+import HomeCleaningTeamMoments from "../../../components/Home-cleaning/HomeCleaningTeamMoments";
 
 const HomeCleaning=()=>{
     return(
@@ -47,6 +50,9 @@ const HomeCleaning=()=>{
         <HomeCleaningFAQ/>
         <HomeCleaningTechStack/>
         <HomeCleaningContact/>
+        <HomeCleaningBlogsSection/>
+        <HomeCleaningNewsletterSection/>
+        <HomeCleaningTeamMoments/>
         </>
     )
 }

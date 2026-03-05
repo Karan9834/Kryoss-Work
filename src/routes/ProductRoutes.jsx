@@ -6,6 +6,8 @@ import FoodDeliveryApp from '../pages/products/delivery-app-solutions/FoodDelive
 import CarPoolingApp from "../pages/products/transport-app-solutions/CarPoolingApp";
 
 import HomeCleaning from "../pages/products/Ondemand-homeservice/HomeCleaning";
+import SalonBeauty from '../pages/products/Ondemand-homeservice/SalonBeauty';
+import MassageTherapy from '../pages/products/Ondemand-homeservice/MassageTherapy';
 
 export const ProductRoutes = [
     <Route key="taxi-uber" path="products/transport/uber-clone" element={<TaxiBookingUber />} />,
@@ -18,5 +20,8 @@ export const ProductRoutes = [
   element={<CarPoolingApp />}
 />,
 
- <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />
+ <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
+
+  <Route key="home-cleaning" path="products/home-service/salon" element={<SalonBeauty />} />,
+   <Route key="home-cleaning" path="products/home-service/massage" element={<MassageTherapy />} />
 ];
