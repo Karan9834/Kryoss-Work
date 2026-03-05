@@ -29,8 +29,8 @@ export const ProductRoutes = [
 
  <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
 
-  <Route key="salon" path="products/home-service/salon" element={<SalonBeauty />} />,
-   <Route key="massage" path="products/home-service/massage" element={<MassageTherapy />} />,
+  <Route key="home-cleaning" path="products/home-service/salon" element={<SalonBeauty />} />,
+   <Route key="home-cleaning path="products/home-service/massage" element={<MassageTherapy />} />,
  <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
     <Route key="blablacar-clone" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />
     <Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
