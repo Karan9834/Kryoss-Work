@@ -16,7 +16,7 @@ export const navigationData = {
             items: [
                 { label: "Taxi Booking App Like Uber", subLabel: "Scalable taxi booking platform", icon: "🚗", href: "/products/transport/uber-clone" },
                 { label: "Taxi Bidding App like inDrive", subLabel: "On-demand Taxi Bidding App Development", icon: "🚖", href: "/products/transport/indrive-clone" },
-                { label: "Bike Ride App Solution", subLabel: "Fast and affordable bike taxi", icon: "🏍️", href: "/products/transport/bike-ride" },
+                { label: "Bike Ride App Solution", subLabel: "Fast and affordable bike taxi", icon: "🏍️", href: "/products/transport/rapido-clone" },
                 { label: "Carpooling App Like BlaBlaCar", subLabel: "Shared rides with route matching", icon: "👥", href: "/products/transport/blablacar-clone" },
                 { label: "Car Rental App", subLabel: "Self-drive & chauffeur-based car rental", icon: "🔑", href: "/products/transport/car-rental" },
             ]

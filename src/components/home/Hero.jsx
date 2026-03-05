@@ -32,23 +32,17 @@ const reviewBadges = [
 ];
 
 
-const floatingTags = [
-  { label: "Enterprise Solutions", icon: "🏢" },
-  { label: "Urban E-Commerce", icon: "🛒" },
-  { label: "On-Demand Apps", icon: "📱" },
-  { label: "Custom Development", icon: "⚙️" },
-  { label: "Digital Products", icon: "💡" },
-  { label: "Software Consultancy", icon: "🤝" }];
+
 
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center bg-white overflow-hidden py-4">
+    <section className="relative min-h-[600px] flex items-start bg-white overflow-hidden pt-2 pb-12">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 z-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
 
-      <div className="max-w-full mx-auto px-4 sm:px-10 lg:px-20 relative z-10 w-full">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+      <div className="max-w-[1500px] mx-auto px-4 sm:px-10 lg:px-20 relative z-10 w-full">
+        <div className="grid lg:grid-cols-[1fr_1.5fr] gap-8 items-start">
           {/* Left Content */}
           <div className="space-y-6 lg:max-w-2xl">
             {/* Pill Badge */}
@@ -58,12 +52,12 @@ export default function Hero() {
             </div>
 
             {/* Heading */}
-            <h1 className="text-4xl lg:text-[48px] font-semibold text-gray-900 leading-[1.1] tracking-tight">
+            <h1 className="text-3xl lg:text-[42px] font-semibold text-gray-900 leading-[1.1] tracking-tight">
               Transforming Ideas With <br />
               <span className="text-primary">Product Engineering</span>
             </h1>
 
-            <p className="text-[15px] lg:text-[16px] text-gray-600 font-normal leading-[1.5] max-w-xl">
+            <p className="text-[16px] lg:text-[18px] text-gray-600 font-normal leading-[1.6] max-w-xl">
               As a leading clone app development company, we provide scalable product engineering services & deliver ready-to-launch or custom app, Website & Software for diverse industries. Our high-performance enterprise solutions are tailored to your business needs, driving efficiency and sustainable growth.
             </p>
 
@@ -91,9 +85,9 @@ export default function Hero() {
                     <img src={badge.logo} alt={badge.name} className="w-full h-full object-contain" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-[14px] font-bold text-gray-800">{badge.name}</span>
+                    <span className="text-[13px] font-bold text-gray-800">{badge.name}</span>
                     <div className="flex items-center gap-1">
-                      <span className="text-[15px] font-bold text-gray-900">{badge.rating}</span>
+                      <span className="text-[14px] font-bold text-gray-900">{badge.rating}</span>
                       <Star className="h-3.5 w-3.5 fill-orange-400 text-orange-400" />
                     </div>
                   </div>
@@ -103,47 +97,22 @@ export default function Hero() {
           </div>
 
           {/* Right Side — Hero Image Composition */}
-          <div className="relative">
-            <div className="relative mx-auto w-full max-w-[550px]">
-              {/* Main Image Mask/Shape */}
-              <div className="aspect-square rounded-full border-[1px] border-gray-100 flex items-center justify-center p-3">
-                <div className="w-full h-full rounded-full overflow-hidden relative">
-                  <img
-                    src="https://img.freepik.com/free-photo/diverse-business-people-meeting-modern-office_53876-103975.jpg"
-                    alt="Product Engineering"
-                    className="w-full h-full object-cover scale-150"
-                  />
-                  {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                </div>
+          <div className="relative pt-10 lg:pt-20">
+            <div className="relative mx-auto w-full max-w-[850px]">
+
+              {/* Main Image Illustration */}
+              <div className="relative z-10 w-full">
+                <img
+                  src="https://whitelabelfox.com/assets/images/homepage/main-slider-vector-large.webp"
+                  alt="Hero Vector"
+                  className="w-full h-auto"
+                />
               </div>
 
-              {/* Floating Tags */}
-              {floatingTags.map((tag, i) => {
-                const positions = [
-                  "top-[5%] left-[5%]",
-                  "top-[10%] right-[5%]",
-                  "top-[35%] -left-[15%]",
-                  "bottom-[20%] -right-[15%]",
-                  "bottom-[5%] left-[10%]",
-                  "bottom-[0%] right-[30%]"
-                ];
-
-                return (
-                  <div
-                    key={tag.label}
-                    className={`absolute ${positions[i]} bg-white rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] px-4 py-3 flex items-center gap-3 border border-gray-50 animate-bounce-slow`}
-                    style={{ animationDelay: `${i * 0.2}s` }}
-                  >
-                    <span className="text-xl bg-gray-50 w-8 h-8 flex items-center justify-center rounded-lg">{tag.icon}</span>
-                    <span className="text-[14px] font-bold text-gray-800 whitespace-nowrap">
-                      {tag.label}
-                    </span>
-                  </div>
-                );
-              })}
             </div>
           </div>
+
+
         </div>
       </div>
     </section>);
