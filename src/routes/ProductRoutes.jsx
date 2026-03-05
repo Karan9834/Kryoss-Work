@@ -10,6 +10,8 @@ import GroceryDeliveryApp from '../pages/products/delivery-app-solutions/Grocery
 import TutorBookingApp from '../pages/products/Ondemand-homeservice/TutorBookingApp';
 import Handyman from "../pages/products/Ondemand-homeservice/Handyman_service";
 import HomeCleaning from "../pages/products/Ondemand-homeservice/HomeCleaning";
+import DogWalking from '../pages/products/Ondemand-homeservice/DogWalking';
+import PestControl from '../pages/products/Ondemand-homeservice/PestControl';
 
 export const ProductRoutes = [
     <Route key="taxi-uber" path="products/transport/uber-clone" element={<TaxiBookingUber />} />,
@@ -22,5 +24,8 @@ export const ProductRoutes = [
     <Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
     <Route key="tutor-booking" path="products/home-service/tutor" element={<TutorBookingApp />} />,
     <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
-    <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />
+    <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />,
+    <Route key="dog-walking" path="products/home-service/dog-walking" element={<DogWalking />} />,
+    <Route key="pest-control" path="products/home-service/pest-control" element={<PestControl />} />,
+
 ];
