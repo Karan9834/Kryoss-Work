@@ -1,5 +1,5 @@
 import React from "react";
-import Towtruckcta3 from "../../assets/homeservice-towtruck-img/Towcta3.webp";
+import Towtruckcta3 from "../../assets/homeservice-towtruck-img/TowCTA3.webp";
 const CTA3 = () => {
     return (
         <section className="py-20 bg-[#f5f5f5]">
