@@ -14,6 +14,8 @@ import MedicineDeliveryApp from '../pages/products/delivery-app-solutions/Medici
 import TutorBookingApp from '../pages/products/Ondemand-homeservice/TutorBookingApp';
 import Handyman from "../pages/products/Ondemand-homeservice/Handyman_service";
 import HomeCleaning from "../pages/products/Ondemand-homeservice/HomeCleaning";
+import DogWalking from '../pages/products/Ondemand-homeservice/DogWalking';
+import PestControl from '../pages/products/Ondemand-homeservice/PestControl';
 import SalonBeauty from '../pages/products/Ondemand-homeservice/SalonBeauty';
 import MassageTherapy from '../pages/products/Ondemand-homeservice/MassageTherapy';
 import TowTruck from "../pages/products/Ondemand-homeservice/TowTruck";
@@ -30,6 +32,10 @@ export const ProductRoutes = [
     <Route key="medicine-delivery" path="products/delivery/medicine-delivery" element={<MedicineDeliveryApp />} />,
     <Route key="tutor-booking" path="products/home-service/tutor" element={<TutorBookingApp />} />,
     <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
+    <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />,
+    <Route key="dog-walking" path="products/home-service/dog-walking" element={<DogWalking />} />,
+    <Route key="pest-control" path="products/home-service/pest-control" element={<PestControl />} />,
+
     <Route key="salon-beauty" path="products/home-service/salon" element={<SalonBeauty />} />,
     <Route key="massage-therapy" path="products/home-service/massage" element={<MassageTherapy />} />,
     <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />,
