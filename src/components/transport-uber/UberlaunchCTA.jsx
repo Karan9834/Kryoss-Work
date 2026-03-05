@@ -6,12 +6,8 @@ const ReadyToLaunch = () => {
             <div className="max-w-[1400px] mx-auto px-4">
                 <div className="  relative
                                   overflow-hidden
-                                  w-full                 /* ✅ mobile safe */
-                                  lg:w-[100vw]           /* ✅ desktop full viewport */
-                                  lg:ml-auto             /* ✅ right stick ONLY on desktop */
-                                  rounded-l-[120px]      /* mobile radius */
-                                  lg:rounded-l-[220px]   /* desktop radius */
-                                  rounded-r-none
+                                  w-full
+                                  rounded-[40px] md:rounded-[60px] lg:rounded-l-[180px] lg:rounded-r-none
                                   bg-gradient-to-r from-[#5b0a05] to-[#7a0d06]">
 
                     {/* CONTENT */}

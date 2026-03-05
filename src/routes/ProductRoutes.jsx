@@ -5,9 +5,10 @@ import TaxiBiddingApp from '../pages/products/transport-app-solutions/TaxiBiddin
 import BikeRidingApp from '../pages/products/transport-app-solutions/BikeRidingApp';
 import FoodDeliveryApp from '../pages/products/delivery-app-solutions/FoodDeliveryApp';
 import CarPoolingApp from "../pages/products/transport-app-solutions/CarPoolingApp";
-import CarRental from "../pages/products/transport-app-solutions/CarRental"
+import CarRental from "../pages/products/transport-app-solutions/CarRental";
 import GroceryDeliveryApp from '../pages/products/delivery-app-solutions/GroceryDeliveryApp';
-
+import TutorBookingApp from '../pages/products/Ondemand-homeservice/TutorBookingApp';
+import Handyman from "../pages/products/Ondemand-homeservice/Handyman_service";
 import HomeCleaning from "../pages/products/Ondemand-homeservice/HomeCleaning";
 import SalonBeauty from '../pages/products/Ondemand-homeservice/SalonBeauty';
 import MassageTherapy from '../pages/products/Ondemand-homeservice/MassageTherapy';
@@ -32,6 +33,10 @@ export const ProductRoutes = [
    <Route key="massage" path="products/home-service/massage" element={<MassageTherapy />} />,
  <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
     <Route key="blablacar-clone" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />
+    <Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
+    <Route key="tutor-booking" path="products/home-service/tutor" element={<TutorBookingApp />} />,
+    <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
+    <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />
 ];
 
 

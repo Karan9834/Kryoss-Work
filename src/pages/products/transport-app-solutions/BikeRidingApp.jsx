@@ -17,27 +17,23 @@ import BikeCTA3 from '@/components/transport-bikeride/BikeCTA3';
 
 const BikeRidingApp = () => {
     return (
-        <div className="bike-riding-page bg-white min-h-screen">
-            <Helmet>
-                <title>Bike Riding App | Rapido Clone Script | KryossWork</title>
-                <meta name="description" content="Launch your on-demand bike taxi business with our scalable Rapido clone script. Optimized for quick bookings and urban mobility." />
-            </Helmet>
-            <main>
-                <BikeHero />
-                <BikeAboutApp />
-                <BikePlatform />
-                <BikeCTA1 />
-                <BikeAppPreview />
-                <BikeFeatures />
-                <BikeAdminPanel />
-                <BikeCTA2 />
-                <BikeHowitworks />
-                <BikeWhatSpecial />
-                <BikeDigitalFootprints />
-                <BikeWhyUs />
-                <BikeCTA3 />
-            </main>
-        </div>
+
+        <>
+            <BikeHero />
+            <BikeAboutApp />
+            <BikePlatform />
+            <BikeCTA1 />
+            <BikeAppPreview />
+            <BikeFeatures />
+            <BikeAdminPanel />
+            <BikeCTA2 />
+            <BikeHowitworks />
+            <BikeWhatSpecial />
+            <BikeDigitalFootprints />
+            <BikeWhyUs />
+            <BikeCTA3 />
+        </>
+
     );
 };
 
