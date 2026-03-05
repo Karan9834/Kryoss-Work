@@ -21,17 +21,17 @@ export const ProductRoutes = [
     <Route key="grocery-delivery" path="products/delivery/grocery-delivery" element={<GroceryDeliveryApp />} />,
     // Add other product routes here
    <Route 
-  key="car-pooling"
+  key="blablacar-clone"
   path="products/transport/blablacar-clone"
   element={<CarPoolingApp />}
 />,
 
  <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
 
-  <Route key="home-cleaning" path="products/home-service/salon" element={<SalonBeauty />} />,
-   <Route key="home-cleaning" path="products/home-service/massage" element={<MassageTherapy />} />,
+  <Route key="salon" path="products/home-service/salon" element={<SalonBeauty />} />,
+   <Route key="massage" path="products/home-service/massage" element={<MassageTherapy />} />,
  <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
-    <Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />
+    <Route key="blablacar-clone" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />
 ];
 
 
