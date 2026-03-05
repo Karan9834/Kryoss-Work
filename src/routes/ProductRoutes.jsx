@@ -68,31 +68,36 @@ import Handyman from "../pages/products/Ondemand-homeservice/Handyman_service";
 import HomeCleaning from "../pages/products/Ondemand-homeservice/HomeCleaning";
 import SalonBeauty from '../pages/products/Ondemand-homeservice/SalonBeauty';
 import MassageTherapy from '../pages/products/Ondemand-homeservice/MassageTherapy';
-
+import TowTruck from "../pages/products/Ondemand-homeservice/TowTruck";
+import LaundryService from "../pages/products/Ondemand-homeservice/LaundryService";
 export const ProductRoutes = [
 
-<Route key="taxi-uber" path="products/transport/uber-clone" element={<TaxiBookingUber />} />,
+    <Route key="taxi-uber" path="products/transport/uber-clone" element={<TaxiBookingUber />} />,
 
-<Route key="taxi-bidding" path="products/transport/indrive-clone" element={<TaxiBiddingApp />} />,
+    <Route key="taxi-bidding" path="products/transport/indrive-clone" element={<TaxiBiddingApp />} />,
 
-<Route key="bike-riding" path="products/transport/rapido-clone" element={<BikeRidingApp />} />,
+    <Route key="bike-riding" path="products/transport/rapido-clone" element={<BikeRidingApp />} />,
 
-<Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
+    <Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
 
-<Route key="car-rental" path="products/transport/car-rental" element={<CarRental />} />,
+    <Route key="car-rental" path="products/transport/car-rental" element={<CarRental />} />,
 
-<Route key="food-delivery" path="products/delivery/food-delivery" element={<FoodDeliveryApp />} />,
+    <Route key="food-delivery" path="products/delivery/food-delivery" element={<FoodDeliveryApp />} />,
 
-<Route key="grocery-delivery" path="products/delivery/grocery-delivery" element={<GroceryDeliveryApp />} />,
+    <Route key="grocery-delivery" path="products/delivery/grocery-delivery" element={<GroceryDeliveryApp />} />,
 
-<Route key="tutor-booking" path="products/home-service/tutor" element={<TutorBookingApp />} />,
+    <Route key="tutor-booking" path="products/home-service/tutor" element={<TutorBookingApp />} />,
 
-<Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
+    <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
 
-<Route key="salon-beauty" path="products/home-service/salon" element={<SalonBeauty />} />,
+    <Route key="salon-beauty" path="products/home-service/salon" element={<SalonBeauty />} />,
 
-<Route key="massage-therapy" path="products/home-service/massage" element={<MassageTherapy />} />,
+    <Route key="massage-therapy" path="products/home-service/massage" element={<MassageTherapy />} />,
 
-<Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />
-
+    <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />,
+    <Route key="tow-truck" path="products/home-service/tow-truck" element={<TowTruck />} />,
+    <Route key="laundry-service" path="products/home-service/laundry" element={<LaundryService />} />
 ];
+
+
+

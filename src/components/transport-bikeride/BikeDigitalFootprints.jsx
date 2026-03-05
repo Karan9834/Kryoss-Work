@@ -11,7 +11,7 @@ const BikeDigitalFootprints = () => {
                 <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[620px]">
 
                     {/* LEFT : IMAGE (TOP-LEFT START) */}
-                    <div className="relative pt-4  lg:pt-6 px-0 lg:px-0">
+                    <div className="relative pt-4  lg:pt-6">
                         {/* 👉 ONLY ONE IMAGE */}
                         <div className="w-[90%] h-auto lg:h-[560px]">
                             <div className="w-full h-full  rounded-3xl overflow-hidden ">
