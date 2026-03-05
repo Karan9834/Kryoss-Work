@@ -26,7 +26,7 @@ export const navigationData = {
             description: "Launch your On-Demand food, grocery, and more delivery services Solutions",
             items: [
                 { label: "Food Delivery App", subLabel: "Multi-restaurant food delivery platform", icon: "🍕", href: "/products/delivery/food-delivery" },
-                { label: "Pharmacy Delivery App", subLabel: "On-demand medicine ordering platform", icon: "💊", href: "/products/delivery/pharmacy-delivery" },
+                { label: "Pharmacy Delivery App", subLabel: "On-demand medicine ordering platform", icon: "💊", href: "/products/delivery/medicine-delivery" },
                 { label: "Daily Delivery App", subLabel: "Subscription-based daily supply for Grocery", icon: "🥛", href: "/products/delivery/daily-delivery" },
                 { label: "Liquor Delivery App", subLabel: "On-demand Alcohol delivery solution", icon: "🍷", href: "/products/delivery/liquor-delivery" },
                 { label: "Grocery Delivery App", subLabel: "Hyperlocal grocery delivery app", icon: "🛒", href: "/products/delivery/grocery-delivery" },
