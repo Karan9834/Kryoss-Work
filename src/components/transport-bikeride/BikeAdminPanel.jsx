@@ -76,11 +76,11 @@ const BikeAdminPanel = () => {
 
                     {/* LEFT IMAGE (GREEN ONLY HERE) */}
                     <div className="relative">
-                        <div className="bg-[#0a5c45] rounded-[28px] p-8">
+                        <div className="bg-[#0a5c45] rounded-[28px] p-4 lg:p-8">
                             <img
                                 src={adminpanel}
                                 alt="Admin Panel Preview"
-                                className="w-full h-[520px] object-cover"
+                                className="w-full h-auto lg:h-[520px] object-contain"
                             />
                         </div>
                     </div>

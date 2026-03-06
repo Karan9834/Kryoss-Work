@@ -71,7 +71,19 @@ const RevenueMonetization = () => {
     space-y-8
     hide-scrollbar
             "
+                        style={{
+                            scrollbarWidth: "none",
+                            msOverflowStyle: "none",
+                        }}
                     >
+                        {/* Hide scrollbar for webkit */}
+                        <style>
+                            {`
+                  .hide-scrollbar::-webkit-scrollbar {
+                    display: none;
+                  }
+                `}
+                        </style>
                         {revenueItems.map((item, index) => {
                             const Icon = item.icon;
 
