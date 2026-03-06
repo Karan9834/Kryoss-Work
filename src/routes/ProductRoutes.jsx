@@ -23,6 +23,7 @@ import SalonBeauty from "../pages/products/Ondemand-homeservice/SalonBeauty";
 import MassageTherapy from "../pages/products/Ondemand-homeservice/MassageTherapy";
 import TowTruck from "../pages/products/Ondemand-homeservice/TowTruck";
 import LaundryService from "../pages/products/Ondemand-homeservice/LaundryService";
+import SnowRemoval from '../pages/products/Ondemand-homeservice/SnowRemoval';
 
 import DatingApp from "../pages/products/Emerging-Social App/DatingApp";
 import AppointmentBooking from "../pages/products/Emerging-Social App/AppointmentBooking";
@@ -54,5 +55,7 @@ export const ProductRoutes = [
 
     <Route key="dating-app" path="products/social/dating-app" element={<DatingApp />} />,
     <Route key="appointment-booking" path="products/social/appointment-booking" element={<AppointmentBooking />} />,
-    <Route key="video-app" path="products/social/video-app" element={<TikTokClonePage />} />
+    <Route key="video-app" path="products/social/video-app" element={<TikTokClonePage />} />,
+    <Route key="snow-removal" path="products/home-service/snow-removal" element={<SnowRemoval />} />
+
 ];
