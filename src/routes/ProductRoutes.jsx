@@ -106,11 +106,18 @@ import BikeRidingApp from "../pages/products/transport-app-solutions/BikeRidingA
 import CarPoolingApp from "../pages/products/transport-app-solutions/CarPoolingApp";
 import CarRental from "../pages/products/transport-app-solutions/CarRental";
 
+<<<<<<< Updated upstream
 import FoodDeliveryApp from "../pages/products/delivery-app-solutions/FoodDeliveryApp";
 import GroceryDeliveryApp from "../pages/products/delivery-app-solutions/GroceryDeliveryApp";
 import MedicineDeliveryApp from "../pages/products/delivery-app-solutions/MedicineDeliveryApp";
 import DailyDeliveryApp from "../pages/products/delivery-app-solutions/DailyDeliveryApp";
 import LiquorDeliveryApp from "../pages/products/delivery-app-solutions/LiquorDeliveryApp";
+=======
+import FoodDeliveryApp from '../pages/products/delivery-app-solutions/FoodDeliveryApp';
+import GroceryDeliveryApp from '../pages/products/delivery-app-solutions/GroceryDeliveryApp';
+import MedicineDeliveryApp from '../pages/products/delivery-app-solutions/MedicineDeliveryApp';
+import CannabisDeliveryApp from '../pages/products/delivery-app-solutions/Cannabis-Delivery-App';
+>>>>>>> Stashed changes
 
 import TutorBookingApp from "../pages/products/Ondemand-homeservice/TutorBookingApp";
 import Handyman from "../pages/products/Ondemand-homeservice/Handyman_service";
@@ -121,7 +128,9 @@ import SalonBeauty from "../pages/products/Ondemand-homeservice/SalonBeauty";
 import MassageTherapy from "../pages/products/Ondemand-homeservice/MassageTherapy";
 import TowTruck from "../pages/products/Ondemand-homeservice/TowTruck";
 import LaundryService from "../pages/products/Ondemand-homeservice/LaundryService";
+import TikTokClonePage from "../pages/products/Social-App-Solutions/Video-App";
 
+<<<<<<< Updated upstream
 import DatingApp from "../pages/products/Emerging-Social App/DatingApp";
 import AppointmentBooking from "../pages/products/Emerging-Social App/AppointmentBooking";
 
@@ -150,6 +159,30 @@ export const ProductRoutes = [
 
   <Route key="dating-app" path="products/social/dating-app" element={<DatingApp />} />,
   <Route key="appointment-booking" path="products/social/appointment-booking" element={<AppointmentBooking />} />,
+=======
+export const ProductRoutes = [
+    <Route key="taxi-uber" path="products/transport/uber-clone" element={<TaxiBookingUber />} />,
+    <Route key="taxi-bidding" path="products/transport/indrive-clone" element={<TaxiBiddingApp />} />,
+    <Route key="bike-riding" path="products/transport/rapido-clone" element={<BikeRidingApp />} />,
+    <Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
+    <Route key="car-rental" path="products/transport/car-rental" element={<CarRental />} />,
+    <Route key="food-delivery" path="products/delivery/food-delivery" element={<FoodDeliveryApp />} />,
+    <Route key="grocery-delivery" path="products/delivery/grocery-delivery" element={<GroceryDeliveryApp />} />,
+    <Route key="medicine-delivery" path="products/delivery/medicine-delivery" element={<MedicineDeliveryApp />} />,
+    <Route key="cannabis-delivery" path="products/delivery/cannabis-delivery" element={<CannabisDeliveryApp />} />,
+    <Route key="tutor-booking" path="products/home-service/tutor" element={<TutorBookingApp />} />,
+    <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
+    <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />,
+    <Route key="dog-walking" path="products/home-service/dog-walking" element={<DogWalking />} />,
+    <Route key="pest-control" path="products/home-service/pest-control" element={<PestControl />} />,
+
+    <Route key="salon-beauty" path="products/home-service/salon" element={<SalonBeauty />} />,
+    <Route key="massage-therapy" path="products/home-service/massage" element={<MassageTherapy />} />,
+    <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />,
+    <Route key="tow-truck" path="products/home-service/tow-truck" element={<TowTruck />} />,
+    <Route key="laundry-service" path="products/home-service/laundry" element={<LaundryService />} />,
+    <Route key="video-app" path="products/social/video-app" element={<TikTokClonePage />} />
+>>>>>>> Stashed changes
 ];
 
 
