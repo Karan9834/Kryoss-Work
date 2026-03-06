@@ -8,6 +8,9 @@ import CarPoolingApp from "../pages/products/transport-app-solutions/CarPoolingA
 import CarRental from "../pages/products/transport-app-solutions/CarRental"
 import GroceryDeliveryApp from '../pages/products/delivery-app-solutions/GroceryDeliveryApp';
 
+import DailyDeliveryApp from '../pages/products/delivery-app-solutions/DailyDeliveryApp';
+import LiquorDeliveryApp from '../pages/products/delivery-app-solutions/LiquorDeliveryApp';
+
 import HomeCleaning from "../pages/products/Ondemand-homeservice/HomeCleaning";
 import SalonBeauty from '../pages/products/Ondemand-homeservice/SalonBeauty';
 import MassageTherapy from '../pages/products/Ondemand-homeservice/MassageTherapy';
@@ -21,17 +24,22 @@ export const ProductRoutes = [
     <Route key="grocery-delivery" path="products/delivery/grocery-delivery" element={<GroceryDeliveryApp />} />,
     // Add other product routes here
    <Route 
-  key="blablacar-clone"
+  key="home-cleaning"
   path="products/transport/blablacar-clone"
   element={<CarPoolingApp />}
 />,
 
  <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
 
-  <Route key="salon" path="products/home-service/salon" element={<SalonBeauty />} />,
-   <Route key="massage" path="products/home-service/massage" element={<MassageTherapy />} />,
+  <Route key="home-cleaning" path="products/home-service/salon" element={<SalonBeauty />} />,
+   <Route key="home-cleaning" path="products/home-service/massage" element={<MassageTherapy />} />,
  <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
-    <Route key="blablacar-clone" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />
+    <Route key="home-cleaning" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
+
+        <Route key="daily-delivery" path="products/delivery/daily-delivery" element={<DailyDeliveryApp />} />,
+            <Route key="liquor-delivery" path="products/delivery/liquor-delivery" element={<LiquorDeliveryApp />} />,
+
+
 ];
 
 
