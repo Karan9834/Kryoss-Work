@@ -11,12 +11,12 @@ const ContactSection = () => {
                 {/* Heading */}
                 <div className="text-center mb-12">
                     <span className="inline-flex items-center gap-2 px-4 py-1 rounded-full border text-sm">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                        <span className="w-2 h-2 bg-teal-400 rounded-full" />
                         Get Help
                     </span>
 
                     <h2 className="text-4xl font-bold mt-4">
-                        Contact <span className="text-blue-500">Us</span>
+                        Contact <span className="text-teal-400">Us</span>
                     </h2>
                 </div>
 
@@ -161,7 +161,7 @@ const ContactSection = () => {
                             {/* Submit */}
                             <button
                                 type="submit"
-                                className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-full mx-auto block"
+                                className="bg-teal-400 hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded-full mx-auto block"
                             >
                                 Contact Us
                             </button>
