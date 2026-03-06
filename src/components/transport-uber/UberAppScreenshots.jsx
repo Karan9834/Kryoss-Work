@@ -1,5 +1,19 @@
 import React, { useState, useRef, useEffect } from 'react';
+import Ubercustomer1 from "../../assets/transport-bikeride-img/Bikeridepassanger1.webp"
+import Ubercustomer2 from "../../assets/transport-bikeride-img/Bikeridepassanger2.webp"
+import Ubercustomer3 from "../../assets/transport-bikeride-img/Bikeridepassanger3.webp"
+import Ubercustomer4 from "../../assets/transport-bikeride-img/Bikeridepassanger4.webp"
+import Ubercustomer5 from "../../assets/transport-bikeride-img/Bikeridepassanger5.webp"
+import Ubercustomer6 from "../../assets/transport-bikeride-img/Bikeridepassanger6.webp"
+import Ubercustomer7 from "../../assets/transport-bikeride-img/Bikeridepassanger7.webp"
 
+import Uberdriver1 from "../../assets/transport-bikeride-img/Bikeridedriver1.webp"
+import Uberdriver2 from "../../assets/transport-bikeride-img/Bikeridedriver2.webp"
+import Uberdriver3 from "../../assets/transport-bikeride-img/Bikeridedriver3.webp"
+import Uberdriver4 from "../../assets/transport-bikeride-img/Bikeridedriver4.webp"
+import Uberdriver5 from "../../assets/transport-bikeride-img/Bikeridedriver5.webp"
+import Uberdriver6 from "../../assets/transport-bikeride-img/Bikeridedriver6.webp"
+import Uberdriver7 from "../../assets/transport-bikeride-img/Bikeridedriver7.webp"
 const UberAppScreenshots = () => {
     const [activeTab, setActiveTab] = useState('customer');
     const scrollRef = useRef(null);
@@ -13,27 +27,23 @@ const UberAppScreenshots = () => {
     });
 
     const customerScreenshots = [
-        { id: 1, title: 'Wallet', src: 'https://placehold.co/375x812/FFFFFF/000000?text=Wallet' },
-        { id: 2, title: 'My Account', src: 'https://placehold.co/375x812/FFFFFF/000000?text=My+Account' },
-        { id: 3, title: 'Home', src: 'https://placehold.co/375x812/FFFFFF/000000?text=Home' },
-        { id: 4, title: 'Ride Booking', src: 'https://placehold.co/375x812/FFFFFF/000000?text=Ride+Booking' },
-        { id: 5, title: 'Select Vehicle', src: 'https://placehold.co/375x812/FFFFFF/000000?text=Select+Vehicle' },
-        { id: 6, title: 'Arriving', src: 'https://placehold.co/375x812/FFFFFF/000000?text=Arriving' },
-        { id: 7, title: 'Ride Booking', src: 'https://placehold.co/375x812/FFFFFF/000000?text=Ride+Booking' },
-        { id: 8, title: 'Select Vehicle', src: 'https://placehold.co/375x812/FFFFFF/000000?text=Select+Vehicle' },
-        { id: 9, title: 'Arriving', src: 'https://placehold.co/375x812/FFFFFF/000000?text=Arriving' },
+        { id: 1, title: 'My Account', src: Ubercustomer1 },
+        { id: 2, title: 'Home Map', src: Ubercustomer2 },
+        { id: 3, title: 'Select Vehicle', src: Ubercustomer3 },
+        { id: 4, title: 'Arriving', src: Ubercustomer4 },
+        { id: 5, title: 'Ride Details', src: Ubercustomer5 },
+        { id: 6, title: 'My Rides', src: Ubercustomer6 },
+        { id: 7, title: 'Wallet', src: Ubercustomer7 },
     ];
 
     const driverScreenshots = [
-        { id: 1, title: 'Duty Status', src: 'https://placehold.co/375x812/1c1c1c/FFFFFF?text=Duty+Status' },
-        { id: 2, title: 'Earnings', src: 'https://placehold.co/375x812/1c1c1c/FFFFFF?text=Earnings' },
-        { id: 3, title: 'Trip Request', src: 'https://placehold.co/375x812/1c1c1c/FFFFFF?text=Trip+Request' },
-        { id: 4, title: 'Navigation', src: 'https://placehold.co/375x812/1c1c1c/FFFFFF?text=Navigation' },
-        { id: 5, title: 'Trip Details', src: 'https://placehold.co/375x812/1c1c1c/FFFFFF?text=Trip+Details' },
-        { id: 6, title: 'Rating', src: 'https://placehold.co/375x812/1c1c1c/FFFFFF?text=Rating' },
-        { id: 7, title: 'Navigation', src: 'https://placehold.co/375x812/1c1c1c/FFFFFF?text=Navigation' },
-        { id: 8, title: 'Trip Details', src: 'https://placehold.co/375x812/1c1c1c/FFFFFF?text=Trip+Details' },
-        { id: 9, title: 'Rating', src: 'https://placehold.co/375x812/1c1c1c/FFFFFF?text=Rating' },
+        { id: 1, title: 'Select Vehicle', src: Uberdriver1 },
+        { id: 2, title: 'Choose ride', src: Uberdriver2 },
+        { id: 3, title: 'Pickup', src: Uberdriver3 },
+        { id: 4, title: 'Payments', src: Uberdriver4 },
+        { id: 5, title: 'Search routes', src: Uberdriver5 },
+        { id: 6, title: 'Search Results', src: Uberdriver6 },
+        { id: 7, title: 'Feedback', src: Uberdriver7 },
     ];
 
     const currentScreenshots = activeTab === 'customer' ? customerScreenshots : driverScreenshots;

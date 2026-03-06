@@ -1,5 +1,19 @@
 import React, { useState, useRef, useEffect } from 'react';
+import Bikeridepassanger1 from "../../assets/transport-bikeride-img/Bikeridepassanger1.webp"
+import Bikeridepassanger2 from "../../assets/transport-bikeride-img/Bikeridepassanger2.webp"
+import Bikeridepassanger3 from "../../assets/transport-bikeride-img/Bikeridepassanger3.webp"
+import Bikeridepassanger4 from "../../assets/transport-bikeride-img/Bikeridepassanger4.webp"
+import Bikeridepassanger5 from "../../assets/transport-bikeride-img/Bikeridepassanger5.webp"
+import Bikeridepassanger6 from "../../assets/transport-bikeride-img/Bikeridepassanger6.webp"
+import Bikeridepassanger7 from "../../assets/transport-bikeride-img/Bikeridepassanger7.webp"
 
+import Bikeridedriver1 from "../../assets/transport-bikeride-img/Bikeridedriver1.webp"
+import Bikeridedriver2 from "../../assets/transport-bikeride-img/Bikeridedriver2.webp"
+import Bikeridedriver3 from "../../assets/transport-bikeride-img/Bikeridedriver3.webp"
+import Bikeridedriver4 from "../../assets/transport-bikeride-img/Bikeridedriver4.webp"
+import Bikeridedriver5 from "../../assets/transport-bikeride-img/Bikeridedriver5.webp"
+import Bikeridedriver6 from "../../assets/transport-bikeride-img/Bikeridedriver6.webp"
+import Bikeridedriver7 from "../../assets/transport-bikeride-img/Bikeridedriver7.webp"
 const BikeAppPreview = () => {
     const [activeTab, setActiveTab] = useState('passenger');
     const scrollRef = useRef(null);
@@ -13,23 +27,24 @@ const BikeAppPreview = () => {
     });
 
     const passengerScreenshots = [
-        { id: 1, title: 'My Account', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=My+Account' },
-        { id: 2, title: 'Home Map', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Home+Map' },
-        { id: 3, title: 'Select Vehicle', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Select+Vehicle' },
-        { id: 4, title: 'Arriving', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Arriving' },
-        { id: 5, title: 'Ride Details', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Ride+Details' },
-        { id: 6, title: 'My Rides', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=My+Rides' },
-        { id: 7, title: 'Wallet', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Wallet' },
-        { id: 8, title: 'Reviews', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Reviews' },
+        { id: 1, title: 'My Account', src: Bikeridepassanger1 },
+        { id: 2, title: 'Home Map', src: Bikeridepassanger2 },
+        { id: 3, title: 'Select Vehicle', src: Bikeridepassanger3 },
+        { id: 4, title: 'Arriving', src: Bikeridepassanger4 },
+        { id: 5, title: 'Ride Details', src: Bikeridepassanger5 },
+        { id: 6, title: 'My Rides', src: Bikeridepassanger6 },
+        { id: 7, title: 'Wallet', src: Bikeridepassanger7 },
+
     ];
 
     const driverScreenshots = [
-        { id: 1, title: 'Trip Request', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Trip+Request' },
-        { id: 2, title: 'Earnings', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Earnings' },
-        { id: 3, title: 'Navigation', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Navigation' },
-        { id: 4, title: 'Duty Status', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Duty+Status' },
-        { id: 5, title: 'User Details', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=User+Details' },
-        { id: 6, title: 'Trip History', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Trip+History' },
+        { id: 1, title: 'Select Vehicle', src: Bikeridedriver1 },
+        { id: 2, title: 'Choose ride', src: Bikeridedriver2 },
+        { id: 3, title: 'Pickup', src: Bikeridedriver3 },
+        { id: 4, title: 'Payments', src: Bikeridedriver4 },
+        { id: 5, title: 'Search routes', src: Bikeridedriver5 },
+        { id: 6, title: 'Search Results', src: Bikeridedriver6 },
+        { id: 7, title: 'Feedback', src: Bikeridedriver7 },
     ];
 
     const currentScreenshots = activeTab === 'passenger' ? passengerScreenshots : driverScreenshots;
