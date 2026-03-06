@@ -46,7 +46,7 @@ const FeatureCard = ({ title, desc, icon: Icon }) => (
                 <h3 className="text-[17px] font-bold text-[#141414] group-hover:text-white mb-1.5 transition-colors">
                     {title}
                 </h3>
-                <p className="text-gray-500 text-[13px] leading-relaxed group-hover:text-white/80 transition-colors">
+                <p className="text-gray-500 text-[13px] font-semibold leading-relaxed group-hover:text-white/80 transition-colors">
                     {desc}
                 </p>
             </div>
@@ -122,12 +122,7 @@ const BikeFeatures = () => {
                                 className="w-full h-auto object-contain relative z-10"
                             />
 
-                            {/* Decorative Leaf Patterns in the Green Background */}
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] opacity-20 pointer-events-none z-0">
-                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                                    <path fill="#00a67c" d="M44.7,-76.4C58.1,-69.2,69.2,-58.1,76.5,-44.7C83.8,-31.3,87.3,-15.7,85.1,-0.8C82.9,14.1,74.9,28.2,65.2,40.1C55.5,52,44.1,61.7,31,69.2C17.9,76.7,3.1,82.1,-12,80.1C-27.1,78.2,-42.6,68.9,-54.8,57.1C-67,45.3,-75.9,31.1,-80.4,15.7C-84.9,0.3,-84.9,-16.1,-79.1,-30.4C-73.3,-44.7,-61.8,-56.9,-48.6,-64.3C-35.4,-71.7,-20.5,-74.3,-2.8,-70.7C14.8,-67.2,31.3,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
-                                </svg>
-                            </div>
+
                         </div>
                     </div>
 
