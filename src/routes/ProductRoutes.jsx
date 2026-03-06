@@ -20,6 +20,9 @@ import SalonBeauty from '../pages/products/Ondemand-homeservice/SalonBeauty';
 import MassageTherapy from '../pages/products/Ondemand-homeservice/MassageTherapy';
 import TowTruck from "../pages/products/Ondemand-homeservice/TowTruck";
 import LaundryService from "../pages/products/Ondemand-homeservice/LaundryService";
+import DatingApp from '../pages/products/Emerging-Social App/DatingApp';
+import AppointmentBooking from "../pages/products/Emerging-Social App/AppointmentBooking";
+
 
 export const ProductRoutes = [
     <Route key="taxi-uber" path="products/transport/uber-clone" element={<TaxiBookingUber />} />,
@@ -40,5 +43,7 @@ export const ProductRoutes = [
     <Route key="massage-therapy" path="products/home-service/massage" element={<MassageTherapy />} />,
     <Route key="handyman" path="products/home-service/handyman" element={<Handyman />} />,
     <Route key="tow-truck" path="products/home-service/tow-truck" element={<TowTruck />} />,
-    <Route key="laundry-service" path="products/home-service/laundry" element={<LaundryService />} />
+    <Route key="laundry-service" path="products/home-service/laundry" element={<LaundryService />} />,
+    <Route key="dating-app" path="products/social/dating-app" element={<DatingApp />} />,
+    <Route key="appointment-booking" path="products/social/appointment-booking" element={<AppointmentBooking />} />,
 ];
