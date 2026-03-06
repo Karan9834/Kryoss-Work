@@ -1,5 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
-
+import Uberservice1 from '../../assets/transport-uber-img/Uberservice1.webp';
+import Uberservice2 from '../../assets/transport-uber-img/Uberservice2.webp';
+import Uberservice3 from '../../assets/transport-uber-img/Uberservice3.webp';
+import Uberservice4 from '../../assets/transport-uber-img/Uberservice4.webp';
+import Uberservice5 from '../../assets/transport-uber-img/Uberservice5.webp';
+import Uberservice6 from '../../assets/transport-uber-img/Uberservice6.webp';
 const services = [
     {
         id: 1,
@@ -7,7 +12,7 @@ const services = [
         description: "No complicated steps. Offer your customers easy access to your taxi ride services through a user-friendly platform.",
         tags: ["On-Demand Rides", "Real-Time Tracking", "Instant Booking", "Secure Payments", "Urban Mobility", "Daily Commutes"],
         bgColor: "from-[#29224d] to-[#120e26]",
-        image: "https://placehold.co/375x812/FFFFFF/000000?text=Taxi+Ride"
+        image: Uberservice1
     },
     {
         id: 2,
@@ -15,7 +20,7 @@ const services = [
         description: "Allow your customers to book long-distance travel with fixed and scheduled fare pricing options.",
         tags: ["Long-Distance Travel", "City-to-City Rides", "Scheduled Trips", "Auto Toll", "Comfortable Journeys"],
         bgColor: "from-[#064e40] to-[#022c22]",
-        image: "https://placehold.co/375x812/FFFFFF/000000?text=Intercity"
+        image: Uberservice2
     },
     {
         id: 3,
@@ -23,7 +28,7 @@ const services = [
         description: "Grab a smart way to attract price-sensitive customers looking to avoid traffic in busy urban areas.",
         tags: ["Low-Cost Rides", "Two-Wheeler", "Quick Travel", "Traffic Friendly", "Short Trips", "Urban Speed"],
         bgColor: "from-[#0f172a] to-[#1e293b]",
-        image: "https://placehold.co/375x812/FFFFFF/000000?text=Bike+Ride"
+        image: Uberservice3
     },
     {
         id: 4,
@@ -31,7 +36,7 @@ const services = [
         description: "Empower users and drivers to negotiate fares in real-time. A unique bidding system that ensures fair pricing.",
         tags: ["Real-time Bidding", "Fare Negotiation", "Driver Selection", "Cost-Effective", "Marketplace Model"],
         bgColor: "from-[#2e1065] to-[#4c1d95]",
-        image: "https://placehold.co/375x812/FFFFFF/000000?text=Taxi+Bidding"
+        image: Uberservice4
     },
     {
         id: 5,
@@ -39,7 +44,7 @@ const services = [
         description: "Reduce travel costs and carbon footprint by sharing rides. Perfect for regular commuters.",
         tags: ["Shared Rides", "Eco-Friendly", "Cost Saving", "Route Matching", "Social Commute"],
         bgColor: "from-[#450a0a] to-[#7f1d1d]",
-        image: "https://placehold.co/375x812/FFFFFF/000000?text=Taxi+Pool"
+        image: Uberservice5
     },
     {
         id: 6,
@@ -47,7 +52,7 @@ const services = [
         description: "Book vehicles for hours or days. Chauffeur-driven or self-drive options available.",
         tags: ["Hourly Rental", "Daily Rental", "Self-Drive", "Outstation", "Corporate Travel"],
         bgColor: "from-[#083344] to-[#164e63]",
-        image: "https://placehold.co/375x812/FFFFFF/000000?text=Car+Rental"
+        image: Uberservice6
     }
 ];
 
@@ -146,9 +151,7 @@ const UberServices = () => {
                             >
                                 {/* Left: Service Phone Image */}
                                 <div className="w-full md:w-[45%] h-[40%] md:h-full flex items-center justify-center relative">
-                                    <div className="relative h-full aspect-[9/19] bg-white rounded-[20px] md:rounded-[35px] shadow-3xl overflow-hidden border-[4px] md:border-[8px] border-[#1a1a1a] z-30">
-                                        <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
-                                    </div>
+                                    <img src={service.image} alt={service.title} className="w-full h-full object-contain" />
                                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] border border-white/5 rounded-full pointer-events-none"></div>
                                 </div>
 
