@@ -1,5 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
-
+import Laundrycustomer1 from "../../assets/homeservice-laundry-img/Laundrycustomer1.webp";
+import Laundrycustomer2 from "../../assets/homeservice-laundry-img/Laundrycustomer2.webp";
+import Laundrycustomer3 from "../../assets/homeservice-laundry-img/Laundrycustomer3.webp";
+import Laundrycustomer4 from "../../assets/homeservice-laundry-img/Laundrycustomer4.webp";
+import Laundrycustomer5 from "../../assets/homeservice-laundry-img/Laundrycustomer5.webp";
+import Laundrycustomer6 from "../../assets/homeservice-laundry-img/Laundrycustomer6.webp";
+import Laundrycustomer7 from "../../assets/homeservice-laundry-img/Laundrycustomer7.webp";
+import Laundryprovider1 from "../../assets/homeservice-laundry-img/Laundryprovider1.webp";
+import Laundryprovider2 from "../../assets/homeservice-laundry-img/Laundryprovider2.webp";
+import Laundryprovider3 from "../../assets/homeservice-laundry-img/Laundryprovider3.webp";
+import Laundryprovider4 from "../../assets/homeservice-laundry-img/Laundryprovider4.webp";
+import Laundryprovider5 from "../../assets/homeservice-laundry-img/Laundryprovider5.webp";
+import Laundryprovider6 from "../../assets/homeservice-laundry-img/Laundryprovider6.webp";
+import Laundryprovider7 from "../../assets/homeservice-laundry-img/Laundryprovider7.webp";
 const LaundryAppDevelopment = () => {
     const [activeTab, setActiveTab] = useState('customer');
     const scrollRef = useRef(null);
@@ -13,20 +26,23 @@ const LaundryAppDevelopment = () => {
     });
 
     const customerScreenshots = [
-        { id: 1, title: 'Welcome Screen', src: 'https://placehold.co/375x812/003d3a/FFFFFF?text=Welcome+Screen' },
-        { id: 2, title: 'Select Package', src: 'https://placehold.co/375x812/003d3a/FFFFFF?text=Select+Package' },
-        { id: 3, title: 'Select Clothes', src: 'https://placehold.co/375x812/003d3a/FFFFFF?text=Select+Clothes' },
-        { id: 4, title: 'Schedule Order', src: 'https://placehold.co/375x812/003d3a/FFFFFF?text=Schedule+Order' },
-        { id: 5, title: 'Checkout', src: 'https://placehold.co/375x812/003d3a/FFFFFF?text=Checkout' },
-        { id: 6, title: 'Track Order', src: 'https://placehold.co/375x812/003d3a/FFFFFF?text=Track+Order' },
+        { id: 1, title: 'Welcome Screen', src: Laundrycustomer1 },
+        { id: 2, title: 'Select Package', src: Laundrycustomer2 },
+        { id: 3, title: 'Select Clothes', src: Laundrycustomer3 },
+        { id: 4, title: 'Schedule Order', src: Laundrycustomer4 },
+        { id: 5, title: 'Checkout', src: Laundrycustomer5 },
+        { id: 6, title: 'Track Order', src: Laundrycustomer6 },
+        { id: 7, title: 'My Wallet', src: Laundrycustomer7 },
     ];
 
     const providerScreenshots = [
-        { id: 1, title: 'New Requests', src: 'https://placehold.co/375x812/002b28/FFFFFF?text=New+Requests' },
-        { id: 2, title: 'Order Details', src: 'https://placehold.co/375x812/002b28/FFFFFF?text=Order+Details' },
-        { id: 3, title: 'Pickup Task', src: 'https://placehold.co/375x812/002b28/FFFFFF?text=Pickup+Task' },
-        { id: 4, title: 'Earnings', src: 'https://placehold.co/375x812/002b28/FFFFFF?text=Earnings' },
-        { id: 5, title: 'Settings', src: 'https://placehold.co/375x812/002b28/FFFFFF?text=Settings' },
+        { id: 1, title: 'My Profile', src: Laundryprovider1 },
+        { id: 2, title: 'Wash', src: Laundryprovider2 },
+        { id: 3, title: 'Oder History', src: Laundryprovider3 },
+        { id: 4, title: 'Provider Detail 1', src: Laundryprovider4 },
+        { id: 5, title: 'Provider Detail 2', src: Laundryprovider5 },
+        { id: 6, title: 'Orders', src: Laundryprovider6 },
+        { id: 7, title: 'New Orders', src: Laundryprovider7 },
     ];
 
     const currentScreenshots = activeTab === 'customer' ? customerScreenshots : providerScreenshots;
@@ -151,7 +167,7 @@ const LaundryAppDevelopment = () => {
                     {infiniteScreenshots.map((item, index) => (
                         <div
                             key={`${item.id}-${index}`}
-                            className="min-w-[280px] md:min-w-[320px] snap-center"
+                            className="min-w-[280px] md:min-w-[300px] snap-center"
                         >
                             <div className="bg-[#002b28] border-[5px] border-white/10 rounded-[45px] p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-[#18d4b0]/30">
                                 <div className="relative aspect-[9/19] rounded-[38px] overflow-hidden bg-[#001a18]">
