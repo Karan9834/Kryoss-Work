@@ -6,6 +6,7 @@ import NotFound from '../pages/NotFound';
 import { ProductRoutes } from './ProductRoutes';
 import { CompanyRoutes } from './CompanyRoutes';
 import { GojekRoutes } from './GojekRoutes';
+import Blog from "../pages/Blog";
 
 const AppRoutes = () => {
     return (
@@ -16,6 +17,7 @@ const AppRoutes = () => {
                 {ProductRoutes}
                 {CompanyRoutes}
                 <Route path="*" element={<NotFound />} />
+                <Route path="/blog" element={<Blog />} />
             </Route>
         </Routes>
     );
