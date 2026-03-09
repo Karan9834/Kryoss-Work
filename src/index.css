@@ -1,5 +1,7 @@
 @import "tailwindcss";
-html, body {
+
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -255,9 +257,24 @@ html, body {
   0% {
     transform: translateX(-50%);
   }
+
   100% {
     transform: translateX(0%);
   }
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scrollLeft 60s linear infinite;
 }
 
 .animate-scroll-right {
@@ -268,6 +285,7 @@ html, body {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -276,6 +294,7 @@ html, body {
 .animate-scroll {
   animation: scroll 25s linear infinite;
 }
+
 .perspective {
   perspective: 1000px;
 }
@@ -309,10 +328,12 @@ html, body {
 .marquee {
   animation: marquee 20s linear infinite;
 }
+
 @keyframes scroll {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -349,7 +370,7 @@ html, body {
   border-radius: 16px;
   backface-visibility: hidden;
   border: 1px solid #f9a8d4;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,6 +401,7 @@ html, body {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }

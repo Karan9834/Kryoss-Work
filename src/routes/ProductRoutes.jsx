@@ -13,6 +13,7 @@ import MedicineDeliveryApp from "../pages/products/delivery-app-solutions/Medici
 import DailyDeliveryApp from "../pages/products/delivery-app-solutions/DailyDeliveryApp";
 import LiquorDeliveryApp from "../pages/products/delivery-app-solutions/LiquorDeliveryApp";
 import CannabisDeliveryApp from "../pages/products/delivery-app-solutions/Cannabis-Delivery-App";
+import MultiServiceDeliveryApp from "../pages/products/delivery-app-solutions/MultiServiceDeliveryApp";
 
 import TutorBookingApp from "../pages/products/Ondemand-homeservice/TutorBookingApp";
 import Handyman from "../pages/products/Ondemand-homeservice/Handyman_service";
@@ -42,6 +43,7 @@ export const ProductRoutes = [
     <Route key="daily-delivery" path="products/delivery/daily-delivery" element={<DailyDeliveryApp />} />,
     <Route key="liquor-delivery" path="products/delivery/liquor-delivery" element={<LiquorDeliveryApp />} />,
     <Route key="cannabis-delivery" path="products/delivery/cannabis-delivery" element={<CannabisDeliveryApp />} />,
+    <Route key="multi-delivery" path="products/delivery/multi-delivery" element={<MultiServiceDeliveryApp />} />,
 
     <Route key="tutor-booking" path="products/home-service/tutor" element={<TutorBookingApp />} />,
     <Route key="home-cleaning" path="products/home-service/cleaning" element={<HomeCleaning />} />,
@@ -52,10 +54,11 @@ export const ProductRoutes = [
     <Route key="massage-therapy" path="products/home-service/massage" element={<MassageTherapy />} />,
     <Route key="tow-truck" path="products/home-service/tow-truck" element={<TowTruck />} />,
     <Route key="laundry-service" path="products/home-service/laundry" element={<LaundryService />} />,
+    <Route key="snow-removal" path="products/home-service/snow-removal" element={<SnowRemoval />} />,
 
     <Route key="dating-app" path="products/social/dating-app" element={<DatingApp />} />,
     <Route key="appointment-booking" path="products/social/appointment-booking" element={<AppointmentBooking />} />,
-    <Route key="video-app" path="products/social/video-app" element={<TikTokClonePage />} />,
-    <Route key="snow-removal" path="products/home-service/snow-removal" element={<SnowRemoval />} />
+    <Route key="video-app" path="products/social/video-app" element={<TikTokClonePage />} />
+
 
 ];
