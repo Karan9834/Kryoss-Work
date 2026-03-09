@@ -15,7 +15,7 @@ import LaundryDevelopmentProcess from '@/components/homeservice-laundry/LaundryD
 import LaundryDigitalFootprints from '@/components/homeservice-laundry/LaundryDigitalFootprints';
 import LaundryWhyUs from '@/components/homeservice-laundry/LaundryWhyUs';
 import LaundryBusinessWeSupport from '@/components/homeservice-laundry/LaundryBusinessWeSupport';
-import LaundryClientFeedback from '@/components/homeservice-laundry/LaundryClientFeedback';
+// import LaundryClientFeedback from '@/components/homeservice-laundry/LaundryClientFeedback';
 import LaundryProductShowcase from '@/components/homeservice-laundry/LaundryProductShowcase';
 import LaundryAwards from '@/components/homeservice-laundry/LaundryAwards';
 import LaundryFAQ from '@/components/homeservice-laundry/LaundryFAQ';
@@ -45,7 +45,7 @@ const LaundryService = () => {
             <LaundryDigitalFootprints />
             <LaundryWhyUs />
             <LaundryBusinessWeSupport />
-            <LaundryClientFeedback />
+            {/* <LaundryClientFeedback /> */}
             <LaundryProductShowcase />
             <LaundryAwards />
             <LaundryFAQ />

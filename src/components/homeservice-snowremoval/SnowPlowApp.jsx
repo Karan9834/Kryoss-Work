@@ -164,7 +164,7 @@ const SnowPlowApp = () => {
                     {infiniteScreenshots.map((item, index) => (
                         <div
                             key={`${item.id}-${index}`}
-                            className="min-w-[280px] md:min-w-[320px] snap-center"
+                            className="min-w-[280px] md:min-w-[300px] snap-center"
                         >
                             <div className="bg-[#041535] border-[5px] border-white/10 rounded-[45px] p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-[#49c5d4]/30">
                                 <div className="relative aspect-[9/19] rounded-[38px] overflow-hidden bg-[#020d1f]">
@@ -178,7 +178,7 @@ const SnowPlowApp = () => {
                                     <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.05)_0%,transparent_50%)] pointer-events-none"></div>
                                 </div>
                             </div>
-                            <p className="text-center text-white/50 text-sm mt-4 font-medium tracking-wide">{item.title}</p>
+
                         </div>
                     ))}
                 </div>
