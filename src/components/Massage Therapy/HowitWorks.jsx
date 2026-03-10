@@ -1,41 +1,49 @@
 import React from "react";
+import {
+  LogIn,
+  Search,
+  ShoppingCart,
+  UserCheck,
+  CreditCard,
+  Star,
+} from "lucide-react";
 
 const steps = [
   {
     number: "1",
     title: "Login/Signup",
     desc: "A user can log in or sign up by providing information or through social sites like Facebook or Google.",
-    icon: "/icons/login.png",
+    icon: LogIn,
   },
   {
     number: "2",
     title: "Search Massage Therapist",
     desc: "Users can find nearby therapists, view profiles with details like name, distance, pricing, and ratings.",
-    icon: "/icons/search.png",
+    icon: Search,
   },
   {
     number: "3",
     title: "Place Order",
     desc: "After checking the therapist profile and pricing; the user can choose the service based on their requirements.",
-    icon: "/icons/order.png",
+    icon: ShoppingCart,
   },
   {
     number: "4",
     title: "Therapists Offer Service",
     desc: "After accepting user requests, the therapist arrives at the user location and provides the service.",
-    icon: "/icons/service.png",
+    icon: UserCheck,
   },
   {
     number: "5",
     title: "Secure Payment",
     desc: "Once the service is complete, the user has flexible payment options like cash, card, and in-app wallet.",
-    icon: "/icons/payment.png",
+    icon: CreditCard,
   },
   {
     number: "6",
     title: "Rating & Review",
     desc: "Once payment is complete, both the user and therapist can leave reviews and ratings.",
-    icon: "/icons/review.png",
+    icon: Star,
   },
 ];
 
@@ -76,48 +84,49 @@ const HowitWorks = () => {
           {/* Cards */}
           <div className="grid md:grid-cols-2 gap-8">
 
-            {steps.map((step, index) => (
-              <div
-                key={index}
-                className="group p-8 rounded-xl relative transition-all duration-300"
-                style={{
-                  background:
-                    "linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.3) 100%)",
-                  backdropFilter: "blur(10px)",
-                }}
-              >
+            {steps.map((step, index) => {
+              const Icon = step.icon;
 
-                {/* TOP ROW */}
-                <div className="flex items-center justify-between mb-4">
+              return (
+                <div
+                  key={index}
+                  className="group p-8 rounded-xl relative transition-all duration-300"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.3) 100%)",
+                    backdropFilter: "blur(10px)",
+                  }}
+                >
 
-                  {/* TITLE */}
-                  <h3 className="text-xl font-semibold text-white group-hover:text-pink-400 transition">
-                    {step.title}
-                  </h3>
+                  {/* TOP ROW */}
+                  <div className="flex items-start gap-6 mb-4">
+                    {/* ICON + NUMBER */}
+                    <div className="flex items-center gap-3">
 
-                  {/* ICON + NUMBER */}
-                  <div className="flex items-center gap-3">
+                      <Icon className="w-8 h-8 text-white" />
 
-                    <img
-                      src={step.icon}
-                      alt={step.title}
-                      className="w-8 h-8 object-contain"
-                    />
-
-                    <div className="text-white text-lg font-bold">
-                      {step.number}
                     </div>
 
+                    {/* <div className="text-white text-lg font-bold">
+                      {step.number}
+                    </div> */}
+                    {/* TITLE */}
+                    <h3 className="text-xl font-semibold text-white group-hover:text-pink-400 transition">
+                      {step.title}
+                    </h3>
+
+
+
                   </div>
+
+                  {/* DESCRIPTION */}
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {step.desc}
+                  </p>
+
                 </div>
-
-                {/* DESCRIPTION */}
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  {step.desc}
-                </p>
-
-              </div>
-            ))}
+              );
+            })}
 
           </div>
 

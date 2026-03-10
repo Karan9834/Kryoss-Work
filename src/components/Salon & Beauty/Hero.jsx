@@ -49,6 +49,7 @@ const Hero = () => {
               Own Uber for Beauty{" "}
             </span>
             App
+            Launch Your <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] bg-clip-text text-transparent"> Own Uber for Beauty </span>App
           </h1>
 
           {/* Paragraph */}
@@ -56,10 +57,11 @@ const Hero = () => {
             Transform your salon business or startup with a cutting-edge beauty
             service app. We offer on-demand beauty app development, delivering
             advanced solutions tailored to your needs.
+            Transform your salon business or startup with a cutting-edge beauty service app. We offer on-demand beauty app development, delivering advanced solutions tailored to your needs.
           </p>
 
           {/* Button */}
-          <button className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] px-6 sm:px-8 py-3 rounded-full text-white font-semibold text-base shadow-md hover:scale-105 transition duration-300 mx-auto md:mx-0">
+          <button className=" w-fit bg-gradient-to-r from-[#FF2485] to-[#C739FF] px-6 sm:px-8 py-3 rounded-full text-white font-semibold text-base shadow-md hover:scale-105 transition duration-300 mx-auto md:mx-0">
             Let's Discuss →
           </button>
         </div>
@@ -73,6 +75,7 @@ const Hero = () => {
           />
         </div>
       </div>
+
     </section>
   );
 };

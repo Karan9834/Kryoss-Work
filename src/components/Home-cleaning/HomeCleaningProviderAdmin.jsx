@@ -1,36 +1,44 @@
 import React from "react";
+import {
+  ClipboardList,
+  CalendarClock,
+  CreditCard,
+  MapPin,
+  Star,
+  BarChart3,
+} from "lucide-react";
 
 const HomeCleaningProviderAdmin = () => {
   const features = [
     {
       title: "Service Request Management",
       desc: "Easily track and assign service requests to available cleaners in real time.",
-      icon: "/provider/icon1.png",
+      icon: ClipboardList,
     },
     {
       title: "Provider Scheduling",
       desc: "Manage and update cleaner schedules for optimal service delivery and efficiency.",
-      icon: "/provider/icon2.png",
+      icon: CalendarClock,
     },
     {
       title: "Payment Management",
       desc: "Handle secure payments, view earnings, and process payouts for service providers.",
-      icon: "/provider/icon3.png",
+      icon: CreditCard,
     },
     {
       title: "Real-Time Tracking",
       desc: "Monitor provider status and location for timely cleaning delivery.",
-      icon: "/provider/icon4.png",
+      icon: MapPin,
     },
     {
       title: "Ratings & Reviews",
       desc: "View feedback and ratings to maintain high service standards.",
-      icon: "/provider/icon5.png",
+      icon: Star,
     },
     {
       title: "Performance Analytics",
       desc: "Generate reports to track provider performance and optimize operations.",
-      icon: "/provider/icon6.png",
+      icon: BarChart3,
     },
   ];
 
@@ -41,14 +49,16 @@ const HomeCleaningProviderAdmin = () => {
         {/* ===== Center Content ===== */}
         <div className="text-center max-w-6xl mx-auto mb-16">
 
-          
           <div className="inline-flex items-center gap-2 bg-[#eaf4fd] px-4 py-1.5 rounded-full border border-[#b7d4f6] text-sm text-gray-700 mb-6">
-          <span className="w-2.5 h-2.5 bg-blue-500 rounded-full"></span>
-         Provider Admin Web Panel Features
-        </div>
+            <span className="w-2.5 h-2.5 bg-blue-500 rounded-full"></span>
+            Provider Admin Web Panel Features
+          </div>
 
           <h3 className="text-lg sm:text-4xl font-bold text-gray-700 mb-6">
-           <span className="text-[#1d79c6]">  Key Features of the Provider Web Panel</span> for House Cleaning App
+            <span className="text-[#1d79c6]">
+              Key Features of the Provider Web Panel
+            </span>{" "}
+            for House Cleaning App
           </h3>
 
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
@@ -73,41 +83,45 @@ const HomeCleaningProviderAdmin = () => {
           </div>
 
           {/* RIGHT SCROLLABLE CARDS */}
-          <div className="max-h-[540px] overflow-y-auto pr-3 space-y-6 scrollbar-thin">
+          <div className="max-h-[540px] overflow-y-auto pr-3 space-y-6"
+            style={{
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+            }}>
 
-            {features.map((item, index) => (
-              <div
-                key={index}
-                className="group border rounded-2xl p-6 transition duration-300
+            {features.map((item, index) => {
+              const Icon = item.icon;
+
+              return (
+                <div
+                  key={index}
+                  className="group border rounded-2xl p-6 transition duration-300
                            border-[#55D7FF]
                            hover:bg-gradient-to-r 
                            hover:from-[#009ACA] 
                            hover:to-[#006C8D] 
                            hover:text-white"
-              >
+                >
 
-                {/* Icon + Title */}
-                <div className="flex items-center gap-4 mb-3">
+                  {/* Icon + Title */}
+                  <div className="flex items-center gap-4 mb-3">
 
-                  <img
-                    src={item.icon}
-                    alt={item.title}
-                    className="w-12 h-12 object-contain"
-                  />
+                    <Icon className="w-12 h-12 text-[#009ACA] group-hover:text-white" />
 
-                  <h4 className="font-semibold text-lg">
-                    {item.title}
-                  </h4>
+                    <h4 className="font-semibold text-lg">
+                      {item.title}
+                    </h4>
+
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-sm text-gray-600 group-hover:text-white/90 transition">
+                    {item.desc}
+                  </p>
 
                 </div>
-
-                {/* Description */}
-                <p className="text-sm text-gray-600 group-hover:text-white/90 transition">
-                  {item.desc}
-                </p>
-
-              </div>
-            ))}
+              );
+            })}
 
           </div>
 

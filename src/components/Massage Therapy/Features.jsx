@@ -11,20 +11,20 @@ const featuresData = {
       { title: "Manage Profile", desc: "A user can manage their profile information such as name, email, contact details, and profile picture." },
       { title: "Payment Option", desc: "To pay for therapists sessions, the user has multiple payment options like cash, credit, and in-app wallet." },
       { title: "Review & Rating", desc: "After completed services, users can give reviews & ratings to therapists based on their experience." },
-      
+
     ],
   },
   provider: {
     image:
       "https://whitelabelfox.com/assets/images/uber-massage-therapy-app/fox-massage-page-provider-app-features-image.webp",
     items: [
-        { title: "Social Login", desc: "A therapist has the option to login through their social account like Facebook, Google, or via Email." },
+      { title: "Social Login", desc: "A therapist has the option to login through their social account like Facebook, Google, or via Email." },
       { title: "Available Status", desc: "A therapist can manage their status On/Off based on their availability for a new service request." },
       { title: "Navigation", desc: "To find the exact location of the user, the therapist can use Google map navigation within the app." },
       { title: "Earning Report", desc: "A therapist can view their earning report with all completed, cancel, running, and pending services requests." },
       { title: "Manage Services", desc: "Therapists can easily manage service requests with a simple accept or reject option" },
       { title: "Rate User", desc: "After completed the services, the therapist can give feedback to the user based on their services experience." },
-       
+
     ],
   },
 };
@@ -40,17 +40,17 @@ const Features = () => {
 
         {/* ===== Top Content ===== */}
         <div className="max-w-3xl mx-auto mb-12">
-         <div className="flex items-center justify-center gap-2 bg-white px-4 py-1.5 rounded-full mb-6 w-fit mx-auto border-2">
-  <span className="w-2.5 h-2.5 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
- Key Features
-</div>
+          <div className="flex items-center justify-center gap-2 bg-white px-4 py-1.5 rounded-full mb-6 w-fit mx-auto border-2">
+            <span className="w-2.5 h-2.5 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
+            Key Features
+          </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
             <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">Powerful Features of Our</span> Uber for Massage App
           </h2>
 
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-           Our Uber for Massage app is designed with advanced features to ensure a smooth experience for both users and providers. With our solution, customers can easily book massages, while providers can manage their services efficiently. </p>
+            Our Uber for Massage app is designed with advanced features to ensure a smooth experience for both users and providers. With our solution, customers can easily book massages, while providers can manage their services efficiently. </p>
         </div>
 
         {/* ===== Toggle Buttons ===== */}
@@ -59,11 +59,10 @@ const Features = () => {
             <button
               key={type}
               onClick={() => setActiveTab(type)}
-              className={`px-6 py-2 rounded-full font-semibold transition duration-300 ${
-                activeTab === type
+              className={`px-6 py-2 rounded-full font-semibold transition duration-300 ${activeTab === type
                   ? "bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-white"
                   : "border border-gray-300 text-gray-700"
-              }`}
+                }`}
             >
               {type === "user" ? "User App" : "Provider App"}
             </button>
@@ -123,7 +122,7 @@ const FeatureCard = ({ item }) => {
       <div className="flex items-start gap-4">
 
         {/* Icon */}
-        <div className="w-12 h-12 flex items-center justify-center 
+        <div className="w-12 h-12 flex shrink-0 flex items-center justify-center 
                         rounded-full 
                         bg-[#C739FF]/20 
                         text-[#FF2485] 

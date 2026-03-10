@@ -22,7 +22,11 @@ const DogWalkingWorkflow = () => {
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 px-8 lg:px-16 py-20">
 
           {/* LEFT SIDE TEXT */}
-          <div className="text-white space-y-6 max-h-[420px] overflow-y-auto pr-4 lg:pr-8 z-10">
+          <div className="text-white space-y-6 max-h-[420px] overflow-y-auto pr-4 lg:pr-8 z-10"
+            style={{
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+            }}>
 
             {/* Badge */}
             <div className="inline-flex items-center gap-2 border border-white/40 rounded-full px-4 py-1 text-sm">

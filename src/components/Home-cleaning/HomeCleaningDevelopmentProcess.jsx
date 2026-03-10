@@ -59,19 +59,20 @@ const HomeCleaningDevelopmentProcess = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className={`group perspective 
-              ${index === 1 || index === 3 ? "md:mt-12" : ""}`}
+              className="group perspective"
             >
-              <div className="relative h-[350px] w-full 
-                              transition-transform duration-700 
-                              transform-style preserve-3d 
-                              group-hover:rotate-y-180">
+              <div
+                className="relative h-[350px] w-full 
+      transition-transform duration-700 
+      transform-style preserve-3d 
+      group-hover:rotate-y-180"
+              >
 
                 {/* FRONT SIDE */}
                 <div className="absolute inset-0 bg-[#EAF7FB] 
-                                rounded-3xl p-8 
-                                border border-[#55D7FF] 
-                                backface-hidden">
+        rounded-3xl p-8 
+        border border-[#55D7FF] 
+        backface-hidden">
 
                   <h3 className="text-2xl font-semibold text-[#009ACA] mb-6 text-center">
                     {step.title}
@@ -86,13 +87,13 @@ const HomeCleaningDevelopmentProcess = () => {
 
                 {/* BACK SIDE */}
                 <div className="absolute inset-0 bg-white 
-                                rounded-3xl p-8 
-                                border border-[#55D7FF] 
-                                rotate-y-180 
-                                backface-hidden 
-                                 items-center justify-center text-center">
+        rounded-3xl p-8 
+        border border-[#55D7FF] 
+        rotate-y-180 
+        backface-hidden 
+        items-center justify-center text-center">
 
-                                     <h3 className="text-2xl font-semibold text-[#009ACA] mb-6">
+                  <h3 className="text-2xl font-semibold text-[#009ACA] mb-6">
                     {step.title}
                   </h3>
 

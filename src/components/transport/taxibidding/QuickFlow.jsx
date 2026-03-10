@@ -8,7 +8,12 @@ const QuickFlowSection = () => {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-stretch">
 
         {/* LEFT SIDE - INTERNAL SCROLL */}
-        <div className="h-[650px] overflow-y-auto pr-6 custom-scroll">
+        <div className="h-[650px] overflow-y-auto pr-6 custom-scroll"
+          style={{
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
+        >
 
           {/* Pill */}
           <div className="inline-flex items-center gap-2 border border-white/20 px-4 py-1 rounded-full text-sm mb-6">

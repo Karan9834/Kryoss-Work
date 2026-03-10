@@ -42,7 +42,7 @@ const DevelopmentProcess = () => {
           </div>
 
           <h2 className="text-3xl md:text-5xl font-semibold mb-6">
-          Effortless   {" "}
+            Effortless   {" "}
             <span className="text-[#FF2C87]">Masage App </span>  Development Process
           </h2>
 
@@ -59,8 +59,8 @@ const DevelopmentProcess = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className={`group perspective 
-              ${index === 1 || index === 3 ? "md:mt-12" : ""}`}
+              className="group perspective"
+
             >
               <div className="relative h-[350px] w-full 
                               transition-transform duration-700 
@@ -92,7 +92,7 @@ const DevelopmentProcess = () => {
                                 backface-hidden 
                                  items-center justify-center text-center">
 
-                                     <h3 className="text-2xl font-semibold text-[#FF2C87] mb-6">
+                  <h3 className="text-2xl font-semibold text-[#FF2C87] mb-6">
                     {step.title}
                   </h3>
 

@@ -74,7 +74,11 @@ const PestHowItWorks = () => {
           <div className="grid lg:grid-cols-2 gap-16">
 
             {/* LEFT SCROLLABLE STEPS */}
-            <div className="space-y-10 max-h-[450px] overflow-y-auto pr-4">
+            <div className="space-y-10 max-h-[450px] overflow-y-auto pr-4"
+              style={{
+                scrollbarWidth: "none",
+                msOverflowStyle: "none",
+              }}>
 
               {steps.map((step, index) => (
                 <div key={index} className="flex gap-5">
