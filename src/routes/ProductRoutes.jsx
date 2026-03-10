@@ -1,5 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import ProductsShowcase from '../pages/products/ProductsShowcase';
+import ProductDetailsPlaceholder from '../pages/products/ProductDetailsPlaceholder';
 
 import TaxiBookingUber from '../pages/products/transport-app-solutions/TaxiBookingUber';
 import TaxiBiddingApp from '../pages/products/transport-app-solutions/TaxiBiddingApp';
@@ -22,6 +24,8 @@ import TowTruck from "../pages/products/Ondemand-homeservice/TowTruck";
 import LaundryService from "../pages/products/Ondemand-homeservice/LaundryService";
 
 export const ProductRoutes = [
+    <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
+    <Route key="products-details" path="products/:id" element={<ProductDetailsPlaceholder />} />,
     <Route key="taxi-uber" path="products/transport/uber-clone" element={<TaxiBookingUber />} />,
     <Route key="taxi-bidding" path="products/transport/indrive-clone" element={<TaxiBiddingApp />} />,
     <Route key="bike-riding" path="products/transport/rapido-clone" element={<BikeRidingApp />} />,

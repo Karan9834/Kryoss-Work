@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import NavItem from './NavItem';
@@ -11,6 +11,19 @@ import CompanyMenu from './CompanyMenu';
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [activeMenu, setActiveMenu] = useState(null);
+    const menuTimeoutRef = useRef(null);
+
+    const handleMenuEnter = (menuName) => {
+        if (menuTimeoutRef.current) clearTimeout(menuTimeoutRef.current);
+        setActiveMenu(menuName);
+    };
+
+    const handleMenuLeave = () => {
+        menuTimeoutRef.current = setTimeout(() => {
+            setActiveMenu(null);
+        }, 150);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,24 +44,52 @@ const Navbar = () => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden lg:flex items-center gap-1 h-full ml-auto mr-8">
-                        <NavItem label="Gojek Clone">
+                    <div
+                        className="hidden lg:flex items-center gap-1 h-full ml-auto mr-8"
+                        onMouseLeave={handleMenuLeave}
+                    >
+                        <NavItem
+                            label="Gojek Clone"
+                            isOpen={activeMenu === 'Gojek Clone'}
+                            onMouseEnter={() => handleMenuEnter('Gojek Clone')}
+                            onClick={() => setActiveMenu(null)}
+                        >
                             <GojekMegaMenu />
                         </NavItem>
 
-                        <NavItem label="Products">
+                        <NavItem
+                            label="Products"
+                            isOpen={activeMenu === 'Products'}
+                            onMouseEnter={() => handleMenuEnter('Products')}
+                            onClick={() => setActiveMenu(null)}
+                        >
                             <ProductsMegaMenu />
                         </NavItem>
 
-                        <NavItem label="Services">
+                        <NavItem
+                            label="Services"
+                            isOpen={activeMenu === 'Services'}
+                            onMouseEnter={() => handleMenuEnter('Services')}
+                            onClick={() => setActiveMenu(null)}
+                        >
                             <ServicesMegaMenu />
                         </NavItem>
 
-                        <NavItem label="Solutions">
+                        <NavItem
+                            label="Solutions"
+                            isOpen={activeMenu === 'Solutions'}
+                            onMouseEnter={() => handleMenuEnter('Solutions')}
+                            onClick={() => setActiveMenu(null)}
+                        >
                             <SolutionsMenu />
                         </NavItem>
 
-                        <NavItem label="Company">
+                        <NavItem
+                            label="Company"
+                            isOpen={activeMenu === 'Company'}
+                            onMouseEnter={() => handleMenuEnter('Company')}
+                            onClick={() => setActiveMenu(null)}
+                        >
                             <CompanyMenu />
                         </NavItem>
 
@@ -87,7 +128,7 @@ const Navbar = () => {
                 <div className="lg:hidden bg-white border-t border-gray-50 p-6 absolute top-full left-0 right-0 shadow-2xl animate-in slide-in-from-top duration-300">
                     <div className="flex flex-col gap-6">
                         <div className="text-lg font-semibold text-gray-800">Gojek Clone</div>
-                        <div className="text-lg font-semibold text-gray-800">Products</div>
+                        <Link to="/products" className="text-lg font-bold text-gray-800 hover:text-primary" onClick={() => setMobileMenuOpen(false)}>Products</Link>
                         <div className="text-lg font-semibold text-gray-800">Services</div>
                         <div className="text-lg font-semibold text-gray-800">Solutions</div>
                         <div className="text-lg font-semibold text-gray-800">Company</div>
