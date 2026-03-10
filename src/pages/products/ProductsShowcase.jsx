@@ -31,6 +31,13 @@ const ProductsShowcase = () => {
         return () => clearTimeout(timer);
     }, [searchQuery, selectedCategory, selectedFilter]);
 
+    // Handle smooth scroll when page changes
+    useEffect(() => {
+        if (resultsRef.current && !isLoading) {
+            resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }, [currentPage]);
+
     // Filter products based on search, category, and filter type
     const filteredProducts = useMemo(() => {
         return products.filter((product) => {
@@ -48,9 +55,6 @@ const ProductsShowcase = () => {
         setSelectedCategory('all');
         setSelectedFilter('All');
         setCurrentPage(1);
-        if (resultsRef.current) {
-            resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
     };
 
     // Calculate pagination slices
@@ -134,9 +138,6 @@ const ProductsShowcase = () => {
                                         setSearchQuery('');
                                         setSearchTerm('');
                                         setCurrentPage(1);
-                                        if (resultsRef.current) {
-                                            resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                        }
                                     }}
                                     className="text-sm font-bold text-primary hover:text-orange-600 transition-colors flex items-center gap-1 bg-white px-3 py-1.5 rounded-lg border border-gray-200 shadow-sm"
                                 >
@@ -155,9 +156,6 @@ const ProductsShowcase = () => {
                                         setSearchQuery('');
                                         setSearchTerm('');
                                         setCurrentPage(1);
-                                        if (resultsRef.current && (selectedCategory !== category.id)) {
-                                            resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                        }
                                     }}
                                 />
                             ))}
@@ -192,7 +190,10 @@ const ProductsShowcase = () => {
                             <ProductFilter
                                 options={filterOptions}
                                 selectedFilter={selectedFilter}
-                                onSelectFilter={setSelectedFilter}
+                                onSelectFilter={(filter) => {
+                                    setSelectedFilter(filter);
+                                    setCurrentPage(1);
+                                }}
                             />
                         </div>
 
@@ -237,9 +238,8 @@ const ProductsShowcase = () => {
                                         currentPage={currentPage}
                                         totalPages={totalPages}
                                         onPageChange={(page) => {
-                                            setCurrentPage(page);
-                                            if (resultsRef.current) {
-                                                resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                            if (page >= 1 && page <= totalPages) {
+                                                setCurrentPage(page);
                                             }
                                         }}
                                     />
