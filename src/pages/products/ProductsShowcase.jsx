@@ -20,6 +20,7 @@ const ProductsShowcase = () => {
     const itemsPerPage = 16;
 
     const resultsRef = useRef(null);
+    const isFirstRender = useRef(true);
 
     // Trigger filtering effect to simulate network/processing
     useEffect(() => {
@@ -31,12 +32,19 @@ const ProductsShowcase = () => {
         return () => clearTimeout(timer);
     }, [searchQuery, selectedCategory, selectedFilter]);
 
-    // Handle smooth scroll when page changes
+    // Handle smooth scroll when state updates (search, category, filter, page)
     useEffect(() => {
+        // Skip scroll on initial component mount
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+            return;
+        }
+
+        // Only scroll if we have the ref and we are NOT in a loading state
         if (resultsRef.current && !isLoading) {
             resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-    }, [currentPage]);
+    }, [currentPage, searchQuery, selectedCategory, selectedFilter, isLoading]);
 
     // Filter products based on search, category, and filter type
     const filteredProducts = useMemo(() => {
