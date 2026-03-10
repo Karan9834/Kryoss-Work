@@ -176,24 +176,20 @@ const BikeAppPreview = () => {
                     {infiniteScreenshots.map((item, index) => (
                         <div
                             key={`${item.id}-${index}`}
-                            className="min-w-[280px] md:min-w-[calc((1280px/5)-2rem)] snap-center"
+                            className="min-w-[280px] md:min-w-[300px] snap-center"
                         >
-                            <div className="bg-[#123126] rounded-[40px] p-2 md:p-3 border border-white/20 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] ring-1 ring-[#2ef2b5]/10 mx-auto max-w-full group/screenshot-container select-none">
-                                <div className="relative rounded-[32px] overflow-hidden group/screenshot aspect-[10/20] bg-[#0b3d2e]">
+                            <div className="bg-[#123126] border-[5px] border-white/10 rounded-[45px] p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-1 ring-[#2ef2b5]/10 mx-auto max-w-full group/screenshot-container select-none transition-all duration-500 hover:border-[#2ef2b5]/30">
+                                <div className="relative rounded-[38px] overflow-hidden group/screenshot aspect-[9/19] bg-[#0b3d2e]">
                                     <img
                                         src={item.src}
                                         alt={item.title}
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover/screenshot:scale-105 pointer-events-none select-none"
+                                        className="w-full h-full object-cover pointer-events-none select-none"
                                         draggable="false"
                                     />
                                     {/* Subtle Overlay on Screen */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#062016]/80 via-transparent to-transparent opacity-60"></div>
 
-                                    {/* Info Badge on Hover */}
-                                    <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#062016] via-[#062016]/60 to-transparent flex flex-col justify-end p-8 transform translate-y-full group-hover/screenshot:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]">
-                                        <p className="text-white font-bold text-lg mb-1">{item.title}</p>
-                                        <p className="text-[#2ef2b5] text-xs font-black tracking-widest uppercase">Verified Screen</p>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

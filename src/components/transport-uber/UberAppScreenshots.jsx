@@ -195,21 +195,17 @@ const UberAppScreenshots = () => {
                     {infiniteScreenshots.map((item, index) => (
                         <div
                             key={`${item.id}-${index}`}
-                            className="min-w-[280px] md:min-w-[calc((1280px/5)-1.5rem)] snap-center"
+                            className="min-w-[280px] md:min-w-[300px] snap-center"
                         >
-                            <div className="bg-[#1e1e1e] rounded-[32px] md:rounded-[40px] p-2.5 md:p-3 border border-white/10 shadow-[0_20px_40px_-12px_rgba(0,0,0,0.5)] ring-1 ring-white/5 mx-auto max-w-full group/screenshot-container select-none">
-                                <div className="relative rounded-[24px] md:rounded-[30px] overflow-hidden group/screenshot aspect-[10/20]">
+                            <div className="bg-[#1e1e1e] border-[5px] border-white/10 rounded-[45px] p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] mx-auto max-w-full group/screenshot-container select-none transition-all duration-500 hover:border-white/20">
+                                <div className="relative rounded-[38px] overflow-hidden group/screenshot aspect-[9/19]">
                                     <img
                                         src={item.src}
                                         alt={item.title}
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover/screenshot:scale-105 pointer-events-none select-none"
+                                        className="w-full h-full object-cover pointer-events-none select-none"
                                         draggable="false"
                                     />
-                                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover/screenshot:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-                                    <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 transform translate-y-full group-hover/screenshot:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]">
-                                        <p className="text-white font-semibold text-xl mb-1">{item.title}</p>
-                                        <p className="text-white/60 text-sm">Interactive UI Experience</p>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

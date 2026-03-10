@@ -6,6 +6,7 @@ import TestimonialPage from '../pages/company/Testimonial';
 import HealthcareSolution from '../pages/solutions/Healthcare';
 import LifeAtKryossWorkPage from '../pages/company/LifeArKryossWork';
 
+import CareerPage from '../pages/company/Careers';
 export const CompanyRoutes = [
     <Route key="company-about" path="company/about" element={<AboutPage />} />,
     <Route key="company-contact" path="company/contact" element={<ContactPage />} />,
@@ -13,4 +14,5 @@ export const CompanyRoutes = [
         <Route key="company-life" path="company/life-at-kryosswork" element={<LifeAtKryossWorkPage />} />,
     <Route key="solutions-healthcare" path="solutions/healthcare" element={<HealthcareSolution />} />,
     // Add other company/solution routes here
+    <Route key="company-career" path="company/careers" element={<CareerPage />} />
 ];

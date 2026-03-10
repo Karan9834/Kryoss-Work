@@ -15,15 +15,32 @@ const SnowHero = () => {
 
                     <div className="flex items-center gap-4 mb-6">
 
-                        <div className="bg-gradient-to-br from-[#49c5d4] to-[#2f8ccf] p-4 rounded-xl text-white text-2xl">
-                            🚜
-                        </div>
+  {/* Icon */}
+  <div className="bg-gradient-to-br from-[#49c5d4] to-[#2f8ccf] 
+      p-4 rounded-xl text-white text-2xl
+      shadow-[0_0_18px_rgba(47,140,207,0.85)]">
 
-                        <h4 className="text-3xl font-bold tracking-wide text-gray-800">
-                            FOX-SNOWPLOWS
-                        </h4>
+      <span className="drop-shadow-[0_0_6px_rgba(255,255,255,0.9)]">
+        ❄️
+      </span>
 
-                    </div>
+  </div>
+
+  {/* Brand */}
+  <h4 className="text-3xl font-bold tracking-wide uppercase">
+
+      <span className="text-[#2f8ccf] 
+            drop-shadow-[0_0_8px_rgba(47,140,207,0.9)]">
+        VYOM
+      </span>
+
+      <span className="text-gray-800 ml-2">
+        SNOW
+      </span>
+
+  </h4>
+
+</div>
 
                     <h1 className="text-4xl lg:text-5xl font-semibold text-gray-800 mb-6 leading-tight">
 

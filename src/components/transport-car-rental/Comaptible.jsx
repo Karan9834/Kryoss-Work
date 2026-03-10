@@ -1,5 +1,5 @@
 import React from "react";
-import campatible from "../../assets/Car-rental/capatible.webp"
+import campatible from "../../assets/Car-rental/capatible.webp";
 
 const items = [
   "Customer Android + iOS App",
@@ -14,22 +14,17 @@ const items = [
 const CompatibleSection = () => {
   return (
     <section className="bg-gray-100 pt-20">
-
       {/* ---------- TOP ---------- */}
 
       <div className="max-w-6xl mx-auto text-center px-4">
-
         {/* pill */}
         <div className="flex justify-center mb-4">
           <div className="flex items-center gap-2 border rounded-full px-4 py-1 bg-white">
-
             <span className="w-2.5 h-2.5 bg-blue-500 rounded-full"></span>
 
             <span>What We Provide</span>
-
           </div>
         </div>
-
 
         <h2 className="text-2xl md:text-4xl font-bold">
           Car Rental App Script{" "}
@@ -38,34 +33,26 @@ const CompatibleSection = () => {
           </span>
         </h2>
 
-
         <p className="mt-3 text-gray-600 max-w-3xl mx-auto">
-          Offer a seamless car rental booking experience on Android,
-          iOS, and Web with our scalable solution.
+          Offer a seamless car rental booking experience on Android, iOS, and
+          Web with our scalable solution.
         </p>
-
-
 
         {/* DEVICES IMAGE */}
 
         <div className="relative mt-10 z-10 flex justify-center">
-
-  <img
-    src={campatible}
-    className="
+          <img
+            src={campatible}
+            className="
       w-[280px]
       sm:w-[420px]
       md:w-[600px]
       lg:w-[720px]
       object-contain
     "
-  />
-
-</div>
-
+          />
+        </div>
       </div>
-
-
 
       {/* ---------- DARK BOX ---------- */}
 
@@ -81,11 +68,8 @@ const CompatibleSection = () => {
           rounded-t-[80px]
         "
       >
-
         <div className="max-w-6xl mx-auto px-4">
-
           <div className="grid md:grid-cols-3 gap-6">
-
             {items.map((item, i) => (
               <div
                 key={i}
@@ -105,13 +89,9 @@ const CompatibleSection = () => {
                 {item}
               </div>
             ))}
-
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 };
