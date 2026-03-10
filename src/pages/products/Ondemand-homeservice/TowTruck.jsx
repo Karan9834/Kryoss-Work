@@ -16,7 +16,7 @@ import TowTruckWhyUs from '@/components/homeservice-towtruck/TowTruckWhyUs';
 import TowTruckDevelopment from '@/components/homeservice-towtruck/TowTruckDevelopment';
 import TowTruckCTA3 from '@/components/homeservice-towtruck/TowTruckCTA3';
 import TowTruckBusinessWeSupport from '@/components/homeservice-towtruck/TowTruckBusinessWeSupport';
-import TowTruckClientFeedback from '@/components/homeservice-towtruck/TowTruckClientFeedback';
+// import TowTruckClientFeedback from '@/components/homeservice-towtruck/TowTruckClientFeedback';
 import TowTruckProductShowcase from '@/components/homeservice-towtruck/TowTruckProductShowcase';
 import TowTruckAwards from '@/components/homeservice-towtruck/TowTruckAwards';
 import TowTruckFAQ from '@/components/homeservice-towtruck/TowTruckFAQ';
@@ -43,7 +43,7 @@ const TowTruck = () => {
             <TowTruckDevelopment />
             <TowTruckCTA3 />
             <TowTruckBusinessWeSupport />
-            <TowTruckClientFeedback />
+            {/* <TowTruckClientFeedback /> */}
             <TowTruckProductShowcase />
             <TowTruckAwards />
             <TowTruckFAQ />

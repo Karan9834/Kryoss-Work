@@ -1,62 +1,122 @@
-import React from 'react';
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion";
+import React, { useState } from "react";
+import { Plus, Minus } from "lucide-react";
 
-const faqs = [
+const uberFaqs = [
     {
-        q: "What is an Uber clone script?",
-        a: "An Uber clone script is a ready-to-launch software solution that replicates the core features and functionality of the Uber ride-hailing app, allowing entrepreneurs to start their own taxi booking business quickly."
+        q: "How does a ride-hailing app work for taxi businesses?",
+        a: "A ride-hailing app connects passengers with drivers through a mobile platform. Users can book rides, track drivers in real time, and make payments through integrated gateways."
     },
     {
-        q: "How much does it cost to build a taxi app like Uber?",
-        a: "The cost varies based on features, customization, and platform (iOS, Android, or both). Our ready-made solution is significantly more cost-effective than building from scratch."
+        q: "What is the best way to launch a taxi booking app quickly?",
+        a: "The fastest way is to start with a scalable white-label solution that can be customized with your branding and features before launch."
     },
     {
-        q: "Is the Uber clone script scalable?",
-        a: "Yes, our solution is built on a robust architecture that can handle thousands of drivers and concurrent ride requests as your business grows."
+        q: "Who should invest in a ride-hailing app solution?",
+        a: "Taxi companies, entrepreneurs, mobility startups, and transportation service providers can benefit from investing in ride-hailing applications."
     },
     {
-        q: "Do you provide the source code?",
-        a: "Yes, we provide 100% source code ownership, allowing you to customize and host the software on your own servers."
+        q: "Can the platform be customized for local taxi operations?",
+        a: "Yes, ride-hailing apps can be customized with local pricing models, city-based operations, driver management, and regional regulations."
     },
     {
-        q: "Can I add more features in the future?",
-        a: "Absolutely! The modular code structure allows for easy integration of new features and third-party services as your business evolves."
+        q: "Does the solution support multiple ride services in one app?",
+        a: "Yes, the platform can support services like bike rides, car rides, premium rides, and delivery services in a single app."
+    },
+    {
+        q: "How long does it usually take to go live with the platform?",
+        a: "Depending on customization and testing, the platform can typically go live within 4 to 8 weeks."
+    },
+    {
+        q: "Is the platform scalable as the business grows?",
+        a: "Yes, the platform is designed to scale easily by supporting more drivers, users, cities, and additional services."
+    },
+    {
+        q: "What revenue models are supported in the system?",
+        a: "Common revenue models include ride commissions, subscription plans for drivers, surge pricing, and service fees."
+    },
+    {
+        q: "How do admins manage drivers and trips efficiently?",
+        a: "Admins can monitor trips, manage drivers, track earnings, and control operations through a centralized admin dashboard."
+    },
+    {
+        q: "Are security and safety features included?",
+        a: "Yes, the platform includes features like driver verification, emergency alerts, trip tracking, and secure payment processing."
     }
 ];
 
-const UberFAQ = () => {
+const UberFaqs = () => {
+    const [open, setOpen] = useState(null);
+
+    const toggle = (index) => {
+        setOpen(open === index ? null : index);
+    };
+
     return (
-        <section className="py-24 bg-gray-50">
-            <div className="container mx-auto px-4 sm:px-10 lg:px-20">
-                <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                    <h2 className="text-sm uppercase tracking-[0.2em] font-bold text-primary">Support</h2>
-                    <h3 className="text-3xl md:text-5xl font-extrabold text-gray-900">
-                        Frequently Asked <span className="text-primary">Questions</span>
-                    </h3>
+        <section className="py-24 bg-white">
+
+            <div className="max-w-7xl mx-auto px-6">
+
+                {/* heading */}
+                <div className="text-center mb-16">
+
+                    <span className="border rounded-full px-4 py-1 text-sm inline-flex items-center gap-2 mb-4">
+                        <span className="w-2 h-2 bg-black rounded-full"></span>
+                        FAQ's
+                    </span>
+
+                    <h2 className="text-4xl font-semibold">
+                        Frequently Asked Questions
+                    </h2>
+
                 </div>
 
-                <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-[3rem] border border-gray-100 shadow-sm">
-                    <Accordion type="single" collapsible className="w-full">
-                        {faqs.map((faq, idx) => (
-                            <AccordionItem key={idx} value={`item-${idx}`} className="border-b border-gray-100 last:border-0 py-2">
-                                <AccordionTrigger className="text-left text-lg font-bold text-gray-800 hover:text-primary transition-colors hover:no-underline">
+
+                {/* grid */}
+                <div className="grid md:grid-cols-2 gap-x-16">
+
+                    {uberFaqs.map((faq, index) => {
+
+                        const isOpen = open === index;
+
+                        return (
+                            <div key={index} className="border-b py-6">
+
+                                <button
+                                    onClick={() => toggle(index)}
+                                    className="flex justify-between items-center w-full text-left text-lg font-medium"
+                                >
+
                                     {faq.q}
-                                </AccordionTrigger>
-                                <AccordionContent className="text-gray-600 text-base leading-relaxed pt-4">
-                                    {faq.a}
-                                </AccordionContent>
-                            </AccordionItem>
-                        ))}
-                    </Accordion>
+
+                                    <span className="border rounded-full p-1 ml-4">
+
+                                        {isOpen ? (
+                                            <Minus size={18} />
+                                        ) : (
+                                            <Plus size={18} />
+                                        )}
+
+                                    </span>
+
+                                </button>
+
+                                {isOpen && (
+                                    <p className="mt-4 text-gray-600 leading-relaxed">
+                                        {faq.a}
+                                    </p>
+                                )}
+
+                            </div>
+                        );
+
+                    })}
+
                 </div>
+
             </div>
+
         </section>
     );
 };
 
-export default UberFAQ;
+export default UberFaqs;

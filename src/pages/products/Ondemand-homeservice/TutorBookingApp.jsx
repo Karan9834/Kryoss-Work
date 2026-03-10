@@ -17,7 +17,7 @@ import Development from '@/components/homeservice-tutorbooking/development';
 import DigitalFootprints from '@/components/homeservice-tutorbooking/digitalfootprints';
 import WhyUs from '@/components/homeservice-tutorbooking/whyus';
 import CTA3 from '@/components/homeservice-tutorbooking/cta3';
-import ClientsFeedback from '@/components/homeservice-tutorbooking/clientsfeedback';
+// import ClientsFeedback from '@/components/homeservice-tutorbooking/clientsfeedback';
 import ProductShowcase from '@/components/homeservice-tutorbooking/productshowcase';
 import Awards from '@/components/homeservice-tutorbooking/awards';
 import FAQs from '@/components/homeservice-tutorbooking/faqs';
@@ -44,7 +44,7 @@ const TutorBookingApp = () => {
             <DigitalFootprints />
             <WhyUs />
             <CTA3 />
-            <ClientsFeedback />
+            {/* <ClientsFeedback /> */}
             <ProductShowcase />
             <Awards />
             <FAQs />

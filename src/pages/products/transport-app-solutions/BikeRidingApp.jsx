@@ -14,6 +14,14 @@ import BikeWhatSpecial from '@/components/transport-bikeride/BikeWhatSpecial';
 import BikeDigitalFootprints from '@/components/transport-bikeride/BikeDigitalFootprints';
 import BikeWhyUs from '@/components/transport-bikeride/BikeWhyUs';
 import BikeCTA3 from '@/components/transport-bikeride/BikeCTA3';
+// import BikeClientFeedback from '@/components/transport-bikeride/BikeClientFeedback';
+import BikeFAQ from '@/components/transport-bikeride/BikeFAQ';
+import BikeTechStack from '@/components/transport-bikeride/BikeTechStack';
+import BikeAwards from '@/components/transport-bikeride/BikeAwards';
+import BikeContact from '@/components/transport-bikeride/BikeContact';
+import BikeProductShowCase from '@/components/transport-bikeride/BikeProductShowCase';
+import BikeBlogs from '@/components/transport-bikeride/BikeBlogs';
+import BikeGetUpdates from '@/components/transport-bikeride/BikeGetUpdates';
 
 const BikeRidingApp = () => {
     return (
@@ -32,6 +40,15 @@ const BikeRidingApp = () => {
             <BikeDigitalFootprints />
             <BikeWhyUs />
             <BikeCTA3 />
+            {/* <BikeClientFeedback /> */}
+            <BikeFAQ />
+            <BikeTechStack />
+            <BikeAwards />
+            <BikeContact />
+            <BikeProductShowCase />
+            <BikeBlogs />
+            <BikeGetUpdates />
+
         </>
 
     );

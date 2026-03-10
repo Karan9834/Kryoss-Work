@@ -11,7 +11,7 @@ const CTA2 = () => {
         style={{
         //   backgroundImage:
         //     "url('https://whitelabelfox.com/assets/images/uber-house-cleaning-app/cta-1-bg.webp')",
-background: "linear-gradient(84.32deg, #913417 0.19%, #AC573D 100%)",
+background: "linear-gradient(96.13deg, #00AFAE 0%, #006665 100%)",
 
 
         }}
@@ -24,13 +24,13 @@ background: "linear-gradient(84.32deg, #913417 0.19%, #AC573D 100%)",
             <h2 className="text-2xl sm:text-3xl md:text-4xl 
                            font-semibold text-white 
                            leading-tight mb-5">
-      Grow Your Beauty Business with an On-Demand App!
+  Empower Your Massage Business Today!
             </h2>
 
             <p className="text-white/90 text-sm sm:text-base 
                           leading-relaxed mb-6 max-w-xl 
                           mx-auto md:mx-0">
-              Take your beauty business to the next level with an on-demand Uber for Beauty App. Streamline bookings, enhance customer experiences, and expand your services efficiently.    </p>
+             Connect users with top therapists & streamline your business. Start today with our innovative, user-friendly app!  </p>
 
             <button className="bg-white text-blue-600 
                                font-semibold 
@@ -39,7 +39,7 @@ background: "linear-gradient(84.32deg, #913417 0.19%, #AC573D 100%)",
                                shadow-lg 
                                hover:scale-105 
                                transition duration-300">
-              Get Started Now 
+              Get Started Now !
             </button>
 
           </div>
@@ -47,7 +47,7 @@ background: "linear-gradient(84.32deg, #913417 0.19%, #AC573D 100%)",
           {/* ===== RIGHT IMAGE ===== */}
           <div className="flex justify-center md:justify-end">
             <img
-              src="https://whitelabelfox.com/assets/images/uber-beauty-app/Fox-Beauty-CTA-2-image.webp"
+              src="https://whitelabelfox.com/assets/images/uber-massage-therapy-app/fox-massage-page-cta-2-image.webp"
               alt="House Cleaning App Demo"
               className="w-full 
                          max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl

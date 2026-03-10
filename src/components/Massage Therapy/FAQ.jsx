@@ -6,54 +6,54 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is an Uber for Beauty App and how does it work?",
+      question: "What is the Uber for Massage App?",
       answer:
-        "An Uber for Beauty App connects users with beauty professionals for on-demand services. Customers book appointments via the app, and professionals come to their location. The platform simplifies booking, payment, and service management.",
+        "The Uber for Massage App is an on-demand platform that connects users with professional massage therapists. Users can easily book massage sessions through the app at their preferred time and location. It’s designed to provide a seamless, convenient experience for both clients and therapists.",
     },
     {
-      question: "Why is Beauty App Development becoming a trend in the salon industry?",
+      question: "How does the Uber for Massage App work for users?",
       answer:
-        "Beauty App Development allows businesses to offer on-demand services, catering to customers seeking convenience and flexibility. It helps beauty professionals expand their reach and enhance customer experience, driving business growth.",
+        "Users can browse available therapists, view their profiles, select a therapist, and schedule a session directly through the app. The app also offers real-time tracking, secure payment options, and instant notifications to keep users updated about their bookings.",
     },
     {
-      question: "How does an Uber for Beauty App improve the customer experience?",
+      question: "How does the Uber for Massage App work for massage therapists?",
       answer:
-        "An Uber for Beauty App provides easy service booking, real-time updates, and seamless payments. Customers can select beauty professionals based on ratings and reviews, ensuring a smooth and convenient experience every time.",
+        "Massage therapists can create profiles, set their availability, and accept booking requests through the app. They can manage appointments, track their earnings, and ensure smooth payment transactions all within the app.",
     },
     {
-      question: "What are the key features of an Uber for Beauty App?",
+      question: "What features does the Uber for Massage App offer?",
       answer:
-        "Key features include real-time tracking, secure payment processing, user profiles, booking management, and customer ratings. These features ensure a seamless experience for both customers and beauty professionals.",
+        "Our app comes with features like booking management, real-time location tracking, secure payment processing, client reviews and ratings, notifications, in-app messaging, and an easy-to-use admin panel to manage the entire process efficiently.",
     },
     {
-      question: "Can I customize my Uber for Beauty App to fit my salon's needs?",
+      question: "Can I customize the Uber for Massage App for my business?",
       answer:
-        "Yes, the app can be fully customized to reflect your branding, services, and pricing models. You can tailor the app’s functionality to meet your specific business requirements and enhance user engagement.",
+        "Yes, the Uber Massage Therapy App is fully customizable. You can tailor the app to suit your specific needs, including branding, features, and design, ensuring a unique experience for your users.",
     },
     {
-      question: "How does Beauty App Development help beauty professionals grow their business?",
+      question: "How long does it take to launch the Uber for Massage App?",
       answer:
-        "Beauty App Development helps beauty professionals reach more customers, manage appointments efficiently, and streamline payment processing. It provides an organized platform for professionals to grow their clientele and manage their business.",
+        "Our On-Demand Massage App Development solution allows you to launch your app in just 5 working days, ensuring a quick and efficient setup for your massage therapy business.",
     },
     {
-      question: "What platforms are available for an Uber for Beauty App?",
+      question: "Is the Uber for Massage App secure?",
       answer:
-        "Uber for Beauty Apps are typically available on iOS, Android, and web platforms. This ensures accessibility to a larger user base and supports businesses in reaching a wide audience across mobile devices and desktop browsers.",
+        "Yes, the app is built with robust security measures to protect user data, payments, and privacy. Secure payment gateways and encrypted communication ensure a safe experience for both clients and therapists.",
     },
     {
-      question: "How much does it cost to develop an Uber for Beauty App?",
+      question: "What are the benefits of using the Uber for Massage App for my business?",
       answer:
-        "The cost of developing an Uber for Beauty App depends on the complexity and customization of the features. Typically, pre-built solutions are more affordable than custom development, with pricing varying based on functionality and platform.",
+        "The app helps you scale your business quickly, manage bookings and payments, and offer a convenient, customer-friendly platform for massage therapy. You can also track performance, offer personalized services, and improve customer satisfaction with real-time updates.",
     },
     {
-      question: "How do I promote my Uber for Beauty App to attract more users?",
+      question: "Can I track the location of my massage therapist?",
       answer:
-        "Promote your app through digital marketing, social media campaigns, and referral programs. Collaborating with beauty influencers and offering promotions can help increase visibility and attract more users to the platform.",
+        "Yes, the Uber for Massage App offers real-time location tracking for both clients and therapists. This feature ensures that users can track their therapist’s arrival and ensures a smoother overall experience.",
     },
     {
-      question: "How does Beauty App Development ensure security for users and service providers?",
+      question: "How do I pay for the massage services through the app?",
       answer:
-        "If you have any queries or issues, you can contact our Beauty App Development incorporates secure payment gateways, data encryption, and two-factor authentication to protect both users' and service providers' information. Security measures are implemented to prevent unauthorized access and ensure safe transactions.",
+        "Payment is easy and secure. You can add your preferred payment method to the app, and it will be charged automatically after your massage is complete.",
     },
   ];
 

@@ -1,5 +1,19 @@
 import React, { useState, useRef, useEffect } from 'react';
+import Bikeridepassanger1 from "../../assets/transport-bikeride-img/Bikeridepassanger1.webp"
+import Bikeridepassanger2 from "../../assets/transport-bikeride-img/Bikeridepassanger2.webp"
+import Bikeridepassanger3 from "../../assets/transport-bikeride-img/Bikeridepassanger3.webp"
+import Bikeridepassanger4 from "../../assets/transport-bikeride-img/Bikeridepassanger4.webp"
+import Bikeridepassanger5 from "../../assets/transport-bikeride-img/Bikeridepassanger5.webp"
+import Bikeridepassanger6 from "../../assets/transport-bikeride-img/Bikeridepassanger6.webp"
+import Bikeridepassanger7 from "../../assets/transport-bikeride-img/Bikeridepassanger7.webp"
 
+import Bikeridedriver1 from "../../assets/transport-bikeride-img/Bikeridedriver1.webp"
+import Bikeridedriver2 from "../../assets/transport-bikeride-img/Bikeridedriver2.webp"
+import Bikeridedriver3 from "../../assets/transport-bikeride-img/Bikeridedriver3.webp"
+import Bikeridedriver4 from "../../assets/transport-bikeride-img/Bikeridedriver4.webp"
+import Bikeridedriver5 from "../../assets/transport-bikeride-img/Bikeridedriver5.webp"
+import Bikeridedriver6 from "../../assets/transport-bikeride-img/Bikeridedriver6.webp"
+import Bikeridedriver7 from "../../assets/transport-bikeride-img/Bikeridedriver7.webp"
 const BikeAppPreview = () => {
     const [activeTab, setActiveTab] = useState('passenger');
     const scrollRef = useRef(null);
@@ -13,23 +27,24 @@ const BikeAppPreview = () => {
     });
 
     const passengerScreenshots = [
-        { id: 1, title: 'My Account', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=My+Account' },
-        { id: 2, title: 'Home Map', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Home+Map' },
-        { id: 3, title: 'Select Vehicle', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Select+Vehicle' },
-        { id: 4, title: 'Arriving', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Arriving' },
-        { id: 5, title: 'Ride Details', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Ride+Details' },
-        { id: 6, title: 'My Rides', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=My+Rides' },
-        { id: 7, title: 'Wallet', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Wallet' },
-        { id: 8, title: 'Reviews', src: 'https://placehold.co/375x812/0b3d2e/FFFFFF?text=Reviews' },
+        { id: 1, title: 'My Account', src: Bikeridepassanger1 },
+        { id: 2, title: 'Home Map', src: Bikeridepassanger2 },
+        { id: 3, title: 'Select Vehicle', src: Bikeridepassanger3 },
+        { id: 4, title: 'Arriving', src: Bikeridepassanger4 },
+        { id: 5, title: 'Ride Details', src: Bikeridepassanger5 },
+        { id: 6, title: 'My Rides', src: Bikeridepassanger6 },
+        { id: 7, title: 'Wallet', src: Bikeridepassanger7 },
+
     ];
 
     const driverScreenshots = [
-        { id: 1, title: 'Trip Request', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Trip+Request' },
-        { id: 2, title: 'Earnings', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Earnings' },
-        { id: 3, title: 'Navigation', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Navigation' },
-        { id: 4, title: 'Duty Status', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Duty+Status' },
-        { id: 5, title: 'User Details', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=User+Details' },
-        { id: 6, title: 'Trip History', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Trip+History' },
+        { id: 1, title: 'Select Vehicle', src: Bikeridedriver1 },
+        { id: 2, title: 'Choose ride', src: Bikeridedriver2 },
+        { id: 3, title: 'Pickup', src: Bikeridedriver3 },
+        { id: 4, title: 'Payments', src: Bikeridedriver4 },
+        { id: 5, title: 'Search routes', src: Bikeridedriver5 },
+        { id: 6, title: 'Search Results', src: Bikeridedriver6 },
+        { id: 7, title: 'Feedback', src: Bikeridedriver7 },
     ];
 
     const currentScreenshots = activeTab === 'passenger' ? passengerScreenshots : driverScreenshots;
@@ -161,24 +176,20 @@ const BikeAppPreview = () => {
                     {infiniteScreenshots.map((item, index) => (
                         <div
                             key={`${item.id}-${index}`}
-                            className="min-w-[280px] md:min-w-[calc((1280px/5)-2rem)] snap-center"
+                            className="min-w-[280px] md:min-w-[300px] snap-center"
                         >
-                            <div className="bg-[#123126] rounded-[40px] p-2 md:p-3 border border-white/20 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] ring-1 ring-[#2ef2b5]/10 mx-auto max-w-full group/screenshot-container select-none">
-                                <div className="relative rounded-[32px] overflow-hidden group/screenshot aspect-[10/20] bg-[#0b3d2e]">
+                            <div className="bg-[#123126] border-[5px] border-white/10 rounded-[45px] p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-1 ring-[#2ef2b5]/10 mx-auto max-w-full group/screenshot-container select-none transition-all duration-500 hover:border-[#2ef2b5]/30">
+                                <div className="relative rounded-[38px] overflow-hidden group/screenshot aspect-[9/19] bg-[#0b3d2e]">
                                     <img
                                         src={item.src}
                                         alt={item.title}
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover/screenshot:scale-105 pointer-events-none select-none"
+                                        className="w-full h-full object-cover pointer-events-none select-none"
                                         draggable="false"
                                     />
                                     {/* Subtle Overlay on Screen */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#062016]/80 via-transparent to-transparent opacity-60"></div>
 
-                                    {/* Info Badge on Hover */}
-                                    <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#062016] via-[#062016]/60 to-transparent flex flex-col justify-end p-8 transform translate-y-full group-hover/screenshot:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]">
-                                        <p className="text-white font-bold text-lg mb-1">{item.title}</p>
-                                        <p className="text-[#2ef2b5] text-xs font-black tracking-widest uppercase">Verified Screen</p>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

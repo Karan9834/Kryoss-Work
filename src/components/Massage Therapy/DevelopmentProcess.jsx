@@ -6,25 +6,25 @@ const DevelopmentProcess = () => {
       title: "1.  Requirement  Gathering",
       image:
         "https://whitelabelfox.com/assets/images/uber-house-cleaning-app/fox-home-cleaning-gathering-requirements.webp",
-      desc: "The first step is understanding your house cleaning business needs and goals. We work closely with you to gather detailed requirements,ensuring the app is tailored to your objectives. This phase includes discussionsabout features, design preferences, and functionality to align the app with yourvision, creating a seamless experience for both homeowners and cleaning professionals. ",
+      desc: "The first step is to understand your business needs and objectives. We work  closely with you to gather detailed requirements, ensuring we tailor the app to   your specific goals. This phase includes discussing features, design     preferences, and overall functionality, making sure every aspect aligns with your vision.  ",
     },
     {
       title: "2. Design & Development",
       image:
         "https://whitelabelfox.com/assets/images/uber-house-cleaning-app/fox-home-cleaning-design-and-development.webp",
-      desc: "Our skilled team of designers and developers collaborate to create a visually appealing and user-friendly interface while building the app’s  robust functionality. The design is optimized for ease of use, and the app is developed with secure, scalable code to ensure high performance across Android,iOS, and web platforms.",
+      desc: "Our skilled developers and designers work together to bring your app to life. In    this stage, we focus on creating a user-friendly interface and developing robust    functionality. The design is carefully crafted to enhance usability, while the   app is developed with scalable and secure code, ensuring performance and     reliability.  ",
     },
     {
       title: "3. Collect Third-Party Accounts",
       image:
         "https://whitelabelfox.com/assets/images/uber-house-cleaning-app/fox-home-cleaning-collect-third-party-accounts.webp",
-      desc: "Next, we integrate essential third-party services, such as  payment gateways, messaging platforms, and real-time tracking. Configuring these  accounts ensures smooth app functionality, secure transactions, and up-to-date  service status, guaranteeing a reliable and efficient user experience for   customers and cleaners alike.",
+      desc: "Next, we integrate any necessary third-party services such as payment gateways,      messaging platforms, or location services. Collecting and configuring these   accounts ensures the app functions seamlessly, offering a smooth user   experience. This step is critical for enabling essential features like secure   transactions and real-time notifications.  .",
     },
     {
       title: "4. Test and Launch",
       image:
         "https://whitelabelfox.com/assets/images/uber-house-cleaning-app/fox-home-cleaning-test-and-launch.webp",
-      desc: "Before the official launch, your app undergoes comprehensive   testing to ensure everything is functioning as expected. We check for bugs,  compatibility, and performance, making any necessary adjustments. Once the app is thoroughly tested and refined, we launch it on both the Play Store and AppStore, bringing your Uber-like house cleaning service platform to life. ",
+      desc: "Before your app goes live, it undergoes rigorous testing to ensure everything   works perfectly. We test for bugs, compatibility, and performance, making   adjustments as necessary. Once we’re confident the app is ready, we launch it on    the Play Store and App Store, bringing your on-demand app development service to   life for users to enjoy.  ",
     },
   ];
 
@@ -68,7 +68,7 @@ const DevelopmentProcess = () => {
                               group-hover:rotate-y-180">
 
                 {/* FRONT SIDE */}
-                <div className="absolute inset-0 bg-[#EAF7FB] 
+                <div className="absolute inset-0 bg-[#FFF1F3] 
                                 rounded-3xl p-8 
                                 border border-[#FF2C87] 
                                 backface-hidden">

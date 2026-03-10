@@ -1,5 +1,7 @@
 @import "tailwindcss";
-html, body {
+
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -255,9 +257,24 @@ html, body {
   0% {
     transform: translateX(-50%);
   }
+
   100% {
     transform: translateX(0%);
   }
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scrollLeft 60s linear infinite;
 }
 
 .animate-scroll-right {
@@ -268,6 +285,7 @@ html, body {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -276,6 +294,7 @@ html, body {
 .animate-scroll {
   animation: scroll 25s linear infinite;
 }
+
 .perspective {
   perspective: 1000px;
 }
@@ -308,4 +327,82 @@ html, body {
 
 .marquee {
   animation: marquee 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1200px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  border: 1px solid #f9a8d4;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.flip-card-front {
+  background: white;
+}
+
+.flip-card-back {
+  background: linear-gradient(135deg, #ec4899, #9333ea);
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+/* Infinite scrolling animation for app screens */
+
+.app-marquee {
+  display: flex;
+  width: max-content;
+  animation: scrollScreens 25s linear infinite;
+}
+
+@keyframes scrollScreens {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
