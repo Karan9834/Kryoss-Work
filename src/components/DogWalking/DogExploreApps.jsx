@@ -26,134 +26,80 @@ const ExploreApps = () => {
         {/* GRID */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {/* Dog Walking */}
-          <div className="bg-[#F3EEDB] rounded-3xl p-8 relative min-h-[260px] overflow-hidden">
-            <h3 className="text-xl font-semibold mb-2">Dog walking app</h3>
-            <p className="text-gray-700 text-sm max-w-[260px]">
-              Launch a dog walking service with ease, offering pet owners a platform to book walks.
-            </p>
+          {/* Card */}
+          {[
+            {
+              title: "Dog walking app",
+              desc: "Launch a dog walking service with ease, offering pet owners a platform to book walks.",
+              img: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b",
+              bg: "bg-[#F3EEDB]",
+            },
+            {
+              title: "Food Delivery App",
+              desc: "Create a seamless food delivery experience allowing restaurants and customers to connect instantly.",
+              img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+              bg: "bg-[#F5E6D7]",
+              span: "lg:col-span-2",
+            },
+            {
+              title: "Grocery Delivery App",
+              desc: "Provide an easy way for users to shop for groceries and have them delivered.",
+              img: "https://images.unsplash.com/photo-1542838132-92c53300491e",
+              bg: "bg-[#DCEBD9]",
+            },
+            {
+              title: "Home Cleaning Service",
+              desc: "Offer a reliable platform for booking home cleaning services.",
+              img: "https://images.unsplash.com/photo-1581578731548-c64695cc6952",
+              bg: "bg-[#E1EDF8]",
+            },
+            {
+              title: "Uber tutor",
+              desc: "Revolutionize tutoring services by offering students a way to book tutors.",
+              img: "https://images.unsplash.com/photo-1577896851231-70ef18881754",
+              bg: "bg-[#EEE7F8]",
+            },
+            {
+              title: "Uber Beauty",
+              desc: "Set up a beauty service booking platform allowing users to book at-home beauty treatments.",
+              img: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e",
+              bg: "bg-[#F5DDE3]",
+              span: "md:col-span-2",
+            },
+            {
+              title: "Uber For Taxi",
+              desc: "Launch a taxi-hailing service with a powerful app.",
+              img: "https://images.unsplash.com/photo-1519003722824-194d4455a60c",
+              bg: "bg-[#E2E9F3]",
+            },
+            {
+              title: "Uber For Electrician",
+              desc: "Provide customers with a quick and easy way to book electricians.",
+              img: "https://whitelabelfox.com/assets/images/bento-grid/uber-for-electrician.webp",
+              bg: "bg-[#F2E3E3]",
+            },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className={`${item.bg} ${item.span || ""} rounded-3xl p-8 flex flex-col justify-between min-h-[260px] overflow-hidden`}
+            >
 
-            <img
-              src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b"
-              className="absolute bottom-0 right-0 w-56"
-            />
-          </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
 
+                <p className="text-gray-700 text-sm max-w-[320px]">
+                  {item.desc}
+                </p>
+              </div>
 
-          {/* Food */}
-          <div className="bg-[#F5E6D7] rounded-3xl p-8 relative min-h-[260px] overflow-hidden md:col-span-1 lg:col-span-2">
-            <h3 className="text-xl font-semibold mb-2">Food Delivery App</h3>
-            <p className="text-gray-700 text-sm max-w-[320px]">
-              Create a seamless food delivery experience, allowing restaurants and customers to connect instantly.
-            </p>
+              <img
+                src={item.img}
+                alt={item.title}
+                className="mt-6 w-full max-h-[160px] object-contain self-end"
+              />
 
-            <img
-              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
-              className="absolute bottom-0 right-6 w-72"
-            />
-          </div>
-
-
-          {/* Grocery */}
-          <div className="bg-[#DCEBD9] rounded-3xl p-8 relative min-h-[280px] overflow-hidden">
-            <h3 className="text-xl font-semibold text-green-700 mb-2">
-              Grocery Delivery App
-            </h3>
-
-            <p className="text-gray-700 text-sm max-w-[260px]">
-              Provide an easy way for users to shop for groceries and have them delivered.
-            </p>
-
-            <img
-              src="https://images.unsplash.com/photo-1542838132-92c53300491e"
-              className="absolute bottom-0 right-0 w-64"
-            />
-          </div>
-
-
-          {/* Cleaning */}
-          <div className="bg-[#E1EDF8] rounded-3xl p-8 relative min-h-[260px] overflow-hidden">
-            <h3 className="text-xl font-semibold mb-2">
-              Home Cleaning Service
-            </h3>
-
-            <p className="text-gray-700 text-sm max-w-[260px]">
-              Offer a reliable platform for booking home cleaning services.
-            </p>
-
-            <img
-              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952"
-              className="absolute bottom-0 right-0 w-52"
-            />
-          </div>
-
-
-          {/* Tutor */}
-          <div className="bg-[#EEE7F8] rounded-3xl p-8 relative min-h-[260px] overflow-hidden">
-            <h3 className="text-xl font-semibold text-purple-700 mb-2">
-              Uber tutor
-            </h3>
-
-            <p className="text-gray-700 text-sm max-w-[260px]">
-              Revolutionize tutoring services by offering students a way to book tutors.
-            </p>
-
-            <img
-              src="https://images.unsplash.com/photo-1577896851231-70ef18881754"
-              className="absolute bottom-0 right-0 w-52"
-            />
-          </div>
-
-
-          {/* Beauty */}
-          <div className="bg-[#F5DDE3] rounded-3xl p-8 relative min-h-[260px] overflow-hidden md:col-span-2">
-            <h3 className="text-xl font-semibold text-pink-700 mb-2">
-              Uber Beauty
-            </h3>
-
-            <p className="text-gray-700 text-sm max-w-[320px]">
-              Set up a beauty service booking platform allowing users to book at-home beauty treatments.
-            </p>
-
-            <img
-              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e"
-              className="absolute bottom-0 right-6 w-72"
-            />
-          </div>
-
-
-          {/* Taxi */}
-          <div className="bg-[#E2E9F3] rounded-3xl p-8 relative min-h-[260px] overflow-hidden">
-            <h3 className="text-xl font-semibold text-blue-700 mb-2">
-              Uber For Taxi
-            </h3>
-
-            <p className="text-gray-700 text-sm max-w-[260px]">
-              Launch a taxi-hailing service with a powerful app.
-            </p>
-
-            <img
-              src="https://images.unsplash.com/photo-1519003722824-194d4455a60c"
-              className="absolute bottom-0 right-0 w-64"
-            />
-          </div>
-
-
-          {/* Electrician */}
-          <div className="bg-[#F2E3E3] rounded-3xl p-8 relative min-h-[260px] overflow-hidden">
-            <h3 className="text-xl font-semibold text-red-600 mb-2">
-              Uber For Electrician
-            </h3>
-
-            <p className="text-gray-700 text-sm max-w-[260px]">
-              Provide customers with a quick and easy way to book electricians.
-            </p>
-
-            <img
-              src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b"
-              className="absolute bottom-0 right-0 w-56"
-            />
-          </div>
+            </div>
+          ))}
 
         </div>
 

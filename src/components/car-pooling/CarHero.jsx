@@ -2,12 +2,12 @@ import React from "react";
 
 const CarHero = () => {
   return (
-    <section className="bg-gradient-to-br from-[#071c3a] via-[#0b2a57] to-[#071f40] text-white ">
+    <section className="bg-gradient-to-br from-[#071c3a] via-[#0b2a57] to-[#071f40] text-white">
 
-      <div className="max-w-8xl mx-auto grid md:grid-cols-2 items-center">
+      <div className="grid md:grid-cols-2 items-center">
 
         {/* LEFT SIDE */}
-        <div className="pl-10 pr-6 py-20">
+        <div className="pl-5 md:pl-10 pr-5 md:pr-6 py-14 md:py-20">
 
           {/* Badge */}
 <div className="flex items-center gap-3 mb-5">
@@ -40,7 +40,7 @@ const CarHero = () => {
 </div>
 
           {/* Heading */}
-          <h1 className="text-[40px] md:text-[40px] font-bold leading-[1.2] mb-5">
+          <h1 className="text-[28px] sm:text-[34px] md:text-[40px] font-bold leading-[1.2] mb-5">
             <span className="text-cyan-400">
               Revolutionize Your Carpooling Business
             </span>
@@ -49,7 +49,7 @@ const CarHero = () => {
           </h1>
 
           {/* Paragraph */}
-          <p className="text-gray-300 text-[17px] leading-relaxed mb-7 max-w-xl">
+          <p className="text-gray-300 text-[15px] md:text-[17px] leading-relaxed mb-7 max-w-xl">
             Transform your carpooling business with our powerful carpooling
             clone script. Our fully customizable, on-demand ride-sharing
             solution ensures quick setup and seamless user experiences,
@@ -57,20 +57,20 @@ const CarHero = () => {
           </p>
 
           {/* Button */}
-          <button className="bg-gradient-to-r from-cyan-500 to-blue-500 px-7 py-3.5 rounded-full text-white font-semibold text-base shadow-md hover:scale-105 transition duration-300">
+          <button className="bg-gradient-to-r from-cyan-500 to-blue-500 px-6 md:px-7 py-3 md:py-3.5 rounded-full text-white font-semibold text-sm md:text-base shadow-md hover:scale-105 transition duration-300">
             Let's Discuss →
           </button>
 
         </div>
 
         {/* RIGHT SIDE IMAGE */}
-        <div className="flex justify-center items-center h-[520px]">
+        <div className="flex justify-center md:justify-end items-center px-5 md:px-0">
 
-          {/* Replace with real image */}
-          <div className="w-[560px] h-[500px]  rounded-xl flex items-center justify-center text-gray-400">
-            {/* Image Area */}
-            <img src="https://whitelabelfox.com/assets/images/carpooling-clone-script/Carpool-hero-section-image.webp" alt=""  />
-          </div>
+          <img
+            src="https://whitelabelfox.com/assets/images/carpooling-clone-script/Carpool-hero-section-image.webp"
+            alt=""
+            className="w-full max-w-[420px] md:max-w-[660px] h-auto"
+          />
 
         </div>
 
@@ -81,25 +81,3 @@ const CarHero = () => {
 };
 
 export default CarHero;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

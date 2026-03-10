@@ -73,7 +73,11 @@ const UserFeatures = () => {
         <div className="grid lg:grid-cols-2 gap-14 items-start">
 
           {/* LEFT SCROLLABLE FEATURES */}
-          <div className="space-y-6 max-h-[520px] overflow-y-auto pr-6">
+          <div className="space-y-6 max-h-[520px] overflow-y-auto pr-6"
+            style={{
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+            }}>
 
             {features.map((item, index) => (
               <div

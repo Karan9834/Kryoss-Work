@@ -47,7 +47,7 @@ const HomeCleaningFeatures = () => {
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
-           <span className="text-[#1d79c6]">Key Features of</span>  Uber for House Cleaning App
+            <span className="text-[#1d79c6]">Key Features of</span>  Uber for House Cleaning App
           </h2>
 
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
@@ -61,11 +61,10 @@ const HomeCleaningFeatures = () => {
             <button
               key={type}
               onClick={() => setActiveTab(type)}
-              className={`px-6 py-2 rounded-full font-semibold transition duration-300 ${
-                activeTab === type
-                  ? "text-white bg-gradient-to-r from-[#009ACA] to-[#006C8D]"
-                  : "border border-gray-300 text-gray-700"
-              }`}
+              className={`px-6 py-2 rounded-full font-semibold transition duration-300 ${activeTab === type
+                ? "text-white bg-gradient-to-r from-[#009ACA] to-[#006C8D]"
+                : "border border-gray-300 text-gray-700"
+                }`}
             >
               {type === "user" ? "User App" : "Provider App"}
             </button>
@@ -124,7 +123,7 @@ const FeatureCard = ({ item }) => {
       <div className="flex items-start gap-4">
 
         {/* Icon */}
-        <div className="w-12 h-12 flex items-center justify-center 
+        <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center 
                         rounded-full 
                         bg-[#55D7FF]/20 
                         text-[#55D7FF] 

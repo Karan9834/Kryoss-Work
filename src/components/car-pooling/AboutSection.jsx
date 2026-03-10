@@ -2,32 +2,32 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="bg-white py-16">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2">
+    <section className="bg-white py-12 md:py-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 px-5 md:px-0">
 
+        {/* LEFT SIDE */}
+        <div className="bg-[#0f4c81] rounded-3xl flex items-center justify-center md:w-[500px] z-10 p-6 md:p-0">
 
-        {/* LEFT SIDE - DARK BLUE IMAGE BACKGROUND */}
-        <div className="bg-[#0f4c81] rounded-3xl flex items-center justify-center w-125 z-10 ">
           <img
             src="https://whitelabelfox.com/assets/images/carpooling-clone-script/Carpool-about-us-image.webp"
             alt="Carpooling App"
-            className="w-full max-w-md "
+            className="w-full max-w-sm md:max-w-md h-auto"
           />
+
         </div>
 
 
-
-        {/* RIGHT SIDE - LIGHT BLUE CONTENT BOX */}
-        <div className="bg-[#eaf4fd] border border-[#b7d4f6] rounded-r-3xl p-12 ml-[-150px] mt-10">
+        {/* RIGHT SIDE */}
+        <div className="bg-[#eaf4fd] border border-[#b7d4f6] rounded-3xl md:rounded-r-3xl p-6 md:p-12 md:ml-[-150px] mt-8 md:mt-10">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 mb-6">
+          <div className="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full border border-gray-300 text-xs md:text-sm text-gray-700 mb-6">
             <span className="w-2.5 h-2.5 bg-blue-500 rounded-full"></span>
             About Carpooling App Script
           </div>
 
           {/* Heading */}
-          <h2 className="text-[36px] font-semibold leading-tight mb-6 text-gray-800">
+          <h2 className="text-[26px] sm:text-[30px] md:text-[36px] font-semibold leading-tight mb-6 text-gray-800">
             <span className="text-[#1d79c6]">
               Custom Carpooling App Development
             </span>{" "}
@@ -35,16 +35,13 @@ const AboutSection = () => {
           </h2>
 
           {/* Content */}
-          <div className="text-gray-700 space-y-5 text-[16px] leading-relaxed">
+          <div className="text-gray-700 space-y-5 text-[15px] md:text-[16px] leading-relaxed">
 
             <p>
               Starting a carpooling business requires a reliable, scalable, and
               user-friendly solution. At White Label Fox, we offer a fully
               customizable carpooling app script designed to meet the specific
-              needs of your business. Our white-label carpooling solution includes
-              a single app that serves both drivers and passengers, along with
-              web panels for super admin, dispatcher admin, and billing admin,
-              ensuring smooth operations and better control over your carpooling platform.
+              needs of your business.
             </p>
 
             <p>
@@ -56,17 +53,13 @@ const AboutSection = () => {
             <p>
               The Fox-Carpool Carpooling Clone Script is completely white-labeled,
               allowing you to brand the app with your own logo, name, currency,
-              and language. This level of customization ensures that your app
-              aligns perfectly with your business identity, offering a
-              personalized touch that enhances your customers’ trust and engagement.
+              and language.
             </p>
 
             <p>
               In addition to top-tier customization, we offer our carpooling app
               script at a highly competitive price, giving you access to the
-              source code at a fraction of the cost of other competitors. With
-              White Label Fox, you get the best value for your investment while
-              ensuring the launch of a feature-rich and scalable carpooling platform.
+              source code at a fraction of the cost of other competitors.
             </p>
 
           </div>
@@ -94,7 +87,6 @@ export default AboutSection;
 
 
 
-
 // import React from "react";
 
 // const AboutSection = () => {
@@ -103,9 +95,9 @@ export default AboutSection;
 //       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
 
 //         {/* LEFT SIDE */}
-//         <div className="bg-[#0f4c81] rounded-3xl flex items-center justify-center 
-//                         w-full 
-//                         p-6 sm:p-8 md:p-10 
+//         <div className="bg-[#0f4c81] rounded-3xl flex items-center justify-center
+//                         w-full
+//                         p-6 sm:p-8 md:p-10
 //                         z-10">
 //           <img
 //             src="https://whitelabelfox.com/assets/images/carpooling-clone-script/Carpool-about-us-image.webp"
@@ -115,21 +107,21 @@ export default AboutSection;
 //         </div>
 
 //         {/* RIGHT SIDE */}
-//         <div className="bg-[#eaf4fd] border border-[#b7d4f6] 
-//                         rounded-3xl md:rounded-r-3xl 
-//                         p-6 sm:p-8 md:p-12 
+//         <div className="bg-[#eaf4fd] border border-[#b7d4f6]
+//                         rounded-3xl md:rounded-r-3xl
+//                         p-6 sm:p-8 md:p-12
 //                         w-full">
 
 //           {/* Badge */}
-//           <div className="inline-flex items-center gap-2 bg-white px-4 py-1.5 
-//                           rounded-full border border-gray-300 
+//           <div className="inline-flex items-center gap-2 bg-white px-4 py-1.5
+//                           rounded-full border border-gray-300
 //                           text-xs sm:text-sm text-gray-700 mb-6">
 //             <span className="w-2.5 h-2.5 bg-blue-500 rounded-full"></span>
 //             About Carpooling App Script
 //           </div>
 
 //           {/* Heading */}
-//           <h2 className="text-2xl sm:text-3xl md:text-4xl 
+//           <h2 className="text-2xl sm:text-3xl md:text-4xl
 //                          font-semibold leading-tight mb-6 text-gray-800">
 //             <span className="text-[#1d79c6]">
 //               Custom Carpooling App Development
@@ -138,8 +130,8 @@ export default AboutSection;
 //           </h2>
 
 //           {/* Content */}
-//           <div className="text-gray-700 space-y-4 sm:space-y-5 
-//                           text-sm sm:text-base 
+//           <div className="text-gray-700 space-y-4 sm:space-y-5
+//                           text-sm sm:text-base
 //                           leading-relaxed">
 
 //             <p>

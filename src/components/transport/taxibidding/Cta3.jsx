@@ -1,5 +1,5 @@
 import React from "react";
-import ctaImage from "../../../assets/cta3.webp"; 
+import ctaImage from "../../../assets/cta3.webp";
 
 const CtaSection = () => {
   return (
@@ -13,11 +13,12 @@ const CtaSection = () => {
           from-[#0F0A3C]
           to-[#120C4D]
           rounded-[40px]
-          px-12
-          py-16
+          px-8 md:px-12
+          py-12 md:py-16
           relative
           overflow-hidden
           flex
+          flex-col md:flex-row
           items-center
           justify-between
           gap-10
@@ -25,7 +26,7 @@ const CtaSection = () => {
       >
 
         {/* LEFT CONTENT */}
-        <div className="text-white max-w-xl">
+        <div className="text-white max-w-xl text-center md:text-left">
 
           <h2 className="text-3xl md:text-4xl font-semibold leading-snug mb-6">
             Don’t Wait Start Your Journey to Success Now!
@@ -56,15 +57,12 @@ const CtaSection = () => {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative hidden md:block">
+        <div className="relative flex justify-center">
 
           <img
             src={ctaImage}
             alt="CTA Visual"
-            className="
-              h-[380px]
-              object-contain
-            "
+            className="h-[220px] md:h-[380px] object-contain"
           />
 
         </div>

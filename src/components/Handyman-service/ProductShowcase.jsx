@@ -1,14 +1,14 @@
 import React from "react";
 
 const products = [
-  { title: "Gojek Clone App", img: "https://source.unsplash.com/600x400/?team,business" },
-  { title: "Uber Clone App", img: "https://source.unsplash.com/600x400/?taxi,ride" },
-  { title: "Food Delivery App", img: "https://source.unsplash.com/600x400/?food,delivery" },
-  { title: "Medicine Delivery App", img: "https://source.unsplash.com/600x400/?pharmacy,delivery" },
-  { title: "Handyman Service App", img: "https://source.unsplash.com/600x400/?handyman,tools" },
-  { title: "Carpool Ride App", img: "https://source.unsplash.com/600x400/?carpool,ride" },
-  { title: "Indrive Clone App", img: "https://source.unsplash.com/600x400/?business,car" },
-  { title: "Delivery Anything App", img: "https://source.unsplash.com/600x400/?package,delivery" },
+  { title: "Gojek Clone App", img: "https://whitelabelfox.com/assets/images/our-other-product/Fox-jek.webp" },
+  { title: "Uber Clone App", img: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Taxi.webp" },
+  { title: "Food Delivery App", img: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Food.webp" },
+  { title: "Medicine Delivery App", img: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Medicine.webp" },
+  { title: "Handyman Service App", img: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Handyman.webp" },
+  { title: "Carpool Ride App", img: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Carpool.webp" },
+  { title: "Indrive Clone App", img: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Rental.webp" },
+  { title: "Delivery Anything App", img: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Delivery-anything.webp" },
 ];
 
 const ProductShowcase = () => {

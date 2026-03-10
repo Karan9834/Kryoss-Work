@@ -7,19 +7,27 @@ const DogCTA2 = () => {
 
       <div className="max-w-7xl mx-auto px-6 relative">
 
-        {/* CTA Box */}
-        <div className="relative bg-[#24003A] rounded-[120px] px-16 py-14 flex items-center justify-end">
+        <div className="relative bg-[#24003A] rounded-[120px] px-8 lg:px-16 py-14 flex flex-col lg:flex-row items-center justify-end">
 
-          {/* LEFT IMAGE */}
+          {/* MOBILE IMAGE */}
+          <div className="lg:hidden mb-8">
+            <img
+              src={Dogcta2}
+              alt="Dog Walking App"
+              className="w-full max-w-[320px] mx-auto object-contain"
+            />
+          </div>
+
+
+          {/* DESKTOP IMAGE */}
           <div className="absolute -left-10 bottom-0 hidden lg:block">
-
             <img
               src={Dogcta2}
               alt="Dog Walking App"
               className="w-[420px] object-contain drop-shadow-2xl"
             />
-
           </div>
+
 
           {/* TEXT CONTENT */}
           <div className="max-w-xl text-white text-center lg:text-left">
@@ -30,8 +38,7 @@ const DogCTA2 = () => {
 
             <p className="text-gray-300 mb-8">
               Get your dog walking app up and running quickly with our expert
-              dog walking app development services. Enjoy a seamless,
-              feature-rich solution designed for success.
+              dog walking app development services.
             </p>
 
             <button className="border border-white rounded-full px-7 py-3 hover:bg-white hover:text-[#24003A] transition">

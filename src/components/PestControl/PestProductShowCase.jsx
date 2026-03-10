@@ -15,7 +15,7 @@ const apps = [
   },
   {
     title: "Medicine Delivery App",
-    image: "https://images.unsplash.com/photo-1580281657527-47a6d3c5e5b5"
+    image: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Medicine.webp"
   },
   {
     title: "Handyman Service App",
