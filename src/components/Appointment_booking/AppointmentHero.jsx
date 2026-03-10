@@ -10,15 +10,21 @@ const AppointmentHero = () => {
         <div className="pb-10">
 
           {/* App label */}
-          <div className="flex items-center gap-3 mb-4">
-            <div className="bg-blue-500 w-10 h-10 flex items-center justify-center rounded-lg">
-              A
-            </div>
+         <div className="flex items-center gap-3 mb-6">
 
-            <span className="text-lg font-semibold">
-              Appointment Booking App
-            </span>
-          </div>
+  <div className="w-12 h-12 flex items-center justify-center 
+                  rounded-xl font-bold text-lg text-white
+                  bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600
+                  shadow-[0_0_15px_rgba(56,189,248,0.8)]
+                  border border-white/20 backdrop-blur-md">
+    V
+  </div>
+
+  <span className="text-lg font-semibold text-white tracking-wide">
+    Vyom Appointment Booking App
+  </span>
+
+</div>
 
           {/* Title */}
           <h1 className="text-3xl md:text-4xl font-semibold leading-snug mb-5">

@@ -14,15 +14,34 @@ const UberHero = () => {
                     {/* LEFT CONTENT */}
                     <div className="pr-0 lg:pr-16">
 
-                        {/* Logo */}
-                        <div className="flex items-center gap-3 mb-6">
-                            <div className="w-10 h-10 bg-[#2f2f2f] rounded-md flex items-center justify-center text-white font-bold">
-                                {/* LOGO */}
-                            </div>
-                            <span className="text-lg font-medium tracking-wide">
-                                FOX-TAXI
-                            </span>
-                        </div>
+                        <div className="flex items-center gap-4 mb-8">
+
+  {/* Logo */}
+  <div className="relative w-12 h-12 flex items-center justify-center rounded-xl 
+                  bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600
+                  text-white font-bold text-lg shadow-lg
+                  hover:scale-105 transition duration-300">
+
+    <span className="z-10">V</span>
+
+    {/* glow */}
+    <span className="absolute inset-0 rounded-xl blur-md opacity-60 
+                     bg-gradient-to-br from-blue-400 to-purple-500"></span>
+  </div>
+
+  {/* Text */}
+  <div className="flex flex-col">
+    <span className="text-xl font-semibold text-gray-900 tracking-wide">
+      Vyom Taxi
+    </span>
+
+    <span className="text-sm text-gray-500">
+      Smart AI-Powered Ride Booking Platform
+    </span>
+  </div>
+
+</div>
+                        
 
                         {/* Title */}
                         <h1 className="text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] font-semibold text-[#303030] mb-5">

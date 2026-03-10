@@ -31,7 +31,7 @@ const Hero = () => {
                                 X
                             </div>
                             <span className="text-2xl font-semibold tracking-wide">
-                                FOX-MEDICINE
+                                VYOM-MEDICINE
                             </span>
                         </div>
 
