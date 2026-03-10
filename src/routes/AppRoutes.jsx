@@ -7,6 +7,7 @@ import { ProductRoutes } from './ProductRoutes';
 import { CompanyRoutes } from './CompanyRoutes';
 import { GojekRoutes } from './GojekRoutes';
 import Blog from "../pages/Blog";
+import Products from "../pages/Products";
 
 const AppRoutes = () => {
     return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
                 {CompanyRoutes}
                 <Route path="*" element={<NotFound />} />
                 <Route path="/blog" element={<Blog />} />
+                <Route path="/products" element={<Products />} />
             </Route>
         </Routes>
     );
