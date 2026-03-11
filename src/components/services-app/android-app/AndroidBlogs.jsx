@@ -31,7 +31,7 @@ const BlogsSection = () => {
                 {/* Heading */}
                 <div className="text-center mb-14">
                     <span className="inline-flex items-center gap-2 px-4 py-1 border rounded-full text-sm text-gray-600 mb-4">
-                        <span className="w-2 h-2 bg-orange-500 rounded-full" />
+                        <span className="w-2 h-2 bg-orange-400 rounded-full" />
                         Blogs
                     </span>
 
