@@ -406,19 +406,16 @@ body {
     transform: translateX(-50%);
   }
 }
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
+.no-scrollbar {
+  scrollbar-width: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/* Auto scroll animations */
 @keyframes scrollLeft {
   0% {
     transform: translateX(0);
