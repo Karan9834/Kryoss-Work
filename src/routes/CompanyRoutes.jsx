@@ -9,6 +9,7 @@ import TeamPage from '../pages/company/Team';
 import PoliciesPage from '../pages/company/Policies';
 import SiteMapPage from '../pages/company/SiteMap';
 
+import CareerPage from '../pages/company/Careers';
 export const CompanyRoutes = [
     <Route key="company-about" path="company/about" element={<AboutPage />} />,
     <Route key="company-contact" path="company/contact" element={<ContactPage />} />,
@@ -20,4 +21,5 @@ export const CompanyRoutes = [
          <Route key="company-policies" path="company/policies" element={<PoliciesPage />} />,
     <Route key="solutions-healthcare" path="solutions/healthcare" element={<HealthcareSolution />} />,
     // Add other company/solution routes here
+    <Route key="company-career" path="company/careers" element={<CareerPage />} />
 ];

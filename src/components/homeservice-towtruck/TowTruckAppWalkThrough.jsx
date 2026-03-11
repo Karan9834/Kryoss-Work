@@ -1,5 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
-
+import Towcustomer1 from "../../assets/homeservice-towtruck-img/Towcustomer1.webp";
+import Towcustomer2 from "../../assets/homeservice-towtruck-img/Towcustomer2.webp";
+import Towcustomer3 from "../../assets/homeservice-towtruck-img/Towcustomer3.webp";
+import Towcustomer4 from "../../assets/homeservice-towtruck-img/Towcustomer4.webp";
+import Towcustomer5 from "../../assets/homeservice-towtruck-img/Towcustomer5.webp";
+import Towcustomer6 from "../../assets/homeservice-towtruck-img/Towcustomer6.webp";
+import Towcustomer7 from "../../assets/homeservice-towtruck-img/Towcustomer7.webp";
+import Towcustomer8 from "../../assets/homeservice-towtruck-img/Towcustomer8.webp";
+import Towdriver1 from "../../assets/homeservice-towtruck-img/Towdriver1.webp";
+import Towdriver2 from "../../assets/homeservice-towtruck-img/Towdriver2.webp";
+import Towdriver3 from "../../assets/homeservice-towtruck-img/Towdriver3.webp";
+import Towdriver4 from "../../assets/homeservice-towtruck-img/Towdriver4.webp";
+import Towdriver5 from "../../assets/homeservice-towtruck-img/Towdriver5.webp";
+import Towdriver6 from "../../assets/homeservice-towtruck-img/Towdriver6.webp";
 const TowTruckAppWalkThrough = () => {
     const [activeTab, setActiveTab] = useState('customer');
     const scrollRef = useRef(null);
@@ -13,20 +26,23 @@ const TowTruckAppWalkThrough = () => {
     });
 
     const customerScreenshots = [
-        { id: 1, title: 'Select Tow Truck', src: 'https://placehold.co/375x812/031b2e/FFFFFF?text=Select+Tow+Truck' },
-        { id: 2, title: 'Book Tow Truck', src: 'https://placehold.co/375x812/031b2e/FFFFFF?text=Book+Tow+Truck' },
-        { id: 3, title: 'Order Details', src: 'https://placehold.co/375x812/031b2e/FFFFFF?text=Order+Details' },
-        { id: 4, title: 'Tracking', src: 'https://placehold.co/375x812/031b2e/FFFFFF?text=Tracking' },
-        { id: 5, title: 'Payment', src: 'https://placehold.co/375x812/031b2e/FFFFFF?text=Payment' },
-        { id: 6, title: 'Ratings', src: 'https://placehold.co/375x812/031b2e/FFFFFF?text=Ratings' },
+        { id: 1, title: 'Tow Truck', src: Towcustomer1 },
+        { id: 2, title: 'Book Tow Truck', src: Towcustomer2 },
+        { id: 3, title: 'Select Location', src: Towcustomer3 },
+        { id: 4, title: 'Select Tow Truck', src: Towcustomer4 },
+        { id: 5, title: 'Book Tow Truck', src: Towcustomer5 },
+        { id: 6, title: 'Order Details 1', src: Towcustomer6 },
+        { id: 7, title: 'Order Details 2', src: Towcustomer7 },
+        { id: 8, title: 'Order Details 3', src: Towcustomer8 },
     ];
 
     const driverScreenshots = [
-        { id: 1, title: 'New Request', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=New+Request' },
-        { id: 2, title: 'Accept/Decline', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Accept/Decline' },
-        { id: 3, title: 'Navigate to User', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Navigate' },
-        { id: 4, title: 'Earnings', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Earnings' },
-        { id: 5, title: 'Profile', src: 'https://placehold.co/375x812/1a1a1a/FFFFFF?text=Profile' },
+        { id: 1, title: 'Profile', src: Towdriver1 },
+        { id: 2, title: 'Order History', src: Towdriver2 },
+        { id: 3, title: 'Manage Vehicle', src: Towdriver3 },
+        { id: 4, title: 'Towing Service', src: Towdriver4 },
+        { id: 5, title: 'Edit Profile', src: Towdriver5 },
+        { id: 6, title: 'Customer Feedback', src: Towdriver6 },
     ];
 
     const currentScreenshots = activeTab === 'customer' ? customerScreenshots : driverScreenshots;
@@ -150,7 +166,7 @@ const TowTruckAppWalkThrough = () => {
                     {infiniteScreenshots.map((item, index) => (
                         <div
                             key={`${item.id}-${index}`}
-                            className="min-w-[280px] md:min-w-[320px] snap-center"
+                            className="min-w-[280px] md:min-w-[300px] snap-center"
                         >
                             <div className="bg-[#031b2e] border-4 border-white/10 rounded-[45px] p-2.5 shadow-2xl transition-transform duration-500">
                                 <div className="relative aspect-[9/19] rounded-[38px] overflow-hidden bg-[#021423]">

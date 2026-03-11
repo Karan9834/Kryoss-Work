@@ -10,15 +10,36 @@ const HeroSection = () => {
         {/* LEFT */}
         <div className="w-full lg:w-1/2 text-white text-center lg:text-left pb-10 lg:pb-20">
 
-          {/* logo */}
-          <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
-            <div className="w-10 h-10 bg-sky-500 rounded-lg flex items-center justify-center">
-              📍
-            </div>
-            <span className="tracking-widest font-semibold">
-              FOX-RENTAL
-            </span>
-          </div>
+        {/* logo */}
+<div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
+
+  {/* Icon */}
+  <div className="w-10 h-10 rounded-lg 
+      bg-gradient-to-br from-cyan-400 to-sky-500 
+      flex items-center justify-center
+      shadow-[0_0_18px_rgba(56,189,248,0.8)]">
+
+      <span className="text-lg drop-shadow-[0_0_6px_rgba(255,255,255,0.9)]">
+        🚗
+      </span>
+
+  </div>
+
+  {/* Brand */}
+  <span className="tracking-widest font-semibold text-sm uppercase">
+
+      <span className="text-cyan-400 
+            drop-shadow-[0_0_8px_rgba(56,189,248,0.9)]">
+        VYOM
+      </span>
+
+      <span className="text-white ml-1">
+        RENTAL
+      </span>
+
+  </span>
+
+</div>
 
 
           {/* title */}

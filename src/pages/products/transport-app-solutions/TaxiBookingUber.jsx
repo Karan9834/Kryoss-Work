@@ -56,13 +56,6 @@ const TaxiBookingUber = () => {
             <UberBlogs />
             <UberGetUpdates />
         </>
-
-
-
-
-
-
-
     );
 };
 

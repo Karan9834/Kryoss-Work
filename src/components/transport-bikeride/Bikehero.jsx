@@ -7,15 +7,30 @@ const HeroSection = () => {
 
                 {/* LEFT CONTENT */}
                 <div className="w-full lg:w-[50%] text-white pb-12 lg:pb-20 lg:pr-10">
-                    {/* Tag */}
-                    <div className="flex items-center gap-3 mb-6">
-                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#19f5a5] to-[#b6ff3b] flex items-center justify-center text-black font-bold">
-                            🚲
-                        </div>
-                        <span className="text-[14px] font-semibold tracking-wide uppercase">
-                            FOX-BIKE
-                        </span>
-                    </div>
+                    {/* Tagline */}
+                   <div className="flex items-center gap-3 mb-6">
+
+  <div className="w-12 h-12 rounded-xl 
+      bg-gradient-to-br from-[#19f5a5] to-[#b6ff3b] 
+      flex items-center justify-center text-black font-bold
+      shadow-[0_0_18px_rgba(182,255,59,0.8)]">
+
+      <span className="text-xl">
+        🚲
+      </span>
+
+  </div>
+
+  <span className="text-[16px] font-semibold tracking-wide uppercase">
+    <span className="text-[#b6ff3b] drop-shadow-[0_0_8px_rgba(182,255,59,0.9)]">
+      VYOM
+    </span>
+    <span className="text-white ml-1">
+      BIKE
+    </span>
+  </span>
+
+</div>
 
                     {/* Heading */}
                     <h1 className="font-bold leading-tight mb-6">

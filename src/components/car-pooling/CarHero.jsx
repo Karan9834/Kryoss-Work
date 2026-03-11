@@ -10,14 +10,34 @@ const CarHero = () => {
         <div className="pl-10 pr-6 py-20">
 
           {/* Badge */}
-          <div className="flex items-center gap-3 mb-5">
-            <div className="bg-[#1e3a8a] p-3 rounded-lg">
-              🚗
-            </div>
-            <span className="uppercase tracking-widest text-gray-300 text-xs font-semibold">
-              FOX-CAR POOL
-            </span>
-          </div>
+<div className="flex items-center gap-3 mb-5">
+
+  {/* Glowing Icon */}
+  <div className="bg-gradient-to-br from-cyan-400 to-blue-500 
+      p-3 rounded-lg flex items-center justify-center
+      shadow-[0_0_18px_rgba(56,189,248,0.8)]">
+
+      <span className="text-lg drop-shadow-[0_0_6px_rgba(255,255,255,0.9)]">
+        🚗
+      </span>
+
+  </div>
+
+  {/* Brand */}
+  <span className="uppercase tracking-widest text-sm font-semibold">
+
+      <span className="text-cyan-400 
+            drop-shadow-[0_0_8px_rgba(56,189,248,0.9)]">
+        VYOM
+      </span>
+
+      <span className="text-white ml-1">
+        CARPOOL
+      </span>
+
+  </span>
+
+</div>
 
           {/* Heading */}
           <h1 className="text-[40px] md:text-[40px] font-bold leading-[1.2] mb-5">

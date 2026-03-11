@@ -19,21 +19,27 @@ const Hero = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/20"></div>
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto 
+      <div
+        className="relative z-10 w-full max-w-6xl mx-auto 
                       flex flex-col md:flex-row 
-                      items-center justify-between gap-10">
-
+                      items-center justify-between gap-10"
+      >
         {/* LEFT SIDE */}
-        <div className="text-white 
+        <div
+          className="text-white 
                         text-center md:text-left
-                        w-full md:w-1/2">
-
+                        w-full md:w-1/2"
+        >
           <div className="flex items-center justify-center md:justify-start gap-3 mb-6">
-            <div className="bg-lime-500 p-3 rounded-xl">
-              🚗
+            <div className="bg-lime-500 p-3 rounded-xl shadow-[0_0_15px_rgba(132,204,22,0.7)]">
+              <span className="text-xl">🚗</span>
             </div>
+
             <h4 className="text-lg md:text-xl font-semibold tracking-wide">
-              FOX-DRIVE
+              <span className="text-lime-400 drop-shadow-[0_0_8px_rgba(132,204,22,0.8)]">
+                VYOM
+              </span>{" "}
+              <span className="text-white">DRIVE</span>
             </h4>
           </div>
 
@@ -41,21 +47,25 @@ const Hero = () => {
             <span className="text-lime-400">inDriver</span> Clone
           </h1>
 
-          <p className="text-gray-300 text-base md:text-lg 
+          <p
+            className="text-gray-300 text-base md:text-lg 
                         leading-relaxed 
                         max-w-md md:max-w-xl 
-                        mx-auto md:mx-0 mb-7">
+                        mx-auto md:mx-0 mb-7"
+          >
             A ready-to-use inDriver Clone provides you with complete control
             over your business operations. It connects passengers and drivers
             efficiently.
           </p>
 
           <div className="flex justify-center md:justify-start">
-            <button className="bg-lime-500 hover:bg-lime-600 
+            <button
+              className="bg-lime-500 hover:bg-lime-600 
                                transition-all duration-300 
                                text-black font-semibold 
                                px-6 md:px-8 py-3 md:py-4 
-                               rounded-full flex items-center gap-3 group">
+                               rounded-full flex items-center gap-3 group"
+            >
               Request Demo
               <ArrowRight
                 className="group-hover:translate-x-1 transition"
@@ -66,10 +76,11 @@ const Hero = () => {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="w-full md:w-1/2 
+        <div
+          className="w-full md:w-1/2 
                         flex justify-center 
-                        mt-8 md:mt-0">
-
+                        mt-8 md:mt-0"
+        >
           <img
             src={taxi}
             alt="Taxi Bidding App"
@@ -78,7 +89,6 @@ const Hero = () => {
                        object-contain"
           />
         </div>
-
       </div>
     </section>
   );
