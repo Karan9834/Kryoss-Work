@@ -1,7 +1,7 @@
 import React from "react";
-import Androidblog1 from "../../../assets/services-kotlin-img/Kotlinblog1.webp"
-import Androidblog2 from "../../../assets/services-kotlin-img/Kotlinblog2.webp"
-import Androidblog3 from "../../../assets/services-kotlin-img/Kotlinblog3.webp"
+import Androidblog1 from "../../../assets/services-kotlin-img/kotlinblog1.webp"
+import Androidblog2 from "../../../assets/services-kotlin-img/kotlinblog2.webp"
+import Androidblog3 from "../../../assets/services-kotlin-img/kotlinblog3.webp"
 
 
 const blogs = [
