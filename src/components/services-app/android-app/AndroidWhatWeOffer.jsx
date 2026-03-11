@@ -33,7 +33,7 @@ const solutions = [
     }
 ];
 
-const AndroidWhatWeOffer = () => {
+const AndroidWeOffer = () => {
     return (
         <section className="bg-[#f6f6f6] py-16 md:py-20">
             <div className="max-w-7xl mx-auto px-6">
@@ -88,4 +88,4 @@ const AndroidWhatWeOffer = () => {
     );
 };
 
-export default AndroidWhatWeOffer;
+export default AndroidWeOffer;
