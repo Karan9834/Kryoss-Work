@@ -8,7 +8,7 @@ const blogs = [
     {
         id: 1,
         title: "Top 10 South African Food Delivery Apps to Look for in 2024",
-        image: Androidnblog1
+        image: Androidblog1
     },
     {
         id: 2,
