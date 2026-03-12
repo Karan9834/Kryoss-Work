@@ -1,25 +1,25 @@
 import React from "react";
-import { Zap, Puzzle, ShieldCheck } from "lucide-react";
+import { Clock, TrendingUp, BadgeCheck } from "lucide-react";
 
 const advantages = [
     {
-        icon: <Zap className="w-8 h-8 text-[#8b5e2c]" />,
-        title: "Faster Development Cycles",
-        text: "Kotlin's expressive syntax dramatically reduces the need to write code again & again. These implications help you focus on developing advanced functionalities rather than juggling with repetitive coding."
+        icon: <Clock className="w-8 h-8 text-[#8b5e2c]" />,
+        title: "24/7 Online Presence",
+        text: "With an e-commerce website, you can be available to your customers 24/7, providing them with the convenience of shopping at any time."
     },
     {
-        icon: <Puzzle className="w-8 h-8 text-[#8b5e2c]" />,
-        title: "Interoperability with Java",
-        text: "With 100% interoperability with Java, Kotlin is the perfect fit for modernizing your current application. This flexibility allows business owners like yours to modernize feature-by-feature at their own pace."
+        icon: <TrendingUp className="w-8 h-8 text-[#8b5e2c]" />,
+        title: "Higher Conversion Rates",
+        text: "An e-commerce website can help you convert more visitors into customers by providing a seamless shopping experience."
     },
     {
-        icon: <ShieldCheck className="w-8 h-8 text-[#8b5e2c]" />,
-        title: "Improved App Stability",
-        text: "Kotlin helps you detect possible issues during compile time. It helps our developers write crash-resistant code for a more stable app, which helps to deliver a smooth user experience."
+        icon: <BadgeCheck className="w-8 h-8 text-[#8b5e2c]" />,
+        title: "Stronger Brand Identity",
+        text: "An e-commerce website can help you convert more visitors into customers by providing a seamless shopping experience."
     }
 ];
 
-const KotlinStrategicAdvantages = () => {
+const EcommerceBenifits = () => {
     return (
         <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-6">
@@ -30,19 +30,16 @@ const KotlinStrategicAdvantages = () => {
                         <div className="lg:sticky lg:top-32 h-fit">
                             <div className="inline-flex items-center border border-gray-300 rounded-full px-4 py-1 text-sm mb-6">
                                 <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                                Strategic Advantages
+
+                                Key Benefits
                             </div>
 
                             <h2 className="text-4xl font-semibold leading-snug mb-8">
-                                Scalable Benefits of <span className="text-orange-500">White Label Kotlin App Development Solutions</span>
+                                <span className="text-orange-500">Benefits of Choosing  </span>Our White Label Ecommerce Development
                             </h2>
 
                             <p className="text-gray-600 leading-relaxed text-lg">
-                                Unlock rapid market entry with rebrandable solutions that offer the perfect
-                                balance of native performance and cross-platform efficiency. By leveraging
-                                Kotlin Multiplatform, your business gains a high-value digital asset with full
-                                source code ownership, significantly reducing long-term maintenance costs
-                                and technical debt.
+                                Our white label ecommerce development helps you reduce costs, accelerate time to market, increase profit margins, and launch a fully branded ecommerce platform without managing complex technical infrastructure.
                             </p>
                         </div>
                     </div>
@@ -82,4 +79,4 @@ const KotlinStrategicAdvantages = () => {
     );
 };
 
-export default KotlinStrategicAdvantages;
+export default EcommerceBenifits;

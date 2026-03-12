@@ -38,7 +38,7 @@ const AndroidWhyItWork = () => {
                             </h2>
 
                             <p className="text-gray-600 leading-relaxed text-lg">
-                                White Label Android App Development gives businesses a faster, smarter way to launch fully branded mobile solutions without heavy development costs. It offers scalability, flexibility, and performance that support long-term growth across industries..
+                                White Label Android App Development gives businesses a faster, smarter way to launch fully branded mobile solutions without heavy development costs. It offers scalability, flexibility, and performance that support long-term growth across industries.
                             </p>
                         </div>
                     </div>
@@ -47,18 +47,26 @@ const AndroidWhyItWork = () => {
                     <div className="lg:w-1/2 border-l border-gray-100 pl-4 lg:pl-12">
                         <div className="space-y-6 lg:space-y-10">
                             {advantages.map((item, index) => (
-                                <div key={index} className="flex flex-col gap-6 group">
-                                    <div className="w-16 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center transition-all duration-300 group-hover:shadow-md group-hover:border-orange-200">
-                                        {item.icon}
-                                    </div>
-                                    <div className="space-y-4 pb-12 lg:pb-16 border-b border-gray-100 last:border-0">
+                                <div key={index} className="group pb-12 lg:pb-16 border-b border-gray-100 last:border-0">
+
+                                    {/* ICON + TITLE ROW */}
+                                    <div className="flex items-center gap-6 mb-4">
+
+                                        <div className="w-16 h-16 bg-white border border-gray-100 rounded-xl shadow-sm flex items-center justify-center transition-all duration-300 group-hover:shadow-md group-hover:border-orange-200">
+                                            {item.icon}
+                                        </div>
+
                                         <h3 className="text-2xl font-semibold text-gray-800 group-hover:text-orange-500 transition-colors">
                                             {item.title}
                                         </h3>
-                                        <p className="text-gray-600 leading-relaxed text-[17px]">
-                                            {item.text}
-                                        </p>
+
                                     </div>
+
+                                    {/* DESCRIPTION */}
+                                    <p className="text-gray-600 leading-relaxed text-[17px]">
+                                        {item.text}
+                                    </p>
+
                                 </div>
                             ))}
                         </div>

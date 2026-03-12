@@ -3,37 +3,37 @@ import React from "react";
 const solutions = [
     {
         number: "01",
-        title: "Customer Android App Development",
-        text: "After thoroughly understanding your Android app development requirements, we develop a custom Android app tailored to your specific goals. These feature-rich solutions meet your operational requirements efficiently."
+        title: "E-Commerce Web Design",
+        text: "We create visually stunning and user-friendly e-commerce websites that convert visitors into customers. Our design team focuses on creating a seamless shopping experience that enhances user engagement and drives sales."
     },
     {
         number: "02",
-        title: "Android App Development Consultation",
-        text: "Whether you're starting from zero or upgrading, our Android app development consultant helps you move forward with the right strategy. After understanding your business goals, we develop a success roadmap."
+        title: "Custom E-Commerce Development",
+        text: "We build custom e-commerce solutions tailored to your business needs. Our development team creates a scalable, secure, and feature-rich platform that meets your specific requirements."
     },
     {
         number: "03",
-        title: "Android Web-Based App Development",
-        text: "Are you looking to develop a scalable web app that works great on all browsers? With our web-based Android application development services, we develop solutions that help you connect with your users wherever they are."
+        title: "E-Commerce Consulting",
+        text: "We provide expert guidance to help you make informed decisions about your e-commerce strategy. Our consultants analyze your business needs and recommend the best approach for growth and success."
     },
     {
         number: "04",
-        title: "Multi-Platform Deployment",
-        text: "With our enterprise-grade Kotlin app development services, we focus on delivering solutions that grow with your business."
+        title: "E-Commerce site Maintenance",
+        text: "We offer regular maintenance and updates to keep your e-commerce site running smoothly. Our team ensures that your site is secure, fast, and always up-to-date with the latest features."
     },
     {
         number: "05",
-        title: "Android UI/UX Design",
-        text: "Great applications are effortless to use. Our UI/UX Android app designers create every screen with extra care. From the first interaction to the final action, we ensure your app feels good and guides users effortlessly."
+        title: "E-Commerce Integration",
+        text: "We integrate your e-commerce platform with other tools and services to enhance functionality and improve user experience. Our integration team ensures seamless connections between different systems."
     },
     {
         number: "06",
-        title: "Android App Migration Services",
-        text: "We help you future-proof your app so it runs better, lasts longer, and performs smoothly! With our Android app migration services, we help you migrate from an older Android version to an updated one without data loss or disruption."
+        title: "E-Commerce Migration",
+        text: "We help you migrate your existing e-commerce platform to a new system or upgrade to a more advanced solution. Our migration team ensures a smooth transition with minimal downtime."
     }
 ];
 
-const AndroidWeOffer = () => {
+const EcommerceExpertise = () => {
     return (
         <section className="bg-[#f6f6f6] py-16 md:py-20">
             <div className="max-w-7xl mx-auto px-6">
@@ -42,19 +42,18 @@ const AndroidWeOffer = () => {
                 <div className="flex justify-center mb-6">
                     <span className="border border-gray-300 rounded-full px-4 py-1 text-sm flex items-center gap-2">
                         <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-                        What We Deliver
+                        Our Expertise
                     </span>
                 </div>
 
                 {/* Heading */}
                 <h2 className="text-center text-3xl md:text-4xl font-semibold max-w-4xl mx-auto">
-                    Scalable White Label Android App Development{" "}
-                    <span className="text-orange-500">Agency Built for Growth</span>
+                    <span className="text-orange-500">Comprehensive White Label </span>Ecommerce Development Services
                 </h2>
 
                 {/* Description */}
                 <p className="text-center text-gray-600 max-w-4xl mx-auto mt-4">
-                    Every business has different goals, and our White Label Android App Development Service is built to match them. As a trusted White Label Android App Development Agency, we provide scalable, fully branded Android solutions that help startups, agencies, and enterprises launch faster and grow smarter.
+                    We deliver scalable white label ecommerce development solutions that let you launch fully branded online stores with complete control, flexibility, and long-term growth support.
                 </p>
 
                 {/* Cards */}
@@ -88,4 +87,4 @@ const AndroidWeOffer = () => {
     );
 };
 
-export default AndroidWeOffer;
+export default EcommerceExpertise;
