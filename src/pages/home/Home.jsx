@@ -13,21 +13,23 @@ import FAQ from "@/components/home/FAQ";
 import TrustBadges from "@/components/home/TrustBadges";
 import Contact from "@/components/home/Contact";
 import Newsletter from "@/components/home/Newsletter";
+import PickSection from "../../components/home/PickSection";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <Services />
-      <Products />
+      {/* <Services /> */}
+      <PickSection/>
+      {/* <Products /> */}
       <Industries />
-      <AISolutions />
+      {/* <AISolutions /> */}
       <WhyChooseUs />
-      <Stats />
+      {/* <Stats /> */}
       <About />
       <Testimonials />
-      <Team />
-      <CTABanner />
+      {/* <Team /> */}
+      {/* <CTABanner /> */}
       <FAQ />
       <TrustBadges />
       <Contact />

@@ -8,6 +8,10 @@ import { CompanyRoutes } from './CompanyRoutes';
 import { GojekRoutes } from './GojekRoutes';
 import Blog from "../pages/Blog";
 import Products from "../pages/Products";
+import ServicesPage from '../components/home/ServicePage';
+import HireDevelopersPage from '../components/home/HireDevelopersPage';
+import BusinessGrowthPage from '../components/home/BusinessGrowthPage';
+// import ServicesPage from "../pages/ServicesPage";
 
 const AppRoutes = () => {
     return (
@@ -20,6 +24,11 @@ const AppRoutes = () => {
                 <Route path="*" element={<NotFound />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/products" element={<Products />} />
+                 <Route path="/services" element={<ServicesPage />} />
+                 <Route path="/business-growth" element={<BusinessGrowthPage />} />
+                
+
+<Route path="/hire-developers" element={<HireDevelopersPage />} />
             </Route>
         </Routes>
     );

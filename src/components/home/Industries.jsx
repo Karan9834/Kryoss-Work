@@ -55,9 +55,9 @@ export default function Industries() {
             className="flex flex-col items-center gap-3 p-5 bg-white rounded-xl border border-border hover:shadow-md hover:border-primary/30 transition-all group cursor-pointer">
             
               <div className={`${bg} p-3 rounded-xl group-hover:scale-110 transition-transform`}>
-                <Icon className={`h-6 w-6 ${color}`} />
+                <Icon className={`h-16 w-16 ${color}`} />
               </div>
-              <span className="text-xs font-semibold text-center text-foreground leading-tight">
+              <span className="text-xs font-bold text-center text-foreground leading-tight">
                 {label}
               </span>
             </div>
