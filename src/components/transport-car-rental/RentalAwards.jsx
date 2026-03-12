@@ -3,22 +3,22 @@ import React from "react";
 const reviews = [
   {
     name: "Trustpilot",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Trustpilot_Logo.svg",
+    logo: "https://whitelabelfox.com/assets/images/gojek-clone-app/Trustpilot.webp",
     rating: "4.3",
   },
   {
     name: "Google",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+    logo: "https://whitelabelfox.com/assets/images/gojek-clone-app/Google.webp",
     rating: "4.9",
   },
   {
     name: "Clutch",
-    logo: "https://clutch.co/static/logo.svg",
+    logo: "https://whitelabelfox.com/assets/images/gojek-clone-app/Clutch.webp",
     rating: "5.0",
   },
   {
     name: "GoodFirms",
-    logo: "https://goodfirms.s3.amazonaws.com/assets/ui/goodfirms-logo.svg",
+    logo: "https://whitelabelfox.com/assets/images/gojek-clone-app/Goodfirms.webp",
     rating: "4.9",
   },
 ];
@@ -85,16 +85,16 @@ const AwardsSection = () => {
             >
               <img
                 src={item.logo}
-                className="h-8 object-contain mb-3"
+                className="h-16 object-contain mb-3"
               />
 
-              <div className="text-yellow-500 text-lg">
+              {/* <div className="text-yellow-500 text-lg">
                 ★★★★★
               </div>
 
               <div className="text-gray-600 text-sm mt-1">
                 ({item.rating})
-              </div>
+              </div> */}
 
             </div>
           ))}

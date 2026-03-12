@@ -1,17 +1,57 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
-const NavItem = ({ label, href, children }) => {
-    const [isOpen, setIsOpen] = useState(false);
+const NavItem = ({ label, href, children, isOpen: controlledIsOpen, onMouseEnter, onMouseLeave, onClick }) => {
+    const [localIsOpen, setLocalIsOpen] = useState(false);
+    const timeoutRef = useRef(null);
     const location = useLocation();
     const isActive = location.pathname === href || (href !== '/' && location.pathname.startsWith(href));
+
+    const isControlled = controlledIsOpen !== undefined;
+    const isOpen = isControlled ? controlledIsOpen : localIsOpen;
+
+    const handleMouseEnter = () => {
+        if (!isControlled) {
+            if (timeoutRef.current) clearTimeout(timeoutRef.current);
+            setLocalIsOpen(true);
+        }
+        if (onMouseEnter) onMouseEnter();
+    };
+
+    const handleMouseLeave = () => {
+        if (!isControlled) {
+            timeoutRef.current = setTimeout(() => {
+                setLocalIsOpen(false);
+            }, 200); // Small delay to account for hover intent
+        }
+        if (onMouseLeave) onMouseLeave();
+    };
+
+    // Cleanup timeout on unmount
+    React.useEffect(() => {
+        return () => {
+            if (timeoutRef.current) clearTimeout(timeoutRef.current);
+        };
+    }, []);
+
+    // Close the menu automatically when navigating to a new page
+    React.useEffect(() => {
+        if (!isControlled) setLocalIsOpen(false);
+        if (onClick) onClick();
+    }, [location.pathname, location.search, location.hash]);
+
+    const handleClick = () => {
+        if (!isControlled) setLocalIsOpen(false);
+        if (onClick) onClick();
+    };
 
     return (
         <div
             className="relative flex items-center h-full"
-            onMouseEnter={() => setIsOpen(true)}
-            onMouseLeave={() => setIsOpen(false)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            onClick={handleClick}
         >
             {children ? (
                 <div
@@ -38,6 +78,11 @@ const NavItem = ({ label, href, children }) => {
             {/* Dropdown Indicator Triangle */}
             {isOpen && children && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-[-5px] w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-b-[6px] border-b-white z-[60]" />
+            )}
+
+            {/* Invisible hover bridge to fill the gap between nav and mega menu */}
+            {isOpen && children && (
+                <div className="absolute top-full left-1/2 -translate-x-1/2 w-64 h-8 bg-transparent z-[55]" />
             )}
 
             {isOpen && children && (

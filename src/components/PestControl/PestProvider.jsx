@@ -88,7 +88,11 @@ const ProviderFeatures = () => {
           </div>
 
           {/* RIGHT SCROLLABLE CONTENT */}
-          <div className="space-y-6 max-h-[520px] overflow-y-auto pr-4">
+          <div className="space-y-6 max-h-[520px] overflow-y-auto pr-4"
+            style={{
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+            }}>
 
             {features.map((item, index) => (
               <div

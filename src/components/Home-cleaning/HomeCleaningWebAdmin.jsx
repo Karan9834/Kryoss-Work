@@ -1,44 +1,54 @@
 import React from "react";
+import {
+  Users,
+  CreditCard,
+  FileCheck,
+  BarChart3,
+  Bell,
+  TicketPercent,
+  LayoutDashboard,
+  Star,
+} from "lucide-react";
 
 const HomeCleaningWebAdmin = () => {
   const features = [
     {
-      icon: "/admin/icon1.png",
+      icon: Users,
       title: "Manage Provider",
       desc: "Admin can approve or reject provider profiles and view order history, reviews, and feedback.",
     },
     {
-      icon: "/admin/icon2.png",
+      icon: CreditCard,
       title: "Manage Payment Option",
       desc: "Admin can manage commission, tax, and available payment methods.",
     },
     {
-      icon: "/admin/icon3.png",
+      icon: FileCheck,
       title: "Manage Document",
       desc: "Admin can set required documents and verify provider uploaded documents.",
     },
     {
-      icon: "/admin/icon4.png",
+      icon: BarChart3,
       title: "Earning Report",
       desc: "View cleaner earnings and total system commission reports with full details.",
     },
     {
-      icon: "/admin/icon5.png",
+      icon: Bell,
       title: "Mass Notification",
       desc: "Send announcements, offers, and festival greetings to users and providers.",
     },
     {
-      icon: "/admin/icon6.png",
+      icon: TicketPercent,
       title: "Manage Promo Code",
       desc: "Add or remove promo codes with discount type, value, and expiry settings.",
     },
     {
-      icon: "/admin/icon7.png",
+      icon: LayoutDashboard,
       title: "Dashboard",
       desc: "View site statistics, revenue reports, and new service requests graphically.",
     },
     {
-      icon: "/admin/icon8.png",
+      icon: Star,
       title: "View Review & Rating",
       desc: "Access provider reviews with service ID, user details, and timestamps.",
     },
@@ -61,7 +71,10 @@ const HomeCleaningWebAdmin = () => {
 
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
-         <span className="text-[#1d79c6]">Super Web Admin Panel Features</span>  for Uber for House Cleaning App
+          <span className="text-[#1d79c6]">
+            Super Web Admin Panel Features
+          </span>{" "}
+          for Uber for House Cleaning App
         </h2>
 
         <p className="text-base sm:text-lg text-white/80 max-w-4xl mx-auto mb-16">
@@ -81,33 +94,35 @@ const HomeCleaningWebAdmin = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
 
-          {features.map((item, index) => (
-            <div
-              key={index}
-              className="group bg-white/10 p-6 rounded-2xl border border-white/20 
+          {features.map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+              <div
+                key={index}
+                className="group bg-white/10 p-6 rounded-2xl border border-white/20 
                          transition duration-300 hover:bg-white hover:shadow-xl"
-            >
-              {/* Top Row: Icon + Title */}
-              <div className="flex items-center gap-4 mb-4">
+              >
 
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className="w-12 h-12 object-contain"
-                />
+                {/* Top Row: Icon + Title */}
+                <div className="flex items-center gap-4 mb-4">
 
-                <h3 className="text-lg font-semibold group-hover:text-black transition">
-                  {item.title}
-                </h3>
+                  <Icon className="w-12 h-12 text-cyan-400" />
+
+                  <h3 className="text-lg font-semibold group-hover:text-black transition">
+                    {item.title}
+                  </h3>
+
+                </div>
+
+                {/* Description */}
+                <p className="text-sm text-white/80 leading-relaxed group-hover:text-gray-700 transition">
+                  {item.desc}
+                </p>
 
               </div>
-
-              {/* Description */}
-              <p className="text-sm text-white/80 leading-relaxed group-hover:text-gray-700 transition">
-                {item.desc}
-              </p>
-            </div>
-          ))}
+            );
+          })}
 
         </div>
 

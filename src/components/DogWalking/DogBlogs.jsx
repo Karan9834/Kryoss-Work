@@ -26,7 +26,7 @@ const RelatedBlogs = () => {
           <div className="border border-green-400 rounded-3xl overflow-hidden bg-white">
 
             <img
-              src="/assets/blog1.jpg"
+              src="https://whitelabelfox.com/assets/images/blog-section/pet-dog-translator-apps.webp"
               alt="blog"
               className="w-full h-72 object-cover"
             />
@@ -49,7 +49,7 @@ const RelatedBlogs = () => {
             <div className="border border-green-400 rounded-3xl p-5 flex items-center gap-6 bg-white">
 
               <img
-                src="/assets/blog2.jpg"
+                src="https://whitelabelfox.com/assets/images/blog-section/rovers-business-model.webp"
                 alt="blog"
                 className="w-40 h-28 object-cover rounded-xl"
               />
@@ -65,7 +65,7 @@ const RelatedBlogs = () => {
             <div className="border border-green-400 rounded-3xl p-5 flex items-center gap-6 bg-white">
 
               <img
-                src="/assets/blog3.jpg"
+                src="https://whitelabelfox.com/assets/images/blog-section/factors-consider-creating-beauty-app-for-salon-business.webp"
                 alt="blog"
                 className="w-40 h-28 object-cover rounded-xl"
               />

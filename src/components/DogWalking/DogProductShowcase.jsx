@@ -19,7 +19,7 @@ const products = [
   },
   {
     title: "Handyman Service App",
-    img: "https://images.unsplash.com/photo-1581091215367-59ab6b8b8a8a"
+    img: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Handyman.webp"
   },
   {
     title: "Carpool Ride App",

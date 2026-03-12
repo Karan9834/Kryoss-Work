@@ -102,9 +102,10 @@ const ProductsMegaMenu = () => {
                             <div className="pt-4">
                                 <Link
                                     to="/products"
+                                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                     className="inline-flex items-center gap-2 bg-primary text-white w-full justify-center py-4 rounded-full text-[13px] font-bold hover:bg-orange-600 transition-all shadow-xl shadow-orange-500/20 hover:shadow-orange-500/40 uppercase tracking-widest active:scale-95"
                                 >
-                                    Explore Our Products <ArrowRight size={14} />
+                                    Explore All Products <ArrowRight size={14} />
                                 </Link>
                             </div>
                         </div>

@@ -3,20 +3,20 @@ import React from "react";
 const TaxiBusinessModelSection = () => {
   const solutions = [
     {
-      image: "https://whitelabelfox.com/assets/images/carpooling-clone-script/carpool-similar-buiness-model-cabify.webp",
+      image: "https://whitelabelfox.com/assets/images/carpooling-clone-script/carpool-similar-buiness-model-lyft.webp",
       title: "Lyft Clone App",
       desc: "Lyft Clone online taxi Booking broadens your ride-hailing business & increases your business revenue."
-     },
+    },
     {
-      image: "https://whitelabelfox.com/assets/images/carpooling-clone-script/carpool-similar-buiness-model-bla-bla-car.webp",
+      image: "https://whitelabelfox.com/assets/images/carpooling-clone-script/carpool-similar-buiness-model-uber.webp",
       title: "Cabify Clone App",
       desc: "A taxi booking service to cover the maximum on-demand business market with extraordinary features."
-     },
+    },
     {
-      image: "https://whitelabelfox.com/assets/images/carpooling-clone-script/carpool-similar-buiness-model-ola-share.webp",
+      image: "https://whitelabelfox.com/assets/images/carpooling-clone-script/carpool-similar-buiness-model-blablacar.webp",
       title: "Rapido Clone App",
       desc: "A popular bike taxi solution to extend your market reach and diversify your taxi-hailing business."
-     },
+    },
   ];
 
   return (

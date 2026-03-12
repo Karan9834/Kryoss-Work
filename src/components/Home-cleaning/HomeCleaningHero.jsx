@@ -36,7 +36,7 @@ const HomeCleaningHero = () => {
           </p>
 
           {/* Button */}
-          <button className="bg-gradient-to-r from-cyan-500 to-blue-500 px-6 sm:px-8 py-3 rounded-full text-white font-semibold text-base shadow-md hover:scale-105 transition duration-300 mx-auto md:mx-0">
+          <button className="w-fit bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-3 rounded-full text-white font-semibold text-base shadow-md hover:scale-105 transition duration-300 mx-auto md:mx-0">
             Let's Discuss →
           </button>
         </div>

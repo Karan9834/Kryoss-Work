@@ -27,11 +27,11 @@ const apps = [
   },
   {
     title: "Indrive Clone App",
-    img: "https://images.unsplash.com/photo-1549921296-3a6b3c1d8c9b",
+    img: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Rental.webp",
   },
   {
     title: "Delivery Anything App",
-    img: "https://images.unsplash.com/photo-1586769852044-692d6e3703f2",
+    img: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Delivery-anything.webp",
   },
 ];
 

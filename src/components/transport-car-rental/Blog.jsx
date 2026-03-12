@@ -14,7 +14,7 @@ const sideBlogs = [
   },
   {
     title: "Motorbike Rental app Development Cost & Key Features",
-    img: "https://images.unsplash.com/photo-1558981403-c5f9891c8b8a",
+    img: "https://whitelabelfox.com/assets/images/blog-section/motorbike-rental-app-development-cost.webp",
   },
 ];
 

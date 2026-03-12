@@ -13,19 +13,18 @@ const HomeCleaningSnapsot = () => {
       "https://whitelabelfox.com/assets/images/carpooling-clone-script/Carpool-UI-section-find-ride-UI-6.webp",
     ],
     ProviderApp: [
-      "/glance/offer1.png",
-      "/glance/offer2.png",
-      "/glance/offer3.png",
-      "/glance/offer4.png",
-      "/glance/offer5.png",
-      "/glance/offer6.png",
+      "https://whitelabelfox.com/assets/images/carpooling-clone-script/Carpool-UI-section-find-ride-UI-3.webp",
+      "https://whitelabelfox.com/assets/images/carpooling-clone-script/Carpool-UI-section-find-ride-UI-5.webp",
+      "https://whitelabelfox.com/assets/images/carpooling-clone-script/Carpool-UI-section-find-ride-UI-2.webp",
+      "https://whitelabelfox.com/assets/images/carpooling-clone-script/Carpool-UI-section-find-ride-UI-4.webp",
+      "https://whitelabelfox.com/assets/images/carpooling-clone-script/Carpool-UI-section-find-ride-UI-1.webp",
+      "https://whitelabelfox.com/assets/images/carpooling-clone-script/Carpool-UI-section-find-ride-UI-6.webp",
     ],
-  
   };
 
   return (
     <section
-      className="py-24 text-white overflow-hidden h-250"
+      className="py-16 md:py-24 text-white overflow-hidden md:h-250"
       style={{
         backgroundImage:
           "url('https://whitelabelfox.com/assets/images/uber-house-cleaning-app/fox-home-cleaning-how-app-works-bg.webp')",
@@ -33,49 +32,48 @@ const HomeCleaningSnapsot = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="max-w-7xl mx-auto px-5 md:px-6 text-center">
 
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 border border-white/40 px-4 py-1.5 rounded-full text-sm mb-6">
+        <div className="inline-flex items-center gap-2 border border-white/40 px-4 py-1.5 rounded-full text-xs md:text-sm mb-6">
           <span className="w-2.5 h-2.5 bg-cyan-400 rounded-full"></span>
-          
-A Snapshot of Our Uber for House Cleaning App
+          A Snapshot of Our Uber for House Cleaning App
         </div>
 
         {/* Heading */}
-        <h2 className="text-[40px] font-semibold mb-10">
-          A Glance at Our Uber for {" "}
-         <span className="text-cyan-400">House Cleaning App Solution</span>
+        <h2 className="text-[28px] md:text-[40px] font-semibold mb-8 md:mb-10">
+          A Glance at Our Uber for{" "}
+          <span className="text-cyan-400">House Cleaning App Solution</span>
         </h2>
-        <p>Take a quick look at our Uber for House Cleaning App solution, designed to streamline cleaning services for both users and providers. Explore how our app can help you launch and grow your on-demand cleaning business with ease.</p>
+
+        <p className="text-sm md:text-base max-w-3xl mx-auto">
+          Take a quick look at our Uber for House Cleaning App solution,
+          designed to streamline cleaning services for both users and providers.
+        </p>
 
         {/* Tabs */}
-        <div className="flex justify-center mb-16 mt-10">
+        <div className="flex justify-center mb-12 md:mb-16 mt-8 md:mt-10">
           <div className="bg-white/20 rounded-full p-1 flex gap-2 backdrop-blur-md">
 
             <button
               onClick={() => setActiveTab("CustomerApp")}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition ${
-                activeTab === "CustomerApp"
+              className={`px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-medium transition ${activeTab === "CustomerApp"
                   ? "bg-white text-black"
                   : "text-white"
-              }`}
+                }`}
             >
-             Customer App
+              Customer App
             </button>
 
             <button
               onClick={() => setActiveTab("ProviderApp")}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition ${
-                activeTab === "ProviderApp"
+              className={`px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-medium transition ${activeTab === "ProviderApp"
                   ? "bg-white text-black"
                   : "text-white"
-              }`}
+                }`}
             >
               Provider App
             </button>
-
-           
 
           </div>
         </div>
@@ -83,23 +81,22 @@ A Snapshot of Our Uber for House Cleaning App
         {/* Image Scroll Row */}
         <div className="relative overflow-hidden">
 
-          <div className="flex gap-5 animate-scroll whitespace-nowrap">
+          <div className="flex gap-4 md:gap-5 animate-scroll whitespace-nowrap">
             {images[activeTab].map((img, index) => (
               <img
                 key={index}
                 src={img}
                 alt=""
-                className="w-[250px] inline-block"
+                className="w-[180px] md:w-[250px] inline-block"
               />
             ))}
 
-            {/* duplicate for infinite loop */}
             {images[activeTab].map((img, index) => (
               <img
                 key={"dup-" + index}
                 src={img}
                 alt=""
-                className="w-[250px] inline-block"
+                className="w-[180px] md:w-[250px] inline-block"
               />
             ))}
           </div>
@@ -108,7 +105,6 @@ A Snapshot of Our Uber for House Cleaning App
 
       </div>
 
-      {/* Animation CSS */}
       <style>
         {`
           @keyframes scroll {
@@ -126,21 +122,3 @@ A Snapshot of Our Uber for House Cleaning App
 };
 
 export default HomeCleaningSnapsot;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

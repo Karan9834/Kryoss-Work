@@ -3,15 +3,15 @@ import React from "react";
 const blogs = {
   main: {
     title: "Build a Roadside Assistance App like Uber for Tow Truck",
-    img: "https://source.unsplash.com/800x600/?tow-truck,illustration,vector",
+    img: "https://whitelabelfox.com/assets/images/blog-section/roadside-assistance-app-like-uber-for-tow-truck.webp",
   },
   rightTop: {
     title: "Kickstart Your Handyman App like Uber: Feature & Cost",
-    img: "https://source.unsplash.com/600x400/?handyman,illustration,vector",
+    img: "https://whitelabelfox.com/assets/images/blog-section/kickstart-your-handyman-app-like-uber.webp",
   },
   rightBottom: {
     title: "Build an On-Demand Uber Massage App For Startup Business",
-    img: "https://source.unsplash.com/600x400/?massage,illustration,vector",
+    img: "https://whitelabelfox.com/assets/images/blog-section/on-demand-uber-massage-app.webp",
   },
 };
 

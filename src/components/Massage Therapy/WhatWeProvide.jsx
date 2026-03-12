@@ -1,9 +1,11 @@
 import React from "react";
+import { Globe } from "lucide-react";
+import { FaAndroid, FaApple } from "react-icons/fa";
 
 const WhatWeProvide = () => {
   return (
     <section
-      className="py-20 text-white"
+      className="py-20 text-white relative overflow-hidden"
       style={{
         background:
           "linear-gradient(100.96deg, #3F2023 0.49%, #3A182E 25.37%, #2E1236 50.25%, #2E1236 75.12%, #3F2023 100%)",
@@ -21,12 +23,17 @@ const WhatWeProvide = () => {
 
         {/* Heading */}
         <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">
-          Comprehensive <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text"> Uber for Massage App Solution</span> for all Platforms
+          Comprehensive{" "}
+          <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">
+            Uber for Massage App Solution
+          </span>{" "}
+          for all Platforms
         </h2>
 
         {/* Description */}
         <p className="text-center text-gray-300 max-w-3xl mx-auto mb-16">
-         Bring your conventional massage therapy business online with our innovative, fully customizable, and robust Uber for Massage app solution for Android and iOS. Experience the expertise of our professional developers and elevate your on-demand massage booking business.
+          Bring your conventional massage therapy business online with our
+          innovative, fully customizable Uber for Massage app solution.
         </p>
 
         {/* Content Layout */}
@@ -35,11 +42,24 @@ const WhatWeProvide = () => {
           {/* LEFT SIDE */}
           <div>
 
-            {/* Logos */}
-            <div className="flex flex-wrap items-center gap-6 mb-6">
-              <img src="/platform/android.png" className="h-10" alt="Android" />
-              <img src="/platform/ios.png" className="h-10" alt="iOS" />
-              <img src="/platform/web.png" className="h-10" alt="Web" />
+            {/* Platform Icons */}
+            <div className="flex items-center gap-6 mb-6 text-white">
+
+              <div className="flex items-center gap-2">
+                <FaAndroid size={28} />
+                <span>Android</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <FaApple size={28} />
+                <span>iOS</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <Globe size={28} />
+                <span>Web</span>
+              </div>
+
             </div>
 
             {/* Platform Title */}
@@ -49,7 +69,8 @@ const WhatWeProvide = () => {
 
             {/* Description */}
             <p className="text-gray-300 mb-6">
-              We provide a fully integrated, customizable Uber for Massage app solution that works seamlessly across Android, iOS, and Web platforms. Whether you're looking to reach customers on their mobile devices or via desktop, our solution ensures a smooth, high-quality experience for both users and service providers. With easy navigation, real-time booking, and efficient service delivery, you can expand your massage therapy business across all digital platforms effortlessly.
+              We provide a fully integrated Uber for Massage app solution that
+              works seamlessly across Android, iOS, and Web platforms.
             </p>
 
             {/* Features */}
@@ -68,15 +89,18 @@ const WhatWeProvide = () => {
                 </li>
               ))}
             </ul>
+
           </div>
 
-          {/* RIGHT SIDE IMAGE */}
-          <div className="flex justify-center">
+          {/* RIGHT IMAGE */}
+          <div className="relative mt-10 lg:absolute lg:right-0 lg:bottom-0 flex justify-center lg:justify-end">
+
             <img
               src="https://whitelabelfox.com/assets/images/uber-beauty-app/Fox-Beauty-what-we-provide-section-UI.webp"
               alt="Platform Solution"
-              className="w-full max-w-xl"
+              className="w-[320px] sm:w-[380px] md:w-[450px] lg:w-[620px] object-contain"
             />
+
           </div>
 
         </div>
