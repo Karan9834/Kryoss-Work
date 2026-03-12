@@ -10,6 +10,23 @@ import {
     Bot,
     Briefcase
 } from 'lucide-react';
+import img1 from '../../assets/Product-update/uberclone.png';
+import uberss1 from '../../assets/Product-update/uberss1.png';
+import uberss2 from '../../assets/Product-update/uberss2.png';
+import uberss3 from '../../assets/Product-update/uberss3.png';
+import biketaxi1 from '../../assets/Product-update/biketaxi.jpeg';
+import bikess1 from '../../assets/Product-update/bikess1.webp';
+import bikess2 from '../../assets/Product-update/bikess2.webp';
+import bikess3 from '../../assets/Product-update/bikess3.webp';
+import carental from '../../assets/Product-update/carental.jpg';
+import carrss1 from '../../assets/Product-update/carrss1.png';
+import carrss2 from '../../assets/Product-update/carrss2.png';
+import carrss3 from '../../assets/Product-update/carrss3.png';
+import taxibidding from '../../assets/Product-update/taxibidding.png';
+import food from '../../assets/Product-update/food.jpg';
+import foodss1 from '../../assets/Product-update/foodss1.png';
+import foodss2 from '../../assets/Product-update/foodss2.png';
+
 
 export const categories = [
     { id: 'ecommerce', name: 'Ecommerce Solutions', icon: ShoppingCart, count: 45, color: '#6C5CE7', bgTint: 'rgba(108, 92, 231, 0.05)' },
@@ -26,67 +43,281 @@ export const categories = [
 
 const baseProducts = [
     // Transport
+  {
+    id: "uber-clone",
+    name: "Uber Clone",
+    categoryId: 'transport',
+    type: "Ride-Hailing App",
+    description: "Complete ride-hailing platform with real-time tracking, fare estimation, and payment integration.",
+    image: img1, 
+    demoUrl: "https://preview.codecanyon.net/item/gocab-grab-uber-clone-taxi-booking-cab-rental-bidding-parcel/full_screen_preview/61391802",
+    features: [
+        "Real-time GPS tracking with live ETAs",
+        "Smart fare estimation & surge pricing",
+        "Multiple payment options (Card/Cash/Wallet)",
+    ],
+    about: "A fully functional Uber-like platform that seamlessly connects riders with drivers. Features include real-time tracking, automatic fare calculation, multiple payment gateways, and a comprehensive admin dashboard for complete business control. Built with scalability and performance in mind.",
+    steps: [
+        "User opens app and sets pickup/dropoff locations",
+        "System calculates fare and shows nearby drivers",
+        "User confirms booking with preferred vehicle type",
+        "Nearby driver accepts and navigates to pickup",
+        "Real-time tracking visible to both parties",
+        "Trip completes with automatic payment processing",
+        "Both parties rate each other"
+    ],
+    techStack: [
+        "React Native",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Socket.io",
+        "Google Maps API",
+        "Stripe",
+        "PayPal",
+        "Redis",
+        "Firebase",
+        "JWT",
+        "AWS S3",
+        "Docker"
+    ],
+    images: [
+        uberss1,
+        uberss2,
+        uberss3,
+    ],
+    badges: ['Popular', 'Best Seller']
+},
+{
+    id: 'bike-taxi-app',
+    name: 'Bike Taxi App',
+    categoryId: 'transport',
+    type: 'Mobility Solution',
+    description: 'Revolutionary two-wheeler ride-sharing platform designed for rapid city commutes. Beat traffic, save money, and reduce carbon footprint.',
+    image: biketaxi1,
+    demoUrl: "https://preview.codecanyon.net/item/cab2door-online-taxi-booking-app-template/full_screen_preview/29919332",
+    features: [
+        "Smart route optimization for bike lanes",
+        "Dynamic pricing with rush hour multipliers",
+        "Digital helmet verification system",
+    ],
+    about: "A next-generation bike taxi platform that's transforming urban mobility. Unlike traditional cab services, our bike taxi solution offers faster commutes through traffic, lower fares, and environmentally sustainable transportation. The platform includes specialized features for two-wheeler logistics, including helmet compliance checks, lane-optimized routing, and a unique gamified reward system that encourages eco-friendly riding. Perfect for smart cities looking to reduce congestion and pollution.",
+    steps: [
+        "Rider selects destination and preferred bike type (Standard/ Electric/ Premium)",
+        "AI-powered route planner suggests fastest bike-friendly paths",
+        "Nearby driver accepts and rider gets driver details with safety score",
+        "Driver arrives with QR-scanned verified helmet",
+        "Real-time journey tracking with estimated arrival updates",
+        "Contactless payment with auto-split bill option for groups",
+        "Post-ride carbon savings report shared with rider",
+        "Both parties earn green points for eco-friendly ride"
+    ],
+    techStack: [
+        "Flutter (Cross-platform)",
+        "Django (Python Backend)",
+        "PostgreSQL",
+        "GraphQL",
+        "Apache Kafka",
+        "OpenStreetMap API",
+        "Razorpay",
+        "TensorFlow Lite",
+        "Elasticsearch",
+        "Kubernetes",
+        "GitHub Actions",
+        "Sentry",
+        "New Relic"
+    ],
+    images: [
+        bikess1,
+        bikess2,
+        bikess3
+    ],
+    badges: ['Trending', 'Eco-Friendly']
+},
+   {
+    id: 'car-rental-app',
+    name: 'Car Rental App',
+    categoryId: 'transport',
+    type: 'Car Rental Platform',
+    description: 'Complete platform for hourly and daily car rentals. Perfect for rental agencies, car dealers, and peer-to-peer car sharing businesses.',
+    image: carental,
+    demoUrl: "https://preview.codecanyon.net/item/carento-car-dealer-rental-booking-laravel-system/full_screen_preview/55782539",
+    features: [
+        "Multi-fleet management system",
+        "Hourly, daily & weekly rental options",
+        "Real-time vehicle availability calendar",
+    ],
+    about: "A powerful car rental platform that streamlines the entire rental process for both businesses and customers. From managing a fleet of vehicles to handling bookings, payments, and returns, this solution offers everything needed to launch a successful car rental service. The system supports various rental models including traditional agency rentals, peer-to-peer car sharing, and corporate fleet management.",
+    steps: [
+        "Customer browses available vehicles with filters (type, price, features)",
+        "Selects rental duration and adds optional insurance/extras",
+        "Completes secure online payment or holds deposit",
+        "Admin/owner receives booking notification and verifies",
+        "Customer picks up vehicle (or delivery arranged) with digital contract",
+        "Real-time tracking available for fleet owners during rental period",
+        "Vehicle return with damage inspection and deposit release",
+        "Both parties receive automated review requests"
+    ],
+    techStack: [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "RESTful API",
+        "jQuery",
+        "Bootstrap",
+        "Stripe",
+        "PayPal",
+        "Google Maps API",
+        "Redis",
+        "JWT",
+        "AWS S3",
+        "Docker"
+    ],
+    images: [
+            carrss1,
+            carrss2,
+        carrss3
+    ],
+    badges: ['New', 'Popular']
+},
     {
-        id: 'uber-clone',
-        name: 'Uber Clone',
-        categoryId: 'transport',
-        description: 'Complete ride-hailing solution with driver and rider apps.',
-        features: ['Android + iOS', 'Admin Dashboard', 'Real-time Tracking'],
-        image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&q=80',
-        badges: ['Best Seller', 'Popular'],
-        type: 'Clone Scripts'
-    },
-    {
-        id: 'bike-taxi-app',
-        name: 'Bike Taxi App',
-        categoryId: 'transport',
-        description: 'Two-wheeler ride sharing platform for quick urban transit.',
-        features: ['Android + iOS', 'Wallet Integration', 'Surge Pricing'],
-        image: 'https://images.unsplash.com/photo-1558981285-6f0c94958bb6?w=600&q=80',
-        badges: ['New'],
-        type: 'Mobile Apps'
-    },
-    {
-        id: 'car-rental-app',
-        name: 'Car Rental App',
-        categoryId: 'transport',
-        description: 'Platform for hourly and daily car rentals for businesses.',
-        features: ['Web + Mobile', 'Fleet Management', 'Online Payments'],
-        image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&q=80',
-        badges: [],
-        type: 'Web Apps'
-    },
-    {
-        id: 'carpool-app',
-        name: 'Carpool App',
-        categoryId: 'transport',
-        description: 'Ride-sharing application to split costs and reduce traffic.',
-        features: ['Android + iOS', 'Identity Verification', 'In-app Chat'],
-        image: 'https://images.unsplash.com/photo-1549317336-206569e8475c?w=600&q=80',
-        badges: [],
-        type: 'Mobile Apps'
-    },
-    {
-        id: 'taxi-bidding-app',
-        name: 'Taxi Bidding App',
-        categoryId: 'transport',
-        description: 'Allow riders to negotiate fares directly with drivers.',
-        features: ['Android + iOS', 'Live Bidding', 'Rating System'],
-        image: 'https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?w=600&q=80',
-        badges: ['Popular'],
-        type: 'Clone Scripts'
-    },
+    id: 'carpool-app',
+    name: 'Carpool App',
+    categoryId: 'transport',
+    type: 'Ride-Sharing Platform',
+    description: 'Smart ride-sharing application that connects commuters heading in the same direction. Split costs, reduce traffic, and make eco-friendly travel choices.',
+    image: 'https://images.unsplash.com/photo-1549317336-206569e8475c?w=600&q=80',
+    demoUrl: "https://preview.codecanyon.net/item/carpool-ride-sharing-app/full_screen_preview/12345678", // You'll need to update this with actual demo URL
+    features: [
+        "Emergency SOS button with live location sharing",
+        "Rider & driver ratings with reviews",
+        "Corporate carpool management dashboard"
+    ],
+    about: "A modern carpool platform designed to reduce traffic congestion and promote sustainable transportation. The app intelligently matches commuters traveling along similar routes, allowing them to share rides and split costs. Built with safety as a priority, it includes identity verification, real-time tracking, and emergency features. Perfect for daily commuters, corporate campuses, and eco-conscious communities.",
+    steps: [
+        "User enters start location and destination with preferred travel time",
+        "Smart algorithm finds matching riders/drivers along similar routes",
+        "View matched profiles with verification status and ratings",
+        "Chat within app to coordinate pickup details",
+        "Confirm ride with automated cost calculation",
+        "Real-time tracking during the journey",
+        "Automatic payment split after ride completion",
+        "Rate and review your co-passengers"
+    ],
+    techStack: [
+        "React Native",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Socket.io",
+        "Google Maps API",
+        "Stripe",
+        "Redis",
+        "Firebase",
+        "JWT",
+        "AWS S3",
+        "TensorFlow Lite"
+    ],
+    images: [
+        "https://images.unsplash.com/photo-1549317336-206569e8475c?w=600&q=80",
+        "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&q=80",
+        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80",
+        "https://images.unsplash.com/photo-150652178126-71f47e184d1a?w=600&q=80",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&q=80"
+    ],
+    badges: ['Eco-Friendly', 'Popular']
+},
+   {
+    id: 'taxi-bidding-app',
+    name: 'Taxi Bidding App',
+    categoryId: 'transport',
+    type: 'Dynamic Pricing Platform',
+    description: 'Innovative ride-hailing platform where riders can negotiate fares and drivers can bid for rides. A perfect Uber-like alternative with transparent pricing.',
+    image: taxibidding,
+    demoUrl: "https://preview.codecanyon.net/item/exicube-bidcab-app/full_screen_preview/40458430",
+    features: [
+        "Corporate account management",
+        "Comprehensive admin dashboard with bid analytics"
+    ],
+    about: "A revolutionary taxi booking platform that transforms the traditional fixed-fare model into a dynamic bidding marketplace. Riders can post their trips with desired budgets, and nearby drivers can bid competitively for the ride. This transparent system ensures fair pricing for both parties while giving riders more control and drivers the freedom to maximize their earnings. Includes all standard ride-hailing features with the unique bidding twist.",
+    steps: [
+        "Rider enters pickup and dropoff locations with preferred budget range",
+        "Ride request is broadcast to nearby available drivers",
+        "Drivers view request and place competitive bids",
+    ],
+    techStack: [
+        "React Native",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Socket.io",
+        "Google Maps API",
+        "Stripe",
+        "PayPal",
+        "Redis",
+        "Firebase",
+        "JWT",
+        "AWS S3",
+        "Docker"
+    ],
+    images: [
+        "https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?w=600&q=80",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&q=80",
+        "https://images.unsplash.com/photo-1543269664-56d93c1b41a6?w=600&q=80",
+        "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=600&q=80",
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+    ],
+    badges: ['Popular', 'Trending']
+},
     // Food Delivery
     {
-        id: 'swiggy-clone',
-        name: 'Food Delivery Clone',
-        categoryId: 'food',
-        description: 'Multi-restaurant food delivery management system.',
-        features: ['Costumer App', 'Restaurant Panel', 'Rider App'],
-        image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80',
-        badges: ['Best Seller'],
-        type: 'Clone Scripts'
-    },
+    id: 'swiggy-clone',
+    name: 'Food Delivery Clone',
+    categoryId: 'food',
+    type: 'Food Delivery Platform',
+    description: 'Complete multi-restaurant food delivery management system inspired by Swiggy and Zomato. Connect customers, restaurants, and delivery partners seamlessly.',
+    image: food,
+    demoUrl:  "http://preview.codecanyon.net/item/viavi-food-delivery-script/full_screen_preview/15509686",
+    features: [
+        "Multi-restaurant onboarding & management",
+        "Real-time order tracking for customers",
+        "Intelligent delivery partner assignment",
+    ],
+    about: "A feature-rich food delivery platform that replicates the success of industry leaders like Swiggy and Zomato. This complete ecosystem includes three powerful apps: a customer app for seamless ordering, a restaurant panel for menu and order management, and a rider app for efficient deliveries. Built with scalability in mind, it handles everything from restaurant onboarding to real-time order tracking and intelligent delivery partner assignment.",
+    steps: [
+        "Customer browses restaurants by cuisine, rating, or location",
+        "Selects dishes, customizes add-ons, and adds to cart",
+        "Places order with preferred payment method",
+        "Restaurant receives order and confirms preparation time",
+        "System intelligently assigns nearest available delivery partner",
+        "Customer tracks order in real-time from preparation to delivery",
+        "Rider delivers food and marks order as completed",
+        "Customer receives order and submits ratings/reviews"
+    ],
+    techStack: [
+        "React Native",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Socket.io",
+        "Google Maps API",
+        "Stripe",
+        "Razorpay",
+        "Redis",
+        "Firebase",
+        "JWT",
+        "AWS S3",
+        "Docker"
+    ],
+    images: [
+        food,
+        foodss1,
+        foodss2
+    ],
+    badges: ['Best Seller', 'Popular']
+},
     {
         id: 'cloud-kitchen',
         name: 'Cloud Kitchen POS',
