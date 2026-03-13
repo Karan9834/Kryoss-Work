@@ -1,5 +1,5 @@
 import React from "react";
-
+import carpoolheroimg from "@/assets/carpool-app-img/carpoolhero.avif"
 const CarpoolHero = () => {
     return (
         <section className="relative bg-gradient-to-b from-[#0b2239] to-[#061726] text-white overflow-hidden">
@@ -27,13 +27,13 @@ const CarpoolHero = () => {
                             Launch a smart ride-sharing platform that connects commuters
                             traveling in the same direction. Our carpooling app helps reduce
                             traffic, lower travel costs, and promote eco-friendly
-                            transportation with a seamless booking experience.
+                            transportation with a seamless booking experiences.
                         </p>
 
                         {/* CTA */}
                         <div>
                             <a
-                                href="https://preview.codecanyon.net/item/carpool-ride-sharing-app/full_screen_preview/12345678"
+                                href="https://preview.codecanyon.net/item/car-pooling-android-app-car-pooling-ios-app-template-html-css-in-ionic-3-vroom/full_screen_preview/23149330"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-900 transition px-7 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue-500/30"
@@ -73,7 +73,7 @@ const CarpoolHero = () => {
                         {/* IMAGE PLACEHOLDER */}
                         <div className="relative w-full max-w-md h-[420px] rounded-2xl flex items-center justify-center text-gray-300">
                             <img
-                                src="https://plus.unsplash.com/premium_photo-1664298802879-4cf91c5e71dc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FyJTIwcG9vbGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+                                src={carpoolheroimg}
                                 alt="Carpool App"
                                 className="w-full h-full object-cover rounded-2xl"
                             />

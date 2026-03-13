@@ -22,7 +22,7 @@ const CarpoolCTA = () => {
                 {/* Button */}
                 <div className="mt-8">
                     <a
-                        href="https://preview.codecanyon.net/item/carpool-ride-sharing-app/full_screen_preview/12345678"
+                        href="https://preview.codecanyon.net/item/car-pooling-android-app-car-pooling-ios-app-template-html-css-in-ionic-3-vroom/full_screen_preview/23149330"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-lg hover:bg-sky-200 transition duration-300 shadow-lg"
