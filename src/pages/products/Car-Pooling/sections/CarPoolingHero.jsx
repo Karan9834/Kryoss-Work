@@ -27,7 +27,7 @@ const CarpoolHero = () => {
                             Launch a smart ride-sharing platform that connects commuters
                             traveling in the same direction. Our carpooling app helps reduce
                             traffic, lower travel costs, and promote eco-friendly
-                            transportation with a seamless booking experience.
+                            transportation with a seamless booking experiences.
                         </p>
 
                         {/* CTA */}
