@@ -13,8 +13,8 @@ import ServicesPage from '../components/home/ServicePage';
 import HireDevelopersPage from '../components/home/HireDevelopersPage';
 import BusinessGrowthPage from '../components/home/BusinessGrowthPage';
 // import ServicesPage from "../pages/ServicesPage";
-
-
+import UberClonePage from "../pages/products/Uber-Clone/UberClonePage";
+import BikeTaxiPage from "../pages/products/Bike-Taxi/BikeTaxiPage";
 const AppRoutes = () => {
     return (
         <Routes>
@@ -32,6 +32,14 @@ const AppRoutes = () => {
                 
 
 <Route path="/hire-developers" element={<HireDevelopersPage />} />
+
+
+
+
+<Route path="/products/Uber-Clone" element={<UberClonePage />} />
+
+
+<Route path="/products/Bike-Taxi-app" element={<BikeTaxiPage />} />
 
             </Route>
         </Routes>
