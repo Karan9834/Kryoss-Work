@@ -41,6 +41,11 @@ const AppRoutes = () => {
 
 <Route path="/products/Bike-Taxi-app" element={<BikeTaxiPage />} />
 
+
+
+{/* <Route path="/products/uber-clone" element={<UberDemo />} />
+<Route path="/products/bike-taxi" element={<BikeTaxiDemo />} /> */}
+
             </Route>
         </Routes>
     );

@@ -23,12 +23,51 @@ const categories = [
    scalable to 200+
 ------------------------------*/
 
+// const createProducts = () => {
+//   let id = 1;
+//   const list = [];
+
+//   categories.forEach((cat) => {
+//     for (let i = 1; i <= 10; i++) {
+//       list.push({
+//         id: id++,
+//         name: `${cat.split(" ")[0]} Product ${i}`,
+//         category: cat,
+//         type:
+//           i % 4 === 0
+//             ? "SaaS Products"
+//             : i % 3 === 0
+//             ? "Mobile Apps"
+//             : i % 2 === 0
+//             ? "Web Solutions"
+//             : "AI Tools",
+//         badge: i % 3 === 0 ? "BEST SELLER" : i % 2 === 0 ? "POPULAR" : "NEW",
+//         desc: `Scalable ${cat.toLowerCase()} solution designed for startups and enterprises to launch faster and grow efficiently.`,
+//         image: "https://via.placeholder.com/500x300",
+//         features: [
+//           "Admin dashboard",
+//           "Analytics & reports",
+//           "Secure payment integration",
+//         ],
+//         tech: ["React", "Node.js", "MongoDB"],
+//       });
+//     }
+//   });
+
+//   return list;
+// };
+
+
+
 const createProducts = () => {
   let id = 1;
   const list = [];
 
   categories.forEach((cat) => {
     for (let i = 1; i <= 10; i++) {
+
+      const slug = `${cat.split(" ")[0].toLowerCase()}-product-${i}`;
+
       list.push({
         id: id++,
         name: `${cat.split(" ")[0]} Product ${i}`,
@@ -41,21 +80,31 @@ const createProducts = () => {
             : i % 2 === 0
             ? "Web Solutions"
             : "AI Tools",
+
         badge: i % 3 === 0 ? "BEST SELLER" : i % 2 === 0 ? "POPULAR" : "NEW",
-        desc: `Scalable ${cat.toLowerCase()} solution designed for startups and enterprises to launch faster and grow efficiently.`,
+
+        desc: `Scalable ${cat.toLowerCase()} solution designed for startups and enterprises.`,
+
         image: "https://via.placeholder.com/500x300",
+
         features: [
           "Admin dashboard",
           "Analytics & reports",
           "Secure payment integration",
         ],
+
         tech: ["React", "Node.js", "MongoDB"],
+
+        // 🔥 LINKS
+        detailsLink: `/products/transport/${slug}`,
+        demoLink: `/products/${slug}`,
       });
     }
   });
 
   return list;
 };
+
 
 const products = createProducts();
 
@@ -236,16 +285,31 @@ export default function Products() {
 
                       <div className="flex gap-2 mt-5">
 
-                        <button className="border px-3 py-2 rounded text-sm hover:bg-gray-100">
+                        {/* <button className="border px-3 py-2 rounded text-sm hover:bg-gray-100">
                           Live Demo
-                        </button>
+                        </button> */}
 
                         <button
+  onClick={() => navigate(product.demoLink)}
+  className="border px-3 py-2 rounded text-sm hover:bg-gray-100"
+>
+  Live Demo
+</button>
+
+                        {/* <button
                           onClick={() => setSelectedProduct(product)}
                           className="bg-indigo-600 text-white px-3 py-2 rounded text-sm"
                         >
                           View Details
-                        </button>
+                        </button> */}
+
+
+                        <button
+  onClick={() => navigate(product.detailsLink)}
+  className="bg-indigo-600 text-white px-3 py-2 rounded text-sm"
+>
+  View Details
+</button>
 
                       </div>
 
@@ -356,3 +420,30 @@ export default function Products() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
