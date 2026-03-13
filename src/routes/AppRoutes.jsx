@@ -15,6 +15,8 @@ import BusinessGrowthPage from '../components/home/BusinessGrowthPage';
 // import ServicesPage from "../pages/ServicesPage";
 import UberClonePage from "../pages/products/Uber-Clone/UberClonePage";
 import BikeTaxiPage from "../pages/products/Bike-Taxi/BikeTaxiPage";
+import TaxiBiddingPage from  "../pages/products/Taxi-Bidding/TaxiBiddingPage"
+import FoodDeliveryPage from '../pages/products/Food-Delivery/FoodDeliveryPage';
 const AppRoutes = () => {
     return (
         <Routes>
@@ -32,14 +34,11 @@ const AppRoutes = () => {
                 
 
 <Route path="/hire-developers" element={<HireDevelopersPage />} />
-
-
-
-
 <Route path="/products/Uber-Clone" element={<UberClonePage />} />
-
-
 <Route path="/products/Bike-Taxi-app" element={<BikeTaxiPage />} />
+<Route path="/products/Taxi-Bidding-app" element={<TaxiBiddingPage />} />
+<Route path="/products/swiggy-clone" element={<FoodDeliveryPage />} />
+
 
             </Route>
         </Routes>
