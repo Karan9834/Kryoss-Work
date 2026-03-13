@@ -15,8 +15,11 @@ import BusinessGrowthPage from '../components/home/BusinessGrowthPage';
 // import ServicesPage from "../pages/ServicesPage";
 import UberClonePage from "../pages/products/Uber-Clone/UberClonePage";
 import BikeTaxiPage from "../pages/products/Bike-Taxi/BikeTaxiPage";
-import TaxiBiddingPage from  "../pages/products/Taxi-Bidding/TaxiBiddingPage"
+
+import TaxiBiddingPage from "../pages/products/Taxi-Bidding/TaxiBiddingPage"
 import FoodDeliveryPage from '../pages/products/Food-Delivery/FoodDeliveryPage';
+import CarRentalPage from "../pages/products/Car-Rental/CarRentalPage";
+import CarPoolingPage from "../pages/products/Car-Pooling/CarPoolingPage";
 const AppRoutes = () => {
     return (
         <Routes>
@@ -29,21 +32,22 @@ const AppRoutes = () => {
                 <Route path="*" element={<NotFound />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/products" element={<Products />} />
-                 <Route path="/services" element={<ServicesPage />} />
-                 <Route path="/business-growth" element={<BusinessGrowthPage />} />
-                
-
-<Route path="/hire-developers" element={<HireDevelopersPage />} />
-<Route path="/products/Uber-Clone" element={<UberClonePage />} />
-<Route path="/products/Bike-Taxi-app" element={<BikeTaxiPage />} />
-<Route path="/products/Taxi-Bidding-app" element={<TaxiBiddingPage />} />
-<Route path="/products/swiggy-clone" element={<FoodDeliveryPage />} />
+                <Route path="/services" element={<ServicesPage />} />
+                <Route path="/business-growth" element={<BusinessGrowthPage />} />
 
 
+                <Route path="/hire-developers" element={<HireDevelopersPage />} />
+                <Route path="/products/Uber-Clone" element={<UberClonePage />} />
+                <Route path="/products/Bike-Taxi-app" element={<BikeTaxiPage />} />
+                <Route path="/products/Taxi-Bidding-app" element={<TaxiBiddingPage />} />
+                <Route path="/products/swiggy-clone" element={<FoodDeliveryPage />} />
 
 
-{/* <Route path="/products/uber-clone" element={<UberDemo />} />
-<Route path="/products/bike-taxi" element={<BikeTaxiDemo />} /> */}
+
+
+                <Route path="/products/Car-Rental-app" element={<CarRentalPage />} />
+
+                <Route path="/products/Carpool-app" element={<CarPoolingPage />} />
 
             </Route>
         </Routes>
