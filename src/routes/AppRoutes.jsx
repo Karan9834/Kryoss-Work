@@ -40,6 +40,11 @@ const AppRoutes = () => {
 <Route path="/products/swiggy-clone" element={<FoodDeliveryPage />} />
 
 
+
+
+{/* <Route path="/products/uber-clone" element={<UberDemo />} />
+<Route path="/products/bike-taxi" element={<BikeTaxiDemo />} /> */}
+
             </Route>
         </Routes>
     );

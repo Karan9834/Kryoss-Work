@@ -15,21 +15,30 @@ const HeroSection = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
-          {/* LEFT CONTENT */}
+          {/* LEFT IMAGE */}
+          <div className="w-full">
+            <img
+              src="http://localhost:5173/src/assets/Product-update/uberclone.png"
+              alt="Uber Clone App"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+
+          {/* RIGHT CONTENT */}
           <div className="flex flex-col gap-6">
 
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Launch Your On-Demand Bike Taxi App with Ease
+              Launch Your Own Uber Clone App
             </h1>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              Get a fully customized Bike Taxi App for startups and businesses.
-              Our Bike Taxi Booking App Development solution helps you offer
-              fast, reliable, and cost-effective bike ride services, ensuring
-              a seamless experience for both riders and drivers.
+              Build your own ride-hailing platform like Uber with our ready-made
+              Uber Clone solution. It includes rider app, driver app, and admin
+              dashboard with real-time tracking, secure payments, and smart
+              dispatch system.
             </p>
 
-            {/* Buttons */}
+            {/* BUTTONS */}
             <div className="flex flex-wrap gap-4">
 
               <button className="px-7 py-3 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition">
@@ -45,15 +54,6 @@ const HeroSection = () => {
 
             </div>
 
-          </div>
-
-          {/* RIGHT IMAGE */}
-          <div className="w-full">
-            <img
-              src="http://localhost:5173/src/assets/Product-update/biketaxi.jpeg"
-              alt="Bike Taxi App"
-              className="w-full h-auto object-contain"
-            />
           </div>
 
         </div>
