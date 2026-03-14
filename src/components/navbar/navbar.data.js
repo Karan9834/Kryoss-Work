@@ -16,7 +16,7 @@ export const navigationData = {
             items: [
                 { label: "Taxi Booking App Like Uber", subLabel: "Scalable taxi booking platform", icon: "🚗", href: "/products/transport/uber-clone" },
                 { label: "Taxi Bidding App like inDrive", subLabel: "On-demand Taxi Bidding App Development", icon: "🚖", href: "/products/transport/indrive-clone" },
-                { label: "Bike Ride App Solution", subLabel: "Fast and affordable bike taxi", icon: "🏍️", href: "/products/transport/bike-ride" },
+                { label: "Bike Ride App Solution", subLabel: "Fast and affordable bike taxi", icon: "🏍️", href: "/products/transport/rapido-clone" },
                 { label: "Carpooling App Like BlaBlaCar", subLabel: "Shared rides with route matching", icon: "👥", href: "/products/transport/blablacar-clone" },
                 { label: "Car Rental App", subLabel: "Self-drive & chauffeur-based car rental", icon: "🔑", href: "/products/transport/car-rental" },
             ]
@@ -26,7 +26,7 @@ export const navigationData = {
             description: "Launch your On-Demand food, grocery, and more delivery services Solutions",
             items: [
                 { label: "Food Delivery App", subLabel: "Multi-restaurant food delivery platform", icon: "🍕", href: "/products/delivery/food-delivery" },
-                { label: "Pharmacy Delivery App", subLabel: "On-demand medicine ordering platform", icon: "💊", href: "/products/delivery/pharmacy-delivery" },
+                { label: "Pharmacy Delivery App", subLabel: "On-demand medicine ordering platform", icon: "💊", href: "/products/delivery/medicine-delivery" },
                 { label: "Daily Delivery App", subLabel: "Subscription-based daily supply for Grocery", icon: "🥛", href: "/products/delivery/daily-delivery" },
                 { label: "Liquor Delivery App", subLabel: "On-demand Alcohol delivery solution", icon: "🍷", href: "/products/delivery/liquor-delivery" },
                 { label: "Grocery Delivery App", subLabel: "Hyperlocal grocery delivery app", icon: "🛒", href: "/products/delivery/grocery-delivery" },

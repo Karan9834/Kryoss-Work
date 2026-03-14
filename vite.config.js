@@ -22,5 +22,17 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src")
     }
+  },
+  optimizeDeps: {
+    include: [
+      "react-icons/fa",
+      "react-icons/si",
+      "react-icons/md",
+      "lucide-react",
+      "@radix-ui/react-tooltip",
+      "@radix-ui/react-toast",
+      "clsx",
+      "tailwind-merge"
+    ]
   }
 });
