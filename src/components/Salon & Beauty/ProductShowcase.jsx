@@ -3,36 +3,36 @@ import React from "react";
 const ProductShowcase = () => {
   const products = [
     {
-      title: "Gojek Clone App",
-      image: "https://whitelabelfox.com/assets/images/our-other-product/Fox-jek.webp",
+      title: "Massage Therapy App",
+      image: "https://images.unsplash.com/photo-1544161515-4ae6ce6ca8b8?w=200&q=80",
     },
     {
-      title: "Uber Clone App",
-      image: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Taxi.webp",
+      title: "Laundry Service App",
+      image: "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=200&q=80",
     },
     {
-      title: "Food Delivery App",
-      image: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Food.webp",
+      title: "Tow-Truck Service App",
+      image: "https://images.unsplash.com/photo-1586191582151-f73972d10737?w=200&q=80",
     },
     {
-      title: "Medicine Delivery App",
-      image: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Medicine.webp",
+      title: "Dog Walking App",
+      image: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=200&q=80",
     },
     {
-      title: "Handyman Service App",
-      image: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Handyman.webp",
+      title: "Snow Removal App",
+      image: "https://images.unsplash.com/photo-1517204324032-fb3012de9b59?w=200&q=80",
     },
     {
-      title: "Carpool Ride App",
-      image: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Carpool.webp",
+      title: "Pest Control App",
+      image: "https://images.unsplash.com/photo-1587324438673-56c507c6f085?w=200&q=80",
     },
     {
-      title: "Indrive Clone App",
-      image: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Rental.webp",
+      title: "Liquor Delivery App",
+      image: "https://images.unsplash.com/photo-1569058242252-62324e68884c?w=200&q=80",
     },
     {
-      title: "Delivery Anything App",
-      image: "https://whitelabelfox.com/assets/images/our-other-product/Fox-Delivery-anything.webp",
+      title: "Cannabis Delivery App",
+      image: "https://images.unsplash.com/photo-1548366086-7f1b76106622?w=200&q=80",
     },
   ];
 

@@ -42,9 +42,141 @@ export const categories = [
 ];
 
 const baseProducts = [
+    // Specialized & Niche Applications (Top Priority)
+    {
+        id: 'home-service/massage',
+        name: 'Massage Therapy App',
+        categoryId: 'ondemand',
+        type: 'Mobile Apps',
+        description: 'Premium on-demand wellness and professional massage service platform. Connect users with certified therapists at their doorstep.',
+        image: 'https://images.unsplash.com/photo-1544161515-4ae6ce6ca8b8?w=600&q=80',
+        features: ['Expert Therapist Profiles', 'On-site Service Booking', 'Secure Payment Gateway'],
+        badges: ['Popular'],
+    },
+    {
+        id: 'home-service/laundry',
+        name: 'Laundry Service App',
+        categoryId: 'ondemand',
+        type: 'Mobile Apps',
+        description: 'Complete pickup and delivery-based laundry and dry cleaning app solution for modern city dwellers.',
+        image: 'https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=600&q=80',
+        features: ['Scheduled Pickups', 'Real-time Laundry Tracking', 'Contactless Delivery'],
+        badges: ['Trending'],
+    },
+    {
+        id: 'home-service/tow-truck',
+        name: 'Tow-Truck Service App',
+        categoryId: 'ondemand',
+        type: 'Mobile Apps',
+        description: 'On-demand vehicle towing and roadside assistance platform. Help users get back on the road safely and quickly.',
+        image: 'https://images.unsplash.com/photo-1586191582151-f73972d10737?w=600&q=80',
+        features: ['GPS Assisted Dispatch', 'Emergency Support Button', 'Driver Live Tracking'],
+        badges: ['Popular'],
+    },
+    {
+        id: 'home-service/dog-walking',
+        name: 'Dog Walking App',
+        categoryId: 'ondemand',
+        type: 'Mobile Apps',
+        description: 'Premium pet care marketplace connecting pet parents with verified local dog walkers and sitters.',
+        image: 'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=600&q=80',
+        features: ['Walk Performance Tracking', 'Photo & Status Updates', 'Identity Verified Walkers'],
+        badges: ['New', 'Pet-Friendly'],
+    },
+    {
+        id: 'home-service/snow-removal',
+        name: 'Snow Removal App',
+        categoryId: 'ondemand',
+        type: 'Mobile Apps',
+        description: 'On-demand snow plowing and winter maintenance service platform for residential and commercial customers.',
+        image: 'https://images.unsplash.com/photo-1517204324032-fb3012de9b59?w=600&q=80',
+        features: ['Weather Alert Integration', 'Instant Service Request', 'Before/After Photo Proof'],
+        badges: ['Seasonal'],
+    },
+    {
+        id: 'home-service/pest-control',
+        name: 'Pest Control App',
+        categoryId: 'ondemand',
+        type: 'Mobile Apps',
+        description: 'Comprehensive digital solution for booking professional pest control and home inspection services.',
+        image: 'https://images.unsplash.com/photo-1587324438673-56c507c6f085?w=600&q=80',
+        features: ['Inspection Reporting', 'Recurring Service Plans', 'Inventory Management'],
+        badges: ['New'],
+    },
+    {
+        id: 'delivery/liquor-delivery',
+        name: 'Liquor Delivery App',
+        categoryId: 'food',
+        type: 'Mobile Apps',
+        description: 'Scalable on-demand alcohol delivery solution with robust age verification and inventory management.',
+        image: 'https://images.unsplash.com/photo-1569058242252-62324e68884c?w=600&q=80',
+        features: ['Digital Age Verification', 'Multi-Store Marketplace', 'Real-time Delivery Tracking'],
+        badges: ['Popular'],
+    },
+    {
+        id: 'delivery/cannabis-delivery',
+        name: 'Cannabis Delivery App',
+        categoryId: 'food',
+        type: 'Mobile Apps',
+        description: 'Fully compliant cannabis delivery app designed for regulated markets with built-in regulatory checks.',
+        image: 'https://images.unsplash.com/photo-1548366086-7f1b76106622?w=600&q=80',
+        features: ['Compliance Management', 'Driver Wallet System', 'Legal Boundary Geofencing'],
+        badges: ['Trending'],
+    },
+    {
+        id: 'social/dating-app',
+        name: 'Dating App (Tinder Clone)',
+        categoryId: 'ondemand',
+        type: 'Mobile Apps',
+        description: 'Feature-rich dating platform with swipe mechanics, real-time chat, and location-based matching.',
+        image: 'https://images.unsplash.com/photo-1516192511150-1d10d69a9972?w=600&q=80',
+        features: ['Smart Matching Algorithm', 'Real-time Chat & Voice', 'Profile Verification'],
+        badges: ['Popular'],
+    },
+    {
+        id: 'social/appointment-booking',
+        name: 'Appointment Booking App',
+        categoryId: 'ondemand',
+        type: 'Mobile Apps',
+        description: 'Versatile appointment scheduling solution for doctors, salons, and consultants.',
+        image: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600&q=80',
+        features: ['Multi-Calendar Sync', 'Automated Reminders', 'In-App Video Calling'],
+        badges: ['Trending'],
+    },
+    {
+        id: 'social/video-app',
+        name: 'TikTok Clone App',
+        categoryId: 'ondemand',
+        type: 'Mobile Apps',
+        description: 'Short-form video sharing platform with advanced filters, music integration, and social features.',
+        image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&q=80',
+        features: ['Video Editing Tools', 'Music & Effect Library', 'Creator Reward System'],
+        badges: ['Hot'],
+    },
+    {
+        id: 'enterprise/erp',
+        name: 'Enterprise ERP System',
+        categoryId: 'crm',
+        type: 'SaaS',
+        description: 'Complete resource planning solution for organizations to manage business processes in real-time.',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+        features: ['Resource Tracking', 'Financial Management', 'Supply Chain Analytics'],
+        badges: ['Enterprise'],
+    },
+    {
+        id: 'enterprise/crm',
+        name: 'Advanced CRM Suite',
+        categoryId: 'crm',
+        type: 'SaaS',
+        description: 'Strategic customer relationship management tool to improve business relationships and drive sales.',
+        image: 'https://images.unsplash.com/photo-1552581234-261270c89b44?w=600&q=80',
+        features: ['Pipeline Visualization', 'Lead Scoring AI', 'Marketing Automation'],
+        badges: ['Bestseller'],
+    },
+
     // Transport
-  {
-    id: "uber-clone",
+    {
+        id: "transport/uber-clone",
     name: "Uber Clone",
     categoryId: 'transport',
     type: "Ride-Hailing App",
@@ -89,7 +221,7 @@ const baseProducts = [
     badges: ['Popular', 'Best Seller']
 },
 {
-    id: 'bike-taxi-app',
+    id: 'transport/rapido-clone',
     name: 'Bike Taxi App',
     categoryId: 'transport',
     type: 'Mobility Solution',
@@ -135,7 +267,7 @@ const baseProducts = [
     badges: ['Trending', 'Eco-Friendly']
 },
    {
-    id: 'car-rental-app',
+    id: 'transport/car-rental',
     name: 'Car Rental App',
     categoryId: 'transport',
     type: 'Car Rental Platform',
@@ -181,7 +313,7 @@ const baseProducts = [
     badges: ['New', 'Popular']
 },
     {
-    id: 'carpool-app',
+    id: 'transport/blablacar-clone',
     name: 'Carpool App',
     categoryId: 'transport',
     type: 'Ride-Sharing Platform',
@@ -229,7 +361,7 @@ const baseProducts = [
     badges: ['Eco-Friendly', 'Popular']
 },
    {
-    id: 'taxi-bidding-app',
+    id: 'transport/indrive-clone',
     name: 'Taxi Bidding App',
     categoryId: 'transport',
     type: 'Dynamic Pricing Platform',
@@ -273,7 +405,7 @@ const baseProducts = [
 },
     // Food Delivery
     {
-    id: 'swiggy-clone',
+    id: 'delivery/food-delivery',
     name: 'Food Delivery Clone',
     categoryId: 'food',
     type: 'Food Delivery Platform',
@@ -476,27 +608,6 @@ const baseProducts = [
         badges: ['New', 'SaaS'],
         type: 'SaaS'
     },
-    // On Demand more
-    {
-        id: 'home-cleaning',
-        name: 'Home Cleaning App',
-        categoryId: 'ondemand',
-        description: 'Uber for home cleaning and maid services.',
-        features: ['Background Checks', 'Recurrent Bookings', 'Cashless Payments'],
-        image: 'https://images.unsplash.com/photo-1584820927498-cafe5c156649?w=600&q=80',
-        badges: [],
-        type: 'Mobile Apps'
-    },
-    {
-        id: 'pet-care',
-        name: 'Pet Care & Walking',
-        categoryId: 'ondemand',
-        description: 'Connect pet owners with trusted dog walkers and sitters.',
-        features: ['GPS Tracking', 'Photo Updates', 'Review System'],
-        image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&q=80',
-        badges: ['Popular'],
-        type: 'Mobile Apps'
-    }
 ];
 
 export const filterOptions = [

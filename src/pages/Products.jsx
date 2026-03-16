@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 /* -----------------------------
    CATEGORY LIST
@@ -57,7 +58,112 @@ const categories = [
 //   return list;
 // };
 
-
+const specificProducts = [
+  {
+    id: "sp1",
+    name: "Massage Therapy App",
+    category: "On-Demand Services",
+    type: "Mobile Apps",
+    badge: "POPULAR",
+    desc: "On-demand wellness and massage service platform.",
+    image: "https://images.unsplash.com/photo-1544161515-4ae6ce6ca8b8?auto=format&fit=crop&q=80&w=500",
+    features: ["Expert Booking", "Real-time Tracking", "Safe Payments"],
+    tech: ["React Native", "Node.js", "PostgreSQL"],
+    detailsLink: "/products/home-service/massage",
+    demoLink: "/products/home-service/massage"
+  },
+  {
+    id: "sp2",
+    name: "Laundry Service App",
+    category: "On-Demand Services",
+    type: "Mobile Apps",
+    badge: "NEW",
+    desc: "Pickup and delivery-based laundry app solution.",
+    image: "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&q=80&w=500",
+    features: ["Pickup Scheduling", "Order Tracking", "Secure Payment"],
+    tech: ["Flutter", "Firebase", "Node.js"],
+    detailsLink: "/products/home-service/laundry",
+    demoLink: "/products/home-service/laundry"
+  },
+  {
+    id: "sp3",
+    name: "Tow-Truck Service App",
+    category: "On-Demand Services",
+    type: "Mobile Apps",
+    badge: "POPULAR",
+    desc: "On-demand vehicle towing service platform.",
+    image: "https://images.unsplash.com/photo-1586191582151-f73972d10737?auto=format&fit=crop&q=80&w=500",
+    features: ["GPS Location", "Emergency Dispatch", "Driver Tracking"],
+    tech: ["React Native", "Go", "Redis"],
+    detailsLink: "/products/home-service/tow-truck",
+    demoLink: "/products/home-service/tow-truck"
+  },
+  {
+    id: "sp4",
+    name: "Dog Walking App",
+    category: "On-Demand Services",
+    type: "Mobile Apps",
+    badge: "NEW",
+    desc: "Local pet care and dog walking marketplace.",
+    image: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=500",
+    features: ["Walker Profiles", "Live Tracking", "Pet Updates"],
+    tech: ["React Native", "Node.js", "MongoDB"],
+    detailsLink: "/products/home-service/dog-walking",
+    demoLink: "/products/home-service/dog-walking"
+  },
+  {
+    id: "sp5",
+    name: "Snow Removal App",
+    category: "On-Demand Services",
+    type: "Mobile Apps",
+    badge: "NEW",
+    desc: "On-demand snow plowing service platform.",
+    image: "https://images.unsplash.com/photo-1517204324032-fb3012de9b59?auto=format&fit=crop&q=80&w=500",
+    features: ["Service Request", "Weather Alerts", "Driver Tracking"],
+    tech: ["Flutter", "Node.js", "PostgreSQL"],
+    detailsLink: "/products/home-service/snow-removal",
+    demoLink: "/products/home-service/snow-removal"
+  },
+  {
+    id: "sp6",
+    name: "Pest Control Service App",
+    category: "On-Demand Services",
+    type: "Mobile Apps",
+    badge: "NEW",
+    desc: "Online pest control booking solution.",
+    image: "https://images.unsplash.com/photo-1587324438673-56c507c6f085?auto=format&fit=crop&q=80&w=500",
+    features: ["Service Booking", "Inspection Reports", "Secure Payment"],
+    tech: ["React Native", "Node.js", "MongoDB"],
+    detailsLink: "/products/home-service/pest-control",
+    demoLink: "/products/home-service/pest-control"
+  },
+  {
+    id: "sp7",
+    name: "Liquor Delivery App",
+    category: "Food Delivery Systems",
+    type: "Mobile Apps",
+    badge: "POPULAR",
+    desc: "On-demand alcohol delivery solution.",
+    image: "https://images.unsplash.com/photo-1569058242252-62324e68884c?auto=format&fit=crop&q=80&w=500",
+    features: ["Age Verification", "Live Tracking", "Multiple Stores"],
+    tech: ["React Native", "Elixir", "PostgreSQL"],
+    detailsLink: "/products/delivery/liquor-delivery",
+    demoLink: "/products/delivery/liquor-delivery"
+  },
+  {
+    id: "sp8",
+    name: "Cannabis Delivery App",
+    category: "Food Delivery Systems",
+    type: "Mobile Apps",
+    badge: "NEW",
+    desc: "Cannabis delivery app for regulated markets.",
+    image: "https://images.unsplash.com/photo-1548366086-7f1b76106622?auto=format&fit=crop&q=80&w=500",
+    features: ["Compliance Checks", "Live Tracking", "Wallet System"],
+    tech: ["Flutter", "Python", "MongoDB"],
+    detailsLink: "/products/delivery/cannabis-delivery",
+    demoLink: "/products/delivery/cannabis-delivery"
+  }
+];
 
 const createProducts = () => {
   let id = 1;
@@ -106,9 +212,10 @@ const createProducts = () => {
 };
 
 
-const products = createProducts();
+const products = [...specificProducts, ...createProducts()];
 
 export default function Products() {
+  const navigate = useNavigate();
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("All");
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -227,7 +334,6 @@ export default function Products() {
 )}
 
       {/* CATEGORY PRODUCT SECTIONS */}
-
       {categories.map((category, index) => {
         const categoryProducts = filteredProducts.filter(
           (p) => p.category === category
@@ -238,81 +344,86 @@ export default function Products() {
         return (
           <section
             key={category}
-            id={category.replace(/\\s+/g, "-")}
-            className={`${index % 2 === 0 ? "bg-gray-50" : "bg-white"} py-24`}
+            id={category.replace(/\s+/g, "-")}
+            className={`${index % 2 === 0 ? "bg-gray-50/50" : "bg-white"} py-24`}
           >
             <div className="max-w-7xl mx-auto px-6">
 
               {/* CATEGORY TITLE */}
-
-              <div className="mb-14 text-center">
-                <h2 className="text-4xl font-extrabold text-indigo-600 mb-3">
+              <div className="mb-16">
+                <div className="flex items-center gap-4 mb-4">
+                    <span className="h-px bg-indigo-600 w-12 opacity-50"></span>
+                    <span className="text-indigo-600 font-bold tracking-widest text-sm uppercase">{category.split(' ')[0]} Solutions</span>
+                </div>
+                <h2 className="text-4xl font-extrabold text-gray-900 leading-tight">
                   {category}
                 </h2>
-
-                <div className="w-24 h-1 bg-indigo-600 mx-auto"></div>
               </div>
 
               {/* PRODUCTS GRID */}
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 {categoryProducts.map((product) => (
                   <div
                     key={product.id}
-                    className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden border"
+                    className="group bg-white rounded-[24px] shadow-[0_10px_30px_-15px_rgba(0,0,0,0.08)] hover:shadow-[0_25px_50px_-12px_rgba(79,70,229,0.15)] transition-all duration-500 overflow-hidden border border-gray-100 hover:-translate-y-2 flex flex-col h-full relative"
                   >
-                    <img src={product.image} alt="" />
+                    {/* Image Area */}
+                    <div className="relative aspect-[16/10] overflow-hidden bg-gray-50">
+                        <img 
+                            src={product.image} 
+                            alt={product.name}
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                        />
+                        <div className="absolute top-4 right-4 z-10">
+                            <span className={`text-[10px] font-bold px-3 py-1.5 rounded-full backdrop-blur-md shadow-sm border border-white/20 uppercase tracking-wider ${
+                                product.badge === 'BEST SELLER' ? 'bg-orange-500 text-white' : 
+                                product.badge === 'POPULAR' ? 'bg-blue-500 text-white' : 'bg-indigo-600 text-white'
+                            }`}>
+                                {product.badge}
+                            </span>
+                        </div>
+                    </div>
 
-                    <div className="p-6">
+                    {/* Content Area */}
+                    <div className="p-7 flex flex-col flex-grow">
+                        <div className="mb-2 text-[11px] font-bold text-indigo-600 uppercase tracking-widest opacity-80">
+                            {product.type}
+                        </div>
+                        <h3 className="font-bold text-xl text-gray-900 group-hover:text-indigo-600 transition-colors mb-3">
+                            {product.name}
+                        </h3>
+                        <p className="text-sm text-gray-500 leading-relaxed mb-6 line-clamp-2">
+                            {product.desc}
+                        </p>
 
-                      <span className="text-xs bg-indigo-100 text-indigo-600 px-2 py-1 rounded">
-                        {product.badge}
-                      </span>
+                        <div className="space-y-3 mb-8 mt-auto">
+                            {product.features.map((feature, idx) => (
+                                <div key={idx} className="flex items-center gap-3 text-[13px] text-gray-600 font-medium">
+                                    <div className="w-5 h-5 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600 shrink-0">
+                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
+                                    <span className="line-clamp-1">{feature}</span>
+                                </div>
+                            ))}
+                        </div>
 
-                      <h3 className="font-semibold text-lg mt-3">
-                        {product.name}
-                      </h3>
-
-                      <p className="text-sm text-gray-600 mt-2">
-                        {product.desc}
-                      </p>
-
-                      <ul className="text-sm mt-3 space-y-1">
-                        {product.features.map((f, i) => (
-                          <li key={i}>• {f}</li>
-                        ))}
-                      </ul>
-
-                      <div className="flex gap-2 mt-5">
-
-                        {/* <button className="border px-3 py-2 rounded text-sm hover:bg-gray-100">
-                          Live Demo
-                        </button> */}
-
-                        <button
-  onClick={() => navigate(product.demoLink)}
-  className="border px-3 py-2 rounded text-sm hover:bg-gray-100"
->
-  Live Demo
-</button>
-
-                        {/* <button
-                          onClick={() => setSelectedProduct(product)}
-                          className="bg-indigo-600 text-white px-3 py-2 rounded text-sm"
-                        >
-                          View Details
-                        </button> */}
-
-
-                        <button
-  onClick={() => navigate(product.detailsLink)}
-  className="bg-indigo-600 text-white px-3 py-2 rounded text-sm"
->
-  View Details
-</button>
-
-                      </div>
-
+                        {/* Buttons */}
+                        <div className="grid grid-cols-2 gap-3 mt-auto">
+                            <button
+                                onClick={() => navigate(product.demoLink)}
+                                className="flex items-center justify-center text-[13px] font-bold text-gray-700 bg-gray-50 hover:bg-gray-100 hover:text-gray-900 py-3 rounded-xl transition-all border border-transparent hover:border-gray-200"
+                            >
+                                Live Demo
+                            </button>
+                            <button
+                                onClick={() => navigate(product.detailsLink)}
+                                className="flex items-center justify-center text-[13px] font-bold text-white bg-indigo-600 hover:bg-indigo-700 py-3 rounded-xl transition-all shadow-lg shadow-indigo-200 hover:shadow-indigo-300 active:scale-95"
+                            >
+                                View Details
+                            </button>
+                        </div>
                     </div>
                   </div>
                 ))}

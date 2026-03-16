@@ -55,9 +55,10 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div
-            className="hidden lg:flex items-center gap-1 h-full ml-auto mr-8"
+            className="hidden lg:flex items-center gap-4 h-full ml-auto mr-16"
             onMouseLeave={handleMenuLeave}
           >
+{/* 
             <NavItem
               label="Gojek Clone"
               isOpen={activeMenu === "Gojek Clone"}
@@ -65,7 +66,8 @@ const Navbar = () => {
               onClick={() => setActiveMenu(null)}
             >
               <GojekMegaMenu />
-            </NavItem>
+            </NavItem> 
+            */}
 
             <NavItem
               label="Products"
@@ -76,6 +78,7 @@ const Navbar = () => {
               <ProductsMegaMenu />
             </NavItem>
 
+{/* 
             <NavItem
               label="Services"
               isOpen={activeMenu === "Services"}
@@ -83,7 +86,8 @@ const Navbar = () => {
               onClick={() => setActiveMenu(null)}
             >
               <ServicesMegaMenu />
-            </NavItem>
+            </NavItem> 
+            */}
 
             <NavItem
               label="Solutions"
@@ -137,9 +141,9 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-t border-gray-50 p-6 absolute top-full left-0 right-0 shadow-2xl animate-in slide-in-from-top duration-300">
           <div className="flex flex-col gap-6">
-            <div className="text-lg font-semibold text-gray-800">
+{/* <div className="text-lg font-semibold text-gray-800">
               Gojek Clone
-            </div>
+            </div> */}
             <Link
               to="/products"
               className="text-lg font-bold text-gray-800 hover:text-primary"
@@ -147,7 +151,7 @@ const Navbar = () => {
             >
               Products
             </Link>
-            <div className="text-lg font-semibold text-gray-800">Services</div>
+{/* <div className="text-lg font-semibold text-gray-800">Services</div> */}
             <div className="text-lg font-semibold text-gray-800">Solutions</div>
             <div className="text-lg font-semibold text-gray-800">Company</div>
             <Link

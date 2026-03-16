@@ -158,6 +158,41 @@ const products = [
       "https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&q=80"],
 
     dark: true
+  },
+  {
+    id: "specialized",
+    label: "Specialized Apps",
+    heading: "Niche On-Demand Service Solutions",
+    description:
+      "Target specific markets with our curated niche app solutions. From wellness and laundry to pet care and vehicle recovery.",
+    features: [
+      "Massage Therapy App",
+      "Laundry & Dry Cleaning",
+      "Tow-Truck & Roadside",
+      "Dog Walking & Pet Care",
+      "Snow Removal & Plowing",
+      "Pest Control Solutions"],
+    logos: [
+      "/whitelabel-assets/assets/images/products/specialized/logo1.png",
+      "/whitelabel-assets/assets/images/products/specialized/logo2.png",
+      "/whitelabel-assets/assets/images/products/specialized/logo3.png",
+      "/whitelabel-assets/assets/images/products/specialized/logo4.png",
+      "/whitelabel-assets/assets/images/products/specialized/logo5.png",
+      "/whitelabel-assets/assets/images/products/specialized/logo6.png"],
+    screenshots: [
+      "/whitelabel-assets/assets/images/products/specialized/app1.png",
+      "/whitelabel-assets/assets/images/products/specialized/app2.png",
+      "/whitelabel-assets/assets/images/products/specialized/app3.png",
+      "/whitelabel-assets/assets/images/products/specialized/app4.png",
+      "/whitelabel-assets/assets/images/products/specialized/app5.png",
+      "/whitelabel-assets/assets/images/products/specialized/app6.png"],
+    fallbackScreenshots: [
+      "https://images.unsplash.com/photo-1544161515-4ae6ce6ca8b8?w=200&q=80",
+      "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=200&q=80",
+      "https://images.unsplash.com/photo-1586191582151-f73972d10737?w=200&q=80",
+      "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=200&q=80",
+      "https://images.unsplash.com/photo-1517204324032-fb3012de9b59?w=200&q=80",
+      "https://images.unsplash.com/photo-1587324438673-56c507c6f085?w=200&q=80"]
   }];
 
 
