@@ -24,6 +24,8 @@ import CloudKitchenPage from '../pages/products/Cloud-Kitchen/CloudKitchenPage';
 import HandymanServicePage from '../pages/products/handyman-service/HandymanServicePage';
 import SalonBookingPage from '../pages/products/Salon-booking/SalonBookingPage';
 import CustomerSupportBotPage from '../pages/products/customer-support-bot/CustomerSupportBotPage';
+import PropertyListingPortalPage from '../pages/products/property-listing-portal/PropertyListingPortalPage';
+import RealEstatePage from '../pages/products/real-estate/RealEstatePage';
 import MultiVendorMarketplacePage from "../pages/products/Multi-Vendor-Marketplace/MultiVendorMarketplacePage";
 import B2BWholesalePage from "../pages/products/B2B-Wholesale/B2BWholesalePage";
 import AiContentGeneratorPage from "../pages/products/AI-Content-Generator/AiContentGeneratorPage";
@@ -62,6 +64,11 @@ const AppRoutes = () => {
 
                 <Route path="/products/salon-booking" element={<SalonBookingPage />} />
 
+    <Route path="/products/ai-chatbot" element={<CustomerSupportBotPage/>} />
+
+    <Route path="/products/property-listing" element={<PropertyListingPortalPage/>} />
+
+    <Route path="/products/real-estate-crm" element={<RealEstatePage/>} />
                 <Route path="/products/ai-chatbot" element={<CustomerSupportBotPage />} />
                 <Route path="/products/multi-vendor-ecommerce" element={<MultiVendorMarketplacePage />} />
                 <Route path="/products/b2b-wholesale" element={<B2BWholesalePage />} />
