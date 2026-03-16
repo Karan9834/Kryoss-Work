@@ -20,6 +20,10 @@ import TaxiBiddingPage from "../pages/products/Taxi-Bidding/TaxiBiddingPage"
 import FoodDeliveryPage from '../pages/products/Food-Delivery/FoodDeliveryPage';
 import CarRentalPage from "../pages/products/Car-Rental/CarRentalPage";
 import CarPoolingPage from "../pages/products/Car-Pooling/CarPoolingPage";
+import CloudKitchenPage from '../pages/products/Cloud-Kitchen/CloudKitchenPage';
+import HandymanServicePage from '../pages/products/handyman-service/HandymanServicePage';
+import SalonBookingPage from '../pages/products/Salon-booking/SalonBookingPage';
+import CustomerSupportBotPage from '../pages/products/customer-support-bot/CustomerSupportBotPage';
 const AppRoutes = () => {
     return (
         <Routes>
@@ -49,6 +53,12 @@ const AppRoutes = () => {
 
                 <Route path="/products/Carpool-app" element={<CarPoolingPage />} />
 
+  <Route path="/products/cloud-kitchen" element={<CloudKitchenPage/>} />
+  <Route path="/products/handyman-app" element={<HandymanServicePage/>} />
+
+  <Route path="/products/salon-booking" element={<SalonBookingPage/>} />
+
+    <Route path="/products/ai-chatbot" element={<CustomerSupportBotPage/>} />
             </Route>
         </Routes>
     );
