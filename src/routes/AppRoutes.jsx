@@ -26,6 +26,11 @@ import SalonBookingPage from '../pages/products/Salon-booking/SalonBookingPage';
 import CustomerSupportBotPage from '../pages/products/customer-support-bot/CustomerSupportBotPage';
 import PropertyListingPortalPage from '../pages/products/property-listing-portal/PropertyListingPortalPage';
 import RealEstatePage from '../pages/products/real-estate/RealEstatePage';
+import MultiVendorMarketplacePage from "../pages/products/Multi-Vendor-Marketplace/MultiVendorMarketplacePage";
+import B2BWholesalePage from "../pages/products/B2B-Wholesale/B2BWholesalePage";
+import AiContentGeneratorPage from "../pages/products/AI-Content-Generator/AiContentGeneratorPage";
+import TelemedicineAppPage from "../pages/products/Telemedicine-App/TelemedicineAppPage";
+import PharmacyDeliveryPage from "../pages/products/Pharmacy-Delivery/PharmacyDeliveryPage";
 const AppRoutes = () => {
     return (
         <Routes>
@@ -52,19 +57,24 @@ const AppRoutes = () => {
 
 
                 <Route path="/products/Car-Rental-app" element={<CarRentalPage />} />
-
                 <Route path="/products/Carpool-app" element={<CarPoolingPage />} />
 
-  <Route path="/products/cloud-kitchen" element={<CloudKitchenPage/>} />
-  <Route path="/products/handyman-app" element={<HandymanServicePage/>} />
+                <Route path="/products/cloud-kitchen" element={<CloudKitchenPage />} />
+                <Route path="/products/handyman-app" element={<HandymanServicePage />} />
 
-  <Route path="/products/salon-booking" element={<SalonBookingPage/>} />
+                <Route path="/products/salon-booking" element={<SalonBookingPage />} />
 
     <Route path="/products/ai-chatbot" element={<CustomerSupportBotPage/>} />
 
     <Route path="/products/property-listing" element={<PropertyListingPortalPage/>} />
 
     <Route path="/products/real-estate-crm" element={<RealEstatePage/>} />
+                <Route path="/products/ai-chatbot" element={<CustomerSupportBotPage />} />
+                <Route path="/products/multi-vendor-ecommerce" element={<MultiVendorMarketplacePage />} />
+                <Route path="/products/b2b-wholesale" element={<B2BWholesalePage />} />
+                <Route path="/products/ai-content-generator" element={<AiContentGeneratorPage />} />
+                <Route path="/products/telemedicine-app" element={<TelemedicineAppPage />} />
+                <Route path="/products/pharmacy-delivery" element={<PharmacyDeliveryPage />} />
             </Route>
         </Routes>
     );
