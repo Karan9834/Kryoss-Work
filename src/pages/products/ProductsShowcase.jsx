@@ -7,16 +7,19 @@ import ProductFilter from '../../components/ProductsShowcase/ProductFilter';
 import SearchBar from '../../components/ProductsShowcase/SearchBar';
 import SkeletonCard from '../../components/ProductsShowcase/SkeletonCard';
 import Pagination from '../../components/ProductsShowcase/Pagination';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { ArrowRight, MessageSquare, Calendar } from 'lucide-react';
 
 const ProductsShowcase = () => {
-    const [searchQuery, setSearchQuery] = useState('');
-    const [searchTerm, setSearchTerm] = useState(''); // Holds actual typed text before submit
-    const [selectedCategory, setSelectedCategory] = useState('all');
-    const [selectedFilter, setSelectedFilter] = useState('All');
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    // Initialize state from URL params if present
+    const [searchQuery, setSearchQuery] = useState(searchParams.get('query') || '');
+    const [searchTerm, setSearchTerm] = useState(searchParams.get('query') || ''); 
+    const [selectedCategory, setSelectedCategory] = useState(searchParams.get('category') || 'all');
+    const [selectedFilter, setSelectedFilter] = useState(searchParams.get('filter') || 'All');
     const [isLoading, setIsLoading] = useState(false);
-    const [currentPage, setCurrentPage] = useState(1);
+    const [currentPage, setCurrentPage] = useState(parseInt(searchParams.get('page')) || 1);
     const itemsPerPage = 16;
 
     const resultsRef = useRef(null);
@@ -25,12 +28,43 @@ const ProductsShowcase = () => {
     // Trigger filtering effect to simulate network/processing
     useEffect(() => {
         setIsLoading(true);
-        setCurrentPage(1); // Reset page automatically on filter/search change
+        // Reset page automatically on filter/search change, but NOT on initial mount
+        if (!isFirstRender.current) {
+            setCurrentPage(1);
+        }
         const timer = setTimeout(() => {
             setIsLoading(false);
         }, 400); // 400ms Fake Loading
         return () => clearTimeout(timer);
     }, [searchQuery, selectedCategory, selectedFilter]);
+
+    // Update URL params when state changes
+    useEffect(() => {
+        const params = new URLSearchParams();
+        if (currentPage > 1) params.set('page', currentPage);
+        if (selectedCategory !== 'all') params.set('category', selectedCategory);
+        if (selectedFilter !== 'All') params.set('filter', selectedFilter);
+        if (searchQuery) params.set('query', searchQuery);
+        
+        // We use replace: true for filter/page changes to keep history clean
+        setSearchParams(params, { replace: true });
+    }, [currentPage, searchQuery, selectedCategory, selectedFilter, setSearchParams]);
+
+    // Handle browser back/forward buttons
+    useEffect(() => {
+        const urlPage = parseInt(searchParams.get('page')) || 1;
+        const urlCategory = searchParams.get('category') || 'all';
+        const urlFilter = searchParams.get('filter') || 'All';
+        const urlQuery = searchParams.get('query') || '';
+
+        if (urlPage !== currentPage) setCurrentPage(urlPage);
+        if (urlCategory !== selectedCategory) setSelectedCategory(urlCategory);
+        if (urlFilter !== selectedFilter) setSelectedFilter(urlFilter);
+        if (urlQuery !== searchQuery) {
+            setSearchQuery(urlQuery);
+            setSearchTerm(urlQuery);
+        }
+    }, [searchParams]);
 
     // Handle smooth scroll when state updates (search, category, filter, page)
     useEffect(() => {
