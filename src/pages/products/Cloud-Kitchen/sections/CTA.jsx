@@ -22,7 +22,7 @@ const CTA = () => {
                 {/* Button */}
                 <div className="mt-8">
                     <a
-                        href="https://preview.codecanyon.net/item/gorestofy-restaurant-pos-management-system-multi-outlet-billing-kitchen-display/full_screen_preview/61270727"
+                        href="http://preview.codecanyon.net/item/foodhat-restaurant-menu-food-ordering-system/full_screen_preview/46780682"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-lg hover:bg-sky-200 transition duration-300 shadow-lg"

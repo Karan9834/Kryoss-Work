@@ -19,18 +19,18 @@ const Hero = () => {
 
                         {/* Heading */}
                         <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight">
-                           Cloud Kitchen POS
+                            Cloud Kitchen POS
                         </h1>
 
                         {/* Description */}
                         <p className="text-gray-300 text-lg max-w-xl leading-relaxed">
-                        Complete centralized order management for cloud kitchens.
+                            Complete centralized order management for cloud kitchens.
                         </p>
 
                         {/* CTA */}
                         <div>
                             <a
-                                href="https://preview.codecanyon.net/item/gorestofy-restaurant-pos-management-system-multi-outlet-billing-kitchen-display/full_screen_preview/61270727"
+                                href="http://preview.codecanyon.net/item/foodhat-restaurant-menu-food-ordering-system/full_screen_preview/46780682"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-900 transition px-7 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue-500/30"
