@@ -162,6 +162,19 @@ const specificProducts = [
     tech: ["Flutter", "Python", "MongoDB"],
     detailsLink: "/products/delivery/cannabis-delivery",
     demoLink: "/products/delivery/cannabis-delivery"
+  },
+  {
+    id: "sp9",
+    name: "Uber-Clone",
+    category: "taxi & transportation",
+    type: "Ride-Hailing Apps",
+    badge: "NEW",
+    desc: "A clone of the popular Uber app for ride-hailing services.",
+    image: "https://images.unsplash.com/photo-1548366086-7f1b76106622?auto=format&fit=crop&q=80&w=500",
+    features: ["Compliance Checks", "Live Tracking", "Wallet System"],
+    tech: ["Flutter", "Python", "MongoDB"],
+    detailsLink: "/products/transport/uber-clone",
+    demoLink: "/products/Uber-Clone"
   }
 ];
 

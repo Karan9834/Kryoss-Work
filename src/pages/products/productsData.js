@@ -176,7 +176,7 @@ const baseProducts = [
 
     // Transport
     {
-        id: "transport/uber-clone",
+    id: "transport/uber-clone",
     name: "Uber Clone",
     categoryId: 'transport',
     type: "Ride-Hailing App",

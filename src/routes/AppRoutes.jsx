@@ -31,6 +31,11 @@ import B2BWholesalePage from "../pages/products/B2B-Wholesale/B2BWholesalePage";
 import AiContentGeneratorPage from "../pages/products/AI-Content-Generator/AiContentGeneratorPage";
 import TelemedicineAppPage from "../pages/products/Telemedicine-App/TelemedicineAppPage";
 import PharmacyDeliveryPage from "../pages/products/Pharmacy-Delivery/PharmacyDeliveryPage";
+import ELearningPage from '../pages/products/E-Learning/ELearningPage';
+import TutorBookingPage from '../pages/products/Tutor-Booking/TutorBookingPage';
+import GroceryDeliveryPage from '../pages/products/Grocery-Delivery/GroceryDeliveryPage';
+
+
 const AppRoutes = () => {
     return (
         <Routes>
@@ -75,9 +80,11 @@ const AppRoutes = () => {
                 <Route path="/products/ai-content-generator" element={<AiContentGeneratorPage />} />
                 <Route path="/products/telemedicine-app" element={<TelemedicineAppPage />} />
                 <Route path="/products/pharmacy-delivery" element={<PharmacyDeliveryPage />} />
+                <Route path="/products/elearning-platform" element={<ELearningPage />} />
+                <Route path='/products/tutor-booking' element={<TutorBookingPage/>}></Route>
+                <Route path = "/products/grocery-delivery" element = {<GroceryDeliveryPage/>} />
             </Route>
         </Routes>
     );
 };
-
 export default AppRoutes;
