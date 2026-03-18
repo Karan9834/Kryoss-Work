@@ -357,9 +357,14 @@ const TikTokClonePage = () => {
               days and scale your app globally.
             </p>
 
-            <button className="bg-pink-500 hover:bg-pink-600 text-white px-7 py-3 rounded-full font-semibold transition duration-300">
-              Let's Discuss
-            </button>
+            <a
+              href="https://preview.codecanyon.net/item/smmlab-social-media-marketing-smm-platform/full_screen_preview/32673932"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-pink-500 hover:bg-pink-600 text-white px-7 py-3 rounded-full font-semibold transition duration-300 inline-block w-fit"
+            >
+              Live Demo →
+            </a>
           </div>
 
           {/* RIGHT IMAGE */}

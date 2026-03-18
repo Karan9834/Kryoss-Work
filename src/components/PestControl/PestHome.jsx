@@ -56,12 +56,17 @@ const PestHero = () => {
           </p>
 
           {/* Button */}
-          <button className="flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold transition">
-            Request Demo
+          <a
+            href="https://preview.codecanyon.net/item/appointment-booking-software-for-cleaning-maintenance-businesses-cleanto/full_screen_preview/18397969"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold transition w-fit"
+          >
+            Live Demo
             <span className="bg-white/20 rounded-full w-7 h-7 flex items-center justify-center">
               →
             </span>
-          </button>
+          </a>
         </div>
 
         {/* RIGHT IMAGE */}

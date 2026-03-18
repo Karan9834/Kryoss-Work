@@ -3,28 +3,25 @@ import hero from "../../assets/Appointment/appointmenthero.webp";
 const AppointmentHero = () => {
   return (
     <section className="text-white bg-gradient-to-r from-[#0b0f3b] via-[#121a5a] to-[#1e2a78] overflow-hidden">
-
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-end gap-10 pt-16">
-
         {/* LEFT CONTENT */}
         <div className="pb-10">
-
           {/* App label */}
-         <div className="flex items-center gap-3 mb-6">
-
-  <div className="w-12 h-12 flex items-center justify-center 
+          <div className="flex items-center gap-3 mb-6">
+            <div
+              className="w-12 h-12 flex items-center justify-center 
                   rounded-xl font-bold text-lg text-white
                   bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600
                   shadow-[0_0_15px_rgba(56,189,248,0.8)]
-                  border border-white/20 backdrop-blur-md">
-    V
-  </div>
+                  border border-white/20 backdrop-blur-md"
+            >
+              V
+            </div>
 
-  <span className="text-lg font-semibold text-white tracking-wide">
-    Vyom Appointment Booking App
-  </span>
-
-</div>
+            <span className="text-lg font-semibold text-white tracking-wide">
+              Vyom Appointment Booking App
+            </span>
+          </div>
 
           {/* Title */}
           <h1 className="text-3xl md:text-4xl font-semibold leading-snug mb-5">
@@ -36,32 +33,32 @@ const AppointmentHero = () => {
 
           {/* Description */}
           <p className="text-gray-300 mb-8 max-w-xl">
-            Improve healthcare accessibility with an advanced doctor
-            appointment platform. Patients can easily book consultations
-            while doctors manage schedules and appointments seamlessly
-            through a powerful mobile solution available on Android and iOS.
+            Improve healthcare accessibility with an advanced doctor appointment
+            platform. Patients can easily book consultations while doctors
+            manage schedules and appointments seamlessly through a powerful
+            mobile solution available on Android and iOS.
           </p>
 
           {/* CTA */}
-          <button className="bg-gradient-to-r from-cyan-400 to-blue-500 px-7 py-3 rounded-full font-medium hover:scale-105 transition">
-            Let's Discuss →
-          </button>
-
+          <a
+            href="https://preview.codecanyon.net/item/docrib-doctor-appointment-system/full_screen_preview/31305957"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-cyan-400 to-blue-500 px-7 py-3 rounded-full font-medium hover:scale-105 transition inline-block w-fit"
+          >
+            Live Demo →
+          </a>
         </div>
 
         {/* RIGHT IMAGE */}
         <div className="flex justify-center">
-
           <img
             src={hero}
             alt="Doctor appointment app"
             className="max-h-[420px] object-contain"
           />
-
         </div>
-
       </div>
-
     </section>
   );
 };

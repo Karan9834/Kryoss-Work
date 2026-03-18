@@ -52,13 +52,14 @@ const Hero = () => {
               aggregators. Launch your white-label food delivery platform today.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-[#FF5722] hover:bg-[#E64A19] text-white px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105 flex items-center gap-2">
-                Consult Our Experts
-                <ArrowRight size={20} />
-              </button>
-              <button className="border-2 border-white/20 hover:border-white text-white px-8 py-4 rounded-lg font-bold transition-all hover:bg-white/5">
+              <a
+                href="https://preview.codecanyon.net/item/efood-food-delivery-system-with-laravel-admin-panel-delivery-man-app-v10/full_screen_preview/30320338"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-white/20 hover:border-white text-white px-8 py-4 rounded-lg font-bold transition-all hover:bg-white/5 inline-block"
+              >
                 View Live Demo
-              </button>
+              </a>
             </div>
           </div>
 
