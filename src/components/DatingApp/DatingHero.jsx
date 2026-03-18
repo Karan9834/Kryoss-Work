@@ -42,10 +42,15 @@ const DatingAppHero = () => {
             engaging communities online.
           </p>
 
-          <button className="flex items-center gap-2 bg-pink-500 hover:bg-pink-600 px-5 py-3 rounded-full text-sm font-semibold transition">
-            Let's Discuss
+          <a
+            href="https://preview.codecanyon.net/item/dating-kit-react-native-dating-mobile-app-template/full_screen_preview/44700446"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-pink-500 hover:bg-pink-600 px-5 py-3 rounded-full text-sm font-semibold transition w-fit"
+          >
+            Live Demo
             <ArrowRight size={16} />
-          </button>
+          </a>
         </div>
 
         {/* RIGHT IMAGE */}

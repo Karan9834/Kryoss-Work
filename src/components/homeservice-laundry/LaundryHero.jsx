@@ -47,10 +47,15 @@ const LaundryHero = () => {
           </p>
 
           {/* CTA */}
-          <button className="flex items-center gap-3 bg-[#18d4b0] text-black font-medium px-6 py-3 rounded-full hover:opacity-90 transition">
-            Let's Discuss
+          <a
+            href="https://preview.codecanyon.net/item/readylaundry-app-website-with-admin-panel-multistore-laundry-booking-system-ondemand-laundry/full_screen_preview/61451908"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 bg-[#18d4b0] text-black font-medium px-6 py-3 rounded-full hover:opacity-90 transition w-fit"
+          >
+            Live Demo
             <ArrowRight size={18} />
-          </button>
+          </a>
         </div>
 
         {/* RIGHT IMAGE */}

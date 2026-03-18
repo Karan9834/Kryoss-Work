@@ -59,19 +59,22 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-center md:justify-start">
-            <button
+            <a
+              href="https://preview.codecanyon.net/item/exicube-bidcab-app/full_screen_preview/40458430"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-lime-500 hover:bg-lime-600 
-                               transition-all duration-300 
-                               text-black font-semibold 
-                               px-6 md:px-8 py-3 md:py-4 
-                               rounded-full flex items-center gap-3 group"
+             transition-all duration-300 
+             text-black font-semibold 
+             px-6 md:px-8 py-3 md:py-4 
+             rounded-full flex items-center gap-3 group w-fit"
             >
-              Request Demo
+              Live Demo
               <ArrowRight
                 className="group-hover:translate-x-1 transition"
                 size={18}
               />
-            </button>
+            </a>
           </div>
         </div>
 
