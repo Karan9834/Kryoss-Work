@@ -62,7 +62,7 @@
 //               </h3>
 
 //               {/* <a className="text-blue-600 font-medium">Explore ↗</a> */}
-          
+
 // <Link to="/services" className="text-blue-600 font-medium hover:underline">
 //   Explore ↗
 // </Link>
@@ -147,109 +147,109 @@ const PickSection = () => {
       <div className="absolute top-10 left-10 w-72 h-72 bg-indigo-200 rounded-full blur-3xl opacity-40 animate-pulse"></div>
       <div className="absolute bottom-10 right-10 w-72 h-72 bg-pink-200 rounded-full blur-3xl opacity-40 animate-pulse"></div>
 
-      <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center relative z-10">
 
         {/* LEFT SIDE CARDS */}
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-2 gap-4 sm:gap-10">
 
           {/* LEFT COLUMN */}
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-4 sm:gap-10">
 
             {/* Card 1 */}
-            <div className="group bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-              <div className="w-16 h-16 mb-4 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center group-hover:scale-110 transition">
-                <Star size={26} />
+            <div className="group bg-white p-4 sm:p-8 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 mb-4 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center group-hover:scale-110 transition">
+                <Star size={22} className="sm:size-[26px]" />
               </div>
 
-              <h3 className="font-semibold text-lg mb-3">
+              <h3 className="font-semibold text-sm sm:text-lg mb-3">
                 I Want To Explore Your Products
               </h3>
 
               <Link
                 to="/products"
-                className="flex items-center gap-1 text-blue-600 font-medium group-hover:gap-2 transition"
+                className="flex items-center gap-1 text-blue-600 text-xs sm:text-base font-medium group-hover:gap-2 transition"
               >
-                Explore <ArrowRight size={16} />
+                Explore <ArrowRight size={14} className="sm:size-[16px]" />
               </Link>
             </div>
 
             {/* Card 3 */}
-            <div className="group bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-              <div className="w-16 h-16 mb-4 rounded-full bg-cyan-100 text-cyan-600 flex items-center justify-center group-hover:scale-110 transition">
-                <Users size={26} />
+            <div className="group bg-white p-4 sm:p-8 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 mb-4 rounded-full bg-cyan-100 text-cyan-600 flex items-center justify-center group-hover:scale-110 transition">
+                <Users size={22} className="sm:size-[26px]" />
               </div>
 
-              <h3 className="font-semibold text-lg mb-3">
+              <h3 className="font-semibold text-sm sm:text-lg mb-3">
                 I Want To Hire Your Developers
               </h3>
 
               <Link
                 to="/hire-developers"
-                className="flex items-center gap-1 text-blue-600 font-medium group-hover:gap-2 transition"
+                className="flex items-center gap-1 text-blue-600 text-xs sm:text-base font-medium group-hover:gap-2 transition"
               >
-                Explore <ArrowRight size={16} />
+                Explore <ArrowRight size={14} className="sm:size-[16px]" />
               </Link>
             </div>
           </div>
 
           {/* RIGHT COLUMN (SHIFTED DOWN) */}
-          <div className="flex flex-col gap-10 mt-16">
+          <div className="flex flex-col gap-4 sm:gap-10 mt-8 sm:mt-16">
 
             {/* Card 2 */}
-            <div className="group bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-              <div className="w-16 h-16 mb-4 rounded-full bg-pink-100 text-pink-500 flex items-center justify-center group-hover:scale-110 transition">
-                <Handshake size={26} />
+            <div className="group bg-white p-4 sm:p-8 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 mb-4 rounded-full bg-pink-100 text-pink-500 flex items-center justify-center group-hover:scale-110 transition">
+                <Handshake size={22} className="sm:size-[26px]" />
               </div>
 
-              <h3 className="font-semibold text-lg mb-3">
+              <h3 className="font-semibold text-sm sm:text-lg mb-3">
                 I Want To Explore Your Services
               </h3>
 
               <Link
                 to="/services"
-                className="flex items-center gap-1 text-blue-600 font-medium group-hover:gap-2 transition"
+                className="flex items-center gap-1 text-blue-600 text-xs sm:text-base font-medium group-hover:gap-2 transition"
               >
-                Explore <ArrowRight size={16} />
+                Explore <ArrowRight size={14} className="sm:size-[16px]" />
               </Link>
             </div>
 
             {/* Card 4 */}
-            <div className="group bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-              <div className="w-16 h-16 mb-4 rounded-full bg-green-100 text-green-600 flex items-center justify-center group-hover:scale-110 transition">
-                <TrendingUp size={26} />
+            <div className="group bg-white p-4 sm:p-8 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 mb-4 rounded-full bg-green-100 text-green-600 flex items-center justify-center group-hover:scale-110 transition">
+                <TrendingUp size={22} className="sm:size-[26px]" />
               </div>
 
-              <h3 className="font-semibold text-lg mb-3">
+              <h3 className="font-semibold text-sm sm:text-lg mb-3">
                 Careers - To Join In Our Company
               </h3>
 
               <Link
                 to="/business-growth"
-                className="flex items-center gap-1 text-blue-600 font-medium group-hover:gap-2 transition"
+                className="flex items-center gap-1 text-blue-600 text-xs sm:text-base font-medium group-hover:gap-2 transition"
               >
-                Explore <ArrowRight size={16} />
+                Explore <ArrowRight size={14} className="sm:size-[16px]" />
               </Link>
             </div>
           </div>
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="space-y-6">
+        <div className="space-y-6 text-center lg:text-left mt-10 lg:mt-0">
 
-          <h2 className="text-4xl font-bold leading-tight">
+          <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
             Pick What’s Suits
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
               You Most!
             </span>
           </h2>
 
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
             We have categorized our services based on client needs to ensure a
             seamless selection process. Choose the service that aligns with
             your goals and get started right away.
           </p>
 
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed hidden sm:block">
             Our team is always ready to assist you with tailored solutions that
             match your requirements.
           </p>

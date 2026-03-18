@@ -10,22 +10,23 @@ import {
   Wrench,
   Share2,
   Shield,
-  Package } from
-"lucide-react";
+  Package
+} from
+  "lucide-react";
 
 const industries = [
-{ label: "Banking & Finance", icon: Building2, color: "text-blue-500", bg: "bg-blue-50" },
-{ label: "Hyperlocal Delivery", icon: Package, color: "text-orange-500", bg: "bg-orange-50" },
-{ label: "Video Streaming", icon: PlayCircle, color: "text-red-500", bg: "bg-red-50" },
-{ label: "Healthcare", icon: Heart, color: "text-pink-500", bg: "bg-pink-50" },
-{ label: "Agriculture", icon: Wheat, color: "text-green-500", bg: "bg-green-50" },
-{ label: "Logistics", icon: Truck, color: "text-purple-500", bg: "bg-purple-50" },
-{ label: "Transportation", icon: Car, color: "text-indigo-500", bg: "bg-indigo-50" },
-{ label: "Marketplace", icon: Store, color: "text-yellow-500", bg: "bg-yellow-50" },
-{ label: "Handyman", icon: Wrench, color: "text-teal-500", bg: "bg-teal-50" },
-{ label: "Social Media", icon: Share2, color: "text-sky-500", bg: "bg-sky-50" },
-{ label: "Insurance", icon: Shield, color: "text-emerald-500", bg: "bg-emerald-50" },
-{ label: "E-Commerce", icon: ShoppingBag, color: "text-rose-500", bg: "bg-rose-50" }];
+  { label: "Banking & Finance", icon: Building2, color: "text-blue-500", bg: "bg-blue-50" },
+  { label: "Hyperlocal Delivery", icon: Package, color: "text-orange-500", bg: "bg-orange-50" },
+  { label: "Video Streaming", icon: PlayCircle, color: "text-red-500", bg: "bg-red-50" },
+  { label: "Healthcare", icon: Heart, color: "text-pink-500", bg: "bg-pink-50" },
+  { label: "Agriculture", icon: Wheat, color: "text-green-500", bg: "bg-green-50" },
+  { label: "Logistics", icon: Truck, color: "text-purple-500", bg: "bg-purple-50" },
+  { label: "Transportation", icon: Car, color: "text-indigo-500", bg: "bg-indigo-50" },
+  { label: "Marketplace", icon: Store, color: "text-yellow-500", bg: "bg-yellow-50" },
+  { label: "Handyman", icon: Wrench, color: "text-teal-500", bg: "bg-teal-50" },
+  { label: "Social Media", icon: Share2, color: "text-sky-500", bg: "bg-sky-50" },
+  { label: "Insurance", icon: Shield, color: "text-emerald-500", bg: "bg-emerald-50" },
+  { label: "E-Commerce", icon: ShoppingBag, color: "text-rose-500", bg: "bg-rose-50" }];
 
 
 export default function Industries() {
@@ -50,10 +51,10 @@ export default function Industries() {
         {/* Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {industries.map(({ label, icon: Icon, color, bg }) =>
-          <div
-            key={label}
-            className="flex flex-col items-center gap-3 p-5 bg-white rounded-xl border border-border hover:shadow-md hover:border-primary/30 transition-all group cursor-pointer">
-            
+            <div
+              key={label}
+              className="flex flex-col items-center gap-3 p-5 bg-white rounded-xl border border-border hover:shadow-md hover:border-primary/30 transition-all group cursor-pointer">
+
               <div className={`${bg} p-3 rounded-xl group-hover:scale-110 transition-transform`}>
                 <Icon className={`h-16 w-16 ${color}`} />
               </div>

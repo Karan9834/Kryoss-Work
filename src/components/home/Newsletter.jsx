@@ -31,7 +31,7 @@
 //         <form
 //           onSubmit={handleSubmit}
 //           className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
-          
+
 //           <input
 //             type="email"
 //             required
@@ -39,11 +39,11 @@
 //             onChange={(e) => setEmail(e.target.value)}
 //             placeholder="Enter your email address"
 //             className="flex-1 px-5 py-3 rounded-lg text-foreground bg-white focus:outline-none focus:ring-2 focus:ring-white/50" />
-          
+
 //           <button
 //             type="submit"
 //             className="bg-[#1a1a1a] text-white px-7 py-3 rounded-lg font-bold hover:bg-black transition-colors whitespace-nowrap">
-            
+
 //             {submitted ? "Subscribed! ✓" : "Subscribe"}
 //           </button>
 //         </form>

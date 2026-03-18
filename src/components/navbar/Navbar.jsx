@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { navigationData } from "./navbar.data";
 import NavItem from "./NavItem";
 import GojekMegaMenu from "./GojekMegaMenu";
 import ProductsMegaMenu from "./ProductsMegaMenu";
@@ -12,6 +13,7 @@ import logo from "../../assets/Logo/worklogo.png";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileExpanded, setMobileExpanded] = useState("");
   const [activeMenu, setActiveMenu] = useState(null);
   const menuTimeoutRef = useRef(null);
 
@@ -139,31 +141,103 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-50 p-6 absolute top-full left-0 right-0 shadow-2xl animate-in slide-in-from-top duration-300">
-          <div className="flex flex-col gap-6">
-{/* <div className="text-lg font-semibold text-gray-800">
-              Gojek Clone
-            </div> */}
-            <Link
-              to="/products"
-              className="text-lg font-bold text-gray-800 hover:text-primary"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Products
-            </Link>
-{/* <div className="text-lg font-semibold text-gray-800">Services</div> */}
-            <div className="text-lg font-semibold text-gray-800">Solutions</div>
-            <div className="text-lg font-semibold text-gray-800">Company</div>
+        <div className="lg:hidden bg-white border-t border-gray-50 p-6 absolute top-full left-0 right-0 shadow-2xl animate-in slide-in-from-top duration-300 max-h-[calc(100vh-80px)] overflow-y-auto">
+          <div className="flex flex-col gap-4">
+            
+            {/* Products Accordion */}
+            <div>
+              <button 
+                onClick={() => setMobileExpanded(mobileExpanded === 'products' ? '' : 'products')}
+                className="w-full flex justify-between items-center text-lg font-bold text-gray-800 hover:text-primary py-2"
+              >
+                <span>Products</span>
+                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'products' ? 'rotate-180 text-primary' : ''}`} size={20} />
+              </button>
+              {mobileExpanded === 'products' && (
+                <div className="pl-4 mt-2 space-y-4 border-l-2 border-orange-100">
+                  {navigationData.products.slice(0, 3).map((category, idx) => (
+                    <div key={idx} className="space-y-2">
+                      <p className="text-xs font-bold text-gray-400 tracking-wider uppercase">{category.category}</p>
+                      {category.items.slice(0, 4).map((item, itemIdx) => (
+                        <Link
+                          key={itemIdx}
+                          to={item.href}
+                          className="block text-[15px] font-semibold text-gray-700 hover:text-primary py-1"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
+                  <Link to="/products" className="block text-sm font-bold text-primary py-2" onClick={() => setMobileMenuOpen(false)}>
+                    View All Products &rarr;
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Solutions Accordion */}
+            <div>
+              <button 
+                onClick={() => setMobileExpanded(mobileExpanded === 'solutions' ? '' : 'solutions')}
+                className="w-full flex justify-between items-center text-lg font-bold text-gray-800 hover:text-primary py-2"
+              >
+                <span>Solutions</span>
+                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'solutions' ? 'rotate-180 text-primary' : ''}`} size={20} />
+              </button>
+              {mobileExpanded === 'solutions' && (
+                <div className="pl-4 mt-2 space-y-2 border-l-2 border-orange-100">
+                  {navigationData.solutions.items.map((item, idx) => (
+                    <Link
+                      key={idx}
+                      to={item.href}
+                      className="block text-[15px] font-semibold text-gray-700 hover:text-primary py-1"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Company Accordion */}
+            <div>
+              <button 
+                onClick={() => setMobileExpanded(mobileExpanded === 'company' ? '' : 'company')}
+                className="w-full flex justify-between items-center text-lg font-bold text-gray-800 hover:text-primary py-2"
+              >
+                <span>Company</span>
+                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'company' ? 'rotate-180 text-primary' : ''}`} size={20} />
+              </button>
+              {mobileExpanded === 'company' && (
+                <div className="pl-4 mt-2 space-y-2 border-l-2 border-orange-100">
+                  {navigationData.company.items.map((item, idx) => (
+                    <Link
+                      key={idx}
+                      to={item.href}
+                      className="block text-[15px] font-semibold text-gray-700 hover:text-primary py-1"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <Link
               to="/blog"
-              className="text-lg font-bold text-gray-800 hover:text-primary"
+              className="text-lg font-bold text-gray-800 hover:text-primary py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
             </Link>
+
             <Link
               to="/company/contact"
-              className="bg-primary text-white text-center py-4 rounded-xl font-bold uppercase tracking-widest text-sm shadow-xl active:scale-95 transition-all"
+              className="mt-4 bg-primary text-white text-center py-4 rounded-xl font-bold uppercase tracking-widest text-sm shadow-xl active:scale-95 transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
               Get a Free Quote
