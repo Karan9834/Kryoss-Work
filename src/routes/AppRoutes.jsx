@@ -34,8 +34,7 @@ import PharmacyDeliveryPage from "../pages/products/Pharmacy-Delivery/PharmacyDe
 import ELearningPage from '../pages/products/E-Learning/ELearningPage';
 import TutorBookingPage from '../pages/products/Tutor-Booking/TutorBookingPage';
 import GroceryDeliveryPage from '../pages/products/Grocery-Delivery/GroceryDeliveryPage';
-
-
+import SalesCRMPage from "../pages/products/Sales-CRM/SalesCRMPage";
 const AppRoutes = () => {
     return (
         <Routes>
@@ -69,11 +68,11 @@ const AppRoutes = () => {
 
                 <Route path="/products/salon-booking" element={<SalonBookingPage />} />
 
-    <Route path="/products/ai-chatbot" element={<CustomerSupportBotPage/>} />
+                <Route path="/products/ai-chatbot" element={<CustomerSupportBotPage />} />
 
-    <Route path="/products/property-listing" element={<PropertyListingPortalPage/>} />
+                <Route path="/products/property-listing" element={<PropertyListingPortalPage />} />
 
-    <Route path="/products/real-estate-crm" element={<RealEstatePage/>} />
+                <Route path="/products/real-estate-crm" element={<RealEstatePage />} />
                 <Route path="/products/ai-chatbot" element={<CustomerSupportBotPage />} />
                 <Route path="/products/multi-vendor-ecommerce" element={<MultiVendorMarketplacePage />} />
                 <Route path="/products/b2b-wholesale" element={<B2BWholesalePage />} />
@@ -81,8 +80,9 @@ const AppRoutes = () => {
                 <Route path="/products/telemedicine-app" element={<TelemedicineAppPage />} />
                 <Route path="/products/pharmacy-delivery" element={<PharmacyDeliveryPage />} />
                 <Route path="/products/elearning-platform" element={<ELearningPage />} />
-                <Route path='/products/tutor-booking' element={<TutorBookingPage/>}></Route>
-                <Route path = "/products/grocery-delivery" element = {<GroceryDeliveryPage/>} />
+                <Route path='/products/tutor-booking' element={<TutorBookingPage />}></Route>
+                <Route path="/products/grocery-delivery" element={<GroceryDeliveryPage />} />
+                <Route path="/products/sales-crm" element={<SalesCRMPage />} />
             </Route>
         </Routes>
     );

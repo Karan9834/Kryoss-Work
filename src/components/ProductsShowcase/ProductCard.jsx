@@ -39,12 +39,12 @@ const ProductCard = ({ product }) => {
                 <div className="absolute bottom-3 left-3 z-10 flex gap-1.5 px-2 py-1.5 bg-white/80 backdrop-blur-sm rounded-xl border border-white/40 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
                     {['react', 'node', 'mongodb', 'android', 'apple'].map((tech) => (
                         <div key={tech} className="w-6 h-6 rounded-md bg-white flex items-center justify-center p-1 shadow-sm border border-gray-50 transform hover:scale-110 transition-transform">
-                             <img 
-                                src={`https://raw.githubusercontent.com/devicons/devicon/master/icons/${tech}/${tech}-original.svg`} 
+                            <img
+                                src={`https://raw.githubusercontent.com/devicons/devicon/master/icons/${tech}/${tech}-original.svg`}
                                 alt={tech}
                                 className="w-full h-full object-contain"
                                 onError={(e) => { e.target.parentElement.style.display = 'none'; }}
-                             />
+                            />
                         </div>
                     ))}
                 </div>

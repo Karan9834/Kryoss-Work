@@ -10,13 +10,13 @@ import GroceryCta from './sections/GroceryCta'
 const GroceryDeliveryPage = () => {
   return (
     <>
-    <GroceryHero/>
-    <GroceryAbout/>
-    <GroceryFeatures/>
-    <GroceryWorkflow/>
-    <TechStack/>
-    <GroceryGallery/>
-    <GroceryCta/>
+      <GroceryHero />
+      <GroceryAbout />
+      <GroceryFeatures />
+      <GroceryWorkflow />
+      <TechStack />
+      <GroceryGallery />
+      <GroceryCta />
     </>
   )
 }
