@@ -1,291 +1,106 @@
-// import { ArrowRight, Star } from "lucide-react";
+"use client";
 
-// const reviewBadges = [
-//   {
-//     name: "Google Review",
-//     rating: "4.9",
-//     logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-//     border: "border-orange-500/30",
-//     color: "text-orange-600"
-//   },
-//   {
-//     name: "Goodfirm Review",
-//     rating: "4.9",
-//     logo: "https://cdn.iconscout.com/icon/free/png-256/free-goodfirms-logo-icon-download-in-svg-png-gif-file-formats--brand-brands-pack-logos-icons-2630044.png",
-//     border: "border-blue-500/30",
-//     color: "text-blue-600"
-//   },
-//   {
-//     name: "Clutch Review",
-//     rating: "4.9",
-//     logo: "https://clutch.co/sites/all/themes/clutch/logo.svg",
-//     border: "border-red-500/30",
-//     color: "text-red-600"
-//   },
-//   {
-//     name: "Trustpilot Review",
-//     rating: "4.3",
-//     logo: "https://cdn-icons-png.flaticon.com/512/5968/5968936.png",
-//     border: "border-green-500/30",
-//     color: "text-green-600"
-//   }
-// ];
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { FaGoogle, FaAmazon, FaSlack, FaMicrosoft, FaApple } from "react-icons/fa";
+import HeroParticles from "../HeroParticles";
 
+const Hero = () => {
+    return (
+        <section className="relative h-[calc(100vh-5rem)] flex items-center bg-gradient-to-r from-white to-slate-100 overflow-hidden py-8 lg:py-12">
+            {/* Particle Canvas Layer */}
+            <HeroParticles />
 
+            {/* Readability Mask Overlay (Fix for text area) */}
+            <div className="absolute top-0 left-0 w-full h-full z-[1] bg-[radial-gradient(circle_at_20%_50%,rgba(255,255,255,0.8)_0%,rgba(255,255,255,0)_60%)] pointer-events-none"></div>
 
+            <div className="container mx-auto px-6 lg:px-12 relative z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
+                    {/* Left Column (Content) */}
+                    <div className="flex flex-col space-y-3 lg:space-y-4 animate-fade-in-left items-center lg:items-start text-center lg:text-left">
+                        {/* Status Badge */}
+                        <div className="inline-flex items-center gap-2 border border-slate-900 rounded-full px-4 py-1.5 w-fit shadow-sm">
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                            </span>
+                            <span className="text-xs font-medium text-slate-900 uppercase tracking-wider">
+                                Showcasing Our Work
+                            </span>
+                        </div>
 
-// export default function Hero() {
-//   return (
-//     <section className="relative min-h-[600px] flex items-start bg-white overflow-hidden pt-2 pb-12">
-//       {/* Background Grid Pattern */}
-//       <div className="absolute inset-0 z-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+                        {/* Heading */}
+                        <h1 className="text-2xl sm:text-3xl lg:text-[40px] xl:text-[50px] font-semibold text-slate-900 leading-[1.15] tracking-tight">
+                            Building Powerful <br />
+                            Digital Solutions <br />
+                            That <span className="text-orange-500">Drive Success</span>
+                        </h1>
 
-//       <div className="max-w-[1500px] mx-auto px-4 sm:px-10 lg:px-20 relative z-10 w-full">
-//         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-8 items-start">
-//           {/* Left Content */}
-//           <div className="space-y-6 lg:max-w-2xl">
-//             {/* Pill Badge */}
-//             <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 shadow-sm">
-//               <span className="w-2.5 h-2.5 rounded-full bg-orange-500" />
-//               <span className="text-sm font-semibold text-gray-700">Digital Solutions</span>
-//             </div>
+                        {/* Description */}
+                        <p className="text-sm lg:text-base xl:text-lg text-slate-600 max-w-lg leading-snug">
+                            Explore our innovative projects that showcase how we create
+                            impactful web and app solutions tailored to drive growth and
+                            deliver exceptional results for forward-thinking businesses.
+                        </p>
 
-//             {/* Heading */}
-//             <h1 className="text-3xl lg:text-[42px] font-semibold text-gray-900 leading-[1.1] tracking-tight">
-//               Transforming Ideas With <br />
-//               <span className="text-primary">Product Engineering</span>
-//             </h1>
+                        {/* CTA Button */}
+                        <div className="flex flex-col space-y-3 pt-1">
+                            <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 lg:px-7 py-2 lg:py-2.5 rounded-lg shadow-xl shadow-orange-500/20 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center gap-2.5 group text-sm lg:text-base w-fit cursor-pointer">
+                                View Our Projects
+                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </button>
 
-//             <p className="text-[16px] lg:text-[18px] text-gray-600 font-normal leading-[1.6] max-w-xl">
-//               As a leading clone app development company, we provide scalable product engineering services & deliver ready-to-launch or custom app, Website & Software for diverse industries. Our high-performance enterprise solutions are tailored to your business needs, driving efficiency and sustainable growth.
-//             </p>
-
-//             {/* CTA */}
-//             <div className="pt-1">
-//               <a
-//                 href="#contact"
-//                 className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-full font-bold text-[16px] hover:bg-orange-600 transition-all shadow-xl shadow-orange-500/20 active:scale-95"
-//               >
-//                 Consult Our Experts
-//                 <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-1">
-//                   <ArrowRight className="h-3.5 w-3.5" />
-//                 </span>
-//               </a>
-//             </div>
-
-//             {/* Review Grid */}
-//             <div className="grid grid-cols-2 gap-4 max-w-lg pt-4">
-//               {reviewBadges.map((badge) => (
-//                 <div
-//                   key={badge.name}
-//                   className={`flex items-center gap-4 bg-white border-2 ${badge.border} rounded-2xl p-4 shadow-sm hover:shadow-md transition-all group`}
-//                 >
-//                   <div className="w-12 h-12 flex items-center justify-center shrink-0">
-//                     <img src={badge.logo} alt={badge.name} className="w-full h-full object-contain" />
-//                   </div>
-//                   <div className="flex flex-col">
-//                     <span className="text-[13px] font-bold text-gray-800">{badge.name}</span>
-//                     <div className="flex items-center gap-1">
-//                       <span className="text-[14px] font-bold text-gray-900">{badge.rating}</span>
-//                       <Star className="h-3.5 w-3.5 fill-orange-400 text-orange-400" />
-//                     </div>
-//                   </div>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-
-//           {/* Right Side — Hero Image Composition */}
-//           <div className="relative pt-10 lg:pt-20">
-//             <div className="relative mx-auto w-full max-w-[850px]">
-
-//               {/* Main Image Illustration */}
-//               <div className="relative z-10 w-full">
-//                 <img
-//                   src="https://whitelabelfox.com/assets/images/homepage/main-slider-vector-large.webp"
-//                   alt="Hero Vector"
-//                   className="w-full h-auto"
-//                 />
-//               </div>
-
-//             </div>
-//           </div>
-
-
-//         </div>
-//       </div>
-//     </section>);
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import { ArrowRight, Star } from "lucide-react";
-
-const reviewBadges = [
-  {
-    name: "Google Review",
-    rating: "4.9",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-    border: "border-orange-500/30",
-    color: "text-orange-600"
-  },
-  {
-    name: "Goodfirm Review",
-    rating: "4.9",
-    logo: "https://cdn.iconscout.com/icon/free/png-256/free-goodfirms-logo-icon-download-in-svg-png-gif-file-formats--brand-brands-pack-logos-icons-2630044.png",
-    border: "border-blue-500/30",
-    color: "text-blue-600"
-  },
-  {
-    name: "Clutch Review",
-    rating: "4.9",
-    logo: "https://clutch.co/sites/all/themes/clutch/logo.svg",
-    border: "border-red-500/30",
-    color: "text-red-600"
-  },
-  {
-    name: "Trustpilot Review",
-    rating: "4.3",
-    logo: "https://cdn-icons-png.flaticon.com/512/5968/5968936.png",
-    border: "border-green-500/30",
-    color: "text-green-600"
-  }
-];
-
-export default function Hero() {
-  return (
-    <section className="relative min-h-[650px] flex items-start bg-gradient-to-br from-white via-blue-50 to-orange-50 overflow-hidden pt-8 pb-12">
-
-      {/* animated background blobs */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-orange-200 rounded-full blur-3xl opacity-40 animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-200 rounded-full blur-3xl opacity-40 animate-pulse"></div>
-
-      {/* Background grid */}
-      <div
-        className="absolute inset-0 z-0 opacity-[0.03]"
-        style={{
-          backgroundImage: "radial-gradient(#000 1px, transparent 1px)",
-          backgroundSize: "30px 30px"
-        }}
-      />
-
-      <div className="max-w-[1500px] mx-auto px-4 sm:px-10 lg:px-20 relative z-10 w-full">
-        <div className="grid lg:grid-cols-[1fr_1.5fr] gap-10 items-start">
-
-          {/* LEFT CONTENT */}
-          <div className="space-y-6 lg:max-w-2xl animate-fade-in">
-
-            {/* badge */}
-            <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 shadow-sm hover:shadow-md transition">
-              <span className="w-2.5 h-2.5 rounded-full bg-orange-500 animate-ping"></span>
-              <span className="text-sm font-semibold text-gray-700">
-                Digital Solutions
-              </span>
-            </div>
-
-            {/* heading */}
-            <h1 className="text-3xl lg:text-[46px] font-bold text-gray-900 leading-[1.1] tracking-tight">
-              Transforming Ideas With <br />
-              <span className="text-primary bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-                Product Engineering
-              </span>
-            </h1>
-
-            {/* paragraph */}
-            <p className="text-[16px] lg:text-[18px] text-gray-600 leading-[1.7] max-w-xl">
-              As a leading clone app development company, we provide scalable
-              product engineering services & deliver ready-to-launch or custom
-              app, Website & Software for diverse industries.
-            </p>
-
-            {/* CTA */}
-            <div className="pt-2">
-              <a
-                href="#contact"
-                className="group inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-full font-bold text-[16px] hover:bg-orange-600 transition-all shadow-xl shadow-orange-500/30 active:scale-95"
-              >
-                Consult Our Experts
-
-                <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-1 transition">
-                  <ArrowRight className="h-3.5 w-3.5" />
-                </span>
-              </a>
-            </div>
-
-            {/* REVIEW CARDS */}
-            <div className="grid grid-cols-2 gap-4 max-w-lg pt-4">
-              {reviewBadges.map((badge) => (
-                <div
-                  key={badge.name}
-                  className={`flex items-center gap-4 bg-white border-2 ${badge.border} rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group`}
-                >
-                  <div className="w-12 h-12 flex items-center justify-center shrink-0">
-                    <img
-                      src={badge.logo}
-                      alt={badge.name}
-                      className="w-full h-full object-contain group-hover:scale-110 transition"
-                    />
-                  </div>
-
-                  <div className="flex flex-col">
-                    <span className="text-[13px] font-bold text-gray-800">
-                      {badge.name}
-                    </span>
-
-                    <div className="flex items-center gap-1">
-                      <span className="text-[14px] font-bold text-gray-900">
-                        {badge.rating}
-                      </span>
-
-                      <Star className="h-3.5 w-3.5 fill-orange-400 text-orange-400 animate-pulse" />
+                            {/* Micro Trust Signals */}
+                            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-1.5 opacity-80">
+                                <div className="flex items-center gap-1.5 text-xs lg:text-sm font-medium text-slate-600">
+                                    <span className="text-orange-500 font-bold">✓</span>
+                                    <span>Ready-to-launch solutions</span>
+                                </div>
+                                <div className="flex items-center gap-1.5 text-xs lg:text-sm font-medium text-slate-600">
+                                    <span className="text-orange-500 font-bold">✓</span>
+                                    <span>Custom scalable architecture</span>
+                                </div>
+                                <div className="flex items-center gap-1.5 text-xs lg:text-sm font-medium text-slate-600">
+                                    <span className="text-orange-500 font-bold">✓</span>
+                                    <span>Built with modern technologies</span>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Trusted Brands */}
+                        <div className="pt-4 lg:pt-6 space-y-3">
+                            <p className="text-[10px] lg:text-xs font-bold text-slate-400 uppercase tracking-[0.2em] text-center lg:text-left">
+                                Trusted by top brands
+                            </p>
+                            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-8 gap-y-4 lg:gap-x-10 lg:gap-y-6">
+                                {[
+                                    { Icon: FaGoogle, color: "hover:text-blue-500" },
+                                    { Icon: FaAmazon, color: "hover:text-orange-500" },
+                                    { Icon: FaSlack, color: "hover:text-purple-500" },
+                                    { Icon: FaMicrosoft, color: "hover:text-blue-600" },
+                                    { Icon: FaApple, color: "hover:text-slate-900" }
+                                ].map(({ Icon, color }, index) => (
+                                    <Icon 
+                                        key={index}
+                                        className={`text-2xl lg:text-3xl text-slate-400 transition-all duration-300 cursor-pointer ${color} hover:opacity-100 hover:scale-110 opacity-60 grayscale hover:grayscale-0`} 
+                                    />
+                                ))}
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
+                    <div className="relative flex items-center justify-center animate-fade-in-right">
+                        <img
+                            src="/images/hero-visual.png"
+                            alt="Developer illustration"
+                            className="relative z-10 w-full max-w-lg lg:max-w-xl h-auto"
+                        />
+                    </div>
+
                 </div>
-              ))}
             </div>
-          </div>
+        </section>
+    );
+};
 
-          {/* RIGHT IMAGE */}
-          <div className="relative pt-10 lg:pt-20">
-
-            <div className="relative mx-auto w-full max-w-[850px]">
-
-              <div className="relative z-10 w-full animate-float">
-                <img
-                  src="https://whitelabelfox.com/assets/images/homepage/main-slider-vector-large.webp"
-                  alt="Hero Vector"
-                  className="w-full h-auto"
-                />
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+export default Hero;
