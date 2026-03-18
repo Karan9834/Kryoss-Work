@@ -183,6 +183,7 @@ const baseProducts = [
     description: "Complete ride-hailing platform with real-time tracking, fare estimation, and payment integration.",
     image: img1, 
     demoUrl: "https://preview.codecanyon.net/item/gocab-grab-uber-clone-taxi-booking-cab-rental-bidding-parcel/full_screen_preview/61391802",
+
     features: [
         "Real-time GPS tracking with live ETAs",
         "Smart fare estimation & surge pricing",

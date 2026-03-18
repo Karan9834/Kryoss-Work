@@ -9,6 +9,7 @@ import BikeRidingApp from "../pages/products/transport-app-solutions/BikeRidingA
 import CarPoolingApp from "../pages/products/transport-app-solutions/CarPoolingApp";
 import CarRental from "../pages/products/transport-app-solutions/CarRental";
 
+
 import FoodDeliveryApp from "../pages/products/delivery-app-solutions/FoodDeliveryApp";
 import GroceryDeliveryApp from "../pages/products/delivery-app-solutions/GroceryDeliveryApp";
 import MedicineDeliveryApp from "../pages/products/delivery-app-solutions/MedicineDeliveryApp";
@@ -36,6 +37,7 @@ export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
     <Route key="products-details" path="products/:id" element={<ProductDetailsPlaceholder />} />,
     <Route key="taxi-uber" path="products/transport/uber-clone" element={<TaxiBookingUber />} />,
+
     <Route key="taxi-bidding" path="products/transport/indrive-clone" element={<TaxiBiddingApp />} />,
     <Route key="bike-riding" path="products/transport/rapido-clone" element={<BikeRidingApp />} />,
     <Route key="car-pooling" path="products/transport/blablacar-clone" element={<CarPoolingApp />} />,
