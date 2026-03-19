@@ -37,6 +37,9 @@ import TikTokClonePage from "../pages/products/Social-App-Solutions/Video-App";
 import HRM from "../pages/products/Enterprise/HRM";
 import CRM from "../pages/products/Enterprise/CRM";
 
+
+import DoctorHealthPage from "../pages/products/Doctor-Health-App/DoctorHealthPage";
+
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
     <Route key="products-details" path="products/:id" element={<ProductDetailsPlaceholder />} />,
@@ -71,7 +74,10 @@ export const ProductRoutes = [
     <Route key="video-app" path="products/social/video-app" element={<TikTokClonePage />} />,
 
     <Route key="Hrm" path="/products/enterprise/hrm" element={<HRM/>} />,
-    <Route Key = "Crm" path="/products/enterprise/crm" element={<CRM/>}/>
+    <Route Key = "Crm" path="/products/enterprise/crm" element={<CRM/>}/>,
+
+
+    <Route  key="doctor-health" path="/products/our/healthcare" element={<DoctorHealthPage/>} />,
 
 
 
