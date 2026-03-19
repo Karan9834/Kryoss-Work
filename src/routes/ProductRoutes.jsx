@@ -28,16 +28,16 @@ import MassageTherapy from "../pages/products/Ondemand-homeservice/MassageTherap
 import TowTruck from "../pages/products/Ondemand-homeservice/TowTruck";
 import LaundryService from "../pages/products/Ondemand-homeservice/LaundryService";
 import SnowRemoval from '../pages/products/Ondemand-homeservice/SnowRemoval';
+import SalonLanding from "../pages/products/Salon-Beauty-Landing/SalonLanding";
+
 
 import DatingApp from "../pages/products/Emerging-Social App/DatingApp";
 import AppointmentBooking from "../pages/products/Emerging-Social App/AppointmentBooking";
 import TikTokClonePage from "../pages/products/Social-App-Solutions/Video-App";
-
-
+import ErpPage from "../pages/products/Enterprise/ErpPage";
+import LmsPage from "../pages/products/Enterprise/LmsPage";
 import HRM from "../pages/products/Enterprise/HRM";
 import CRM from "../pages/products/Enterprise/CRM";
-
-
 import DoctorHealthPage from "../pages/products/Doctor-Health-App/DoctorHealthPage";
 
 export const ProductRoutes = [
@@ -64,6 +64,8 @@ export const ProductRoutes = [
     <Route key="dog-walking" path="products/home-service/dog-walking" element={<DogWalking />} />,
     <Route key="pest-control" path="products/home-service/pest-control" element={<PestControl />} />,
     <Route key="salon-beauty" path="products/home-service/salon" element={<SalonBeauty />} />,
+    <Route key="salon-landing" path="products/our/salon-beauty" element={<SalonLanding />} />,
+
     <Route key="massage-therapy" path="products/home-service/massage" element={<MassageTherapy />} />,
     <Route key="tow-truck" path="products/home-service/tow-truck" element={<TowTruck />} />,
     <Route key="laundry-service" path="products/home-service/laundry" element={<LaundryService />} />,
@@ -72,13 +74,9 @@ export const ProductRoutes = [
     <Route key="dating-app" path="products/social/dating-app" element={<DatingApp />} />,
     <Route key="appointment-booking" path="products/social/appointment-booking" element={<AppointmentBooking />} />,
     <Route key="video-app" path="products/social/video-app" element={<TikTokClonePage />} />,
-
-    <Route key="Hrm" path="/products/enterprise/hrm" element={<HRM/>} />,
-    <Route Key = "Crm" path="/products/enterprise/crm" element={<CRM/>}/>,
-
-
-    <Route  key="doctor-health" path="/products/our/healthcare" element={<DoctorHealthPage/>} />,
-
-
-
+    <Route key="doctor-health" path="/products/our/healthcare" element={<DoctorHealthPage />} />,
+    <Route key="erp" path="products/enterprise/erp" element={<ErpPage />} />,
+    <Route key="lms" path="products/enterprise/lms" element={<LmsPage />} />,
+    <Route key="Hrm" path="/products/enterprise/hrm" element={<HRM />} />,
+    <Route Key="Crm" path="/products/enterprise/crm" element={<CRM />} />
 ];
