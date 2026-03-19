@@ -7,6 +7,7 @@ import GojekMegaMenu from "./GojekMegaMenu";
 import ProductsMegaMenu, { ProductsMobileAccordion } from "./ProductsMegaMenu";
 import ServicesMegaMenu from "./ServicesMegaMenu";
 import SolutionsMenu, { SolutionsMobileAccordion } from "./SolutionsMenu";
+import WorksMegaMenu, { WorksMobileAccordion } from "./WorksMegaMenu";
 import CompanyMenu from "./CompanyMenu";
 import logo from "../../assets/Logo/worklogo.png";
 
@@ -101,6 +102,15 @@ const Navbar = () => {
             </NavItem>
 
             <NavItem
+              label="Works"
+              isOpen={activeMenu === "Works"}
+              onMouseEnter={() => handleMenuEnter("Works")}
+              onClick={() => setActiveMenu(null)}
+            >
+              <WorksMegaMenu />
+            </NavItem>
+
+            <NavItem
               label="Company"
               isOpen={activeMenu === "Company"}
               onMouseEnter={() => handleMenuEnter("Company")}
@@ -172,6 +182,22 @@ const Navbar = () => {
               {mobileExpanded === 'solutions' && (
                 <div className="mt-2">
                   <SolutionsMobileAccordion onLinkClick={() => setMobileMenuOpen(false)} />
+                </div>
+              )}
+            </div>
+
+            {/* Works Accordion */}
+            <div>
+              <button 
+                onClick={() => setMobileExpanded(mobileExpanded === 'works' ? '' : 'works')}
+                className="w-full flex justify-between items-center text-lg font-bold text-gray-800 hover:text-primary py-2"
+              >
+                <span>Works</span>
+                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'works' ? 'rotate-180 text-primary' : ''}`} size={20} />
+              </button>
+              {mobileExpanded === 'works' && (
+                <div className="mt-2">
+                  <WorksMobileAccordion onLinkClick={() => setMobileMenuOpen(false)} />
                 </div>
               )}
             </div>
