@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { navigationData } from "./navbar.data";
 import NavItem from "./NavItem";
 import GojekMegaMenu from "./GojekMegaMenu";
-import ProductsMegaMenu from "./ProductsMegaMenu";
+import ProductsMegaMenu, { ProductsMobileAccordion } from "./ProductsMegaMenu";
 import ServicesMegaMenu from "./ServicesMegaMenu";
-import SolutionsMenu from "./SolutionsMenu";
+import SolutionsMenu, { SolutionsMobileAccordion } from "./SolutionsMenu";
 import CompanyMenu from "./CompanyMenu";
 import logo from "../../assets/Logo/worklogo.png";
 
@@ -154,25 +154,8 @@ const Navbar = () => {
                 <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'products' ? 'rotate-180 text-primary' : ''}`} size={20} />
               </button>
               {mobileExpanded === 'products' && (
-                <div className="pl-4 mt-2 space-y-4 border-l-2 border-orange-100">
-                  {navigationData.products.slice(0, 3).map((category, idx) => (
-                    <div key={idx} className="space-y-2">
-                      <p className="text-xs font-bold text-gray-400 tracking-wider uppercase">{category.category}</p>
-                      {category.items.slice(0, 4).map((item, itemIdx) => (
-                        <Link
-                          key={itemIdx}
-                          to={item.href}
-                          className="block text-[15px] font-semibold text-gray-700 hover:text-primary py-1"
-                          onClick={() => setMobileMenuOpen(false)}
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
-                    </div>
-                  ))}
-                  <Link to="/products" className="block text-sm font-bold text-primary py-2" onClick={() => setMobileMenuOpen(false)}>
-                    View All Products &rarr;
-                  </Link>
+                <div className="mt-2">
+                  <ProductsMobileAccordion onLinkClick={() => setMobileMenuOpen(false)} />
                 </div>
               )}
             </div>
@@ -187,17 +170,8 @@ const Navbar = () => {
                 <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'solutions' ? 'rotate-180 text-primary' : ''}`} size={20} />
               </button>
               {mobileExpanded === 'solutions' && (
-                <div className="pl-4 mt-2 space-y-2 border-l-2 border-orange-100">
-                  {navigationData.solutions.items.map((item, idx) => (
-                    <Link
-                      key={idx}
-                      to={item.href}
-                      className="block text-[15px] font-semibold text-gray-700 hover:text-primary py-1"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                <div className="mt-2">
+                  <SolutionsMobileAccordion onLinkClick={() => setMobileMenuOpen(false)} />
                 </div>
               )}
             </div>
