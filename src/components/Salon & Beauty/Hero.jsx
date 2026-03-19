@@ -49,7 +49,6 @@ const Hero = () => {
               Own Uber for Beauty{" "}
             </span>
             App
-            Launch Your <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] bg-clip-text text-transparent"> Own Uber for Beauty </span>App
           </h1>
 
           {/* Paragraph */}
