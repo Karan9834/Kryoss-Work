@@ -17,8 +17,15 @@ import {
   MessageSquare,
   Globe,
   Settings,
-  Users
+  Users,
+  ChevronRight,
+  Play
 } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+// Import Components
+import Testimonials from '../../../components/home/Testimonials';
+import Contact from '../../../components/home/Contact';
 
 // Import Assets
 import vcitaImg from '../../../assets/works/vcita.png';
@@ -89,7 +96,11 @@ const WebsitesWorks = () => {
                 description: 'All-in-one business management and client engagement solution for small businesses. Features include booking, billing, marketing, and client management to help SMEs remain competitive in a digital-first economy.',
                 stats: 'Empowering 50k+ SMEs globally',
                 tags: ['CRM', 'Management', 'SaaS'],
-                image: vcitaImg
+                image: vcitaImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.vcita.mobile', type: 'playstore' },
+                    { href: 'https://www.vcita.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Samaya Rooms: Stay with Hotel Booking',
@@ -147,7 +158,11 @@ const WebsitesWorks = () => {
                 description: 'An Ed-Tech organisation providing personalised learning solutions. Complements classroom learning through scientifically designed personalised learning at home.',
                 stats: 'Integrated Online Live Classes',
                 tags: ['EdTech', 'Personalized Learning', 'SaaS'],
-                image: classklapImg
+                image: classklapImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.classklap.learning', type: 'playstore' },
+                    { href: 'https://www.classklap.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Study24x7 - Social Learning Network',
@@ -435,29 +450,6 @@ const WebsitesWorks = () => {
         { value: '450', label: 'Satisfied Clients', icon: <CheckCircle className="text-orange-500" /> }
     ];
 
-    const testimonials = [
-        {
-            text: "Kryoss Softech proved to be a professional service provider from the outset. We appreciate their proactive approach and ability to suggest improvements to a prospective solution on both architectural and business levels. We know we can always rely on Kryoss Softech various competencies when our clients require quality software which would facilitate their business success.",
-            author: "Rikki Farr",
-            title: "Chairman at Audio Design Experts"
-        },
-        {
-            text: "Kryoss has delivered all our project needs well within deadlines. They works as your in-house team, we highly recommend them.",
-            author: "Bill Dinklemann",
-            title: "Van Andel Education Institute"
-        },
-        {
-            text: "Atomic Object exhibited similar traits as our company. They were about the same size and had a wealth of experience based on past projects. We liked their leadership team and loved their presentation. … They took the time to understand who we were.",
-            author: "CEO",
-            title: "Drug Testing Administrator"
-        },
-        {
-            text: "We love working with Kryoss, the company has been very transparent throughout the entire development process.",
-            author: "Sam Powell",
-            title: "Sam Co"
-        }
-    ];
-
     const offices = [
         {
             country: "India",
@@ -483,213 +475,200 @@ const WebsitesWorks = () => {
     ];
 
     return (
-        <div className="bg-white min-h-screen pt-32 pb-24">
-            {/* Hero Section */}
-            <header className="max-w-7xl mx-auto px-6 lg:px-12 text-center mb-16 animate-fade-in">
-                <div className="relative inline-block mb-3 px-4 py-1.5 rounded-full border border-orange-100 bg-orange-50/50">
-                    <span className="text-sm font-bold tracking-widest uppercase text-orange-600">Our Works</span>
+        <div className="w-full bg-white relative font-sans overflow-hidden">
+            {/* 1. Hero Section */}
+            <section
+                className="relative pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center items-center text-center text-white"
+                style={{
+                    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('https://kryosssoftech.org/icons/banner/uiux123.png')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundAttachment: 'fixed',
+                }}
+            >
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="relative z-10 container mx-auto px-4"
+                >
+                    <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Our <span className="text-orange-500">Portfolio</span> Showcase</h1>
+                    <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+                        Delivering cutting-edge solutions across industries. Explore our diverse portfolio of enterprise systems and client engagement platforms.
+                    </p>
+                </motion.div>
+            </section>
+
+            {/* 2. Breadcrumb Sticky Section */}
+            <section className="bg-gray-100/80 py-4 border-b border-gray-200 backdrop-blur-md sticky top-0 z-40 shadow-sm">
+                <div className="container mx-auto px-4 flex flex-wrap items-center text-sm md:text-base font-semibold text-gray-600">
+                    <a href="/" className="hover:text-orange-500 transition-colors duration-300">Home</a>
+                    <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+                    <a href="/works" className="hover:text-orange-500 transition-colors duration-300">Our Works</a>
+                    <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+                    <span className="text-orange-500">Websites Works</span>
                 </div>
-                <h1 className="text-5xl md:text-7xl font-black text-gray-950 mb-8 leading-none tracking-tight">
-                    Our <span className="text-orange-500 italic">Portfolio</span> Showcase
-                </h1>
-                <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-                    Delivering cutting-edge solutions across industries. Explore our diverse portfolio of enterprise systems and client engagement platforms.
-                </p>
-            </header>
+            </section>
 
-            {/* Category Navbar */}
-            <div className="sticky top-[86px] z-40 bg-white/80 backdrop-blur-md border-b border-gray-100 mb-20 shadow-sm overflow-x-auto no-scrollbar">
-                <div className="max-w-max mx-auto px-6 lg:px-12 flex items-center justify-center gap-2 py-4">
-                    {categories.map((cat) => (
-                        <button
-                            key={cat.name}
-                            onClick={() => setActiveCategory(cat.name)}
-                            className={`flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold whitespace-nowrap transition-all duration-300 transform active:scale-95 ${
-                                activeCategory === cat.name
-                                    ? 'bg-orange-500 text-white shadow-lg shadow-orange-500/20 translate-y-[-2px]'
-                                    : 'text-gray-500 hover:text-orange-500 hover:bg-orange-50'
-                            }`}
+            {/* 3. Portfolio Tabs Section */}
+            <section className="pt-16 md:pt-24 bg-white relative z-10 w-full mb-16">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="text-center mb-12">
+                        <motion.h2
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="text-3xl md:text-4xl font-bold text-black mb-4"
                         >
-                            {cat.icon}
-                            {cat.name}
-                        </button>
-                    ))}
+                            Our <span className="text-orange-500">Creative</span> Portfolio
+                        </motion.h2>
+                        <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
+                    </div>
+
+                    {/* Nav Tabs */}
+                    <div className="flex flex-wrap justify-center gap-6 lg:gap-10 mb-8 px-2">
+                        {categories.map((cat) => (
+                            <button
+                                key={cat.name}
+                                onClick={() => setActiveCategory(cat.name)}
+                                className={`pb-2 text-sm lg:text-[15px] font-bold uppercase transition-colors duration-300 border-b-2 tracking-wide flex items-center gap-2 ${
+                                    activeCategory === cat.name
+                                        ? 'border-orange-500 text-black'
+                                        : 'border-transparent text-gray-500 hover:text-orange-500 hover:border-orange-500/50'
+                                }`}
+                            >
+                                {cat.name}
+                            </button>
+                        ))}
+                    </div>
                 </div>
-            </div>
 
-            {/* Filtered Content */}
-            <main className="max-w-7xl mx-auto px-6 lg:px-12 mb-40">
-                <div className="flex flex-col gap-24 md:gap-40">
-                    {worksData[activeCategory]?.map((project, idx) => (
-                        <div 
-                            key={idx}
-                            className={`flex flex-col gap-10 md:gap-20 items-center ${
-                                idx % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'
-                            }`}
+                {/* Tab Content */}
+                <div className="w-full mt-8 min-h-[500px]">
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={activeCategory}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.4 }}
+                            className="flex flex-col w-full"
                         >
-                            {/* Project Image Side */}
-                            <div className="w-full md:w-1/2 group">
-                                <div className="h-64 md:h-[450px] overflow-hidden rounded-[40px] border border-gray-100/50 shadow-2xl shadow-gray-200/50 relative bg-gray-50">
-                                    <img 
-                                        src={project.image} 
-                                        alt={project.title} 
-                                        className="w-full h-full object-contain" 
-                                    />
-                                </div>
-                            </div>
-                            
-                            {/* Project Content Side */}
-                            <div className="w-full md:w-1/2 flex flex-col justify-center">
-                                <div className="flex items-center gap-3 mb-6">
-                                    <span className="h-px w-8 bg-orange-500"></span>
-                                    <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-500">Case Study 0{idx + 1}</span>
-                                </div>
-                                
-                                <h3 className="text-3xl md:text-5xl font-black text-gray-950 mb-6 leading-tight tracking-tight">
-                                    {project.title}
-                                </h3>
-                                
-                                <p className="text-lg text-gray-600 leading-relaxed mb-10">
-                                    {project.description}
-                                </p>
+                            {worksData[activeCategory]?.map((project, idx) => {
+                                const isEven = idx % 2 === 0;
+                                return (
+                                    <div key={idx} className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-gray-50'}`}>
+                                        <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
+                                            
+                                            {/* Image Box */}
+                                            <div className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl">
+                                                <div className="overflow-hidden rounded-[30px] border border-gray-100/50 shadow-2xl relative bg-white p-4 group">
+                                                    <img 
+                                                        src={project.image} 
+                                                        alt={project.title} 
+                                                        className="max-h-[450px] w-full object-contain transform group-hover:scale-105 transition-all duration-700" 
+                                                    />
+                                                </div>
+                                            </div>
 
-                                <div className="flex flex-wrap gap-2 mb-10">
-                                    {project.tags?.map((tag) => (
-                                        <span key={tag} className="px-5 py-2 rounded-xl bg-gray-50 border border-gray-100 text-[10px] font-black uppercase tracking-widest text-gray-500">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
+                                            {/* Content Box */}
+                                            <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                                                <div className="flex items-center gap-3 mb-6">
+                                                    <span className="h-px w-8 bg-orange-500"></span>
+                                                    <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-500">Case Study 0{idx + 1}</span>
+                                                </div>
+                                                
+                                                <h3 className="text-3xl md:text-5xl font-black text-gray-950 mb-6 leading-tight tracking-tight">
+                                                    {project.title}
+                                                </h3>
+                                                
+                                                <p className="text-lg text-gray-600 leading-relaxed mb-10 font-light">
+                                                    {project.description}
+                                                </p>
 
-                                <div className="pt-10 border-t border-gray-100 flex items-center justify-between">
-                                    <div className="flex items-center gap-3 text-gray-950 font-black text-sm uppercase tracking-wider group cursor-pointer hover:text-orange-500 transition-colors">
-                                        <span className="w-10 h-10 rounded-full bg-orange-100 text-orange-500 flex items-center justify-center group-hover:bg-orange-500 group-hover:text-white transition-all">
-                                            <CheckCircle size={18} />
-                                        </span>
-                                        {project.stats}
+                                                <div className="flex flex-wrap gap-2 mb-8">
+                                                    {project.tags?.map((tag) => (
+                                                        <span key={tag} className="px-5 py-2 rounded-xl bg-white border border-gray-100 text-[10px] font-black uppercase tracking-widest text-gray-500 shadow-sm">
+                                                            {tag}
+                                                        </span>
+                                                    ))}
+                                                </div>
+
+                                                {/* Download/Link Buttons */}
+                                                {project.links && project.links.length > 0 && (
+                                                    <div className="flex flex-wrap gap-4 mb-10">
+                                                        {project.links.map((link, lIdx) => (
+                                                            <a
+                                                                key={lIdx}
+                                                                href={link.href}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="transition-transform hover:-translate-y-1 block"
+                                                            >
+                                                                <img 
+                                                                    src={link.type === 'playstore' 
+                                                                        ? "https://kryosssoftech.org/icons/Health-&-Fitness/google app store.png" 
+                                                                        : "https://kryosssoftech.org/icons/Health-&-Fitness/Ios app store.png"
+                                                                    } 
+                                                                    alt={link.type}
+                                                                    className="h-10 md:h-12 object-contain"
+                                                                    onError={(e) => { e.target.style.display = 'none' }}
+                                                                />
+                                                            </a>
+                                                        ))}
+                                                    </div>
+                                                )}
+
+                                                <div className="pt-10 border-t border-gray-100 flex items-center justify-between">
+                                                    <div className="flex items-center gap-3 text-gray-950 font-black text-sm uppercase tracking-wider group cursor-pointer hover:text-orange-500 transition-colors">
+                                                        <span className="w-10 h-10 rounded-full bg-orange-100 text-orange-500 flex items-center justify-center group-hover:bg-orange-500 group-hover:text-white transition-all">
+                                                            <CheckCircle size={18} />
+                                                        </span>
+                                                        {project.stats}
+                                                    </div>
+                                                    <button className="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-gray-300 hover:text-orange-500 transition-all">
+                                                        View Project <ArrowRight size={18} />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <button className="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-gray-300 hover:text-orange-500 transition-all">
-                                        View Project <ArrowRight size={18} />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+                                );
+                            })}
+                        </motion.div>
+                    </AnimatePresence>
                 </div>
-            </main>
+            </section>
 
-            {/* Stats Section */}
-            <section className="bg-gray-50 py-32 mb-40">
-                <div className="max-w-7xl mx-auto px-6 lg:px-12">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+            {/* 4. Stats Counter Section */}
+            <section className="py-20 bg-gray-900 text-white relative overflow-hidden" 
+                style={{ 
+                    backgroundImage: "url('https://kryosssoftech.org/assets/images/indexImg/Counter.png')", 
+                    backgroundSize: 'cover', 
+                    backgroundAttachment: 'fixed', 
+                    backgroundPosition: 'center' 
+                }}
+            >
+                <div className="absolute inset-0 bg-black/80"></div>
+                <div className="container mx-auto px-4 relative z-10">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-700/50">
                         {stats.map((stat, i) => (
-                            <div key={i} className="text-center p-12 bg-white rounded-[50px] border border-gray-100 shadow-xl shadow-gray-200/20 hover:scale-105 transition-all">
-                                <div className="w-16 h-16 rounded-3xl bg-orange-50 flex items-center justify-center mx-auto mb-8 transform -rotate-12">
-                                    {stat.icon}
-                                </div>
-                                <div className="text-5xl font-black text-gray-950 mb-3 tracking-tighter">{stat.value}</div>
-                                <div className="text-xs font-black text-gray-400 uppercase tracking-[0.25em]">{stat.label}</div>
+                            <div key={i} className="p-4">
+                                <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">{stat.value}+</h3>
+                                <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">{stat.label}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Testimonials */}
-            <section className="max-w-7xl mx-auto px-6 lg:px-12 mb-40">
-                <div className="text-center mb-24">
-                    <span className="text-xs font-black uppercase tracking-widest text-orange-500 mb-4 block">Feedback</span>
-                    <h2 className="text-4xl md:text-5xl font-black text-gray-955 mb-4">Client Testimonials</h2>
-                    <div className="w-24 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    {testimonials.map((t, i) => (
-                        <div key={i} className="p-12 bg-white border border-gray-100 rounded-[50px] shadow-sm relative overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                            <div className="absolute top-0 right-0 p-8 text-orange-50/50 scale-150 rotate-12 group-hover:text-orange-100/50 transition-all">
-                                <Layers size={180} />
-                            </div>
-                            <div className="flex gap-1 mb-8">
-                                {[1,2,3,4,5].map(s => <Star key={s} size={14} className="fill-orange-400 text-orange-400" />)}
-                            </div>
-                            <p className="text-lg text-gray-700 font-medium leading-[1.8] mb-12 relative z-10 italic">"{t.text}"</p>
-                            <div className="relative z-10 flex items-center gap-4">
-                                <div className="w-12 h-12 rounded-2xl bg-orange-500 flex items-center justify-center text-white font-black text-xl">
-                                    {t.author[0]}
-                                </div>
-                                <div>
-                                    <h4 className="font-black text-gray-950">{t.author}</h4>
-                                    <span className="text-orange-500 text-xs font-bold tracking-widest uppercase">{t.title}</span>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
+            {/* 5. Testimonials Section */}
+            <Testimonials />
 
-            {/* Contact Us Section */}
-            <section id="contact" className="bg-gray-950 py-40 text-white overflow-hidden relative">
-                <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-500/10 rounded-full blur-[150px] -mr-[400px] -mt-[400px]"></div>
-                <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-[150px] -ml-[400px] -mb-[400px]"></div>
+            {/* 6. Contact Section */}
+            <Contact />
 
-                <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-20 items-center">
-                        <div className="lg:w-1/2">
-                            <div className="inline-block mb-3 px-4 py-1.5 rounded-full border border-orange-500 bg-orange-500/10">
-                                <span className="text-sm font-bold tracking-widest uppercase text-orange-500 tracking-tighter">Contact Us</span>
-                            </div>
-                            <h2 className="text-5xl md:text-7xl font-black mb-8 leading-[1.1]">
-                                Lets Discuss Your <span className="text-orange-500">Requirement!</span>
-                            </h2>
-                            <p className="text-gray-400 text-xl leading-relaxed mb-12">
-                                We guarantee to get back to you within a business day. Experience the Kryoss standard of excellence.
-                            </p>
-                            
-                            <div className="space-y-10">
-                                <div className="flex items-start gap-6 p-10 bg-white/5 border border-white/10 rounded-[40px] hover:bg-white/10 transition-all group">
-                                    <div className="w-16 h-16 rounded-3xl bg-orange-500 flex items-center justify-center text-white shrink-0 shadow-xl shadow-orange-500/20">
-                                        <MessageSquare size={28} />
-                                    </div>
-                                    <div>
-                                        <h4 className="text-2xl font-black mb-3 text-white">Got a project in mind?</h4>
-                                        <p className="text-gray-400 leading-relaxed font-medium">
-                                            We would love to hear how we can bring your possibilities to reality through technology and give away 2hrs of free consulting. So call us now..
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="lg:w-1/2 w-full">
-                            <form className="space-y-6 bg-white/5 p-10 rounded-[50px] border border-white/10 backdrop-blur-sm shadow-2xl">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <input type="text" placeholder="Name*" className="w-full bg-white/5 border border-white/10 rounded-3xl px-8 py-5 focus:ring-2 focus:ring-orange-500 outline-none transition-all placeholder:text-gray-600 text-white" />
-                                    <input type="email" placeholder="E-mail*" className="w-full bg-white/5 border border-white/10 rounded-3xl px-8 py-5 focus:ring-2 focus:ring-orange-500 outline-none transition-all placeholder:text-gray-600 text-white" />
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <input type="text" placeholder="Phone No" className="w-full bg-white/5 border border-white/10 rounded-3xl px-8 py-5 focus:ring-2 focus:ring-orange-500 outline-none transition-all placeholder:text-gray-600 text-white" />
-                                    <input type="text" placeholder="Subject*" className="w-full bg-white/5 border border-white/10 rounded-3xl px-8 py-5 focus:ring-2 focus:ring-orange-500 outline-none transition-all placeholder:text-gray-600 text-white" />
-                                </div>
-                                <textarea rows="4" placeholder="Your Message*" className="w-full bg-white/5 border border-white/10 rounded-3xl px-8 py-5 focus:ring-2 focus:ring-orange-500 outline-none transition-all placeholder:text-gray-600 resize-none text-white"></textarea>
-                                
-                                <div className="flex flex-col sm:flex-row items-center gap-6 bg-white/5 p-8 rounded-3xl border border-white/10">
-                                    <span className="font-bold text-lg text-white">Anti-Spam Verification: 7 + 5 = ?</span>
-                                    <input type="text" placeholder="Answer" className="w-full sm:w-32 bg-white/10 rounded-2xl px-6 py-4 outline-none focus:ring-2 focus:ring-orange-500 font-bold text-center text-white" />
-                                </div>
-                                
-                                <button className="w-full py-6 bg-orange-500 text-white rounded-[25px] font-black uppercase tracking-[0.3em] text-sm hover:bg-orange-600 transition-all shadow-2xl shadow-orange-500/40 active:scale-95 flex items-center justify-center gap-3">
-                                    Submit Requirement <Send size={20} />
-                                </button>
-                                
-                                <p className="text-center text-[10px] text-gray-500 font-bold uppercase tracking-widest mt-6">
-                                    Note: We Respect Your Privacy! Details never shared for marketing.
-                                </p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Reach Us & Global Offices */}
+            {/* 7. Reach Us & Global Offices */}
             <section className="bg-white py-40">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12">
                     <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
