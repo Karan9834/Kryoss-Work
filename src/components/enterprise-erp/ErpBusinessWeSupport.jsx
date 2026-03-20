@@ -42,7 +42,7 @@ const ErpBusinessWeSupport = () => {
                     <span className="inline-block px-4 py-1 rounded-full border border-blue-200 bg-blue-50 text-sm font-medium text-blue-700 mb-6 uppercase tracking-wider">
                         Omni-Vertical Support
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-semibold text-[#1a1a1a] mb-6">
+                    <h2 className="text-2xl lg:text-3xl font-semibold text-[#1a1a1a] mb-6">
                         Industries We <span className="text-blue-700">Transform</span>
                     </h2>
                     <p className="text-gray-500 max-w-3xl mx-auto text-lg leading-relaxed font-medium">

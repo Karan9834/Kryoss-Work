@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import ErpHero from '@/components/enterprise-erp/ErpHero';
 import ErpAbout from '@/components/enterprise-erp/ErpAbout';
 import ErpAppWorkflow from '@/components/enterprise-erp/ErpAppWorkflow';
+import ErpCardSection from '@/components/enterprise-erp/ErpCardSection';
 import ErpAppDevelopment from '@/components/enterprise-erp/ErpAppDevelopment';
 import ErpCTA1 from '@/components/enterprise-erp/ErpCTA1';
 import ErpFeatures from '@/components/enterprise-erp/ErpFeatures';
@@ -31,6 +32,7 @@ const ErpPage = () => {
             <ErpHero />
             <ErpAbout />
             <ErpAppWorkflow />
+            <ErpCardSection />
             <ErpAppDevelopment />
             <ErpCTA1 />
             <ErpFeatures />

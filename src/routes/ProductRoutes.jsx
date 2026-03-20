@@ -29,6 +29,7 @@ import TowTruck from "../pages/products/Ondemand-homeservice/TowTruck";
 import LaundryService from "../pages/products/Ondemand-homeservice/LaundryService";
 import SnowRemoval from '../pages/products/Ondemand-homeservice/SnowRemoval';
 import SalonLanding from "../pages/products/Salon-Beauty-Landing/SalonLanding";
+import EducationLanding from "../pages/products/Education-Landing/EducationLanding";
 
 
 import DatingApp from "../pages/products/Emerging-Social App/DatingApp";
@@ -66,6 +67,7 @@ export const ProductRoutes = [
     <Route key="pest-control" path="products/home-service/pest-control" element={<PestControl />} />,
     <Route key="salon-beauty" path="products/home-service/salon" element={<SalonBeauty />} />,
     <Route key="salon-landing" path="products/our/salon-beauty" element={<SalonLanding />} />,
+    <Route key="education-landing" path="products/our/education" element={<EducationLanding />} />,
 
     <Route key="massage-therapy" path="products/home-service/massage" element={<MassageTherapy />} />,
     <Route key="tow-truck" path="products/home-service/tow-truck" element={<TowTruck />} />,

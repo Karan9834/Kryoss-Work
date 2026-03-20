@@ -46,7 +46,7 @@ const LmsAppWorkflowOverview = () => {
                 <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-20 border-b border-slate-200 pb-12">
                    <div>
                         <span className="text-violet-600 font-semibold text-xs uppercase tracking-[0.3em] mb-4 block">Strategic Path</span>
-                        <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">
+                        <h2 className="text-2xl lg:text-3xl font-semibold text-slate-900 tracking-tight">
                             Workflow <span className="text-violet-700 underline decoration-violet-200 underline-offset-8">Overview</span>
                         </h2>
                    </div>

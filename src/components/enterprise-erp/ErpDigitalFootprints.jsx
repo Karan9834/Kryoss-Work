@@ -29,7 +29,7 @@ const DigitalFootprints = () => {
                         </div>
 
                         {/* Heading */}
-                        <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
+                        <h2 className="text-2xl lg:text-3xl font-bold leading-tight mb-6">
                             Launch Your{" "}
                             <span className="text-blue-900"> ERP System</span>{" "}
                             in just 5 days

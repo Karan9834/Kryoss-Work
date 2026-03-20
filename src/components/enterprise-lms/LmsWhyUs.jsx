@@ -19,7 +19,7 @@ const LmsWhyUs = () => {
                 </div>
 
                 {/* HEADING */}
-                <h2 className="text-center text-[34px] lg:text-[48px] font-semibold text-white mb-6 leading-tight">
+                <h2 className="text-center text-2xl lg:text-3xl font-semibold text-white mb-6 leading-tight">
                     Why Choose us for <span className="text-violet-400">LMS Development</span>
                 </h2>
 

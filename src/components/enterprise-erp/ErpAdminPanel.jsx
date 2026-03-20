@@ -48,7 +48,7 @@ const ErpAdminPanel = () => {
             <div className="max-w-7xl mx-auto px-6">
                 
                 {/* Heading */}
-                <h2 className="text-4xl font-semibold mb-14 leading-snug text-center">
+                <h2 className="text-2xl lg:text-3xl font-semibold mb-14 leading-snug text-center">
                     Powerful <span className="text-blue-700">Admin Panel</span> for Complete Control
                 </h2>
 

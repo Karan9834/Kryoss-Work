@@ -36,7 +36,7 @@ const LmsWhatWeProvide = () => {
                     <span className="inline-block px-4 py-1.5 rounded-full border border-violet-200 bg-violet-50 text-xs font-black text-violet-700 mb-6 uppercase tracking-widest">
                         Total Solutions
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">
+                    <h2 className="text-2xl lg:text-3xl font-semibold text-slate-900 tracking-tight">
                         What We <span className="text-violet-700">Deliver</span> for Success
                     </h2>
                 </div>

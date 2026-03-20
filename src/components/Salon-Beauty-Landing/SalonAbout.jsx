@@ -7,12 +7,12 @@ import aboutImg from '../../assets/saloonlanding-img/saloonlandingabout.png';
 
 const SalonAbout = () => {
   const highlights = [
-    "Smart Appointment Scheduling",
-    "Real-time Inventory Tracking",
-    "Customer Loyalty Programs",
-    "Staff Performance Analytics",
-    "Seamless Online Payments",
-    "Multi-location Management"
+    { text: "Smart Appointment Scheduling", color: "bg-rose-50", iconColor: "text-rose-500", hoverBg: "hover:bg-rose-100" },
+    { text: "Real-time Inventory Tracking", color: "bg-blue-50", iconColor: "text-blue-500", hoverBg: "hover:bg-blue-100" },
+    { text: "Customer Loyalty Programs", color: "bg-purple-50", iconColor: "text-purple-500", hoverBg: "hover:bg-purple-100" },
+    { text: "Staff Performance Analytics", color: "bg-amber-50", iconColor: "text-amber-500", hoverBg: "hover:bg-amber-100" },
+    { text: "Seamless Online Payments", color: "bg-emerald-50", iconColor: "text-emerald-500", hoverBg: "hover:bg-emerald-100" },
+    { text: "Multi-location Management", color: "bg-indigo-50", iconColor: "text-indigo-500", hoverBg: "hover:bg-indigo-100" }
   ];
 
   return (
@@ -36,9 +36,9 @@ const SalonAbout = () => {
           {/* Right Side - Content */}
           <div className="space-y-8 animate-fadeInRight">
             <div className="space-y-4">
-              <span className="text-[#FF4D29] font-bold text-sm uppercase tracking-[0.3em]">About Our Vision</span>
+              <span className="text-rose-600 font-bold text-sm uppercase tracking-[0.3em]">About </span>
               <h2 className="text-2xl lg:text-3xl font-semibold text-[#1A1C2C] leading-tight">
-                Revolutionizing the <span className="text-[#FF4D29]">Beauty Industry</span> Through Tech
+                Revolutionizing the <span className="bg-gradient-to-r from-purple-600 via-rose-500 to-orange-500 bg-clip-text text-transparent">Beauty Industry</span> Through Tech
               </h2>
 
 
@@ -51,15 +51,15 @@ const SalonAbout = () => {
 
             <div className="grid sm:grid-cols-2 gap-4">
               {highlights.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 bg-[#FFF8F5] rounded-2xl hover:bg-[#FFE4D6] transition-colors group cursor-default">
-                  <CheckCircle2 size={20} className="text-[#FF4D29] group-hover:scale-110 transition-transform" />
-                  <span className="text-[#1A1C2C] font-semibold text-sm">{item}</span>
+                <div key={index} className={`flex items-center gap-3 p-4 ${item.color} rounded-2xl ${item.hoverBg} transition-colors group cursor-default border border-transparent hover:border-white shadow-sm`}>
+                  <CheckCircle2 size={20} className={`${item.iconColor} group-hover:scale-110 transition-transform`} />
+                  <span className="text-[#1A1C2C] font-semibold text-sm">{item.text}</span>
                 </div>
               ))}
             </div>
 
             <div className="pt-6">
-              <button className="px-8 py-3 rounded-full border-2 border-[#FFE4D6] text-[#FF4D29] font-bold hover:bg-[#FF4D29] hover:text-white transition-all duration-300">
+              <button className="px-8 py-3 rounded-full border-2 border-rose-100 text-rose-600 font-bold hover:bg-gradient-to-r hover:from-rose-500 hover:to-orange-500 hover:text-white hover:border-transparent transition-all duration-300">
                 Read Full Story
               </button>
             </div>

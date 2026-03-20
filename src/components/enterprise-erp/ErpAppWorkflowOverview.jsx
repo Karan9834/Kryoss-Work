@@ -39,7 +39,7 @@ const ErpAppWorkflowOverview = () => {
             <div className="max-w-7xl mx-auto px-6">
                 
                 {/* Heading */}
-                <h2 className="text-4xl font-semibold mb-14 text-center">
+                <h2 className="text-2xl lg:text-3xl font-semibold mb-14 text-center">
                     ERP App <span className="text-blue-700">Workflow</span> Overview
                 </h2>
 

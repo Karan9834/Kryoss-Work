@@ -30,7 +30,7 @@ const ErpAppDevelopment = () => {
     ];
 
     return (
-        <section className="py-24 bg-white">
+        <section className="py-14 bg-white">
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Heading */}
@@ -38,7 +38,7 @@ const ErpAppDevelopment = () => {
                     <span className="inline-block px-4 py-1 rounded-full border border-blue-200 bg-blue-50 text-sm text-blue-700 mb-4">
                         Core Infrastructure
                     </span>
-                    <h2 className="text-4xl font-semibold text-[#1a1a1a] leading-tight">
+                    <h2 className="text-2xl lg:text-3xl font-semibold text-[#1a1a1a] leading-tight">
                         Explore Our High-Performance <span className="text-blue-700">Enterprise Modules</span>
                     </h2>
                 </div>

@@ -54,7 +54,7 @@ const ErpAppWorkflow = () => {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-4xl font-semibold mb-4">
+                <h2 className="text-2xl lg:text-3xl font-semibold mb-4">
                     How Our <span className="text-blue-700">ERP Solution</span> Optimizes Workflow
                 </h2>
 
@@ -66,7 +66,7 @@ const ErpAppWorkflow = () => {
                 <div className="grid lg:grid-cols-2 gap-14 items-start">
 
                     {/* LEFT SCROLLABLE STEPS */}
-                    <div className="h-[650px] overflow-y-auto pr-4 space-y-8 no-scrollbar"
+                    <div className="h-[450px] overflow-y-auto pr-4 space-y-8 no-scrollbar"
                         style={{
                             scrollbarWidth: "none",
                             msOverflowStyle: "none",

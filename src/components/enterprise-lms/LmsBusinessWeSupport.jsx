@@ -42,7 +42,7 @@ const LmsBusinessWeSupport = () => {
                     <span className="inline-block px-4 py-1 rounded-full border border-violet-200 bg-violet-50 text-sm font-bold text-violet-700 mb-6 uppercase tracking-widest">
                         Broad Educational Coverage
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-semibold text-slate-800 mb-6">
+                    <h2 className="text-2xl lg:text-3xl font-semibold text-slate-800 mb-6">
                         Sectors We <span className="text-violet-700">Empower</span>
                     </h2>
                     <p className="text-slate-500 max-w-3xl mx-auto text-lg leading-relaxed font-medium italic">

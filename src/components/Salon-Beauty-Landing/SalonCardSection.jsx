@@ -13,9 +13,10 @@ const SalonCardSection = () => {
          title: "Salon & Beauty App",
          image: card1Img,
          path: "/products/home-service/salon",
-
-
-
+         accentColor: "text-rose-600",
+         underlineColor: "bg-gradient-to-r from-rose-500 to-orange-500",
+         dotColor: "bg-rose-500",
+         hoverShadow: "hover:shadow-rose-100/50",
          features: [
             "Multi Login Support",
             "Custom Product Management",
@@ -30,9 +31,10 @@ const SalonCardSection = () => {
          title: "Premium Salon Booking",
          image: card2Img,
          path: "/products/salon-booking",
-
-
-
+         accentColor: "text-purple-600",
+         underlineColor: "bg-gradient-to-r from-purple-500 to-indigo-500",
+         dotColor: "bg-purple-500",
+         hoverShadow: "hover:shadow-purple-100/50",
          features: [
             "Multi Vendor Support",
             "Instant Payment Gateway",
@@ -46,11 +48,18 @@ const SalonCardSection = () => {
    ];
 
    return (
-      <section className="py-24 bg-white">
+      <section className="py-16 bg-white">
          <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16 space-y-4">
+               <div className="flex items-center justify-center gap-2 mb-4">
+                  <div className="w-8 h-px bg-rose-200"></div>
+                  <span className="text-rose-600 font-semibold text-sm tracking-wider uppercase">
+                     Our Products
+                  </span>
+                  <div className="w-8 h-px bg-rose-200"></div>
+               </div>
                <h2 className="text-2xl lg:text-3xl font-semibold text-[#1A1C2C]">
-                  Our Best-Selling <span className="text-[#FF4D29]">Salon Solutions</span>
+                  Our Best-Selling <span className="bg-gradient-to-r from-rose-600 via-orange-500 to-amber-500 bg-clip-text text-transparent">Salon Solutions</span>
                </h2>
 
 
@@ -65,7 +74,7 @@ const SalonCardSection = () => {
                   <Link
                      to={card.path}
                      key={index}
-                     className={`group relative flex flex-col items-center text-center p-2 rounded-[40px] border-2 border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-white shadow-xl ${card.hoverAccent}`}
+                     className={`group relative flex flex-col items-center text-center p-2 rounded-[40px] border-2 border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-white shadow-xl ${card.hoverShadow}`}
                   >
                      {/* Image Section */}
                      <div className="w-full  bg-gray-50 rounded-[36px] overflow-hidden relative mb-6">
@@ -82,15 +91,15 @@ const SalonCardSection = () => {
                      {/* Content Section */}
                      <div className="w-full px-8 pb-10 space-y-8">
                         <div className="space-y-2">
-                           <h3 className="text-xl font-semibold text-[#1A1C2C]">{card.title}</h3>
-                           <div className="h-1 w-20 bg-[#FF4D29] mx-auto rounded-full"></div>
+                           <h3 className={`text-xl font-semibold text-[#1A1C2C] group-hover:${card.accentColor} transition-colors`}>{card.title}</h3>
+                           <div className={`h-1 w-20 ${card.underlineColor} mx-auto rounded-full`}></div>
                         </div>
 
 
                         <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-left">
                            {card.features.map((feature, i) => (
                               <div key={i} className="flex items-center gap-2">
-                                 <div className="w-1.5 h-1.5 bg-[#FF4D29] rounded-full"></div>
+                                 <div className={`w-1.5 h-1.5 ${card.dotColor} rounded-full`}></div>
                                  <span className="text-sm font-bold text-gray-700">{feature}</span>
                               </div>
                            ))}

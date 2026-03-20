@@ -76,9 +76,9 @@ const SalonFeatures = () => {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-            <span className="text-[#FF4D29] font-bold text-sm uppercase tracking-[0.3em]">Our Premium Modules</span>
+            <span className="text-rose-600 font-bold text-sm uppercase tracking-[0.3em]">Our Premium Modules</span>
             <h2 className="text-3xl lg:text-4xl font-semibold text-[#1A1C2C]">
-               Features That <span className="text-[#FF4D29]">Empower</span> Your Business
+               Features That <span className="bg-gradient-to-r from-rose-600 via-orange-500 to-amber-500 bg-clip-text text-transparent">Empower</span> Your Business
             </h2>
 
 
