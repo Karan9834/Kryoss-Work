@@ -48,7 +48,7 @@ const SalonCardSection = () => {
    ];
 
    return (
-      <section className="py-16 bg-white">
+      <section id="salon-products" className="py-16 bg-white">
          <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16 space-y-4">
                <div className="flex items-center justify-center gap-2 mb-4">

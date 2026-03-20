@@ -33,8 +33,10 @@ const SalonHero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <button className="px-10 py-4 bg-gradient-to-r from-[#FF4D29] to-[#E63E1C] text-white font-bold rounded-full shadow-xl shadow-[#FF4D29]/25 hover:scale-105 transition-all duration-300 flex items-center gap-2 group">
-              Get A Free Quote
+            <button
+              onClick={() => document.getElementById('salon-products')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-10 py-4 bg-gradient-to-r from-[#FF4D29] to-[#E63E1C] text-white font-bold rounded-full shadow-xl shadow-[#FF4D29]/25 hover:scale-105 transition-all duration-300 flex items-center gap-2 group">
+              Explore Our Products
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
@@ -46,7 +48,7 @@ const SalonHero = () => {
           <img
             src={heroImg}
             alt="Salon App Hero"
-            className="w-[450px] h-[450px] object-contain"
+            className="w-[530px] h-[530px] object-contain"
           />
 
         </div>
