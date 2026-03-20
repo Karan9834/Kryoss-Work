@@ -38,7 +38,7 @@ const LmsAbout = () => {
                             </span>
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl font-semibold mb-8 leading-[1.1] tracking-tight text-slate-900">
+                        <h2 className="text-2xl lg:text-3xl font-semibold mb-8 leading-[1.1] tracking-tight text-slate-900">
                             Empowering Education Through <span className="text-violet-700">Digital Innovation</span>
                         </h2>
 

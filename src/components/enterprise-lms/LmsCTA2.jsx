@@ -13,7 +13,7 @@ const LmsCTA2 = () => {
 
                     {/* Left Content */}
                     <div className="lg:w-3/5 text-white relative z-10">
-                        <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-8">
+                        <h2 className="text-2xl lg:text-3xl font-bold leading-tight mb-8">
                             Empower Your <span className="text-violet-300">Digital Academy</span> with Next-Gen LMS
                         </h2>
 

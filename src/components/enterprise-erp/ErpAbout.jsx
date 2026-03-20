@@ -15,7 +15,7 @@ const ErpAbout = () => {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-center text-4xl font-semibold mb-14 leading-snug">
+                <h2 className="text-center text-2xl lg:text-3xl font-semibold mb-14 leading-snug">
                     Next-Gen{" "}
                     <span className="text-blue-700">Enterprise Resource Planning</span>{" "}
                     for Unified Business Operations

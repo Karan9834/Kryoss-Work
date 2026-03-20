@@ -17,7 +17,7 @@ const ErpCTA1 = () => {
 
                 {/* Content */}
                 <div className="order-1 lg:order-2 text-white">
-                    <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-8">
+                    <h2 className="text-2xl lg:text-3xl font-semibold leading-tight mb-8">
                         Your Enterprise, Anywhere on <span className="text-blue-400">Any Device</span>
                     </h2>
 

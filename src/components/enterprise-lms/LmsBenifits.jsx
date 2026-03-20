@@ -36,7 +36,7 @@ const LmsBenifits = () => {
                     <span className="inline-block px-4 py-1.5 rounded-full border border-violet-400/30 bg-white/5 text-xs font-semibold text-violet-300 uppercase tracking-widest mb-6">
                         The Vyom Advantage
                     </span>
-                    <h2 className="text-4xl md:text-6xl font-semibold text-white leading-tight mb-8">
+                    <h2 className="text-2xl lg:text-3xl font-semibold text-white leading-tight mb-8">
                         Why Choose <span className="text-violet-400 italic">Custom LMS?</span>
                     </h2>
                 </div>

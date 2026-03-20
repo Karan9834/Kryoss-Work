@@ -12,7 +12,7 @@ const ErpCTA2 = () => {
 
                     {/* Left Content */}
                     <div className="lg:w-3/5 text-white relative z-10">
-                        <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-8">
+                        <h2 className="text-2xl lg:text-3xl font-semibold leading-tight mb-8">
                             Ready to Transform Your <span className="text-blue-300">Enterprise Operations?</span>
                         </h2>
 

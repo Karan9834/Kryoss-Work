@@ -29,7 +29,7 @@ const LmsDigitalFootprints = () => {
                     </div>
 
                     {/* Heading */}
-                    <h2 className="text-4xl lg:text-5xl font-semibold leading-tight mb-6">
+                    <h2 className="text-2xl lg:text-3xl font-semibold leading-tight mb-6">
                         Launch Your{" "}
                         <span className="text-violet-400">Digital Academy</span>{" "}
                         in just 5 days

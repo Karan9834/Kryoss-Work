@@ -59,7 +59,7 @@ const LmsAdminPanel = () => {
                         <span className="inline-block px-4 py-1.5 rounded-full border border-violet-400/30 bg-violet-400/5 text-xs font-bold text-violet-300 uppercase tracking-widest mb-6">
                             Admin Central
                         </span>
-                        <h2 className="text-4xl md:text-5xl font-semibold text-white mb-10 leading-tight">
+                        <h2 className="text-2xl lg:text-3xl font-semibold text-white mb-10 leading-tight">
                             Command Your <span className="text-violet-400">Digital Academy</span> with Ease
                         </h2>
 

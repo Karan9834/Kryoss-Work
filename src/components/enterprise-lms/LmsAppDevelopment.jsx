@@ -41,7 +41,7 @@ const LmsAppDevelopment = () => {
                     <span className="inline-block px-4 py-1.5 rounded-full border border-violet-200 bg-violet-50 text-xs font-black text-violet-700 mb-6 uppercase tracking-widest">
                         Educational Engineering
                     </span>
-                    <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 leading-[1.1] tracking-tight text-center">
+                    <h2 className="text-2xl lg:text-3xl font-semibold text-slate-900 leading-[1.1] tracking-tight text-center">
                         Our Specialized <span className="text-violet-700">LMS Modules</span>
                     </h2>
                 </div>

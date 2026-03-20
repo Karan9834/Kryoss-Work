@@ -11,36 +11,56 @@ const SalonWhyUs = () => {
          title: "Pre-Integrations",
          desc: "Save your time and money with pre-integration services like Maps, Online Payments, etc.",
          icon: MapPin,
-         position: "top-left"
+         position: "top-left",
+         themeColor: "text-rose-500",
+         iconBg: "bg-rose-50",
+         iconBorder: "border-rose-100",
+         hoverBg: "hover:bg-rose-50",
+         hoverIconBg: "group-hover:bg-rose-500"
       },
       {
          title: "Leading Tech Stack",
          desc: "We guarantee the quality of your salon marketplace as we use the latest technology for development.",
          icon: Layers,
-         position: "top-right"
+         position: "top-right",
+         themeColor: "text-blue-500",
+         iconBg: "bg-blue-50",
+         iconBorder: "border-blue-100",
+         hoverBg: "hover:bg-blue-50",
+         hoverIconBg: "group-hover:bg-blue-500"
       },
       {
          title: "Intuitive UI/UX",
          desc: "Ensure that you grab the audience's attention, and they return to your services with attractive UI/UX.",
          icon: Palette,
-         position: "bottom-left"
+         position: "bottom-left",
+         themeColor: "text-purple-500",
+         iconBg: "bg-purple-50",
+         iconBorder: "border-purple-100",
+         hoverBg: "hover:bg-purple-50",
+         hoverIconBg: "group-hover:bg-purple-500"
       },
       {
          title: "Feature-Rich App",
          desc: "Customize the beauty and salon app features and functionalities as per your audience's requirements.",
          icon: Settings,
-         position: "bottom-right"
+         position: "bottom-right",
+         themeColor: "text-amber-500",
+         iconBg: "bg-amber-50",
+         iconBorder: "border-amber-100",
+         hoverBg: "hover:bg-amber-50",
+         hoverIconBg: "group-hover:bg-amber-500"
       }
    ];
 
    return (
-      <section className="py-24 bg-white relative overflow-hidden flex flex-col items-center">
+      <section className="py-16 bg-white relative overflow-hidden flex flex-col items-center">
          <div className="max-w-7xl mx-auto px-6 w-full">
 
             {/* Header (Optional, but good for context) */}
             <div className="text-center mb-20 space-y-4">
                <h2 className="text-2xl lg:text-3xl font-semibold text-[#1A1C2C]">
-                  Why Choose Our <span className="text-[#FF4D29]">Salon Solution</span>
+                  Why Choose Our <span className="bg-gradient-to-r from-rose-600 via-orange-500 to-amber-500 bg-clip-text text-transparent">Salon Solution</span>
                </h2>
                <p className="text-gray-500 text-lg max-w-2xl mx-auto">
                   We provide the best salon software to help you manage your salon business
@@ -78,22 +98,22 @@ const SalonWhyUs = () => {
                            "bottom-right": "lg:bottom-0 lg:right-[100px]"
                         };
 
-                        return (
-                           <div
-                              key={index}
-                              className={`lg:absolute ${posClasses[card.position]} w-full lg:max-w-[300px] bg-white hover:bg-orange-100  p-6 rounded-2xl shadow-lg lg:shadow-xl border border-gray-50 flex flex-col items-center text-center space-y-4 transition-all duration-500 hover:-translate-y-2 lg:animate-fadeIn`}
-                              style={{ animationDelay: `${index * 0.2}s` }}
-                           >
-                              <div className="w-12 h-12 flex items-center justify-center border-2 border-orange-50 hover:bg-orange-300 transition-colors rounded-xl text-orange-500">
-                                 <Icon size={24} />
-                              </div>
-                              <div className="space-y-2">
-                                 <h3 className="text-lg font-bold text-[#1A1C2C]">{card.title}</h3>
-                                 <p className="text-xs text-gray-500 leading-relaxed font-medium">
-                                    {card.desc}
-                                 </p>
-                              </div>
-                           </div>
+                         return (
+                            <div
+                               key={index}
+                               className={`lg:absolute ${posClasses[card.position]} w-full h-[200px] lg:max-w-[350px] bg-white ${card.hoverBg} group p-6 rounded-2xl shadow-lg lg:shadow-xl border border-gray-50 flex flex-col items-center text-center space-y-4 transition-all duration-500 hover:-translate-y-2 lg:animate-fadeIn`}
+                               style={{ animationDelay: `${index * 0.2}s` }}
+                            >
+                               <div className={`w-12 h-12 flex items-center justify-center border-2 ${card.iconBorder} ${card.iconBg} ${card.hoverIconBg} group-hover:text-white transition-colors rounded-xl ${card.themeColor}`}>
+                                  <Icon size={24} />
+                               </div>
+                               <div className="space-y-2">
+                                  <h3 className={`text-lg font-bold text-[#1A1C2C] group-hover:${card.themeColor} transition-colors`}>{card.title}</h3>
+                                  <p className="text-xs text-gray-500 leading-relaxed font-medium">
+                                     {card.desc}
+                                  </p>
+                               </div>
+                            </div>
                         );
                      })}
                   </div>

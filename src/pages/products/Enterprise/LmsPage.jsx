@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import LmsHero from '@/components/enterprise-lms/LmsHero';
 import LmsAbout from '@/components/enterprise-lms/LmsAbout';
 import LmsAppWorkflow from '@/components/enterprise-lms/LmsAppWorkflow';
+import LmsCardSection from '@/components/enterprise-lms/LmsCardSection';
 import LmsAppDevelopment from '@/components/enterprise-lms/LmsAppDevelopment';
 import LmsCTA1 from '@/components/enterprise-lms/LmsCTA1';
 import LmsFeatures from '@/components/enterprise-lms/LmsFeatures';
@@ -34,6 +35,7 @@ const LmsPage = () => {
             <LmsHero />
             <LmsAbout />
             <LmsAppWorkflow />
+            <LmsCardSection />
             <LmsAppDevelopment />
             <LmsCTA1 />
             <LmsFeatures />

@@ -9,20 +9,20 @@ const SalonHero = () => {
   return (
     <section className="relative w-full min-h-[90vh] bg-[#FFF8F5] overflow-hidden flex items-center">
       {/* Background Decorative Elements */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#FFE4D6] rounded-full blur-[120px] -mr-64 -mt-64 opacity-60"></div>
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#FFEBDD] rounded-full blur-[100px] -ml-32 -mb-32 opacity-50"></div>
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-rose-100/50 rounded-full blur-[120px] -mr-64 -mt-64 opacity-70"></div>
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-100/50 rounded-full blur-[100px] -ml-32 -mb-32 opacity-60"></div>
 
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10 w-full pt-20">
 
         {/* Left Content */}
         <div className="text-left space-y-8 animate-fadeInLeft">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-[#FFE4D6]">
-            <span className="w-2 h-2 rounded-full bg-[#FF4D29] animate-pulse"></span>
-            <span className="text-[#FF4D29] text-xs font-bold uppercase tracking-widest">Salon Excellence</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-rose-100">
+            <span className="w-2 h-2 rounded-full bg-gradient-to-r from-rose-500 to-orange-500 animate-pulse"></span>
+            <span className="bg-gradient-to-r from-rose-600 to-orange-600 bg-clip-text text-transparent text-xs font-bold uppercase tracking-widest">Salon Excellence</span>
           </div>
 
           <h1 className="text-3xl lg:text-4xl font-semibold text-[#1A1C2C] leading-[1.2]">
-            Your Trusted <span className="text-[#FF4D29]">Salon App</span> Development Company
+            Your Trusted <span className="bg-gradient-to-r from-rose-600 via-orange-500 to-amber-500 bg-clip-text text-transparent">Salon App</span> Development Company
           </h1>
 
 

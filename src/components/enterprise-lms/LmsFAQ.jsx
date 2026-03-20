@@ -44,7 +44,7 @@ const LmsFAQ = () => {
             <div className="max-w-7xl mx-auto px-6 relative z-10">
 
                 {/* Heading */}
-                <h2 className="text-center text-4xl font-semibold mb-14 leading-snug text-slate-800">
+                <h2 className="text-center text-2xl lg:text-3xl font-semibold mb-14 leading-snug text-slate-800">
                     Common <span className="text-violet-700">Educational</span> Inquiries
                 </h2>
 

@@ -97,7 +97,7 @@ const ErpFeatures = () => {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-center text-4xl font-semibold mb-4 text-[#1a1a1a]">
+                <h2 className="text-center text-2xl lg:text-3xl font-semibold mb-4 text-[#1a1a1a]">
                     Key Features of Our <span className="text-blue-700">ERP Solution</span>
                 </h2>
 

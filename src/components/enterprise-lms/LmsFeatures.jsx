@@ -98,7 +98,7 @@ const LmsFeatures = () => {
                 </div>
 
                 {/* Heading */}
-                <h2 className="text-center text-4xl font-semibold mb-4 text-[#1a1c2c]">
+                <h2 className="text-center text-2xl lg:text-3xl font-semibold mb-4 text-[#1a1c2c]">
                     Unlock the Full Potential of <span className="text-violet-700">LMS Platform</span>
                 </h2>
 

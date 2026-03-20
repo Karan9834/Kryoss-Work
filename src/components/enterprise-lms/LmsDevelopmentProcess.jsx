@@ -36,7 +36,7 @@ const LmsDevelopmentProcess = () => {
                 {/* Heading */}
                 <div className="text-center mb-24">
                     <span className="text-violet-600 font-semibold text-xs uppercase tracking-[0.4em] mb-4 block">Proven Methodology</span>
-                    <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
+                    <h2 className="text-2xl lg:text-3xl font-semibold text-slate-900 tracking-tight">
                         Our <span className="text-violet-700">Refined</span> Development Lifecycle
                     </h2>
                 </div>
