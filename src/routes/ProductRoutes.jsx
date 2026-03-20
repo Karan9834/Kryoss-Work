@@ -39,6 +39,7 @@ import LmsPage from "../pages/products/Enterprise/LmsPage";
 import HRM from "../pages/products/Enterprise/HRM";
 import CRM from "../pages/products/Enterprise/CRM";
 import DoctorHealthPage from "../pages/products/Doctor-Health-App/DoctorHealthPage";
+import Ecommerce from "../pages/products/ECommerce-App/Ecommerce";
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -78,5 +79,6 @@ export const ProductRoutes = [
     <Route key="erp" path="products/enterprise/erp" element={<ErpPage />} />,
     <Route key="lms" path="products/enterprise/lms" element={<LmsPage />} />,
     <Route key="Hrm" path="/products/enterprise/hrm" element={<HRM />} />,
-    <Route Key="Crm" path="/products/enterprise/crm" element={<CRM />} />
+    <Route Key="Crm" path="/products/enterprise/crm" element={<CRM />} />,
+    <Route key="Ecommerce" path="/products/our/ecommerce" element={<Ecommerce/>} />,
 ];
