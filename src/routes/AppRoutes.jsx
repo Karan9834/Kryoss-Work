@@ -35,6 +35,7 @@ import ELearningPage from '../pages/products/E-Learning/ELearningPage';
 import TutorBookingPage from '../pages/products/Tutor-Booking/TutorBookingPage';
 import GroceryDeliveryPage from '../pages/products/Grocery-Delivery/GroceryDeliveryPage';
 import SalesCRMPage from "../pages/products/Sales-CRM/SalesCRMPage";
+import WebsitesWorks from '../pages/Works/OurWorks/WebsitesWorks';
 import UiUxWorks from "../pages/Works/OurWorks/UiUxWorks";
 
 const AppRoutes = () => {
@@ -84,6 +85,7 @@ const AppRoutes = () => {
                 <Route path="/products/grocery-delivery" element={<GroceryDeliveryPage />} />
                 <Route path="/products/sales-crm" element={<SalesCRMPage />} />
                 <Route path="/works/ui-ux" element={<UiUxWorks />} />
+                <Route path="/works/websites" element={<WebsitesWorks />} />
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
