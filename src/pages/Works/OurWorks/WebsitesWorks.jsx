@@ -107,49 +107,77 @@ const WebsitesWorks = () => {
                 description: 'A trusted Hotel Chain Company platform founded in 2020. Samaya Rooms has grown from a dutch start-up to a leading Hotel Chain Company providing seamless online bookings.',
                 stats: 'Fastest-growing Hotel Chain in India',
                 tags: ['Hospitality', 'Hotel Booking', 'Marketplace'],
-                image: samayaRoomsImg
+                image: samayaRoomsImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.samayarooms.user', type: 'playstore' },
+                    { href: 'https://www.samayarooms.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Flyin.com - Flights, Hotels & Travel',
                 description: 'A massive travel booking portal offering deals for 450 airlines and over 600,000 hotels worldwide. Providing easy, secure, and variety-driven booking experiences.',
                 stats: 'Integrated with 450+ Airlines',
                 tags: ['Travel', 'Flights', 'Booking'],
-                image: flyinImg
+                image: flyinImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.flyin.bookings', type: 'playstore' },
+                    { href: 'https://www.flyin.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Shipatoz - Hire Mini Trucks & Bikes',
                 description: 'Leading logistics marketplace in Andhra Pradesh & Telangana for intracity logistics. Offers the fastest, cheapest and easiest way to transport goods.',
                 stats: 'Leading Logistics in AP & Telangana',
                 tags: ['Logistics', 'Fleet Management', 'Deliveries'],
-                image: shipatozImg
+                image: shipatozImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.shipatoz.customer', type: 'playstore' },
+                    { href: 'http://shipatoz.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'TaxiGuru',
                 description: 'The largest Inter-city taxi service in India, offering one-way and round-trip outstation travels with highly trained drivers and transparent pricing.',
                 stats: 'Largest Inter-city Taxi Service',
                 tags: ['Taxi Service', 'Mobility', 'India-wide'],
-                image: taxiguruImg
+                image: taxiguruImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.taxiguru.customer', type: 'playstore' },
+                    { href: 'https://taxiguru.in/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Shipox Customer - Book a Courier',
                 description: 'A unique way to deliver packages from UAE to global destinations. Safe and convenient way to pick up and deliver parcels, documents, and checks.',
                 stats: 'Global Delivery from UAE',
                 tags: ['Courier', 'Logistics', 'Global'],
-                image: shipoxImg
+                image: shipoxImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.shipox.customer', type: 'playstore' },
+                    { href: 'https://shipox.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'OyeBusy - Home Services Platform',
                 description: 'India’s best online platform for providing top-notch home services relating to maintenance, repair, and more delivered to your doorstep.',
                 stats: 'Home Services, Maintenance, Repair',
                 tags: ['Home Services', 'Maintenance', 'On-Demand'],
-                image: oyebusyImg
+                image: oyebusyImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.oyebusy.servicedealer', type: 'playstore' },
+                    { href: 'https://oyebusy.com/', type: 'weblink' }
+                ]
             },
             {
                 title: '24Task - Hire Freelancers',
                 description: 'A reputed freelancing platform that allows employers to post multiple jobs and details at once and collaborate with the freelancers in no time.',
                 stats: 'Employers App - Hire Top Talents',
                 tags: ['Freelancing', 'Staffing', 'SME Hub'],
-                image: twentyFourTaskImg
+                image: twentyFourTaskImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.tfTask.android', type: 'playstore' },
+                    { href: 'https://24task.com/', type: 'weblink' }
+                ]
             }
         ],
         'Education': [
@@ -169,42 +197,66 @@ const WebsitesWorks = () => {
                 description: 'Enabling collaborative learning driven by interactive communities in real time. Bringing educators and learners together by breaking geographical barriers.',
                 stats: 'Collaborative Learning Communities',
                 tags: ['Social Learning', 'Community', 'Real-time'],
-                image: study24x7Img
+                image: study24x7Img,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.stdy24x7', type: 'playstore' },
+                    { href: 'https://www.study24x7.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Smartkeeda - Question Bank',
                 description: 'Most updated Question Bank for major competitive exams including IBPS, SBI, SSC, and UPSC. Provides study materials and cracker quizzes.',
                 stats: 'Competitive Exam Portal',
                 tags: ['Question Bank', 'Exam Prep', 'India-wide'],
-                image: smartkeedaImg
+                image: smartkeedaImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=smk.smartkeeda', type: 'playstore' },
+                    { href: 'https://www.smartkeeda.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Tutellus - Cursos Online',
                 description: 'Hispanic Tutellus is the world\'s largest online education platform with 3 million users across 160 countries offering over 70,000 video courses.',
                 stats: 'World\'s Largest Hispanic platform',
                 tags: ['Global Education', 'LMS', 'Spanish Market'],
-                image: tutellusImg
+                image: tutellusImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.tutellus.mobile', type: 'playstore' },
+                    { href: 'https://www.tutellus.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'StudyNiti - Exam Preparation',
                 description: 'Online Education Portal specializing in test series for banking and Insurance sectors. Comprehensive materials for effective cracking of competitive exams.',
                 stats: 'Banking & Insurance Exam Prep',
                 tags: ['Test Series', 'Banking', 'E-Learning'],
-                image: studynitiImg
+                image: studynitiImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=apps.studyniti.com', type: 'playstore' },
+                    { href: 'https://www.studyniti.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'School Diary - Communication Platform',
                 description: 'A mobile-first platform for parent updates, daycare updates, and child safety monitoring. Improves productivity for 250+ schools worldwide.',
                 stats: 'Monitored 250+ Schools Globally',
                 tags: ['Child Safety', 'School Management', 'Mobile App'],
-                image: schoolDiaryImg
+                image: schoolDiaryImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.schooldiary', type: 'playstore' },
+                    { href: 'https://schooldiary.me/', type: 'weblink' }
+                ]
             },
             {
                 title: 'SkoolBeep - Holistic School App',
                 description: 'Integrated communication platform combining diary, circulars, and SMS into a single app. Enables multimedia sharing and attendance tracking.',
                 stats: 'Multimedia Communication Portal',
                 tags: ['School ERP', 'Tracking', 'Communication'],
-                image: skoolbeepImg
+                image: skoolbeepImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.skoolbeep', type: 'playstore' },
+                    { href: 'https://www.skoolbeep.com/', type: 'weblink' }
+                ]
             }
         ],
         'Healthcare': [
@@ -213,42 +265,66 @@ const WebsitesWorks = () => {
                 description: 'Helping people get active through accurate activity tracking and community features. A global community of walkers and runners staying healthy together.',
                 stats: 'Community of Millions Globally',
                 tags: ['Fitness', 'Activity Tracking', 'HealthTech'],
-                image: pacerImg
+                image: pacerImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=cc.pacer.androidapp', type: 'playstore' },
+                    { href: 'https://www.mypacer.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'myUpchar - Online Consultation',
                 description: 'Get 24x7 online consultation from 50,000+ experienced doctors across 30+ specialties. Connect with trusted medical experts within 10 minutes.',
                 stats: '24x7 Expert Doctor Access',
                 tags: ['Consultation', 'Telemedicine', 'Experts'],
-                image: myUpcharImg
+                image: myUpcharImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.myupchar.user', type: 'playstore' },
+                    { href: 'https://www.myupchar.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Truemeds - Trusted Medicine Delivery',
                 description: 'India\'s 1st e-Pharmacy guaranteeing medicine cost reduction up to 72% using proprietary Triple Check flow and AI-based algorithms.',
                 stats: 'Reduce Medicine Costs by 72%',
                 tags: ['e-Pharmacy', 'Medicine Delivery', 'AI-Check'],
-                image: truemedsImg
+                image: truemedsImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.intellihealth.truemedsp', type: 'playstore' },
+                    { href: 'https://www.truemeds.in/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Fitify: Workout & Training Plans',
                 description: 'Ultimate full body workout app to lose weight and build muscle. Over 900 exercises for fresh, fun, and effective anytime routines.',
                 stats: '900+ Full Body Exercises',
                 tags: ['Workouts', 'Training', 'No-Equipment'],
-                image: fitifyImg
+                image: fitifyImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.fitifyworkouts.bodyweight.workoutapp', type: 'playstore' },
+                    { href: 'https://gofitify.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'NH Care - Book Appointments online',
                 description: 'Book appointments for video consultations and in-hospital visits. Find doctors by specialty or hospital and attach reports from home.',
                 stats: 'Video & In-Hospital Booking',
                 tags: ['Appointment Booking', 'Healthcare ERP', 'Digital Care'],
-                image: nhCareImg
+                image: nhCareImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=org.narayanahealth.nhcare', type: 'playstore' },
+                    { href: 'https://www.narayanahealth.org/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Amwell: Doctor Visits 24/7',
                 description: 'Connect to board-certified medical providers 24/7 through high-quality telemedicine. Bringing healthcare home for faster feel-better results.',
                 stats: 'Telehealth appointments 24/7',
                 tags: ['Telemedicine', 'On-Demand', 'Certified Doctors'],
-                image: amwellImg
+                image: amwellImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.americanwell.android.member.amwell', type: 'playstore' },
+                    { href: 'https://business.amwell.com/', type: 'weblink' }
+                ]
             }
         ],
         'E-Commerce': [
@@ -257,49 +333,77 @@ const WebsitesWorks = () => {
                 description: 'Stylish destination designed for Saudi Arabia, UAE, and Gulf region. 500+ daily new arrivals in casual wear and dresses at affordable prices.',
                 stats: 'Leading Fashion App in MENA',
                 tags: ['Fashion', 'Retail', 'International'],
-                image: adoraweImg
+                image: adoraweImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.starlinke', type: 'playstore' },
+                    { href: 'https://www.starlinke.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Cartlow - Smarter Way To Shop',
                 description: 'Leading online destination for Pre-owned, Open-box and Clearance products in UAE. Re-commerce initiative focusing on sustainability and savings.',
                 stats: 'Save Environment, Save Money',
                 tags: ['Re-Commerce', 'Sustainability', 'Open-box'],
-                image: cartlowImg
+                image: cartlowImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.cartlow.android', type: 'playstore' },
+                    { href: 'https://www.cartlow.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Jazp.com - Premier Online Store',
                 description: 'Leading platform in UAE, Qatar and KSA. Vast product mix including electronics and perfumes with accessible quality selections.',
                 stats: 'Leading Store in Gulf Region',
                 tags: ['Electronics', 'Lifestyle', 'Marketplace'],
-                image: jazpImg
+                image: jazpImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=www.jazp.com.jazp', type: 'playstore' },
+                    { href: 'https://uae.jazp.com/ae-en/', type: 'weblink' }
+                ]
             },
             {
                 title: 'GeekBuying - Make Life Smart',
                 description: '20,000+ products across electronics and gadgets. Easy home shopping with global delivery and specialized tech support.',
                 stats: '20,000+ Smart Tech Products',
                 tags: ['Gadgets', 'Smart Home', 'Global e-Shop'],
-                image: geekbuyingImg
+                image: geekbuyingImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.geekbuy.geekbuying', type: 'playstore' },
+                    { href: 'https://www.geekbuying.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'China Gadgets – The Gadget App',
                 description: 'Comprehensive review and comparison platform for the web\'s craziest gadgets. Real-time price comparisons and testing for tech seekers.',
                 stats: 'Reviews & Price Comparison',
                 tags: ['Gadget Reviews', 'Comparison', 'Tech Blog'],
-                image: chinaGadgetsImg
+                image: chinaGadgetsImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=de.appetites.chinagadgets', type: 'playstore' },
+                    { href: 'https://www.china-gadgets.de/', type: 'weblink' }
+                ]
             },
             {
                 title: 'RunwaySale - Designer Label Access',
                 description: 'Biggest South African online shopping society offering designer labels at up to 70% off through daily private flash sale events.',
                 stats: 'Up to 70% off Designer Labels',
                 tags: ['Luxury', 'Flash Sales', 'Apparel'],
-                image: runwaysaleImg
+                image: runwaysaleImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=io.flatcircle.runwaysaleandroid', type: 'playstore' },
+                    { href: 'https://www.runwaysale.co.za/', type: 'weblink' }
+                ]
             },
             {
                 title: 'FARFETCH — Luxury Fashion',
                 description: 'Global destination for modern luxury. Shop over 100,000 fashion designer pieces expertly curated for a premium shopping experience.',
                 stats: '100,000+ Luxury Fashion Pieces',
                 tags: ['Luxury', 'Global Reach', 'Premium Retail'],
-                image: farfetchImg
+                image: farfetchImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.farfetch.farfetchshop', type: 'playstore' },
+                    { href: 'https://www.farfetch.com/', type: 'weblink' }
+                ]
             }
         ],
         'Entertainment': [
@@ -308,35 +412,55 @@ const WebsitesWorks = () => {
                 description: 'Go-to video streaming app for Originals showcasing Hindi web series. Regional programmes in Telugu, Tamil, and Kannada on spotlight.',
                 stats: 'Watch Originals & Live TV',
                 tags: ['OTT', 'Streaming', 'Web Series'],
-                image: watchoImg
+                image: watchoImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.watcho', type: 'playstore' },
+                    { href: 'https://www.watcho.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'DocuBay - Global Documentaries',
                 description: 'Award-winning documentaries on crime, nature, and science. Ever-growing collection across HD categories with unbiased global insight.',
                 stats: 'Award-Winning Documentaries',
                 tags: ['Documentaries', 'Education', 'Video-on-Demand'],
-                image: docubayImg
+                image: docubayImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.epic.docubay', type: 'playstore' },
+                    { href: 'https://www.docubay.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'HilalPlay - Family Entertainment',
                 description: 'Turkish, Arabic and International shows & films selected to be Family Friendly. Meeting all family standards without inappropriate content.',
                 stats: 'Family-Friendly Content',
                 tags: ['MENA OTT', 'Turkish Series', 'Clean Stream'],
-                image: hilalplayImg
+                image: hilalplayImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.hilal.play', type: 'playstore' },
+                    { href: 'https://hilalplay.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Kindda - Viral Short Videos',
                 description: 'Rewarding system with special video effects and cool filters. Go viral with brand-new editing tools and become a Kindda Star.',
                 stats: 'Go Viral with Kindda Star',
                 tags: ['Social Media', 'Short-Video', 'Sharing'],
-                image: kinddaImg
+                image: kinddaImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=app.kindda.android', type: 'playstore' },
+                    { href: 'https://kindda.app/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Vidol - The Best Asia Series',
                 description: 'Hottest newest SET dramas and favorite shows. Stream the SET Original spirit anytime from your phone and other devices.',
                 stats: 'Hottest Asian Dramas',
                 tags: ['Asian Content', 'Dramas', 'International OTT'],
-                image: vidolImg
+                image: vidolImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.set.settv.vidol', type: 'playstore' },
+                    { href: 'https://vidol.tv/', type: 'weblink' }
+                ]
             }
         ],
         'Food & Drinks': [
@@ -345,56 +469,88 @@ const WebsitesWorks = () => {
                 description: 'Online portal for Affordable Fresh Fruits and Vegetables delivered to your doorstep. Aiming to make customer lifestyle simpler with easy clicks.',
                 stats: 'Affordable Fresh Produce',
                 tags: ['Grocery', 'Fresh Delivery', 'Agriculture'],
-                image: avemartImg
+                image: avemartImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.ricomputech.avemartapp', type: 'playstore' },
+                    { href: 'https://www.avemart.in/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Kifayat - Online Supermarket',
                 description: 'Well known Nagpur online supermarket covering everyday needs. Shop over 20,000+ products ranging from groceries to fresh vegetables.',
                 stats: 'Nagpur\'s #1 Online Store',
                 tags: ['Supermarket', 'Regional', 'Grocery'],
-                image: kifayatImg
+                image: kifayatImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.mm.kifayatbazaar', type: 'playstore' },
+                    { href: 'https://www.kifayatonline.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Untappd - Discover Beer',
                 description: 'Discover and share great beers, breweries, and venues with friends. Earn badges for exploring styles and countries while tracking favorites.',
                 stats: 'Social Beer Discovery',
                 tags: ['Social Network', 'Alcohol', 'Reviews'],
-                image: untappdImg
+                image: untappdImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.untappdllc.app', type: 'playstore' },
+                    { href: 'https://untappd.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Eatiko - Food Delivery Partner',
                 description: 'Eat whatever you like, whenever you want. Whether breakfast dosa or heavenly sadhya, your one-stop partner for restaurant discovery.',
                 stats: 'Fast Food Delivery',
                 tags: ['Food Delivery', 'Restaurants', 'Kerala Market'],
-                image: eatikoImg
+                image: eatikoImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=io.eatiko.main', type: 'playstore' },
+                    { href: 'https://eatiko.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Heritage TUCH - Milk Delivery',
                 description: 'Hyderabad\'s online solution for farm-fresh milk and dairy. Recently added flavored milk, ice-creams, and cheese for your summer delight.',
                 stats: 'Daily Fresh Dairy',
                 tags: ['Milk Delivery', 'Daily Needs', 'Dairy'],
-                image: heritagetuchImg
+                image: heritagetuchImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.heritagetuch.consumer', type: 'playstore' },
+                    { href: 'https://www.heritagefoods.in/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Meatigo – Fresh Meats Platform',
                 description: 'High quality meats from trusted farms using meticulous preparation. Scientific approach to vacuum packing and vacuum sealing technology.',
                 stats: 'Vacuum-Packed Fresh Meat',
                 tags: ['Meats', 'Premium Delivery', 'Direct-to-Home'],
-                image: meatigoImg
+                image: meatigoImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.urbanpiper.meatigo', type: 'playstore' },
+                    { href: 'https://meatigo.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'GroceryFactory - DTC Brand',
                 description: 'India’s 1st Full Stack DTC Brand for FMCG. Products meticulously selected and processed to deliver perfect standards within 24 hours.',
                 stats: 'Direct-to-Consumer Grocery',
                 tags: ['DTC', 'Full-Stack', 'FMCG'],
-                image: groceryfactoryImg
+                image: groceryfactoryImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.groceryfactory.customer', type: 'playstore' },
+                    { href: 'https://groceryfactory.in/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Foodmazone - Online Supermarket',
                 description: 'Kerala’s largest online food store with 18,000+ products across 100 brands. Everything from rice to personal care in one place.',
                 stats: 'Kerala\'s Largest Supermarket',
                 tags: ['Large Inventory', 'Local Leader', 'Convenience'],
-                image: foodmazoneImg
+                image: foodmazoneImg,
+                links: [
+                    { href: 'https://play.google.com/store/apps/details?id=com.foodmazone.customer', type: 'playstore' },
+                    { href: 'https://www.foodmazone.com/', type: 'weblink' }
+                ]
             }
         ],
         'Others': [
@@ -403,42 +559,60 @@ const WebsitesWorks = () => {
                 description: 'Hyderabad-based business solution offering Fin-Tech, Accounting, and Cloud services. CEO Ashutosh Kar (CA/CPA) leads this multi-disciplinary giant.',
                 stats: 'Multi-Disciplinary IT Division',
                 tags: ['FinTech', 'Accounting', 'Cloud Services'],
-                image: advinceImg
+                image: advinceImg,
+                links: [
+                    { href: 'https://advince.in/', type: 'weblink' }
+                ]
             },
             {
                 title: 'Kryoss HR Services - Global Recruitment',
                 description: 'Setting new benchmarks in talent acquisition through conceptualized services. Subsidiary of Kryoss Group focused on pioneer organized recruitment.',
                 stats: 'Talent Acquisition Pioneer',
                 tags: ['HR Services', 'Recruitment', 'Enterprise'],
-                image: kryossHrImg
+                image: kryossHrImg,
+                links: [
+                    { href: 'https://kryoss.org/', type: 'weblink' }
+                ]
             },
             {
                 title: 'JeetuThareja & Associates - Chartered Accountants',
                 description: 'Gurgaon-based firm offering Accounting, Auditing, and Direct Tax consultancy. A trusted roof for start-up and financial regulatory compliances.',
                 stats: 'Financial Advisory & Audit',
                 tags: ['Legal', 'Audit', 'Tax Consultation'],
-                image: jtAssociatesImg
+                image: jtAssociatesImg,
+                links: [
+                    { href: 'https://jtassociates.in/', type: 'weblink' }
+                ]
             },
             {
                 title: 'I Say Organic - Sustainable Enterprise',
                 description: 'Connecting sustainable farmers with health-conscious customers. Supporting Farmers to grow safe food without toxic chemicals or pesticides.',
                 stats: 'Social Enterprise for Organic Food',
                 tags: ['Sustainable', 'Organic', 'Agri-Tech'],
-                image: isayorganicImg
+                image: isayorganicImg,
+                links: [
+                    { href: 'https://www.isayorganic.com/', type: 'weblink' }
+                ]
             },
             {
                 title: 'HawkHire HR Solutions',
                 description: 'Innovative support in all areas of associated recruitment crossing industry sectors. Helping companies meet complex business environment challenges.',
                 stats: 'Innovative Recruitment Lifecycle',
                 tags: ['Staffing', 'Client Support', 'Lifecycle Management'],
-                image: hawkhireImg
+                image: hawkhireImg,
+                links: [
+                    { href: 'https://hawkhire.in/', type: 'weblink' }
+                ]
             },
             {
                 title: 'V3 Events & Entertainments',
                 description: 'Delhi & Mumbai based event management and wedding planning company. Dedicated to providing a wide assortment of services for live shows, star nights, and corporate launches.',
                 stats: 'Premier Wedding & Event Planner',
                 tags: ['Events', 'Entertainment', 'Celebrity shows'],
-                image: v3eventsImg
+                image: v3eventsImg,
+                links: [
+                    { href: 'https://v3events.in/', type: 'weblink' }
+                ]
             }
         ]
     };
@@ -603,33 +777,36 @@ const WebsitesWorks = () => {
                                                                 href={link.href}
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
-                                                                className="transition-transform hover:-translate-y-1 block"
+                                                                className="flex items-center gap-3 bg-gray-800 text-white px-5 py-2.5 rounded-xl hover:bg-orange-500 hover:shadow-lg transition-all duration-300 group/btn"
                                                             >
-                                                                <img 
-                                                                    src={link.type === 'playstore' 
-                                                                        ? "https://kryosssoftech.org/icons/Health-&-Fitness/google app store.png" 
-                                                                        : "https://kryosssoftech.org/icons/Health-&-Fitness/Ios app store.png"
-                                                                    } 
-                                                                    alt={link.type}
-                                                                    className="h-10 md:h-12 object-contain"
-                                                                    onError={(e) => { e.target.style.display = 'none' }}
-                                                                />
+                                                                {link.type === 'playstore' ? (
+                                                                    <>
+                                                                        <div className="w-6 h-6 flex items-center justify-center">
+                                                                            <img 
+                                                                                src="https://kryosssoftech.org/icons/Health-&-Fitness/google app store.png" 
+                                                                                alt="Play Store"
+                                                                                className="w-full h-full object-contain brightness-0 invert"
+                                                                                onError={(e) => { e.target.parentElement.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="5 3 19 12 5 21 5 3"/></svg>' }}
+                                                                            />
+                                                                        </div>
+                                                                        <div className="flex flex-col items-start leading-tight">
+                                                                            <span className="text-[9px] uppercase font-bold text-gray-400 group-hover/btn:text-orange-100 italic">Get it on</span>
+                                                                            <span className="text-sm font-black tracking-tight">Google Play</span>
+                                                                        </div>
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                        <div className="w-6 h-6 flex items-center justify-center">
+                                                                            <Globe size={22} className="text-white group-hover/btn:scale-110 transition-transform" />
+                                                                        </div>
+                                                                        <span className="text-sm font-black uppercase tracking-widest">Web Link</span>
+                                                                    </>
+                                                                )}
                                                             </a>
                                                         ))}
                                                     </div>
                                                 )}
 
-                                                <div className="pt-10 border-t border-gray-100 flex items-center justify-between">
-                                                    <div className="flex items-center gap-3 text-gray-950 font-black text-sm uppercase tracking-wider group cursor-pointer hover:text-orange-500 transition-colors">
-                                                        <span className="w-10 h-10 rounded-full bg-orange-100 text-orange-500 flex items-center justify-center group-hover:bg-orange-500 group-hover:text-white transition-all">
-                                                            <CheckCircle size={18} />
-                                                        </span>
-                                                        {project.stats}
-                                                    </div>
-                                                    <button className="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-gray-300 hover:text-orange-500 transition-all">
-                                                        View Project <ArrowRight size={18} />
-                                                    </button>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
