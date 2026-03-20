@@ -35,6 +35,8 @@ import ELearningPage from '../pages/products/E-Learning/ELearningPage';
 import TutorBookingPage from '../pages/products/Tutor-Booking/TutorBookingPage';
 import GroceryDeliveryPage from '../pages/products/Grocery-Delivery/GroceryDeliveryPage';
 import SalesCRMPage from "../pages/products/Sales-CRM/SalesCRMPage";
+import UiUxWorks from "../pages/Works/OurWorks/UiUxWorks";
+
 const AppRoutes = () => {
     return (
         <Routes>
@@ -44,7 +46,6 @@ const AppRoutes = () => {
                 {ProductRoutes}
                 {CompanyRoutes}
                 {ServiceRoutes}
-                <Route path="*" element={<NotFound />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/services" element={<ServicesPage />} />
@@ -73,7 +74,6 @@ const AppRoutes = () => {
                 <Route path="/products/property-listing" element={<PropertyListingPortalPage />} />
 
                 <Route path="/products/real-estate-crm" element={<RealEstatePage />} />
-                <Route path="/products/ai-chatbot" element={<CustomerSupportBotPage />} />
                 <Route path="/products/multi-vendor-ecommerce" element={<MultiVendorMarketplacePage />} />
                 <Route path="/products/b2b-wholesale" element={<B2BWholesalePage />} />
                 <Route path="/products/ai-content-generator" element={<AiContentGeneratorPage />} />
@@ -83,6 +83,8 @@ const AppRoutes = () => {
                 <Route path='/products/tutor-booking' element={<TutorBookingPage />}></Route>
                 <Route path="/products/grocery-delivery" element={<GroceryDeliveryPage />} />
                 <Route path="/products/sales-crm" element={<SalesCRMPage />} />
+                <Route path="/works/ui-ux" element={<UiUxWorks />} />
+                <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
     );

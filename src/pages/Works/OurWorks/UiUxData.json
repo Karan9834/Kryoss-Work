@@ -1,0 +1,1023 @@
+{
+  "tabs": [
+    {
+      "id": "Education",
+      "name": "Education UI/UX"
+    },
+    {
+      "id": "Healthcare",
+      "name": "Healthcare UI/UX"
+    },
+    {
+      "id": "ECommerce",
+      "name": "ECommerce UI/UX"
+    },
+    {
+      "id": "Entertainment",
+      "name": "Entertainment UI/UX"
+    },
+    {
+      "id": "Food",
+      "name": "Food & Drinks UI/UX"
+    },
+    {
+      "id": "Tour",
+      "name": "Tour & Travel UI/UX"
+    },
+    {
+      "id": "On-Demand",
+      "name": "On-Demand UI/UX"
+    }
+  ],
+  "sections": {
+    "Education": [
+      {
+        "img": "icons/Education-App-Work/Vidyakul.png",
+        "alt": "Vidyakul",
+        "titleHtml": "<span class=\"text-danger\">Vidyakul-LIVE</span> Learning App, State Board, NCERT",
+        "titleText": "Vidyakul-LIVE Learning App, State Board, NCERT",
+        "description": "Vidyakul - Bharat's first live classes learning app for state board, NCERT , CBSE, serving the after school tuition needs for state board students via pre-recorded and free live lectures from the most prominent trusted local teachers. We cover course content for the class 9th to 12th for state board books, CBSE, NCERT solutions, Exam revision, IIT JEE, NEET.Vidyakul has 120+ Teachers on board, Daily Free Live Classes + 50,000+ Video lectures in Hindi, English, Hinglish, Marathi, Gujarati, Bengali, which is viewed by 1,00,000,00+ most engaged students. ........More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.vidyakul",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://vidyakul.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Education-App-Work/Classklap.png",
+        "alt": "Classklap",
+        "titleHtml": "<span class=\"text-danger\">ClassKlap</span> Learning App-Keep your learning going",
+        "titleText": "ClassKlap Learning App-Keep your learning going",
+        "description": "To keep the learning going, ClassKlap bring the school and teachers to Student place through, ClassKlap Learning App. Students can join LIVE classes from the comfort of their home through this app. With the ClassKlap Learning App, parents can stay involved with their child's scholastic progress. The app enables schools to streamline all communication with parents. The schools can reach out to parents with home-work, planned activities, captured classroom moments, daily time tables......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.classklap.learning",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.classklap.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Education-App-Work/Study 247.png",
+        "alt": "Study 247",
+        "titleHtml": "<span class=\"text-danger\">Study24x7-The</span> Social Learning Network",
+        "titleText": "Study24x7-The Social Learning Network",
+        "description": "Study24x7 is a FREE app for individuals to learn from 50+ interests! Now interact, collaborate and learn from both your teachers and peers on the same platform.Study24x7 offers a unique and simple way of learning. Sign in on the app, choose your interest and voila! With the latest updates on your feed related to the interest selected, you get to learn from over 1000+ educators on our platform...........More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.stdy24x7 ",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.study24x7.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Education-App-Work/Smart keda.png",
+        "alt": "Smart keda",
+        "titleHtml": "<span class=\"text-danger\">Smartkeeda-Best</span> Ques Bank for Competitive Exams",
+        "titleText": "Smartkeeda-Best Ques Bank for Competitive Exams",
+        "description": "Smartkeeda is Free and most updated Question Bank for almost all the major competitive exams - IBPS PO Pre and Mains, SBI PO Pre and Mains, IBPS SO, SBI SO, IBPS RRB Office Assistant Pre and Mains, IBPS RRB Officer Scale 1 Pre and Mains, SSC CGL Tier 1 and Tier 2, SSC CHSL, SSC MTS, UPSC CDSE, CTET, CLAT, MAT, NIFT, Railways, etc. .......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=smk.smartkeeda ",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.smartkeeda.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Education-App-Work/Tutllelus.png",
+        "alt": "Tutllelus",
+        "titleHtml": "<span class=\"text-danger\">Tutellus</span> - Cursos Online",
+        "titleText": "Tutellus - Cursos Online",
+        "description": "Hispanic Tutellus is the world's largest online education platform. More than 3 million users, more than 600 thousand active students in 160 countries by over 70,000 Video course, allows us to offer any type of online course, Carrera or Title University. ............More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.tutellus.mobile",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.tutellus.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Education-App-Work/Study niti.png",
+        "alt": "Study niti",
+        "titleHtml": "<span class=\"text-danger\">StudyNiti-Exam</span> Preparation App",
+        "titleText": "StudyNiti-Exam Preparation App",
+        "description": "Study Niti is an Online Education Portal for Exam Preparations. we are providing Online test series for banking and Insurance Exam Sector. We also provide Study materials Like PFDs and Notes, PDF Courses, Cracker Quizzes ......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=apps.studyniti.com",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.studyniti.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      }
+    ],
+    "Healthcare": [
+      {
+        "img": "icons/Health-&-Fitness/app.png",
+        "alt": "app",
+        "titleHtml": "<span class=\"text-danger\">Pedometer Pacer</span>-Fitness That Fits Your Life",
+        "titleText": "Pedometer Pacer-Fitness That Fits Your Life",
+        "description": "“Walking & Running Pedometer for Health & Weight” syncs steps & calories w/ MyFitnessPal and Fitbit! Track your step, walking & weight loss with this free health counter. Lose weight and track walk distance and calories burned using 24/7 step counting from our pedometer, step counter & health tracker app......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=cc.pacer.androidapp",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.mypacer.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Health-&-Fitness/app.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">myUpchar</span>-Leading online doctor consultation app",
+        "titleText": "myUpchar-Leading online doctor consultation app",
+        "description": "Get 24x7 online consultation from 50,000+ experienced doctors on myUpchar. Consult experts in 30+ specialties through chat consultation or tele consultation. No more long queues or waiting times, connect with trusted doctors within 10 minutes. myUpchar offers safe and secure calls and online chat with doctors......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.myupchar.user",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.myupchar.com/en",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Health-&-Fitness/truemed.png",
+        "alt": "trueme",
+        "titleHtml": "<span class=\"text-danger\">Truemeds</span>-Trusted Dawa Delivery App",
+        "titleText": "Truemeds-Trusted Dawa Delivery App",
+        "description": "Truemeds is India's 1st e-Pharmacy that guarantees to reduce your medicine costs up to 72%. We only supply medicines from India's top 50 medicine makers, to guarantee our users the best quality. All of our orders go through the most rigid checks to ensure that the correct medicines are supplied to our users. Our proprietary Triple Check (TC) flow makes sure every order is checked by a Doctor, Pharmacist & our proprietary AI-based Algorithm......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.intellihealth.truemedsp",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.truemeds.in/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Health-&-Fitness/Fitify Workout Routines & Training Plans.png",
+        "alt": "Fitify Workout Routines & Training Plans",
+        "titleHtml": "<span class=\"text-danger\">Fitify</span>: Workout Routines &amp; Training Plans",
+        "titleText": "Fitify: Workout Routines & Training Plans",
+        "description": "Fitify is your ultimate full body workout app to lose weight, burn fat, build muscle & strength. With over 900 exercises in the work out app, your daily workout routines are always fresh, fun & effective! Work out anywhere, anytime using any fit tool. No equipment required, but if you have one - take advantage of it!.....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.fitifyworkouts.bodyweight.workoutapp",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://gofitify.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Health-&-Fitness/NH.png",
+        "alt": "NH",
+        "titleHtml": "<span class=\"text-danger\">NH Care-Video</span> Consult or Book Appointment online",
+        "titleText": "NH Care-Video Consult or Book Appointment online",
+        "description": "Find a doctor by using different search criteria, like specialty, symptom, or hospital, and book appointments for self or for family members. Book appointment for the same day or a future date as per your convenience.Book online appointment via video call or in-hospital booking from the comfort of your home.NH Care also allows you to attach reports and other documents that you want to show to the doctor before consultation......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=org.narayanahealth.nhcare",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.narayanahealth.org/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Health-&-Fitness/Amwell.png",
+        "alt": "Amwell",
+        "titleHtml": "<span class=\"text-danger\">Amwell</span>: Doctor Visits 24/7",
+        "titleText": "Amwell: Doctor Visits 24/7",
+        "description": "Amwell is the best way to see a doctor from home or on-the-go. Our telehealth app connects you to board-certified, experienced medical providers. High-quality healthcare is now available, 24/7, with on-demand service or scheduled appointments, often with next-day availability.Amwell brings healthcare home through the power of telemedicine so you can feel better faster.No more driving to the doctor or sitting in waiting rooms. With Amwell, quality medical providers are available 24/7, to help you feel better faster. .....More Details",
+        "links": [
+          {
+            "href": "ttps://play.google.com/store/apps/details?id=com.americanwell.android.member.amwell&hl=en",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://business.amwell.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      }
+    ],
+    "ECommerce": [
+      {
+        "img": "icons/E-commerce-Sites/Adorawe.png",
+        "alt": "Adorawe",
+        "titleHtml": "<span class=\"text-danger\">Adorawe</span>- Fashiononline shopping mall",
+        "titleText": "Adorawe- Fashiononline shopping mall",
+        "description": "Adorawe fashion online shopping mall is stylish destination,this fashion app designed for Saudi Arabia, United Arab Emirates, Kuwait, Oman, Bahrain & Qatar shopper Adorawe is an vogue closet for women, 500+ daily new casual two pieces, evening dress,nice bags in affordable price. .....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.starlinke",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.starlinke.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/E-commerce-Sites/cartlow.png",
+        "alt": "Cartlow",
+        "titleHtml": "<span class=\"text-danger\">Cartlow</span>-Smarter Way To Shop",
+        "titleText": "Cartlow-Smarter Way To Shop",
+        "description": "Meet Cartlow - is online shopping destination for buying Pre-owned, Open-box and Clearance products at the lowest price in UAE.Cartlow is a re-commerce initiative built on the bases of helping retailers discard less to save the environment while passing on benefits of savings to the customers.  More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.cartlow.android ",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.cartlow.com/help/about-us",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/E-commerce-Sites/jazp.png",
+        "alt": "Jazp",
+        "titleHtml": "<span class=\"text-danger\">Jazp.com</span>- It’s a Online Store",
+        "titleText": "Jazp.com- It’s a Online Store",
+        "description": "Jazp.com is the leading online shopping platform in UAE, Oman, Qatar and Saudi Arabia KSA. Developed in 2018. Its vast product mix includes exclusive in- house collections, sports, Electronics, Mobiles, Perfumes, and globally recognized brands. Something customers choose Jazp.com for its aspirational yet accessible product selection.  .....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=www.jazp.com.jazp",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://uae.jazp.com/ae-en/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/E-commerce-Sites/greekbuying.png",
+        "alt": "GeekBuying",
+        "titleHtml": "<span class=\"text-danger\">GeekBuying</span> - Make life smart and easy",
+        "titleText": "GeekBuying - Make life smart and easy",
+        "description": "Online shopping with GeekBuying is very easy as you get to shop from the comfort of your home and get products delivered at your doorstep. By downloading the GeekBuying free online shopping app on your Android phone or tablet, you can effortlessly browse our massive collection of more than 20,000 products from multiple categories including mobile phones, fashion wear, electronic devices, accessories and consumer durables. More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.geekbuy.geekbuying",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.geekbuying.com/help/student_discount",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/E-commerce-Sites/chaina gadgets.png",
+        "alt": "China Gadgets",
+        "titleHtml": "<span class=\"text-danger\">China Gadgets</span> – The Gadget App",
+        "titleText": "China Gadgets – The Gadget App",
+        "description": "In the China-Gadgets App you will find the best reviews and craziest gadgets in the whole web! But that's not all: you get every gadget at the best price thanks to the online price comparison.Regardless of whether it is the strongest magnets in the world, the smallest drone, the best vacuum robot, the most popular Xiaomi product or a really senseless gadget for the next party - we report on everything and test everything, including product videos. China Gadgets - the fine line between “totally crazy”, “useful” and “must-have from China”! More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=de.appetites.chinagadgets",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.china-gadgets.de/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/E-commerce-Sites/runway.png",
+        "alt": "RunwaySale",
+        "titleHtml": "<span class=\"text-danger\">RunwaySale</span>- Guilt-Free shopping at the palm of your hand!",
+        "titleText": "RunwaySale- Guilt-Free shopping at the palm of your hand!",
+        "description": "RunwaySale is the biggest South African online shopping society. It offers exclusive access to designer labels at up to 70% off for a limited time. New events launch daily that features a variety of mens, womens and kids designer apparel, shoes, accessories and more.  More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=io.flatcircle.runwaysaleandroid",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.runwaysale.co.za/main/customer/account/login/?_nosid=1",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/E-commerce-Sites/Farefetvh.png",
+        "alt": "FARFETCH ",
+        "titleHtml": "<span class=\"text-danger\">FARFETCH </span>— Designer Clothing Shopping for Spring",
+        "titleText": "FARFETCH — Designer Clothing Shopping for Spring",
+        "description": "Shop your favorite designer brands at FARFETCH, from new season clothing to spring and summer accessories. With over 100,000 fashion designer pieces to choose from, like activewear for all activities to expertly-cut fine jewelry — you won’t need to shop anywhere else.Style your spring wardrobe and ease into the new season with the latest trends, from sneakers to hats. Pair an Off-White dress with Gucci sandals this summer, or nail your home video calls with a Ganni shirt and fine jewelry from Georg Jensen. .....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.farfetch.farfetchshop",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.farfetch.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      }
+    ],
+    "Entertainment": [
+      {
+        "img": "icons/Entertainment-&-OTT/watcho.png",
+        "alt": "watcho",
+        "titleHtml": "<span class=\"text-danger\">Watcho</span> - Original Spotlight Exclusive Shows &amp; Films",
+        "titleText": "Watcho - Original Spotlight Exclusive Shows & Films",
+        "description": "Watcho is your go-to video streaming app for Watcho Originals online showcasing the best Hindi web series to watch online. Catch the best of originals, latest live channels, Telugu entertainment, new Tamil shows, and Kannada programmes, on the Watcho spotlight app.Watch Indian TV series Hindi narrating the story of Junaid; a militant who has surrendered to the Indian forces under mysterious circumstances.... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.watcho",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://www.watcho.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Entertainment-&-OTT/Rabbit.png",
+        "alt": "Rabbit",
+        "titleHtml": "<span class=\"text-danger\">Rabbit</span>",
+        "titleText": "Rabbit",
+        "description": "Rabbit Movies is a Video on Demand Platform that allows cutomers to watch a wide variety of Web Series, Movies and EXCLUSIVE Rabbit Original Content in regional and international language. You will find every genre in it Like Drama, Horror, Suspense, Thriller and Comedy in indian regional langiages including Hindi,Tamil, Telugu etc....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.rabbit.android.release",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://rabbitmovies.app/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Entertainment-&-OTT/Singapore social.png",
+        "alt": "Singapore Dating",
+        "titleHtml": "<span class=\"text-danger\">Singapore Dating</span> - Online Chat &amp; Meet Singaporeans",
+        "titleText": "Singapore Dating - Online Chat & Meet Singaporeans",
+        "description": "Singapore Dating is the best free dating app to connect with Singaporean singles! It is a great way to meet people, to make new friends and mingle with them. Or you want to find a lasting relationship and even for marriage? It’s all here!Love to meet new people, make friends, or find a date to hangout with tonight? It's easy! You can start by seeing video clips of singles and when you like someone, just click the heart. If they like you back, we will connect both of you..... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.innovate.SingaporeSocial",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://singapore.innovatedating.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Entertainment-&-OTT/hongkong social.png",
+        "alt": "Hong Kong Social",
+        "titleHtml": "<span class=\"text-danger\">Hong Kong Social</span> - Dating app, Connect Hongkongers",
+        "titleText": "Hong Kong Social - Dating app, Connect Hongkongers",
+        "description": "Hong Kong Social is the best free dating app to connect with Hong Kong singles or to meet Hong Kong singles from around the world. Hong Kong Social is a great way to meet people around you in Hong Kong, make new friends and mingle with them, or to find lasting relationships and even for marriage! It’s all here.\nWhether you are looking to see Hong Kong girls or you’re looking for a friend during your stay in Hong Kong, Hong Kong Social will have someone for you....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.innovate.HongKongSocial",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://hongkong.innovatedating.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Entertainment-&-OTT/indonesia social.png",
+        "alt": "Indonesia Social",
+        "titleHtml": "<span class=\"text-danger\">Indonesia Social</span> - Date, Chat &amp; Meet Singles Online",
+        "titleText": "Indonesia Social - Date, Chat & Meet Singles Online",
+        "description": "Indonesia Dating is the best free dating app to connect with Indonesian singles or to meet Indonesian singles from around the world. Indonesia Dating is a great way to meet people around you in Indonesia, make new friends and mingle with them, or to find lasting relationships and even for marriage! It’s all here.\nWhether you are looking to see Indonesian girls or you’re looking for a friend during your stay in Indonesia, Indonesia Dating will have someone for you.... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.innovate.IndonesiaSocial",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://indo.innovatedating.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Entertainment-&-OTT/hobi.png",
+        "alt": "Hobi",
+        "titleHtml": "<span class=\"text-danger\">Hobi</span> - TV Series Tracker, Trakt Client For TV Shows",
+        "titleText": "Hobi - TV Series Tracker, Trakt Client For TV Shows",
+        "description": "Hobi is a simple, lightweight TV tracker with lots of goodies for all series lovers. \nMake the most out of your TV time with Hobi. Hobi will notify you when a new season premieres or when a new episode airs. Track your seen episodes with our special episode tracker. Use Hobi whenever you need a TV guide....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.hobi.android",
+            "img": "assets/images/icons/playstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Entertainment-&-OTT/heretv.png",
+        "alt": "Here TV",
+        "titleHtml": "<span class=\"text-danger\">Here</span> TV",
+        "titleText": "Here TV",
+        "description": "Become a Here TV SuperSubscriber and receive instant access to exclusive and original programming, the latest video news updates from The Advocate and a vast library of the very best LGBTQ award-winning movies, series and documentaries.",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.heremedia.heretv",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://www.heremedia.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Entertainment-&-OTT/Docubay.png",
+        "alt": "DocuBay",
+        "titleHtml": "<span class=\"text-danger\">DocuBay</span> - Streaming Documentaries",
+        "titleText": "DocuBay - Streaming Documentaries",
+        "description": "Watch Free and Premium Award winning documentaries on crime, nature, travel, culture, science, sports and more. Our ever-growing documentary collection extends across a variety of categories: crime, nature, biography, culture, travel, history, music, sports, humanity, adventure, politics and more. DocuBay has a variety of videos that make it easy to view and discover HD documentaries, at leisure or on-the-go. Unbiased news can be hard to find, but documentaries can give you a deep insight into topics. We also stream documentaries for free regularly.....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.epic.docubay",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://www.docubay.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Entertainment-&-OTT/Hilal.png",
+        "alt": "HilalPlay",
+        "titleHtml": "<span class=\"text-danger\">HilalPlay</span>",
+        "titleText": "HilalPlay",
+        "description": "HilalPlay is a platform that offers a wide variety of Turkish, Arabic and International shows & films that are carefully & deliberately selected to be Family Friendly to meet all family values and standards. Gather your family members & friend to would cluster together in front of HilalPlay's screen without any sort of worries or any kind of inappropriate content...... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.hilal.play",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://hilalplay.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Entertainment-&-OTT/kindda.png",
+        "alt": "Kindda",
+        "titleHtml": "<span class=\"text-danger\">Kindda</span> - Short Videos and Photos",
+        "titleText": "Kindda - Short Videos and Photos",
+        "description": "A unique rewarding system, special video effects and cool filters are all about Kindda. Join NOW! Enjoy all the viral & trending anytime anywhere! Take your videos to the next LEVEL with the best video effects and filters that you can only find on Kindda. Go VIRAL now! Make trending videos with the brand-new video editing tools and become a Kindda Star......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=app.kindda.android",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://kindda.app/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Entertainment-&-OTT/vidol.png",
+        "alt": "Vidol",
+        "titleHtml": "<span class=\"text-danger\">Vidol</span> - The Best Asia Series",
+        "titleText": "Vidol - The Best Asia Series",
+        "description": "Vidol - Watch this season of your favorite SET shows and the hottest and newest SET dramas. Get into SET Original spirit, and stream the shows you love through either our general member plan or our Vidol premium plan.Stream and enjoy the viewing experience from your phone and other devices anytime, anywhere.",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.set.settv.vidol",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://vidol.tv/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      }
+    ],
+    "Food": [
+      {
+        "img": "icons/Food-&-Grocery-App/bazar.png",
+        "alt": "BAZAR",
+        "titleHtml": "<span class=\"text-danger\">BAZAR</span> - доставка продуктов за 15 минут",
+        "titleText": "BAZAR - доставка продуктов за 15 минут",
+        "description": "BAZAR is a convenience store in your smartphone. You no longer need to go to the store for every little thing. In the Bazaar, prices and selection are like in a convenience store. I wanted cheesecakes in the morning and there is not enough milk or dinner time, and in the \"rolling stone\" refrigerator, even if you just wanted a chocolate bar, we will deliver products in 15-25 minutes for free....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.bazarstore",
+            "img": "assets/images/icons/playstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Food-&-Grocery-App/groxery.png",
+        "alt": "Groxery",
+        "titleHtml": "<span class=\"text-danger\">Groxery</span> - Order Grocery Online",
+        "titleText": "Groxery - Order Grocery Online",
+        "description": "Groxery is an online store for the people of Kashmir, bringing all sorts of essential goods, health care products, household goods, stationery items and local goods under one platform. While Groxery is making the online shopping experience seamless, Groxery is also focused on giving value for money and good deals to its customers.... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=kiryana.store.kiryanastore",
+            "img": "assets/images/icons/playstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Food-&-Grocery-App/kifayat.png",
+        "alt": "Kifaya",
+        "titleHtml": "<span class=\"text-danger\">Kifayat</span> - Online Vegetables &amp; Grocery Shopping App",
+        "titleText": "Kifayat - Online Vegetables & Grocery Shopping App",
+        "description": "Kifayat online is a well known online supermarket In Nagpur which covers all your everyday needs from groceries to fresh vegetables. We have more than 10000+ glad customers who can shop from anyplace and look over a 20000+ products and enjoy bother free online vegetable and grocery shopping with us....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.mm.kifayatbazaar",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://www.kifayatonline.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Food-&-Grocery-App/AVE mart.png",
+        "alt": "AVEMART",
+        "titleHtml": "<span class=\"text-danger\">AVEMART</span> - Best Online Grocery Shopping App",
+        "titleText": "AVEMART - Best Online Grocery Shopping App",
+        "description": "Avemart is an online portal where you can get Affordable Fresh Fruits and Vegetables the best price at your doorstep. You can select and purchase a wide variety of fruits and vegetables merely sitting at home. We aim to make the lifestyle of our customers much simpler. With the ease of a click, fruits and vegetables reach your doorstep saving all the muscular and time-consuming tasks.... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.ricomputech.avemartapp",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://www.avemart.in/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Food-&-Grocery-App/untappd.png",
+        "alt": "Untappd",
+        "titleHtml": "<span class=\"text-danger\">Untappd</span> - Discover Beer",
+        "titleText": "Untappd - Discover Beer",
+        "description": "Discover and share great beers, breweries, and venues with your friends, while earning badges for exploring beers of different styles and countries.Discover nearby venues, events, and beers that you'll love Keep track of the beers you like and create lists for later Get alerts when your favorite verified venues add new beers...More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.untappdllc.app",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://untappd.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/E-commerce-Sites/Eatiko.png",
+        "alt": "Eatiko",
+        "titleHtml": "<span class=\"text-danger\">Eatiko</span> - Food Delivery &amp; Restaurant Finder",
+        "titleText": "Eatiko - Food Delivery & Restaurant Finder",
+        "description": "Eat whatever you like, whenever you Want. Whether you want a tasty dosa for breakfast, or a heavenly sadhya for lunch, or a refreshing coffee to boost up your mind, Eatiko is your one and only partner you need. Order your favorite food from your favorite Restaurants!! If you are in the office or home, or anywhere else, we will deliver it to your doorstep..... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=io.eatiko.main",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://eatiko.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Food-&-Grocery-App/heritage tuch.png",
+        "alt": "Heritage",
+        "titleHtml": "<span class=\"text-danger\">Heritage TUCH</span> - Online Milk Delivery App",
+        "titleText": "Heritage TUCH - Online Milk Delivery App",
+        "description": "Heritage TUCH is an online milk and dairy products delivery app in Hyderabad offering natural, farm-fresh milk and dairy products right at your doorstep every morning. It's a one-stop solution for fulfilling all your dairy product needs. We have recently added range of flavoured milk, ice-creams, milkshakes, fresh cream and cheese to add in to your summer delight.....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.heritagetuch.consumer",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://www.heritagefoods.in/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Food-&-Grocery-App/daily moo.png",
+        "alt": "daily moo",
+        "titleHtml": "<span class=\"text-danger\">Daily Moo</span> - Milk &amp; Breakfast Subscription App",
+        "titleText": "Daily Moo - Milk & Breakfast Subscription App",
+        "description": "Daily Moo is a daily subscription service app for your Milk & Breakfast needs,delivered to your doorstep every morning.",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.dailymoo",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://dailymoo.in/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Food-&-Grocery-App/meatigo.png",
+        "alt": "Meatigo",
+        "titleHtml": "<span class=\"text-danger\">Meatigo</span> – Fresh Meats Delivery",
+        "titleText": "Meatigo – Fresh Meats Delivery",
+        "description": "Meatigo was founded on selling only the highest quality meats from great farms & partners we trust, using meticulous preparation methods and a scientific approach in the way meat is cut, packed, stored & delivered.Choose from over 100+ Fresh Meats & Delicatessen ProductsThe Safest Packing for Meats - Vacuum Packed & Sealed using American Technology 120 Minutes Home Delivery across neighbourhoods in Mumbai, Bangalore & Gurgaon & Delhi or schedule deliveries a week in advance..... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.urbanpiper.meatigo",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://meatigo.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Food-&-Grocery-App/supper food.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">Online Grocery Shopping</span> App Pune - Superfoods",
+        "titleText": "Online Grocery Shopping App Pune - Superfoods",
+        "description": "Searching for the best buys in vegetables, fruits, dairy, and groceries like grains, snacks, beverages, chocolates, ready mixes, masalas, pickles, and sauces?",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=in.superfoodscompany",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://www.superfoodscompany.in/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      }
+    ],
+    "Tour": [
+      {
+        "img": "icons/Tour&travel/Keyroom.png",
+        "alt": "Keyroom",
+        "titleHtml": "<span class=\"text-danger\">KEYROOMS</span> - Online Hotel Booking App with Safe Room",
+        "titleText": "KEYROOMS - Online Hotel Booking App with Safe Room",
+        "description": "Hotels that make you feel good | Online Hotel Booking App | Hotel packages | 249 hotels in 14 cities.With Keyrooms hotels, book safe and sanitized rooms at the best hotels in Delhi NCR and other cities with the best booking website and the best hotel booking app. Find the chain of amazing budget hotels and guest house in 14 different cities across India at affordable prices........More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.keyroom",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Tour&travel/Brevistay.png",
+        "alt": "Brevistay",
+        "titleHtml": "<span class=\"text-danger\">BreviStay</span>: India's Best Hourly Hotel Booking App",
+        "titleText": "BreviStay: India's Best Hourly Hotel Booking App",
+        "description": "Are you bored being bored and planning a trip to nearby town for a day? Or got a meeting to attend in the city about which you’ve got no clue about? Want to give an entrance exam but can’t find a place to halt for few hours? Don’t worry, we’ve got it covered!",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.brevistay.customer",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.brevistay.com/ ",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Tour&travel/Samaya room.png",
+        "alt": "Samaya room.",
+        "titleHtml": "<span class=\"text-danger\">Samaya Rooms</span>: Stay with Hotel Booking App",
+        "titleText": "Samaya Rooms: Stay with Hotel Booking App",
+        "description": "SAMAYA Rooms Hotel Booking App to Book the Most modest hotels with amenities like free Wi-Fi, AC, water bottle& much more. Now, find your perfect first stay and get 300 off and celebrate your comfort space today! You can search nearby best hotel deals in your pocket friendly budget and explore around the India. We ensure that your stay is not just pocketed friendly but also lovely and pleasant with over 500+ properties across India.Samaya Rooms is every reasonable visit with companion. Assure you download the Samaya App to receive updates about our latest offers and promos..........More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.samayarooms.user",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://samayarooms.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "assets/images/portfolio/mobile-app/social-networking.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">Travel</span> Boutique Online",
+        "titleText": "Travel Boutique Online",
+        "description": "Travel Boutique Online is India's largest B2B Travel Portal which offers a wide range of travel product likeflights, hotels, buses, and transfer to its partners, with the unbeatable price and inventory.Travel Boutique Online has emerged as India's Leading B2A Travel Portal since its establishment in 2006. For over a decade now, we are enabling our partners to serve their customers efficiently, with the right pricing and inventory........More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.tbolite.app",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          }
+        ]
+      },
+      {
+        "img": "assets/images/portfolio/mobile-app/picfit.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">Riyaconnect</span>",
+        "titleText": "Riyaconnect",
+        "description": "Since its beginning in 1980, Riya Group Enterprise has always understood the requirements of the global traveller and served millions in the process. Started as an overseas manpower wing by our CMD and Chairman, Mr. GMJ Thampy, the Group currently employs 3000+ professionals in over 70 locations across India, USA, Canada and UAE.......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.riyaconnect.android",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.riya.travel/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Tour&travel/Flyin.png",
+        "alt": "Flyin",
+        "titleHtml": "<span class=\"text-danger\">Flyin.com</span> - Flights, Hotels &amp; Travel Deals Booking",
+        "titleText": "Flyin.com - Flights, Hotels & Travel Deals Booking",
+        "description": "Flyin.com application provides customers with the best deals in flights and hotels, easy and secure bookings along with a variety of 450 airlines including low cost carriers and 600,000 Hotels, Resorts, Villas, Apartments & More.........More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.flyin.bookings",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.flyin.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Tour&travel/Tajwal.png",
+        "alt": "Tajwal",
+        "titleHtml": "<span class=\"text-danger\">Tajawal</span>: Flights, Hotels and Holidays",
+        "titleText": "Tajawal: Flights, Hotels and Holidays",
+        "description": "The #1 app for the Middle Eastern traveller, tajawal offers you great deals on over 1 million hotels, 1,000s of flight connections & complete holiday packages.",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.tajawal",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.tajawal.com/en",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "assets/images/portfolio/mobile-app/tea-reminder-app.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">Rehlat Travel App</span> - Cheap Flights &amp; Hotel Bookings",
+        "titleText": "Rehlat Travel App - Cheap Flights & Hotel Bookings",
+        "description": "Rehlat App is your one-stop app for flight booking, hotel reservation, Saudi intercity bus booking, and train services.Trusted by over one million Kuwaiti, Rehlat is a brand that believes in a world without borders. Rehlat has stayed ahead by continually upgrading its technology to meet the ever-changing demands of the rapidly developing travel market, steadily establishing itself as Middle East’s most trusted travel booking app. The app and the customer support cater in both Arabic & English. Travel safe with Rehlat & get a hassle-free & secure one-touch booking experience...........More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.app.rehlat",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.rehlat.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "https://ik.imagekit.io/eytazlfr68/assets/images/portfolio/mobile-app/wellness-app.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">TripViewL</span>",
+        "titleText": "TripViewL",
+        "description": "TripView displays Sydney and Melbourne public transport timetable data on your phone. It features a summary view showing your next services, as well as a full timetable viewer. All timetable data is stored on your phone, so it can be used offline......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.grofsoft.tripview",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://tripview.com.au/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "assets/images/portfolio/mobile-app/abive.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">TripSource</span>",
+        "titleText": "TripSource",
+        "description": "TripSource by BCD Travel is designed exclusively for our clients and their travelers. Your ultimate travel companion, TripSource keeps you organized, informed, and in control of your business travel. No more paper. No more organizing multiple emails. Everything you need, all in one place. After you book your trip, just log in with your corporate email address – your trip details will be there waiting for you.......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.mttnow.android.bcd.production",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://tripsource.com/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/Tour&travel/Afbudsrejser.png",
+        "alt": "Afbudsrejser",
+        "titleHtml": "<span class=\"text-danger\">Afbudsrejser</span>, rejser og flybilletter - billige fly",
+        "titleText": "Afbudsrejser, rejser og flybilletter - billige fly",
+        "description": "Maybe you are looking for a city break to London (England), Paris (France), Bangkok (Thailand), New York (Athens), Athens (Greece) or looking for a plane ticket for your next holiday in Malaga, Palma Majorca, Las Palmas, Nice, or Antalya. Our flight search engine helps you find the cheapest airline ticket.A good advice for your flight search is to search for flights to and from different airports. Looking for flights to the USA or flights to Thailand, then search for a trip to several different airports near the place you want to travel......More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=dk.travelmarket.charte",
+            "img": "icons/Health-&-Fitness/google app store.png"
+          },
+          {
+            "href": "https://www.travelmarket.dk/",
+            "img": "icons/Health-&-Fitness/Ios app store.png"
+          }
+        ]
+      }
+    ],
+    "On-Demand": [
+      {
+        "img": "icons/on-demand-wrork/Oye busy.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">OyeBusy</span> - Home Services, Maintenance, Repair, Deals",
+        "titleText": "OyeBusy - Home Services, Maintenance, Repair, Deals",
+        "description": "OyeBusy is India's best online platform for providing top-notch home services. It will supply you with services relating to anything you wish to have delivered to your home. There is no need to be concerned while booking service since we will always strive to give you the best service possible. In this technological age, make an appointment with us to take advantage of many incentives. All of the covid19 guidelines will be followed by our employee.....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.oyebusy.oyebusy_customer",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://oyebusy.com/delhi-ncr",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/on-demand-wrork/Laundryhead.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">Laundryheap</span> - The 24h Dry Cleaning and Laundry App",
+        "titleText": "Laundryheap - The 24h Dry Cleaning and Laundry App",
+        "description": "Laundry Anna aims to blend the sophistication of state-of-the-art fabric servicing with the easy availability of your local dhobi. We maintain our own processing unit instead of outsourcing our garments to other vendors.",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.encureit.laundryheap",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://www.laundryheap.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/on-demand-wrork/24 task client.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">24Task</span> - Hire Freelancers",
+        "titleText": "24Task - Hire Freelancers",
+        "description": "Take the initial steps towards hiring the best talents for your project with the 24Task Employers app. 24 Task is a reputed freelancing platform that allows employers to post multiple jobs and details at once and collaborate with the freelancers in no time.",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.task24.android.apps.employer.hire.freelancer",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://www.24task.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/on-demand-wrork/Akshayakalpa.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">Akshayakalpa</span> Organic Mil",
+        "titleText": "Akshayakalpa Organic Mil",
+        "description": "Fresh Organic cow milk door-delivered before 7 AM at your doorstep. No minimum order, free door delivery. Now customize your subscriptions and place orders as and when you need! We ensure your safe and pure organic cow milk is delivered before 7 am every day to your doorstep. Also, Akshayakalpa Organic Milk delivery App allows you to customize your organic milk subscription according your needs...... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.mrmilkman.akshayakalpa",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://food.forte.kz/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/on-demand-wrork/Ourflat.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">OurFlat</span> - Shared Household &amp; Chores App",
+        "titleText": "OurFlat - Shared Household & Chores App",
+        "description": "With this new shared living app, you can easily manage groceries, split bills, add calendar events and divide household chores. You can also use the integrated chat with polls to make planning even easier. OurFlat was made for anyone living with other people! Be it a shared flat, couple, family, or group vacation: organise your life together now.....More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.ourflat.app",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://ourflat-app.com/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/on-demand-wrork/Shoppy.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">Shoopy</span> - Create Online Store Free &amp; Grow Business",
+        "titleText": "Shoopy - Create Online Store Free & Grow Business",
+        "description": "Shoopy helps businesses to go online in a few seconds. Businesses get fully personalised e-commerce store in simple steps. Shoopy online store service can be used by any type of small & medium businesses. Be it selling products or offering services. Shoopy offers seamless integration with Social Media Platforms to share product catalog, invoice and communicate with the customers. Online stores are 100% safe & secure. Shoopy works out of the box...... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=in.shoopy.business",
+            "img": "assets/images/icons/playstore.png"
+          },
+          {
+            "href": "https://www.shoopy.in/",
+            "img": "assets/images/icons/appstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/on-demand-wrork/Vegease.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">VegEase</span> - Online Vegetables &amp; Fruits Delivery App",
+        "titleText": "VegEase - Online Vegetables & Fruits Delivery App",
+        "description": "VegEase is one such innovation that has been created keeping in mind the needs of consumers like you and offers them the delight of getting Fresh Fruits and Vegetables at their doorsteps. It combines our decades of experience in the FMCG sector and our supply chain expertise to efficiently procures the most delectable Fruits and Vegetables for you and deliver them to you in the most easy and smart way...... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.vegease",
+            "img": "assets/images/icons/playstore.png"
+          }
+        ]
+      },
+      {
+        "img": "icons/on-demand-wrork/Idphoto.png",
+        "alt": "",
+        "titleHtml": "<span class=\"text-danger\">ID Photo &amp; Passport Photo</span> - Portrait Cutter",
+        "titleText": "ID Photo & Passport Photo - Portrait Cutter",
+        "description": "ID Photo supports all formats for various uses such as ID card, passport for all countries, visa, driver's license, resume, certificate, social platforms and more! ID Photo detects your portrait automatically, no need for dull cutting and search for accurate specifications. And you can use the Nuts ID Photo app to create photos by Self-photographing, take your portraits again and again until you are satisfied. If you need to use ID photos and feel it is too expensive in offline stores, feel free to try this ID Photo...... More Details",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=idphoto.passport.portrait",
+            "img": "assets/images/icons/playstore.png"
+          }
+        ]
+      }
+    ]
+  }
+}
