@@ -89,11 +89,11 @@ const AboutUs = () => {
           </div>
 
           {/* CTA */}
-          <div className="pt-4">
+          {/* <div className="pt-4">
             <button className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-xl hover:scale-105 transition duration-300">
               Learn More →
             </button>
-          </div>
+          </div> */}
 
         </motion.div>
       </div>

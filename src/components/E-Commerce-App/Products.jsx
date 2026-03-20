@@ -84,7 +84,8 @@ const Products = () => {
   const filteredProducts = products.filter(p => p.category === activeCategory);
 
   return (
-    <section className="w-full bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
+    // ADD THE ID HERE 👇
+    <section id="products-section" className="w-full bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
 
         {/* Heading with animation */}
@@ -247,7 +248,7 @@ const Products = () => {
         )}
 
         {/* View All Products Button */}
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -260,7 +261,7 @@ const Products = () => {
             View All Solutions
             <span className="ml-2">→</span>
           </button>
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </section>

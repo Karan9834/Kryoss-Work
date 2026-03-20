@@ -8,6 +8,17 @@ const ECommerceHero = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, -60]); // image moves up slightly
 
+  // Function to scroll to products section
+  const scrollToProducts = () => {
+    const productsSection = document.getElementById('products-section');
+    if (productsSection) {
+      productsSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <section className="w-full bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
       
@@ -65,15 +76,29 @@ const ECommerceHero = () => {
             seamless integrations, and unparalleled performance.
           </motion.p>
 
-          {/* Button */}
+          {/* Button - Changed to Explore Now */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
             className="flex justify-center md:justify-start"
           >
-            <button className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-xl hover:scale-105 transition duration-300">
-              LIVE DEMO →
+            <button 
+              onClick={scrollToProducts}
+              className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)]"
+            >
+              <span className="absolute inset-0 bg-white/20 blur-xl group-hover:blur-2xl transition-all duration-300"></span>
+              <span className="relative flex items-center gap-2">
+                EXPLORE NOW
+                <svg 
+                  className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
             </button>
           </motion.div>
 
@@ -101,7 +126,7 @@ const ECommerceHero = () => {
 
         {/* RIGHT IMAGE */}
         <motion.div
-          style={{ y }} // 👈 parallax applied here
+          style={{ y }}
           initial={{ opacity: 0, x: 80, scale: 0.95 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
