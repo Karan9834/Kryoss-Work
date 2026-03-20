@@ -53,10 +53,10 @@ const Solutions = () => {
   const lineHeight = useTransform(scrollYProgress, [0, 0.8], ["0%", "100%"]);
 
   return (
-    <section className="w-full bg-gradient-to-b from-gray-50 to-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="w-full bg-gradient-to-b from-purple-50/50 to-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto relative">
 
-        {/* Decorative background elements */}
+        {/* Decorative background elements with purple tones */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
           <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
@@ -69,7 +69,7 @@ const Solutions = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20 relative z-10"
         >
-          {/* Badge */}
+          {/* Badge with purple theme */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -94,13 +94,13 @@ const Solutions = () => {
         {/* TIMELINE CONTAINER */}
         <div className="relative max-w-5xl mx-auto">
           
-          {/* CENTER LINE - MODERN DESIGN */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-purple-200 via-pink-200 to-blue-200 rounded-full"></div>
+          {/* CENTER LINE - Purple theme */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-purple-200 via-pink-200 to-purple-200 rounded-full"></div>
           
           {/* ANIMATED PROGRESS LINE */}
           <motion.div
             style={{ height: lineHeight }}
-            className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gradient-to-b from-purple-600 via-pink-600 to-blue-600 rounded-full shadow-lg shadow-purple-500/25"
+            className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gradient-to-b from-purple-500 via-pink-500 to-purple-500 rounded-full shadow-lg shadow-purple-500/25"
           />
 
           {/* TIMELINE ITEMS */}
@@ -173,7 +173,7 @@ const Solutions = () => {
                     </motion.div>
                   </div>
 
-                  {/* IMAGE CARD */}
+                  {/* IMAGE SECTION - No blur on hover */}
                   <div className="w-full md:w-1/2">
                     <motion.div
                       whileHover={{ scale: 1.02 }}
@@ -183,20 +183,19 @@ const Solutions = () => {
                       {/* Decorative gradient background */}
                       <div className={`absolute -inset-1 bg-gradient-to-r ${item.gradient} rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition duration-500`}></div>
                       
-                      {/* Image container */}
+                      {/* Image container - removed blur overlay */}
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                        <div className={`absolute inset-0 bg-gradient-to-r ${item.gradient} opacity-0 group-hover:opacity-20 transition duration-500`}></div>
                         <img
                           src={item.img}
                           alt={item.title}
                           className="w-full h-64 object-cover group-hover:scale-105 transition duration-700"
                         />
                         
-                        {/* Overlay with icon on hover */}
+                        {/* Simple icon overlay on hover - no blur background */}
                         <motion.div 
                           initial={{ opacity: 0 }}
                           whileHover={{ opacity: 1 }}
-                          className="absolute inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center"
+                          className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent flex items-center justify-center"
                         >
                           <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${item.gradient} flex items-center justify-center shadow-2xl transform -rotate-12 group-hover:rotate-0 transition duration-500`}>
                             <Icon size={32} className="text-white" />
@@ -210,22 +209,6 @@ const Solutions = () => {
             })}
           </div>
         </div>
-
-        {/* BOTTOM CTA */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-center mt-20"
-        >
-          <button className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/30 hover:scale-105">
-            <span className="absolute inset-0 bg-white/20 blur-xl group-hover:blur-2xl transition-all duration-300"></span>
-            <span className="relative flex items-center gap-2">
-              Start Your Journey
-              <TrendingUp size={20} />
-            </span>
-          </button>
-        </motion.div> */}
       </div>
     </section>
   );
