@@ -1,0 +1,172 @@
+import React, { useEffect, useRef } from "react";
+import sol1 from "../../assets/Hotel-Management/sol1.png";
+import sol2 from "../../assets/Hotel-Management/sol2.png";
+import sol3 from "../../assets/Hotel-Management/sol3.png";
+import sol4 from "../../assets/Hotel-Management/sol4.png";
+
+const timeline = [
+  {
+    title: "Discover & Analyze",
+    desc: "We deeply understand your hotel operations, workflows, and challenges to design a solution that perfectly fits your business needs.",
+    image: sol1,
+    color: "from-cyan-500 to-blue-500",
+  },
+  {
+    title: "System Setup",
+    desc: "Our platform is configured to match your processes including bookings, room allocation, and staff coordination.",
+    image: sol2,
+    color: "from-indigo-500 to-purple-500",
+  },
+  {
+    title: "Seamless Integration",
+    desc: "We integrate payment systems, third-party tools, and APIs to ensure everything works together effortlessly.",
+    image: sol3,
+    color: "from-emerald-500 to-teal-500",
+  },
+  {
+    title: "Launch & Optimize",
+    desc: "Go live with confidence and continuously improve performance using real-time analytics and insights.",
+    image: sol4,
+    color: "from-green-500 to-lime-500",
+  },
+];
+
+const TimelineSection = () => {
+  const lineRef = useRef(null);
+  const itemsRef = useRef([]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = lineRef.current;
+      if (!section) return;
+
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      const progress = Math.min(
+        1,
+        Math.max(0, (windowHeight - rect.top) / rect.height),
+      );
+
+      section.style.setProperty("--fill", `${progress * 100}%`);
+
+      itemsRef.current.forEach((el, i) => {
+        if (!el) return;
+        const top = el.getBoundingClientRect().top;
+
+        if (top < windowHeight - 100) {
+          setTimeout(() => {
+            el.classList.add("opacity-100", "translate-y-0");
+          }, i * 150); // stagger effect
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <section className="w-full bg-gradient-to-br from-cyan-50 via-white to-emerald-50 py-20 md:py-24">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Heading */}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-cyan-600 via-teal-500 to-emerald-500 bg-clip-text text-transparent">
+            Our Solution Process
+          </h2>
+
+          <p className="text-gray-600 max-w-xl mx-auto">
+            Designed for speed, clarity, and seamless execution across every
+            stage of your hotel operations
+          </p>
+
+          {/* subtle accent line */}
+          <div className="mt-4 flex justify-center">
+            <div className="w-16 h-1 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-full opacity-70"></div>
+          </div>
+        </div>
+
+        <div ref={lineRef} className="relative">
+          {/* LINE BASE */}
+          <div className="absolute left-1/2 top-0 w-[3px] h-full bg-gray-200 -translate-x-1/2"></div>
+
+          {/* LINE FILL */}
+          <div
+            className="absolute left-1/2 top-0 w-[3px] bg-gradient-to-b from-cyan-500 to-emerald-500 -translate-x-1/2 transition-all duration-300"
+            style={{ height: "var(--fill)" }}
+          />
+
+          <div className="space-y-12">
+            {timeline.map((item, index) => {
+              const isLeft = index % 2 === 0;
+
+              return (
+                <div
+                  key={index}
+                  ref={(el) => (itemsRef.current[index] = el)}
+                  className="grid md:grid-cols-2 gap-8 items-center opacity-0 translate-y-10 transition-all duration-700 relative"
+                >
+                  {/* CONTENT */}
+                  <div className={isLeft ? "" : "md:order-2"}>
+                    <div
+                      onMouseMove={(e) => {
+                        const rect = e.currentTarget.getBoundingClientRect();
+                        const x = e.clientX - rect.left;
+                        const y = e.clientY - rect.top;
+                        e.currentTarget.style.setProperty("--x", `${x}px`);
+                        e.currentTarget.style.setProperty("--y", `${y}px`);
+                      }}
+                      className={`relative p-5 rounded-xl text-white overflow-hidden shadow-md hover:shadow-xl transition bg-gradient-to-br ${item.color}`}
+                    >
+                      {/* CURSOR GLOW */}
+                      <div
+                        className="absolute inset-0 opacity-0 hover:opacity-100 transition"
+                        style={{
+                          background:
+                            "radial-gradient(250px circle at var(--x) var(--y), rgba(255,255,255,0.25), transparent 40%)",
+                        }}
+                      />
+
+                      {/* STEP NUMBER */}
+                      <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-white text-gray-900 text-sm font-bold flex items-center justify-center shadow-lg">
+                        {index + 1}
+                      </div>
+
+                      <h3 className="text-lg font-semibold mb-2 relative z-10">
+                        {item.title}
+                      </h3>
+
+                      <p className="text-sm text-white/90 leading-relaxed relative z-10">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* IMAGE */}
+                  <div className={isLeft ? "" : "md:order-1"}>
+                    <div className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+                      <img
+                        src={item.image}
+                        alt=""
+                        className="w-full h-[180px] object-fit transition-transform duration-500 hover:scale-105"
+                      />
+                    </div>
+                  </div>
+
+                  {/* DOT */}
+                  <div className="absolute left-1/2 -translate-x-1/2">
+                    <div className="w-4 h-4 rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 shadow-lg shadow-cyan-300/50"></div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TimelineSection;
