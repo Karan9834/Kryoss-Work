@@ -80,52 +80,7 @@ const RealEstateWorks = () => {
         { value: '450', label: 'Satisfied Clients', icon: <CheckCircle className="text-orange-500" /> }
     ];
 
-    const customTestimonials = [
-        {
-            text: "kryoss Softech proved to be a professional service provider from the outset. We appreciate their proactive approach and ability to suggest improvements to a prospective solution on both architectural and business levels. We know we can always rely on Kryoss Softech various competencies when our clients require quality software which would facilitate their business success.",
-            name: "Rikki Farr",
-            role: "Chairman at Audio Design Experts"
-        },
-        {
-            text: "Kryoss has delivered all our project needs well within deadlines. They works as your in-house team, we highly recommend them.",
-            name: "Bill Dinklemann",
-            role: "Van Andel Education Institute"
-        },
-        {
-            text: "Atomic Object exhibited similar traits as our company. They were about the same size and had a wealth of experience based on past projects. We liked their leadership team and loved their presentation. … They took the time to understand who we were.",
-            name: "CEO",
-            role: "Drug Testing Administrator"
-        },
-        {
-            text: "We love working with Kryoss, the company has been very transparent throughout the entire development process.",
-            name: "Sam Powell",
-            role: "Sam Co"
-        }
-    ];
 
-    const offices = [
-        {
-            country: "India",
-            city: "Gurgaon",
-            address: "1102, 11th Floor, JMD Megapolis, Sec-48, Gurgaon-122018, Haryana, India",
-            phone: "+0124-4001495",
-            email: "Info@kryosssoftech.org"
-        },
-        {
-            country: "USA",
-            city: "Gurgaon",
-            address: "348-352, Spaze IT Park , Sec-48, Gurgaon-122018, Haryana , India",
-            phone: "+0124-4001298",
-            email: "Info@kryosssoftech.org"
-        },
-        {
-            country: "India",
-            city: "Pune",
-            address: "C-601, Pune IT Park, 34 Aundh Road, Bhau Patil Marg, Pune – 411020 Maharashtra, India.",
-            phone: "+91-020-411208",
-            email: "info@kryosssoftech.org"
-        }
-    ];
 
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
@@ -271,27 +226,7 @@ const RealEstateWorks = () => {
                 </div>
             </section>
 
-            {/* 5. Custom Testimonials Section */}
-            <section className="py-24 bg-gray-50 flex flex-col items-center">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-black text-gray-950 mb-4">Client <span className="text-orange-500">Testimonials</span></h2>
-                        <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
-                    </div>
-                    <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                        {customTestimonials.map((t, idx) => (
-                            <div key={idx} className="bg-white p-8 rounded-[32px] shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 group">
-                                <MessageSquare className="w-8 h-8 text-orange-500/20 mb-6 group-hover:scale-110 transition-transform" />
-                                <p className="text-gray-600 italic mb-8 leading-relaxed">"{t.text}"</p>
-                                <div className="mt-auto">
-                                    <h4 className="text-xl font-bold text-gray-950">{t.name}</h4>
-                                    <p className="text-orange-500 font-medium text-sm">{t.role}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <Testimonials />
 
             {/* 6. Clients Section */}
             <section className="py-20 bg-white">
@@ -307,74 +242,7 @@ const RealEstateWorks = () => {
                 </div>
             </section>
 
-            {/* 7. Contact Section */}
-            <section className="py-24 bg-gray-50">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-black text-gray-950 mb-4">Contact <span className="text-orange-500">Us</span></h2>
-                        <p className="text-gray-600">We guarantee to get back to you within a business day.</p>
-                        <div className="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
-                    </div>
-                    <div className="grid lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
-                        <div className="bg-white p-10 rounded-[40px] shadow-xl shadow-gray-200/50">
-                            <h3 className="text-2xl font-bold mb-8">Lets Discuss Your Requirement !</h3>
-                            <div className="space-y-6">
-                                <div className="grid md:grid-cols-2 gap-6">
-                                    <input type="text" placeholder="Name*" className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-orange-500 transition-all font-medium" />
-                                    <input type="email" placeholder="E-mail*" className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-orange-500 transition-all font-medium" />
-                                </div>
-                                <div className="grid md:grid-cols-2 gap-6">
-                                    <input type="text" placeholder="Phone No" className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-orange-500 transition-all font-medium" />
-                                    <input type="text" placeholder="Subject*" className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-orange-500 transition-all font-medium" />
-                                </div>
-                                <textarea placeholder="Your Message*" rows={4} className="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-orange-500 transition-all font-medium"></textarea>
-                                <div className="flex items-center gap-4 bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                                    <span className="font-bold text-gray-700">Antispam question: 7 + 5 = ?</span>
-                                    <input type="text" className="w-20 px-4 py-2 rounded-xl bg-white border border-gray-200 focus:ring-2 focus:ring-orange-500" />
-                                </div>
-                                <button className="w-full bg-gray-950 text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-orange-600 hover:shadow-2xl hover:shadow-orange-200 transition-all duration-300 shadow-xl shadow-gray-200">
-                                    Send Message
-                                </button>
-                                <p className="text-xs text-gray-400 text-center italic">Note: We Respect Your Privacy! Your details will never be shared with anyone for marketing purposes.</p>
-                            </div>
-                        </div>
-                        <div className="flex flex-col justify-center">
-                            <div className="mb-12">
-                                <h3 className="text-3xl font-black mb-6">Got a project in mind?</h3>
-                                <p className="text-lg text-gray-600 mb-8 leading-relaxed">We would love to hear how we can bring your possibilities to reality through technology and give away 2hrs of free consulting. So call us now..</p>
-                                <div className="flex items-center gap-4 p-6 bg-white rounded-3xl shadow-sm border border-gray-100 group hover:border-orange-500 transition-colors">
-                                    <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 group-hover:bg-orange-500 group-hover:text-white transition-all">
-                                        <Mail className="w-8 h-8" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">Reach Us</p>
-                                        <p className="text-xl font-black">Info@kryosssoftech.org</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid md:grid-cols-2 gap-6">
-                                {offices.map((office, idx) => (
-                                    <div key={idx} className="p-8 bg-white rounded-3xl border border-gray-50 shadow-sm hover:shadow-md transition-all">
-                                        <div className="flex items-center gap-2 mb-4">
-                                            <span className="w-2 h-2 rounded-full bg-orange-500"></span>
-                                            <h4 className="text-sm font-black uppercase tracking-widest text-gray-400">{office.country} ({office.city})</h4>
-                                        </div>
-                                        <p className="text-gray-600 text-sm mb-6 leading-relaxed">{office.address}</p>
-                                        <div className="space-y-2">
-                                            <div className="flex items-center gap-2 text-sm font-bold text-gray-950">
-                                                <Phone className="w-4 h-4 text-orange-500" /> {office.phone}
-                                            </div>
-                                            <div className="flex items-center gap-2 text-sm font-bold text-gray-950">
-                                                <Mail className="w-4 h-4 text-orange-500" /> {office.email}
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Contact />
         </div>
     );
 };
