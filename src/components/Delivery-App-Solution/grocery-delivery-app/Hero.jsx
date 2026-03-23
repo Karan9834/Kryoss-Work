@@ -71,13 +71,20 @@ const Hero = () => {
             </ul>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              <button className="bg-[#10B981] hover:bg-[#059669] text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-2 shadow-xl shadow-emerald-500/20">
-                Get a Free Quote
-                <ArrowRight size={20} />
-              </button>
-              <button className="bg-white border-2 border-emerald-100 text-emerald-700 px-8 py-4 rounded-xl font-bold transition-all hover:bg-emerald-50">
+              <a
+                href="https://preview.codecanyon.net/item/dtbasket-instant-grocery-daily-essentials-delivery-flutter-app-with-admin-panel-android-ios/full_screen_preview/61247814"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+
+                <button className="bg-[#10B981] hover:bg-[#059669] text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-2 shadow-xl shadow-emerald-500/20">
+                  Live Demo
+                  <ArrowRight size={20} />
+                </button>
+              </a>
+              {/* <button className="bg-white border-2 border-emerald-100 text-emerald-700 px-8 py-4 rounded-xl font-bold transition-all hover:bg-emerald-50">
                 View Live Demo
-              </button>
+              </button> */}
             </div>
           </div>
 

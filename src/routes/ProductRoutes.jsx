@@ -30,6 +30,8 @@ import LaundryService from "../pages/products/Ondemand-homeservice/LaundryServic
 import SnowRemoval from '../pages/products/Ondemand-homeservice/SnowRemoval';
 import SalonLanding from "../pages/products/Salon-Beauty-Landing/SalonLanding";
 import EducationLanding from "../pages/products/Education-Landing/EducationLanding";
+import GroceryLanding from "../pages/products/Grocery-Landing/GroceryLanding";
+import OTTLanding from "../pages/products/OTT-Landing/OTTLanding";
 
 
 import DatingApp from "../pages/products/Emerging-Social App/DatingApp";
@@ -43,6 +45,7 @@ import DoctorHealthPage from "../pages/products/Doctor-Health-App/DoctorHealthPa
 import Ecommerce from "../pages/products/ECommerce-App/Ecommerce";
 import FoodDeliveryPage from "../pages/products/Food-Delivery-App/FoodDeliveryPage";
 import HotelManagement from "../pages/products/Hotel-Management/HotelManagement";
+import StreamingBackendPage from "../pages/products/Streaming-Backend/StreamingBackendPage";
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -70,6 +73,8 @@ export const ProductRoutes = [
     <Route key="salon-beauty" path="products/home-service/salon" element={<SalonBeauty />} />,
     <Route key="salon-landing" path="products/our/salon-beauty" element={<SalonLanding />} />,
     <Route key="education-landing" path="products/our/education" element={<EducationLanding />} />,
+    <Route key="grocery-landing" path="products/our/grocery-delivery" element={<GroceryLanding />} />,
+    <Route key="ott-landing" path="products/our/ott-streaming" element={<OTTLanding />} />,
 
     <Route key="massage-therapy" path="products/home-service/massage" element={<MassageTherapy />} />,
     <Route key="tow-truck" path="products/home-service/tow-truck" element={<TowTruck />} />,
@@ -84,7 +89,8 @@ export const ProductRoutes = [
     <Route key="lms" path="products/enterprise/lms" element={<LmsPage />} />,
     <Route key="Hrm" path="/products/enterprise/hrm" element={<HRM />} />,
     <Route Key="Crm" path="/products/enterprise/crm" element={<CRM />} />,
-    <Route key="Ecommerce" path="/products/our/ecommerce" element={<Ecommerce/>} />,
-    <Route key="Food-delivery-app" path="/products/our/food-delivery" element={<FoodDeliveryPage/>}/>,
-    <Route key="Hotel-Management" path="/products/our/hotel-booking" element={<HotelManagement/>}/>,
+    <Route key="Ecommerce" path="/products/our/ecommerce" element={<Ecommerce />} />,
+    <Route key="Food-delivery-app" path="/products/our/food-delivery" element={<FoodDeliveryPage />} />,
+    <Route key="Hotel-Management" path="/products/our/hotel-booking" element={<HotelManagement />} />,
+    <Route key="streaming-solution" path="products/our/streaming-solution" element={<StreamingBackendPage />} />,
 ];

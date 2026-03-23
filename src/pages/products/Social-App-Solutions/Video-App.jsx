@@ -358,7 +358,7 @@ const TikTokClonePage = () => {
             </p>
 
             <a
-              href="https://preview.codecanyon.net/item/smmlab-social-media-marketing-smm-platform/full_screen_preview/32673932"
+              href="https://preview.codecanyon.net/item/streamit-ott-streaming-flutter-app-addon/full_screen_preview/56035814"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-pink-500 hover:bg-pink-600 text-white px-7 py-3 rounded-full font-semibold transition duration-300 inline-block w-fit"
@@ -713,18 +713,16 @@ const TikTokClonePage = () => {
           {monetization.map((item, index) => (
             <div
               key={index}
-              className={`rounded-2xl p-10 border hover:shadow-xl transition ${
-                item.dark
+              className={`rounded-2xl p-10 border hover:shadow-xl transition ${item.dark
                   ? "bg-white/5 border-white/20"
                   : "bg-white text-gray-800 border-pink-400"
-              }`}
+                }`}
             >
               <div
-                className={`w-14 h-14 flex items-center justify-center rounded-full mb-6 ${
-                  item.dark
+                className={`w-14 h-14 flex items-center justify-center rounded-full mb-6 ${item.dark
                     ? "bg-white/10 text-pink-400"
                     : "bg-pink-500 text-white"
-                }`}
+                  }`}
               >
                 {item.icon}
               </div>

@@ -93,7 +93,7 @@ const AppRoutes = () => {
                 <Route path="/products/telemedicine-app" element={<TelemedicineAppPage />} />
                 <Route path="/products/pharmacy-delivery" element={<PharmacyDeliveryPage />} />
                 <Route path="/products/elearning-platform" element={<ELearningPage />} />
-                <Route path='/products/tutor-booking' element={<TutorBookingPage />}></Route>
+                <Route path='/products/tutor-booking' element={<TutorBookingPage />} />
                 <Route path="/products/grocery-delivery" element={<GroceryDeliveryPage />} />
                 <Route path="/products/sales-crm" element={<SalesCRMPage />} />
                 <Route path="/works/ui-ux" element={<UiUxWorks />} />
