@@ -37,7 +37,8 @@ import GroceryDeliveryPage from '../pages/products/Grocery-Delivery/GroceryDeliv
 import SalesCRMPage from "../pages/products/Sales-CRM/SalesCRMPage";
 import WebsitesWorks from '../pages/Works/OurWorks/WebsitesWorks';
 import UiUxWorks from "../pages/Works/OurWorks/UiUxWorks";
-
+import HotelBooking from '../pages/products/Hotel-Booking/HotelBooking';
+import HotelManagement from '../pages/products/Hotel-Management-System/HotelManagement';
 const AppRoutes = () => {
     return (
         <Routes>
@@ -86,7 +87,12 @@ const AppRoutes = () => {
                 <Route path="/products/sales-crm" element={<SalesCRMPage />} />
                 <Route path="/works/ui-ux" element={<UiUxWorks />} />
                 <Route path="/works/websites" element={<WebsitesWorks />} />
-                <Route path="*" element={<NotFound />} />
+                <Route path='/product/1' element = {<HotelBooking/>}/>
+                <Route path='/product/2' element = {<HotelManagement/>}/>
+                <Route path="*" element={<NotFound />} />,
+
+
+
             </Route>
         </Routes>
     );
