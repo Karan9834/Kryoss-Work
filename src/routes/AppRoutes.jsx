@@ -39,6 +39,10 @@ import WebsitesWorks from '../pages/Works/OurWorks/WebsitesWorks';
 import UiUxWorks from "../pages/Works/OurWorks/UiUxWorks";
 import RealEstateWorks from "../pages/Works/RealEstateWorks";
 import SaasWorks from "../pages/Works/SaasWorks";
+import HotelBooking from '../pages/products/Hotel-Booking/HotelBooking';
+import HotelManagement from '../pages/products/Hotel-Management-System/HotelManagement';
+import SocialMedia from "../pages/Works/OurWorks/SocialMedia";
+import GraphicBranding from "../pages/Works/OurWorks/GraphicBranding";
 
 const AppRoutes = () => {
     return (
@@ -49,6 +53,12 @@ const AppRoutes = () => {
                 {ProductRoutes}
                 {CompanyRoutes}
                 {ServiceRoutes}
+                <Route path="/works/real-estate" element={<RealEstateWorks />} />
+                <Route path="/works/saas" element={<SaasWorks />} />
+                <Route path="/works/social-media" element={<SocialMedia />} />
+                <Route path="/works/branding" element={<GraphicBranding />} />
+                <Route path="/product/1" element={<HotelBooking />} />
+                <Route path="/product/2" element={<HotelManagement />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/services" element={<ServicesPage />} />
@@ -88,8 +98,6 @@ const AppRoutes = () => {
                 <Route path="/products/sales-crm" element={<SalesCRMPage />} />
                 <Route path="/works/ui-ux" element={<UiUxWorks />} />
                 <Route path="/works/websites" element={<WebsitesWorks />} />
-                <Route path="/works/real-estate" element={<RealEstateWorks />} />
-                <Route path="/works/saas" element={<SaasWorks />} />
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>

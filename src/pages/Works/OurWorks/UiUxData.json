@@ -40,11 +40,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.vidyakul",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://vidyakul.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -56,12 +58,14 @@
         "description": "To keep the learning going, ClassKlap bring the school and teachers to Student place through, ClassKlap Learning App. Students can join LIVE classes from the comfort of their home through this app. With the ClassKlap Learning App, parents can stay involved with their child's scholastic progress. The app enables schools to streamline all communication with parents. The schools can reach out to parents with home-work, planned activities, captured classroom moments, daily time tables......More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.classklap.learning",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "href": "https://play.google.com/store/apps/details?id=com.vja.classclap",
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://www.classklap.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "href": "https://classclap.vn/en/",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -73,12 +77,14 @@
         "description": "Study24x7 is a FREE app for individuals to learn from 50+ interests! Now interact, collaborate and learn from both your teachers and peers on the same platform.Study24x7 offers a unique and simple way of learning. Sign in on the app, choose your interest and voila! With the latest updates on your feed related to the interest selected, you get to learn from over 1000+ educators on our platform...........More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.stdy24x7 ",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "href": "https://play.google.com/store/apps/details?id=com.stdy24x7",
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.study24x7.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -90,12 +96,14 @@
         "description": "Smartkeeda is Free and most updated Question Bank for almost all the major competitive exams - IBPS PO Pre and Mains, SBI PO Pre and Mains, IBPS SO, SBI SO, IBPS RRB Office Assistant Pre and Mains, IBPS RRB Officer Scale 1 Pre and Mains, SSC CGL Tier 1 and Tier 2, SSC CHSL, SSC MTS, UPSC CDSE, CTET, CLAT, MAT, NIFT, Railways, etc. .......More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=smk.smartkeeda ",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "href": "https://play.google.com/store/apps/details?id=smk.smartkeeda",
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.smartkeeda.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -107,12 +115,14 @@
         "description": "Hispanic Tutellus is the world's largest online education platform. More than 3 million users, more than 600 thousand active students in 160 countries by over 70,000 Video course, allows us to offer any type of online course, Carrera or Title University. ............More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.tutellus.mobile",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "href": "https://play.google.com/store/games?hl=en_IN",
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://www.tutellus.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "href": "https://tutellus.com/",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -124,12 +134,14 @@
         "description": "Study Niti is an Online Education Portal for Exam Preparations. we are providing Online test series for banking and Insurance Exam Sector. We also provide Study materials Like PFDs and Notes, PDF Courses, Cracker Quizzes ......More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=apps.studyniti.com",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "href": "https://play.google.com/store/apps/details?id=com.learningnitiapp.android",
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.studyniti.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       }
@@ -144,11 +156,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=cc.pacer.androidapp",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.mypacer.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -161,11 +175,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.myupchar.user",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.myupchar.com/en",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -177,12 +193,14 @@
         "description": "Truemeds is India's 1st e-Pharmacy that guarantees to reduce your medicine costs up to 72%. We only supply medicines from India's top 50 medicine makers, to guarantee our users the best quality. All of our orders go through the most rigid checks to ensure that the correct medicines are supplied to our users. Our proprietary Triple Check (TC) flow makes sure every order is checked by a Doctor, Pharmacist & our proprietary AI-based Algorithm......More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.intellihealth.truemedsp",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "href": "https://play.google.com/store/search?q=truemeds&c=apps",
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.truemeds.in/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -195,11 +213,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.fitifyworkouts.bodyweight.workoutapp",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://gofitify.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -212,11 +232,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=org.narayanahealth.nhcare",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.narayanahealth.org/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -228,12 +250,14 @@
         "description": "Amwell is the best way to see a doctor from home or on-the-go. Our telehealth app connects you to board-certified, experienced medical providers. High-quality healthcare is now available, 24/7, with on-demand service or scheduled appointments, often with next-day availability.Amwell brings healthcare home through the power of telemedicine so you can feel better faster.No more driving to the doctor or sitting in waiting rooms. With Amwell, quality medical providers are available 24/7, to help you feel better faster. .....More Details",
         "links": [
           {
-            "href": "ttps://play.google.com/store/apps/details?id=com.americanwell.android.member.amwell&hl=en",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "href": "https://play.google.com/store/games?hl=en_IN",
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://business.amwell.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       }
@@ -247,12 +271,14 @@
         "description": "Adorawe fashion online shopping mall is stylish destination,this fashion app designed for Saudi Arabia, United Arab Emirates, Kuwait, Oman, Bahrain & Qatar shopper Adorawe is an vogue closet for women, 500+ daily new casual two pieces, evening dress,nice bags in affordable price. .....More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.starlinke",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "href": "https://play.google.com/store/apps/details?id=com.ador.android",
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://www.starlinke.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "href": "https://www.ador.com/",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -264,12 +290,14 @@
         "description": "Meet Cartlow - is online shopping destination for buying Pre-owned, Open-box and Clearance products at the lowest price in UAE.Cartlow is a re-commerce initiative built on the bases of helping retailers discard less to save the environment while passing on benefits of savings to the customers.  More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.cartlow.android ",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "href": "https://play.google.com/store/apps/details?id=com.cartlow.android",
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.cartlow.com/help/about-us",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -282,11 +310,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=www.jazp.com.jazp",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://uae.jazp.com/ae-en/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -299,11 +329,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.geekbuy.geekbuying",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.geekbuying.com/help/student_discount",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -316,11 +348,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=de.appetites.chinagadgets",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.china-gadgets.de/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -333,11 +367,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=io.flatcircle.runwaysaleandroid",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://www.runwaysale.co.za/main/customer/account/login/?_nosid=1",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "href": "https://myrunway.co.za/main/customer/account/login",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -350,11 +386,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.farfetch.farfetchshop",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://www.farfetch.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "href": "https://www.farfetch.com/in/",
+            "text": "Website",
+            "active": true
           }
         ]
       }
@@ -369,11 +407,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.watcho",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.watcho.com/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -385,12 +425,14 @@
         "description": "Rabbit Movies is a Video on Demand Platform that allows cutomers to watch a wide variety of Web Series, Movies and EXCLUSIVE Rabbit Original Content in regional and international language. You will find every genre in it Like Drama, Horror, Suspense, Thriller and Comedy in indian regional langiages including Hindi,Tamil, Telugu etc....More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.rabbit.android.release",
-            "img": "assets/images/icons/playstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.rabbit.mart",
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://rabbitmovies.app/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -403,11 +445,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.innovate.SingaporeSocial",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://singapore.innovatedating.com/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -420,11 +464,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.innovate.HongKongSocial",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://hongkong.innovatedating.com/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -437,11 +483,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.innovate.IndonesiaSocial",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://indo.innovatedating.com/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -453,8 +501,14 @@
         "description": "Hobi is a simple, lightweight TV tracker with lots of goodies for all series lovers. \nMake the most out of your TV time with Hobi. Hobi will notify you when a new season premieres or when a new episode airs. Track your seen episodes with our special episode tracker. Use Hobi whenever you need a TV guide....More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.hobi.android",
-            "img": "assets/images/icons/playstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.hobi",
+            "text": "Play Store",
+            "active": true
+          },
+          {
+            "href": "https://hobi.com",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -467,11 +521,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.heremedia.heretv",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.heremedia.com/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -484,11 +540,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.epic.docubay",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.docubay.com/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -501,11 +559,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.hilal.play",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://hilalplay.com/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -517,12 +577,14 @@
         "description": "A unique rewarding system, special video effects and cool filters are all about Kindda. Join NOW! Enjoy all the viral & trending anytime anywhere! Take your videos to the next LEVEL with the best video effects and filters that you can only find on Kindda. Go VIRAL now! Make trending videos with the brand-new video editing tools and become a Kindda Star......More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=app.kindda.android",
-            "img": "assets/images/icons/playstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.kindredsoul.kindredapp",
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://kindda.app/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -534,12 +596,14 @@
         "description": "Vidol - Watch this season of your favorite SET shows and the hottest and newest SET dramas. Get into SET Original spirit, and stream the shows you love through either our general member plan or our Vidol premium plan.Stream and enjoy the viewing experience from your phone and other devices anytime, anywhere.",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.set.settv.vidol",
-            "img": "assets/images/icons/playstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.inkriver.vidle",
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://vidol.tv/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       }
@@ -553,8 +617,14 @@
         "description": "BAZAR is a convenience store in your smartphone. You no longer need to go to the store for every little thing. In the Bazaar, prices and selection are like in a convenience store. I wanted cheesecakes in the morning and there is not enough milk or dinner time, and in the \"rolling stone\" refrigerator, even if you just wanted a chocolate bar, we will deliver products in 15-25 minutes for free....More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.bazarstore",
-            "img": "assets/images/icons/playstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.smartbazarin.website",
+            "text": "Play Store",
+            "active": true
+          },
+          {
+            "href": "https://reliancesmartbazaar.com/",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -567,7 +637,8 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=kiryana.store.kiryanastore",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           }
         ]
       },
@@ -580,11 +651,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.mm.kifayatbazaar",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://www.kifayatonline.com/",
-            "img": "assets/images/icons/appstore.png"
+            "href": "https://apps.apple.com/in/app/kifayat-online/id1436810493",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -597,11 +670,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.ricomputech.avemartapp",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://www.avemart.in/",
-            "img": "assets/images/icons/appstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.ricomputech.avemartapp",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -614,11 +689,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.untappdllc.app",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://untappd.com/",
-            "img": "assets/images/icons/appstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.untappdllc.app",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -631,11 +708,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=io.eatiko.main",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://eatiko.com/",
-            "img": "assets/images/icons/appstore.png"
+            "href": "https://play.google.com/store/apps/details?id=io.eatiko.main",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -647,12 +726,14 @@
         "description": "Heritage TUCH is an online milk and dairy products delivery app in Hyderabad offering natural, farm-fresh milk and dairy products right at your doorstep every morning. It's a one-stop solution for fulfilling all your dairy product needs. We have recently added range of flavoured milk, ice-creams, milkshakes, fresh cream and cheese to add in to your summer delight.....More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.heritagetuch.consumer",
-            "img": "assets/images/icons/playstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.heritage.agent",
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://www.heritagefoods.in/",
-            "img": "assets/images/icons/appstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.heritage.agent",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -664,12 +745,14 @@
         "description": "Daily Moo is a daily subscription service app for your Milk & Breakfast needs,delivered to your doorstep every morning.",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.dailymoo",
-            "img": "assets/images/icons/playstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.heritage.agent",
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://dailymoo.in/",
-            "img": "assets/images/icons/appstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.heritage.agent",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -682,11 +765,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.urbanpiper.meatigo",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://meatigo.com/",
-            "img": "assets/images/icons/appstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.urbanpiper.meatigo",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -698,12 +783,14 @@
         "description": "Searching for the best buys in vegetables, fruits, dairy, and groceries like grains, snacks, beverages, chocolates, ready mixes, masalas, pickles, and sauces?",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=in.superfoodscompany",
-            "img": "assets/images/icons/playstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.mobeasyapp.app591815334080",
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://www.superfoodscompany.in/",
-            "img": "assets/images/icons/appstore.png"
+            "href": "https://play.google.com/store/apps/details?id=com.mobeasyapp.app591815334080",
+            "text": "Website",
+            "active": true
           }
         ]
       }
@@ -717,8 +804,14 @@
         "description": "Hotels that make you feel good | Online Hotel Booking App | Hotel packages | 249 hotels in 14 cities.With Keyrooms hotels, book safe and sanitized rooms at the best hotels in Delhi NCR and other cities with the best booking website and the best hotel booking app. Find the chain of amazing budget hotels and guest house in 14 different cities across India at affordable prices........More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.keyroom",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "href": "https://keyrooms.org/",
+            "text": "Play Store",
+            "active": true
+          },
+          {
+            "href": "https://keyrooms.org/",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -731,11 +824,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.brevistay.customer",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://www.brevistay.com/ ",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "href": "https://www.brevistay.com/",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -748,11 +843,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.samayarooms.user",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://samayarooms.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -765,7 +862,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.tbolite.app",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
+          },
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.tbolite.app",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -778,11 +881,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.riyaconnect.android",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.riya.travel/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -794,12 +899,14 @@
         "description": "Flyin.com application provides customers with the best deals in flights and hotels, easy and secure bookings along with a variety of 450 airlines including low cost carriers and 600,000 Hotels, Resorts, Villas, Apartments & More.........More Details",
         "links": [
           {
-            "href": "https://play.google.com/store/apps/details?id=com.flyin.bookings",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "href": "https://play.google.com/store/apps/details?id=com.tbolite.app",
+            "text": "Play Store",
+            "active": true
           },
           {
-            "href": "https://www.flyin.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "href": "https://play.google.com/store/apps/details?id=com.tbolite.app",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -812,11 +919,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.tajawal",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.tajawal.com/en",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -829,11 +938,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.app.rehlat",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.rehlat.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -846,11 +957,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.grofsoft.tripview",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://tripview.com.au/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -863,11 +976,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.mttnow.android.bcd.production",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://tripsource.com/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -880,11 +995,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=dk.travelmarket.charte",
-            "img": "icons/Health-&-Fitness/google app store.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.travelmarket.dk/",
-            "img": "icons/Health-&-Fitness/Ios app store.png"
+            "text": "Website",
+            "active": true
           }
         ]
       }
@@ -899,11 +1016,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.oyebusy.oyebusy_customer",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://oyebusy.com/delhi-ncr",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -916,11 +1035,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.encureit.laundryheap",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.laundryheap.com/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -933,11 +1054,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.task24.android.apps.employer.hire.freelancer",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.24task.com/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -950,11 +1073,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.mrmilkman.akshayakalpa",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://food.forte.kz/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -967,11 +1092,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.ourflat.app",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://ourflat-app.com/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -984,11 +1111,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=in.shoopy.business",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
           },
           {
             "href": "https://www.shoopy.in/",
-            "img": "assets/images/icons/appstore.png"
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -1001,7 +1130,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=com.vegease",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
+          },
+          {
+            "href": "https://vegease.in/?srsltid=AfmBOoohM45rXOTMN9F8McI26Sou4H5fexckP4FK3T1WItnotnr6Q3j1",
+            "text": "Website",
+            "active": true
           }
         ]
       },
@@ -1014,7 +1149,13 @@
         "links": [
           {
             "href": "https://play.google.com/store/apps/details?id=idphoto.passport.portrait",
-            "img": "assets/images/icons/playstore.png"
+            "text": "Play Store",
+            "active": true
+          },
+          {
+            "href": "https://www.idphotodiy.com/",
+            "text": "Website",
+            "active": true
           }
         ]
       }

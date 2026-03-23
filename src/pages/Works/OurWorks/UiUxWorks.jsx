@@ -125,22 +125,20 @@ const UiUxWorks = () => {
 
                                                 {item.links && item.links.length > 0 && (
                                                     <div className="flex flex-wrap gap-4 items-center">
-                                                        {item.links.map((link, idx) => (
-                                                            <a
-                                                                key={idx}
-                                                                href={link.href}
-                                                                target="_blank"
-                                                                rel="noopener noreferrer"
-                                                                className="hover:-translate-y-1 hover:brightness-110 transition-all duration-300"
-                                                            >
-                                                                <img
-                                                                    src={link.img.startsWith('http') ? link.img : `https://kryosssoftech.org/${link.img.replace('assets/images/', '')}`}
-                                                                    alt="Store Link"
-                                                                    className="h-10 md:h-12 object-contain"
-                                                                    onError={(e) => { e.target.style.display = 'none' }}
-                                                                />
-                                                            </a>
-                                                        ))}
+                                                        {item.links.map((link, idx) => {
+                                                            if (!link.href || link.href === '#') return null;
+                                                            return (
+                                                                <a
+                                                                    key={idx}
+                                                                    href={link.href}
+                                                                    target="_blank"
+                                                                    rel="noopener noreferrer"
+                                                                    className="hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold rounded-lg bg-orange-500 hover:bg-orange-600 text-white shadow-md hover:shadow-lg border border-orange-600"
+                                                                >
+                                                                    {link.text || (link.href.includes('play.google') ? 'Play Store' : 'Website')}
+                                                                </a>
+                                                            )
+                                                        })}
                                                     </div>
                                                 )}
                                             </div>
