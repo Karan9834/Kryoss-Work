@@ -43,12 +43,9 @@ import HRM from "../pages/products/Enterprise/HRM";
 import CRM from "../pages/products/Enterprise/CRM";
 import DoctorHealthPage from "../pages/products/Doctor-Health-App/DoctorHealthPage";
 import Ecommerce from "../pages/products/ECommerce-App/Ecommerce";
-<<<<<<< Updated upstream
 import FoodDeliveryPage from "../pages/products/Food-Delivery-App/FoodDeliveryPage";
 import HotelManagement from "../pages/products/Hotel-Management/HotelManagement";
-=======
 import StreamingBackendPage from "../pages/products/Streaming-Backend/StreamingBackendPage";
->>>>>>> Stashed changes
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -92,11 +89,8 @@ export const ProductRoutes = [
     <Route key="lms" path="products/enterprise/lms" element={<LmsPage />} />,
     <Route key="Hrm" path="/products/enterprise/hrm" element={<HRM />} />,
     <Route Key="Crm" path="/products/enterprise/crm" element={<CRM />} />,
-    <Route key="Ecommerce" path="/products/our/ecommerce" element={<Ecommerce/>} />,
-<<<<<<< Updated upstream
-    <Route key="Food-delivery-app" path="/products/our/food-delivery" element={<FoodDeliveryPage/>}/>,
-    <Route key="Hotel-Management" path="/products/our/hotel-booking" element={<HotelManagement/>}/>,
-=======
+    <Route key="Ecommerce" path="/products/our/ecommerce" element={<Ecommerce />} />,
+    <Route key="Food-delivery-app" path="/products/our/food-delivery" element={<FoodDeliveryPage />} />,
+    <Route key="Hotel-Management" path="/products/our/hotel-booking" element={<HotelManagement />} />,
     <Route key="streaming-solution" path="products/our/streaming-solution" element={<StreamingBackendPage />} />,
->>>>>>> Stashed changes
 ];

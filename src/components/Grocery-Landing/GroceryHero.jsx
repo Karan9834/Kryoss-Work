@@ -51,7 +51,7 @@ const GroceryHero = () => {
                             <div className="w-px h-10 bg-gray-100"></div>
                             <div>
                                 <p className="text-2xl font-black text-[#1A1C2C]">4.9/5</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">App Rating</p>
+                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">App Ratings</p>
                             </div>
                         </div>
                     </div>
