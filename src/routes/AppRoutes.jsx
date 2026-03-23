@@ -37,14 +37,10 @@ import GroceryDeliveryPage from '../pages/products/Grocery-Delivery/GroceryDeliv
 import SalesCRMPage from "../pages/products/Sales-CRM/SalesCRMPage";
 import WebsitesWorks from '../pages/Works/OurWorks/WebsitesWorks';
 import UiUxWorks from "../pages/Works/OurWorks/UiUxWorks";
-<<<<<<< Updated upstream
 import HotelBooking from '../pages/products/Hotel-Booking/HotelBooking';
 import HotelManagement from '../pages/products/Hotel-Management-System/HotelManagement';
-=======
 import SocialMedia from "../pages/Works/OurWorks/SocialMedia";
 import GraphicBranding from "../pages/Works/OurWorks/GraphicBranding";
-
->>>>>>> Stashed changes
 const AppRoutes = () => {
     return (
         <Routes>
@@ -92,19 +88,12 @@ const AppRoutes = () => {
                 <Route path="/products/grocery-delivery" element={<GroceryDeliveryPage />} />
                 <Route path="/products/sales-crm" element={<SalesCRMPage />} />
                 <Route path="/works/ui-ux" element={<UiUxWorks />} />
-<<<<<<< Updated upstream
                 <Route path="/works/websites" element={<WebsitesWorks />} />
-                <Route path='/product/1' element = {<HotelBooking/>}/>
-                <Route path='/product/2' element = {<HotelManagement/>}/>
-                <Route path="*" element={<NotFound />} />,
-
-
-
-=======
                 <Route path="/works/social-media" element={<SocialMedia />} />
                 <Route path="/works/branding" element={<GraphicBranding />} />
+                <Route path="/product/1" element={<HotelBooking />} />
+                <Route path="/product/2" element={<HotelManagement />} />
                 <Route path="*" element={<NotFound />} />
->>>>>>> Stashed changes
             </Route>
         </Routes>
     );

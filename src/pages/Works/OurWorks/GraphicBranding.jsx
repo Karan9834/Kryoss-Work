@@ -140,8 +140,8 @@ const GraphicBranding = () => {
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
                                 className={`pb-2 text-sm lg:text-[16px] font-bold uppercase transition-all duration-300 tracking-wide relative ${activeTab === tab.id
-                                        ? 'text-orange-500'
-                                        : 'text-gray-500 hover:text-orange-500'
+                                    ? 'text-orange-500'
+                                    : 'text-gray-500 hover:text-orange-500'
                                     }`}
                             >
                                 {tab.name}
