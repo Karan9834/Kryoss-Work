@@ -43,6 +43,7 @@ import HotelBooking from '../pages/products/Hotel-Booking/HotelBooking';
 import HotelManagement from '../pages/products/Hotel-Management-System/HotelManagement';
 import SocialMedia from "../pages/Works/OurWorks/SocialMedia";
 import GraphicBranding from "../pages/Works/OurWorks/GraphicBranding";
+import BusinessWorks from '../pages/Works/BusinessWorks';
 
 const AppRoutes = () => {
     return (
@@ -98,6 +99,7 @@ const AppRoutes = () => {
                 <Route path="/products/sales-crm" element={<SalesCRMPage />} />
                 <Route path="/works/ui-ux" element={<UiUxWorks />} />
                 <Route path="/works/websites" element={<WebsitesWorks />} />
+                <Route path="/works/business" element={<BusinessWorks />} />
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
