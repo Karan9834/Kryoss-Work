@@ -51,10 +51,12 @@ const Hero = () => {
 
           {/* CTA */}
           <a
-            href="#"
+            href="https://preview.codecanyon.net/item/bookingo-course-booking-system-for-wordpress/full_screen_preview/32368828"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-4 bg-[#f5b301] text-black font-semibold px-7 py-3.5 rounded-full text-[16px] transition-all duration-300 hover:scale-105"
           >
-            Let’s Discuss
+            Live Demo
             <span className="w-9 h-9 rounded-full bg-black/10 flex items-center justify-center transition group-hover:translate-x-1">
               →
             </span>

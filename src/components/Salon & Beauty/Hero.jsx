@@ -60,9 +60,22 @@ const Hero = () => {
           </p>
 
           {/* Button */}
-          <button className=" w-fit bg-gradient-to-r from-[#FF2485] to-[#C739FF] px-6 sm:px-8 py-3 rounded-full text-white font-semibold text-base shadow-md hover:scale-105 transition duration-300 mx-auto md:mx-0">
-            Let's Discuss →
-          </button>
+
+          <a
+            href="https://preview.codecanyon.net/item/dtsalon-salon-booking-app-for-android-ios-with-admin-panel-hair-beauty-skin-spa-services/full_screen_preview/57786518"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit flex items-center gap-2 bg-gradient-to-r from-[#FF2485] to-[#C739FF] px-6 sm:px-8 py-3 rounded-full text-white font-semibold text-base shadow-md hover:scale-105 transition duration-300 mx-auto md:mx-0"
+          >
+            Live Demo
+            <span className="rounded-full w-6 h-6 flex items-center justify-center bg-black/10 transition group-hover:translate-x-1">
+              →
+            </span>
+          </a>
+
+          {/* <button className=" w-fit bg-gradient-to-r from-[#FF2485] to-[#C739FF] px-6 sm:px-8 py-3 rounded-full text-white font-semibold text-base shadow-md hover:scale-105 transition duration-300 mx-auto md:mx-0">
+            Live Demo →
+          </button> */}
         </div>
 
         {/* RIGHT IMAGE */}
