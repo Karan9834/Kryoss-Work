@@ -731,18 +731,16 @@ const WebsitesWorks = () => {
                             {worksData[activeCategory]?.map((project, idx) => {
                                 const isEven = idx % 2 === 0;
                                 return (
-                                    <div key={idx} className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-gray-50'}`}>
+                                    <div key={idx} className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-orange-50'}`}>
                                         <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
                                             
                                             {/* Image Box */}
                                             <div className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl">
-                                                <div className="overflow-hidden rounded-[30px] border border-gray-100/50 shadow-2xl relative bg-white p-4 group">
-                                                    <img 
-                                                        src={project.image} 
-                                                        alt={project.title} 
-                                                        className="max-h-[450px] w-full object-contain transform group-hover:scale-105 transition-all duration-700" 
-                                                    />
-                                                </div>
+                                                <img 
+                                                    src={project.image} 
+                                                    alt={project.title} 
+                                                    className="max-h-[450px] w-full object-contain" 
+                                                />
                                             </div>
 
                                             {/* Content Box */}

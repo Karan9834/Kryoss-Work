@@ -164,7 +164,7 @@ const BusinessWorks = () => {
                     {projects.map((project, idx) => {
                         const isEven = idx % 2 === 0;
                         return (
-                            <div key={idx} className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-gray-50/40'}`}>
+                            <div key={idx} className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-orange-50'}`}>
                                 <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
 
                                     {/* Image Box */}

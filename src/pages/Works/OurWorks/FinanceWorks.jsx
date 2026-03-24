@@ -117,7 +117,7 @@ const FinanceWorks = () => {
                             {sectionsData[activeTab]?.map((item, index) => {
                                 const isEven = index % 2 === 0;
                                 return (
-                                    <div key={index} className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-gray-50'}`}>
+                                    <div key={index} className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-orange-50'}`}>
                                         <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
 
                                             {/* Image Box */}
@@ -125,7 +125,7 @@ const FinanceWorks = () => {
                                                 <img
                                                     src={assetMap[item.asset] || (item.img.startsWith('http') ? item.img : `https://kryosssoftech.org/${item.img}`)}
                                                     alt={item.alt || 'Portfolio App'}
-                                                    className="max-h-[500px] max-w-full object-contain transform hover:scale-105 transition-all duration-700 z-10"
+                                                    className="max-h-[500px] max-w-full object-contain"
                                                     loading="lazy"
                                                 />
                                             </div>

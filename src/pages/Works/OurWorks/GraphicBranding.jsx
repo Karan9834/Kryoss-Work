@@ -172,12 +172,12 @@ const GraphicBranding = () => {
                                         initial={{ opacity: 0, scale: 0.9 }}
                                         animate={{ opacity: 1, scale: 1 }}
                                         transition={{ duration: 0.4, delay: index * 0.05 }}
-                                        className="group relative overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(249,115,22,0.2)] transition-shadow duration-300 aspect-[4/3] bg-gray-50 flex items-center justify-center p-4 border border-gray-100"
+                                        className="group relative overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(249,115,22,0.2)] transition-shadow duration-300 aspect-[4/3] bg-orange-50 flex items-center justify-center p-4 border border-gray-100"
                                     >
                                         <img
                                             src={imgSrc}
                                             alt={`${activeTab} creative work ${index + 1}`}
-                                            className="max-h-full max-w-full object-contain transform group-hover:scale-105 transition-transform duration-700"
+                                            className="max-h-full max-w-full object-contain"
                                             loading="lazy"
                                         />
                                         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

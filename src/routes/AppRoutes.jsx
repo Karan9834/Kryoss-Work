@@ -46,6 +46,7 @@ import WhatsAppPage from '../pages/products/WhatsApp-Clone/WhatsAppPage';
 import NewsMagazine from "../pages/Works/OurWorks/NewsMagazine";
 import FinanceWorks from '../pages/Works/OurWorks/FinanceWorks';
 import OnDemandWorks from '../pages/Works/OurWorks/OnDemandWorks';
+import FitnessAppsWorks from '../pages/Works/FitnessAppsWorks';
 
 
 const AppRoutes = () => {
@@ -69,6 +70,7 @@ const AppRoutes = () => {
                 <Route path="/works/news-magazine" element={<NewsMagazine />} />
                 <Route path="/works/finance" element={<FinanceWorks />} />
                 <Route path="/works/on-demand" element={<OnDemandWorks />} />
+                <Route path="/works/fitness-apps" element={<FitnessAppsWorks />} />
 
                 {/* Blog & Services */}
                 <Route path="/blog" element={<Blog />} />

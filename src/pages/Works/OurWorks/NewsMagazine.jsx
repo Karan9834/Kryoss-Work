@@ -22,7 +22,7 @@ const newsData = [
     description: "Anynews App for latest story headlines, live updates, any news summaries, India, sports news, politics news, crime news, gossips about celebrities anywhere and anytime.Local News details: Be the first to get any instant local and latest any news updates around you and also trending news in your regional language.",
     img: "https://kryosssoftech.org/icons/news/Anynews.png",
     link: "https://play.google.com/store/apps/details?id=com.anyNews.anynews",
-    bgClass: "bg-[#f8f9fa]",
+    bgClass: "bg-orange-50",
     textLeft: true
   },
   {
@@ -32,7 +32,7 @@ const newsData = [
     description: "Welcome to inkl, the last news app you’ll ever download. We show you the world’s most interesting and important news, from sources you know and trust.Enjoy brilliant reporting and analyses from publishers you don't see on other news apps, like The Economist, Bloomberg, Financial Times, Foreign Policy, and 100+ others from around the world.",
     img: "https://kryosssoftech.org/icons/news/Inkl new.png",
     link: "https://play.google.com/store/apps/details?id=com.inkl.app",
-    bgClass: "bg-[#f8f9fa]",
+    bgClass: "bg-orange-50",
     textLeft: false
   },
   {
@@ -52,7 +52,7 @@ const newsData = [
     description: "Free unique week-by-week expert guide from leading parenting website MadeForMums featuring 193 daily recipes, meal planners and advice guides.Created in association with Heinz for Baby, this app is completely free. There are no hidden charges and all content below is included free of charge.Plus, all recipes, guides and tools found on this app can be used offline, so once you have downloaded the app you can use it anywhere!",
     img: "https://kryosssoftech.org/icons/news/Weaning.png",
     link: "https://www.nhs.uk/best-start-in-life/baby/weaning/",
-    bgClass: "bg-[#f8f9fa]",
+    bgClass: "bg-orange-50",
     textLeft: false
   }
 ];
@@ -140,7 +140,7 @@ const NewsMagazine = () => {
                   <img
                     src={project.img}
                     alt={project.titleRed}
-                    className="w-80 md:w-96 lg:w-[420px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                    className="w-80 md:w-96 lg:w-[420px] h-auto object-contain drop-shadow-2xl"
                     loading="lazy"
                   />
                 </motion.div>
