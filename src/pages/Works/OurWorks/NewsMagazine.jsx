@@ -140,7 +140,7 @@ const NewsMagazine = () => {
                   <img
                     src={project.img}
                     alt={project.titleRed}
-                    className="max-w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                    className="w-80 md:w-96 lg:w-[420px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                 </motion.div>
