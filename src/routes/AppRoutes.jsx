@@ -12,11 +12,9 @@ import Products from "../pages/Products";
 import ServicesPage from '../components/home/ServicePage';
 import HireDevelopersPage from '../components/home/HireDevelopersPage';
 import BusinessGrowthPage from '../components/home/BusinessGrowthPage';
-// import ServicesPage from "../pages/ServicesPage";
 import UberClonePage from "../pages/products/Uber-Clone/UberClonePage";
 import BikeTaxiPage from "../pages/products/Bike-Taxi/BikeTaxiPage";
-
-import TaxiBiddingPage from "../pages/products/Taxi-Bidding/TaxiBiddingPage"
+import TaxiBiddingPage from "../pages/products/Taxi-Bidding/TaxiBiddingPage";
 import FoodDeliveryPage from '../pages/products/Food-Delivery/FoodDeliveryPage';
 import CarRentalPage from "../pages/products/Car-Rental/CarRentalPage";
 import CarPoolingPage from "../pages/products/Car-Pooling/CarPoolingPage";
@@ -44,7 +42,9 @@ import HotelManagement from '../pages/products/Hotel-Management-System/HotelMana
 import SocialMedia from "../pages/Works/OurWorks/SocialMedia";
 import GraphicBranding from "../pages/Works/OurWorks/GraphicBranding";
 import BusinessWorks from '../pages/Works/BusinessWorks';
+import WhatsAppPage from '../pages/products/WhatsApp-Clone/WhatsAppPage';
 import NewsMagazine from "../pages/Works/OurWorks/NewsMagazine";
+
 const AppRoutes = () => {
     return (
         <Routes>
@@ -54,57 +54,77 @@ const AppRoutes = () => {
                 {ProductRoutes}
                 {CompanyRoutes}
                 {ServiceRoutes}
+                
+                {/* Works Routes */}
                 <Route path="/works/real-estate" element={<RealEstateWorks />} />
                 <Route path="/works/saas" element={<SaasWorks />} />
-
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/products" element={<Products />} />
-                <Route path="/services" element={<ServicesPage />} />
-                <Route path="/business-growth" element={<BusinessGrowthPage />} />
-
-
-                <Route path="/hire-developers" element={<HireDevelopersPage />} />
-                <Route path="/products/Uber-Clone" element={<UberClonePage />} />
-                <Route path="/products/Bike-Taxi-app" element={<BikeTaxiPage />} />
-                <Route path="/products/Taxi-Bidding-app" element={<TaxiBiddingPage />} />
-                <Route path="/products/swiggy-clone" element={<FoodDeliveryPage />} />
-
-
-
-
-                <Route path="/products/Car-Rental-app" element={<CarRentalPage />} />
-                <Route path="/products/Carpool-app" element={<CarPoolingPage />} />
-
-                <Route path="/products/cloud-kitchen" element={<CloudKitchenPage />} />
-                <Route path="/products/handyman-app" element={<HandymanServicePage />} />
-
-                <Route path="/products/salon-booking" element={<SalonBookingPage />} />
-
-                <Route path="/products/ai-chatbot" element={<CustomerSupportBotPage />} />
-
-                <Route path="/products/property-listing" element={<PropertyListingPortalPage />} />
-
-                <Route path="/products/real-estate-crm" element={<RealEstatePage />} />
-                <Route path="/products/multi-vendor-ecommerce" element={<MultiVendorMarketplacePage />} />
-                <Route path="/products/b2b-wholesale" element={<B2BWholesalePage />} />
-                <Route path="/products/ai-content-generator" element={<AiContentGeneratorPage />} />
-                <Route path="/products/telemedicine-app" element={<TelemedicineAppPage />} />
-                <Route path="/products/pharmacy-delivery" element={<PharmacyDeliveryPage />} />
-                <Route path="/products/elearning-platform" element={<ELearningPage />} />
-                <Route path='/products/tutor-booking' element={<TutorBookingPage />} />
-                <Route path="/products/grocery-delivery" element={<GroceryDeliveryPage />} />
-                <Route path="/products/sales-crm" element={<SalesCRMPage />} />
                 <Route path="/works/ui-ux" element={<UiUxWorks />} />
                 <Route path="/works/websites" element={<WebsitesWorks />} />
                 <Route path="/works/business" element={<BusinessWorks />} />
                 <Route path="/works/social-media" element={<SocialMedia />} />
                 <Route path="/works/branding" element={<GraphicBranding />} />
                 <Route path="/works/news-magazine" element={<NewsMagazine />} />
+
+                {/* Blog & Services */}
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/services" element={<ServicesPage />} />
+                <Route path="/business-growth" element={<BusinessGrowthPage />} />
+                <Route path="/hire-developers" element={<HireDevelopersPage />} />
+
+                {/* Taxi & Delivery Products */}
+                <Route path="/products/Uber-Clone" element={<UberClonePage />} />
+                <Route path="/products/Bike-Taxi-app" element={<BikeTaxiPage />} />
+                <Route path="/products/Taxi-Bidding-app" element={<TaxiBiddingPage />} />
+                <Route path="/products/swiggy-clone" element={<FoodDeliveryPage />} />
+                <Route path="/products/Car-Rental-app" element={<CarRentalPage />} />
+                <Route path="/products/Carpool-app" element={<CarPoolingPage />} />
+
+                {/* Home Services */}
+                <Route path="/products/cloud-kitchen" element={<CloudKitchenPage />} />
+                <Route path="/products/handyman-app" element={<HandymanServicePage />} />
+                <Route path="/products/salon-booking" element={<SalonBookingPage />} />
+
+                {/* AI & Support */}
+                <Route path="/products/ai-chatbot" element={<CustomerSupportBotPage />} />
+
+                {/* Real Estate */}
+                <Route path="/products/property-listing" element={<PropertyListingPortalPage />} />
+                <Route path="/products/real-estate-crm" element={<RealEstatePage />} />
+
+                {/* E-Commerce */}
+                <Route path="/products/multi-vendor-ecommerce" element={<MultiVendorMarketplacePage />} />
+                <Route path="/products/b2b-wholesale" element={<B2BWholesalePage />} />
+
+                {/* AI Content */}
+                <Route path="/products/ai-content-generator" element={<AiContentGeneratorPage />} />
+
+                {/* Healthcare */}
+                <Route path="/products/telemedicine-app" element={<TelemedicineAppPage />} />
+                <Route path="/products/pharmacy-delivery" element={<PharmacyDeliveryPage />} />
+
+                {/* Education */}
+                <Route path="/products/elearning-platform" element={<ELearningPage />} />
+                <Route path="/products/tutor-booking" element={<TutorBookingPage />} />
+
+                {/* Food & Grocery */}
+                <Route path="/products/grocery-delivery" element={<GroceryDeliveryPage />} />
+
+                {/* CRM */}
+                <Route path="/products/sales-crm" element={<SalesCRMPage />} />
+
+                {/* Hospitality */}
                 <Route path="/product/1" element={<HotelBooking />} />
                 <Route path="/product/2" element={<HotelManagement />} />
+
+                {/* Social Media / WhatsApp Clone */}
+                <Route path="/product/social-connect" element={<WhatsAppPage />} />
+
+                {/* 404 */}
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
     );
 };
+
 export default AppRoutes;
