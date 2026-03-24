@@ -1,0 +1,79 @@
+{
+  "tabs": [
+    { "id": "ondemand", "name": "On-Demand Projects" }
+  ],
+  "sections": {
+    "ondemand": [
+      {
+        "asset": "1.png",
+        "img": "icons/on-demand/oyebusy.png",
+        "alt": "OyeBusy",
+        "titleText": "OyeBusy - Home Services, Maintenance, Repair, Deals",
+        "description": "OyeBusy is India's best online platform for providing top-notch home services. It will supply you with services relating to anything you wish to have delivered to your home. There is no need to be concerned while booking service since we will always strive to give you the best service possible. In this technological age, make an appointment with us to take advantage of many incentives.",
+        "links": []
+      },
+      {
+        "asset": "2.png",
+        "img": "icons/on-demand/laundryheap.png",
+        "alt": "Laundryheap",
+        "titleText": "Laundryheap - The 24h Dry Cleaning and Laundry App",
+        "description": "Laundry Anna aims to blend the sophistication of state-of-the-art fabric servicing with the easy availability of your local dhobi. We maintain our own processing unit instead of outsourcing our garments to other vendors. Not only does this ensure a lower production cost, but also greater reliability. Our core team is a healthy blend of senior executives with years of experience.",
+        "links": []
+      },
+      {
+        "asset": "3.png",
+        "img": "icons/on-demand/24task.png",
+        "alt": "24Task",
+        "titleText": "24Task - Hire Freelancers",
+        "description": "Take the initial steps towards hiring the best talents for your project with the 24Task Employers app. 24 Task is a reputed freelancing platform that allows employers to post multiple jobs and details at once and collaborate with the freelancers in no time. Gain more efficiency with our employer's app when it comes to hiring freelancers.",
+        "links": [
+          { "text": "Play Store", "href": "https://play.google.com/store/apps/details?id=com.task24" }
+        ]
+      },
+      {
+        "asset": "4.png",
+        "img": "icons/on-demand/akshayakalpa.png",
+        "alt": "Akshayakalpa",
+        "titleText": "Akshayakalpa Organic Milk",
+        "description": "Fresh Organic cow milk door-delivered before 7 AM at your doorstep. No minimum order, free door delivery. Now customize your subscriptions and place orders as and when you need! We ensure your safe and pure organic cow milk is delivered before 7 am every day to your doorstep. Also, Akshayakalpa Organic Milk delivery App allows you to customize your organic milk subscription.",
+        "links": [
+          { "text": "Play Store", "href": "https://play.google.com/store/apps/details?id=com.akshayakalpa.organic" }
+        ]
+      },
+      {
+        "asset": "5.png",
+        "img": "icons/on-demand/ourflat.png",
+        "alt": "OurFlat",
+        "titleText": "OurFlat - Shared Household & Chores App",
+        "description": "With this new shared living app, you can easily manage groceries, split bills, add calendar events and divide household chores. You can also use the integrated chat with polls to make planning even easier. OurFlat was made for anyone living with other people! Be it a shared flat, couple, family, or group vacation: organise your life together now.",
+        "links": []
+      },
+      {
+        "asset": "6.png",
+        "img": "icons/on-demand/shoopy.png",
+        "alt": "Shoopy",
+        "titleText": "Shoopy - Create Online Store Free & Grow Business",
+        "description": "Shoopy helps businesses to go online in a few seconds. Businesses get fully personalised e-commerce store in simple steps. Shoopy online store service can be used by any type of small & medium businesses. Be it selling products or offering services. Shoopy offers seamless integration with Social Media Platforms to share product catalog, invoice and communicate with the customers.",
+        "links": [
+          { "text": "Play Store", "href": "https://play.google.com/store/apps/details?id=com.shoopy.business" }
+        ]
+      },
+      {
+        "asset": "7.png",
+        "img": "icons/on-demand/vegease.png",
+        "alt": "VegEase",
+        "titleText": "VegEase - Online Vegetables & Fruits Delivery App",
+        "description": "VegEase is one such innovation that has been created keeping in mind the needs of consumers like you and offers them the delight of getting Fresh Fruits and Vegetables at their doorsteps. It combines our decades of experience in the FMCG sector and our supply chain expertise to efficiently procures the most delectable Fruits and Vegetables for you.",
+        "links": []
+      },
+      {
+        "asset": "8.png",
+        "img": "icons/on-demand/idphoto.png",
+        "alt": "ID Photo",
+        "titleText": "ID Photo & Passport Photo - Portrait Cutter",
+        "description": "ID Photo supports all formats for various uses such as ID card, passport for all countries, visa, driver's license, resume, certificate, social platforms and more! ID Photo detects your portrait automatically, no need for dull cutting and search for accurate specifications. If you need to use ID photos and feel it is too expensive in offline stores, feel free to try this app.",
+        "links": []
+      }
+    ]
+  }
+}

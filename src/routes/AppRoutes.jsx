@@ -44,6 +44,9 @@ import GraphicBranding from "../pages/Works/OurWorks/GraphicBranding";
 import BusinessWorks from '../pages/Works/BusinessWorks';
 import WhatsAppPage from '../pages/products/WhatsApp-Clone/WhatsAppPage';
 import NewsMagazine from "../pages/Works/OurWorks/NewsMagazine";
+import FinanceWorks from '../pages/Works/OurWorks/FinanceWorks';
+import OnDemandWorks from '../pages/Works/OurWorks/OnDemandWorks';
+
 
 const AppRoutes = () => {
     return (
@@ -64,6 +67,8 @@ const AppRoutes = () => {
                 <Route path="/works/social-media" element={<SocialMedia />} />
                 <Route path="/works/branding" element={<GraphicBranding />} />
                 <Route path="/works/news-magazine" element={<NewsMagazine />} />
+                <Route path="/works/finance" element={<FinanceWorks />} />
+                <Route path="/works/on-demand" element={<OnDemandWorks />} />
 
                 {/* Blog & Services */}
                 <Route path="/blog" element={<Blog />} />
@@ -121,6 +126,7 @@ const AppRoutes = () => {
                 <Route path="/product/social-connect" element={<WhatsAppPage />} />
 
                 {/* 404 */}
+
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
