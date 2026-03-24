@@ -32,6 +32,8 @@ import SalonLanding from "../pages/products/Salon-Beauty-Landing/SalonLanding";
 import EducationLanding from "../pages/products/Education-Landing/EducationLanding";
 import GroceryLanding from "../pages/products/Grocery-Landing/GroceryLanding";
 import OTTLanding from "../pages/products/OTT-Landing/OTTLanding";
+import TaxiLanding from "../pages/products/Taxi-Landing/TaxiLanding";
+import MatrimonyLanding from "../pages/products/Matrimony-Dating-Landing/MatrimonyLanding";
 
 
 import DatingApp from "../pages/products/Emerging-Social App/DatingApp";
@@ -48,6 +50,7 @@ import HotelManagement from "../pages/products/Hotel-Management/HotelManagement"
 import StreamingBackendPage from "../pages/products/Streaming-Backend/StreamingBackendPage";
 import SocialMediaPage from "../pages/products/Social-Media-App/SocialMediaPage";
 import HomeService from "../pages/products/Home-sevices/HomeService";
+import MatrimonySolutionPage from '../pages/products/Matrimony-Solution/MatrimonySolutionPage';
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -93,8 +96,11 @@ export const ProductRoutes = [
     <Route Key="Crm" path="/products/enterprise/crm" element={<CRM />} />,
     <Route key="Ecommerce" path="/products/our/ecommerce" element={<Ecommerce />} />,
     <Route key="Food-delivery-app" path="/products/our/food-delivery" element={<FoodDeliveryPage />} />,
-    <Route key="Hotel-Management" path="/products/our/hotel-booking" element={<HotelManagement />} />,
+    <Route key="hotel-management" path="/products/our/hotel-booking" element={<HotelManagement />} />,
+    <Route key="taxi-app" path="/products/our/taxi-app" element={<TaxiLanding />} />,
     <Route key="streaming-solution" path="products/our/streaming-solution" element={<StreamingBackendPage />} />,
     <Route key="social-media" path="/products/our/social-media" element={<SocialMediaPage />} />,
     <Route key="home-service" path="/products/our/home-service" element={<HomeService />} />,
+    <Route key="matrimony-dating" path="/products/our/matrimony-dating" element={<MatrimonyLanding />} />,
+    <Route key="matrimony-solution" path="/products/social/matrimony-solution" element={<MatrimonySolutionPage />} />,
 ];
