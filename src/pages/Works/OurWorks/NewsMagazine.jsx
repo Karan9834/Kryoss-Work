@@ -186,3 +186,4 @@ const NewsMagazine = () => {
 };
 
 export default NewsMagazine;
+

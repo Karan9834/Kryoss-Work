@@ -43,12 +43,8 @@ import HotelBooking from '../pages/products/Hotel-Booking/HotelBooking';
 import HotelManagement from '../pages/products/Hotel-Management-System/HotelManagement';
 import SocialMedia from "../pages/Works/OurWorks/SocialMedia";
 import GraphicBranding from "../pages/Works/OurWorks/GraphicBranding";
-<<<<<<< Updated upstream
 import BusinessWorks from '../pages/Works/BusinessWorks';
-
-=======
 import NewsMagazine from "../pages/Works/OurWorks/NewsMagazine";
->>>>>>> Stashed changes
 const AppRoutes = () => {
     return (
         <Routes>
@@ -60,10 +56,7 @@ const AppRoutes = () => {
                 {ServiceRoutes}
                 <Route path="/works/real-estate" element={<RealEstateWorks />} />
                 <Route path="/works/saas" element={<SaasWorks />} />
-                <Route path="/works/social-media" element={<SocialMedia />} />
-                <Route path="/works/branding" element={<GraphicBranding />} />
-                <Route path="/product/1" element={<HotelBooking />} />
-                <Route path="/product/2" element={<HotelManagement />} />
+
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/services" element={<ServicesPage />} />
@@ -103,15 +96,12 @@ const AppRoutes = () => {
                 <Route path="/products/sales-crm" element={<SalesCRMPage />} />
                 <Route path="/works/ui-ux" element={<UiUxWorks />} />
                 <Route path="/works/websites" element={<WebsitesWorks />} />
-<<<<<<< Updated upstream
                 <Route path="/works/business" element={<BusinessWorks />} />
-=======
                 <Route path="/works/social-media" element={<SocialMedia />} />
                 <Route path="/works/branding" element={<GraphicBranding />} />
                 <Route path="/works/news-magazine" element={<NewsMagazine />} />
                 <Route path="/product/1" element={<HotelBooking />} />
                 <Route path="/product/2" element={<HotelManagement />} />
->>>>>>> Stashed changes
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
