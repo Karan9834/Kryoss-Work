@@ -46,6 +46,8 @@ import Ecommerce from "../pages/products/ECommerce-App/Ecommerce";
 import FoodDeliveryPage from "../pages/products/Food-Delivery-App/FoodDeliveryPage";
 import HotelManagement from "../pages/products/Hotel-Management/HotelManagement";
 import StreamingBackendPage from "../pages/products/Streaming-Backend/StreamingBackendPage";
+import SocialMediaPage from "../pages/products/Social-Media-App/SocialMediaPage";
+import HomeService from "../pages/products/Home-sevices/HomeService";
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -93,4 +95,6 @@ export const ProductRoutes = [
     <Route key="Food-delivery-app" path="/products/our/food-delivery" element={<FoodDeliveryPage />} />,
     <Route key="Hotel-Management" path="/products/our/hotel-booking" element={<HotelManagement />} />,
     <Route key="streaming-solution" path="products/our/streaming-solution" element={<StreamingBackendPage />} />,
+    <Route key="social-media" path="/products/our/social-media" element={<SocialMediaPage />} />,
+    <Route key="home-service" path="/products/our/home-service" element={<HomeService />} />,
 ];

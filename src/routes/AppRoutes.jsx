@@ -44,6 +44,7 @@ import HotelManagement from '../pages/products/Hotel-Management-System/HotelMana
 import SocialMedia from "../pages/Works/OurWorks/SocialMedia";
 import GraphicBranding from "../pages/Works/OurWorks/GraphicBranding";
 import BusinessWorks from '../pages/Works/BusinessWorks';
+import WhatsAppPage from '../pages/products/WhatsApp-Clone/WhatsAppPage';
 
 const AppRoutes = () => {
     return (
@@ -100,6 +101,7 @@ const AppRoutes = () => {
                 <Route path="/works/ui-ux" element={<UiUxWorks />} />
                 <Route path="/works/websites" element={<WebsitesWorks />} />
                 <Route path="/works/business" element={<BusinessWorks />} />
+                <Route path="/product/social-connect" element={<WhatsAppPage/>}/>
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
