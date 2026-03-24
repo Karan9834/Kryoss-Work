@@ -28,15 +28,15 @@ const graphicBrandingData = {
             "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/logo9.png"
         ],
         "Brochures": [
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/brocher 1.png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/brocher 2.png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/brocher 3.png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/brocher (1).png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/brocher (2).png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/brocher (3).png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/brocher 4.png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/brocher 5.png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/brocher 6.png"
+            "/Brocher/brocher1.png",
+            "/Brocher/brocher2.png",
+            "/Brocher/brocher 3.png",
+            "/Brocher/brocher 4.png",
+            "/Brocher/brocher 5.png",
+            "/Brocher/brocher 6.png",
+            "/Brocher/brocher 7.png",
+            "/Brocher/brocher 8.png",
+            "/Brocher/brocher 9.png"
         ],
         "Flyers & Posters": [
             "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/flyer1.png",
@@ -67,15 +67,9 @@ const graphicBrandingData = {
             "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/landing page 9.png"
         ],
         "Presentations": [
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/pre1.png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/pre2.png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/pre3.png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/pre (1).png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/pre (2).png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/pre (3).png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/pre 4.png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/pre 5.png",
-            "https://kryosssoftech.org/icons/Graphic-&-Branding-Works/pre 6.png"
+            "/Presentations/Presentations.jpg",
+            "/Presentations/Presentations1.jpg",
+            "/Presentations/Presentations2.jpg",
         ]
     }
 };

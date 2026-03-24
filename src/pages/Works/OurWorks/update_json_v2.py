@@ -98,27 +98,32 @@ for section, items in data.get('sections', {}).items():
     for item in items:
         # Match from title_updates
         matched_key = None
+        
+        title_text = str(item.get('titleText') or '')
+        title_html = str(item.get('titleHtml') or '')
+        
         for key in title_updates.keys():
-            if key.lower() in item.get('titleText', '').lower() or key.lower() in item.get('titleHtml', '').lower():
+            if key.lower() in title_text.lower() or key.lower() in title_html.lower():
                 matched_key = key
                 break
         
         # fallback to alt
         if not matched_key:
+            alt_text = str(item.get('alt') or '')
             for key in title_updates.keys():
-                if key.lower() in item.get('alt', '').lower():
+                if key.lower() in alt_text.lower():
                     matched_key = key
                     break
 
         if matched_key:
-            u = title_updates[matched_key]
+            u = title_updates.get(matched_key, {})
             item['links'] = [
                 {
-                    "href": u['play'],
+                    "href": u.get('play', '#'),
                     "text": "Play Store"
                 },
                 {
-                    "href": u['web'],
+                    "href": u.get('web', '#'),
                     "text": "Website"
                 }
             ]
