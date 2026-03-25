@@ -22,7 +22,7 @@ const CTA = () => {
                 {/* Button */}
                 <div className="mt-8">
                     <a
-                        href="https://preview.codecanyon.net/item/edemand-multi-vendor-on-demand-home-doorstep-services-marketplace-with-flutter-app-admin-panel/full_screen_preview/40825792"
+                        href="https://preview.codecanyon.net/item/estatelab-real-estate-property-listing-platform/full_screen_preview/33445105"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-lg hover:bg-sky-200 transition duration-300 shadow-lg"

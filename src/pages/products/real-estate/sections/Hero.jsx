@@ -14,23 +14,23 @@ const Hero = () => {
                         {/* Badge */}
                         <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-sm px-4 py-2 rounded-full backdrop-blur w-fit">
                             <span className="text-blue-400">&lt;/&gt;</span>
-                           Saas
+                            Saas
                         </div>
 
                         {/* Heading */}
                         <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight">
-                         Real Estate CRM
+                            Real Estate CRM
                         </h1>
 
                         {/* Description */}
                         <p className="text-gray-300 text-lg max-w-xl leading-relaxed">
-                       Complete pipeline and client management for realtors.
+                            Complete pipeline and client management for realtors.
                         </p>
 
                         {/* CTA */}
                         <div>
                             <a
-                                href="https://preview.codecanyon.net/item/active-ecommerce-chat-support-app-for-support-board/full_screen_preview/30024848"
+                                href="https://preview.codecanyon.net/item/real-estate-agency-portal/full_screen_preview/6539169"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-900 transition px-7 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue-500/30"
