@@ -61,10 +61,10 @@ const AgencyManagementFeatures = () => {
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="text-center mb-20 space-y-4">
                     <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-600 text-[10px] font-black uppercase tracking-[0.2em]">
-                        Enterprise Modules
+                        Travel Agency Modules
                     </div>
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#1E293B]">
-                        Comprehensive <span className="text-amber-600">ERP Capabilities</span>
+                        Comprehensive <span className="text-amber-600">Management Capabilities</span>
                     </h2>
                     <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
                         Automate every aspect of your travel business with tools built for speed and precision.

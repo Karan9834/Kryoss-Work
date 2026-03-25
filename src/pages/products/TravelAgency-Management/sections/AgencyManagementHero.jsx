@@ -23,9 +23,9 @@ const AgencyManagementHero = () => {
             <h1 className="text-3xl lg:text-4xl font-semibold text-white leading-tight">
               Powerful <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-400">
-                Back-Office ERP
+                Back-Office Management
               </span> <br />
-              for Tour Operators
+              for Travel Agencies
             </h1>
 
             <p className="text-gray-400 text-lg lg:text-xl max-w-xl leading-relaxed">
@@ -50,11 +50,11 @@ const AgencyManagementHero = () => {
             <div className="relative group">
               <div className="absolute -inset-10 bg-gradient-to-tr from-amber-600/30 to-orange-400/20 rounded-[60px] blur-3xl opacity-40 group-hover:opacity-60 transition-all duration-700"></div>
               <div className="relative z-10 w-full max-w-[500px] mx-auto aspect-video bg-white/5 rounded-[40px] border-8 border-white/10 shadow-2xl overflow-hidden transition-all duration-700 group-hover:scale-[1.02] flex items-center justify-center">
-                <img src={heroImg} alt="Agency ERP Hero" className="w-full h-full object-cover" />
+                <img src={heroImg} alt="Travel Agency Management Hero" className="w-full h-full object-cover" />
                 {/* Live badge */}
                 <div className="absolute bottom-6 right-6 p-3 bg-black/60 backdrop-blur-md border border-white/10 rounded-xl flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.8)]"></div>
-                  <span className="text-[10px] text-white font-bold uppercase tracking-wider">Cloud ERP</span>
+                  <span className="text-[10px] text-white font-bold uppercase tracking-wider">Cloud Management</span>
                 </div>
               </div>
             </div>

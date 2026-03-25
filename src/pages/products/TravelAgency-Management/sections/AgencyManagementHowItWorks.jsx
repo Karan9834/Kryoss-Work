@@ -46,7 +46,7 @@ const AgencyManagementHowItWorks = () => {
              Smart Operations in <span className="text-amber-600">4 Simple Steps</span>
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-             How our ERP system transforms your agency operations from manual to fully automated.
+             How our management system transforms your agency operations from manual to fully automated.
           </p>
         </div>
 

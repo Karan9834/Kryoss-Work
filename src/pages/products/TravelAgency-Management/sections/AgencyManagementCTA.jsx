@@ -14,7 +14,7 @@ const AgencyManagementCTA = () => {
         </h2>
 
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-          Stop struggling with manual updates. Switch to our automated agency ERP and focus on what you do best: growing your business.
+          Stop struggling with manual updates. Switch to our automated agency and focus on what you do best: growing your business.
         </p>
 
         <div className="flex justify-center pt-4">
