@@ -44,7 +44,6 @@ import GraphicBranding from "../pages/Works/OurWorks/GraphicBranding";
 import BusinessWorks from '../pages/Works/BusinessWorks';
 import WhatsAppPage from '../pages/products/WhatsApp-Clone/WhatsAppPage';
 import NewsMagazine from "../pages/Works/OurWorks/NewsMagazine";
-<<<<<<< Updated upstream
 import FinanceWorks from '../pages/Works/OurWorks/FinanceWorks';
 import OnDemandWorks from '../pages/Works/OurWorks/OnDemandWorks';
 import FitnessAppsWorks from '../pages/Works/FitnessAppsWorks';
@@ -52,11 +51,8 @@ import LocalBusiness from '../pages/products/Local-Business/LocalBusiness';
 import Services from '../pages/products/Service-Platform/Services';
 import Job from '../pages/products/Job-Board/Job';
 import Recruitment from '../pages/products/Recruitment/Recruitment';
-
-=======
 import GamingWorks from "../pages/Works/Gaming&Crypto/GamingWorks";
 import FantasyApps from "../pages/Works/Gaming&Crypto/FantasyApps";
->>>>>>> Stashed changes
 const AppRoutes = () => {
     return (
         <Routes>
@@ -76,10 +72,11 @@ const AppRoutes = () => {
                 <Route path="/works/social-media" element={<SocialMedia />} />
                 <Route path="/works/branding" element={<GraphicBranding />} />
                 <Route path="/works/news-magazine" element={<NewsMagazine />} />
-<<<<<<< Updated upstream
                 <Route path="/works/finance" element={<FinanceWorks />} />
                 <Route path="/works/on-demand" element={<OnDemandWorks />} />
                 <Route path="/works/fitness-apps" element={<FitnessAppsWorks />} />
+                <Route path="/works/gaming" element={<GamingWorks />} />
+                <Route path="/works/fantasy-apps" element={<FantasyApps />} />
 
                 {/* Blog & Services */}
                 <Route path="/blog" element={<Blog />} />
@@ -130,10 +127,6 @@ const AppRoutes = () => {
                 <Route path="/products/sales-crm" element={<SalesCRMPage />} />
 
                 {/* Hospitality */}
-=======
-                <Route path="/works/gaming" element={<GamingWorks />} />
-                <Route path="/works/fantasy-apps" element={<FantasyApps />} />
->>>>>>> Stashed changes
                 <Route path="/product/1" element={<HotelBooking />} />
                 <Route path="/product/2" element={<HotelManagement />} />
 
