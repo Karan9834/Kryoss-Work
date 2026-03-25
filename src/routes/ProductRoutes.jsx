@@ -51,6 +51,8 @@ import StreamingBackendPage from "../pages/products/Streaming-Backend/StreamingB
 import SocialMediaPage from "../pages/products/Social-Media-App/SocialMediaPage";
 import HomeService from "../pages/products/Home-sevices/HomeService";
 import MatrimonySolutionPage from '../pages/products/Matrimony-Solution/MatrimonySolutionPage';
+import JobPortalPage from "../pages/products/Job-Portal/JobPortalPage";
+import Busiuness from "../pages/products/Busiuness-Directory/Busiuness";
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -103,4 +105,6 @@ export const ProductRoutes = [
     <Route key="home-service" path="/products/our/home-service" element={<HomeService />} />,
     <Route key="matrimony-dating" path="/products/our/matrimony-dating" element={<MatrimonyLanding />} />,
     <Route key="matrimony-solution" path="/products/social/matrimony-solution" element={<MatrimonySolutionPage />} />,
+    <Route key="job-portal" path="/products/prime/job-portals" element={<JobPortalPage />} />,
+    <Route key="busiuness-directory" path="/products/prime/business-directory" element={<Busiuness/>}/>,
 ];

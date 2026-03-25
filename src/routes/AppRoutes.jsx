@@ -47,7 +47,10 @@ import NewsMagazine from "../pages/Works/OurWorks/NewsMagazine";
 import FinanceWorks from '../pages/Works/OurWorks/FinanceWorks';
 import OnDemandWorks from '../pages/Works/OurWorks/OnDemandWorks';
 import FitnessAppsWorks from '../pages/Works/FitnessAppsWorks';
-
+import LocalBusiness from '../pages/products/Local-Business/LocalBusiness';
+import Services from '../pages/products/Service-Platform/Services';
+import Job from '../pages/products/Job-Board/Job';
+import Recruitment from '../pages/products/Recruitment/Recruitment';
 
 const AppRoutes = () => {
     return (
@@ -126,6 +129,10 @@ const AppRoutes = () => {
 
                 {/* Social Media / WhatsApp Clone */}
                 <Route path="/product/social-connect" element={<WhatsAppPage />} />
+                <Route path='/products/business-directory' element={<LocalBusiness/>}/>
+                <Route path='/products/service-booking' element={<Services/>}/>
+                <Route path="/products/job-board" element={<Job/>}/>
+                <Route path='/products/recruitment-ats' element={<Recruitment/>}/>
 
                 {/* 404 */}
 
