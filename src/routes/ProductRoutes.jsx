@@ -34,6 +34,12 @@ import GroceryLanding from "../pages/products/Grocery-Landing/GroceryLanding";
 import OTTLanding from "../pages/products/OTT-Landing/OTTLanding";
 import TaxiLanding from "../pages/products/Taxi-Landing/TaxiLanding";
 import MatrimonyLanding from "../pages/products/Matrimony-Dating-Landing/MatrimonyLanding";
+import TourTravelLanding from "../pages/products/TourTravel-Landing/TourTravelLanding";
+import RealEstateLanding from "../pages/products/RealEstate-Landing/RealEstateLanding";
+import TourBookingAppPage from "../pages/products/TourTravel-Booking/TourBookingAppPage";
+import TravelAgencyManagementPage from "../pages/products/TravelAgency-Management/TravelAgencyManagementPage";
+import RealEstatePage from "../pages/products/real-estate/RealEstatePage";
+import PropertyListingPortalPage from "../pages/products/property-listing-portal/PropertyListingPortalPage";
 
 
 import DatingApp from "../pages/products/Emerging-Social App/DatingApp";
@@ -106,5 +112,11 @@ export const ProductRoutes = [
     <Route key="matrimony-dating" path="/products/our/matrimony-dating" element={<MatrimonyLanding />} />,
     <Route key="matrimony-solution" path="/products/social/matrimony-solution" element={<MatrimonySolutionPage />} />,
     <Route key="job-portal" path="/products/prime/job-portals" element={<JobPortalPage />} />,
-    <Route key="busiuness-directory" path="/products/prime/business-directory" element={<Busiuness/>}/>,
+    <Route key="busiuness-directory" path="/products/prime/business-directory" element={<Busiuness />} />,
+    <Route key="tour-travel" path="/products/prime/tour-travel" element={<TourTravelLanding />} />,
+    <Route key="real-estate-landing" path="/products/prime/real-estate" element={<RealEstateLanding />} />,
+    <Route key="tour-booking-app" path="/products/prime/tour-travel-booking-app" element={<TourBookingAppPage />} />,
+    <Route key="travel-agency-mgmt" path="/products/prime/travel-agency-management" element={<TravelAgencyManagementPage />} />,
+    <Route key="real-estate-solution" path="/products/prime/real-estate-solution" element={<RealEstatePage />} />,
+    <Route key="property-listing-portal" path="/products/prime/property-listing-portal" element={<PropertyListingPortalPage />} />,
 ];

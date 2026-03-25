@@ -19,18 +19,18 @@ const Hero = () => {
 
                         {/* Heading */}
                         <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight">
-                        Property Listing Portal
+                            Property Listing Portal
                         </h1>
 
                         {/* Description */}
                         <p className="text-gray-300 text-lg max-w-xl leading-relaxed">
-                 Advanced real estate marketplace for buyers and agents.
+                            Advanced real estate marketplace for buyers and agents.
                         </p>
 
                         {/* CTA */}
                         <div>
                             <a
-                                href="https://preview.codecanyon.net/item/edemand-multi-vendor-on-demand-home-doorstep-services-marketplace-with-flutter-app-admin-panel/full_screen_preview/40825792"
+                                href="https://preview.codecanyon.net/item/estatelab-real-estate-property-listing-platform/full_screen_preview/33445105"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-900 transition px-7 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue-500/30"
