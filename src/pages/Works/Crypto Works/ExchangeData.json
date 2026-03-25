@@ -1,0 +1,81 @@
+{
+  "tabs": [
+    { "id": "exchange-apps", "name": "Exchange Applications" }
+  ],
+  "sections": {
+    "exchange-apps": [
+      {
+        "asset": "1.png",
+        "img": "",
+        "alt": "Changelly",
+        "titleText": "Changelly – Instant Crypto Exchange",
+        "description": "Changelly cryptocurrency exchange has been offering easy BTC exchange since 2015. Users can also buy Bitcoin instantly with credit card. We work with the most reliable cryptocurrency exchanges and are trusted by over 2 million customers. Our cryptocurrency exchange provides users with the best rates on the crypto market, a simple interface and 24/7 live support.Get Changelly crypto mobile app to buy Bitcoin instantly with a credit card or make BTC exchange within minutes. ",
+        "links": [
+          { "text": "Play Store", "href": "#" }
+        ]
+      },
+      {
+        "asset": "2.png",
+        "img": "",
+        "alt": "Dcoin",
+        "titleText": "Dcoin - Bitcoin Exchange",
+        "description": "Dcoin trading platform is the world’s first financial industry-standard digital assets and derivatives trading platform that mainly provides cryptocurrency trading services for Bitcoin, Ethereum, Lite Coin , ripple,and etc. Dcoin is founded by blockchain and cryptocurrency enthusiasts with core members from Google, bitforex,bitfinex,and other world renowned IT companies. Dcoin trading platform with its financial industry-standard security and technology provides investors a safe and stable trading environment while guarantees transaction to complete safely and efficiently.",
+        "links": [
+          { "text": "Play Store", "href": "#" }
+        ]
+      },
+      {
+        "asset": "3.png",
+        "img": "",
+        "alt": "Bitrue",
+        "titleText": "Bitrue - Cryptocurrency Wallet & Exchange",
+        "description": "Bitrue exchange is established by a group of blockchain enthusiasts and focus on cryptocurrency trading.We dedicate to providing safe and convenient service for cryptocurrency trading, and being the best aggregator of qualified cryptocurrency all over the world. <br/><br/>Bitrue is the most recommended choice for you to store and exchange Bitcoin, Bitcoin Cash, USDT, XRP, Litecoin, Ethereum, ETC and other altcoins. Compared with main exchanges, Bitrue boasts these advantages:<br/><ul><li>Deep cooperation with Ripple (XRP)</li><li>Low Tx fee & Superb promotion activities</li><li>One-stop solution for digital asset management</li></ul>",
+        "links": [
+          { "text": "Play Store", "href": "#" },
+          { "text": "App Store", "href": "#" }
+        ]
+      },
+      {
+        "asset": "4.png",
+        "img": "",
+        "alt": "CoinTiger",
+        "titleText": "CoinTiger-Crypto Exchange",
+        "description": "CoinTiger exchange is a global crypto asset trading platform that provides BTC, ETH, LTC, EOS and 50+ multi-cryptocurrency trading services and CNY/USD cash withdrawal services. CoinTiger ecosystem also incorporate CoinTiger Eco Fund, Labs, IEO and voting for listing program, etc, which you can find at CoinTiger Official Website: www.cointiger.com.<br/><br/>Features that CoinTiger Exchange offers:<br/>1. Various crypto-currencies transaction: LTC / BTC，ETH / BTC，BTC/ BitCNY，BTC/ USDT and etc.<br/>2. CNY and USD cash withdraw service.<br/>3. Support instant purchase with Fiat.",
+        "links": [
+          { "text": "Play Store", "href": "#" },
+          { "text": "App Store", "href": "#" }
+        ]
+      },
+      {
+        "asset": "5.png",
+        "img": "",
+        "alt": "ChangeNOW",
+        "titleText": "ChangeNOW: Crypto Exchange & Buy Bitcoin Dogecoin",
+        "description": "ChangeNOW is a non-custodial service created for simple and fast cryptocurrency exchanges. We strive for maximum safety, simplicity, and convenience. We do not store your funds or require any sort of account creation. ChangeNOW has more than 170 coins available for exchange and does not hold any limits; you can exchange as much as you want - account-free, worry-free, faster than light. The fiat option is also available - you can buy cryptocurrency with Visa or MasterCard through our third-party partner. ",
+        "links": [
+          { "text": "Play Store", "href": "#" }
+        ]
+      },
+      {
+        "asset": "6.png",
+        "img": "",
+        "alt": "Beaxy Exchange",
+        "titleText": "Beaxy Exchange",
+        "description": "Beaxy is a U.S. Money Services Business registered with FinCEN that services customers in 42 U.S. states, in addition to serving an active global customer base in many international markets.<br/><br/>Buy, sell, or trade more major fiat options and dozens of cryptocurrencies on a registered U.S. exchange<br/><br/>The Beaxy Exchange mobile app comes equipped with:<br/><ul><li>Access to dozens of markets made up of crypto and major fiat currencies</li><li>An intuitive trading experience with advanced capabilities</li><li>Price and news alerts for your favorite cryptos</li><li>Automated technical analysis with a 63% win rate</li><li>Trading View chart integrations</li></ul>",
+        "links": [
+          { "text": "Play Store", "href": "#" }
+        ]
+      },
+      {
+        "asset": "7.png",
+        "img": "",
+        "alt": "Krypto",
+        "titleText": "Krypto - Bitcoin, Crypto Trading Exchange India",
+        "description": "Krypto provides you with the best experience when it comes to handling your cryptocurrencies, be it Buying, Selling, Trading, or Paying with Crypto! It's extremely easy to buy or sell cryptocurrencies with Krypto! All you need is to use the Exchange feature in our app and your order would get approved in an instant! Crypto Trading is free on Krypto!<br/><br/>Use our feature Crypto Pay in India, to pay to any vendor having a UPI address or credit/debit card machine. Scan UPI and pay for it with your Krypto Wallet!",
+        "links": [
+          { "text": "Play Store", "href": "#" }
+        ]
+      }
+    ]
+  }
+}

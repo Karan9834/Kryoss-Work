@@ -53,6 +53,10 @@ import Job from '../pages/products/Job-Board/Job';
 import Recruitment from '../pages/products/Recruitment/Recruitment';
 import GamingWorks from "../pages/Works/Gaming&Crypto/GamingWorks";
 import FantasyApps from "../pages/Works/Gaming&Crypto/FantasyApps";
+import CryptoApps from '../pages/Works/Crypto Works/CryptoApps';
+import ExchangeApps from '../pages/Works/Crypto Works/ExchangeApps';
+
+
 const AppRoutes = () => {
     return (
         <Routes>
@@ -77,6 +81,8 @@ const AppRoutes = () => {
                 <Route path="/works/fitness-apps" element={<FitnessAppsWorks />} />
                 <Route path="/works/gaming" element={<GamingWorks />} />
                 <Route path="/works/fantasy-apps" element={<FantasyApps />} />
+                <Route path="/works/crypto-apps" element={<CryptoApps />} />
+                <Route path="/works/exchange-apps" element={<ExchangeApps />} />
 
                 {/* Blog & Services */}
                 <Route path="/blog" element={<Blog />} />
