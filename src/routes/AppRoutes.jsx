@@ -66,7 +66,7 @@ const AppRoutes = () => {
                 {ProductRoutes}
                 {CompanyRoutes}
                 {ServiceRoutes}
-                
+
                 {/* Works Routes */}
                 <Route path="/works/real-estate" element={<RealEstateWorks />} />
                 <Route path="/works/saas" element={<SaasWorks />} />
@@ -138,10 +138,10 @@ const AppRoutes = () => {
 
                 {/* Social Media / WhatsApp Clone */}
                 <Route path="/product/social-connect" element={<WhatsAppPage />} />
-                <Route path='/products/business-directory' element={<LocalBusiness/>}/>
-                <Route path='/products/service-booking' element={<Services/>}/>
-                <Route path="/products/job-board" element={<Job/>}/>
-                <Route path='/products/recruitment-ats' element={<Recruitment/>}/>
+                <Route path='/products/business-directory' element={<LocalBusiness />} />
+                <Route path='/products/service-booking' element={<Services />} />
+                <Route path="/products/job-board" element={<Job />} />
+                <Route path='/products/recruitment-ats' element={<Recruitment />} />
 
                 {/* 404 */}
 
