@@ -14,7 +14,7 @@ const AgencyManagementAbout = () => {
         <section className="py-24 bg-gray-50 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
-                    
+
                     {/* Left: Content Grid */}
                     <div className="w-full lg:w-1/2 space-y-8">
                         <div>
@@ -23,7 +23,7 @@ const AgencyManagementAbout = () => {
                                 Built for the <span className="text-amber-600">Complex Needs</span> of Modern Agencies
                             </h2>
                             <p className="text-gray-500 text-lg mt-6 leading-relaxed">
-                                Managing a travel agency shouldn't be a nightmare of spreadsheets. Our ERP solution consolidates your entire operation into one powerful dashboard.
+                                Managing a travel agency shouldn't be a nightmare of spreadsheets. Our Travel Management solution consolidates your entire operation into one powerful dashboard.
                             </p>
                         </div>
 
@@ -46,8 +46,8 @@ const AgencyManagementAbout = () => {
                     {/* Right: Large Mockup Placeholder */}
                     <div className="w-full lg:w-1/2 relative group">
                         <div className="absolute -inset-4 bg-gradient-to-tr from-amber-500/10 to-orange-500/10 rounded-[60px] blur-2xl"></div>
-                        <div className="relative z-10 w-full aspect-[4/3] bg-white rounded-[50px] border-8 border-white shadow-2xl flex items-center justify-center overflow-hidden">
-                             <img src={aboutImg} alt="Admin Panel Mockup" className="w-full h-full object-cover" />
+                        <div className="relative z-10 w-full aspect-[4/4] bg-white rounded-[50px] border-8 border-white shadow-2xl flex items-center justify-center overflow-hidden">
+                            <img src={aboutImg} alt="Admin Panel Mockup" className="w-full h-full object-cover" />
                         </div>
                     </div>
 
