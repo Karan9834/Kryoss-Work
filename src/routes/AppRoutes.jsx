@@ -55,6 +55,8 @@ import GamingWorks from "../pages/Works/Gaming&Crypto/GamingWorks";
 import FantasyApps from "../pages/Works/Gaming&Crypto/FantasyApps";
 import CryptoApps from '../pages/Works/Crypto Works/CryptoApps';
 import ExchangeApps from '../pages/Works/Crypto Works/ExchangeApps';
+import MLMAppsWorks from '../pages/Works/MLMAppsWorks';
+import BettingAppsWorks from '../pages/Works/BettingAppsWorks';
 
 
 const AppRoutes = () => {
@@ -83,6 +85,8 @@ const AppRoutes = () => {
                 <Route path="/works/fantasy-apps" element={<FantasyApps />} />
                 <Route path="/works/crypto-apps" element={<CryptoApps />} />
                 <Route path="/works/exchange-apps" element={<ExchangeApps />} />
+                <Route path="/works/mlm-apps" element={<MLMAppsWorks />} />
+                <Route path="/works/betting-apps" element={<BettingAppsWorks />} />
 
                 {/* Blog & Services */}
                 <Route path="/blog" element={<Blog />} />

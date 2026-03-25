@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+	<!-- title -->
+	<title>Kryoss Softech</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/images/indexImg/kkk.png">
+	<link rel="stylesheet" href="assets/css/main.css" media="all" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" >
+	<link rel="preload" as="style" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" onload="this.rel='stylesheet'" />
+	<link rel="preload" as="font" type="font/woff2" crossorigin href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0" />
+	
+
+	</head>
+
+<body>
+    
+
+<style type="text/css">
+
+.container-box
+{
+	display:inline-block;
+	position: fixed;
+  	top: 190px;
+  	right: 50px;
+ z-index:100;
+}
+.rotated
+{
+	-moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    transform-origin: top right;
+}
+.turned-btn:active{
+	z-index: 1000;
+}
+#btnContactUs{
+	background-color: #d23641!important;
+}
+.btn-info{
+    background-color: #d23641!important;
+}
+
+</style>
+<div class="container">
+    <div class="container-box rotated fixed-right-btn">
+        <button type="button" class="btn btn-info btn-lg turned-button pop-btn" data-toggle="modal" data-target="#myModal">ENQUIRE NOW</button>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="font-weight:600">
+                        ENQUIRE NOW
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="post" id="reused_form" action="mailer/assets/hire.php" >
+                        <div class="form-group form-group-pop">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required maxlength="50">
+                        </div>
+                        <div class="form-group form-group-pop">
+                            <input type="tel"  onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="form-control" id="phone" name="phone" placeholder="Phone" required maxlength="10">
+                        </div>
+
+                        <div class="form-group form-group-pop">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required maxlength="50">
+                        </div>
+                        <div class="form-group form-group-pop">
+                            <input type="text" class="form-control" id="cname" name="cname" placeholder="Company Name" required maxlength="50">
+                        </div>
+                        <div class="form-group form-group-pop">
+                            <input type="text" class="form-control" id="address" name="address" placeholder="Location/City" required maxlength="50">
+                        </div>
+                        <div class="form-group form-group-pop">
+                            <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="mailer/assets/js/jquery-1.11.1.min.js"></script>
+
+<script src="mailer/assets/js/jquery.backstretch.min.js"></script>
+	<header>
+	    
+	<nav class="navbar navbar-default bootsnav header-dark background-transparent nav-box-width navbar-expand-lg menu-center">
+		<div class="container-fluid nav-header-container sm-padding-10px-lr">
+			<div class="col-auto col-lg-2 pl-0 md-padding-45px-left no-padding-right">
+				<button type="button" class="navbar-toggler">
+					<div class="toggler-box">
+						<div class="toggler-inner"></div>
+					</div>
+				</button>
+				<a href="index.php" title="kryoss" class="logo">
+					<img src="icons/become/kryoss1.png" class="" alt="">
+				</a>
+			</div>
+			<div class="col accordion-menu pr-0 pr-lg-3">
+				<a data-toggle="modal" data-target="#contactInfo" class="btn btn-danger float-right border-radius-100 width-35px height-35 text-center padding-5px-all d-lg-none callIcon text-white"><i class="fas fa fa-phone no-margin" aria-hidden="true"></i></a>
+				<div class="navbar-collapse collapse justify-content-end">
+					<ul id="accordion" class="nav navbar-nav no-margin alt-font text-normal" data-in="fadeIn" data-out="fadeOut">
+						<!--<li class="dropdown simple-dropdown">-->
+						<!--	<a href="#">About</a><i class="fas fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>-->
+						<!--	<ul class="dropdown-menu">-->
+						<!--		<li><a href="#">About Company</a></li>-->
+						<!--		<li><a href="#">Core Principles</a></li>-->
+						<!--		<li><a href="#">Life@Kryoss</a></li>-->
+						<!--		<li><a href="#">Careers</a></li>-->
+						<!--		<li><a href="#">Become Our Partner</a></li>-->
+						<!--		<li><a href="#">Clients</a></li>-->
+						<!--		<li><a href="#">Portfolio</a></li>-->
+						<!--	</ul>-->
+						<!--</li>-->
+						
+                          <li class="dropdown megamenu-fw ">
+
+							<a href="javascript:void(0)">AI First</a><i class="fas fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+							<div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full icon-list-menu">
+
+								<ul>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="ai-consulting.php">Strategic AI Implementation</a></li>
+											<li ><a href="ai-consulting.php">AI Consulting & Strategy</a></li>
+											<li ><a href="custom-ai-development.php">Custom AI Development</a></li>
+											<li ><a href="ai-intergration.php">AI Integration Services</a></li>
+											<li ><a href="bussiness-automation.php">Business Process Automation</a></li>
+
+											<!-- <li class="dropdown-header"><a href="custom-crm-development.php">Blockchain App Development	Heading</a></li> -->
+											
+										</ul>
+									</li>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="robotic-process.php">Intelligent Operational Automation</a></li>
+											<li ><a href="robotic-process.php">Robotic Process Automation(RPA)</a></li>
+											<li ><a href="ai-chatboats.php">AI Chatboats & Virtual Assistants</a></li>
+											<li ><a href="intelligent.php">Intelligent Analytics & Insights</a></li>
+											<li ><a href="workflow.php">Workflow & Task Automation</a></li>
+											<!-- <li class="dropdown-header"><a href="custom-crm-development.php">Blockchain App Development	Heading</a></li> -->
+											
+										</ul>
+									</li>
+									   <li class="mega-menu-column col-lg-3">
+										<ul>
+                                            <li class="dropdown-header"><a href="enterprise-ai.php">Vertical & Enterprise Solutions</a></li>
+											<li ><a href="enterprise-ai.php">Enterprise AI Solutions</a></li>
+											<li ><a href="ai-for-sale.php">AI for Sales & Marketing</a></li>
+											<li ><a href="ai-for-hr.php">AI for HR & Operations</a></li>
+											<li ><a href="ai-use-case.php">AI Use Cases & Solutions</a></li>
+											
+
+
+											<!-- <li class="dropdown-header"><a href="custom-crm-development.php">Blockchain App Development	Heading</a></li> -->
+											
+										</ul>
+									</li>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="ai-consulting.php">AI Readiness Assessment</a></li>
+											<li ><a href="ai-consulting.php">Data Engineering & Preparation</a></li>
+											<li ><a href="custom-ai-development.php">Model Optimization & Performance</a></li>
+											<li ><a href="ai-intergration.php">AI Governance & Compliance</a></li>
+											<li ><a href="bussiness-automation.php">Continuous AI Monitoring & Improvement</a></li>
+
+											<!-- <li class="dropdown-header"><a href="custom-crm-development.php">Blockchain App Development	Heading</a></li> -->
+											
+										</ul>
+									</li>
+
+									
+
+									
+									
+							</div>
+						</li>
+						
+						
+						<li class="dropdown megamenu-fw">
+							<a href="javascript:void(0)">Services</a><i class="fas fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+							<div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full icon-list-menu">
+								<ul>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="service.php">Our Services</a></li>
+											<li class="dropdown-header"><a href="Product-Engineering.php">AI Product Engineering</a></li>
+											<li class="dropdown-header"><a href="SOFTWARE-CONSULTING.php">AI Software Consulting</a></li>
+											<li class="dropdown-header"><a href="MVP-Development.php">MVP Development for AI Startups</a></li>
+											<li class="dropdown-header"><a href="Artificial-Intelligence.php">Machine Learning Solutions</a></li>
+											<li class="dropdown-header"><a href="Block-Chain-Development.php">BlockChain Development</a></li>
+											<li class="dropdown-header"><a href="IoT-App.php">Generative AI & Chatbot Development</a></li>
+											<li class="dropdown-header"><a href="Business-Intelligence.php">Business Intelligence & AI Analytics</a></li>
+											<li class="dropdown-header"><a href="Testing-&-QA.php">AI Testing & Quality Assurance</a></li>
+											<li class="dropdown-header"><a href="Game Development.php">AI for Game Development</a></li>
+											<li class="dropdown-header"><a href="Hire-Dedicated-Development.php">Dedicated AI Developers</a></li>
+											<li class="dropdown-header"><a href="technology.php">AI Technology Stack & Tools</a></li>
+											<!-- <li class="dropdown-header"><a href="custom-crm-development.php">Blockchain App Development	Heading</a></li> -->
+											
+										</ul>
+									</li>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="App-Development.php">Mobile App Development</a></li>
+											<li><a href="android-application-development.php">Andriod App Development</a></li>
+											<li><a href="ios-application-development.php">IOS App Development</a></li>
+											<li><a href="flutter-application-development.php">Flutter App Development</a></li>
+											<li><a href="swift-application-development.php">Swift App Development	</a></li>
+											<li><a href="react.php"> React Native App Development</a></li>
+											<li><a href="hybrid-application-development.php">Hybrid App Development</a></li>
+										
+											<li class="dropdown-header"><a href="Software-Development-Company.php">Software Development</a></li>
+											<li><a href="Custom-software-development.php">Custom Software Development</a></li>
+											<li><a href="enterprise-software-development.php">Enterprise Software Development</a></li>
+											<li><a href="product-development.php">Product Development</a></li>
+											<li><a href="Cloud-Application-Development.php">Cloud Applications Development</a></li>
+											<li><a href="Startup-Application-Development.php">Startup Application Development</a></li>
+										</ul>
+									</li>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header pr-md-0"><a href="Web-Development.php">Web Development</a></li>
+											<li><a href="responsive-web-designing.php">Responsive Web Designing	</a></li>
+											<li><a href="php-development.php">PHP Development</a></li>
+											<li><a href="node-js.php">Node Js Development</a></li>
+											<li><a href="cms-web-development.php">CMS Web Development</a></li>
+											<li><a href="e-commerc-development.php">E-Commerc Development</a></li>
+											<li><a href="crm-web-development.php">CRM Web Development</a></li>
+											<!-- <li><a href="software-development.php">Software Development	</a></li> -->
+											
+											<li class="dropdown-header"><a href="Graphic-&-Branding.php">Graphic & Branding</a></li>
+											<li><a href="Website-Designing.php">Website Designing</a></li>
+											<li><a href="ui.php">UI/UX Designing</a></li>
+											<li><a href="Logo-&-Brouchure.php">Logo & Brouchure	</a></li>
+											<li><a href="Social-Media-Creatives.php">Social Media Creatives</a></li>
+											<li><a href="Corporate-Videos-&-Animation.php">Corporate Videos & Animation</a></li>
+											
+										</ul>
+											<!-- end sub menu item  -->
+									</li>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="Digital-Marketing-Company.php">Digital</a></li>
+											<li><a href="search-engine-optimization.php">Search Engine Optimization</a></li>
+											<li><a href="ppc.php">PPC Management</a></li>
+											<li><a href="Social-Media-Marketing.php">Social Media Marketing</a></li>
+											<li><a href="influencer-marketing.php">Influencer marketing</a></li>
+											<li><a href="Content-Marketing.php">Content Marketing</a></li>
+											<li><a href="Search-Engine-Marketing.php">Search Engine Marketing</a></li>
+											<li><a href="Email-Marketing.php">Email Marketing</a></li>
+											<li><a href="AMAZON-MARKETING.php">Amazon Marketing Services</a></li>
+										
+											<li class="dropdown-header"><a href="Maintenance-And-Support.php">Maintenance And Support</a></li>
+											<li><a href="Applications-And-Web-Support.php">Applications And Web Support</a></li>
+											<li><a href="Technical-Support.php">Tech Support Services</a></li>
+										</ul>
+									</li>
+									
+							</div>
+						</li>
+						
+						<li class="dropdown megamenu-fw">
+							<a href="#">Solutions</a><i class="fas fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+							<div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full icon-list-menu">
+								<ul>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="javascript:void(0)">Application Solutions</a></li>
+											<li><a href="Taxi-Booking-AppDevelopment.php">Taxi Booking App Development</a></li>
+											<li><a href="Food-solution.php">Food Delivery App Development</a></li>
+											<li><a href="Grocery-Delivery-App-Development.php">Grocery Delivery App Development</a></li>
+											<li><a href="Saloon-&-Beauty-App-Development.php">Salon & Beauty App Development</a></li>
+											<li><a href="OTT-App-Development.php">OTT App Development</a></li>
+											<li><a href="Matrimony-solution.php">Matrimony App Development</a></li>
+											<li><a href="Dating-App-Development.php">Dating App Development</a></li>
+											<li><a href="Home-Service-Solution.php">Home Service App Development</a></li>
+											<li><a href="E-Commerce-solution.php">E-Commerce App Development</a></li>
+											<li><a href="Business-Directory-App-Development.php">Business Directory App Development</a></li>
+											<li><a href="Real-Estate-App-Development.php">Real Estate App Development</a></li>
+											<li><a href="Hotel-Booking-App-Development.php">Hotel Booking App Development</a></li>
+										</ul>
+									</li>
+									<li class="mega-menu-column col-lg-4">
+										<ul>
+											<li class="dropdown-header"><a href="javascript:void(0)">Custome Sofware Solutions</a></li>
+											<li><a href="Job-Portal-Development-Company-Solution.php">Job Portal & App Development</a></li>
+											<li><a href="Human-resources-management-software-development.php">Human Resource Management</a></li>
+											<li><a href="CRM-solution.php">Customer Relationship Management </a></li>
+											<li><a href="Hotel-Management-Solution.php">Hotel Management Software</a></li>
+											<li><a href="News-Management-Software-solution.php">News Management Software</a></li>
+											<li><a href="Restaurant-Management-Software-Development-Solution.php">Restaurant Management System</a></li>
+											<li><a href="ERP-solution.php">Enterprise resource planning</a></li>
+											<li><a href="Hospital-Management-Software-Solution.php">Hospital Management Software</a></li>
+											<li><a href="School-Management-Software-Development.php">School management Software</a></li>
+											<li><a href="LMS-DEVELOPMENT-SOLUTIONS.php">Learning Management System</a></li>
+											<li><a href="Pharmacy-Management-System-Solution.php">Pharmacy Management System</a></li>
+											<li><a href="Crypto-&-Exchange-Solutions.php">Crypto & Exchange App</a></li>
+										</ul>
+									</li>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="#">On Demand Solutions</a></li>
+											<li><a href="Mechanics-App-Solution.php">Mechanics App</a></li>
+											<li><a href="Laundry-App-Solution.php">Laundry App</a></li>
+											<li><a href="Car-Rental-App-Development-Solution.php">Car Rental App</a></li>
+											<li><a href="Video-Conferencing-App-Development-Solution.php">Video Conferencing App</a></li>
+											<li><a href="Medicine-Delivery-App-Development.php">Medicine Delivery App</a></li>
+											<li><a href="Short-Video-App-Development.php">Short Video App</a></li>
+											<li><a href="Ewallet-app-devlopment.php">E-Wallet App</a></li>
+											<li><a href="Classified-App-Development-Solution.php">Classified App</a></li>
+											<li><a href="fitness-solution.php">Fitness App</a></li>
+									        <li><a href="Doctor-Appointment-App-Solution.php">Doctor Appointment App</a></li>
+											<li><a href="Courier-Delivery-App-Development-Solution.php">Courier Dlivery App</a></li>
+											<li><a href="Logistics-App-Development-Company-Solution.php">Logistics App</a></li>
+										</ul>
+											<!-- end sub menu item  -->
+									</li>
+									<li class="mega-menu-column col-lg-2">
+										<ul>
+											<li class="dropdown-header"><a href="#">Industries</a></li>
+											<li><a href="Healthcare.php">Healthcare</a></li>
+											<li><a href="Education.php">Education</a></li>
+											<li><a href="e-commerc-industry.php">E-commerce</a></li>
+											<li><a href="Real-Estate-industry.php">Real Estate</a></li>
+											<li><a href="Transport-&-Logistics-Industry.php">Logistics</a></li>
+											<li><a href="#">Finance</a></li>
+											<li><a href="Social-Media-App-Industry.php">Social Networking</a></li>
+											<li><a href="OTT-App-Development.php">Entertainment</a></li>
+											<li><a href="News media industries.php">News & Media</a></li>
+											<li><a href="Food resturent Industry.php">Food & Restaurant</a></li>
+											<li><a href="tour-travel-industry.php">Travel & Tourism</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						
+						<li class="dropdown megamenu-fw">
+							<a href="#">Products</a><i class="fas fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+							<div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full icon-list-menu">
+								<ul>
+									<!--<li class="mega-menu-column col-lg-3">-->
+									<!--	<ul>-->
+									<!--		<li class="dropdown-header"><a href="javascript:void(0)">Groups Brands</a></li>-->
+									<!--		<li><a href="#">Edu-Kryoss</a></li>-->
+									<!--		<li><a href="#">Medi-Kryoss</a></li>-->
+									<!--		<li><a href="#">Kryoss Works</a></li>-->
+									<!--		<li><a href="#">Kryoss Softech</a></li>-->
+									<!--		<li><a href="#">Kryoss HR Services</a></li>-->
+									<!--	</ul>-->
+									<!--</li>-->
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="our-product.php">Our Products</a></li>
+											<li><a href="e-comm-product.php">E-Commerce App</a></li>
+											<li><a href="Our-Food-Delivery-Products.php">Food Delivery Apps</a></li>
+											<li><a href="Grocey-Delivery-Products.php">Grocery Delivery Apps</a></li>
+											<li><a href="Doctor-&-Healthcare-Products.php">Doctor & Healthcare App</a></li>
+											<li><a href="Hotel-Booking-App-Product.php">Hotel Booking App</a></li>
+											<li><a href="OTT-And-Video-Streaming-product.php">OTT & Video Streaming App</a></li>
+											<li><a href="Taxi-App-Solutions-Product.php">Taxi App Solutions</a></li>
+											<li><a href="education-product.php">Education App</a></li>
+											<li><a href="Matrimony-&-Dating-App-Products.php">Matrimoney & Dating App</a></li>
+											<li><a href="Social-Media-App-Products.php">Social Media App</a></li>
+											<li><a href="home-services-product.php">Home Service App Product</a></li>
+											<li><a href="Saloon-&-Beauty-Application-Products.php">Salon & Beauty App</a></li>
+										</ul>
+									</li>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="#">Prime Products</a></li>
+											<li><a href="tour-travel-product.php">Tour & Travel</a></li>
+											<li><a href="Real-Estate-App-Products.php">Real Estate</a></li>
+											<li><a href="Job-Portal-Application-&-Software-Products.php">Job Portals</a></li>
+											<li><a href="Business-Directory-Product.php">Business Directory </a></li>
+											<li><a href="Crypto-&-Exchange-Products.php">Crypto & Exchange</a></li>
+											<li><a href="pos-product.php">POS-Billing</a></li>
+											<li><a href="saas-product.php">SAAS Products</a></li>
+											<li><a href="Accounts-&-ERP-Software-Products.php">Account & ERP</a></li>
+											<li><a href="Transport-&-Logistics-Products.php">Transport & Logistics</a></li>
+									        <li><a href="Video-Conference-Products.php">Video Conference </a></li>
+											<li><a href="News-&-Magazine-Products.php">News & Magazine</a></li>
+											<li><a href="bfsi products.php">BFSI & Finance</a></li>
+											
+											
+										</ul>
+											<!-- end sub menu item  -->
+									</li>
+									<li class="mega-menu-column col-lg-4">
+										<ul>
+											<li class="dropdown-header"><a href="#">Enterprise Products</a></li>
+											<li><a href="HRM-Human-Recourse-Management-Products.php">HRM - Human Resource Management</a></li>
+											<li><a href="CRM-Customer-Relationship-Management-Products.php">CRM - Customer Relationship Management</a></li>
+											<li><a href="NMS-News-Management-Software-Product.php">NMS - News Management Software</a></li>
+											<li><a href="HMS-Hotel-Management-Software-Products.php">HMS- Hotel Management Software</a></li>
+											<li><a href="IMS-Inventory-Management-System-Products.php">IMS - Inventory Management System</a></li>
+											<li><a href="ERP-Enterprise-resource-planning-Products.php">ERP - Enterprise Resource Planning</a></li>
+											<li><a href="HMS.php">HMS - Hospital Management Software</a></li>
+											<li><a href="SMS.php">SMS - School Management Software</a></li>
+											<li><a href="LMS.php">LMS - Learning Management System</a></li>
+											<li><a href="PMS-Pharmacy-Management-System-Products.php">PMS - Pharmacy Management System</a></li>
+											<li><a href="EMS-Event-Management-System-Products.php">EMS-Event Management System</a></li>
+											<li><a href="RMS-Restaurant-Management-System-Products.php">RMS-Restaurant Management System</a></li>
+										</ul>
+									</li>
+									
+									<li class="mega-menu-column col-lg-2">
+										<ul>
+											<li class="dropdown-header"><a href="#">Gaming Products</a></li>
+											<li><a href="Casino Games.php">Casino Games</a></li>
+											<li><a href="Fantasy Sports.php">Fantasy Sports</a></li>
+											
+										
+											<li class="dropdown-header"><a href="#">Others Products</a></li>
+											<li><a href="NFT Products.php">NFT Products</a></li>
+											<li><a href="Betting Apps products.php">Betting Apps</a></li>
+											<li><a href="MLM Products.php">MLM Products</a></li>
+								
+										</ul>
+									</li>
+									
+								</ul>
+							</div>
+						</li>
+							<li class="dropdown megamenu-fw">
+							<a href="javascript:void(0)">Works</a><i class="fas fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+							<div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full icon-list-menu">
+								<ul>
+									
+									<li class="mega-menu-column col-lg-4">
+										<ul>
+											<li class="dropdown-header"><a href="our-work.php">Our Works</a></li>
+											<li><a href="website-work.php">Websites Works</a></li>
+											<li><a href="ui-and-ux-work.php">UI/UX Works</a></li>
+											<li><a href="Graphic-&-Branding-Works.php">Graphic & Branding Works</a></li>
+											<li><a href="Social-Media-creative-works.php">Social Media Creatives Works</a></li>
+											<li><a href="SAAS-Products-Work.php">SAAS Works</a></li>
+											<li><a href="Real-Estate-Works.php">Real Estate Works</a></li>
+											<li><a href="Business-Apps-Works.php">Business Works </a></li>
+											<li><a href="News-&-Magazine.php">News & Magazine Works</a></li>
+											<li><a href="Finance-App-Works.php">Finance Works</a></li>
+											<li><a href="On-Demand.php">On Demand Works</a></li>
+											
+										
+										</ul>
+									</li>
+									<li class="mega-menu-column col-lg-4">
+										<ul>
+											<li class="dropdown-header pr-md-0"><a href="#">Applications Works</a></li>
+											<li><a href="Health-&-Fitness.php">Health & Fitness Applications</a></li>
+											<li><a href="E-commerce-Sites.php">Shoping Applications</a></li>
+											<li><a href="Food-&-Grocery-App.php">Food & Grocery Delivery Applications</a></li>
+											<li><a href="Entertainment-&-OTT.php">Entertainment & OTT Applications</a></li>
+											<li><a href="Taxi-&-Logistics.php">Taxi & Logisticst Applications</a></li>
+											<li><a href="Tour-&-Travel.php">Tour & Travel Applications</a></li>
+											<li><a href="Education-App-Works.php">Education Applications</a></li>
+											<li><a href="MATRIMONY-App-Works.php">Matrimony Applications </a></li>
+											<li><a href="Social-Media-App-Works.php">Social Networking Applications</a></li>
+											<li><a href="Beauty-&-Saloon-App.php">Beauty & Salon Applications	</a></li>
+											
+											
+											
+										</ul>
+											<!-- end sub menu item  -->
+									</li>
+									
+										<li class="mega-menu-column col-lg-4">
+										<ul>
+											<li class="dropdown-header pr-md-0"><a href="#">Gaming Works</a></li>
+											<li><a href="Gaming Works.php">Gaming Works</a></li>
+											<li><a href="Fantasy Apps.php">Fantasy Apps</a></li>
+											<li class="dropdown-header pr-md-0"><a href="#">Crypto Works</a></li>
+											<li><a href="crypto-app.php">Crypto Apps</a></li>
+											<li><a href="Exchange-works.php">Exchange Apps</a></li>
+											<li class="dropdown-header pr-md-0"><a href="#">Other Works</a></li>
+											<li><a href="Betting Apps.php">Betting Apps</a></li>
+											<li><a href="MLM Apps.php">MLM Apps</a></li>
+										
+											
+											
+										</ul>
+											<!-- end sub menu item  -->
+									</li>
+							</div>
+						</li>
+						<li class="dropdown megamenu-fw">
+							<a href="#">Company</a><i class="fas fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+							<div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full icon-list-menu">
+								<ul>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="javascript:void(0)">About Us</a></li>
+											<li><a href="company-overview.php">Company Overview</a></li>
+											<li><a href="kryossgroup.php">Kryoss Group</a></li>
+											<li><a href="why-choose.php">Why Choose Us</a></li>
+											<li><a href="blog.php">Blogs</a></li>
+											<li><a href="Our-Clients.php">Our Clients</a></li>
+										</ul>
+									</li>
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="javascript:void(0)">Approach & Recognition</a></li>
+											<li><a href="Our-Process.php">Our Process</a></li>
+											<li><a href="Our-Client-Reviews.php">Testimonials</a></li>
+											<li><a href="Award.php">Awards</a></li>
+											<li><a href="Privacy-Policy.php">Privacy Policy</a></li>
+											<li><a href="term-condition.php">Terms & Conductions</a></li>
+										</ul>
+									</li>
+									
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="#">Join Us</a></li>
+											<li><a href="Career.php">Careers</a></li>
+											<li><a href="Life@Kryoss-Softech.php">Life@Kryoss</a></li>
+											<li><a href="employee.php">Employees Speak</a></li>
+											<li><a href="Kryoss-Business-Prime-Program.php">Become Our BPP</a></li>
+											<li><a href="Become-our-IPP.php">Become our IPP</a></li>
+										</ul>
+									</li>
+									
+									<li class="mega-menu-column col-lg-3">
+										<ul>
+											<li class="dropdown-header"><a href="#">Kryoss Brands</a></li>
+											<li><a href="https://zryoss.com/">Zryoss</a></li>
+											<li><a href="https://zryoss.com/">Vyom Biz</a></li>
+											<li><a href="https://zryoss.com/">Adkryoss</a></li>
+											<li><a href="index.php">Kryoss Softech</a></li>
+											<li><a href="https://www.clinkhr.com/">CLink HR Services</a></li>
+										</ul>
+											<!-- end sub menu item  -->
+									</li>
+		
+								</ul>
+							</div>
+						</li>
+						
+						<!-- <li><a href="blog.php">Blog</a></li> -->
+		
+						<li class="button call-btn d-sm-none d-lg-flex"><a data-toggle="modal" data-target="#contactInfo" class="btn btn-danger"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+						<li class="button lg-padding-15px-lr"><a href="contactform.php" class="lg-margin-10px-tb btn btn-danger">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header><section class="wow fadeIn cover-background background-position-top top-space half-section inner-banner" style="background: url(icons/banner/bannerbetting.png)">
+				<div class="container">
+						<div class="row">
+								<div class="col-7 page-title-large d-flex flex-column justify-content-center">
+									<h3 class="h1 title-large alt-font text-black font-weight-600 mb-0">Betting App Works</h3>
+								</div>
+						</div>
+				</div>
+		</section>
+		<div class="breadcrumb-strip">
+	<div class="container">
+		<div class="row">
+			<div class="breadcrumb text-small sm-margin-10px-top">
+				<ul>
+					<li><a href="index.php" class="text-dark-gray">Home</a></li>
+					<li class="text-dark-gray">Betting Apps Works</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="wow fadeIn padding-60px-top no-padding-bottom">
+	
+	<div class="tab-content">
+		<div class="tab-pane fade in active show">
+			<div class="portfolio_item">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 text-center wow fadeInLeft">
+							<img class="lazyload" data-src="icons/ works/Betting App/9 stacks.png" alt="bitnspay">
+						</div>
+						<div class="col-sm-6 wow fadeInRight">
+							<h3 class="text-extra-dark-gray alt-font font-weight-600"><span class="text-danger">9stacks Poker</span>-Play poker games</h3>
+							<p>9stacks is India’s fastest growing online poker platform with over 1 lakh subscribers choosing to play real money poker on the county’s safest, 100% legal online poker App and website.
+
+Fully compliant with all government rules and regulations, 9stacks offers a special sign up bonus to every new player wants to get on the platform and use their skills to play cash games and tournaments to win real money, everyday....<a href="#" class="text-danger font-weight-600">More Details</a>  </p>
+						
+							<div class="action">
+								<div class="app_icon">
+									<a href="https://assets1.9stacks.com/wrapperAppUpdate/9stacks_poker.apk" rel="nofollow" target="_blank"><img class="lazyload" data-src="icons/Health-&-Fitness/google app store.png" alt="playstore"></a>
+									<a href="https://apps.apple.com/in/app/9stacks-poker/id1267781607" rel="nofollow" target="_blank"><img class="lazyload" data-src="icons/Health-&-Fitness/Ios.png" alt="playstore"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio_item">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 text-center wow fadeInRight">
+							<img class="lazyload" data-src="icons/ works/Betting App/rajbet.png" alt="coin">
+						</div>
+						<div class="col-sm-6 wow fadeInLeft">
+							<h3 class="text-extra-dark-gray alt-font font-weight-600"><span class="text-danger">RajBet</span>- Online Casino India </h3>
+							<p>RajBet is one Indian online casino that takes roulette seriously. From American to French or European casino roulette, fans have a fantastic range of games to choose from.RajBet is to provide Indian players with the very best online casino in rupees. As well as our incredible selection of online games & sports betting,we strive to make sure every detail is perfect.......<a href="#" class="text-danger font-weight-600">More Details</a>  </p>
+			
+							<div class="action">
+								<div class="app_icon">
+									<a href="https://raj.bet/uploads/rajbet.apk rel="nofollow" target="_blank"><img class="lazyload" data-src="icons/Health-&-Fitness/google app store.png" alt="playstore"></a>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="portfolio_item">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 text-center wow fadeInRight">
+							<img class="lazyload" data-src="icons/ works/Betting App/sattabet.png" alt="bit droplet">
+						</div>
+						<div class="col-sm-6 wow fadeInLeft">
+							<h3 class="text-extra-dark-gray alt-font font-weight-600"><span class="text-danger">Satta Bet</span> - Top Online Satta Betting App  </h3>
+							<p>Satta bet app is one of the top online satta betting app with its unique user friendly features and functionalities. This app offers all kinds of bazars for its players. Satta Matka markets ranging from Regular satta Bazar, King Bazar, and the Starline Bazar. The regular bazar consists of Kalyan, Milan, Balaji, Rajdhani, Sridevi, Time Syndicate, and many more other markets. Other than that there is King Market such as Gali, Disawar, Faridabad, Gaziabad, and many more. .....<a href="#" class="text-danger font-weight-600">More Details</a>  </p>
+							<div class="action">
+								<div class="app_icon">
+									<a href="https://www.sattabet.co/fairbets.apk" rel="nofollow" target="_blank"><img class="lazyload" data-src="icons/Health-&-Fitness/google app store.png" alt="playstore"></a>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+			
+	</div>
+</section>
+<section class="wow fadeIn half-section lazyload" style="background: url(assets/images/indexImg/Counter.png);position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;background-attachment: fixed;">
+	<div class="container">
+		<div class="row">
+			<div class="col-6 col-lg-3 col-md-6 sm-margin-10px-tb wow fadeInRight">
+				<div class="feature-box-5 vertical-middle position-relative">
+					<i class="text-white icon-extra-medium top-6 bg-icon bg-monitor"></i>
+					<div class="feature-content">
+						<h4 class="h3 d-block text-white font-weight-600 alt-font mb-0 timer plus" data-speed="2000" data-to="500">750</h4>
+						<span class="text-small text-white text-uppercase position-relative top-minus4">Project Delivered</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-3 col-md-6 sm-margin-10px-tb wow fadeInRight" data-wow-delay="0.2s">
+				<div class="feature-box-5 vertical-middle position-relative">
+					<i class="text-white icon-extra-medium top-6 bg-icon bg-team"></i>
+					<div class="feature-content">
+						<h4 class="h3 d-block text-white font-weight-600 alt-font mb-0 timer plus" data-speed="2000" data-to="150">150</h4>
+						<span class="text-small text-white text-uppercase position-relative top-minus4">Development Staff</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-3 col-md-6 sm-margin-10px-tb wow fadeInRight" data-wow-delay="0.4s">
+				<div class="feature-box-5 vertical-middle position-relative">
+					<i class="text-white icon-extra-medium top-6 bg-icon bg-trophy"></i>
+					<div class="feature-content">
+						<h4 class="h3 d-block text-white font-weight-600 alt-font mb-0 timer plus" data-speed="2000" data-to="10">10</h4>
+						<span class="text-small text-white text-uppercase position-relative top-minus4">Years of Experience</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-3 col-md-6 sm-margin-10px-tb wow fadeInRight" data-wow-delay="0.6s">
+				<div class="feature-box-5 vertical-middle position-relative">
+					<i class="text-white icon-extra-medium top-6 bg-icon bg-client"></i>
+					<div class="feature-content">
+						<h4 class="h3 d-block text-white font-weight-600 alt-font mb-0 timer plus" data-speed="2000" data-to="350">450</h4>
+						<span class="text-small text-white text-uppercase position-relative top-minus4">Satisfied Clients</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section id="testimonial" class="half-section"style="background-color: #ffe6e6;">
+	<div class="container">
+		<div class="col-12 text-center margin-50px-bottom md-margin-30px-bottom wow fadeInUp">
+			<h3 class="alt-font text-extra-dark-gray margin-20px-bottom font-weight-700 md-width-100">Client Testimonials</h3>
+			<span class="separator-line-horrizontal-medium-light2 bg-deep-pink d-table mx-auto width-100px"></span>
+		</div>
+		<div class="row testimonial-bg wow fadeInRight">
+			<style type="text/css">
+				.testimonial-bg{
+					background: url(assets/images/indexImg/Testimonials.png) no-repeat center right;
+				}
+			</style>
+			<div class="col-12 col-lg-9">
+				<div class="testimonialSlider swiper-container wow fadeInLeft" data-wow-delay="0.3s">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide col-12 col-lg-12 last-paragraph-no-margin testimonial-style3 md-no-padding bg-light-gray">
+							<div class="testimonial-content-box padding-50px-lr md-padding-30px-lr padding-30px-tb md-padding-20px-tb bg-white border-radius-6">
+								<div class="text-box">
+									<p>kryoss Softech proved to be a professional service provider from the outset. We appreciate their proactive approach and ability to suggest improvements to a prospective solution on both architectural and business levels. We know we can always rely on Kryoss Softech various competencies when our clients require quality software which would facilitate their business success.</p>
+								</div>
+								<div class="caption margin-30px-top md-margin-15px-top">
+									<div class="text-large alt-font font-weight-600 text-small text-extra-dark-gray">Rikki Farr(Chairman at Audio Design Experts)</div>
+									<p class="text-extra-small text-danger"></p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide col-12 col-lg-12 last-paragraph-no-margin testimonial-style3 md-no-padding bg-light-gray">
+							<div class="testimonial-content-box padding-50px-lr md-padding-30px-lr padding-30px-tb md-padding-15px-tb bg-white border-radius-6">
+								<div class="text-box">
+									<p>Kryoss has delivered all our project needs well within deadlines. They works as your in-house team, we highly recommend them.</p>
+								</div>
+								<div class="caption margin-30px-top md-margin-15px-top">
+									<div class="text-large alt-font font-weight-600 text-small text-extra-dark-gray">Bill Dinklemann, (Van Andel Education Institute)</div>
+									<p class="text-extra-small text-danger"></p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide col-12 col-lg-12 last-paragraph-no-margin testimonial-style3 md-no-padding bg-light-gray">
+							<div class="testimonial-content-box padding-50px-lr md-padding-30px-lr padding-30px-tb md-padding-15px-tb bg-white border-radius-6">
+								<div class="text-box">
+									<p>Atomic Object exhibited similar traits as our company. They were about the same size and had a wealth of experience based on past projects. We liked their leadership team and loved their presentation. … They took the time to understand who we were.</p>
+								</div>
+								<div class="caption margin-30px-top md-margin-15px-top">
+									<div class="text-large alt-font font-weight-600 text-small text-extra-dark-gray">CEO,( Drug Testing Administrator)</div>
+									<p class="text-extra-small text-danger"></p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide col-12 col-lg-12 last-paragraph-no-margin testimonial-style3 md-no-padding bg-light-gray">
+							<div class="testimonial-content-box padding-50px-lr md-padding-30px-lr padding-30px-tb md-padding-15px-tb bg-white border-radius-6">
+								<div class="text-box">
+									<p>We love working with Kryoss, the company has been very transparent throughout the entire development process.</p>
+								</div>
+								<div class="caption margin-30px-top md-margin-15px-top md-margin-15px-top">
+									<div class="text-large alt-font font-weight-600 text-small text-extra-dark-gray">Sam Powell, Sam Co</div>
+									<p class="text-extra-small text-danger"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-multy-row-pagination margin-15px-lr margin-10px-top text-center"></div>
+				</div>
+			</div>
+		</div> 
+	</div>
+</section>
+<section class="bg-light-gray half-section">
+	<div class="container">
+	<div class="col-12 text-center margin-50px-bottom sm-margin-20px-bottom">
+		<h3 class="alt-font margin-20px-bottom text-extra-dark-gray font-weight-700 md-width-100"><a href="https://kryosssoftech.com/Our-Clients.php">Our Clients</a></h3>
+		<span class="separator-line-horrizontal-medium-light2 bg-deep-pink d-table mx-auto width-100px"></span>
+	</div>
+	<div class="swiper-slider-clients-second swiper-container black-move">
+		<div class="swiper-wrapper" style="display: flex;align-items: center;">
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/e com 1.png" alt="" class="lazyload"></div>
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/e com 2.png" alt="" class="lazyload"></div>
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/education1.png" alt="" class="lazyload"></div>
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/education2.png" alt="" class="lazyload"></div>
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/grocery(1).png" alt="" class="lazyload"></div>
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/grocery(2).png" alt="" class="lazyload"></div>
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/hospital1.png" alt="" class="lazyload"></div>
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/hospital2.png" alt="" class="lazyload"></div>
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/e com (11).png" alt="" class="lazyload"></div>
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/other(4).png" alt="" class="lazyload"></div>
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/realestate(5).png" alt="" class="lazyload"></div>
+			<div class="swiper-slide text-center"><img data-src="icons/Our-Clients/travel1.png" alt="" class="lazyload"></div>
+			<!-- <div class="swiper-slide text-center"><img data-src="assets/images/indexImg/logo1.png" alt="" class="lazyload"></div> -->
+		</div>
+	</div>
+</div>
+</section>
+		
+		
+
+
+<style>
+    .footer-award-img{
+        width:100px!important;
+        display:block;
+        margin:0 auto;
+    }
+    /* Equal size container */
+/* ===== AWARD SECTION STYLING ===== */
+
+.award-row {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Equal height container */
+.award-box {
+    height: 180px;              /* Controls row height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Force equal visual size */
+.award-box img {
+    width: 160px;               /* Same width for all */
+    height: 160px;              /* Same height for all */
+    object-fit: contain;        /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Smooth hover effect */
+.award-box img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 991px) {
+    .award-box {
+        height: 150px;
+    }
+
+    .award-box img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 576px) {
+    .award-box {
+        height: 120px;
+    }
+
+    .award-box img {
+        width: 100px;
+        height: 100px;
+    }
+}
+}
+</style>
+<section class="wow fadeIn parallax half-section padding-25px-top padding-25px-bottom lazyload" id="contact-us" style="background: url(assets/images/indexImg/contact.png);position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;background-attachment: fixed;">
+	<div class="opacity-full bg-black"></div>
+	<div class="container">
+		<div class="row"> 
+			<div class="col-12 text-center margin-50px-bottom sm-margin-30px-bottom">
+				<h3 class="alt-font text-white margin-10px-bottom font-weight-700 md-width-100">Contact Us</h3>
+				<div class="text-small text-white alt-font text-uppercase margin-20px-bottom">We guarantee to get back to you within a business day.</div>
+				<span class="separator-line-horrizontal-medium-light2 bg-white d-table mx-auto width-100px"></span>
+			</div>
+			<div class="col-12 col-lg-7 wow fadeIn order-md-1">
+				<div class="d-md-none">
+					<h3 class="alt-font text-white-2 margin-10px-bottom">Got a project in mind?</h3>
+					<p class="text-white" style="padding-bottom:20px">We would love to hear how we can bring your possibilities to reality through technology and give away 2hrs of free consulting. So call us now..</p>
+				</div>
+				<div class="padding-30px-all sm-padding-20px-all bg-white border-radius-6">
+					<div class="text-extra-dark-gray alt-font text-large font-weight-600 margin-30px-bottom sm-margin-15px-bottom">
+						Lets Discuss Your Requirement !
+					</div> 
+										<form role="form" id="contact-form-1" action="mailer/assets/footerform.php" method="post" >
+						
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" name="name" id="name" placeholder="Name*" class="">
+								<input type="hidden" name="token_key" id="token_key" value="d3d3LnF1eXRlY2guY29tLy9zZWNfMTYyODU2NDEwMy8vYXV0aF82MTExZWE4N2JiNGZj" >
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="email" id="email" placeholder="E-mail*" class="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" name="phone_no" id="phone_no" placeholder="Phone No" class="">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="subject" id="subject" placeholder="Subject*" class="">
+							</div>
+						</div>
+						<textarea name="message" id="message" placeholder="Your Message*" class="" rows="4"></textarea>
+						<div class="row">
+							<div class="col-sm-12">
+								<input type="text" name="antispam" id="antispam" placeholder="Antispam question: 7 + 5 = ?" class="">
+							</div>
+					    </div>
+						<button id="submit_form" type="submit" class="btn btn-medium border-radius-4 btn-black" name="submit" value="submit" >
+							<span id="btn_loader" style="display: none;vertical-align: middle;margin-right: 5px;">
+								<i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+							</span>
+							Send Message
+						</button>
+						<p style="margin-top:20px"><b>Note:</b> We Respect Your Privacy! Your details will never be shared with anyone for marketing purposes. </p>
+					</form>
+				</div>
+			</div>
+			<div class="col-12 col-lg-5 lg-padding-five-right md-padding-15px-right md-margin-five-bottom wow fadeIn">
+				<div class="d-none d-md-block">
+					<h3 class="alt-font text-white-2 margin-10px-bottom">Got a project in mind?</h3>
+					<p class="text-white">We would love to hear how we can bring your possibilities to reality through technology and give away 2hrs of free consulting. So call us now..</p>
+				</div>
+				<div class="IconList">
+					<div class="last-paragraph-no-margin margin-25px-top margin-10px-bottom"><p class="text-white text-large">Reach Us</p></div>
+					<ul class="md-icon-list">
+						<!--<li>-->
+						<!--	<div class="icon bg-icon bg-usa"></div>-->
+						<!--	<div class="text"><a href="tel:+#" class="text-white">+1-213 493 2650</a></div>-->
+						<!--</li>-->
+						<!--<li>-->
+						<!--	<div class="icon bg-icon bg-uk"></div>-->
+						<!--	<div class="text"><a href="tel:+#" class="text-white">+44-208 089 4430</a></div>-->
+						<!--</li>-->
+						<li>
+							<div class="icon bg-icon bg-email"></div>
+							<div class="text"><a href="mailto:#" class="text-white">Info@kryosssoftech.org</a></div>
+						</li>
+						<li>
+							
+							<div class="icon bg-icon bg-india"></div>
+							<div class="text text-white"><a href="tel:+#" class="text-white">+0124-4001495</a></div>
+							
+							
+						</li>
+						<li>
+							<div class="icon bg-icon bg-india"></div>
+							<div class="text text-white"><a href="tel:+#" class="text-white">+0124-4001495</a></div>
+						</li>
+						<li>
+							<div class="icon bg-icon bg-india"></div>
+							<div class="text text-white"><a href="tel:+#" class="text-white">+0124-4001495</a></div>
+						</li>
+					</ul>
+<div class="row award-row">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+    <div class="award-box">
+      <img src="https://kryosssoftech.org/icons/Award/23 1.png" alt="">
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+    <div class="award-box">
+      <img src="https://kryosssoftech.org/icons/Award/20 1.png" alt="">
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+    <div class="award-box">
+      <img src="https://kryosssoftech.org/icons/Award/22 1.png" alt="">
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+    <div class="award-box">
+      <img src="https://kryosssoftech.org/icons/Award/19 1.png" alt="">
+    </div>
+  </div>
+</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="wow fadeIn half-section bg-light-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center margin-20px-bottom">
+					<h3 class="alt-font text-extra-dark-gray margin-20px-bottom font-weight-700 md-width-100">Our Offices</h3>
+					<span class="separator-line-horrizontal-medium-light2 bg-deep-pink d-table mx-auto width-100px margin-40px-bottom"></span>
+				</div>
+				<div class="col-12 col-md-4 text-center last-paragraph-no-margin md-margin-30px-bottom wow fadeInUp" style="background: url(assets/images/map-pattern.png); background-size: contain;">
+					<div class="padding-40px-tb padding-25px-lr md-padding-20px-all sm-padding-30px-all">
+						<img src="assets/images/flag-india.jpg" alt="india" class="margin-15px-bottom md-margin-10px-bottom"/>
+						<div class="text-extra-dark-gray alt-font font-weight-600 text-uppercase margin-15px-bottom md-margin-15px-bottom">Gurgaon</div>
+						<p class="mb-4">1102, 11th Floor, JMD Megapolis, Sec-48, Gurgaon-122018, Haryana, India</p>
+						<p>
+							<strong>P:</strong> <a href="tel:+91-7042295974">+0124-4001495</a><br>
+							<strong>E:</strong> <a href="mailto:info@kryosssoftech.org">Info@kryosssoftech.org</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-8 text-center last-paragraph-no-margin md-margin-30px-bottom" style="background: url(assets/images/map-pattern.png); background-size: contain;">
+					<div class="row">
+						<div class="col-12 col-md-6 text-center last-paragraph-no-margin md-margin-30px-bottom wow fadeInUp mb-4" data-wow-delay="0.2s" style="background: url(assets/images/map-pattern.png); background-size: contain;">
+							<div class="padding-40px-top md-padding-20px-all sm-padding-30px-all">
+								<img src="assets/images/flag-india.jpg" alt="usa" class="margin-15px-bottom md-margin-10px-bottom"/>
+								<div class="text-extra-dark-gray alt-font font-weight-600 text-uppercase margin-15px-bottom md-margin-15px-bottom">Gurgaon</div>
+								<p class="mb-4">348-352, Spaze IT Park , Sec-48, Gurgaon-122018, Haryana , India<br></p>
+								<p><strong>P:</strong> <a href="tel:+1-2134932650">+0124-4001298</a><br><strong>E:</strong> <a href="mailto:info@kryosssoftech.org">Info@kryosssoftech.org</a></p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 text-center last-paragraph-no-margin md-margin-30px-bottom wow fadeInUp mb-4" data-wow-delay="0.2s" style="background: url(assets/images/map-pattern.png); background-size: contain;">
+							<div class="padding-40px-top md-padding-20px-all sm-padding-30px-all">
+								<img src="assets/images/flag-india.jpg" alt="usa" class="margin-15px-bottom md-margin-10px-bottom"/>
+								<div class="text-extra-dark-gray alt-font font-weight-600 text-uppercase margin-15px-bottom md-margin-15px-bottom">pune</div>
+								<p class="mb-4">C-601, Pune IT Park, 34 Aundh Road, Bhau Patil Marg, Pune – 411020 Maharashtra, India.<br></p>
+								<p><strong>P:</strong> <a href="tel:+1-2134932650">+91-020-411208</a><br><strong>E:</strong> <a href="mailto:info@kryosssoftech.org">info@kryosssoftech.org</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</section>
+<footer class="footer-classic-dark bg-extra-dark-gray">
+	<div class="footer-widget-area padding-70px-top padding-30px-bottom sm-padding-30px-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 widget md-margin-30px-bottom sm-text-center last-paragraph-no-margin"style="padding-left:">
+					<img class="footer-logo lazyload" data-src="assets/images/indexImg/kryoss white.png" alt="">
+<div class="widget-title alt-font text-small text-extra-medium-gray text-uppercase margin-20px-tb font-weight-600">TRANSFORMING IDEAS INTO INTELLIGENT REALITY</div>
+					<p class="text-small width-100 sm-width-100 line-height-26 text-extra-medium-gray">Kryoss Softech delivers AI-powered software solutions, including Custom AI Development,
+						Smart Web & Mobile Applications,
+						Automation, Analytics, and IT Consulting.
+
+						We design secure, scalable, and high-performance digital products that use AI to streamline processes, improve decisions, and maximize long-term ROI.
+					</p>
+					<div class="social-icon-style-8 d-inline-block vertical-align-middle margin-20px-top">
+						<ul class="small-icon mb-0">
+							<li><a class="text-white-2" href="https://www.facebook.com/kryosssoftech" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a class="text-white-2" href="https://twitter.com/KryossSoftech" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							<li><a class="text-white-2" href="https://www.linkedin.com/company/77628129" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+							<li><a class="text-white-2" href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 widget md-margin-30px-bottom">
+					<div class="widget-title alt-font text-medium text-white text-uppercase margin-20px-bottom font-weight-600">Services</div>
+					<ul class="list-unstyled line-height-28">
+						<li><a href="https://kryosssoftech.org/Product-Engineering.php">Product Engineering</a></li>
+						<li><a href="https://kryosssoftech.org/SOFTWARE-CONSULTING.php">Software Consulting</a></li>
+						<li><a href="https://kryosssoftech.org/MVP-Development.php">MVP Development</a></li>
+						<li><a href="https://kryosssoftech.org/Artificial-Intelligence.php">Artificial Intelligence</a></li>
+						<li><a href="https://kryosssoftech.org/Block-Chain-Development.php">Block Chain Development</a></li>
+						<li><a href="https://kryosssoftech.org/IoT-App.php">IoT Development</a></li>
+						<li><a href="https://kryosssoftech.org/Business-Intelligence.php">BI & Analytics</a></li>
+						<li><a href="https://kryosssoftech.org/Testing-&-QA.php">Testing & QA</a></li>
+						<li><a href="https://kryosssoftech.org/Hire-Dedicated-Development.php">Hire Dedicated Developers</a></li>
+						<li><a href="https://kryosssoftech.org/ui.php">UI/UX Designing</a></li>
+						<li><a href="https://kryosssoftech.org/Digital-Marketing-Company.php">Digital Marketing</a></li>
+						<li><a href="https://kryosssoftech.org/Maintenance-And-Support.php">Maintenance And Support</a></li>
+					</ul>
+
+					
+					</div>
+				<div class="col-lg-3 col-md-6 widget md-margin-10px-bottom">
+					<div class="widget-title alt-font text-medium text-white text-uppercase margin-20px-bottom font-weight-600">Kryoss Products</div>
+					<ul class="list-unstyled line-height-28">
+						<li><a href="https://kryosssoftech.org/e-comm-product.php">E-Commerce App</a></li>
+						<li><a href="https://kryosssoftech.org/Our-Food-Delivery-Products.php">Food & Grocery Apps</a></li>
+						<li><a href="https://kryosssoftech.org/Doctor-&-Healthcare-Products.php">Doctor & Healthcare App</a></li>
+						<li><a href="https://kryosssoftech.org/Hotel-Booking-App-Product.php">Travel & Hotel Booking App</a></li>
+						<li><a href="https://kryosssoftech.org/OTT-And-Video-Streaming-product.php">OTT & Video Streming App</a></li>
+						<li><a href="https://kryosssoftech.org/Taxi-App-Solutions-Product.php">Taxi App Solutions</a></li>
+						<li><a href="https://kryosssoftech.org/education-product.php">Eucation App</a></li>
+						<li><a href="https://kryosssoftech.org/Matrimony-&-Dating-App-Products.php">Matrimony & Dating App</a></li>
+						<li><a href="https://kryosssoftech.org/Social-Media-App-Products.php">Social Media App</a></li>
+						<li><a href="https://kryosssoftech.org/Real-Estate-App-Products.php">Real Estate App</a></li>
+						<li><a href="https://kryosssoftech.org/home-services-product.php">Home Services App</a></li>
+						<li><a href="https://kryosssoftech.org/Saloon-&-Beauty-Application-Products.php">Saloon & Beauty App</a></li>
+					</ul>
+					
+				</div>
+			   <div class="col-lg-3 col-md-6 widget md-margin-10px-bottom">
+					<div class="widget-title alt-font text-medium text-white text-uppercase margin-20px-bottom font-weight-600">About Us</div>
+					<ul class="list-unstyled line-height-28">
+						<li><a href="https://kryosssoftech.org/company-overview.php">Company Overview</a></li>
+						<li><a href="https://kryosssoftech.org/why-choose.php">Why Choose Us</a></li>
+						<li><a href="https://kryosssoftech.org/Engagement-Models.php">Engagement Models</a></li>
+						<li><a href="https://kryosssoftech.org/Our-Clients.php">Our Clients</a></li>
+						<li><a href="https://kryosssoftech.org/blog.php">Our Blog</a></li>
+						<li><a href="https://kryosssoftech.org/Career.php">Careers</a></li>
+						<li><a href="https://kryosssoftech.org/Life@Kryoss-Softech.php">Life@Kryoss</a></li>
+						<li><a href="https://kryosssoftech.org/Award.php">Awards</a></li>
+						<li><a href="https://kryosssoftech.org/Our-Client-Reviews.php">Testimonials</a></li>
+						<li><a href="https://kryosssoftech.org/Kryoss-Prime-Partner-Program.php">Become Our Prime Partner</a></li>
+						<li><a href="https://kryosssoftech.org/Privacy-Policy.php">Privacy Policy</a></li>
+						<li><a href="https://kryosssoftech.org/term-condition.php">Terms & Condition</a></li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="footer-bottom border-top border-color-medium-dark-gray padding-20px-tb">
+			<div class="d-md-flex">
+				<div class="flex-fill text-extra-medium-gray text-extra-small text-center">Copyright &copy; 2026 Kryoss Softech Private Ltd. All Rights Reserved </div>
+			</div>
+		</div>
+	</div>
+</footer>
+<a class="scroll-top-arrow" href="javascript:void(0);"><i class="fa fa-angle-up"></i></a>
+<!-- Video Modal -->
+<div class="modal fade" id="video-modal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title text-center"></h4>
+			</div>
+			<div class="modal-body">
+				<iframe style="width:100%; height:350px" src="" allowfullscreen></iframe>
+			</div>
+			<div class="modal-footer">
+				<div class="text-center">
+					<button type="button" class="btn-orange" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Contact info Modal -->
+<div class="modal fade" id="contactInfo" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-header justify-content-center">
+				<h4 class="modal-title font-weight-600">Kryoss Contacts</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="center">
+				    <h5>For Sales Inquiry</h5> 
+					<p class="india h4 font-weight-600"><a href="tel:+0124-4001495">+0124-4001495</a></p>
+					<p class="india h4 font-weight-600"><a href="tel:+0124-4001495">+0124-4001495</a></p>
+					<!--<p class="india h4 font-weight-600"><a href="tel:+#">+91-704 229 5974</a></p>-->
+					<br>
+					<h5>For HR Inquiry</h5> 
+					<p class="india h4 font-weight-600"><a href="mailto:Info@kryosssoftech.org">Info@kryosssoftech.org</a></p>
+					<p class="india h4 font-weight-600"><a href="mailto:Info@kryossshr.org">Hr@kryosssoftech.org</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		<div id="mask"></div>
+		<!-- javascript libraries -->
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/modernizr.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script src="js/jquery.appear.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/particles.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/ls.bgset.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" crossorigin="anonymous"></script>
+					
+		
+			<script>
+				/* <![CDATA[ */
+				goog_snippet_vars = function() {
+					var w = window;
+					w.google_conversion_id = ;
+					w.google_conversion_label = "qLjyCMjTzGkQvLm00AM";
+					w.google_remarketing_only = false;
+				}
+				// DO NOT CHANGE THE CODE BELOW.
+				goog_report_conversion = function(url) {
+					goog_snippet_vars();
+					window.google_conversion_format = "3";
+					var opt = new Object();
+					opt.onload_callback = function() {
+						if (typeof(url) != 'undefined') {
+							window.location = url;
+						}
+					}
+					var conv_handler = window['google_trackConversion'];
+					if (typeof(conv_handler) == 'function') {
+						conv_handler(opt);
+					}
+				}
+				/* ]]> */
+			</script>
+			<script src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+		
+			<script>
+				window.dataLayer = window.dataLayer || [];
+
+				function gtag() {
+					dataLayer.push(arguments);
+				}
+				gtag('js', new Date());
+
+				gtag('config', 'UA-38372579-1');
+			</script>
+						<script>
+				var $zoho = $zoho || {};
+				$zoho.salesiq = $zoho.salesiq || {
+					widgetcode: "f817b96e0bf8c19742530bd47eaf90f967f2914aae73a7a866310323750db9d5b357632fc63996eb5d0f07e89c9c4459",
+					values: {},
+					ready: function() {}
+				};
+				var d = document;
+				s = d.createElement("script");
+				s.type = "text/javascript";
+				s.id = "zsiqscript";
+				s.defer = true;
+				s.src = "widget";
+				t = d.getElementsByTagName("script")[0];
+				t.parentNode.insertBefore(s, t);
+				d.write("<div id='zsiqwidget'></div>");
+			</script>
+		
+				</body>
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "8448909389", // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+		</html>

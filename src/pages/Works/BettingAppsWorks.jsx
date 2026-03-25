@@ -1,0 +1,262 @@
+import React from 'react';
+import {
+  Briefcase,
+  ChevronRight,
+  Globe,
+  CheckCircle,
+  Star,
+  Play,
+  Apple
+} from 'lucide-react';
+import { motion } from 'framer-motion';
+
+// Import Project Images
+import stacksImg from '../../assets/works/betting/9stacks.png';
+import rajbetImg from '../../assets/works/betting/rajbet.png';
+import sattabetImg from '../../assets/works/betting/sattabet.png';
+import heroImg from '../../assets/works/betting/hero.png';
+
+// Import Components
+import Testimonials from '../../components/home/Testimonials';
+import Contact from '../../components/home/Contact';
+
+
+const projects = [
+  {
+    title: '9stacks Poker – Play Poker Games',
+    description:
+      "9stacks is India's fastest growing online poker platform with over 1 lakh subscribers choosing to play real money poker on the county's safest, 100% legal online poker App and website. Fully compliant with all government rules and regulations, 9stacks offers a special sign up bonus to every new player wants to get on the platform and use their skills to play cash games and tournaments to win real money, everyday.",
+    tags: ['Online Poker', 'Real Money Gaming', 'Card Games'],
+    image: stacksImg,
+    links: [
+      { href: 'https://play.google.com/store/apps/details?id=com.ninestack.poker', type: 'playstore' },
+      { href: 'https://apps.apple.com/in/app/9stacks-poker/id1267781607', type: 'appstore' },
+    ],
+  },
+  {
+    title: 'RajBet – Online Casino India',
+    description:
+      'RajBet is one Indian online casino that takes roulette seriously. From American to French or European casino roulette, fans have a fantastic range of games to choose from. RajBet is to provide Indian players with the very best online casino in rupees. As well as our incredible selection of online games & sports betting, we strive to make sure every detail is perfect.',
+    tags: ['Online Casino', 'Sports Betting', 'Roulette'],
+    image: rajbetImg,
+    links: [
+      { href: 'https://rajbet.com', type: 'website' },
+    ],
+  },
+  {
+    title: 'Satta Bet – Top Online Satta Betting App',
+    description:
+      'Satta bet app is one of the top online satta betting app with its unique user friendly features and functionalities. This app offers all kinds of bazars for its players. Satta Matka markets ranging from Regular satta Bazar, King Bazar, and the Starline Bazar. The regular bazar consists of Kalyan, Milan, Balaji, Rajdhani, Sridevi, Time Syndicate, and many more other markets.',
+    tags: ['Satta Matka', 'Online Betting', 'Mobile App'],
+    image: sattabetImg,
+    links: [
+      { href: 'https://play.google.com/store/apps/details?id=com.sattabet.app', type: 'playstore' },
+    ],
+  },
+];
+
+const stats = [
+  { value: '750', label: 'Project Delivered', icon: <CheckCircle className="text-orange-500" /> },
+  { value: '150', label: 'Development Staff', icon: <Briefcase className="text-orange-500" /> },
+  { value: '10',  label: 'Years of Experience', icon: <Star className="text-orange-500" /> },
+  { value: '450', label: 'Satisfied Clients', icon: <CheckCircle className="text-orange-500" /> },
+];
+
+const BettingAppsWorks = () => {
+  return (
+    <div className="w-full bg-white relative font-sans overflow-hidden">
+
+      {/* 1. Hero Section */}
+      <section
+        className="relative pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center items-center text-center text-white"
+        style={{
+          backgroundImage:
+            `linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.45)), url(${heroImg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+        }}
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative z-10 container mx-auto px-4"
+        >
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+            Betting <span className="text-orange-500">Apps</span>
+          </h1>
+          <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+            Discover our expertise in building fully-featured, secure and scalable online betting and
+            gaming applications tailored for the Indian market.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* 2. Breadcrumb */}
+      <section className="bg-gray-100/80 py-4 border-b border-gray-200 backdrop-blur-md sticky top-0 z-40 shadow-sm">
+        <div className="container mx-auto px-4 flex flex-wrap items-center text-sm md:text-base font-semibold text-gray-600">
+          <a href="/" className="hover:text-orange-500 transition-colors duration-300">Home</a>
+          <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+          <span className="text-orange-500">Betting Apps Works</span>
+        </div>
+      </section>
+
+      {/* 3. Projects Section */}
+      <section className="pt-16 md:pt-24 bg-white relative z-10 w-full mb-16">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-12">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-3xl md:text-4xl font-bold text-black mb-4"
+            >
+              Our <span className="text-orange-500">Betting</span> Applications
+            </motion.h2>
+            <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
+          </div>
+        </div>
+
+        <div className="w-full mt-8">
+          {projects.map((project, idx) => {
+            const isEven = idx % 2 === 0;
+            return (
+              <div key={idx} className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-orange-50'}`}>
+                <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
+
+                  {/* Image */}
+                  <div className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[85%] xl:w-[75%] max-h-[580px] object-contain"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = 'https://kryosssoftech.org/icons/works/betting/betting-placeholder.png';
+                      }}
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                    <div className="flex items-center gap-3 mb-6">
+                      <span className="h-px w-8 bg-orange-500"></span>
+                      <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-500">Project 0{idx + 1}</span>
+                    </div>
+
+                    <h3 className="text-3xl md:text-4xl font-black text-gray-950 mb-6 leading-tight tracking-tight">
+                      {project.title}
+                    </h3>
+
+                    <p className="text-lg text-gray-600 leading-relaxed mb-10 font-light">
+                      {project.description}
+                    </p>
+
+                    <div className="flex flex-wrap gap-2 mb-8">
+                      {project.tags?.map((tag) => (
+                        <span key={tag} className="px-5 py-2 rounded-xl bg-white border border-gray-100 text-[10px] font-black uppercase tracking-widest text-gray-500 shadow-sm">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    {project.links && project.links.length > 0 && (
+                      <div className="flex flex-wrap gap-4 mb-10">
+                        {project.links.map((link, lIdx) => (
+                          <a
+                            key={lIdx}
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-3 bg-gray-800 text-white px-5 py-2.5 rounded-xl hover:bg-orange-500 hover:shadow-lg transition-all duration-300 group/btn"
+                          >
+                            {link.type === 'playstore' && (
+                              <>
+                                <div className="w-6 h-6 flex items-center justify-center">
+                                  <Play className="w-5 h-5 text-gray-400 group-hover/btn:text-white" />
+                                </div>
+                                <div className="flex flex-col items-start leading-tight">
+                                  <span className="text-[9px] uppercase font-bold text-gray-400 group-hover/btn:text-orange-100 italic">Get it on</span>
+                                  <span className="text-sm font-black tracking-tight">Google Play</span>
+                                </div>
+                              </>
+                            )}
+                            {link.type === 'appstore' && (
+                              <>
+                                <div className="w-6 h-6 flex items-center justify-center">
+                                  <Apple className="w-5 h-5 text-gray-400 group-hover/btn:text-white" />
+                                </div>
+                                <div className="flex flex-col items-start leading-tight">
+                                  <span className="text-[9px] uppercase font-bold text-gray-400 group-hover/btn:text-orange-100 italic">Download on the</span>
+                                  <span className="text-sm font-black tracking-tight">App Store</span>
+                                </div>
+                              </>
+                            )}
+                            {link.type === 'website' && (
+                              <>
+                                <div className="w-6 h-6 flex items-center justify-center">
+                                  <Globe className="w-5 h-5 text-gray-400 group-hover/btn:text-white" />
+                                </div>
+                                <div className="flex flex-col items-start leading-tight">
+                                  <span className="text-[9px] uppercase font-bold text-gray-400 group-hover/btn:text-orange-100 italic">Visit</span>
+                                  <span className="text-sm font-black tracking-tight">Website</span>
+                                </div>
+                              </>
+                            )}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* 4. Stats Counter Section */}
+      <section
+        className="py-20 bg-gray-900 text-white relative overflow-hidden"
+        style={{
+          backgroundImage: "url('https://kryosssoftech.org/assets/images/indexImg/Counter.png')",
+          backgroundSize: 'cover',
+          backgroundAttachment: 'fixed',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/80"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-700/50">
+            {stats.map((stat, index) => (
+              <div key={index} className="p-4">
+                <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">{stat.value}+</h3>
+                <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Testimonials />
+
+      {/* 6. Clients Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-gray-950 mb-12">Our <span className="text-orange-500">Clients</span></h2>
+          <div className="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
+            <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
+            <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
+            <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
+          </div>
+        </div>
+      </section>
+
+      <Contact />
+    </div>
+  );
+};
+
+export default BettingAppsWorks;
