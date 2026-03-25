@@ -1,6 +1,6 @@
 import React from 'react';
 import { Plane, MapPin, Compass, Calendar, Star, TrendingUp } from 'lucide-react';
-import aboutImg from '../../assets/tourlanding-img/Tourlandingabout.jpg';
+import aboutImg from '../../assets/tourlanding-img/tourlandingabout.jpg';
 
 const TourTravelAbout = () => {
     const stats = [
