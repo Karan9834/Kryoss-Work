@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from './sections/Hero'
-import AboutSetion from './sections/AboutSetion'
+import AboutSection from './sections/AboutSection'
 import FeatureSection from './sections/FeatureSection'
 import WhyChooseUsSection from './sections/WhyChooseUsSection'
 import TechStack from '../../../components/PestControl/PestTech'
@@ -11,7 +11,7 @@ const FlowWrite = () => {
   return (
     <>
     <Hero/>
-    <AboutSetion/>
+    <AboutSection/>
     <FeatureSection/>
     <WhyChooseUsSection/>
     <TechStack/>
