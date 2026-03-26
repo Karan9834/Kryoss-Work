@@ -88,7 +88,7 @@ const HealthFitnessApps = () => {
                                         <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
                                             <div className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl">
                                                 <img
-                                                    src={item.img?.startsWith('http') ? item.img : `https://kryosssoftech.org/${item.img}`}
+                                                    src={item.img}
                                                     alt={item.alt || 'Portfolio App'}
                                                     className="max-h-[500px] max-w-full object-contain"
                                                     loading="lazy"

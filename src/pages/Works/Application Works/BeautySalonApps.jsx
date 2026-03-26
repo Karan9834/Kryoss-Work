@@ -58,7 +58,7 @@ const BeautySalonApps = () => {
                                     <div key={index} className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-orange-50'}`}>
                                         <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
                                             <div className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl">
-                                                <img src={item.img?.startsWith('http') ? item.img : `https://kryosssoftech.org/${item.img}`} alt={item.alt || 'Portfolio App'} className="max-h-[500px] max-w-full object-contain" loading="lazy" />
+                                                <img src={item.img} alt={item.alt || 'Portfolio App'} className="max-h-[500px] max-w-full object-contain" loading="lazy" />
                                             </div>
                                             <div className="w-full lg:w-1/2 flex flex-col justify-center z-20">
                                                 <h3 className="text-2xl md:text-4xl font-extrabold text-black mb-6 leading-tight hover:text-orange-600 transition-colors duration-300" dangerouslySetInnerHTML={{ __html: item.titleHtml || item.titleText }} />

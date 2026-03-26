@@ -114,7 +114,7 @@ const CryptoApps = () => {
                                             {/* Image Box */}
                                             <div className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl">
                                                 <img
-                                                    src={assetMap[item.asset] || (item.img?.startsWith('http') ? item.img : item.img ? `https://kryosssoftech.org/${item.img}` : 'https://kryosssoftech.org/icons/default-app.png')}
+                                                    src={assetMap[item.asset] || (item.img?.startsWith('http') ? item.img : item.img ? `${item.img}` : 'https://kryosssoftech.org/icons/default-app.png')}
                                                     alt={item.alt || 'Crypto App'}
                                                     className="max-h-[500px] max-w-full object-contain"
                                                     loading="lazy"

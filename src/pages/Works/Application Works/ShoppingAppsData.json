@@ -1,57 +1,95 @@
 {
   "tabs": [
-    { "id": "shopping", "name": "Shopping Projects" }
+    {
+      "id": "shopping",
+      "name": "Shopping Projects"
+    }
   ],
   "sections": {
     "shopping": [
       {
-        "img": "icons/shopping/adorawe.png",
+        "img": "/ApplicationsWorks/Shopping.png",
         "alt": "Adorawe",
         "titleText": "Adorawe- Fashiononline shopping mall",
         "description": "Adorawe fashion online shopping mall is stylish destination,this fashion app designed for Saudi Arabia, United Arab Emirates, Kuwait, Oman, Bahrain & Qatar shopper Adorawe is an vogue closet for women, 500+ daily new casual two pieces, evening dress,nice bags in affordable price. .....More Details",
-        "links": [ { "text": "Play Store", "href": "#" } ]
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
       },
       {
-        "img": "icons/shopping/cartlow.png",
+        "img": "/ApplicationsWorks/Shopping1.png",
         "alt": "Cartlow",
         "titleText": "Cartlow - Smarter Way To Shop",
         "description": "Meet Cartlow - is online shopping destination for buying Pre-owned, Open-box and Clearance products at the lowest price in UAE.Cartlow is a re-commerce initiative built on the bases of helping retailers discard less to save the environment while passing on benefits of savings to the customers. More Details",
-        "links": [ { "text": "Play Store", "href": "#" } ]
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
       },
       {
-        "img": "icons/shopping/jazp.png",
+        "img": "/ApplicationsWorks/Shopping5.png",
         "alt": "Jazp",
         "titleText": "Jazp.com - It’s a Online Store",
         "description": "Jazp.com is the leading online shopping platform in UAE, Oman, Qatar and Saudi Arabia KSA. Developed in 2018. Its vast product mix includes exclusive in- house collections, sports, Electronics, Mobiles, Perfumes, and globally recognized brands. Something customers choose Jazp.com for its aspirational yet accessible product selection.  .....More Details",
-        "links": [ { "text": "Play Store", "href": "#" } ]
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
       },
       {
-        "img": "icons/shopping/geekbuying.png",
+        "img": "/ApplicationsWorks/Shopping4.png",
         "alt": "GeekBuying",
         "titleText": "GeekBuying - Make life smart and easy",
         "description": "Online shopping with GeekBuying is very easy as you get to shop from the comfort of your home and get products delivered at your doorstep. By downloading the GeekBuying free online shopping app on your Android phone or tablet, you can effortlessly browse our massive collection of more than 20,000 products from multiple categories including mobile phones, fashion wear, electronic devices, accessories and consumer durables. More Details",
-        "links": [ { "text": "Play Store", "href": "#" } ]
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
       },
       {
-        "img": "icons/shopping/chinagadgets.png",
+        "img": "/ApplicationsWorks/Shopping2.png",
         "alt": "China Gadgets",
         "titleText": "China Gadgets – The Gadget App",
         "description": "In the China-Gadgets App you will find the best reviews and craziest gadgets in the whole web! But that's not all: you get every gadget at the best price thanks to the online price comparison.Regardless of whether it is the strongest magnets in the world, the smallest drone, the best vacuum robot, the most popular Xiaomi product or a really senseless gadget for the next party - we report on everything and test everything, including product videos. China Gadgets - the fine line between “totally crazy”, “useful” and “must-have from China”! More Details",
-        "links": [ { "text": "Play Store", "href": "#" } ]
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
       },
       {
-        "img": "icons/shopping/runwaysale.png",
+        "img": "/ApplicationsWorks/Shopping6.png",
         "alt": "RunwaySale",
         "titleText": "RunwaySale- Guilt-Free shopping at the palm of your hand!",
         "description": "RunwaySale is the biggest South African online shopping society. It offers exclusive access to designer labels at up to 70% off for a limited time. New events launch daily that features a variety of mens, womens and kids designer apparel, shoes, accessories and more. More Details",
-        "links": [ { "text": "Play Store", "href": "#" } ]
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
       },
       {
-        "img": "icons/shopping/farfetch.png",
+        "img": "/ApplicationsWorks/Shopping3.png",
         "alt": "FARFETCH",
         "titleText": "FARFETCH — Designer Clothing Shopping for Spring",
         "description": "Shop your favorite designer brands at FARFETCH, from new season clothing to spring and summer accessories. With over 100,000 fashion designer pieces to choose from, like activewear for all activities to expertly-cut fine jewelry — you won’t need to shop anywhere else.Style your spring wardrobe and ease into the new season with the latest trends, from sneakers to hats. Pair an Off-White dress with Gucci sandals this summer, or nail your home video calls with a Ganni shirt and fine jewelry from Georg Jensen. .....More Details",
-        "links": [ { "text": "Play Store", "href": "#" } ]
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
       }
     ]
   }

@@ -1,92 +1,110 @@
 {
   "tabs": [
-    { "id": "taxi-logistics", "name": "Taxi & Logistics Projects" }
+    {
+      "id": "taxi-logistics",
+      "name": "Taxi & Logistics Projects"
+    }
   ],
   "sections": {
     "taxi-logistics": [
       {
-        "img": "icons/taxi/oyerickshaw.png",
+        "img": "/ApplicationsWorks/Taxi2.png",
         "alt": "oye riskshaw",
         "titleText": "OYE! Rickshaw: Book a ride",
         "description": "Booking an e-rickshaw has never been more convenient, affordable or easy! Book a ride within minutes from the comfort of your own home. With an ETA as low as 1 minute, your e-rickshaw will be at your doorstep before you know it. When travelling short distances, don’t bother with expensive taxis and cabs – e-rickshaws are up to 50% cheaper than taxis. So whether you want to take a trip to the Metro station or to your local market, we have you covered! .....More Details",
         "links": []
       },
       {
-        "img": "icons/taxi/zorydriver.png",
+        "img": "/ApplicationsWorks/Taxi10.png",
         "alt": "Zory driver",
         "titleText": "Zory Driver, Earn More with your Taxi, Auto / Bike",
         "description": "Zory Driver App is the most driver friendly app. Zory Driver App is the next generation Taxi platform with more focus towards Driver Partners.You have Taxi, Cab, Auto or Bike, Attach it now with Zory.Attach your vehicle, be it Taxi/Cab, Auto or Bike and start earning with Zory Driver App. The most driver friendly app in India for transport business. Zory takes less commission, only 9%, so you get more net take home. The net take home (Excluding Fuel and other) is almost 50% higher as compared to other taxi operators. More Details",
         "links": []
       },
       {
-        "img": "icons/taxi/tukxi.png",
+        "img": "/ApplicationsWorks/Taxi.png",
         "alt": "tukxi",
         "titleText": "Tukxi- Affordable Auto Rides",
         "description": "Tukxi is the new auto-on-demand app for easy, affordable & super-quick commuting around the city. Tukxi brings the best taxi service to you on a pay-by-meter basis reducing the trouble of searching, waiting and haggling.If you’re tired of waiting and chasing Auto Rickshaws, Tukxi is here to help. We bring Autos to where you are, we can even help you schedule your trip in advance. Tukxi is here to preserve the most effective last-mile commute solution by making it more efficient. When you request an Auto through Tukxi, we simply connect you to the nearest available auto. You don’t have to wait or chase Autos anymore, we bring them to your doorstep. There’s no haggling, no surge pricing, you just have to hop in and enjoy the ride. .....More Details",
         "links": []
       },
       {
-        "img": "icons/taxi/shipatoz.png",
+        "img": "/ApplicationsWorks/Taxi5.png",
         "alt": "Ship a to z",
         "titleText": "Shipatoz-Hire Mini Trucks,bikes to Deliver Goods",
         "description": "ShipAtoZ is one of the leading logistics companies in Andhra Pradesh & Telangana, now in Guntur, Vijayawada, Visakhapatnam, Rajahmundry, Ongole, Nellore, Tirupati, Hyderabad, we offer the fastest, cheapest and easiest way to transport goods! ShipAtoZ is India’s largest marketplace for intracity logistics & delivery Services.Looking for on-demand delivery Services for business or personal needs? Rent a mini-truck or bike service to transport goods anywhere in the city Andhra Pradesh & Telangana. More Details",
         "links": []
       },
       {
-        "img": "icons/taxi/tasnim.png",
+        "img": "/ApplicationsWorks/Taxi6.png",
         "alt": "tasnim",
         "titleText": "Tasnim Logistics Passenger",
         "description": "Tasnim Logistics is a free passenger logistics and material logistics application of Al Tasnim Group. This is a full featured app with Employee Role based authorizations.Employees entitled for free commuting between various locations, can make request for pickup & drop services using this application.The requests are pooled to logistics planner’s central hubs, who will assign vehicle with driver to fulfill employee requests.Requestors will be able to see the progress of the request and the trip on real time basis.Logistics Planners can send the journey plans to drivers......More Details",
         "links": []
       },
       {
-        "img": "icons/taxi/redtaxi.png",
+        "img": "/ApplicationsWorks/Taxi3.png",
         "alt": "red taxi",
         "titleText": "Red Taxi",
         "description": "Red Taxi is available in Coimbatore, Tiruppur, Erode, Salem, Trichy, Madurai and Dindigul. See the upcoming list of cities where we operate at redtaxi.co.in Discover Red Taxi, a fleet that lets you get around the city with the highest quality of service and high safety standards. In a few minutes you’ll have a taxi waiting to take you wherever you want. There is no need to wait for public transport or look for a parking place. ETA as low as 5 min. More Details",
-        "links": [ { "text": "Play Store", "href": "#" } ]
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
       },
       {
-        "img": "icons/taxi/taxiguru.png",
+        "img": "/ApplicationsWorks/Taxi7.png",
         "alt": "taxi guru",
         "titleText": "TaxiGuru",
         "description": "TaxiGuru is the largest Inter city taxi service in India. We are the experts in offering One Way and Round trip Taxi for outstation travels. We created our Taxi Services to help you to find the most dependable and highest quality services, anytime and anywhere. All our drivers are well trained and fully licensed. TaxiGuru strives to provide high quality, affordable cab services with utmost transparency in terms of pricing and service delivery.Taxi Guru: We’ve established new safety protocols to help you feel safe when you ride. More Details",
         "links": []
       },
       {
-        "img": "icons/taxi/zingbus.png",
+        "img": "/ApplicationsWorks/Taxi11.png",
         "alt": "Zingbus",
         "titleText": "Zingbus | Online bus ticket booking",
         "description": "Zingbus is an emerging brand in the intercity bus services. We aim to provide a safe and reliable travel experience to the community which include well-equipped buses with modern facilities keeping in mind all the safety essentials. We have a team of trained Drivers and Zingbus Marshals who are dedicated to deliver a comfortable travelling adventure to the customers. .....More Details",
         "links": []
       },
       {
-        "img": "icons/taxi/dtc.png",
+        "img": "/ApplicationsWorks/Taxi1.png",
         "alt": "DTC",
         "titleText": "DTC",
         "description": "DTC App is Dubai’s smartest transport mobile application. The DTC App allows you to discover Dubai and to travel around the city in a very simple and quick way, through our range of affordable Taxi, Limousine and other transport services.The DTC App has been developed with “You” in the heart of its operations to achieve your comfort and happiness, while enjoying a great transportation journey and a pleasant experience! .....More Details",
-        "links": [ { "text": "Play Store", "href": "#" } ]
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
       },
       {
-        "img": "icons/taxi/dtcschoolbus.png",
+        "img": "/ApplicationsWorks/Taxi8.png",
         "alt": "DTC school bus",
         "titleText": "DTC School Bus",
         "description": "Dubai Taxi Corporation (DTC) offers school bus transportation for students studying in Dubai Emirate which is customized to meet schools, nurseries, and other student requirement. Our buses have been selected in accordance with the highest international quality safety standards for school transportation service and providing a portal for parents to register the students. This portal is available for mobile phones as well in order to ease the process of obtaining the school transportation service.  .....More Details",
         "links": []
       },
       {
-        "img": "icons/taxi/shibox.png",
+        "img": "/ApplicationsWorks/Taxi4.png",
         "alt": "shibox",
         "titleText": "Shipox Customer - Book a courier",
         "description": "SHIPOX is a unique and brand new way to Deliver packages from UAE to destinations around the World. SHIPOX gives customers a safe and convenient way to pick up and deliver parcels, documents, checks and packages of any size across the UAE and Worldwide. SHIPOX app makes it easier to manage your delivery orders with easy to use online dashboard. SHIPOX's ultimate goal is to provide tailored yet affordable services compared to competition.\n\nWe offer a fresh approach to getting things shipped and delivered.\n\nSHIPOX app is power packed with features to make sure the logistics process is seamless\n\n.....More Details",
         "links": []
       },
       {
-        "img": "icons/taxi/travelcar.png",
+        "img": "/ApplicationsWorks/Taxi9.png",
         "alt": "travel car",
         "titleText": "TravelCar",
         "description": "The TravelCar app is the ideal solution for every traveler! The app allows you to find a parking space from $0 or a car rental wherever you are, worldwide, at the best price Stop losing money and book one of TravelCar’s free parking spots for a light-headed trip! TravelCar offers a solution that’s simple, helps you save money and beneficial to all parties through its innovative services.....More Details",
-        "links": [ { "text": "Play Store", "href": "#" } ]
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
       }
     ]
   }
