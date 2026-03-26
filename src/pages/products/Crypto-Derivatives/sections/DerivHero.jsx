@@ -20,7 +20,7 @@ const DerivHero = () => {
                             <span>Institutional Derivatives Engine</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight tracking-tight">
+                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight tracking-tight">
                             The Future of <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-400 to-indigo-400">
                                 Leverage Trading.
@@ -56,11 +56,11 @@ const DerivHero = () => {
                     {/* Right: Asset Preview */}
                     <div className="relative animate-float block scale-90 md:scale-100">
                         <div className="absolute -inset-4 bg-purple-500/20 rounded-[4rem] blur-3xl opacity-50"></div>
-                        <div className="relative bg-[#161B22] rounded-[4rem] border-2 border-white/10 overflow-hidden shadow-2xl">
+                        <div className="relative bg-[#161B22] rounded-[3rem] border-2 border-white/10 overflow-hidden shadow-2xl">
                             <img
                                 src={heroImg}
                                 alt="Derivatives Trading Terminal"
-                                className="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity"
+                                className="w-full h-[250px] md:h-[500px] object-cover opacity-90 hover:opacity-100 transition-opacity"
                             />
                         </div>
                     </div>

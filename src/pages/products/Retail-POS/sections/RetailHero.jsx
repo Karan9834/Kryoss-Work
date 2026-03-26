@@ -55,8 +55,8 @@ const RetailHero = () => {
 
                     {/* Right: Asset Placeholder */}
                     <div className="relative animate-float block scale-90 md:scale-100">
-                        <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 to-emerald-400 rounded-[60px] blur opacity-20"></div>
-                        <div className="relative bg-[#161B22] rounded-[60px] border-4 border-white/5 overflow-hidden aspect-square flex items-center justify-center">
+                        <div className="relative -inset-1 bg-gradient-to-r from-amber-400 to-emerald-400 rounded-[60px] blur opacity-20"></div>
+                        <div className="relative bg-[#161B22] h-[400px] md:h-[500px] rounded-[60px] border-4 border-white/5 overflow-hidden aspect-square flex items-center justify-center">
                             <img
                                 src={heroImg}
                                 alt="Retail POS Terminal"

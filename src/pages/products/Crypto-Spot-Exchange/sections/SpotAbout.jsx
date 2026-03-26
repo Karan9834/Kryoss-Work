@@ -8,8 +8,20 @@ const SpotAbout = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-                    {/* Left: Content */}
-                    <div className="space-y-10 order-2 lg:order-1">
+                    {/* Left: Visual */}
+                    <div className="relative order-2 lg:order-1 group animate-fadeInRight">
+                        <div className="absolute -inset-10 bg-blue-50 rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
+                        <div className="relative bg-white p-4 rounded-[3rem] shadow-2xl border border-gray-100 overflow-hidden">
+                            <img
+                                src={aboutImg}
+                                alt="Exchange Infrastructure"
+                                className="w-full h-full object-cover rounded-[2rem] group-hover:scale-105 transition-transform duration-700"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Right: Content */}
+                    <div className="space-y-10 order-1 lg:order-2">
                         <div className="space-y-6">
                             <span className="text-blue-600 font-bold text-sm uppercase tracking-[0.3em] block">The Engine of Growth</span>
                             <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#1A1C3C] leading-tight">
@@ -36,18 +48,6 @@ const SpotAbout = () => {
                                 <h3 className="font-bold text-[#1A1C3C]">Global Liquidity</h3>
                                 <p className="text-gray-500 text-sm font-medium">Out-of-the-box integration with Tier-1 liquidity providers.</p>
                             </div>
-                        </div>
-                    </div>
-
-                    {/* Right: Visual */}
-                    <div className="relative order-1 lg:order-2 group animate-fadeInRight">
-                        <div className="absolute -inset-10 bg-blue-50 rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
-                        <div className="relative bg-white p-4 rounded-[3rem] shadow-2xl border border-gray-100 overflow-hidden">
-                            <img
-                                src={aboutImg}
-                                alt="Exchange Infrastructure"
-                                className="w-full h-full object-cover rounded-[2rem] group-hover:scale-105 transition-transform duration-700"
-                            />
                         </div>
                     </div>
 
