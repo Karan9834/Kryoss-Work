@@ -59,6 +59,8 @@ import HomeService from "../pages/products/Home-sevices/HomeService";
 import MatrimonySolutionPage from '../pages/products/Matrimony-Solution/MatrimonySolutionPage';
 import JobPortalPage from "../pages/products/Job-Portal/JobPortalPage";
 import Busiuness from "../pages/products/Busiuness-Directory/Busiuness";
+import SaasPage from "../pages/products/SaasProduct/SaasPage";
+import AccountErpPage from "../pages/products/Account-Erp/AccountErpPage";
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -119,4 +121,6 @@ export const ProductRoutes = [
     <Route key="travel-agency-mgmt" path="/products/prime/travel-agency-management" element={<TravelAgencyManagementPage />} />,
     <Route key="real-estate-solution" path="/products/prime/real-estate-solution" element={<RealEstatePage />} />,
     <Route key="property-listing-portal" path="/products/prime/property-listing-portal" element={<PropertyListingPortalPage />} />,
+    <Route key="saas-products" path="/products/prime/saas" element={<SaasPage/>}/>,
+    <Route key="account-erp" path="/products/prime/account-erp" element={<AccountErpPage/>}/>,
 ];

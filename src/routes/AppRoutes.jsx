@@ -68,6 +68,10 @@ import MatrimonyApps from '../pages/Works/Application Works/MatrimonyApps';
 import SocialNetworkingApps from '../pages/Works/Application Works/SocialNetworkingApps';
 import BeautySalonApps from '../pages/Works/Application Works/BeautySalonApps';
 
+// ERP & SaaS Product Imports
+import ErpHero from '../pages/products/ERP/ErpHero';
+import ProductSection from '../pages/products/ERP/ProductSection';
+import FlowWrite from '../pages/products/FlowWriteAI/FlowWrite';
 
 const AppRoutes = () => {
     return (
@@ -166,9 +170,13 @@ const AppRoutes = () => {
                 <Route path='/products/service-booking' element={<Services />} />
                 <Route path="/products/job-board" element={<Job />} />
                 <Route path='/products/recruitment-ats' element={<Recruitment />} />
+                <Route path='/product/visionboard-metrics' element={<FlowWrite />} />
+
+                {/* ERP & SaaS Product Routes */}
+                <Route path="/products/enterprise/erp" element={<ErpHero />} />
+                <Route path="/products/sales-crm" element={<SalesCRMPage />} />
 
                 {/* 404 */}
-
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
