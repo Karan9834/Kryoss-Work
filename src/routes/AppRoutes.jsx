@@ -57,6 +57,7 @@ import CryptoApps from '../pages/Works/Crypto Works/CryptoApps';
 import ExchangeApps from '../pages/Works/Crypto Works/ExchangeApps';
 import MLMAppsWorks from '../pages/Works/MLMAppsWorks';
 import BettingAppsWorks from '../pages/Works/BettingAppsWorks';
+import FlowWrite from '../pages/products/FlowWriteAI/FlowWrite';
 
 
 const AppRoutes = () => {
@@ -146,7 +147,7 @@ const AppRoutes = () => {
                 <Route path='/products/service-booking' element={<Services />} />
                 <Route path="/products/job-board" element={<Job />} />
                 <Route path='/products/recruitment-ats' element={<Recruitment />} />
-
+                <Route path='/product/visionboard-metrics' element={<FlowWrite />} />
                 {/* 404 */}
 
                 <Route path="*" element={<NotFound />} />
