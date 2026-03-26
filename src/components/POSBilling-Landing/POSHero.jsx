@@ -59,8 +59,8 @@ const POSHero = () => {
 
                     {/* Right: Actual Hero Image */}
                     <div className="relative group block scale-90 md:scale-100">
-                        <div className="absolute -inset-4 bg-white/20 rounded-[4rem] blur-2xl opacity-50"></div>
-                        <div className="relative bg-white/20 backdrop-blur-xl rounded-[4rem] border-4 border-white/30 overflow-hidden aspect-square shadow-2xl">
+                        <div className="relative -inset-4 bg-white/20 rounded-[4rem] blur-2xl opacity-50"></div>
+                        <div className="relative bg-white/20 h-[400px] md:h-[500px] backdrop-blur-xl rounded-[4rem] border-4 border-white/30 overflow-hidden aspect-square shadow-2xl">
                             <img
                                 src={heroImg}
                                 alt="POS Billing System"

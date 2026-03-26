@@ -61,12 +61,12 @@ const CryptoHero = () => {
 
                     {/* Right: Actual Hero Image */}
                     <div className="relative animate-float block scale-90 md:scale-100">
-                        <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-[50px] blur opacity-30"></div>
-                        <div className="relative bg-[#161B22] rounded-[50px] border border-white/10 overflow-hidden aspect-square shadow-2xl">
+                        <div className="relative bg-gradient-to-r from-blue-500 to-purple-500 rounded-[50px] blur opacity-30"></div>
+                        <div className="relative bg-[#161B22] h-[400px] md:h-[500px] rounded-[3rem] border border-white/10 overflow-hidden aspect-square shadow-2xl">
                             <img
                                 src={heroImg}
                                 alt="Crypto Exchange Platform"
-                                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0A0B14]/60 to-transparent pointer-events-none"></div>
                         </div>

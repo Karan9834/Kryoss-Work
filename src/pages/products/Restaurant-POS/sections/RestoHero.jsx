@@ -21,7 +21,7 @@ const RestoHero = () => {
                             <span>Ultimate Dining OS</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-black leading-tight tracking-tight">
+                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight tracking-tight">
                             Elevate Every <br />
                             <span className="text-amber-300">Dining Experience</span> <br />
                             <span className="text-emerald-200 text-3xl lg:text-4xl xl:text-5xl ">With Precision POS</span>
@@ -47,7 +47,7 @@ const RestoHero = () => {
                     {/* Right: Asset Preview */}
                     <div className="relative animate-float block scale-90 md:scale-100">
                         <div className="absolute -inset-4 bg-white/20 rounded-[5rem] blur-2xl opacity-50"></div>
-                        <div className="relative bg-white/10 backdrop-blur-xl rounded-[5rem] border-4 border-white/30 overflow-hidden shadow-2xl flex items-center justify-center">
+                        <div className="relative bg-white/10 h-[400px] md:h-[500px] backdrop-blur-xl rounded-[5rem] border-4 border-white/30 overflow-hidden shadow-2xl flex items-center justify-center">
                             <img
                                 src={heroImg}
                                 alt="Restaurant POS Terminal"
