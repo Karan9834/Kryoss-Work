@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import { ArrowRight } from "lucide-react";
 import erphero from "../../assets/erp-img/erphero.jpg";
 
@@ -48,10 +48,15 @@ const ErpHero = () => {
                     </p>
 
                     {/* CTA */}
-                    <button className="flex items-center gap-3 bg-[#3b82f6] text-white font-medium px-6 py-3 rounded-full hover:opacity-90 transition shadow-[0_0_15px_rgba(59,130,246,0.5)]">
+                    <a
+                        href="https://preview.codecanyon.net/item/hrm-saas-hr-and-payroll-tool/full_screen_preview/25982934"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-3 bg-[#3b82f6] text-white font-medium px-6 py-3 rounded-full hover:opacity-90 transition shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+                    >
                         Live Demo
                         <ArrowRight size={18} />
-                    </button>
+                    </a>
                 </div>
 
                 {/* RIGHT IMAGE */}

@@ -65,6 +65,8 @@ import HomeService from "../pages/products/Home-sevices/HomeService";
 import MatrimonySolutionPage from '../pages/products/Matrimony-Solution/MatrimonySolutionPage';
 import JobPortalPage from "../pages/products/Job-Portal/JobPortalPage";
 import Busiuness from "../pages/products/Busiuness-Directory/Busiuness";
+import SaasPage from "../pages/products/SaasProduct/SaasPage";
+import AccountErpPage from "../pages/products/Account-Erp/AccountErpPage";
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -125,10 +127,13 @@ export const ProductRoutes = [
     <Route key="travel-agency-mgmt" path="/products/prime/travel-agency-management" element={<TravelAgencyManagementPage />} />,
     <Route key="real-estate-solution" path="/products/prime/real-estate-solution" element={<RealEstatePage />} />,
     <Route key="property-listing-portal" path="/products/prime/property-listing-portal" element={<PropertyListingPortalPage />} />,
-    <Route key="crypto-exchange" path="/products/prime/crypto-exchange" element={<CryptoExchangeLanding />} />,
-    <Route key="pos-billing" path="/products/prime/pos-billing" element={<POSBillingLanding />} />,
-    <Route key="crypto-spot" path="/products/crypto-spot-exchange" element={<CryptoSpotExchangePage />} />,
-    <Route key="crypto-deriv" path="/products/crypto-derivatives" element={<CryptoDerivativesPage />} />,
-    <Route key="resto-pos" path="/products/restaurant-pos" element={<RestaurantPOSPage />} />,
-    <Route key="retail-pos" path="/products/retail-pos" element={<RetailPOSPage />} />,
+<Route key="saas-products" path="/products/prime/saas" element={<SaasPage/>} />,
+<Route key="account-erp" path="/products/prime/account-erp" element={<AccountErpPage/>} />,
+
+<Route key="crypto-exchange" path="/products/prime/crypto-exchange" element={<CryptoExchangeLanding />} />,
+<Route key="pos-billing" path="/products/prime/pos-billing" element={<POSBillingLanding />} />,
+<Route key="crypto-spot" path="/products/crypto-spot-exchange" element={<CryptoSpotExchangePage />} />,
+<Route key="crypto-deriv" path="/products/crypto-derivatives" element={<CryptoDerivativesPage />} />,
+<Route key="resto-pos" path="/products/restaurant-pos" element={<RestaurantPOSPage />} />,
+<Route key="retail-pos" path="/products/retail-pos" element={<RetailPOSPage />} />,
 ];
