@@ -40,6 +40,12 @@ import TourBookingAppPage from "../pages/products/TourTravel-Booking/TourBooking
 import TravelAgencyManagementPage from "../pages/products/TravelAgency-Management/TravelAgencyManagementPage";
 import RealEstatePage from "../pages/products/real-estate/RealEstatePage";
 import PropertyListingPortalPage from "../pages/products/property-listing-portal/PropertyListingPortalPage";
+import CryptoExchangeLanding from "../pages/products/Crypto-Exchange/CryptoExchangeLanding";
+import POSBillingLanding from "../pages/products/POS-Billing/POSBillingLanding";
+import CryptoSpotExchangePage from "../pages/products/Crypto-Spot-Exchange/CryptoSpotExchangePage";
+import CryptoDerivativesPage from "../pages/products/Crypto-Derivatives/CryptoDerivativesPage";
+import RestaurantPOSPage from "../pages/products/Restaurant-POS/RestaurantPOSPage";
+import RetailPOSPage from "../pages/products/Retail-POS/RetailPOSPage";
 
 
 import DatingApp from "../pages/products/Emerging-Social App/DatingApp";
@@ -119,4 +125,10 @@ export const ProductRoutes = [
     <Route key="travel-agency-mgmt" path="/products/prime/travel-agency-management" element={<TravelAgencyManagementPage />} />,
     <Route key="real-estate-solution" path="/products/prime/real-estate-solution" element={<RealEstatePage />} />,
     <Route key="property-listing-portal" path="/products/prime/property-listing-portal" element={<PropertyListingPortalPage />} />,
+    <Route key="crypto-exchange" path="/products/prime/crypto-exchange" element={<CryptoExchangeLanding />} />,
+    <Route key="pos-billing" path="/products/prime/pos-billing" element={<POSBillingLanding />} />,
+    <Route key="crypto-spot" path="/products/crypto-spot-exchange" element={<CryptoSpotExchangePage />} />,
+    <Route key="crypto-deriv" path="/products/crypto-derivatives" element={<CryptoDerivativesPage />} />,
+    <Route key="resto-pos" path="/products/restaurant-pos" element={<RestaurantPOSPage />} />,
+    <Route key="retail-pos" path="/products/retail-pos" element={<RetailPOSPage />} />,
 ];
