@@ -57,8 +57,21 @@ import CryptoApps from '../pages/Works/Crypto Works/CryptoApps';
 import ExchangeApps from '../pages/Works/Crypto Works/ExchangeApps';
 import MLMAppsWorks from '../pages/Works/MLMAppsWorks';
 import BettingAppsWorks from '../pages/Works/BettingAppsWorks';
-import FlowWrite from '../pages/products/FlowWriteAI/FlowWrite';
+import HealthFitnessApps from '../pages/Works/Application Works/HealthFitnessApps';
+import ShoppingApps from '../pages/Works/Application Works/ShoppingApps';
+import FoodGroceryApps from '../pages/Works/Application Works/FoodGroceryApps';
+import EntertainmentOTTApps from '../pages/Works/Application Works/EntertainmentOTTApps';
+import TaxiLogisticsApps from '../pages/Works/Application Works/TaxiLogisticsApps';
+import TourTravelApps from '../pages/Works/Application Works/TourTravelApps';
+import EducationApps from '../pages/Works/Application Works/EducationApps';
+import MatrimonyApps from '../pages/Works/Application Works/MatrimonyApps';
+import SocialNetworkingApps from '../pages/Works/Application Works/SocialNetworkingApps';
+import BeautySalonApps from '../pages/Works/Application Works/BeautySalonApps';
 
+// ERP & SaaS Product Imports
+import ErpHero from '../pages/products/ERP/ErpHero';
+import ProductSection from '../pages/products/ERP/ProductSection';
+import FlowWrite from '../pages/products/FlowWriteAI/FlowWrite';
 
 const AppRoutes = () => {
     return (
@@ -88,6 +101,16 @@ const AppRoutes = () => {
                 <Route path="/works/exchange-apps" element={<ExchangeApps />} />
                 <Route path="/works/mlm-apps" element={<MLMAppsWorks />} />
                 <Route path="/works/betting-apps" element={<BettingAppsWorks />} />
+                <Route path="/works/health-fitness-apps" element={<HealthFitnessApps />} />
+                <Route path="/works/shopping-apps" element={<ShoppingApps />} />
+                <Route path="/works/food-grocery-apps" element={<FoodGroceryApps />} />
+                <Route path="/works/ott-apps" element={<EntertainmentOTTApps />} />
+                <Route path="/works/taxi-logistics" element={<TaxiLogisticsApps />} />
+                <Route path="/works/travel-apps" element={<TourTravelApps />} />
+                <Route path="/works/education-apps" element={<EducationApps />} />
+                <Route path="/works/matrimony-apps" element={<MatrimonyApps />} />
+                <Route path="/works/social-networking" element={<SocialNetworkingApps />} />
+                <Route path="/works/beauty-salon" element={<BeautySalonApps />} />
 
                 {/* Blog & Services */}
                 <Route path="/blog" element={<Blog />} />
@@ -148,8 +171,12 @@ const AppRoutes = () => {
                 <Route path="/products/job-board" element={<Job />} />
                 <Route path='/products/recruitment-ats' element={<Recruitment />} />
                 <Route path='/product/visionboard-metrics' element={<FlowWrite />} />
-                {/* 404 */}
 
+                {/* ERP & SaaS Product Routes */}
+                <Route path="/products/enterprise/erp" element={<ErpHero />} />
+                <Route path="/products/sales-crm" element={<SalesCRMPage />} />
+
+                {/* 404 */}
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
