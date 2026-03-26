@@ -32,8 +32,6 @@ const TaxiLogisticsApps = () => {
                 <div className="container mx-auto px-4 flex flex-wrap items-center text-sm md:text-base font-semibold text-gray-600">
                     <a href="/" className="hover:text-orange-500 transition-colors duration-300">Home</a>
                     <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-                    <a href="/works" className="hover:text-orange-500 transition-colors duration-300">Our Works</a>
-                    <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
                     <span className="text-orange-500">Taxi & Logistics Apps</span>
                 </div>
             </section>
