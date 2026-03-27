@@ -1,25 +1,22 @@
 import React, { useState } from 'react';
-import { 
-  Briefcase, 
-  MapPin, 
-  ChevronRight,
-  Globe,
-  ArrowRight,
-  CheckCircle,
-  Star,
-  Users,
-  Mail,
-  Phone,
-  MessageSquare,
-  Play,
-  Apple
+import {
+    Briefcase,
+    MapPin,
+    ChevronRight,
+    Globe,
+    ArrowRight,
+    CheckCircle,
+    Star,
+    Users,
+    Mail,
+    Phone,
+    MessageSquare,
+    Play,
+    Apple
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Import Components
-import Testimonials from '../../components/home/Testimonials';
-import Contact from '../../components/home/Contact';
-
 // Import Project Images (Fitness Apps)
 import appImg from '../../assets/fitnessimg/app.png';
 import truemedImg from '../../assets/fitnessimg/truemed.png';
@@ -27,6 +24,10 @@ import fitifyImg from '../../assets/fitnessimg/fitify.png';
 import nhImg from '../../assets/fitnessimg/nh.png';
 import amwellImg from '../../assets/fitnessimg/amwell.png';
 
+import Testimonial from '../../components/Common/Testimonial';
+import Industries from '../../components/Common/Industries';
+import OurWork from '../../components/Common/OurWork';
+import ContactUs from '../../components/Common/ContactUs';
 const FitnessAppsWorks = () => {
     const projects = [
         {
@@ -151,13 +152,13 @@ const FitnessAppsWorks = () => {
                         return (
                             <div key={idx} className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-orange-50'}`}>
                                 <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
-                                    
+
                                     {/* Image Box */}
                                     <div className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl">
-                                        <img 
-                                            src={project.image} 
-                                            alt={project.title} 
-                                            className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[85%] xl:w-[75%] max-h-[580px] object-contain" 
+                                        <img
+                                            src={project.image}
+                                            alt={project.title}
+                                            className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[85%] xl:w-[75%] max-h-[580px] object-contain"
                                         />
                                     </div>
 
@@ -167,11 +168,11 @@ const FitnessAppsWorks = () => {
                                             <span className="h-px w-8 bg-orange-500"></span>
                                             <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-500">Project 0{idx + 1}</span>
                                         </div>
-                                        
+
                                         <h3 className="text-3xl md:text-4xl font-black text-gray-950 mb-6 leading-tight tracking-tight">
                                             {project.title}
                                         </h3>
-                                        
+
                                         <p className="text-lg text-gray-600 leading-relaxed mb-10 font-light">
                                             {project.description}
                                         </p>
@@ -243,23 +244,14 @@ const FitnessAppsWorks = () => {
                 </div>
             </section>
 
-            <Testimonials />
 
-            {/* 6. Clients Section */}
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-bold text-gray-950 mb-12">Our <span className="text-orange-500">Clients</span></h2>
-                    <div className="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-                        {/* Placeholder for Client Logos */}
-                        <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
-                        <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
-                        <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
-                        <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
-                    </div>
-                </div>
-            </section>
 
-            <Contact />
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
+
         </div>
     );
 };

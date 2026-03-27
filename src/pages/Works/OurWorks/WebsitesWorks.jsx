@@ -1,32 +1,29 @@
 import React, { useState } from 'react';
-import { 
-  Briefcase, 
-  GraduationCap, 
-  Stethoscope, 
-  ShoppingBag, 
-  PlayCircle, 
-  Utensils, 
-  Layers, 
-  ArrowRight, 
-  CheckCircle, 
-  Star, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Send,
-  MessageSquare,
-  Globe,
-  Settings,
-  Users,
-  ChevronRight,
-  Play
+import {
+    Briefcase,
+    GraduationCap,
+    Stethoscope,
+    ShoppingBag,
+    PlayCircle,
+    Utensils,
+    Layers,
+    ArrowRight,
+    CheckCircle,
+    Star,
+    Mail,
+    Phone,
+    MapPin,
+    Send,
+    MessageSquare,
+    Globe,
+    Settings,
+    Users,
+    ChevronRight,
+    Play
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Import Components
-import Testimonials from '../../../components/home/Testimonials';
-import Contact from '../../../components/home/Contact';
-
 // Import Assets
 import vcitaImg from '../../../assets/works/vcita.png';
 import samayaRoomsImg from '../../../assets/works/samaya_rooms.png';
@@ -76,6 +73,10 @@ import isayorganicImg from '../../../assets/works/isayorganic.png';
 import hawkhireImg from '../../../assets/works/hawkhire.png';
 import v3eventsImg from '../../../assets/works/v3events.png';
 
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 const WebsitesWorks = () => {
     const categories = [
         { name: 'Business', icon: <Briefcase size={18} /> },
@@ -624,30 +625,6 @@ const WebsitesWorks = () => {
         { value: '450', label: 'Satisfied Clients', icon: <CheckCircle className="text-orange-500" /> }
     ];
 
-    const offices = [
-        {
-            country: "India",
-            city: "Gurgaon",
-            address: "1102, 11th Floor, JMD Megapolis, Sec-48, Gurgaon-122018, Haryana, India",
-            phone: "+0124-4001495",
-            email: "Info@kryosssoftech.org"
-        },
-        {
-            country: "USA",
-            city: "Gurgaon",
-            address: "348-352, Spaze IT Park , Sec-48, Gurgaon-122018, Haryana , India",
-            phone: "+0124-4001298",
-            email: "Info@kryosssoftech.org"
-        },
-        {
-            country: "India",
-            city: "Pune",
-            address: "C-601, Pune IT Park, 34 Aundh Road, Bhau Patil Marg, Pune – 411020 Maharashtra, India.",
-            phone: "+91-020-411208",
-            email: "info@kryosssoftech.org"
-        }
-    ];
-
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             {/* 1. Hero Section */}
@@ -705,11 +682,10 @@ const WebsitesWorks = () => {
                             <button
                                 key={cat.name}
                                 onClick={() => setActiveCategory(cat.name)}
-                                className={`pb-2 text-sm lg:text-[15px] font-bold uppercase transition-colors duration-300 border-b-2 tracking-wide flex items-center gap-2 ${
-                                    activeCategory === cat.name
+                                className={`pb-2 text-sm lg:text-[15px] font-bold uppercase transition-colors duration-300 border-b-2 tracking-wide flex items-center gap-2 ${activeCategory === cat.name
                                         ? 'border-orange-500 text-black'
                                         : 'border-transparent text-gray-500 hover:text-orange-500 hover:border-orange-500/50'
-                                }`}
+                                    }`}
                             >
                                 {cat.name}
                             </button>
@@ -733,13 +709,13 @@ const WebsitesWorks = () => {
                                 return (
                                     <div key={idx} className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-orange-50'}`}>
                                         <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
-                                            
+
                                             {/* Image Box */}
                                             <div className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl">
-                                                <img 
-                                                    src={project.image} 
-                                                    alt={project.title} 
-                                                    className="max-h-[450px] w-full object-contain" 
+                                                <img
+                                                    src={project.image}
+                                                    alt={project.title}
+                                                    className="max-h-[450px] w-full object-contain"
                                                 />
                                             </div>
 
@@ -749,11 +725,11 @@ const WebsitesWorks = () => {
                                                     <span className="h-px w-8 bg-orange-500"></span>
                                                     <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-500">Case Study 0{idx + 1}</span>
                                                 </div>
-                                                
+
                                                 <h3 className="text-3xl md:text-5xl font-black text-gray-950 mb-6 leading-tight tracking-tight">
                                                     {project.title}
                                                 </h3>
-                                                
+
                                                 <p className="text-lg text-gray-600 leading-relaxed mb-10 font-light">
                                                     {project.description}
                                                 </p>
@@ -780,8 +756,8 @@ const WebsitesWorks = () => {
                                                                 {link.type === 'playstore' ? (
                                                                     <>
                                                                         <div className="w-6 h-6 flex items-center justify-center">
-                                                                            <img 
-                                                                                src="https://kryosssoftech.org/icons/Health-&-Fitness/google app store.png" 
+                                                                            <img
+                                                                                src="https://kryosssoftech.org/icons/Health-&-Fitness/google app store.png"
                                                                                 alt="Play Store"
                                                                                 className="w-full h-full object-contain brightness-0 invert"
                                                                                 onError={(e) => { e.target.parentElement.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="5 3 19 12 5 21 5 3"/></svg>' }}
@@ -816,12 +792,12 @@ const WebsitesWorks = () => {
             </section>
 
             {/* 4. Stats Counter Section */}
-            <section className="py-20 bg-gray-900 text-white relative overflow-hidden" 
-                style={{ 
-                    backgroundImage: "url('https://kryosssoftech.org/assets/images/indexImg/Counter.png')", 
-                    backgroundSize: 'cover', 
-                    backgroundAttachment: 'fixed', 
-                    backgroundPosition: 'center' 
+            <section className="py-20 bg-gray-900 text-white relative overflow-hidden"
+                style={{
+                    backgroundImage: "url('https://kryosssoftech.org/assets/images/indexImg/Counter.png')",
+                    backgroundSize: 'cover',
+                    backgroundAttachment: 'fixed',
+                    backgroundPosition: 'center'
                 }}
             >
                 <div className="absolute inset-0 bg-black/80"></div>
@@ -837,79 +813,12 @@ const WebsitesWorks = () => {
                 </div>
             </section>
 
-            {/* 5. Testimonials Section */}
-            <Testimonials />
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
 
-            {/* 6. Contact Section */}
-            <Contact />
-
-            {/* 7. Reach Us & Global Offices */}
-            <section className="bg-white py-40">
-                <div className="max-w-7xl mx-auto px-6 lg:px-12">
-                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-                        <div className="w-full lg:w-2/5">
-                            <h3 className="text-xs font-black uppercase tracking-[0.3em] text-orange-500 mb-10 pl-6 border-l-4 border-orange-500 h-6 flex items-center">
-                                Reach Us
-                            </h3>
-                            <div className="flex flex-col gap-8">
-                                <div className="p-8 bg-gray-50 rounded-[30px] border border-gray-100 hover:bg-white hover:shadow-xl transition-all group flex items-center gap-6">
-                                    <div className="w-14 h-14 rounded-2xl bg-white border border-gray-100 flex items-center justify-center shrink-0 group-hover:bg-orange-500 transition-all">
-                                        <Mail className="text-orange-500 group-hover:text-white" size={20} />
-                                    </div>
-                                    <div>
-                                        <div className="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-1">Email Address</div>
-                                        <div className="font-bold text-lg text-gray-950">Info@kryosssoftech.org</div>
-                                    </div>
-                                </div>
-                                <div className="p-8 bg-gray-50 rounded-[30px] border border-gray-100 hover:bg-white hover:shadow-xl transition-all group flex items-center gap-6">
-                                    <div className="w-14 h-14 rounded-2xl bg-white border border-gray-100 flex items-center justify-center shrink-0 group-hover:bg-orange-500 transition-all">
-                                        <Phone className="text-orange-500 group-hover:text-white" size={20} />
-                                    </div>
-                                    <div>
-                                        <div className="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-1">Phone Number</div>
-                                        <div className="font-bold text-lg text-gray-950">+0124-4001495</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="w-full lg:w-3/5">
-                            <h3 className="text-xs font-black uppercase tracking-[0.3em] text-orange-500 mb-10 pl-6 border-l-4 border-orange-500 h-6 flex items-center">
-                                Global Offices
-                            </h3>
-                            <div className="space-y-8">
-                                {offices.map((office, idx) => (
-                                    <div key={idx} className="p-8 bg-gray-50 rounded-[30px] border border-gray-100 hover:bg-white hover:shadow-xl transition-all relative overflow-hidden group">
-                                         <div className="absolute top-0 right-0 p-8 text-orange-500/5 scale-[2.5] -mr-8 -mt-8 group-hover:scale-[3] transition-transform duration-700">
-                                            <MapPin />
-                                         </div>
-                                         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-                                            <div className="max-w-md">
-                                                <div className="flex items-center gap-2 mb-2">
-                                                    <span className="text-[10px] font-black uppercase tracking-widest text-orange-500">{office.country}</span>
-                                                    <span className="w-1 h-1 rounded-full bg-gray-300"></span>
-                                                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">{office.city}</span>
-                                                </div>
-                                                <p className="text-base text-gray-950 font-bold leading-snug">{office.address}</p>
-                                            </div>
-                                            <div className="flex flex-col gap-3 shrink-0">
-                                                <div className="flex items-center gap-2 text-xs text-gray-600 font-bold">
-                                                    <span className="w-7 h-7 rounded-lg bg-white border border-gray-100 flex items-center justify-center text-orange-500"><Phone size={12} /></span> 
-                                                    P: {office.phone}
-                                                </div>
-                                                <div className="flex items-center gap-2 text-xs text-gray-600 font-bold">
-                                                    <span className="w-7 h-7 rounded-lg bg-white border border-gray-100 flex items-center justify-center text-orange-500"><Mail size={12} /></span> 
-                                                    E: {office.email}
-                                                </div>
-                                            </div>
-                                         </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
     );
 };

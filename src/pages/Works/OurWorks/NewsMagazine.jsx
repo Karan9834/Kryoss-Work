@@ -1,9 +1,10 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import Testimonials from '../../../components/home/Testimonials';
-import Contact from '../../../components/home/Contact';
-
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 const newsData = [
   {
     id: 1,
@@ -176,12 +177,19 @@ const NewsMagazine = () => {
       </section>
 
       {/* 5. Testimonials Section */}
-      <Testimonials />
+      
 
       {/* 6. Contact Section */}
-      <Contact />
+      
 
-    </div>
+    
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
+
+        </div>
   );
 };
 

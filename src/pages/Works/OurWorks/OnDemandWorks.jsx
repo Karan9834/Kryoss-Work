@@ -4,9 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import data from './OnDemandData.json';
-import Testimonials from '../../../components/home/Testimonials';
-import Contact from '../../../components/home/Contact';
-
 // Local Asset Imports
 import img1 from '../../../assets/ondemandworks/1.png';
 import img2 from '../../../assets/ondemandworks/2.png';
@@ -17,6 +14,10 @@ import img6 from '../../../assets/ondemandworks/6.png';
 import img7 from '../../../assets/ondemandworks/7.png';
 import img8 from '../../../assets/ondemandworks/8.png';
 
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 const assetMap = {
     '1.png': img1,
     '2.png': img2,
@@ -207,8 +208,15 @@ const OnDemandWorks = () => {
                 </div>
             </section>
 
-            <Testimonials />
-            <Contact />
+            
+            
+        
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
+
         </div>
     );
 };

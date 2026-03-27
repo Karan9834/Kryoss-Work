@@ -11,10 +11,11 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+import Testimonial from '../../components/Common/Testimonial';
+import Industries from '../../components/Common/Industries';
+import OurWork from '../../components/Common/OurWork';
+import ContactUs from '../../components/Common/ContactUs';
 // Import Components
-import Testimonials from '../../components/home/Testimonials';
-import Contact from '../../components/home/Contact';
-
 const BusinessWorks = () => {
     const projects = [
         {
@@ -277,8 +278,15 @@ const BusinessWorks = () => {
                 </div>
             </section>
 
-            <Testimonials />
-            <Contact />
+            
+            
+
+        
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
 
         </div>
     );
