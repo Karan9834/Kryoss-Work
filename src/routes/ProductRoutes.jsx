@@ -135,18 +135,18 @@ export const ProductRoutes = [
     <Route key="saas-products" path="/products/prime/saas" element={<SaasPage />} />,
     <Route key="account-erp" path="/products/prime/account-erp" element={<AccountErpPage />} />,
 
-<<Route key="crypto-exchange" path="/products/prime/crypto-exchange" element={<CryptoExchangeLanding />} />,
+<Route key="crypto-exchange" path="/products/prime/crypto-exchange" element={<CryptoExchangeLanding />} />,
 <Route key="pos-billing" path="/products/prime/pos-billing" element={<POSBillingLanding />} />,
 <Route key="crypto-spot" path="/products/crypto-spot-exchange" element={<CryptoSpotExchangePage />} />,
 <Route key="crypto-deriv" path="/products/crypto-derivatives" element={<CryptoDerivativesPage />} />,
 <Route key="resto-pos" path="/products/restaurant-pos" element={<RestaurantPOSPage />} />,
 <Route key="retail-pos" path="/products/retail-pos" element={<RetailPOSPage />} />,
 
-{/* 🔥 YOUR NEW ROUTES */}
+
 <Route key="news" path="/products/prime/news-magazine" element={<NewsPage />} />,
 <Route key="bfsi-finance" path="/products/prime/bfsi-finance" element={<BFSIFinance />} />,
 
-{/* 🔥 MAIN BRANCH ROUTES */}
+
 <Route key="transport-logistics" path="/products/prime/transport-logistics" element={<TransportLogisticsLanding />} />,
 <Route key="video-conference" path="/products/prime/video-conference" element={<VideoConferenceLanding />} />,
 <Route key="zoom-clone" path="/products/prime/zoom-clone" element={<ZoomClonePage />} />,
