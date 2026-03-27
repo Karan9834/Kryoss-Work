@@ -58,6 +58,8 @@ import ExchangeApps from '../pages/Works/Crypto Works/ExchangeApps';
 import MLMAppsWorks from '../pages/Works/MLMAppsWorks';
 import BettingAppsWorks from '../pages/Works/BettingAppsWorks';
 import FlowWrite from '../pages/products/FlowWriteAI/FlowWrite';
+import CasinoGames from '../pages/products/Casino Games/CasinoGames';
+import FantasySports from '../pages/products/Fantasy Sports/FantasySports';
 
 import HealthFitnessApps from '../pages/Works/Application Works/HealthFitnessApps';
 import ShoppingApps from '../pages/Works/Application Works/ShoppingApps';
@@ -169,6 +171,8 @@ const AppRoutes = () => {
                 <Route path="/products/job-board" element={<Job />} />
                 <Route path='/products/recruitment-ats' element={<Recruitment />} />
                 <Route path='/product/visionboard-metrics' element={<FlowWrite />} />
+                <Route path="/products/gaming/casino" element={<CasinoGames />} />
+                <Route path="/products/gaming/fantasy-sports" element={<FantasySports />} />
                 {/* 404 */}
 
                 <Route path="*" element={<NotFound />} />
