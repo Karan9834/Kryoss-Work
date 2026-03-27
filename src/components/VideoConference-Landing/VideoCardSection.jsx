@@ -67,14 +67,14 @@ const VideoCardSection = () => {
                      className="group relative flex flex-col items-center text-center p-2 rounded-[4rem] border border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-purple-50/10 shadow-2xl hover:border-purple-200"
                   >
                      {/* Image Section */}
-                     <div className="w-full h-80 bg-white rounded-[3rem] overflow-hidden relative mb-8 flex items-center justify-center border border-slate-100 shadow-inner group">
+                     <div className="w-full bg-white rounded-[3rem] overflow-hidden relative mb-8 border border-slate-100 shadow-inner group">
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                           className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-110"
                         />
                         {/* Interactive Background */}
-                        <div className={`absolute inset-0 bg-gradient-to-tr ${card.themeColor} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
+                        <div className={`absolute inset-0 bg-gradient-to-tr ${card.themeColor} opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none`}></div>
                      </div>
 
                      {/* Content Section */}

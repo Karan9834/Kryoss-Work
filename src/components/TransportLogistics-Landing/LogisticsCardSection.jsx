@@ -49,14 +49,14 @@ const LogisticsCardSection = () => {
                   </span>
                   <div className="w-8 h-px bg-slate-200"></div>
                </div>
-               
+
                <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold leading-tight">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0F172A] via-slate-700 to-[#0F172A]">
-                        Scalable Logistics Infrastructure
-                    </span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0F172A] via-slate-700 to-[#0F172A]">
+                     Scalable Logistics Infrastructure
+                  </span>
                </h2>
                <p className="text-slate-500 text-lg max-w-2xl mx-auto mt-6 font-medium">
-                   Enterprise-grade platforms built to power your delivery and supply chain operations.
+                  Enterprise-grade platforms built to power your delivery and supply chain operations.
                </p>
             </div>
 
@@ -68,11 +68,11 @@ const LogisticsCardSection = () => {
                      className="group relative flex flex-col items-center text-center p-2 rounded-[3.5rem] border border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-slate-50/50 shadow-xl hover:border-orange-100"
                   >
                      {/* Image Section */}
-                     <div className="w-full h-80 bg-white rounded-[3rem] overflow-hidden relative mb-8 flex items-center justify-center border border-slate-100 shadow-inner group">
-                        <img 
-                            src={card.image} 
-                            alt={card.title} 
-                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                     <div className="w-full  bg-white rounded-[3rem] overflow-hidden relative mb-8 flex items-center justify-center border border-slate-100 shadow-inner group">
+                        <img
+                           src={card.image}
+                           alt={card.title}
+                           className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-110"
                         />
                         {/* Interactive Background */}
                         <div className={`absolute inset-0 bg-gradient-to-br ${card.themeColor} opacity-0 group-hover:opacity-20 transition-opacity`}></div>
@@ -98,7 +98,7 @@ const LogisticsCardSection = () => {
                ))}
             </div>
          </div>
-         
+
          <style jsx>{`
             .shadow-inner {
                box-shadow: inset 0 2px 10px 0 rgba(0, 0, 0, 0.02);
