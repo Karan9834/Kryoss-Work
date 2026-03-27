@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from './sections/hero'
+import WealthHero from './sections/WealthHero'
 import AboutUs from './sections/AboutUs'
 import Features from './sections/Features'
 import WhyChooseUs from './sections/WhyChooseUs'
@@ -10,7 +10,7 @@ import FinalCta from './sections/FinalCta'
 const WealthPage = () => {
   return (
     <>
-    <Hero/>
+    <WealthHero/>
     <AboutUs/>
     <Features/>
     <WhyChooseUs/>
