@@ -1,57 +1,77 @@
 {
   "tabs": [
-    { "id": "beauty-salon", "name": "Beauty & Salon Projects" }
+    {
+      "id": "beauty-salon",
+      "name": "Beauty & Salon Projects"
+    }
   ],
   "sections": {
     "beauty-salon": [
       {
-        "img": "icons/beauty/booksalon.png",
+        "img": "/ApplicationsWorks/BookSalon.png",
         "alt": "Book Salon",
         "titleText": "Book Salon - Live seats, Salon, Spa, Beauty Salon",
         "description": "Book Salon is a online platform that provides all type of salon types like beauty parlour, unisex salon, spa, salon and spa, salon and cafe, hair transplant etc at your near by location or city. Book Salon also provides services of pets. Pet grooming services like hair cut, bath, nail cutting etc at your near by located pet shop.....More Details",
         "links": []
       },
       {
-        "img": "icons/beauty/homswag.png",
+        "img": "/ApplicationsWorks/BookSalon1.png",
         "alt": "HomSwag",
         "titleText": "HomSwag - Salon At Home",
         "description": "Homswag connect you with trained and professional Beauty expert from industry to pamper you at your own comfort, and deliver you the beauty services with Best Branded Product from beauty worlds because you deserve 100% Branded and Genuine product,Services Offered are, Waxing, Manicure, Pedicure, Facial, Clean Up, Bleaching, Threading, Hair cut, Smoothening, Keratin, Hair Spa, Scalp Treatment, SPA, Hair Styling.....More Details",
         "links": []
       },
       {
-        "img": "icons/beauty/vaasara.png",
+        "img": "/ApplicationsWorks/BookSalon2.png",
         "alt": "Vaasara",
         "titleText": "Vaasara - Book Local Salons, Spas & Clinics",
         "description": "In Sanskrit, Vaasara means \"Every Day\". We truly believe in celebrating every day and with Vaasara you have the freedom and convenience to make a booking whenever you want, wherever you want and with whoever you want. You don’t have to worry about calling your favorite place and taking the appointment...... More Details",
-        "links": [ { "text": "Play Store", "href": "#" } ]
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
       },
       {
-        "img": "icons/beauty/zoylee.png",
+        "img": "/ApplicationsWorks/BookSalon7.png",
         "alt": "Zoylee",
         "titleText": "Zoylee - Online Salon, Parlor, & Spa Booking App",
         "description": "The salon appointment app brings to you a comprehensive range of salons, spas, and parlors in Noida, Delhi and nearby areas. We have collaborated with your favorite local parlors and salons as well as the top brands in the city, offering you a wide assortment of high-rated artists and specialists in the hair, beauty and personal care sector.\n\nWhether you are looking for a stylish new haircut, hair treatment, facial, waxing and hair removal, Bridal makeup, or last-minute nails or want to treat yourself to a soothing massage in Noida, Zoylee is all you need.....More Details",
         "links": []
       },
       {
-        "img": "icons/beauty/dasalon.png",
+        "img": "/ApplicationsWorks/BookSalon4.png",
         "alt": "Da Salon",
         "titleText": "Da Salon",
         "description": "da Salon is a unique, one of its kind mobile app to help customer book salon online and avail salon services from the host of salons. da Salon offers its customers the facility to select time slots within next 7 days depending upon the time duration of the services chosen with its extremely simple, user friendly.... More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.appsquad.da_salon"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.appsquad.da_salon"
       },
       {
-        "img": "icons/beauty/beusalons.png",
+        "img": "/ApplicationsWorks/BookSalon5.png",
         "alt": "Be U Salons",
         "titleText": "Be U Salons Hair Deals In Delhi, Bangalore & Pune",
         "description": "One Platform for all your salon needs! Whether you are looking for products, salon at home or salon services, you have them all in one place. Get the perfect skin and hair With Be U Salons. With 200+ outlets and 40+ cities in pan India, it's growing at a tremendous rate. Our App is curated, keeping in mind your comforts and needs. With this app you can add, book and schedule your favorite services.....More Details",
         "links": []
       },
       {
-        "img": "icons/beauty/getlook.png",
+        "img": "/ApplicationsWorks/BookSalon6.png",
         "alt": "GetLook",
         "titleText": "GetLook - Beauty Services @ Home",
         "description": "GetLook Home Salon and Beauty Services helps you discover the best beauty professionals near your home who will come at your doorstep to pamper you. Just download our app, select stylist near you basis reviews, ratings, and price to book appointment and relax. It happens often that we are thinking about a hairstyle change or a relaxing massage or need makeup help for wedding party or just feel like pampering ourselves with a manicure or pedicure..... More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=salon.look.ui"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=salon.look.ui"
       }
     ]
   }

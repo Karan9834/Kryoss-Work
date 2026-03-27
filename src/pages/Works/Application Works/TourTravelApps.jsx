@@ -16,7 +16,7 @@ const TourTravelApps = () => {
             <section
                 className="relative pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center items-center text-center text-white"
                 style={{
-                    backgroundImage: "linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('https://kryosssoftech.org/icons/banner/tour.png')",
+                    backgroundImage: "linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('/Hero/tour-and-travel.png')",
                     backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed',
                 }}
             >

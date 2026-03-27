@@ -1,6 +1,9 @@
 {
   "tabs": [
-    { "id": "finance", "name": "Finance Projects" }
+    {
+      "id": "finance",
+      "name": "Finance Projects"
+    }
   ],
   "sections": {
     "finance": [
@@ -50,7 +53,13 @@
         "alt": "Di Pocket",
         "titleText": "DiPocket | Finance & Payments",
         "description": "DiPocket is the financial app that makes managing your money a joy. Whether you're transferring funds internationally, travelling abroad, or simply making or receiving payments DiPocket is secure, easy to use, and gives you total control. DiPocket card is accepted wherever Mastercard is accepted. Open an account in 3 minutes.",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=org.dipocket.dipocket&hl=en&gl=US"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=org.dipocket.dipocket&hl=en&gl=US"
       }
     ]
   }

@@ -29,7 +29,7 @@ const ExchangeApps = () => {
             <section
                 className="relative pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center items-center text-center text-white"
                 style={{
-                    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('https://kryosssoftech.org/icons/banner/crypto-bn.png')",
+                    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('/Hero/exchange.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundAttachment: 'fixed',
@@ -130,6 +130,13 @@ const ExchangeApps = () => {
                                                     className="text-gray-600 leading-relaxed mb-8 text-lg font-light prose"
                                                     dangerouslySetInnerHTML={{ __html: item.description }}
                                                 />
+                                                <a href={item.link || "https://play.google.com/store/games?hl=en_IN"} className="inline-block mt-4 hover:opacity-90 transition-opacity">
+                                                    <img
+                                                        src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
+                                                        alt="Get it on Google Play"
+                                                        className="h-12 object-contain"
+                                                    />
+                                                </a>
 
                                                 {item.links && item.links.length > 0 && (
                                                     <div className="flex flex-wrap gap-4 items-center">

@@ -15,16 +15,23 @@
         "links": [
           {
             "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=com.spark.crosspaths"
           }
-        ]
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.spark.crosspaths"
       },
       {
         "img": "/ApplicationsWorks/Matrimony1.png",
         "alt": "KenyanCupid",
         "titleText": "KenyanCupid- Kenyan Dating App",
         "description": "KenyanCupid is a premium dating app helping you connect with Kenyan singles looking for love, dating and serious relationships. If you want to experience a truly authentic Kenyan dating app, KenyanCupid is the dating app for you. Whether you are looking for love locally or internationally we are committed to helping you find your perfect Kenyan man or Kenyan woman. With the KenyanCupid mobile app, you can create a new account and begin writing your Kenyan love story in a matter of minutes. Join now and start browsing profiles!......More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.cupidmedia.wrapper.kenyancupid"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.cupidmedia.wrapper.kenyancupid"
       },
       {
         "img": "/ApplicationsWorks/Matrimony2.png",
@@ -38,7 +45,13 @@
         "alt": "Kaakateeya Marriages",
         "titleText": "Kaakateeya Marriages – South India's Matrimony App",
         "description": "Kaakateeya.com, one of India’s premier matrimonial portals is also the biggest online marriage facilitator exclusively for the Telugu community. Kaakateeya Marriages is well known for Telugu Marriages and Tamil Marriages We have brought thousands of destined couples together and emerged as the leading matchmaking service in South India.Kaakateeya marriages app serves the customers with a top-notch user experience and user-friendly features. . .......More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.kaakateeya"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.kaakateeya"
       },
       {
         "img": "/ApplicationsWorks/Matrimony3.png",
@@ -52,14 +65,26 @@
         "alt": "Jodi365",
         "titleText": "Jodi365: Next-gen matchmaking",
         "description": "Jodi365 is a thoughtful, next-generation matchmaking platform that helps quality Indian singles to find the right match – whether they are ready for matrimony or shaadi in the near term, or want to date and get to know someone as friends first.Jodi365 has been live and serving single Indians and their involved families, worldwide, since mid-2011.........More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.freeelective.jodi365"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.freeelective.jodi365"
       },
       {
         "img": "/ApplicationsWorks/Matrimony5.png",
         "alt": "Aussie Mingle",
         "titleText": "Aussie Mingle: Meet, Chat, Date Australian Singles",
         "description": "Meeting new people, chatting, and dating is easy with Aussie Mingle. Whether you are looking for a new friend to hangout with, finding your soulmate or meeting single men or women in Australia or New Zealand. In a simple touch of your mobile phone, Aussie Mingle gives you the easiest way to communicate, chat and connect with awesome people in the Down Under!............More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.mingle.AussieMingle"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.mingle.AussieMingle"
       }
     ]
   }

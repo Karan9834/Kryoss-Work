@@ -12,7 +12,13 @@
         "alt": "Comera",
         "titleText": "Comera- Video Calls & Chat",
         "description": "Camera is a free-messaging app that allows you to talk to your friends and family via one-to-one chats, voice calls, and video calls through connectivity over mobile data or Wi-Fi. It also enables you to connect through group chats and lets you share photos, videos, documents, locations, and a whole lot more. ........More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.is.core.app"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.is.core.app"
       },
       {
         "img": "/ApplicationsWorks/Social Media1.png",
@@ -34,9 +40,10 @@
         "links": [
           {
             "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=com.guppir.swipr"
           }
-        ]
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.guppir.swipr"
       },
       {
         "img": "/ApplicationsWorks/Social Media3.png",
@@ -53,9 +60,10 @@
         "links": [
           {
             "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=com.joinkingschat.android"
           }
-        ]
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.joinkingschat.android"
       },
       {
         "img": "/ApplicationsWorks/Social Media5.png",
@@ -65,9 +73,10 @@
         "links": [
           {
             "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=net.hookle&hl=en&gl=US"
           }
-        ]
+        ],
+        "link": "https://play.google.com/store/apps/details?id=net.hookle&hl=en&gl=US"
       },
       {
         "img": "/ApplicationsWorks/Social Media6.png",
@@ -77,9 +86,10 @@
         "links": [
           {
             "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=com.agorapulse.app&hl=en&gl=US"
           }
-        ]
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.agorapulse.app&hl=en&gl=US"
       },
       {
         "img": "/ApplicationsWorks/Social Media7.png",
@@ -89,9 +99,10 @@
         "links": [
           {
             "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=com.cinchshare&hl=en&gl=US"
           }
-        ]
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.cinchshare&hl=en&gl=US"
       }
     ]
   }

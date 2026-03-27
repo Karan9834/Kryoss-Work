@@ -121,14 +121,7 @@ const NewsMagazine = () => {
                     </a>
                   </p>
 
-                  <a href={project.link} className="inline-block mt-4 hover:opacity-90 transition-opacity">
-                    <img
-                      src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
-                      alt="Get it on Google Play"
-                      className="h-12 object-contain"
-                    />
-                  </a>
-                </motion.div>
+                  </motion.div>
 
                 {/* Main App Mockup Image */}
                 <motion.div

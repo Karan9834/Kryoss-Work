@@ -16,7 +16,7 @@ const BeautySalonApps = () => {
             <section
                 className="relative pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center items-center text-center text-white"
                 style={{
-                    backgroundImage: "linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('https://kryosssoftech.org/icons/banner/beauty.png')",
+                    backgroundImage: "linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('/Hero/beauty-and-saloon.png')",
                     backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed',
                 }}
             >
@@ -64,11 +64,13 @@ const BeautySalonApps = () => {
                                             <div className="w-full lg:w-1/2 flex flex-col justify-center z-20">
                                                 <h3 className="text-2xl md:text-4xl font-extrabold text-black mb-6 leading-tight hover:text-orange-600 transition-colors duration-300" dangerouslySetInnerHTML={{ __html: item.titleHtml || item.titleText }} />
                                                 <p className="text-gray-600 leading-relaxed mb-8 text-lg font-light">{item.description}</p>
-                                                {item.links && item.links.length > 0 && (
-                                                    <div className="flex flex-wrap gap-4 items-center">
-                                                        {item.links.map((link, idx) => { if (!link.href || link.href === '#') return null; return <a key={idx} href={link.href} target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold rounded-lg bg-orange-500 hover:bg-orange-600 text-white shadow-md hover:shadow-lg border border-orange-600">{link.text || 'View'}</a>; })}
-                                                    </div>
-                                                )}
+                                                <a href={item.link || "https://play.google.com/store/games?hl=en_IN"} className="inline-block mt-4 hover:opacity-90 transition-opacity">
+                                                    <img
+                                                        src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
+                                                        alt="Get it on Google Play"
+                                                        className="h-12 object-contain"
+                                                    />
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -98,9 +100,9 @@ const BeautySalonApps = () => {
                 </div>
             </section>
 
-            
-            
-        
+
+
+
             {/* New Added Sections */}
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />

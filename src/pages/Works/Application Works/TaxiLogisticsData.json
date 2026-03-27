@@ -19,14 +19,26 @@
         "alt": "Zory driver",
         "titleText": "Zory Driver, Earn More with your Taxi, Auto / Bike",
         "description": "Zory Driver App is the most driver friendly app. Zory Driver App is the next generation Taxi platform with more focus towards Driver Partners.You have Taxi, Cab, Auto or Bike, Attach it now with Zory.Attach your vehicle, be it Taxi/Cab, Auto or Bike and start earning with Zory Driver App. The most driver friendly app in India for transport business. Zory takes less commission, only 9%, so you get more net take home. The net take home (Excluding Fuel and other) is almost 50% higher as compared to other taxi operators. More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.disha.quickride.taxi"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.disha.quickride.taxi"
       },
       {
         "img": "/ApplicationsWorks/Taxi.png",
         "alt": "tukxi",
         "titleText": "Tukxi- Affordable Auto Rides",
         "description": "Tukxi is the new auto-on-demand app for easy, affordable & super-quick commuting around the city. Tukxi brings the best taxi service to you on a pay-by-meter basis reducing the trouble of searching, waiting and haggling.If you’re tired of waiting and chasing Auto Rickshaws, Tukxi is here to help. We bring Autos to where you are, we can even help you schedule your trip in advance. Tukxi is here to preserve the most effective last-mile commute solution by making it more efficient. When you request an Auto through Tukxi, we simply connect you to the nearest available auto. You don’t have to wait or chase Autos anymore, we bring them to your doorstep. There’s no haggling, no surge pricing, you just have to hop in and enjoy the ride. .....More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.tukxi.ride"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.tukxi.ride"
       },
       {
         "img": "/ApplicationsWorks/Taxi5.png",
@@ -40,7 +52,13 @@
         "alt": "tasnim",
         "titleText": "Tasnim Logistics Passenger",
         "description": "Tasnim Logistics is a free passenger logistics and material logistics application of Al Tasnim Group. This is a full featured app with Employee Role based authorizations.Employees entitled for free commuting between various locations, can make request for pickup & drop services using this application.The requests are pooled to logistics planner’s central hubs, who will assign vehicle with driver to fulfill employee requests.Requestors will be able to see the progress of the request and the trip on real time basis.Logistics Planners can send the journey plans to drivers......More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=djm.cuetrans.passanger"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=djm.cuetrans.passanger"
       },
       {
         "img": "/ApplicationsWorks/Taxi3.png",
@@ -50,9 +68,10 @@
         "links": [
           {
             "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=com.eaglefleet.redtaxi"
           }
-        ]
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.eaglefleet.redtaxi"
       },
       {
         "img": "/ApplicationsWorks/Taxi7.png",
@@ -66,7 +85,13 @@
         "alt": "Zingbus",
         "titleText": "Zingbus | Online bus ticket booking",
         "description": "Zingbus is an emerging brand in the intercity bus services. We aim to provide a safe and reliable travel experience to the community which include well-equipped buses with modern facilities keeping in mind all the safety essentials. We have a team of trained Drivers and Zingbus Marshals who are dedicated to deliver a comfortable travelling adventure to the customers. .....More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.zingbusbtoc.zingbus"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.zingbusbtoc.zingbus"
       },
       {
         "img": "/ApplicationsWorks/Taxi1.png",
@@ -92,7 +117,13 @@
         "alt": "shibox",
         "titleText": "Shipox Customer - Book a courier",
         "description": "SHIPOX is a unique and brand new way to Deliver packages from UAE to destinations around the World. SHIPOX gives customers a safe and convenient way to pick up and deliver parcels, documents, checks and packages of any size across the UAE and Worldwide. SHIPOX app makes it easier to manage your delivery orders with easy to use online dashboard. SHIPOX's ultimate goal is to provide tailored yet affordable services compared to competition.\n\nWe offer a fresh approach to getting things shipped and delivered.\n\nSHIPOX app is power packed with features to make sure the logistics process is seamless\n\n.....More Details",
-        "links": []
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.shipox.customer"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.shipox.customer"
       },
       {
         "img": "/ApplicationsWorks/Taxi9.png",
