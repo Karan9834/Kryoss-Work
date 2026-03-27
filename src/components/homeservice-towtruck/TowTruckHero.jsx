@@ -48,7 +48,7 @@ const HeroSection = () => {
 
           {/* CTA */}
           <a
-            href="https://preview.codecanyon.net/item/truck-tracking-android-ios-app-template-2-apps-truck-app-driver-app-flutter-2-trucksup/full_screen_preview/34195982"
+            href="https://preview.themeforest.net/item/towy-emergency-auto-towing-and-roadside-assistance-service-wordpress-theme/full_screen_preview/19985673"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full text-lg font-medium transition w-fit"
