@@ -45,11 +45,11 @@ const POSCardSection = () => {
                   </span>
                   <div className="w-8 h-px bg-emerald-200"></div>
                </div>
-               
+
                <h2 className="text-3xl lg:text-4xl font-semibold leading-tight">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-emerald-600 to-amber-500">
-                        Specialized POS Modules
-                    </span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-emerald-600 to-amber-500">
+                     Specialized POS Modules
+                  </span>
                </h2>
                <p className="text-[#4A4B5E] text-lg max-w-2xl mx-auto mt-6">
                   Choose the specialized platform that fits your business model perfectly.
@@ -64,8 +64,8 @@ const POSCardSection = () => {
                      className="group relative flex flex-col items-center text-center p-2 rounded-[3.5rem] border border-gray-50 transition-all duration-500 hover:scale-[1.02] bg-indigo-50/20 shadow-xl hover:border-indigo-100"
                   >
                      {/* Image Section */}
-                     <div className="w-full h-80 bg-white rounded-[3rem] overflow-hidden relative mb-8 flex items-center justify-center border border-indigo-50/50">
-                        <img src={card.image} alt={card.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                     <div className="w-full  bg-white rounded-[3rem] overflow-hidden relative mb-8 flex items-center justify-center border border-indigo-50/50">
+                        <img src={card.image} alt={card.title} className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-110" />
                      </div>
 
                      {/* Content Section */}

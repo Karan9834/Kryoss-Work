@@ -69,12 +69,12 @@ const OTTCardSection = ({ isLight = false }) => {
                      className={`group relative flex flex-col items-center text-center p-2 rounded-[40px] border-2 ${cardBorder} transition-all duration-500 hover:scale-[1.02] ${cardBg} shadow-xl hover:border-red-500/20`}
                   >
                      {/* Image Section */}
-                     <div className={`w-full h-80 ${isLight ? 'bg-gray-50' : 'bg-white/5'} rounded-[36px] overflow-hidden relative mb-6 flex items-center justify-center`}>
+                     <div className={`w-full  ${isLight ? 'bg-gray-50' : 'bg-white/5'} rounded-[36px] overflow-hidden relative mb-6 flex items-center justify-center`}>
                         {card.image ? (
                            <img
                               src={card.image}
                               alt={card.title}
-                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                              className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-700"
                            />
                         ) : (
                            <div className={`${isLight ? 'text-gray-200' : 'text-white/5'} group-hover:scale-110 transition-transform duration-700`}>

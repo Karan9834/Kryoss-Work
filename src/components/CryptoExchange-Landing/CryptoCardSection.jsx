@@ -45,7 +45,7 @@ const CryptoCardSection = () => {
                   </span>
                   <div className="w-8 h-px bg-blue-300"></div>
                </div>
-               
+
                <h2 className="text-3xl lg:text-4xl font-semibold">
                   Premium <span className="text-blue-600">Exchange Solutions</span>
                </h2>
@@ -62,8 +62,8 @@ const CryptoCardSection = () => {
                      className="group relative flex flex-col items-center text-center p-2 rounded-[3rem] border border-blue-50 transition-all duration-500 hover:scale-[1.02] bg-blue-50/30 shadow-2xl hover:border-blue-500/50"
                   >
                      {/* Image Section */}
-                     <div className="w-full h-80 bg-blue-100/50 rounded-[2.5rem] overflow-hidden relative mb-6">
-                        <img src={card.image} alt={card.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                     <div className="w-full  bg-blue-100/50 rounded-[2.5rem] overflow-hidden relative mb-6">
+                        <img src={card.image} alt={card.title} className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-110" />
                      </div>
 
                      {/* Content Section */}

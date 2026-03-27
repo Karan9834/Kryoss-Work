@@ -71,8 +71,8 @@ const DatingCardSection = () => {
                      className={`group relative flex flex-col items-center text-center p-2 rounded-[40px] border-2 border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-white shadow-xl ${card.borderColor}`}
                   >
                      {/* Image Section */}
-                     <div className={`w-full h-80 ${card.bgColor} rounded-[36px] overflow-hidden relative mb-6`}>
-                        <img src={card.image} alt={card.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                     <div className={`w-full  ${card.bgColor} rounded-[36px] overflow-hidden relative mb-6`}>
+                        <img src={card.image} alt={card.title} className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700" />
                         <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent pointer-events-none"></div>
                      </div>
 
