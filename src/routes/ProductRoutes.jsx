@@ -46,7 +46,10 @@ import CryptoSpotExchangePage from "../pages/products/Crypto-Spot-Exchange/Crypt
 import CryptoDerivativesPage from "../pages/products/Crypto-Derivatives/CryptoDerivativesPage";
 import RestaurantPOSPage from "../pages/products/Restaurant-POS/RestaurantPOSPage";
 import RetailPOSPage from "../pages/products/Retail-POS/RetailPOSPage";
-
+import TransportLogisticsLanding from "../pages/products/Transport-Logistics/TransportLogisticsLanding";
+import VideoConferenceLanding from "../pages/products/Video-Conference/VideoConferenceLanding";
+import ZoomClonePage from "../pages/products/Zoom-Clone/ZoomClonePage";
+import WebinarEnginePage from "../pages/products/Webinar-Engine/WebinarEnginePage";
 
 import DatingApp from "../pages/products/Emerging-Social App/DatingApp";
 import AppointmentBooking from "../pages/products/Emerging-Social App/AppointmentBooking";
@@ -129,16 +132,23 @@ export const ProductRoutes = [
     <Route key="travel-agency-mgmt" path="/products/prime/travel-agency-management" element={<TravelAgencyManagementPage />} />,
     <Route key="real-estate-solution" path="/products/prime/real-estate-solution" element={<RealEstatePage />} />,
     <Route key="property-listing-portal" path="/products/prime/property-listing-portal" element={<PropertyListingPortalPage />} />,
-<Route key="saas-products" path="/products/prime/saas" element={<SaasPage/>} />,
-<Route key="account-erp" path="/products/prime/account-erp" element={<AccountErpPage/>} />,
+    <Route key="saas-products" path="/products/prime/saas" element={<SaasPage />} />,
+    <Route key="account-erp" path="/products/prime/account-erp" element={<AccountErpPage />} />,
 
-<Route key="crypto-exchange" path="/products/prime/crypto-exchange" element={<CryptoExchangeLanding />} />,
+<<Route key="crypto-exchange" path="/products/prime/crypto-exchange" element={<CryptoExchangeLanding />} />,
 <Route key="pos-billing" path="/products/prime/pos-billing" element={<POSBillingLanding />} />,
 <Route key="crypto-spot" path="/products/crypto-spot-exchange" element={<CryptoSpotExchangePage />} />,
 <Route key="crypto-deriv" path="/products/crypto-derivatives" element={<CryptoDerivativesPage />} />,
 <Route key="resto-pos" path="/products/restaurant-pos" element={<RestaurantPOSPage />} />,
 <Route key="retail-pos" path="/products/retail-pos" element={<RetailPOSPage />} />,
-<Route key="news" path="/products/prime/news-magazine" element={<NewsPage />} />,
-<Route key="BFSI-Finance" path="/products/prime/bfsi-finance" element={<BFSIFinance />} />,
 
+{/* 🔥 YOUR NEW ROUTES */}
+<Route key="news" path="/products/prime/news-magazine" element={<NewsPage />} />,
+<Route key="bfsi-finance" path="/products/prime/bfsi-finance" element={<BFSIFinance />} />,
+
+{/* 🔥 MAIN BRANCH ROUTES */}
+<Route key="transport-logistics" path="/products/prime/transport-logistics" element={<TransportLogisticsLanding />} />,
+<Route key="video-conference" path="/products/prime/video-conference" element={<VideoConferenceLanding />} />,
+<Route key="zoom-clone" path="/products/prime/zoom-clone" element={<ZoomClonePage />} />,
+<Route key="webinar-engine" path="/products/prime/webinar-engine" element={<WebinarEnginePage />} />,
 ];

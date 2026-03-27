@@ -6,7 +6,7 @@ const SnowHero = () => {
         <section className="relative w-full min-h-[80vh] bg-gradient-to-r from-[#cfe3f2] via-[#dbeaf5] to-[#e7f1f8] overflow-hidden">
 
             {/* background */}
-            <div className="absolute inset-0 "></div>
+            {/* <div className="absolute inset-0 pointer-events-none"></div> */}
 
             <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-12 pt-10 pb-0 flex flex-col lg:flex-row lg:items-end justify-between">
 
@@ -15,32 +15,32 @@ const SnowHero = () => {
 
                     <div className="flex items-center gap-4 mb-6">
 
-  {/* Icon */}
-  <div className="bg-gradient-to-br from-[#49c5d4] to-[#2f8ccf] 
+                        {/* Icon */}
+                        <div className="bg-gradient-to-br from-[#49c5d4] to-[#2f8ccf] 
       p-4 rounded-xl text-white text-2xl
       shadow-[0_0_18px_rgba(47,140,207,0.85)]">
 
-      <span className="drop-shadow-[0_0_6px_rgba(255,255,255,0.9)]">
-        ❄️
-      </span>
+                            <span className="drop-shadow-[0_0_6px_rgba(255,255,255,0.9)]">
+                                ❄️
+                            </span>
 
-  </div>
+                        </div>
 
-  {/* Brand */}
-  <h4 className="text-3xl font-bold tracking-wide uppercase">
+                        {/* Brand */}
+                        <h4 className="text-3xl font-bold tracking-wide uppercase">
 
-      <span className="text-[#2f8ccf] 
+                            <span className="text-[#2f8ccf] 
             drop-shadow-[0_0_8px_rgba(47,140,207,0.9)]">
-        VYOM
-      </span>
+                                VYOM
+                            </span>
 
-      <span className="text-gray-800 ml-2">
-        SNOW
-      </span>
+                            <span className="text-gray-800 ml-2">
+                                SNOW
+                            </span>
 
-  </h4>
+                        </h4>
 
-</div>
+                    </div>
 
                     <h1 className="text-4xl lg:text-5xl font-semibold text-gray-800 mb-6 leading-tight">
 
@@ -56,17 +56,16 @@ const SnowHero = () => {
                     </p>
 
 
-                    {/* BUTTON */}
-                    <button className="flex items-center gap-3 bg-gradient-to-r from-[#3aa7e3] to-[#1b6fa8] text-white px-7 py-4 rounded-full font-semibold">
-
-                        Let's Discuss
-
-                        <span className="bg-[#0c4f79] rounded-full p-2">
-                            →
-                        </span>
-
-                    </button>
-
+                    {/* CTA */}
+                    <a
+                        href="https://preview.themeforest.net/item/barfi-snow-removal-lawn-care-landscaping-company-html-template/full_screen_preview/60961620"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 bg-gradient-to-r from-[#3aa7e3] to-[#1b6fa8] hover:bg-gradient-to-r hover:from-[#1b6fa8] hover:to-[#3aa7e3] px-6 py-3 rounded-full text-lg font-medium transition w-fit"
+                    >
+                        Live Demo
+                        <span className="text-xl">→</span>
+                    </a>
                 </div>
 
 

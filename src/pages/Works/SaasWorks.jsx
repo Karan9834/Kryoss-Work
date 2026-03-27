@@ -12,9 +12,6 @@ import {
 import { motion } from 'framer-motion';
 
 // Import Components
-import Testimonials from '../../components/home/Testimonials';
-import Contact from '../../components/home/Contact';
-
 // Import Project Images
 import saas1Img from '../../assets/saasimg/1.png';
 import saas2Img from '../../assets/saasimg/2.png';
@@ -23,6 +20,10 @@ import saas4Img from '../../assets/saasimg/4.png';
 import saas5Img from '../../assets/saasimg/5.png';
 import saas6Img from '../../assets/saasimg/6.png';
 
+import Testimonial from '../../components/Common/Testimonial';
+import Industries from '../../components/Common/Industries';
+import OurWork from '../../components/Common/OurWork';
+import ContactUs from '../../components/Common/ContactUs';
 const SaasWorks = () => {
     const projects = [
         {
@@ -258,8 +259,15 @@ const SaasWorks = () => {
                 </div>
             </section>
 
-            <Testimonials />
-            <Contact />
+
+
+
+
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
 
         </div>
     );

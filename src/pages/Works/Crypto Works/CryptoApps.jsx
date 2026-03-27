@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { ChevronRight, Star } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import data from './CryptoData.json';
-import Testimonials from '../../../components/home/Testimonials';
-import Contact from '../../../components/home/Contact';
-
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 // Note: To add actual app images, import them here and update the assetMap
 // e.g., import img1 from '../../../assets/works/bitnspay.png';
 
@@ -184,8 +185,15 @@ const CryptoApps = () => {
                 </div>
             </section>
 
-            <Testimonials />
-            <Contact />
+            
+            
+        
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
+
         </div>
     );
 };
