@@ -67,6 +67,8 @@ import JobPortalPage from "../pages/products/Job-Portal/JobPortalPage";
 import Busiuness from "../pages/products/Busiuness-Directory/Busiuness";
 import SaasPage from "../pages/products/SaasProduct/SaasPage";
 import AccountErpPage from "../pages/products/Account-Erp/AccountErpPage";
+import NewsPage from "../pages/products/News/NewsPage";
+import BFSIFinance from "../pages/products/BFSI-Finance/BFSIFinance";
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -136,4 +138,7 @@ export const ProductRoutes = [
 <Route key="crypto-deriv" path="/products/crypto-derivatives" element={<CryptoDerivativesPage />} />,
 <Route key="resto-pos" path="/products/restaurant-pos" element={<RestaurantPOSPage />} />,
 <Route key="retail-pos" path="/products/retail-pos" element={<RetailPOSPage />} />,
+<Route key="news" path="/products/prime/news-magazine" element={<NewsPage />} />,
+<Route key="BFSI-Finance" path="/products/prime/bfsi-finance" element={<BFSIFinance />} />,
+
 ];

@@ -77,16 +77,16 @@ const CultureSection = () => {
       {/* Full Width Image Slider Section */}
       <div className="relative w-full">
         
-        {/* Main Image Container - Adjusted Height */}
+        {/* Main Image Container - Reduced Height */}
         <div className="relative w-full">
           <img
             src={images[activeIndex].src}
             alt={images[activeIndex].alt}
-            className="w-full h-[400px] md:h-[450px] lg:h-[500px] object-cover transition-all duration-700 ease-in-out"
+            className="w-full h-[300px] md:h-[350px] lg:h-[380px] object-contain transition-all duration-700 ease-in-out"
           />
           
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
+          {/* Gradient Overlay - Lighter for better visibility */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
           
           {/* Navigation Arrows */}
           <button
@@ -113,20 +113,20 @@ const CultureSection = () => {
           </div>
           
           {/* Image Title Overlay */}
-          <div className="absolute bottom-16 left-0 right-0 text-center z-10">
-            <h3 className="text-xl md:text-2xl font-bold text-white drop-shadow-lg">
+          <div className="absolute bottom-8 left-0 right-0 text-center z-10">
+            <h3 className="text-lg md:text-xl font-semibold text-white drop-shadow-lg bg-black/40 inline-block px-4 py-1 rounded-full">
               {images[activeIndex].alt}
             </h3>
           </div>
         </div>
         
-        {/* Thumbnail Navigation */}
-        <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 flex justify-center gap-2 md:gap-3 z-20">
+        {/* Thumbnail Navigation - Positioned below */}
+        <div className="flex justify-center gap-2 md:gap-3 mt-6">
           {images.map((image, index) => (
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
-              className={`relative w-12 h-12 md:w-16 md:h-16 rounded-lg overflow-hidden transition-all duration-300 ${
+              className={`relative w-14 h-14 md:w-20 md:h-20 rounded-lg overflow-hidden transition-all duration-300 ${
                 activeIndex === index 
                   ? "ring-2 ring-orange-500 scale-110 shadow-xl" 
                   : "opacity-70 hover:opacity-100"
@@ -142,11 +142,8 @@ const CultureSection = () => {
         </div>
       </div>
 
-      {/* Spacer for thumbnails */}
-      <div className="h-20"></div>
-
       {/* Decorative Bottom Element */}
-      <div className="mt-4 text-center">
+      <div className="mt-8 text-center">
         <div className="inline-flex gap-2">
           {images.map((_, index) => (
             <button

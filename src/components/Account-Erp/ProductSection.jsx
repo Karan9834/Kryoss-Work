@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Star, Eye, CheckCircle2, Sparkles } from "lucide-react";
-import prod1 from "../../assets/SaasProduct/prod1.png";
+import prod5 from "../../assets/Products/prod5.png"
 import prod2 from "../../assets/SaasProduct/prod2.png";
 
 const ProductSection = () => {
@@ -10,10 +10,10 @@ const ProductSection = () => {
   const products = [
     {
       id: 1,
-      title: "Enterprise ERP System",
+      title: "Apex Erp",
       desc: "Complete ERP solution for small to medium businesses with integrated financials, sales, inventory, and customer management in a single platform.",
-      image: prod1,
-      route: "/products/enterprise/erp",
+      image: prod5,
+      route: "/products/enterprise/Apex-Erp",
       rating: 4.9,
       reviews: 2847,
       features: ["Financial Management", "Sales & CRM", "Inventory Control", "Analytics"],
@@ -36,7 +36,7 @@ const ProductSection = () => {
 
   return (
     <section 
-      id="erp-products-section"  // Add this id
+      id="erp-products-section"  
       className="relative py-28 bg-gradient-to-b from-gray-50 to-white overflow-hidden"
     >
       
@@ -115,7 +115,7 @@ const ProductSection = () => {
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                    className="w-full h-full object-fit transition-all duration-700 group-hover:scale-110"
                   />
                   
                   {/* Gradient Overlay */}
