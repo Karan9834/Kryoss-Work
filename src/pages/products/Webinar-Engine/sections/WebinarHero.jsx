@@ -32,7 +32,7 @@ const WebinarHero = () => {
 
                     <div className="flex flex-wrap items-center gap-4 pt-4">
                         <a
-                            href="https://zoom.us/webinar"
+                            href="https://preview.codecanyon.net/item/webinar-info-plugin-for-elementor/full_screen_preview/39949366"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-3 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-xl shadow-sky-500/20 hover:-translate-y-1"
