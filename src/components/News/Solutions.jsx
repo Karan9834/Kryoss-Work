@@ -181,10 +181,14 @@ const Solutions = () => {
             ))}
           </div>
 
-          {/* ITEMS */}
+          {/* ITEMS - Alternating Layout */}
           <div className="space-y-20 md:space-y-28 lg:space-y-32">
             {solutions.map((item, index) => {
-              const isLeft = index % 2 === 0;
+              // First solution: text left, image right
+              // Second solution: image left, text right
+              // Third solution: text left, image right
+              // and so on...
+              const isTextLeft = index % 2 === 0; // Even index = text left, odd = text right
               const IconComponent = item.icon;
 
               return (
@@ -207,16 +211,16 @@ const Solutions = () => {
                   
                   <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
                     
-                    {/* TEXT */}
+                    {/* TEXT SECTION - Position based on isTextLeft */}
                     <div
                       className={`${
-                        isLeft
-                          ? "md:text-right md:pr-8 lg:pr-12"
-                          : "md:pl-8 lg:pl-12 order-2 md:order-1"
+                        isTextLeft
+                          ? "md:order-1 md:text-left md:pr-8 lg:pr-12"
+                          : "md:order-2 md:text-left md:pl-8 lg:pl-12"
                       }`}
                     >
                       {/* Desktop Step Badge */}
-                      <div className={`hidden md:inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-full bg-white shadow-sm border border-gray-100 ${!isLeft ? 'md:ml-auto' : ''}`}>
+                      <div className={`hidden md:inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-full bg-white shadow-sm border border-gray-100 ${!isTextLeft ? 'md:ml-auto' : ''}`}>
                         <IconComponent className={`w-4 h-4 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`} />
                         <span className="text-xs font-medium text-gray-600">Step {index + 1}</span>
                       </div>
@@ -230,7 +234,7 @@ const Solutions = () => {
                       </p>
 
                       {/* Stats */}
-                      <div className={`inline-flex items-center gap-2 md:gap-3 bg-gray-50 md:bg-white md:shadow-sm px-3 md:px-4 py-1.5 md:py-2 rounded-lg border border-gray-100 ${!isLeft ? 'md:ml-auto md:justify-end' : ''}`}>
+                      <div className={`inline-flex items-center gap-2 md:gap-3 bg-gray-50 md:bg-white md:shadow-sm px-3 md:px-4 py-1.5 md:py-2 rounded-lg border border-gray-100 ${!isTextLeft ? 'md:ml-auto md:justify-end' : ''}`}>
                         <span className={`text-base md:text-xl font-bold bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}>
                           {item.stat}
                         </span>
@@ -238,12 +242,12 @@ const Solutions = () => {
                       </div>
                     </div>
 
-                    {/* IMAGE */}
+                    {/* IMAGE SECTION - Position opposite of text */}
                     <div
                       className={`${
-                        isLeft
-                          ? "md:pl-8 lg:pl-12"
-                          : "md:pr-8 lg:pr-12 order-1 md:order-2"
+                        isTextLeft
+                          ? "md:order-2 md:pl-8 lg:pl-12"
+                          : "md:order-1 md:pr-8 lg:pr-12"
                       }`}
                     >
                       <div className="group relative">

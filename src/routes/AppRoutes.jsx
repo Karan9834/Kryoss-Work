@@ -76,6 +76,10 @@ import DailBusiness from '../pages/products/DailyBusimess/DailBusiness';
 import FineTech from '../pages/products/Finetech/FineTech';
 import WealthPage from '../pages/products/Wealth-Management/WealthPage';
 import ApexErp from '../pages/products/Apex-ERP/ApexErp';
+import Mars from '../pages/products/Mars/Mars';
+import TimeStay from '../pages/products/TimeStay/TimeStay';
+import Nouva from '../pages/products/Nuova/Nouva';
+import Essential from '../pages/products/Essential/Essential';
 
 
 const AppRoutes = () => {
@@ -184,6 +188,10 @@ const AppRoutes = () => {
 
 <Route path="/products/gaming/casino" element={<CasinoGames />} />
 <Route path="/products/gaming/fantasy-sports" element={<FantasySports />} />
+<Route path="/products/mars" element={<Mars />} />
+<Route path="/products/TimeStay" element={<TimeStay />} />
+<Route path='/products/nuova' element={<Nouva/>}/>
+<Route path='/products/essential-plugins' element={<Essential />} />
                 {/* 404 */}
 
                 <Route path="*" element={<NotFound />} />

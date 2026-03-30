@@ -82,7 +82,7 @@ const Solutions = () => {
   ];
 
   useEffect(() => {
-    // Optimized: Only run animations if element exists
+    // Animate center line
     if (lineRef.current) {
       gsap.fromTo(
         lineRef.current,
@@ -101,7 +101,7 @@ const Solutions = () => {
       );
     }
 
-    // Optimized: Use a single ScrollTrigger for all cards
+    // Animate cards
     if (cardsRef.current.length) {
       gsap.fromTo(
         cardsRef.current,
@@ -115,7 +115,7 @@ const Solutions = () => {
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top 70%",
-            once: true, // Only animate once for better performance
+            once: true,
           },
         }
       );
@@ -131,7 +131,7 @@ const Solutions = () => {
       ref={sectionRef}
       className="relative bg-white px-6 md:px-16 py-20 md:py-28 overflow-hidden"
     >
-      {/* Light Background Decorations - Optimized */}
+      {/* Light Background Decorations */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-orange-50/40 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-amber-50/40 rounded-full blur-3xl"></div>
@@ -171,10 +171,14 @@ const Solutions = () => {
             />
           </div>
 
-          {/* ITEMS */}
+          {/* ITEMS - Alternating Layout */}
           <div className="space-y-20 md:space-y-24 lg:space-y-28">
             {solutions.map((item, index) => {
-              const isLeft = index % 2 === 0;
+              // First solution: text left, image right
+              // Second solution: image left, text right
+              // Third solution: text left, image right
+              // and so on...
+              const isTextLeft = index % 2 === 0; // Even index = text left, odd = text right
               const Icon = item.icon;
 
               return (
@@ -183,12 +187,12 @@ const Solutions = () => {
                   ref={(el) => (cardsRef.current[index] = el)}
                   className="grid md:grid-cols-2 gap-8 md:gap-12 items-center"
                 >
-                  {/* TEXT */}
+                  {/* TEXT SECTION - Position based on index */}
                   <div
                     className={`${
-                      isLeft
-                        ? "md:text-right md:pr-8 lg:pr-12"
-                        : "md:pl-8 lg:pl-12 order-2 md:order-1"
+                      isTextLeft
+                        ? "md:order-1 md:text-left md:pr-8 lg:pr-12"
+                        : "md:order-2 md:text-left md:pl-8 lg:pl-12"
                     }`}
                   >
                     {/* Icon for mobile */}
@@ -209,14 +213,14 @@ const Solutions = () => {
 
                     <ul className="space-y-2 mb-4">
                       {item.features.map((f, i) => (
-                        <li key={i} className={`text-sm text-gray-600 flex items-center gap-2 ${isLeft ? "justify-end" : ""}`}>
-                          <span className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${item.gradient} ${isLeft ? "order-2" : ""}`}></span>
+                        <li key={i} className="text-sm text-gray-600 flex items-center gap-2">
+                          <span className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${item.gradient}`}></span>
                           <span>{f}</span>
                         </li>
                       ))}
                     </ul>
 
-                    <div className={`inline-flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-lg ${!isLeft ? '' : 'md:ml-auto'}`}>
+                    <div className="inline-flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-lg">
                       <span className={`text-lg font-bold bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}>
                         {item.stat}
                       </span>
@@ -224,12 +228,12 @@ const Solutions = () => {
                     </div>
                   </div>
 
-                  {/* IMAGE - Optimized with loading="lazy" */}
+                  {/* IMAGE SECTION - Position based on index (opposite of text) */}
                   <div
                     className={`${
-                      isLeft
-                        ? "md:pl-8 lg:pl-12"
-                        : "md:pr-8 lg:pr-12 order-1 md:order-2"
+                      isTextLeft
+                        ? "md:order-2 md:pl-8 lg:pl-12"
+                        : "md:order-1 md:pr-8 lg:pr-12"
                     }`}
                   >
                     <div className="group relative">
