@@ -5,16 +5,16 @@ import { Play, ShieldCheck, ArrowRight } from 'lucide-react';
 const NFTCardSection = () => {
     const products = [
         {
-            title: "Kryoss OpenSea Clone",
-            subtitle: "NFT OpenSea Clone",
-            desc: "The blockchain experts of Kryoss have created a ready-made NFT Marketplace like OpenSea solution for entrepreneurs who desire to innovate in the NFT market. It is a decentralized NFT trading platform that has the potential to attract creators and investors from around the globe. The users can create, mint, buy, sell, bid, and list digital collectibles on the platform. Like we all know, OpenSea has been dominating this industry right from the start. Keeping this in mind, we have crafted a solution similar to OpenSea. Come up with innovative ideas and customize this script to outshine your competitors just like that. Give us a call to know more about our services.",
-            image: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?w=600&auto=format&fit=crop&q=60"
+            title: "Smart NFT",
+            subtitle: "Premier NFT Marketplace",
+            desc: "Smart NFT is a comprehensive, state-of-the-art NFT Marketplace solution designed for creators and investors to trade digital assets with unparalleled ease and security. Featuring advanced smart contract integration and a seamless user interface.",
+            image: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?w=800&q=80"
         },
         {
-            title: "Kryoss Zed Run Clone",
-            subtitle: "NFT Zed Run Clone",
-            desc: "Zed Run clone is a pre-engineered script plus a customizable solution of a virtual horse racing NFT gaming platform. It is embedded with diverse breeds of virtual horses, with each of them having special and unique attributes. The users can buy digital horses either from a drop-in allotted by the platform itself or in other third-party NFT marketplaces like OpenSea, Rarible, etc.The Kryoss Zed Run is similar to the Zed Run app. But we offer personalized services for you. We can help you design the horses in a unique way and also create a unique set of breeds entirely different from the ones in the Zed Run app. Join us to create a whole new virtual universe for a horse race in a short period of time.",
-            image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&auto=format&fit=crop&q=60"
+            title: "Enefti",
+            subtitle: "Next-Gen NFT Gaming",
+            desc: "Enefti is an industry-leading virtual asset platform that pioneers the future of NFT-based interactive gaming. With customizable digital horses, unique breeding mechanics, and an integrated competitive ecosystem.",
+            image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80"
         }
     ];
 
@@ -64,12 +64,9 @@ const NFTCardSection = () => {
                                     "{product.desc}"
                                 </p>
                                 
-                                <div className="flex flex-wrap gap-4 justify-center mt-auto">
-                                    <button className="flex items-center px-6 py-3 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-xl shadow-lg hover:shadow-violet-500/30 transition-all duration-300">
-                                        <Play size={18} className="mr-2 fill-white" /> Play Store
-                                    </button>
-                                    <button className="flex items-center px-6 py-3 bg-white border border-gray-100 hover:bg-gray-50 text-slate-900 font-bold rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-                                        Learn More <ArrowRight size={18} className="ml-2 text-violet-600" />
+                                <div className="flex justify-center mt-auto">
+                                    <button className="flex items-center px-10 py-3 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-xl shadow-lg hover:shadow-violet-500/30 transition-all duration-300 group/btn">
+                                        View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
                                     </button>
                                 </div>
                             </div>

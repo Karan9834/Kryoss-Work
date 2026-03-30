@@ -5,16 +5,16 @@ import { Play, ShieldCheck, ArrowRight } from 'lucide-react';
 const MLMCardSection = () => {
     const products = [
         {
-            title: "Kryoss Forsage Clone",
-            subtitle: "MLM Forsage Clone Script",
-            desc: "At Kryoss Softech, we proffer you with the Forsage MLM Clone Script - a holistically conceived decentralized ethereum smart contracts based MLM platform like Forsage that’s devised to channelize multiple sources of revenue and reverberate with the operating nuances of the MLM-centred crypto world. A must-have for anyone looking to make a legendary mark in this stellar niche! The awesome-looking app can be used for both Android and iOS platforms. It is optimized coded and easy to customize.",
-            image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&auto=format&fit=crop&q=60"
+            title: "Hyip InvestPro",
+            subtitle: "Premium Investment Platform",
+            desc: "Hyip InvestPro is a professional, high-yield investment management system designed for scalability and security. It offers automated profit distribution, multi-currency support, and a comprehensive user dashboard.",
+            image: "https://images.unsplash.com/photo-1621416894522-d28236bd2ecf?w=600&auto=format&fit=crop&q=60"
         },
         {
-            title: "Kryoss Supersage Clone",
-            subtitle: "MLM Supersage Clone Script",
-            desc: "Kryoss Supersage is nothing but a top-notch decentralized TRON smart contracts-based MLM script that’s wholesomely designed, developed, and devised for handling diverse iterations of matrix marketing on the TRON blockchain. The entire MLM operations are led to self-executing smart contracts that are inherently immutable. With advanced commission and compensation schemes, leveraging multiple revenue sources is a defining deed of the Supersage clone. Power-packed and ready to launch!",
-            image: "https://images.unsplash.com/photo-1621416894522-d28236bd2ecf?w=600&auto=format&fit=crop&q=60"
+            title: "MLMPro",
+            subtitle: "Enterprise MLM Solution",
+            desc: "MLMPro is an advanced multi-level marketing software suite that supports complex matrix, binary, and unilevel plans. Built on a secure architecture, it provides automated commission settlements and real-time genealogy tracking.",
+            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&auto=format&fit=crop&q=60"
         }
     ];
 
@@ -64,12 +64,9 @@ const MLMCardSection = () => {
                                     "{product.desc}"
                                 </p>
                                 
-                                <div className="flex flex-wrap gap-4 justify-center mt-auto">
-                                    <button className="flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-xl shadow-lg hover:shadow-blue-500/30 transition-all duration-300">
-                                        <Play size={18} className="mr-2 fill-white" /> Play Store
-                                    </button>
-                                    <button className="flex items-center px-6 py-3 bg-white border border-gray-100 hover:bg-gray-50 text-slate-900 font-bold rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-                                        Learn More <ArrowRight size={18} className="ml-2 text-blue-600" />
+                                <div className="flex justify-center mt-auto">
+                                    <button className="flex items-center px-10 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-xl shadow-lg hover:shadow-blue-500/30 transition-all duration-300 group/btn">
+                                        View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
                                     </button>
                                 </div>
                             </div>

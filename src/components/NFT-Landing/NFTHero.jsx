@@ -24,15 +24,7 @@ const NFTHero = ({ onExplore }) => {
                             Launch a powerful, secure NFT marketplace with Kryoss. We provide white-label solutions for art, gaming, real estate, and collectibles.
                         </p>
 
-                        <div className="flex flex-wrap gap-4 pt-4">
-                            <button
-                                onClick={onExplore}
-                                className="px-10 py-4 bg-gradient-to-r from-violet-600 to-fuchsia-500 text-white font-bold rounded-full shadow-xl shadow-violet-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group"
-                            >
-                                Explore Our Products
-                                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                            </button>
-                        </div>
+
 
                         <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
                             <div>

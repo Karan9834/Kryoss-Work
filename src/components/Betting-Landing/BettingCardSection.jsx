@@ -5,16 +5,16 @@ import { Play, ShieldCheck, ArrowRight } from 'lucide-react';
 const BettingCardSection = () => {
     const products = [
         {
-            title: "Kryoss Matka",
-            subtitle: "Satka Matka Betting Platform",
-            desc: "The game of Satta Matka is back and is gaining popularity more rapidly than the ’70s and ’80s. Develop your very own smartphone application to offer lucrative betting opportunities with all of its thrills to players all around the world. Our matka bazar app development solution is the very best in class. Reach out to us and get started today! Built with the latest technology, our immense experience in the app segment propelled us to craft a world-class gaming software that will enable you to amass a wide customer base and in turn generate a large revenue.",
-            image: "https://images.unsplash.com/photo-1596742572447-5790553ef443?w=600&auto=format&fit=crop&q=60"
+            title: "GoBet",
+            subtitle: "All-in-One Sports Betting App",
+            desc: "GoBet is a comprehensive sports betting solution offering a wide range of sports markets, real-time odds, and a seamless user experience. Designed for high volume and global reach.",
+            image: "https://images.unsplash.com/photo-1518133835878-5a93cc3f89e5?w=600&auto=format&fit=crop&q=60"
         },
         {
-            title: "Kryoss Ludo King",
-            subtitle: "Ludo King Clone (Real Money)",
-            desc: "Kryoss Ludo is the online version of the most played board game – Ludo, with a great twist that you can play this game online for fun, and along with that, if you win, you will earn real cash. The goal here is to be the King of the ( Kryoss Ludo ) and if you want to be the king, you have to exercise your Ludo knowledge, you have to strategize your gameplay, you have to take calculative decisions, you have to pay attention, and with experience and expertise..",
-            image: "https://images.unsplash.com/photo-1611996598533-4b1fba409b01?w=600&auto=format&fit=crop&q=60"
+            title: "BetPro",
+            subtitle: "Exchange & Multi-Market Betting",
+            desc: "BetPro is a next-generation betting exchange platform that allows users to bet against each other. With its liquid markets, low latency, and robust settlement engine.",
+            image: "https://images.unsplash.com/photo-1541344999736-83eca872f241?w=600&auto=format&fit=crop&q=60"
         }
     ];
 
@@ -64,12 +64,9 @@ const BettingCardSection = () => {
                                     "{product.desc}"
                                 </p>
                                 
-                                <div className="flex flex-wrap gap-4 justify-center mt-auto">
-                                    <button className="flex items-center px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg hover:shadow-emerald-500/30 transition-all duration-300">
-                                        <Play size={18} className="mr-2 fill-white" /> Play Store
-                                    </button>
-                                    <button className="flex items-center px-6 py-3 bg-white border border-gray-100 hover:bg-gray-50 text-slate-900 font-bold rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-                                        Learn More <ArrowRight size={18} className="ml-2 text-emerald-600" />
+                                <div className="flex justify-center mt-auto">
+                                    <button className="flex items-center px-10 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 group/btn">
+                                        View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
                                     </button>
                                 </div>
                             </div>
