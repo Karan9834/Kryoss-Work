@@ -113,11 +113,68 @@ const AboutUs = () => {
           </p>
         </div>
         
-        {/* Grid Layout */}
+        {/* Grid Layout - Image Left, Content Right */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           
-          {/* LEFT COLUMN - Text Content with Colored Highlights */}
-          <div className="space-y-8">
+          {/* LEFT COLUMN - Image */}
+          <div className="relative order-1">
+            {/* Decorative Wave Behind Image */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-100/30 to-indigo-100/30 rounded-2xl -z-10"></div>
+            
+            <div className="rounded-2xl overflow-hidden shadow-xl relative">
+              <img
+                src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1"
+                alt="Modern newsroom with journalists at work"
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+              
+              {/* Colored Overlay Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/5 via-transparent to-indigo-500/5 pointer-events-none"></div>
+            </div>
+            
+            {/* Decorative Wave Elements */}
+            <svg
+              className="absolute -bottom-6 -right-6 w-32 h-32 text-blue-200/40"
+              viewBox="0 0 100 100"
+              fill="none"
+            >
+              <path
+                d="M10,50 Q30,30 50,50 T90,50"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+              />
+              <path
+                d="M10,70 Q30,50 50,70 T90,70"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+              />
+            </svg>
+            
+            <svg
+              className="absolute -top-6 -left-6 w-32 h-32 text-indigo-200/40 rotate-180"
+              viewBox="0 0 100 100"
+              fill="none"
+            >
+              <path
+                d="M10,50 Q30,30 50,50 T90,50"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+              />
+              <path
+                d="M10,70 Q30,50 50,70 T90,70"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+              />
+            </svg>
+          </div>
+          
+          {/* RIGHT COLUMN - Text Content with Colored Highlights */}
+          <div className="space-y-8 order-2">
             <div>
               <h3 className="text-2xl font-semibold mb-3">
                 <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
@@ -173,63 +230,6 @@ const AboutUs = () => {
                 and helped communities stay informed about the issues that affect their lives.
               </p>
             </div>
-          </div>
-          
-          {/* RIGHT COLUMN - Image with Wave Accent */}
-          <div className="relative">
-            {/* Decorative Wave Behind Image */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-blue-100/30 to-indigo-100/30 rounded-2xl -z-10"></div>
-            
-            <div className="rounded-2xl overflow-hidden shadow-xl relative">
-              <img
-                src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1"
-                alt="Modern newsroom with journalists at work"
-                className="w-full h-auto object-cover"
-                loading="lazy"
-              />
-              
-              {/* Colored Overlay Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/5 via-transparent to-indigo-500/5 pointer-events-none"></div>
-            </div>
-            
-            {/* Decorative Wave Elements */}
-            <svg
-              className="absolute -bottom-6 -right-6 w-32 h-32 text-blue-200/40"
-              viewBox="0 0 100 100"
-              fill="none"
-            >
-              <path
-                d="M10,50 Q30,30 50,50 T90,50"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-              />
-              <path
-                d="M10,70 Q30,50 50,70 T90,70"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-              />
-            </svg>
-            
-            <svg
-              className="absolute -top-6 -left-6 w-32 h-32 text-indigo-200/40 rotate-180"
-              viewBox="0 0 100 100"
-              fill="none"
-            >
-              <path
-                d="M10,50 Q30,30 50,50 T90,50"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-              />
-              <path
-                d="M10,70 Q30,50 50,70 T90,70"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-              />
-            </svg>
           </div>
         </div>
       </div>

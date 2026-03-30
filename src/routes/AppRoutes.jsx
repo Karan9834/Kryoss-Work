@@ -81,6 +81,10 @@ import DailBusiness from '../pages/products/DailyBusimess/DailBusiness';
 import FineTech from '../pages/products/Finetech/FineTech';
 import WealthPage from '../pages/products/Wealth-Management/WealthPage';
 import ApexErp from '../pages/products/Apex-ERP/ApexErp';
+import Mars from '../pages/products/Mars/Mars';
+import TimeStay from '../pages/products/TimeStay/TimeStay';
+import Nouva from '../pages/products/Nuova/Nouva';
+import Essential from '../pages/products/Essential/Essential';
 
 
 const AppRoutes = () => {
@@ -181,19 +185,27 @@ const AppRoutes = () => {
                 <Route path="/products/job-board" element={<Job />} />
                 <Route path='/products/recruitment-ats' element={<Recruitment />} />
                 <Route path='/product/visionboard-metrics' element={<FlowWrite />} />
-                <Route path='/products/tech-daily' element={<TechDaily />} />
-                <Route path='/products/global-times' element={<DailBusiness />} />
-                <Route path='/products/fintech-analytics' element={<FineTech />} />
-                <Route path='/products/wealth-management' element={<WealthPage />} />
-                <Route path='/products/enterprise/Apex-Erp' element={<ApexErp />} />
+<Route path='/products/tech-daily' element={<TechDaily />} />
+<Route path='/products/global-times' element={<DailBusiness />} />
+<Route path='/products/fintech-analytics' element={<FineTech />} />
+<Route path='/products/wealth-management' element={<WealthPage />} />
+<Route path='/products/enterprise/Apex-Erp' element={<ApexErp />} />
 
-                <Route path="/products/gaming/casino" element={<CasinoGames />} />
-                <Route path="/products/gaming/fantasy-sports" element={<FantasySports />} />
-                <Route path="/products/nft-marketplace" element={<NFTProducts />} />
-                <Route path="/products/smart-nft" element={<SmartNftPage />} />
-                <Route path="/products/enefti" element={<EneftiProductsPage />} />
-                <Route path="/products/betting-platform" element={<BettingApps />} />
-                <Route path="/products/mlm-software" element={<MLMProducts />} />
+<Route path="/products/gaming/casino" element={<CasinoGames />} />
+<Route path="/products/gaming/fantasy-sports" element={<FantasySports />} />
+
+{/* From main */}
+<Route path="/products/nft-marketplace" element={<NFTProducts />} />
+<Route path="/products/smart-nft" element={<SmartNftPage />} />
+<Route path="/products/enefti" element={<EneftiProductsPage />} />
+<Route path="/products/betting-platform" element={<BettingApps />} />
+<Route path="/products/mlm-software" element={<MLMProducts />} />
+
+{/* From your branch */}
+<Route path="/products/mars" element={<Mars />} />
+<Route path="/products/TimeStay" element={<TimeStay />} />
+<Route path='/products/nuova' element={<Nouva />} />
+<Route path='/products/essential-plugins' element={<Essential />} />
                 {/* 404 */}
 
                 <Route path="*" element={<NotFound />} />

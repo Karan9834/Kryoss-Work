@@ -16,6 +16,14 @@ const Testimonial = ({
       gradient: "from-purple-600 via-pink-600 to-blue-600",
       cardGradient: "from-purple-500 to-pink-500",
     },
+
+     "orange-teal": {
+      badge: "bg-orange-100 text-orange-600",
+      gradient: "from-orange-500 via-orange-400 to-teal-500",
+      cardGradient: "from-orange-500 to-teal-500",
+      overlayFrom: "from-[#FFF7ED]",
+    },
+    
     blue: {
       badge: "bg-blue-100 text-blue-600",
       gradient: "from-blue-600 via-cyan-600 to-teal-600",

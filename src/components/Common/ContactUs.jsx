@@ -42,6 +42,14 @@ const ContactUs = ({
       gradient: "from-cyan-500 to-emerald-500",
       badge: "bg-cyan-100 text-cyan-600",
     },
+    "orange-teal": {
+      light: "#FFF7ED",
+      medium: "orange-500",
+      dark: "orange-600",
+      gradient: "from-orange-500 to-teal-500",
+      badge: "bg-orange-100 text-orange-600",
+    },
+
     blue: {
       light: "blue-50",
       medium: "blue-500",

@@ -66,8 +66,59 @@ const AboutUs = () => {
       <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
-          {/* LEFT COLUMN - Text Content */}
-          <div className="space-y-8">
+          {/* LEFT COLUMN - Image (Now on Left) */}
+          <div className="relative group order-1">
+            {/* Orange Glow Effect */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-rose-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            {/* Main Image Container */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+                alt="Financial team analyzing data"
+                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              
+              {/* Gradient Overlay - Orange Theme */}
+              <div className="absolute inset-0 bg-gradient-to-t from-amber-900/20 via-transparent to-transparent"></div>
+              
+              {/* Floating Card */}
+              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-lg border border-amber-100/50">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center">
+                      <Target className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500">Success Rate</p>
+                      <p className="text-lg font-bold text-gray-900">99.9%</p>
+                    </div>
+                  </div>
+                  <div className="w-px h-10 bg-amber-200"></div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-rose-500 to-pink-500 flex items-center justify-center">
+                      <Users className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500">Happy Clients</p>
+                      <p className="text-lg font-bold text-gray-900">500+</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Decorative Orange Corners */}
+            <div className="absolute -bottom-3 -right-3 w-24 h-24 border-r-2 border-b-2 border-amber-300/50 rounded-br-2xl"></div>
+            <div className="absolute -top-3 -left-3 w-24 h-24 border-l-2 border-t-2 border-orange-300/50 rounded-tl-2xl"></div>
+            
+            {/* Orange Accent Dot */}
+            <div className="absolute top-1/2 -right-2 w-3 h-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-500"></div>
+            <div className="absolute bottom-1/3 -left-2 w-2 h-2 rounded-full bg-orange-400"></div>
+          </div>
+          
+          {/* RIGHT COLUMN - Text Content (Now on Right) */}
+          <div className="space-y-8 order-2">
             {/* Section Label */}
             <div className="inline-flex items-center gap-2">
               <div className="w-8 h-[2px] bg-gradient-to-r from-amber-500 to-orange-500"></div>
@@ -141,57 +192,6 @@ const AboutUs = () => {
                 <span className="text-sm text-gray-600">Expert Team</span>
               </div>
             </div>
-          </div>
-          
-          {/* RIGHT COLUMN - Image */}
-          <div className="relative group">
-            {/* Orange Glow Effect */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-rose-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
-            {/* Main Image Container */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
-                alt="Financial team analyzing data"
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-              
-              {/* Gradient Overlay - Orange Theme */}
-              <div className="absolute inset-0 bg-gradient-to-t from-amber-900/20 via-transparent to-transparent"></div>
-              
-              {/* Floating Card */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-lg border border-amber-100/50">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center">
-                      <Target className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-500">Success Rate</p>
-                      <p className="text-lg font-bold text-gray-900">99.9%</p>
-                    </div>
-                  </div>
-                  <div className="w-px h-10 bg-amber-200"></div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-rose-500 to-pink-500 flex items-center justify-center">
-                      <Users className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-500">Happy Clients</p>
-                      <p className="text-lg font-bold text-gray-900">500+</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Decorative Orange Corners */}
-            <div className="absolute -bottom-3 -right-3 w-24 h-24 border-r-2 border-b-2 border-amber-300/50 rounded-br-2xl"></div>
-            <div className="absolute -top-3 -left-3 w-24 h-24 border-l-2 border-t-2 border-orange-300/50 rounded-tl-2xl"></div>
-            
-            {/* Orange Accent Dot */}
-            <div className="absolute top-1/2 -right-2 w-3 h-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-500"></div>
-            <div className="absolute bottom-1/3 -left-2 w-2 h-2 rounded-full bg-orange-400"></div>
           </div>
         </div>
         

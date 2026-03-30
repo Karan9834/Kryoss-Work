@@ -72,6 +72,8 @@ import SaasPage from "../pages/products/SaasProduct/SaasPage";
 import AccountErpPage from "../pages/products/Account-Erp/AccountErpPage";
 import NewsPage from "../pages/products/News/NewsPage";
 import BFSIFinance from "../pages/products/BFSI-Finance/BFSIFinance";
+import NewsMAnagement from "../pages/products/News-Management/NewsMAnagement";
+import HSMHotel from "../pages/products/HMS-Hotel/HSMHotel";
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -151,4 +153,6 @@ export const ProductRoutes = [
 <Route key="video-conference" path="/products/prime/video-conference" element={<VideoConferenceLanding />} />,
 <Route key="zoom-clone" path="/products/prime/zoom-clone" element={<ZoomClonePage />} />,
 <Route key="webinar-engine" path="/products/prime/webinar-engine" element={<WebinarEnginePage />} />,
+<Route key="news-management" path="/products/enterprise/nms" element={<NewsMAnagement />} />,
+<Route key="hotel-management-system" path="/products/enterprise/hms-hotel" element={<HSMHotel />} />,
 ];
