@@ -195,10 +195,10 @@ const createProducts = () => {
           i % 4 === 0
             ? "SaaS Products"
             : i % 3 === 0
-            ? "Mobile Apps"
-            : i % 2 === 0
-            ? "Web Solutions"
-            : "AI Tools",
+              ? "Mobile Apps"
+              : i % 2 === 0
+                ? "Web Solutions"
+                : "AI Tools",
 
         badge: i % 3 === 0 ? "BEST SELLER" : i % 2 === 0 ? "POPULAR" : "NEW",
 
@@ -236,8 +236,8 @@ export default function Products() {
   const filteredProducts = products.filter((p) => {
     // const matchSearch = p.name.toLowerCase().includes(search.toLowerCase());
     const matchSearch =
-  p.name.toLowerCase().includes(search.toLowerCase()) ||
-  p.category.toLowerCase().includes(search.toLowerCase());
+      p.name.toLowerCase().includes(search.toLowerCase()) ||
+      p.category.toLowerCase().includes(search.toLowerCase());
     const matchFilter = filter === "All" || p.type === filter;
     return matchSearch && matchFilter;
   });
@@ -276,7 +276,7 @@ export default function Products() {
           <div className="flex justify-center">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoIdrRNPC9DJpCTYVWzTosg4YdDG60oD1lQ&s"
-                alt="products"
+              alt="products"
               className="rounded-2xl shadow-2xl h-100"
             />
           </div>
@@ -327,11 +327,10 @@ export default function Products() {
               <button
                 key={f}
                 onClick={() => setFilter(f)}
-                className={`px-5 py-2 rounded-full border transition ${
-                  filter === f
-                    ? "bg-indigo-600 text-white"
-                    : "bg-gray-100 hover:bg-gray-200"
-                }`}
+                className={`px-5 py-2 rounded-full border transition ${filter === f
+                  ? "bg-indigo-600 text-white"
+                  : "bg-gray-100 hover:bg-gray-200"
+                  }`}
               >
                 {f}
               </button>
@@ -340,11 +339,11 @@ export default function Products() {
         </div>
       </section>
 
-{filteredProducts.length === 0 && (
-  <div className="text-center py-20 text-gray-500 text-lg">
-    This product is not available.
-  </div>
-)}
+      {filteredProducts.length === 0 && (
+        <div className="text-center py-20 text-gray-500 text-lg">
+          This product is not available.
+        </div>
+      )}
 
       {/* CATEGORY PRODUCT SECTIONS */}
       {categories.map((category, index) => {
@@ -365,8 +364,8 @@ export default function Products() {
               {/* CATEGORY TITLE */}
               <div className="mb-16">
                 <div className="flex items-center gap-4 mb-4">
-                    <span className="h-px bg-indigo-600 w-12 opacity-50"></span>
-                    <span className="text-indigo-600 font-bold tracking-widest text-sm uppercase">{category.split(' ')[0]} Solutions</span>
+                  <span className="h-px bg-indigo-600 w-12 opacity-50"></span>
+                  <span className="text-indigo-600 font-bold tracking-widest text-sm uppercase">{category.split(' ')[0]} Solutions</span>
                 </div>
                 <h2 className="text-4xl font-extrabold text-gray-900 leading-tight">
                   {category}
@@ -382,61 +381,60 @@ export default function Products() {
                   >
                     {/* Image Area */}
                     <div className="relative aspect-[16/10] overflow-hidden bg-gray-50">
-                        <img 
-                            src={product.image} 
-                            alt={product.name}
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                        />
-                        <div className="absolute top-4 right-4 z-10">
-                            <span className={`text-[10px] font-bold px-3 py-1.5 rounded-full backdrop-blur-md shadow-sm border border-white/20 uppercase tracking-wider ${
-                                product.badge === 'BEST SELLER' ? 'bg-orange-500 text-white' : 
-                                product.badge === 'POPULAR' ? 'bg-blue-500 text-white' : 'bg-indigo-600 text-white'
-                            }`}>
-                                {product.badge}
-                            </span>
-                        </div>
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                      <div className="absolute top-4 right-4 z-10">
+                        <span className={`text-[10px] font-bold px-3 py-1.5 rounded-full backdrop-blur-md shadow-sm border border-white/20 uppercase tracking-wider ${product.badge === 'BEST SELLER' ? 'bg-orange-500 text-white' :
+                          product.badge === 'POPULAR' ? 'bg-blue-500 text-white' : 'bg-indigo-600 text-white'
+                          }`}>
+                          {product.badge}
+                        </span>
+                      </div>
                     </div>
 
                     {/* Content Area */}
                     <div className="p-7 flex flex-col flex-grow">
-                        <div className="mb-2 text-[11px] font-bold text-indigo-600 uppercase tracking-widest opacity-80">
-                            {product.type}
-                        </div>
-                        <h3 className="font-bold text-xl text-gray-900 group-hover:text-indigo-600 transition-colors mb-3">
-                            {product.name}
-                        </h3>
-                        <p className="text-sm text-gray-500 leading-relaxed mb-6 line-clamp-2">
-                            {product.desc}
-                        </p>
+                      <div className="mb-2 text-[11px] font-bold text-indigo-600 uppercase tracking-widest opacity-80">
+                        {product.type}
+                      </div>
+                      <h3 className="font-bold text-xl text-gray-900 group-hover:text-indigo-600 transition-colors mb-3">
+                        {product.name}
+                      </h3>
+                      <p className="text-sm text-gray-500 leading-relaxed mb-6 line-clamp-2">
+                        {product.desc}
+                      </p>
 
-                        <div className="space-y-3 mb-8 mt-auto">
-                            {product.features.map((feature, idx) => (
-                                <div key={idx} className="flex items-center gap-3 text-[13px] text-gray-600 font-medium">
-                                    <div className="w-5 h-5 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600 shrink-0">
-                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                    </div>
-                                    <span className="line-clamp-1">{feature}</span>
-                                </div>
-                            ))}
-                        </div>
+                      <div className="space-y-3 mb-8 mt-auto">
+                        {product.features.map((feature, idx) => (
+                          <div key={idx} className="flex items-center gap-3 text-[13px] text-gray-600 font-medium">
+                            <div className="w-5 h-5 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600 shrink-0">
+                              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <span className="line-clamp-1">{feature}</span>
+                          </div>
+                        ))}
+                      </div>
 
-                        {/* Buttons */}
-                        <div className="grid grid-cols-2 gap-3 mt-auto">
-                            <button
-                                onClick={() => navigate(product.demoLink)}
-                                className="flex items-center justify-center text-[13px] font-bold text-gray-700 bg-gray-50 hover:bg-gray-100 hover:text-gray-900 py-3 rounded-xl transition-all border border-transparent hover:border-gray-200"
-                            >
-                                Live Demo
-                            </button>
-                            <button
-                                onClick={() => navigate(product.detailsLink)}
-                                className="flex items-center justify-center text-[13px] font-bold text-white bg-indigo-600 hover:bg-indigo-700 py-3 rounded-xl transition-all shadow-lg shadow-indigo-200 hover:shadow-indigo-300 active:scale-95"
-                            >
-                                View Details
-                            </button>
-                        </div>
+                      {/* Buttons */}
+                      <div className="grid grid-cols-2 gap-3 mt-auto">
+                        <button
+                          onClick={() => navigate(product.demoLink)}
+                          className="flex items-center justify-center text-[13px] font-bold text-gray-700 bg-gray-50 hover:bg-gray-100 hover:text-gray-900 py-3 rounded-xl transition-all border border-transparent hover:border-gray-200"
+                        >
+                          Live Demo
+                        </button>
+                        <button
+                          onClick={() => navigate(product.detailsLink)}
+                          className="flex items-center justify-center text-[13px] font-bold text-white bg-indigo-600 hover:bg-indigo-700 py-3 rounded-xl transition-all shadow-lg shadow-indigo-200 hover:shadow-indigo-300 active:scale-95"
+                        >
+                          View Details
+                        </button>
+                      </div>
                     </div>
                   </div>
                 ))}
