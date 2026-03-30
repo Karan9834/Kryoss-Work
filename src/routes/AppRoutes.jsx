@@ -8,7 +8,7 @@ import { CompanyRoutes } from './CompanyRoutes';
 import { GojekRoutes } from './GojekRoutes';
 import { ServiceRoutes } from './ServiceRoutes';
 import Blog from "../pages/Blog";
-import Products from "../pages/Products";
+import Products from "../pages/Works/Products";
 import ServicesPage from '../components/home/ServicePage';
 import HireDevelopersPage from '../components/home/HireDevelopersPage';
 import BusinessGrowthPage from '../components/home/BusinessGrowthPage';
@@ -27,6 +27,8 @@ import RealEstatePage from '../pages/products/real-estate/RealEstatePage';
 import MultiVendorMarketplacePage from "../pages/products/Multi-Vendor-Marketplace/MultiVendorMarketplacePage";
 import B2BWholesalePage from "../pages/products/B2B-Wholesale/B2BWholesalePage";
 import AiContentGeneratorPage from "../pages/products/AI-Content-Generator/AiContentGeneratorPage";
+import SmartNftPage from "../pages/products/Smart-NFT/SmartNftPage";
+import EneftiProductsPage from "../pages/products/Enefti-Products/EneftiProductsPage";
 import TelemedicineAppPage from "../pages/products/Telemedicine-App/TelemedicineAppPage";
 import PharmacyDeliveryPage from "../pages/products/Pharmacy-Delivery/PharmacyDeliveryPage";
 import ELearningPage from '../pages/products/E-Learning/ELearningPage';
@@ -35,18 +37,18 @@ import GroceryDeliveryPage from '../pages/products/Grocery-Delivery/GroceryDeliv
 import SalesCRMPage from "../pages/products/Sales-CRM/SalesCRMPage";
 import WebsitesWorks from '../pages/Works/OurWorks/WebsitesWorks';
 import UiUxWorks from "../pages/Works/OurWorks/UiUxWorks";
-import RealEstateWorks from "../pages/Works/RealEstateWorks";
-import SaasWorks from "../pages/Works/SaasWorks";
+import RealEstateWorks from '../pages/Works/OurWorks/RealEstateWorks';
+import SaasWorks from '../pages/Works/OurWorks/SaasWorks';
 import HotelBooking from '../pages/products/Hotel-Booking/HotelBooking';
 import HotelManagement from '../pages/products/Hotel-Management-System/HotelManagement';
 import SocialMedia from "../pages/Works/OurWorks/SocialMedia";
 import GraphicBranding from "../pages/Works/OurWorks/GraphicBranding";
-import BusinessWorks from '../pages/Works/BusinessWorks';
+import BusinessWorks from '../pages/Works/OurWorks/BusinessWorks';
 import WhatsAppPage from '../pages/products/WhatsApp-Clone/WhatsAppPage';
 import NewsMagazine from "../pages/Works/OurWorks/NewsMagazine";
 import FinanceWorks from '../pages/Works/OurWorks/FinanceWorks';
 import OnDemandWorks from '../pages/Works/OurWorks/OnDemandWorks';
-import FitnessAppsWorks from '../pages/Works/FitnessAppsWorks';
+import FitnessAppsWorks from '../pages/Works/OurWorks/FitnessAppsWorks';
 import LocalBusiness from '../pages/products/Local-Business/LocalBusiness';
 import Services from '../pages/products/Service-Platform/Services';
 import Job from '../pages/products/Job-Board/Job';
@@ -55,11 +57,14 @@ import GamingWorks from "../pages/Works/Gaming&Crypto/GamingWorks";
 import FantasyApps from "../pages/Works/Gaming&Crypto/FantasyApps";
 import CryptoApps from '../pages/Works/Crypto Works/CryptoApps';
 import ExchangeApps from '../pages/Works/Crypto Works/ExchangeApps';
-import MLMAppsWorks from '../pages/Works/MLMAppsWorks';
-import BettingAppsWorks from '../pages/Works/BettingAppsWorks';
+import MLMAppsWorks from '../pages/Works/OtherWorks/MLMAppsWorks';
+import BettingAppsWorks from '../pages/Works/OtherWorks/BettingAppsWorks';
 import FlowWrite from '../pages/products/FlowWriteAI/FlowWrite';
 import CasinoGames from '../pages/products/Casino Games/CasinoGames';
 import FantasySports from '../pages/products/Fantasy Sports/FantasySports';
+import NFTProducts from '../pages/products/Others Products/NFTProducts';
+import BettingApps from '../pages/products/Others Products/BettingApps';
+import MLMProducts from '../pages/products/Others Products/MLMProducts';
 
 import HealthFitnessApps from '../pages/Works/Application Works/HealthFitnessApps';
 import ShoppingApps from '../pages/Works/Application Works/ShoppingApps';
@@ -188,9 +193,18 @@ const AppRoutes = () => {
 
 <Route path="/products/gaming/casino" element={<CasinoGames />} />
 <Route path="/products/gaming/fantasy-sports" element={<FantasySports />} />
+
+{/* From main */}
+<Route path="/products/nft-marketplace" element={<NFTProducts />} />
+<Route path="/products/smart-nft" element={<SmartNftPage />} />
+<Route path="/products/enefti" element={<EneftiProductsPage />} />
+<Route path="/products/betting-platform" element={<BettingApps />} />
+<Route path="/products/mlm-software" element={<MLMProducts />} />
+
+{/* From your branch */}
 <Route path="/products/mars" element={<Mars />} />
 <Route path="/products/TimeStay" element={<TimeStay />} />
-<Route path='/products/nuova' element={<Nouva/>}/>
+<Route path='/products/nuova' element={<Nouva />} />
 <Route path='/products/essential-plugins' element={<Essential />} />
                 {/* 404 */}
 

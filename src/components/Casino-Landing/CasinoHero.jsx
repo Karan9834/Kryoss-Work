@@ -27,15 +27,7 @@ const CasinoHero = ({ onExplore }) => {
                             Custom casino game software solutions catering to mobile gaming, land-based systems, and online platforms. Elevate your gaming business with Kryoss.
                         </p>
 
-                        <div className="flex flex-wrap gap-4 pt-4">
-                            <button
-                                onClick={onExplore}
-                                className="px-10 py-4 bg-gradient-to-r from-orange-600 to-amber-500 text-white font-bold rounded-full shadow-xl shadow-orange-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group"
-                            >
-                                Explore Our Products
-                                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                            </button>
-                        </div>
+
 
                         {/* Trust Badges */}
                         <div className="flex items-center gap-8 pt-8 border-t border-gray-100">

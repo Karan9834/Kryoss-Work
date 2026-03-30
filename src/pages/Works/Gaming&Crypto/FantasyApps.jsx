@@ -10,7 +10,7 @@ const fantasyData = [
         id: 1,
         titleRed: "FanFight-",
         titleBlack: "Fantasy Sports",
-        description: "On FanFight, play fantasy sports with 100% usable Extra Cash to join contests. Fanfight has been one significant portal that’s made Fantasy Sports, especially Fantasy Cricket, more accessible to over 5 million fantasy players. Just when you thought fantasy sports couldn’t get any better, we’ve designed an all-new & improved version of this marvelous portal. Hop on as we introduce you to some brand new features.......",
+        description: "On FanFight, play fantasy sports with 100% usable Extra Cash to join contests. Fanfight has been one significant portal that’s made Fantasy Sports, especially Fantasy Cricket, more accessible to over 5 million fantasy players. Just when you thought fantasy sports couldn’t get any better, we’ve designed an all-new & improved version of this marvelous portal. Hop on as we introduce you to some brand new features.",
         img: "/GamingandCrypto/FANfight.png",
         link: "https://download.fanfight.com/fanfight_1.5.apk",
         bgClass: "bg-white",
@@ -20,7 +20,7 @@ const fantasyData = [
         id: 2,
         titleRed: "FSL11-",
         titleBlack: " Fantasy Sports App",
-        description: "FSL11 is one of the best fantasy cricket apps in India. It’s the best way to watch cricket games, create teams, win cash, and bring the action right into your living room.Fantasy cricket is the term that everyone understands today! FSL11 Fantasy cricket App, you perceive to experience the true fever of cricket sports ground using a mobile phone, is often played using the Internet, where participants assemble imaginary or virtual teams of real players of a professional sport.......",
+        description: "FSL11 is one of the best fantasy cricket apps in India. It’s the best way to watch cricket games, create teams, win cash, and bring the action right into your living room.Fantasy cricket is the term that everyone understands today! FSL11 Fantasy cricket App, you perceive to experience the true fever of cricket sports ground using a mobile phone, is often played using the Internet, where participants assemble imaginary or virtual teams of real players of a professional sport.",
         img: "/GamingandCrypto/fsl11.png",
         link: "https://api.fsl11.com/uploads/android/FSL11.apk",
         bgClass: "bg-[#f8f9fa]",
@@ -30,7 +30,7 @@ const fantasyData = [
         id: 3,
         titleRed: "Play One -",
         titleBlack: " Fantasy Cricket App",
-        description: "PlayOne with amazing user experience and variety of contests and leagues is a perfect destination for all the amateur users who want to get some firsthand experience in earning by participating in the trial or low costing fantasy leagues before they up the ante in the bigger leagues and contests. PlayOne is your ideal platform to place your money and bet the next time your favorite players and team take the field for bringing you the cricket action......",
+        description: "PlayOne with amazing user experience and variety of contests and leagues is a perfect destination for all the amateur users who want to get some firsthand experience in earning by participating in the trial or low costing fantasy leagues before they up the ante in the bigger leagues and contests. PlayOne is your ideal platform to place your money and bet the next time your favorite players and team take the field for bringing you the cricket action.",
         img: "/GamingandCrypto/play one.png",
         link: "https://playone.in/",
         bgClass: "bg-white",
@@ -97,10 +97,19 @@ const FantasyApps = () => {
                                         </h2>
                                         <p className="text-gray-600 text-base lg:text-lg leading-relaxed mb-6 font-medium">
                                             {project.description}
-                                            <a href={project.link} className="text-red-500 font-semibold ml-2 hover:underline">
-                                                .....More Details
-                                            </a>
                                         </p>
+                                        <a 
+                                            href={project.link || ""} 
+                                            className="inline-block mt-4 hover:opacity-90 transition-opacity"
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
+                                                alt="Get it on Google Play"
+                                                className="h-12 object-contain"
+                                            />
+                                        </a>
 
                                         </motion.div>
 

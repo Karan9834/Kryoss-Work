@@ -11,15 +11,15 @@ import {
 import { motion } from 'framer-motion';
 
 // Import Project Images
-import stacksImg from '../../assets/works/betting/9stacks.png';
-import rajbetImg from '../../assets/works/betting/rajbet.png';
-import sattabetImg from '../../assets/works/betting/sattabet.png';
-import heroImg from '../../assets/works/betting/hero.png';
+import stacksImg from '../../../assets/works/betting/9stacks.png';
+import rajbetImg from '../../../assets/works/betting/rajbet.png';
+import sattabetImg from '../../../assets/works/betting/sattabet.png';
+import heroImg from '../../../assets/works/betting/hero.png';
 
-import Testimonial from '../../components/Common/Testimonial';
-import Industries from '../../components/Common/Industries';
-import OurWork from '../../components/Common/OurWork';
-import ContactUs from '../../components/Common/ContactUs';
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 // Import Components
 const projects = [
   {

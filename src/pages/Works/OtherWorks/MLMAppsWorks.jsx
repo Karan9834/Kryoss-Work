@@ -11,14 +11,14 @@ import {
 import { motion } from 'framer-motion';
 
 // Import Project Images
-import glazeImg from '../../assets/works/mlm/glaze.png';
-import oriensImg from '../../assets/works/mlm/oriens.png';
-import heroImg from '../../assets/works/mlm/hero.png';
+import glazeImg from '../../../assets/works/mlm/glaze.png';
+import oriensImg from '../../../assets/works/mlm/oriens.png';
+import heroImg from '../../../assets/works/mlm/hero.png';
 
-import Testimonial from '../../components/Common/Testimonial';
-import Industries from '../../components/Common/Industries';
-import OurWork from '../../components/Common/OurWork';
-import ContactUs from '../../components/Common/ContactUs';
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 // Import Components
 const projects = [
   {

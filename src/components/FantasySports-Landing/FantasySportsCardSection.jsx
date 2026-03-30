@@ -16,18 +16,6 @@ const FantasySportsCardSection = () => {
             desc: "Kryoss Kings clone app is a replica of the fantasy sports app DraftKings that extends various modes of drafting and fantasy gaming solutions. It offers daily and weekly fantasy games with real-time sports match results and leaderboards.",
             img: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800"
         },
-        { 
-            title: 'Vyom Fantasy App', 
-            subtitle: 'FanDuel Clone App',
-            desc: "An online fantasy sports app like FanDuel that enables you to conduct daily fantasy sports contests and also bookmarking services. Access daily fantasy sports events in NFL, NBA, MLB, IPL, NHL, WHL, EPL, etc.",
-            img: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800"
-        },
-        { 
-            title: 'Kryoss 365', 
-            subtitle: 'White Label Bet 365 Clone',
-            desc: "An all-inclusive sports betting solution housing a wide range of sports. Real time GPS tracking and Geofence is available to track location and issue unique tracking URLs.",
-            img: "https://images.unsplash.com/photo-1516131206008-dbb41c4886d5?auto=format&fit=crop&q=80&w=800"
-        },
     ];
 
     return (
@@ -77,12 +65,9 @@ const FantasySportsCardSection = () => {
                                         {prod.desc}
                                     </p>
                                     
-                                    <div className={`flex flex-wrap gap-4 justify-center mt-auto`}>
-                                        <button className="flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl shadow-lg hover:shadow-green-500/30 transition-all duration-300">
-                                            <Smartphone className="w-5 h-5 mr-2" /> Playstore
-                                        </button>
-                                        <button className="flex items-center px-6 py-3 bg-white border border-gray-100 hover:bg-gray-50 text-slate-900 font-bold rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-                                            Learn More <ArrowRight className="w-5 h-5 ml-2" />
+                                    <div className="flex justify-center mt-auto">
+                                        <button className="flex items-center px-10 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl shadow-lg hover:shadow-green-500/30 transition-all duration-300 group/btn">
+                                            View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
                                         </button>
                                     </div>
                                 </div>

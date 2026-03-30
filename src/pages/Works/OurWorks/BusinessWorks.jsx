@@ -11,10 +11,10 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-import Testimonial from '../../components/Common/Testimonial';
-import Industries from '../../components/Common/Industries';
-import OurWork from '../../components/Common/OurWork';
-import ContactUs from '../../components/Common/ContactUs';
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 // Import Components
 const BusinessWorks = () => {
     const projects = [

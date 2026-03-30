@@ -77,9 +77,9 @@ const megaMenuData = [
         icon: '✨',
         accent: '#f97316',
         items: [
-          { label: 'NFT Products', icon: '🖼️', href: '/products/others/nft' },
-          { label: 'Betting Apps', icon: '🎯', href: '/products/others/betting' },
-          { label: 'MLM Products', icon: '🔗', href: '/products/others/mlm' },
+          { label: 'NFT Products', icon: '🖼️', href: '/products/nft-marketplace' },
+          { label: 'Betting Apps', icon: '🎯', href: '/products/betting-platform' },
+          { label: 'MLM Products', icon: '🔗', href: '/products/mlm-software' },
         ],
       },
     ],

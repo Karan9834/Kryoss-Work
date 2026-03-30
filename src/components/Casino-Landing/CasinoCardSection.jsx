@@ -18,18 +18,6 @@ const CasinoCardSection = () => {
             subtitle: 'Unity3d Game Builder',
             desc: 'If you ever wished to create your own Casino Slot Machine Game without programming knowledge, our AFL Slots Kit will save you hundreds of development hours and help you reach your digital dreams faster than ever.',
             img: 'https://images.unsplash.com/photo-1596838132175-fb1858a7f927?auto=format&fit=crop&q=80&w=800'
-        },
-        {
-            title: 'Kryoss Multi Card Game',
-            subtitle: 'Teen Patti, Rummy and Andar Bahar',
-            desc: 'A comprehensive gambling card game bundle originating from the Indian subcontinent. It includes popular variations with influences from poker, providing a rich cultural gaming experience.',
-            img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800'
-        },
-        {
-            title: 'Kryoss Crypto Casino',
-            subtitle: 'Slot Machine Online Gaming Platform',
-            desc: 'Kryoss Crypto Casino uses provably fair technology based on strong cryptographic algorithms. It is perfect for entrepreneurs wanting to quickly start their own online gaming business with random results guaranteed.',
-            img: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800'
         }
     ];
 
@@ -45,18 +33,6 @@ const CasinoCardSection = () => {
             subtitle: 'Multiplayer Game - Unity3d | Admob',
             desc: 'Joker is a famous card game where 3 cards are distributed to players. The dealer nominates jokers at random, adding a level of excitement and chance to every round. Supports 2-5 players.',
             img: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800'
-        },
-        {
-            title: 'K-Slot Machine',
-            subtitle: 'Combo 3 In 1 Unity Casino Game',
-            desc: 'Extremely popular with mobile players worldwide. We provide a full-featured sample with easy customization and monetization via Admob, Facebook Audience Network, and AppLovin.',
-            img: 'https://images.unsplash.com/photo-1606164222125-8d747b5ee3ad?auto=format&fit=crop&q=80&w=800'
-        },
-        {
-            title: 'Kryoss Rummy Classic',
-            subtitle: 'Rami (Admob + Android Studio)',
-            desc: 'Test your card game skills against five different computer opponents across rookie to professional levels. Learn and improve before you encounter real-life Rummy professionals.',
-            img: 'https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&q=80&w=800'
         }
     ];
 
@@ -96,12 +72,9 @@ const CasinoCardSection = () => {
                                 {prod.desc}
                             </p>
                             
-                            <div className="flex flex-wrap gap-4 justify-center mt-auto">
-                                <button className="flex items-center px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all duration-300">
-                                    <Smartphone className="w-5 h-5 mr-2" /> Playstore
-                                </button>
-                                <button className="flex items-center px-6 py-3 bg-white border border-gray-100 hover:bg-gray-50 text-slate-900 font-bold rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-                                    Learn More <ArrowRight className="w-5 h-5 ml-2" />
+                            <div className="flex justify-center mt-auto">
+                                <button className="flex items-center px-10 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all duration-300 group/btn">
+                                    View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
                                 </button>
                             </div>
                         </div>
