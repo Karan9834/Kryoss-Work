@@ -10,66 +10,81 @@ import {
     Users,
     Mail,
     Phone,
-    MessageSquare
+    MessageSquare,
+    Play,
+    Apple
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Import Components
-// Import Project Images
-import quickstayImg from '../../assets/realestateimg/1.png';
-import rentmystayImg from '../../assets/realestateimg/2.png';
-import dormsImg from '../../assets/realestateimg/3.png';
-import myrentsImg from '../../assets/realestateimg/4.png';
-import nestoriaImg from '../../assets/realestateimg/5.png';
-import Testimonial from '../../components/Common/Testimonial';
-import Industries from '../../components/Common/Industries';
-import OurWork from '../../components/Common/OurWork';
-import ContactUs from '../../components/Common/ContactUs';
-const RealEstateWorks = () => {
+// Import Project Images (Fitness Apps)
+import appImg from '../../../assets/fitnessimg/app.png';
+import truemedImg from '../../../assets/fitnessimg/truemed.png';
+import fitifyImg from '../../../assets/fitnessimg/fitify.png';
+import nhImg from '../../../assets/fitnessimg/nh.png';
+import amwellImg from '../../../assets/fitnessimg/amwell.png';
+
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
+const FitnessAppsWorks = () => {
     const projects = [
         {
-            title: 'QuickStay: Flat and Flatmates, Rooms, Roommate, PG',
-            description: 'QuickStay is an online residential rental platform that makes it easier for Property Owners & Tenants to exchange information based on shared interests. Find among furnished, semi-furnished, or unfurnished rooms in PG, Flat, Colive. Zero Brokerage properties are available in the major cities of India. QuickStay preferably works to provide a roommate that suits your personality! Compatibility is the key factor in searching for ideal roommates.',
-            tags: ['Residential Rental', 'Roommates', 'PG Finder'],
-            image: quickstayImg,
+            title: 'Pedometer Pacer - Fitness That Fits Your Life',
+            description: '“Walking & Running Pedometer for Health & Weight” syncs steps & calories w/ MyFitnessPal and Fitbit! Track your step, walking & weight loss with this free health counter. Lose weight and track walk distance and calories burned using 24/7 step counting from our pedometer, step counter & health tracker app.',
+            tags: ['Pedometer', 'Health Tracker', 'Weight Loss'],
+            image: appImg,
             links: [
-                { href: 'https://play.google.com/store/apps/details?id=com.quickstay.user', type: 'playstore' }
+                { href: 'https://play.google.com/store/apps/details?id=cc.pacer.androidapp', type: 'playstore' },
+                { href: 'https://apps.apple.com/us/app/pacer-pedometer-step-tracker/id600446812', type: 'appstore' }
             ]
         },
         {
-            title: 'RentMyStay',
-            description: 'RentMyStay is an online platform, where tenants can rent out furnished and unfurnished homes with flex(Daily, Weekly or Monthly)-rentals. RentMyStay does an extensive background verification of clients and coordinates the agreement policy. On the other hand, tenants get properties in a locality they wish for and can book anytime On-The-Go with their mobile devices.',
-            tags: ['Flex-Rentals', 'Verification', 'Home Rental'],
-            image: rentmystayImg,
+            title: 'myUpchar - Leading online doctor consultation app',
+            description: 'Get 24x7 online consultation from 50,000+ experienced doctors on myUpchar. Consult experts in 30+ specialties through chat consultation or tele consultation. No more long queues or waiting times, connect with trusted doctors within 10 minutes. myUpchar offers safe and secure calls and online chat with doctors.',
+            tags: ['Online Consultation', 'Doctors', 'Telemedicine'],
+            image: appImg,
             links: [
-                { href: 'https://play.google.com/store/apps/details?id=com.rentmystay.customer', type: 'playstore' }
+                { href: 'https://play.google.com/store/apps/details?id=com.myupchar.user', type: 'playstore' }
             ]
         },
         {
-            title: 'Dorms.com - Student housing and hostels',
-            description: 'Book safe student housing and backpacker hostels. Dorms.com Designed with students, backpackers and digital nomads in mind, our budget-friendly selection of student accommodations and hostels makes youth travel much easier and safer. From London to Paris, from Berlin to New-York, Dorms.com connects you with the best deals for student housing and backpackers hostels.',
-            tags: ['Student Housing', 'Hostels', 'Global Travel'],
-            image: dormsImg,
+            title: 'Truemeds - Trusted Dawa Delivery App',
+            description: 'Truemeds is India\'s 1st e-Pharmacy that guarantees to reduce your medicine costs up to 72%. We only supply medicines from India\'s top 50 medicine makers, to guarantee our users the best quality. All of our orders go through the most rigid checks to ensure that the correct medicines are supplied to our users. Our proprietary Triple Check (TC) flow makes sure every order is checked by a Doctor, Pharmacist & our proprietary AI-based Algorithm.',
+            tags: ['Pharmacy Delivery', 'Medicine', 'Healthcare'],
+            image: truemedImg,
             links: [
-                { href: 'https://play.google.com/store/apps/details?id=com.dorms.app', type: 'playstore' }
+                { href: 'https://play.google.com/store/apps/details?id=com.intellihealth.truemedsp', type: 'playstore' }
             ]
         },
         {
-            title: 'My Rents- Manage all your rents with your phones',
-            description: 'Do you have different rents to manage? Tenants information, contracts, pictures, events, details... It can be difficult. With My Rents you can easily manage all of this creating different portfolios with their rents and have a better control of your earnings and expenses.',
-            tags: ['Rent Management', 'Portfolio', 'Finances'],
-            image: myrentsImg,
+            title: 'Fitify: Workout Routines & Training Plans',
+            description: 'Who needs a gym? Get in shape at home with Workouts & Plans from Fitify. Fitify is your ultimate full body workout app to lose weight, burn fat, build muscle & strength. With over 900 exercises in the work out app, your daily workout routines are always fresh, fun & effective! Work out anywhere, anytime using any fit tool. No equipment required, but if you have one - take advantage of it!',
+            tags: ['Home Workout', 'Fitness Plans', 'Health'],
+            image: fitifyImg,
             links: [
-                { href: 'https://play.google.com/store/apps/details?id=com.myrents.manager', type: 'playstore' }
+                { href: 'https://play.google.com/store/apps/details?id=com.fitifyworkouts.bodyweight.workoutapp', type: 'playstore' },
+                { href: 'https://apps.apple.com/us/app/fitify-fitness-home-workout/id1463386686', type: 'appstore' }
             ]
         },
         {
-            title: 'Nestoria Property',
-            description: 'The new Nestoria Property app is available in more than 40 countries and 15 languages. Nestoria indexes property adverts so that you save time with your searches. There are millions of properties for you to look through in Nestoria Homes both if you want to buy or rent a house, flat, bungalow, terraced house, apartment, commercial property, cottage, etc.',
-            tags: ['Property Indexing', 'Global Reach', 'Real Estate Search'],
-            image: nestoriaImg,
+            title: 'NH Care-Video Consult or Book Appointment online',
+            description: 'NH Care app to book appointments for video consultations as well as in-hospital consultations. Find a doctor by using different search criteria, like specialty, symptom, or hospital, and book appointments for self or for family members. Book appointment for the same day or a future date as per your convenience. Book online appointment via video call or in-hospital booking from the comfort of your home. NH Care also allows you to attach reports and other documents that you want to show to the doctor before consultation.',
+            tags: ['Video Consultation', 'Hospital Booking', 'Medical Care'],
+            image: nhImg,
             links: [
-                { href: 'https://play.google.com/store/apps/details?id=com.nestoria.android', type: 'playstore' }
+                { href: 'https://play.google.com/store/apps/details?id=org.narayanahealth.nhcare', type: 'playstore' }
+            ]
+        },
+        {
+            title: 'Amwell: Doctor Visits 24/7',
+            description: 'Amwell is the best way to see a doctor from home or on-the-go. Our telehealth app connects you to board-certified, experienced medical providers. High-quality healthcare is now available, 24/7, with on-demand service or scheduled appointments, often with next-day availability. Amwell brings healthcare home through the power of telemedicine so you can feel better faster. No more driving to the doctor or sitting in waiting rooms. With Amwell, quality medical providers are available 24/7, to help you feel better faster.',
+            tags: ['Telehealth', 'Doctor Visits', 'Medical Providers'],
+            image: amwellImg,
+            links: [
+                { href: 'https://play.google.com/store/apps/details?id=com.americanwell.android.member.amwell&hl=en', type: 'playstore' },
+                { href: 'https://apps.apple.com/us/app/amwell-doctor-visits-24-7/id655783752', type: 'appstore' }
             ]
         }
     ];
@@ -81,15 +96,13 @@ const RealEstateWorks = () => {
         { value: '450', label: 'Satisfied Clients', icon: <CheckCircle className="text-orange-500" /> }
     ];
 
-
-
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             {/* 1. Hero Section */}
             <section
                 className="relative pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center items-center text-center text-white"
                 style={{
-                    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('https://kryosssoftech.org/icons/banner/uiux123.png')",
+                    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('https://kryosssoftech.org/icons/banner/heath-and-care.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundAttachment: 'fixed',
@@ -101,9 +114,9 @@ const RealEstateWorks = () => {
                     transition={{ duration: 0.8 }}
                     className="relative z-10 container mx-auto px-4"
                 >
-                    <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Real Estate <span className="text-orange-500">Works</span></h1>
+                    <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Health & Fitness <span className="text-orange-500">Apps</span></h1>
                     <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
-                        Discover our innovative real estate solutions that simplify property management, rental exchanges, and student accommodations worldwide.
+                        Discover top-tier mobile health, fitness, and telemedicine solutions that we have developed, empowering a healthier world through technology.
                     </p>
                 </motion.div>
             </section>
@@ -113,7 +126,7 @@ const RealEstateWorks = () => {
                 <div className="container mx-auto px-4 flex flex-wrap items-center text-sm md:text-base font-semibold text-gray-600">
                     <a href="/" className="hover:text-orange-500 transition-colors duration-300">Home</a>
                     <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-                    <span className="text-orange-500">Real Estate Works</span>
+                    <span className="text-orange-500">Health & Fitness Apps</span>
                 </div>
             </section>
 
@@ -127,7 +140,7 @@ const RealEstateWorks = () => {
                             viewport={{ once: true }}
                             className="text-3xl md:text-4xl font-bold text-black mb-4"
                         >
-                            Our <span className="text-orange-500">Real Estate</span> Solutions
+                            Our <span className="text-orange-500">Health & Fitness</span> Applications
                         </motion.h2>
                         <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
                     </div>
@@ -145,7 +158,7 @@ const RealEstateWorks = () => {
                                         <img
                                             src={project.image}
                                             alt={project.title}
-                                            className="max-h-[450px] w-full object-contain"
+                                            className="w-[90%] sm:w-[80%] md:w-[75%] lg:w-[85%] xl:w-[75%] max-h-[580px] object-contain"
                                         />
                                     </div>
 
@@ -185,16 +198,22 @@ const RealEstateWorks = () => {
                                                         {link.type === 'playstore' && (
                                                             <>
                                                                 <div className="w-6 h-6 flex items-center justify-center">
-                                                                    <img
-                                                                        src="https://kryosssoftech.org/icons/Health-&-Fitness/google app store.png"
-                                                                        alt="Play Store"
-                                                                        className="w-full h-full object-contain brightness-0 invert"
-                                                                        onError={(e) => { e.target.parentElement.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="5 3 19 12 5 21 5 3"/></svg>' }}
-                                                                    />
+                                                                    <Play className="w-5 h-5 text-gray-400 group-hover/btn:text-white" />
                                                                 </div>
                                                                 <div className="flex flex-col items-start leading-tight">
                                                                     <span className="text-[9px] uppercase font-bold text-gray-400 group-hover/btn:text-orange-100 italic">Get it on</span>
                                                                     <span className="text-sm font-black tracking-tight">Google Play</span>
+                                                                </div>
+                                                            </>
+                                                        )}
+                                                        {link.type === 'appstore' && (
+                                                            <>
+                                                                <div className="w-6 h-6 flex items-center justify-center">
+                                                                    <Apple className="w-5 h-5 text-gray-400 group-hover/btn:text-white" />
+                                                                </div>
+                                                                <div className="flex flex-col items-start leading-tight">
+                                                                    <span className="text-[9px] uppercase font-bold text-gray-400 group-hover/btn:text-orange-100 italic">Download on the</span>
+                                                                    <span className="text-sm font-black tracking-tight">App Store</span>
                                                                 </div>
                                                             </>
                                                         )}
@@ -237,4 +256,4 @@ const RealEstateWorks = () => {
     );
 };
 
-export default RealEstateWorks;
+export default FitnessAppsWorks;
