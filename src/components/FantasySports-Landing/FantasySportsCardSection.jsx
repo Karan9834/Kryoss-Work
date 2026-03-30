@@ -16,18 +16,6 @@ const FantasySportsCardSection = () => {
             desc: "Kryoss Kings clone app is a replica of the fantasy sports app DraftKings that extends various modes of drafting and fantasy gaming solutions. It offers daily and weekly fantasy games with real-time sports match results and leaderboards.",
             img: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800"
         },
-        { 
-            title: 'Vyom Fantasy App', 
-            subtitle: 'FanDuel Clone App',
-            desc: "An online fantasy sports app like FanDuel that enables you to conduct daily fantasy sports contests and also bookmarking services. Access daily fantasy sports events in NFL, NBA, MLB, IPL, NHL, WHL, EPL, etc.",
-            img: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800"
-        },
-        { 
-            title: 'Kryoss 365', 
-            subtitle: 'White Label Bet 365 Clone',
-            desc: "An all-inclusive sports betting solution housing a wide range of sports. Real time GPS tracking and Geofence is available to track location and issue unique tracking URLs.",
-            img: "https://images.unsplash.com/photo-1516131206008-dbb41c4886d5?auto=format&fit=crop&q=80&w=800"
-        },
     ];
 
     return (
