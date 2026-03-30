@@ -11,18 +11,31 @@
         "img": "/ApplicationsWorks/Food.png",
         "alt": "BAZAR",
         "titleText": "BAZAR - доставка продуктов за 15 минут",
-        "description": "BAZAR is a convenience store in your smartphone. You no longer need to go to the store for every little thing. In the Bazaar, prices and selection are like in a convenience store. I wanted cheesecakes in the morning and there is not enough milk or dinner time, and in the \"rolling stone\" refrigerator, even if you just wanted a chocolate bar, we will deliver products in 15-25 minutes for free....More Details",
-        "links": []
+        "description": "BAZAR is a convenience store in your smartphone. You no longer need to go to the store for every little thing. In the Bazaar, prices and selection are like in a convenience store. I wanted cheesecakes in the morning and there is not enough milk or dinner time, and in the \"rolling stone\" refrigerator, even if you just wanted a chocolate bar, we will deliver products in 15-25 minutes for free",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.smartbazarin.website",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://reliancesmartbazaar.com/",
+            "text": "Website"
+          }
+        ]
       },
       {
         "img": "/ApplicationsWorks/Food4.png",
         "alt": "Groxery",
         "titleText": "Groxery - Order Grocery Online",
-        "description": "Groxery is an online store for the people of Kashmir, bringing all sorts of essential goods, health care products, household goods, stationery items and local goods under one platform. While Groxery is making the online shopping experience seamless, Groxery is also focused on giving value for money and good deals to its customers.... More Details",
+        "description": "Groxery is an online store for the people of Kashmir, bringing all sorts of essential goods, health care products, household goods, stationery items and local goods under one platform. While Groxery is making the online shopping experience seamless, Groxery is also focused on giving value for money and good deals to its customers",
         "links": [
           {
-            "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=kiryana.store.kiryanastore",
+            "text": "Play Store"
+          },
+          {
+            "href": "#",
+            "text": "Website"
           }
         ]
       },
@@ -30,25 +43,47 @@
         "img": "/ApplicationsWorks/Food6.png",
         "alt": "Kifaya",
         "titleText": "Kifayat - Online Vegetables & Grocery Shopping App",
-        "description": "Kifayat online is a well known online supermarket In Nagpur which covers all your everyday needs from groceries to fresh vegetables. We have more than 10000+ glad customers who can shop from anyplace and look over a 20000+ products and enjoy bother free online vegetable and grocery shopping with us....More Details",
-        "links": []
+        "description": "Kifayat online is a well known online supermarket In Nagpur which covers all your everyday needs from groceries to fresh vegetables. We have more than 10000+ glad customers who can shop from anyplace and look over a 20000+ products and enjoy bother free online vegetable and grocery shopping with us",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.mm.kifayatbazaar",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://apps.apple.com/in/app/kifayat-online/id1436810493",
+            "text": "Website"
+          }
+        ]
       },
       {
         "img": "/ApplicationsWorks/Food1.png",
         "alt": "AVEMART",
         "titleText": "AVEMART - Best Online Grocery Shopping App",
-        "description": "Avemart is an online portal where you can get Affordable Fresh Fruits and Vegetables the best price at your doorstep. You can select and purchase a wide variety of fruits and vegetables merely sitting at home. We aim to make the lifestyle of our customers much simpler. With the ease of a click, fruits and vegetables reach your doorstep saving all the muscular and time-consuming tasks.... More Details",
-        "links": []
+        "description": "Avemart is an online portal where you can get Affordable Fresh Fruits and Vegetables the best price at your doorstep. You can select and purchase a wide variety of fruits and vegetables merely sitting at home. We aim to make the lifestyle of our customers much simpler. With the ease of a click, fruits and vegetables reach your doorstep saving all the muscular and time-consuming tasks",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.ricomputech.avemartapp",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.ricomputech.avemartapp",
+            "text": "Website"
+          }
+        ]
       },
       {
         "img": "/ApplicationsWorks/Food8.png",
         "alt": "Untappd",
         "titleText": "Untappd - Discover Beer",
-        "description": "Discover and share great beers, breweries, and venues with your friends, while earning badges for exploring beers of different styles and countries.Discover nearby venues, events, and beers that you'll love Keep track of the beers you like and create lists for later Get alerts when your favorite verified venues add new beers...More Details",
+        "description": "Discover and share great beers, breweries, and venues with your friends, while earning badges for exploring beers of different styles and countries.Discover nearby venues, events, and beers that you'll love Keep track of the beers you like and create lists for later Get alerts when your favorite verified venues add new beers",
         "links": [
           {
-            "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=com.untappdllc.app",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.untappdllc.app",
+            "text": "Website"
           }
         ]
       },
@@ -56,32 +91,63 @@
         "img": "/ApplicationsWorks/Food3.png",
         "alt": "Eatiko",
         "titleText": "Eatiko - Food Delivery & Restaurant Finder",
-        "description": "Eat whatever you like, whenever you Want. Whether you want a tasty dosa for breakfast, or a heavenly sadhya for lunch, or a refreshing coffee to boost up your mind, Eatiko is your one and only partner you need. Order your favorite food from your favorite Restaurants!! If you are in the office or home, or anywhere else, we will deliver it to your doorstep..... More Details",
-        "links": []
+        "description": "Eat whatever you like, whenever you Want. Whether you want a tasty dosa for breakfast, or a heavenly sadhya for lunch, or a refreshing coffee to boost up your mind, Eatiko is your one and only partner you need. Order your favorite food from your favorite Restaurants!! If you are in the office or home, or anywhere else, we will deliver it to your doorstep",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=io.eatiko.main",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://play.google.com/store/apps/details?id=io.eatiko.main",
+            "text": "Website"
+          }
+        ]
       },
       {
         "img": "/ApplicationsWorks/Food5.png",
         "alt": "Heritage",
         "titleText": "Heritage TUCH - Online Milk Delivery App",
-        "description": "Heritage TUCH is an online milk and dairy products delivery app in Hyderabad offering natural, farm-fresh milk and dairy products right at your doorstep every morning. It's a one-stop solution for fulfilling all your dairy product needs. We have recently added range of flavoured milk, ice-creams, milkshakes, fresh cream and cheese to add in to your summer delight.....More Details",
-        "links": []
+        "description": "Heritage TUCH is an online milk and dairy products delivery app in Hyderabad offering natural, farm-fresh milk and dairy products right at your doorstep every morning. It's a one-stop solution for fulfilling all your dairy product needs. We have recently added range of flavoured milk, ice-creams, milkshakes, fresh cream and cheese to add in to your summer delight",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.heritage.agent",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.heritage.agent",
+            "text": "Website"
+          }
+        ]
       },
       {
         "img": "/ApplicationsWorks/Food2.png",
         "alt": "daily moo",
         "titleText": "Daily Moo - Milk & Breakfast Subscription App",
-        "description": "Daily Moo is a daily subscription service app for your Milk & Breakfast needs,delivered to your doorstep every morning.\n\nAll our products are made with care and in collaboration with the feedback of thousands of our customers.Milky Moo promises of truly pure products, ethically source from our 69,000+ network farmers.Live a pure and healthy life and enjoy the quality and goodness of truly pure products – crafted with love and packaged using innovative technology with absolute surety about purity.....More Details",
-        "links": []
+        "description": "Daily Moo is a daily subscription service app for your Milk & Breakfast needs,delivered to your doorstep every morning.\n\nAll our products are made with care and in collaboration with the feedback of thousands of our customers.Milky Moo promises of truly pure products, ethically source from our 69,000+ network farmers.Live a pure and healthy life and enjoy the quality and goodness of truly pure products – crafted with love and packaged using innovative technology with absolute surety about purity",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.heritage.agent",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.heritage.agent",
+            "text": "Website"
+          }
+        ]
       },
       {
         "img": "/ApplicationsWorks/Food7.png",
         "alt": "Meatigo",
         "titleText": "Meatigo – Fresh Meats Delivery",
-        "description": "Meatigo was founded on selling only the highest quality meats from great farms & partners we trust, using meticulous preparation methods and a scientific approach in the way meat is cut, packed, stored & delivered.Choose from over 100+ Fresh Meats & Delicatessen ProductsThe Safest Packing for Meats - Vacuum Packed & Sealed using American Technology 120 Minutes Home Delivery across neighbourhoods in Mumbai, Bangalore & Gurgaon & Delhi or schedule deliveries a week in advance..... More Details",
+        "description": "Meatigo was founded on selling only the highest quality meats from great farms & partners we trust, using meticulous preparation methods and a scientific approach in the way meat is cut, packed, stored & delivered.Choose from over 100+ Fresh Meats & Delicatessen ProductsThe Safest Packing for Meats - Vacuum Packed & Sealed using American Technology 120 Minutes Home Delivery across neighbourhoods in Mumbai, Bangalore & Gurgaon & Delhi or schedule deliveries a week in advance",
         "links": [
           {
-            "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=com.urbanpiper.meatigo",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.urbanpiper.meatigo",
+            "text": "Website"
           }
         ]
       },
@@ -89,8 +155,17 @@
         "img": "/ApplicationsWorks/Food9.png",
         "alt": "Online Grocery Shopping App Pune - Superfoods",
         "titleText": "Online Grocery Shopping App Pune - Superfoods",
-        "description": "Searching for the best buys in vegetables, fruits, dairy, and groceries like grains, snacks, beverages, chocolates, ready mixes, masalas, pickles, and sauces?\n\nSuperFoods Company, the best app to find and order veggies, fruits, & groceries online.\n\nSuperFoods Company's exhaustive range in every category has everything and even exceeds what your local vendor or other apps offers.\n\nSuperFoods Company’s grocery app is your convenient way to shop online from the comfort of your home. The wide and varied range in daily, weekly or monthly cooking and eating as well as household essentials makes it the best kirana and supermarket rolled into one app.....More Details",
-        "links": []
+        "description": "Searching for the best buys in vegetables, fruits, dairy, and groceries like grains, snacks, beverages, chocolates, ready mixes, masalas, pickles, and sauces?\n\nSuperFoods Company, the best app to find and order veggies, fruits, & groceries online.\n\nSuperFoods Company's exhaustive range in every category has everything and even exceeds what your local vendor or other apps offers.\n\nSuperFoods Company’s grocery app is your convenient way to shop online from the comfort of your home. The wide and varied range in daily, weekly or monthly cooking and eating as well as household essentials makes it the best kirana and supermarket rolled into one app",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.mobeasyapp.app591815334080",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.mobeasyapp.app591815334080",
+            "text": "Website"
+          }
+        ]
       }
     ]
   }

@@ -19,7 +19,7 @@ const ZoomCTA = () => {
 
         <div className="flex justify-center pt-8">
           <a
-            href="https://zoom.us/"
+            href="https://preview.codecanyon.net/item/jupitermeet-pro-video-conference/full_screen_preview/37367339"
             target="_blank"
             rel="noopener noreferrer"
             className="px-14 py-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-black rounded-3xl shadow-[0_20px_50px_rgba(147,51,234,0.3)] hover:scale-105 transition-all duration-500 flex items-center gap-4 group uppercase tracking-widest text-sm"

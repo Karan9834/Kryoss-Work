@@ -1,15 +1,16 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import Testimonials from '../../../components/home/Testimonials';
-import Contact from '../../../components/home/Contact';
-
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 const gamingData = [
     {
         id: 1,
         titleRed: "Kinda Heroes RPG",
         titleBlack: "-Rescue the Princess!",
-        description: "Kinda Heroes is a classic medieval RPG made by one indie guy! Welcome to Riverstone - a tiny medieval village in the middle of nowhere! This place hasn’t seen any heroes yet. Choose a character and begin your adventure! Upgrade combat and cooking skills, complete quests, rescue Woody and become a real hero! ......",
+        description: "Kinda Heroes is a classic medieval RPG made by one indie guy! Welcome to Riverstone - a tiny medieval village in the middle of nowhere! This place hasn’t seen any heroes yet. Choose a character and begin your adventure! Upgrade combat and cooking skills, complete quests, rescue Woody and become a real hero!",
         img: "/GamingandCrypto/kind hero.png",
         link: "https://apps.microsoft.com/detail/9p0t94r6pq08?hl=en-US&gl=US",
         bgClass: "bg-white",
@@ -19,7 +20,7 @@ const gamingData = [
         id: 2,
         titleRed: "Braveland Heroes-",
         titleBlack: " Old-school mobile turn",
-        description: "The king's scepter of the Seven Kingdoms was perfidiously stolen from the throne room. The kings have summoned the mightiest heroes of magic and offered a generous bounty to the person, who returns it. In high spirits, you set off on a dangerous quest in the search of the royal relic. Use tactics to lead legions of heroes, fight the bosses and conquer other players! As you play, your army will be joined by various kinds of allies – archers, monks, demons, beasts, knights, and many others. ......",
+        description: "The king's scepter of the Seven Kingdoms was perfidiously stolen from the throne room. The kings have summoned the mightiest heroes of magic and offered a generous bounty to the person, who returns it. In high spirits, you set off on a dangerous quest in the search of the royal relic. Use tactics to lead legions of heroes, fight the bosses and conquer other players! As you play, your army will be joined by various kinds of allies – archers, monks, demons, beasts, knights, and many others.",
         img: "/GamingandCrypto/braveland.png",
         link: "https://play.google.com/store/apps/details?id=com.tortugateam.bravelandheroes",
         bgClass: "bg-[#f8f9fa]",
@@ -29,7 +30,7 @@ const gamingData = [
         id: 3,
         titleRed: "Hit Master 3D -",
         titleBlack: " Knife Assassin",
-        description: "The game has a lot of interactive items. If you don’t like to defeat enemies one by one silently and slowly, you can throw a knife into an exploding barrel, and defeat a crowd of enemies in one blow! Also, there are various boxes scattered everywhere – break them to slow down your enemies! Do you like action spy movies? Do you like to silently defeat rivals? Then challenge yourself in an epic Hit Master 3D game! Here you must prove that you are the best and most accurate spy of all! Once you’re ambushed, you are attacked by a huge crowd of enemies, and all you have is a lot of knives! Throw knives at your aims, eliminate them one by one and beat ‘em all to survive! .....",
+        description: "The game has a lot of interactive items. If you don’t like to defeat enemies one by one silently and slowly, you can throw a knife into an exploding barrel, and defeat a crowd of enemies in one blow! Also, there are various boxes scattered everywhere – break them to slow down your enemies! Do you like action spy movies? Do you like to silently defeat rivals? Then challenge yourself in an epic Hit Master 3D game! Here you must prove that you are the best and most accurate spy of all! Once you’re ambushed, you are attacked by a huge crowd of enemies, and all you have is a lot of knives! Throw knives at your aims, eliminate them one by one and beat ‘em all to survive!",
         img: "/GamingandCrypto/hit mater 3d.png",
         link: "https://play.google.com/store/apps/details?id=com.hit.master",
         bgClass: "bg-white",
@@ -39,7 +40,7 @@ const gamingData = [
         id: 4,
         titleRed: "Cooking Team -",
         titleBlack: "Chef's Roger Restaurant Games",
-        description: "COOKING and SERVING delicious meals in Chef's Jobs will help you BUILD and DECORATE your own RESTAURANT. Help Chef Roger decorate and open the new restaurant he dreamed of since childhood. You will go through incredible adventures, a beautiful story and an incredible amount of Cooking games with Many Levels. Meet beautiful characters with great stories, which will guide you throughout this restaurant game and help you achieve your goal and open your own business.....",
+        description: "COOKING and SERVING delicious meals in Chef's Jobs will help you BUILD and DECORATE your own RESTAURANT. Help Chef Roger decorate and open the new restaurant he dreamed of since childhood. You will go through incredible adventures, a beautiful story and an incredible amount of Cooking games with Many Levels. Meet beautiful characters with great stories, which will guide you throughout this restaurant game and help you achieve your goal and open your own business.",
         img: "/GamingandCrypto/cooking team.png",
         link: "https://apps.apple.com/in/app/cooking-team-restaurant-games/id1522265683?l=hi",
         bgClass: "bg-[#f8f9fa]",
@@ -49,7 +50,7 @@ const gamingData = [
         id: 5,
         titleRed: "Farm Island -",
         titleBlack: " Family Journey",
-        description: "Tending a garden is surely the best way to spend your free time. Travel to a small paradise island, a beautiful farm with a view to a calm bay awaits you. Spend christmas at your farm! Build your own happy village, become a farmer! Grow a variety of crops on your farm: hay, corn, vegetables, flowers and lots of exotic fruit. Orange, mango, pineapple, carambola - you name it! Harvest delicious crops every day! Use your harvest to craft dozens of different treats. We've got all the recipes you need: lollipop, cookie, birthday cake and much more. Kids love it! Then sell your goods to a nearby township and friendly neighbors. It's a great opportunity for business! ......",
+        description: "Tending a garden is surely the best way to spend your free time. Travel to a small paradise island, a beautiful farm with a view to a calm bay awaits you. Spend christmas at your farm! Build your own happy village, become a farmer! Grow a variety of crops on your farm: hay, corn, vegetables, flowers and lots of exotic fruit. Orange, mango, pineapple, carambola - you name it! Harvest delicious crops every day! Use your harvest to craft dozens of different treats. We've got all the recipes you need: lollipop, cookie, birthday cake and much more. Kids love it! Then sell your goods to a nearby township and friendly neighbors. It's a great opportunity for business!",
         img: "/GamingandCrypto/farm paradise.png",
         link: "https://kryosssoftech.org/Gaming%20Works.php",
         bgClass: "bg-white",
@@ -59,7 +60,7 @@ const gamingData = [
         id: 6,
         titleRed: "Battlepalooza-",
         titleBlack: "Free PvP Arena Battle Royale",
-        description: "Battlepalooza! A digital game show in the form of a battle royale, where real-world cities are your arenas. Compete in real-time against live contestants from around the world for valuable prizes. Grab as many coins as you can in the battleground without getting fragged. Be the last of the 24 contestants to survive to take home the big loot! Battlepalooza is designed for players of all skill levels, but some strategic thinking and a little bit of luck will get you far. ......",
+        description: "Battlepalooza! A digital game show in the form of a battle royale, where real-world cities are your arenas. Compete in real-time against live contestants from around the world for valuable prizes. Grab as many coins as you can in the battleground without getting fragged. Be the last of the 24 contestants to survive to take home the big loot! Battlepalooza is designed for players of all skill levels, but some strategic thinking and a little bit of luck will get you far.",
         img: "/GamingandCrypto/battleplao.png",
         link: "https://play.google.com/store/apps/details?id=com.battlegrounds.battleroyale.fortbattle.ffgames.offlinegames.crazygames.ff&hl=en_IN",
         bgClass: "bg-[#f8f9fa]",
@@ -75,7 +76,7 @@ const GamingWorks = () => {
             <section
                 className="relative pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center items-center text-center text-white"
                 style={{
-                    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('https://kryosssoftech.org/assets/images/gaming/gaming-bg.png')",
+                    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('/Hero/gamingWork.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundAttachment: 'fixed',
@@ -126,19 +127,21 @@ const GamingWorks = () => {
                                         </h2>
                                         <p className="text-gray-600 text-base lg:text-lg leading-relaxed mb-6 font-medium">
                                             {project.description}
-                                            <a href={project.link} className="text-red-500 font-semibold ml-2 hover:underline">
-                                                .....More Details
-                                            </a>
                                         </p>
-
-                                        <a href={project.link} className="inline-block mt-4 hover:opacity-90 transition-opacity">
+                                        <a 
+                                            href={project.link || ""} 
+                                            className="inline-block mt-4 hover:opacity-90 transition-opacity"
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                        >
                                             <img
                                                 src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
                                                 alt="Get it on Google Play"
                                                 className="h-12 object-contain"
                                             />
                                         </a>
-                                    </motion.div>
+
+                                        </motion.div>
 
                                     {/* Main App Mockup Image */}
                                     <motion.div
@@ -187,9 +190,16 @@ const GamingWorks = () => {
                 </div>
             </section>
 
-            <Testimonials />
+            
             {/* 6. Contact Section as finally requested */}
-            <Contact />
+            
+
+        
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
 
         </div>
     );

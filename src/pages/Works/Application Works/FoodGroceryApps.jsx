@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { ChevronRight, Star } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import data from './FoodGroceryData.json';
-import Testimonials from '../../../components/home/Testimonials';
-import Contact from '../../../components/home/Contact';
-
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 const FoodGroceryApps = () => {
     const [activeTab, setActiveTab] = useState(data.tabs[0]?.id);
     const tabs = data.tabs || [];
@@ -16,7 +17,7 @@ const FoodGroceryApps = () => {
             <section
                 className="relative pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center items-center text-center text-white"
                 style={{
-                    backgroundImage: "linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('https://kryosssoftech.org/icons/banner/food.png')",
+                    backgroundImage: "linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('/Hero/food-and-grocery.png')",
                     backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed',
                 }}
             >
@@ -98,8 +99,15 @@ const FoodGroceryApps = () => {
                 </div>
             </section>
 
-            <Testimonials />
-            <Contact />
+            
+            
+        
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
+
         </div>
     );
 };

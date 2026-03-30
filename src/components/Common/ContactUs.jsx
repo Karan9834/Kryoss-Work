@@ -20,9 +20,9 @@ import contactImage from "../../assets/E-Commerce-App/contact.png";
 const ContactUs = ({
   theme = "purple",
   productName = "E-Commerce",
-  bgGradient = "from-purple-50 to-white",
-  accentGradient = "from-purple-500 to-pink-500",
-  buttonGradient = "from-purple-600 to-pink-600",
+  bgGradient = "",
+  accentGradient = "",
+  buttonGradient = "",
   showImage = true,
   customImage = null,
 }) => {
@@ -66,6 +66,10 @@ const ContactUs = ({
   };
 
   const colors = themeColors[theme] || themeColors.purple;
+
+  const currentBgGradient = bgGradient || `from-${colors.light} to-white`;
+  const currentAccentGradient = accentGradient || colors.gradient;
+  const currentButtonGradient = buttonGradient || colors.gradient;
 
   // Form state
   const [formData, setFormData] = useState({
@@ -126,19 +130,19 @@ const ContactUs = ({
       icon: MapPin,
       title: "Visit Us",
       details: ["123 E-Commerce Blvd", "Suite 200", "San Francisco, CA 94105"],
-      gradient: "from-purple-500 to-pink-500",
+      gradient: currentAccentGradient,
     },
     {
       icon: Phone,
       title: "Call Us",
       details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
-      gradient: "from-blue-500 to-cyan-500",
+      gradient: currentAccentGradient,
     },
     {
       icon: Mail,
       title: "Email Us",
       details: ["sales@ecommerceapp.com", "support@ecommerceapp.com"],
-      gradient: "from-green-500 to-emerald-500",
+      gradient: currentAccentGradient,
     },
     {
       icon: Clock,
@@ -148,7 +152,7 @@ const ContactUs = ({
         "Saturday: 10am - 4pm EST",
         "Sunday: Closed",
       ],
-      gradient: "from-orange-500 to-red-500",
+      gradient: currentAccentGradient,
     },
   ];
 
@@ -161,7 +165,7 @@ const ContactUs = ({
 
   return (
     <section
-      className={`w-full bg-gradient-to-b ${bgGradient} py-24 px-4 sm:px-6 lg:px-8 overflow-hidden`}
+      className={`w-full bg-gradient-to-b ${currentBgGradient} py-24 px-4 sm:px-6 lg:px-8 overflow-hidden`}
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -210,17 +214,17 @@ const ContactUs = ({
               >
                 {/* Decorative elements around image */}
                 <div
-                  className={`absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-r ${accentGradient} rounded-full blur-2xl opacity-20`}
+                  className={`absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-2xl opacity-20`}
                 ></div>
                 <div
-                  className={`absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-r ${accentGradient} rounded-full blur-2xl opacity-20`}
+                  className={`absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-2xl opacity-20`}
                 ></div>
 
                 {/* Image container with improved styling */}
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                   {/* Gradient overlay on hover */}
                   <div
-                    className={`absolute inset-0 bg-gradient-to-r ${accentGradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
+                    className={`absolute inset-0 bg-gradient-to-r ${currentAccentGradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
                   ></div>
 
                   <img
@@ -286,7 +290,7 @@ const ContactUs = ({
                       key={index}
                       href={social.url}
                       whileHover={{ y: -3, scale: 1.1 }}
-                      className={`w-10 h-10 rounded-full bg-gradient-to-r ${accentGradient} text-white flex items-center justify-center hover:shadow-lg transition-all duration-300`}
+                      className={`w-10 h-10 rounded-full bg-gradient-to-r ${currentAccentGradient} text-white flex items-center justify-center hover:shadow-lg transition-all duration-300`}
                       aria-label={social.label}
                     >
                       <Icon size={18} />
@@ -307,10 +311,10 @@ const ContactUs = ({
             <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border border-gray-100 relative overflow-hidden">
               {/* Decorative gradient elements */}
               <div
-                className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-r ${accentGradient} rounded-full blur-3xl opacity-10`}
+                className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-3xl opacity-10`}
               ></div>
               <div
-                className={`absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-r ${accentGradient} rounded-full blur-3xl opacity-10`}
+                className={`absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-3xl opacity-10`}
               ></div>
 
               {/* Form Header */}
@@ -329,7 +333,7 @@ const ContactUs = ({
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className={`mb-6 p-4 bg-gradient-to-r ${accentGradient} text-white rounded-xl flex items-center gap-3`}
+                  className={`mb-6 p-4 bg-gradient-to-r ${currentAccentGradient} text-white rounded-xl flex items-center gap-3`}
                 >
                   <CheckCircle size={20} />
                   <span>{formStatus.message}</span>
@@ -349,7 +353,7 @@ const ContactUs = ({
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                    className={`w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-${colors.medium} focus:border-transparent transition-all duration-300`}
                     placeholder="John Doe"
                   />
                 </div>
@@ -365,7 +369,7 @@ const ContactUs = ({
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                    className={`w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-${colors.medium} focus:border-transparent transition-all duration-300`}
                     placeholder="john@example.com"
                   />
                 </div>
@@ -380,7 +384,7 @@ const ContactUs = ({
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                    className={`w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-${colors.medium} focus:border-transparent transition-all duration-300`}
                     placeholder="+1 (555) 000-0000"
                   />
                 </div>
@@ -396,7 +400,7 @@ const ContactUs = ({
                     onChange={handleChange}
                     required
                     rows="5"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 resize-none"
+                    className={`w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-${colors.medium} focus:border-transparent transition-all duration-300 resize-none`}
                     placeholder="Tell us about your project..."
                   />
                 </div>
@@ -407,7 +411,7 @@ const ContactUs = ({
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   disabled={formStatus.submitted}
-                  className={`w-full px-8 py-4 bg-gradient-to-r ${buttonGradient} text-white font-semibold rounded-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed`}
+                  className={`w-full px-8 py-4 bg-gradient-to-r ${currentButtonGradient} text-white font-semibold rounded-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed`}
                 >
                   {formStatus.submitted ? (
                     "Sending..."

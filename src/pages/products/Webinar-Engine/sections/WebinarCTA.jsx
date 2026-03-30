@@ -19,7 +19,7 @@ const WebinarCTA = () => {
 
         <div className="flex justify-center pt-8">
           <a
-            href="https://zoom.us/webinar"
+            href="https://preview.codecanyon.net/item/webinar-info-plugin-for-elementor/full_screen_preview/39949366"
             target="_blank"
             rel="noopener noreferrer"
             className="px-14 py-6 bg-gradient-to-r from-sky-600 to-cyan-600 text-white font-black rounded-3xl shadow-[0_20px_50px_rgba(14,165,233,0.3)] hover:scale-105 transition-all duration-500 flex items-center gap-4 group uppercase tracking-widest text-sm"

@@ -74,6 +74,11 @@ import EducationApps from '../pages/Works/Application Works/EducationApps';
 import MatrimonyApps from '../pages/Works/Application Works/MatrimonyApps';
 import SocialNetworkingApps from '../pages/Works/Application Works/SocialNetworkingApps';
 import BeautySalonApps from '../pages/Works/Application Works/BeautySalonApps';
+import TechDaily from '../pages/products/TechDaily/TechDaily';
+import DailBusiness from '../pages/products/DailyBusimess/DailBusiness';
+import FineTech from '../pages/products/Finetech/FineTech';
+import WealthPage from '../pages/products/Wealth-Management/WealthPage';
+import ApexErp from '../pages/products/Apex-ERP/ApexErp';
 
 
 const AppRoutes = () => {
@@ -174,6 +179,12 @@ const AppRoutes = () => {
                 <Route path="/products/job-board" element={<Job />} />
                 <Route path='/products/recruitment-ats' element={<Recruitment />} />
                 <Route path='/product/visionboard-metrics' element={<FlowWrite />} />
+                <Route path='/products/tech-daily' element={<TechDaily />} />
+                <Route path='/products/global-times' element={<DailBusiness />} />
+                <Route path='/products/fintech-analytics' element={<FineTech />} />
+                <Route path='/products/wealth-management' element={<WealthPage />} />
+                <Route path='/products/enterprise/Apex-Erp' element={<ApexErp />} />
+
                 <Route path="/products/gaming/casino" element={<CasinoGames />} />
                 <Route path="/products/gaming/fantasy-sports" element={<FantasySports />} />
                 <Route path="/products/nft-marketplace" element={<NFTProducts />} />

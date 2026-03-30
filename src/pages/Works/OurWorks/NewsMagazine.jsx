@@ -1,9 +1,10 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import Testimonials from '../../../components/home/Testimonials';
-import Contact from '../../../components/home/Contact';
-
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 const newsData = [
   {
     id: 1,
@@ -115,19 +116,23 @@ const NewsMagazine = () => {
                   </h2>
                   <p className="text-gray-600 text-base lg:text-lg leading-relaxed mb-6 font-medium">
                     {project.description}
-                    <a href={project.link} className="text-red-500 font-semibold ml-2 hover:underline">
-                      .....More Details
-                    </a>
                   </p>
+                  {project.link && (
+                    <a 
+                      href={project.link || ""} 
+                      className="inline-block mt-4 hover:opacity-90 transition-opacity"
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
+                        alt="Get it on Google Play"
+                        className="h-12 object-contain"
+                      />
+                    </a>
+                  )}
 
-                  <a href={project.link} className="inline-block mt-4 hover:opacity-90 transition-opacity">
-                    <img
-                      src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
-                      alt="Get it on Google Play"
-                      className="h-12 object-contain"
-                    />
-                  </a>
-                </motion.div>
+                  </motion.div>
 
                 {/* Main App Mockup Image */}
                 <motion.div
@@ -176,12 +181,19 @@ const NewsMagazine = () => {
       </section>
 
       {/* 5. Testimonials Section */}
-      <Testimonials />
+      
 
       {/* 6. Contact Section */}
-      <Contact />
+      
 
-    </div>
+    
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
+
+        </div>
   );
 };
 

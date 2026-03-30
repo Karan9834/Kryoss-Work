@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { ChevronRight, Star } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import data from './ExchangeData.json';
-import Testimonials from '../../../components/home/Testimonials';
-import Contact from '../../../components/home/Contact';
-
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 // Note: To add actual app images, import them here and update the assetMap
 const assetMap = {
     '1.png': '',
@@ -28,7 +29,7 @@ const ExchangeApps = () => {
             <section
                 className="relative pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center items-center text-center text-white"
                 style={{
-                    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('https://kryosssoftech.org/icons/banner/crypto-bn.png')",
+                    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('/Hero/exchange.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundAttachment: 'fixed',
@@ -129,6 +130,13 @@ const ExchangeApps = () => {
                                                     className="text-gray-600 leading-relaxed mb-8 text-lg font-light prose"
                                                     dangerouslySetInnerHTML={{ __html: item.description }}
                                                 />
+                                                <a href={item.link || "https://play.google.com/store/games?hl=en_IN"} className="inline-block mt-4 hover:opacity-90 transition-opacity">
+                                                    <img
+                                                        src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
+                                                        alt="Get it on Google Play"
+                                                        className="h-12 object-contain"
+                                                    />
+                                                </a>
 
                                                 {item.links && item.links.length > 0 && (
                                                     <div className="flex flex-wrap gap-4 items-center">
@@ -183,8 +191,15 @@ const ExchangeApps = () => {
                 </div>
             </section>
 
-            <Testimonials />
-            <Contact />
+            
+            
+        
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
+
         </div>
     );
 };

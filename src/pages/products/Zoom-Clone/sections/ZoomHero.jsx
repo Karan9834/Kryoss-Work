@@ -31,7 +31,7 @@ const ZoomHero = () => {
 
                     <div className="flex flex-wrap items-center gap-4 pt-4">
                         <a
-                            href="https://zoom.us/"
+                            href="https://preview.codecanyon.net/item/jupitermeet-pro-video-conference/full_screen_preview/37367339"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-purple-500/30 hover:-translate-y-1"

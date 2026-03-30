@@ -4,9 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import data from './FinanceData.json';
-import Testimonials from '../../../components/home/Testimonials';
-import Contact from '../../../components/home/Contact';
-
 // Local Asset Imports
 import img1 from '../../../assets/FinanceWorks/1.png';
 import img2 from '../../../assets/FinanceWorks/2.png';
@@ -15,6 +12,10 @@ import img4 from '../../../assets/FinanceWorks/4.png';
 import img5 from '../../../assets/FinanceWorks/5.png';
 import img6 from '../../../assets/FinanceWorks/6.png';
 
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 const assetMap = {
     '1.png': img1,
     '2.png': img2,
@@ -39,7 +40,7 @@ const FinanceWorks = () => {
             <section
                 className="relative pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center items-center text-center text-white"
                 style={{
-                    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('https://kryosssoftech.org/icons/banner/finance123.png')",
+                    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('/Hero/finance.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundAttachment: 'fixed',
@@ -139,25 +140,13 @@ const FinanceWorks = () => {
                                                 <p className="text-gray-600 leading-relaxed mb-8 text-lg font-light">
                                                     {item.description}
                                                 </p>
-
-                                                {item.links && item.links.length > 0 && (
-                                                    <div className="flex flex-wrap gap-4 items-center">
-                                                        {item.links.map((link, idx) => {
-                                                            if (!link.href || link.href === '#') return null;
-                                                            return (
-                                                                <a
-                                                                    key={idx}
-                                                                    href={link.href}
-                                                                    target="_blank"
-                                                                    rel="noopener noreferrer"
-                                                                    className="hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold rounded-lg bg-orange-500 hover:bg-orange-600 text-white shadow-md hover:shadow-lg border border-orange-600"
-                                                                >
-                                                                    {link.text || (link.href.includes('play.google') ? 'Play Store' : 'Website')}
-                                                                </a>
-                                                            )
-                                                        })}
-                                                    </div>
-                                                )}
+                                                <a href={item.link || "https://play.google.com/store/games?hl=en_IN"} className="inline-block mt-4 hover:opacity-90 transition-opacity">
+                                                    <img
+                                                        src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
+                                                        alt="Get it on Google Play"
+                                                        className="h-12 object-contain"
+                                                    />
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -203,8 +192,15 @@ const FinanceWorks = () => {
                 </div>
             </section>
 
-            <Testimonials />
-            <Contact />
+
+
+
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
+
         </div>
     );
 };

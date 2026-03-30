@@ -1,7 +1,7 @@
 import React from "react";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Wrench, Paintbrush, Shield, Clock } from "lucide-react";
 import { motion } from "framer-motion";
-import heroImg from "../../assets/Home-Service/homehero.png"
+import heroImg from "../../assets/Home-Service/homehero.png";
 
 const HomeServicesHero = () => {
   const handleScroll = () => {
@@ -14,18 +14,18 @@ const HomeServicesHero = () => {
   return (
     <section className="relative w-full overflow-hidden py-16 lg:py-20 bg-white">
 
-      {/* 🌈 SOFT GRADIENT BG (NEW STYLE) */}
+      {/* 🌈 BACKGROUND */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-pink-50 to-indigo-50" />
 
-      {/* ✨ LIGHT GLOW */}
-      <div className="absolute top-0 left-[20%] w-[400px] h-[400px] bg-purple-200/40 blur-3xl rounded-full" />
-      <div className="absolute bottom-0 right-[20%] w-[400px] h-[400px] bg-pink-200/40 blur-3xl rounded-full" />
+      {/* ✨ GLOW */}
+      <div className="absolute top-0 left-[20%] w-[350px] h-[350px] bg-purple-200/40 blur-2xl rounded-full" />
+      <div className="absolute bottom-0 right-[20%] w-[350px] h-[350px] bg-pink-200/40 blur-2xl rounded-full" />
 
       {/* CONTENT */}
-      <div className="relative z-10 container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 items-center gap-10">
 
-        {/* LEFT TEXT */}
-        <div className="flex-1 max-w-xl text-center lg:text-left">
+        {/* LEFT */}
+        <div className="max-w-xl text-center lg:text-left">
 
           {/* BADGE */}
           <div className="inline-flex items-center gap-2 bg-purple-100 px-4 py-2 rounded-full mb-5">
@@ -50,6 +50,26 @@ const HomeServicesHero = () => {
             all in one seamless platform built for modern homes.
           </p>
 
+          {/* FEATURES */}
+          <div className="flex flex-wrap gap-3 mb-8 justify-center lg:justify-start">
+            <div className="flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-purple-100">
+              <Wrench className="w-3.5 h-3.5 text-purple-500" />
+              <span className="text-xs text-gray-600">Repairs</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-pink-100">
+              <Paintbrush className="w-3.5 h-3.5 text-pink-500" />
+              <span className="text-xs text-gray-600">Painting</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-indigo-100">
+              <Shield className="w-3.5 h-3.5 text-indigo-500" />
+              <span className="text-xs text-gray-600">Verified Pros</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/80 px-3 py-1.5 rounded-full border border-purple-100">
+              <Clock className="w-3.5 h-3.5 text-purple-500" />
+              <span className="text-xs text-gray-600">Same Day Service</span>
+            </div>
+          </div>
+
           {/* CTA */}
           <button
             onClick={handleScroll}
@@ -61,21 +81,27 @@ const HomeServicesHero = () => {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="flex-1 flex justify-center lg:justify-end">
+        <div className="flex justify-center lg:justify-end">
           <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="relative w-[280px] sm:w-[340px] lg:w-[420px]"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+            className="relative w-full max-w-[500px] lg:max-w-[600px]"
           >
             {/* Glow */}
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-300 via-pink-300 to-indigo-300 blur-2xl opacity-40 rounded-2xl" />
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-300/30 via-pink-300/30 to-indigo-300/30 blur-2xl rounded-2xl" />
 
-            {/* Image */}
-            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-100">
+            {/* IMAGE */}
+            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-white/50 bg-white p-2">
               <img
                 src={heroImg}
                 alt="home services"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover rounded-xl"
               />
+            </div>
+
+            {/* BADGE */}
+            <div className="absolute -top-3 -right-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg">
+              ⚡ Trusted by 10K+ Homes
             </div>
           </motion.div>
         </div>

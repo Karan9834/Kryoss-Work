@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { ChevronRight, Star } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import data from './HealthFitnessData.json';
-import Testimonials from '../../../components/home/Testimonials';
-import Contact from '../../../components/home/Contact';
-
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 const HealthFitnessApps = () => {
     const [activeTab, setActiveTab] = useState(data.tabs[0]?.id);
     const tabs = data.tabs || [];
@@ -145,8 +146,15 @@ const HealthFitnessApps = () => {
                 </div>
             </section>
 
-            <Testimonials />
-            <Contact />
+            
+            
+        
+            {/* New Added Sections */}
+            <Testimonial theme="orange" />
+            <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+            <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <ContactUs theme="orange" />
+
         </div>
     );
 };

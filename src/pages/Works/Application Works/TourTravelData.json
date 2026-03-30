@@ -11,32 +11,63 @@
         "img": "/ApplicationsWorks/Tour.png",
         "alt": "Keyroom",
         "titleText": "KEYROOMS - Online Hotel Booking App with Safe Room",
-        "description": "Hotels that make you feel good | Online Hotel Booking App | Hotel packages | 249 hotels in 14 cities.With Keyrooms hotels, book safe and sanitized rooms at the best hotels in Delhi NCR and other cities with the best booking website and the best hotel booking app. Find the chain of amazing budget hotels and guest house in 14 different cities across India at affordable prices........More Details",
-        "links": []
+        "description": "Hotels that make you feel good | Online Hotel Booking App | Hotel packages | 249 hotels in 14 cities.With Keyrooms hotels, book safe and sanitized rooms at the best hotels in Delhi NCR and other cities with the best booking website and the best hotel booking app. Find the chain of amazing budget hotels and guest house in 14 different cities across India at affordable prices",
+        "links": [
+          {
+            "href": "https://keyrooms.org/",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://keyrooms.org/",
+            "text": "Website"
+          }
+        ]
       },
       {
         "img": "/ApplicationsWorks/Tour1.png",
         "alt": "Brevistay",
         "titleText": "BreviStay: India's Best Hourly Hotel Booking App",
-        "description": "Are you bored being bored and planning a trip to nearby town for a day? Or got a meeting to attend in the city about which you’ve got no clue about? Want to give an entrance exam but can’t find a place to halt for few hours? Don’t worry, we’ve got it covered!\n\nA microstay, as the name suggests, is a short stay! When you just need to stop by for a few hours, why pay the for an entire 24-hour duration? Most hotels charge you a hefty amount even if you are using the room for 3 hours.....More Details",
-        "links": []
+        "description": "Are you bored being bored and planning a trip to nearby town for a day? Or got a meeting to attend in the city about which you’ve got no clue about? Want to give an entrance exam but can’t find a place to halt for few hours? Don’t worry, we’ve got it covered!\n\nA microstay, as the name suggests, is a short stay! When you just need to stop by for a few hours, why pay the for an entire 24-hour duration? Most hotels charge you a hefty amount even if you are using the room for 3 hours",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.brevistay.customer",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://www.brevistay.com/",
+            "text": "Website"
+          }
+        ]
       },
       {
         "img": "/ApplicationsWorks/Tour2.png",
         "alt": "Samaya room.",
         "titleText": "Samaya Rooms: Stay with Hotel Booking App",
-        "description": "SAMAYA Rooms Hotel Booking App to Book the Most modest hotels with amenities like free Wi-Fi, AC, water bottle& much more. Now, find your perfect first stay and get 300 off and celebrate your comfort space today! You can search nearby best hotel deals in your pocket friendly budget and explore around the India. We ensure that your stay is not just pocketed friendly but also lovely and pleasant with over 500+ properties across India.Samaya Rooms is every reasonable visit with companion. Assure you download the Samaya App to receive updates about our latest offers and promos..........More Details",
-        "links": []
+        "description": "SAMAYA Rooms Hotel Booking App to Book the Most modest hotels with amenities like free Wi-Fi, AC, water bottle& much more. Now, find your perfect first stay and get 300 off and celebrate your comfort space today! You can search nearby best hotel deals in your pocket friendly budget and explore around the India. We ensure that your stay is not just pocketed friendly but also lovely and pleasant with over 500+ properties across India.Samaya Rooms is every reasonable visit with companion. Assure you download the Samaya App to receive updates about our latest offers and promos",
+        "links": [
+          {
+            "href": "https://thesamaya.in/",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://thesamaya.in/",
+            "text": "Website"
+          }
+        ]
       },
       {
         "img": "/ApplicationsWorks/Tour3.png",
         "alt": "Flyin",
         "titleText": "Flyin.com - Flights, Hotels & Travel Deals Booking",
-        "description": "Flyin.com application provides customers with the best deals in flights and hotels, easy and secure bookings along with a variety of 450 airlines including low cost carriers and 600,000 Hotels, Resorts, Villas, Apartments & More.........More Details",
+        "description": "Flyin.com application provides customers with the best deals in flights and hotels, easy and secure bookings along with a variety of 450 airlines including low cost carriers and 600,000 Hotels, Resorts, Villas, Apartments & More",
         "links": [
           {
-            "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=com.tbolite.app",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.tbolite.app",
+            "text": "Website"
           }
         ]
       },
@@ -44,11 +75,15 @@
         "img": "/ApplicationsWorks/Tour4.png",
         "alt": "Tajwal",
         "titleText": "Tajawal: Flights, Hotels and Holidays",
-        "description": "The #1 app for the Middle Eastern traveller, tajawal offers you great deals on over 1 million hotels, 1,000s of flight connections & complete holiday packages.\n\nA part of Seera Group’s Consumer Travel Business Unit, tajawal brings Seera’s travel expertise to the digital sphere with an intuitive platform and advanced homegrown solutions that have all aspects of your journey covered!\n\nTajawal will turn every travel plan into reality in a few simple steps, to help you make the most of your trip. Our website and state-of-the-art mobile applications offer convenient and effortless booking experiences, secure payment options as well as 24/7 customer support in both English & Arabic to assist you every step of the way........More Details",
+        "description": "The #1 app for the Middle Eastern traveller, tajawal offers you great deals on over 1 million hotels, 1,000s of flight connections & complete holiday packages.\n\nA part of Seera Group’s Consumer Travel Business Unit, tajawal brings Seera’s travel expertise to the digital sphere with an intuitive platform and advanced homegrown solutions that have all aspects of your journey covered!\n\nTajawal will turn every travel plan into reality in a few simple steps, to help you make the most of your trip. Our website and state-of-the-art mobile applications offer convenient and effortless booking experiences, secure payment options as well as 24/7 customer support in both English & Arabic to assist you every step of the way",
         "links": [
           {
-            "text": "Play Store",
-            "href": "#"
+            "href": "https://play.google.com/store/apps/details?id=com.riyaconnect.android",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://www.riya.travel/",
+            "text": "Website"
           }
         ]
       },
@@ -56,8 +91,17 @@
         "img": "/ApplicationsWorks/Tour5.png",
         "alt": "Afbudsrejser",
         "titleText": "Afbudsrejser, rejser og flybilletter - billige fly",
-        "description": "Maybe you are looking for a city break to London (England), Paris (France), Bangkok (Thailand), New York (Athens), Athens (Greece) or looking for a plane ticket for your next holiday in Malaga, Palma Majorca, Las Palmas, Nice, or Antalya. Our flight search engine helps you find the cheapest airline ticket.A good advice for your flight search is to search for flights to and from different airports. Looking for flights to the USA or flights to Thailand, then search for a trip to several different airports near the place you want to travel......More Details",
-        "links": []
+        "description": "Maybe you are looking for a city break to London (England), Paris (France), Bangkok (Thailand), New York (Athens), Athens (Greece) or looking for a plane ticket for your next holiday in Malaga, Palma Majorca, Las Palmas, Nice, or Antalya. Our flight search engine helps you find the cheapest airline ticket.A good advice for your flight search is to search for flights to and from different airports. Looking for flights to the USA or flights to Thailand, then search for a trip to several different airports near the place you want to travel",
+        "links": [
+          {
+            "href": "https://play.google.com/store/apps/details?id=com.flyin.bookings",
+            "text": "Play Store"
+          },
+          {
+            "href": "https://www.flyin.com/ar",
+            "text": "Website"
+          }
+        ]
       }
     ]
   }

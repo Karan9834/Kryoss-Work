@@ -16,11 +16,11 @@ import rajbetImg from '../../assets/works/betting/rajbet.png';
 import sattabetImg from '../../assets/works/betting/sattabet.png';
 import heroImg from '../../assets/works/betting/hero.png';
 
+import Testimonial from '../../components/Common/Testimonial';
+import Industries from '../../components/Common/Industries';
+import OurWork from '../../components/Common/OurWork';
+import ContactUs from '../../components/Common/ContactUs';
 // Import Components
-import Testimonials from '../../components/home/Testimonials';
-import Contact from '../../components/home/Contact';
-
-
 const projects = [
   {
     title: '9stacks Poker – Play Poker Games',
@@ -58,7 +58,7 @@ const projects = [
 const stats = [
   { value: '750', label: 'Project Delivered', icon: <CheckCircle className="text-orange-500" /> },
   { value: '150', label: 'Development Staff', icon: <Briefcase className="text-orange-500" /> },
-  { value: '10',  label: 'Years of Experience', icon: <Star className="text-orange-500" /> },
+  { value: '10', label: 'Years of Experience', icon: <Star className="text-orange-500" /> },
   { value: '450', label: 'Satisfied Clients', icon: <CheckCircle className="text-orange-500" /> },
 ];
 
@@ -238,23 +238,12 @@ const BettingAppsWorks = () => {
           </div>
         </div>
       </section>
+      {/* New Added Sections */}
+      <Testimonial theme="orange" />
+      <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
+      <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+      <ContactUs theme="orange" />
 
-      <Testimonials />
-
-      {/* 6. Clients Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-950 mb-12">Our <span className="text-orange-500">Clients</span></h2>
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-            <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
-            <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
-            <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
-            <div className="text-2xl font-black text-gray-300">CLIENT LOGO</div>
-          </div>
-        </div>
-      </section>
-
-      <Contact />
     </div>
   );
 };
