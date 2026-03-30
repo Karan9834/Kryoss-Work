@@ -13,25 +13,8 @@ const EneftiHero = () => {
 
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-                    {/* LEFT IMAGE */}
-                    <div className="relative flex justify-center lg:justify-start">
-
-                        {/* Premium Badge */}
-                        <div className="absolute top-4 right-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm px-4 py-1 rounded-full">
-                            ✨ Premium
-                        </div>
-
-                        {/* Replace with your downloaded image */}
-                        <img
-                            src="/Products/ENEFTIHero.jpg"
-                            alt="Enefti NFT Gaming"
-                            className="w-full max-w-lg rounded-3xl shadow-2xl object-cover"
-                        />
-
-                    </div>
-
-                    {/* RIGHT CONTENT */}
-                    <div className="space-y-8">
+                    {/* LEFT CONTENT */}
+                    <div className="space-y-8 order-2 lg:order-1">
 
                         {/* Badge */}
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white px-4 py-2 rounded-full text-sm w-fit">
@@ -90,6 +73,23 @@ const EneftiHero = () => {
                             </div>
 
                         </div>
+
+                    </div>
+
+                    {/* RIGHT IMAGE */}
+                    <div className="relative flex justify-center lg:justify-end order-1 lg:order-2 ml-auto">
+
+                        {/* Premium Badge */}
+                        <div className="absolute top-4 right-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm px-4 py-1 rounded-full z-10">
+                            ✨ Premium
+                        </div>
+
+                        {/* Replace with your downloaded image */}
+                        <img
+                            src="/Products/ENEFTIHero.jpg"
+                            alt="Enefti NFT Gaming"
+                            className="w-full max-w-lg rounded-3xl shadow-2xl object-cover"
+                        />
 
                     </div>
 

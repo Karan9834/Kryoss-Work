@@ -13,23 +13,8 @@ const SmartNftHero = () => {
 
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-                    <div className="relative flex justify-center lg:justify-start w-full lg:w-[526px] h-[501px]">
-
-                        {/* Premium Badge */}
-                        <div className="absolute top-4 right-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm px-4 py-1 rounded-full z-10">
-                            ✨ Premium
-                        </div>
-
-                        <img
-                            src="/Products/Smart Hero.jpg"
-                            alt="Smart NFT"
-                            className="w-full h-full rounded-3xl shadow-2xl"
-                        />
-
-                    </div>
-
-                    {/* RIGHT CONTENT */}
-                    <div className="space-y-8">
+                    {/* LEFT CONTENT */}
+                    <div className="space-y-8 order-2 lg:order-1">
 
                         {/* Badge */}
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white px-4 py-2 rounded-full text-sm w-fit">
@@ -88,6 +73,22 @@ const SmartNftHero = () => {
                             </div>
 
                         </div>
+
+                    </div>
+
+                    {/* RIGHT IMAGE */}
+                    <div className="relative flex justify-center lg:justify-end w-full lg:w-[526px] h-[501px] order-1 lg:order-2 ml-auto">
+
+                        {/* Premium Badge */}
+                        <div className="absolute top-4 right-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm px-4 py-1 rounded-full z-10">
+                            ✨ Premium
+                        </div>
+
+                        <img
+                            src="/Products/Smart Hero.jpg"
+                            alt="Smart NFT"
+                            className="w-full h-full rounded-3xl shadow-2xl"
+                        />
 
                     </div>
 
