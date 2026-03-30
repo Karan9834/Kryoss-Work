@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Play, ShieldCheck, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const NFTCardSection = () => {
     const products = [
@@ -8,13 +9,15 @@ const NFTCardSection = () => {
             title: "Smart NFT",
             subtitle: "Premier NFT Marketplace",
             desc: "Smart NFT is a comprehensive, state-of-the-art NFT Marketplace solution designed for creators and investors to trade digital assets with unparalleled ease and security. Featuring advanced smart contract integration and a seamless user interface.",
-            image: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?w=800&q=80"
+            image: "https://images.unsplash.com/photo-1642104704074-907c0698cbd9?w=800&q=80",
+            link: "/products/smart-nft"
         },
         {
             title: "Enefti",
             subtitle: "Next-Gen NFT Gaming",
             desc: "Enefti is an industry-leading virtual asset platform that pioneers the future of NFT-based interactive gaming. With customizable digital horses, unique breeding mechanics, and an integrated competitive ecosystem.",
-            image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80"
+            image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+            link: "/products/enefti"
         }
     ];
 
@@ -65,9 +68,11 @@ const NFTCardSection = () => {
                                 </p>
                                 
                                 <div className="flex justify-center mt-auto">
-                                    <button className="flex items-center px-10 py-3 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-xl shadow-lg hover:shadow-violet-500/30 transition-all duration-300 group/btn">
-                                        View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                                    </button>
+                                    <Link to={product.link}>
+                                        <button className="flex items-center px-10 py-3 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-xl shadow-lg hover:shadow-violet-500/30 transition-all duration-300 group/btn">
+                                            View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </motion.div>

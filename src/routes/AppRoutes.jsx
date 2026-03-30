@@ -27,6 +27,8 @@ import RealEstatePage from '../pages/products/real-estate/RealEstatePage';
 import MultiVendorMarketplacePage from "../pages/products/Multi-Vendor-Marketplace/MultiVendorMarketplacePage";
 import B2BWholesalePage from "../pages/products/B2B-Wholesale/B2BWholesalePage";
 import AiContentGeneratorPage from "../pages/products/AI-Content-Generator/AiContentGeneratorPage";
+import SmartNftPage from "../pages/products/Smart-NFT/SmartNftPage";
+import EneftiProductsPage from "../pages/products/Enefti-Products/EneftiProductsPage";
 import TelemedicineAppPage from "../pages/products/Telemedicine-App/TelemedicineAppPage";
 import PharmacyDeliveryPage from "../pages/products/Pharmacy-Delivery/PharmacyDeliveryPage";
 import ELearningPage from '../pages/products/E-Learning/ELearningPage';
@@ -188,6 +190,8 @@ const AppRoutes = () => {
                 <Route path="/products/gaming/casino" element={<CasinoGames />} />
                 <Route path="/products/gaming/fantasy-sports" element={<FantasySports />} />
                 <Route path="/products/nft-marketplace" element={<NFTProducts />} />
+                <Route path="/products/smart-nft" element={<SmartNftPage />} />
+                <Route path="/products/enefti" element={<EneftiProductsPage />} />
                 <Route path="/products/betting-platform" element={<BettingApps />} />
                 <Route path="/products/mlm-software" element={<MLMProducts />} />
                 {/* 404 */}
