@@ -21,7 +21,7 @@ const MLMHero = ({ onExplore }) => {
                         </h1>
 
                         <p className="text-[#4A4B5E] text-lg lg:text-xl max-w-xl leading-relaxed">
-                             Organize and arrange your MLM business with Kryoss. Using smart coding methods and blending with ease-of-management features, we deploy proficient software tailored to your success.
+                            Organize and arrange your MLM business with Kryoss. Using smart coding methods and blending with ease-of-management features, we deploy proficient software tailored to your success.
                         </p>
 
 
@@ -48,7 +48,7 @@ const MLMHero = ({ onExplore }) => {
                         <div className="relative group">
                             <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-sky-400 rounded-[60px] blur-2xl opacity-10 group-hover:opacity-20 transition-all duration-700"></div>
                             <div className="relative z-10 w-full max-w-[480px] mx-auto aspect-square bg-gradient-to-br from-blue-100 to-sky-50 rounded-[60px] border-8 border-white shadow-2xl flex items-center justify-center overflow-hidden transition-all duration-700 group-hover:scale-[1.02] lg:-translate-y-10">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" alt="MLM Software" className="w-full h-full object-cover" />
+                                <img src="/Products/MLM.png" alt="MLM Software" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>

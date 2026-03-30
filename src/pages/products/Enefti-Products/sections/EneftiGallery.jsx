@@ -1,20 +1,14 @@
 import React from "react";
-import gallery1 from "@/assets/aicontent-generator-img/aicontentgallery1.jpg"
-import gallery2 from "@/assets/aicontent-generator-img/aicontentgallery2.jpg"
-import gallery3 from "@/assets/aicontent-generator-img/aicontentgallery3.jpg"
-import gallery4 from "@/assets/aicontent-generator-img/aicontentgallery4.jpg"
-import gallery5 from "@/assets/aicontent-generator-img/aicontentgallery5.jpg"
-import gallery6 from "@/assets/aicontent-generator-img/aicontentgallery6.jpg"
 
 const EneftiGallery = () => {
 
     const images = [
-        gallery1,
-        gallery2,
-        gallery3,
-        gallery4,
-        gallery5,
-        gallery6
+        "/Products/ENEFTI Gallery1.jpg",
+        "/Products/ENEFTI Gallery2.png",
+        "/Products/ENEFTI Gallery3.png",
+        "/Products/ENEFTI Gallery4.png",
+        "/Products/ENEFTI Gallery5.png",
+        "/Products/ENEFTI Gallery6.png"
     ];
 
     return (

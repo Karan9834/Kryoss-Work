@@ -48,7 +48,7 @@ const NFTHero = ({ onExplore }) => {
                         <div className="relative group">
                             <div className="absolute -inset-4 bg-gradient-to-r from-violet-500 to-fuchsia-400 rounded-[60px] blur-2xl opacity-10 group-hover:opacity-20 transition-all duration-700"></div>
                             <div className="relative z-10 w-full max-w-[480px] mx-auto aspect-square bg-gradient-to-br from-violet-100 to-fuchsia-50 rounded-[60px] border-8 border-white shadow-2xl flex items-center justify-center overflow-hidden transition-all duration-700 group-hover:scale-[1.02] lg:-translate-y-10">
-                                <img src="https://images.unsplash.com/photo-1644361042784-1e0e84c98782?auto=format&fit=crop&q=80&w=800" alt="NFT Marketplace" className="w-full h-full object-cover" />
+                                <img src="/Products/NFT.png" alt="NFT Marketplace" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>

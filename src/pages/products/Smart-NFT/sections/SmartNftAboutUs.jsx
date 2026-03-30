@@ -9,15 +9,12 @@ const SmartNftAboutUs = () => {
                 <div className="grid lg:grid-cols-2 gap-6 items-center">
 
                     {/* LEFT IMAGE */}
-                    <div className="flex justify-center lg:justify-start">
-
-                        {/* Replace with your downloaded image */}
+                    <div className="flex justify-center lg:justify-start w-full max-w-[526px] aspect-[526/501]">
                         <img
-                            src="https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?w=800&q=80"
+                            src="/Products/Smart2nd.png"
                             alt="Smart NFT Platform"
-                            className="w-full max-w-sm rounded-3xl shadow-xl object-cover"
+                            className="w-full h-full rounded-3xl shadow-xl object-cover"
                         />
-
                     </div>
 
                     {/* RIGHT CONTENT */}

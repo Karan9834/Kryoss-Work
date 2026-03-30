@@ -23,7 +23,7 @@ const EneftiHero = () => {
 
                         {/* Replace with your downloaded image */}
                         <img
-                            src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80"
+                            src="/Products/ENEFTIHero.jpg"
                             alt="Enefti NFT Gaming"
                             className="w-full max-w-lg rounded-3xl shadow-2xl object-cover"
                         />

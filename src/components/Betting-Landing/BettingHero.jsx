@@ -48,7 +48,7 @@ const BettingHero = ({ onExplore }) => {
                         <div className="relative group">
                             <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500 to-teal-400 rounded-[60px] blur-2xl opacity-10 group-hover:opacity-20 transition-all duration-700"></div>
                             <div className="relative z-10 w-full max-w-[480px] mx-auto aspect-square bg-gradient-to-br from-emerald-100 to-teal-50 rounded-[60px] border-8 border-white shadow-2xl flex items-center justify-center overflow-hidden transition-all duration-700 group-hover:scale-[1.02] lg:-translate-y-10">
-                                <img src="https://images.unsplash.com/photo-1596742572447-5790553ef443?auto=format&fit=crop&q=80&w=800" alt="Betting Apps" className="w-full h-full object-cover" />
+                                <img src="/Products/Betting.png" alt="Betting Apps" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>

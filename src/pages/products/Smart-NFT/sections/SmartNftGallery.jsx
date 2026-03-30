@@ -1,20 +1,14 @@
 import React from "react";
-import gallery1 from "@/assets/aicontent-generator-img/aicontentgallery1.jpg"
-import gallery2 from "@/assets/aicontent-generator-img/aicontentgallery2.jpg"
-import gallery3 from "@/assets/aicontent-generator-img/aicontentgallery3.jpg"
-import gallery4 from "@/assets/aicontent-generator-img/aicontentgallery4.jpg"
-import gallery5 from "@/assets/aicontent-generator-img/aicontentgallery5.jpg"
-import gallery6 from "@/assets/aicontent-generator-img/aicontentgallery6.jpg"
 
 const SmartNftGallery = () => {
 
     const images = [
-        gallery1,
-        gallery2,
-        gallery3,
-        gallery4,
-        gallery5,
-        gallery6
+        "/Products/NFTGallery1.png",
+        "/Products/NFTGallery2.png",
+        "/Products/NFTGallery3.png",
+        "/Products/NFTGallery4.png",
+        "/Products/NFTGallery5.png",
+        "/Products/NFTGallery6.png"
     ];
 
     return (

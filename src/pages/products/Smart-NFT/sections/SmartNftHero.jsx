@@ -13,19 +13,17 @@ const SmartNftHero = () => {
 
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-                    {/* LEFT IMAGE */}
-                    <div className="relative flex justify-center lg:justify-start">
+                    <div className="relative flex justify-center lg:justify-start w-full lg:w-[526px] h-[501px]">
 
                         {/* Premium Badge */}
-                        <div className="absolute top-4 right-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm px-4 py-1 rounded-full">
+                        <div className="absolute top-4 right-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm px-4 py-1 rounded-full z-10">
                             ✨ Premium
                         </div>
 
-                        {/* Replace with your downloaded image */}
                         <img
-                            src="https://images.unsplash.com/photo-1642104704074-907c0698cbd9?w=800&q=80"
+                            src="/Products/Smart Hero.jpg"
                             alt="Smart NFT"
-                            className="w-full max-w-lg rounded-3xl shadow-2xl object-cover"
+                            className="w-full h-full rounded-3xl shadow-2xl"
                         />
 
                     </div>

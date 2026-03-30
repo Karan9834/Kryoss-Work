@@ -9,15 +9,12 @@ const EneftiAboutUs = () => {
                 <div className="grid lg:grid-cols-2 gap-6 items-center">
 
                     {/* LEFT IMAGE */}
-                    <div className="flex justify-center lg:justify-start">
-
-                        {/* Replace with your downloaded image */}
+                    <div className="flex justify-center lg:justify-start w-full max-w-[526px] aspect-[526/501]">
                         <img
-                            src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=800&q=80"
+                            src="/Products/Enefti2nd.png"
                             alt="Enefti Gaming Platform"
-                            className="w-full max-w-sm rounded-3xl shadow-xl object-cover"
+                            className="w-full h-full rounded-3xl shadow-xl object-cover"
                         />
-
                     </div>
 
                     {/* RIGHT CONTENT */}
