@@ -1,6 +1,12 @@
 import React from 'react';
 
 const GroceryCta = () => {
+  const handleLiveDemo = () => {
+    window.open(
+      "https://preview.codecanyon.net/item/ready-grocery-delivery-man-app-rider-app-delivery-app-addon/full_screen_preview/60319134",
+      "_blank"
+    );
+  };
   return (
     <section className="w-full bg-gradient-to-r from-green-600 to-emerald-600 py-12 px-4 lg:px-6">
       <div className="max-w-4xl mx-auto text-center">
@@ -11,10 +17,16 @@ const GroceryCta = () => {
         <p className="text-green-100 text-sm md:text-base mb-5">
           Join thousands of happy customers getting fresh delivery every day
         </p>
-        
+
         {/* CTA Button */}
-        <button className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-all shadow-lg hover:shadow-xl transform hover:scale-105">
-          Start Shopping Now
+        <button
+          onClick={handleLiveDemo}
+          className="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-3.5 rounded-xl font-semibold text-lg hover:bg-green-700 transform hover:scale-105 transition-all duration-300"
+        >
+          Live Demo
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
         </button>
 
         {/* Small stats */}

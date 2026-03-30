@@ -3,7 +3,7 @@ import React from "react";
 const GroceryHero = () => {
   const handleLiveDemo = () => {
     window.open(
-      "https://preview.codecanyon.net/item/multipurpose-delivery-app-ionic-5-complete-app-with-laravel-backend-user-store-driver-app/full_screen_preview/34195893",
+      "https://preview.codecanyon.net/item/ready-grocery-delivery-man-app-rider-app-delivery-app-addon/full_screen_preview/60319134",
       "_blank"
     );
   };

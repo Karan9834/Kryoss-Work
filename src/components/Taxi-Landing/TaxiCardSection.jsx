@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingBag, Navigation2, Zap, Layout, Globe, Smartphone, ShieldCheck, ClipboardList, BarChart, UserCheck, CreditCard } from 'lucide-react';
-import card1Img from '../../assets/taxilanding-img/taxilandingcard1.png';
-import card2Img from '../../assets/taxilanding-img/taxilandingcard2.png';
+import card1Img from '../../assets/taxilanding-img/taxilandingcard1.jpg';
+import card2Img from '../../assets/taxilanding-img/taxilandingcard2.jpg';
 
 const TaxiCardSection = () => {
    const cards = [
@@ -75,7 +75,7 @@ const TaxiCardSection = () => {
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-700"
+                           className="w-full h-auto object-contain "
                         />
                         <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent pointer-events-none"></div>
                      </div>

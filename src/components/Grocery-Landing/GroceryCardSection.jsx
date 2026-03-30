@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import card1Img from '../../assets/grocerylanding-img/grocerylandingcard1.png';
-import card2Img from '../../assets/grocerylanding-img/grocerylandingcard2.png';
+import card1Img from '../../assets/grocerylanding-img/grocerylandingcard1.jpg';
+import card2Img from '../../assets/grocerylanding-img/grocerylandingcard2.jpg';
 
 const GroceryCardSection = () => {
    const cards = [
       {
-         title: "Grocery Delivery App",
+         title: "DTBasket Grocery App",
          image: card1Img,
          path: "/products/delivery/grocery-delivery",
          features: [
@@ -65,7 +65,7 @@ const GroceryCardSection = () => {
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-700"
+                           className="w-full h-auto object-contain "
                         />
                         <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent pointer-events-none"></div>
                      </div>
