@@ -44,7 +44,7 @@ const SmartNftGallery = () => {
                             <img
                                 src={img}
                                 alt="Smart NFT Platform Screenshot"
-                                className="w-full h-[260px] object-contain bg-white transform group-hover:scale-105 transition duration-500"
+                                className="w-full h-[260px] object-cover transform group-hover:scale-105 transition duration-500"
                             />
 
                         </div>
