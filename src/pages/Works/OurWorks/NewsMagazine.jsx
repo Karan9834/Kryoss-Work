@@ -116,10 +116,21 @@ const NewsMagazine = () => {
                   </h2>
                   <p className="text-gray-600 text-base lg:text-lg leading-relaxed mb-6 font-medium">
                     {project.description}
-                    <a href={project.link} className="text-red-500 font-semibold ml-2 hover:underline">
-                      .....More Details
-                    </a>
                   </p>
+                  {project.link && (
+                    <a 
+                      href={project.link || ""} 
+                      className="inline-block mt-4 hover:opacity-90 transition-opacity"
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
+                        alt="Get it on Google Play"
+                        className="h-12 object-contain"
+                      />
+                    </a>
+                  )}
 
                   </motion.div>
 
