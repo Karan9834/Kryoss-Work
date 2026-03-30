@@ -72,12 +72,9 @@ const CasinoCardSection = () => {
                                 {prod.desc}
                             </p>
                             
-                            <div className="flex flex-wrap gap-4 justify-center mt-auto">
-                                <button className="flex items-center px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all duration-300">
-                                    <Smartphone className="w-5 h-5 mr-2" /> Playstore
-                                </button>
-                                <button className="flex items-center px-6 py-3 bg-white border border-gray-100 hover:bg-gray-50 text-slate-900 font-bold rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-                                    Learn More <ArrowRight className="w-5 h-5 ml-2" />
+                            <div className="flex justify-center mt-auto">
+                                <button className="flex items-center px-10 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all duration-300 group/btn">
+                                    View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
                                 </button>
                             </div>
                         </div>
