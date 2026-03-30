@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { ArrowRight } from "lucide-react";
 const Hero = () => {
     return (
         <section
@@ -59,14 +59,17 @@ const Hero = () => {
                             your customers.
                         </motion.p>
 
-                        <motion.button
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.4 }}
-                            className="flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-teal-400 to-green-500 hover:scale-105 transition-all"
-                        >
-                            Let's Discuss →
-                        </motion.button>
+                        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                            <a
+                                href="https://preview.codecanyon.net/item/medix-the-pharmacy-pos-management-system/full_screen_preview/20479904"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-10 py-5  bg-gradient-to-r from-teal-400 to-green-500 text-white font-semibold rounded-4xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(147,51,234,0.3)] flex items-center gap-3 group"
+                            >
+                                Try Live Demo
+                                <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
+                            </a>
+                        </div>
                     </div>
 
                     {/* RIGHT IMAGE */}

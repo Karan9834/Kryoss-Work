@@ -1,14 +1,15 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Link } from "react-router-dom";
-
+import card1 from "../../assets/Doctor-Health-App/product1.jpg"
+import card2 from "../../assets/Doctor-Health-App/product2.jpg"
 const Products = () => {
   const navigate = useNavigate()
 
   const products = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      image: card1,
       title: "Doctor Appointment",
       description: "Book consultations with top specialists instantly",
       points: [
@@ -22,7 +23,7 @@ const Products = () => {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1576602976047-174e57a47881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      image: card2,
       title: "Pharmacy Delivery",
       description: "Medicines delivered to your doorstep",
       points: [
@@ -64,14 +65,14 @@ const Products = () => {
             </span>
             <div className="w-8 h-px bg-amber-300"></div>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Healthcare Solutions{' '}
             <span className="bg-gradient-to-r from-emerald-600 to-amber-600 bg-clip-text text-transparent">
               Made Simple
             </span>
           </h2>
-          
+
           <p className="text-lg text-gray-600">
             Discover our range of products designed to make healthcare accessible, affordable, and convenient for you and your family.
           </p>
@@ -86,24 +87,24 @@ const Products = () => {
             >
               {/* Hover gradient overlay */}
               <div className={`absolute inset-0 bg-gradient-to-br from-${product.color}-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
-              
+
               {/* Top accent line */}
               <div className={`absolute top-0 left-0 w-full h-1 bg-${product.color}-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500`}></div>
-              
+
               {/* Image section - make it clickable too */}
-              <div 
+              <div
                 className="relative h-64 overflow-hidden cursor-pointer"
                 onClick={() => handleButtonClick(product.buttonLink)}
               >
-                <img 
+                <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-contain"
                 />
-                
+
                 {/* Image overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                
+
                 {/* Product badge */}
                 <div className={`absolute top-4 right-4 bg-${product.color}-500 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg transform group-hover:scale-105 transition-transform duration-300`}>
                   New
@@ -145,7 +146,7 @@ const Products = () => {
 
                 {/* View Details button - centered */}
                 <div className="flex justify-center">
-                  <button 
+                  <button
                     onClick={() => handleButtonClick(product.buttonLink)}
                     className={`group/btn relative px-8 py-4 bg-gradient-to-r from-${product.color}-500 to-${product.color}-600 text-white font-semibold rounded-xl text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 overflow-hidden cursor-pointer min-w-[200px]`}
                   >

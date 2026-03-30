@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import product1 from "../../assets/Food-delivery/product1.png"
-
+import product1 from "../../assets/Food-delivery/product11.jpg"
+import product2 from "../../assets/Food-delivery/product22.jpg"
 const ProductSection = () => {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState("cloud-kitchen");
@@ -29,7 +29,7 @@ const ProductSection = () => {
       description:
         "We are expanding with new cuisines and exciting food experiences. Stay tuned!",
       image:
-        "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop",
+        product2,
       isNew: false,
       route: "/products/coming-soon",
     },
@@ -66,11 +66,10 @@ const ProductSection = () => {
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`px-6 py-2 rounded-full font-medium transition ${
-                activeCategory === cat.id
-                  ? "bg-orange-500 text-white shadow-md"
-                  : "bg-gray-100 text-gray-600"
-              }`}
+              className={`px-6 py-2 rounded-full font-medium transition ${activeCategory === cat.id
+                ? "bg-orange-500 text-white shadow-md"
+                : "bg-gray-100 text-gray-600"
+                }`}
             >
               {cat.name}
             </button>
@@ -92,7 +91,7 @@ const ProductSection = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-fit transition duration-700 group-hover:scale-110"
+                  className="w-full h-full object-fit "
                 />
 
                 {/* Badge */}

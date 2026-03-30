@@ -74,6 +74,13 @@ import NewsPage from "../pages/products/News/NewsPage";
 import BFSIFinance from "../pages/products/BFSI-Finance/BFSIFinance";
 import NewsMAnagement from "../pages/products/News-Management/NewsMAnagement";
 import HSMHotel from "../pages/products/HMS-Hotel/HSMHotel";
+import EMSLanding from "../pages/products/EMS-Event-Mgmt/EMSLanding";
+import RMSLanding from "../pages/products/RMS-Restaurant-Mgmt/RMSLanding";
+
+import CorporateEventsPage from "../pages/products/EMS-Event-Mgmt/CorporateEvents/CorporateEventsPage";
+import FestivalsConcertsPage from "../pages/products/EMS-Event-Mgmt/FestivalsConcerts/FestivalsConcertsPage";
+import FineDiningCasualPage from "../pages/products/RMS-Restaurant-Mgmt/FineDiningCasual/FineDiningCasualPage";
+import QsrFastCasualPage from "../pages/products/RMS-Restaurant-Mgmt/QsrFastCasual/QsrFastCasualPage";
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -137,22 +144,31 @@ export const ProductRoutes = [
     <Route key="saas-products" path="/products/prime/saas" element={<SaasPage />} />,
     <Route key="account-erp" path="/products/prime/account-erp" element={<AccountErpPage />} />,
 
-<Route key="crypto-exchange" path="/products/prime/crypto-exchange" element={<CryptoExchangeLanding />} />,
-<Route key="pos-billing" path="/products/prime/pos-billing" element={<POSBillingLanding />} />,
-<Route key="crypto-spot" path="/products/crypto-spot-exchange" element={<CryptoSpotExchangePage />} />,
-<Route key="crypto-deriv" path="/products/crypto-derivatives" element={<CryptoDerivativesPage />} />,
-<Route key="resto-pos" path="/products/restaurant-pos" element={<RestaurantPOSPage />} />,
-<Route key="retail-pos" path="/products/retail-pos" element={<RetailPOSPage />} />,
+    <Route key="crypto-exchange" path="/products/prime/crypto-exchange" element={<CryptoExchangeLanding />} />,
+    <Route key="pos-billing" path="/products/prime/pos-billing" element={<POSBillingLanding />} />,
+    <Route key="crypto-spot" path="/products/crypto-spot-exchange" element={<CryptoSpotExchangePage />} />,
+    <Route key="crypto-deriv" path="/products/crypto-derivatives" element={<CryptoDerivativesPage />} />,
+    <Route key="resto-pos" path="/products/restaurant-pos" element={<RestaurantPOSPage />} />,
+    <Route key="retail-pos" path="/products/retail-pos" element={<RetailPOSPage />} />,
+
+    <Route key="ems" path="/products/enterprise/ems" element={<EMSLanding />} />,
+    <Route key="rms" path="/products/enterprise/rms" element={<RMSLanding />} />,
+
+    <Route key="ems-corporate-events" path="/products/enterprise/ems/corporate-events" element={<CorporateEventsPage />} />,
+    <Route key="ems-festivals-concerts" path="/products/enterprise/ems/festivals-concerts" element={<FestivalsConcertsPage />} />,
+    <Route key="rms-fine-dining" path="/products/enterprise/rms/fine-dining" element={<FineDiningCasualPage />} />,
+    <Route key="rms-qsr-fast-casual" path="/products/enterprise/rms/qsr-fast-casual" element={<QsrFastCasualPage />} />,
 
 
-<Route key="news" path="/products/prime/news-magazine" element={<NewsPage />} />,
-<Route key="bfsi-finance" path="/products/prime/bfsi-finance" element={<BFSIFinance />} />,
+    <Route key="news" path="/products/prime/news-magazine" element={<NewsPage />} />,
+    <Route key="bfsi-finance" path="/products/prime/bfsi-finance" element={<BFSIFinance />} />,
 
 
-<Route key="transport-logistics" path="/products/prime/transport-logistics" element={<TransportLogisticsLanding />} />,
-<Route key="video-conference" path="/products/prime/video-conference" element={<VideoConferenceLanding />} />,
-<Route key="zoom-clone" path="/products/prime/zoom-clone" element={<ZoomClonePage />} />,
-<Route key="webinar-engine" path="/products/prime/webinar-engine" element={<WebinarEnginePage />} />,
-<Route key="news-management" path="/products/enterprise/nms" element={<NewsMAnagement />} />,
-<Route key="hotel-management-system" path="/products/enterprise/hms-hotel" element={<HSMHotel />} />,
+    <Route key="transport-logistics" path="/products/prime/transport-logistics" element={<TransportLogisticsLanding />} />,
+    <Route key="video-conference" path="/products/prime/video-conference" element={<VideoConferenceLanding />} />,
+    <Route key="zoom-clone" path="/products/prime/zoom-clone" element={<ZoomClonePage />} />,
+    <Route key="webinar-engine" path="/products/prime/webinar-engine" element={<WebinarEnginePage />} />,
+    <Route key="news-management" path="/products/enterprise/nms" element={<NewsMAnagement />} />,
+    <Route key="hotel-management-system" path="/products/enterprise/hms-hotel" element={<HSMHotel />} />,
+
 ];
