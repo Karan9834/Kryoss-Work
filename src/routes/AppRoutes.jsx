@@ -86,19 +86,16 @@ import Mars from '../pages/products/Mars/Mars';
 import TimeStay from '../pages/products/TimeStay/TimeStay';
 import Nouva from '../pages/products/Nuova/Nouva';
 import Essential from '../pages/products/Essential/Essential';
-<<<<<<< Updated upstream
 import Posly from '../pages/products/Posly/Posly';
 import WholeSale from '../pages/products/WholeSale/WholeSale';
 import FoodBite from '../pages/products/FoodBite/FoodBite';
 import Snapcart from '../pages/products/Snapcart/Snapcart';
 import Omni from '../pages/products/Omni/Omni';
-=======
 
 import BetLabPage from '../pages/products/BetLab/BetLabPage';
 import BetYourDuckPage from '../pages/products/BetYourDuck/BetYourDuckPage';
 import HyipInvestProPage from '../pages/products/HyipInvestPro/HyipInvestProPage';
 import RevPTCPage from '../pages/products/RevPTC/RevPTCPage';
->>>>>>> Stashed changes
 
 const AppRoutes = () => {
     return (
