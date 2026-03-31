@@ -76,11 +76,18 @@ import NewsMAnagement from "../pages/products/News-Management/NewsMAnagement";
 import HSMHotel from "../pages/products/HMS-Hotel/HSMHotel";
 import EMSLanding from "../pages/products/EMS-Event-Mgmt/EMSLanding";
 import RMSLanding from "../pages/products/RMS-Restaurant-Mgmt/RMSLanding";
+import SMSLanding from "../pages/products/SMS-School-Mgmt/SMSLanding";
+import PMSLanding from "../pages/products/PMS-Pharmacy-Mgmt/PMSLanding";
 
 import CorporateEventsPage from "../pages/products/EMS-Event-Mgmt/CorporateEvents/CorporateEventsPage";
 import FestivalsConcertsPage from "../pages/products/EMS-Event-Mgmt/FestivalsConcerts/FestivalsConcertsPage";
 import FineDiningCasualPage from "../pages/products/RMS-Restaurant-Mgmt/FineDiningCasual/FineDiningCasualPage";
 import QsrFastCasualPage from "../pages/products/RMS-Restaurant-Mgmt/QsrFastCasual/QsrFastCasualPage";
+
+import InilabsPage from "../pages/products/SMS-School-Mgmt/Inilabs/InilabsPage";
+import GlobalPage from "../pages/products/SMS-School-Mgmt/Global/GlobalPage";
+import PharmacyNextAIPage from "../pages/products/PMS-Pharmacy-Mgmt/PharmacyNextAI/PharmacyNextAIPage";
+import KiviCarePage from "../pages/products/PMS-Pharmacy-Mgmt/KiviCare/KiviCarePage";
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -159,6 +166,11 @@ export const ProductRoutes = [
     <Route key="rms-fine-dining" path="/products/enterprise/rms/fine-dining" element={<FineDiningCasualPage />} />,
     <Route key="rms-qsr-fast-casual" path="/products/enterprise/rms/qsr-fast-casual" element={<QsrFastCasualPage />} />,
 
+    <Route key="sms-inilabs" path="/products/enterprise/sms/inilabs" element={<InilabsPage />} />,
+    <Route key="sms-global" path="/products/enterprise/sms/global" element={<GlobalPage />} />,
+    <Route key="pms-pharmacynext-ai" path="/products/enterprise/pms/pharmacynext-ai" element={<PharmacyNextAIPage />} />,
+    <Route key="pms-kivicare" path="/products/enterprise/pms/kivicare" element={<KiviCarePage />} />,
+
 
     <Route key="news" path="/products/prime/news-magazine" element={<NewsPage />} />,
     <Route key="bfsi-finance" path="/products/prime/bfsi-finance" element={<BFSIFinance />} />,
@@ -170,5 +182,7 @@ export const ProductRoutes = [
     <Route key="webinar-engine" path="/products/prime/webinar-engine" element={<WebinarEnginePage />} />,
     <Route key="news-management" path="/products/enterprise/nms" element={<NewsMAnagement />} />,
     <Route key="hotel-management-system" path="/products/enterprise/hms-hotel" element={<HSMHotel />} />,
+    <Route key="sms" path="/products/enterprise/sms" element={<SMSLanding />} />,
+    <Route key="pms" path="/products/enterprise/pms" element={<PMSLanding />} />,
 
 ];
