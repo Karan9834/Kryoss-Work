@@ -81,6 +81,7 @@ import CorporateEventsPage from "../pages/products/EMS-Event-Mgmt/CorporateEvent
 import FestivalsConcertsPage from "../pages/products/EMS-Event-Mgmt/FestivalsConcerts/FestivalsConcertsPage";
 import FineDiningCasualPage from "../pages/products/RMS-Restaurant-Mgmt/FineDiningCasual/FineDiningCasualPage";
 import QsrFastCasualPage from "../pages/products/RMS-Restaurant-Mgmt/QsrFastCasual/QsrFastCasualPage";
+import IMSPager from "../pages/products/IMS/IMSPager";
 
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
@@ -170,5 +171,6 @@ export const ProductRoutes = [
     <Route key="webinar-engine" path="/products/prime/webinar-engine" element={<WebinarEnginePage />} />,
     <Route key="news-management" path="/products/enterprise/nms" element={<NewsMAnagement />} />,
     <Route key="hotel-management-system" path="/products/enterprise/hms-hotel" element={<HSMHotel />} />,
+    <Route key="ims" path="/products/enterprise/ims" element={<IMSPager />} />,
 
 ];

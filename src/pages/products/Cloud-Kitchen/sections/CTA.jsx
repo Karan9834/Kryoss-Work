@@ -8,7 +8,7 @@ const CTA = () => {
 
                 {/* Heading */}
                 <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                    Start Your Cloud Kitchen Platform Today
+                    Start Your  Platform Today
                 </h2>
 
                 {/* Description */}

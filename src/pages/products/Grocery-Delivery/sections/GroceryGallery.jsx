@@ -1,40 +1,45 @@
 import React from 'react';
-
+import ss1 from "../../../../assets/Grocery-Delivery/ss1.png"
+import ss2 from "../../../../assets/ss2.png"
+import ss3 from "../../../../assets/Grocery-Delivery/ss3.png"
+import ss4 from "../../../../assets/Grocery-Delivery/ss4.png"
+import ss5 from "../../../../assets/Grocery-Delivery/ss5.png"
+import ss6 from "../../../../assets/Grocery-Delivery/ss6.png"
 const GroceryGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      url: "https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600",
+      url: ss1,
       title: "Fresh Vegetables",
       category: "Organic"
     },
     {
       id: 2,
-      url: "https://images.pexels.com/photos/5946600/pexels-photo-5946600.jpeg?auto=compress&cs=tinysrgb&w=600",
+      url: ss2,
       title: "Ripe Fruits",
       category: "Seasonal"
     },
     {
       id: 3,
-      url: "https://images.pexels.com/photos/4498166/pexels-photo-4498166.jpeg?auto=compress&cs=tinysrgb&w=600",
+      url: ss3,
       title: "Dairy Products",
       category: "Fresh"
     },
     {
       id: 4,
-      url: "https://images.pexels.com/photos/5946601/pexels-photo-5946601.jpeg?auto=compress&cs=tinysrgb&w=600",
+      url: ss4,
       title: "Organic Grains",
       category: "Healthy"
     },
     {
       id: 5,
-      url: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=600",
+      url: ss5,
       title: "Fresh Bakery",
       category: "Daily"
     },
     {
       id: 6,
-      url: "https://images.pexels.com/photos/5946605/pexels-photo-5946605.jpeg?auto=compress&cs=tinysrgb&w=600",
+      url: ss6,
       title: "Premium Meats",
       category: "Fresh"
     }
@@ -68,7 +73,7 @@ const GroceryGallery = () => {
                 <img
                   src={image.url}
                   alt={image.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-fit group-hover:scale-110 transition-transform duration-700"
                   loading="lazy"
                 />
               </div>

@@ -23,12 +23,12 @@ const About = () => {
 
                         {/* Badge */}
                         <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 text-sm px-4 py-2 rounded-full w-fit">
-                            ● About CloudKitchen App
+                            ● About FoodHat App
                         </div>
 
                         {/* Heading */}
                         <h2 className="text-3xl md:text-4xl font-bold leading-snug text-gray-900">
-                            What is a <span className="text-blue-600">Cloud Kitchen POS?</span>
+                            What is a <span className="text-blue-600">FoodHat?</span>
                         </h2>
 
                         {/* Paragraph */}

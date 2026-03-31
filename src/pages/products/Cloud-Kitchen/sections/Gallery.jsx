@@ -1,10 +1,10 @@
 import React from "react";
-import gallery1 from "@/assets/cloud-kitchen-img/gallery1.jpeg";
-import gallery2 from "@/assets/cloud-kitchen-img/gallery2.jpeg";
-import gallery3 from "@/assets/cloud-kitchen-img/gallery3.jpeg";
-import gallery4 from "@/assets/cloud-kitchen-img/gallery4.jpeg";
-import gallery5 from "@/assets/cloud-kitchen-img/gallery5.jpeg";
-import gallery6 from "@/assets/cloud-kitchen-img/gallery6.jpeg";
+import gallery1 from "../../../../assets/Food-Delivery_product/ss1.png";
+import gallery2 from "../../../../assets/Food-Delivery_product/ss2.png";
+import gallery3 from "../../../../assets/Food-Delivery_product/ss3.png";
+import gallery4 from "../../../../assets/Food-Delivery_product/ss4.png";
+import gallery5 from "../../../../assets/Food-Delivery_product/ss5.png";
+import gallery6 from "../../../../assets/Food-Delivery_product/ss6.png";
 
 const Gallery = () => {
 
@@ -52,7 +52,7 @@ const Gallery = () => {
                             <img
                                 src={img}
                                 alt="Carpool App Screenshot"
-                                className="w-full h-[260px] object-cover transform group-hover:scale-110 transition duration-500"
+                                className="w-full h-[260px] object-fit transform group-hover:scale-110 transition duration-500"
                             />
 
                         </div>
