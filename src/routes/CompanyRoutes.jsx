@@ -3,7 +3,6 @@ import { Route } from 'react-router-dom';
 import AboutPage from '../pages/company/About';
 import ContactPage from '../pages/company/Contact';
 import TestimonialPage from '../pages/company/Testimonial';
-import HealthcareSolution from '../pages/solutions/Healthcare';
 import LifeAtKryossWorkPage from '../pages/company/LifeArKryossWork';
 import TeamPage from '../pages/company/Team';
 import PoliciesPage from '../pages/company/Policies';
@@ -19,7 +18,6 @@ export const CompanyRoutes = [
 
          <Route key="company-sitemap" path="company/sitemap" element={<SiteMapPage />} />,
          <Route key="company-policies" path="company/policies" element={<PoliciesPage />} />,
-    <Route key="solutions-healthcare" path="solutions/healthcare" element={<HealthcareSolution />} />,
     // Add other company/solution routes here
     <Route key="company-career" path="company/careers" element={<CareerPage />} />
 ];

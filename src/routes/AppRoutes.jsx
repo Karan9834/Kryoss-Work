@@ -7,6 +7,7 @@ import { ProductRoutes } from './ProductRoutes';
 import { CompanyRoutes } from './CompanyRoutes';
 import { GojekRoutes } from './GojekRoutes';
 import { ServiceRoutes } from './ServiceRoutes';
+import { SolutionRoutes } from './SolutionRoutes';
 import Blog from "../pages/Blog";
 import Products from "../pages/Works/Products";
 import ServicesPage from '../components/home/ServicePage';
@@ -100,6 +101,7 @@ const AppRoutes = () => {
                 {ProductRoutes}
                 {CompanyRoutes}
                 {ServiceRoutes}
+                {SolutionRoutes}
 
                 {/* Works Routes */}
                 <Route path="/works/real-estate" element={<RealEstateWorks />} />
