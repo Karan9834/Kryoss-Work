@@ -1,17 +1,12 @@
+// ProductsSection.jsx
 import React from "react";
 import { Sparkles } from "lucide-react";
-import { useNavigate } from "react-router-dom"; // For React Router
-// OR for Next.js:
-// import { useRouter } from "next/router";
+import { useNavigate } from "react-router-dom";
 import prod1 from "../../assets/News-Management/prod1.jpg";
 import prod2 from "../../assets/News-Management/prod2.jpg";
 
 const ProductsSection = () => {
-  // For React Router
   const navigate = useNavigate();
-  
-  // OR for Next.js:
-  // const router = useRouter();
 
   const products = [
     {
@@ -30,26 +25,17 @@ const ProductsSection = () => {
     },
   ];
 
-  // Proper navigation function
   const handleProductClick = (route) => {
-    // For React Router:
     navigate(route);
-    
-    // OR for Next.js:
-    // router.push(route);
-    
-    // Optional: Add analytics tracking
     console.log(`Navigating to product: ${route}`);
   };
 
   return (
     <section className="relative w-full overflow-hidden bg-white">
-      
       {/* Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#f9731608_1px,transparent_1px),linear-gradient(to_bottom,#f9731608_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32 z-10">
-
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-100 rounded-full px-4 py-2 mb-6">
@@ -73,10 +59,8 @@ const ProductsSection = () => {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-
           {products.map((product) => (
             <div key={product.id} className="text-center">
-
               {/* CLICKABLE IMAGE */}
               <div
                 onClick={() => handleProductClick(product.route)}
@@ -105,10 +89,8 @@ const ProductsSection = () => {
                   - {product.description}
                 </span>
               </p>
-
             </div>
           ))}
-
         </div>
 
         {/* Bottom Text */}

@@ -1,118 +1,92 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Star } from 'lucide-react';
-import card1Img from '../../assets/ottlanding-img/ottlandingcard1.png';
-import card2Img from '../../assets/ottlanding-img/ottlandingcard2.png';
-const OTTCardSection = ({ isLight = false }) => {
-   const cards = [
-      {
-         title: "OTT Streaming App",
-         image: card1Img, // Placeholder for image
-         path: "/products/social/video-app",
-         features: [
-            "White-label iOS & Android",
-            "Smart TV & Web Support",
-            "Advanced Video Player",
-            "Offline Viewing Mode",
-            "Personalized Profiles",
-            "Direct Monetization"
-         ],
-      },
-      {
-         title: "Video Streaming Backend",
-         image: card2Img, // Placeholder for image
-         path: "/products/our/streaming-solution",
-         features: [
-            "Powerful Media CMS",
-            "Auto Transcoding Engine",
-            "Analytics Dashboard",
-            "DRM & Piracy Control",
-            "Multi-Tenant Support",
-            "Integrated Ad Server"
-         ],
-      }
-   ];
+import React from "react";
+import { Link } from "react-router-dom";
+import { Sparkles } from "lucide-react";
+import card1Img from "../../assets/OTT-Product/prod1.png";
+import card2Img from "../../assets/OTT-Product/prod2.avif";
 
-   const textColor = isLight ? "text-[#1A1C2C]" : "text-white";
-   const subTextColor = "text-gray-500";
-   const sectionBg = isLight ? "bg-transparent" : "bg-[#0A0A0B]";
-   const cardBg = isLight ? "bg-white" : "bg-white/5";
-   const cardBorder = isLight ? "border-gray-100" : "border-white/5";
-   const accentColor = "text-red-600";
-   const accentBg = "bg-red-600";
+const OTTCardSection = () => {
+  const cards = [
+    {
+      title: "StreamIt Video App",
+      image: card1Img,
+      path: "/products/social/video-app",
+      description:
+        "White-label apps with Smart TV support, offline viewing, and personalized user experience.",
+    },
+    {
+      title: "StreamIt Streaming Backend",
+      image: card2Img,
+      path: "/products/our/streaming-solution",
+      description:
+        "Powerful CMS, auto transcoding, analytics, DRM protection, and scalable backend system.",
+    },
+  ];
 
-   return (
-      <section id="ott-products" className={`py-16 ${sectionBg}`}>
-         <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16 space-y-4">
-               <div className="flex items-center justify-center gap-2 mb-4">
-                  <div className={`w-8 h-px ${isLight ? 'bg-red-200' : 'bg-red-900'}`}></div>
-                  <span className={`${accentColor} font-semibold text-sm tracking-wider uppercase`}>
-                     Our Products
-                  </span>
-                  <div className={`w-8 h-px ${isLight ? 'bg-red-200' : 'bg-red-900'}`}></div>
-               </div>
-               <h2 className={`text-2xl lg:text-3xl font-semibold ${textColor}`}>
-                  Our Premium <span className={accentColor}>Streaming Solutions</span>
-               </h2>
-               <p className={`${subTextColor} text-lg max-w-2xl mx-auto`}>
-                  Pick the ideal platform to transform your video business into a
-                  modern, efficient digital experience.
-               </p>
+  return (
+    <section className="relative w-full overflow-hidden bg-white py-24">
+      
+      {/* Background */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ef444408_1px,transparent_1px),linear-gradient(to_bottom,#ef444408_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 z-10">
+        
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 bg-red-50 border border-red-100 rounded-full px-4 py-2 mb-6">
+            <Sparkles size={16} className="text-red-600" />
+            <span className="text-sm font-semibold text-red-700 tracking-wide">
+              Our Products
+            </span>
+          </div>
+
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            Streaming Solutions{" "}
+            <span className="bg-gradient-to-r from-red-600 to-pink-600 text-transparent bg-clip-text">
+              Made Simple
+            </span>
+          </h2>
+
+          <p className="mt-6 text-lg text-gray-600">
+            Build and scale your OTT platform with powerful streaming solutions.
+          </p>
+        </div>
+
+        {/* SAME GRID STYLE */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+          {cards.map((card, index) => (
+            <div key={index} className="text-center">
+              
+              {/* Clickable Image */}
+              <Link to={card.path} className="cursor-pointer group">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="w-full rounded-lg border-[6px] border-red-500 shadow-md transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl"
+                />
+              </Link>
+
+              {/* Text Below */}
+              <p className="mt-4 text-sm md:text-base">
+                <span className="text-red-600 font-semibold">
+                  {card.title}
+                </span>{" "}
+                <span className="text-gray-700">
+                  - {card.description}
+                </span>
+              </p>
             </div>
+          ))}
+        </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
-               {cards.map((card, index) => (
-                  <Link
-                     to={card.path}
-                     key={index}
-                     className={`group relative flex flex-col items-center text-center p-2 rounded-[40px] border-2 ${cardBorder} transition-all duration-500 hover:scale-[1.02] ${cardBg} shadow-xl hover:border-red-500/20`}
-                  >
-                     {/* Image Section */}
-                     <div className={`w-full  ${isLight ? 'bg-gray-50' : 'bg-white/5'} rounded-[36px] overflow-hidden relative mb-6 flex items-center justify-center`}>
-                        {card.image ? (
-                           <img
-                              src={card.image}
-                              alt={card.title}
-                              className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-700"
-                           />
-                        ) : (
-                           <div className={`${isLight ? 'text-gray-200' : 'text-white/5'} group-hover:scale-110 transition-transform duration-700`}>
-                              <Star size={150} fill="currentColor" />
-                           </div>
-                        )}
-                        <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent pointer-events-none"></div>
-                     </div>
-
-                     {/* Content Section */}
-                     <div className="w-full px-8 pb-10 space-y-8">
-                        <div className="space-y-2">
-                           <h3 className={`text-xl font-semibold ${textColor} group-hover:${accentColor} transition-colors`}>{card.title}</h3>
-                           <div className={`h-1 w-20 ${accentBg} mx-auto rounded-full`}></div>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-left">
-                           {card.features.map((feature, i) => (
-                              <div key={i} className="flex items-center gap-2">
-                                 <div className={`w-1.5 h-1.5 ${accentBg} rounded-full`}></div>
-                                 <span className={`text-sm font-bold ${isLight ? 'text-gray-700' : 'text-gray-400'}`}>{feature}</span>
-                              </div>
-                           ))}
-                        </div>
-                     </div>
-                  </Link>
-               ))}
-            </div>
-
-            {/* Bottom note */}
-            <div className="text-center mt-16">
-               <p className="text-sm text-gray-400 font-medium">
-                  ✦ More streaming products coming soon ✦
-               </p>
-            </div>
-         </div>
-      </section>
-   );
+        {/* Bottom */}
+        <div className="mt-16 text-center">
+          <p className="text-gray-400 text-sm">
+            Click on any product to explore more
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default OTTCardSection;

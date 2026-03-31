@@ -100,12 +100,11 @@ const Features = () => {
                 {/* Heading */}
                 <h2 className="text-center text-4xl font-bold text-gray-800">
                     Powerful Features That Make Your{" "}
-                    <span className="text-blue-600">Cloud Kitchen POS System</span> Stand Out
+                    <span className="text-blue-600">FoodHat</span> Stand Out
                 </h2>
 
                 <p className="text-center text-gray-600 max-w-3xl mx-auto mt-4">
-                    From seamless order aggregation to advanced analytics, our Cloud
-                    Kitchen POS system provides all the tools you need to manage
+                    From seamless order aggregation to advanced analytics,  FoodHat POS system provides all the tools you need to manage
                     delivery-only restaurants efficiently and scale your food
                     business with ease.
                 </p>

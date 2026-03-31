@@ -19,7 +19,7 @@ const Hero = () => {
 
                         {/* Heading */}
                         <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight">
-                            Cloud Kitchen POS
+                            FoodHat
                         </h1>
 
                         {/* Description */}

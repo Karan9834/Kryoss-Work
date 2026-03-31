@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckCircle, Sparkles, ArrowRight, Zap, Shield, Globe } from "lucide-react";
+import { CheckCircle, Sparkles, ArrowRight, Zap, Shield, Globe, Users } from "lucide-react";
 
 const AboutUs = () => {
   return (

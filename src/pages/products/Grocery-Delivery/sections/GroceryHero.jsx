@@ -43,7 +43,7 @@ const GroceryHero = () => {
 
             {/* Heading */}
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Fresh Groceries
+              Ready Grocery
               <span className="block text-green-600 mt-2">
                 Delivered in Minutes
               </span>

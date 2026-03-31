@@ -86,7 +86,11 @@ import Mars from '../pages/products/Mars/Mars';
 import TimeStay from '../pages/products/TimeStay/TimeStay';
 import Nouva from '../pages/products/Nuova/Nouva';
 import Essential from '../pages/products/Essential/Essential';
-
+import Posly from '../pages/products/Posly/Posly';
+import WholeSale from '../pages/products/WholeSale/WholeSale';
+import FoodBite from '../pages/products/FoodBite/FoodBite';
+import Snapcart from '../pages/products/Snapcart/Snapcart';
+import Omni from '../pages/products/Omni/Omni';
 
 const AppRoutes = () => {
     return (
@@ -208,6 +212,11 @@ const AppRoutes = () => {
 <Route path="/products/TimeStay" element={<TimeStay />} />
 <Route path='/products/nuova' element={<Nouva />} />
 <Route path='/products/essential-plugins' element={<Essential />} />
+<Route path='/products/posly' element={<Posly />} />
+<Route path='/products/wholesale' element={<WholeSale />} />
+<Route path='/products/coming-soon' element={<FoodBite />} />
+<Route path='/products/snapcart' element={<Snapcart />} />
+<Route path='/products/omnicart' element={<Omni />} />
                 {/* 404 */}
 
                 <Route path="*" element={<NotFound />} />

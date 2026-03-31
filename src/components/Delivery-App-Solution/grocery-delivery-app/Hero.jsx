@@ -44,8 +44,8 @@ const Hero = () => {
             </div>
 
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Grocery Delivery App <br />
-              <span className="text-[#10B981]">Development Solutions</span>
+              DTBasket App<br />
+  
             </h1>
 
             <p className="text-lg text-gray-600 max-w-xl leading-relaxed">

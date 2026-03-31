@@ -83,6 +83,7 @@ import CorporateEventsPage from "../pages/products/EMS-Event-Mgmt/CorporateEvent
 import FestivalsConcertsPage from "../pages/products/EMS-Event-Mgmt/FestivalsConcerts/FestivalsConcertsPage";
 import FineDiningCasualPage from "../pages/products/RMS-Restaurant-Mgmt/FineDiningCasual/FineDiningCasualPage";
 import QsrFastCasualPage from "../pages/products/RMS-Restaurant-Mgmt/QsrFastCasual/QsrFastCasualPage";
+import IMSPager from "../pages/products/IMS/IMSPager";
 
 import InilabsPage from "../pages/products/SMS-School-Mgmt/Inilabs/InilabsPage";
 import GlobalPage from "../pages/products/SMS-School-Mgmt/Global/GlobalPage";
@@ -182,7 +183,8 @@ export const ProductRoutes = [
     <Route key="webinar-engine" path="/products/prime/webinar-engine" element={<WebinarEnginePage />} />,
     <Route key="news-management" path="/products/enterprise/nms" element={<NewsMAnagement />} />,
     <Route key="hotel-management-system" path="/products/enterprise/hms-hotel" element={<HSMHotel />} />,
-    <Route key="sms" path="/products/enterprise/sms" element={<SMSLanding />} />,
-    <Route key="pms" path="/products/enterprise/pms" element={<PMSLanding />} />,
+<Route key="ims" path="/products/enterprise/ims" element={<IMSPager />} />,
+<Route key="sms" path="/products/enterprise/sms" element={<SMSLanding />} />,
+<Route key="pms" path="/products/enterprise/pms" element={<PMSLanding />} />,
 
 ];
