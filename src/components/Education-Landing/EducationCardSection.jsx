@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import card1Img from '../../assets/educationlanding-img/educationlandingcard1.png';
-import card2Img from '../../assets/educationlanding-img/educationlandingcard2.png';
+import card1Img from '@/assets/educationlanding-img/educationlandingcard1.jpg';
+import card2Img from '@/assets/educationlanding-img/educationlandingcard2.jpg';
 
 const EducationCardSection = () => {
    const cards = [
       {
-         title: "Tutor Booking App",
+         title: "Bookingo: Tutor Booking App",
          image: card1Img,
          path: "/products/home-service/tutor",
          features: [
@@ -20,7 +20,7 @@ const EducationCardSection = () => {
          ],
       },
       {
-         title: "Tutor Booking Platform",
+         title: "Academy: Tutor Booking Platform",
          image: card2Img,
          path: "/products/tutor-booking",
          features: [
@@ -66,7 +66,7 @@ const EducationCardSection = () => {
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700"
+                           className="w-full h-full object-contain"
                         />
                         <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent pointer-events-none"></div>
                      </div>

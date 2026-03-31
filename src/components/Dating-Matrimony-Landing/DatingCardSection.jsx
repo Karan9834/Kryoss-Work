@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Users, Sparkles, ShieldCheck, MessageCircle, Video } from 'lucide-react';
-import cardImg1 from '../../assets/datinglanding-img/datinglandingcard1.png';
-import cardImg2 from '../../assets/datinglanding-img/datinglandingcard2.png';
+import cardImg1 from '../../assets/datinglanding-img/datinglandingcard1.jpg';
+import cardImg2 from '../../assets/datinglanding-img/datinglandingcard2.jpg';
 
 const DatingCardSection = () => {
    const cards = [
       {
-         title: "Premium Dating App",
+         title: "DatingKit: Premium Dating App",
          desc: "A modern, high-engagement dating platform with AI-matching and secure social features.",
          path: "/products/social/dating-app",
          image: cardImg1,
@@ -72,14 +72,14 @@ const DatingCardSection = () => {
                   >
                      {/* Image Section */}
                      <div className={`w-full  ${card.bgColor} rounded-[36px] overflow-hidden relative mb-6`}>
-                        <img src={card.image} alt={card.title} className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700" />
+                        <img src={card.image} alt={card.title} className="w-full h-auto object-contain " />
                         <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent pointer-events-none"></div>
                      </div>
 
                      {/* Content Section */}
                      <div className="w-full px-8 pb-10 space-y-8">
                         <div className="space-y-2">
-                           <h3 className="text-xl font-bold text-slate-900 group-hover:text-rose-600 transition-colors uppercase tracking-tight">{card.title}</h3>
+                           <h3 className="text-xl font-bold text-slate-900 group-hover:text-rose-600 transition-colors  tracking-tight">{card.title}</h3>
                            <div className={`h-1 w-20 ${card.bgColor.replace('bg-', 'bg-').replace('50', '500')} mx-auto rounded-full`}></div>
                         </div>
 
