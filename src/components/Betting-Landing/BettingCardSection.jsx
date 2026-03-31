@@ -1,20 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Play, ShieldCheck, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const BettingCardSection = () => {
     const products = [
         {
-            title: "GoBet",
-            subtitle: "All-in-One Sports Betting App",
-            desc: "GoBet is a comprehensive sports betting solution offering a wide range of sports markets, real-time odds, and a seamless user experience. Designed for high volume and global reach.",
-            image: "https://images.unsplash.com/photo-1518133835878-5a93cc3f89e5?w=600&auto=format&fit=crop&q=60"
+            title: "BetLab",
+            subtitle: "Sports Betting Platform",
+            desc: "BetLab is a comprehensive sports betting solution offering a wide range of sports markets, real-time odds, and a seamless user experience. Designed for high volume and global reach.",
+            image: "/Products/BetLab.avif",
+            link: "/products/betlab"
         },
         {
-            title: "BetPro",
-            subtitle: "Exchange & Multi-Market Betting",
-            desc: "BetPro is a next-generation betting exchange platform that allows users to bet against each other. With its liquid markets, low latency, and robust settlement engine.",
-            image: "https://images.unsplash.com/photo-1541344999736-83eca872f241?w=600&auto=format&fit=crop&q=60"
+            title: "BetYourDuck",
+            subtitle: "All-in-One Sports Betting App",
+            desc: "BetYourDuck is a next-generation betting exchange platform that allows users to bet against each other. With its liquid markets, low latency, and robust settlement engine.",
+            image: "/Products/Duck.avif",
+            link: "/products/bet-your-duck"
         }
     ];
 
@@ -37,10 +40,10 @@ const BettingCardSection = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:px-12">
                     {products.map((product, i) => (
-                        <motion.div 
+                        <motion.div
                             key={i}
-                            initial={{ opacity: 0, y: 30 }} 
-                            whileInView={{ opacity: 1, y: 0 }} 
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             className="group relative flex flex-col items-center text-center p-4 rounded-[40px] border-2 border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-white shadow-xl hover:border-emerald-100"
                         >
@@ -63,11 +66,13 @@ const BettingCardSection = () => {
                                 <p className="text-slate-600 text-base leading-relaxed mb-8 line-clamp-3">
                                     "{product.desc}"
                                 </p>
-                                
+
                                 <div className="flex justify-center mt-auto">
-                                    <button className="flex items-center px-10 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 group/btn">
-                                        View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                                    </button>
+                                    <Link to={product.link}>
+                                        <button className="flex items-center px-10 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 group/btn">
+                                            View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </motion.div>

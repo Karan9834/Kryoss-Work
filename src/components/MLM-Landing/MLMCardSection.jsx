@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Play, ShieldCheck, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const MLMCardSection = () => {
     const products = [
@@ -8,13 +9,15 @@ const MLMCardSection = () => {
             title: "Hyip InvestPro",
             subtitle: "Premium Investment Platform",
             desc: "Hyip InvestPro is a professional, high-yield investment management system designed for scalability and security. It offers automated profit distribution, multi-currency support, and a comprehensive user dashboard.",
-            image: "https://images.unsplash.com/photo-1621416894522-d28236bd2ecf?w=600&auto=format&fit=crop&q=60"
+            image: "/Products/Hyip Pro.png",
+            link: "/products/hyip-investpro"
         },
         {
-            title: "MLMPro",
+            title: "revPTC",
             subtitle: "Enterprise MLM Solution",
-            desc: "MLMPro is an advanced multi-level marketing software suite that supports complex matrix, binary, and unilevel plans. Built on a secure architecture, it provides automated commission settlements and real-time genealogy tracking.",
-            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&auto=format&fit=crop&q=60"
+            desc: "revPTC is an advanced multi-level marketing software suite that supports complex matrix, binary, and unilevel plans. Built on a secure architecture, it provides automated commission settlements and real-time genealogy tracking.",
+            image: "/Products/RevPTC.avif",
+            link: "/products/revptc"
         }
     ];
 
@@ -37,10 +40,10 @@ const MLMCardSection = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:px-12">
                     {products.map((product, i) => (
-                        <motion.div 
+                        <motion.div
                             key={i}
-                            initial={{ opacity: 0, y: 30 }} 
-                            whileInView={{ opacity: 1, y: 0 }} 
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             className="group relative flex flex-col items-center text-center p-4 rounded-[40px] border-2 border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-white shadow-xl hover:border-blue-100"
                         >
@@ -63,11 +66,13 @@ const MLMCardSection = () => {
                                 <p className="text-slate-600 text-base leading-relaxed mb-8 line-clamp-3">
                                     "{product.desc}"
                                 </p>
-                                
+
                                 <div className="flex justify-center mt-auto">
-                                    <button className="flex items-center px-10 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-xl shadow-lg hover:shadow-blue-500/30 transition-all duration-300 group/btn">
-                                        View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                                    </button>
+                                    <Link to={product.link}>
+                                        <button className="flex items-center px-10 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-xl shadow-lg hover:shadow-blue-500/30 transition-all duration-300 group/btn">
+                                            View Details <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </motion.div>

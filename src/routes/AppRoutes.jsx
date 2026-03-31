@@ -86,11 +86,19 @@ import Mars from '../pages/products/Mars/Mars';
 import TimeStay from '../pages/products/TimeStay/TimeStay';
 import Nouva from '../pages/products/Nuova/Nouva';
 import Essential from '../pages/products/Essential/Essential';
+<<<<<<< Updated upstream
 import Posly from '../pages/products/Posly/Posly';
 import WholeSale from '../pages/products/WholeSale/WholeSale';
 import FoodBite from '../pages/products/FoodBite/FoodBite';
 import Snapcart from '../pages/products/Snapcart/Snapcart';
 import Omni from '../pages/products/Omni/Omni';
+=======
+
+import BetLabPage from '../pages/products/BetLab/BetLabPage';
+import BetYourDuckPage from '../pages/products/BetYourDuck/BetYourDuckPage';
+import HyipInvestProPage from '../pages/products/HyipInvestPro/HyipInvestProPage';
+import RevPTCPage from '../pages/products/RevPTC/RevPTCPage';
+>>>>>>> Stashed changes
 
 const AppRoutes = () => {
     return (
@@ -205,7 +213,11 @@ const AppRoutes = () => {
 <Route path="/products/smart-nft" element={<SmartNftPage />} />
 <Route path="/products/enefti" element={<EneftiProductsPage />} />
 <Route path="/products/betting-platform" element={<BettingApps />} />
+<Route path="/products/betlab" element={<BetLabPage />} />
+<Route path="/products/bet-your-duck" element={<BetYourDuckPage />} />
 <Route path="/products/mlm-software" element={<MLMProducts />} />
+<Route path="/products/hyip-investpro" element={<HyipInvestProPage />} />
+<Route path="/products/revptc" element={<RevPTCPage />} />
 
 {/* From your branch */}
 <Route path="/products/mars" element={<Mars />} />
