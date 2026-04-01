@@ -2,6 +2,9 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 
 const JobCTA = () => {
+  const handleViewDemo = () => {
+    window.open("https://preview.codecanyon.net/item/job-portal-platform-a-complete-job-portal-website/full_screen_preview/21916934", "_blank");
+  };
   return (
     <section className="relative bg-[#0A0A0A] py-24 px-6 text-white text-center overflow-hidden">
 
@@ -26,7 +29,9 @@ const JobCTA = () => {
 
         {/* CTA */}
         <div className="mt-10 flex justify-center">
-          <button className="group bg-gradient-to-r from-green-500 to-emerald-600 px-10 py-4 rounded-xl font-semibold flex items-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-green-500/20">
+          <button
+            onClick={handleViewDemo}
+            className="group bg-gradient-to-r from-green-500 to-emerald-600 px-10 py-4 rounded-xl font-semibold flex items-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-green-500/20">
             🚀 Live Demo
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
           </button>

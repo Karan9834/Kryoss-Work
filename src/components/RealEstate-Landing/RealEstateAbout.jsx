@@ -43,9 +43,29 @@ const RealEstateAbout = () => {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
+                    {/* Left: Image + Metrics */}
+                    <div className="space-y-8 animate-fadeInRight order-2 lg:order-1">
+                        {/* Image Placeholder */}
+                        <div className="relative group">
+                            <div className="absolute -inset-6 bg-gradient-to-br from-emerald-100 to-amber-100 rounded-[50px] blur-2xl opacity-60 group-hover:opacity-90 transition-all duration-700 pointer-events-none"></div>
+                            <div className="relative z-10 rounded-[40px] border-4 border-white shadow-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-emerald-100 via-teal-50 to-amber-100 flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-700">
+                                <img src={aboutImg} alt="About Real Estate" className="w-full h-full object-cover" />
+                            </div>
+                        </div>
 
-                    {/* Left: Content */}
-                    <div className="space-y-8 animate-fadeInLeft order-1">
+                        {/* Metrics Row */}
+                        <div className="grid grid-cols-3 gap-4">
+                            {metrics.map((m, i) => (
+                                <div key={i} className="bg-gray-50 rounded-2xl p-4 text-center border border-gray-100 hover:shadow-sm transition-all">
+                                    <m.icon size={20} className={`${m.color} mx-auto mb-2`} />
+                                    <p className={`text-xl font-black ${m.color}`}>{m.value}</p>
+                                    <p className="text-gray-500 text-xs font-semibold mt-1">{m.label}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    {/* Right: Content */}
+                    <div className="space-y-8 animate-fadeInLeft order-1 lg:order-2">
                         <div className="space-y-3">
                             <span className="text-amber-600 font-bold text-sm uppercase tracking-[0.3em] block">Transforming Real Estate</span>
                             <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E293B] leading-tight">
@@ -77,27 +97,7 @@ const RealEstateAbout = () => {
                         </button>
                     </div>
 
-                    {/* Right: Image + Metrics */}
-                    <div className="space-y-8 animate-fadeInRight order-2">
-                        {/* Image Placeholder */}
-                        <div className="relative group">
-                            <div className="absolute -inset-6 bg-gradient-to-br from-emerald-100 to-amber-100 rounded-[50px] blur-2xl opacity-60 group-hover:opacity-90 transition-all duration-700 pointer-events-none"></div>
-                            <div className="relative z-10 rounded-[40px] border-4 border-white shadow-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-emerald-100 via-teal-50 to-amber-100 flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-700">
-                                <img src={aboutImg} alt="About Real Estate" className="w-full h-full object-cover" />
-                            </div>
-                        </div>
 
-                        {/* Metrics Row */}
-                        <div className="grid grid-cols-3 gap-4">
-                            {metrics.map((m, i) => (
-                                <div key={i} className="bg-gray-50 rounded-2xl p-4 text-center border border-gray-100 hover:shadow-sm transition-all">
-                                    <m.icon size={20} className={`${m.color} mx-auto mb-2`} />
-                                    <p className={`text-xl font-black ${m.color}`}>{m.value}</p>
-                                    <p className="text-gray-500 text-xs font-semibold mt-1">{m.label}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
                 </div>
             </div>
 

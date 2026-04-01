@@ -100,7 +100,7 @@ const Features = () => {
                 {/* Heading */}
                 <h2 className="text-center text-4xl font-bold text-gray-800">
                     Powerful Features That Make Your{" "}
-                    <span className="text-blue-600">Real Estate CRM</span> Stand Out
+                    <span className="text-blue-600">Real Estate Agency</span> Stand Out
                 </h2>
 
                 <p className="text-center text-gray-600 max-w-3xl mx-auto mt-4">
@@ -117,22 +117,20 @@ const Features = () => {
 
                         <button
                             onClick={() => setTab("support")}
-                            className={`px-6 py-2 rounded-full flex items-center gap-2 text-sm font-medium transition ${
-                                tab === "support"
+                            className={`px-6 py-2 rounded-full flex items-center gap-2 text-sm font-medium transition ${tab === "support"
                                     ? "bg-white text-blue-900"
                                     : "text-white"
-                            }`}
+                                }`}
                         >
                             🤖 Support Automation
                         </button>
 
                         <button
                             onClick={() => setTab("management")}
-                            className={`px-6 py-2 rounded-full flex items-center gap-2 text-sm font-medium transition ${
-                                tab === "management"
+                            className={`px-6 py-2 rounded-full flex items-center gap-2 text-sm font-medium transition ${tab === "management"
                                     ? "bg-white text-blue-900"
                                     : "text-white"
-                            }`}
+                                }`}
                         >
                             📊 Support Management
                         </button>

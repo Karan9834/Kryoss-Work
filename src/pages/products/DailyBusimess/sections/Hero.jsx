@@ -4,12 +4,12 @@ import { ArrowRight, Globe, TrendingUp, Shield } from "lucide-react";
 
 const Hero = () => {
   const handleLiveDemo = () => {
-    window.open("http://preview.codecanyon.net/item/modern-news-ticker/full_screen_preview/2347950", "_blank");
+    window.open("https://preview.codecanyon.net/item/elespare-pro-advanced-news-magazine-blog-addons-for-elementor/full_screen_preview/32950672", "_blank");
   };
 
   return (
     <section className="relative bg-[#050505] px-6 md:px-16 py-16 md:py-20 overflow-hidden">
-      
+
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-green-500/10 rounded-full blur-3xl"></div>
@@ -47,7 +47,7 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-3">
-            <button 
+            <button
               onClick={handleLiveDemo}
               className="group flex items-center gap-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-2.5 rounded-lg font-medium hover:scale-105 transition"
             >

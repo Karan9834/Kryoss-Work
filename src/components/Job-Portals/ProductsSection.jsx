@@ -9,19 +9,15 @@ const ProductsSection = () => {
     {
       id: "job-board",
       image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      title: "Job Board Platform",
+      title: "Job Portal Platform",
       description: "Connect with top employers and find your dream job with our advanced matching algorithm.",
-      features: ["10,000+ Jobs", "500+ Companies", "AI Matching"],
-      buttonText: "View Details",
       route: "/products/job-board",
     },
     {
       id: "recruitment-ats",
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      title: "Recruitment ATS",
+      title: "AgentHr Recruitment ATS",
       description: "Streamline your hiring process with our powerful applicant tracking system for employers.",
-      features: ["Smart Screening", "Interview Tools", "Analytics"],
-      buttonText: "View Details",
       route: "/products/recruitment-ats",
     },
   ];
@@ -32,7 +28,7 @@ const ProductsSection = () => {
 
   return (
     <section className="relative bg-white py-20 px-6 overflow-hidden">
-      
+
       {/* ===== Blue Waves at Top ===== */}
       <div className="absolute top-0 left-0 w-full">
         <svg viewBox="0 0 1440 120" className="w-full">
@@ -51,21 +47,21 @@ const ProductsSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* ===== HEADER SECTION ===== */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-4 border border-blue-200">
             <Sparkles className="w-4 h-4 text-blue-600" />
             <span className="text-blue-700 font-semibold text-sm">Our Products</span>
           </div>
-          
+
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
             Solutions for{" "}
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
               Job Seekers & Employers
             </span>
           </h2>
-          
+
           <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
             Powerful tools designed to help you succeed in your career journey.
           </p>
@@ -73,7 +69,7 @@ const ProductsSection = () => {
 
         {/* ===== CATEGORY BUTTON (Single) ===== */}
         <div className="flex justify-center mb-12">
-          <button 
+          <button
             onClick={() => navigate("/products")}
             className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
           >
@@ -82,61 +78,35 @@ const ProductsSection = () => {
         </div>
 
         {/* ===== PRODUCT CARDS GRID ===== */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {products.map((product, index) => (
-            <div
-              key={index}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100"
-            >
-              {/* Image */}
-              <div 
-                className="relative h-56 overflow-hidden cursor-pointer"
+            <div key={index} className="text-center">
+              {/* CLICKABLE IMAGE */}
+              <div
                 onClick={() => handleNavigate(product.route)}
+                className="cursor-pointer group block"
+                role="button"
+                tabIndex={0}
               >
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full rounded-xl border-[5px] border-transparent hover:border-blue-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
                 />
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-gray-800">
-                  Featured
-                </div>
               </div>
 
-              {/* Content */}
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  {product.title}
-                </h3>
-                
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  {product.description}
-                </p>
-
-                {/* Features Tags */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {product.features.map((feature, idx) => (
-                    <span
-                      key={idx}
-                      className="text-xs px-3 py-1 bg-gray-100 text-gray-600 rounded-full"
-                    >
-                      {feature}
-                    </span>
-                  ))}
-                </div>
-
-                {/* View Details Button */}
-                <button 
+              {/* TITLE AND DESCRIPTION */}
+              <p className="mt-4 text-sm md:text-base">
+                <span
                   onClick={() => handleNavigate(product.route)}
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all group-hover:gap-3"
+                  className="text-blue-600 font-semibold hover:underline cursor-pointer"
+                  role="button"
+                  tabIndex={0}
                 >
-                  {product.buttonText}
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
+                  {product.title}
+                </span>{" "}
+                <span className="text-gray-700">- {product.description}</span>
+              </p>
             </div>
           ))}
         </div>

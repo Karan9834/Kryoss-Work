@@ -1,9 +1,9 @@
 // src/pages/products/Apex-ERP/section/Gallery.jsx
 import React, { useState } from "react";
-import { 
-  X, 
-  ZoomIn, 
-  ChevronLeft, 
+import {
+  X,
+  ZoomIn,
+  ChevronLeft,
   ChevronRight,
   Sparkles,
   Image,
@@ -82,18 +82,18 @@ const Gallery = () => {
 
   return (
     <section className="relative bg-gradient-to-b from-white to-gray-50 px-6 md:px-12 py-16 md:py-20 overflow-hidden">
-      
+
       {/* Background Decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-emerald-50/40 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-sky-50/40 rounded-full blur-3xl"></div>
-        
+
         {/* Subtle Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:40px_40px] opacity-30"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-        
+
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-3">
@@ -102,14 +102,14 @@ const Gallery = () => {
             <span className="text-sm font-semibold text-emerald-600 uppercase tracking-wider">Platform Gallery</span>
             <div className="w-8 h-px bg-gradient-to-l from-transparent to-emerald-500"></div>
           </div>
-          
+
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            See Apex ERP in Action
+            See ERP OS in Action
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-sky-600">
               Powerful Interface, Seamless Experience
             </span>
           </h2>
-          
+
           <p className="text-gray-600 max-w-2xl mx-auto">
             Explore our intuitive dashboard and powerful features designed for modern financial management
           </p>
@@ -130,22 +130,22 @@ const Gallery = () => {
                   alt={image.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                
+
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                
+
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   {image.category}
                 </div>
-                
+
                 {/* Zoom Icon */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
                     <ZoomIn className="w-6 h-6 text-emerald-600" />
                   </div>
                 </div>
-                
+
                 {/* Content Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                   <div className="bg-gradient-to-t from-black/80 to-transparent p-4 rounded-t-xl">
@@ -167,21 +167,21 @@ const Gallery = () => {
             >
               <X className="w-8 h-8" />
             </button>
-            
+
             <button
               onClick={prevImage}
               className="absolute left-6 top-1/2 -translate-y-1/2 text-white hover:text-emerald-400 transition-colors bg-white/10 rounded-full p-2 hover:bg-white/20"
             >
               <ChevronLeft className="w-8 h-8" />
             </button>
-            
+
             <button
               onClick={nextImage}
               className="absolute right-6 top-1/2 -translate-y-1/2 text-white hover:text-emerald-400 transition-colors bg-white/10 rounded-full p-2 hover:bg-white/20"
             >
               <ChevronRight className="w-8 h-8" />
             </button>
-            
+
             <div className="max-w-5xl mx-4">
               <img
                 src={selectedImage.src}

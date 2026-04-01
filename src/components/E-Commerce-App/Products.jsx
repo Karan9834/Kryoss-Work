@@ -23,12 +23,12 @@ const Products = () => {
 
   return (
     <section id="products-section" className="relative w-full overflow-hidden bg-white py-24">
-      
+
       {/* Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8b5cf608_1px,transparent_1px),linear-gradient(to_bottom,#8b5cf608_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 z-10">
-        
+
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-100 rounded-full px-4 py-2 mb-6">
@@ -54,7 +54,7 @@ const Products = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
           {items.map((item, index) => (
             <div key={index} className="text-center">
-              
+
               {/* Clickable Image */}
               <div
                 onClick={() => navigate(item.route)}

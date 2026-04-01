@@ -1,11 +1,11 @@
 // src/pages/products/Apex-ERP/section/Hero.jsx
 import React from "react";
-import { 
-  ArrowRight, 
-  Play, 
-  Shield, 
-  TrendingUp, 
-  Zap, 
+import {
+  ArrowRight,
+  Play,
+  Shield,
+  TrendingUp,
+  Zap,
   Sparkles,
   Crown,
   Layers,
@@ -28,17 +28,17 @@ const Hero = () => {
 
   return (
     <section className="relative bg-gradient-to-br from-sky-900 via-sky-800 to-blue-900 px-6 md:px-12 py-16 md:py-20 overflow-hidden">
-      
+
       {/* Background Decorations */}
       <div className="absolute inset-0">
         {/* Deep Sky Blue Orbs */}
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-sky-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-emerald-500/15 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-sky-400/10 rounded-full blur-3xl"></div>
-        
+
         {/* Subtle Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#0ea5e920_1px,transparent_1px),linear-gradient(to_bottom,#0ea5e920_1px,transparent_1px)] bg-[size:40px_40px]"></div>
-        
+
         {/* Floating Elements */}
         <div className="absolute top-20 left-10 opacity-10">
           <Crown className="w-16 h-16 text-sky-300" strokeWidth={1} />
@@ -46,7 +46,7 @@ const Hero = () => {
         <div className="absolute bottom-20 right-10 opacity-10">
           <Layers className="w-20 h-20 text-emerald-300" strokeWidth={1} />
         </div>
-        
+
         {/* Stars Effect */}
         <div className="absolute inset-0">
           {[...Array(50)].map((_, i) => (
@@ -65,7 +65,7 @@ const Hero = () => {
 
       <div className="relative max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
-          
+
           {/* LEFT CONTENT */}
           <div className="space-y-6">
             {/* Badge */}
@@ -74,22 +74,22 @@ const Hero = () => {
               <span className="text-sm font-medium text-gray-200">Enterprise-Grade ERP Solution</span>
               <Sparkles className="w-3 h-3 text-emerald-400" />
             </div>
-            
+
             {/* Main Heading */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-              <span className="text-white">Apex ERP</span>
+              <span className="text-white"> ERP OS</span>
               <br />
               <span className="text-emerald-400">
                 Peak Financial Performance
               </span>
             </h1>
-            
+
             {/* Description */}
             <p className="text-gray-300 text-base leading-relaxed max-w-lg">
-              Transform your financial operations with the industry's most advanced ERP platform. 
+              Transform your financial operations with the industry's most advanced ERP platform.
               Real-time analytics, intelligent automation, and enterprise-grade security.
             </p>
-            
+
             {/* Stats */}
             <div className="flex gap-6 pt-2">
               <div>
@@ -107,10 +107,10 @@ const Hero = () => {
                 <div className="text-xs text-gray-400">Transactions</div>
               </div>
             </div>
-            
+
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
-              <button 
+              <button
                 onClick={handleLiveDemo}
                 className="group inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border border-sky-400/30 text-gray-200 px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-all duration-300"
               >
@@ -119,7 +119,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          
+
           {/* RIGHT IMAGE */}
           <div className="relative group">
             <div className="absolute -inset-2 bg-gradient-to-r from-sky-500/20 to-emerald-500/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -130,7 +130,7 @@ const Hero = () => {
                 className="w-full h-[280px] md:h-[320px] object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-sky-900/50 via-transparent to-transparent"></div>
-              
+
               {/* Floating Card */}
               <div className="absolute bottom-4 left-4 right-4 bg-sky-950/90 backdrop-blur-sm rounded-lg p-3 shadow-md border border-sky-500/30">
                 <div className="flex items-center justify-between">
@@ -151,11 +151,11 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Decorative Corners */}
             <div className="absolute -bottom-2 -right-2 w-16 h-16 border-r-2 border-b-2 border-sky-500/40 rounded-br-lg"></div>
             <div className="absolute -top-2 -left-2 w-16 h-16 border-l-2 border-t-2 border-emerald-500/40 rounded-tl-lg"></div>
-            
+
             {/* Badge */}
             <div className="absolute -top-3 -right-3 bg-emerald-500 text-white px-2.5 py-1 rounded-full text-xs font-semibold shadow-md">
               ⚡ Enterprise

@@ -14,13 +14,13 @@ const FinalCTA = () => {
           </h2>
 
           <p className="description">
-            Join thousands of successful restaurant owners using FoodBite. 
+            Join thousands of successful restaurant owners using FoodBite.
             Launch your multi-restaurant food delivery platform in minutes.
           </p>
 
           <div className="btn-group">
             <a
-              href="https://preview.codecanyon.net/item/foodhat-restaurant-menu-food-ordering-system/full_screen_preview/46780682"
+              href="https://preview.codecanyon.net/item/foodbite-multi-restaurant-food-delivery-app-flutter/full_screen_preview/61762849"
               className="btn-primary"
               target="_blank"
               rel="noopener noreferrer"

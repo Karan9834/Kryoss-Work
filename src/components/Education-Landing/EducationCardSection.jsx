@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 import card1Img from '@/assets/educationlanding-img/educationlandingcard1.jpg';
 import card2Img from '@/assets/educationlanding-img/educationlandingcard2.jpg';
 
@@ -10,27 +9,13 @@ const EducationCardSection = () => {
          title: "Bookingo: Tutor Booking App",
          image: card1Img,
          path: "/products/home-service/tutor",
-         features: [
-            "Student & Teacher Login",
-            "In-app Video Calling",
-            "Real-time Scheduling",
-            "Multi Language Support",
-            "Progress Tracking",
-            "Secure Payment Gateway"
-         ],
+         desc: "Complete tutor booking and management platform with video integration."
       },
       {
          title: "Academy: Tutor Booking Platform",
          image: card2Img,
          path: "/products/tutor-booking",
-         features: [
-            "Course Management",
-            "Instructor Dashboard",
-            "Attendance Tracking",
-            "Multi-Vendor Support",
-            "Comprehensive Analytics",
-            "Student Support System"
-         ],
+         desc: "Comprehensive online learning and course management solution."
       }
    ];
 
@@ -54,46 +39,33 @@ const EducationCardSection = () => {
                </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
                {cards.map((card, index) => (
-                  <Link
-                     to={card.path}
-                     key={index}
-                     className="group relative flex flex-col items-center text-center p-2 rounded-[40px] border-2 border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-white shadow-xl hover:border-indigo-100"
-                  >
-                     {/* Image Section */}
-                     <div className="w-full h-full bg-gray-50 rounded-[36px] overflow-hidden relative mb-6">
+                  <div key={index} className="text-center">
+
+                     {/* CLICKABLE IMAGE */}
+                     <Link
+                        to={card.path}
+                        className="cursor-pointer group block"
+                     >
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full h-full object-contain"
+                           className="w-full rounded-xl border-[5px] border-transparent hover:border-indigo-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent pointer-events-none"></div>
-                     </div>
+                     </Link>
 
-                     {/* Content Section */}
-                     <div className="w-full px-8 pb-10 space-y-8">
-                        <div className="space-y-2">
-                           <h3 className="text-xl font-semibold text-[#1A1C2C] group-hover:text-indigo-600 transition-colors">{card.title}</h3>
-                           <div className="h-1 w-20 bg-indigo-600 mx-auto rounded-full"></div>
-                        </div>
+                     {/* TITLE AND DESCRIPTION */}
+                     <p className="mt-4 text-sm md:text-base">
+                        <Link to={card.path} className="text-indigo-600 font-semibold hover:underline">
+                           {card.title}
+                        </Link>{" "}
+                        <span className="text-gray-700">
+                           - {card.desc}
+                        </span>
+                     </p>
 
-                        <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-left">
-                           {card.features.map((feature, i) => (
-                              <div key={i} className="flex items-center gap-2">
-                                 <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full"></div>
-                                 <span className="text-sm font-bold text-gray-700">{feature}</span>
-                              </div>
-                           ))}
-                        </div>
-
-                        {/* <div className="pt-6">
-                           <button className="flex items-center justify-center gap-2 text-indigo-600 font-bold text-sm group-hover:underline transition-all">
-                              Explore Solution <ArrowRight size={18} />
-                           </button>
-                        </div> */}
-                     </div>
-                  </Link>
+                  </div>
                ))}
             </div>
 
