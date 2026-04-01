@@ -1,465 +1,510 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { 
-  Heart, 
-  CheckCircle2, 
-  Users, 
-  ShieldCheck, 
-  Smartphone, 
-  Layout, 
-  Database, 
-  Search, 
-  Bell, 
-  CreditCard, 
-  Star, 
-  MapPin, 
-  Send,
-  ArrowRight,
-  TrendingUp,
-  MessageCircle,
-  Video,
-  Zap,
-  Filter,
-  Activity,
-  Globe,
-  Settings,
-  Shield,
-  Camera,
-  Coffee,
-  Sparkles,
-  Lock,
-  Server,
-  Code,
-  LifeBuoy,
-  Phone,
-  Mail,
-  Plane,
-  Truck,
-  Building2,
-  GraduationCap,
-  PlayCircle,
-  UserCheck,
-  UserPlus
+import {
+    Heart, Shield, Search, Smartphone, Bell, Clock, PlusCircle, ArrowRight,
+    CheckCircle, User, Star, Settings, MessageCircle, MapPin
 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
 
 const MatrimonyApp = () => {
-  const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-    antispam: ''
-  });
+    const [activeTab, setActiveTab] = useState("User App");
+    const [activeFeatureTab, setActiveFeatureTab] = useState("Common");
 
-  const industries = [
-    { name: "Healthcare", icon: Heart },
-    { name: "Travel & Tourism", icon: Plane },
-    { name: "Banking & Finance", icon: Building2 },
-    { name: "Logistics & Transport", icon: Truck },
-    { name: "Media & Entertainment", icon: PlayCircle },
-    { name: "Education & E-Learning", icon: GraduationCap }
-  ];
+    const panelFeatures = {
+        "User App": {
+            icon: Heart,
+            image: "/SolAps/Matrimonymob1.png",
+            features: [
+                "Profile Creation & Search", "Intelligent Matchmaking", "Real-time Chat",
+                "Horoscope Matching", "Express Interest", "Privacy Controls",
+                "Push Notifications", "Subscription Management"
+            ]
+        },
+        "Matchmaker Panel": {
+            icon: Star,
+            image: "/SolAps/Matrimonymob2.png",
+            features: [
+                "Candidate Shortlisting", "Meeting Scheduling", "Verified Profiles",
+                "Direct Messaging", "Kundli Generation", "Background Checks",
+                "Membership Packages", "Feedback System"
+            ]
+        },
+        "Admin Panel": {
+            icon: Shield,
+            image: "/SolAps/Matrimonymob3.png",
+            features: [
+                "User Management", "Content Moderation", "Revenue Tracking",
+                "Membership Plans", "Dispute Handling", "Success Stories",
+                "Analytics & Reports", "System Settings"
+            ]
+        }
+    };
 
-  const coreFeatures = [
-    { 
-      title: "Advanced Search", 
-      desc: "Intelligent filters based on community, profession, education, and lifestyle choices.", 
-      icon: Search 
-    },
-    { 
-      title: "Verified Profiles", 
-      desc: "Trust-badge verification using government ID and social profile validation.", 
-      icon: UserCheck 
-    },
-    { 
-      title: "Privacy Controls", 
-      desc: "Robust features to control who sees your photos, contact details, and bio.", 
-      icon: Shield 
-    },
-    { 
-      title: "Horoscope Matching", 
-      desc: "Automated Kundli/Horoscope generation and compatibility analysis based on Vedic astrology.", 
-      icon: Sparkles 
-    },
-    { 
-      title: "Express Interest", 
-      desc: "Seamless 'Send Interest' and 'Shortlist' features to start the journey with a tap.", 
-      icon: Heart 
-    },
-    { 
-      title: "Multimedia Chat", 
-      desc: "Secure end-to-end encrypted messaging, voice notes, and video calling.", 
-      icon: MessageCircle 
-    }
-  ];
+    const commonFeatures = [
+        { icon: Search, title: "Advanced Filters", desc: "Filter by community, education, lifestyle and location." },
+        { icon: Shield, title: "Verified Profiles", desc: "Government ID and social profile validation." },
+        { icon: Settings, title: "Privacy Controls", desc: "Control who views your photos, contact, and bio." },
+        { icon: MessageCircle, title: "Secure Chat", desc: "End-to-end encrypted messaging and video calls." },
+        { icon: Bell, title: "Instant Alerts", desc: "Notifications for new matches and messages." },
+        { icon: User, title: "Express Interest", desc: "Seamless interaction to start real conversations." }
+    ];
 
-  const adminFeatures = [
-    { title: "Manual Moderation", desc: "Dedicated desk for manual review of every profile photo and description.", icon: Lock },
-    { title: "Revenue Dashboard", desc: "Track earnings from membership plans and sponsored profile boosts.", icon: TrendingUp },
-    { title: "Success Stories", desc: "Manage and publish community trust-building marriage stories.", icon: Star },
-    { title: "Dispute Handling", desc: "Tools to report and ban suspicious users and fake profiles.", icon: ShieldCheck }
-  ];
+    const advanceFeatures = [
+        { icon: Star, title: "Horoscope Matching", desc: "Automated Kundli generation and compatibility checks." },
+        { icon: CheckCircle, title: "AI Predictions", desc: "Machine learning for highly compatible partner suggestions." },
+        { icon: MapPin, title: "Global Reach", desc: "Connect with NRIs and global communities effortlessly." },
+        { icon: Heart, title: "Success Stories", desc: "Publish and interact with community trust-building stories." },
+        { icon: Clock, title: "Dynamic Access", desc: "Time-based subscriptions for premium communication." },
+        { icon: Smartphone, title: "Audio & Video Notes", desc: "Modern multimedia sharing within secure environments." }
+    ];
 
-  const supportFeatures = [
-    { title: "Fully Customizable", desc: "Flexible scripts ready to meet specific cultural or regional needs.", icon: Settings },
-    { title: "Bug Support", desc: "Complimentary bug fixes and updates for the first year of operation.", icon: LifeBuoy },
-    { title: "Linux Server Setup", desc: "Optimized server configuration for low-latency dispatching.", icon: Server },
-    { title: "Open Source Code", desc: "100% full source code ownership for deep future integrations.", icon: Code }
-  ];
+    const portfolio = [
+        {
+            title: "SoulMatch",
+            description: "A high-conversion matrimony portal specialized in NRI and global matchmaking.",
+            tags: ["Matrimony", "Global", "Scalable"],
+            image: "/SolAps/Matrimonyport1.png"
+        },
+        {
+            title: "VedicMatrimony",
+            description: "Niche portal with deep integration of Vedic astrology and community filters.",
+            tags: ["Astrology", "Niche", "Custom"],
+            image: "/SolAps/Matrimonyport2.png"
+        },
+        {
+            title: "SafeRishtey",
+            description: "Matrimonial app where every user is verified via physical document checks.",
+            tags: ["Verified", "Secure", "Mobile App"],
+            image: "/SolAps/Matrimonyport3.png"
+        }
+    ];
 
-  const portfolio = [
-    { title: "SoulMatch", subtitle: "Global Community Platform", desc: "A high-conversion matrimony portal which specialized in NRI and global matchmaking." },
-    { title: "VedicMatrimony", subtitle: "Astrology Focused", desc: "Niche portal with deep integration of Vedic astrology and community-specific filters." },
-    { title: "SafeRishtey", subtitle: "Verification First", desc: "Matrimonial app where every user is verified via physical document checks." }
-  ];
+    const stats = [
+        { value: "400+", label: "Matrimony Projects" },
+        { value: "99.9%", label: "Uptime Guaranteed" },
+        { value: "10M+", label: "Matches Made" },
+        { value: "4.8/5", label: "Client Ratings" }
+    ];
 
-  const testimonials = [
-    { name: "TOMO MARINKOVIC", role: "President Start Up", text: "Extremely happy with Kryoss! They delivered exactly my vision and made it better with creative touches. Delivered ahead of schedule and on budget." },
-    { name: "SAM DISTASO", role: "Founder - ARK News", text: "Rakesh and his team surpassed expectations. They were always available despite different time zones. Highly recommend Kryoss Softech!" },
-    { name: "DR. ROHIT KOHKER", role: "CTO, Vidya Prakashan Mandir", text: "Kryoss is a leading mobile app development company. Their workforce proved it true by providing best results for my business." },
-    { name: "MONA MATHUR", role: "Founder, Million Spark Foundation", text: "Kryoss was involved in developing an Android application framework that connects students, teachers and parents seamlessly." }
-  ];
+    const solutions = [
+        { icon: CheckCircle, title: "Ready-to-launch Scripts", desc: "Pre-configured setups that drastically reduce time-to-market." },
+        { icon: User, title: "Dedicated Development Team", desc: "Hire skilled developers exclusively for your custom requirements." },
+        { icon: PlusCircle, title: "Custom Ecosystem", desc: "End-to-end bespoke development tailored exactly to your brand." },
+        { icon: Smartphone, title: "Native Mobile Apps", desc: "Fluid experiences utilizing iOS and Android native SDKs." },
+    ];
 
-  return (
-    <div className="bg-white">
-      <Helmet>
-        <title>Matrimony App Development | KryossWork</title>
-        <meta name="description" content="Launch your premium matrimony platform with advanced search, horoscope matching, and profile verification. Kryoss Softech offers high-end matrimonial solutions." />
-      </Helmet>
+    return (
+        <div className="w-full bg-white relative font-sans overflow-hidden">
+            <Helmet>
+                <title>Matrimony App Development | KryossWork</title>
+                <meta name="description" content="Launch your premium matrimony platform with advanced search, horoscope matching, and profile verification." />
+            </Helmet>
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-[#800000] via-[#A52A2A] to-[#D2691E] text-white text-center">
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent opacity-20"></div>
-        <div className="container mx-auto px-4 relative z-10">
-           <motion.div 
-             initial={{ opacity: 0, y: 30 }}
-             animate={{ opacity: 1, y: 0 }}
-             className="max-w-4xl mx-auto"
-           >
-              <div className="inline-flex items-center gap-2 bg-black/20 backdrop-blur-md rounded-full px-6 py-2 mb-8 border border-white/20">
-                 <Heart className="h-4 w-4 text-[#FFD700] fill-[#FFD700]" />
-                 <span className="text-white text-xs font-black uppercase tracking-widest">Uniting Generations</span>
-              </div>
-              <h1 className="text-5xl md:text-8xl font-black mb-8 leading-tight tracking-tighter uppercase italic">
-                Find Your Perfect <br />
-                <span className="text-[#FFD700] drop-shadow-[0_4px_41px_rgba(255,215,0,0.3)] underline decoration-white/30 decoration-8 underline-offset-[20px]">Soulmate</span>
-              </h1>
-              <p className="text-xl text-yellow-50 mb-12 leading-relaxed font-medium mt-12 max-w-2xl mx-auto">
-                Launch a premium Matrimony platform with advanced compatibility algorithms and cultural depth. Building trust across families.
-              </p>
-              <div className="flex flex-wrap justify-center gap-6">
-                 <button className="bg-[#FFD700] text-[#800000] hover:bg-white font-black py-5 px-12 rounded-full transition-all flex items-center gap-2 transform hover:scale-105 shadow-2xl uppercase tracking-widest group">
-                    Start Your Portal <ArrowRight className="h-6 w-6 group-hover:translate-x-2 transition-transform" />
-                 </button>
-              </div>
-           </motion.div>
-        </div>
-      </section>
-
-      {/* Mockups Showcase */}
-      <section className="py-24 bg-white overflow-hidden">
-        <div className="container mx-auto px-4 text-center">
-           <div className="max-w-3xl mx-auto mb-20 text-center">
-              <h2 className="text-4xl font-black mb-4 italic uppercase tracking-tighter text-gray-900 leading-tight">Digital Matchmaking Hub</h2>
-              <p className="text-red-800 font-bold uppercase tracking-[0.3em] text-xs">Modern Technology for Traditional Values</p>
-           </div>
-           
-           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-             {/* User Experience */}
-             <div className="bg-white rounded-[4rem] border border-gray-200 overflow-hidden shadow-[0_40px_100px_-20px_rgba(128,0,0,0.1)] h-[650px] flex flex-col group relative transition-all">
-               <div className="bg-[#800000] p-8 text-white text-left">
-                  <div className="flex justify-between items-center mb-6 text-sm font-bold italic opacity-60">
-                    <span>12:30 PM</span>
-                    <Smartphone className="h-4 w-4" />
-                  </div>
-                  <h3 className="text-2xl font-black italic tracking-tighter">💞 SoulScript</h3>
-                  <div className="mt-4 flex items-center gap-3 text-[10px] font-bold text-yellow-200 uppercase tracking-widest bg-white/10 py-1.5 px-3 rounded-xl border border-white/5">
-                     <Search className="h-3 w-3" /> Filters: Software Engineer · Bangalore
-                  </div>
-               </div>
-               <div className="p-6 text-left space-y-6 grow overflow-y-auto invisible-scrollbar">
-                  <div className="space-y-4">
-                     <div className="text-xs font-black uppercase tracking-widest text-gray-400 italic">Matching for you</div>
-                     {[
-                       { name: "Ananya B.", age: "26", city: "Bangalore", prof: "Product Manager", rate: "95% Match", icon: "👩‍💼" },
-                       { name: "Priya S.", age: "28", city: "Mumbai", prof: "Physician", rate: "92% Match", icon: "👩‍⚕️" }
-                     ].map((p, i) => (
-                       <div key={i} className="p-5 rounded-3xl border border-gray-100 bg-gray-50/50 hover:bg-red-50 hover:border-red-100 transition-all cursor-pointer group/item">
-                          <div className="flex items-center gap-4">
-                             <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-4xl shadow-sm group-hover/item:scale-110 transition-transform">{p.icon}</div>
-                             <div className="grow">
-                                <div className="flex justify-between items-start">
-                                   <h4 className="font-black italic text-sm">{p.name} · {p.age}</h4>
-                                   <span className="text-[10px] font-black text-red-600 bg-red-100 px-2 py-0.5 rounded-full">{p.rate}</span>
-                                </div>
-                                <div className="text-[10px] font-bold text-gray-400 mt-1 uppercase tracking-tighter">{p.prof} · {p.city}</div>
-                                <div className="flex gap-2 mt-3">
-                                   <button className="bg-red-600 text-white p-2 rounded-xl text-[8px] font-black uppercase tracking-widest shadow-lg shadow-red-200">Express Interest</button>
-                                   <button className="bg-white text-gray-400 p-2 rounded-xl text-[8px] font-black uppercase tracking-widest border border-gray-100 italic">Chat</button>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                     ))}
-                  </div>
-
-                  <div className="p-6 bg-[#800000] rounded-[3rem] text-white overflow-hidden relative shadow-2xl">
-                     <Sparkles className="absolute bottom-[-10px] right-[-10px] h-20 w-20 text-yellow-500 opacity-20 rotate-12" />
-                     <div className="text-[10px] font-black uppercase tracking-[0.2em] mb-1 italic">Vedic Match</div>
-                     <div className="text-lg font-black italic tracking-tighter">Check Compatibility <br/>Score With Kudli</div>
-                  </div>
-               </div>
-             </div>
-
-             {/* Admin Dashboard */}
-             <div className="bg-gray-900 rounded-[4rem] border border-white/10 overflow-hidden shadow-[0_60px_120px_-30px_rgba(0,0,0,0.4)] h-[650px] flex flex-col group lg:-mt-10 relative z-10 transition-all">
-                <div className="bg-red-800 p-8 text-white text-left relative overflow-hidden">
-                   <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-20 blur-[50px] rounded-full"></div>
-                   <div className="flex justify-between items-center mb-6 text-sm font-bold italic opacity-60">
-                     <span>12:30 PM</span>
-                     <ShieldCheck className="h-4 w-4" />
-                   </div>
-                   <h3 className="text-2xl font-black italic tracking-tighter">Moderation HQ</h3>
+            {/* 1. Hero Section */}
+            <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#F8FAFC] via-white to-[#FEF9C3]">
+                {/* Background Details */}
+                <div className="absolute inset-0 z-0">
+                    <div className="absolute top-10 left-10 w-96 h-96 bg-rose-100/50 rounded-full blur-3xl" />
+                    <div className="absolute bottom-10 right-10 w-96 h-96 bg-yellow-100/50 rounded-full blur-3xl" />
+                    <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03]" />
                 </div>
-                <div className="p-6 text-left space-y-6 grow overflow-y-auto invisible-scrollbar">
-                   <div className="grid grid-cols-2 gap-3 text-center">
-                      <div className="p-4 bg-white/5 border border-white/10 rounded-[2.5rem]">
-                         <div className="text-2xl font-black italic text-red-500">24</div>
-                         <div className="text-[8px] font-bold uppercase text-white/40 tracking-widest">Pending Verification</div>
-                      </div>
-                      <div className="p-4 bg-white/5 border border-white/10 rounded-[2.5rem]">
-                         <div className="text-2xl font-black italic text-red-500">12k+</div>
-                         <div className="text-[8px] font-bold uppercase text-white/40 tracking-widest">Total Matches</div>
-                      </div>
-                   </div>
-                   
-                   <div className="space-y-3">
-                      <div className="text-xs font-black uppercase tracking-widest text-white/40 italic">Review Queue</div>
-                      {[
-                        { label: "Profile Photo Verification", val: "18 Pending", icon: Camera },
-                        { label: "ID/Social Auth Queue", val: "6 Pending", icon: UserCheck },
-                        { label: "Membership Settlements", val: "Completed", icon: CreditCard }
-                      ].map((m, i) => (
-                        <div key={i} className="flex justify-between items-center p-4 rounded-3xl bg-white/5 border border-white/10 hover:bg-red-900/20 transition-all cursor-pointer">
-                           <div className="flex items-center gap-3">
-                              <div className="w-10 h-10 bg-gray-800 rounded-2xl flex items-center justify-center border border-white/10">
-                                 <m.icon className="h-5 w-5 text-red-500" />
-                              </div>
-                              <span className="text-[10px] font-black italic text-white/70">{m.label}</span>
-                           </div>
-                           <span className="text-[10px] font-black italic text-red-500">{m.val}</span>
+
+                <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-20">
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                        {/* Text Content */}
+                        <div className="w-full lg:w-1/2 text-center lg:text-left">
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.5 }}
+                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-rose-50 transition-colors shadow-sm border border-gray-100 mb-8 cursor-pointer"
+                            >
+                                <span className="flex h-2 w-2 rounded-full bg-rose-500 animate-pulse" />
+                                <span className="text-sm font-semibold text-gray-700">Premium Matchmaking</span>
+                            </motion.div>
+
+                            <motion.h1
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.2, duration: 0.8 }}
+                                className="text-5xl lg:text-7xl font-bold tracking-tight text-gray-900 mb-6 leading-tight"
+                            >
+                                Ultimate <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-red-500">Matrimonial</span> Software
+                            </motion.h1>
+
+                            <motion.p
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.4, duration: 0.8 }}
+                                className="text-lg text-gray-600 mb-10 max-w-xl mx-auto lg:mx-0 font-light"
+                            >
+                                Launch a premium Matrimony platform with advanced compatibility algorithms, cultural depth, and fully secure moderation.
+                            </motion.p>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.6, duration: 0.8 }}
+                                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                            >
+                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-rose-500 transition-all duration-300 flex items-center justify-center gap-2">
+                                    Start Portal
+                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </button>
+                                <button className="px-8 py-4 bg-white text-gray-800 rounded-full font-semibold hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm flex items-center justify-center gap-2">
+                                    <span className="w-2 h-2 rounded-full bg-green-500" />
+                                    Live Demo
+                                </button>
+                            </motion.div>
                         </div>
-                      ))}
-                   </div>
 
-                   <div className="p-5 bg-gradient-to-br from-red-700 to-red-900 rounded-[3rem] text-white shadow-xl shadow-red-900/50">
-                      <div className="text-[9px] font-black uppercase tracking-widest opacity-60 mb-1">Monthly Subscription Revenue</div>
-                      <div className="text-3xl font-black italic tracking-widest">$28,450.00</div>
-                   </div>
-                </div>
-             </div>
-           </div>
-        </div>
-      </section>
-
-      {/* Feature Grid */}
-      <section className="py-24 bg-gray-900 text-white relative">
-        <div className="container mx-auto px-4">
-           <div className="text-center mb-16 text-center">
-              <h2 className="text-4xl font-black italic uppercase tracking-tighter">Matrimonial Stack</h2>
-              <p className="text-red-500 font-bold uppercase tracking-[0.5em] text-[10px] mt-4 italic">High-Performance Algorithms for High-Trust Matches</p>
-           </div>
-           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              {coreFeatures.map((f, i) => (
-                <div key={i} className="p-6 bg-white/5 border border-white/10 rounded-3xl text-center hover:bg-red-600/10 hover:border-red-500 transition-all group">
-                   <div className="w-12 h-12 bg-red-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-red-500 rotate-12 group-hover:rotate-0 transition-all">
-                      <f.icon className="h-6 w-6 text-red-500 group-hover:text-white" />
-                   </div>
-                   <h3 className="text-[10px] font-black uppercase tracking-widest italic">{f.title}</h3>
-                </div>
-              ))}
-           </div>
-        </div>
-      </section>
-
-      {/* Admin Mastery */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl font-black mb-4 italic uppercase tracking-tighter underline underline-offset-[20px] decoration-red-800 decoration-8">Portal Control</h2>
-            <p className="text-gray-400 font-black uppercase tracking-[0.4em] text-[10px] mt-16 italic">Complete Management for Matrimony Entrepreneurs</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {adminFeatures.map((f, i) => (
-              <motion.div 
-                key={i}
-                whileHover={{ y: -10 }}
-                className="p-10 bg-white border border-gray-100 rounded-[3.5rem] shadow-sm hover:shadow-2xl transition-all border-b-[12px] border-red-800 group"
-              >
-                <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-8 bg-gradient-to-br from-gray-50 to-red-50 shadow-inner group-hover:rotate-12 transition-transform">
-                  <f.icon className="h-8 w-8 text-red-800" />
-                </div>
-                <h3 className="font-extrabold text-xl italic tracking-tighter uppercase mb-4 text-gray-900 group-hover:text-red-800 transition-colors uppercase">{f.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed italic font-medium">{f.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Support Section */}
-      <section className="py-24 bg-gray-50 relative overflow-hidden">
-         <div className="container mx-auto px-4 text-center">
-           <div className="mb-20">
-              <h2 className="text-4xl font-black mb-6 italic uppercase tracking-tighter">Trusted Support</h2>
-              <p className="text-gray-500 font-extrabold italic leading-relaxed tracking-tight max-w-2xl mx-auto">We provide the technical foundation so you can focus on building your matrimonial community.</p>
-           </div>
-           <div className="grid md:grid-cols-4 gap-6 text-left">
-              {supportFeatures.map((s, i) => (
-                <div key={i} className="p-10 bg-white rounded-[3rem] shadow-sm hover:shadow-2xl transition-all border border-gray-100 flex flex-col group hover:border-red-200">
-                   <div className="w-14 h-14 bg-gray-900 group-hover:bg-red-600 transition-all rounded-3xl flex items-center justify-center mb-8 shadow-xl">
-                      <s.icon className="h-6 w-6 text-white" />
-                   </div>
-                   <h3 className="font-black italic uppercase tracking-tighter text-gray-900 mb-4 group-hover:text-red-600 transition-all underline decoration-red-100 decoration-4 underline-offset-4">{s.title}</h3>
-                   <p className="text-[11px] text-gray-500 leading-relaxed font-bold italic grow">{s.desc}</p>
-                </div>
-              ))}
-           </div>
-        </div>
-      </section>
-
-      {/* Success Portfolio */}
-      <section className="py-24 bg-gray-900 text-white overflow-hidden relative shadow-[inset_0_0_100px_rgba(0,0,0,0.5)]">
-        <div className="container mx-auto px-4 relative z-10 text-center">
-           <div className="text-center mb-20 text-center">
-              <h2 className="text-4xl font-black italic mb-4 uppercase underline decoration-red-500 decoration-8 underline-offset-[16px]">Portal Portfolio</h2>
-           </div>
-           <div className="grid lg:grid-cols-3 gap-8">
-              {portfolio.map((work, i) => (
-                <div key={i} className="bg-white/5 border border-white/10 p-10 rounded-[3rem] hover:bg-white/10 transition-all group text-left">
-                   <div className="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-500 transition-colors shadow-2xl">
-                      <UserPlus className="h-8 w-8 text-red-400 group-hover:text-white" />
-                   </div>
-                   <h3 className="text-2xl font-black italic uppercase text-red-500 mb-2">{work.title}</h3>
-                   <p className="text-red-100/50 text-[10px] uppercase font-black tracking-widest mb-6 italic">{work.subtitle}</p>
-                   <p className="text-gray-400 text-sm italic font-medium leading-relaxed">{work.desc}</p>
-                </div>
-              ))}
-           </div>
-           
-           <div className="grid md:grid-cols-4 gap-8 mt-24">
-              {testimonials.map((t, i) => (
-                <div key={i} className="bg-white rounded-[2.5rem] p-10 flex flex-col relative group hover:bg-red-50 transition-all text-left">
-                   <div className="text-red-500 text-6xl font-black absolute top-4 right-8 select-none opacity-10">“</div>
-                   <p className="text-[11px] italic font-bold leading-relaxed mb-8 text-gray-700 relative z-10 grow">“{t.text}”</p>
-                   <div className="flex items-center gap-4 mt-auto">
-                      <div className="w-10 h-10 bg-[#800000] rounded-2xl flex items-center justify-center font-black text-white text-xl italic">{t.name.charAt(0)}</div>
-                      <div>
-                         <div className="font-black italic text-[11px] uppercase text-gray-900 leading-none">{t.name}</div>
-                         <div className="text-[9px] text-red-600 uppercase font-bold tracking-widest mt-1 italic">{t.role}</div>
-                      </div>
-                   </div>
-                </div>
-              ))}
-           </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto bg-white rounded-[5rem] flex flex-col lg:flex-row overflow-hidden shadow-[0_60px_120px_-20px_rgba(128,0,0,0.2)] border border-gray-50">
-            {/* Form Side */}
-            <div className="lg:w-3/5 p-8 md:p-20 bg-white">
-                <h2 className="text-5xl font-black mb-6 italic tracking-tighter uppercase text-gray-900 leading-tight">Start Your <br/><span className="text-red-800 border-b-8 border-red-800/20">Matrimony Journey!</span></h2>
-                <p className="text-gray-400 font-black uppercase text-[11px] tracking-[0.4em] mb-16 italic">Guarantee to get back within a business day</p>
-                
-                <form className="space-y-8">
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Name*</label>
-                       <input name="name" type="text" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-red-800 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" required />
+                        {/* Image / Graphic */}
+                        <div className="w-full lg:w-1/2 relative">
+                            <motion.div
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.4, duration: 0.8 }}
+                                className="relative z-10"
+                            >
+                                <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/10 to-red-500/10 rounded-3xl blur-2xl transform rotate-3" />
+                                <img
+                                    src="/SolAps/Matrimonyhero.png"
+                                    alt="Matrimony Development"
+                                    className="relative z-10 max-h-[500px] w-full object-contain drop-shadow-2xl"
+                                    onError={(e) => { e.target.src = '/SolAps/FallbackMatrimony.png'; e.target.className = 'relative z-10 w-full h-auto object-cover rounded-3xl shadow-2xl' }}
+                                />
+                            </motion.div>
+                        </div>
                     </div>
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">E-mail*</label>
-                       <input name="email" type="email" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-red-800 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" required />
-                    </div>
-                  </div>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Phone No</label>
-                       <input name="phone" type="tel" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-red-800 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" />
-                    </div>
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Subject*</label>
-                       <input name="subject" type="text" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-red-800 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" required />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                     <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Your Message*</label>
-                     <textarea name="message" rows="5" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-red-800 rounded-[2.5rem] px-8 py-6 focus:outline-none transition-all font-black placeholder:italic resize-none shadow-inner" required></textarea>
-                  </div>
-                  
-                  <div className="flex flex-col md:flex-row items-center gap-8 py-4">
-                     <div className="bg-gray-900 text-white px-8 py-4 rounded-3xl font-black italic text-sm border-r-[8px] border-red-800">
-                        ANTISPAM: 7 + 5 = ?
-                     </div>
-                     <input name="antispam" type="text" placeholder="Result" className="w-32 bg-red-50 border-2 border-red-200 rounded-2xl px-6 py-4 font-black text-center focus:outline-none focus:border-red-800 transition-all text-xl italic" required />
-                  </div>
+                </div>
+            </section>
 
-                  <button className="w-full bg-red-800 hover:bg-black text-white py-8 rounded-[3rem] font-black italic uppercase tracking-[0.4em] text-sm flex items-center justify-center gap-5 transition-all shadow-xl shadow-red-200">
-                    <Send className="h-6 w-6" /> Submit Inquiry
-                  </button>
-                </form>
+            {/* 2. Breadcrumb Navigation */}
+            <div className="w-full bg-white/90 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 transition-all duration-300 h-16 sm:h-20 flex items-center">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <nav className="flex items-center space-x-2 sm:space-x-4 text-xs sm:text-sm font-medium text-gray-500">
+                        <a href="/" className="hover:text-rose-500 transition-colors hidden sm:block">Home</a>
+                        <span className="hidden sm:block text-gray-300">/</span>
+                        <a href="#" className="hover:text-rose-500 transition-colors">Solutions</a>
+                        <span className="text-gray-300">/</span>
+                        <a href="#" className="hover:text-rose-500 transition-colors hidden md:block">Application Solutions</a>
+                        <span className="hidden md:block text-gray-300">/</span>
+                        <span className="text-gray-900 border-b border-rose-500 pb-0.5 truncate max-w-[150px] sm:max-w-none">
+                            Matrimony App Development
+                        </span>
+                    </nav>
+                </div>
             </div>
 
-            {/* Info Side */}
-            <div className="lg:w-2/5 p-8 md:p-20 bg-gray-900 text-white flex flex-col justify-between relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-red-800/20 blur-[120px] rounded-full -mr-[200px] -mt-[200px]"></div>
-                <div className="relative z-10 space-y-16 text-left">
-                   <div>
-                      <h3 className="text-4xl font-black italic tracking-tighter mb-6 uppercase leading-tight text-red-500">Ready to <br/>scale your <br/>Matrimonial app?</h3>
-                      <p className="text-gray-400 text-sm font-medium leading-relaxed italic mb-10">We help you build the trust and infrastructure for finding lifelong partners. Let's start with a <span className="text-red-500 font-black not-italic px-1 bg-white/10 rounded">2hr free consulting</span> session.</p>
-                      <div className="space-y-8">
-                         <div className="flex items-center gap-6 group cursor-pointer text-left">
-                            <div className="w-14 h-14 bg-white/5 rounded-3xl flex items-center justify-center group-hover:bg-red-600 transition-all shadow-xl">
-                               <Mail className="h-6 w-6 text-red-500 group-hover:text-white" />
+            {/* 3. Intro Section */}
+            <section className="py-20 lg:py-32 bg-white relative">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="w-full lg:w-1/2 relative"
+                        >
+                            <div className="absolute -inset-4 bg-rose-50 border border-rose-100 rounded-[2rem] transform -rotate-2" />
+                            <img
+                                src="/SolAps/Matrimonyintro.png"
+                                alt="Matrimony Introduction"
+                                className="relative w-full rounded-2xl shadow-xl object-cover h-[450px]"
+                                onError={(e) => { e.target.src = '/SolAps/FallbackMatrimony.png'; }}
+                            />
+                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
+                                <div className="flex items-center gap-4">
+                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                        <Heart className="text-green-600 w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <p className="text-sm text-gray-500 font-semibold mb-1">Matches Success</p>
+                                        <p className="text-2xl font-bold text-gray-900">+82%</p>
+                                    </div>
+                                </div>
                             </div>
-                            <span className="font-black italic text-base tracking-tighter">Info@kryosssoftech.org</span>
-                         </div>
-                         <div className="flex items-center gap-6 group cursor-pointer text-left">
-                            <div className="w-14 h-14 bg-white/5 rounded-3xl flex items-center justify-center group-hover:bg-red-600 transition-all shadow-xl">
-                               <Phone className="h-6 w-6 text-red-500 group-hover:text-white" />
-                            </div>
-                            <div className="space-y-1">
-                               <div className="font-black italic text-base tracking-tighter">+0124-4001495</div>
-                               <div className="text-[10px] text-gray-500 font-black uppercase tracking-widest italic">Global Support Team</div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
+                        </motion.div>
 
-                   <div className="space-y-12 text-left">
-                      <h3 className="text-xl font-black italic tracking-widest uppercase border-l-8 border-red-600 pl-6">Our Presence</h3>
-                      <div className="space-y-10">
-                         <div className="group">
-                            <div className="flex items-center gap-3 mb-2">
-                               <MapPin className="h-4 w-4 text-red-400" />
-                               <span className="uppercase text-[10px] font-black tracking-widest text-red-400 italic">India HQ · Gurgaon</span>
-                            </div>
-                            <p className="text-[12px] text-gray-400 font-bold italic leading-relaxed">1102, 11th Floor, JMD Megapolis, Sec-48, Gurgaon-122018, Haryana, India</p>
-                         </div>
-                      </div>
-                   </div>
+                        <div className="w-full lg:w-1/2">
+                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                                Transform Matchmaking with <span className="text-rose-500">Verified Portals</span>
+                            </h2>
+                            <p className="text-gray-600 mb-8 text-lg font-light leading-relaxed">
+                                Our bespoke scripts are tailored for trust and reliability. Bring families and communities together with deeply integrated verified metrics and sophisticated matchmaking algorithms.
+                            </p>
+                            <ul className="space-y-4 mb-8">
+                                {[
+                                    "Accelerated Time-to-Market",
+                                    "Multi-Platform (iOS, Android, Web)",
+                                    "Extensive Privacy Options",
+                                    "High Performance & Stability"
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-rose-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                            <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-rose-500 transition-all shadow-md">
+                                Request a Demo
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-          </div>
+            </section>
+
+            {/* 4. Must Have Features (Tabs Layout) */}
+            <section className="py-24 bg-[#FFFBF2] relative">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 font-display">
+                            Comprehensive <span className="text-rose-500 relative inline-block">
+                                Panels
+                                <svg className="absolute -bottom-2 left-0 w-full h-3 text-rose-200" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                    <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="2" />
+                                </svg>
+                            </span>
+                        </h2>
+                        <p className="text-gray-600 text-lg font-light">
+                            Explore dedicated features tailored for every stakeholder in the ecosystem.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col lg:flex-row gap-8">
+                        {/* Tabs Navigation */}
+                        <div className="w-full lg:w-1/4 flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 scrollbar-hide">
+                            {Object.entries(panelFeatures).map(([key, data]) => {
+                                const Icon = data.icon;
+                                const isActive = activeTab === key;
+                                return (
+                                    <button
+                                        key={key}
+                                        onClick={() => setActiveTab(key)}
+                                        className={`flex items-center gap-3 px-6 py-4 rounded-xl font-semibold transition-all whitespace-nowrap lg:whitespace-normal duration-300 ${
+                                            isActive
+                                                ? "bg-gray-900 text-white shadow-lg"
+                                                : "bg-white text-gray-600 hover:bg-rose-50 hover:text-rose-600 border border-gray-100"
+                                        }`}
+                                    >
+                                        <Icon size={20} className={isActive ? "text-rose-400" : "text-gray-400"} />
+                                        {key}
+                                    </button>
+                                );
+                            })}
+                        </div>
+
+                        {/* Tab Content */}
+                        <div className="w-full lg:w-3/4">
+                            <AnimatePresence mode="wait">
+                                <motion.div
+                                    key={activeTab}
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -10 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="bg-white rounded-[2rem] p-6 lg:p-10 shadow-xl border border-gray-100 flex flex-col lg:flex-row gap-10"
+                                >
+                                    <div className="w-full lg:w-1/3 flex justify-center items-center">
+                                        <div className="relative">
+                                            <div className="absolute inset-0 bg-rose-100 rounded-3xl blur-xl transform -rotate-6" />
+                                            <img
+                                                src={panelFeatures[activeTab].image}
+                                                alt={activeTab}
+                                                className="relative w-full max-w-[280px] h-auto object-contain drop-shadow-2xl"
+                                                onError={(e) => { e.target.src = '/SolAps/FallbackMatrimony.png'; }}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="w-full lg:w-2/3">
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                                            {React.createElement(panelFeatures[activeTab].icon, { className: "text-rose-500", size: 28 })}
+                                            {activeTab} Features
+                                        </h3>
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
+                                            {panelFeatures[activeTab].features.map((feature, idx) => (
+                                                <div key={idx} className="flex items-start gap-3">
+                                                    <div className="mt-1 w-5 h-5 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0">
+                                                        <CheckCircle className="w-3 h-3 text-rose-600" />
+                                                    </div>
+                                                    <span className="text-gray-700 font-medium">{feature}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                        <button className="mt-10 px-6 py-3 bg-rose-50 text-rose-600 font-semibold rounded-lg hover:bg-rose-100 transition-colors flex items-center gap-2">
+                                            Explore full feature list <ArrowRight size={16} />
+                                        </button>
+                                    </div>
+                                </motion.div>
+                            </AnimatePresence>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 5. Features Grid (#1E2A3A Background) */}
+            <section className="py-24 bg-[#1E2A3A] relative">
+                <div className="absolute inset-0 bg-[url('/grid-pattern-light.svg')] opacity-[0.05]" />
+                <div className="container mx-auto px-4 lg:px-8 relative z-10">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-display drop-shadow-sm">
+                            Platform <span className="text-rose-400">Capabilities</span>
+                        </h2>
+                        <div className="flex justify-center gap-4 mt-8 bg-blue-900/30 p-2 rounded-2xl w-max mx-auto border border-blue-800/50 backdrop-blur-sm">
+                            <button
+                                onClick={() => setActiveFeatureTab("Common")}
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                                    activeFeatureTab === "Common" ? "bg-rose-500 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                }`}
+                            >
+                                Core Essentials
+                            </button>
+                            <button
+                                onClick={() => setActiveFeatureTab("Advance")}
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                                    activeFeatureTab === "Advance" ? "bg-rose-500 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                }`}
+                            >
+                                Premium Tools
+                            </button>
+                        </div>
+                    </div>
+
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={activeFeatureTab}
+                            initial={{ opacity: 0, scale: 0.98 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.98 }}
+                            transition={{ duration: 0.3 }}
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                        >
+                            {(activeFeatureTab === "Common" ? commonFeatures : advanceFeatures).map((feature, idx) => (
+                                <div key={idx} className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 p-8 rounded-2xl hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-rose-500/30 group">
+                                    <div className="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-rose-500 transition-colors border border-blue-800/50">
+                                        <feature.icon className="text-rose-400 group-hover:text-white transition-colors" size={26} />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                                    <p className="text-blue-200/70 font-light leading-relaxed">{feature.desc}</p>
+                                </div>
+                            ))}
+                        </motion.div>
+                    </AnimatePresence>
+                </div>
+            </section>
+
+            {/* 6. Stats Section (#FFFBF2) */}
+            <section className="py-20 bg-[#FFFBF2] relative">
+                <div className="container mx-auto px-4 lg:px-8 relative z-10">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        {stats.map((stat, idx) => (
+                            <div key={idx} className="text-center group">
+                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
+                                    {stat.value}
+                                </h3>
+                                <p className="text-sm font-bold text-rose-600 uppercase tracking-widest">{stat.label}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* 7. Our Solution/Package Features */}
+            <section className="py-24 bg-white relative">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="flex flex-col lg:flex-row gap-16 items-center">
+                        <div className="w-full lg:w-1/3">
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                                Tailored to your <span className="text-rose-500">unique business needs</span>
+                            </h2>
+                            <p className="text-gray-600 mb-8 text-lg font-light">
+                                Our Matrimonial solutions provide the agility to launch fast and iterate aggressively with robust infrastructure.
+                            </p>
+                            <div className="hidden lg:block w-32 h-32 bg-rose-100 rounded-full blur-2xl opacity-60 absolute left-10 mt-10" />
+                        </div>
+
+                        <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+                            {solutions.map((sol, i) => {
+                                const Icon = sol.icon;
+                                return (
+                                    <div key={i} className="flex gap-4 p-5 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-md hover:border-rose-200 transition-all duration-300">
+                                        <div className="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center flex-shrink-0 text-rose-500">
+                                            <Icon size={22} />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold text-gray-900 mb-2">{sol.title}</h4>
+                                            <p className="text-sm text-gray-600 font-light">{sol.desc}</p>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 8. Portfolio Section */}
+            <section className="py-20 bg-gray-50 border-t border-gray-200">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="text-center mb-16">
+                        <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">OUR MATRIMONY PRODUCTS</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Latest Innovations</h2>
+                        <div className="w-24 h-1 bg-rose-500 mx-auto rounded-full" />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {portfolio.map((item, idx) => (
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: idx * 0.1 }}
+                                key={idx}
+                                className="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl hover:shadow-rose-500/10 transition-all duration-300 group flex flex-col h-full"
+                            >
+                                <div className="h-48 relative overflow-hidden">
+                                    <img
+                                        src={item.image}
+                                        alt={item.title}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        onError={(e) => { e.target.src = '/SolAps/FallbackMatrimony.png'; }}
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                                    <div className="absolute top-0 right-0 w-32 h-32 bg-rose-500/20 blur-2xl rounded-full" />
+                                    <Heart size={40} className="text-rose-400 absolute top-6 right-6 opacity-80 group-hover:scale-110 transition-transform duration-500" />
+                                    <h3 className="absolute bottom-4 left-4 right-4 text-white text-xl font-bold leading-tight z-10">{item.title}</h3>
+                                </div>
+
+                                <div className="p-8 flex flex-col flex-grow">
+                                    <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">{item.description}</p>
+                                    <div className="flex flex-wrap gap-2 mt-auto">
+                                        {item.tags.map(tag => (
+                                            <span key={tag} className="px-3 py-1 bg-rose-50 text-rose-600 text-[10px] font-bold uppercase tracking-wider rounded-md">
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* 9 & 10. Global Components */}
+            <Testimonial theme="rose" />
+            <Industries theme={{ bg: "bg-[#fff1f2]", primary: "text-rose-500", iconBg: "bg-rose-100", iconColor: "text-rose-500" }} />
+            <OurWork theme={{ primary: "text-rose-500", accent: "bg-rose-500" }} />
+            <ContactUs id="contact-us" theme="rose" />
         </div>
-      </section>
-    </div>
-  );
+    );
 };
 
 export default MatrimonyApp;
