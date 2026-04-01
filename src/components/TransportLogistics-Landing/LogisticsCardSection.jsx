@@ -8,33 +8,15 @@ const LogisticsCardSection = () => {
    const cards = [
       {
          title: "Tow Truck Platform",
+         desc: "On-demand roadside assistance with dispatch panel and real-time tracking.",
          path: "/products/home-service/tow-truck",
-         features: [
-            "Real-time GPS Tracking",
-            "Multiple Service Types",
-            "In-app Payments",
-            "Driver Management",
-            "Dispatcher Panel",
-            "Route Optimization"
-         ],
-         image: card1,
-         icon: <Truck className="text-orange-600" size={60} />,
-         themeColor: "from-orange-500 to-amber-500"
+         image: card1
       },
       {
          title: "Snow Removal Solution",
+         desc: "Automated booking and tracking platform designed for fleet management.",
          path: "/products/home-service/snow-removal",
-         features: [
-            "On-demand Booking",
-            "Weather Integration",
-            "Plow Tracking",
-            "Automated Billing",
-            "Equipment Tracking",
-            "Area Mapping"
-         ],
-         image: card2,
-         icon: <Snowflake className="text-blue-600" size={60} />,
-         themeColor: "from-blue-600 to-sky-400"
+         image: card2
       }
    ];
 
@@ -60,41 +42,29 @@ const LogisticsCardSection = () => {
                </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
                {cards.map((card, index) => (
-                  <Link
-                     to={card.path}
-                     key={index}
-                     className="group relative flex flex-col items-center text-center p-2 rounded-[3.5rem] border border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-slate-50/50 shadow-xl hover:border-orange-100"
-                  >
-                     {/* Image Section */}
-                     <div className="w-full  bg-white rounded-[3rem] overflow-hidden relative mb-8 flex items-center justify-center border border-slate-100 shadow-inner group">
+                  <div key={index} className="text-center">
+                     {/* CLICKABLE IMAGE */}
+                     <Link
+                        to={card.path}
+                        className="cursor-pointer group block"
+                     >
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-110"
+                           className="w-full rounded-xl border-[5px] border-transparent hover:border-orange-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
                         />
-                        {/* Interactive Background */}
-                        <div className={`absolute inset-0 bg-gradient-to-br ${card.themeColor} opacity-0 group-hover:opacity-20 transition-opacity`}></div>
-                     </div>
+                     </Link>
 
-                     {/* Content Section */}
-                     <div className="w-full px-12 pb-12 space-y-10 text-left">
-                        <div className="space-y-4 text-center">
-                           <h3 className="text-2xl font-semibold text-[#0F172A] group-hover:text-orange-600 transition-colors tracking-tight">{card.title}</h3>
-                           <div className={`h-1.5 w-16 bg-gradient-to-r ${card.themeColor} mx-auto rounded-full group-hover:w-32 transition-all`}></div>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-x-10 gap-y-5">
-                           {card.features.map((feature, i) => (
-                              <div key={i} className="flex items-center gap-3">
-                                 <div className="w-2.5 h-2.5 bg-orange-500 rounded-full group-hover:scale-125 transition-transform shadow-sm"></div>
-                                 <span className="text-sm font-semibold text-slate-600 group-hover:text-slate-900 transition-colors">{feature}</span>
-                              </div>
-                           ))}
-                        </div>
-                     </div>
-                  </Link>
+                     {/* TITLE AND DESCRIPTION */}
+                     <p className="mt-4 text-sm md:text-base">
+                        <Link to={card.path} className="text-orange-600 font-semibold hover:underline">
+                           {card.title}
+                        </Link>{" "}
+                        <span className="text-gray-700">- {card.desc}</span>
+                     </p>
+                  </div>
                ))}
             </div>
          </div>

@@ -1,11 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Smartphone, Layout, Globe, Zap } from 'lucide-react';
 import card1Img from '../../assets/saloonlanding-img/saloonlandingcard1.png';
 import card2Img from '../../assets/saloonlanding-img/saloonlandingcard2.png';
-
-
-
 
 const SalonCardSection = () => {
    const cards = [
@@ -13,37 +9,13 @@ const SalonCardSection = () => {
          title: "Salon & Beauty App",
          image: card1Img,
          path: "/products/home-service/salon",
-         accentColor: "text-rose-600",
-         underlineColor: "bg-gradient-to-r from-rose-500 to-orange-500",
-         dotColor: "bg-rose-500",
-         hoverShadow: "hover:shadow-rose-100/50",
-         features: [
-            "Multi Login Support",
-            "Custom Product Management",
-            "Android & iOS Apps",
-            "Multi Language Support",
-            "Light & Dark Modes",
-            "Secure Payment Gateway"
-         ],
-
+         desc: "A complete mobile app solution for salon and beauty service bookings."
       },
       {
          title: "Premium Salon Booking",
          image: card2Img,
          path: "/products/salon-booking",
-         accentColor: "text-purple-600",
-         underlineColor: "bg-gradient-to-r from-purple-500 to-indigo-500",
-         dotColor: "bg-purple-500",
-         hoverShadow: "hover:shadow-purple-100/50",
-         features: [
-            "Multi Vendor Support",
-            "Instant Payment Gateway",
-            "Smart Notification System",
-            "Multi Language Ready",
-            "Unlimited Color Customization",
-            "Comprehensive Categories"
-         ],
-
+         desc: "Feature-rich web platform for multi-vendor salon management."
       }
    ];
 
@@ -69,53 +41,33 @@ const SalonCardSection = () => {
                </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
                {cards.map((card, index) => (
-                  <Link
-                     to={card.path}
-                     key={index}
-                     className={`group relative flex flex-col items-center text-center p-2 rounded-[40px] border-2 border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-white shadow-xl ${card.hoverShadow}`}
-                  >
-                     {/* Image Section */}
-                     <div className="w-full  bg-gray-50 rounded-[36px] overflow-hidden relative mb-6">
+                  <div key={index} className="text-center">
+
+                     {/* CLICKABLE IMAGE */}
+                     <Link
+                        to={card.path}
+                        className="cursor-pointer group block"
+                     >
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700"
-
+                           className="w-full rounded-xl border-[5px] border-transparent hover:border-rose-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent pointer-events-none"></div>
-                     </div>
+                     </Link>
 
+                     {/* TITLE AND DESCRIPTION */}
+                     <p className="mt-4 text-sm md:text-base">
+                        <Link to={card.path} className="text-rose-600 font-semibold hover:underline">
+                           {card.title}
+                        </Link>{" "}
+                        <span className="text-gray-700">
+                           - {card.desc}
+                        </span>
+                     </p>
 
-                     {/* Content Section */}
-                     <div className="w-full px-8 pb-10 space-y-8">
-                        <div className="space-y-2">
-                           <h3 className={`text-xl font-semibold text-[#1A1C2C] group-hover:${card.accentColor} transition-colors`}>{card.title}</h3>
-                           <div className={`h-1 w-20 ${card.underlineColor} mx-auto rounded-full`}></div>
-                        </div>
-
-
-                        <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-left">
-                           {card.features.map((feature, i) => (
-                              <div key={i} className="flex items-center gap-2">
-                                 <div className={`w-1.5 h-1.5 ${card.dotColor} rounded-full`}></div>
-                                 <span className="text-sm font-bold text-gray-700">{feature}</span>
-                              </div>
-                           ))}
-                        </div>
-
-                        {/* Powered By Badge & Button */}
-                        {/* <div className="pt-6 flex flex-col gap-6">
-
-
-                           <button className="flex items-center justify-center gap-2 text-[#FF4D29] font-bold text-sm group-hover:underline transition-all">
-                              Explore Solution <ArrowRight size={18} />
-                           </button>
-                        </div> */}
-                     </div>
-
-                  </Link>
+                  </div>
                ))}
             </div>
             {/* Bottom note */}

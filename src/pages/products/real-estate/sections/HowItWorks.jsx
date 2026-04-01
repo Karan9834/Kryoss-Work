@@ -73,7 +73,7 @@ const HowItWorks = () => {
 
                 {/* Heading */}
                 <h2 className="text-center text-4xl font-bold text-gray-800">
-                    How Does Our <span className="text-blue-600">Real Estate CRM</span> Work?
+                    How Does Our <span className="text-blue-600">Real Estate Agency</span> Work?
                 </h2>
 
                 <p className="text-center text-gray-600 max-w-3xl mx-auto mt-4">
@@ -90,18 +90,16 @@ const HowItWorks = () => {
 
                         <button
                             onClick={() => setTab("support")}
-                            className={`px-6 py-2 rounded-full text-sm font-medium transition ${
-                                tab === "support" ? "bg-white text-blue-900" : "text-white"
-                            }`}
+                            className={`px-6 py-2 rounded-full text-sm font-medium transition ${tab === "support" ? "bg-white text-blue-900" : "text-white"
+                                }`}
                         >
                             ● Support Automation
                         </button>
 
                         <button
                             onClick={() => setTab("management")}
-                            className={`px-6 py-2 rounded-full text-sm font-medium transition ${
-                                tab === "management" ? "bg-white text-blue-900" : "text-white"
-                            }`}
+                            className={`px-6 py-2 rounded-full text-sm font-medium transition ${tab === "management" ? "bg-white text-blue-900" : "text-white"
+                                }`}
                         >
                             ● Support Management
                         </button>

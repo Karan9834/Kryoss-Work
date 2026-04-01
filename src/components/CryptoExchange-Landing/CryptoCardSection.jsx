@@ -6,29 +6,15 @@ import card2 from '../../assets/cryptolanding-img/cryptolandingcard2.png';
 const CryptoCardSection = () => {
    const cards = [
       {
-         title: "Spot Trading Solution",
+         title: "LocalCoins: Spot Trading Solution",
+         desc: "Advanced spot setup with multi-currency support and real-time trading engine.",
          path: "/products/crypto-spot-exchange",
-         features: [
-            "Advanced Order Management",
-            "Real-time Trading Engine",
-            "Multi-Currency Support",
-            "Intuitive UI/UX",
-            "API Integration",
-            "Secure Wallet Management"
-         ],
          image: card1
       },
       {
-         title: "Derivative Trading",
+         title: "Tradexpro Exchange: Derivative Trading",
+         desc: "Comprehensive derivative platform offering leverage trading, futures & options.",
          path: "/products/crypto-derivatives",
-         features: [
-            "Leverage Trading",
-            "Futures & Options",
-            "Risk Management Tools",
-            "Liquidity Solutions",
-            "Analytical Dashboards",
-            "Regulatory Compliance"
-         ],
          image: card2
       }
    ];
@@ -54,35 +40,29 @@ const CryptoCardSection = () => {
                </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
                {cards.map((card, index) => (
-                  <Link
-                     to={card.path}
-                     key={index}
-                     className="group relative flex flex-col items-center text-center p-2 rounded-[3rem] border border-blue-50 transition-all duration-500 hover:scale-[1.02] bg-blue-50/30 shadow-2xl hover:border-blue-500/50"
-                  >
-                     {/* Image Section */}
-                     <div className="w-full  bg-blue-100/50 rounded-[2.5rem] overflow-hidden relative mb-6">
-                        <img src={card.image} alt={card.title} className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-110" />
-                     </div>
+                  <div key={index} className="text-center">
+                     {/* CLICKABLE IMAGE */}
+                     <Link
+                        to={card.path}
+                        className="cursor-pointer group block"
+                     >
+                        <img
+                           src={card.image}
+                           alt={card.title}
+                           className="w-full rounded-xl border-[5px] border-transparent hover:border-blue-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
+                        />
+                     </Link>
 
-                     {/* Content Section */}
-                     <div className="w-full px-8 pb-10 space-y-8 text-left">
-                        <div className="space-y-4 text-center">
-                           <h3 className="text-2xl font-bold group-hover:text-blue-600 transition-colors">{card.title}</h3>
-                           <div className="h-0.5 w-16 bg-blue-600 mx-auto rounded-full group-hover:w-32 transition-all"></div>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-x-8 gap-y-4">
-                           {card.features.map((feature, i) => (
-                              <div key={i} className="flex items-center gap-2">
-                                 <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-                                 <span className="text-sm font-semibold text-gray-600">{feature}</span>
-                              </div>
-                           ))}
-                        </div>
-                     </div>
-                  </Link>
+                     {/* TITLE AND DESCRIPTION */}
+                     <p className="mt-4 text-sm md:text-base">
+                        <Link to={card.path} className="text-blue-600 font-semibold hover:underline">
+                           {card.title}
+                        </Link>{" "}
+                        <span className="text-gray-700">- {card.desc}</span>
+                     </p>
+                  </div>
                ))}
             </div>
          </div>

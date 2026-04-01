@@ -77,7 +77,7 @@ const CorpHowItWorks = () => {
 
                                 <div className="space-y-2 px-2">
                                     <h3 className="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors duration-300">{step.title}</h3>
-                                    <p className="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
+                                    <p className="text-slate-900 text-sm leading-relaxed">{step.desc}</p>
                                 </div>
                             </div>
                         ))}

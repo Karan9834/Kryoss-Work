@@ -32,7 +32,7 @@ const Hero = () => {
 
           <div className="btn-group">
             <a
-              href="http://preview.codecanyon.net/item/foodhat-restaurant-menu-food-ordering-system/full_screen_preview/46780682"
+              href="https://preview.codecanyon.net/item/foodbite-multi-restaurant-food-delivery-app-flutter/full_screen_preview/61762849"
               className="btn-primary"
               target="_blank"
               rel="noopener noreferrer"

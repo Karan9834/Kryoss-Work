@@ -7,40 +7,16 @@ import card2Img from '../../assets/tourlanding-img/tourlandingcard2.png';
 const TourTravelCardSection = () => {
     const cards = [
         {
-            title: "Tour & Travel Booking App",
+            title: "Tour Master: Tour & Travel Booking App",
             desc: "A full-featured OTA-style booking platform for flights, hotels, and packages.",
             path: "/products/prime/tour-travel-booking-app",
-            features: [
-                "Flight & Hotel Search",
-                "Tour Package Builder",
-                "Real-time Availability",
-                "Multi-Currency Payments",
-                "Customer & Agent Apps",
-                "Trip Itinerary Manager",
-            ],
-            icon: Plane,
-            themeColor: "text-sky-600",
-            bgColor: "bg-sky-50",
-            accentColor: "bg-sky-500",
-        },
+         },
         {
-            title: "Travel Agency Management",
+            title: "WooTour",
             desc: "A comprehensive back-office solution for travel agencies and tour operators.",
             path: "/products/prime/travel-agency-management",
-            features: [
-                "Agent Commission System",
-                "Booking Management",
-                "Vendor & Supplier Portal",
-                "Dynamic Pricing Engine",
-                "Analytics Dashboard",
-                "CRM Integration",
-            ],
-            icon: Map,
-            themeColor: "text-amber-600",
-            bgColor: "bg-amber-50",
-            accentColor: "bg-amber-500",
-        },
-    ];
+         }
+   ];
 
     return (
         <section id="tour-products" className="py-16 bg-transparent">
@@ -61,36 +37,31 @@ const TourTravelCardSection = () => {
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-12">
+                <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
                     {cards.map((card, index) => (
-                        <Link
-                            to={card.path}
-                            key={index}
-                            className="group relative flex flex-col items-center text-center p-2 rounded-[40px] border-2 border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-white shadow-xl hover:border-sky-100"
-                        >
-                            {/* Image Section */}
-                            <div className={`w-full  ${card.bgColor} rounded-[36px] overflow-hidden relative mb-6 flex items-center justify-center`}>
-                                <img src={index === 0 ? card1Img : card2Img} alt={card.title} className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-700" />
-                                <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent pointer-events-none"></div>
-                            </div>
+                        <div key={index} className="text-center">
+                            {/* CLICKABLE IMAGE */}
+                            <Link
+                                to={card.path}
+                                className="cursor-pointer group block"
+                            >
+                                <img
+                                    src={index === 0 ? card1Img : card2Img}
+                                    alt={card.title}
+                                    className="w-full rounded-xl border-[5px] border-transparent hover:border-sky-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
+                                />
+                            </Link>
 
-                            {/* Content Section */}
-                            <div className="w-full px-8 pb-10 space-y-8">
-                                <div className="space-y-2">
-                                    <h3 className={`text-xl font-bold text-[#1E293B] group-hover:${card.themeColor} transition-colors uppercase tracking-tight`}>{card.title}</h3>
-                                    <div className={`h-1 w-20 ${card.accentColor} mx-auto rounded-full`}></div>
-                                </div>
-
-                                <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-left">
-                                    {card.features.map((feature, i) => (
-                                        <div key={i} className="flex items-center gap-2">
-                                            <div className={`w-1.5 h-1.5 ${card.accentColor} rounded-full`}></div>
-                                            <span className="text-sm font-bold text-gray-700">{feature}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </Link>
+                            {/* TITLE AND DESCRIPTION */}
+                            <p className="mt-4 text-sm md:text-base">
+                                <Link to={card.path} className="text-sky-600 font-semibold hover:underline">
+                                    {card.title}
+                                </Link>{" "}
+                                <span className="text-gray-700">
+                                    - {card.desc}
+                                </span>
+                            </p>
+                        </div>
                     ))}
                 </div>
 

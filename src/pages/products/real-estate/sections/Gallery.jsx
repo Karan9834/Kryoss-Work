@@ -31,7 +31,7 @@ const Gallery = () => {
 
                 {/* Heading */}
                 <h2 className="text-center text-4xl font-bold text-gray-800">
-                    Explore Our <span className="text-blue-600">Real Estate CRM Gallery</span>
+                    Explore Our <span className="text-blue-600">Real Estate Agency Gallery</span>
                 </h2>
 
                 <p className="text-center text-gray-600 max-w-2xl mx-auto mt-4">

@@ -74,6 +74,7 @@ import NewsPage from "../pages/products/News/NewsPage";
 import BFSIFinance from "../pages/products/BFSI-Finance/BFSIFinance";
 import NewsMAnagement from "../pages/products/News-Management/NewsMAnagement";
 import HSMHotel from "../pages/products/HMS-Hotel/HSMHotel";
+import HMSLanding from "../pages/products/HMS-Hospital-Mgmt/HMSLanding";
 import EMSLanding from "../pages/products/EMS-Event-Mgmt/EMSLanding";
 import RMSLanding from "../pages/products/RMS-Restaurant-Mgmt/RMSLanding";
 import SMSLanding from "../pages/products/SMS-School-Mgmt/SMSLanding";
@@ -90,6 +91,8 @@ import GlobalPage from "../pages/products/SMS-School-Mgmt/Global/GlobalPage";
 import PharmacyNextAIPage from "../pages/products/PMS-Pharmacy-Mgmt/PharmacyNextAI/PharmacyNextAIPage";
 import KiviCarePage from "../pages/products/PMS-Pharmacy-Mgmt/KiviCare/KiviCarePage";
 
+import SmartHMSPage from "../pages/products/HMS-Hospital-Mgmt/SmartHMS/SmartHMSPage";
+import BdTaskHMSPage from "../pages/products/HMS-Hospital-Mgmt/BdTaskHMS/BdTaskHMSPage";
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
     <Route key="products-details" path="products/:id" element={<ProductDetailsPlaceholder />} />,
@@ -132,6 +135,7 @@ export const ProductRoutes = [
     <Route key="lms" path="products/enterprise/lms" element={<LmsPage />} />,
     <Route key="Hrm" path="/products/enterprise/hrm" element={<HRM />} />,
     <Route Key="Crm" path="/products/enterprise/crm" element={<CRM />} />,
+    <Route key="hms-hospital" path="/products/enterprise/hms-hospital" element={<HMSLanding />} />,
     <Route key="Ecommerce" path="/products/our/ecommerce" element={<Ecommerce />} />,
     <Route key="Food-delivery-app" path="/products/our/food-delivery" element={<FoodDeliveryPage />} />,
     <Route key="hotel-management" path="/products/our/hotel-booking" element={<HotelManagement />} />,
@@ -171,6 +175,9 @@ export const ProductRoutes = [
     <Route key="sms-global" path="/products/enterprise/sms/global" element={<GlobalPage />} />,
     <Route key="pms-pharmacynext-ai" path="/products/enterprise/pms/pharmacynext-ai" element={<PharmacyNextAIPage />} />,
     <Route key="pms-kivicare" path="/products/enterprise/pms/kivicare" element={<KiviCarePage />} />,
+
+    <Route key="hms-smart" path="/products/enterprise/hms-hospital/smart-hms" element={<SmartHMSPage />} />,
+    <Route key="hms-bdtask" path="/products/enterprise/hms-hospital/bdtask-hms" element={<BdTaskHMSPage />} />,
 
 
     <Route key="news" path="/products/prime/news-magazine" element={<NewsPage />} />,

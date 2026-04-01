@@ -10,12 +10,12 @@ const FinalCTASection = () => {
   ];
 
   const handleLiveDemo = () => {
-    window.open("https://demo.creativeitem.com/index.php?product=atlasimport", "_blank");
+    window.open("https://preview.codecanyon.net/item/atlas-laravel-business-directory-listing/full_screen_preview/56469797", "_blank");
   };
 
   return (
     <section className="relative bg-gradient-to-br from-blue-700 via-indigo-700 to-purple-700 text-white py-20 px-6 overflow-hidden">
-      
+
       {/* ===== Background Elements ===== */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full">
@@ -45,7 +45,7 @@ const FinalCTASection = () => {
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
-        
+
         {/* ===== MAIN CONTENT ===== */}
         <div className="text-center">
           {/* Badge */}
@@ -100,7 +100,7 @@ const FinalCTASection = () => {
           {/* ===== CTA BUTTONS ===== */}
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             {/* Live Demo Button with Link */}
-            <button 
+            <button
               onClick={handleLiveDemo}
               className="group relative bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-bold px-8 py-4 rounded-2xl shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 transform hover:scale-105 active:scale-95 overflow-hidden"
             >

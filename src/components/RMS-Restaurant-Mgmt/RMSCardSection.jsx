@@ -8,28 +8,14 @@ const RMSCardSection = () => {
    const cards = [
       {
          title: "Fine Dining & Casual",
+         desc: "Advanced reservation sync, floor plan mapping, and tableside ordering.",
          path: "/products/enterprise/rms/fine-dining", // Add specific paths later if needed
-         features: [
-            "Floor Plan Mapping",
-            "Reservation Sync",
-            "Course Pacing",
-            "Wine Inventory",
-            "Guest Preferences",
-            "Tableside Ordering"
-         ],
          image: card1
       },
       {
          title: "QSR & Fast Casual",
+         desc: "Rapid checkout systems, self-service kiosks, and digital menu boards.",
          path: "/products/enterprise/rms/qsr-fast-casual", // Add specific paths later if needed
-         features: [
-            "Self-Service Kiosks",
-            "Drive-Thru Sync",
-            "Rapid Checkout",
-            "Combo Management",
-            "Franchise Scaling",
-            "Digital Menu Boards"
-         ],
          image: card2
       }
    ];
@@ -57,39 +43,29 @@ const RMSCardSection = () => {
                </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
                {cards.map((card, index) => (
-                  <Link
-                     to={card.path}
-                     key={index}
-                     className="group relative flex flex-col items-center text-center p-2 rounded-[3.5rem] border border-gray-50 transition-all duration-500 hover:scale-[1.02] bg-rose-50/20 shadow-xl hover:border-rose-100"
-                  >
-                     {/* Image Section */}
-                     <div className="w-full h-64 bg-gray-50 rounded-[3rem] overflow-hidden relative mb-8 flex items-center justify-center border border-rose-50/50">
-                        {card.image ? (
-                           <img src={card.image} alt={card.title} className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-110" />
-                        ) : (
-                           <span className="text-gray-400 font-medium">Image Placeholder</span>
-                        )}
-                     </div>
+                  <div key={index} className="text-center">
+                     {/* CLICKABLE IMAGE */}
+                     <Link
+                        to={card.path}
+                        className="cursor-pointer group block"
+                     >
+                        <img
+                           src={card.image}
+                           alt={card.title}
+                           className="w-full rounded-xl border-[5px] border-transparent hover:border-rose-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
+                        />
+                     </Link>
 
-                     {/* Content Section */}
-                     <div className="w-full px-12 pb-12 space-y-10 text-left">
-                        <div className="space-y-4 text-center">
-                           <h3 className="text-2xl font-bold text-[#1A1C2C] group-hover:text-rose-600 transition-colors tracking-tight">{card.title}</h3>
-                           <div className="h-1.5 w-16 bg-gradient-to-r from-red-500 to-amber-500 mx-auto rounded-full group-hover:w-32 transition-all"></div>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-x-10 gap-y-5">
-                           {card.features.map((feature, i) => (
-                              <div key={i} className="flex items-center gap-3">
-                                 <div className="w-2.5 h-2.5 bg-amber-500 rounded-full group-hover:scale-125 transition-transform shadow-sm"></div>
-                                 <span className="text-sm font-semibold text-gray-600 group-hover:text-gray-900 transition-colors">{feature}</span>
-                              </div>
-                           ))}
-                        </div>
-                     </div>
-                  </Link>
+                     {/* TITLE AND DESCRIPTION */}
+                     <p className="mt-4 text-sm md:text-base">
+                        <Link to={card.path} className="text-rose-600 font-semibold hover:underline">
+                           {card.title}
+                        </Link>{" "}
+                        <span className="text-gray-700">- {card.desc}</span>
+                     </p>
+                  </div>
                ))}
             </div>
          </div>

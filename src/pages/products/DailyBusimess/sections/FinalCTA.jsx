@@ -4,7 +4,7 @@ import { ArrowRight, Play } from "lucide-react";
 
 const FinalCTA = () => {
   const handleLiveDemo = () => {
-    window.open("http://preview.codecanyon.net/item/modern-news-ticker/full_screen_preview/2347950", "_blank");
+    window.open("https://preview.codecanyon.net/item/elespare-pro-advanced-news-magazine-blog-addons-for-elementor/full_screen_preview/32950672", "_blank");
   };
 
   const handleGetStarted = () => {
@@ -41,7 +41,7 @@ const FinalCTA = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
 
           {/* SECONDARY BUTTON - Live Demo */}
-          <button 
+          <button
             onClick={handleLiveDemo}
             className="group flex items-center justify-center gap-2 border border-green-500/30 text-gray-300 px-8 py-4 rounded-xl font-semibold hover:bg-white/10 hover:border-green-500/50 transition duration-300"
           >

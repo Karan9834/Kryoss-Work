@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   const handleViewDemo = () => {
-    window.open("https://demo.creativeitem.com/index.php?product=atlasimport", "_blank");
+    window.open("https://preview.codecanyon.net/item/atlas-laravel-business-directory-listing/full_screen_preview/56469797", "_blank");
   };
 
   return (
@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="mt-10 flex gap-4 flex-wrap">
 
             {/* Primary CTA with Demo Link */}
-            <button 
+            <button
               onClick={handleViewDemo}
               className="group bg-gradient-to-r from-blue-500 to-indigo-600 px-8 py-4 rounded-xl font-semibold flex items-center gap-2 hover:opacity-90 transition"
             >

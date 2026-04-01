@@ -6,22 +6,22 @@ const AIContentGeneratorAbout = () => {
 
             <div className="max-w-7xl mx-auto px-6">
 
-                <div className="grid lg:grid-cols-2 gap-6 items-center">
+                <div className="grid lg:grid-cols-2 gap-2 items-center">
 
                     {/* LEFT IMAGE */}
-                    <div className="flex justify-center lg:justify-start">
+                    <div className="flex justify-center lg:justify-start order-2 lg:order-1 ">
 
                         {/* Replace with your downloaded image */}
                         <img
                             src={aicontentaboutimg}
                             alt="AI Content Generator Platform"
-                            className="w-full max-w-sm rounded-3xl shadow-xl object-cover"
+                            className="w-full  max-w-sm rounded-3xl shadow-xl object-cover"
                         />
 
                     </div>
 
                     {/* RIGHT CONTENT */}
-                    <div className="bg-white border border-purple-100 rounded-3xl p-8 lg:p-12 shadow-sm space-y-6">
+                    <div className="bg-white border border-purple-100 rounded-3xl p-8 lg:p-12 shadow-sm space-y-6 order-1 lg:order-2">
 
                         {/* Badge */}
                         <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 text-sm px-4 py-2 rounded-full w-fit">

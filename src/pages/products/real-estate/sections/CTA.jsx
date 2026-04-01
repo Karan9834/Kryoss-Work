@@ -8,12 +8,12 @@ const CTA = () => {
 
                 {/* Heading */}
                 <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                    Start Your Real Estate CRM Platform Today
+                    Start Your Real Estate Agency Platform Today
                 </h2>
 
                 {/* Description */}
                 <p className="text-gray-200 mt-5 text-lg leading-relaxed max-w-2xl mx-auto">
-                    Launch a powerful ride-sharing platform that connects commuters
+                    Launch a powerful real estate agency platform that connects buyers and sellers
                     traveling in the same direction. Our carpool app helps reduce
                     traffic, lower travel costs, and create an eco-friendly
                     transportation solution for modern cities.

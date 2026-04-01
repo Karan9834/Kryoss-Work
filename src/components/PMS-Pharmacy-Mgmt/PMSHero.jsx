@@ -51,7 +51,7 @@ const PMSHero = () => {
                                 onClick={scrollToProducts}
                                 className="px-10 py-5 bg-gradient-to-r from-emerald-500 to-teal-400 text-white font-black rounded-2xl hover:scale-105 transition-all duration-300 shadow-2xl shadow-emerald-900/40 flex items-center gap-3 uppercase tracking-wider"
                             >
-                                Try Live Demo <ArrowRight size={20} />
+                                Explore our Products <ArrowRight size={20} />
                             </button>
                         </div>
 
