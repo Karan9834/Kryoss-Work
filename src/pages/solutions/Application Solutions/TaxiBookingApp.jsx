@@ -243,7 +243,7 @@ const TaxiBookingApp = () => {
             </section>
 
             {/* 4. Must-Have Features (Tabs Layout) */}
-            <section className="py-20 bg-gray-50 border-y border-gray-100">
+            <section className="py-20 bg-[#FFFBF2] border-y border-orange-100">
                 <div className="container mx-auto px-4 lg:px-8">
 
                     {/* Heading */}
@@ -334,8 +334,8 @@ const TaxiBookingApp = () => {
             </section>
 
             {/* 5. Features for Taxi App (Grid) */}
-            <section className="py-24 bg-gray-950 text-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-orange-600/10 blur-[150px]"></div>
+            <section className="py-24 bg-[#1E2A3A] text-white relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-orange-400/5 blur-[150px]"></div>
 
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
 
@@ -408,25 +408,25 @@ const TaxiBookingApp = () => {
             </section>
 
             {/* 6. Stats Section */}
-            <section className="py-16 bg-orange-500 relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://kryosssoftech.org/assets/images/indexImg/Counter.png')] bg-cover bg-center opacity-20 mix-blend-multiply"></div>
+            <section className="py-16 bg-[#FFFBF2] relative overflow-hidden border-y border-orange-100">
+                <div className="absolute inset-0 bg-[url('https://kryosssoftech.org/assets/images/indexImg/Counter.png')] bg-cover bg-center opacity-5 mix-blend-multiply"></div>
                 <div className="container mx-auto px-4 relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-orange-400/50">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-orange-200">
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-6xl font-extrabold text-white mb-2 drop-shadow-md">750+</h3>
-                            <p className="text-orange-100 font-bold uppercase tracking-wider text-sm">Projects Delivered</p>
+                            <h3 className="text-4xl md:text-6xl font-extrabold text-[#1E293B] mb-2">750+</h3>
+                            <p className="text-orange-600 font-bold uppercase tracking-wider text-sm">Projects Delivered</p>
                         </div>
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-6xl font-extrabold text-white mb-2 drop-shadow-md">150+</h3>
-                            <p className="text-orange-100 font-bold uppercase tracking-wider text-sm">Development Staff</p>
+                            <h3 className="text-4xl md:text-6xl font-extrabold text-[#1E293B] mb-2">150+</h3>
+                            <p className="text-orange-600 font-bold uppercase tracking-wider text-sm">Development Staff</p>
                         </div>
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-6xl font-extrabold text-white mb-2 drop-shadow-md">10+</h3>
-                            <p className="text-orange-100 font-bold uppercase tracking-wider text-sm">Years of Experience</p>
+                            <h3 className="text-4xl md:text-6xl font-extrabold text-[#1E293B] mb-2">10+</h3>
+                            <p className="text-orange-600 font-bold uppercase tracking-wider text-sm">Years of Experience</p>
                         </div>
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-6xl font-extrabold text-white mb-2 drop-shadow-md">450+</h3>
-                            <p className="text-orange-100 font-bold uppercase tracking-wider text-sm">Satisfied Clients</p>
+                            <h3 className="text-4xl md:text-6xl font-extrabold text-[#1E293B] mb-2">450+</h3>
+                            <p className="text-orange-600 font-bold uppercase tracking-wider text-sm">Satisfied Clients</p>
                         </div>
                     </div>
                 </div>
