@@ -17,7 +17,7 @@ import ContactUs from '../../../components/Common/ContactUs';
 const panelFeatures = {
     "Passenger App": {
         icon: User,
-        image: "/images/passenger.jpg",
+        image: "/SolAps/taxii1.png",
         features: [
             "Easy Registration & Sign-In", "Push Notifications", "Ratings & Reviews",
             "Password Recovery", "Security & Ratings", "Quick Bookings",
@@ -27,7 +27,7 @@ const panelFeatures = {
     },
     "Driver App": {
         icon: Car,
-        image: "/images/driver.jpg",
+        image: "/SolAps/taxii2.png",
         features: [
             "Unique Driver Profile", "Social Media Login", "Quick Registration",
             "Set Availability", "Reloads Ride Feature", "Accept/Decline Ride Request",
@@ -37,7 +37,7 @@ const panelFeatures = {
     },
     "Admin Panel": {
         icon: Shield,
-        image: "/images/admin.jpg",
+        image: "/SolAps/taxii3.png",
         features: [
             "Create Sub Admins", "Multi-Level Admin Access", "Complete Dashboard",
             "Driver Management", "Passenger Management", "Analytics & Reports",
@@ -47,7 +47,7 @@ const panelFeatures = {
     },
     "Dispatcher Panel": {
         icon: Compass,
-        image: "/images/dispatcher.jpg",
+        image: "/SolAps/taxii4.png",
         features: [
             "Ride Tracking", "Create Bookings", "Payment Tracking", "Reviews & Feedback",
             "Take phone bookings", "Track Driver locations", "Assign Trips to Drivers",
@@ -88,19 +88,19 @@ const portfolio = [
         title: "Trusted Taxi-Cab Booking",
         description: "A reliable taxi booking platform with real-time ride tracking, driver management, and secure payment integration.",
         tags: ["Booking", "Realtime", "Secure"],
-        image: "https://images.unsplash.com/photo-1549921296-3a6b0c4b7f47"
+        image: "/SolAps/Taxiii.png"
     },
     {
         title: "City Cab-Native Uber Clone",
         description: "A full-featured Uber-like app with ride scheduling, GPS tracking, driver-passenger matching, and fare estimation.",
         tags: ["Uber Clone", "GPS", "Mobile App"],
-        image: "https://images.unsplash.com/photo-1556122071-e404cb6f31a2"
+        image: "/SolAps/Chnagecar.png"
     },
     {
         title: "OneRoad-React Native App",
         description: "A cross-platform React Native taxi app designed for seamless booking, notifications, and user-friendly experience.",
         tags: ["React Native", "Cross Platform", "UI/UX"],
-        image: "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023"
+        image: "/SolAps/taxiapp.png"
     }
 ];
 
@@ -174,7 +174,7 @@ const TaxiBookingApp = () => {
                                     src="/images/taxi-booking-hero.png"
                                     alt="Taxi App Development"
                                     className="relative z-10 max-h-[500px] w-full object-contain drop-shadow-2xl"
-                                    onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800'; e.target.className = 'relative z-10 w-full h-auto object-cover rounded-3xl shadow-2xl' }}
+                                    onError={(e) => { e.target.src = '/SolAps/taxi booking app.png'; e.target.className = 'relative z-10 w-full h-auto object-cover rounded-3xl shadow-2xl' }}
                                 />
                             </div>
                         </motion.div>
