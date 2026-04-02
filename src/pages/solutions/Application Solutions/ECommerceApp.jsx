@@ -115,7 +115,7 @@ const ECommerceApp = () => {
       </Helmet>
 
       {/* 1. Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#F8FAFC] via-white to-[#FEF9C3]">
+      <section className="relative w-full min-h-[550px] lg:min-h-[600px] flex md:items-center overflow-hidden bg-gradient-to-br from-[#F8FAFC] via-white to-[#FEF9C3]">
         {/* Background Details */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-10 left-10 w-96 h-96 bg-orange-100/50 rounded-full blur-3xl" />
@@ -123,7 +123,7 @@ const ECommerceApp = () => {
           <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03]" />
         </div>
 
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-20">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10 py-10">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             {/* Text Content */}
             <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -141,7 +141,7 @@ const ECommerceApp = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-5xl lg:text-7xl font-bold tracking-tight text-gray-900 mb-6 leading-tight"
+                className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-gray-900"
               >
                 Ultimate <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">ECommerce</span> App
               </motion.h1>
@@ -150,7 +150,7 @@ const ECommerceApp = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
-                className="text-lg text-gray-600 mb-10 max-w-xl mx-auto lg:mx-0 font-light"
+                className="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0 font-semibold"
               >
                 Launch your multi-vendor marketplace with scalable solutions, intuitive UI, and lightning-fast checkout experiences to uplift sales globally.
               </motion.p>
@@ -181,10 +181,10 @@ const ECommerceApp = () => {
                 className="relative z-10"
               >
                 <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 to-yellow-500/10 rounded-3xl blur-2xl transform rotate-3" />
-                <img
+                <img width="2048" height="1365"
                   src="/SolAps/Ecomapp.png"
                   alt="ECommerce Development"
-                  className="relative z-10 max-h-[500px] w-full object-contain drop-shadow-2xl"
+                  className="relative z-10 w-full h-auto aspect-[2048/1365] object-contain drop-shadow-2xl"
                   onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; e.target.className = 'relative z-10 w-full h-auto object-cover rounded-3xl shadow-2xl' }}
                 />
               </motion.div>
@@ -193,24 +193,7 @@ const ECommerceApp = () => {
         </div>
       </section>
 
-      {/* 2. Breadcrumb Navigation */}
-      <div className="w-full bg-white/90 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 transition-all duration-300 h-16 sm:h-20 flex items-center">
-        <div className="container mx-auto px-4 lg:px-8">
-          <nav className="flex items-center space-x-2 sm:space-x-4 text-xs sm:text-sm font-medium text-gray-500">
-            <a href="/" className="hover:text-orange-500 transition-colors hidden sm:block">Home</a>
-            <span className="hidden sm:block text-gray-300">/</span>
-            <a href="#" className="hover:text-orange-500 transition-colors">Solutions</a>
-            <span className="text-gray-300">/</span>
-            <a href="#" className="hover:text-orange-500 transition-colors hidden md:block">Application Solutions</a>
-            <span className="hidden md:block text-gray-300">/</span>
-            <span className="text-gray-900 border-b border-orange-500 pb-0.5 truncate max-w-[150px] sm:max-w-none">
-              ECommerce App Development
-            </span>
-          </nav>
-        </div>
-      </div>
-
-      {/* 3. Intro Section */}
+      {/* 2. Intro Section */}
       <section className="py-20 lg:py-32 bg-white relative">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-16">
@@ -221,10 +204,10 @@ const ECommerceApp = () => {
               className="w-full lg:w-1/2 relative"
             >
               <div className="absolute -inset-4 bg-orange-50 border border-orange-100 rounded-[2rem] transform -rotate-2" />
-              <img
+              <img width="2048" height="1365"
                 src="/SolAps/Ecomintro.png"
                 alt="Online Shopping"
-                className="relative w-full rounded-2xl shadow-xl object-cover h-[450px]"
+                className="relative w-full rounded-2xl shadow-xl object-cover h-auto aspect-[2048/1365]"
                 onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
@@ -244,7 +227,7 @@ const ECommerceApp = () => {
               <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 Transform Sales with <span className="text-orange-500">Robust Platforms</span>
               </h2>
-              <p className="text-gray-600 mb-8 text-lg font-light leading-relaxed">
+              <p className="text-gray-600 mb-6 text-base font-semibold leading-relaxed max-w-lg">
                 Our ready-made E-Commerce scripts are fully customizable and scalable. Optimized effortlessly for better search results, faster page loads, higher conversions, and mobile-friendly shopping. Process all operations from a unified dashboard.
               </p>
               <ul className="space-y-4 mb-8">
@@ -323,7 +306,7 @@ const ECommerceApp = () => {
                   <div className="w-full lg:w-1/3 flex justify-center items-center">
                     <div className="relative">
                       <div className="absolute inset-0 bg-orange-100 rounded-3xl blur-xl transform -rotate-6" />
-                      <img
+                      <img width="2048" height="1365"
                         src={panelFeatures[activeTab].image}
                         alt={activeTab}
                         className="relative w-full max-w-[280px] h-auto object-contain drop-shadow-2xl"
@@ -476,7 +459,7 @@ const ECommerceApp = () => {
                 className="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300 group flex flex-col h-full"
               >
                 <div className="h-48 relative overflow-hidden">
-                  <img
+                  <img width="2048" height="1365"
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
