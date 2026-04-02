@@ -218,7 +218,7 @@ const WhyChooseUs = () => {
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
 
       {/* Custom CSS for Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes pulse-slow {
           0%, 100% { opacity: 0.3; transform: scale(1); }
           50% { opacity: 0.5; transform: scale(1.1); }

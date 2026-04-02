@@ -209,7 +209,7 @@ const Testimonial = ({
         <div className={`absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-${theme}-50 to-transparent pointer-events-none z-10`}></div>
         <div className={`absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-${theme}-50 to-transparent pointer-events-none z-10`}></div>
 
-        <style jsx>{`
+        <style>{`
           .marquee-container {
             width: 100%;
             overflow: hidden;

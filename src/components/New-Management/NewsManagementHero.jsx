@@ -140,7 +140,7 @@ const NewsManagementHero = () => {
       </div>
 
       {/* Custom CSS for animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes bounce-slow {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-8px); }

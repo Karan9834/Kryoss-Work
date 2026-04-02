@@ -70,7 +70,7 @@ const About = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .about {
           width: 100%;
           background: linear-gradient(135deg, #ffffff 0%, #fefaf5 100%);

@@ -231,7 +231,7 @@ const WhyChooseUs = () => {
       </div>
 
       {/* Custom CSS for Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes wave-slow {
           0% { transform: translateX(0) translateY(0); }
           50% { transform: translateX(-20px) translateY(-10px); }

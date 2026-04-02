@@ -199,7 +199,7 @@ const WhyChooseUs = ({
       </div>
 
       {/* Add custom CSS animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes wave-slow {
           0% {
             transform: translate(0, 0) rotate(0deg);

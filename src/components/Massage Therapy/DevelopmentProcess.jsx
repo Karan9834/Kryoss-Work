@@ -111,7 +111,7 @@ const DevelopmentProcess = () => {
       </div>
 
       {/* CUSTOM STYLES */}
-      <style jsx>{`
+      <style>{`
         .perspective {
           perspective: 1200px;
         }

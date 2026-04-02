@@ -113,7 +113,7 @@ const HotelHero = () => {
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-blue-900/50 to-transparent pointer-events-none"></div>
 
       {/* Custom CSS for Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes pulse-slow {
           0%, 100% { opacity: 0.3; transform: scale(1); }
           50% { opacity: 0.5; transform: scale(1.1); }

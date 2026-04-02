@@ -99,7 +99,7 @@ const WebinarHero = () => {
                 </div>
             </div>
 
-            <style jsx>{`
+            <style>{`
                 @keyframes fadeInLeft {
                     from { opacity: 0; transform: translateX(-30px); }
                     to { opacity: 1; transform: translateX(0); }

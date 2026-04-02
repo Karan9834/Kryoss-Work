@@ -230,7 +230,7 @@ const SolutionsSection = () => {
       </div>
 
       {/* Add custom animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes pulse {
           0%, 100% {
             opacity: 0.5;

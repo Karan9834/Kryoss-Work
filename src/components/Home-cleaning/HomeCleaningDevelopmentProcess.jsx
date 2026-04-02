@@ -112,7 +112,7 @@ const HomeCleaningDevelopmentProcess = () => {
       </div>
 
       {/* CUSTOM STYLES */}
-      <style jsx>{`
+      <style>{`
         .perspective {
           perspective: 1200px;
         }

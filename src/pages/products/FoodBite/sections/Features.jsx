@@ -70,7 +70,7 @@ const Features = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .features-section {
           width: 100%;
           background: linear-gradient(135deg, #2d2d2d 0%, #4a4a4a 50%, #f97316 100%);

@@ -2,11 +2,11 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-    UtensilsCrossed, CheckCircle, Store, Shield, Smartphone, MapPin, 
-    CreditCard, Clock, MessageSquare, Bell, Star, Settings, FileText, 
-    BarChart, Zap, Headphones, Server, Code, Database, RefreshCw, 
-    UserCheck, Phone, LayoutDashboard, Compass, ShoppingBag, History, 
-    Search, Navigation, DollarSign, Users, Layers, Heart, Plane, 
+    UtensilsCrossed, CheckCircle, Store, Shield, Smartphone, MapPin,
+    CreditCard, Clock, MessageSquare, Bell, Star, Settings, FileText,
+    BarChart, Zap, Headphones, Server, Code, Database, RefreshCw,
+    UserCheck, Phone, LayoutDashboard, Compass, ShoppingBag, History,
+    Search, Navigation, DollarSign, Users, Layers, Heart, Plane,
     Building2, Truck, PlayCircle, GraduationCap, ArrowRight, Globe,
     Package, ShoppingCart, Tv, Video, TrendingUp, User, Award, Calendar,
     Play, Download, Subtitles, Lock, Chrome, Car, Apple, Scissors, Gift, Image, CalendarCheck, Star as StarIcon, Sparkles
@@ -22,10 +22,18 @@ import SalonCardSection from '../../../components/Salon-Beauty-Landing/SalonCard
 const SalonBeautyApp = () => {
     const [activeTab, setActiveTab] = useState('Customer App');
     const [activeFeatureTab, setActiveFeatureTab] = useState('Common');
+    const [leftHeight, setLeftHeight] = React.useState(0);
+    const leftRef = React.useRef(null);
+
+    React.useEffect(() => {
+        if (leftRef.current) {
+            setLeftHeight(leftRef.current.offsetHeight);
+        }
+    }, [activeTab]);
 
     const panelFeatures = {
         "Customer App": {
-            icon: Users, image: "/images/salon-customer.jpg",
+            icon: Users, image: "/SolAps/salonapp2.png",
             features: [
                 "Easy Registration", "Push Notifications", "Ratings & Reviews",
                 "Quick Booking", "Social Media Login", "Multiple Payments",
@@ -34,7 +42,7 @@ const SalonBeautyApp = () => {
             ]
         },
         "Provider App": {
-            icon: Scissors, image: "/images/salon-provider.jpg",
+            icon: Scissors, image: "/SolAps/salonapp3.png",
             features: [
                 "Beautician Profile", "Set Availability", "Service Management",
                 "Accept/Decline Bookings", "Location Tracking", "Upcoming Appointments",
@@ -43,7 +51,7 @@ const SalonBeautyApp = () => {
             ]
         },
         "Salon App": {
-            icon: Store, image: "/images/salon-store.jpg",
+            icon: Store, image: "/SolAps/salonapp4.png",
             features: [
                 "Salon Profile", "Service Catalog", "Staff Management",
                 "Appointment Management", "Discount Management", "Analytics Dashboard",
@@ -52,7 +60,7 @@ const SalonBeautyApp = () => {
             ]
         },
         "Admin Panel": {
-            icon: Shield, image: "/images/salon-admin.jpg",
+            icon: Shield, image: "/SolAps/salonapp5.png",
             features: [
                 "Admin Management", "Complete Dashboard", "Salon Management",
                 "Beautician Management", "Customer Management", "Transaction History",
@@ -109,21 +117,21 @@ const SalonBeautyApp = () => {
             {/* 1. Hero Section */}
             <section className="relative w-full min-h-[550px] lg:min-h-[600px] flex md:items-center overflow-hidden bg-gradient-to-br from-[#F8FAFC] via-white to-[#FEF9C3]">
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute top-10 left-10 w-96 h-96 bg-pink-100 rounded-full blur-3xl" />
-                    <div className="absolute bottom-10 right-10 w-96 h-96 bg-yellow-100/50 rounded-full blur-3xl" />
+                    <div className="absolute top-10 left-10 w-96 h-96 bg-rose-100/50 rounded-full blur-3xl" />
+                    <div className="absolute bottom-10 right-10 w-96 h-96 bg-pink-100/50 rounded-full blur-3xl" />
                     <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03]" />
                 </div>
 
-                <div className="container mx-auto px-4 lg:px-8 relative z-10 py-10">
+                <div className="max-w-6xl mx-auto px-4 lg:px-6 relative z-10 py-10">
                     <div className="flex flex-col lg:flex-row items-center gap-16">
                         <div className="w-full lg:w-1/2 text-center lg:text-left">
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.5 }}
-                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-pink-50 transition-colors shadow-sm border border-gray-100 mb-8 cursor-pointer"
+                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-rose-50 transition-colors shadow-sm border border-gray-100 mb-8 cursor-pointer"
                             >
-                                <span className="flex h-2 w-2 rounded-full bg-pink-600 animate-pulse" />
+                                <span className="flex h-2 w-2 rounded-full bg-rose-500 animate-pulse" />
                                 <span className="text-sm font-semibold text-gray-700">Premium Solution Available</span>
                             </motion.div>
 
@@ -133,7 +141,7 @@ const SalonBeautyApp = () => {
                                 transition={{ delay: 0.2, duration: 0.8 }}
                                 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-gray-900"
                             >
-                                Make A New Business <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-fuchsia-500">Story Now With Your Salon App</span>
+                                Salon & Beauty <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500">App Development</span>
                             </motion.h1>
 
                             <motion.p
@@ -142,7 +150,7 @@ const SalonBeautyApp = () => {
                                 transition={{ delay: 0.4, duration: 0.8 }}
                                 className="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0 font-semibold"
                             >
-                                Build your Beauty & Salon Application with us and be ahead of the pack. Kryoss offers booking salon apps.
+                                Build your salon & beauty solution with us and be ahead of the pack. Empower your business platform with our lightning-fast mobile infrastructure.
                             </motion.p>
 
                             <motion.div
@@ -151,7 +159,7 @@ const SalonBeautyApp = () => {
                                 transition={{ delay: 0.6, duration: 0.8 }}
                                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
                             >
-                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-pink-600 transition-all duration-300 flex items-center justify-center gap-2">
+                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-rose-500 transition-all duration-300 flex items-center justify-center gap-2">
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
@@ -162,27 +170,28 @@ const SalonBeautyApp = () => {
                             </motion.div>
                         </div>
 
-                        <div className="w-full lg:w-1/2 relative">
+                        <div className="w-full lg:w-[55%] relative flex justify-center">
                             <motion.div
                                 initial={{ opacity: 0, x: 20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.4, duration: 0.8 }}
                                 className="relative z-10"
                             >
-                                <div className="absolute inset-0 bg-gradient-to-tr from-pink-600/10 to-fuchsia-600/10 rounded-3xl blur-2xl transform rotate-3" />
+                                <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/10 to-pink-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/images/salon-beauty-hero.png"
-                                    alt="Salon & Beauty App Development"
+                                    src="/SolAps/salonapp1.png"
+                                    alt="Taxi App Development"
                                     width="2048"
                                     height="1365"
-                                    className="relative z-10 w-full h-auto aspect-[2048/1365] object-contain drop-shadow-2xl"
-                                    onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                    className="relative z-10 w-[115%] max-w-none h-auto object-cover drop-shadow-2xl"
+                                    onError={(e) => { e.target.src = '/SolAps/salonapp1.png'; }}
                                 />
                             </motion.div>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             {/* 2. Intro Section */}
             <section className="py-20 lg:py-32 bg-white relative">
@@ -194,23 +203,24 @@ const SalonBeautyApp = () => {
                             viewport={{ once: true }}
                             className="w-full lg:w-1/2 relative"
                         >
-                            <div className="absolute -inset-4 bg-pink-100 border-pink-100 rounded-[2rem] transform -rotate-2" />
-                            <img
-                                src="/images/salon-beauty-intro.png"
-                                alt="Make A New Business Story"
-                                width="2048"
-                                height="1365"
-                                className="relative w-full rounded-2xl shadow-xl object-cover h-auto aspect-[2048/1365]"
-                                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800'; }}
-                            />
+                            <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
+                                <img
+                                    src="/SolAps/salonapp.png"
+                                    alt="Taxi Booking Solution"
+                                    width="2048"
+                                    height="1365"
+                                    className="max-w-full max-h-full object-contain"
+                                    onError={(e) => { e.target.src = '/SolAps/salonapp.png'; }}
+                                />
+                            </div>
                             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                                        <Scissors className="text-green-600 w-6 h-6" />
+                                        <Star className="text-green-600 w-6 h-6" />
                                     </div>
                                     <div>
-                                        <p className="text-sm text-gray-500 font-semibold mb-1">Appointments Booked</p>
-                                        <p className="text-2xl font-bold text-gray-900">420K+</p>
+                                        <p className="text-sm text-gray-500 font-semibold mb-1">Rides Completed</p>
+                                        <p className="text-2xl font-bold text-gray-900">+48%</p>
                                     </div>
                                 </div>
                             </div>
@@ -218,43 +228,27 @@ const SalonBeautyApp = () => {
 
                         <div className="w-full lg:w-1/2">
                             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                                Make A New Business Story <span className="text-pink-600">With Salon App</span>
+                                Complete multi-panel <span className="text-rose-500">Seamless System</span>
                             </h2>
                             <p className="text-gray-600 mb-6 text-base font-semibold leading-relaxed max-w-lg">
-                                We engage customers from the beauty, spa and hair salons industry to give an online planning solution.
+                                Kryoss Softech is a leading one-stop solution that provides impressive features and turnkey solutions using friendly services at affordable prices to give an edge to the competitors.
                             </p>
                             <ul className="space-y-4 mb-8">
-                                
-                                    <li key={0} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0">
-                                            <CheckCircle className="w-4 h-4 text-pink-600" />
+                                {[
+                                    "Accelerated Time-to-Market",
+                                    "Multi-Platform (iOS, Android, Web)",
+                                    "Extensive Dispatcher Features",
+                                    "High Performance & Stability"
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-rose-600" />
                                         </div>
-                                        <span className="text-gray-700 font-medium">Instant Bookings</span>
+                                        <span className="text-gray-700 font-medium">{item}</span>
                                     </li>
-                                
-                                    <li key={1} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0">
-                                            <CheckCircle className="w-4 h-4 text-pink-600" />
-                                        </div>
-                                        <span className="text-gray-700 font-medium">Extensive Salon Network</span>
-                                    </li>
-                                
-                                    <li key={2} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0">
-                                            <CheckCircle className="w-4 h-4 text-pink-600" />
-                                        </div>
-                                        <span className="text-gray-700 font-medium">Real-Time Tracking</span>
-                                    </li>
-                                
-                                    <li key={3} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0">
-                                            <CheckCircle className="w-4 h-4 text-pink-600" />
-                                        </div>
-                                        <span className="text-gray-700 font-medium">Multi-Language Apps</span>
-                                    </li>
-                                
+                                ))}
                             </ul>
-                            <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-pink-600 transition-all shadow-md">
+                            <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-rose-500 transition-all shadow-md">
                                 Request a Demo
                             </button>
                         </div>
@@ -262,90 +256,155 @@ const SalonBeautyApp = () => {
                 </div>
             </section>
 
-            {/* 4. Must Have Features (Tabs Layout) */}
-            <section className="py-24 bg-[#FFFBF2] relative">
-                <div className="container mx-auto px-4 lg:px-8">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 font-display">
-                            Comprehensive <span className="text-pink-600 relative inline-block">
-                                Panels
-                                <svg className="absolute -bottom-2 left-0 w-full h-3 text-pink-200" viewBox="0 0 100 10" preserveAspectRatio="none">
-                                    <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="2" />
-                                </svg>
-                            </span>
+            {/* 3. Must Have Features (Tabs Layout) */}
+            <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-orange-50/40 py-20 px-6">
+                <div className="absolute inset-0 opacity-30 pointer-events-none">
+                    <div className="absolute top-20 left-10 w-72 h-72 bg-rose-200/30 rounded-full blur-3xl"></div>
+                    <div className="absolute bottom-20 right-10 w-80 h-80 bg-slate-200/50 rounded-full blur-3xl"></div>
+                </div>
+
+                <div className="relative z-10 max-w-7xl mx-auto">
+                    {/* Heading */}
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">
+                            <span className="bg-gradient-to-r from-rose-600 to-slate-800 bg-clip-text text-transparent">
+                                Must-Have
+                            </span>{" "}
+                            Features for Salon & Beauty
                         </h2>
-                        <p className="text-gray-600 text-lg font-light">
-                            Explore dedicated features tailored for every stakeholder in the ecosystem.
+                        <p className="text-slate-500 mt-4 max-w-2xl mx-auto">
+                            Complete solutions with dedicated panels ensuring flawless operations
                         </p>
+                        <div className="w-20 h-1 bg-gradient-to-r from-rose-500 to-slate-500 rounded-full mx-auto mt-4"></div>
                     </div>
 
-                    <div className="flex flex-col lg:flex-row gap-8">
-                        {/* Tabs Navigation */}
-                        <div className="w-full lg:w-1/4 flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 scrollbar-hide">
-                            {Object.entries(panelFeatures).map(([key, data]) => {
-                                const Icon = data.icon;
-                                const isActive = activeTab === key;
-                                return (
-                                    <button
-                                        key={key}
-                                        onClick={() => setActiveTab(key)}
-                                        className={`flex items-center gap-3 px-6 py-4 rounded-xl font-semibold transition-all whitespace-nowrap lg:whitespace-normal duration-300 ${isActive
-                                            ? "bg-gray-900 text-white shadow-lg"
-                                            : "bg-white text-gray-600 hover:bg-pink-50 hover:text-pink-600 border border-gray-100"
-                                            }`}
+                    {/* Tabs */}
+                    <div className="flex justify-center gap-3 md:gap-4 mb-12 flex-wrap">
+                        {Object.keys(panelFeatures).map((key) => {
+                            const isActive = activeTab === key;
+                            return (
+                                <button
+                                    key={key}
+                                    onClick={() => setActiveTab(key)}
+                                    className={`px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${isActive
+                                        ? `bg-gradient-to-r from-rose-600 to-slate-700 text-white shadow-lg shadow-rose-200 scale-105`
+                                        : `bg-white text-slate-600 hover:text-rose-600 hover:bg-rose-50 border-2 border-rose-200 hover:border-rose-400`
+                                        }`}
+                                >
+                                    {key.toUpperCase()}
+                                </button>
+                            );
+                        })}
+                    </div>
+
+                    {/* Layout - Simple image, no box */}
+                    <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 items-start">
+
+                        {/* LEFT COLUMN */}
+                        <div ref={leftRef} className="grid grid-cols-2 gap-3 min-h-[400px]">
+                            <div className="space-y-3">
+                                {panelFeatures[activeTab].features.slice(0, 2).map((item, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="group bg-white p-3 rounded-xl border-2 border-rose-200 hover:border-rose-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
                                     >
-                                        <Icon size={20} className={isActive ? "text-pink-500" : "text-gray-400"} />
-                                        {key}
-                                    </button>
-                                );
-                            })}
+                                        <div className="flex gap-2">
+                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
+                                                <CheckCircle className="w-5 h-5 text-rose-500 mt-0.5" />
+                                            </span>
+                                            <div>
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-rose-600 transition-colors">
+                                                    {item}
+                                                </h4>
+                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                    Integrated module for seamless functionality
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="space-y-3">
+                                {panelFeatures[activeTab].features.slice(2, 4).map((item, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="group bg-white p-3 rounded-xl border-2 border-rose-200 hover:border-rose-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                                    >
+                                        <div className="flex gap-2">
+                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
+                                                <CheckCircle className="w-5 h-5 text-rose-500 mt-0.5" />
+                                            </span>
+                                            <div>
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-rose-600 transition-colors">
+                                                    {item}
+                                                </h4>
+                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                    Advanced workflow logic optimization
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
 
-                        {/* Tab Content */}
-                        <div className="w-full lg:w-3/4">
-                            <AnimatePresence mode="wait">
-                                <motion.div
-                                    key={activeTab}
-                                    initial={{ opacity: 0, y: 10 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    exit={{ opacity: 0, y: -10 }}
-                                    transition={{ duration: 0.3 }}
-                                    className="bg-white rounded-[2rem] p-6 lg:p-10 shadow-xl border border-gray-100 flex flex-col lg:flex-row gap-10"
-                                >
-                                    <div className="w-full lg:w-1/3 flex justify-center items-center">
-                                        <div className="relative">
-                                            <div className="absolute inset-0 bg-pink-100 rounded-3xl blur-xl transform -rotate-6" />
-                                            <img
-                                                src={panelFeatures[activeTab].image}
-                                                alt={activeTab}
-                                                width="2048"
-                                                height="1365"
-                                                className="relative w-full max-w-[280px] h-auto object-contain drop-shadow-2xl"
-                                                onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
-                                            />
+                        {/* CENTER - Just the image, no frame, no box */}
+                        <div className="flex justify-center">
+                            <img
+                                src={panelFeatures[activeTab].image}
+                                alt={`${activeTab} panel`}
+                                className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
+                                style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
+                                onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                            />
+                        </div>
+
+                        {/* RIGHT COLUMN */}
+                        <div className="grid grid-cols-2 gap-3 min-h-[400px]">
+                            <div className="space-y-3">
+                                {panelFeatures[activeTab].features.slice(4, 6).map((item, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="group bg-white p-3 rounded-xl border-2 border-rose-200 hover:border-rose-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                                    >
+                                        <div className="flex gap-2">
+                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
+                                                <CheckCircle className="w-5 h-5 text-rose-500 mt-0.5" />
+                                            </span>
+                                            <div>
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-rose-600 transition-colors">
+                                                    {item}
+                                                </h4>
+                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                    Robust tool implementation structure
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="w-full lg:w-2/3">
-                                        <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                                            {React.createElement(panelFeatures[activeTab].icon, { className: "text-pink-600", size: 28 })}
-                                            {activeTab} Features
-                                        </h3>
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
-                                            {panelFeatures[activeTab].features.map((feature, idx) => (
-                                                <div key={idx} className="flex items-start gap-3">
-                                                    <div className="mt-1 w-5 h-5 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0">
-                                                        <CheckCircle className="w-3 h-3 text-pink-600" />
-                                                    </div>
-                                                    <span className="text-gray-700 font-medium">{feature}</span>
-                                                </div>
-                                            ))}
+                                ))}
+                            </div>
+                            <div className="space-y-3">
+                                {panelFeatures[activeTab].features.slice(6, 8).map((item, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="group bg-white p-3 rounded-xl border-2 border-rose-200 hover:border-rose-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                                    >
+                                        <div className="flex gap-2">
+                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
+                                                <CheckCircle className="w-5 h-5 text-rose-500 mt-0.5" />
+                                            </span>
+                                            <div>
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-rose-600 transition-colors">
+                                                    {item}
+                                                </h4>
+                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                    Enhanced ecosystem control features
+                                                </p>
+                                            </div>
                                         </div>
-                                        <button className="mt-10 px-6 py-3 bg-pink-100 text-pink-600 font-semibold rounded-lg hover:bg-pink-100 transition-colors flex items-center gap-2">
-                                            Explore full feature list <ArrowRight size={16} />
-                                        </button>
                                     </div>
-                                </motion.div>
-                            </AnimatePresence>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -357,19 +416,19 @@ const SalonBeautyApp = () => {
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-display drop-shadow-sm">
-                            Platform <span className="text-pink-500">Capabilities</span>
+                            Platform <span className="text-rose-400">Capabilities</span>
                         </h2>
                         <div className="flex justify-center gap-4 mt-8 bg-blue-900/30 p-2 rounded-2xl w-max mx-auto border border-blue-800/50 backdrop-blur-sm">
                             <button
                                 onClick={() => setActiveFeatureTab("Common")}
-                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Common" ? "bg-pink-600 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Common" ? "bg-rose-500 text-white shadow-lg" : "text-gray-300 hover:text-white"
                                     }`}
                             >
                                 Core Essentials
                             </button>
                             <button
                                 onClick={() => setActiveFeatureTab("Advance")}
-                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Advance" ? "bg-pink-600 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Advance" ? "bg-rose-500 text-white shadow-lg" : "text-gray-300 hover:text-white"
                                     }`}
                             >
                                 Premium Tools
@@ -387,9 +446,9 @@ const SalonBeautyApp = () => {
                             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
                         >
                             {(activeFeatureTab === "Common" ? commonFeatures : advanceFeatures).map((feature, idx) => (
-                                <div key={idx} className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 p-8 rounded-2xl hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-pink-500/30 group">
-                                    <div className="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-pink-600 transition-colors border border-blue-800/50">
-                                        <feature.icon className="text-pink-500 group-hover:text-white transition-colors" size={26} />
+                                <div key={idx} className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 p-8 rounded-2xl hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-rose-500/30 group">
+                                    <div className="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-rose-500 transition-colors border border-blue-800/50">
+                                        <feature.icon className="text-rose-400 group-hover:text-white transition-colors" size={26} />
                                     </div>
                                     <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
                                     <p className="text-blue-200/70 font-light leading-relaxed">{feature.desc}</p>
@@ -409,7 +468,7 @@ const SalonBeautyApp = () => {
                                 <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
                                     {stat.value}
                                 </h3>
-                                <p className="text-sm font-bold text-pink-600 uppercase tracking-widest">{stat.label}</p>
+                                <p className="text-sm font-bold text-rose-600 uppercase tracking-widest">{stat.label}</p>
                             </div>
                         ))}
                     </div>
@@ -417,47 +476,147 @@ const SalonBeautyApp = () => {
             </section>
 
             {/* 7. Our Solution/Package Features */}
-            <section className="py-24 bg-white relative">
-                <div className="container mx-auto px-4 lg:px-8">
-                    <div className="flex flex-col lg:flex-row gap-16 items-center">
-                        <div className="w-full lg:w-1/3">
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-                                Tailored to your <span className="text-pink-600">unique business needs</span>
-                            </h2>
-                            <p className="text-gray-600 mb-8 text-lg font-light">
-                                Our Beauty solutions provide the agility to launch fast and iterate aggressively with robust infrastructure.
-                            </p>
-                            <div className="hidden lg:block w-32 h-32 bg-pink-100 rounded-full blur-2xl opacity-60 absolute left-10 mt-10" />
+            <section className="py-24 bg-gradient-to-br from-white via-orange-50/30 to-white relative overflow-hidden">
+                {/* Background decorative elements */}
+                <div className="absolute inset-0 pointer-events-none">
+                    <div className="absolute top-0 right-0 w-96 h-96 bg-rose-200 rounded-full blur-3xl opacity-20" />
+                    <div className="absolute bottom-0 left-0 w-96 h-96 bg-rose-300 rounded-full blur-3xl opacity-10" />
+                </div>
+
+                <div className="container mx-auto px-4 lg:px-8 relative z-10">
+                    {/* Heading & Subheading - Top centered */}
+                    <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
+                        <span className="inline-block px-4 py-1.5 bg-rose-100 text-rose-600 rounded-full text-sm font-semibold tracking-wide mb-4">
+                            Why Choose Us
+                        </span>
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                            Tailored to your{" "}
+                            <span className="text-rose-500 relative inline-block">
+                                unique business
+                                <svg className="absolute -bottom-2 left-0 w-full h-3 text-rose-200" viewBox="0 0 200 12" fill="currentColor">
+                                    <path d="M0,10 C20,5 40,12 60,8 C80,4 100,10 120,7 C140,4 160,10 180,6 L200,6" stroke="currentColor" strokeWidth="2" fill="none" />
+                                </svg>
+                            </span>{" "}
+                            needs
+                        </h2>
+                        <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto">
+                            Our solution guarantees power, stability, and lifetime value packed with extraordinary integrations.
+                        </p>
+                    </div>
+
+                    {/* Image + Content Grid */}
+                    <div className="flex flex-col lg:flex-row gap-12 xl:gap-20 items-stretch">
+                        {/* Left Image Section */}
+                        <div className="w-full lg:w-2/5 relative group">
+                            <div className="relative h-full min-h-[400px] lg:min-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                                {/* Gradient Overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10" />
+
+                                {/* Image - Replace with your actual image */}
+                                <img
+                                    src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                    alt="Business solutions"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                />
+
+                                {/* Floating badge */}
+                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
+                                    <div className="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center">
+                                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p className="font-bold text-gray-900">Trusted by 500+ companies</p>
+                                        <p className="text-sm text-gray-500">Worldwide customer base</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
-                            {solutions.map((sol, i) => {
-                                const Icon = sol.icon;
-                                return (
-                                    <div key={i} className="flex gap-4 p-5 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-md hover:border-pink-200 transition-all duration-300">
-                                        <div className="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center flex-shrink-0 text-pink-600">
-                                            <Icon size={22} />
+                        {/* Right Content Section - Solutions Grid */}
+                        <div className="w-full lg:w-3/5">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 h-full">
+                                {solutions.map((sol, i) => {
+                                    const Icon = sol.icon;
+                                    return (
+                                        <div
+                                            key={i}
+                                            className="group/card bg-white rounded-2xl p-6 shadow-md hover:shadow-xl border border-gray-100 hover:border-rose-200 transition-all duration-300 hover:-translate-y-1"
+                                        >
+                                            <div className="flex items-start gap-4">
+                                                <div className="w-14 h-14 bg-gradient-to-br from-rose-400 to-pink-500 rounded-xl shadow-lg flex items-center justify-center flex-shrink-0 text-white group-hover/card:scale-110 transition-transform duration-300">
+                                                    <Icon size={24} strokeWidth={1.8} />
+                                                </div>
+                                                <div>
+                                                    <h4 className="font-bold text-gray-900 text-lg mb-2">{sol.title}</h4>
+                                                    <p className="text-gray-500 text-sm leading-relaxed">{sol.desc}</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <h4 className="font-bold text-gray-900 mb-2">{sol.title}</h4>
-                                            <p className="text-sm text-gray-600 font-light">{sol.desc}</p>
-                                        </div>
-                                    </div>
-                                );
-                            })}
+                                    );
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* 8. Portfolio Section */}
-            <SalonCardSection />
+            <section className="py-20 bg-gray-50 border-t border-gray-200">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="text-center mb-16">
+                        <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">OUR SALON & BEAUTY PRODUCTS</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Latest Innovations</h2>
+                        <div className="w-24 h-1 bg-rose-500 mx-auto rounded-full" />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {portfolio.map((item, idx) => (
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: idx * 0.1 }}
+                                key={idx}
+                                className="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl hover:shadow-rose-500/10 transition-all duration-300 group flex flex-col h-full"
+                            >
+                                <div className="h-48 relative overflow-hidden">
+                                    <img
+                                        src={item.image}
+                                        alt={item.title}
+                                        width="2048"
+                                        height="1365"
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                                    <div className="absolute top-0 right-0 w-32 h-32 bg-rose-500/20 blur-2xl rounded-full" />
+                                    <Star size={40} className="text-rose-400 absolute top-6 right-6 opacity-80 group-hover:scale-110 transition-transform duration-500" />
+                                    <h3 className="absolute bottom-4 left-4 right-4 text-white text-xl font-bold leading-tight z-10">{item.title}</h3>
+                                </div>
+
+                                <div className="p-8 flex flex-col flex-grow">
+                                    <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">{item.description}</p>
+                                    <div className="flex flex-wrap gap-2 mt-auto">
+                                        {item.tags.map(tag => (
+                                            <span key={tag} className="px-3 py-1 bg-rose-50 text-rose-600 text-[10px] font-bold uppercase tracking-wider rounded-md">
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* 9 & 10. Global Components */}
-            <Testimonial theme="pink" />
-            <Industries theme={{ bg: "bg-[#FDF4F9]", primary: "text-pink-600", iconBg: "bg-pink-100", iconColor: "text-pink-600" }} />
-            <OurWork theme={{ primary: "text-pink-600", accent: "bg-pink-600" }} />
-            <ContactUs id="contact-us" theme="pink" />
+            <Testimonial theme="rose" />
+            <Industries theme={{ bg: "bg-slate-50", primary: "text-rose-500", iconBg: "bg-rose-100", iconColor: "text-rose-500" }} />
+            <OurWork theme={{ primary: "text-rose-500", accent: "bg-rose-500" }} />
+            <ContactUs id="contact-us" theme="rose" />
         </div>
     );
 };

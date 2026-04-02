@@ -95,7 +95,7 @@ const AboutUs = () => {
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
 
       {/* Custom CSS for Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-8px); }

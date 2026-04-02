@@ -56,7 +56,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .hero {
           width: 100%;
           background: linear-gradient(135deg, #fefaf5 0%, #fff5ed 100%);

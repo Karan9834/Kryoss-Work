@@ -43,7 +43,7 @@ const LmsCTA1 = () => {
 
             </div>
             
-            <style jsx>{`
+            <style>{`
                 .text-glow {
                     text-shadow: 0 0 10px rgba(167, 139, 250, 0.4);
                 }

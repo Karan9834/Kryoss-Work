@@ -45,7 +45,7 @@ const FinalCTA = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .final-cta {
           width: 100%;
           background: linear-gradient(135deg, #fff5ed 0%, #fefaf5 100%);

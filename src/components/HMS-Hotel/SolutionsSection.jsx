@@ -145,7 +145,7 @@ const SolutionsSection = () => {
       </div>
 
       {/* Custom CSS for Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes ping {
           75%, 100% {
             transform: scale(2);

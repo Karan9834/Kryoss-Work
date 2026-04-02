@@ -245,7 +245,7 @@ const GallerySection = () => {
       )}
 
       {/* Add custom CSS animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes fadeIn {
           from {
             opacity: 0;

@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .why-choose-us {
           width: 100%;
           background: #ffffff;

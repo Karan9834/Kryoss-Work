@@ -200,7 +200,7 @@ const Gallery = () => {
       )}
 
       {/* Custom CSS for Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
           50% { transform: translateY(-10px) translateX(5px); opacity: 0.6; }

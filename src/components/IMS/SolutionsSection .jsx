@@ -334,7 +334,7 @@ const SolutionsSection = () => {
       </div>
 
       {/* Custom Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes shine {
           0% {
             transform: translateX(-100%) rotate(-45deg);

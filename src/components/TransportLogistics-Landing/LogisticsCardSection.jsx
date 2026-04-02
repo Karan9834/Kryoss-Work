@@ -69,7 +69,7 @@ const LogisticsCardSection = () => {
             </div>
          </div>
 
-         <style jsx>{`
+         <style>{`
             .shadow-inner {
                box-shadow: inset 0 2px 10px 0 rgba(0, 0, 0, 0.02);
             }

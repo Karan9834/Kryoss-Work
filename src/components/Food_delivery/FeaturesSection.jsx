@@ -177,7 +177,7 @@ const FeaturesSection = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes pulse {
           0%, 100% {
             opacity: 0.5;

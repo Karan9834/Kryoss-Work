@@ -206,7 +206,7 @@ const FeaturesSection = () => {
       </div>
 
       {/* Custom CSS for Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes wave-slow {
           0% { transform: translateX(0) translateY(0); }
           50% { transform: translateX(-15px) translateY(-8px); }
