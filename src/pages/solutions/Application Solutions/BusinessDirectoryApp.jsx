@@ -1,518 +1,524 @@
+
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { 
-  Briefcase, 
-  CheckCircle2, 
-  Users, 
-  ShieldCheck, 
-  Smartphone, 
-  Layout, 
-  Database, 
-  Search, 
-  Bell, 
-  CreditCard, 
-  Star, 
-  MapPin, 
-  Send,
-  ArrowRight,
-  TrendingUp,
-  Clock,
-  Layers,
-  Map,
-  Filter,
-  MessageSquare,
-  BarChart3,
-  Globe,
-  Settings,
-  Truck,
-  Building2,
-  Lock,
-  Server,
-  Code,
-  LifeBuoy,
-  Phone,
-  Mail,
-  Heart,
-  Plane,
-  GraduationCap,
-  PlayCircle,
-  Megaphone,
-  BookOpen
+import {
+    UtensilsCrossed, CheckCircle, Store, Shield, Smartphone, MapPin, 
+    CreditCard, Clock, MessageSquare, Bell, Star, Settings, FileText, 
+    BarChart, Zap, Headphones, Server, Code, Database, RefreshCw, 
+    UserCheck, Phone, LayoutDashboard, Compass, ShoppingBag, History, 
+    Search, Navigation, DollarSign, Users, Layers, Heart, Plane, 
+    Building2, Truck, PlayCircle, GraduationCap, ArrowRight, Globe,
+    Package, ShoppingCart, Tv, Video, TrendingUp, User, Award, Calendar,
+    Play, Download, Subtitles, Lock, Chrome, Car, Apple, Scissors, Gift, Image, CalendarCheck, Star as StarIcon, Sparkles, Building,
+    Hotel, Bed, Bath, Wifi, Coffee, Dumbbell, Waves, MessageCircle, LogIn, UserPlus, Home, List, DollarSign as Currency, ThumbsUp, Share2, Edit, Filter, Bookmark, Briefcase, Map, Pin, Radio, Tablet, Laptop, Facebook, Twitter, Linkedin, Instagram, Calendar as CalendarIcon, Smartphone as PhoneIcon, Key
 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
+
+const ShoppingCartIcon = () => (
+    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.4 2.6a2 2 0 002 2.4h10.8a2 2 0 002-2.4L17 13M7 13h10M9 18a1 1 0 100 2 1 1 0 000-2zm6 0a1 1 0 100 2 1 1 0 000-2z" />
+    </svg>
+);
+
+const CalculatorIcon = () => (
+    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+    </svg>
+);
 
 const BusinessDirectoryApp = () => {
-  const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-    antispam: ''
-  });
+    const [activeTab, setActiveTab] = useState('Customer App');
+    const [activeFeatureTab, setActiveFeatureTab] = useState('Common');
 
-  const industries = [
-    { name: "Healthcare", icon: Heart },
-    { name: "Travel & Tourism", icon: Plane },
-    { name: "Banking & Finance", icon: Building2 },
-    { name: "Logistics & Transport", icon: Truck },
-    { name: "Media & Entertainment", icon: PlayCircle },
-    { name: "Education & E-Learning", icon: GraduationCap }
-  ];
+    const panelFeatures = {
+        "Customer App": {
+            icon: Users, image: "/images/directory-customer.jpg",
+            features: [
+                "Multiple Login Registration", "Browse Business By City", "Sort Business",
+                "Reviews & Ratings Management", "Newsletter Subscription", "Social Media Sharing",
+                "Prompt Notifications", "Advanced Search And Filter", "Save Favorites",
+                "Share Business Listings", "Email Enquiries", "Map Navigation",
+                "Business Details View", "Contact Business", "Get Directions"
+            ]
+        },
+        "Vendor Panel": {
+            icon: Store, image: "/images/directory-vendor.jpg",
+            features: [
+                "Business Profile Management", "Catalog Management", "Services Management",
+                "Enquiry Management", "Customer Reviews", "Analytics Dashboard",
+                "Favorites Tracking", "Location Management", "Payment Tracking",
+                "Push Notifications", "Sales Reports", "CRM & Newsletter",
+                "Business Hours Setup", "Photo Gallery", "Offer Management"
+            ]
+        },
+        "Admin Panel": {
+            icon: Shield, image: "/images/directory-admin.jpg",
+            features: [
+                "Manage Business Directory", "Manage Categories", "Manage Countries/States/Cities",
+                "Manage Plans", "Manage Newsletters", "Manage Events",
+                "Manage Services", "Secure Login", "User Management",
+                "Payment Management", "Report Generation", "Commission Settings",
+                "Ad Management", "Review Moderation", "Analytics Dashboard"
+            ]
+        }
+    };
 
-  const coreFeatures = [
-    { 
-      title: "Business Listings", 
-      desc: "Allow businesses to create detailed profiles with images, contact info, and business hours.", 
-      icon: Building2 
-    },
-    { 
-      title: "Advanced Search & Filter", 
-      desc: "Users can find businesses by category, location, rating, and keyword in seconds.", 
-      icon: Search 
-    },
-    { 
-      title: "Reviews & Ratings", 
-      desc: "Robust review system to build trust and help users make informed decisions.", 
-      icon: Star 
-    },
-    { 
-      title: "Map Integration", 
-      desc: "Interactive maps showing business locations and directions for easy navigation.", 
-      icon: Map 
-    },
-    { 
-      title: "Sponsored Ads", 
-      desc: "Monetize your platform by allowing businesses to pay for top placement in search results.", 
-      icon: Megaphone 
-    },
-    { 
-      title: "Claim Business", 
-      desc: "Enable business owners to claim and verify their listings to manage their reputation.", 
-      icon: ShieldCheck 
-    }
-  ];
+    const commonFeatures = [
+        { title: "Social Media", icon: Share2, desc: "The good or bad reviews by the users can be posted on the social media as linked on the app." },
+        { title: "Top 10", icon: Star, desc: "Special listings for most rated and top 10 best-offered product/services." },
+        { title: "Make payment", icon: CreditCard, desc: "The users can make payments for using the app services much easily with the multiple payment modes available on the app." },
+        { title: "Edit reviews", icon: Edit, desc: "If the customers change their mind about a product or services, they can edit the old reviews or ratings posted by them." },
+        { title: "Advertise", icon: TrendingUp, desc: "The companies can also advertise their product/services on the app and generate more leads." },
+        { title: "Directory", icon: List, desc: "The users can access the reviews and ratings of the listed companies on the app." },
+        { title: "Add reactions", icon: ThumbsUp, desc: "The company can offer the customers to like or even dislike products or services." },
+        { title: "Notifications", icon: Bell, desc: "The company and the customers can get notifications on the top ratings, worst reviews and much more." }
+    ];
 
-  const adminFeatures = [
-    { title: "Verification System", desc: "Rigid approval workflow for new business submissions and claims.", icon: Lock },
-    { title: "Revenue Dashboard", desc: "Track earnings from ads, premium listings, and subscriptions.", icon: BarChart3 },
-    { title: "Category Management", desc: "Unlimited nesting of business categories and high-level tags.", icon: Layers },
-    { title: "Review Moderation", desc: "AI-powered and manual tools to prevent fake reviews and spam.", icon: MessageSquare }
-  ];
+    const advanceFeatures = [
+        { title: "Geo-Location Search", icon: MapPin, desc: "Find businesses near your current location with real-time GPS tracking and distance calculation." },
+        { title: "Multi-City Support", icon: Globe, desc: "Browse businesses across multiple cities, states, and countries with easy switching." },
+        { title: "Advanced Filtering", icon: Filter, desc: "Filter businesses by category, rating, price range, distance, and more for precise results." },
+        { title: "Business Claiming", icon: UserCheck, desc: "Allow business owners to claim and manage their listings with verification process." },
+        { title: "Promoted Listings", icon: DollarSign, desc: "Premium placement options for businesses to get more visibility and leads." },
+        { title: "Analytics Dashboard", icon: BarChart, desc: "Detailed insights on profile views, enquiries, and customer engagement metrics." },
+        { title: "QR Code Check-in", icon: Radio, desc: "Generate QR codes for businesses to allow customers to check-in and leave reviews." },
+        { title: "Multi-Device Sync", icon: Tablet, desc: "Sync user data across mobile, tablet, and web platforms for seamless experience." }
+    ];
 
-  const supportFeatures = [
-    { title: "Fully Customizable", desc: "Flexible scripts ready to meet specific jurisdictional requirements.", icon: Settings },
-    { title: "Bug Support", desc: "Complimentary bug fixes and updates for the first year of operation.", icon: LifeBuoy },
-    { title: "Linux Server Setup", desc: "Optimized server configuration for low-latency dispatching.", icon: Server },
-    { title: "Open Source Code", desc: "100% full source code ownership for deep future integrations.", icon: Code }
-  ];
+    const portfolio = [
+        { title: "CWJobs", description: "CWJobs.co.uk is a market leader in specialist IT recruitment, attracting around 500,000 IT professionals to its site.", tags: ["Jobs", "Recruitment", "IT"], image: "https://images.unsplash.com/photo-1521791136064-7986c2920216" },
+        { title: "Borzo", description: "Completely hassle-free. No registration fee. No extra charges. Get your deliveries done, cheap and fast.", tags: ["Delivery", "Courier"], image: "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55" },
+        { title: "Hotelcareer", description: "Staff wanted! Are you a receptionist, a waiter, a chef de partie, a pastry chef, or any hospitality enthusiast?", tags: ["Hospitality", "Jobs"], image: "https://images.unsplash.com/photo-1566073771259-6a8506099945" },
+        { title: "24Task", description: "Take the initial steps towards hiring the best talents for your project with the 24Task Employers app.", tags: ["Freelance", "Jobs", "Hiring"], image: "https://images.unsplash.com/photo-1557804506-669a67965ba0" }
+    ];
 
-  const portfolio = [
-    { title: "CityHub", subtitle: "Hyperlocal Directory", desc: "A robust local business search engine with 50,000+ listings and real-time review updates." },
-    { title: "BizFinder", subtitle: "B2B Marketplace", desc: "Professional directory connecting manufacturers and suppliers across global industrial sectors." },
-    { title: "WellnessMap", subtitle: "Niche Health Directory", desc: "Specialized search platform for health clinics, spas, and wellness centers in metro cities." }
-  ];
+    const stats = [
+        { value: "750+", label: "Projects Delivered" },
+        { value: "150+", label: "Development Staff" },
+        { value: "10+", label: "Years Experience" },
+        { value: "450+", label: "Satisfied Clients" }
+    ];
 
-  const testimonials = [
-    { name: "TOMO MARINKOVIC", role: "President Start Up", text: "Extremely happy with Kryoss! They delivered exactly my vision and made it better with creative touches. Delivered ahead of schedule and on budget." },
-    { name: "SAM DISTASO", role: "Founder - ARK News", text: "Rakesh and his team surpassed expectations. They were always available despite different time zones. Highly recommend Kryoss Softech!" },
-    { name: "DR. ROHIT KOHKER", role: "CTO, Vidya Prakashan Mandir", text: "Kryoss is a leading mobile app development company. Their workforce proved it true by providing best results for my business." },
-    { name: "MONA MATHUR", role: "Founder, Million Spark Foundation", text: "Kryoss was involved in developing an Android application framework that connects students, teachers and parents seamlessly." }
-  ];
+    const solutions = [
+        { title: "Fully Customizable", icon: Settings, desc: "Our Script is flexible enough to meet the specific needs of the Clients." },
+        { title: "Linux Server Installation", icon: Server, desc: "Web Panels will work smoothly in open source Linux Servers." },
+        { title: "Payments", icon: CreditCard, desc: "Our Scripts support API with easy Installations of new ones." },
+        { title: "Technical Support", icon: Headphones, desc: "We provide Free Support and handle everything till launch." }
+    ];
 
-  return (
-    <div className="bg-white">
-      <Helmet>
-        <title>Business Directory App Development | KryossWork</title>
-        <meta name="description" content="Empower local commerce with your own business directory platform like Yelp. Kryoss Softech offers advanced search, review systems, and monetization features." />
-      </Helmet>
+    return (
+        <div className="w-full bg-white relative font-sans overflow-hidden">
+            <Helmet>
+                <title>Business Directory App Development | KryossWork</title>
+                <meta name="description" content="Create your own business directory app platform now." />
+            </Helmet>
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-indigo-600 via-blue-500 to-cyan-400 text-white">
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent opacity-20"></div>
-        <div className="container mx-auto px-4 relative z-10 text-center">
-           <motion.div 
-             initial={{ opacity: 0, y: 30 }}
-             animate={{ opacity: 1, y: 0 }}
-             className="max-w-4xl mx-auto"
-           >
-              <div className="inline-flex items-center gap-2 bg-black/10 backdrop-blur-md rounded-full px-6 py-2 mb-8 border border-white/20">
-                 <Globe className="h-4 w-4 text-blue-200" />
-                 <span className="text-white text-xs font-black uppercase tracking-widest">Global Discovery Platform</span>
-              </div>
-              <h1 className="text-5xl md:text-8xl font-black mb-8 leading-tight tracking-tighter uppercase italic">
-                Empower Your <br />
-                <span className="text-[#00F5FF] drop-shadow-[0_4px_41px_rgba(0,245,255,0.4)] underline decoration-white/30 decoration-8 underline-offset-[20px]">Local Commerce</span>
-              </h1>
-              <p className="text-xl text-blue-50 mb-12 leading-relaxed font-medium mt-12 max-w-2xl mx-auto">
-                Launch a premium Business Directory platform like Yelp to connect users with the best local services and businesses.
-              </p>
-              <div className="flex flex-wrap justify-center gap-6">
-                 <button className="bg-white text-blue-600 hover:bg-gray-900 hover:text-white font-black py-5 px-12 rounded-full transition-all flex items-center gap-2 transform hover:scale-105 shadow-2xl uppercase tracking-widest group">
-                    Start Building <ArrowRight className="h-6 w-6 group-hover:translate-x-2 transition-transform" />
-                 </button>
-              </div>
-           </motion.div>
-        </div>
-      </section>
+            {/* 1. Hero Section */}
+            <section className="relative w-full min-h-[550px] lg:min-h-[600px] flex md:items-center overflow-hidden bg-gradient-to-br from-[#F8FAFC] via-white to-[#FEF9C3]">
+                <div className="absolute inset-0 z-0">
+                    <div className="absolute top-10 left-10 w-96 h-96 bg-blue-100 rounded-full blur-3xl" />
+                    <div className="absolute bottom-10 right-10 w-96 h-96 bg-yellow-100/50 rounded-full blur-3xl" />
+                    <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03]" />
+                </div>
 
-      {/* Mockups Showcase */}
-      <section className="py-24 bg-white overflow-hidden">
-        <div className="container mx-auto px-4 text-center">
-           <div className="max-w-3xl mx-auto mb-20 text-center">
-              <h2 className="text-4xl font-black mb-4 italic uppercase tracking-tighter text-gray-900 leading-tight">Hyperlocal Connectivity</h2>
-              <p className="text-indigo-600 font-bold uppercase tracking-[0.3em] text-xs">Seamless User Journey from Discovery to Engagement</p>
-           </div>
-           
-           <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-             {/* Discovery App */}
-             <div className="bg-white rounded-[4rem] border border-gray-200 overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] h-[650px] flex flex-col group relative transition-all">
-               <div className="bg-indigo-600 p-8 text-white text-left">
-                  <div className="flex justify-between items-center mb-6 text-sm font-bold italic opacity-60">
-                    <span>12:30 PM</span>
-                    <Smartphone className="h-4 w-4" />
-                  </div>
-                  <h3 className="text-2xl font-black italic tracking-tighter">🔍 BizExplore</h3>
-                  <div className="mt-4 flex items-center gap-3 text-[10px] font-bold text-indigo-100 uppercase tracking-widest bg-white/10 py-1.5 px-3 rounded-xl border border-white/5">
-                     <MapPin className="h-3 w-3" /> Manhattan, NY
-                  </div>
-               </div>
-               <div className="p-6 text-left space-y-6 grow overflow-y-auto invisible-scrollbar">
-                  <div className="p-3 bg-gray-100 rounded-2xl flex items-center gap-3">
-                     <Search className="h-4 w-4 text-gray-400" />
-                     <span className="text-gray-400 text-xs italic">What are you looking for?</span>
-                  </div>
-                  <div className="space-y-3">
-                     <div className="text-xs font-black uppercase tracking-widest text-gray-400 italic">Categories</div>
-                     <div className="grid grid-cols-2 gap-2">
-                        {["Restaurants", "Salons", "Gyms", "Mechanics"].map(c => (
-                           <div key={c} className="p-3 bg-gray-50 rounded-2xl border border-gray-100 flex items-center gap-2 hover:bg-indigo-50 transition-colors cursor-pointer">
-                              <div className="w-6 h-6 bg-white rounded-lg flex items-center justify-center text-[10px] shadow-sm">📍</div>
-                              <span className="text-[10px] font-black uppercase tracking-tighter">{c}</span>
-                           </div>
+                <div className="container mx-auto px-4 lg:px-8 relative z-10 py-10">
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                        <div className="w-full lg:w-1/2 text-center lg:text-left">
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.5 }}
+                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-blue-50 transition-colors shadow-sm border border-gray-100 mb-8 cursor-pointer"
+                            >
+                                <span className="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse" />
+                                <span className="text-sm font-semibold text-gray-700">Premium Solution Available</span>
+                            </motion.div>
+
+                            <motion.h1
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.2, duration: 0.8 }}
+                                className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-gray-900"
+                            >
+                                Business Directory <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">App Development</span>
+                            </motion.h1>
+
+                            <motion.p
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.4, duration: 0.8 }}
+                                className="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0 font-semibold"
+                            >
+                                If you are looking for an app to provide you all the basic information about anything you want to know.
+                            </motion.p>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.6, duration: 0.8 }}
+                                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                            >
+                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-blue-600 transition-all duration-300 flex items-center justify-center gap-2">
+                                    Start Exploring
+                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </button>
+                                <button className="px-8 py-4 bg-white text-gray-800 rounded-full font-semibold hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm flex items-center justify-center gap-2">
+                                    <span className="w-2 h-2 rounded-full bg-green-500" />
+                                    Live Demo
+                                </button>
+                            </motion.div>
+                        </div>
+
+                        <div className="w-full lg:w-1/2 relative">
+                            <motion.div
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.4, duration: 0.8 }}
+                                className="relative z-10"
+                            >
+                                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/10 to-cyan-600/10 rounded-3xl blur-2xl transform rotate-3" />
+                                <img
+                                    src="/images/directory-hero.png"
+                                    alt="Business Directory App Development"
+                                    width="2048"
+                                    height="1365"
+                                    className="relative z-10 w-full h-auto aspect-[2048/1365] object-contain drop-shadow-2xl"
+                                    onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                />
+                            </motion.div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 2. Intro Section */}
+            <section className="py-20 lg:py-32 bg-white relative">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="w-full lg:w-1/2 relative"
+                        >
+                            <div className="absolute -inset-4 bg-blue-100 border-blue-100 rounded-[2rem] transform -rotate-2" />
+                            <img
+                                src="/images/directory-intro.png"
+                                alt="Leading Business Directory"
+                                width="2048"
+                                height="1365"
+                                className="relative w-full rounded-2xl shadow-xl object-cover h-auto aspect-[2048/1365]"
+                                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800'; }}
+                            />
+                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
+                                <div className="flex items-center gap-4">
+                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                        <Building className="text-green-600 w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <p className="text-sm text-gray-500 font-semibold mb-1">Active Listings</p>
+                                        <p className="text-2xl font-bold text-gray-900">4.5M+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        <div className="w-full lg:w-1/2">
+                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                                Leading Business Directory <span className="text-blue-600">Development Company</span>
+                            </h2>
+                            <p className="text-gray-600 mb-6 text-base font-semibold leading-relaxed max-w-lg">
+                                We create the next generation of city guides, restaurant locators, and directories for all platforms.
+                            </p>
+                            <ul className="space-y-4 mb-8">
+                                
+                                    <li key={0} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-blue-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Multi-Device Platform</span>
+                                    </li>
+                                
+                                    <li key={1} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-blue-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Extensive Business Features</span>
+                                    </li>
+                                
+                                    <li key={2} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-blue-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Real-Time Geo-Tracking</span>
+                                    </li>
+                                
+                                    <li key={3} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-blue-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">High Performance</span>
+                                    </li>
+                                
+                            </ul>
+                            <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-blue-600 transition-all shadow-md">
+                                Request a Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 4. Must Have Features (Tabs Layout) */}
+            <section className="py-24 bg-[#FFFBF2] relative">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 font-display">
+                            Comprehensive <span className="text-blue-600 relative inline-block">
+                                Panels
+                                <svg className="absolute -bottom-2 left-0 w-full h-3 text-blue-200" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                    <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="2" />
+                                </svg>
+                            </span>
+                        </h2>
+                        <p className="text-gray-600 text-lg font-light">
+                            Explore dedicated features tailored for every stakeholder in the ecosystem.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col lg:flex-row gap-8">
+                        {/* Tabs Navigation */}
+                        <div className="w-full lg:w-1/4 flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 scrollbar-hide">
+                            {Object.entries(panelFeatures).map(([key, data]) => {
+                                const Icon = data.icon;
+                                const isActive = activeTab === key;
+                                return (
+                                    <button
+                                        key={key}
+                                        onClick={() => setActiveTab(key)}
+                                        className={`flex items-center gap-3 px-6 py-4 rounded-xl font-semibold transition-all whitespace-nowrap lg:whitespace-normal duration-300 ${isActive
+                                            ? "bg-gray-900 text-white shadow-lg"
+                                            : "bg-white text-gray-600 hover:bg-blue-50 hover:text-blue-600 border border-gray-100"
+                                            }`}
+                                    >
+                                        <Icon size={20} className={isActive ? "text-blue-500" : "text-gray-400"} />
+                                        {key}
+                                    </button>
+                                );
+                            })}
+                        </div>
+
+                        {/* Tab Content */}
+                        <div className="w-full lg:w-3/4">
+                            <AnimatePresence mode="wait">
+                                <motion.div
+                                    key={activeTab}
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -10 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="bg-white rounded-[2rem] p-6 lg:p-10 shadow-xl border border-gray-100 flex flex-col lg:flex-row gap-10"
+                                >
+                                    <div className="w-full lg:w-1/3 flex justify-center items-center">
+                                        <div className="relative">
+                                            <div className="absolute inset-0 bg-blue-100 rounded-3xl blur-xl transform -rotate-6" />
+                                            <img
+                                                src={panelFeatures[activeTab].image}
+                                                alt={activeTab}
+                                                width="2048"
+                                                height="1365"
+                                                className="relative w-full max-w-[280px] h-auto object-contain drop-shadow-2xl"
+                                                onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="w-full lg:w-2/3">
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                                            {React.createElement(panelFeatures[activeTab].icon, { className: "text-blue-600", size: 28 })}
+                                            {activeTab} Features
+                                        </h3>
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
+                                            {panelFeatures[activeTab].features.map((feature, idx) => (
+                                                <div key={idx} className="flex items-start gap-3">
+                                                    <div className="mt-1 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                                        <CheckCircle className="w-3 h-3 text-blue-600" />
+                                                    </div>
+                                                    <span className="text-gray-700 font-medium">{feature}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                        <button className="mt-10 px-6 py-3 bg-blue-100 text-blue-600 font-semibold rounded-lg hover:bg-blue-100 transition-colors flex items-center gap-2">
+                                            Explore full feature list <ArrowRight size={16} />
+                                        </button>
+                                    </div>
+                                </motion.div>
+                            </AnimatePresence>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 5. Features Grid (#1E2A3A Background) */}
+            <section className="py-24 bg-[#1E2A3A] relative">
+                <div className="absolute inset-0 bg-[url('/grid-pattern-light.svg')] opacity-[0.05]" />
+                <div className="container mx-auto px-4 lg:px-8 relative z-10">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-display drop-shadow-sm">
+                            Platform <span className="text-blue-500">Capabilities</span>
+                        </h2>
+                        <div className="flex justify-center gap-4 mt-8 bg-blue-900/30 p-2 rounded-2xl w-max mx-auto border border-blue-800/50 backdrop-blur-sm">
+                            <button
+                                onClick={() => setActiveFeatureTab("Common")}
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Common" ? "bg-blue-600 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                    }`}
+                            >
+                                Core Essentials
+                            </button>
+                            <button
+                                onClick={() => setActiveFeatureTab("Advance")}
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Advance" ? "bg-blue-600 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                    }`}
+                            >
+                                Premium Tools
+                            </button>
+                        </div>
+                    </div>
+
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={activeFeatureTab}
+                            initial={{ opacity: 0, scale: 0.98 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.98 }}
+                            transition={{ duration: 0.3 }}
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                        >
+                            {(activeFeatureTab === "Common" ? commonFeatures : advanceFeatures).map((feature, idx) => (
+                                <div key={idx} className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 p-8 rounded-2xl hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-blue-500/30 group">
+                                    <div className="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors border border-blue-800/50">
+                                        <feature.icon className="text-blue-500 group-hover:text-white transition-colors" size={26} />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                                    <p className="text-blue-200/70 font-light leading-relaxed">{feature.desc}</p>
+                                </div>
+                            ))}
+                        </motion.div>
+                    </AnimatePresence>
+                </div>
+            </section>
+
+            {/* 6. Stats Section (#FFFBF2) */}
+            <section className="py-20 bg-[#FFFBF2] relative">
+                <div className="container mx-auto px-4 lg:px-8 relative z-10">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        {stats.map((stat, idx) => (
+                            <div key={idx} className="text-center group">
+                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
+                                    {stat.value}
+                                </h3>
+                                <p className="text-sm font-bold text-blue-600 uppercase tracking-widest">{stat.label}</p>
+                            </div>
                         ))}
-                     </div>
-                  </div>
-                  <div className="space-y-4">
-                     <div className="text-xs font-black uppercase tracking-widest text-gray-400 italic">Top Rated Near You</div>
-                     {[
-                       { name: "Blue Bay Cafe", rate: "4.9", reviews: "2.4K", icon: "☕" },
-                       { name: "Iron Fitness", rate: "4.8", reviews: "1.2K", icon: "💪" }
-                     ].map((b, i) => (
-                       <div key={i} className="flex items-center justify-between p-4 rounded-3xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                          <div className="flex items-center gap-4">
-                             <div className="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center text-3xl">{b.icon}</div>
-                             <div>
-                                <div className="font-black italic text-sm">{b.name}</div>
-                                <div className="text-[9px] font-bold text-gray-400 italic">⭐ {b.rate} ({b.reviews} reviews)</div>
-                             </div>
-                          </div>
-                          <ArrowRight className="h-4 w-4 text-indigo-500" />
-                       </div>
-                     ))}
-                  </div>
-               </div>
-             </div>
-
-             {/* Business Dashboard */}
-             <div className="bg-gray-900 rounded-[4rem] border border-white/10 overflow-hidden shadow-[0_60px_120px_-30px_rgba(0,0,0,0.4)] h-[650px] flex flex-col group lg:-mt-10 relative z-10 transition-all">
-                <div className="bg-indigo-500 p-8 text-white text-left relative overflow-hidden">
-                   <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-20 blur-[50px] rounded-full"></div>
-                   <div className="flex justify-between items-center mb-6 text-sm font-bold italic opacity-60">
-                     <span>12:30 PM</span>
-                     <Building2 className="h-4 w-4" />
-                   </div>
-                   <h3 className="text-2xl font-black italic tracking-tighter">Business Hub</h3>
-                   <p className="text-indigo-100 text-[10px] font-bold italic mt-2">Blue Bay Cafe · Premium Member</p>
+                    </div>
                 </div>
-                <div className="p-6 text-left space-y-6 grow overflow-y-auto invisible-scrollbar">
-                   <div className="grid grid-cols-2 gap-3">
-                      <div className="p-4 bg-white/5 border border-white/10 rounded-[2rem] text-white">
-                         <div className="text-[8px] font-black uppercase text-white/40 tracking-widest mb-1">Total Profile Views</div>
-                         <div className="text-2xl font-black italic text-indigo-400">12,450</div>
-                      </div>
-                      <div className="p-4 bg-white/5 border border-white/10 rounded-[2rem] text-white">
-                         <div className="text-[8px] font-black uppercase text-white/40 tracking-widest mb-1">New Leads</div>
-                         <div className="text-2xl font-black italic text-indigo-400">84</div>
-                      </div>
-                   </div>
-                   
-                   <div className="space-y-4">
-                      <div className="text-xs font-black uppercase tracking-widest text-white/40 italic">Recent Reviews</div>
-                      {[
-                        { user: "Sarah J.", rate: "5", text: "Amazing coffee and great vibe!", time: "2h ago" },
-                        { user: "Mike T.", rate: "4", text: "Good food, a bit crowded.", time: "5h ago" }
-                      ].map((r, i) => (
-                        <div key={i} className="p-4 rounded-3xl bg-white/5 border border-white/10 space-y-2">
-                           <div className="flex justify-between items-center text-[10px] font-black italic">
-                              <span className="text-indigo-400">{r.user}</span>
-                              <span className="text-yellow-500">{"⭐".repeat(parseInt(r.rate))}</span>
-                           </div>
-                           <p className="text-[11px] text-white/70 italic leading-snug">"{r.text}"</p>
-                           <button className="text-[9px] font-black uppercase tracking-widest text-indigo-500 hover:text-white transition-colors">Reply to Review</button>
+            </section>
+
+            {/* 7. Our Solution/Package Features */}
+            <section className="py-24 bg-white relative">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="flex flex-col lg:flex-row gap-16 items-center">
+                        <div className="w-full lg:w-1/3">
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                                Tailored to your <span className="text-blue-600">unique business needs</span>
+                            </h2>
+                            <p className="text-gray-600 mb-8 text-lg font-light">
+                                Our Business directory solutions provide the agility to launch fast and iterate aggressively with robust infrastructure.
+                            </p>
+                            <div className="hidden lg:block w-32 h-32 bg-blue-100 rounded-full blur-2xl opacity-60 absolute left-10 mt-10" />
                         </div>
-                      ))}
-                   </div>
-                   <button className="w-full bg-indigo-600 text-white rounded-2xl py-4 text-xs font-black uppercase italic tracking-widest flex items-center justify-center gap-3 shadow-xl">
-                      <Megaphone className="h-4 w-4" /> Create Ad Campaign
-                   </button>
-                </div>
-             </div>
 
-             {/* Admin Center */}
-             <div className="bg-white rounded-[4rem] border border-gray-200 overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] h-[650px] flex flex-col group lg:mt-12 transition-all">
-                <div className="bg-gray-900 p-8 text-white text-left relative overflow-hidden">
-                   <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500 opacity-20 blur-[60px] rounded-full"></div>
-                   <div className="flex justify-between items-center mb-6 text-sm font-bold italic opacity-60">
-                     <span>12:30 PM</span>
-                     <ShieldCheck className="h-4 w-4" />
-                   </div>
-                   <h3 className="text-2xl font-black italic tracking-tighter">Moderation Desk</h3>
-                </div>
-                <div className="p-6 text-left space-y-6 grow overflow-y-auto invisible-scrollbar">
-                   <div className="grid grid-cols-2 gap-3 text-center">
-                      <div className="p-3 bg-gray-100 rounded-2xl border border-gray-200 shadow-inner">
-                         <div className="text-lg font-black italic text-gray-900">856</div>
-                         <div className="text-[7px] font-bold uppercase text-gray-400 tracking-widest">Businesses</div>
-                      </div>
-                      <div className="p-3 bg-gray-100 rounded-2xl border border-gray-200 shadow-inner">
-                         <div className="text-lg font-black italic text-gray-900">4,2K</div>
-                         <div className="text-[7px] font-bold uppercase text-gray-400 tracking-widest">Reviews</div>
-                      </div>
-                   </div>
-                   
-                   <div className="space-y-3">
-                      <div className="text-xs font-black uppercase tracking-widest text-gray-400 italic">Pending Tasks</div>
-                      {[
-                        { label: "Listing Verifications", count: "12", icon: Building2 },
-                        { label: "Claim Requests", count: "4", icon: ShieldCheck },
-                        { label: "Reported Reviews", count: "18", icon: Bell }
-                      ].map((m, i) => (
-                        <div key={i} className="flex justify-between items-center p-4 rounded-3xl bg-gray-50 hover:bg-indigo-50/50 cursor-pointer transition-all border border-transparent hover:border-indigo-100">
-                           <div className="flex items-center gap-3">
-                              <div className="w-10 h-10 bg-white rounded-2xl flex items-center justify-center border border-gray-100">
-                                 <m.icon className="h-5 w-5 text-indigo-600" />
-                              </div>
-                              <span className="text-[10px] font-black italic text-gray-700">{m.label}</span>
-                           </div>
-                           <span className="text-[10px] font-black italic text-indigo-600">{m.count}</span>
+                        <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+                            {solutions.map((sol, i) => {
+                                const Icon = sol.icon;
+                                return (
+                                    <div key={i} className="flex gap-4 p-5 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-md hover:border-blue-200 transition-all duration-300">
+                                        <div className="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center flex-shrink-0 text-blue-600">
+                                            <Icon size={22} />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold text-gray-900 mb-2">{sol.title}</h4>
+                                            <p className="text-sm text-gray-600 font-light">{sol.desc}</p>
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
-                      ))}
-                   </div>
-
-                   <div className="p-6 bg-indigo-600 rounded-[3rem] text-white shadow-xl shadow-indigo-100">
-                      <div className="text-[10px] font-black uppercase tracking-widest opacity-60 mb-1 italic">Ad Revenue (MTD)</div>
-                      <div className="text-3xl font-black italic tracking-widest">$8,450.00</div>
-                   </div>
-                </div>
-             </div>
-           </div>
-        </div>
-      </section>
-
-      {/* Core Features Grid */}
-      <section className="py-24 bg-gray-900 text-white relative">
-        <div className="container mx-auto px-4">
-           <div className="text-center mb-16">
-              <h2 className="text-4xl font-black italic uppercase tracking-tighter">Platform Architecture</h2>
-              <p className="text-indigo-400 font-bold uppercase tracking-[0.5em] text-[10px] mt-4 italic">Built for Maximum Discovery & Engagement</p>
-           </div>
-           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              {coreFeatures.map((f, i) => (
-                <div key={i} className="p-6 bg-white/5 border border-white/10 rounded-3xl text-center hover:bg-indigo-600/10 hover:border-indigo-500 transition-all group">
-                   <div className="w-12 h-12 bg-indigo-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-indigo-500 rotate-12 group-hover:rotate-0 transition-all">
-                      <f.icon className="h-6 w-6 text-indigo-500 group-hover:text-white" />
-                   </div>
-                   <h3 className="text-[10px] font-black uppercase tracking-widest italic">{f.title}</h3>
-                </div>
-              ))}
-           </div>
-        </div>
-      </section>
-
-      {/* Admin Mastery */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl font-black mb-4 italic uppercase tracking-tighter underline underline-offset-[20px] decoration-indigo-600 decoration-8">Powerful Moderation</h2>
-            <p className="text-gray-400 font-black uppercase tracking-[0.4em] text-[10px] mt-16 italic">Complete Control for Platform Administrators</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {adminFeatures.map((f, i) => (
-              <motion.div 
-                key={i}
-                whileHover={{ y: -10 }}
-                className="p-10 bg-white border border-gray-100 rounded-[3.5rem] shadow-sm hover:shadow-2xl transition-all border-b-[12px] border-indigo-600 group"
-              >
-                <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-8 bg-gradient-to-br from-gray-50 to-indigo-50 shadow-inner group-hover:rotate-12 transition-transform">
-                  <f.icon className="h-8 w-8 text-indigo-600" />
-                </div>
-                <h3 className="font-extrabold text-xl italic tracking-tighter uppercase mb-4 text-gray-900 group-hover:text-indigo-600 transition-colors uppercase">{f.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed italic font-medium">{f.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Support Section */}
-      <section className="py-24 bg-gray-50 relative overflow-hidden">
-         <div className="container mx-auto px-4 text-center">
-           <div className="mb-20">
-              <h2 className="text-4xl font-black mb-6 italic uppercase tracking-tighter">Lifecycle Support</h2>
-              <p className="text-gray-500 font-extrabold italic leading-relaxed tracking-tight max-w-2xl mx-auto">We don't just build; we scale. Comprehensive support from launch to viral growth.</p>
-           </div>
-           <div className="grid md:grid-cols-4 gap-6 text-left">
-              {supportFeatures.map((s, i) => (
-                <div key={i} className="p-10 bg-white rounded-[3rem] shadow-sm hover:shadow-2xl transition-all border border-gray-100 flex flex-col group hover:border-indigo-200">
-                   <div className="w-14 h-14 bg-gray-900 group-hover:bg-indigo-600 transition-all rounded-3xl flex items-center justify-center mb-8 shadow-xl">
-                      <s.icon className="h-6 w-6 text-white" />
-                   </div>
-                   <h3 className="font-black italic uppercase tracking-tighter text-gray-900 mb-4 group-hover:text-indigo-600 transition-all">{s.title}</h3>
-                   <p className="text-[11px] text-gray-500 leading-relaxed font-bold italic grow">{s.desc}</p>
-                </div>
-              ))}
-           </div>
-        </div>
-      </section>
-
-      {/* Portfolio & Testimonials */}
-      <section className="py-24 bg-gray-900 text-white overflow-hidden relative">
-        <div className="container mx-auto px-4 relative z-10">
-           <div className="text-center mb-20">
-              <h2 className="text-4xl font-black italic mb-4 uppercase underline decoration-indigo-600 decoration-8 underline-offset-[16px]">Directory Success</h2>
-           </div>
-           <div className="grid lg:grid-cols-3 gap-8">
-              {portfolio.map((work, i) => (
-                <div key={i} className="bg-white/5 border border-white/10 p-10 rounded-[3rem] hover:bg-white/10 transition-all group">
-                   <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-500 transition-colors">
-                      <Briefcase className="h-8 w-8 text-indigo-400 group-hover:text-white" />
-                   </div>
-                   <h3 className="text-2xl font-black italic uppercase text-indigo-500 mb-2">{work.title}</h3>
-                   <p className="text-indigo-100/50 text-[10px] uppercase font-black tracking-widest mb-6 italic">{work.subtitle}</p>
-                   <p className="text-gray-400 text-sm italic font-medium leading-relaxed">{work.desc}</p>
-                </div>
-              ))}
-           </div>
-           
-           <div className="grid md:grid-cols-4 gap-8 mt-24">
-              {testimonials.map((t, i) => (
-                <div key={i} className="bg-white rounded-[2.5rem] p-10 flex flex-col relative group hover:bg-indigo-50 transition-all">
-                   <div className="text-indigo-500 text-6xl font-black absolute top-4 right-8 select-none opacity-10">“</div>
-                   <p className="text-[11px] italic font-bold leading-relaxed mb-8 text-gray-700 relative z-10 grow">“{t.text}”</p>
-                   <div className="flex items-center gap-4 mt-auto">
-                      <div className="w-10 h-10 bg-indigo-500 rounded-2xl flex items-center justify-center font-black text-white text-xl italic">{t.name.charAt(0)}</div>
-                      <div>
-                         <div className="font-black italic text-[11px] uppercase text-gray-900 leading-none">{t.name}</div>
-                         <div className="text-[9px] text-indigo-600 uppercase font-bold tracking-widest mt-1 italic">{t.role}</div>
-                      </div>
-                   </div>
-                </div>
-              ))}
-           </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto bg-white rounded-[5rem] flex flex-col lg:flex-row overflow-hidden shadow-[0_60px_120px_-20px_rgba(0,0,0,0.15)] border border-gray-50">
-            {/* Form Side */}
-            <div className="lg:w-3/5 p-8 md:p-20 bg-white">
-                <h2 className="text-5xl font-black mb-6 italic tracking-tighter uppercase text-gray-900 leading-tight">Discuss Your <br/><span className="text-indigo-600 border-b-8 border-indigo-600/20">Market Strategy!</span></h2>
-                <p className="text-gray-400 font-black uppercase text-[11px] tracking-[0.4em] mb-16 italic">Guarantee to get back within a business day</p>
-                
-                <form className="space-y-8">
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Name*</label>
-                       <input name="name" type="text" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-indigo-600 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" required />
                     </div>
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">E-mail*</label>
-                       <input name="email" type="email" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-indigo-600 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" required />
-                    </div>
-                  </div>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Phone No</label>
-                       <input name="phone" type="tel" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-indigo-600 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" />
-                    </div>
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Subject*</label>
-                       <input name="subject" type="text" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-indigo-600 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" required />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                     <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Your Message*</label>
-                     <textarea name="message" rows="5" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-indigo-600 rounded-[2.5rem] px-8 py-6 focus:outline-none transition-all font-black placeholder:italic resize-none shadow-inner" required></textarea>
-                  </div>
-                  
-                  <div className="flex flex-col md:flex-row items-center gap-8 py-4">
-                     <div className="bg-gray-900 text-white px-8 py-4 rounded-3xl font-black italic text-sm border-r-[8px] border-indigo-600">
-                        ANTISPAM: 7 + 5 = ?
-                     </div>
-                     <input name="antispam" type="text" placeholder="Result" className="w-32 bg-indigo-50 border-2 border-indigo-200 rounded-2xl px-6 py-4 font-black text-center focus:outline-none focus:border-indigo-600 transition-all" required />
-                  </div>
-
-                  <button className="w-full bg-indigo-600 hover:bg-black text-white py-8 rounded-[3rem] font-black italic uppercase tracking-[0.4em] text-sm flex items-center justify-center gap-5 transition-all shadow-xl">
-                    <Send className="h-6 w-6" /> Submit Inquiry
-                  </button>
-                </form>
-            </div>
-
-            {/* Info Side */}
-            <div className="lg:w-2/5 p-8 md:p-20 bg-gray-900 text-white flex flex-col justify-between relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-indigo-600/20 blur-[120px] rounded-full -mr-[200px] -mt-[200px]"></div>
-                <div className="relative z-10 space-y-16">
-                   <div>
-                      <h3 className="text-4xl font-black italic tracking-tighter mb-6 uppercase leading-tight text-indigo-400">Ready to <br/>scale your <br/>Directory?</h3>
-                      <p className="text-gray-400 text-sm font-medium leading-relaxed italic mb-10">We would love to hear how we can bring your possibilities to reality through technology and give away <span className="text-indigo-400 font-black not-italic px-1 bg-white/10 rounded">2hrs of free consulting</span>.</p>
-                      <div className="space-y-8">
-                         <div className="flex items-center gap-6 group cursor-pointer">
-                            <div className="w-14 h-14 bg-white/5 rounded-3xl flex items-center justify-center group-hover:bg-indigo-600 transition-all shadow-xl">
-                               <Mail className="h-6 w-6 text-indigo-400 group-hover:text-white" />
-                            </div>
-                            <span className="font-black italic text-base tracking-tighter">Info@kryosssoftech.org</span>
-                         </div>
-                         <div className="flex items-center gap-6 group cursor-pointer">
-                            <div className="w-14 h-14 bg-white/5 rounded-3xl flex items-center justify-center group-hover:bg-indigo-600 transition-all shadow-xl">
-                               <Phone className="h-6 w-6 text-indigo-400 group-hover:text-white" />
-                            </div>
-                            <div className="space-y-1">
-                               <div className="font-black italic text-base tracking-tighter">+0124-4001495</div>
-                               <div className="text-[10px] text-gray-500 font-black uppercase tracking-widest italic">Tech Support Line</div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-
-                   <div className="space-y-12">
-                      <h3 className="text-xl font-black italic tracking-widest uppercase border-l-8 border-indigo-600 pl-6">Our Presence</h3>
-                      <div className="space-y-10">
-                         <div className="group">
-                            <div className="flex items-center gap-3 mb-2">
-                               <MapPin className="h-4 w-4 text-indigo-400" />
-                               <span className="uppercase text-[10px] font-black tracking-widest text-indigo-400 italic">India · Gurgaon HQ</span>
-                            </div>
-                            <p className="text-[12px] text-gray-400 font-bold italic leading-relaxed">1102, 11th Floor, JMD Megapolis, Sec-48, Gurgaon-122018, Haryana, India</p>
-                         </div>
-                         <div className="group">
-                            <div className="flex items-center gap-3 mb-2">
-                               <MapPin className="h-4 w-4 text-indigo-400" />
-                               <span className="uppercase text-[10px] font-black tracking-widest text-indigo-400 italic">USA Operations</span>
-                            </div>
-                            <p className="text-[12px] text-gray-400 font-bold italic leading-relaxed">348-352, Spaze IT Park, Sec-48, Gurgaon-122018, Haryana, India</p>
-                         </div>
-                      </div>
-                   </div>
                 </div>
-            </div>
-          </div>
+            </section>
+
+            {/* 8. Portfolio Section */}
+            <section className="py-20 bg-gray-50 border-t border-gray-200">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="text-center mb-16">
+                        <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">OUR DIRECTORY PRODUCTS</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Latest Innovations</h2>
+                        <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full" />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {portfolio.map((item, idx) => (
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: idx * 0.1 }}
+                                key={idx}
+                                className="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 group flex flex-col h-full"
+                            >
+                                <div className="h-48 relative overflow-hidden">
+                                    <img
+                                        src={item.image}
+                                        alt={item.title}
+                                        width="2048"
+                                        height="1365"
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                                    <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/20 blur-2xl rounded-full" />
+                                    <Building size={40} className="text-blue-500 absolute top-6 right-6 opacity-80 group-hover:scale-110 transition-transform duration-500" />
+                                    <h3 className="absolute bottom-4 left-4 right-4 text-white text-xl font-bold leading-tight z-10">{item.title}</h3>
+                                </div>
+
+                                <div className="p-8 flex flex-col flex-grow">
+                                    <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">{item.description}</p>
+                                    <div className="flex flex-wrap gap-2 mt-auto">
+                                        {item.tags.map(tag => (
+                                            <span key={tag} className="px-3 py-1 bg-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-wider rounded-md">
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* 9 & 10. Global Components */}
+            <Testimonial theme="blue" />
+            <Industries theme={{ bg: "bg-[#F0F9FF]", primary: "text-blue-600", iconBg: "bg-blue-100", iconColor: "text-blue-600" }} />
+            <OurWork theme={{ primary: "text-blue-600", accent: "bg-blue-600" }} />
+            <ContactUs id="contact-us" theme="blue" />
         </div>
-      </section>
-    </div>
-  );
+    );
 };
 
 export default BusinessDirectoryApp;

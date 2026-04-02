@@ -1,58 +1,18 @@
+
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { motion, AnimatePresence } from 'framer-motion';
 import {
-    ShoppingBag,
-    CheckCircle,
-    Store,
-    Shield,
-    Smartphone,
-    MapPin,
-    CreditCard,
-    Clock,
-    MessageSquare,
-    Bell,
-    Star,
-    Settings,
-    FileText,
-    BarChart,
-    Zap,
-    Headphones,
-    Server,
-    Code,
-    Database,
-    RefreshCw,
-    UserCheck,
-    Phone,
-    LayoutDashboard,
-    Compass,
-    Search,
-    Navigation,
-    DollarSign,
-    Users,
-    Layers,
-    Heart,
-    Plane,
-    Building2,
-    Truck,
-    PlayCircle,
-    GraduationCap,
-    ArrowRight,
-    Send,
-    Mail,
-    Globe,
-    ShoppingCart,
-    Apple,
-    Milk,
-    Coffee,
-    Package,
-    TrendingUp,
-    History,
-    User,
-    Car
+    UtensilsCrossed, CheckCircle, Store, Shield, Smartphone, MapPin, 
+    CreditCard, Clock, MessageSquare, Bell, Star, Settings, FileText, 
+    BarChart, Zap, Headphones, Server, Code, Database, RefreshCw, 
+    UserCheck, Phone, LayoutDashboard, Compass, ShoppingBag, History, 
+    Search, Navigation, DollarSign, Users, Layers, Heart, Plane, 
+    Building2, Truck, PlayCircle, GraduationCap, ArrowRight, Globe,
+    Package, ShoppingCart, Tv, Video, TrendingUp, User, Award, Calendar,
+    Play, Download, Subtitles, Lock, Chrome, Car, Apple, Scissors, Gift, Image, CalendarCheck, Star as StarIcon, Sparkles
 } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-// Reusable components
 import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
@@ -60,451 +20,393 @@ import ContactUs from '../../../components/Common/ContactUs';
 
 const GroceryDeliveryApp = () => {
     const [activeTab, setActiveTab] = useState('Customer App');
-    const [activeFeatureTab, setActiveFeatureTab] = useState('common');
+    const [activeFeatureTab, setActiveFeatureTab] = useState('Common');
 
     const panelFeatures = {
         "Customer App": {
-            icon: Users,
-            image: "/images/grocery-customer.jpg",
+            icon: Users, image: "/images/grocery-customer.jpg",
             features: [
-                "Easy Registration & Sign-In", "Push Notifications", "Ratings & Reviews",
-                "Password Recovery", "Security & Ratings", "Quick Ordering",
-                "Social Media Login", "Account Management", "Multiple Payment Options",
-                "Real-Time Updates", "Live Chat With Store", "Order Tracking",
-                "Reorder Items", "Multiple Address Options"
+                "Easy Registration", "Push Notifications", "Ratings & Reviews",
+                "Password Recovery", "Quick Ordering", "Social Login", 
+                "Account Management", "Multiple Payment Options", "Real-Time Updates", 
+                "Live Chat With Store", "Order Tracking", "Reorder Items"
             ]
         },
         "Driver App": {
-            icon: Car,
-            image: "/images/grocery-driver.jpg",
+            icon: Car, image: "/images/grocery-driver.jpg",
             features: [
-                "Unique Driver Profile", "Social Media Login", "Quick Registration",
-                "Set Availability", "Delivery Management", "Accept/Decline Delivery",
-                "Location Tracking", "Previous and Upcoming Deliveries",
-                "Contact With Store", "Push Notifications", "Track Earnings", "Delivery History"
+                "Driver Profile", "Set Availability", "Delivery Management", 
+                "Accept/Decline Delivery", "Location Tracking", "Previous Deliveries", 
+                "Contact Store", "Push Notifications", "Track Earnings", "Delivery History"
             ]
         },
         "Store App": {
-            icon: Store,
-            image: "/images/grocery-store.jpg",
+            icon: Store, image: "/images/grocery-store.jpg",
             features: [
-                "Store Profile Management", "Product Catalog", "Inventory Management",
-                "Order Management", "Accept/Decline Orders", "Discount Management",
-                "Analytics Dashboard", "Payment Tracking", "Customer Reviews",
-                "Push Notifications", "Sales Reports", "Delivery Partner Management"
+                "Store Profile", "Product Catalog", "Inventory Management", 
+                "Order Management", "Discount Management", "Analytics Dashboard", 
+                "Payment Tracking", "Customer Reviews", "Sales Reports", "Partner Management"
             ]
         },
         "Admin Panel": {
-            icon: Shield,
-            image: "/images/grocery-admin.jpg",
+            icon: Shield, image: "/images/grocery-admin.jpg",
             features: [
-                "Create Sub Admins", "Multi-Level Admin Access", "Complete Dashboard",
-                "Store Management", "Driver Management", "Customer Management",
-                "God's Eye View", "Transaction History", "Commission Management",
-                "Category Management", "Payment Reports", "Push Notifications"
+                "Create Sub Admins", "Multi-Level Access", "Complete Dashboard", 
+                "Store Management", "Driver Management", "Customer Management", 
+                "Transaction History", "Commission Management", "Payment Reports"
             ]
         }
     };
 
     const commonFeatures = [
-        { title: "Tutorial & Onboarding Screens", icon: Smartphone, desc: "With the help of tutorial screens, customers can see custom illustrations presenting the features and benefits of the best grocery shopping app." },
-        { title: "Digital Invoice Generating Tool", icon: FileText, desc: "The system will instantly send the digital copy of the invoice to the customer's email ID containing all information related to that particular order." },
-        { title: "Account Setup Panel", icon: Users, desc: "Customers can set up their account just by typing email address, phone number, gender or using social media accounts." },
-        { title: "Real-Time Order Tracking", icon: Navigation, desc: "Customers can check the shipping status until the grocery order arrives, enhancing satisfaction and loyalty." },
-        { title: "Cost Calculator", icon: DollarSign, desc: "Customers can easily know and compare the cost of items, ordering as per their budget." },
-        { title: "Re-Order", icon: RefreshCw, desc: "With a single tap, customers can instantly order the same items at any selected address with option to modify if required." },
-        { title: "Filters", icon: Settings, desc: "Users can use multiple filters to find exactly what they want from thousands of products." },
-        { title: "Multiple Address Options", icon: MapPin, desc: "Add multiple addresses and choose any during placing the online order for convenience." }
+        { title: "Real-Time Tracking", icon: Navigation, desc: "Customers can check shipping status until the grocery order arrives." },
+        { title: "Cost Calculator", icon: DollarSign, desc: "Customers can easily know and compare the cost of items." },
+        { title: "Re-Order", icon: RefreshCw, desc: "Instantly order same items at any selected address with one tap." },
+        { title: "Filters", icon: Settings, desc: "Use multiple filters to find exactly what they want from thousands of products." },
+        { title: "Multiple Addresses", icon: MapPin, desc: "Add multiple addresses and choose any during checkout." },
+        { title: "Digital Invoices", icon: FileText, desc: "Instantly send digital copy of invoice to email after purchase." }
     ];
 
     const advanceFeatures = [
-        { title: "In-App Wallet", icon: CreditCard, desc: "Secure in-app wallet for fast, cashless, and hassle-free transactions with cashback offers." },
-        { title: "Subscription Plans", icon: Clock, desc: "Allow customers to subscribe to regular grocery deliveries with special discounts." },
-        { title: "Multi-Language", icon: Globe, desc: "Allow users to operate the application in their preferred native languages." },
-        { title: "Smart Analytics", icon: BarChart, desc: "Comprehensive dashboard for admins to track business growth and user metrics." },
-        { title: "Heat Map Option", icon: MapPin, desc: "Empower delivery partners to see locations with maximum orders to optimize routes." },
-        { title: "Automated Dispatch", icon: Zap, desc: "Intelligent system that auto-assigns the nearest available delivery partner." },
-        { title: "Loyalty Programs", icon: Star, desc: "Reward frequent customers with points that can be redeemed for discounted orders." },
-        { title: "Inventory Management", icon: Package, desc: "Real-time inventory tracking with low stock alerts and automated reordering." }
+        { title: "In-App Wallet", icon: CreditCard, desc: "Secure in-app wallet for fast, cashless, and hassle-free transactions." },
+        { title: "Subscription Plans", icon: Clock, desc: "Allow customers to subscribe to regular grocery deliveries." },
+        { title: "Automated Dispatch", icon: Zap, desc: "Intelligent system auto-assigns the nearest available delivery partner." },
+        { title: "Inventory Management", icon: Package, desc: "Real-time inventory tracking with low stock alerts." },
+        { title: "Loyalty Programs", icon: StarIcon, desc: "Reward frequent customers with points for discounts." },
+        { title: "Smart Analytics", icon: BarChart, desc: "Comprehensive dashboard to track business growth." }
+    ];
+
+    const portfolio = [
+        { title: "Heritage TUCH", description: "Online milk and dairy products delivery app offering natural farm-fresh milk.", tags: ["Milk Delivery", "Subscription"], image: "https://images.unsplash.com/photo-1563636619-e9143da7973b" },
+        { title: "Meatigo", description: "Fresh Meats & Delicatessen Products with 120 Minutes Home Delivery.", tags: ["Meat Delivery", "Premium"], image: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82c" },
+        { title: "Superfoods", description: "Best buys in vegetables, fruits, dairy, and groceries at affordable prices.", tags: ["Grocery", "Fruits"], image: "https://images.unsplash.com/photo-1542838132-92c53300491e" }
+    ];
+
+    const stats = [
+        { value: "750+", label: "Projects Delivered" },
+        { value: "150+", label: "Development Staff" },
+        { value: "10+", label: "Years Experience" },
+        { value: "450+", label: "Satisfied Clients" }
     ];
 
     const solutions = [
         { title: "Fully Customizable", icon: Settings, desc: "Our Script is flexible enough to meet the specific needs of the Clients." },
-        { title: "Bug Support", icon: Shield, desc: "If there are any bugs or issues you can report to us, we will work on it & Update the status of the work. This service will be provided free for the first year." },
-        { title: "Licence For A Lifetime", icon: FileText, desc: "Source Code for a lifetime license and one domain/ brand. With a one-off payment, your software will be covered for the duration of a lifetime." },
-        { title: "Linux Server Installation", icon: Server, desc: "Web Panels will work smoothly in open source Linux Servers. You will be informed once the server configuration and hosting has been done by the technical team." },
-        { title: "Open Source Database", icon: Database, desc: "We use MySQL, which is an open source and one of the safest databases. You will also have to pay minimal price for license renewal every year." },
-        { title: "Payments", icon: CreditCard, desc: "Our Scripts support International Payment Gateways, API with easy Installations of new ones as per the business needs." },
-        { title: "Technical Support", icon: Headphones, desc: "We provide One Year Free Support, even non-technical entrepreneurs will be benefitted, we handle everything till everything is launched." },
-        { title: "Open Source Code", icon: Code, desc: "We provide a 100% open source code that will allow all types of customization's." }
+        { title: "Linux Server Installation", icon: Server, desc: "Web Panels will work smoothly in open source Linux Servers." },
+        { title: "Payments", icon: CreditCard, desc: "Our Scripts support API with easy Installations of new ones." },
+        { title: "Technical Support", icon: Headphones, desc: "We provide Free Support and handle everything till launch." }
     ];
-
-    const stats = [
-        { label: "Projects Delivered", val: "750" },
-        { label: "Development Staff", val: "150" },
-        { label: "Years of Experience", val: "10" },
-        { label: "Satisfied Clients", val: "450" }
-    ];
-
-    const portfolio = [
-        {
-            title: "Heritage TUCH",
-            subtitle: "Online Milk Delivery App",
-            desc: "Heritage TUCH is an online milk and dairy products delivery app offering natural, farm-fresh milk and dairy products right at your doorstep every morning.",
-            tags: ["Milk Delivery", "Dairy", "Subscription"],
-            image: "https://images.unsplash.com/photo-1563636619-e9143da7973b"
-        },
-        {
-            title: "Daily Moo",
-            subtitle: "Milk & Breakfast Subscription App",
-            desc: "All our products are made with care and in collaboration with the feedback of thousands of our customers. Live a pure and healthy life with truly pure products.",
-            tags: ["Subscription", "Breakfast", "Dairy"],
-            image: "https://images.unsplash.com/photo-1550583724-b2692b85b150"
-        },
-        {
-            title: "Meatigo",
-            subtitle: "Fresh Meats Delivery",
-            desc: "Choose from over 100+ Fresh Meats & Delicatessen Products with 120 Minutes Home Delivery across neighbourhoods.",
-            tags: ["Meat Delivery", "Fresh", "Premium"],
-            image: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82c"
-        },
-        {
-            title: "Superfoods",
-            subtitle: "Online Grocery Shopping App Pune",
-            desc: "Searching for the best buys in vegetables, fruits, dairy, and groceries like grains, snacks, beverages, chocolates, and more.",
-            tags: ["Grocery", "Fruits", "Vegetables"],
-            image: "https://images.unsplash.com/photo-1542838132-92c53300491e"
-        },
-        {
-            title: "Groxery",
-            subtitle: "Order Grocery Online",
-            desc: "Online store bringing essential goods, health care products, household goods, stationery items under one platform.",
-            tags: ["Grocery", "E-commerce", "Essential"],
-            image: "https://images.unsplash.com/photo-1550989460-0adf9ea622e2"
-        }
-    ];
-
-    const latestWorks = [
-        { title: "e-grocers", subtitle: "Grocery Delivery", image: "https://images.unsplash.com/photo-1542838132-92c53300491e" },
-        { title: "Kryoss Grocer", subtitle: "Multi-Vendor", image: "https://images.unsplash.com/photo-1550989460-0adf9ea622e2" },
-        { title: "GO-Hypermarket", subtitle: "Grocery Store", image: "https://images.unsplash.com/photo-1610348725531-843dff563e2c" }
-    ];
-
-    const featuresList = [
-        { name: "Social Login", icon: Users },
-        { name: "Advanced Search", icon: Search },
-        { name: "Product Details", icon: Package },
-        { name: "Multiple Orders", icon: ShoppingCart },
-        { name: "Multiple Payments", icon: CreditCard },
-        { name: "Instant Delivery", icon: Zap },
-        { name: "Order History", icon: History },
-        { name: "Track Orders", icon: Navigation },
-        { name: "Push Notifications", icon: Bell },
-        { name: "Offers & Promos", icon: DollarSign }
-    ];
-
-    const industries = [
-        { name: "Healthcare", icon: Heart },
-        { name: "Travel & Tourism", icon: Plane },
-        { name: "Banking & Finance", icon: Building2 },
-        { name: "Logistics & Transport", icon: Truck },
-        { name: "Media & Entertainment", icon: PlayCircle },
-        { name: "Education & E-Learning", icon: GraduationCap }
-    ];
-
-    const features = activeFeatureTab === "common" ? commonFeatures : advanceFeatures;
 
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Grocery Delivery App Development | Kryoss</title>
-                <meta name="description" content="Create your own grocery delivery platform now! Kryoss Softech offers high-end customized grocery delivery app development for Android and iOS." />
+                <title>Grocery Delivery App Development | KryossWork</title>
+                <meta name="description" content="Create your own grocery and delivery platform now." />
             </Helmet>
 
             {/* 1. Hero Section */}
-            <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700">
-                {/* Background Decorative Elements */}
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-green-400 -skew-x-12 translate-x-32 z-0 hidden lg:block opacity-30"></div>
-                <div className="absolute top-1/2 left-0 w-72 h-72 bg-green-300 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 opacity-40"></div>
+            <section className="relative w-full min-h-[550px] lg:min-h-[600px] flex md:items-center overflow-hidden bg-gradient-to-br from-[#F8FAFC] via-white to-[#FEF9C3]">
+                <div className="absolute inset-0 z-0">
+                    <div className="absolute top-10 left-10 w-96 h-96 bg-green-100 rounded-full blur-3xl" />
+                    <div className="absolute bottom-10 right-10 w-96 h-96 bg-yellow-100/50 rounded-full blur-3xl" />
+                    <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03]" />
+                </div>
 
-                <div className="relative z-10 container mx-auto px-4 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <div className="container mx-auto px-4 lg:px-8 relative z-10 py-10">
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                        <div className="w-full lg:w-1/2 text-center lg:text-left">
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.5 }}
+                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-green-50 transition-colors shadow-sm border border-gray-100 mb-8 cursor-pointer"
+                            >
+                                <span className="flex h-2 w-2 rounded-full bg-green-600 animate-pulse" />
+                                <span className="text-sm font-semibold text-gray-700">Premium Solution Available</span>
+                            </motion.div>
 
-                        {/* Content Box */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -30 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.8 }}
-                            className="w-full lg:w-1/2 text-left"
-                        >
-                            <div className="inline-block px-4 py-2 rounded-full bg-white/20 border border-white/30 text-white font-semibold mb-6 tracking-wide text-sm backdrop-blur-md">
-                                Premium Solution Available
-                            </div>
-                            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 tracking-tight leading-tight">
-                                Create Your Own <br className="hidden lg:block" />
-                                <span className="text-green-200">Grocery Delivery</span> Platform Now!
-                            </h1>
-                            <p className="text-lg md:text-xl text-green-50 font-light leading-relaxed mb-10 max-w-xl">
-                                Build your Grocery Delivery Application with us and be ahead of the pack. Kryoss Softech offers a highly interactive and user-friendly online grocery delivery app for your grocery business.
-                            </p>
-                            <div className="flex gap-4">
-                                <a href="#contact-us" className="px-8 py-4 rounded-xl bg-white text-green-600 font-bold text-lg hover:shadow-lg hover:shadow-white/30 transition-all duration-300 transform hover:-translate-y-1">
-                                    Let's Talk
-                                </a>
-                            </div>
-                        </motion.div>
+                            <motion.h1
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.2, duration: 0.8 }}
+                                className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-gray-900"
+                            >
+                                Create Your Own <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-teal-500">Grocery Delivery Platform</span>
+                            </motion.h1>
 
-                        {/* Image Box */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 30 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.8, delay: 0.2 }}
-                            className="w-full lg:w-1/2 flex justify-center items-center relative"
-                        >
-                            <div className="relative w-full flex items-center justify-center min-h-[300px]">
-                                <div className="absolute inset-0 bg-gradient-to-tr from-green-500/20 to-transparent blur-[80px] rounded-full"></div>
+                            <motion.p
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.4, duration: 0.8 }}
+                                className="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0 font-semibold"
+                            >
+                                Build your Grocery Delivery Application with us and be ahead of the pack. Kryoss offers interactive grocery delivery app.
+                            </motion.p>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.6, duration: 0.8 }}
+                                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                            >
+                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-green-600 transition-all duration-300 flex items-center justify-center gap-2">
+                                    Start Exploring
+                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </button>
+                                <button className="px-8 py-4 bg-white text-gray-800 rounded-full font-semibold hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm flex items-center justify-center gap-2">
+                                    <span className="w-2 h-2 rounded-full bg-green-500" />
+                                    Live Demo
+                                </button>
+                            </motion.div>
+                        </div>
+
+                        <div className="w-full lg:w-1/2 relative">
+                            <motion.div
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.4, duration: 0.8 }}
+                                className="relative z-10"
+                            >
+                                <div className="absolute inset-0 bg-gradient-to-tr from-green-600/10 to-teal-600/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
                                     src="/images/grocery-delivery-hero.png"
                                     alt="Grocery Delivery App Development"
-                                    className="relative z-10 max-h-[500px] w-full object-contain drop-shadow-2xl"
-                                    onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800'; e.target.className = 'relative z-10 w-full h-auto object-cover rounded-3xl shadow-2xl' }}
+                                    width="2048"
+                                    height="1365"
+                                    className="relative z-10 w-full h-auto aspect-[2048/1365] object-contain drop-shadow-2xl"
+                                    onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
                                 />
-                            </div>
-                        </motion.div>
-
+                            </motion.div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* 2. Breadcrumb */}
-            <section className="bg-white/90 border-b border-gray-100 backdrop-blur-md sticky top-0 z-40 shadow-sm">
-                <div className="container mx-auto px-4 py-4 flex flex-wrap items-center text-sm md:text-base font-semibold text-gray-600">
-                    <a href="/" className="hover:text-green-600 transition-colors duration-300">Home</a>
-                    <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-                    <span className="hover:text-green-600 cursor-pointer transition-colors duration-300">Solutions</span>
-                    <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-                    <span className="text-green-600">Grocery Delivery App Development</span>
-                </div>
-            </section>
-
-            {/* 3. Home / Intro */}
-            <section className="py-20 md:py-28 bg-white relative">
+            {/* 2. Intro Section */}
+            <section className="py-20 lg:py-32 bg-white relative">
                 <div className="container mx-auto px-4 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                        {/* Content Box */}
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
                         <motion.div
-                            initial={{ opacity: 0, x: -30 }}
+                            initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="w-full lg:w-1/2"
+                            className="w-full lg:w-1/2 relative"
                         >
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-                                Melange of well-versed and <br />
-                                <span className="text-green-600">proficient developers</span>
-                            </h2>
-                            <p className="text-lg text-gray-600 leading-relaxed mb-6 font-light">
-                                Our team has years of experience in grocery delivery app development, delivering a plethora of online grocery ordering mobile applications in the market. Our customized solutions are designed like Bigbasket, Grofers, OnDoor, Jio Mart, and a lot more, keeping the client's requirements in mind.
-                            </p>
-                            <p className="text-lg text-gray-600 leading-relaxed font-light">
-                                Our team of professionals excels in providing valuable features and highly functional apps using the latest trends & technology. We deliver customized solutions designed specifically for your grocery business needs.
-                            </p>
-                        </motion.div>
-
-                        {/* Image Box */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 30 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="w-full lg:w-1/2 flex justify-center items-center relative"
-                        >
-                            <div className="overflow-hidden relative group w-full flex items-center justify-center min-h-[300px]">
-                                <img
-                                    src="/images/grocery-delivery-intro.png"
-                                    alt="Grocery Delivery Platform"
-                                    className="max-h-[450px] w-full object-contain"
-                                    onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?auto=format&fit=crop&q=80&w=800'; e.target.className = 'relative z-10 w-full h-auto object-cover rounded-3xl shadow-xl' }}
-                                />
-                            </div>
-                        </motion.div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 4. Must-Have Features (Tabs Layout) */}
-            <section className="py-20 bg-[#F0FDF4] border-y border-green-100">
-                <div className="container mx-auto px-4 lg:px-8">
-
-                    {/* Heading */}
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Must-Have Features <span className="text-green-600">for Grocery Delivery App</span>
-                        </h2>
-                        <div className="w-24 h-1 bg-green-600 mx-auto rounded-full"></div>
-                    </div>
-
-                    <div className="flex flex-col lg:flex-row gap-10 items-stretch max-w-7xl mx-auto">
-
-                        {/* LEFT IMAGE (40%) */}
-                        <div className="w-full lg:w-2/5">
-                            <div className="h-full min-h-[500px] rounded-3xl overflow-hidden shadow-xl relative">
-                                <img
-                                    src={panelFeatures[activeTab].image}
-                                    alt={activeTab}
-                                    className="w-full h-full object-cover transition-all duration-500"
-                                    onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800'; }}
-                                />
-
-                                {/* Gradient Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-
-                                {/* Text */}
-                                <div className="absolute bottom-6 left-6 text-white">
-                                    <h3 className="text-2xl font-bold">{activeTab}</h3>
-                                    <p className="text-sm opacity-80">Complete grocery delivery solution</p>
+                            <div className="absolute -inset-4 bg-green-100 border-green-100 rounded-[2rem] transform -rotate-2" />
+                            <img
+                                src="/images/grocery-delivery-intro.png"
+                                alt="Melange of well-versed and"
+                                width="2048"
+                                height="1365"
+                                className="relative w-full rounded-2xl shadow-xl object-cover h-auto aspect-[2048/1365]"
+                                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800'; }}
+                            />
+                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
+                                <div className="flex items-center gap-4">
+                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                        <ShoppingBag className="text-green-600 w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <p className="text-sm text-gray-500 font-semibold mb-1">Deliveries Today</p>
+                                        <p className="text-2xl font-bold text-gray-900">10K+</p>
+                                    </div>
                                 </div>
                             </div>
+                        </motion.div>
+
+                        <div className="w-full lg:w-1/2">
+                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                                Melange of well-versed and <span className="text-green-600">proficient developers</span>
+                            </h2>
+                            <p className="text-gray-600 mb-6 text-base font-semibold leading-relaxed max-w-lg">
+                                Our team has years of experience in grocery delivery app development, delivering customized solutions perfectly.
+                            </p>
+                            <ul className="space-y-4 mb-8">
+                                
+                                    <li key={0} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-green-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Multi-Platform Apps</span>
+                                    </li>
+                                
+                                    <li key={1} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-green-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Extensive Tracking</span>
+                                    </li>
+                                
+                                    <li key={2} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-green-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Inventory Management</span>
+                                    </li>
+                                
+                                    <li key={3} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-green-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Fast Connectivity</span>
+                                    </li>
+                                
+                            </ul>
+                            <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-green-600 transition-all shadow-md">
+                                Request a Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 4. Must Have Features (Tabs Layout) */}
+            <section className="py-24 bg-[#FFFBF2] relative">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 font-display">
+                            Comprehensive <span className="text-green-600 relative inline-block">
+                                Panels
+                                <svg className="absolute -bottom-2 left-0 w-full h-3 text-green-200" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                    <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="2" />
+                                </svg>
+                            </span>
+                        </h2>
+                        <p className="text-gray-600 text-lg font-light">
+                            Explore dedicated features tailored for every stakeholder in the ecosystem.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col lg:flex-row gap-8">
+                        {/* Tabs Navigation */}
+                        <div className="w-full lg:w-1/4 flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 scrollbar-hide">
+                            {Object.entries(panelFeatures).map(([key, data]) => {
+                                const Icon = data.icon;
+                                const isActive = activeTab === key;
+                                return (
+                                    <button
+                                        key={key}
+                                        onClick={() => setActiveTab(key)}
+                                        className={`flex items-center gap-3 px-6 py-4 rounded-xl font-semibold transition-all whitespace-nowrap lg:whitespace-normal duration-300 ${isActive
+                                            ? "bg-gray-900 text-white shadow-lg"
+                                            : "bg-white text-gray-600 hover:bg-green-50 hover:text-green-600 border border-gray-100"
+                                            }`}
+                                    >
+                                        <Icon size={20} className={isActive ? "text-green-500" : "text-gray-400"} />
+                                        {key}
+                                    </button>
+                                );
+                            })}
                         </div>
 
-                        {/* RIGHT CONTENT (60%) */}
-                        <div className="w-full lg:w-3/5 flex flex-col lg:flex-row gap-6">
-
-                            {/* Tabs */}
-                            <div className="w-full lg:w-1/3 flex flex-col gap-3">
-                                {Object.keys(panelFeatures).map((key) => {
-                                    const Icon = panelFeatures[key].icon;
-                                    const isActive = activeTab === key;
-
-                                    return (
-                                        <button
-                                            key={key}
-                                            onClick={() => setActiveTab(key)}
-                                            className={`relative px-5 py-4 rounded-2xl flex items-center gap-3 transition 
-                ${isActive
-                                                    ? "bg-green-600 text-white shadow-lg"
-                                                    : "bg-white text-gray-600 hover:bg-green-50"
-                                                }`}
-                                        >
-                                            <Icon size={20} />
-                                            <span className="font-semibold">{key}</span>
-                                        </button>
-                                    );
-                                })}
-                            </div>
-
-                            {/* Content */}
-                            <div className="w-full lg:w-2/3">
-                                <AnimatePresence mode="wait">
-                                    <motion.div
-                                        key={activeTab}
-                                        initial={{ opacity: 0, x: 20 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        exit={{ opacity: 0, x: -20 }}
-                                        className="bg-white rounded-3xl p-8 shadow-lg h-full"
-                                    >
-                                        <h3 className="text-xl font-bold mb-6">
+                        {/* Tab Content */}
+                        <div className="w-full lg:w-3/4">
+                            <AnimatePresence mode="wait">
+                                <motion.div
+                                    key={activeTab}
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -10 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="bg-white rounded-[2rem] p-6 lg:p-10 shadow-xl border border-gray-100 flex flex-col lg:flex-row gap-10"
+                                >
+                                    <div className="w-full lg:w-1/3 flex justify-center items-center">
+                                        <div className="relative">
+                                            <div className="absolute inset-0 bg-green-100 rounded-3xl blur-xl transform -rotate-6" />
+                                            <img
+                                                src={panelFeatures[activeTab].image}
+                                                alt={activeTab}
+                                                width="2048"
+                                                height="1365"
+                                                className="relative w-full max-w-[280px] h-auto object-contain drop-shadow-2xl"
+                                                onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="w-full lg:w-2/3">
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                                            {React.createElement(panelFeatures[activeTab].icon, { className: "text-green-600", size: 28 })}
                                             {activeTab} Features
                                         </h3>
-
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
                                             {panelFeatures[activeTab].features.map((feature, idx) => (
-                                                <div key={idx} className="flex items-center gap-2">
-                                                    <CheckCircle size={16} className="text-green-600" />
-                                                    <span className="text-gray-700">{feature}</span>
+                                                <div key={idx} className="flex items-start gap-3">
+                                                    <div className="mt-1 w-5 h-5 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                                                        <CheckCircle className="w-3 h-3 text-green-600" />
+                                                    </div>
+                                                    <span className="text-gray-700 font-medium">{feature}</span>
                                                 </div>
                                             ))}
                                         </div>
-
-                                    </motion.div>
-                                </AnimatePresence>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 5. Features for Grocery App (Grid) */}
-            <section className="py-24 bg-[#1E2A3A] text-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-green-400/5 blur-[150px]"></div>
-
-                <div className="container mx-auto px-4 lg:px-8 relative z-10">
-
-                    {/* Heading */}
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                            Features for Grocery App
-                        </h2>
-
-                        {/* Tabs */}
-                        <div className="flex justify-center gap-8 text-sm font-medium">
-                            <button
-                                onClick={() => setActiveFeatureTab("common")}
-                                className={`relative pb-2 transition ${activeFeatureTab === "common"
-                                    ? "text-green-500"
-                                    : "text-gray-400"
-                                    }`}
-                            >
-                                Common Features
-                                {activeFeatureTab === "common" && (
-                                    <span className="absolute left-0 bottom-0 w-full h-[2px] bg-green-500"></span>
-                                )}
-                            </button>
-
-                            <button
-                                onClick={() => setActiveFeatureTab("advance")}
-                                className={`relative pb-2 transition ${activeFeatureTab === "advance"
-                                    ? "text-green-500"
-                                    : "text-gray-400"
-                                    }`}
-                            >
-                                Advance Features
-                                {activeFeatureTab === "advance" && (
-                                    <span className="absolute left-0 bottom-0 w-full h-[2px] bg-green-500"></span>
-                                )}
-                            </button>
-                        </div>
-                    </div>
-
-                    {/* Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                        {features.map((feat, idx) => {
-                            const Icon = feat.icon;
-
-                            return (
-                                <motion.div
-                                    key={idx}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: idx % 4 * 0.1 }}
-                                    className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 p-6 rounded-2xl hover:bg-gray-800 hover:border-green-500/50 transition-all duration-300 group"
-                                >
-                                    <div className="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center mb-5 group-hover:bg-green-500 transition-colors duration-300">
-                                        <Icon className="text-green-500 group-hover:text-white transition-colors" size={24} />
+                                        <button className="mt-10 px-6 py-3 bg-green-100 text-green-600 font-semibold rounded-lg hover:bg-green-100 transition-colors flex items-center gap-2">
+                                            Explore full feature list <ArrowRight size={16} />
+                                        </button>
                                     </div>
-
-                                    <h4 className="text-lg font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
-                                        {feat.title}
-                                    </h4>
-
-                                    <p className="text-sm text-gray-400 leading-relaxed font-light">
-                                        {feat.desc}
-                                    </p>
                                 </motion.div>
-                            );
-                        })}
+                            </AnimatePresence>
+                        </div>
                     </div>
-
                 </div>
             </section>
 
-            {/* 6. Stats Section */}
-            <section className="py-16 bg-[#F0FDF4] relative overflow-hidden border-y border-green-100">
-                <div className="absolute inset-0 bg-[url('https://kryosssoftech.org/assets/images/indexImg/Counter.png')] bg-cover bg-center opacity-5 mix-blend-multiply"></div>
-                <div className="container mx-auto px-4 relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-green-200">
-                        {stats.map((s, index) => (
-                            <div key={index} className="p-4">
-                                <h3 className="text-4xl md:text-6xl font-extrabold text-[#1E293B] mb-2">{s.val}+</h3>
-                                <p className="text-green-600 font-bold uppercase tracking-wider text-sm">{s.label}</p>
+            {/* 5. Features Grid (#1E2A3A Background) */}
+            <section className="py-24 bg-[#1E2A3A] relative">
+                <div className="absolute inset-0 bg-[url('/grid-pattern-light.svg')] opacity-[0.05]" />
+                <div className="container mx-auto px-4 lg:px-8 relative z-10">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-display drop-shadow-sm">
+                            Platform <span className="text-green-500">Capabilities</span>
+                        </h2>
+                        <div className="flex justify-center gap-4 mt-8 bg-blue-900/30 p-2 rounded-2xl w-max mx-auto border border-blue-800/50 backdrop-blur-sm">
+                            <button
+                                onClick={() => setActiveFeatureTab("Common")}
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Common" ? "bg-green-600 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                    }`}
+                            >
+                                Core Essentials
+                            </button>
+                            <button
+                                onClick={() => setActiveFeatureTab("Advance")}
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Advance" ? "bg-green-600 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                    }`}
+                            >
+                                Premium Tools
+                            </button>
+                        </div>
+                    </div>
+
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={activeFeatureTab}
+                            initial={{ opacity: 0, scale: 0.98 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.98 }}
+                            transition={{ duration: 0.3 }}
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                        >
+                            {(activeFeatureTab === "Common" ? commonFeatures : advanceFeatures).map((feature, idx) => (
+                                <div key={idx} className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 p-8 rounded-2xl hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-green-500/30 group">
+                                    <div className="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors border border-blue-800/50">
+                                        <feature.icon className="text-green-500 group-hover:text-white transition-colors" size={26} />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                                    <p className="text-blue-200/70 font-light leading-relaxed">{feature.desc}</p>
+                                </div>
+                            ))}
+                        </motion.div>
+                    </AnimatePresence>
+                </div>
+            </section>
+
+            {/* 6. Stats Section (#FFFBF2) */}
+            <section className="py-20 bg-[#FFFBF2] relative">
+                <div className="container mx-auto px-4 lg:px-8 relative z-10">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        {stats.map((stat, idx) => (
+                            <div key={idx} className="text-center group">
+                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
+                                    {stat.value}
+                                </h3>
+                                <p className="text-sm font-bold text-green-600 uppercase tracking-widest">{stat.label}</p>
                             </div>
                         ))}
                     </div>
@@ -517,12 +419,12 @@ const GroceryDeliveryApp = () => {
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="w-full lg:w-1/3">
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-                                What Support <span className="text-green-600">You Get?</span>
+                                Tailored to your <span className="text-green-600">unique business needs</span>
                             </h2>
                             <p className="text-gray-600 mb-8 text-lg font-light">
-                                Our solution will be tailored to the unique needs of our Clients and packed with powerful features and integrations.
+                                Our solution guarantees power, stability, and lifetime value packed with extraordinary integrations.
                             </p>
-                            <div className="hidden lg:block w-32 h-32 bg-green-100 rounded-full blur-2xl opacity-60 absolute left-10 mt-10"></div>
+                            <div className="hidden lg:block w-32 h-32 bg-green-100 rounded-full blur-2xl opacity-60 absolute left-10 mt-10" />
                         </div>
 
                         <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
@@ -545,24 +447,17 @@ const GroceryDeliveryApp = () => {
                 </div>
             </section>
 
-            {/* 8. Our Work Portfolio */}
+            {/* 8. Portfolio Section */}
             <section className="py-20 bg-gray-50 border-t border-gray-200">
                 <div className="container mx-auto px-4 lg:px-8">
-
-                    {/* Heading */}
                     <div className="text-center mb-16">
-                        <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
-                            OUR GROCERY PRODUCTS
-                        </p>
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Our Work
-                        </h2>
-                        <div className="w-24 h-1 bg-green-600 mx-auto rounded-full"></div>
+                        <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">OUR GROCERY PRODUCTS</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Latest Innovations</h2>
+                        <div className="w-24 h-1 bg-green-600 mx-auto rounded-full" />
                     </div>
 
-                    {/* Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {portfolio.slice(0, 3).map((item, idx) => (
+                        {portfolio.map((item, idx) => (
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -571,39 +466,26 @@ const GroceryDeliveryApp = () => {
                                 key={idx}
                                 className="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl hover:shadow-green-500/10 transition-all duration-300 group flex flex-col h-full"
                             >
-                                {/* IMAGE SECTION */}
                                 <div className="h-48 relative overflow-hidden">
                                     <img
                                         src={item.image}
                                         alt={item.title}
+                                        width="2048"
+                                        height="1365"
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                        onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800'; }}
+                                        onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
                                     />
-
-                                    {/* Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-
-                                    {/* Icon */}
-                                    <ShoppingBag size={40} className="text-green-400 absolute top-6 right-6 opacity-80 group-hover:scale-110 transition-transform duration-500" />
-
-                                    {/* Title */}
-                                    <h3 className="absolute bottom-4 left-4 right-4 text-white text-xl font-bold leading-tight z-10">
-                                        {item.title}
-                                    </h3>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                                    <div className="absolute top-0 right-0 w-32 h-32 bg-green-600/20 blur-2xl rounded-full" />
+                                    <ShoppingBag size={40} className="text-green-500 absolute top-6 right-6 opacity-80 group-hover:scale-110 transition-transform duration-500" />
+                                    <h3 className="absolute bottom-4 left-4 right-4 text-white text-xl font-bold leading-tight z-10">{item.title}</h3>
                                 </div>
 
-                                {/* CONTENT */}
                                 <div className="p-8 flex flex-col flex-grow">
-                                    <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
-                                        {item.desc.substring(0, 120)}...
-                                    </p>
-
+                                    <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">{item.description}</p>
                                     <div className="flex flex-wrap gap-2 mt-auto">
                                         {item.tags.map(tag => (
-                                            <span
-                                                key={tag}
-                                                className="px-3 py-1 bg-green-50 text-green-600 text-[10px] font-bold uppercase tracking-wider rounded-md"
-                                            >
+                                            <span key={tag} className="px-3 py-1 bg-green-100 text-green-600 text-[10px] font-bold uppercase tracking-wider rounded-md">
                                                 {tag}
                                             </span>
                                         ))}
@@ -615,79 +497,13 @@ const GroceryDeliveryApp = () => {
                 </div>
             </section>
 
-            {/* 9. Latest Works Section */}
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-4 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Our Latest <span className="text-green-600">Grocery Products</span>
-                        </h2>
-                        <div className="w-24 h-1 bg-green-600 mx-auto rounded-full"></div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                        {latestWorks.map((work, i) => (
-                            <div key={i} className="group cursor-pointer">
-                                <div className="aspect-[4/3] rounded-3xl overflow-hidden bg-gray-100 mb-6 border-4 border-white shadow-lg transition-all group-hover:border-green-500 group-hover:scale-105">
-                                    <img
-                                        src={work.image}
-                                        alt={work.title}
-                                        className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500"
-                                        onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800'; }}
-                                    />
-                                </div>
-                                <h3 className="text-xl font-bold text-gray-900 text-center group-hover:text-green-600 transition-colors">{work.title}</h3>
-                                <p className="text-green-600 font-semibold uppercase text-xs tracking-wider text-center mt-1">{work.subtitle}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* 10. Industries Section */}
-            <section className="py-20 bg-gray-50">
-                <div className="container mx-auto px-4 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Industries We <span className="text-green-600">Serve</span>
-                        </h2>
-                        <p className="text-gray-600 max-w-3xl mx-auto">
-                            As one of the top mobile apps development companies, we provide custom mobile app development solutions for various industries catering startups, software product development companies, digital agencies, and enterprises.
-                        </p>
-                        <div className="w-24 h-1 bg-green-600 mx-auto rounded-full mt-6"></div>
-                    </div>
-
-                    <div className="flex flex-wrap justify-center gap-12 md:gap-16">
-                        {industries.map((ind, index) => {
-                            const Icon = ind.icon;
-                            return (
-                                <div key={index} className="text-center group cursor-pointer">
-                                    <div className="w-24 h-24 bg-white hover:bg-green-600 transition-all border border-gray-200 rounded-2xl flex items-center justify-center mx-auto shadow-sm group-hover:shadow-xl group-hover:scale-110">
-                                        <Icon className="h-10 w-10 text-green-600 group-hover:text-white transition-colors" />
-                                    </div>
-                                    <h3 className="font-bold text-sm uppercase tracking-wider mt-4 text-gray-700 group-hover:text-green-600">{ind.name}</h3>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
-
-            {/* 11. Global Components */}
+            {/* 9 & 10. Global Components */}
             <Testimonial theme="green" />
             <Industries theme={{ bg: "bg-[#F0FDF4]", primary: "text-green-600", iconBg: "bg-green-100", iconColor: "text-green-600" }} />
             <OurWork theme={{ primary: "text-green-600", accent: "bg-green-600" }} />
             <ContactUs id="contact-us" theme="green" />
-
         </div>
     );
 };
-
-// Add missing ChevronRight component
-const ChevronRight = ({ className }) => (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-    </svg>
-);
 
 export default GroceryDeliveryApp;

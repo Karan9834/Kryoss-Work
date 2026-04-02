@@ -1,507 +1,518 @@
+
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { 
-  Building2, 
-  CheckCircle2, 
-  Users, 
-  ShieldCheck, 
-  Smartphone, 
-  Layout, 
-  Database, 
-  Search, 
-  Bell, 
-  CreditCard, 
-  Star, 
-  MapPin, 
-  Send,
-  ArrowRight,
-  TrendingUp,
-  Clock,
-  Home,
-  Map,
-  Filter,
-  Camera,
-  Globe,
-  Settings,
-  Lock,
-  Server,
-  Code,
-  LifeBuoy,
-  Phone,
-  Mail,
-  Heart,
-  Plane,
-  Truck,
-  GraduationCap,
-  PlayCircle,
-  Activity,
-  Calculator,
-  Compass,
-  Briefcase
+import {
+    UtensilsCrossed, CheckCircle, Store, Shield, Smartphone, MapPin, 
+    CreditCard, Clock, MessageSquare, Bell, Star, Settings, FileText, 
+    BarChart, Zap, Headphones, Server, Code, Database, RefreshCw, 
+    UserCheck, Phone, LayoutDashboard, Compass, ShoppingBag, History, 
+    Search, Navigation, DollarSign, Users, Layers, Heart, Plane, 
+    Building2, Truck, PlayCircle, GraduationCap, ArrowRight, Globe,
+    Package, ShoppingCart, Tv, Video, TrendingUp, User, Award, Calendar,
+    Play, Download, Subtitles, Lock, Chrome, Car, Apple, Scissors, Gift, Image, CalendarCheck, Star as StarIcon, Sparkles, Building,
+    Hotel, Bed, Bath, Wifi, Coffee, Dumbbell, Waves, MessageCircle, LogIn, UserPlus, Home, List, DollarSign as Currency, ThumbsUp, Share2, Edit, Filter, Bookmark, Briefcase, Map, Pin, Radio, Tablet, Laptop, Facebook, Twitter, Linkedin, Instagram, Calendar as CalendarIcon, Smartphone as PhoneIcon, Key
 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+
+import Testimonial from '../../../components/Common/Testimonial';
+import Industries from '../../../components/Common/Industries';
+import OurWork from '../../../components/Common/OurWork';
+import ContactUs from '../../../components/Common/ContactUs';
+
+const ShoppingCartIcon = () => (
+    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.4 2.6a2 2 0 002 2.4h10.8a2 2 0 002-2.4L17 13M7 13h10M9 18a1 1 0 100 2 1 1 0 000-2zm6 0a1 1 0 100 2 1 1 0 000-2z" />
+    </svg>
+);
+
+const CalculatorIcon = () => (
+    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+    </svg>
+);
 
 const RealEstateApp = () => {
-  const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-    antispam: ''
-  });
+    const [activeTab, setActiveTab] = useState('User App');
+    const [activeFeatureTab, setActiveFeatureTab] = useState('Common');
 
-  const industries = [
-    { name: "Healthcare", icon: Heart },
-    { name: "Travel & Tourism", icon: Plane },
-    { name: "Banking & Finance", icon: Building2 },
-    { name: "Logistics & Transport", icon: Truck },
-    { name: "Media & Entertainment", icon: PlayCircle },
-    { name: "Education & E-Learning", icon: GraduationCap }
-  ];
+    const panelFeatures = {
+        "User App": {
+            icon: Users, image: "/images/realestate-user.jpg",
+            features: [
+                "Authorised Sign In And Sign Up", "Browse Listings", "Location Based Search",
+                "Property Details", "Chat with Agents", "Save Listings",
+                "Pay Property Rent", "Ratings and Feedback", "Easy-to-use Interface",
+                "SMS And Notification Modes", "Alert Notification", "Currency Converter",
+                "Various Payment Modes", "Invite And Earn", "Compare Properties"
+            ]
+        },
+        "Agent App": {
+            icon: Briefcase, image: "/images/realestate-agent.jpg",
+            features: [
+                "Agent Profile Management", "Add New Listings", "Upload Property Images",
+                "Manage Property Details", "View Inquiries", "Chat with Customers",
+                "Ratings & Feedback", "Offers & Discounts", "Analytics Dashboard",
+                "Payment Tracking", "Calendar Management", "Property Status Updates",
+                "Lead Management", "Document Upload", "Commission Tracking"
+            ]
+        },
+        "Admin Panel": {
+            icon: Shield, image: "/images/realestate-admin.jpg",
+            features: [
+                "User Management", "Agent Management", "Property Management",
+                "Approve Agents", "Manage Properties", "Coupons & Offers",
+                "Data Analytics", "Ratings & Feedback", "Profit Analytics",
+                "Payment Management", "Location Management", "Category Management",
+                "Report Generation", "Push Notifications", "Commission Settings"
+            ]
+        }
+    };
 
-  const coreFeatures = [
-    { 
-      title: "Map-Based Search", 
-      desc: "Interactive map integration allowing users to search properties by drawing boundaries and filtering proximity.", 
-      icon: Map 
-    },
-    { 
-      title: "3D Virtual Tours", 
-      desc: "Enable high-quality 360-degree virtual property walkthroughs for a remote viewing experience.", 
-      icon: Camera 
-    },
-    { 
-      title: "Mortgage Calculator", 
-      desc: "In-built tool for users to calculate monthly installments and down payments instantly.", 
-      icon: Calculator 
-    },
-    { 
-      title: "Agent CRM", 
-      desc: "Comprehensive dashboard for agents to manage property listings, leads, and client communication.", 
-      icon: Users 
-    },
-    { 
-      title: "Real-time Chat", 
-      desc: "Seamless instant messaging between buyers, renters, and property owners/agents.", 
-      icon: Send 
-    },
-    { 
-      title: "Verified Listings", 
-      desc: "Trust-badge system for verified properties and authorized real estate agents.", 
-      icon: ShieldCheck 
-    }
-  ];
+    const commonFeatures = [
+        { title: "Real-time Chat", icon: MessageCircle, desc: "Provide in-app communication tools to resolve customers queries & concerns." },
+        { title: "Paid Listings", icon: DollarSign, desc: "Grow revenue with sponsored property listings, run targeted offers and deals." },
+        { title: "Powerful Integrations", icon: Zap, desc: "Extend the functionality for your real estate platform with endless integrations." },
+        { title: "Ratings & Reviews", icon: Star, desc: "Leverage complete feedback management and let users share the good word." },
+        { title: "Manage Payments", icon: CreditCard, desc: "Leverage broker with seamless commissions/payment tracking." },
+        { title: "Advanced Search", icon: Filter, desc: "Users can filter properties by price, location, size, amenities, and more." },
+        { title: "Calendar Reminders", icon: CalendarIcon, desc: "Provide brokers a consolidated calendar view of upcoming bookings." }
+    ];
 
-  const adminFeatures = [
-    { title: "Listing Approval", desc: "Manual review system for every property submission to maintain platform quality.", icon: Lock },
-    { title: "Revenue Dashboard", desc: "Track earnings from featured listings, agent subscriptions, and lead packages.", icon: TrendingUp },
-    { title: "Lead Management", desc: "Global overview of property inquiries and conversion tracking across the platform.", icon: Activity },
-    { title: "Agency Portal", desc: "Special tools for large real estate agencies to manage multiple agents and listings.", icon: Briefcase }
-  ];
+    const advanceFeatures = [
+        { title: "Virtual Tours", icon: PlayCircle, desc: "Allow users to take 360° virtual tours of properties from anywhere." },
+        { title: "Mortgage Calculator", icon: CalculatorIcon, desc: "Built-in mortgage calculator to estimate monthly payments." },
+        { title: "Neighborhood Insights", icon: Map, desc: "Provide detailed information about neighborhoods including schools." },
+        { title: "Document Management", icon: FileText, desc: "Secure document storage and sharing for agreements and contracts." },
+        { title: "Price History", icon: TrendingUp, desc: "Track property price history and market trends for informed decision." },
+        { title: "AI Recommendations", icon: Zap, desc: "Personalized property suggestions based on user preferences." }
+    ];
 
-  const supportFeatures = [
-    { title: "Fully Customizable", desc: "Flexible scripts ready to meet specific jurisdictional requirements.", icon: Settings },
-    { title: "Bug Support", desc: "Complimentary bug fixes and updates for the first year of operation.", icon: LifeBuoy },
-    { title: "Linux Server Setup", desc: "Optimized server configuration for low-latency dispatching.", icon: Server },
-    { title: "Open Source Code", desc: "100% full source code ownership for deep future integrations.", icon: Code }
-  ];
+    const portfolio = [
+        { title: "QuickStay", description: "QuickStay is an online residential rental platform that makes it easier for Property Owners & Tenants to exchange information.", tags: ["Rental", "PG", "Flatmates"], image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" }
+    ];
 
-  const portfolio = [
-    { title: "EstateLink", subtitle: "National Property Portal", desc: "A comprehensive real estate marketplace serving nationwide with 200k+ active listings." },
-    { title: "CondoX", subtitle: "Luxury High-Rise App", desc: "Specialized mobile app for premium luxury apartment bookings and virtual tours." },
-    { title: "ModernHome", subtitle: "Real Estate Marketplace", desc: "Clean and minimalist search platform focused on first-time buyers and sustainable homes." }
-  ];
+    const stats = [
+        { value: "750+", label: "Projects Delivered" },
+        { value: "150+", label: "Development Staff" },
+        { value: "10+", label: "Years Experience" },
+        { value: "450+", label: "Satisfied Clients" }
+    ];
 
-  const testimonials = [
-    { name: "TOMO MARINKOVIC", role: "President Start Up", text: "Extremely happy with Kryoss! They delivered exactly my vision and made it better with creative touches. Delivered ahead of schedule and on budget." },
-    { name: "SAM DISTASO", role: "Founder - ARK News", text: "Rakesh and his team surpassed expectations. They were always available despite different time zones. Highly recommend Kryoss Softech!" },
-    { name: "DR. ROHIT KOHKER", role: "CTO, Vidya Prakashan Mandir", text: "Kryoss is a leading mobile app development company. Their workforce proved it true by providing best results for my business." },
-    { name: "MONA MATHUR", role: "Founder, Million Spark Foundation", text: "Kryoss was involved in developing an Android application framework that connects students, teachers and parents seamlessly." }
-  ];
+    const solutions = [
+        { title: "Fully Customizable", icon: Settings, desc: "Our Script is flexible enough to meet the specific needs of the Clients." },
+        { title: "Linux Server Installation", icon: Server, desc: "Web Panels will work smoothly in open source Linux Servers." },
+        { title: "Payments", icon: CreditCard, desc: "Our Scripts support API with easy Installations of new ones." },
+        { title: "Technical Support", icon: Headphones, desc: "We provide Free Support and handle everything till launch." }
+    ];
 
-  return (
-    <div className="bg-white">
-      <Helmet>
-        <title>Real Estate App Development | KryossWork</title>
-        <meta name="description" content="Empower property transactions with your own premium real estate platform like Zillow. Kryoss Softech offers 3D virtual tours, map search, and agent CRM features." />
-      </Helmet>
+    return (
+        <div className="w-full bg-white relative font-sans overflow-hidden">
+            <Helmet>
+                <title>Real Estate App Development | KryossWork</title>
+                <meta name="description" content="Create your own Real Estate app platform now." />
+            </Helmet>
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white text-center">
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent opacity-20"></div>
-        <div className="container mx-auto px-4 relative z-10">
-           <motion.div 
-             initial={{ opacity: 0, y: 30 }}
-             animate={{ opacity: 1, y: 0 }}
-             className="max-w-4xl mx-auto"
-           >
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-6 py-2 mb-8 border border-white/20">
-                 <Home className="h-4 w-4 text-blue-300" />
-                 <span className="text-white text-xs font-black uppercase tracking-widest">Global Property Engine</span>
-              </div>
-              <h1 className="text-5xl md:text-8xl font-black mb-8 leading-tight tracking-tighter uppercase italic">
-                Empower Property <br />
-                <span className="text-[#00BFFF] drop-shadow-[0_4px_41px_rgba(0,191,255,0.4)] underline decoration-white/30 decoration-8 underline-offset-[20px]">Transactions</span>
-              </h1>
-              <p className="text-xl text-blue-100 mb-12 leading-relaxed font-medium mt-12 max-w-2xl mx-auto">
-                Launch a premium Real Estate platform like Zillow or Trulia. Specialized in map-based property search and high-fidelity virtual tours.
-              </p>
-              <div className="flex flex-wrap justify-center gap-6">
-                 <button className="bg-white text-blue-900 hover:bg-gray-900 hover:text-white font-black py-5 px-12 rounded-full transition-all flex items-center gap-2 transform hover:scale-105 shadow-2xl uppercase tracking-widest group">
-                    Start Your Business <ArrowRight className="h-6 w-6 group-hover:translate-x-2 transition-transform" />
-                 </button>
-              </div>
-           </motion.div>
-        </div>
-      </section>
-
-      {/* Mockups Showcase */}
-      <section className="py-24 bg-white overflow-hidden">
-        <div className="container mx-auto px-4 text-center">
-           <div className="max-w-3xl mx-auto mb-20 text-center">
-              <h2 className="text-4xl font-black mb-4 italic uppercase tracking-tighter text-gray-900 leading-tight">Digital Property Suite</h2>
-              <p className="text-blue-600 font-bold uppercase tracking-[0.3em] text-xs">Seamless User Journey from Discovery to Ownership</p>
-           </div>
-           
-           <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-             {/* Buyer App */}
-             <div className="bg-white rounded-[4rem] border border-gray-200 overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] h-[650px] flex flex-col group relative transition-all">
-               <div className="bg-blue-900 p-8 text-white text-left">
-                  <div className="flex justify-between items-center mb-6 text-sm font-bold italic opacity-60">
-                    <span>12:30 PM</span>
-                    <Smartphone className="h-4 w-4" />
-                  </div>
-                  <h3 className="text-2xl font-black italic tracking-tighter underline underline-offset-4 decoration-blue-500 decoration-2">🏠 EstateHub</h3>
-                  <div className="mt-4 flex items-center gap-3 text-[10px] font-bold text-blue-100 uppercase tracking-widest bg-white/10 py-1.5 px-3 rounded-xl border border-white/5">
-                     <MapPin className="h-3 w-3" /> Area: Manhattan, NY
-                  </div>
-               </div>
-               <div className="p-6 text-left space-y-6 grow overflow-y-auto invisible-scrollbar">
-                  <div className="p-3 bg-gray-100 rounded-2xl flex items-center gap-3">
-                     <Search className="h-4 w-4 text-gray-400" />
-                     <span className="text-gray-400 text-xs italic">Search by city or zip...</span>
-                  </div>
-                  
-                  <div className="space-y-4">
-                     <div className="text-xs font-black uppercase tracking-widest text-gray-400 italic">Featured Properties</div>
-                     {[
-                       { name: "Modern Skyline Villa", price: "$2.4M", type: "Buy", rate: "⭐ 4.9", icon: "🏙️" },
-                       { name: "Green Valley Condo", price: "$4,500/mo", type: "Rent", rate: "⭐ 4.8", icon: "🌳" }
-                     ].map((p, i) => (
-                       <div key={i} className="flex flex-col rounded-3xl border border-gray-100 bg-white shadow-sm overflow-hidden group/item">
-                          <div className="h-28 bg-gray-50 flex items-center justify-center text-5xl group-hover/item:scale-110 transition-transform">{p.icon}</div>
-                          <div className="p-4">
-                             <div className="flex justify-between items-start mb-1">
-                                <h4 className="font-black italic text-[11px] uppercase">{p.name}</h4>
-                                <span className="text-[10px] font-black text-blue-600 px-2 py-0.5 bg-blue-50 rounded-lg">{p.type}</span>
-                             </div>
-                             <div className="flex items-center justify-between mt-3">
-                                <div className="text-[10px] font-black italic text-gray-900">{p.price}</div>
-                                <div className="text-[9px] font-bold text-gray-400">{p.rate}</div>
-                             </div>
-                          </div>
-                       </div>
-                     ))}
-                  </div>
-               </div>
-               <div className="p-6 bg-gray-50 border-t border-gray-100 flex items-center gap-4">
-                  <button className="grow bg-blue-900 text-white py-4 rounded-[1.5rem] font-black italic uppercase tracking-widest text-xs shadow-xl">
-                     Find Properties
-                  </button>
-               </div>
-             </div>
-
-             {/* Agent Dashboard */}
-             <div className="bg-gray-900 rounded-[4rem] border border-white/10 overflow-hidden shadow-[0_60px_120px_-30px_rgba(0,0,0,0.4)] h-[650px] flex flex-col group lg:-mt-10 relative z-10 transition-all">
-                <div className="bg-blue-600 p-8 text-white text-left relative overflow-hidden text-left">
-                   <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-20 blur-[50px] rounded-full"></div>
-                   <div className="flex justify-between items-center mb-6 text-sm font-bold italic opacity-60">
-                     <span>12:30 PM</span>
-                     <Compass className="h-4 w-4" />
-                   </div>
-                   <h3 className="text-2xl font-black italic tracking-tighter">Agent Portal</h3>
-                   <p className="text-blue-100 text-[10px] font-bold italic mt-2">Verified Partner · REMAX Realty</p>
+            {/* 1. Hero Section */}
+            <section className="relative w-full min-h-[550px] lg:min-h-[600px] flex md:items-center overflow-hidden bg-gradient-to-br from-[#F8FAFC] via-white to-[#FEF9C3]">
+                <div className="absolute inset-0 z-0">
+                    <div className="absolute top-10 left-10 w-96 h-96 bg-teal-100 rounded-full blur-3xl" />
+                    <div className="absolute bottom-10 right-10 w-96 h-96 bg-yellow-100/50 rounded-full blur-3xl" />
+                    <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03]" />
                 </div>
-                <div className="p-6 text-left space-y-6 grow overflow-y-auto invisible-scrollbar">
-                   <div className="grid grid-cols-2 gap-3 text-center">
-                      <div className="p-4 bg-white/5 border border-white/10 rounded-[2rem] text-white">
-                         <div className="text-[8px] font-black uppercase opacity-40 mb-1">New Leads</div>
-                         <div className="text-2xl font-black italic text-blue-400">18</div>
-                      </div>
-                      <div className="p-4 bg-white/5 border border-white/10 rounded-[2rem] text-white">
-                         <div className="text-[8px] font-black uppercase opacity-40 mb-1">My Listings</div>
-                         <div className="text-2xl font-black italic text-blue-400">24</div>
-                      </div>
-                   </div>
-                   
-                   <div className="space-y-3">
-                      <div className="text-xs font-black uppercase tracking-widest text-white/40 italic">Inquiries Queue</div>
-                      {[
-                        { client: "Robert Smith", property: "Skyline Villa", status: "Follow up" },
-                        { client: "Lisa Wong", property: "Green Valley", status: "New" }
-                      ].map((n, i) => (
-                        <div key={i} className="p-4 rounded-3xl bg-white/5 border border-white/10 flex justify-between items-center">
-                           <div>
-                              <div className="font-black text-white text-[11px] italic mb-1">{n.client}</div>
-                              <div className="text-[9px] text-blue-400 font-bold uppercase">{n.property}</div>
-                           </div>
-                           <span className="text-[9px] font-black text-white/40 italic">{n.status}</span>
+
+                <div className="container mx-auto px-4 lg:px-8 relative z-10 py-10">
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                        <div className="w-full lg:w-1/2 text-center lg:text-left">
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.5 }}
+                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-teal-50 transition-colors shadow-sm border border-gray-100 mb-8 cursor-pointer"
+                            >
+                                <span className="flex h-2 w-2 rounded-full bg-teal-600 animate-pulse" />
+                                <span className="text-sm font-semibold text-gray-700">Premium Solution Available</span>
+                            </motion.div>
+
+                            <motion.h1
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.2, duration: 0.8 }}
+                                className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-gray-900"
+                            >
+                                Real Estate App <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-500">Development Solutions</span>
+                            </motion.h1>
+
+                            <motion.p
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.4, duration: 0.8 }}
+                                className="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0 font-semibold"
+                            >
+                                Kryoss Softech is an experienced Real Estate App Development Company offers innovative solutions.
+                            </motion.p>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.6, duration: 0.8 }}
+                                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                            >
+                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-teal-600 transition-all duration-300 flex items-center justify-center gap-2">
+                                    Start Exploring
+                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </button>
+                                <button className="px-8 py-4 bg-white text-gray-800 rounded-full font-semibold hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm flex items-center justify-center gap-2">
+                                    <span className="w-2 h-2 rounded-full bg-green-500" />
+                                    Live Demo
+                                </button>
+                            </motion.div>
                         </div>
-                      ))}
-                   </div>
 
-                   <button className="w-full bg-blue-500 text-white rounded-2xl py-4 text-xs font-black uppercase italic tracking-widest flex items-center justify-center gap-2 shadow-xl shadow-blue-500/10">
-                      <TrendingUp className="h-4 w-4" /> Market My Listing
-                   </button>
-                </div>
-             </div>
-
-             {/* Admin Control */}
-             <div className="bg-white rounded-[4rem] border border-gray-200 overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] h-[650px] flex flex-col group lg:mt-12 transition-all">
-                <div className="bg-gray-900 p-8 text-white text-left relative overflow-hidden">
-                   <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500 opacity-20 blur-[60px] rounded-full"></div>
-                   <div className="flex justify-between items-center mb-6 text-sm font-bold italic opacity-60">
-                     <span>12:30 PM</span>
-                     <ShieldCheck className="h-4 w-4" />
-                   </div>
-                   <h3 className="text-2xl font-black italic tracking-tighter underline underline-offset-8 decoration-blue-500 decoration-4">Platform Control</h3>
-                </div>
-                <div className="p-6 text-left space-y-6 grow overflow-y-auto invisible-scrollbar">
-                   <div className="space-y-4">
-                      <div className="text-xs font-black uppercase tracking-widest text-gray-400 italic">Inventory Overview</div>
-                      <div className="grid grid-cols-2 gap-3">
-                         <div className="p-4 bg-gray-50 rounded-3xl border border-gray-100 text-center">
-                            <div className="text-2xl font-black italic text-gray-900 tracking-tighter">4.2K+</div>
-                            <div className="text-[7px] font-bold uppercase text-gray-400 tracking-widest">Listings</div>
-                         </div>
-                         <div className="p-4 bg-gray-50 rounded-3xl border border-gray-100 text-center">
-                            <div className="text-2xl font-black italic text-gray-900 tracking-tighter">850+</div>
-                            <div className="text-[7px] font-bold uppercase text-gray-400 tracking-widest">Active Agents</div>
-                         </div>
-                      </div>
-                   </div>
-                   
-                   <div className="space-y-3">
-                      <div className="text-xs font-black uppercase tracking-widest text-gray-400 italic">Moderation Hub</div>
-                      {[
-                        { label: "Listing Approval", status: "14 Pending", icon: Building2 },
-                        { label: "Agent Verification", status: "6 Pending", icon: UserCheck },
-                        { label: "Featured Ads Goal", status: "82%", icon: TrendingUp }
-                      ].map((m, i) => (
-                        <div key={i} className="flex justify-between items-center p-4 rounded-3xl bg-gray-50 hover:bg-blue-50 transition-all border border-transparent hover:border-blue-100 cursor-pointer">
-                           <div className="flex items-center gap-3">
-                              <div className="w-10 h-10 bg-white rounded-2xl flex items-center justify-center border border-gray-100 shadow-sm">
-                                 <m.icon className="h-5 w-5 text-blue-600" />
-                              </div>
-                              <span className="text-[10px] font-black italic text-gray-700">{m.label}</span>
-                           </div>
-                           <span className="text-[10px] font-black italic text-blue-600">{m.status}</span>
+                        <div className="w-full lg:w-1/2 relative">
+                            <motion.div
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.4, duration: 0.8 }}
+                                className="relative z-10"
+                            >
+                                <div className="absolute inset-0 bg-gradient-to-tr from-teal-600/10 to-emerald-600/10 rounded-3xl blur-2xl transform rotate-3" />
+                                <img
+                                    src="/images/realestate-hero.png"
+                                    alt="Real Estate App Development"
+                                    width="2048"
+                                    height="1365"
+                                    className="relative z-10 w-full h-auto aspect-[2048/1365] object-contain drop-shadow-2xl"
+                                    onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                />
+                            </motion.div>
                         </div>
-                      ))}
-                   </div>
-                </div>
-             </div>
-           </div>
-        </div>
-      </section>
-
-      {/* Feature Grid */}
-      <section className="py-24 bg-gray-900 text-white relative">
-        <div className="container mx-auto px-4">
-           <div className="text-center mb-16 text-center">
-              <h2 className="text-4xl font-black italic uppercase tracking-tighter">Platform Architecture</h2>
-              <p className="text-blue-400 font-bold uppercase tracking-[0.5em] text-[10px] mt-4 italic">Enterprise Solutions for Modern Real Estate</p>
-           </div>
-           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              {coreFeatures.map((f, i) => (
-                <div key={i} className="p-8 bg-white/5 border border-white/10 rounded-3xl text-center hover:bg-blue-600/10 hover:border-blue-500 transition-all group cursor-default">
-                   <div className="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-500 rotate-12 group-hover:rotate-0 transition-all">
-                      <f.icon className="h-6 w-6 text-blue-500 group-hover:text-white" />
-                   </div>
-                   <h3 className="text-[10px] font-black uppercase tracking-widest italic leading-tight">{f.title}</h3>
-                </div>
-              ))}
-           </div>
-        </div>
-      </section>
-
-      {/* Admin Mastery Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-20 text-center">
-            <h2 className="text-5xl font-black mb-4 italic uppercase tracking-tighter underline underline-offset-[20px] decoration-blue-900 decoration-8">Operator Mastery</h2>
-            <p className="text-gray-400 font-black uppercase tracking-[0.4em] text-[10px] mt-16 italic">Complete Control for Portal Owners</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {adminFeatures.map((f, i) => (
-              <motion.div 
-                key={i}
-                whileHover={{ y: -10 }}
-                className="p-10 bg-white border border-gray-100 rounded-[3.5rem] shadow-sm hover:shadow-2xl transition-all border-b-[12px] border-blue-900 group"
-              >
-                <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-8 bg-gradient-to-br from-gray-50 to-blue-50 shadow-inner group-hover:rotate-12 transition-transform">
-                  <f.icon className="h-8 w-8 text-blue-800" />
-                </div>
-                <h3 className="font-extrabold text-xl italic tracking-tighter uppercase mb-4 text-gray-900 group-hover:text-blue-800 transition-colors uppercase">{f.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed italic font-medium">{f.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Support Section */}
-      <section className="py-24 bg-gray-50 relative overflow-hidden">
-         <div className="container mx-auto px-4 text-center">
-           <div className="mb-20">
-              <h2 className="text-4xl font-black mb-6 italic uppercase tracking-tighter">lifecycle Support</h2>
-              <p className="text-gray-500 font-extrabold italic leading-relaxed tracking-tight max-w-2xl mx-auto">We don't just build software; we build market dominators. Comprehensive support from launch to viral growth.</p>
-           </div>
-           <div className="grid md:grid-cols-4 gap-6 text-left">
-              {supportFeatures.map((s, i) => (
-                <div key={i} className="p-10 bg-white rounded-[3rem] shadow-sm hover:shadow-2xl transition-all border border-gray-100 flex flex-col group hover:border-blue-200">
-                   <div className="w-14 h-14 bg-gray-900 group-hover:bg-blue-600 transition-all rounded-3xl flex items-center justify-center mb-8 shadow-xl">
-                      <s.icon className="h-6 w-6 text-white" />
-                   </div>
-                   <h3 className="font-black italic uppercase tracking-tighter text-gray-900 mb-4 group-hover:text-blue-600 transition-all underline decoration-blue-100 decoration-4 underline-offset-4">{s.title}</h3>
-                   <p className="text-[11px] text-gray-500 leading-relaxed font-bold italic grow">{s.desc}</p>
-                </div>
-              ))}
-           </div>
-        </div>
-      </section>
-
-      {/* Portfolio Showcase */}
-      <section className="py-24 bg-gray-900 text-white overflow-hidden relative shadow-[inset_0_0_100px_rgba(0,0,0,0.5)]">
-        <div className="container mx-auto px-4 relative z-10 text-center">
-           <div className="text-center mb-20 text-center">
-              <h2 className="text-4xl font-black italic mb-4 uppercase underline decoration-blue-500 decoration-8 underline-offset-[16px]">Portal Solutions</h2>
-           </div>
-           <div className="grid lg:grid-cols-3 gap-8">
-              {portfolio.map((work, i) => (
-                <div key={i} className="bg-white/5 border border-white/10 p-10 rounded-[3rem] hover:bg-white/10 transition-all group text-left">
-                   <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors shadow-2xl">
-                      <Building2 className="h-8 w-8 text-blue-400 group-hover:text-white" />
-                   </div>
-                   <h3 className="text-2xl font-black italic uppercase text-blue-500 mb-2">{work.title}</h3>
-                   <p className="text-blue-100/50 text-[10px] uppercase font-black tracking-widest mb-6 italic">{work.subtitle}</p>
-                   <p className="text-gray-400 text-sm italic font-medium leading-relaxed">{work.desc}</p>
-                </div>
-              ))}
-           </div>
-           
-           <div className="grid md:grid-cols-4 gap-8 mt-24">
-              {testimonials.map((t, i) => (
-                <div key={i} className="bg-white rounded-[2.5rem] p-10 flex flex-col relative group hover:bg-blue-50 transition-all text-left">
-                   <div className="text-blue-500 text-6xl font-black absolute top-4 right-8 select-none opacity-10">“</div>
-                   <p className="text-[11px] italic font-bold leading-relaxed mb-8 text-gray-700 relative z-10 grow">“{t.text}”</p>
-                   <div className="flex items-center gap-4 mt-auto">
-                      <div className="w-10 h-10 bg-blue-900 rounded-2xl flex items-center justify-center font-black text-white text-xl italic">{t.name.charAt(0)}</div>
-                      <div>
-                         <div className="font-black italic text-[11px] uppercase text-gray-900 leading-none">{t.name}</div>
-                         <div className="text-[9px] text-blue-600 uppercase font-bold tracking-widest mt-1 italic">{t.role}</div>
-                      </div>
-                   </div>
-                </div>
-              ))}
-           </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto bg-white rounded-[5rem] flex flex-col lg:flex-row overflow-hidden shadow-[0_60px_120px_-20px_rgba(0,0,100,0.15)] border border-gray-50">
-            {/* Form Side */}
-            <div className="lg:w-3/5 p-8 md:p-20 bg-white">
-                <h2 className="text-5xl font-black mb-6 italic tracking-tighter uppercase text-gray-900 leading-tight">Start Your <br/><span className="text-blue-900 border-b-8 border-blue-900/20">Property Market!</span></h2>
-                <p className="text-gray-400 font-black uppercase text-[11px] tracking-[0.4em] mb-16 italic">Guarantee to get back within a business day</p>
-                
-                <form className="space-y-8">
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Name*</label>
-                       <input name="name" type="text" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-blue-900 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" required />
                     </div>
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">E-mail*</label>
-                       <input name="email" type="email" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-blue-900 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" required />
-                    </div>
-                  </div>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Phone No</label>
-                       <input name="phone" type="tel" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-blue-900 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" />
-                    </div>
-                    <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Subject*</label>
-                       <input name="subject" type="text" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-blue-900 rounded-[2rem] px-8 py-5 focus:outline-none transition-all font-black placeholder:italic shadow-inner" required />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                     <label className="text-[10px] font-black uppercase text-gray-400 ml-2 tracking-widest italic">Your Message*</label>
-                     <textarea name="message" rows="5" className="w-full bg-gray-50 border-0 border-b-[4px] border-transparent focus:border-blue-900 rounded-[2.5rem] px-8 py-6 focus:outline-none transition-all font-black placeholder:italic resize-none shadow-inner" required></textarea>
-                  </div>
-                  
-                  <div className="flex flex-col md:flex-row items-center gap-8 py-4">
-                     <div className="bg-gray-900 text-white px-8 py-4 rounded-3xl font-black italic text-sm border-r-[8px] border-blue-900">
-                        ANTISPAM: 7 + 5 = ?
-                     </div>
-                     <input name="antispam" type="text" placeholder="Result" className="w-32 bg-blue-50 border-2 border-blue-200 rounded-2xl px-6 py-4 font-black text-center focus:outline-none focus:border-blue-900 transition-all text-xl italic" required />
-                  </div>
-
-                  <button className="w-full bg-blue-900 hover:bg-black text-white py-8 rounded-[3rem] font-black italic uppercase tracking-[0.4em] text-sm flex items-center justify-center gap-5 transition-all shadow-xl shadow-blue-900/10">
-                    <Send className="h-6 w-6" /> Submit Inquiry
-                  </button>
-                </form>
-            </div>
-
-            {/* Info Side */}
-            <div className="lg:w-2/5 p-8 md:p-20 bg-gray-900 text-white flex flex-col justify-between relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 blur-[120px] rounded-full -mr-[200px] -mt-[200px]"></div>
-                <div className="relative z-10 space-y-16 text-left">
-                   <div>
-                      <h3 className="text-4xl font-black italic tracking-tighter mb-6 uppercase leading-tight text-blue-500">Ready to <br/>scale your <br/>Real Estate portal?</h3>
-                      <p className="text-gray-400 text-sm font-medium leading-relaxed italic mb-10">We help you build the technical dominance for the future of global property trading. Let's start with a <span className="text-blue-500 font-black not-italic px-1 bg-white/10 rounded">2hr free consulting</span> session.</p>
-                      <div className="space-y-8">
-                         <div className="flex items-center gap-6 group cursor-pointer text-left">
-                            <div className="w-14 h-14 bg-white/5 rounded-3xl flex items-center justify-center group-hover:bg-blue-600 transition-all shadow-xl">
-                               <Mail className="h-6 w-6 text-blue-500 group-hover:text-white" />
-                            </div>
-                            <span className="font-black italic text-base tracking-tighter">Info@kryosssoftech.org</span>
-                         </div>
-                         <div className="flex items-center gap-6 group cursor-pointer text-left">
-                            <div className="w-14 h-14 bg-white/5 rounded-3xl flex items-center justify-center group-hover:bg-blue-600 transition-all shadow-xl">
-                               <Phone className="h-6 w-6 text-blue-500 group-hover:text-white" />
-                            </div>
-                            <div className="space-y-1">
-                               <div className="font-black italic text-base tracking-tighter">+0124-4001495</div>
-                               <div className="text-[10px] text-gray-500 font-black uppercase tracking-widest italic">Global Operations Desk</div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-
-                   <div className="space-y-12 text-left">
-                      <h3 className="text-xl font-black italic tracking-widest uppercase border-l-8 border-blue-600 pl-6">Our Presence</h3>
-                      <div className="space-y-10">
-                         <div className="group">
-                            <div className="flex items-center gap-3 mb-2">
-                               <MapPin className="h-4 w-4 text-blue-400" />
-                               <span className="uppercase text-[10px] font-black tracking-widest text-blue-400 italic">India HQ · Gurgaon</span>
-                            </div>
-                            <p className="text-[12px] text-gray-400 font-bold italic leading-relaxed">1102, 11th Floor, JMD Megapolis, Sec-48, Gurgaon-122018, Haryana, India</p>
-                         </div>
-                      </div>
-                   </div>
                 </div>
-            </div>
-          </div>
+            </section>
+
+            {/* 2. Intro Section */}
+            <section className="py-20 lg:py-32 bg-white relative">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="w-full lg:w-1/2 relative"
+                        >
+                            <div className="absolute -inset-4 bg-teal-100 border-teal-100 rounded-[2rem] transform -rotate-2" />
+                            <img
+                                src="/images/realestate-intro.png"
+                                alt="Real Estate Dev"
+                                width="2048"
+                                height="1365"
+                                className="relative w-full rounded-2xl shadow-xl object-cover h-auto aspect-[2048/1365]"
+                                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800'; }}
+                            />
+                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
+                                <div className="flex items-center gap-4">
+                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                        <Home className="text-green-600 w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <p className="text-sm text-gray-500 font-semibold mb-1">Properties Sold/Rented</p>
+                                        <p className="text-2xl font-bold text-gray-900">1.2M+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        <div className="w-full lg:w-1/2">
+                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                                Real Estate Dev <span className="text-teal-600">Solutions We Provide</span>
+                            </h2>
+                            <p className="text-gray-600 mb-6 text-base font-semibold leading-relaxed max-w-lg">
+                                Kryoss Softech is an experienced Real Estate App Development Company offers innovative solutions for your real estate business.
+                            </p>
+                            <ul className="space-y-4 mb-8">
+                                
+                                    <li key={0} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-teal-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Multi-Device Targeting</span>
+                                    </li>
+                                
+                                    <li key={1} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-teal-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Virtual Tours Built-In</span>
+                                    </li>
+                                
+                                    <li key={2} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-teal-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Real-Time Tracking</span>
+                                    </li>
+                                
+                                    <li key={3} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-teal-600" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">Custom Filter Maps</span>
+                                    </li>
+                                
+                            </ul>
+                            <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-teal-600 transition-all shadow-md">
+                                Request a Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 4. Must Have Features (Tabs Layout) */}
+            <section className="py-24 bg-[#FFFBF2] relative">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 font-display">
+                            Comprehensive <span className="text-teal-600 relative inline-block">
+                                Panels
+                                <svg className="absolute -bottom-2 left-0 w-full h-3 text-teal-200" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                    <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="2" />
+                                </svg>
+                            </span>
+                        </h2>
+                        <p className="text-gray-600 text-lg font-light">
+                            Explore dedicated features tailored for every stakeholder in the ecosystem.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col lg:flex-row gap-8">
+                        {/* Tabs Navigation */}
+                        <div className="w-full lg:w-1/4 flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 scrollbar-hide">
+                            {Object.entries(panelFeatures).map(([key, data]) => {
+                                const Icon = data.icon;
+                                const isActive = activeTab === key;
+                                return (
+                                    <button
+                                        key={key}
+                                        onClick={() => setActiveTab(key)}
+                                        className={`flex items-center gap-3 px-6 py-4 rounded-xl font-semibold transition-all whitespace-nowrap lg:whitespace-normal duration-300 ${isActive
+                                            ? "bg-gray-900 text-white shadow-lg"
+                                            : "bg-white text-gray-600 hover:bg-teal-50 hover:text-teal-600 border border-gray-100"
+                                            }`}
+                                    >
+                                        <Icon size={20} className={isActive ? "text-teal-500" : "text-gray-400"} />
+                                        {key}
+                                    </button>
+                                );
+                            })}
+                        </div>
+
+                        {/* Tab Content */}
+                        <div className="w-full lg:w-3/4">
+                            <AnimatePresence mode="wait">
+                                <motion.div
+                                    key={activeTab}
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -10 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="bg-white rounded-[2rem] p-6 lg:p-10 shadow-xl border border-gray-100 flex flex-col lg:flex-row gap-10"
+                                >
+                                    <div className="w-full lg:w-1/3 flex justify-center items-center">
+                                        <div className="relative">
+                                            <div className="absolute inset-0 bg-teal-100 rounded-3xl blur-xl transform -rotate-6" />
+                                            <img
+                                                src={panelFeatures[activeTab].image}
+                                                alt={activeTab}
+                                                width="2048"
+                                                height="1365"
+                                                className="relative w-full max-w-[280px] h-auto object-contain drop-shadow-2xl"
+                                                onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="w-full lg:w-2/3">
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                                            {React.createElement(panelFeatures[activeTab].icon, { className: "text-teal-600", size: 28 })}
+                                            {activeTab} Features
+                                        </h3>
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
+                                            {panelFeatures[activeTab].features.map((feature, idx) => (
+                                                <div key={idx} className="flex items-start gap-3">
+                                                    <div className="mt-1 w-5 h-5 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
+                                                        <CheckCircle className="w-3 h-3 text-teal-600" />
+                                                    </div>
+                                                    <span className="text-gray-700 font-medium">{feature}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                        <button className="mt-10 px-6 py-3 bg-teal-100 text-teal-600 font-semibold rounded-lg hover:bg-teal-100 transition-colors flex items-center gap-2">
+                                            Explore full feature list <ArrowRight size={16} />
+                                        </button>
+                                    </div>
+                                </motion.div>
+                            </AnimatePresence>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 5. Features Grid (#1E2A3A Background) */}
+            <section className="py-24 bg-[#1E2A3A] relative">
+                <div className="absolute inset-0 bg-[url('/grid-pattern-light.svg')] opacity-[0.05]" />
+                <div className="container mx-auto px-4 lg:px-8 relative z-10">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-display drop-shadow-sm">
+                            Platform <span className="text-teal-500">Capabilities</span>
+                        </h2>
+                        <div className="flex justify-center gap-4 mt-8 bg-blue-900/30 p-2 rounded-2xl w-max mx-auto border border-blue-800/50 backdrop-blur-sm">
+                            <button
+                                onClick={() => setActiveFeatureTab("Common")}
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Common" ? "bg-teal-600 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                    }`}
+                            >
+                                Core Essentials
+                            </button>
+                            <button
+                                onClick={() => setActiveFeatureTab("Advance")}
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Advance" ? "bg-teal-600 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                    }`}
+                            >
+                                Premium Tools
+                            </button>
+                        </div>
+                    </div>
+
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={activeFeatureTab}
+                            initial={{ opacity: 0, scale: 0.98 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.98 }}
+                            transition={{ duration: 0.3 }}
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                        >
+                            {(activeFeatureTab === "Common" ? commonFeatures : advanceFeatures).map((feature, idx) => (
+                                <div key={idx} className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 p-8 rounded-2xl hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-teal-500/30 group">
+                                    <div className="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-600 transition-colors border border-blue-800/50">
+                                        <feature.icon className="text-teal-500 group-hover:text-white transition-colors" size={26} />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                                    <p className="text-blue-200/70 font-light leading-relaxed">{feature.desc}</p>
+                                </div>
+                            ))}
+                        </motion.div>
+                    </AnimatePresence>
+                </div>
+            </section>
+
+            {/* 6. Stats Section (#FFFBF2) */}
+            <section className="py-20 bg-[#FFFBF2] relative">
+                <div className="container mx-auto px-4 lg:px-8 relative z-10">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        {stats.map((stat, idx) => (
+                            <div key={idx} className="text-center group">
+                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
+                                    {stat.value}
+                                </h3>
+                                <p className="text-sm font-bold text-teal-600 uppercase tracking-widest">{stat.label}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* 7. Our Solution/Package Features */}
+            <section className="py-24 bg-white relative">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="flex flex-col lg:flex-row gap-16 items-center">
+                        <div className="w-full lg:w-1/3">
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                                Tailored to your <span className="text-teal-600">unique business needs</span>
+                            </h2>
+                            <p className="text-gray-600 mb-8 text-lg font-light">
+                                Our Real Estate solutions provide advanced data insights for your property business.
+                            </p>
+                            <div className="hidden lg:block w-32 h-32 bg-teal-100 rounded-full blur-2xl opacity-60 absolute left-10 mt-10" />
+                        </div>
+
+                        <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+                            {solutions.map((sol, i) => {
+                                const Icon = sol.icon;
+                                return (
+                                    <div key={i} className="flex gap-4 p-5 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-md hover:border-teal-200 transition-all duration-300">
+                                        <div className="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center flex-shrink-0 text-teal-600">
+                                            <Icon size={22} />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold text-gray-900 mb-2">{sol.title}</h4>
+                                            <p className="text-sm text-gray-600 font-light">{sol.desc}</p>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 8. Portfolio Section */}
+            <section className="py-20 bg-gray-50 border-t border-gray-200">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="text-center mb-16">
+                        <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">OUR REAL ESTATE PRODUCTS</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Latest Innovations</h2>
+                        <div className="w-24 h-1 bg-teal-600 mx-auto rounded-full" />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {portfolio.map((item, idx) => (
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: idx * 0.1 }}
+                                key={idx}
+                                className="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 group flex flex-col h-full"
+                            >
+                                <div className="h-48 relative overflow-hidden">
+                                    <img
+                                        src={item.image}
+                                        alt={item.title}
+                                        width="2048"
+                                        height="1365"
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                                    <div className="absolute top-0 right-0 w-32 h-32 bg-teal-600/20 blur-2xl rounded-full" />
+                                    <Home size={40} className="text-teal-500 absolute top-6 right-6 opacity-80 group-hover:scale-110 transition-transform duration-500" />
+                                    <h3 className="absolute bottom-4 left-4 right-4 text-white text-xl font-bold leading-tight z-10">{item.title}</h3>
+                                </div>
+
+                                <div className="p-8 flex flex-col flex-grow">
+                                    <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">{item.description}</p>
+                                    <div className="flex flex-wrap gap-2 mt-auto">
+                                        {item.tags.map(tag => (
+                                            <span key={tag} className="px-3 py-1 bg-teal-100 text-teal-600 text-[10px] font-bold uppercase tracking-wider rounded-md">
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* 9 & 10. Global Components */}
+            <Testimonial theme="teal" />
+            <Industries theme={{ bg: "bg-[#F0FDF4]", primary: "text-teal-600", iconBg: "bg-teal-100", iconColor: "text-teal-600" }} />
+            <OurWork theme={{ primary: "text-teal-600", accent: "bg-teal-600" }} />
+            <ContactUs id="contact-us" theme="teal" />
         </div>
-      </section>
-    </div>
-  );
+    );
 };
 
 export default RealEstateApp;
