@@ -63,7 +63,7 @@ const Products = () => {
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full rounded-lg border-[6px] border-purple-500 shadow-md transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl"
+                  className="w-full rounded-lg border-[6px] hover:border-purple-500  border-transparent shadow-md transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl"
                 />
               </div>
 

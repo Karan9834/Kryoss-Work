@@ -4,7 +4,7 @@ import { Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 import prod1 from "../../assets/Home-Service/prod1.png";
-import prod2 from "../../assets/Home-Service/prod2.png";
+import prod2 from "../../assets/Home-Service/prod2.jpg";
 import prod3 from "../../assets/Home-Service/prod3.png";
 import prod4 from "../../assets/Home-Service/prod4.png";
 import prod5 from "../../assets/Home-Service/prod5.png";
@@ -129,10 +129,9 @@ const ProductSection = () => {
               key={cat}
               onClick={() => setActiveCategory(cat)}
               className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300
-                ${
-                  activeCategory === cat
-                    ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg shadow-purple-500/25"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                ${activeCategory === cat
+                  ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg shadow-purple-500/25"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}
             >
               {cat}

@@ -93,6 +93,11 @@ import KiviCarePage from "../pages/products/PMS-Pharmacy-Mgmt/KiviCare/KiviCareP
 
 import SmartHMSPage from "../pages/products/HMS-Hospital-Mgmt/SmartHMS/SmartHMSPage";
 import BdTaskHMSPage from "../pages/products/HMS-Hospital-Mgmt/BdTaskHMS/BdTaskHMSPage";
+
+import AcadifyEduERPPage from "../pages/products/Enterprise/AcadifyEduERP/AcadifyEduERPPage";
+import MultistoreERPPage from "../pages/products/Enterprise/MultistoreERP/MultistoreERPPage";
+import MentorLMSPage from "../pages/products/Enterprise/MentorLMS/MentorLMSPage";
+import RocketLMSPage from "../pages/products/Enterprise/RocketLMS/RocketLMSPage";
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
     <Route key="products-details" path="products/:id" element={<ProductDetailsPlaceholder />} />,
@@ -178,6 +183,11 @@ export const ProductRoutes = [
 
     <Route key="hms-smart" path="/products/enterprise/hms-hospital/smart-hms" element={<SmartHMSPage />} />,
     <Route key="hms-bdtask" path="/products/enterprise/hms-hospital/bdtask-hms" element={<BdTaskHMSPage />} />,
+
+    <Route key="erp-acadify" path="/products/enterprise/erp/acadifyedu-erp" element={<AcadifyEduERPPage />} />,
+    <Route key="erp-multistore" path="/products/enterprise/erp/multistore-erp" element={<MultistoreERPPage />} />,
+    <Route key="lms-mentor" path="/products/enterprise/lms/mentor-lms" element={<MentorLMSPage />} />,
+    <Route key="lms-rocket" path="/products/enterprise/lms/rocket-lms" element={<RocketLMSPage />} />,
 
 
     <Route key="news" path="/products/prime/news-magazine" element={<NewsPage />} />,

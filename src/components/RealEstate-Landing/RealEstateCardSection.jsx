@@ -1,22 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home, Building2 } from 'lucide-react';
-import card1Img from '../../assets/realestatelanding-img/realestatelandingcard1.png';
-import card2Img from '../../assets/realestatelanding-img/realestatelandingcard2.png';
+import card1Img from '../../assets/realestatelanding-img/realestatelandingcard1.jpg';
+import card2Img from '../../assets/realestatelanding-img/realestatelandingcard2.jpg';
 
 const RealEstateCardSection = () => {
     const cards = [
         {
-         title: "EstateLab: Property Listing Portal",
-         desc: "A comprehensive real estate marketplace for buying, selling, and renting properties.",
-         path: "/products/prime/property-listing-portal",
-      },
+            title: "EstateLab: Property Listing Portal",
+            image: card1Img,
+            desc: "A comprehensive real estate marketplace for buying, selling, and renting properties.",
+            path: "/products/prime/property-listing-portal",
+        },
         {
             title: "Selio: Real Estate Agency",
+            image: card2Img,
             desc: "A powerful back-office management system for agencies and property developers.",
             path: "/products/prime/real-estate-solution",
-      }
-   ];
+        }
+    ];
 
     return (
         <section id="realestate-products" className="py-16 bg-transparent">
@@ -46,15 +48,15 @@ const RealEstateCardSection = () => {
                                 className="cursor-pointer group block"
                             >
                                 <img
-                                    src={index === 0 ? card1Img : card2Img}
+                                    src={card.image}
                                     alt={card.title}
-                                    className={`w-full rounded-xl border-[5px] border-transparent ${index === 0 ? 'hover:border-emerald-500' : 'hover:border-amber-500'} transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover`}
+                                    className={`w-full rounded-xl border-[5px] border-transparent hover:border-emerald-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover`}
                                 />
                             </Link>
 
                             {/* TITLE AND DESCRIPTION */}
                             <p className="mt-4 text-sm md:text-base">
-                                <Link to={card.path} className={`${index === 0 ? 'text-emerald-600' : 'text-amber-600'} font-semibold hover:underline`}>
+                                <Link to={card.path} className="text-emerald-600 font-semibold hover:underline">
                                     {card.title}
                                 </Link>{" "}
                                 <span className="text-gray-700">
