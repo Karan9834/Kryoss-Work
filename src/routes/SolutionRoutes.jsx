@@ -28,6 +28,7 @@ import SchoolManagement from '../pages/solutions/Custom Solutions/SchoolManageme
 import LearningManagement from '../pages/solutions/Custom Solutions/LearningManagement';
 import PharmacyManagement from '../pages/solutions/Custom Solutions/PharmacyManagement';
 import CryptoExchangeApp from '../pages/solutions/Custom Solutions/CryptoExchangeApp';
+import JobPortal from '../pages/solutions/Custom Solutions/Job-Portal/JobPortal';
 
 // On Demand Solutions
 import MechanicsApp from '../pages/solutions/On Demand Solutions/MechanicsApp';
@@ -72,7 +73,7 @@ export const SolutionRoutes = [
     <Route key="sol-hotel-booking" path="solutions/hotel-booking" element={<HotelBookingApp />} />,
 
     // Custom Solutions
-    <Route key="sol-job-portal" path="solutions/job-portal" element={<JobPortalApp />} />,
+    <Route key="sol-job-portal" path="solutions/job-portal" element={<JobPortal />} />,
     <Route key="sol-hrm" path="solutions/hrm" element={<HumanResourceMgmt />} />,
     <Route key="sol-crm" path="solutions/crm" element={<CustomerRelationship />} />,
     <Route key="sol-hotel-mgmt" path="solutions/hotel-mgmt" element={<HotelManagement />} />,

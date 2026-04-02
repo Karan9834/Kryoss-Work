@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Sparkles, ArrowRight, Briefcase, Users, Star } from "lucide-react";
-import prod1 from "../../assets/jobs/prod1.jpg"
-import prod2 from "../../assets/jobs/prod2.jpg"
+import prod1 from "../../../../../assets/jobs/prod1.jpg"
+import prod2 from "../../../../../assets/jobs/prod2.jpg"
 
 const ProductsSection = () => {
   const navigate = useNavigate();
