@@ -63,9 +63,9 @@ const UsersFeature = () => {
           </span>
 
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mt-6">
-            Impressive{" "}
+            Impressive Feature{" "}
             <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-              Features
+               of Job Portals
             </span>
           </h2>
 
