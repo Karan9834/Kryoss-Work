@@ -14,26 +14,34 @@ import TrustBadges from "@/components/home/TrustBadges";
 import Contact from "@/components/home/Contact";
 import Newsletter from "@/components/home/Newsletter";
 import PickSection from "../../components/home/PickSection";
+import PortfolioShowcase from "@/components/home/PortfolioShowcase";
+import TechStack from "@/components/home/TechStack";
+import CTASection from "@/components/home/CTASection";
+
 
 const Home = () => {
   return (
     <>
       <Hero />
       {/* <Services /> */}
-      <PickSection/>
+      <About />
+      <PickSection />
+      <PortfolioShowcase />
       {/* <Products /> */}
       <Industries />
       {/* <AISolutions /> */}
       <WhyChooseUs />
+      <TechStack />
       {/* <Stats /> */}
-      <About />
       <Testimonials />
       {/* <Team /> */}
       {/* <CTABanner /> */}
       <FAQ />
       <TrustBadges />
+      <CTASection />
       <Contact />
       <Newsletter />
+
     </>
   );
 };
