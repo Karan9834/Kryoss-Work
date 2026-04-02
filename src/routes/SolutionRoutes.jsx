@@ -16,7 +16,7 @@ import RealEstateApp from '../pages/solutions/Application Solutions/RealEstateAp
 import HotelBookingApp from '../pages/solutions/Application Solutions/HotelBookingApp';
 
 // Custom Solutions
-import JobPortalApp from '../pages/solutions/Custom Solutions/JobPortalApp';
+import HRMPage from '../pages/solutions/Custom Solutions/HRM/HRMPage';
 import HumanResourceMgmt from '../pages/solutions/Custom Solutions/HumanResourceMgmt';
 import CustomerRelationship from '../pages/solutions/Custom Solutions/CustomerRelationship';
 import HotelManagement from '../pages/solutions/Custom Solutions/HotelManagement';
@@ -74,7 +74,7 @@ export const SolutionRoutes = [
 
     // Custom Solutions
     <Route key="sol-job-portal" path="solutions/job-portal" element={<JobPortal />} />,
-    <Route key="sol-hrm" path="solutions/hrm" element={<HumanResourceMgmt />} />,
+    <Route key="sol-hrm" path="solutions/hrm" element={<HRMPage />} />,
     <Route key="sol-crm" path="solutions/crm" element={<CustomerRelationship />} />,
     <Route key="sol-hotel-mgmt" path="solutions/hotel-mgmt" element={<HotelManagement />} />,
     <Route key="sol-news-mgmt" path="solutions/news-mgmt" element={<NewsManagement />} />,
