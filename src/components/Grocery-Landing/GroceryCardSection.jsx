@@ -22,12 +22,12 @@ const GroceryCardSection = () => {
 
   return (
     <section id="grocery-products" className="relative w-full overflow-hidden bg-white py-24">
-      
+
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b98108_1px,transparent_1px),linear-gradient(to_bottom,#10b98108_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 z-10">
-        
+
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-100 rounded-full px-5 py-2 mb-6">
@@ -58,11 +58,11 @@ const GroceryCardSection = () => {
               className="group text-center"
             >
               {/* Clickable Image Card */}
-              <div className="cursor-pointer overflow-hidden rounded-2xl border-4 border-emerald-500 shadow-md transition-all duration-300 group-hover:scale-[1.04] group-hover:shadow-2xl">
+              <div className="cursor-pointer overflow-hidden rounded-2xl border-4 border-transparent hover:border-emerald-500 shadow-md transition-all duration-300 group-hover:scale-[1.04] group-hover:shadow-2xl">
                 <img
                   src={card.image}
                   alt={card.title}
-                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-auto object-cover "
                 />
               </div>
 

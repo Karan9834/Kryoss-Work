@@ -78,7 +78,7 @@ const ProductSection = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full rounded-lg border-[6px] border-orange-500 shadow-md transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl"
+                  className="w-full rounded-lg border-[6px] border-transparent hover:border-orange-500 shadow-md transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl"
                 />
               </div>
 

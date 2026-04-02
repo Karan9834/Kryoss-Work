@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Plane, Map } from 'lucide-react';
-import card1Img from '../../assets/tourlanding-img/tourlandingcard1.png';
-import card2Img from '../../assets/tourlanding-img/tourlandingcard2.png';
+import card1Img from '../../assets/tourlanding-img/tourlandingcard1.jpg';
+import card2Img from '../../assets/tourlanding-img/tourlandingcard2.jpg';
 
 const TourTravelCardSection = () => {
     const cards = [
@@ -10,13 +10,13 @@ const TourTravelCardSection = () => {
             title: "Tour Master: Tour & Travel Booking App",
             desc: "A full-featured OTA-style booking platform for flights, hotels, and packages.",
             path: "/products/prime/tour-travel-booking-app",
-         },
+        },
         {
             title: "WooTour",
             desc: "A comprehensive back-office solution for travel agencies and tour operators.",
             path: "/products/prime/travel-agency-management",
-         }
-   ];
+        }
+    ];
 
     return (
         <section id="tour-products" className="py-16 bg-transparent">

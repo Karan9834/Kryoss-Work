@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Sparkles } from "lucide-react";
-import product1 from "../../assets/Hotel-Management_product/prod1.png";
+import product1 from "../../assets/Hotel-Management_product/prod1.jpg";
 import product2 from "../../assets/Hotel-Management_product/prod2.jpg";
 
 const ProductsSection = () => {
@@ -38,12 +38,12 @@ const ProductsSection = () => {
 
   return (
     <section className="relative w-full overflow-hidden bg-white py-24">
-      
+
       {/* Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#14b8a608_1px,transparent_1px),linear-gradient(to_bottom,#14b8a608_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 z-10">
-        
+
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-100 rounded-full px-4 py-2 mb-6">
@@ -76,7 +76,7 @@ const ProductsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
           {products.map((product) => (
             <div key={product.id} className="text-center">
-              
+
               {/* Clickable Image */}
               <div
                 onClick={() => handleViewDetails(product.id)} // ✅ SAME routing
@@ -85,7 +85,7 @@ const ProductsSection = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full rounded-lg border-[6px] border-teal-500 shadow-md transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl"
+                  className="w-full rounded-lg border-[6px] border-transparent hover:border-teal-500 shadow-md transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl"
                 />
               </div>
 

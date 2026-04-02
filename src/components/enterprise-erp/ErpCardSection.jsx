@@ -1,103 +1,76 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
-import card1Img from '../../assets/erp-img/erpappdevelopment1.jpg';
-import card2Img from '../../assets/erp-img/erpappdevelopment2.jpg';
+import card1Img from '../../assets/erp-img/erplandingcard1.png';
+import card2Img from '../../assets/erp-img/erplandingcard2.png';
 
 const ErpCardSection = () => {
    const cards = [
       {
-         title: "Vyom HRM Solution",
-         image: card1Img,
-         path: "/products/enterprise/hrm",
-         features: [
-            "Employee Data Management",
-            "Payroll & Tax Automation",
-            "Recruitment & Onboarding",
-            "Performance Tracking (KPIs)",
-            "Attendance & Leave Tracking",
-            "Self-Service Portals"
-         ],
+         title: "AcadifyEdu ERP",
+         path: "/products/enterprise/erp/acadifyedu-erp",
+         description: "Intelligent Education Suite",
+         image: card1Img
       },
       {
-         title: "Vyom CRM Solution",
-         image: card2Img,
-         path: "/products/enterprise/crm",
-         features: [
-            "Lead & Pipeline Tracking",
-            "Customer Support Ticketing",
-            "Automated Sales Forecasting",
-            "Email Marketing Integration",
-            "Task & Activity Logging",
-            "Detailed Client History"
-         ],
+         title: "Multistore ERP",
+         path: "/products/enterprise/erp/multistore-erp",
+         description: "Enterprise Growth Engine",
+         image: card2Img
       }
    ];
 
    return (
-      <section className="py-16 bg-white">
+      <section id="erp-cards" className="py-24 bg-white relative">
          <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16 space-y-4">
+               {/* "Our Products" Header */}
                <div className="flex items-center justify-center gap-2 mb-4">
-                  <div className="w-8 h-px bg-blue-300"></div>
-                  <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase">
+                  <div className="w-8 h-px bg-blue-200"></div>
+                  <span className="text-blue-600 font-bold text-sm tracking-wider uppercase">
                      Our Products
                   </span>
-                  <div className="w-8 h-px bg-blue-300"></div>
+                  <div className="w-8 h-px bg-blue-200"></div>
                </div>
-               <h2 className="text-2xl lg:text-3xl font-semibold text-[#1A1C2C]">
-                  Our Premium <span className="text-blue-700">Enterprise Solutions</span>
+
+               <h2 className="text-3xl lg:text-4xl font-semibold leading-tight tracking-tight">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-blue-500 uppercase">
+                     Specialized ERP Modules
+                  </span>
                </h2>
-               <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-                  Optimize your business operations with our integrated enterprise modules.
-                  Each solution is designed to scale with your organization's growth.
+               <p className="text-[#4A4B5E] text-lg max-w-2xl mx-auto mt-6 font-medium">
+                  Choose the specialized platform that fits your institution's type and scale perfectly.
                </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
                {cards.map((card, index) => (
-                  <Link
-                     to={card.path}
-                     key={index}
-                     className="group relative flex flex-col items-center text-center p-2 rounded-[40px] border-2 border-gray-100 transition-all duration-500 hover:scale-[1.02] bg-white shadow-xl hover:border-blue-100"
-                  >
-                     {/* Image Section */}
-                     <div className="w-full aspect-video bg-gray-50 rounded-[36px] overflow-hidden relative mb-6">
+                  <div key={index} className="text-center">
+                     {/* CLICKABLE IMAGE */}
+                     <Link
+                        to={card.path}
+                        className="cursor-pointer group block overflow-hidden rounded-xl shadow-md group-hover:shadow-xl transition duration-300"
+                     >
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                           className="w-full h-full border-[5px] border-transparent group-hover:border-blue-500 transition duration-300 group-hover:scale-[1.03] object-cover"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent pointer-events-none"></div>
-                     </div>
+                     </Link>
 
-                     {/* Content Section */}
-                     <div className="w-full px-8 pb-10 space-y-8">
-                        <div className="space-y-2">
-                           <h3 className="text-xl font-semibold text-[#1A1C2C] group-hover:text-blue-600 transition-colors">
-                              {card.title}
-                           </h3>
-                           <div className="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-left">
-                           {card.features.map((feature, i) => (
-                              <div key={i} className="flex items-center gap-2">
-                                 <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-                                 <span className="text-sm font-bold text-gray-700">{feature}</span>
-                              </div>
-                           ))}
-                        </div>
-                     </div>
-                  </Link>
+                     {/* TITLE AND DESCRIPTION */}
+                     <p className="mt-4 text-sm md:text-base">
+                        <Link
+                           to={card.path}
+                           className="text-blue-600 font-semibold hover:underline"
+                        >
+                           {card.title}
+                        </Link>{" "}
+                        <span className="text-gray-700">
+                           - {card.description}
+                        </span>
+                     </p>
+                  </div>
                ))}
-            </div>
-
-            {/* Bottom note */}
-            <div className="text-center mt-16">
-               <p className="text-sm text-gray-400 font-medium">
-                  ✦ More enterprise modules coming soon ✦
-               </p>
             </div>
          </div>
       </section>
