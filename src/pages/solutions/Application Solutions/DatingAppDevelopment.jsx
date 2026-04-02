@@ -104,7 +104,7 @@ const DatingAppDevelopment = () => {
                     <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03]" />
                 </div>
 
-                <div className="container mx-auto px-4 lg:px-8 relative z-10 py-10">
+                <div className="max-w-6xl mx-auto px-4 lg:px-6 relative z-10 py-10">
                     <div className="flex flex-col lg:flex-row items-center gap-16">
                         <div className="w-full lg:w-1/2 text-center lg:text-left">
                             <motion.div
@@ -152,7 +152,7 @@ const DatingAppDevelopment = () => {
                             </motion.div>
                         </div>
 
-                        <div className="w-full lg:w-1/2 relative">
+                        <div className="w-full lg:w-[55%] relative flex justify-center">
                             <motion.div
                                 initial={{ opacity: 0, x: 20 }}
                                 animate={{ opacity: 1, x: 0 }}
@@ -163,7 +163,7 @@ const DatingAppDevelopment = () => {
                                 <img width="2048" height="1365"
                                     src="/SolAps/Datinghero.png"
                                     alt="Dating App Development"
-                                    className="relative z-10 w-full h-auto aspect-[2048/1365] object-contain drop-shadow-2xl"
+                                    className="relative z-10 w-[115%] max-w-none h-auto object-cover drop-shadow-2xl"
                                     onError={(e) => { e.target.src = '/SolAps/FallbackDating.png'; e.target.className = 'relative z-10 w-full h-auto object-cover rounded-3xl shadow-2xl' }}
                                 />
                             </motion.div>
