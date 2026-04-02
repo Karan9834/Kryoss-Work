@@ -17,6 +17,7 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+import SalonCardSection from '../../../components/Salon-Beauty-Landing/SalonCardSection';
 
 const SalonBeautyApp = () => {
     const [activeTab, setActiveTab] = useState('Customer App');
@@ -450,54 +451,7 @@ const SalonBeautyApp = () => {
             </section>
 
             {/* 8. Portfolio Section */}
-            <section className="py-20 bg-gray-50 border-t border-gray-200">
-                <div className="container mx-auto px-4 lg:px-8">
-                    <div className="text-center mb-16">
-                        <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">OUR SALOON PRODUCTS</p>
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Latest Innovations</h2>
-                        <div className="w-24 h-1 bg-pink-600 mx-auto rounded-full" />
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {portfolio.map((item, idx) => (
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: idx * 0.1 }}
-                                key={idx}
-                                className="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl hover:shadow-pink-500/10 transition-all duration-300 group flex flex-col h-full"
-                            >
-                                <div className="h-48 relative overflow-hidden">
-                                    <img
-                                        src={item.image}
-                                        alt={item.title}
-                                        width="2048"
-                                        height="1365"
-                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                        onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                                    <div className="absolute top-0 right-0 w-32 h-32 bg-pink-600/20 blur-2xl rounded-full" />
-                                    <Sparkles size={40} className="text-pink-500 absolute top-6 right-6 opacity-80 group-hover:scale-110 transition-transform duration-500" />
-                                    <h3 className="absolute bottom-4 left-4 right-4 text-white text-xl font-bold leading-tight z-10">{item.title}</h3>
-                                </div>
-
-                                <div className="p-8 flex flex-col flex-grow">
-                                    <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">{item.description}</p>
-                                    <div className="flex flex-wrap gap-2 mt-auto">
-                                        {item.tags.map(tag => (
-                                            <span key={tag} className="px-3 py-1 bg-pink-100 text-pink-600 text-[10px] font-bold uppercase tracking-wider rounded-md">
-                                                {tag}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <SalonCardSection />
 
             {/* 9 & 10. Global Components */}
             <Testimonial theme="pink" />

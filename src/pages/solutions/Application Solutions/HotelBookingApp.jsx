@@ -2,11 +2,11 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-    UtensilsCrossed, CheckCircle, Store, Shield, Smartphone, MapPin, 
-    CreditCard, Clock, MessageSquare, Bell, Star, Settings, FileText, 
-    BarChart, Zap, Headphones, Server, Code, Database, RefreshCw, 
-    UserCheck, Phone, LayoutDashboard, Compass, ShoppingBag, History, 
-    Search, Navigation, DollarSign, Users, Layers, Heart, Plane, 
+    UtensilsCrossed, CheckCircle, Store, Shield, Smartphone, MapPin,
+    CreditCard, Clock, MessageSquare, Bell, Star, Settings, FileText,
+    BarChart, Zap, Headphones, Server, Code, Database, RefreshCw,
+    UserCheck, Phone, LayoutDashboard, Compass, ShoppingBag, History,
+    Search, Navigation, DollarSign, Users, Layers, Heart, Plane,
     Building2, Truck, PlayCircle, GraduationCap, ArrowRight, Globe,
     Package, ShoppingCart, Tv, Video, TrendingUp, User, Award, Calendar,
     Play, Download, Subtitles, Lock, Chrome, Car, Apple, Scissors, Gift, Image, CalendarCheck, Star as StarIcon, Sparkles, Building,
@@ -232,35 +232,35 @@ const HotelBookingApp = () => {
                                 Our Hotel Booking app development basically enables your customers to view the list of available Hotels which are close by.
                             </p>
                             <ul className="space-y-4 mb-8">
-                                
-                                    <li key={0} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                            <CheckCircle className="w-4 h-4 text-orange-600" />
-                                        </div>
-                                        <span className="text-gray-700 font-medium">Real-Time Sync</span>
-                                    </li>
-                                
-                                    <li key={1} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                            <CheckCircle className="w-4 h-4 text-orange-600" />
-                                        </div>
-                                        <span className="text-gray-700 font-medium">Instant Mobile Payments</span>
-                                    </li>
-                                
-                                    <li key={2} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                            <CheckCircle className="w-4 h-4 text-orange-600" />
-                                        </div>
-                                        <span className="text-gray-700 font-medium">In-built GPS Targeting</span>
-                                    </li>
-                                
-                                    <li key={3} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                            <CheckCircle className="w-4 h-4 text-orange-600" />
-                                        </div>
-                                        <span className="text-gray-700 font-medium">High Performance Admin</span>
-                                    </li>
-                                
+
+                                <li key={0} className="flex items-center gap-3">
+                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                                        <CheckCircle className="w-4 h-4 text-orange-600" />
+                                    </div>
+                                    <span className="text-gray-700 font-medium">Real-Time Sync</span>
+                                </li>
+
+                                <li key={1} className="flex items-center gap-3">
+                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                                        <CheckCircle className="w-4 h-4 text-orange-600" />
+                                    </div>
+                                    <span className="text-gray-700 font-medium">Instant Mobile Payments</span>
+                                </li>
+
+                                <li key={2} className="flex items-center gap-3">
+                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                                        <CheckCircle className="w-4 h-4 text-orange-600" />
+                                    </div>
+                                    <span className="text-gray-700 font-medium">In-built GPS Targeting</span>
+                                </li>
+
+                                <li key={3} className="flex items-center gap-3">
+                                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                                        <CheckCircle className="w-4 h-4 text-orange-600" />
+                                    </div>
+                                    <span className="text-gray-700 font-medium">High Performance Admin</span>
+                                </li>
+
                             </ul>
                             <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-orange-500 transition-all shadow-md">
                                 Request a Demo
