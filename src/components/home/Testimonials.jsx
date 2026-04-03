@@ -138,14 +138,14 @@ export default function Testimonials() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        <div className="text-center mb-12">
-          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">
+        <div className="text-center mb-16">
+          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
             Client Testimonials
           </p>
 
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground">
-            Let's Check What Our{" "}
-            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-6">
+            Check What Our{" "}
+            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent italic">
               Clients Love
             </span>{" "}
             to Share!
@@ -161,33 +161,29 @@ export default function Testimonials() {
 
               <Quote className="h-8 w-8 text-primary/20 mb-4 group-hover:scale-110 transition" />
 
-              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                {t.text}
+              <p className="text-base text-gray-600 leading-relaxed mb-6 italic">
+                "{t.text}"
               </p>
 
               <div className="flex items-center justify-between">
-
                 <div className="flex items-center gap-3">
-
                   <img
                     src={t.photo}
                     alt={t.name}
-                    className="w-12 h-12 rounded-full object-cover group-hover:scale-105 transition"
+                    className="w-12 h-12 rounded-full object-cover grayscale-0 group-hover:grayscale-0 group-hover:scale-105 transition duration-500"
                     onError={(e) => {
                       if (!e.currentTarget.dataset.error) {
                         e.currentTarget.dataset.error = "true";
-                        e.currentTarget.src = "/placeholder.svg";
+                        e.currentTarget.src = t.fallback;
                       }
                     }}
                   />
-
                   <div>
-                    <p className="font-bold text-sm text-foreground">
+                    <p className="text-sm font-semibold text-gray-900">
                       {t.name}
                     </p>
-                    <p className="text-xs text-muted-foreground">{t.role}</p>
+                    <p className="text-xs text-gray-500">{t.role}</p>
                   </div>
-
                 </div>
 
                 <a

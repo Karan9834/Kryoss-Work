@@ -82,22 +82,22 @@ const Footer = () => {
                             </div>
                         </Link>
                         
-                        <p className="text-gray-400 text-[15px] leading-relaxed mb-6 max-w-sm">
+                        <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-sm">
                             Building world-class digital solutions, white-label apps, and enterprise transformation strategies tailored for modern growth.
                         </p>
                         
                         {/* Newsletter Mini-Signup */}
                         <div className="w-full max-w-sm mt-8">
-                            <h5 className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#888888] mb-4">Stay in the loop</h5>
-                            <form className="relative flex items-center h-[52px] bg-[#111111] border border-white/5 rounded-xl overflow-hidden focus-within:border-white/20 transition-all p-1.5">
+                            <h5 className="text-xs font-medium uppercase tracking-widest text-gray-500 mb-4">Stay in the loop</h5>
+                            <form className="relative flex items-center h-[52px] bg-[#111111] border border-white/5 rounded-xl overflow-hidden focus-within:border-white/10 transition-all p-1.5">
                                 <input 
                                     type="email" 
                                     placeholder="Enter your email" 
                                     required
-                                    className="w-full h-full bg-transparent px-4 text-[14px] text-white placeholder:text-[#666666] focus:outline-none"
+                                    className="w-full h-full bg-transparent px-4 text-sm text-white placeholder:text-gray-600 focus:outline-none"
                                 />
                                 <button type="submit" className="w-[40px] h-[40px] shrink-0 bg-white text-black hover:bg-primary hover:text-white rounded-lg flex items-center justify-center transition-colors">
-                                    <ArrowRight size={18} strokeWidth={2.5} />
+                                    <ArrowRight size={18} strokeWidth={2} />
                                 </button>
                             </form>
                         </div>
@@ -106,19 +106,18 @@ const Footer = () => {
                     {/* Links Columns */}
                     <div className="lg:col-span-8 grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 pl-0 lg:pl-10">
                         {Object.entries(footerLinks).map(([section, links]) => (
-                            <div key={section} className="flex flex-col space-y-7">
-                                <h4 className="text-[14px] font-bold text-white mb-2">
+                            <div key={section} className="flex flex-col space-y-6">
+                                <h4 className="text-sm font-medium text-white">
                                     {section}
                                 </h4>
-                                <ul className="space-y-4">
+                                <ul className="space-y-3">
                                     {links.map((link) => (
                                         <li key={link.label}>
                                             <Link
                                                 to={link.href}
-                                                className="text-[#888888] text-[15px] hover:text-primary hover:translate-x-1 inline-block transition-all duration-300 relative group"
+                                                className="text-gray-500 text-sm hover:text-primary transition-colors duration-200"
                                             >
                                                 {link.label}
-                                                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full"></span>
                                             </Link>
                                         </li>
                                     ))}
@@ -133,17 +132,17 @@ const Footer = () => {
 
                 {/* Bottom Bar: Copyright, Policies, Socials */}
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-6 pb-20 relative z-20">
-                    <p className="text-[#666666] text-sm order-3 lg:order-1 font-light">
+                    <p className="text-gray-500 text-xs font-normal">
                         © {new Date().getFullYear()} KryossWork Pvt. Ltd. All rights reserved.
                     </p>
 
-                    <div className="flex items-center justify-center gap-8 order-2">
-                        <Link to="/company/policies" className="text-[#666666] text-sm font-light hover:text-primary transition-colors delay-75">Privacy Policy</Link>
-                        <Link to="/company/policies" className="text-[#666666] text-sm font-light hover:text-primary transition-colors delay-100">Terms of Service</Link>
-                        <Link to="/company/policies" className="text-[#666666] text-sm font-light hover:text-primary transition-colors delay-150">Cookie Policy</Link>
+                    <div className="flex items-center justify-center gap-6">
+                        <Link to="/company/policies" className="text-gray-500 text-xs font-normal hover:text-primary transition-colors">Privacy Policy</Link>
+                        <Link to="/company/policies" className="text-gray-500 text-xs font-normal hover:text-primary transition-colors">Terms of Service</Link>
+                        <Link to="/company/policies" className="text-gray-500 text-xs font-normal hover:text-primary transition-colors">Cookie Policy</Link>
                     </div>
 
-                    <div className="flex items-center gap-4 order-1 lg:order-3">
+                    <div className="flex items-center gap-4">
                         {socials.map(({ icon: Icon, href, label }) => (
                             <a
                                 key={label}
@@ -151,9 +150,9 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={label}
-                                className="group w-9 h-9 flex items-center justify-center rounded-full bg-transparent border border-white/10 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+                                className="group w-9 h-9 flex items-center justify-center rounded-full bg-transparent border border-white/5 hover:border-primary hover:bg-primary/5 transition-all duration-300"
                             >
-                                <Icon size={14} className="text-[#888888] group-hover:text-primary transition-colors" />
+                                <Icon size={14} className="text-gray-500 group-hover:text-primary transition-colors" />
                             </a>
                         ))}
                     </div>

@@ -117,33 +117,33 @@ export default function PortfolioShowcase() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-12 space-y-4">
-          <div className="inline-flex items-center gap-2 border border-[#5B8CFF]/30 rounded-full px-4 py-1.5 bg-[#5B8CFF]/8">
+        <div className="text-center mb-16 space-y-4">
+          <div className="inline-flex items-center gap-2 border border-[#5B8CFF]/20 rounded-full px-4 py-1.5 bg-[#5B8CFF]/5">
             <span className="w-2 h-2 rounded-full bg-[#5B8CFF] animate-pulse" />
             <span className="text-[#5B8CFF] text-xs font-semibold uppercase tracking-widest">
               Our Portfolio
             </span>
           </div>
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#1E293B]">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-6">
             Work That{" "}
-            <span className="bg-gradient-to-r from-[#5B8CFF] to-[#00C2A8] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#5B8CFF] to-[#00C2A8] bg-clip-text text-transparent italic">
               Speaks for Itself
             </span>
           </h2>
-          <p className="text-slate-500 max-w-xl mx-auto">
+          <p className="text-base text-gray-600 max-w-xl mx-auto leading-relaxed">
             Explore our portfolio across industries — built with precision, shipped with pride.
           </p>
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
           {categories.map((cat, i) => (
             <button
               key={cat.label}
               onClick={() => setActiveTab(i)}
-              className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 ${activeTab === i
-                ? "bg-gradient-to-r from-[#5B8CFF] to-[#00C2A8] text-white shadow-lg shadow-[#5B8CFF]/25"
-                : "bg-white text-slate-500 border border-slate-200 hover:border-[#5B8CFF]/40 hover:text-[#5B8CFF]"
+              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${activeTab === i
+                ? "bg-gradient-to-r from-[#5B8CFF] to-[#00C2A8] text-white shadow-lg shadow-[#5B8CFF]/20"
+                : "bg-white text-gray-500 border border-gray-200 hover:border-[#5B8CFF]/40 hover:text-[#5B8CFF]"
                 }`}
             >
               {cat.label}
@@ -152,32 +152,29 @@ export default function PortfolioShowcase() {
         </div>
 
         {/* Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {active.items.map((item) => (
             <div
               key={item.title}
-              className="group relative rounded-2xl overflow-hidden border border-slate-200 bg-white hover:shadow-2xl transition-all duration-400 hover:-translate-y-2 cursor-default"
+              className="group relative rounded-2xl overflow-hidden border border-gray-100 bg-white hover:shadow-xl transition-all duration-400 hover:-translate-y-1"
             >
-              {/* Image */}
-              <div className="h-52 overflow-hidden">
+              <div className="h-52 overflow-hidden relative">
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                {/* dark overlay on hover */}
-                <div className={`absolute inset-0 bg-gradient-to-t ${item.color} to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300`} />
+                <div className={`absolute inset-0 bg-gradient-to-t ${item.color} to-transparent opacity-0 group-hover:opacity-40 transition-opacity duration-300`} />
               </div>
 
-              {/* Content */}
-              <div className="p-5 space-y-3 relative z-10">
-                <div>
-                  <p className="text-xs text-[#5B8CFF] font-semibold uppercase tracking-wider mb-0.5">{item.sub}</p>
-                  <h3 className="text-[#1E293B] font-bold text-base group-hover:text-[#5B8CFF] transition-colors">{item.title}</h3>
+              <div className="p-6">
+                <div className="mb-4">
+                  <p className="text-xs text-[#5B8CFF] font-semibold uppercase tracking-widest mb-1">{item.sub}</p>
+                  <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#5B8CFF] transition-colors">{item.title}</h3>
                 </div>
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-2">
                   {item.tags.map((tag) => (
-                    <span key={tag} className="text-[10px] font-semibold px-2 py-1 bg-[#5B8CFF]/10 text-[#5B8CFF] rounded-full border border-[#5B8CFF]/20">
+                    <span key={tag} className="text-[10px] font-medium px-2.5 py-0.5 bg-gray-50 text-gray-500 rounded-full border border-gray-100">
                       {tag}
                     </span>
                   ))}
@@ -188,10 +185,10 @@ export default function PortfolioShowcase() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-16">
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(91,140,255,0.3)]"
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-xl text-sm font-medium text-white transition-all duration-300 hover:scale-105 shadow-md shadow-orange-500/10"
             style={{ background: "linear-gradient(135deg,#5B8CFF,#00C2A8)" }}
           >
             View All Projects

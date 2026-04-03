@@ -20,59 +20,60 @@ const Hero = () => {
                     {/* Left Column (Content) */}
                     <div className="flex flex-col space-y-3 lg:space-y-4 animate-fade-in-left items-center lg:items-start text-center lg:text-left">
                         {/* Status Badge */}
-                        <div className="inline-flex items-center gap-2 border border-slate-900 rounded-full px-4 py-1.5 w-fit shadow-sm">
+                        <div className="inline-flex items-center gap-2 border border-slate-200 rounded-full px-4 py-1.5 w-fit bg-white/50 backdrop-blur-sm shadow-sm mb-6">
                             <span className="relative flex h-2 w-2">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
                             </span>
-                            <span className="text-xs font-medium text-slate-900 uppercase tracking-wider">
+                            <span className="text-xs font-semibold text-slate-900 uppercase tracking-widest">
                                 Showcasing Our Work
                             </span>
                         </div>
 
-                        {/* Heading */}
-                        <h1 className="text-2xl sm:text-3xl lg:text-[40px] xl:text-[50px] font-semibold text-slate-900 leading-[1.15] tracking-tight">
+                        {/* Heading (H1) */}
+                        <h1 className="text-4xl lg:text-5xl font-semibold text-slate-900 leading-[1.15] tracking-tight mb-6">
                             Building Powerful <br className="hidden sm:block" />
                             Digital Solutions <br className="hidden sm:block" />
                             That <span className="text-orange-500">Drive Success</span>
                         </h1>
 
-                        {/* Description */}
-                        <p className="text-sm lg:text-base xl:text-lg text-slate-600 max-w-lg leading-snug">
+                        {/* Description (Body Text) */}
+                        <p className="text-base text-slate-600 max-w-lg leading-relaxed mb-6">
                             Explore our innovative projects that showcase how we create
                             impactful web and app solutions tailored to drive growth and
                             deliver exceptional results for forward-thinking businesses.
                         </p>
 
                         {/* CTA Button */}
-                        <div className="flex flex-col space-y-3 pt-1 items-center lg:items-start w-full">
-                            <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 lg:px-7 py-2 lg:py-2.5 rounded-lg shadow-xl shadow-orange-500/20 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center gap-2.5 group text-sm lg:text-base w-fit cursor-pointer">
+                        <div className="flex flex-col space-y-4 pt-2 items-center lg:items-start w-full mb-8">
+                            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-sm font-medium shadow-xl shadow-orange-500/10 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center gap-2.5 group w-fit cursor-pointer">
                                 View Our Projects
                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </button>
 
-                            {/* Micro Trust Signals */}
-                            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-4 sm:gap-x-6 gap-y-1.5 opacity-80">
-                                <div className="flex items-center gap-1.5 text-xs lg:text-sm font-medium text-slate-600">
-                                    <span className="text-orange-500 font-bold">✓</span>
+                            {/* Micro Trust Signals (Small Text) */}
+                            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 opacity-90">
+                                <div className="flex items-center gap-1.5 text-sm font-medium text-slate-500">
+                                    <span className="text-orange-500">✓</span>
                                     <span>Ready-to-launch solutions</span>
                                 </div>
-                                <div className="flex items-center gap-1.5 text-xs lg:text-sm font-medium text-slate-600">
-                                    <span className="text-orange-500 font-bold">✓</span>
+                                <div className="flex items-center gap-1.5 text-sm font-medium text-slate-500">
+                                    <span className="text-orange-500">✓</span>
                                     <span>Custom scalable architecture</span>
                                 </div>
-                                <div className="flex items-center gap-1.5 text-xs lg:text-sm font-medium text-slate-600">
-                                    <span className="text-orange-500 font-bold">✓</span>
-                                    <span>Built with modern technologies</span>
+                                <div className="flex items-center gap-1.5 text-sm font-medium text-slate-500">
+                                    <span className="text-orange-500">✓</span>
+                                    <span>Built with modern tech</span>
                                 </div>
                             </div>
                         </div>
+
                         {/* Trusted Brands */}
-                        <div className="pt-4 lg:pt-6 space-y-3 w-full">
-                            <p className="text-[10px] lg:text-xs font-bold text-slate-400 uppercase tracking-[0.2em] text-center lg:text-left">
+                        <div className="pt-6 space-y-4 w-full">
+                            <p className="text-[10px] lg:text-xs font-semibold text-slate-400 uppercase tracking-[0.2em] text-center lg:text-left">
                                 Trusted by top brands
                             </p>
-                            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 sm:gap-x-8 lg:gap-x-10 gap-y-4 lg:gap-y-6">
+                            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-8 lg:gap-x-10 gap-y-6">
                                 {[
                                     { Icon: FaGoogle, color: "hover:text-blue-500" },
                                     { Icon: FaAmazon, color: "hover:text-orange-500" },
@@ -82,7 +83,7 @@ const Hero = () => {
                                 ].map(({ Icon, color }, index) => (
                                     <Icon
                                         key={index}
-                                        className={`text-2xl lg:text-3xl text-slate-400 transition-all duration-300 cursor-pointer ${color} hover:opacity-100 hover:scale-110 opacity-60 grayscale hover:grayscale-0`}
+                                        className={`text-2xl lg:text-3xl text-slate-400/60 transition-all duration-300 cursor-pointer ${color} hover:opacity-100 hover:scale-110 grayscale hover:grayscale-0`}
                                     />
                                 ))}
                             </div>

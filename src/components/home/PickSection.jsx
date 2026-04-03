@@ -161,15 +161,15 @@ const PickSection = () => {
                 <Star size={22} className="sm:size-[26px]" />
               </div>
 
-              <h3 className="font-semibold text-sm sm:text-lg mb-3">
+              <h3 className="text-xl font-medium text-gray-900 mb-3">
                 I Want To Explore Your Products
               </h3>
 
               <Link
                 to="/products"
-                className="flex items-center gap-1 text-blue-600 text-xs sm:text-base font-medium group-hover:gap-2 transition"
+                className="flex items-center gap-1 text-blue-600 text-sm font-medium group-hover:gap-2 transition"
               >
-                Explore <ArrowRight size={14} className="sm:size-[16px]" />
+                Explore <ArrowRight size={14} />
               </Link>
             </div>
 
@@ -234,22 +234,22 @@ const PickSection = () => {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="space-y-6 text-center lg:text-left mt-10 lg:mt-0">
+        <div className="text-center lg:text-left mt-10 lg:mt-0">
 
-          <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
-            Pick What’s Suits
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 leading-tight mb-6">
+            Pick What Suits
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
               You Most!
             </span>
           </h2>
 
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+          <p className="text-base text-gray-600 leading-relaxed mb-4">
             We have categorized our services based on client needs to ensure a
             seamless selection process. Choose the service that aligns with
             your goals and get started right away.
           </p>
 
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed hidden sm:block">
+          <p className="text-base text-gray-600 leading-relaxed hidden sm:block">
             Our team is always ready to assist you with tailored solutions that
             match your requirements.
           </p>

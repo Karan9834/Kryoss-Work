@@ -162,13 +162,13 @@ export default function WhyChooseUs() {
 
         {/* heading */}
         <div className="text-center mb-16">
-          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
             Why Choose Us
           </p>
 
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-6">
             Why We Are the{" "}
-            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent italic">
               Best Choice
             </span>{" "}
             for Your Digital Solution?
@@ -201,15 +201,13 @@ export default function WhyChooseUs() {
 
               {/* content */}
               <div className="p-6">
-
-                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition">
+                <h3 className="text-xl font-medium text-gray-900 mb-3 group-hover:text-primary transition">
                   {r.title}
                 </h3>
 
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-500 leading-relaxed">
                   {r.description}
                 </p>
-
               </div>
             </div>
           ))}

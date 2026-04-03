@@ -62,15 +62,15 @@ const badges = [
 
 export default function TrustBadges() {
   return (
-    <section className="py-16 bg-blue-50">
+    <section id="awards" className="py-24 bg-blue-50/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10">
-          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">
+        <div className="text-center mb-16">
+          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
             Awards & Recognition
           </p>
-          <h2 className="text-2xl lg:text-3xl font-extrabold text-foreground">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-6">
             Recognized Excellence in{" "}
-            <span className="text-primary">App Development</span> & IT Solutions
+            <span className="text-primary italic">App Development</span> & IT Solutions
           </h2>
         </div>
 
@@ -94,9 +94,9 @@ export default function TrustBadges() {
                   }
                 }} />
 
-              <div className="text-center">
-                <p className="font-bold text-sm text-foreground">{b.name}</p>
-                <p className="text-xs text-muted-foreground">{b.label}</p>
+              <div className="text-center mt-auto">
+                <p className="text-sm font-semibold text-gray-900 leading-tight mb-1">{b.name}</p>
+                {b.label && <p className="text-xs text-gray-500">{b.label}</p>}
               </div>
             </a>
           )}

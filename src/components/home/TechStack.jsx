@@ -29,20 +29,20 @@ export default function TechStack() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-14 space-y-4">
-          <div className="inline-flex items-center gap-2 border border-[#5B8CFF]/30 rounded-full px-4 py-1.5 bg-[#5B8CFF]/10">
+        <div className="text-center mb-16 space-y-4">
+          <div className="inline-flex items-center gap-2 border border-[#5B8CFF]/20 rounded-full px-4 py-1.5 bg-[#5B8CFF]/5">
             <span className="w-2 h-2 rounded-full bg-[#5B8CFF] animate-pulse" />
             <span className="text-[#5B8CFF] text-xs font-semibold uppercase tracking-widest">
               Technology Stack
             </span>
           </div>
-          <h2 className="text-3xl lg:text-4xl font-bold text-white">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-white mb-6">
             Powered by{" "}
-            <span className="bg-gradient-to-r from-[#5B8CFF] to-[#00C2A8] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#5B8CFF] to-[#00C2A8] bg-clip-text text-transparent italic">
               Modern Technologies
             </span>
           </h2>
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <p className="text-base text-slate-400 max-w-xl mx-auto leading-relaxed">
             We choose the right tool for every challenge — staying on the cutting edge so your product doesn't fall behind.
           </p>
         </div>

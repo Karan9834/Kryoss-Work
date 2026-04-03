@@ -48,14 +48,14 @@ export default function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section id="faq" className="py-20 bg-white">
+    <section id="faq" className="py-24 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">FAQ</p>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground">
-            Frequently Asked <span className="text-primary">Questions</span>
+        <div className="text-center mb-16">
+          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">FAQ</p>
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-6">
+            Frequently Asked <span className="text-primary italic">Questions</span>
           </h2>
-          <p className="mt-4 text-muted-foreground">
+          <p className="text-base text-gray-600 leading-relaxed max-w-2xl mx-auto">
             Have questions? We've got answers. If you don't find what you're looking for, feel free
             to contact us.
           </p>
@@ -72,16 +72,15 @@ export default function FAQ() {
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors">
 
-                <span className="font-semibold text-foreground pr-4">{faq.q}</span>
+                <span className="text-lg font-medium text-gray-900 pr-4">{faq.q}</span>
                 {open === i ?
                   <Minus className="h-5 w-5 text-primary shrink-0" /> :
-
-                  <Plus className="h-5 w-5 text-muted-foreground shrink-0" />
+                  <Plus className="h-5 w-5 text-gray-400 shrink-0" />
                 }
               </button>
               {open === i &&
                 <div className="px-5 pb-5">
-                  <p className="text-muted-foreground leading-relaxed text-sm">{faq.a}</p>
+                  <p className="text-base text-gray-600 leading-relaxed">{faq.a}</p>
                 </div>
               }
             </div>
