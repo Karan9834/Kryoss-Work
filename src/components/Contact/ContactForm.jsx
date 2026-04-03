@@ -12,13 +12,13 @@ const ContactForm = () => {
         {/* HERO PART */}
 
         <input
-        
+
           type="text"
           placeholder="Full Name"
           className="w-full border rounded-lg px-4 py-3"
         />
 
-    
+
 
         <input
           type="email"
@@ -61,7 +61,7 @@ const ContactForm = () => {
         />
 
         <button className="bg-orange-600 text-white w-full py-3 rounded-lg">
-        Get in Touch with Us
+          Get in Touch with Us
         </button>
 
       </form>
