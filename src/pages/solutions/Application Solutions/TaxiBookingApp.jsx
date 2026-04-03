@@ -86,26 +86,6 @@ const TaxiBookingApp = () => {
         { icon: BarChart, title: "Smart Analytics", desc: "Comprehensive dashboard to track growth and metrics." }
     ];
 
-    const portfolio = [
-        {
-            title: "Trusted Taxi-Cab Booking",
-            description: "A reliable taxi booking platform with real-time ride tracking, driver management.",
-            tags: ["Booking", "Realtime", "Secure"],
-            image: "/SolAps/Taxiii.png"
-        },
-        {
-            title: "City Cab-Native Uber Clone",
-            description: "A full-featured Uber-like app with ride scheduling and fare estimation.",
-            tags: ["Uber Clone", "GPS", "Mobile App"],
-            image: "/SolAps/Chnagecar.png"
-        },
-        {
-            title: "OneRoad-React Native App",
-            description: "A cross-platform React Native taxi app designed for seamless booking experience.",
-            tags: ["React Native", "Cross Platform", "UI/UX"],
-            image: "/SolAps/taxiapp.png"
-        }
-    ];
 
     const stats = [
         { value: "750+", label: "Projects Delivered" },
@@ -575,7 +555,7 @@ const TaxiBookingApp = () => {
                 </div>
             </section>
 
-            {/* 8. Portfolio Section */}
+            {/* 8. Products Section */}
             <TaxiCardSection />
 
             {/* 9 & 10. Global Components */}
