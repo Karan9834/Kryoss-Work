@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import card1 from '../../assets/cryptolanding-img/cryptolandingcard1.png';
-import card2 from '../../assets/cryptolanding-img/cryptolandingcard2.png';
+import card1 from '../../assets/cryptolanding-img/card1.jpg';
+import card2 from '../../assets/cryptolanding-img/card2.jpg';
 
 const CryptoCardSection = () => {
    const cards = [

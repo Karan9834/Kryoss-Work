@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Sparkles, ArrowRight, Building2, Star, Users, TrendingUp, Clock, Shield } from "lucide-react";
+import prod1 from "../../assets/Busiuness-directory/prod1.jpg"
+import prod2 from "../../assets/Busiuness-directory/prod2.jpg" 
 
 const ProductsSection = () => {
   const navigate = useNavigate();
@@ -8,14 +10,14 @@ const ProductsSection = () => {
   const products = [
     {
       id: "local-business-directory",
-      image: "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=1170&q=80",
+      image: prod1,
       title: "CreativeItem: Local Business Directory",
       description: "A powerful platform to discover nearby businesses with verified listings, real customer reviews, and detailed business profiles. Find the best services around you in seconds.",
       route: "/products/business-directory",
     },
     {
       id: "service-booking-platform",
-      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1170&q=80",
+      image: prod2,
       title: "Slotty: Service Booking Platform",
       description: "Book trusted professionals like electricians, plumbers, and salon experts instantly. A complete service marketplace with scheduling and customer reviews.",
       route: "/products/service-booking",

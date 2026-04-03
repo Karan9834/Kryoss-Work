@@ -17,8 +17,8 @@ import HotelBookingApp from '../pages/solutions/Application Solutions/HotelBooki
 
 // Custom Solutions
 import HRMPage from '../pages/solutions/Custom Solutions/HRM/HRMPage';
-import HumanResourceMgmt from '../pages/solutions/Custom Solutions/HumanResourceMgmt';
-import CustomerRelationship from '../pages/solutions/Custom Solutions/CustomerRelationship';
+import CustomerPage from '../pages/solutions/Custom Solutions/Customer-Relationship/CustomerPage';
+import Hotel from '../pages/solutions/Custom Solutions/Hotel-Management/Hotel';
 import HotelManagement from '../pages/solutions/Custom Solutions/HotelManagement';
 import NewsManagement from '../pages/solutions/Custom Solutions/NewsManagement';
 import RestaurantMgmt from '../pages/solutions/Custom Solutions/RestaurantMgmt';
@@ -56,6 +56,7 @@ import EntertainmentIndustry from '../pages/solutions/Industries/EntertainmentIn
 import NewsMediaIndustry from '../pages/solutions/Industries/NewsMediaIndustry';
 import FoodRestaurantIndustry from '../pages/solutions/Industries/FoodRestaurantIndustry';
 import TravelTourismIndustry from '../pages/solutions/Industries/TravelTourismIndustry';
+import NewsManage from '../pages/solutions/Custom Solutions/News-Managemnet/NewsManage';
 
 export const SolutionRoutes = [
     // Application Solutions
@@ -75,9 +76,9 @@ export const SolutionRoutes = [
     // Custom Solutions
     <Route key="sol-job-portal" path="solutions/job-portal" element={<JobPortal />} />,
     <Route key="sol-hrm" path="solutions/hrm" element={<HRMPage />} />,
-    <Route key="sol-crm" path="solutions/crm" element={<CustomerRelationship />} />,
-    <Route key="sol-hotel-mgmt" path="solutions/hotel-mgmt" element={<HotelManagement />} />,
-    <Route key="sol-news-mgmt" path="solutions/news-mgmt" element={<NewsManagement />} />,
+    <Route key="sol-crm" path="solutions/crm" element={<CustomerPage />} />,
+    <Route key="sol-hotel-mgmt" path="solutions/hotel-mgmt" element={<Hotel />} />,
+    <Route key="sol-news-mgmt" path="solutions/news-mgmt" element={<NewsManage />} />,
     <Route key="sol-restaurant-mgmt" path="solutions/restaurant-mgmt" element={<RestaurantMgmt />} />,
     <Route key="sol-erp" path="solutions/erp" element={<EnterprisePlanningERP />} />,
     <Route key="sol-hospital-mgmt" path="solutions/hospital-mgmt" element={<HospitalManagement />} />,
