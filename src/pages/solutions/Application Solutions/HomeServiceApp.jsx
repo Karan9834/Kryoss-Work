@@ -29,7 +29,7 @@ const HomeServiceApp = () => {
     const panelFeatures = {
         "Customer App": {
             icon: Home,
-            image: "/SolAps/Homemob1.png",
+            image: "/SolAps/homeservice2.png",
             features: [
                 "Instant Service Booking", "Real-time Tracking", "In-App Payments",
                 "Service Ratings & Reviews", "Push Notifications", "Booking History",
@@ -38,7 +38,7 @@ const HomeServiceApp = () => {
         },
         "Provider Dashboard": {
             icon: Wrench,
-            image: "/SolAps/Homemob2.png",
+            image: "/SolAps/homeservice3.png",
             features: [
                 "Profile Verification", "Job Acceptance", "Schedule Management",
                 "Earning Reports", "In-App Navigation", "Customer Chat",
@@ -47,7 +47,7 @@ const HomeServiceApp = () => {
         },
         "Admin Center": {
             icon: Shield,
-            image: "/SolAps/Homemob3.png",
+            image: "/SolAps/homeservice4.png",
             features: [
                 "Dashboard Overview", "Background Checks", "Dispatch Management",
                 "Dynamic Pricing", "Analytics & Reports", "Dispute Handling",
@@ -181,12 +181,12 @@ const HomeServiceApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 to-yellow-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/Homehero.png"
+                                    src="/SolAps/homeservice.png"
                                     alt="Taxi App Development"
                                     width="2048"
                                     height="1365"
                                     className="relative z-10 w-[115%] max-w-none h-auto object-cover drop-shadow-2xl"
-                                    onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                    onError={(e) => { e.target.src = '/SolAps/homeservice.png'; }}
                                 />
                             </motion.div>
                         </div>
@@ -205,15 +205,18 @@ const HomeServiceApp = () => {
                             viewport={{ once: true }}
                             className="w-full lg:w-1/2 relative"
                         >
-                            <div className="absolute -inset-4 bg-orange-50 border border-orange-100 rounded-[2rem] transform -rotate-2" />
-                            <img
-                                src="/SolAps/Homeintro.png"
-                                alt="Taxi Booking Solution"
-                                width="2048"
-                                height="1365"
-                                className="max-w-full max-h-full object-contain"
-                                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800'; }}
-                            />
+                            <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
+                                <img
+                                    src="/SolAps/homeservice1.png"
+                                    alt="Taxi Booking Solution"
+                                    width="2048"
+                                    height="1365"
+                                    className="max-w-full max-h-full object-contain"
+                                    onError={(e) => { e.target.src = "/SolAps/homeservice1.png"; }}
+                                />
+                            </div>
+
+
                             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">

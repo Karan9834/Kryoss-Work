@@ -46,7 +46,7 @@ const RealEstateApp = () => {
 
     const panelFeatures = {
         "User App": {
-            icon: Users, image: "/images/realestate-user.jpg",
+            icon: Users, image: "/SolAps/RealEstate2.png",
             features: [
                 "Authorised Sign In And Sign Up", "Browse Listings", "Location Based Search",
                 "Property Details", "Chat with Agents", "Save Listings",
@@ -56,7 +56,7 @@ const RealEstateApp = () => {
             ]
         },
         "Agent App": {
-            icon: Briefcase, image: "/images/realestate-agent.jpg",
+            icon: Briefcase, image: "/SolAps/RealEstate3.png",
             features: [
                 "Agent Profile Management", "Add New Listings", "Upload Property Images",
                 "Manage Property Details", "View Inquiries", "Chat with Customers",
@@ -66,7 +66,7 @@ const RealEstateApp = () => {
             ]
         },
         "Admin Panel": {
-            icon: Shield, image: "/images/realestate-admin.jpg",
+            icon: Shield, image: "/SolAps/RealEstate4.png",
             features: [
                 "User Management", "Agent Management", "Property Management",
                 "Approve Agents", "Manage Properties", "Coupons & Offers",
@@ -186,12 +186,12 @@ const RealEstateApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-cyan-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/FallbackEcom.png"
+                                    src="/SolAps/RealEstate.png"
                                     alt="Taxi App Development"
                                     width="2048"
                                     height="1365"
                                     className="relative z-10 w-[115%] max-w-none h-auto object-cover drop-shadow-2xl"
-                                    onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                    onError={(e) => { e.target.src = '/SolAps/RealEstate.png'; }}
                                 />
                             </motion.div>
                         </div>
@@ -210,15 +210,17 @@ const RealEstateApp = () => {
                             viewport={{ once: true }}
                             className="w-full lg:w-1/2 relative"
                         >
-                            <div className="absolute -inset-4 bg-blue-50 border border-blue-100 rounded-[2rem] transform -rotate-2" />
-                            <img
-                                src="/SolAps/FallbackEcom.png"
-                                alt="Taxi Booking Solution"
-                                width="2048"
-                                height="1365"
-                                className="max-w-full max-h-full object-contain"
-                                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800'; }}
-                            />
+                            <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
+                                <img
+                                    src="/SolAps/RealEstate1.png"
+                                    alt="Taxi Booking Solution"
+                                    width="2048"
+                                    height="1365"
+                                    className="max-w-full max-h-full object-contain"
+                                    onError={(e) => { e.target.src = "/SolAps/RealEstate1.png"; }}
+                                />
+                            </div>
+
                             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">

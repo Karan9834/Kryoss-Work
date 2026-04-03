@@ -29,7 +29,7 @@ const MatrimonyApp = () => {
     const panelFeatures = {
         "User App": {
             icon: Heart,
-            image: "/SolAps/Matrimonymob1.png",
+            image: "/SolAps/matrimony2.png",
             features: [
                 "Profile Creation & Search", "Intelligent Matchmaking", "Real-time Chat",
                 "Horoscope Matching", "Express Interest", "Privacy Controls",
@@ -38,7 +38,7 @@ const MatrimonyApp = () => {
         },
         "Matchmaker Panel": {
             icon: Star,
-            image: "/SolAps/Matrimonymob2.png",
+            image: "/SolAps/matrimony3.png",
             features: [
                 "Candidate Shortlisting", "Meeting Scheduling", "Verified Profiles",
                 "Direct Messaging", "Kundli Generation", "Background Checks",
@@ -47,7 +47,7 @@ const MatrimonyApp = () => {
         },
         "Admin Panel": {
             icon: Shield,
-            image: "/SolAps/Matrimonymob3.png",
+            image: "/SolAps/matrimony4.png",
             features: [
                 "User Management", "Content Moderation", "Revenue Tracking",
                 "Membership Plans", "Dispute Handling", "Success Stories",
@@ -181,12 +181,12 @@ const MatrimonyApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/10 to-pink-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/Matrimonyhero.png"
+                                    src="/SolAps/matrimony.png"
                                     alt="Taxi App Development"
                                     width="2048"
                                     height="1365"
                                     className="relative z-10 w-[115%] max-w-none h-auto object-cover drop-shadow-2xl"
-                                    onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                    onError={(e) => { e.target.src = '/SolAps/Matrimony.png'; }}
                                 />
                             </motion.div>
                         </div>
@@ -205,15 +205,17 @@ const MatrimonyApp = () => {
                             viewport={{ once: true }}
                             className="w-full lg:w-1/2 relative"
                         >
-                            <div className="absolute -inset-4 bg-rose-50 border border-rose-100 rounded-[2rem] transform -rotate-2" />
-                            <img
-                                src="/SolAps/Matrimonyintro.png"
-                                alt="Taxi Booking Solution"
-                                width="2048"
-                                height="1365"
-                                className="max-w-full max-h-full object-contain"
-                                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800'; }}
-                            />
+                            <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
+                                <img
+                                    src="/SolAps/matrimoy1.png"
+                                    alt="Taxi Booking Solution"
+                                    width="2048"
+                                    height="1365"
+                                    className="max-w-full max-h-full object-contain"
+                                    onError={(e) => { e.target.src = "/SolAps/matrimoy1.png"; }}
+                                />
+                            </div>
+
                             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">

@@ -46,7 +46,7 @@ const HotelBookingApp = () => {
 
     const panelFeatures = {
         "Customer App": {
-            icon: Users, image: "/images/hotel-customer.jpg",
+            icon: Users, image: "/SolAps/Hotel2.png",
             features: [
                 "Multiple Registration", "Verified Users", "Super Fast Search",
                 "Instant Notifications", "Live Geo-Tracking", "Add To Cart",
@@ -56,7 +56,7 @@ const HotelBookingApp = () => {
             ]
         },
         "Hotel Vendor": {
-            icon: Hotel, image: "/images/hotel-owner.jpg",
+            icon: Hotel, image: "/SolAps/Hotel3.png",
             features: [
                 "Hotel Profile Management", "Room Management", "Booking Management",
                 "Online/Offline Status", "Earning Reports", "Map Integration",
@@ -66,7 +66,7 @@ const HotelBookingApp = () => {
             ]
         },
         "Admin Panel": {
-            icon: Shield, image: "/images/hotel-admin.jpg",
+            icon: Shield, image: "/SolAps/Hotel4.png",
             features: [
                 "Hotels Management", "Manage Promo Code", "Manage Currency",
                 "Payment Gateways", "Map View", "Manage Owe Amount & Ratings",
@@ -182,12 +182,12 @@ const HotelBookingApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 to-teal-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/FallbackEcom.png"
+                                    src="/SolAps/Hotel.png"
                                     alt="Taxi App Development"
                                     width="2048"
                                     height="1365"
                                     className="max-w-full max-h-full object-contain"
-                                    onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                    onError={(e) => { e.target.src = '/SolAps/Hotel.png'; }}
                                 />
                             </motion.div>
                         </div>
@@ -206,15 +206,18 @@ const HotelBookingApp = () => {
                             viewport={{ once: true }}
                             className="w-full lg:w-1/2 relative"
                         >
-                            <div className="absolute -inset-4 bg-cyan-50 border border-cyan-100 rounded-[2rem] transform -rotate-2" />
-                            <img
-                                src="/SolAps/FallbackEcom.png"
-                                alt="Taxi Booking Solution"
-                                width="2048"
-                                height="1365"
-                                className="relative w-full rounded-2xl shadow-xl object-cover h-auto aspect-[2048/1365]"
-                                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800'; }}
-                            />
+
+                            <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
+                                <img
+                                    src="/SolAps/Hotel1.png"
+                                    alt="Taxi Booking Solution"
+                                    width="2048"
+                                    height="1365"
+                                    className="max-w-full max-h-full object-contain"
+                                    onError={(e) => { e.target.src = "/SolAps/Hotel1.png"; }}
+                                />
+                            </div>
+
                             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
