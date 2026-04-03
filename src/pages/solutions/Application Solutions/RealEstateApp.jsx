@@ -96,6 +96,9 @@ const RealEstateApp = () => {
         { title: "AI Recommendations", icon: Zap, desc: "Personalized property suggestions based on user preferences." }
     ];
 
+    const portfolio = [
+        { title: "QuickStay", description: "QuickStay is an online residential rental platform that makes it easier for Property Owners & Tenants to exchange information.", tags: ["Rental", "PG", "Flatmates"], image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" }
+    ];
 
     const stats = [
         { value: "750+", label: "Projects Delivered" },
@@ -565,7 +568,6 @@ const RealEstateApp = () => {
                 </div>
             </section>
 
-            {/* 8. Products Section */}
             <RealEstateCardSection />
 
             {/* 9 & 10. Global Components */}

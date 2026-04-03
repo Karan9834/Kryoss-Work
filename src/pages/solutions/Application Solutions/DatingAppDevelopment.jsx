@@ -65,6 +65,26 @@ const DatingAppDevelopment = () => {
         { icon: Smartphone, title: "Dark Mode Support", desc: "Native aesthetic dark modes for better night swiping." }
     ];
 
+    const portfolio = [
+        {
+            title: "Hearts & Souls",
+            description: "A values-based matching platform which gained 1M+ users within 6 months.",
+            tags: ["Values-based", "Matching", "Scalable"],
+            image: "/SolAps/Datingport1.png"
+        },
+        {
+            title: "DateMate",
+            description: "Highly interactive swiping app specialized in quick connections and ephemeral sharing.",
+            tags: ["Casual", "Fast UI", "Mobile App"],
+            image: "/SolAps/Datingport2.png"
+        },
+        {
+            title: "PlatinumMatch",
+            description: "Exclusive community for verified professionals with AI-driven personality matching.",
+            tags: ["Elite", "Verified", "Custom"],
+            image: "/SolAps/Datingport3.png"
+        }
+    ];
 
     const stats = [
         { value: "350+", label: "Dating Projects" },
@@ -535,7 +555,7 @@ const DatingAppDevelopment = () => {
                 </div>
             </section>
 
-            {/* 8. Products Section */}
+            {/* 8. Portfolio Section */}
             <DatingCardSection />
 
             {/* 9 & 10. Global Components */}

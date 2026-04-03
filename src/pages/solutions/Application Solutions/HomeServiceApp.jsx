@@ -74,6 +74,26 @@ const HomeServiceApp = () => {
         { icon: Bell, title: "Smart Notifications", desc: "Real-time SLA tracking and updates for dispatch optimization." }
     ];
 
+    const portfolio = [
+        {
+            title: "UrbanPro Clone",
+            description: "A comprehensive on-demand platform with 200+ service categories and 50K+ verified experts.",
+            tags: ["On-Demand", "Services", "Scalable"],
+            image: "/SolAps/Homeport1.png"
+        },
+        {
+            title: "HandyHub",
+            description: "Specialized app for minor home repairs and maintenance tasks with instant dispatching.",
+            tags: ["Handyman", "Fast UI", "Mobile App"],
+            image: "/SolAps/Homeport2.png"
+        },
+        {
+            title: "FreshLiving",
+            description: "High-end cleaning and sanitization booking platform with subscription-based models.",
+            tags: ["Cleaning", "Subscription", "Custom"],
+            image: "/SolAps/Homeport3.png"
+        }
+    ];
 
     const stats = [
         { value: "280+", label: "Service Platforms" },
@@ -543,7 +563,6 @@ const HomeServiceApp = () => {
                 </div>
             </section>
 
-            {/* 8. Products Section */}
             <ProductSection />
 
             {/* 9 & 10. Global Components */}

@@ -83,6 +83,26 @@ const ECommerceApp = () => {
         { icon: Truck, title: "Logistics API Integration", desc: "Connect with native logistics providers for automated routing." }
     ];
 
+    const portfolio = [
+        {
+            title: "Fashion E-commerce",
+            description: "A fast rendering fashion marketplace featuring AR-tryons and swift delivery management.",
+            tags: ["Marketplace", "Fashion", "Scalable"],
+            image: "/SolAps/Ecomport1.png"
+        },
+        {
+            title: "Electronics B2B Portal",
+            description: "Wholesale platform enabling bulk pricing, negotiation workflows, and credit limit features.",
+            tags: ["B2B", "Wholesale", "Custom"],
+            image: "/SolAps/Ecomport2.png"
+        },
+        {
+            title: "SuperMarket Grocery Delivery",
+            description: "On-demand grocery delivery network handling diverse SKUs and local vendor dispatch.",
+            tags: ["Grocery", "On-Demand", "Mobile App"],
+            image: "/SolAps/Ecomport3.png"
+        }
+    ];
 
     const stats = [
         { value: "500+", label: "E-commerce Projects" },
@@ -552,7 +572,6 @@ const ECommerceApp = () => {
                 </div>
             </section>
 
-            {/* 8. Products Section */}
             <Products />
 
             {/* 9 & 10. Global Components */}

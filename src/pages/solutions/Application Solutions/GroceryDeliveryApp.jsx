@@ -85,6 +85,11 @@ const GroceryDeliveryApp = () => {
         { title: "Smart Analytics", icon: BarChart, desc: "Comprehensive dashboard to track business growth." }
     ];
 
+    const portfolio = [
+        { title: "Heritage TUCH", description: "Online milk and dairy products delivery app offering natural farm-fresh milk.", tags: ["Milk Delivery", "Subscription"], image: "https://images.unsplash.com/photo-1563636619-e9143da7973b" },
+        { title: "Meatigo", description: "Fresh Meats & Delicatessen Products with 120 Minutes Home Delivery.", tags: ["Meat Delivery", "Premium"], image: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82c" },
+        { title: "Superfoods", description: "Best buys in vegetables, fruits, dairy, and groceries at affordable prices.", tags: ["Grocery", "Fruits"], image: "https://images.unsplash.com/photo-1542838132-92c53300491e" }
+    ];
 
     const stats = [
         { value: "750+", label: "Projects Delivered" },
@@ -555,7 +560,6 @@ const GroceryDeliveryApp = () => {
                 </div>
             </section>
 
-            {/* 8. Products Section */}
             <GroceryCardSection />
 
             {/* 9 & 10. Global Components */}

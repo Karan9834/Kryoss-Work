@@ -88,6 +88,11 @@ const FoodDeliveryApp = () => {
         { title: "Smart Analytics", icon: BarChart, desc: "Comprehensive dashboard to track business growth and user metrics." }
     ];
 
+    const portfolio = [
+        { title: "Groxery", description: "Groxery is an online store bridging essential goods, health care products, and more.", tags: ["Grocery", "Mobile App"], image: "https://images.unsplash.com/photo-1542838132-92c53300491e" },
+        { title: "Kifayat", description: "Kifayat online covers all everyday needs from groceries to fresh vegetables.", tags: ["Fresh Food", "Delivery"], image: "https://images.unsplash.com/photo-1550989460-0adf9ea622e2" },
+        { title: "AVEMART", description: "Get affordable fresh fruits and vegetables at best price with hassle-free delivery.", tags: ["Vegetables", "Online Store"], image: "https://images.unsplash.com/photo-1610348725531-843dff563e2c" }
+    ];
 
     const stats = [
         { value: "750+", label: "Projects Delivered" },
@@ -558,7 +563,6 @@ const FoodDeliveryApp = () => {
                 </div>
             </section>
 
-            {/* 8. Products Section */}
             <ProductSection />
 
             {/* 9 & 10. Global Components */}

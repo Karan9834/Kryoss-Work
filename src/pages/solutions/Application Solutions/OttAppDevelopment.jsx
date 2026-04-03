@@ -79,6 +79,11 @@ const OttAppDevelopment = () => {
         { title: "Live Streaming", icon: Play, desc: "Support for live events, sports, and real-time streaming." }
     ];
 
+    const portfolio = [
+        { title: "Watcho", description: "Original Spotlight Exclusive Shows & Films catching the best of regional content.", tags: ["Streaming", "Web Series"], image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85" },
+        { title: "Rabbit", description: "Video on Demand Platform that allows users to watch exclusive original content.", tags: ["VOD", "Regional"], image: "https://images.unsplash.com/photo-1485846234645-a62644f84728" },
+        { title: "DocuBay", description: "Watch Free and Premium Award winning documentaries on crime, nature and science.", tags: ["Documentaries", "Premium"], image: "https://images.unsplash.com/photo-1485846234645-a62644f84728" }
+    ];
 
     const stats = [
         { value: "750+", label: "Projects Delivered" },
@@ -548,7 +553,6 @@ const OttAppDevelopment = () => {
                 </div>
             </section>
 
-            {/* 8. Products Section */}
             <OTTCardSection />
 
             {/* 9 & 10. Global Components */}

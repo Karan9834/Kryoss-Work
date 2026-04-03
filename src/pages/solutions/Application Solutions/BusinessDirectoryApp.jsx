@@ -99,6 +99,12 @@ const BusinessDirectoryApp = () => {
         { title: "Multi-Device Sync", icon: Tablet, desc: "Sync user data across mobile, tablet, and web platforms for seamless experience." }
     ];
 
+    const portfolio = [
+        { title: "CWJobs", description: "CWJobs.co.uk is a market leader in specialist IT recruitment, attracting around 500,000 IT professionals to its site.", tags: ["Jobs", "Recruitment", "IT"], image: "https://images.unsplash.com/photo-1521791136064-7986c2920216" },
+        { title: "Borzo", description: "Completely hassle-free. No registration fee. No extra charges. Get your deliveries done, cheap and fast.", tags: ["Delivery", "Courier"], image: "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55" },
+        { title: "Hotelcareer", description: "Staff wanted! Are you a receptionist, a waiter, a chef de partie, a pastry chef, or any hospitality enthusiast?", tags: ["Hospitality", "Jobs"], image: "https://images.unsplash.com/photo-1566073771259-6a8506099945" },
+        { title: "24Task", description: "Take the initial steps towards hiring the best talents for your project with the 24Task Employers app.", tags: ["Freelance", "Jobs", "Hiring"], image: "https://images.unsplash.com/photo-1557804506-669a67965ba0" }
+    ];
 
     const stats = [
         { value: "750+", label: "Projects Delivered" },
@@ -570,7 +576,6 @@ const BusinessDirectoryApp = () => {
                 </div>
             </section>
 
-            {/* 8. Products Section */}
             <ProductsSection />
 
             {/* 9 & 10. Global Components */}

@@ -74,6 +74,26 @@ const MatrimonyApp = () => {
         { icon: Smartphone, title: "Audio & Video Notes", desc: "Modern multimedia sharing within secure environments." }
     ];
 
+    const portfolio = [
+        {
+            title: "SoulMatch",
+            description: "A high-conversion matrimony portal specialized in NRI and global matchmaking.",
+            tags: ["Matrimony", "Global", "Scalable"],
+            image: "/SolAps/Matrimonyport1.png"
+        },
+        {
+            title: "VedicMatrimony",
+            description: "Niche portal with deep integration of Vedic astrology and community filters.",
+            tags: ["Astrology", "Niche", "Custom"],
+            image: "/SolAps/Matrimonyport2.png"
+        },
+        {
+            title: "SafeRishtey",
+            description: "Matrimonial app where every user is verified via physical document checks.",
+            tags: ["Verified", "Secure", "Mobile App"],
+            image: "/SolAps/Matrimonyport3.png"
+        }
+    ];
 
     const stats = [
         { value: "400+", label: "Matrimony Projects" },
@@ -543,7 +563,6 @@ const MatrimonyApp = () => {
                 </div>
             </section>
 
-            {/* 8. Products Section */}
             <DatingCardSection />
 
             {/* 9 & 10. Global Components */}

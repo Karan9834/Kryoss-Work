@@ -87,6 +87,11 @@ const SalonBeautyApp = () => {
         { title: "Service Video/Photo", icon: Image, desc: "Showcase your work with high-quality photos of completed services." }
     ];
 
+    const portfolio = [
+        { title: "Book Salon", description: "Online platform providing all type of salon types like beauty parlour, unisex salon.", tags: ["Salon", "Booking"], image: "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a0b9" },
+        { title: "HomSwag", description: "Connect with trained and professional Beauty expert from industry.", tags: ["At Home", "Beauty"], image: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1" },
+        { title: "Vaasara", description: "Book Local Salons, Spas & Clinics with freedom and convenience.", tags: ["Local", "Spa"], image: "https://images.unsplash.com/photo-1560066984-138dadb4c035" }
+    ];
 
     const stats = [
         { value: "750+", label: "Projects Delivered" },
@@ -557,7 +562,6 @@ const SalonBeautyApp = () => {
                 </div>
             </section>
 
-            {/* 8. Products Section */}
             <SalonCardSection />
 
             {/* 9 & 10. Global Components */}
