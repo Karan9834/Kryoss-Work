@@ -29,7 +29,7 @@ const MechanicsApp = () => {
     const panelFeatures = {
         "Customer App": {
             icon: User,
-            image: "/SolAps/mechanic1.png", // Generic placeholder or relevant image if available
+            image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800", // Generic placeholder or relevant image if available
             features: [
                 "Secure Onboarding", "View Mechanic Profile", "Search, Sort & Filter",
                 "Book Appointment", "Reschedule/Cancel Booking", "Push Notification",
@@ -38,7 +38,7 @@ const MechanicsApp = () => {
         },
         "Mechanic App": {
             icon: Wrench,
-            image: "/SolAps/mechanic2.png",
+            image: "https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800",
             features: [
                 "Mechanic Dashboard", "Availability Status", "New Booking Request",
                 "Accept/Reject Booking", "Optimized Route", "Recent Booking History",
@@ -47,7 +47,7 @@ const MechanicsApp = () => {
         },
         "Admin Panel": {
             icon: Shield,
-            image: "/SolAps/mechanic3.png",
+            image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
             features: [
                 "Comprehensive Dashboard", "Manage Users & Mechanics", "Manage Service Orders",
                 "Document Verification", "Offers & Discounts", "Customer Support",
@@ -164,12 +164,12 @@ const MechanicsApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-indigo-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/mechanic-hero.png"
+                                    src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800"
                                     alt="Mechanics App Development"
                                     width="2048"
                                     height="1365"
                                     className="max-w-full max-h-full object-contain"
-                                    onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                    onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                                 />
                             </motion.div>
                         </div>
@@ -189,7 +189,7 @@ const MechanicsApp = () => {
                         >
                             <div className="absolute -inset-4 bg-blue-50 border border-blue-100 rounded-[2rem] transform -rotate-2" />
                             <img
-                                src="/SolAps/mechanic-intro.png"
+                                src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800"
                                 alt="Mechanic App Solution"
                                 width="2048"
                                 height="1365"
@@ -336,7 +336,7 @@ const MechanicsApp = () => {
                                 alt={`${activeTab} panel`}
                                 className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
-                                onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                             />
                         </div>
 
