@@ -165,11 +165,11 @@ const DoctorAppointmentApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-sky-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800"
                                     alt="Doctor Appointment App Development"
                                     width="2048"
                                     height="1365"
-                                    className="max-w-full max-h-full object-contain"
+                                    className="max-w-full max-h-full object-cover rounded-2xl shadow-2xl border-4 border-white"
                                     onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                                 />
                             </motion.div>
