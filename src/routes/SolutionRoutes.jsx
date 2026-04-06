@@ -19,10 +19,8 @@ import HotelBookingApp from '../pages/solutions/Application Solutions/HotelBooki
 import HRMPage from '../pages/solutions/Custom Solutions/HRM/HRMPage';
 import CustomerPage from '../pages/solutions/Custom Solutions/Customer-Relationship/CustomerPage';
 import Hotel from '../pages/solutions/Custom Solutions/Hotel-Management/Hotel';
-import HotelManagement from '../pages/solutions/Custom Solutions/HotelManagement';
-import NewsManagement from '../pages/solutions/Custom Solutions/NewsManagement';
-import RestaurantMgmt from '../pages/solutions/Custom Solutions/RestaurantMgmt';
-import EnterprisePlanningERP from '../pages/solutions/Custom Solutions/EnterprisePlanningERP';
+import Restaurant from '../pages/solutions/Custom Solutions/Restaurant-Management/Restaurant';
+import Enterprise from '../pages/solutions/Custom Solutions/Enterprise-Management/Enterprise';
 import HospitalManagement from '../pages/solutions/Custom Solutions/HospitalManagement';
 import SchoolManagement from '../pages/solutions/Custom Solutions/SchoolManagement';
 import LearningManagement from '../pages/solutions/Custom Solutions/LearningManagement';
@@ -79,8 +77,8 @@ export const SolutionRoutes = [
     <Route key="sol-crm" path="solutions/crm" element={<CustomerPage />} />,
     <Route key="sol-hotel-mgmt" path="solutions/hotel-mgmt" element={<Hotel />} />,
     <Route key="sol-news-mgmt" path="solutions/news-mgmt" element={<NewsManage />} />,
-    <Route key="sol-restaurant-mgmt" path="solutions/restaurant-mgmt" element={<RestaurantMgmt />} />,
-    <Route key="sol-erp" path="solutions/erp" element={<EnterprisePlanningERP />} />,
+    <Route key="sol-restaurant-mgmt" path="solutions/restaurant-mgmt" element={<Restaurant />} />,
+    <Route key="sol-erp" path="solutions/erp" element={<Enterprise />} />,
     <Route key="sol-hospital-mgmt" path="solutions/hospital-mgmt" element={<HospitalManagement />} />,
     <Route key="sol-school-mgmt" path="solutions/school-mgmt" element={<SchoolManagement />} />,
     <Route key="sol-lms" path="solutions/lms" element={<LearningManagement />} />,

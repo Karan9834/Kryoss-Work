@@ -17,13 +17,13 @@ const Testimonial = ({
       cardGradient: "from-purple-500 to-pink-500",
     },
 
-     "orange-teal": {
+    "orange-teal": {
       badge: "bg-orange-100 text-orange-600",
       gradient: "from-orange-500 via-orange-400 to-teal-500",
       cardGradient: "from-orange-500 to-teal-500",
       overlayFrom: "from-[#FFF7ED]",
     },
-    
+
     blue: {
       badge: "bg-blue-100 text-blue-600",
       gradient: "from-blue-600 via-cyan-600 to-teal-600",
@@ -145,10 +145,10 @@ const Testimonial = ({
             <span className="text-sm font-medium">Testimonials</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight pb-2">
             {headingText.split(" ").slice(0, -1).join(" ")}
             <span
-              className={`block text-transparent bg-clip-text bg-gradient-to-r ${colors.gradient}`}
+              className={`block text-transparent bg-clip-text bg-gradient-to-r ${colors.gradient} leading-tight`}
             >
               {headingText.split(" ").slice(-1)}
             </span>
@@ -206,8 +206,12 @@ const Testimonial = ({
         </div>
 
         {/* Gradient Overlays */}
-        <div className={`absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-${theme}-50 to-transparent pointer-events-none z-10`}></div>
-        <div className={`absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-${theme}-50 to-transparent pointer-events-none z-10`}></div>
+        <div
+          className={`absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-${theme}-50 to-transparent pointer-events-none z-10`}
+        ></div>
+        <div
+          className={`absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-${theme}-50 to-transparent pointer-events-none z-10`}
+        ></div>
 
         <style>{`
           .marquee-container {

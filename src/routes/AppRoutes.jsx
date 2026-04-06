@@ -97,6 +97,11 @@ import BetYourDuckPage from '../pages/products/BetYourDuck/BetYourDuckPage';
 import HyipInvestProPage from '../pages/products/HyipInvestPro/HyipInvestProPage';
 import RevPTCPage from '../pages/products/RevPTC/RevPTCPage';
 
+import TennPati from '../pages/products/Gaming-Products/Casino-Games/TennPati';
+import Kasino from '../pages/products/Gaming-Products/Casino-Games/Kasino/Kasino';
+import BetPro from '../pages/products/Gaming-Products/Fantasy/BetPro/BetPro';
+import BetLab from '../pages/products/Gaming-Products/Fantasy/BetLab/BetLab';
+
 const AppRoutes = () => {
     return (
         <Routes>
@@ -226,6 +231,11 @@ const AppRoutes = () => {
 <Route path='/products/coming-soon' element={<FoodBite />} />
 <Route path='/products/snapcart' element={<Snapcart />} />
 <Route path='/products/omnicart' element={<Omni />} />
+
+<Route path="/products/casino/stake1" element={<TennPati />} />
+<Route path="/products/casino/kasino" element={<Kasino />} />
+<Route path="/products/fantasy/betpro" element={<BetPro />} />
+<Route path="/products/fantasy/betlab" element={<BetLab />} />
                 {/* 404 */}
 
                 <Route path="*" element={<NotFound />} />
