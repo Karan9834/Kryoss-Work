@@ -48,9 +48,10 @@ export default function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section id="faq" className="py-24 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+    <section id="faq" className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div className="text-center mb-12">
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">FAQ</p>
           <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-6">
             Frequently Asked <span className="text-primary italic">Questions</span>
@@ -61,25 +62,27 @@ export default function FAQ() {
           </p>
         </div>
 
-        <div className="space-y-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           {faqs.map((faq, i) =>
             <div
               key={i}
-              className={`border rounded-xl overflow-hidden transition-all ${open === i ? "border-primary shadow-sm" : "border-border"}`
+              className={`border rounded-2xl overflow-hidden transition-all duration-300 ${open === i ? "border-primary shadow-lg bg-white" : "border-gray-300 bg-gray-50/50 hover:border-gray-400 hover:bg-white"}`
               }>
 
               <button
                 onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors">
+                className="w-full flex items-center justify-between p-6 text-left outline-none">
 
-                <span className="text-lg font-medium text-gray-900 pr-4">{faq.q}</span>
-                {open === i ?
-                  <Minus className="h-5 w-5 text-primary shrink-0" /> :
-                  <Plus className="h-5 w-5 text-gray-400 shrink-0" />
-                }
+                <span className={`text-[17px] font-semibold leading-tight pr-4 ${open === i ? "text-primary" : "text-gray-900"}`}>{faq.q}</span>
+                <div className={`shrink-0 transition-transform duration-300 ${open === i ? "rotate-180" : ""}`}>
+                  {open === i ?
+                    <Minus className="h-5 w-5 text-primary" /> :
+                    <Plus className="h-5 w-5 text-gray-400" />
+                  }
+                </div>
               </button>
               {open === i &&
-                <div className="px-5 pb-5">
+                <div className="px-6 pb-6 animate-in fade-in slide-in-from-top-2 duration-300">
                   <p className="text-base text-gray-600 leading-relaxed">{faq.a}</p>
                 </div>
               }

@@ -1,172 +1,256 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import { Twitter, Linkedin, Facebook, Instagram, Youtube, ArrowRight } from "lucide-react";
-import { Link } from 'react-router-dom';
+import { FaWhatsapp } from "react-icons/fa";
+
+import { Link } from "react-router-dom";
 import logo from "../../assets/Logo/worklogo.png";
 
 const footerLinks = {
-    Products: [
-        { label: "Delivery App Clone", href: "/products/delivery/food-delivery" },
-        { label: "Taxi App Clone", href: "/products/transport/uber-clone" },
-        { label: "Handyman App Clone", href: "/products/home-service/handyman" },
-        { label: "Fox-Jek Super App", href: "/gojek-clone" },
-        { label: "Grocery App Clone", href: "/products/delivery/grocery-delivery" },
-        { label: "Gojek Clone", href: "/gojek-clone" }
-    ],
-    Services: [
-        { label: "Mobile App Development", href: "/services/mobile-app-development" },
-        { label: "Web Development", href: "/services/web-development" },
-        { label: "Data & AI Solutions", href: "/services/data-ai-solutions" },
-        { label: "Product Engineering", href: "/services/product-engineering" },
-        { label: "DevOps & Cloud", href: "/services/devops-cloud" },
-        { label: "UI/UX Design", href: "/services/ui-ux-design" }
-    ],
-    Solutions: [
-        { label: "Enterprise Solutions", href: "/solutions/healthcare" },
-        { label: "Startup MVP", href: "/solutions/healthcare" },
-        { label: "Digital Transformation", href: "/solutions/healthcare" },
-        { label: "White-Label Apps", href: "/products" },
-        { label: "App Modernization", href: "/services/mobile-app-development" },
-        { label: "Cloud Migration", href: "/services/devops-cloud" }
-    ],
-    Company: [
-        { label: "About Us", href: "/company/about" },
-        { label: "Our Team", href: "/company/team" },
-        { label: "Case Studies", href: "/company/testimonials" },
-        { label: "Careers", href: "/company/careers" },
-        { label: "Blog", href: "/blog" },
-        { label: "Contact Us", href: "/company/contact" }
-    ]
+  Products: [
+    { label: "Delivery App Clone", href: "/products/delivery/food-delivery" },
+    { label: "Taxi App Clone", href: "/products/transport/uber-clone" },
+    { label: "Handyman App Clone", href: "/products/home-service/handyman" },
+    { label: "Super App (Gojek Style)", href: "/gojek-clone" },
+    { label: "Grocery App Clone", href: "/products/delivery/grocery-delivery" },
+  ],
+  Services: [
+    { label: "Mobile App Development", href: "/services/mobile-app-development" },
+    { label: "Web Development", href: "/services/web-development" },
+    { label: "Data & AI Solutions", href: "/services/data-ai-solutions" },
+    { label: "Product Engineering", href: "/services/product-engineering" },
+    { label: "DevOps & Cloud", href: "/services/devops-cloud" },
+    { label: "UI/UX Design", href: "/services/ui-ux-design" },
+  ],
+  Company: [
+    { label: "About Us", href: "/company/about" },
+    { label: "Our Team", href: "/company/team" },
+    { label: "Careers", href: "/company/careers" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact Us", href: "/company/contact" },
+  ],
 };
 
 const socials = [
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: Youtube, href: "https://youtube.com", label: "YouTube" }
+  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+  { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
 ];
 
 const Footer = () => {
-    return (
-        <footer className="footer-section bg-[#080808] text-white overflow-hidden relative border-t border-white/5 font-sans pb-10">
-            {/* Background Decor */}
-            <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
-            
-            {/* Ambient Glows */}
-            <div className="absolute top-[-20%] right-[-10%] w-[50%] h-[50%] bg-primary/10 rounded-full blur-[120px] pointer-events-none animate-pulse"></div>
-            <div className="absolute bottom-[-20%] left-[-10%] w-[50%] h-[50%] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+  const [isVisible, setIsVisible] = useState(false);
 
-            {/* Seamless Grid / Dot Pattern UI Layer */}
-            <div 
-                className="absolute inset-0 opacity-[0.04] pointer-events-none mix-blend-screen"
-                style={{ 
-                    backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,1) 1px, transparent 0)', 
-                    backgroundSize: '32px 32px' 
-                }}
-            ></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-[#080808]/0 via-[#080808]/80 to-[#080808] pointer-events-none"></div>
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-8 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 mb-20">
-                    
-                    {/* Brand & Newsletter Column */}
-                    <div className="lg:col-span-4 flex flex-col items-start lg:pr-10">
-                        <Link to="/" className="inline-block mb-8 group">
-                            <div className="bg-white/5 p-2.5 rounded-2xl backdrop-blur-xl border border-white/10 inline-flex items-center group-hover:bg-white/10 transition-colors">
-                                <img
-                                    src={logo}
-                                    alt="KryossWork"
-                                    className="h-8 w-auto object-contain brightness-0 invert opacity-90"
-                                    onError={(e) => { e.target.src = "/placeholder.svg"; }}
-                                />
-                            </div>
-                        </Link>
-                        
-                        <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-sm">
-                            Building world-class digital solutions, white-label apps, and enterprise transformation strategies tailored for modern growth.
-                        </p>
-                        
-                        {/* Newsletter Mini-Signup */}
-                        <div className="w-full max-w-sm mt-8">
-                            <h5 className="text-xs font-medium uppercase tracking-widest text-gray-500 mb-4">Stay in the loop</h5>
-                            <form className="relative flex items-center h-[52px] bg-[#111111] border border-white/5 rounded-xl overflow-hidden focus-within:border-white/10 transition-all p-1.5">
-                                <input 
-                                    type="email" 
-                                    placeholder="Enter your email" 
-                                    required
-                                    className="w-full h-full bg-transparent px-4 text-sm text-white placeholder:text-gray-600 focus:outline-none"
-                                />
-                                <button type="submit" className="w-[40px] h-[40px] shrink-0 bg-white text-black hover:bg-primary hover:text-white rounded-lg flex items-center justify-center transition-colors">
-                                    <ArrowRight size={18} strokeWidth={2} />
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
 
-                    {/* Links Columns */}
-                    <div className="lg:col-span-8 grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 pl-0 lg:pl-10">
-                        {Object.entries(footerLinks).map(([section, links]) => (
-                            <div key={section} className="flex flex-col space-y-6">
-                                <h4 className="text-sm font-medium text-white">
-                                    {section}
-                                </h4>
-                                <ul className="space-y-3">
-                                    {links.map((link) => (
-                                        <li key={link.label}>
-                                            <Link
-                                                to={link.href}
-                                                className="text-gray-500 text-sm hover:text-primary transition-colors duration-200"
-                                            >
-                                                {link.label}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
-                    </div>
+  return (
+    <>
+      {/* 🔥 CTA SECTION */}
+      <section className="relative px-6 lg:px-[2rem] mt-24 mb-[-40px] z-20">
+        <div className="relative pt-16 pb-14 text-center overflow-hidden rounded-[32px] sm:rounded-[48px] shadow-2xl shadow-[#5B8CFF]/15">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#5B8CFF] to-[#00C2A8]"></div>
+          {/* Subtle mesh overlay */}
+          <div className="absolute inset-0 bg-[#0B0F1A]/10 backdrop-blur-[1px]"></div>
+
+          <div className="relative z-10 px-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-5 tracking-tight leading-[1.2]">
+              Let’s Build Something <span className="italic font-medium">Incredible</span>
+            </h2>
+            <p className="text-white/85 mb-8 text-base leading-relaxed max-w-2xl mx-auto font-normal">
+              Scale faster with world-class digital solutions tailored to your unique business needs and vision.
+            </p>
+
+            <Link
+              to="/company/contact"
+              className="inline-flex items-center gap-3 bg-white text-[#0B0F1A] px-8 py-3.5 rounded-xl text-sm font-semibold hover:scale-105 transition-all shadow-xl hover:shadow-white/10 group"
+            >
+              Start Project 
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      {/* 🔥 FOOTER */}
+      <footer className="bg-[#0B0F1A] text-white relative overflow-hidden pt-16 pb-10">
+
+        {/* Background Glow */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(91,140,255,0.1),transparent),radial-gradient(circle_at_80%_70%,rgba(0,194,168,0.1),transparent)]"></div>
+
+        {/* Grid Pattern */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+            backgroundSize: "32px 32px",
+          }}
+        ></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+
+          {/* 🔥 MAIN GRID */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16 items-start">
+
+            {/* LEFT SECTION */}
+            <div className="lg:col-span-2 space-y-6">
+              <img src={logo} alt="logo" className="h-10 brightness-0 invert" />
+
+              <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
+                Building world-class digital solutions, helping startups and enterprises scale with modern technology and innovative AI-driven strategies.
+              </p>
+
+              {/* TRUST */}
+              <div className="flex gap-6 text-xs font-medium text-slate-500 flex-wrap">
+                <span className="flex items-center gap-1.5 truncate">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#5B8CFF]"></span>
+                  50+ Projects
+                </span>
+                <span className="flex items-center gap-1.5 truncate">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#00C2A8]"></span>
+                  Global Clients
+                </span>
+                <span className="flex items-center gap-1.5 truncate">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#5B8CFF]"></span>
+                  Scalable Systems
+                </span>
+              </div>
+
+              {/* NEWSLETTER */}
+              <div className="pt-2">
+                <div className="relative max-w-sm group">
+                  <input
+                    type="email"
+                    placeholder="Subscribe to our newsletter"
+                    className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-3.5 text-sm outline-none focus:border-[#5B8CFF]/50 transition-all"
+                  />
+                  <button 
+                    className="absolute right-1.5 top-1.5 bottom-1.5 px-6 rounded-lg text-sm font-semibold text-white transition-all hover:scale-105 active:scale-95"
+                    style={{
+                      background: "linear-gradient(135deg, #5B8CFF, #00C2A8)",
+                    }}
+                  >
+                    Join
+                  </button>
                 </div>
-
-                {/* Divider Line */}
-                <div className="h-px w-full bg-white/5 mb-8"></div>
-
-                {/* Bottom Bar: Copyright, Policies, Socials */}
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-6 pb-20 relative z-20">
-                    <p className="text-gray-500 text-xs font-normal">
-                        © {new Date().getFullYear()} KryossWork Pvt. Ltd. All rights reserved.
-                    </p>
-
-                    <div className="flex items-center justify-center gap-6">
-                        <Link to="/company/policies" className="text-gray-500 text-xs font-normal hover:text-primary transition-colors">Privacy Policy</Link>
-                        <Link to="/company/policies" className="text-gray-500 text-xs font-normal hover:text-primary transition-colors">Terms of Service</Link>
-                        <Link to="/company/policies" className="text-gray-500 text-xs font-normal hover:text-primary transition-colors">Cookie Policy</Link>
-                    </div>
-
-                    <div className="flex items-center gap-4">
-                        {socials.map(({ icon: Icon, href, label }) => (
-                            <a
-                                key={label}
-                                href={href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={label}
-                                className="group w-9 h-9 flex items-center justify-center rounded-full bg-transparent border border-white/5 hover:border-primary hover:bg-primary/5 transition-all duration-300"
-                            >
-                                <Icon size={14} className="text-gray-500 group-hover:text-primary transition-colors" />
-                            </a>
-                        ))}
-                    </div>
-                </div>
+              </div>
             </div>
 
-            {/* Huge Brand Typography Background overlapping bottom border natively */}
-            <div className="absolute bottom-0 left-0 right-0 flex justify-center pointer-events-none select-none overflow-hidden max-h-[22vw]">
-                <h1 className="text-[18vw] font-black tracking-tighter leading-none mb-[-4vw] bg-gradient-to-b from-white/[0.05] to-transparent bg-clip-text text-transparent transform scale-y-110">
-                    KRYOSSWORK
-                </h1>
+            {/* RIGHT LINKS */}
+            {Object.entries(footerLinks).map(([section, links]) => (
+              <div key={section} className="space-y-6">
+                <h4 className="text-sm font-bold text-white tracking-wider uppercase">{section}</h4>
+                <ul className="space-y-3">
+                  {links.map((link) => (
+                    <li key={link.label}>
+                      <Link
+                        to={link.href}
+                        className="text-[13px] text-slate-400 hover:text-[#5B8CFF] transition-colors duration-300 flex items-center group/link"
+                      >
+                        <span className="w-0 group-hover/link:w-2 h-[1px] bg-[#5B8CFF] transition-all mr-0 group-hover/link:mr-2"></span>
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+
+          </div>
+
+          {/* 🔥 BOTTOM BAR */}
+          <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+
+            <p className="text-[11px] text-slate-500 text-center md:text-left tracking-wide">
+              © {new Date().getFullYear()} KryossWork Pvt. Ltd. All rights reserved.
+            </p>
+
+            <div className="flex gap-6 text-[11px] font-medium">
+              <Link to="/company/policies" className="text-slate-500 hover:text-white transition-colors">
+                Privacy Policy
+              </Link>
+              <Link to="/company/policies" className="text-slate-500 hover:text-white transition-colors">
+                Terms of Service
+              </Link>
+              <Link to="/company/policies" className="text-slate-500 hover:text-white transition-colors">
+                Cookie Policy
+              </Link>
             </div>
-        </footer>
-    );
+
+            {/* SOCIALS */}
+            <div className="flex gap-4">
+              {socials.map(({ icon: Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/5 text-slate-400 hover:text-white hover:border-[#5B8CFF]/30 hover:bg-[#5B8CFF]/10 transition-all duration-300"
+                >
+                  <Icon size={16} />
+                </a>
+              ))}
+            </div>
+
+          </div>
+        </div>
+
+        {/* 🔥 BIG BRAND TEXT */}
+        <div className="absolute bottom-0 w-full flex justify-center pointer-events-none overflow-hidden select-none">
+          <h1 className="text-[15vw] font-black tracking-tighter opacity-[0.03] text-white">
+            KRYOSSWORK
+          </h1>
+        </div>
+
+        {/* 🔥 WHATSAPP FLOATING BUTTON */}
+        <a
+          href="https://wa.me/YOUR_PHONE_NUMBER" // Replace with your actual WhatsApp number
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-8 right-8 w-12 h-12 bg-[#25D366] rounded-2xl text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300 z-50 group overflow-visible"
+          aria-label="Chat on WhatsApp"
+        >
+          {/* Pulsing ring animation */}
+          <span className="absolute inset-0 bg-[#25D366] rounded-2xl animate-ping opacity-20 group-hover:opacity-40"></span>
+          
+          <FaWhatsapp size={24} className="relative z-10" />
+          
+          {/* Label Tooltip */}
+          <span className="absolute right-full mr-3 px-3 py-1 bg-[#25D366] text-white text-xs font-semibold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-lg">
+            Chat with us
+          </span>
+        </a>
+
+        {/* 🔥 BACK TO TOP */}
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className={`fixed bottom-24 right-8 w-12 h-12 bg-gradient-to-br from-[#5B8CFF] to-[#00C2A8] rounded-2xl text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 z-50 group ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
+          }`}
+          aria-label="Back to top"
+        >
+          <ArrowRight size={20} className="-rotate-90 group-hover:-translate-y-1 transition-transform" />
+        </button>
+
+
+
+      </footer>
+    </>
+  );
 };
 
 export default Footer;
+

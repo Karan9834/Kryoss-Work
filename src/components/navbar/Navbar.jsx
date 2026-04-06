@@ -131,7 +131,7 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center shrink-0">
             <Link
               to="/company/contact"
-              className="bg-primary hover:bg-orange-600 text-white px-6 py-3 rounded-md text-[14px] font-bold uppercase tracking-wide transition-all shadow-md hover:shadow-lg active:scale-95"
+              className="bg-primary hover:bg-orange-600 text-white px-5 py-1.5 rounded-full text-[16.5px] font-medium uppercase tracking-wide transition-all shadow-md hover:shadow-lg active:scale-95 w-fit"
             >
               Get a Free Quote
             </Link>
@@ -237,7 +237,7 @@ const Navbar = () => {
 
             <Link
               to="/company/contact"
-              className="mt-4 bg-primary text-white text-center py-4 rounded-xl font-bold uppercase tracking-widest text-sm shadow-xl active:scale-95 transition-all"
+              className="mt-4 bg-primary text-white text-center py-4 rounded-full font-semibold uppercase tracking-widest text-sm shadow-xl active:scale-95 transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
               Get a Free Quote

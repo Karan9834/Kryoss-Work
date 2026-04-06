@@ -20,12 +20,13 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 bg-gradient-to-b from-white via-orange-50/40 to-white"
+      className="py-16 bg-gradient-to-b from-white via-orange-50/40 to-white"
     >
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
+
           <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900">
             Let’s Build Something <span className="text-primary">Great</span>
           </h2>

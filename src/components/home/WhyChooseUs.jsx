@@ -152,7 +152,7 @@ export default function WhyChooseUs() {
   return (
     <section
       id="why-us"
-      className="relative py-24 bg-gradient-to-br from-white via-blue-50 to-orange-50 overflow-hidden"
+      className="relative py-16 bg-gradient-to-br from-white via-blue-50 to-orange-50 overflow-hidden"
     >
       {/* background blobs */}
       <div className="absolute top-10 left-10 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-40 animate-pulse"></div>
@@ -161,7 +161,8 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* heading */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
+
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
             Why Choose Us
           </p>

@@ -140,16 +140,18 @@ export default function Testimonials() {
 
         <div className="text-center mb-16">
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
-            Client Testimonials
+            Testimonials
           </p>
 
-          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-6">
-            Check What Our{" "}
-            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent italic">
-              Clients Love
-            </span>{" "}
-            to Share!
+          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            What Our Clients{" "}
+            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent italic py-2 inline-block">
+              Say
+            </span>
           </h2>
+          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+            Join thousands of satisfied businesses that trust our platform
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

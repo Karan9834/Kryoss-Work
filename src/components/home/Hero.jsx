@@ -44,10 +44,9 @@ const Hero = () => {
                             deliver exceptional results for forward-thinking businesses.
                         </p>
 
-                        {/* CTA Button */}
                         <div className="flex flex-col space-y-4 pt-2 items-center lg:items-start w-full mb-8">
-                            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-sm font-medium shadow-xl shadow-orange-500/10 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center gap-2.5 group w-fit cursor-pointer">
-                                View Our Projects
+                            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full text-[17.5px] font-light shadow-xl shadow-orange-500/10 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center gap-2.5 group w-fit cursor-pointer">
+                                Consult Our Experts
                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </button>
 

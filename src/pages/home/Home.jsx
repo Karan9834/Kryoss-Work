@@ -12,11 +12,11 @@ import CTABanner from "@/components/home/CTABanner";
 import FAQ from "@/components/home/FAQ";
 import TrustBadges from "@/components/home/TrustBadges";
 import Contact from "@/components/home/Contact";
-import Newsletter from "@/components/home/Newsletter";
 import PickSection from "../../components/home/PickSection";
 import PortfolioShowcase from "@/components/home/PortfolioShowcase";
 import TechStack from "@/components/home/TechStack";
 import CTASection from "@/components/home/CTASection";
+import TeamMoments from "@/components/Common/TeamMoments";
 
 
 const Home = () => {
@@ -40,8 +40,7 @@ const Home = () => {
       <TrustBadges />
       <CTASection />
       <Contact />
-      <Newsletter />
-
+      <TeamMoments />
     </>
   );
 };
