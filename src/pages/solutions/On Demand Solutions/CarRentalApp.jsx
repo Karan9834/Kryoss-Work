@@ -30,7 +30,7 @@ const CarRentalApp = () => {
     const panelFeatures = {
         "Customer App": {
             icon: User,
-            image: "/SolAps/car-user.png",
+            image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800",
             features: [
                 "Social Media Login", "Simple Car Listing", "Rating Feature",
                 "Location Delivery", "Modular Home Page", "Car Details",
@@ -39,7 +39,7 @@ const CarRentalApp = () => {
         },
         "Rental Owner": {
             icon: Key,
-            image: "/SolAps/car-owner.png",
+            image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
             features: [
                 "Account Verified", "Booking Management", "Track Vehicle Live",
                 "Live Availability", "Car Management", "Notifications & Emails",
@@ -48,7 +48,7 @@ const CarRentalApp = () => {
         },
         "Admin Panel": {
             icon: Shield,
-            image: "/SolAps/car-admin.png",
+            image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
             features: [
                 "Owner Management", "Vehicle Management", "Content Management",
                 "Review Management", "Transaction History", "Customer Support",
@@ -165,7 +165,7 @@ const CarRentalApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-slate-500/10 to-blue-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/car-hero.png"
+                                    src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800"
                                     alt="Car Rental App Development"
                                     width="2048"
                                     height="1365"
@@ -190,7 +190,7 @@ const CarRentalApp = () => {
                         >
                             <div className="absolute -inset-4 bg-slate-50 border border-slate-100 rounded-[2rem] transform -rotate-2" />
                             <img
-                                src="/SolAps/car-intro.png"
+                                src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
                                 alt="Car Rental App Solution"
                                 width="2048"
                                 height="1365"
@@ -337,7 +337,7 @@ const CarRentalApp = () => {
                                 alt={`${activeTab} panel`}
                                 className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
-                                onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                             />
                         </div>
 

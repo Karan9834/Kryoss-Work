@@ -30,7 +30,7 @@ const LaundryApp = () => {
     const panelFeatures = {
         "User App": {
             icon: User,
-            image: "/SolAps/laundry-user.png",
+            image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
             features: [
                 "One tap onboarding", "Select Service Type", "Quote for Laundry",
                 "Booking & Discount", "Secured Payment", "Promos and deals",
@@ -39,7 +39,7 @@ const LaundryApp = () => {
         },
         "Vendor App": {
             icon: ShoppingBag,
-            image: "/SolAps/laundry-vendor.png",
+            image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
             features: [
                 "Order Management", "Pickup Status", "Processing Status",
                 "Delivery Status", "Earning Reports", "Push Notifications",
@@ -48,7 +48,7 @@ const LaundryApp = () => {
         },
         "Admin Panel": {
             icon: Shield,
-            image: "/SolAps/laundry-admin.png",
+            image: "https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800",
             features: [
                 "Location Management", "Service Management", "Item Management",
                 "Offer Management", "Driver Management", "Payment Management",
@@ -165,7 +165,7 @@ const LaundryApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-cyan-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/laundry-hero.png"
+                                    src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
                                     alt="Laundry App Development"
                                     width="2048"
                                     height="1365"
@@ -190,7 +190,7 @@ const LaundryApp = () => {
                         >
                             <div className="absolute -inset-4 bg-blue-50 border border-blue-100 rounded-[2rem] transform -rotate-2" />
                             <img
-                                src="/SolAps/laundry-intro.png"
+                                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800"
                                 alt="Laundry App Solution"
                                 width="2048"
                                 height="1365"
@@ -337,7 +337,7 @@ const LaundryApp = () => {
                                 alt={`${activeTab} panel`}
                                 className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
-                                onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                             />
                         </div>
 
