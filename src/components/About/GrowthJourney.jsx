@@ -1,131 +1,155 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const timelineData = [
   {
     year: "2025",
-    desc: "Established White Label Fox as a global leader by advancing DevOps-driven, secure, ready-to-launch white-label platforms.",
-    images: [
-      "https://whitelabelfox.com/assets/images/about-us/2025.webp",
-    ],
+    badge: "Our Success Story",
+    title: "Global Leadership",
+    desc: "Established Kryoss Work as a global leader by advancing DevOps-driven, secure, and ready-to-launch white-label platforms across Europe and Asia.",
+    image: "https://whitelabelfox.com/assets/images/about-us/2025.webp",
   },
   {
     year: "2024",
-    desc: "Expanded our product ecosystem and strengthened partnerships with global startups.",
-    images: [
-      "https://whitelabelfox.com/assets/images/about-us/2024.webp",
-    ],
+    badge: "Scaling New Heights",
+    title: "Ecosystem Expansion",
+    desc: "Expanded our product ecosystem and strengthened partnerships with global startups, reaching a milestone of 100+ active enterprise clients.",
+    image: "https://whitelabelfox.com/assets/images/about-us/2024.webp",
   },
   {
     year: "2023",
-    desc: "Scaled operations and introduced multiple on-demand solutions for enterprises.",
-    images: ["https://whitelabelfox.com/assets/images/about-us/2023.webp",],
+    badge: "Innovation Phase",
+    title: "AI Integration",
+    desc: "Scaled operations and introduced multiple AI-driven on-demand solutions, streamlining business workflows for modern enterprises.",
+    image: "https://whitelabelfox.com/assets/images/about-us/2023.webp",
   },
   {
     year: "2022",
-    desc: "Reached major milestones with successful enterprise deployments.",
-    images: ["https://whitelabelfox.com/assets/images/about-us/2022.webp",],
+    badge: "Market Penetration",
+    title: "Enterprise Solutions",
+    desc: "Reached major milestones with successful enterprise deployments in the logistics and fintech sectors.",
+    image: "https://whitelabelfox.com/assets/images/about-us/2022.webp",
   },
   {
     year: "2021",
-    desc: "Introduced new digital product development services.",
-    images: ["https://whitelabelfox.com/assets/images/about-us/2021.webp",],
-  },
-  {
-    year: "2020",
-    desc: "Focused on global market expansion.",
-    images: ["https://whitelabelfox.com/assets/images/about-us/2020.webp",],
-  },
-  {
-    year: "2019",
-    desc: "Strengthened the development team and launched new platforms.",
-    images: ["https://whitelabelfox.com/assets/images/about-us/2019.webp",],
-  },
-  {
-    year: "2018",
+    badge: "The Beginning",
+    title: "Visionary Foundation",
     desc: "The journey started with a vision to build scalable digital solutions.",
-    images: ["https://whitelabelfox.com/assets/images/about-us/2018.webp",],
+    image: "https://whitelabelfox.com/assets/images/about-us/2018.webp",
   },
 ];
 
 const GrowthJourney = () => {
   const [active, setActive] = useState(0);
 
+  // 🔥 AUTO CHANGE EVERY 5s
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % timelineData.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const current = timelineData[active];
 
   return (
-    <section className="bg-gradient-to-r from-purple-900 to-purple-700 text-white py-24"
-    style={{backgroundImage: "url(https://whitelabelfox.com/assets/images/about-us/about-us-page-our-journey-bg-image.webp)",
-backgroundRepeat: "no-repeat"
-
-    }}
-    
+    <section
+      className="relative w-full lg:h-[calc(100vh-80px)] min-h-[550px] flex items-center bg-[#2d004b] py-10 overflow-hidden"
+      style={{
+        backgroundImage:
+          "url('https://whitelabelfox.com/assets/images/about-us/about-us-page-our-journey-bg-image.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
+      <div className="absolute inset-0 bg-purple-900/40 z-0"></div>
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex flex-col justify-center">
 
-        {/* Heading */}
-        <div className="mb-[-100px]">
-          <span className="border border-white px-4 py-1 rounded-full text-sm">
-            Our Success Story
+        {/* HEADER */}
+        <div className="mb-6">
+          <span className="inline-block border border-white/40 px-3 py-1 rounded-full text-xs font-medium text-white uppercase tracking-widest mb-2">
+            {current.badge}
           </span>
 
-          <h2 className="text-4xl font-bold mt-4">
-            Our <span className="text-orange-400">Growth Journey</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight">
+            Our <span className="text-orange-400 font-bold">Growth Journey</span>
           </h2>
 
-          <p className="text-gray-200 mt-3 max-w-xl">
-            Discover our key milestones and achievements as we evolve into a
-            leading digital solutions provider.
+          <p className="text-gray-300 mt-3 max-w-lg text-base md:text-lg leading-relaxed">
+            Discover our key milestones and achievements as we evolve into a leading digital solutions provider.
           </p>
         </div>
 
-        {/* Main Content */}
-        <div className="grid md:grid-cols-2 gap-20 items-center">
+        {/* MAIN CONTENT */}
+        <div className="grid md:grid-cols-2 gap-10 items-center">
 
-          {/* Left Text */}
-          <div>
-            <h1 className="text-9xl font-bold mb-6">{current.year}</h1>
-            <p className="text-gray-200 mb-6">{current.desc}</p>
+          {/* LEFT SIDE */}
+          <div className="relative flex flex-col justify-center">
+            
+            {/* YEAR */}
+            <h1 className="text-[80px] md:text-[110px] lg:text-[140px] font-extrabold text-white/10 leading-none -mb-4">
+              {current.year}
+            </h1>
+
+            {/* CONTENT */}
+            <div className="relative z-10">
+              <h3 className="text-2xl md:text-3xl font-semibold text-white mb-3">
+                {current.title}
+              </h3>
+
+              <p className="text-gray-200 text-base md:text-lg leading-relaxed max-w-md border-l-4 border-orange-400 pl-4">
+                {current.desc}
+              </p>
+            </div>
           </div>
 
-        
+          {/* RIGHT IMAGE */}
+          <div className="relative flex justify-center md:justify-end -mt-6">
+            <div className="relative p-2 bg-white shadow-2xl rounded transform rotate-2 max-w-[500px]">
 
-    {/* Images */}
-<div className="flex justify-center md:justify-end ">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-20 h-6 bg-white/40 border border-white/20"></div>
 
-  <img
-    src={current.images[0]}
-    alt=""
-    className="rounded-2xl shadow-2xl w-[420px] md:w-[520px] h-auto object-cover"
-  />
+              <div className="overflow-hidden rounded-sm">
+                <img
+                  src={current.image}
+                  alt={current.year}
+                  className="w-full h-auto max-h-[360px] object-cover"
+                />
+              </div>
 
-</div>
-
+              <div className="pt-2 text-center">
+                <p className="text-gray-800 text-sm font-semibold">
+                  Kryoss Work Pvt. Ltd.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
+        {/* TIMELINE */}
+        <div className="mt-10 relative">
+          <div className="h-[2px] bg-white/20 w-full absolute top-1/2"></div>
 
+          <div
+            className="h-[3px] bg-orange-400 absolute top-1/2 transition-all duration-500"
+            style={{
+              width: `${(active / (timelineData.length - 1)) * 100}%`,
+            }}
+          ></div>
 
-        {/* Timeline */}
-        <div className="mt-12 relative">
-
-          <div className="h-[2px] bg-gray-400 w-full absolute top-3"></div>
-
-          <div className="flex justify-between relative">
+          <div className="flex justify-between relative z-10">
             {timelineData.map((item, index) => (
               <button
                 key={index}
                 onClick={() => setActive(index)}
-                className={`w-6 h-6 rounded-full border-4 ${
-                  active === index
-                    ? "bg-orange-400 border-orange-400"
-                    : "bg-white border-gray-400"
-                }`}
-              ></button>
+                className={`w-6 h-6 rounded-full ${
+                  active === index ? "bg-orange-400 scale-125" : "bg-gray-300"
+                } transition`}
+              />
             ))}
           </div>
-
         </div>
-
       </div>
     </section>
   );

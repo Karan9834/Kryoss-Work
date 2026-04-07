@@ -8,7 +8,7 @@ const About = () => {
         {/* LEFT IMAGE */}
         <div className="bg-[#F6E7C9] rounded-[40px] p-6">
           <img
-            src="https://whitelabelfox.com/assets/images/about-us/about-us-page-about-us-image.webp"
+            src="/images/company/companyabout/_About%20Us%20(1).png"
             alt="White Label Fox Team"
             className="w-full h-auto rounded-[30px] object-cover"
           />
