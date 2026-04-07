@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Video, Globe, Zap, Users, ArrowRight } from 'lucide-react';
-import card1 from '../../assets/videolanding-img/videolandingcard1.png';
-import card2 from '../../assets/videolanding-img/videolandingcard2.png';
+import card1 from '../../assets/videolanding-img/image1.jpg';
+import card2 from '../../assets/videolanding-img/image.jpg';
 const VideoCardSection = () => {
    const cards = [
       {

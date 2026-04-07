@@ -21,9 +21,9 @@ import CustomerPage from '../pages/solutions/Custom Solutions/Customer-Relations
 import Hotel from '../pages/solutions/Custom Solutions/Hotel-Management/Hotel';
 import Restaurant from '../pages/solutions/Custom Solutions/Restaurant-Management/Restaurant';
 import Enterprise from '../pages/solutions/Custom Solutions/Enterprise-Management/Enterprise';
-import HospitalManagement from '../pages/solutions/Custom Solutions/HospitalManagement';
-import SchoolManagement from '../pages/solutions/Custom Solutions/SchoolManagement';
-import LearningManagement from '../pages/solutions/Custom Solutions/LearningManagement';
+import HospitalManagement from '../pages/solutions/Custom Solutions/Hospital-Management/HospitalManagement';
+import School from '../pages/solutions/Custom Solutions/School-Management/School';
+import Learning from '../pages/solutions/Custom Solutions/Learning-Management/Learning';
 import PharmacyManagement from '../pages/solutions/Custom Solutions/PharmacyManagement';
 import CryptoExchangeApp from '../pages/solutions/Custom Solutions/CryptoExchangeApp';
 import JobPortal from '../pages/solutions/Custom Solutions/Job-Portal/JobPortal';
@@ -80,8 +80,8 @@ export const SolutionRoutes = [
     <Route key="sol-restaurant-mgmt" path="solutions/restaurant-mgmt" element={<Restaurant />} />,
     <Route key="sol-erp" path="solutions/erp" element={<Enterprise />} />,
     <Route key="sol-hospital-mgmt" path="solutions/hospital-mgmt" element={<HospitalManagement />} />,
-    <Route key="sol-school-mgmt" path="solutions/school-mgmt" element={<SchoolManagement />} />,
-    <Route key="sol-lms" path="solutions/lms" element={<LearningManagement />} />,
+    <Route key="sol-school-mgmt" path="solutions/school-mgmt" element={<School />} />,
+    <Route key="sol-lms" path="solutions/lms" element={<Learning />} />,
     <Route key="sol-pharmacy-mgmt" path="solutions/pharmacy-mgmt" element={<PharmacyManagement />} />,
     <Route key="sol-crypto-exchange" path="solutions/crypto-exchange" element={<CryptoExchangeApp />} />,
 

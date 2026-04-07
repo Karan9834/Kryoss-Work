@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import prod3 from "../../assets/Products/prod3.png"
-import prod4 from "../../assets/Products/prod4.png"
+import prod3 from "../../assets/Products/finetech.png"
+import prod4 from "../../assets/Products/wealth.png"
 import {
   Shield,
   TrendingUp,
