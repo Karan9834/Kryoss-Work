@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Star, Eye, CheckCircle2, Sparkles } from "lucide-react";
-import prod5 from "../../assets/Products/prod5.png"
+import prod5 from "../../assets/Products/exp.jpg"
 import prod2 from "../../assets/SaasProduct/prod2.png";
 
 const ProductSection = () => {

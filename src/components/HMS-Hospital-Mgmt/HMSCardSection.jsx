@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import card1 from "@/assets/hmslanding-img/hmslandingcard1.png";
-import card2 from "@/assets/hmslanding-img/hmslandingcard2.png";
+import card1 from "@/assets/hmslanding-img/hms.jpg";
+import card2 from "@/assets/hmslanding-img/sh.jpg";
 
 
 const HMSCardSection = () => {

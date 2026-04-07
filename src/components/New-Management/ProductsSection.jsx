@@ -2,8 +2,8 @@
 import React from "react";
 import { Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import prod1 from "../../assets/News-Management/prod1.jpg";
-import prod2 from "../../assets/News-Management/prod2.jpg";
+import prod1 from "../../assets/News-Management/nova.jpg";
+import prod2 from "../../assets/News-Management/ess.jpg";
 
 const ProductsSection = () => {
   const navigate = useNavigate();

@@ -2,8 +2,8 @@
 import React from "react";
 import { Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import imsPro1 from "../../assets/IMS/prod1.jpg";
-import imsPro2 from "../../assets/IMS/prod2.jpg";
+import imsPro1 from "../../assets/IMS/posyl.jpg";
+import imsPro2 from "../../assets/IMS/wholesell.jpg";
 
 const IMSProductsSection = () => {
   const navigate = useNavigate();

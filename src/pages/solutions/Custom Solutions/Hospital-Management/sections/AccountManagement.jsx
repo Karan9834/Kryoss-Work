@@ -1,0 +1,71 @@
+import React from "react";
+import accountImg from "../../../../../assets/Hospital-Manage/account.png"; // update path
+
+const AccountManagement = () => {
+  return (
+    <section className="w-full bg-white py-20 font-['Inter']">
+
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+        {/* LEFT IMAGE */}
+        <div className="relative flex justify-center h-full">
+
+          {/* Glow */}
+          <div className="absolute w-[250px] h-[250px] bg-blue-200 blur-3xl rounded-full"></div>
+
+          {/* Image */}
+          <div className="relative z-10 w-full max-w-[500px] h-full flex items-stretch">
+            <img
+              src={accountImg}
+              alt="Account Management"
+              className="w-full h-full object-cover rounded-2xl shadow-xl border border-gray-100"
+            />
+          </div>
+
+        </div>
+
+        {/* RIGHT CONTENT */}
+        <div className="flex flex-col justify-center">
+
+          {/* 🔥 PILL */}
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium mb-4 border border-blue-100 shadow-sm w-fit">
+            <span className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></span>
+            Finance Module
+          </div>
+
+          {/* HEADING */}
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <span className="text-blue-600">Account</span> Management
+          </h2>
+
+          {/* DESCRIPTION */}
+          <p className="text-gray-600 mb-6 leading-relaxed">
+            A powerful account management system designed to streamline financial operations across hospitals, ensuring accuracy, transparency, and efficiency in handling billing, payroll, and financial records.
+          </p>
+
+          {/* FEATURES */}
+          <ul className="space-y-3">
+            {[
+              "Manage and download invoices for purchases and billing",
+              "Full access to income, expenses, and financial records",
+              "Efficient payroll management and salary tracking",
+              "Monitor income streams and manage payments",
+              "Real-time financial updates and notifications",
+              "Centralized control over accounting operations",
+            ].map((item, index) => (
+              <li key={index} className="flex items-start gap-3 text-gray-600 text-sm">
+                <span className="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></span>
+                {item}
+              </li>
+            ))}
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+};
+
+export default AccountManagement;

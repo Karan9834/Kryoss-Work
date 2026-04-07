@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Truck, Snowflake, Map, Search, ArrowRight } from 'lucide-react';
-import card1 from '../../assets/transportlanding-img/transportlandingcard1.png';
-import card2 from '../../assets/transportlanding-img/transportlandingcard2.png';
+import card1 from '../../assets/transportlanding-img/flower.jpg';
+import card2 from '../../assets/transportlanding-img/towy.jpg';
 
 const LogisticsCardSection = () => {
    const cards = [

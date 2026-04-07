@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import card1Img from '../../assets/erp-img/erplandingcard1.png';
-import card2Img from '../../assets/erp-img/erplandingcard2.png';
+import card1Img from '../../assets/erp-img/edu.jpg';
+import card2Img from '../../assets/erp-img/multi.jpg';
 
 const ErpCardSection = () => {
    const cards = [

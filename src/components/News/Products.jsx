@@ -2,8 +2,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Sparkles } from "lucide-react";
-import prod1 from "../../assets/Products/prod2.png"
-import prod2 from "../../assets/Products/prod1.png"
+import prod1 from "../../assets/Products/platfrom.png"
+import prod2 from "../../assets/Products/Tech daily.jpg"
 
 const products = [
   {
