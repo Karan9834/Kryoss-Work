@@ -293,13 +293,13 @@ const MedicineDeliveryApp = () => {
                         <div ref={leftRef} className="grid grid-cols-2 gap-3 min-h-[400px]">
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(0, 2).map((item, idx) => (
-                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-green-200 hover:border-green-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer">
-                                        <div className="flex gap-2">
+                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-green-200 hover:border-green-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
                                             </span>
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-green-600 transition-colors">{item}</h4>
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-green-600 transition-colors leading-tight">{item}</h4>
                                                 <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">Seamless user interaction</p>
                                             </div>
                                         </div>
@@ -308,13 +308,13 @@ const MedicineDeliveryApp = () => {
                             </div>
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(2, 4).map((item, idx) => (
-                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-green-200 hover:border-green-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer">
-                                        <div className="flex gap-2">
+                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-green-200 hover:border-green-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
                                             </span>
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-green-600 transition-colors">{item}</h4>
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-green-600 transition-colors leading-tight">{item}</h4>
                                                 <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">Optimized workflow</p>
                                             </div>
                                         </div>
@@ -336,13 +336,13 @@ const MedicineDeliveryApp = () => {
                         <div className="grid grid-cols-2 gap-3 min-h-[400px]">
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(4, 6).map((item, idx) => (
-                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-green-200 hover:border-green-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer">
-                                        <div className="flex gap-2">
+                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-green-200 hover:border-green-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
                                             </span>
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-green-600 transition-colors">{item}</h4>
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-green-600 transition-colors leading-tight">{item}</h4>
                                                 <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">Robust tool implementation</p>
                                             </div>
                                         </div>
@@ -351,13 +351,13 @@ const MedicineDeliveryApp = () => {
                             </div>
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(6, 8).map((item, idx) => (
-                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-green-200 hover:border-green-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer">
-                                        <div className="flex gap-2">
+                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-green-200 hover:border-green-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
                                             </span>
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-green-600 transition-colors">{item}</h4>
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-green-600 transition-colors leading-tight">{item}</h4>
                                                 <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">Advanced ecosystem control</p>
                                             </div>
                                         </div>

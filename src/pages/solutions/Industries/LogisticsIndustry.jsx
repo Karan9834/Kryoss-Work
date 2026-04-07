@@ -285,14 +285,14 @@ const LogisticsIndustry = () => {
                                 {panelFeatures[activeTab].features.slice(0, 2).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                                     >
-                                        <div className="flex gap-2">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5" />
                                             </span>
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors">
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
                                                     {item}
                                                 </h4>
                                                 <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
@@ -307,14 +307,14 @@ const LogisticsIndustry = () => {
                                 {panelFeatures[activeTab].features.slice(2, 4).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                                     >
-                                        <div className="flex gap-2">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5" />
                                             </span>
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors">
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
                                                     {item}
                                                 </h4>
                                                 <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
@@ -344,14 +344,14 @@ const LogisticsIndustry = () => {
                                 {panelFeatures[activeTab].features.slice(4, 6).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                                     >
-                                        <div className="flex gap-2">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5" />
                                             </span>
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors">
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
                                                     {item}
                                                 </h4>
                                                 <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
@@ -366,14 +366,14 @@ const LogisticsIndustry = () => {
                                 {panelFeatures[activeTab].features.slice(6, 8).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                                     >
-                                        <div className="flex gap-2">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5" />
                                             </span>
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors">
+                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
                                                     {item}
                                                 </h4>
                                                 <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">

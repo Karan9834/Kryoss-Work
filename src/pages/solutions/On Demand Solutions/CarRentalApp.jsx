@@ -288,9 +288,9 @@ const CarRentalApp = () => {
                                 {panelFeatures[activeTab].features.slice(0, 2).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-slate-200 hover:border-slate-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                                        className="group bg-white p-3 rounded-xl border-2 border-slate-200 hover:border-slate-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                                     >
-                                        <div className="flex gap-2">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-slate-900 mt-0.5" />
                                             </span>
@@ -310,9 +310,9 @@ const CarRentalApp = () => {
                                 {panelFeatures[activeTab].features.slice(2, 4).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-slate-200 hover:border-slate-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                                        className="group bg-white p-3 rounded-xl border-2 border-slate-200 hover:border-slate-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                                     >
-                                        <div className="flex gap-2">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-slate-900 mt-0.5" />
                                             </span>
@@ -347,9 +347,9 @@ const CarRentalApp = () => {
                                 {panelFeatures[activeTab].features.slice(4, 6).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-slate-200 hover:border-slate-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                                        className="group bg-white p-3 rounded-xl border-2 border-slate-200 hover:border-slate-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                                     >
-                                        <div className="flex gap-2">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-slate-900 mt-0.5" />
                                             </span>
@@ -369,9 +369,9 @@ const CarRentalApp = () => {
                                 {panelFeatures[activeTab].features.slice(6, 8).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-slate-200 hover:border-slate-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                                        className="group bg-white p-3 rounded-xl border-2 border-slate-200 hover:border-slate-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                                     >
-                                        <div className="flex gap-2">
+                                        <div className="flex gap-2 w-full">
                                             <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                                                 <CheckCircle className="w-5 h-5 text-slate-900 mt-0.5" />
                                             </span>

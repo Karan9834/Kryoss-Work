@@ -339,14 +339,14 @@ const FeatureSection = () => {
               {leftCol1.map((item, idx) => (
                 <div
                   key={idx}
-                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                 >
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 w-full">
                     <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                       {item.icon}
                     </span>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
+                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight">
                         {item.title}
                       </h4>
                       <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
@@ -361,14 +361,14 @@ const FeatureSection = () => {
               {leftCol2.map((item, idx) => (
                 <div
                   key={idx}
-                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                 >
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 w-full">
                     <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                       {item.icon}
                     </span>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
+                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight">
                         {item.title}
                       </h4>
                       <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
@@ -397,14 +397,14 @@ const FeatureSection = () => {
               {rightCol1.map((item, idx) => (
                 <div
                   key={idx}
-                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                 >
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 w-full">
                     <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                       {item.icon}
                     </span>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
+                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight">
                         {item.title}
                       </h4>
                       <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
@@ -419,14 +419,14 @@ const FeatureSection = () => {
               {rightCol2.map((item, idx) => (
                 <div
                   key={idx}
-                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
                 >
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 w-full">
                     <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
                       {item.icon}
                     </span>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
+                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight">
                         {item.title}
                       </h4>
                       <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
