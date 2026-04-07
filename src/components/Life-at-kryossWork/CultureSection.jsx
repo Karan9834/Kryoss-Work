@@ -44,7 +44,7 @@ const CultureSection = () => {
     <section 
       className="py-14 bg-gradient-to-b from-gray-50 to-white overflow-hidden"
       style={{
-        backgroundImage: "url(https://whitelabelfox.com/assets/images/life-at-whitelabelfox/life-at-white-label-fox-main-slider-bg.webp)",
+        backgroundImage: "url(https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-main-slider-bg.webp)",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center"

@@ -11,7 +11,7 @@ We can keep your private information safe and do not use any of the information 
 
 This policy knows about how we collect your information and keep safe from the others.
 
-White Label Fox respects the privacy rights of our clients and employees and has always been committed to protecting all personal information in our possession or control. We have adopted this Privacy Policy to guide how we collect, use, and disclose the personal information we require in the course of operating our business.
+Kryoss Work respects the privacy rights of our clients and employees and has always been committed to protecting all personal information in our possession or control. We have adopted this Privacy Policy to guide how we collect, use, and disclose the personal information we require in the course of operating our business.
 
 Information We Collect
 • Information provided by you to communicate or purchase our product.
@@ -46,11 +46,11 @@ We are not supported to inform you that we can change our privacy policy. You ca
 
   refund: {
     title: "Refund & Cancellation Policy",
-    content: `At White Label Fox, our Refund/Cancellation Policy is based on standardized practices that strictly follow industrial norms. We put up with fair assessment practices and all the refund claims are processed with vigilant parameters to make sure the decisions are justified and mutually agreeable.
+    content: `At Kryoss Work, our Refund/Cancellation Policy is based on standardized practices that strictly follow industrial norms. We put up with fair assessment practices and all the refund claims are processed with vigilant parameters to make sure the decisions are justified and mutually agreeable.
 
 Our policies are treated with appropriate measures to settle different claims, originating from different assortments of needs and various business situations.
 
-White Label Fox offer the best mobile application which will help you to expand your business with a digital platform. Ou all the product is running in the best way and we offer the support to success your application.
+Kryoss Work offer the best mobile application which will help you to expand your business with a digital platform. Ou all the product is running in the best way and we offer the support to success your application.
 
 Our goal is to deliver the best services when we deliver our services to you. Before you purchase our services you can know about our refund and cancellation policy.
 
@@ -66,7 +66,7 @@ If you want to purchase our services, you need to understand our refund policy. 
 Changes
 If any circumstances, we can change or modify our refund or cancellation policy. We consider to you acknowledge our policy changes and allow you to continue the use our services.
 
-White Label Fox may at any time, without notice to you and in its sole discretion, amend this policy periodically. You are expected to check the policy from time to time for updates. For more information on our Refund Policy, contact us at sales@whitelabelfox.com.`
+Kryoss Work may at any time, without notice to you and in its sole discretion, amend this policy periodically. You are expected to check the policy from time to time for updates. For more information on our Refund Policy, contact us at sales@whitelabelfox.com.`
   },
 
   terms: {
@@ -77,9 +77,9 @@ We can keep your private information safe and do not use any of the information 
 
 This policy knows about how we collect your information and keep safe from the others.
 
-White Label Fox respects the privacy rights of our clients and employees and has always been committed to protecting all personal information in our possession or control. We have adopted this Privacy Policy to guide how we collect, use, and disclose the personal information we require in the course of operating our business.
+Kryoss Work respects the privacy rights of our clients and employees and has always been committed to protecting all personal information in our possession or control. We have adopted this Privacy Policy to guide how we collect, use, and disclose the personal information we require in the course of operating our business.
 
-White Label Fox policy is to at all times adhere to the requirements of the law and to be responsive to our clients and employees who expect us to respect their privacy and protect their personal information.
+Kryoss Work policy is to at all times adhere to the requirements of the law and to be responsive to our clients and employees who expect us to respect their privacy and protect their personal information.
 
 Information We Collect
 • Information required for communication or purchasing services.
@@ -99,24 +99,24 @@ We know that protecting the privacy of our clients and employees is important. A
 
   disclaimer: {
     title: "Trademark & Brand Usage Disclaimer",
-    content: `White Label Fox Pvt. Ltd. is an independent software development company offering white-label and custom app development services. Any references to third-party brands, companies, products, or services—including but not limited to Uber, Gojek, Grab, Zomato, Swiggy, Rapido, Amazon, JustEat, OLA, Binance, Coinbase, WazirX, OpenSea, and similar platforms—are made strictly for descriptive, illustrative, and explanatory purposes only.
+    content: `Kryoss Work Pvt. Ltd. is an independent software development company offering white-label and custom app development services. Any references to third-party brands, companies, products, or services—including but not limited to Uber, Gojek, Grab, Zomato, Swiggy, Rapido, Amazon, JustEat, OLA, Binance, Coinbase, WazirX, OpenSea, and similar platforms—are made strictly for descriptive, illustrative, and explanatory purposes only.
 
-All trademarks, registered trademarks, logos, and brand names are the property of their respective owners. The use of such names on this website does not imply any affiliation, association, endorsement, partnership, or sponsorship between White Label Fox Pvt. Ltd. and the respective trademark holders.
+All trademarks, registered trademarks, logos, and brand names are the property of their respective owners. The use of such names on this website does not imply any affiliation, association, endorsement, partnership, or sponsorship between Kryoss Work Pvt. Ltd. and the respective trademark holders.
 
 Brand names are referenced solely to help users understand the functionality, workflow, and business models of the solutions we develop.
 
 Trademark Objections
-White Label Fox Pvt. Ltd. respects the intellectual property rights of all organizations and trademark owners. If any brand owner believes that the use of their trademark, name, or reference on this website is objectionable, inaccurate, or requires modification or removal, they are encouraged to contact us directly.
+Kryoss Work Pvt. Ltd. respects the intellectual property rights of all organizations and trademark owners. If any brand owner believes that the use of their trademark, name, or reference on this website is objectionable, inaccurate, or requires modification or removal, they are encouraged to contact us directly.
 
 Upon receiving a valid request or notice, we will review the matter promptly and take appropriate action, including updating or removing the referenced content where necessary, in accordance with applicable laws and fair-use principles.
 
 No Affiliation or Endorsement
-White Label Fox Pvt. Ltd. does not claim any ownership, rights, or control over any third-party brands mentioned on this website. We are not affiliated with, authorized by, endorsed by, or officially connected to any such organizations, whether directly or indirectly.
+Kryoss Work Pvt. Ltd. does not claim any ownership, rights, or control over any third-party brands mentioned on this website. We are not affiliated with, authorized by, endorsed by, or officially connected to any such organizations, whether directly or indirectly.
 
 Our products are independently developed, and all software architecture, source code, design, and user interfaces are created by our in-house team unless otherwise stated.
 
 White-Label Solution Clarification
-All applications and platforms developed by White Label Fox Pvt. Ltd. are delivered as white-label solutions, meaning:
+All applications and platforms developed by Kryoss Work Pvt. Ltd. are delivered as white-label solutions, meaning:
 
 • Clients receive full branding control
 • No third-party copyrighted materials are used
@@ -124,7 +124,7 @@ All applications and platforms developed by White Label Fox Pvt. Ltd. are delive
 • References to popular platforms are purely conceptual and non-replicative
 
 NDA, Data Security & Deployment
-All client projects are protected under Non-Disclosure Agreements (NDA). Applications are delivered on client-owned servers and accounts, including app store deployments where applicable. White Label Fox Pvt. Ltd. does not claim ownership of client data, intellectual property, or deployed applications.
+All client projects are protected under Non-Disclosure Agreements (NDA). Applications are delivered on client-owned servers and accounts, including app store deployments where applicable. Kryoss Work Pvt. Ltd. does not claim ownership of client data, intellectual property, or deployed applications.
 
 We follow commercially reasonable security practices to ensure the confidentiality, integrity, and protection of client information throughout the development and delivery process.
 
@@ -150,7 +150,7 @@ const Policies = () => {
 
         {/* Heading */}
         <h2 className="text-4xl font-bold text-center mb-4">
-          White Label Fox <span className="text-orange-400">Policies & Terms</span>
+          Kryoss Work <span className="text-orange-400">Policies & Terms</span>
         </h2>
 
         {/* Paragraph */}

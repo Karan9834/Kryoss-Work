@@ -23,7 +23,7 @@ const EmpoweringGrowth = () => {
 
             {/* Paragraph */}
             <p className="text-gray-600 mb-6">
-              At White Label Fox, we drive business success with cutting-edge
+              At Kryoss Work, we drive business success with cutting-edge
               solutions and a strong global presence. Our expertise and
               dedication fuel long-term growth.
             </p>

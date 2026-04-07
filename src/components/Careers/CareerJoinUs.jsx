@@ -24,7 +24,7 @@ const CareerJoinUs = () => {
                     </p>
 
                     <p className="text-gray-600 mb-8">
-                        Take the next step in your career with White Label Fox! Fill out the form below to apply for our current openings.
+                        Take the next step in your career with Kryoss Work! Fill out the form below to apply for our current openings.
                     </p>
 
                     {/* FORM */}

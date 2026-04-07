@@ -67,7 +67,7 @@ const WhyUs = () => {
 
                 {/* HEADING */}
                 <h2 className="text-center text-[32px] md:text-[42px] leading-[44px] md:leading-[56px] font-semibold text-[#2f2f2f] mb-6">
-                    Why White Label Fox as a Taxi App Development Company?
+                    Why Kryoss Work as a Taxi App Development Company?
                 </h2>
 
                 {/* SUB TEXT */}
@@ -75,7 +75,7 @@ const WhyUs = () => {
                     Choosing the right taxi app development company is a big decision, as
                     they help you build a long-term business. We create a taxi booking app
                     like Uber for every business owner who wants more than a packaged
-                    script. Check what sets White Label Fox apart:
+                    script. Check what sets Kryoss Work apart:
                 </p>
 
                 {/* CARDS GRID */}

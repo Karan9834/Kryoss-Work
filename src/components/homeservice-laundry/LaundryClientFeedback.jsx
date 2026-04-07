@@ -10,7 +10,7 @@
 //         name: "Acharya",
 //         image: feedback1,
 //         desc:
-//             "M.R. Acharya from Nepal praises White Label Fox for seamless service, fast support, and highly recommends us for online business solutions.",
+//             "M.R. Acharya from Nepal praises Kryoss Work for seamless service, fast support, and highly recommends us for online business solutions.",
 //     },
 //     {
 //         name: "pablo",

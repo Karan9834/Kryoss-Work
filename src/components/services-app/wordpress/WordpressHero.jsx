@@ -26,7 +26,7 @@ const Hero = () => {
                         </h1>
 
                         <p className="text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
-                            Partner with White Label Fox and deliver world-class WordPress
+                            Partner with Kryoss Work and deliver world-class WordPress
                             websites fully under your brand. From custom theme development
                             and WooCommerce stores to Headless WordPress, we handle the
                             build while you own the relationship. 100% white label,

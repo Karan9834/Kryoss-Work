@@ -4,16 +4,16 @@ const reviews = [
   {
     name: "Mr. Sene",
     date: "13 Jan 2026 | Rating 4.0",
-    title: "Mr. Sene on Choosing White Label Fox for His Uber Clone Project",
+    title: "Mr. Sene on Choosing Kryoss Work for His Uber Clone Project",
     logo: "https://whitelabelfox.com/assets/images/testimonial/HSI.webp",
-    desc: "I worked with White Label Fox Pvt. Ltd on a ride-hailing project in Africa. The team is very serious, professional, and always attentive. They take the time to understand the project's needs and are constantly available to provide solutions and move things forward. Communication is clear and follow-up is rigorous. I recommend them without hesitation.",
+    desc: "I worked with Kryoss Work Pvt. Ltd on a ride-hailing project in Africa. The team is very serious, professional, and always attentive. They take the time to understand the project's needs and are constantly available to provide solutions and move things forward. Communication is clear and follow-up is rigorous. I recommend them without hesitation.",
   },
   {
     name: "Mr. Stan",
     date: "14 May 2025",
-    title: "Mr. Stan shares his experience with White Label Fox for his Fox-Drive (inDriver Clone App)",
+    title: "Mr. Stan shares his experience with Kryoss Work for his Fox-Drive (inDriver Clone App)",
     logo: "https://whitelabelfox.com/assets/images/testimonial/mr-stan-icon.webp",
-    desc: "Working with White Label Fox Pvt. Ltd to develop our ride-hailing system has been one of the best decisions we've ever made. From day one, their team went above and beyond to understand our vision, guide us through every step, and deliver a platform that exceeded our expectations. The level of support, professionalism, and dedication they showed throughout the entire process was simply unmatched.They didn’t just build a system — they became true partners in our journey. Their technical expertise, attention to detail, and commitment to quality helped bring our vision to life in ways we couldn’t have imagined. Even when challenges arose, WLF was right there with quick solutions and a positive attitude.If you’re looking for a team that genuinely cares about your success and delivers results, look no further than White Label Fox Pvt. Ltd. We are beyond grateful for their work and proud to have collaborated with such an exceptional company.Highly, highly recommended!",
+    desc: "Working with Kryoss Work Pvt. Ltd to develop our ride-hailing system has been one of the best decisions we've ever made. From day one, their team went above and beyond to understand our vision, guide us through every step, and deliver a platform that exceeded our expectations. The level of support, professionalism, and dedication they showed throughout the entire process was simply unmatched.They didn’t just build a system — they became true partners in our journey. Their technical expertise, attention to detail, and commitment to quality helped bring our vision to life in ways we couldn’t have imagined. Even when challenges arose, WLF was right there with quick solutions and a positive attitude.If you’re looking for a team that genuinely cares about your success and delivers results, look no further than Kryoss Work Pvt. Ltd. We are beyond grateful for their work and proud to have collaborated with such an exceptional company.Highly, highly recommended!",
   },
   {
     name: "Mr. Jacques Rocca Serra",
@@ -39,9 +39,9 @@ const reviews = [
   {
     name: "Developer EagleSouq",
     date: "3 September 2023",
-    title: "Reliable, responsive, and committed-White Label Fox is the best choice for any project!",
+    title: "Reliable, responsive, and committed-Kryoss Work is the best choice for any project!",
     logo: "https://whitelabelfox.com/assets/images/testimonial/Developer-EagleSouq.webp",
-    desc: "White Label Fox one of the best companies that I dealt with from my location here in the Middle East, full commitment at the time of project delivery, very fast maintenance for any new requirements, a support team and immediate communication with the appropriate methods of communication.I would recommend anyone to work with this White Label Fox.",
+    desc: "Kryoss Work one of the best companies that I dealt with from my location here in the Middle East, full commitment at the time of project delivery, very fast maintenance for any new requirements, a support team and immediate communication with the appropriate methods of communication.I would recommend anyone to work with this Kryoss Work.",
   },
    {
     name: "Eric Eric",
@@ -55,7 +55,7 @@ const reviews = [
     date: "3 September 2023",
     title: "Professional team, quick problem-solving, and top-notch designs. A pleasure working with them!",
     logo: "https://whitelabelfox.com/assets/images/testimonial/from-hom.webp",
-    desc: "White Label Fox, the best team and service! It was a pleasure to have them handling our project, it was so smooth, the team is professional and experts. They easily solve any obstacle or problem within hours it will be solved. They got awesome products with great UI and UX designs. Thank you so much for the effort you made to make this project alive.",
+    desc: "Kryoss Work, the best team and service! It was a pleasure to have them handling our project, it was so smooth, the team is professional and experts. They easily solve any obstacle or problem within hours it will be solved. They got awesome products with great UI and UX designs. Thank you so much for the effort you made to make this project alive.",
   },
 ];
 

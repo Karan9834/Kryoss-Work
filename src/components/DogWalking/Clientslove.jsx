@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Acharya",
     img: "https://randomuser.me/api/portraits/men/32.jpg",
-    text: "M.R. Acharya from Nepal praises White Label Fox for seamless service, fast support, and highly recommends us for online business solutions."
+    text: "M.R. Acharya from Nepal praises Kryoss Work for seamless service, fast support, and highly recommends us for online business solutions."
   },
   {
     name: "pablo",

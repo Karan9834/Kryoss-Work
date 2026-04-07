@@ -41,7 +41,7 @@ const LaundryAbout = () => {
                         <p className="mb-6 leading-relaxed">
                             An on-demand dry cleaning app simplifies laundry services by
                             enabling customers to book and receive doorstep service
-                            effortlessly. White Label Fox offers a scalable solution with a
+                            effortlessly. Kryoss Work offers a scalable solution with a
                             user app, provider app, and admin panel to streamline your
                             business. Customize your laundry app with all the essential
                             features to meet your unique requirements.
@@ -56,7 +56,7 @@ const LaundryAbout = () => {
                         </p>
 
                         <p className="mb-6 leading-relaxed">
-                            At White Label Fox, we specialize in offering scalable ready-made
+                            At Kryoss Work, we specialize in offering scalable ready-made
                             on-demand laundry app solutions for businesses looking to tap into
                             this growing market. Our Uber-like laundry service app offers a
                             seamless user experience with three essential components.

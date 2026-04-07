@@ -39,7 +39,7 @@ export default function RelatedBlogs() {
             {/* Text */}
             <div className="p-6">
               <p className="text-xs text-gray-500 mb-2">
-                WHITE LABEL FOX
+                Kryoss Work
               </p>
 
               <h3 className="text-lg font-semibold leading-snug">

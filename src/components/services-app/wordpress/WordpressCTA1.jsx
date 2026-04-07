@@ -26,7 +26,7 @@ const CTA1 = () => {
 
                             <p className="text-white/90 max-w-lg mx-auto lg:mx-0 mb-8">
 
-                                Partner with White Label Fox as your dedicated WordPress
+                                Partner with Kryoss Work as your dedicated WordPress
                                 development team. We deliver under your brand, meet your
                                 deadlines, and protect your client relationships every
                                 single time.

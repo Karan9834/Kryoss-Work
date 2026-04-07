@@ -16,7 +16,7 @@ const VisionMission = () => {
           </h2>
 
           <p className="text-gray-600 max-w-2xl mx-auto">
-            At White Label Fox, we are committed to driving digital
+            At Kryoss Work, we are committed to driving digital
             transformation with innovation, scalability, and excellence.
             Our vision and mission guide us toward impactful solutions.
           </p>

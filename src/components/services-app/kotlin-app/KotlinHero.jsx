@@ -20,7 +20,7 @@ const KotlinHero = () => {
 
                         <p className="mt-6 text-gray-300 text-lg leading-relaxed max-w-xl">
                             Empower your business with premium, rebrandable mobile solutions
-                            designed for rapid deployment. White Label Fox is a leading white
+                            designed for rapid deployment. Kryoss Work is a leading white
                             label Kotlin app development company, providing high-performance,
                             Kotlin Multiplatform solutions that allow you to launch your own
                             branded platform across Android, iOS, and Web in record time.

@@ -20,7 +20,7 @@ const Hero = () => {
         {/* Heading */}
         <h2 className="text-4xl font-bold text-center mb-4">
         <span className="text-orange-400">  User Sitemap  </span>– Quick Access to All
-           White Label Fox 
+           Kryoss Work 
           On-Demand App Solutions
         </h2>
 

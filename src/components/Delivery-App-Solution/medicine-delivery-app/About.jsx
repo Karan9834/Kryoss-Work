@@ -41,7 +41,7 @@ const About = () => {
                                     The healthcare industry is one of the fastest-growing sectors, and the appearance of online medicine delivery apps have become a game changer. Instead of visiting a physical pharmacy, users can order medicines conveniently from the comfort of their homes.
                                 </p>
                                 <p>
-                                    At White Label Fox, we provide end-to-end pharmacy delivery app development solutions that serve the evolving needs of pharmacies and healthcare businesses. Our ready-to-use medicine delivery app includes a customer app, driver app, store app and a web panel for controlling operations.
+                                    At Kryoss Work, we provide end-to-end pharmacy delivery app development solutions that serve the evolving needs of pharmacies and healthcare businesses. Our ready-to-use medicine delivery app includes a customer app, driver app, store app and a web panel for controlling operations.
                                 </p>
                                 <p>
                                     Whether you are a pharmacy owner looking to digitize your business or an entrepreneur looking to launch an on-demand medicine delivery platform, our customized medicine delivery app development solutions can help.

@@ -44,7 +44,7 @@ const OurEdge = () => {
 
                         <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
                             <span className="text-orange-400">
-                                Why White Label Fox
+                                Why Kryoss Work
                             </span>{" "}
                             Is the Right White Label Laravel Development Partner
                         </h2>

@@ -51,7 +51,7 @@ const HandymanAbout = () => {
             </p>
 
             <p>
-              White Label Fox’s Handyman clone app is a complete solution for businesses to manage customer requests, assign tasks, track progress, and process payments seamlessly.
+              Kryoss Work’s Handyman clone app is a complete solution for businesses to manage customer requests, assign tasks, track progress, and process payments seamlessly.
             </p>
 
             <p>

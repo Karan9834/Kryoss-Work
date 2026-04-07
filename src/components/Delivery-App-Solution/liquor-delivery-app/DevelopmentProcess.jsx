@@ -47,7 +47,7 @@ const DevelopmentProcess = () => {
           </h2>
 
           <p className="text-gray-600">
-       At White Label Fox, we make launching your alcohol delivery business fast and easy. Our development process is designed to ensure quick deployment and a smooth experience from start to finish. Here’s how we bring your app to life:
+       At Kryoss Work, we make launching your alcohol delivery business fast and easy. Our development process is designed to ensure quick deployment and a smooth experience from start to finish. Here’s how we bring your app to life:
           </p>
 
         </div>

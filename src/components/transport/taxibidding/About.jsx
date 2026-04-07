@@ -60,7 +60,7 @@ const AboutSection = () => {
             {/* Content */}
             <div className="space-y-5 text-[#4b5563] leading-relaxed text-[15px]">
               <p>
-                At White Label Fox, we deploy customized solutions for clients
+                At Kryoss Work, we deploy customized solutions for clients
                 like you who aim to revolutionize the taxi and courier industries.
                 Our feature-rich inDriver clone app is your gateway to unlocking
                 growth opportunities in the digital space.

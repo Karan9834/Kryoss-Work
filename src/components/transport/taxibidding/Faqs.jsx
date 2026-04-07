@@ -22,17 +22,17 @@ const faqs = [
       "The cost depends on customization level, feature additions, platform support (Android, iOS, Web), and third-party integrations. However, compared to building from scratch, a clone solution significantly reduces time and development expenses."
   },
   {
-    question: "How Does White Label Fox Protect My Business Data?",
+    question: "How Does Kryoss Work Protect My Business Data?",
     answer:
       "We implement enterprise-level security protocols including encrypted databases, secure payment gateways, role-based access control, server-side validation, and secure authentication layers to protect business and user data."
   },
   {
-    question: "Does White Label Fox Add More Features to inDriver Like App on My Requirement?",
+    question: "Does Kryoss Work Add More Features to inDriver Like App on My Requirement?",
     answer:
       "Absolutely. Our solution is fully customizable. We can integrate additional modules, payment systems, geo-location services, advanced analytics, or any feature specific to your business model."
   },
   {
-    question: "Will White Label Fox Support Me with an App like inDriver Update?",
+    question: "Will Kryoss Work Support Me with an App like inDriver Update?",
     answer:
       "Yes, we provide ongoing technical support and version updates. Our team ensures compatibility with the latest OS versions, bug fixes, feature improvements, and security patches."
   },

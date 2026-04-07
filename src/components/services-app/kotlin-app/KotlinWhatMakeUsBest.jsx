@@ -22,7 +22,7 @@ const KotlinWhatMakeUsBest = () => {
                         What Makes Us the Best?
                     </div>
                     <h2 className="text-3xl lg:text-4xl font-semibold leading-snug max-w-4xl mx-auto">
-                        Why Partner with White Label Fox for{" "}
+                        Why Partner with Kryoss Work for{" "}
                         <span className="text-orange-500">
                             White Label Kotlin App Development Services?
                         </span>

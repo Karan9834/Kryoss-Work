@@ -20,7 +20,7 @@ const AboutUs = () => {
                     <h2 className="mx-auto mb-12 max-w-[900px] text-center text-[28px] font-semibold leading-snug text-[#2b2b2b] sm:text-[34px] md:text-[40px]">
                         Build Your Own{" "}
                         <span className="text-[#f5a623]">On-Demand Tutor App Like Uber</span>{" "}
-                        – White Label Fox
+                        – Kryoss Work
                     </h2>
 
                     {/* CONTENT */}
@@ -52,7 +52,7 @@ const AboutUs = () => {
                             </p>
 
                             <p className="mb-6">
-                                At White Label Fox, our experienced development team specializes in
+                                At Kryoss Work, our experienced development team specializes in
                                 creating custom tutoring apps like Uber. We offer a fully tailored
                                 solution, including the user app, tutor app, super admin web panel,
                                 and tutor web panel. Our on-demand tutor clone script includes all
@@ -76,7 +76,7 @@ const AboutUs = () => {
                             </p>
 
                             <p>
-                                Choose White Label Fox for a stress-free development journey. With
+                                Choose Kryoss Work for a stress-free development journey. With
                                 our quick delivery timelines, feature-packed scripts, and
                                 white-label solutions, you’ll have a market-ready app that drives
                                 your business forward and delivers measurable results.

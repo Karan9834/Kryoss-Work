@@ -53,7 +53,7 @@ const ErpAbout = () => {
                         </p>
 
                         <p className="mb-6 leading-relaxed">
-                            At White Label Fox, we specialize in offering scalable,
+                            At Kryoss Work, we specialize in offering scalable,
                             custom-built ERP solutions for enterprises looking to
                             modernize their infrastructure. Our system offers a
                             seamless experience with powerful administrative controls.

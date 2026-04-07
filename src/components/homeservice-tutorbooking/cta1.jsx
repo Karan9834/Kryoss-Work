@@ -20,7 +20,7 @@ const CTA1 = () => {
 
                             <p className="mb-8 max-w-[520px] text-[15px] leading-relaxed text-white/90 sm:text-[16px]">
                                 Don’t miss out on the opportunity to create your own Uber for tutors.
-                                With White Label Fox, you can have a fully customizable tutoring app
+                                With Kryoss Work, you can have a fully customizable tutoring app
                                 up and running in no time.
                             </p>
 

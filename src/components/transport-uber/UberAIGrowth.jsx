@@ -68,7 +68,7 @@ const UberAIGrowth = () => {
 
                     {/* DESC */}
                     <p className="text-[#d0d0d0] text-[16px] leading-[26px] max-w-xl">
-                        As a known taxi app development company, White Label Fox develops
+                        As a known taxi app development company, Kryoss Work develops
                         AI-powered solutions that help you operate smarter. No more relying
                         on manual decisions, as our platform uses real-time data and
                         intelligence to deliver an improved experience for everyone

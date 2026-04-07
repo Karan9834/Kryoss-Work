@@ -47,7 +47,7 @@ const About = () => {
             </p>
 
             <p>
-              At White Label Fox, we provide a complete on-demand beauty app solution. Our platform includes a user app, service provider app, and an admin panel, all customized to fit your business needs.
+              At Kryoss Work, we provide a complete on-demand beauty app solution. Our platform includes a user app, service provider app, and an admin panel, all customized to fit your business needs.
             </p>
 
           </div>
@@ -124,7 +124,7 @@ export default About;
 
 //             <p>
 //               Starting a carpooling business requires a reliable, scalable, and
-//               user-friendly solution. At White Label Fox, we offer a fully
+//               user-friendly solution. At Kryoss Work, we offer a fully
 //               customizable carpooling app script designed to meet the specific
 //               needs of your business.
 //             </p>

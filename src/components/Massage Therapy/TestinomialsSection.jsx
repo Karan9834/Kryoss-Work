@@ -5,7 +5,7 @@ const TestinomialsSection = () => {
     {
       name: "Acharya",
       image: "https://whitelabelfox.com/assets/images/what-our-client-says/DP-Acharya.webp",
-      desc: "M.R. Acharya from Nepal praises White Label Fox for seamless service, fast support, and highly recommends us for online business solutions..",
+      desc: "M.R. Acharya from Nepal praises Kryoss Work for seamless service, fast support, and highly recommends us for online business solutions..",
     },
     {
       name: "pablo",

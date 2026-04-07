@@ -40,7 +40,7 @@ const SnowDevelopment = () => {
                 </h2>
 
                 <p className="text-gray-600 mt-6 max-w-4xl mx-auto text-base md:text-lg">
-                    At White Label Fox, we follow a streamlined, four-stage process to create your Uber Snow Plow Service App Solution. From gathering requirements to testing and launching, we ensure a seamless app development experience tailored to your business needs.
+                    At Kryoss Work, we follow a streamlined, four-stage process to create your Uber Snow Plow Service App Solution. From gathering requirements to testing and launching, we ensure a seamless app development experience tailored to your business needs.
                 </p>
 
             </div>

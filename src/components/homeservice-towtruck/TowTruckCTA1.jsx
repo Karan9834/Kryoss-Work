@@ -19,7 +19,7 @@ const CTA1 = () => {
                             </h2>
 
                             <p className="text-gray-200 mb-8 text-lg">
-                                Launch your own Uber for tow trucks app with White Label Fox.
+                                Launch your own Uber for tow trucks app with Kryoss Work.
                                 Get a fast, reliable solution tailored to your business.
                                 Contact us to get started today!
                             </p>

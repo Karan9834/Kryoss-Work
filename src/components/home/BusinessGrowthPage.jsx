@@ -10,16 +10,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 const years = [
   { year: "2025",
-     img: "https://whitelabelfox.com/assets/images/life-at-whitelabelfox/life-at-white-label-fox-2025.webp",
+     img: "https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-2025.webp",
      bg: "from-yellow-200 to-orange-200"
      },
-  { year: "2024", img: "https://whitelabelfox.com/assets/images/life-at-whitelabelfox/life-at-white-label-fox-2024.webp",bg: "from-green-200 to-emarald-300" },
-  { year: "2023", img: "https://whitelabelfox.com/assets/images/life-at-whitelabelfox/life-at-white-label-fox-2023.webp",bg: "from-purple-200 to-pink-200" },
-  { year: "2022", img: "https://whitelabelfox.com/assets/images/life-at-whitelabelfox/life-at-white-label-fox-2022.webp",bg: "from-blue-200 to-cyan-200" },
-  { year: "2021", img: "https://whitelabelfox.com/assets/images/life-at-whitelabelfox/life-at-white-label-fox-2021.webp",bg: "from-orange-200 to-red-200" },
-  { year: "2020", img: "https://whitelabelfox.com/assets/images/life-at-whitelabelfox/life-at-white-label-fox-2020.webp",bg: "from-teal-200 to-green-200" },
-  { year: "2019", img: "https://whitelabelfox.com/assets/images/life-at-whitelabelfox/life-at-white-label-fox-2019.webp",bg: "from-indigo-200 to-purple-200" },
-  { year: "2018", img: "https://whitelabelfox.com/assets/images/life-at-whitelabelfox/life-at-white-label-fox-2018.webp",bg: "from-pink-200 to-rose-200" }
+  { year: "2024", img: "https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-2024.webp",bg: "from-green-200 to-emarald-300" },
+  { year: "2023", img: "https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-2023.webp",bg: "from-purple-200 to-pink-200" },
+  { year: "2022", img: "https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-2022.webp",bg: "from-blue-200 to-cyan-200" },
+  { year: "2021", img: "https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-2021.webp",bg: "from-orange-200 to-red-200" },
+  { year: "2020", img: "https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-2020.webp",bg: "from-teal-200 to-green-200" },
+  { year: "2019", img: "https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-2019.webp",bg: "from-indigo-200 to-purple-200" },
+  { year: "2018", img: "https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-2018.webp",bg: "from-pink-200 to-rose-200" }
 ];
 
 
@@ -146,7 +146,7 @@ const BusinessGrowthPage = () => {
  <section className="py-14 "
     
     style={{
-        backgroundImage: "url(https://whitelabelfox.com/assets/images/life-at-whitelabelfox/life-at-white-label-fox-main-slider-bg.webp)",
+        backgroundImage: "url(https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-main-slider-bg.webp)",
         backgroundRepeat: "no-repeat"
     }}
     >
@@ -178,7 +178,7 @@ const BusinessGrowthPage = () => {
       {/* Full Width Image */}
       <div className="w-full">
         <img
-          src="https://whitelabelfox.com/assets/images/life-at-whitelabelfox/life-at-white-label-fox-main-slider-graphic.webp"
+          src="https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-main-slider-graphic.webp"
           alt="Work Culture"
           className="w-full h-[500px] object-cover"
         />

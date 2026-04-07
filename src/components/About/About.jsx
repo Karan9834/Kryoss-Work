@@ -9,7 +9,7 @@ const About = () => {
         <div className="bg-[#F6E7C9] rounded-[40px] p-6">
           <img
             src="/images/company/companyabout/_About%20Us%20(1).png"
-            alt="White Label Fox Team"
+            alt="Kryoss Work Team"
             className="w-full h-auto rounded-[30px] object-cover"
           />
         </div>
@@ -24,7 +24,7 @@ const About = () => {
 
           {/* Heading */}
           <h2 className="text-4xl font-bold leading-snug mb-6">
-            White Label Fox:{" "}
+            Kryoss Work:{" "}
             <span className="text-orange-500">
               Setting the Pace to Build Next-gen Solutions
             </span>
@@ -32,7 +32,7 @@ const About = () => {
 
           {/* Paragraphs */}
           <p className="text-gray-600 mb-4 leading-relaxed">
-            With 8+ years of experience in digital solutions, White Label Fox
+            With 8+ years of experience in digital solutions, Kryoss Work
             has established itself as a trusted technology partner. We combine
             innovation and expertise to deliver scalable solutions that align
             with evolving business needs.

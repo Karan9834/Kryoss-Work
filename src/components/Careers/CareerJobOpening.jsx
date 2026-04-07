@@ -42,7 +42,7 @@ const CareerJobOpening = () => {
                     </p>
 
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                        Discover exciting career opportunities at White Label Fox! Check out
+                        Discover exciting career opportunities at Kryoss Work! Check out
                         our latest job openings and find the perfect role that matches your
                         skills and passion.
                     </p>

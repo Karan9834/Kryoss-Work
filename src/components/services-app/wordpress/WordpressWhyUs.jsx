@@ -40,13 +40,13 @@ const WhyUs = () => {
                         <h2 className="text-3xl md:text-4xl font-semibold">
                             Explore Why Agencies &{" "}
                             <span className="text-orange-400">
-                                Businesses Choose White Label Fox
+                                Businesses Choose Kryoss Work
                             </span>
                         </h2>
 
                         <p className="text-white/80 mt-4 max-w-3xl mx-auto">
                             There's no shortage of WordPress development companies. Here's
-                            what makes White Label Fox the partner agencies, startups, and
+                            what makes Kryoss Work the partner agencies, startups, and
                             enterprises keep coming back to.
                         </p>
 
