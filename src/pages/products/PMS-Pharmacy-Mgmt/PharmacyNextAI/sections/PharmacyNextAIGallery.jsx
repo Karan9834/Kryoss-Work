@@ -1,10 +1,10 @@
 import React from "react";
-import gallery1 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery1.jpg";
-import gallery2 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery2.jpg";
-import gallery3 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery3.jpg";
-import gallery4 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery4.jpg";
-import gallery5 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery5.jpg";
-import gallery6 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery6.jpg";
+import gallery1 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery1.png";
+import gallery2 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery2.png";
+import gallery3 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery3.png";
+import gallery4 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery4.png";
+import gallery5 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery5.png";
+import gallery6 from "@/assets/pharmacynextaipms-img/pharmacynextaipmsgallery6.png";
 
 const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
 
@@ -30,7 +30,7 @@ const PharmacyNextAIGallery = () => {
                     {galleryImages.map((img, index) => (
                         <div key={index}
                             className="aspect-video bg-white border-4 sm:border-8 border-slate-50 rounded-[2rem] sm:rounded-[3rem] shadow-2xl hover:shadow-cyan-500/10 hover:scale-105 transition-all duration-500 overflow-hidden group">
-                            <img src={img} alt={`Gallery ${index + 1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:rotate-1 group-hover:scale-110" />
+                            <img src={img} alt={`Gallery ${index + 1}`} className="w-full h-full object-cover transition-transform duration-700  group-hover:scale-110" />
                         </div>
                     ))}
                 </div>

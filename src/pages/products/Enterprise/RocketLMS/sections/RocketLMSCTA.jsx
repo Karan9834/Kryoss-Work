@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRight, Activity } from "lucide-react";
 
 const RocketLMSCTA = () => {
-    const demoUrl = "https://preview.codecanyon.net/item/rocket-lms-learning-management-system/full_screen_preview/29161726";
+    const demoUrl = "https://preview.codecanyon.net/item/rocket-lms-learning-management-academy-script/full_screen_preview/33120735";
 
     return (
         <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden"

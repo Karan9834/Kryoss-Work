@@ -35,7 +35,19 @@ const CRMFeaturesAdvanced = () => {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
 
         {/* LEFT SIDE (SCROLLABLE CARDS) */}
-        <div className="h-[600px] overflow-y-auto pr-4 space-y-6">
+        <div className="h-[600px] overflow-y-auto pr-4 space-y-6"
+          style={{
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
+        >
+          <style>
+            {`
+                  .no-scrollbar::-webkit-scrollbar {
+                    display: none;
+                  }
+                `}
+          </style>
 
           {features.map((item, index) => (
             <div

@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom';
 
 import React from 'react';
 
-import card1Img from '../../../../../assets/lms-img/lmslandingcard1.png';
-import card2Img from '../../../../../assets/lms-img/lmslandingcard2.png';
+import card1Img from "@/assets/lms-img/lmslandingcard1.jpg";
+import card2Img from "@/assets/lms-img/lmslandingcard2.jpg";
+
 
 const LmsCardSection = () => {
    const cards = [
@@ -50,12 +51,12 @@ const LmsCardSection = () => {
                      {/* CLICKABLE IMAGE */}
                      <Link
                         to={card.path}
-                        className="cursor-pointer group block overflow-hidden rounded-xl shadow-md group-hover:shadow-xl transition duration-300"
+                        className="cursor-pointer group block"
                      >
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full h-full border-[5px] border-transparent group-hover:border-violet-500 transition duration-300 group-hover:scale-[1.03] object-cover"
+                           className="w-full rounded-xl border-[5px] border-transparent group-hover:border-violet-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
                         />
                      </Link>
 

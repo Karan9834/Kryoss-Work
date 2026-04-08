@@ -3,12 +3,12 @@ import { ArrowRight, Activity, ShieldPlus, Zap, BookOpen } from 'lucide-react';
 import mentorHero from '@/assets/mentorlms-img/mentorlmshero.png';
 
 const MentorLMSHero = () => {
-    const demoUrl = "https://preview.codecanyon.net/item/mentor-learning-management-system-lms/full_screen_preview/56883214";
+    const demoUrl = "https://preview.codecanyon.net/item/mentor-lms-learning-management-system/full_screen_preview/59092700";
 
     return (
         <section className="relative w-full min-h-screen lg:min-h-[90vh] overflow-hidden flex items-center py-12 lg:py-0"
             style={{ background: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 40%, #c026d3 70%, #9333ea 100%)" }}>
-            
+
             {/* Animated background orbs */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-[-10%] right-[-5%] w-[700px] h-[700px] rounded-full opacity-[0.05] bg-fuchsia-400 blur-3xl" />

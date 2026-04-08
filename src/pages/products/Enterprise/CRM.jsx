@@ -2,6 +2,7 @@ import React from 'react'
 import CRMHero from '../../../components/Enterprise-Product/CRM/CRMHero'
 import CRMAbout from '../../../components/Enterprise-Product/CRM/CRMAbout'
 import CRMFeatures from '../../../components/Enterprise-Product/CRM/CRMFeatures'
+import CRMCardSection from '../../../components/Enterprise-Product/CRM/CRMCardSection'
 import CRMCTA from '../../../components/Enterprise-Product/CRM/CRMCTA'
 import CRMDashboard from '../../../components/Enterprise-Product/CRM/CRMDashboard'
 import CRMLaunchWhy from '../../../components/Enterprise-Product/CRM/CRMLaunchWhy'
@@ -16,6 +17,7 @@ const CRM = () => {
     <CRMHero/>
     <CRMAbout/>
     <CRMFeatures/>
+    <CRMCardSection/>
     <CRMCTA/>
     <CRMDashboard/>
     <CRMLaunchWhy/>

@@ -1,11 +1,11 @@
 import React from "react";
 import { Download, Users, Star, ArrowRight, Sparkles, BookOpen, Clock, ShieldCheck } from "lucide-react";
-import gallery1 from "@/assets/inilabssms-img/inilabssmsgallery1.jpeg";
-import gallery2 from "@/assets/inilabssms-img/inilabssmsgallery2.jpg";
-import gallery3 from "@/assets/inilabssms-img/inilabssmsgallery3.jpg";
-import gallery4 from "@/assets/inilabssms-img/inilabssmsgallery4.jpg";
-import gallery5 from "@/assets/inilabssms-img/inilabssmsgallery5.jpg";
-import gallery6 from "@/assets/inilabssms-img/inilabssmsgallery6.jpg";
+import gallery1 from "@/assets/inilabssms-img/inilabssmsgallery1.png";
+import gallery2 from "@/assets/inilabssms-img/inilabssmsgallery2.png";
+import gallery3 from "@/assets/inilabssms-img/inilabssmsgallery3.png";
+import gallery4 from "@/assets/inilabssms-img/inilabssmsgallery4.png";
+import gallery5 from "@/assets/inilabssms-img/inilabssmsgallery5.png";
+import gallery6 from "@/assets/inilabssms-img/inilabssmsgallery6.png";
 
 const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
 

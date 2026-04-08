@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 // Images will be added by the user later
-import card1 from '@/assets/smslanding-img/smslandingcard1.png'; // Placeholder
-import card2 from '@/assets/smslanding-img/smslandingcard2.png'; // Placeholder
+import card1 from '@/assets/smslanding-img/smslandingcard1.jpg'; // Placeholder
+import card2 from '@/assets/smslanding-img/smslandingcard2.jpg'; // Placeholder
 
 const SMSCardSection = () => {
    const cards = [
