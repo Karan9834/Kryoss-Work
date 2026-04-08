@@ -101,6 +101,8 @@ import TennPati from '../pages/products/Gaming-Products/Casino-Games/TennPati';
 import Kasino from '../pages/products/Gaming-Products/Casino-Games/Kasino/Kasino';
 import BetPro from '../pages/products/Gaming-Products/Fantasy/BetPro/BetPro';
 import BetLab from '../pages/products/Gaming-Products/Fantasy/BetLab/BetLab';
+import HRMSol from '../pages/products/HRM-Sol1/HRMSol'
+import BdTask from '../pages/products/BdTask/BdTask';
 
 const AppRoutes = () => {
     return (
@@ -236,6 +238,8 @@ const AppRoutes = () => {
 <Route path="/products/casino/kasino" element={<Kasino />} />
 <Route path="/products/fantasy/betpro" element={<BetPro />} />
 <Route path="/products/fantasy/betlab" element={<BetLab />} />
+<Route path='/products/home-service/HRM' element={<HRMSol/>}/>
+<Route path="/products/bdtask" element={<BdTask/>}/>
                 {/* 404 */}
 
                 <Route path="*" element={<NotFound />} />

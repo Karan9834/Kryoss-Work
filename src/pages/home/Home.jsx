@@ -6,7 +6,7 @@ import AISolutions from "@/components/home/AISolutions";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import Stats from "@/components/home/Stats";
 import About from "@/components/home/About";
-import Testimonials from "@/components/home/Testimonials";
+import Testimonial from "../../components/Common/Testimonial";
 import Team from "@/components/home/Team";
 import CTABanner from "@/components/home/CTABanner";
 import FAQ from "@/components/home/FAQ";
@@ -17,13 +17,14 @@ import PortfolioShowcase from "@/components/home/PortfolioShowcase";
 import TechStack from "@/components/home/TechStack";
 import CTASection from "@/components/home/CTASection";
 import TeamMoments from "@/components/Common/TeamMoments";
-
+import WorkApproach from "../../components/home/WorkApproach";
 
 const Home = () => {
   return (
     <>
       <Hero />
       {/* <Services /> */}
+      <WorkApproach />
       <About />
       <PickSection />
       <PortfolioShowcase />
@@ -33,7 +34,11 @@ const Home = () => {
       <WhyChooseUs />
       <TechStack />
       {/* <Stats /> */}
-      <Testimonials />
+      <Testimonial
+        theme="orange"
+        bgGradient="from-orange-50/50 via-amber-50/30 to-white"
+        cardGradient="from-orange-500 to-amber-500"
+      />
       {/* <Team /> */}
       {/* <CTABanner /> */}
       <FAQ />

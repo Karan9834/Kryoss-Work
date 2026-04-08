@@ -11,6 +11,7 @@ import HRMLaunchWhy from '../../../components/Enterprise-Product/HRM/HRMLaunchWh
 import TechStack from '../../../components/PestControl/PestTech'
 import Contact from '../../../components/Salon & Beauty/Contact'
 import HRMNewsletter from '../../../components/Enterprise-Product/HRM/HRMNewsletter'
+import ProductsSection from '../../../components/Enterprise-Product/HRM/ProductsSection'
 
 
 const HRM = () => {
@@ -19,6 +20,7 @@ const HRM = () => {
     <HrmHero/>
     <HRMAbout/>
     <HRMFeatures/>
+    <ProductsSection/>
     <HRMCTA1/>
     <StickyFeatures/>
     <HowItWorks/>
