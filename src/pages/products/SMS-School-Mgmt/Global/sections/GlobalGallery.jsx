@@ -1,10 +1,10 @@
 import React from "react";
-import gallery1 from "@/assets/globalsms-img/globalsmsgallery1.jpg";
-import gallery2 from "@/assets/globalsms-img/globalsmsgallery2.jpg";
-import gallery3 from "@/assets/globalsms-img/globalsmsgallery3.jpg";
-import gallery4 from "@/assets/globalsms-img/globalsmsgallery4.jpg";
-import gallery5 from "@/assets/globalsms-img/globalsmsgallery5.jpg";
-import gallery6 from "@/assets/globalsms-img/globalsmsgallery6.jpg";
+import gallery1 from "@/assets/globalsms-img/globalsmsgallery1.png";
+import gallery2 from "@/assets/globalsms-img/globalsmsgallery2.png";
+import gallery3 from "@/assets/globalsms-img/globalsmsgallery3.png";
+import gallery4 from "@/assets/globalsms-img/globalsmsgallery4.png";
+import gallery5 from "@/assets/globalsms-img/globalsmsgallery5.png";
+import gallery6 from "@/assets/globalsms-img/globalsmsgallery6.png";
 
 const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
 

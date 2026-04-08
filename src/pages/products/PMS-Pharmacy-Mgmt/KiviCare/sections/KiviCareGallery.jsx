@@ -1,10 +1,10 @@
 import React from "react";
-import gallery1 from "@/assets/kivicarepms-img/kivicarepmsgallery1.jpg";
-import gallery2 from "@/assets/kivicarepms-img/kivicarepmsgallery2.jpg";
-import gallery3 from "@/assets/kivicarepms-img/kivicarepmsgallery3.jpg";
-import gallery4 from "@/assets/kivicarepms-img/kivicarepmsgallery4.jpg";
-import gallery5 from "@/assets/kivicarepms-img/kivicarepmsgallery5.jpg";
-import gallery6 from "@/assets/kivicarepms-img/kivicarepmsgallery6.jpg";
+import gallery1 from "@/assets/kivicarepms-img/kivicarepmsgallery1.webp";
+import gallery2 from "@/assets/kivicarepms-img/kivicarepmsgallery2.webp";
+import gallery3 from "@/assets/kivicarepms-img/kivicarepmsgallery3.webp";
+import gallery4 from "@/assets/kivicarepms-img/kivicarepmsgallery4.png";
+import gallery5 from "@/assets/kivicarepms-img/kivicarepmsgallery5.png";
+import gallery6 from "@/assets/kivicarepms-img/kivicarepmsgallery6.png";
 
 const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
 
@@ -30,7 +30,7 @@ const KiviCareGallery = () => {
                     {galleryImages.map((img, index) => (
                         <div key={index}
                             className="aspect-video bg-white border-4 sm:border-8 md:border-[12px] border-slate-50 rounded-[2rem] sm:rounded-[3rem] shadow-2xl hover:shadow-sky-500/10 hover:scale-105 transition-all duration-500 overflow-hidden group">
-                            <img src={img} alt={`Gallery ${index + 1}`} className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:rotate-1" />
+                            <img src={img} alt={`Gallery ${index + 1}`} className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" />
                         </div>
                     ))}
                 </div>

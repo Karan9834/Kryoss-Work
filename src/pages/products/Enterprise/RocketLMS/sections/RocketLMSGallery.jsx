@@ -1,10 +1,10 @@
 import React from "react";
-import gal1 from "@/assets/rocketlms-img/rocketlmsgallery1.jpg";
-import gal2 from "@/assets/rocketlms-img/rocketlmsgallery2.jpg";
-import gal3 from "@/assets/rocketlms-img/rocketlmsgallery3.jpg";
-import gal4 from "@/assets/rocketlms-img/rocketlmsgallery4.jpg";
-import gal5 from "@/assets/rocketlms-img/rocketlmsgallery5.jpg";
-import gal6 from "@/assets/rocketlms-img/rocketlmsgallery6.jpg";
+import gal1 from "@/assets/rocketlms-img/rocketlmsgallery1.avif";
+import gal2 from "@/assets/rocketlms-img/rocketlmsgallery2.avif";
+import gal3 from "@/assets/rocketlms-img/rocketlmsgallery3.avif";
+import gal4 from "@/assets/rocketlms-img/rocketlmsgallery4.avif";
+import gal5 from "@/assets/rocketlms-img/rocketlmsgallery5.avif";
+import gal6 from "@/assets/rocketlms-img/rocketlmsgallery6.avif";
 
 const RocketLMSGallery = () => {
     const galleryImages = [gal1, gal2, gal3, gal4, gal5, gal6];

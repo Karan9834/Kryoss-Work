@@ -3,12 +3,12 @@ import { ArrowRight, Zap, Target, Rocket, Activity } from 'lucide-react';
 import rocketHero from '@/assets/rocketlms-img/rocketlmshero.jpg';
 
 const RocketLMSHero = () => {
-    const demoUrl = "https://preview.codecanyon.net/item/rocket-lms-learning-management-system/full_screen_preview/29161726";
+    const demoUrl = "https://preview.codecanyon.net/item/rocket-lms-learning-management-academy-script/full_screen_preview/33120735";
 
     return (
         <section className="relative w-full min-h-screen lg:min-h-[90vh] overflow-hidden flex items-center py-12 lg:py-0"
             style={{ background: "linear-gradient(135deg, #991b1b 0%, #ea580c 40%, #7c2d12 70%, #111827 100%)" }}>
-            
+
             {/* Animated background orbs */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-[-10%] right-[-5%] w-[700px] h-[700px] rounded-full opacity-[0.05] bg-orange-400 blur-3xl" />

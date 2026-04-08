@@ -1,10 +1,10 @@
 import React from "react";
-import gal1 from "@/assets/mentorlms-img/mentorlmsgallery1.jpg";
-import gal2 from "@/assets/mentorlms-img/mentorlmsgallery2.jpg";
-import gal3 from "@/assets/mentorlms-img/mentorlmsgallery3.png";
-import gal4 from "@/assets/mentorlms-img/mentorlmsgallery4.png";
-import gal5 from "@/assets/mentorlms-img/mentorlmsgallery5.jpg";
-import gal6 from "@/assets/mentorlms-img/mentorlmsgallery6.jpg";
+import gal1 from "@/assets/mentorlms-img/mentorlmsgallery1.webp";
+import gal2 from "@/assets/mentorlms-img/mentorlmsgallery2.webp";
+import gal3 from "@/assets/mentorlms-img/mentorlmsgallery3.webp";
+import gal4 from "@/assets/mentorlms-img/mentorlmsgallery4.webp";
+import gal5 from "@/assets/mentorlms-img/mentorlmsgallery5.webp";
+import gal6 from "@/assets/mentorlms-img/mentorlmsgallery6.webp";
 
 const MentorLMSGallery = () => {
     const galleryImages = [gal1, gal2, gal3, gal4, gal5, gal6];

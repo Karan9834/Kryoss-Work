@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 // Images will be added by the user later
-import card1 from '@/assets/emslanding-img/emslandingcard1.png';
+import card1 from '@/assets/emslanding-img/emslandingcard1.jpg';
 import card2 from '@/assets/emslanding-img/emslandingcard2.png';
 
 const EMSCardSection = () => {
@@ -15,9 +15,9 @@ const EMSCardSection = () => {
          image: card1
       },
       {
-         title: "Festivals & Concerts",
-         desc: "High-volume ticketing, cashless payments, and complete festival operations.",
-         path: "/products/enterprise/ems/festivals-concerts", // Add specific paths later if needed
+         title: "Event Next",
+         desc: "Multivendor event management, intelligent ticketing, and revolutionary access control.",
+         path: "/products/enterprise/ems/event-next", // Add specific paths later if needed
          image: card2
       }
    ];

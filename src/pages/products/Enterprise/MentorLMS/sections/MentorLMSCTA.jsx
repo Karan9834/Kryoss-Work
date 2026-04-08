@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRight, Activity } from "lucide-react";
 
 const MentorLMSCTA = () => {
-    const demoUrl = "https://preview.codecanyon.net/item/mentor-learning-management-system-lms/full_screen_preview/56883214";
+    const demoUrl = "https://preview.codecanyon.net/item/mentor-lms-learning-management-system/full_screen_preview/59092700";
 
     return (
         <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden"

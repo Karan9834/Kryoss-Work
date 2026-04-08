@@ -81,7 +81,7 @@ import SMSLanding from "../pages/products/SMS-School-Mgmt/SMSLanding";
 import PMSLanding from "../pages/products/PMS-Pharmacy-Mgmt/PMSLanding";
 
 import CorporateEventsPage from "../pages/products/EMS-Event-Mgmt/CorporateEvents/CorporateEventsPage";
-import FestivalsConcertsPage from "../pages/products/EMS-Event-Mgmt/FestivalsConcerts/FestivalsConcertsPage";
+import EventNextPage from "../pages/products/EMS-Event-Mgmt/EventNext/EventNextPage";
 import FineDiningCasualPage from "../pages/products/RMS-Restaurant-Mgmt/FineDiningCasual/FineDiningCasualPage";
 import QsrFastCasualPage from "../pages/products/RMS-Restaurant-Mgmt/QsrFastCasual/QsrFastCasualPage";
 import IMSPager from "../pages/products/IMS/IMSPager";
@@ -98,6 +98,9 @@ import AcadifyEduERPPage from "../pages/products/Enterprise/AcadifyEduERP/Acadif
 import MultistoreERPPage from "../pages/products/Enterprise/MultistoreERP/MultistoreERPPage";
 import MentorLMSPage from "../pages/products/Enterprise/MentorLMS/MentorLMSPage";
 import RocketLMSPage from "../pages/products/Enterprise/RocketLMS/RocketLMSPage";
+import CRMProPage from "../pages/products/Enterprise/CRM/CRMPro/CRMProPage";
+import OnestCRMPage from "../pages/products/Enterprise/CRM/OnestCRM/OnestCRMPage";
+
 export const ProductRoutes = [
     <Route key="products-showcase" path="products" element={<ProductsShowcase />} />,
     <Route key="products-details" path="products/:id" element={<ProductDetailsPlaceholder />} />,
@@ -172,7 +175,7 @@ export const ProductRoutes = [
     <Route key="rms" path="/products/enterprise/rms" element={<RMSLanding />} />,
 
     <Route key="ems-corporate-events" path="/products/enterprise/ems/corporate-events" element={<CorporateEventsPage />} />,
-    <Route key="ems-festivals-concerts" path="/products/enterprise/ems/festivals-concerts" element={<FestivalsConcertsPage />} />,
+    <Route key="ems-event-next" path="/products/enterprise/ems/event-next" element={<EventNextPage />} />,
     <Route key="rms-fine-dining" path="/products/enterprise/rms/fine-dining" element={<FineDiningCasualPage />} />,
     <Route key="rms-qsr-fast-casual" path="/products/enterprise/rms/qsr-fast-casual" element={<QsrFastCasualPage />} />,
 
@@ -188,6 +191,8 @@ export const ProductRoutes = [
     <Route key="erp-multistore" path="/products/enterprise/erp/multistore-erp" element={<MultistoreERPPage />} />,
     <Route key="lms-mentor" path="/products/enterprise/lms/mentor-lms" element={<MentorLMSPage />} />,
     <Route key="lms-rocket" path="/products/enterprise/lms/rocket-lms" element={<RocketLMSPage />} />,
+    <Route key="crm-pro" path="/products/enterprise/crm/crm-pro" element={<CRMProPage />} />,
+    <Route key="onest-crm" path="/products/enterprise/crm/onest-crm" element={<OnestCRMPage />} />,
 
 
     <Route key="news" path="/products/prime/news-magazine" element={<NewsPage />} />,
