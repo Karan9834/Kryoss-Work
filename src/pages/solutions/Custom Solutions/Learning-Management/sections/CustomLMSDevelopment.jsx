@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 const CustomLMSDevelopment = () => {
@@ -69,9 +70,9 @@ const CustomLMSDevelopment = () => {
           </p>
           
           {/* BUTTON */}
-          <button className="mt-8 px-6 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-normal rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+          <Link to="/company/contact" className="mt-8 px-6 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-normal rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             Get Started →
-          </button>
+          </Link>
           
         </div>
         

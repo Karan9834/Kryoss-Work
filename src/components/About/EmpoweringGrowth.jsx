@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const EmpoweringGrowth = () => {
@@ -48,9 +49,9 @@ const EmpoweringGrowth = () => {
             </ul>
 
             {/* Button */}
-            <button className="bg-orange-500 text-white px-6 py-3 rounded-full w-fit hover:bg-orange-600 transition">
+            <Link to="/company/contact" className="bg-orange-500 text-white px-6 py-3 rounded-full w-fit hover:bg-orange-600 transition">
               Connect With Us
-            </button>
+            </Link>
 
           </div>
 

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -35,7 +36,7 @@ const CRMFinalCTA = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
 
             {/* PRIMARY */}
-            <button className="
+            <Link to="/company/contact" className="
               bg-white text-blue-700 
               px-7 py-3 rounded-full font-semibold
               flex items-center justify-center gap-2
@@ -43,7 +44,7 @@ const CRMFinalCTA = () => {
             ">
               Get Started
               <ArrowRight size={18} />
-            </button>
+            </Link>
 
             {/* SECONDARY */}
             <Link to="/company/contact" className="

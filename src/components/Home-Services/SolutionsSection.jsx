@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useRef } from "react";
 import {
   motion,
@@ -278,9 +279,9 @@ const SolutionsSection = () => {
               <span className="text-sm text-gray-600">Trusted by 10,000+ homeowners</span>
             </div>
             <div className="w-px h-6 bg-gray-200" />
-            <button className="text-sm font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent hover:gap-2 transition-all">
+            <Link to="/company/contact" className="text-sm font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent hover:gap-2 transition-all">
               Get Started →
-            </button>
+            </Link>
           </div>
         </motion.div>
       </div>

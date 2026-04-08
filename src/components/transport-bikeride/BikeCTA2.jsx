@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import React from 'react';
 import cta2 from "../../assets/transport-bikeride-img/cta2.webp"
 const BikeCTA2 = () => {

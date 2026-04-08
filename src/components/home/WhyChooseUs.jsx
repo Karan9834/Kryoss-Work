@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const reasons = [
@@ -48,16 +49,16 @@ const reasons = [
 export default function WhyChooseUs() {
   return (
     <section className="relative bg-gradient-to-br from-amber-50/50 via-orange-50/30 to-white overflow-hidden">
-      
+
       {/* 🔥 SUBTLE ORANGE STRIPE CONTAINER - TOP */}
       <div className="absolute top-0 left-0 w-full h-28 bg-gradient-to-r from-orange-500/15 to-amber-500/15" />
-      
+
       {/* Top Stripe Inner Glow - Subtle */}
       <div className="absolute top-28 left-0 w-full h-16 bg-gradient-to-b from-orange-500/8 to-transparent" />
 
       {/* 🔥 SUBTLE ORANGE STRIPE CONTAINER - BOTTOM */}
       <div className="absolute bottom-0 left-0 w-full h-28 bg-gradient-to-r from-orange-500/15 to-amber-500/15" />
-      
+
       {/* Bottom Stripe Inner Glow - Subtle */}
       <div className="absolute bottom-28 left-0 w-full h-16 bg-gradient-to-t from-orange-500/8 to-transparent" />
 
@@ -65,19 +66,19 @@ export default function WhyChooseUs() {
       <div className="absolute inset-0">
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#f9731608_1px,transparent_1px),linear-gradient(to_bottom,#f9731608_1px,transparent_1px)] bg-[size:48px_48px]" />
-        
+
         {/* Soft gradient orbs */}
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-orange-200/30 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-amber-200/30 rounded-full blur-3xl" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-100/20 rounded-full blur-3xl" />
-        
+
         {/* Warm glow accents */}
         <div className="absolute top-20 right-20 w-72 h-72 bg-orange-300/20 rounded-full blur-2xl" />
         <div className="absolute bottom-20 left-20 w-80 h-80 bg-amber-300/20 rounded-full blur-2xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-24">
-        
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm border border-orange-200 rounded-full px-4 py-1.5 mb-6">
@@ -86,7 +87,7 @@ export default function WhyChooseUs() {
               Why Choose Us
             </span>
           </div>
-          
+
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Why We Are the{" "}
             <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
@@ -94,9 +95,9 @@ export default function WhyChooseUs() {
             </span>{" "}
             for Your Digital Solution?
           </h2>
-          
+
           <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-500 mx-auto rounded-full" />
-          
+
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
             Discover what makes us the trusted partner for businesses worldwide
           </p>
@@ -122,7 +123,7 @@ export default function WhyChooseUs() {
                     }
                   }}
                 />
-                
+
                 {/* Icon Badge */}
                 <div className="absolute bottom-4 left-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-xl shadow-lg">
                   {r.icon}
@@ -137,7 +138,7 @@ export default function WhyChooseUs() {
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {r.description}
                 </p>
-                
+
                 {/* Decorative Line */}
                 <div className="mt-4 w-12 h-0.5 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" />
               </div>
@@ -152,9 +153,9 @@ export default function WhyChooseUs() {
               <span className="text-orange-500 text-xl">✨</span>
             </div>
             <span className="text-white font-semibold">Ready to start your journey with us?</span>
-            <button className="px-4 py-2 bg-white text-orange-600 rounded-full text-sm font-semibold">
+            <Link to="/company/contact" className="px-4 py-2 bg-white text-orange-600 rounded-full text-sm font-semibold">
               Get Started →
-            </button>
+            </Link>
           </div>
         </div>
       </div>

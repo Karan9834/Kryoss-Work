@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const CTA2 = () => {
@@ -32,7 +33,7 @@ background: "linear-gradient(84.32deg, #913417 0.19%, #AC573D 100%)",
                           mx-auto md:mx-0">
               Take your beauty business to the next level with an on-demand Uber for Beauty App. Streamline bookings, enhance customer experiences, and expand your services efficiently.    </p>
 
-            <button className="bg-white text-blue-600 
+            <Link to="/company/contact" className="bg-white text-blue-600 
                                font-semibold 
                                px-6 sm:px-8 py-3 
                                rounded-full 
@@ -40,7 +41,7 @@ background: "linear-gradient(84.32deg, #913417 0.19%, #AC573D 100%)",
                                hover:scale-105 
                                transition duration-300">
               Get Started Now 
-            </button>
+            </Link>
 
           </div>
 

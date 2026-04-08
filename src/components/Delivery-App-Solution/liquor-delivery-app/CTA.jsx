@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const CTA = () => {
@@ -31,9 +32,9 @@ const CTA = () => {
               in just <span className="font-semibold">5 days.</span>
             </p>
 
-            <button className="w-fit px-8 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-[#009ACA] to-[#006C8D] hover:opacity-90 transition">
+            <Link to="/company/contact" className="w-fit px-8 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-[#009ACA] to-[#006C8D] hover:opacity-90 transition">
               Get Started Now
-            </button>
+            </Link>
 
           </div>
 

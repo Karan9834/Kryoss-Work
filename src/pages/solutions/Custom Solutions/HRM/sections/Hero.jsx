@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import heroBg from "../../../../../assets/human-resources/hero1.png";
 
@@ -43,9 +44,9 @@ const Hero = () => {
 
             {/* BUTTONS */}
             <div className="mt-6 flex flex-wrap gap-4">
-              <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg transition-all duration-300 hover:scale-105">
+              <Link to="/company/contact" className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg transition-all duration-300 hover:scale-105">
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
 

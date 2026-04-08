@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import React from 'react';
 
 import { Truck, Snowflake, Map, Search, ArrowRight } from 'lucide-react';

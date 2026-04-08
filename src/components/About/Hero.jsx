@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import img1 from "../../assets/about-top-banner-images/top-banner-left-img.png";
 import img2 from "../../assets/about-top-banner-images/top-banner-right-img.png";
@@ -54,9 +55,9 @@ const Hero = () => {
           and seamless development services.
         </p>
 
-        <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-500/20">
+        <Link to="/company/contact" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-500/20">
           Book a Consultation
-        </button>
+        </Link>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import { ArrowRight, Phone } from "lucide-react";
 
 export default function CTASection() {
@@ -40,8 +41,8 @@ export default function CTASection() {
 
           {/* Right — Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">
-            <a
-              href="#contact"
+            <Link
+              to="/company/contact"
               className="group relative inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-sm font-medium text-white overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg shadow-[#5B8CFF]/20"
               style={{
                 background: "linear-gradient(135deg, #5B8CFF, #00C2A8)",
@@ -49,7 +50,7 @@ export default function CTASection() {
             >
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               Request a Quote
-            </a>
+            </Link>
 
             <Link to="/company/contact"
               

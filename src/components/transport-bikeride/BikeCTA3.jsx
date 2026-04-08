@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import cta3 from "../../assets/transport-bikeride-img/cta3.webp";
 
@@ -24,9 +25,9 @@ const BikeCTA3 = () => {
                                 user-friendly app to grow your business.
                             </p>
 
-                            <button className="mt-8 sm:mt-10 inline-flex items-center gap-2 px-10 py-3.5 rounded-full border-2 border-white/40 text-white font-bold hover:bg-white hover:text-[#6a1b6b] transition shadow-xl">
+                            <Link to="/company/contact" className="mt-8 sm:mt-10 inline-flex items-center gap-2 px-10 py-3.5 rounded-full border-2 border-white/40 text-white font-bold hover:bg-white hover:text-[#6a1b6b] transition shadow-xl">
                                 Get Started Now
-                            </button>
+                            </Link>
                         </div>
 
                         {/* RIGHT IMAGE */}

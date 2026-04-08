@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import {
   ArrowRight,
@@ -92,10 +93,10 @@ const FinalCTA = () => {
               </a>
 
               {/* Secondary */}
-              <button className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 hover:border-white/50 transition-all duration-300 hover:scale-105">
+              <Link to="/company/contact" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 hover:border-white/50 transition-all duration-300 hover:scale-105">
                 <Zap className="w-5 h-5 mr-2" />
                 Get Started Now
-              </button>
+              </Link>
             </div>
 
             {/* Trust */}

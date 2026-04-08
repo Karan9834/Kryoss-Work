@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import React from 'react';
 
 import cardImg1 from '../../assets/datinglanding-img/datinglandingcard1.jpg';

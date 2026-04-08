@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -100,10 +101,10 @@ const DevelopmentProcess = () => {
                     <h3 className="text-2xl font-black text-gray-900 mb-6 font-nunito">
                         Launch Your Medicine Delivery App with <span className="text-teal-600">Top-Notch Features!</span>
                     </h3>
-                    <button className="px-8 py-4 rounded-full font-black text-white text-base hover:scale-105 transition-transform shadow-xl relative z-10"
+                    <Link to="/company/contact" className="px-8 py-4 rounded-full font-black text-white text-base hover:scale-105 transition-transform shadow-xl relative z-10"
                         style={{ background: 'linear-gradient(100deg, #002B2C 0%, #001515 100%)' }}>
                         GET STARTED NOW!
-                    </button>
+                    </Link>
                 </motion.div>
             </div>
         </section>

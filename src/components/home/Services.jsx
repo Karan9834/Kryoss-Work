@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 
 const services = [
@@ -100,11 +101,11 @@ export default function Services() {
               )}
             </div>
             <div className="pt-4">
-              <a
-                href="#contact"
+              <Link
+                to="/company/contact"
                 className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-xl text-sm font-medium hover:bg-orange-600 transition-all hover:scale-105 shadow-md shadow-orange-500/10">
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center">

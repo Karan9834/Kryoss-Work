@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
@@ -233,9 +234,9 @@ const CarRentalApp = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-slate-700 transition-all shadow-md">
+                            <Link to="/company/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-slate-700 transition-all shadow-md">
                                 Request a Quote
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

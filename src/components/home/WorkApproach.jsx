@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import { Cpu, Users, Rocket, ArrowRight } from "lucide-react";
 import img from "../../assets/Home/about.png";
@@ -144,12 +145,12 @@ const WorkApproach = () => {
           </p>
 
           {/* CTA Button */}
-          <button 
+          <Link to="/company/contact" 
             className="mt-6 px-7 py-3.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 inline-flex items-center gap-2 group"
           >
             Request a Quote
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-          </button>
+          </Link>
 
         </div>
       </div>

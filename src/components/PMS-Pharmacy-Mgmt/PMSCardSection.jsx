@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import React from 'react';
 
 // Images will be added by the user later

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import carImg from "../../assets/Car-rental/rental-car-2.webp";
 
@@ -41,7 +42,7 @@ const CTASection = () => {
                 Let’s get started today!
               </p>
 
-              <button
+              <Link to="/company/contact"
                 className="
                   border
                   border-white
@@ -54,7 +55,7 @@ const CTASection = () => {
                 "
               >
                 Get Started Now!
-              </button>
+              </Link>
 
             </div>
 

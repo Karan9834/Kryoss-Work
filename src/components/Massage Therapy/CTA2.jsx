@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const CTA2 = () => {
@@ -32,7 +33,7 @@ background: "linear-gradient(96.13deg, #00AFAE 0%, #006665 100%)",
                           mx-auto md:mx-0">
              Connect users with top therapists & streamline your business. Start today with our innovative, user-friendly app!  </p>
 
-            <button className="bg-white text-blue-600 
+            <Link to="/company/contact" className="bg-white text-blue-600 
                                font-semibold 
                                px-6 sm:px-8 py-3 
                                rounded-full 
@@ -40,7 +41,7 @@ background: "linear-gradient(96.13deg, #00AFAE 0%, #006665 100%)",
                                hover:scale-105 
                                transition duration-300">
               Get Started Now !
-            </button>
+            </Link>
 
           </div>
 

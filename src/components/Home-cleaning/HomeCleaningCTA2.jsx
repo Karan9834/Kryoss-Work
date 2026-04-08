@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const HomeCleaningCTA2 = () => {
@@ -33,7 +34,7 @@ background: "radial-gradient(175.04% 199.89% at 70.54% -57.94%, #FF6B1B 0%, #781
               Our Uber for House Cleaning App simplifies the booking, management, and delivery of home cleaning services. Connect customers with professional cleaners seamlessly and efficiently, all in one platform.
             </p>
 
-            <button className="bg-white text-blue-600 
+            <Link to="/company/contact" className="bg-white text-blue-600 
                                font-semibold 
                                px-6 sm:px-8 py-3 
                                rounded-full 
@@ -41,7 +42,7 @@ background: "radial-gradient(175.04% 199.89% at 70.54% -57.94%, #FF6B1B 0%, #781
                                hover:scale-105 
                                transition duration-300">
               Get Started Now →
-            </button>
+            </Link>
 
           </div>
 

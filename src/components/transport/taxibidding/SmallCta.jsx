@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import taxi3 from "../../../assets/taxibidding2.webp"; // replace later
 
@@ -30,7 +31,7 @@ const SmallCtaSection = () => {
               delivery request.
             </p>
 
-            <button
+            <Link to="/company/contact"
               className="
               border border-white
               text-white
@@ -41,7 +42,7 @@ const SmallCtaSection = () => {
             "
             >
               Request a Quote
-            </button>
+            </Link>
           </div>
 
           {/* RIGHT IMAGE */}
