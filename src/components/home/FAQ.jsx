@@ -45,7 +45,7 @@ const faqs = [
 
 
 export default function FAQ() {
-  const [open, setOpen] = useState(0);
+  const [open, setOpen] = useState(null);
 
   return (
     <section id="faq" className="py-16 bg-white">
