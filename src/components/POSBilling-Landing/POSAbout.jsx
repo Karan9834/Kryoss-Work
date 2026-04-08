@@ -52,12 +52,6 @@ const POSAbout = () => {
                                 </div>
                             ))}
                         </div>
-
-                        <div className="pt-6">
-                            <button className="px-8 py-3 rounded-full border-2 border-indigo-600 text-[#1E293B] font-bold hover:bg-indigo-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-indigo-100">
-                                Explore Solutions
-                            </button>
-                        </div>
                     </div>
 
                 </div>

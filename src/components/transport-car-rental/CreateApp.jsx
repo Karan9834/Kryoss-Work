@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import ctaImg from "../../assets/Car-rental/cta-2-image.webp"; 
 
@@ -44,7 +45,7 @@ const CreateAppCTA = () => {
               </p>
 
 
-              <button
+              <Link to="/company/contact"
                 className="
                   border
                   border-white
@@ -56,8 +57,8 @@ const CreateAppCTA = () => {
                   transition
                 "
               >
-                Request a Demo
-              </button>
+                Request a Consultation
+              </Link>
 
             </div>
 

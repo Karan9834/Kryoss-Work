@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
@@ -149,10 +150,10 @@ const CarRentalApp = () => {
                                     Start Building
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                <button className="px-8 py-4 bg-white text-gray-800 rounded-full font-semibold hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm flex items-center justify-center gap-2">
+                                <Link to="/company/contact" className="px-8 py-4 bg-white text-gray-800 rounded-full font-semibold hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm flex items-center justify-center gap-2">
                                     <span className="w-2 h-2 rounded-full bg-blue-500" />
-                                    Book a Demo
-                                </button>
+                                    Book a Consultation
+                                </Link>
                             </motion.div>
                         </div>
 
@@ -495,7 +496,9 @@ const CarRentalApp = () => {
                                 />
                                 <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
                                     <div className="w-10 h-10 bg-slate-900 rounded-full flex items-center justify-center">
-                                        <PlusCircle className="w-5 h-5 text-white" />
+                                        <div id="product-section">
+                <PlusCircle className="w-5 h-5 text-white" />
+            </div>
                                     </div>
                                     <div>
                                         <p className="font-bold text-gray-900">Fully Customizable</p>

@@ -396,7 +396,9 @@ const NewsMediaIndustry = () => {
             </section>
 
             {/* 8. Products Section */}
-            <ProductSection />
+            <div id="product-section">
+                <ProductSection />
+            </div>
 
             <Testimonial theme="gray" />
             <Industries theme={{ bg: "bg-gray-50", primary: "text-gray-500", iconBg: "bg-gray-100", iconColor: "text-gray-500" }} />

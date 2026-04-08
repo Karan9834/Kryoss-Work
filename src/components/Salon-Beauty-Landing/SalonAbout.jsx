@@ -57,12 +57,6 @@ const SalonAbout = () => {
                 </div>
               ))}
             </div>
-
-            <div className="pt-6">
-              <button className="px-8 py-3 rounded-full border-2 border-rose-100 text-rose-600 font-bold hover:bg-gradient-to-r hover:from-rose-500 hover:to-orange-500 hover:text-white hover:border-transparent transition-all duration-300">
-                Read Full Story
-              </button>
-            </div>
           </div>
 
         </div>

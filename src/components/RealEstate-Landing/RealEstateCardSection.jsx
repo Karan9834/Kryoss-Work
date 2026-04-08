@@ -1,5 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
+
 import { Home, Building2 } from 'lucide-react';
 import card1Img from '../../assets/realestatelanding-img/realestatelandingcard1.jpg';
 import card2Img from '../../assets/realestatelanding-img/realestatelandingcard2.jpg';

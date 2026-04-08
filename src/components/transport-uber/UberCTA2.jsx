@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react'
 import cta2 from "../../assets/transport-uber-img/cta2.webp";
 const UberCTA2 = () => {
@@ -29,7 +30,7 @@ const UberCTA2 = () => {
                             requirements today.
                         </p>
 
-                        <button
+                        <Link to="/company/contact"
                             className="
             border border-white
             text-white
@@ -42,7 +43,7 @@ const UberCTA2 = () => {
           "
                         >
                             Get Free Consultation
-                        </button>
+                        </Link>
                     </div>
 
                     {/* RIGHT IMAGE (SINGLE IMAGE ONLY) */}

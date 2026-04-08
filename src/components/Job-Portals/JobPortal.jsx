@@ -43,7 +43,7 @@ const HeroSection = () => {
             <button 
               aria-label="Explore job opportunities"
               className="group bg-yellow-400 text-black font-bold px-10 py-4 rounded-2xl shadow-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 active:scale-95"
-            >
+             onClick={() => document.getElementById('explore-job')?.scrollIntoView({ behavior: 'smooth' })}>
               <span className="flex items-center gap-2">
                 🚀 Explore Product
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

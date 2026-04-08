@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import cta1 from "../../assets/homeservice-tutor-img/tutorcta1.webp";
 const CTA1 = () => {
@@ -24,9 +25,9 @@ const CTA1 = () => {
                                 up and running in no time.
                             </p>
 
-                            <button className="rounded-full border border-white px-8 py-3 text-sm font-semibold transition hover:bg-white hover:text-[#5a002b]">
-                                Book a Demo
-                            </button>
+                            <Link to="/company/contact" className="rounded-full border border-white px-8 py-3 text-sm font-semibold transition hover:bg-white hover:text-[#5a002b]">
+                                Book a Consultation
+                            </Link>
                         </div>
 
                         {/* RIGHT IMAGE */}

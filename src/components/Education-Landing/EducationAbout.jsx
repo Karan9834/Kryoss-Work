@@ -63,12 +63,6 @@ const EducationAbout = () => {
                                 </div>
                             ))}
                         </div>
-
-                        <div className="pt-6">
-                            <button className="px-8 py-3 rounded-full border-2 border-indigo-600 text-indigo-600 font-bold hover:bg-indigo-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-indigo-200">
-                                Discover More
-                            </button>
-                        </div>
                     </div>
 
                 </div>

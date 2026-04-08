@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -45,13 +46,13 @@ const CRMFinalCTA = () => {
             </button>
 
             {/* SECONDARY */}
-            <button className="
+            <Link to="/company/contact" className="
               border border-white/40 
               px-7 py-3 rounded-full font-semibold
               hover:bg-white/10 transition
             ">
-              Book a Demo
-            </button>
+              Book a Consultation
+            </Link>
 
           </div>
 

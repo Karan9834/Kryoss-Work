@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 "use client";
 
 import React from "react";
@@ -45,10 +46,10 @@ const Hero = () => {
                         </p>
 
                         <div className="flex flex-col space-y-4 pt-2 items-center lg:items-start w-full mb-8">
-                            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full text-[17.5px] font-light shadow-xl shadow-orange-500/10 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center gap-2.5 group w-fit cursor-pointer">
+                            <Link to="/company/contact" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full text-[17.5px] font-light shadow-xl shadow-orange-500/10 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center gap-2.5 group w-fit cursor-pointer">
                                 Consult Our Experts
                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                            </button>
+                            </Link>
 
                             {/* Micro Trust Signals (Small Text) */}
                             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 opacity-90">

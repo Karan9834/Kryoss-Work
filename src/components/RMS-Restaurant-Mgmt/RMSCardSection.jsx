@@ -1,5 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
+
 // Images will be added by the user later
 import card1 from '@/assets/rmslanding-img/rmslandingcard1.png';
 import card2 from '@/assets/rmslanding-img/rmslandingcard2.png';

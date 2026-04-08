@@ -28,7 +28,7 @@ const HeroSection = () => {
 
             {/* Only the Explore Products button - no badges */}
             <div className="pt-4">
-              <button className="px-8 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-teal-500/30 hover:scale-105 transform transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-slate-900">
+              <button className="px-8 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-teal-500/30 hover:scale-105 transform transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-slate-900" onClick={() => document.getElementById('explore-hotel-products')?.scrollIntoView({ behavior: 'smooth' })}>
                 Explore Products
               </button>
             </div>

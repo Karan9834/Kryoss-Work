@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import flutterhero from "../../../assets/FlutterApp/flutterhero.webp";
 const FlutterHero = () => {
@@ -29,9 +30,9 @@ const FlutterHero = () => {
           </p>
 
           <div className="flex gap-4 mt-8">
-            <button className="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-lg font-semibold">
+            <Link to="/company/contact" className="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-lg font-semibold">
               Get Free Consultation
-            </button>
+            </Link>
 
             <button className="border border-gray-400 hover:border-white px-6 py-3 rounded-lg">
               View Solutions

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import kotlinheroimg from "../../../assets/services-kotlin-img/kotlinhero.webp";
 const KotlinHero = () => {
@@ -30,10 +31,10 @@ const KotlinHero = () => {
 
                         {/* CTA BUTTON */}
                         <div className="mt-8">
-                            <button className="flex items-center gap-3 bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 transition px-6 py-3 rounded-full text-white font-medium shadow-lg">
+                            <Link to="/company/contact" className="flex items-center gap-3 bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 transition px-6 py-3 rounded-full text-white font-medium shadow-lg">
                                 Get a Free Consultation
                                 <span className="text-xl">→</span>
-                            </button>
+                            </Link>
                         </div>
 
                     </div>

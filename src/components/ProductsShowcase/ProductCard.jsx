@@ -1,5 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
+
 import { Check, ArrowUpRight } from 'lucide-react';
 
 const ProductCard = ({ product }) => {

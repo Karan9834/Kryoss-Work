@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const TestinomialsSection = () => {
@@ -84,13 +85,13 @@ const TestinomialsSection = () => {
 
         {/* ===== BUTTON ===== */}
         <div className="text-center mt-16">
-          <button
+          <Link to="/company/testimonials"
             className="px-8 py-4 rounded-full font-semibold text-white 
                        bg-gradient-to-r from-[#ac611b] to-[#ef7d03] 
                        hover:scale-105 transition duration-300"
           >
             Watch 20 more testimonials
-          </button>
+          </Link>
         </div>
 
       </div>

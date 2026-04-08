@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const CTA = () => {
@@ -35,15 +36,15 @@ const CTA = () => {
 
             </p>
 
-            <button className="bg-white text-blue-600 
+            <Link to="/company/contact" className="bg-white text-blue-600 
                                font-semibold 
                                px-6 sm:px-8 py-3 
                                rounded-full 
                                shadow-lg 
                                hover:scale-105 
                                transition duration-300">
-             Request a Demo
-            </button>
+             Request a Consultation
+            </Link>
 
           </div>
 

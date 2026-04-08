@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -52,17 +53,17 @@ const HRMHero = () => {
           </p>
 
           {/* CTA */}
-          <a
-            href="#"
+          <Link to="/company/contact"
+            
             className="inline-flex items-center gap-3 
               bg-gradient-to-r from-purple-500 to-indigo-600
               px-8 py-3 rounded-full font-semibold text-white
               shadow-lg hover:shadow-purple-500/40 
               hover:scale-105 transition-all duration-300"
           >
-            Live Demo
+            Get Free Consultation
             <ArrowRight size={18} />
-          </a>
+          </Link>
 
         </motion.div>
 

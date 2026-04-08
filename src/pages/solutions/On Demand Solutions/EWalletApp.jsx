@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
@@ -143,14 +144,11 @@ const EWalletApp = () => {
                                 transition={{ delay: 0.6, duration: 0.8 }}
                                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
                             >
-                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-amber-600 transition-all duration-300 flex items-center justify-center gap-2">
+                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-amber-600 transition-all duration-300 flex items-center justify-center gap-2" onClick={() => document.getElementById('product-section')?.scrollIntoView({ behavior: 'smooth' })}>
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                <button className="px-8 py-4 bg-white text-gray-800 rounded-full font-semibold hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm flex items-center justify-center gap-2">
-                                    <span className="w-2 h-2 rounded-full bg-green-500" />
-                                    Live Demo
-                                </button>
+                                
                             </motion.div>
                         </div>
 
@@ -230,9 +228,9 @@ const EWalletApp = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-amber-600 transition-all shadow-md">
-                                Request a Demo
-                            </button>
+                            <Link to="/company/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-amber-600 transition-all shadow-md">
+                                Request a Consultation
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -457,7 +455,9 @@ const EWalletApp = () => {
                                 />
                                 <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
                                     <div className="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center">
-                                        <PlusCircle className="w-5 h-5 text-white" />
+                                        <div id="product-section">
+                <PlusCircle className="w-5 h-5 text-white" />
+            </div>
                                     </div>
                                     <div>
                                         <p className="font-bold text-gray-900">Customized Solutions</p>

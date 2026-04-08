@@ -29,7 +29,7 @@ const ProductsSection = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-b from-white to-gray-50 py-20 px-6 overflow-hidden">
+    <section id="explore-business" className="relative bg-gradient-to-b from-white to-gray-50 py-20 px-6 overflow-hidden">
 
       {/* ===== Blue Waves at Top ===== */}
       <div className="absolute top-0 left-0 w-full">

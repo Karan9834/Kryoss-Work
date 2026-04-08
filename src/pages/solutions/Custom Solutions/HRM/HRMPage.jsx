@@ -22,7 +22,9 @@ const HRMPage = () => {
     <EmployeeManagement/>
     <HiringOnboarding/>
     <PayrollBenefits/>
+    <div id="product-section">
     <EmployeePerformance/>
+</div>
 
     <Industries
   theme={{

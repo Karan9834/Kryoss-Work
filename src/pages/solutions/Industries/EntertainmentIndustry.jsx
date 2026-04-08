@@ -371,7 +371,9 @@ const EntertainmentIndustry = () => {
             </section>
 
             {/* 8. Products Section */}
-            <OTTCardSection />
+            <div id="product-section">
+                <OTTCardSection />
+            </div>
 
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-blue-50", primary: "text-blue-500", iconBg: "bg-blue-100", iconColor: "text-blue-500" }} />

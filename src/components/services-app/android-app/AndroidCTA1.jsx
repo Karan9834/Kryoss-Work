@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import androidcta1img from "../../../assets/services-android-img/androidcta1.webp";
 
@@ -29,9 +30,9 @@ const CTA1 = () => {
                                 scalability.
                             </p>
 
-                            <button className="border-2 border-white rounded-full px-7 py-3 text-sm sm:text-base font-semibold hover:bg-white hover:text-[#912d4a] transition-all duration-300">
+                            <Link to="/company/contact" className="border-2 border-white rounded-full px-7 py-3 text-sm sm:text-base font-semibold hover:bg-white hover:text-[#912d4a] transition-all duration-300">
                                 Get Started Today
-                            </button>
+                            </Link>
 
                         </div>
 

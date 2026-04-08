@@ -47,7 +47,7 @@ const DoctorHealthHero = () => {
             </p>
 
             {/* Premium button with glow effect */}
-            <button className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold rounded-lg text-base sm:text-lg shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transform hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
+            <button className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold rounded-lg text-base sm:text-lg shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transform hover:-translate-y-0.5 transition-all duration-200 overflow-hidden" onClick={() => document.getElementById('explore-health')?.scrollIntoView({ behavior: 'smooth' })}>
               <span className="relative z-10 flex items-center gap-2">
                 Explore Services
                 <svg className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

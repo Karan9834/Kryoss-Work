@@ -55,7 +55,7 @@ const Hero = () => {
         </p>
 
         <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-500/20">
-          Get Started
+          Book a Consultation
         </button>
       </div>
     </section>

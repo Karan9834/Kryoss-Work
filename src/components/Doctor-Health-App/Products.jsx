@@ -25,7 +25,7 @@ const Products = () => {
   ];
 
   return (
-    <section className="relative w-full overflow-hidden bg-white">
+    <section id="explore-health" className="relative w-full overflow-hidden bg-white">
 
       {/* Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b98108_1px,transparent_1px),linear-gradient(to_bottom,#10b98108_1px,transparent_1px)] bg-[size:40px_40px]"></div>

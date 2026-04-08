@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import crmCtaImg from "../../../assets/Enterprise-Product/crmcta.png";
 
@@ -27,13 +28,13 @@ const CRMCTA = () => {
               Launch faster, scale better, and close more deals effortlessly.
             </p>
 
-            <button className="
+            <Link to="/company/contact" className="
               bg-white text-blue-700 
               px-6 py-3 rounded-full font-semibold 
               hover:scale-105 transition
             ">
-              Request a Demo →
-            </button>
+              Request a Consultation →
+            </Link>
 
           </div>
 

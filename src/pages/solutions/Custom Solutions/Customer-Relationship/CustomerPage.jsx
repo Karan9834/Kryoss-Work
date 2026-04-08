@@ -19,7 +19,9 @@ const CustomerPage = () => {
         <CRMSoftwareSolutions/>
         <CRMQualityServices/>
         <HolisticCRMFeatures/>
-        <CRMDevelopmentServices/>
+        <div id="product-section">
+    <CRMDevelopmentServices/>
+</div>
         <Industries
   theme={{
     bg: "bg-gradient-to-b from-teal-50 via-white to-emerald-50",

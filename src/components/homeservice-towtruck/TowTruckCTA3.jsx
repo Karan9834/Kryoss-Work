@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import Towtruckcta3 from "../../assets/homeservice-towtruck-img/TowCTA3.webp";
 const CTA3 = () => {
@@ -19,9 +20,9 @@ const CTA3 = () => {
                             customizable and secure solution designed for efficient business growth.
                         </p>
 
-                        <button className="border border-white rounded-full px-6 py-3 hover:bg-white hover:text-[#5a0031] transition">
+                        <Link to="/company/contact" className="border border-white rounded-full px-6 py-3 hover:bg-white hover:text-[#5a0031] transition">
                             Get Started Today!
-                        </button>
+                        </Link>
                     </div>
 
                     {/* RIGHT IMAGE */}

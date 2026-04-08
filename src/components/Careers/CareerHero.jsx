@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import react from 'react';
 import Careerheroimg from "../../assets/company-career-img/Careerhero.webp";
 const CareerHeroSection = () => {
@@ -29,10 +30,10 @@ const CareerHeroSection = () => {
                     </p>
 
                     {/* button */}
-                    <button className="flex items-center gap-3 bg-gradient-to-r from-orange-400 to-orange-500 px-7 py-3 rounded-full text-white font-medium hover:scale-105 transition">
+                    <Link to="/company/contact" className="flex items-center gap-3 bg-gradient-to-r from-orange-400 to-orange-500 px-7 py-3 rounded-full text-white font-medium hover:scale-105 transition">
                         Join Our Team
                         <span className="text-lg">→</span>
-                    </button>
+                    </Link>
 
                 </div>
 

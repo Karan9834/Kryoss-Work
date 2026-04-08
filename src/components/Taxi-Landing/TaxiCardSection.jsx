@@ -1,5 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
+
 import card1Img from '../../assets/taxilanding-img/taxilandingcard1.jpg';
 import card2Img from '../../assets/taxilanding-img/taxilandingcard2.jpg';
 

@@ -1,5 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
+
 import { Plane, Map } from 'lucide-react';
 import card1Img from '../../assets/tourlanding-img/tourlandingcard1.jpg';
 import card2Img from '../../assets/tourlanding-img/tourlandingcard2.jpg';

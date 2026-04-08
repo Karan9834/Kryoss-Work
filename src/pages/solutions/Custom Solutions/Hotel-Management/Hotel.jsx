@@ -31,7 +31,9 @@ const Hotel = () => {
         <AccountingModule/>
         <InventoryModule/>
         <PayrollModule/>
-        <ReservationModule/>
+        <div id="product-section">
+    <ReservationModule/>
+</div>
        <OurWork
   theme={{
     primary: "text-cyan-600",

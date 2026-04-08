@@ -371,7 +371,9 @@ const FoodRestaurantIndustry = () => {
             </section>
 
             {/* 8. Products Section */}
-            <ProductSection />
+            <div id="product-section">
+                <ProductSection />
+            </div>
 
             <Testimonial theme="red" />
             <Industries theme={{ bg: "bg-red-50", primary: "text-red-500", iconBg: "bg-red-100", iconColor: "text-red-500" }} />

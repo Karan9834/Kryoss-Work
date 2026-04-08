@@ -75,7 +75,7 @@ const NewsManagementHero = () => {
 
             {/* Single CTA Button - Explore Products */}
             <div className="mt-8 flex justify-center lg:justify-start">
-              <button className="group px-10 py-4 bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
+              <button className="group px-10 py-4 bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2" onClick={() => document.getElementById('explore-news')?.scrollIntoView({ behavior: 'smooth' })}>
                 Explore Products
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </button>

@@ -74,9 +74,6 @@ const TourTravelAbout = () => {
                                 </div>
                             ))}
                         </div>
-                        <button className="px-8 py-3 rounded-full border-2 border-sky-600 text-[#1E293B] font-bold hover:bg-sky-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-sky-100">
-                            Discover More
-                        </button>
                     </div>
                 </div>
             </div>

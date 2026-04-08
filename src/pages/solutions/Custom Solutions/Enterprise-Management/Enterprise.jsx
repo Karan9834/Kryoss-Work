@@ -17,7 +17,9 @@ const Enterprise = () => {
       <ERPDevelopment />
       <ERPSolutions />
       <CustomizedERP />
-      <Features />
+      <div id="product-section">
+    <Features />
+</div>
       <OurWork
         theme={{
           primary: "text-violet-600",

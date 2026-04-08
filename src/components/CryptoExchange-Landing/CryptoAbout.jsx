@@ -16,17 +16,17 @@ const CryptoAbout = () => {
         <section className="py-24 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
-                    
+
                     {/* Left: Actual About Image (Taxi Model) */}
                     <div className="relative group animate-fadeInLeft order-2 lg:order-1">
                         <div className="absolute -inset-10 bg-blue-50 rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
                         <div className="relative z-10 w-full aspect-square bg-white rounded-[60px] border-8 border-white shadow-2xl overflow-hidden transition-transform duration-700 group-hover:scale-[1.02]">
-                             <img 
-                                src={aboutImg} 
-                                alt="Security Dashboard" 
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                             />
-                             <div className="absolute inset-0 bg-blue-500/5 mix-blend-overlay"></div>
+                            <img
+                                src={aboutImg}
+                                alt="Security Dashboard"
+                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            />
+                            <div className="absolute inset-0 bg-blue-500/5 mix-blend-overlay"></div>
                         </div>
                     </div>
 
@@ -50,12 +50,6 @@ const CryptoAbout = () => {
                                     <span className="text-[#1E293B] font-semibold text-sm">{item}</span>
                                 </div>
                             ))}
-                        </div>
-
-                        <div className="pt-6">
-                            <button className="px-8 py-3 rounded-full border-2 border-blue-600 text-[#1E293B] font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-blue-100">
-                                Discover More
-                            </button>
                         </div>
                     </div>
 

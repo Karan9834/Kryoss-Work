@@ -32,7 +32,7 @@ const OTTHero = () => {
                         
                         <div className="flex flex-wrap gap-4 pt-4">
                             <button 
-                                onClick={() => document.getElementById('ott-products')?.scrollIntoView({ behavior: 'smooth' })}
+                                onClick={() => document.getElementById('explore-ott')?.scrollIntoView({ behavior: 'smooth' })}
                                 className="px-10 py-4 bg-gradient-to-r from-red-600 to-purple-600 text-white font-bold rounded-full shadow-2xl shadow-red-500/20 hover:scale-105 transition-all duration-300 flex items-center gap-2 group"
                             >
                                 Explore Our Products

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
@@ -170,14 +171,11 @@ const ECommerceApp = () => {
                                 transition={{ delay: 0.6, duration: 0.8 }}
                                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
                             >
-                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-orange-500 transition-all duration-300 flex items-center justify-center gap-2">
+                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-orange-500 transition-all duration-300 flex items-center justify-center gap-2" onClick={() => document.getElementById('product-section')?.scrollIntoView({ behavior: 'smooth' })}>
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                <button className="px-8 py-4 bg-white text-gray-800 rounded-full font-semibold hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm flex items-center justify-center gap-2">
-                                    <span className="w-2 h-2 rounded-full bg-green-500" />
-                                    Live Demo
-                                </button>
+                                
                             </motion.div>
                         </div>
 
@@ -258,9 +256,9 @@ const ECommerceApp = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <button className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-orange-500 transition-all shadow-md">
-                                Request a Demo
-                            </button>
+                            <Link to="/company/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-orange-500 transition-all shadow-md">
+                                Request a Consultation
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -572,7 +570,9 @@ const ECommerceApp = () => {
                 </div>
             </section>
 
-            <Products />
+            <div id="product-section">
+                <Products />
+            </div>
 
             {/* 9 & 10. Global Components */}
             <Testimonial theme="orange" />

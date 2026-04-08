@@ -48,8 +48,8 @@ const LmsHero = () => {
                     </p>
 
                     {/* CTA */}
-                    <button className="flex items-center gap-3 bg-[#8b5cf6] text-white font-medium px-6 py-3 rounded-full hover:bg-[#7c3aed] transition shadow-[0_0_15px_rgba(139,92,246,0.5)]">
-                        Live Demo
+                    <button className="flex items-center gap-3 bg-[#8b5cf6] text-white font-medium px-6 py-3 rounded-full hover:bg-[#7c3aed] transition shadow-[0_0_15px_rgba(139,92,246,0.5)]" onClick={() => document.getElementById('explore-lms')?.scrollIntoView({ behavior: 'smooth' })}>
+                        Explore Products
                         <ArrowRight size={18} />
                     </button>
                 </div>

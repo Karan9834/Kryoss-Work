@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ArrowRight, Phone } from "lucide-react";
 
 export default function CTASection() {
@@ -50,13 +51,13 @@ export default function CTASection() {
               Request a Quote
             </a>
 
-            <a
-              href="#contact"
+            <Link to="/company/contact"
+              
               className="group inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-sm font-medium text-white border border-[#5B8CFF]/30 bg-[#5B8CFF]/5 hover:bg-[#5B8CFF]/10 transition-all duration-300 hover:scale-105"
             >
               <Phone className="w-4 h-4 text-[#5B8CFF]" />
               Free Consultation
-            </a>
+            </Link>
           </div>
         </div>
       </div>

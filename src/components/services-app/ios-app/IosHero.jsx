@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import hero from "../../../assets/IosApp/hero.webp";
 
@@ -34,13 +35,13 @@ export default function FirebaseHero() {
 
           {/* CTA BUTTON */}
 
-          <button className="mt-8 bg-green-500 hover:bg-green-600 transition text-white px-6 py-3 rounded-full flex items-center gap-2">
+          <Link to="/company/contact" className="mt-8 bg-green-500 hover:bg-green-600 transition text-white px-6 py-3 rounded-full flex items-center gap-2">
 
             Start Your Free Consultation
 
             <span className="text-lg">→</span>
 
-          </button>
+          </Link>
 
         </div>
 

@@ -35,7 +35,9 @@ const HospitalManagement = () => {
         <PharmacyManagement/>
         <AdminPanel/>
         <SuperAdmin/>
-        <HealthcareCTA/>
+        <div id="product-section">
+    <HealthcareCTA/>
+</div>
         <OurWork
   theme={{
     primary: "text-blue-600",

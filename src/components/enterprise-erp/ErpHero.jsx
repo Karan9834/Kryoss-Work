@@ -49,12 +49,10 @@ const ErpHero = () => {
 
                     {/* CTA */}
                     <a
-                        href="https://preview.codecanyon.net/item/hrm-saas-hr-and-payroll-tool/full_screen_preview/25982934"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="#explore-erp"
                         className="inline-flex items-center gap-3 bg-[#3b82f6] text-white font-medium px-6 py-3 rounded-full hover:opacity-90 transition shadow-[0_0_15px_rgba(59,130,246,0.5)]"
                     >
-                        Live Demo
+                        Explore Our Products
                         <ArrowRight size={18} />
                     </a>
                 </div>

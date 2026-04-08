@@ -17,7 +17,9 @@ const School = () => {
         <Hero/>
         <SchoolManagementSystem/>
         <DevelopmentProcess/>
-        <SMSCardSection/>
+        <div id="product-section">
+    <SMSCardSection/>
+</div>
         <OurWork
   theme={{
     primary: "text-orange-600",

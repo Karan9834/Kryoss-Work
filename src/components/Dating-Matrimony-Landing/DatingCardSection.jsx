@@ -1,5 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
+
 import cardImg1 from '../../assets/datinglanding-img/datinglandingcard1.jpg';
 import cardImg2 from '../../assets/datinglanding-img/datinglandingcard2.jpg';
 

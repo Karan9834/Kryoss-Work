@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const CTASection2 = () => {
@@ -25,9 +26,9 @@ const CTASection2 = () => {
               to see how easy it is to launch your app today!
             </p>
 
-            <button className="bg-white text-[#3F000C] font-semibold px-7 md:px-8 py-3 rounded-full hover:scale-105 transition duration-300 shadow-lg">
+            <Link to="/company/contact" className="bg-white text-[#3F000C] font-semibold px-7 md:px-8 py-3 rounded-full hover:scale-105 transition duration-300 shadow-lg">
               Get Started Today
-            </button>
+            </Link>
 
           </div>
 

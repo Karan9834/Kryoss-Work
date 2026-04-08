@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const CTASection = () => {
@@ -27,9 +28,9 @@ const CTASection = () => {
               building your brand with our cost-effective, feature-rich solution.
             </p>
 
-            <button className="md:ml-10 bg-white text-purple-700 font-semibold px-6 md:px-8 py-3 rounded-full shadow-md hover:scale-105 transition duration-300">
-              Request a Demo
-            </button>
+            <Link to="/company/contact" className="md:ml-10 bg-white text-purple-700 font-semibold px-6 md:px-8 py-3 rounded-full shadow-md hover:scale-105 transition duration-300">
+              Request a Consultation
+            </Link>
 
           </div>
 

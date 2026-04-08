@@ -1,67 +1,74 @@
 const fs = require('fs');
 const path = require('path');
 
-const targetFiles = [
-    'SalonBeautyApp.jsx',
-    'RealEstateApp.jsx',
-    'OttAppDevelopment.jsx',
-    'MatrimonyApp.jsx',
-    'HotelBookingApp.jsx',
-    'HomeServiceApp.jsx',
-    'GroceryDeliveryApp.jsx',
-    'FoodDeliveryApp.jsx',
-    'ECommerceApp.jsx',
-    'DatingAppDevelopment.jsx',
-    'BusinessDirectoryApp.jsx'
-];
+function processContent(content) {
+    let changed = false;
 
-const configMap = {
-    "SalonBeautyApp.jsx": "Star",
-    "RealEstateApp.jsx": "Home",
-    "OttAppDevelopment.jsx": "PlaySquare",
-    "MatrimonyApp.jsx": "Heart",
-    "HotelBookingApp.jsx": "Building",
-    "HomeServiceApp.jsx": "Wrench",
-    "GroceryDeliveryApp.jsx": "ShoppingCart",
-    "FoodDeliveryApp.jsx": "Coffee",
-    "ECommerceApp.jsx": "ShoppingCart",
-    "DatingAppDevelopment.jsx": "Heart",
-    "BusinessDirectoryApp.jsx": "Briefcase"
-};
+    // Check if the file has rogue or multiple "import { Link } from 'react-router-dom';"
+    // Only looking for exact string.
+    const importStr1 = "import { Link } from 'react-router-dom';";
+    const importStr2 = 'import { Link } from "react-router-dom";';
+    const importStr3 = "import { Link } from 'react-router-dom';\n";
+    
+    // Check if the file contains the Link component usage
+    const usesLink = /<Link\b/.test(content);
+    
+    let newContent = content;
 
-const basePath = 'src/pages/solutions/Application Solutions/';
-
-targetFiles.forEach(file => {
-    const fullPath = path.join(basePath, file);
-    if (!fs.existsSync(fullPath)) return;
-
-    let content = fs.readFileSync(fullPath, 'utf8');
-    const iconToEnsure = configMap[file];
-
-    // Find the lucide-react import
-    // Note: the import block spans multiple lines: import { \n ... \n } from 'lucide-react';
-    // Let's use a regex that captures the inside group accurately.
-    const importMatch = content.match(/import\s*\{([\s\S]*?)\}\s*from\s*['"]lucide-react['"]/);
-    if (importMatch) {
-        const importBlock = importMatch[1];
-
-        // Split by comma, trim
-        const importedItems = importBlock.split(',').map(s => s.trim()).filter(Boolean);
-
-        // Find if our specific icon name is imported (exact match to word boundary to avoid substrings)
-        // Check if there's x as y, we just want to see if `icon` is in the list
-        const isImported = importedItems.some(item => {
-            const parts = item.split(/\s+as\s+/);
-            return parts[0] === iconToEnsure;
-        });
-
-        if (!isImported) {
-            importedItems.push(iconToEnsure);
-            const newImportStr = "import {\n    " + importedItems.join(', ') + "\n} from 'lucide-react'";
-            content = content.replace(/import\s*\{[\s\S]*?\}\s*from\s*['"]lucide-react['"]/, newImportStr);
-            fs.writeFileSync(fullPath, content);
-            console.log("Fixed import in " + file + " added " + iconToEnsure);
+    if (usesLink) {
+        // Count how many times either import statement appears
+        let count = (newContent.match(/import\s+\{\s*Link\s*\}\s+from\s+['"]react-router-dom['"];?/g) || []).length;
+        
+        // Also we might have messed up existing react-router-dom imports if they had Link added.
+        // Wait, the script used last time just added `import { Link } from 'react-router-dom';\n` after `import ` phrase.
+        
+        let shouldFix = false;
+        
+        // Check if there is an import in the middle of the file.
+        // If an import is found after line 30 roughly, it's probably wrong. Let's just remove the specific exact string we injected.
+        if (newContent.includes(importStr3)) {
+            // Find its index
+            let startOfFile = newContent.slice(0, 1000);
+            if (!startOfFile.includes(importStr3)) {
+                shouldFix = true;
+            }
+        }
+        
+        if (count > 0 || shouldFix) {
+            // Remove the exact string we mistakenly added previously
+            newContent = newContent.replace(/import \{ Link \} from 'react-router-dom';\n/g, '');
+            newContent = newContent.replace(/import \{ Link \} from 'react-router-dom';/g, '');
+            
+            // Re-add cleanly at the top if there is no remaining Link import
+            const hasLinkImport = /import\s+(?:\{[^}]*\bLink\b[^}]*\}|\bLink\b)\s+from\s+['"]react-router-dom['"]/.test(newContent);
+            if (!hasLinkImport) {
+                // Prepend to top
+                newContent = importStr3 + newContent;
+                changed = true;
+            } else if (content !== newContent) {
+                changed = true;
+            }
         }
     }
-});
-console.log("Imports fixed successfully.");
+
+    return { changed, newContent };
+}
+
+function traverse(dir) {
+    const files = fs.readdirSync(dir);
+    for (let file of files) {
+        const fullPath = path.join(dir, file);
+        if (fs.statSync(fullPath).isDirectory()) {
+            traverse(fullPath);
+        } else if (fullPath.endsWith('.jsx')) {
+            const content = fs.readFileSync(fullPath, 'utf8');
+            const result = processContent(content);
+            if (result.changed) {
+                fs.writeFileSync(fullPath, result.newContent, 'utf8');
+                console.log('Fixed:', fullPath);
+            }
+        }
+    }
+}
+
+traverse('d:/kryoss/Kryoss-Work/src');

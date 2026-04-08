@@ -20,7 +20,9 @@ const NewsManage = () => {
       <WhyChooseKryoss />
       <FeatureExpertise />
       <ProductsSection />
-      <KeyFeaturesOfNewsPortal />
+      <div id="product-section">
+    <KeyFeaturesOfNewsPortal />
+</div>
       <OurWork
         theme={{
           primary: "text-red-600",

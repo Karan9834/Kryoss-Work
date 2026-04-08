@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import { navigationData } from './navbar.data';
-import { Link } from 'react-router-dom';
+
 
 const ServicesMegaMenu = () => {
     const data = navigationData.services;

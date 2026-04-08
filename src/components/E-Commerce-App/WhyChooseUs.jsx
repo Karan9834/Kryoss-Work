@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-  Rocket, 
-  Shield, 
-  HeadphonesIcon, 
-  Globe2, 
-  Zap, 
-  BarChart3, 
-  CreditCard, 
+import {
+  Rocket,
+  Shield,
+  HeadphonesIcon,
+  Globe2,
+  Zap,
+  BarChart3,
+  CreditCard,
   Users,
   Sparkles,
   Settings,
@@ -94,23 +94,30 @@ const WhyChooseUs = () => {
       gradient: "from-emerald-500 to-teal-500",
       delay: 1.1,
     },
+    {
+      icon: Sparkles,
+      title: "AI-Powered Automation",
+      desc: "Leverage AI to automate product recommendations, customer engagement, and marketing campaigns for higher conversions.",
+      gradient: "from-violet-500 to-fuchsia-500",
+      delay: 1.2,
+    }
   ];
 
   return (
     <section className="w-full bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 py-24 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
-      
+
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 -left-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
         <div className="absolute bottom-0 -right-40 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
       </div>
-      
+
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* HEADER SECTION */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -155,7 +162,7 @@ const WhyChooseUs = () => {
               >
                 {/* Gradient background on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${feature.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
-                
+
                 {/* Top gradient line */}
                 <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${feature.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}></div>
 
@@ -179,7 +186,7 @@ const WhyChooseUs = () => {
           })}
         </div>
       </div>
-      
+
       <style>{`
         .bg-grid-pattern {
           background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),

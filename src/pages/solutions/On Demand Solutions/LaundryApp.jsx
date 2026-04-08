@@ -495,7 +495,9 @@ const LaundryApp = () => {
                                 />
                                 <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
                                     <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                                        <PlusCircle className="w-5 h-5 text-white" />
+                                        <div id="product-section">
+                <PlusCircle className="w-5 h-5 text-white" />
+            </div>
                                     </div>
                                     <div>
                                         <p className="font-bold text-gray-900">White-label Solution</p>

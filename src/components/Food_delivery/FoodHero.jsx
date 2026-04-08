@@ -84,15 +84,8 @@ const FoodHero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-6 py-3 bg-orange-500 text-white rounded-full shadow-lg"
-              >
+               onClick={() => document.getElementById('explore-food')?.scrollIntoView({ behavior: 'smooth' })}>
                 Explore Now
-              </motion.button>
-
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 bg-white border rounded-full"
-              >
-                View Menu
               </motion.button>
             </div>
           </motion.div>

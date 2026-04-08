@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 // import { Quote, Play } from "lucide-react";
 
 // const testimonials = [
@@ -76,12 +77,12 @@
 //         </div>
 
 //         <div className="text-center mt-8">
-//           <a
-//             href="#"
+//           <Link to="/company/testimonials"
+//             
 //             className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
 
 //             View 20 More Testimonials →
-//           </a>
+//           </Link>
 //         </div>
 //       </div>
 //     </section>);
@@ -201,12 +202,12 @@ export default function Testimonials() {
         </div>
 
         <div className="text-center mt-10">
-          <a
-            href="#"
+          <Link to="/company/testimonials"
+            
             className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
           >
             View 20 More Testimonials →
-          </a>
+          </Link>
         </div>
 
       </div>

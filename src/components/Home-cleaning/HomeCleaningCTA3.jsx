@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 // import React from "react";
 
 // const HomeCleaningCTA3 = () => {
@@ -48,7 +49,7 @@
 //               a sparkling clean home with just a few taps, anytime, anywhere!
 //             </p>
 
-//             <button
+//             <Link to="/company/contact"
 //               className="mt-4 px-8 py-4 rounded-full 
 //                          font-semibold 
 //                          text-white 
@@ -57,7 +58,7 @@
 //                          hover:scale-105"
 //             >
 //               Get Started Today
-//             </button>
+//             </Link>
 
 //           </div>
 
@@ -134,7 +135,7 @@ const HomeCleaningCTA3 = () => {
               a sparkling clean home with just a few taps, anytime, anywhere!
             </p>
 
-            <button
+            <Link to="/company/contact"
               className="mt-4 px-8 py-4 rounded-full 
                          font-semibold text-white 
                          transition-all duration-300
@@ -142,7 +143,7 @@ const HomeCleaningCTA3 = () => {
                          hover:scale-105"
             >
               Get Started Today
-            </button>
+            </Link>
 
           </div>
 

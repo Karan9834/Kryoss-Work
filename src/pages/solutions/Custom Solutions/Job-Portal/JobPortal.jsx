@@ -17,7 +17,9 @@ const JobPortal = () => {
     <Hero/>
     <AboutUs/>
     <FeatureSection/>
+    <div id="product-section">
     <ProductSection/>
+</div>
     <OurWork
   theme={{
     primary: "text-blue-600",

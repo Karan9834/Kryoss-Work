@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { Smartphone, Check, User, Truck, Store } from 'lucide-react';
 
@@ -117,9 +118,9 @@ const AppFeatures = () => {
                                 <button className="bg-gray-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-[#FF5722] transition-all flex items-center gap-2">
                                     <Smartphone size={18} /> Download User Guide
                                 </button>
-                                <button className="text-[#FF5722] font-bold px-8 py-3 rounded-xl hover:bg-orange-50 transition-all border border-[#FF5722]">
-                                    Book a Demo
-                                </button>
+                                <Link to="/company/contact" className="text-[#FF5722] font-bold px-8 py-3 rounded-xl hover:bg-orange-50 transition-all border border-[#FF5722]">
+                                    Book a Consultation
+                                </Link>
                             </div>
                         </div>
 

@@ -29,7 +29,7 @@ const HotelProducts = () => {
   };
 
   return (
-    <section className="relative w-full bg-white py-20 overflow-hidden font-['Inter']">
+    <section id="explore-hotel-solutions" className="relative w-full bg-white py-20 overflow-hidden font-['Inter']">
 
       {/* 🔥 BACKGROUND GLOW */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-orange-100 rounded-full blur-3xl opacity-40"></div>

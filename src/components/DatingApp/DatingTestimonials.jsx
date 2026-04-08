@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import { FaYoutube } from "react-icons/fa";
 
@@ -80,9 +81,9 @@ const Testimonials = () => {
 
         {/* CTA */}
         <div className="text-center mt-10">
-          <button className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium transition">
+          <Link to="/company/testimonials" className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full text-sm font-medium transition">
             View 20 More Testimonials
-          </button>
+          </Link>
         </div>
 
       </div>

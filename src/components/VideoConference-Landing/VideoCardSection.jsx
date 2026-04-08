@@ -1,5 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
+
 import { Video, Globe, Zap, Users, ArrowRight } from 'lucide-react';
 import card1 from '../../assets/videolanding-img/image1.jpg';
 import card2 from '../../assets/videolanding-img/image.jpg';

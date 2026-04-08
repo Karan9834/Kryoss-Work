@@ -23,7 +23,7 @@ const OTTCardSection = () => {
   ];
 
   return (
-    <section className="relative w-full overflow-hidden bg-white py-24">
+    <section id="explore-ott" className="relative w-full overflow-hidden bg-white py-24">
 
       {/* Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ef444408_1px,transparent_1px),linear-gradient(to_bottom,#ef444408_1px,transparent_1px)] bg-[size:40px_40px]"></div>

@@ -1,5 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
+
 import card1 from '../../assets/cryptolanding-img/card1.jpg';
 import card2 from '../../assets/cryptolanding-img/card2.jpg';
 

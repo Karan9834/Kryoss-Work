@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import cta2 from "../../assets/transport-bikeride-img/cta2.webp"
 const BikeCTA2 = () => {
@@ -16,9 +17,9 @@ const BikeCTA2 = () => {
                         Launch your On-Demand Bike Taxi App with our ready-to-use solution.
                         Get a feature-rich app and start serving customers quickly!
                     </p>
-                    <button className="bg-transparent hover:bg-white hover:text-[#16165e] text-white px-10 py-3.5 rounded-full font-bold text-lg border-2 border-white/40 transition-all shadow-xl">
-                        Request a Demo
-                    </button>
+                    <Link to="/company/contact" className="bg-transparent hover:bg-white hover:text-[#16165e] text-white px-10 py-3.5 rounded-full font-bold text-lg border-2 border-white/40 transition-all shadow-xl">
+                        Request a Consultation
+                    </Link>
                 </div>
 
                 {/* Right Image Space (One single image pinned to bottom) */}

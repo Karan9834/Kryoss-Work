@@ -22,20 +22,20 @@ const GroceryAbout = () => {
         <section className="py-24 bg-transparent relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
-                    
+
                     {/* Left: Single Image Layout (Matching Education) */}
                     <div className="relative group animate-fadeInLeft">
                         <div className="absolute -inset-10 bg-emerald-50 rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
-                        
+
                         <div className="relative z-10 w-full aspect-square bg-gradient-to-br from-emerald-50 to-white rounded-[60px] border-8 border-white shadow-2xl flex items-center justify-center overflow-hidden transition-transform duration-700 group-hover:scale-[1.02]">
-                             <img src={aboutImg} alt="Grocery About" className="w-full h-full object-cover" />
+                            <img src={aboutImg} alt="Grocery About" className="w-full h-full object-cover" />
                         </div>
 
                         {/* Interactive Stats Overlay */}
                         <div className="absolute -right-2 top-10 lg:-right-4 lg:top-1/4 space-y-3 lg:space-y-4 z-20">
                             {stats.map((stat, idx) => (
-                                <div 
-                                    key={idx} 
+                                <div
+                                    key={idx}
                                     className="bg-white p-3 lg:p-4 rounded-xl lg:rounded-2xl shadow-xl flex items-center gap-2 lg:gap-3 border border-emerald-50 animate-float"
                                     style={{ animationDelay: `${idx * 0.5}s` }}
                                 >
@@ -66,12 +66,6 @@ const GroceryAbout = () => {
                                     <span className="text-[#1A1C2C] font-semibold text-sm">{item}</span>
                                 </div>
                             ))}
-                        </div>
-
-                        <div className="pt-6">
-                            <button className="px-8 py-3 rounded-full border-2 border-emerald-600 text-emerald-600 font-bold hover:bg-emerald-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-emerald-200">
-                                Discover More
-                            </button>
                         </div>
                     </div>
 

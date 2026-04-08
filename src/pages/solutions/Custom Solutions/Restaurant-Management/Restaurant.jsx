@@ -30,7 +30,9 @@ const Restaurant = () => {
       <RMSCardSection />
       <RestaurantFeatures />
       <UniqueOfferings />
-      <RestaurantCost />
+      <div id="product-section">
+    <RestaurantCost />
+</div>
       <OurWork
         theme={{
           primary: "text-orange-600",

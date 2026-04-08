@@ -71,13 +71,6 @@ const SchoolManagementSection = () => {
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="flex gap-4 flex-wrap">
-            <button className="bg-gradient-to-r from-orange-500 to-cyan-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition">
-              Let's Talk →
-            </button>
-          </div>
-
         </div>
 
       </div>

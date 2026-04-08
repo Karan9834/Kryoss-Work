@@ -84,7 +84,7 @@ const HotelHero = () => {
             
             {/* Premium CTA Button */}
             <div className="pt-3">
-              <button className="group relative px-7 py-3.5 bg-white text-[#F97316] rounded-xl font-semibold overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-105">
+              <button className="group relative px-7 py-3.5 bg-white text-[#F97316] rounded-xl font-semibold overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-105" onClick={() => document.getElementById('explore-hotel-solutions')?.scrollIntoView({ behavior: 'smooth' })}>
                 <span className="relative z-10 flex items-center gap-2 text-sm md:text-base">
                   Explore Solutions
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />

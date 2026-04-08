@@ -21,7 +21,9 @@ const Learning = () => {
         <LmsCardSection/>
         <LMSServices/>
         <FeaturesGrid/>
-        <CustomLMSDevelopment/>
+        <div id="product-section">
+    <CustomLMSDevelopment/>
+</div>
         <Industries
   theme={{
     bg: "bg-gradient-to-b from-blue-50 via-white to-indigo-50",

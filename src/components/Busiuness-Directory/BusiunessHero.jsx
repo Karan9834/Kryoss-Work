@@ -35,7 +35,7 @@ const BusinessHero = () => {
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
 
             {/* Primary CTA */}
-            <button className="group bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition flex items-center gap-2">
+            <button className="group bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition flex items-center gap-2" onClick={() => document.getElementById('explore-business')?.scrollIntoView({ behavior: 'smooth' })}>
               🚀 Explore Products
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
             </button>

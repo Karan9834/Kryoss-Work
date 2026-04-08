@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const BlogFeature = () => {
@@ -25,9 +26,9 @@ backgroundRepeat: "no-repeat"
          Take your business to the next level with our ready-to-launch, customizable apps. Whether you're a startup or an established brand, we have the perfect solution to accelerate your growth and success.
           </p>
 
-          <button className="bg-orange-500 text-white px-6 py-3 rounded-lg w-fit">
+          <Link to="/company/contact" className="bg-orange-500 text-white px-6 py-3 rounded-lg w-fit">
            Get Started Today
-          </button>
+          </Link>
 
         </div>
 

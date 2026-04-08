@@ -51,12 +51,6 @@ const EMSAbout = () => {
                                 </div>
                             ))}
                         </div>
-
-                        <div className="pt-6">
-                            <button className="px-8 py-3 rounded-full bg-gradient-to-r from-fuchsia-600 to-pink-500 text-white font-bold hover:shadow-lg hover:shadow-pink-200 hover:-translate-y-1 transition-all duration-300">
-                                Discover Features
-                            </button>
-                        </div>
                     </div>
 
                 </div>

@@ -22,7 +22,7 @@ const OTTAbout = ({ isLight = false }) => {
         <section className={`py-24 ${bgClass} relative overflow-hidden`}>
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
-                    
+
                     {/* Left: Image Placeholder */}
                     <div className="relative group order-2 lg:order-1 animate-fadeInLeft">
                         <div className={`absolute -inset-10 bg-gradient-to-br from-red-600/20 via-purple-600/20 to-transparent rounded-full blur-[100px] ${isLight ? 'opacity-30' : 'opacity-60'} group-hover:opacity-100 transition duration-1000`}></div>
@@ -54,12 +54,6 @@ const OTTAbout = ({ isLight = false }) => {
                                     <span className={`${isLight ? 'text-gray-700' : 'text-gray-300'} font-bold text-sm`}>{item}</span>
                                 </div>
                             ))}
-                        </div>
-
-                        <div className="pt-6">
-                            <button className={`px-10 py-4 rounded-full ${isLight ? 'bg-red-600 text-white' : 'bg-white text-black'} font-black hover:bg-black hover:text-white transition-all duration-300 shadow-xl hover:shadow-red-500/20`}>
-                                See Full Capabilities
-                            </button>
                         </div>
                     </div>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle, TrendingUp, Award, Users, ArrowRight, Target, Sparkles } from "lucide-react";
-import aboutImage from "../../assets/Job-Portals/features.png"; 
+import aboutImage from "../../assets/Job-Portals/features.png";
 
 const AboutSection = () => {
   const stats = [
@@ -11,7 +11,7 @@ const AboutSection = () => {
 
   return (
     <section className="relative bg-gray-50 py-24 px-6 overflow-hidden">
-      
+
       {/* ===== Blue Waves at Top ===== */}
       <div className="absolute top-0 left-0 w-full">
         <svg viewBox="0 0 1440 200" className="w-full">
@@ -30,12 +30,12 @@ const AboutSection = () => {
 
       {/* ===== Background Elements ===== */}
       <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-gray-50 to-white"></div>
-      
+
       {/* Decorative Circles Matching Hero Theme */}
       <div className="absolute top-40 right-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-80 h-80 bg-indigo-500/5 rounded-full blur-3xl"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
-      
+
       {/* Grid Pattern Matching Hero */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0" style={{
@@ -46,12 +46,12 @@ const AboutSection = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          
+
           {/* ===== LEFT SIDE - IMAGE with Floating Elements ===== */}
           <div className="relative">
             {/* Main Image Container with Blue Gradient Border */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-blue-100">
-              <img 
+              <img
                 src={aboutImage}
                 alt="Team collaboration in modern office"
                 className="w-full h-[500px] object-cover"
@@ -63,7 +63,7 @@ const AboutSection = () => {
               {/* Overlay Gradient Matching Hero */}
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 via-indigo-600/10 to-transparent"></div>
             </div>
-            
+
             {/* Floating Card 1 - Stats */}
             <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-2xl p-4 md:p-5 max-w-[220px] backdrop-blur-sm border border-blue-100">
               <div className="flex items-center gap-3">
@@ -78,14 +78,14 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Floating Card 2 - Rating */}
             <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-2xl p-4 backdrop-blur-sm border border-blue-100">
               <div className="flex items-center gap-2">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
                 </div>
@@ -93,7 +93,7 @@ const AboutSection = () => {
               </div>
               <p className="text-xs text-gray-500 mt-1">From 5,000+ reviews</p>
             </div>
-            
+
             {/* Decorative Blue Circle */}
             <div className="absolute -z-10 -bottom-10 -right-10 w-40 h-40 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full blur-2xl opacity-30"></div>
             <div className="absolute -z-10 -top-10 -left-10 w-40 h-40 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full blur-2xl opacity-30"></div>
@@ -106,7 +106,7 @@ const AboutSection = () => {
               <Sparkles className="w-4 h-4 text-blue-600" />
               <span className="text-blue-700 font-semibold text-sm">About Our Portal</span>
             </div>
-            
+
             {/* Title with Gradient Matching Hero */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
               Helping You Build a{" "}
@@ -114,26 +114,26 @@ const AboutSection = () => {
                 Brighter Career
               </span>
             </h2>
-            
+
             {/* Description */}
             <p className="mt-6 text-gray-600 text-lg leading-relaxed">
-              We're revolutionizing the way professionals find their dream jobs. 
-              Our platform connects talented individuals with forward-thinking companies, 
+              We're revolutionizing the way professionals find their dream jobs.
+              Our platform connects talented individuals with forward-thinking companies,
               ensuring the perfect match for both sides.
             </p>
-            
+
             <p className="mt-4 text-gray-600">
-              With cutting-edge AI matching technology and a commitment to transparency, 
+              With cutting-edge AI matching technology and a commitment to transparency,
               we've helped thousands of professionals take the next step in their careers.
             </p>
-            
+
             {/* Stats Grid with Blue Theme */}
             <div className="mt-8 grid grid-cols-3 gap-4">
               {stats.map((stat, idx) => {
                 const Icon = stat.icon;
                 return (
-                  <div 
-                    key={idx} 
+                  <div
+                    key={idx}
                     className="group text-center p-4 rounded-xl bg-white border border-gray-200 hover:border-blue-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                   >
                     <div className="w-10 h-10 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition">
@@ -145,7 +145,7 @@ const AboutSection = () => {
                 );
               })}
             </div>
-            
+
             {/* Features List */}
             <div className="mt-8 space-y-3">
               <div className="flex items-center gap-3">
@@ -167,14 +167,8 @@ const AboutSection = () => {
                 <span className="text-sm text-gray-700">24/7 career support</span>
               </div>
             </div>
-            
+
             {/* CTA Link Matching Hero Button Style */}
-            <div className="mt-8">
-              <button className="group inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition">
-                Learn more about us
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition" />
-              </button>
-            </div>
           </div>
         </div>
       </div>

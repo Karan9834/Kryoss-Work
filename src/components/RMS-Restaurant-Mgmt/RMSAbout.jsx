@@ -52,12 +52,6 @@ const RMSAbout = () => {
                                 </div>
                             ))}
                         </div>
-
-                        <div className="pt-6">
-                            <button className="px-8 py-3 rounded-full bg-gradient-to-r from-red-600 to-rose-500 text-white font-bold hover:shadow-lg hover:shadow-red-200 hover:-translate-y-1 transition-all duration-300">
-                                Learn More
-                            </button>
-                        </div>
                     </div>
 
                 </div>

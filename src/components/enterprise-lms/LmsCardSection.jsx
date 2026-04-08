@@ -20,7 +20,7 @@ const LmsCardSection = () => {
    ];
 
    return (
-      <section id="lms-cards" className="py-24 bg-white relative">
+      <section id="explore-lms" className="py-24 bg-white relative">
          <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16 space-y-4">
                {/* "Our Products" Header */}

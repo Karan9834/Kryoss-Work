@@ -178,7 +178,6 @@ export default function About() {
                 </div>
               ))}
             </div>
-
             {/* CTA Button */}
             <a
               href="#contact"

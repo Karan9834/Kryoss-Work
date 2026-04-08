@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -46,22 +47,22 @@ const CRMHero = () => {
 
           {/* Description */}
           <p className="text-gray-400 mb-8 max-w-xl text-lg">
-            Manage leads, track sales, and build stronger customer relationships 
+            Manage leads, track sales, and build stronger customer relationships
             with a powerful CRM platform designed for modern businesses.
           </p>
 
           {/* CTA */}
-          <a
-            href="#"
+          <Link to="/company/contact"
+            
             className="inline-flex items-center gap-3 
               bg-gradient-to-r from-blue-500 to-indigo-600
               px-8 py-3 rounded-full font-semibold text-white
               shadow-lg hover:shadow-blue-500/40 
               hover:scale-105 transition-all duration-300"
           >
-            Get Started
+            Get Free Consultation
             <ArrowRight size={18} />
-          </a>
+          </Link>
 
         </motion.div>
 

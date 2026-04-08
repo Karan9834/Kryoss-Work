@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import {
   User,
@@ -514,9 +515,9 @@ const TikTokClonePage = () => {
               begin capturing the attention of millions.
             </p>
 
-            <button className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-[#0b2d63] transition">
-              Request a Demo
-            </button>
+            <Link to="/company/contact" className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-[#0b2d63] transition">
+              Request a Consultation
+            </Link>
           </div>
 
           {/* RIGHT IMAGE */}

@@ -1,5 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
+
 import { Sparkles } from 'lucide-react';
 import card1Img from '../../assets/grocerylanding-img/grocerylandingcard1.jpg';
 import card2Img from '../../assets/grocerylanding-img/grocerylandingcard2.jpg';

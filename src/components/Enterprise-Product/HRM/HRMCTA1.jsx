@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import hrmImage from "../../../assets/Enterprise-Product/hrmhero.png";
 
@@ -29,13 +30,13 @@ const HRMCTA = () => {
             </p>
 
             {/* CTA BUTTON */}
-            <button className="
+            <Link to="/company/contact" className="
               bg-white text-purple-700 font-semibold
               px-6 py-3 rounded-full
               hover:scale-105 transition duration-300
             ">
-              Request a Demo
-            </button>
+              Request a Consultation
+            </Link>
 
           </div>
 

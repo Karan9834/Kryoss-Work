@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Play, ShieldCheck, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+
 
 const BettingCardSection = () => {
     const products = [

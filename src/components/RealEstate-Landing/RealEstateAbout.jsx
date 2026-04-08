@@ -91,10 +91,6 @@ const RealEstateAbout = () => {
                                 </div>
                             ))}
                         </div>
-
-                        <button className="px-8 py-3 rounded-full border-2 border-emerald-600 text-[#1E293B] font-bold hover:bg-emerald-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-emerald-100">
-                            Discover More
-                        </button>
                     </div>
 
 

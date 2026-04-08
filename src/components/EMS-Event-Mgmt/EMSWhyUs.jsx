@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 const EMSWhyUs = () => {
@@ -64,9 +65,9 @@ const EMSWhyUs = () => {
                         </p>
                         {/* 
                         <div className="mt-8 flex justify-center lg:justify-start">
-                             <button className="px-8 py-4 bg-orange-500 text-white rounded-xl shadow-lg shadow-orange-500/30 hover:bg-white hover:text-fuchsia-900 transition-colors font-bold flex items-center gap-2">
-                                Request a Demo
-                             </button>
+                             <Link to="/company/contact" className="px-8 py-4 bg-orange-500 text-white rounded-xl shadow-lg shadow-orange-500/30 hover:bg-white hover:text-fuchsia-900 transition-colors font-bold flex items-center gap-2">
+                                Request a Consultation
+                             </Link>
                         </div> */}
                     </div>
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -80,10 +81,10 @@ const ClientTestimonials = () => {
                 </div>
 
                 <div className="text-center mt-10">
-                    <a href="/company/testimonials" className="inline-block px-8 py-3 rounded-full font-bold text-white text-sm hover:scale-105 transition-transform shadow-lg"
+                    <Link to="/company/testimonials"  className="inline-block px-8 py-3 rounded-full font-bold text-white text-sm hover:scale-105 transition-transform shadow-lg"
                         style={{ background: 'linear-gradient(90deg, #1A9B9E 0%, #002B2C 100%)' }}>
                         View 20 More Testimonials
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
