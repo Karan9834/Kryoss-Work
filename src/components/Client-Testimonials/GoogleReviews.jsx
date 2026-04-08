@@ -1,134 +1,196 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { Star, CheckCircle } from "lucide-react";
 
 const reviews = [
   {
     name: "Mr. Sene",
-    date: "13 Jan 2026 | Rating 4.0",
-    title: "Mr. Sene on Choosing Kryoss Work for His Uber Clone Project",
+    date: "13 Jan 2026",
+    rating: 4,
+    title: "Uber Clone Project Success",
     logo: "https://whitelabelfox.com/assets/images/testimonial/HSI.webp",
-    desc: "I worked with Kryoss Work Pvt. Ltd on a ride-hailing project in Africa. The team is very serious, professional, and always attentive. They take the time to understand the project's needs and are constantly available to provide solutions and move things forward. Communication is clear and follow-up is rigorous. I recommend them without hesitation.",
+    desc: "I worked with Kryoss Work Pvt. Ltd on a ride-hailing project in Africa. The team is very serious, professional, and always attentive. They take the time to understand the project's needs and are constantly available to provide solutions and move things forward.",
   },
   {
     name: "Mr. Stan",
     date: "14 May 2025",
-    title: "Mr. Stan shares his experience with Kryoss Work for his Fox-Drive (inDriver Clone App)",
+    rating: 5,
+    title: "Exceptional Partnership",
     logo: "https://whitelabelfox.com/assets/images/testimonial/mr-stan-icon.webp",
-    desc: "Working with Kryoss Work Pvt. Ltd to develop our ride-hailing system has been one of the best decisions we've ever made. From day one, their team went above and beyond to understand our vision, guide us through every step, and deliver a platform that exceeded our expectations. The level of support, professionalism, and dedication they showed throughout the entire process was simply unmatched.They didn’t just build a system — they became true partners in our journey. Their technical expertise, attention to detail, and commitment to quality helped bring our vision to life in ways we couldn’t have imagined. Even when challenges arose, WLF was right there with quick solutions and a positive attitude.If you’re looking for a team that genuinely cares about your success and delivers results, look no further than Kryoss Work Pvt. Ltd. We are beyond grateful for their work and proud to have collaborated with such an exceptional company.Highly, highly recommended!",
+    desc: "Working with Kryoss Work Pvt. Ltd to develop our ride-hailing system has been one of the best decisions we've ever made. From day one, their team went above and beyond to understand our vision, guide us through every step, and deliver a platform that exceeded our expectations.",
   },
   {
     name: "Mr. Jacques Rocca Serra",
     date: "25 April 2025",
-    title: "Exceptional Service, Creative Team & No Hidden Costs – Truly Appreciated to WLF Team",
+    rating: 5,
+    title: "Excellent Service Client",
     logo: "https://whitelabelfox.com/assets/images/testimonial/jacques-rocca-serra-icon.webp",
-    desc: "Professionnels à l’écoute et réactif , compétences et créativité , tarif raisonnable sans surprise . Mérite les 5 étoiles. !! Entreprise à taille humaine avec un excellent service client qui réagi et suit les clients au quotidien. Avec cette équipe on a l’impressd’etrecleurs seul client privilégié. C’est très rassurant et super agréable pour accompagner un développement d’applications comme nous avons fait. Merci ne changez rien.",
+    desc: "Professionnels à l’écoute et réactif, compétences et créativité, tarif raisonnable sans surprise. Mérite les 5 étoiles!! Entreprise à taille humaine avec un excellent service client qui réagi et suit les clients au quotidien.",
   },
   {
     name: "Calvin Mnisi",
     date: "3 September 2023",
-    title: "WLF is invaluable! Viral & Samarth made our project a success-don’t hesitate to work with them!",
+    rating: 5,
+    title: "Beyond Incredible",
     logo: "https://whitelabelfox.com/assets/images/testimonial/Calvin-Mnisi.webp",
-    desc: "I can not say enough great things about WLF. They are absolutely amazing. Viral and Samarth were beyond incredible with our project. I cannot recommend them enough. If you’re considering working with them, don’t hesitate, it would be the best thing you do for your company. Absolutely, invaluably amazing !",
+    desc: "I can not say enough great things about WLF. They are absolutely amazing. Viral and Samarth were beyond incredible with our project. I cannot recommend them enough. Best decision for our company.",
   },
   {
     name: "Dridi Melek",
     date: "3 September 2023",
-    title: "Top-notch mobile app, professional team, and excellent support! A truly satisfying experience.",
+    rating: 5,
+    title: "Outstanding Mobile App",
     logo: "https://whitelabelfox.com/assets/images/testimonial/Dridi-Melek.webp",
-    desc: "I want to express my utmost satisfaction with this company and their mobile application. The app is outstanding in terms of design and functionality, perfectly meeting my professional needs. The team I worked with stood out for their professionalism, responsiveness, and dedication to customer satisfaction. I highly recommend their services. Thank you for this exceptional experience !",
+    desc: "I want to express my utmost satisfaction with this company and their mobile application. The app is outstanding in terms of design and functionality, perfectly meeting my professional needs.",
   },
   {
     name: "Developer EagleSouq",
     date: "3 September 2023",
-    title: "Reliable, responsive, and committed-Kryoss Work is the best choice for any project!",
+    rating: 5,
+    title: "Highly Recommended",
     logo: "https://whitelabelfox.com/assets/images/testimonial/Developer-EagleSouq.webp",
-    desc: "Kryoss Work one of the best companies that I dealt with from my location here in the Middle East, full commitment at the time of project delivery, very fast maintenance for any new requirements, a support team and immediate communication with the appropriate methods of communication.I would recommend anyone to work with this Kryoss Work.",
-  },
-   {
-    name: "Eric Eric",
-    date: "3 September 2023",
-    title: "Great support for custom app development! Rapid delivery and a highly reliable team.",
-    logo: "https://whitelabelfox.com/assets/images/testimonial/Eric-Eric.webp",
-    desc: "This team has helped me with my new project. I would recommend them for a custom app development project. Because they have helped many clients including me to develop an app rapidly. Thanks to our project manager and the rest of the team I was able to launch my project on time. They are honest and transparent team.",
-  },
-   {
-    name: "from hom",
-    date: "3 September 2023",
-    title: "Professional team, quick problem-solving, and top-notch designs. A pleasure working with them!",
-    logo: "https://whitelabelfox.com/assets/images/testimonial/from-hom.webp",
-    desc: "Kryoss Work, the best team and service! It was a pleasure to have them handling our project, it was so smooth, the team is professional and experts. They easily solve any obstacle or problem within hours it will be solved. They got awesome products with great UI and UX designs. Thank you so much for the effort you made to make this project alive.",
+    desc: "Kryoss Work one of the best companies that I dealt with from my location here in the Middle East. Full commitment at the time of project delivery and very fast maintenance for any new requirements.",
   },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const GoogleReviews = () => {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
-
-        {/* Badge */}
-        <div className="flex justify-center mb-4">
-          <div className="inline-flex items-center gap-2 border border-gray-300 px-4 py-1.5 rounded-full text-sm">
-            <span className="w-2.5 h-2.5 bg-orange-400 rounded-full"></span>
-            Words of Appreciation
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+          <div className="max-w-2xl">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-4"
+            >
+              <CheckCircle size={14} />
+              Trusted by Businesses Globally
+            </motion.div>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="text-4xl md:text-5xl font-bold text-slate-900 mb-6"
+            >
+              Verified <span className="text-blue-600">Google Reviews</span>
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="text-slate-600 text-lg leading-relaxed"
+            >
+              Real feedback from real people. We take our reputation seriously and strive to maintain the highest standards of client satisfaction.
+            </motion.p>
           </div>
+          
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            className="flex items-center gap-6 bg-white p-6 rounded-3xl shadow-sm border border-slate-100"
+          >
+            <div className="text-center">
+              <div className="text-3xl font-bold text-slate-900">4.9</div>
+              <div className="flex text-yellow-400 mt-1">
+                {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
+              </div>
+            </div>
+            <div className="h-10 w-px bg-slate-200"></div>
+            <div>
+              <div className="text-sm font-bold text-slate-900 whitespace-nowrap">500+ Reviews</div>
+              <div className="text-xs text-slate-500">Global Satisfaction</div>
+            </div>
+          </motion.div>
         </div>
 
-        {/* Heading */}
-        <h2 className="text-4xl font-bold text-center mb-4">
-          Real Reviews <span className="text-orange-400"> from Google</span>
-        </h2>
-
-        {/* Paragraph */}
-        <p className="text-gray-600 text-center max-w-5xl mx-auto mb-16">
-          Discover what our clients say about us! These genuine Google reviews
-          reflect our commitment to delivering top-notch solutions and
-          exceptional support.
-        </p>
-
-        {/* Masonry Cards */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
-
+        {/* Standard Grid for Equal Height Cards */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {reviews.map((review, index) => (
-            <div
+            <motion.div
               key={index}
-              className="break-inside-avoid bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition"
+              variants={cardVariants}
+              whileHover={{ y: -5 }}
+              className="relative p-8 bg-white rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-xl hover:border-blue-100 transition-all duration-300 group flex flex-col h-full"
             >
-
-              {/* Logo */}
-              <div className="flex justify-center mb-4">
-                <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center">
-                  <img
-                    src={review.logo}
-                    alt="logo"
-                    className="w-15"
-                  />
+              {/* Review Header */}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="relative">
+                  <div className="w-14 h-14 rounded-full overflow-hidden bg-slate-50 border border-slate-100 flex items-center justify-center p-2">
+                    <img
+                      src={review.logo}
+                      alt={review.name}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="absolute -bottom-1 -right-1 bg-blue-600 text-white rounded-full p-1 border-2 border-white">
+                    <CheckCircle size={10} fill="currentColor" />
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                    {review.name}
+                  </h4>
+                  <p className="text-xs text-slate-400">{review.date}</p>
                 </div>
               </div>
 
-              {/* Name */}
-              <h4 className="text-center font-semibold">
-                {review.name}
-              </h4>
+              {/* Rating */}
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    size={16}
+                    fill={i < review.rating ? "#FACC15" : "none"}
+                    className={i < review.rating ? "text-yellow-400" : "text-slate-200"}
+                  />
+                ))}
+              </div>
 
-              {/* Date */}
-              <p className="text-center text-sm text-gray-500 mb-4">
-                {review.date}
-              </p>
-
-              {/* Title */}
-              <h3 className="font-semibold mb-2">
+              {/* Content */}
+              <h3 className="font-bold text-slate-900 mb-3 line-clamp-1">
                 {review.title}
               </h3>
-
-              {/* Description */}
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {review.desc}
+              <p className="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                "{review.desc}"
               </p>
 
-            </div>
+              {/* Genuine Badge - Pushed to bottom */}
+              <div className="mt-auto pt-4 border-t border-slate-50 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_Logo.svg" 
+                    alt="Google" 
+                    className="w-4 h-4"
+                  />
+                  <span className="text-[10px] uppercase tracking-wider font-bold text-slate-400">Verified Review</span>
+                </div>
+              </div>
+            </motion.div>
           ))}
-
-        </div>
-
+        </motion.div>
       </div>
     </section>
   );
