@@ -2,21 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Sparkles } from "lucide-react";
 
-import VyomTeenPatti from "../../assets/Games-Product/stake.jpg";
-import card2Img from "../../assets/Games-Product/kasino.png"; // replace if needed
+import Card1Img from "../../assets/Games-Product/stake.jpeg";
+import Card2Img from "../../assets/Games-Product/kasino.jpeg"; // replace if needed
 
 const CasinoCardSection = () => {
   const cards = [
     {
       title: "Stake! Online Casino",
-      image: VyomTeenPatti,
+      image: Card1Img,
       path: "/products/casino/stake1",
       description:
         "Real cash multiplayer game with remote gameplay, custom boot values, and seamless experience.",
     },
     {
       title: "Kasino - Online Casino Platform",
-      image: card2Img,
+      image: Card2Img,
       path: "/products/casino/kasino",
       description:
         "Powerful backend with wallet integration, analytics, secure payments, and scalable infrastructure.",
@@ -51,24 +51,24 @@ const CasinoCardSection = () => {
         </div>
 
         {/* Grid (Same as OTT) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {cards.map((card, index) => (
             <div key={index} className="text-center">
-              <Link to={card.path} className="cursor-pointer group">
-                <div className="w-full h-[260px] overflow-hidden rounded-lg border-[6px] border-transparent hover:border-orange-500 shadow-md transition duration-300">
+              <Link to={card.path} className="cursor-pointer group block">
+                <div className="w-full aspect-video overflow-hidden rounded-lg border-[6px] border-transparent hover:border-orange-500 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] transition-all duration-300 bg-gray-50">
                   <img
                     src={card.image}
                     alt={card.title}
-                    className="w-full h-full object-cover group-hover:scale-[1.05] transition duration-500"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </Link>
 
               {/* Text */}
               <p className="mt-4 text-sm md:text-base">
-                <span className="text-orange-600 font-semibold">
+                <Link to={card.path} className="text-orange-600 font-semibold hover:underline">
                   {card.title}
-                </span>{" "}
+                </Link>{" "}
                 <span className="text-gray-700">- {card.description}</span>
               </p>
             </div>

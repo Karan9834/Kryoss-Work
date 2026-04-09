@@ -86,9 +86,9 @@ import RMSLanding from "../pages/products/RMS-Restaurant-Mgmt/RMSLanding";
 import SMSLanding from "../pages/products/SMS-School-Mgmt/SMSLanding";
 import PMSLanding from "../pages/products/PMS-Pharmacy-Mgmt/PMSLanding";
 
-import CorporateEventsPage from "../pages/products/EMS-Event-Mgmt/CorporateEvents/CorporateEventsPage";
+import EventRightProPage from "../pages/products/EMS-Event-Mgmt/EventRightPro/EventRightProPage";
 import EventNextPage from "../pages/products/EMS-Event-Mgmt/EventNext/EventNextPage";
-import FineDiningCasualPage from "../pages/products/RMS-Restaurant-Mgmt/FineDiningCasual/FineDiningCasualPage";
+import RestulatorPage from "../pages/products/RMS-Restaurant-Mgmt/Restulator/RestulatorPage";
 import QsrFastCasualPage from "../pages/products/RMS-Restaurant-Mgmt/QsrFastCasual/QsrFastCasualPage";
 import IMSPager from "../pages/products/IMS/IMSPager";
 
@@ -180,9 +180,9 @@ export const ProductRoutes = [
     <Route key="ems" path="/products/enterprise/ems" element={<EMSLanding />} />,
     <Route key="rms" path="/products/enterprise/rms" element={<RMSLanding />} />,
 
-    <Route key="ems-corporate-events" path="/products/enterprise/ems/corporate-events" element={<CorporateEventsPage />} />,
+    <Route key="ems-eventright-pro" path="/products/enterprise/ems/eventright-pro" element={<EventRightProPage />} />,
     <Route key="ems-event-next" path="/products/enterprise/ems/event-next" element={<EventNextPage />} />,
-    <Route key="rms-fine-dining" path="/products/enterprise/rms/fine-dining" element={<FineDiningCasualPage />} />,
+    <Route key="rms-restulator" path="/products/enterprise/rms/restulator" element={<RestulatorPage />} />,
     <Route key="rms-qsr-fast-casual" path="/products/enterprise/rms/qsr-fast-casual" element={<QsrFastCasualPage />} />,
 
     <Route key="sms-inilabs" path="/products/enterprise/sms/inilabs" element={<InilabsPage />} />,

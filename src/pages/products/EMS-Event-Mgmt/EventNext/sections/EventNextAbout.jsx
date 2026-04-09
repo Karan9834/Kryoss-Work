@@ -1,5 +1,5 @@
 import React from "react";
-import festAboutImg from "../../../../../assets/festivalconcertems-img/festivalconcertemsabout.jpg";
+import festAboutImg from "../../../../../assets/eventnextems-img/eventnextemsabout.jpg";
 import { CheckCircle } from "lucide-react";
 
 const EventNextAbout = () => {

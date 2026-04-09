@@ -1,10 +1,10 @@
 import React from "react";
-import gallery1 from "../../../../../assets/festivalconcertems-img/festivalconcertemsgallery1.jpg";
-import gallery2 from "../../../../../assets/festivalconcertems-img/festivalconcertemsgallery2.jpg";
-import gallery3 from "../../../../../assets/festivalconcertems-img/festivalconcertemsgallery3.jpg";
-import gallery4 from "../../../../../assets/festivalconcertems-img/festivalconcertemsgallery4.jpg";
-import gallery5 from "../../../../../assets/festivalconcertems-img/festivalconcertemsgallery5.jpg";
-import gallery6 from "../../../../../assets/festivalconcertems-img/festivalconcertemsgallery6.jpg";
+import gallery1 from "../../../../../assets/eventnextems-img/eventnextemsgallery1.jpg";
+import gallery2 from "../../../../../assets/eventnextems-img/eventnextemsgallery2.jpg";
+import gallery3 from "../../../../../assets/eventnextems-img/eventnextemsgallery3.jpg";
+import gallery4 from "../../../../../assets/eventnextems-img/eventnextemsgallery4.jpg";
+import gallery5 from "../../../../../assets/eventnextems-img/eventnextemsgallery5.jpg";
+import gallery6 from "../../../../../assets/eventnextems-img/eventnextemsgallery6.jpg";
 
 const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
 

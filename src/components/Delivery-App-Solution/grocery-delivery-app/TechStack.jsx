@@ -2,13 +2,13 @@ import React from 'react';
 
 const TechStack = () => {
     const techs = [
-        { name: "Flutter", icon: "https://whitelabelfox.com/assets/images/technology/flutter.svg" },
-        { name: "iOS", icon: "https://whitelabelfox.com/assets/images/technology/ios.svg" },
-        { name: "Android", icon: "https://whitelabelfox.com/assets/images/technology/android.svg" },
-        { name: "PHP/Laravel", icon: "https://whitelabelfox.com/assets/images/technology/laravel.svg" },
-        { name: "MySQL", icon: "https://whitelabelfox.com/assets/images/technology/mysql.svg" },
-        { name: "Firebase", icon: "https://whitelabelfox.com/assets/images/technology/firebase.svg" },
-        { name: "Amazon S3", icon: "https://whitelabelfox.com/assets/images/technology/aws.svg" }
+        { name: "Flutter", icon: "https://cdn.simpleicons.org/flutter" },
+        { name: "iOS", icon: "https://cdn.simpleicons.org/apple" },
+        { name: "Android", icon: "https://cdn.simpleicons.org/android" },
+        { name: "PHP/Laravel", icon: "https://cdn.simpleicons.org/laravel" },
+        { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql" },
+        { name: "Firebase", icon: "https://cdn.simpleicons.org/firebase" },
+        { name: "Amazon S3", icon: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Amazon-S3-Logo.svg" }
     ];
 
     return (

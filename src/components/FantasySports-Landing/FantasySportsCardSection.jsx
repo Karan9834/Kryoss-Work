@@ -59,12 +59,12 @@ const FantasyCasinoCardSection = () => {
 
               {/* Image */}
               <Link to={card.path} className="cursor-pointer group block">
-                <div className="w-full h-[220px] overflow-hidden rounded-lg border-[4px] border-transparent hover:border-green-500 shadow-md transition duration-300">
+                <div className="w-full aspect-video overflow-hidden rounded-lg border-[4px] border-transparent hover:border-green-500 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] transition-all duration-300 bg-gray-50">
                   
                   <img
                     src={card.image}
                     alt={card.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    className="w-full h-full object-cover"
                   />
 
                 </div>
@@ -72,9 +72,9 @@ const FantasyCasinoCardSection = () => {
 
               {/* Text */}
               <p className="mt-3 text-sm leading-relaxed">
-                <span className="text-green-600 font-semibold">
+                <Link to={card.path} className="text-green-600 font-semibold hover:underline">
                   {card.title}
-                </span>{" "}
+                </Link>{" "}
                 <span className="text-gray-600">
                   - {card.description}
                 </span>

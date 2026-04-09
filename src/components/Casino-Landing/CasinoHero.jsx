@@ -56,7 +56,7 @@ const CasinoHero = ({ onExplore }) => {
 
                             {/* Main Image Container */}
                             <div className="relative z-10 w-full max-w-[480px] mx-auto aspect-square bg-gradient-to-br from-orange-100 to-amber-50 rounded-[60px] border-8 border-white shadow-2xl flex items-center justify-center overflow-hidden transition-all duration-700 group-hover:scale-[1.02] lg:-translate-y-10">
-                                <img src="https://images.unsplash.com/photo-1596838132175-fb1858a7f927?auto=format&fit=crop&q=80&w=800" alt="Casino Gaming" className="w-full h-full object-cover" />
+                                <img src="https://i.pinimg.com/1200x/e3/bd/f4/e3bdf4f3b449376ddaa33dfca28d0488.jpg" alt="Casino Gaming" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>

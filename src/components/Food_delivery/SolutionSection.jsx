@@ -59,16 +59,36 @@ const SolutionSection = () => {
   return (
     <section className="relative py-28 bg-gradient-to-br from-orange-50 via-white to-amber-50 overflow-hidden">
       <div ref={containerRef} className="relative max-w-6xl mx-auto px-4">
-
-        {/* PROGRESS LINE */}
-        <div className="hidden lg:block absolute left-1/2 top-0 -translate-x-1/2 w-[4px] h-full bg-gray-200 rounded-full">
-          <motion.div
-            style={{ height: lineHeight }}
-            className="w-full bg-gradient-to-b from-orange-500 via-red-500 to-amber-500 rounded-full"
-          />
+        
+        {/* SECTION HEADER */}
+        <div className="text-center mb-20 space-y-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-orange-200 bg-orange-50/50 backdrop-blur-sm">
+            <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+            <span className="text-orange-700 text-sm font-bold uppercase tracking-widest">Our Solutions</span>
+          </div>
+          
+          <h2 className="text-3xl md:text-5xl font-extrabold leading-tight">
+            Powerful Features for{" "}
+            <span className="bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent">
+              Seamless Food Delivery
+            </span>
+          </h2>
+          
+          <p className="max-w-2xl mx-auto text-lg text-gray-600 font-medium">
+            We provide end-to-end digital solutions to transform how you deliver food, ensuring speed, safety, and ultimate customer satisfaction.
+          </p>
         </div>
 
-        <div className="space-y-32">
+        <div className="relative pt-12">
+          {/* PROGRESS LINE */}
+          <div className="hidden lg:block absolute left-1/2 top-0 -translate-x-1/2 w-[4px] h-full bg-gray-200 rounded-full">
+            <motion.div
+              style={{ height: lineHeight }}
+              className="w-full bg-gradient-to-b from-orange-500 via-red-500 to-amber-500 rounded-full"
+            />
+          </div>
+
+          <div className="space-y-32">
           {solutions.map((item, index) => {
             const isLeft = index % 2 === 0;
 
@@ -154,6 +174,7 @@ const SolutionSection = () => {
               <p className="text-gray-600 text-sm">{item.desc}</p>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>
