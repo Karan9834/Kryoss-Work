@@ -1,5 +1,5 @@
 import React from "react";
-import festHeroImg from "../../../../../assets/festivalconcertems-img/festivalconcertemshero.jpg";
+import festHeroImg from "../../../../../assets/eventnextems-img/eventnextemshero.jpg";
 import { ArrowRight, Zap, Star } from "lucide-react";
 
 const EventNextHero = () => {

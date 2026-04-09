@@ -4,14 +4,14 @@ import React from 'react';
 
 // Images will be added by the user later
 import card1 from '@/assets/emslanding-img/emslandingcard1.jpg';
-import card2 from '@/assets/emslanding-img/emslandingcard2.png';
+import card2 from '@/assets/emslanding-img/emslandingcard2.jpg';
 
 const EMSCardSection = () => {
    const cards = [
       {
-         title: "Corporate Events",
-         desc: "Full-scale event management with registration, sponsor management, and analytics.",
-         path: "/products/enterprise/ems/corporate-events", // Add specific paths later if needed
+         title: "EventRight Pro",
+         desc: "Advanced SaaS-based ticket sales and event booking management system with website and panels.",
+         path: "/products/enterprise/ems/eventright-pro",
          image: card1
       },
       {

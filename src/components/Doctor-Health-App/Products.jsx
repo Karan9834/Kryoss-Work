@@ -72,7 +72,10 @@ const Products = () => {
 
               {/* Title Below */}
               <p className="mt-4 text-sm md:text-base">
-                <span className="text-emerald-600 font-semibold">
+                <span 
+                  onClick={() => navigate(product.route)}
+                  className="text-emerald-600 font-semibold cursor-pointer hover:underline"
+                >
                   {product.name}
                 </span>{" "}
                 <span className="text-gray-700">

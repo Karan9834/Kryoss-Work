@@ -91,7 +91,10 @@ const ProductsSection = () => {
 
               {/* Text */}
               <p className="mt-4 text-sm md:text-base">
-                <span className="text-teal-600 font-semibold">
+                <span 
+                  onClick={() => handleViewDetails(product.id)}
+                  className="text-teal-600 font-semibold cursor-pointer hover:underline"
+                >
                   {product.name}
                 </span>{" "}
                 <span className="text-gray-700">

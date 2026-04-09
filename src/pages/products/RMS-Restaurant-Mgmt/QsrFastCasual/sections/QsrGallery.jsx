@@ -1,10 +1,10 @@
 import React from "react";
-import gallery1 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery1.jpg";
-import gallery2 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery2.jpg";
-import gallery3 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery3.jpg";
-import gallery4 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery4.jpg";
-import gallery5 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery5.jpg";
-import gallery6 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery6.jpg";
+import gallery1 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery1.png";
+import gallery2 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery2.png";
+import gallery3 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery3.png";
+import gallery4 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery4.png";
+import gallery5 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery5.png";
+import gallery6 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery6.png";
 
 const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
 

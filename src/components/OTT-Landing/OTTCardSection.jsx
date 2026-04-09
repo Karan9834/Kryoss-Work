@@ -67,9 +67,12 @@ const OTTCardSection = () => {
 
               {/* Text Below */}
               <p className="mt-4 text-sm md:text-base">
-                <span className="text-red-600 font-semibold">
+                <Link 
+                  to={card.path}
+                  className="text-red-600 font-semibold hover:underline"
+                >
                   {card.title}
-                </span>{" "}
+                </Link>{" "}
                 <span className="text-gray-700">
                   - {card.description}
                 </span>

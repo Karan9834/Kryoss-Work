@@ -1,110 +1,80 @@
-// IMSProductsSection.jsx - Simple Version
 import React from "react";
-import { Sparkles } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import imsPro1 from "../../assets/IMS/posyl.jpg";
 import imsPro2 from "../../assets/IMS/wholesell.jpg";
 
 const IMSProductsSection = () => {
-  const navigate = useNavigate();
+    const products = [
+        {
+            title: "Posly",
+            desc: "Advanced Inventory Management System for retail and commerce.",
+            image: imsPro1,
+            route: "/products/posly",
+        },
+        {
+            title: "Wholesale",
+            desc: "Multi-Warehouse Management Solution for large-scale operations.",
+            image: imsPro2,
+            route: "/products/wholesale",
+        },
+    ];
 
-  const products = [
-    {
-      id: 1,
-      name: "Posly",
-      description: "Advanced Inventory Management System",
-      image: imsPro1,
-      route: "/products/posly",
-    },
-    {
-      id: 2,
-      name: "Wholesale",
-      description: "Multi-Warehouse Management Solution",
-      image: imsPro2,
-      route: "/products/wholesale",
-    },
-  ];
+    return (
+        <section id="products" className="py-16 bg-transparent">
+            <div className="max-w-7xl mx-auto px-6">
+                <div className="text-center mb-16 space-y-4">
+                    <div className="flex items-center justify-center gap-2 mb-4">
+                        <div className="w-8 h-px bg-blue-400"></div>
+                        <span className="text-blue-600 font-bold text-sm tracking-wider uppercase">
+                            IMS Products
+                        </span>
+                        <div className="w-8 h-px bg-blue-400"></div>
+                    </div>
+                    <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E293B]">
+                        Choose the Perfect <span className="text-blue-600">IMS Solution for Your Business</span>
+                    </h2>
+                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                        Powerful, scalable inventory management solutions designed to streamline your operations and growth.
+                    </p>
+                </div>
 
-  const handleProductClick = (route) => {
-    navigate(route);
-    console.log(`Navigating to product: ${route}`);
-  };
+                <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                    {products.map((product, index) => (
+                        <div key={index} className="text-center">
+                            {/* CLICKABLE IMAGE */}
+                            <Link
+                                to={product.route}
+                                className="cursor-pointer group block"
+                            >
+                                <img
+                                    src={product.image}
+                                    alt={product.title}
+                                    className="w-full rounded-xl border-[5px] border-transparent hover:border-blue-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover aspect-[16/9]"
+                                />
+                            </Link>
 
-  return (
-    <section id="products" className="relative w-full overflow-hidden bg-white">
+                            {/* TITLE AND DESCRIPTION */}
+                            <p className="mt-4 text-sm md:text-base">
+                                <Link to={product.route} className="text-blue-600 font-semibold hover:underline">
+                                    {product.title}
+                                </Link>{" "}
+                                <span className="text-gray-700">
+                                    - {product.desc}
+                                </span>
+                            </p>
+                        </div>
+                    ))}
+                </div>
 
-      {/* Background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#3b82f608_1px,transparent_1px),linear-gradient(to_bottom,#3b82f608_1px,transparent_1px)] bg-[size:40px_40px]"></div>
-
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32 z-10">
-
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-2 mb-6">
-            <Sparkles size={16} className="text-blue-600" />
-            <span className="text-sm font-semibold text-blue-700 tracking-wide">
-              IMS Products
-            </span>
-          </div>
-
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-            Choose the Perfect{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">
-              IMS Solution for Your Business
-            </span>
-          </h2>
-
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-            Powerful, scalable inventory management solutions designed to streamline your operations
-          </p>
-        </div>
-
-        {/* Products Grid - 2 columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-          {products.map((product) => (
-            <div key={product.id} className="text-center">
-
-              {/* Clickable Image */}
-              <div
-                onClick={() => handleProductClick(product.route)}
-                className="cursor-pointer group"
-                role="button"
-                tabIndex={0}
-                onKeyPress={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    handleProductClick(product.route);
-                  }
-                }}
-              >
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full rounded-lg border-[6px] border-transparent hover:border-blue-500 shadow-md transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl"
-                />
-              </div>
-
-              {/* Title Below */}
-              <p className="mt-4 text-sm md:text-base">
-                <span className="text-blue-600 font-semibold">
-                  {product.name}
-                </span>{" "}
-                <span className="text-gray-700">
-                  - {product.description}
-                </span>
-              </p>
+                {/* Bottom note */}
+                <div className="text-center mt-16">
+                    <p className="text-sm text-gray-400 font-medium">
+                        ✦ More inventory solutions coming soon ✦
+                    </p>
+                </div>
             </div>
-          ))}
-        </div>
-
-        {/* Bottom Text */}
-        <div className="mt-16 text-center">
-          <p className="text-gray-400 text-sm">
-            Click on any product to explore more
-          </p>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
-export default IMSProductsSection;
+export default IMSProductsSection;

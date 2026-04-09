@@ -84,7 +84,10 @@ const ProductSection = () => {
 
               {/* Title Below */}
               <p className="mt-4 text-sm md:text-base">
-                <span className="text-orange-600 font-semibold">
+                <span 
+                  onClick={() => handleProductClick(product.route)}
+                  className="text-orange-600 font-semibold cursor-pointer hover:underline"
+                >
                   {product.name}
                 </span>{" "}
                 <span className="text-gray-700">

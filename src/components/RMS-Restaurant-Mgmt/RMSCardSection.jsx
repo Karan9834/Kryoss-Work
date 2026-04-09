@@ -4,14 +4,14 @@ import React from 'react';
 
 // Images will be added by the user later
 import card1 from '@/assets/rmslanding-img/rmslandingcard1.jpg';
-import card2 from '@/assets/rmslanding-img/rmslandingcard2.png';
+import card2 from '@/assets/rmslanding-img/rmslandingcard2.jpg';
 
 const RMSCardSection = () => {
    const cards = [
       {
-         title: "Fine Dining & Casual",
-         desc: "Advanced reservation sync, floor plan mapping, and tableside ordering.",
-         path: "/products/enterprise/rms/fine-dining", // Add specific paths later if needed
+         title: "Restulator",
+         desc: "Comprehensive restaurant management with integrated POS and live kitchen tracking for efficient service.",
+         path: "/products/enterprise/rms/restulator",
          image: card1
       },
       {
