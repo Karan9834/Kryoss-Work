@@ -4,7 +4,7 @@ import { Gamepad2, Trophy } from 'lucide-react';
 
 const services = [
   { id: 1, icon: <Gamepad2 />, title: "Casino Games", description: "Tailored Casino Games solution", color: "from-blue-500 to-purple-500", bgColor: "bg-blue-50", borderColor: "border-blue-200", route: "/products/gaming/casino" },
-  { id: 2, icon: <Trophy />, title: "Fantasy Sports", description: "Tailored Fantasy Sports solution", color: "from-blue-500 to-purple-500", bgColor: "bg-blue-50", borderColor: "border-blue-200", route: "/products/gaming/fantasy" }
+  { id: 2, icon: <Trophy />, title: "Fantasy Sports", description: "Tailored Fantasy Sports solution", color: "from-blue-500 to-purple-500", bgColor: "bg-blue-50", borderColor: "border-blue-200", route: "/products/gaming/fantasy-sports" }
 ];
 
 const ServicesSection = () => {

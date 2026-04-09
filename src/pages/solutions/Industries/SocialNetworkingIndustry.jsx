@@ -237,7 +237,6 @@ const SocialNetworkingIndustry = () => {
             </section>
 
             {/* 3. Must Have Features (Tabs Layout) */}
-            {/* 3. Must Have Features (Tabs Layout) */}
             <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-orange-50/40 py-20 px-6">
                 <div className="absolute inset-0 opacity-30 pointer-events-none">
                     <div className="absolute top-20 left-10 w-72 h-72 bg-orange-200/30 rounded-full blur-3xl"></div>

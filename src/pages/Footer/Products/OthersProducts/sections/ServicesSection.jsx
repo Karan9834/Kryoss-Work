@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { Sparkles, Dices, Network } from 'lucide-react';
 
 const services = [
-  { id: 1, icon: <Sparkles />, title: "NFT Products", description: "Tailored NFT Products solution", color: "from-blue-500 to-purple-500", bgColor: "bg-blue-50", borderColor: "border-blue-200", route: "/products/others/nft" },
-  { id: 2, icon: <Dices />, title: "Betting Apps", description: "Tailored Betting Apps solution", color: "from-blue-500 to-purple-500", bgColor: "bg-blue-50", borderColor: "border-blue-200", route: "/products/others/betting" },
-  { id: 3, icon: <Network />, title: "MLM Products", description: "Tailored MLM Products solution", color: "from-blue-500 to-purple-500", bgColor: "bg-blue-50", borderColor: "border-blue-200", route: "/products/others/mlm" }
+  { id: 1, icon: <Sparkles />, title: "NFT Products", description: "Tailored NFT Products solution", color: "from-blue-500 to-purple-500", bgColor: "bg-blue-50", borderColor: "border-blue-200", route: "/products/nft-marketplace" },
+  { id: 2, icon: <Dices />, title: "Betting Apps", description: "Tailored Betting Apps solution", color: "from-blue-500 to-purple-500", bgColor: "bg-blue-50", borderColor: "border-blue-200", route: "/products/betting-platform" },
+  { id: 3, icon: <Network />, title: "MLM Products", description: "Tailored MLM Products solution", color: "from-blue-500 to-purple-500", bgColor: "bg-blue-50", borderColor: "border-blue-200", route: "/products/mlm-software" }
 ];
 
 const ServicesSection = () => {
