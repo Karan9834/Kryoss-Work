@@ -12,6 +12,7 @@ const megaMenuData = [
     title: 'Application Solutions',
     icon: '📱',
     accent: '#f97316',
+    href: '/solutions/application-solutions',
     items: [
       { label: 'Taxi Booking App', icon: '🚕', href: '/solutions/taxi-booking' },
       { label: 'Food Delivery App', icon: '🍔', href: '/solutions/food-delivery' },
@@ -31,6 +32,7 @@ const megaMenuData = [
     title: 'Custom Software',
     icon: '⚙️',
     accent: '#f97316',
+    href: '/solutions/custom-software',
     items: [
       { label: 'Job Portal & App', icon: '💼', href: '/solutions/job-portal' },
       { label: 'Human Resource Mgmt', icon: '👥', href: '/solutions/hrm' },
@@ -50,6 +52,7 @@ const megaMenuData = [
     title: 'On Demand Solutions',
     icon: '⚡',
     accent: '#f97316',
+    href: '/solutions/on-demand-solutions',
     items: [
       { label: 'Mechanics App', icon: '🔧', href: '/solutions/mechanics-app' },
       { label: 'Laundry App', icon: '🧺', href: '/solutions/laundry-app' },
@@ -69,6 +72,7 @@ const megaMenuData = [
     title: 'Industries',
     icon: '🏭',
     accent: '#f97316',
+    href: '/solutions/industries',
     items: [
       { label: 'Healthcare', icon: '🏥', href: '/industries/healthcare' },
       { label: 'Education', icon: '🎓', href: '/industries/education' },
@@ -91,10 +95,17 @@ const megaMenuData = [
 const MegaMenuColumn = ({ col }) => (
   <div className="pmm-col">
     <div className="pmm-col-heading-wrap">
-      <div className="pmm-col-heading-row">
-        <span className="pmm-cat-icon">{col.icon}</span>
-        <h3 className="pmm-col-title">{col.title}</h3>
-      </div>
+      {col.href ? (
+        <Link to={col.href} className="pmm-col-heading-row" style={{ textDecoration: 'none' }}>
+          <span className="pmm-cat-icon">{col.icon}</span>
+          <h3 className="pmm-col-title" style={{ transition: 'color 0.2s' }}>{col.title}</h3>
+        </Link>
+      ) : (
+        <div className="pmm-col-heading-row">
+          <span className="pmm-cat-icon">{col.icon}</span>
+          <h3 className="pmm-col-title">{col.title}</h3>
+        </div>
+      )}
       <div className="pmm-col-accent-bar" />
     </div>
 
@@ -124,9 +135,19 @@ const MobileAccordionSection = ({ col, onLinkClick }) => {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
       >
-        <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }} onClick={(e) => { 
+          if(col.href) {
+            e.stopPropagation();
+          } 
+        }}>
           <span className="pmm-mob-cat-icon">{col.icon}</span>
-          <span className="pmm-mob-title">{col.title}</span>
+          {col.href ? (
+            <Link to={col.href} className="pmm-mob-title" onClick={onLinkClick} style={{ textDecoration: 'none' }}>
+              {col.title}
+            </Link>
+          ) : (
+            <span className="pmm-mob-title">{col.title}</span>
+          )}
         </span>
         <ChevronDown
           size={16}

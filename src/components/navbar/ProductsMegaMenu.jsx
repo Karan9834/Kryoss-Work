@@ -12,6 +12,7 @@ const megaMenuData = [
     title: 'Our Products',
     icon: '🛒',
     accent: '#f97316',
+    href: '/products/our-products',
     items: [
       { label: 'E-Commerce App', icon: '🛍️', href: '/products/our/ecommerce' },
       { label: 'Food Delivery Apps', icon: '🍔', href: '/products/our/food-delivery' },
@@ -31,6 +32,7 @@ const megaMenuData = [
     title: 'Prime Products',
     icon: '🚀',
     accent: '#f97316',
+    href: '/products/prime-products',
     items: [
       { label: 'Tour & Travel', icon: '✈️', href: '/products/prime/tour-travel' },
       { label: 'Real Estate', icon: '🏗️', href: '/products/prime/real-estate' },
@@ -50,6 +52,7 @@ const megaMenuData = [
     title: 'Enterprise Products',
     icon: '🏢',
     accent: '#f97316',
+    href: '/products/enterprise-products',
     items: [
       { label: 'HRM', icon: '👥', href: '/products/enterprise/hrm' },
       { label: 'CRM', icon: '🤝', href: '/products/enterprise/crm' },
@@ -69,6 +72,7 @@ const megaMenuData = [
     title: 'Gaming Products',
     icon: '🎮',
     accent: '#f97316',
+    href: '/products/gaming-products',
     items: [
       { label: 'Casino Games', icon: '🎰', href: '/products/gaming/casino' },
       { label: 'Fantasy Sports', icon: '🏆', href: '/products/gaming/fantasy-sports' },
@@ -78,6 +82,7 @@ const megaMenuData = [
         title: 'Others Products',
         icon: '✨',
         accent: '#f97316',
+        href: '/products/others-products',
         items: [
           { label: 'NFT Products', icon: '🖼️', href: '/products/nft-marketplace' },
           { label: 'Betting Apps', icon: '🎯', href: '/products/betting-platform' },
@@ -95,10 +100,17 @@ const MegaMenuColumn = ({ col }) => (
   <div className="pmm-col">
     {/* SaaS-style header: icon + title + gradient accent underline */}
     <div className="pmm-col-heading-wrap">
-      <div className="pmm-col-heading-row">
-        <span className="pmm-cat-icon">{col.icon}</span>
-        <h3 className="pmm-col-title">{col.title}</h3>
-      </div>
+      {col.href ? (
+        <Link to={col.href} className="pmm-col-heading-row" style={{ textDecoration: 'none' }}>
+          <span className="pmm-cat-icon">{col.icon}</span>
+          <h3 className="pmm-col-title" style={{ transition: 'color 0.2s' }}>{col.title}</h3>
+        </Link>
+      ) : (
+        <div className="pmm-col-heading-row">
+          <span className="pmm-cat-icon">{col.icon}</span>
+          <h3 className="pmm-col-title">{col.title}</h3>
+        </div>
+      )}
       <div className="pmm-col-accent-bar" />
     </div>
 
@@ -116,10 +128,17 @@ const MegaMenuColumn = ({ col }) => (
     {col.subGroups?.map((sg, si) => (
       <div key={si} className="pmm-subgroup">
         <div className="pmm-col-heading-wrap">
-          <div className="pmm-col-heading-row">
-            <span className="pmm-cat-icon">{sg.icon}</span>
-            <h3 className="pmm-col-title">{sg.title}</h3>
-          </div>
+          {sg.href ? (
+            <Link to={sg.href} className="pmm-col-heading-row" style={{ textDecoration: 'none' }}>
+              <span className="pmm-cat-icon">{sg.icon}</span>
+              <h3 className="pmm-col-title" style={{ transition: 'color 0.2s' }}>{sg.title}</h3>
+            </Link>
+          ) : (
+            <div className="pmm-col-heading-row">
+              <span className="pmm-cat-icon">{sg.icon}</span>
+              <h3 className="pmm-col-title">{sg.title}</h3>
+            </div>
+          )}
           <div className="pmm-col-accent-bar" />
         </div>
         <ul className="pmm-link-list">
@@ -150,9 +169,19 @@ const MobileAccordionSection = ({ col, onLinkClick }) => {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
       >
-        <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }} onClick={(e) => { 
+          if(col.href) {
+            e.stopPropagation();
+          } 
+        }}>
           <span className="pmm-mob-cat-icon">{col.icon}</span>
-          <span className="pmm-mob-title">{col.title}</span>
+          {col.href ? (
+            <Link to={col.href} className="pmm-mob-title" onClick={onLinkClick} style={{ textDecoration: 'none' }}>
+              {col.title}
+            </Link>
+          ) : (
+            <span className="pmm-mob-title">{col.title}</span>
+          )}
         </span>
         <ChevronDown
           size={16}
@@ -177,7 +206,14 @@ const MobileAccordionSection = ({ col, onLinkClick }) => {
           {col.subGroups?.map((sg, si) => (
             <div key={si}>
               <p className="pmm-mob-subgroup-title">
-                <span style={{ marginRight: 4 }}>{sg.icon}</span>{sg.title}
+                <span style={{ marginRight: 4 }}>{sg.icon}</span>
+                {sg.href ? (
+                  <Link to={sg.href} onClick={onLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    {sg.title}
+                  </Link>
+                ) : (
+                  sg.title
+                )}
               </p>
               {sg.items.map((item, i) => (
                 <Link key={i} to={item.href} className="pmm-mob-link" onClick={onLinkClick}>

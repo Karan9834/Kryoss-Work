@@ -3,6 +3,12 @@ import { Route } from "react-router-dom";
 import ProductsShowcase from "../pages/products/ProductsShowcase";
 import ProductDetailsPlaceholder from "../pages/products/ProductDetailsPlaceholder";
 
+import OurProducts from "../pages/Footer/Products/OurProducts";
+import PrimeProducts from "../pages/Footer/Products/PrimeProducts";
+import EnterpriseProducts from "../pages/Footer/Products/EnterpriseProducts";
+import GamingProducts from "../pages/Footer/Products/GamingProducts";
+import OthersProducts from "../pages/Footer/Products/OthersProducts";
+
 import TaxiBookingUber from "../pages/products/transport-app-solutions/TaxiBookingUber";
 import TaxiBiddingApp from "../pages/products/transport-app-solutions/TaxiBiddingApp";
 import BikeRidingApp from "../pages/products/transport-app-solutions/BikeRidingApp";
@@ -208,5 +214,11 @@ export const ProductRoutes = [
 <Route key="ims" path="/products/enterprise/ims" element={<IMSPager />} />,
 <Route key="sms" path="/products/enterprise/sms" element={<SMSLanding />} />,
 <Route key="pms" path="/products/enterprise/pms" element={<PMSLanding />} />,
+
+<Route key="footer-our-products" path="products/our-products" element={<OurProducts />} />,
+<Route key="footer-prime-products" path="products/prime-products" element={<PrimeProducts />} />,
+<Route key="footer-enterprise-products" path="products/enterprise-products" element={<EnterpriseProducts />} />,
+<Route key="footer-gaming-products" path="products/gaming-products" element={<GamingProducts />} />,
+<Route key="footer-others-products" path="products/others-products" element={<OthersProducts />} />,
 
 ];

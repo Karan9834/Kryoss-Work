@@ -1,6 +1,11 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
+import ApplicationSolutions from '../pages/Footer/Solutions/ApplicationSolutions';
+import CustomSoftware from '../pages/Footer/Solutions/CustomSoftware';
+import OnDemandSolutions from '../pages/Footer/Solutions/OnDemandSolutions';
+import FooterIndustries from '../pages/Footer/Solutions/Industries';
+
 // Application Solutions
 import TaxiBookingApp from '../pages/solutions/Application Solutions/TaxiBookingApp';
 import FoodDeliveryApp from '../pages/solutions/Application Solutions/FoodDeliveryApp';
@@ -112,4 +117,9 @@ export const SolutionRoutes = [
     <Route key="ind-news-media" path="industries/news-media" element={<NewsMediaIndustry />} />,
     <Route key="ind-food-restaurant" path="industries/food-restaurant" element={<FoodRestaurantIndustry />} />,
     <Route key="ind-travel-tourism" path="industries/travel-tourism" element={<TravelTourismIndustry />} />,
+
+    <Route key="footer-application-solutions" path="solutions/application-solutions" element={<ApplicationSolutions />} />,
+    <Route key="footer-custom-software" path="solutions/custom-software" element={<CustomSoftware />} />,
+    <Route key="footer-on-demand-solutions" path="solutions/on-demand-solutions" element={<OnDemandSolutions />} />,
+    <Route key="footer-solutions-industries" path="solutions/industries" element={<FooterIndustries />} />,
 ];

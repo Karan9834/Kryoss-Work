@@ -7,19 +7,17 @@ import logo from "../../assets/Logo/worklogo.png";
 
 const footerLinks = {
   Products: [
-    { label: "Delivery App Clone", href: "/products/delivery/food-delivery" },
-    { label: "Taxi App Clone", href: "/products/transport/uber-clone" },
-    { label: "Handyman App Clone", href: "/products/home-service/handyman" },
-    { label: "Super App (Gojek Style)", href: "/gojek-clone" },
-    { label: "Grocery App Clone", href: "/products/delivery/grocery-delivery" },
+    { label: "Our Products", href: "/products/our-products" },
+    { label: "Prime Products", href: "/products/prime-products" },
+    { label: "Enterprise Products", href: "/products/enterprise-products" },
+    { label: "Gaming Products", href: "/products/gaming-products" },
+    { label: "Others Products", href: "/products/others-products" },
   ],
-  Services: [
-    { label: "Mobile App Development", href: "/services/mobile-app-development" },
-    { label: "Web Development", href: "/services/web-development" },
-    { label: "Data & AI Solutions", href: "/services/data-ai-solutions" },
-    { label: "Product Engineering", href: "/services/product-engineering" },
-    { label: "DevOps & Cloud", href: "/services/devops-cloud" },
-    { label: "UI/UX Design", href: "/services/ui-ux-design" },
+  Solutions: [
+    { label: "Application Solutions", href: "/solutions/application-solutions" },
+    { label: "Custom Software", href: "/solutions/custom-software" },
+    { label: "On Demand Solutions", href: "/solutions/on-demand-solutions" },
+    { label: "Industries", href: "/solutions/industries" },
   ],
   Company: [
     { label: "About Us", href: "/company/about" },
@@ -56,35 +54,6 @@ const Footer = () => {
 
   return (
     <>
-      {/* 🔥 CTA SECTION */}
-      <section className="relative px-6 lg:px-[2rem] mt-24 mb-[-40px] z-20">
-        <div className="relative pt-16 pb-14 text-center overflow-hidden rounded-[32px] sm:rounded-[48px] shadow-2xl shadow-[#5B8CFF]/15">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#5B8CFF] to-[#00C2A8]"></div>
-          {/* Subtle mesh overlay */}
-          <div className="absolute inset-0 bg-[#0B0F1A]/10 backdrop-blur-[1px]"></div>
-
-          <div className="relative z-10 px-6">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-5 tracking-tight leading-[1.2]">
-              Let’s Build Something <span className="italic font-medium">Incredible</span>
-            </h2>
-            <p className="text-white/85 mb-8 text-base leading-relaxed max-w-2xl mx-auto font-normal">
-              Scale faster with world-class digital solutions tailored to your unique business needs and vision.
-            </p>
-
-            <Link
-              to="/company/contact"
-              className="inline-flex items-center gap-3 bg-white text-[#0B0F1A] px-8 py-3.5 rounded-xl text-sm font-semibold hover:scale-105 transition-all shadow-xl hover:shadow-white/10 group"
-            >
-              Start Project 
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
-
-        </div>
-      </section>
-
-
-
       {/* 🔥 FOOTER */}
       <footer className="bg-[#0B0F1A] text-white relative overflow-hidden pt-16 pb-10">
 
@@ -137,7 +106,7 @@ const Footer = () => {
                     placeholder="Subscribe to our newsletter"
                     className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-3.5 text-sm outline-none focus:border-[#5B8CFF]/50 transition-all"
                   />
-                  <button 
+                  <button
                     className="absolute right-1.5 top-1.5 bottom-1.5 px-6 rounded-lg text-sm font-semibold text-white transition-all hover:scale-105 active:scale-95"
                     style={{
                       background: "linear-gradient(135deg, #5B8CFF, #00C2A8)",
@@ -225,9 +194,9 @@ const Footer = () => {
         >
           {/* Pulsing ring animation */}
           <span className="absolute inset-0 bg-[#25D366] rounded-2xl animate-ping opacity-20 group-hover:opacity-40"></span>
-          
+
           <FaWhatsapp size={24} className="relative z-10" />
-          
+
           {/* Label Tooltip */}
           <span className="absolute right-full mr-3 px-3 py-1 bg-[#25D366] text-white text-xs font-semibold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-lg">
             Chat with us
@@ -237,9 +206,8 @@ const Footer = () => {
         {/* 🔥 BACK TO TOP */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className={`fixed bottom-24 right-8 w-12 h-12 bg-gradient-to-br from-[#5B8CFF] to-[#00C2A8] rounded-2xl text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 z-50 group ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
-          }`}
+          className={`fixed bottom-24 right-8 w-12 h-12 bg-gradient-to-br from-[#5B8CFF] to-[#00C2A8] rounded-2xl text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 z-50 group ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
+            }`}
           aria-label="Back to top"
         >
           <ArrowRight size={20} className="-rotate-90 group-hover:-translate-y-1 transition-transform" />
@@ -253,4 +221,4 @@ const Footer = () => {
 };
 
 export default Footer;
-
+
