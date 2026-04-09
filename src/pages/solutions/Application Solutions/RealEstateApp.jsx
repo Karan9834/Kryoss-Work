@@ -417,25 +417,25 @@ const RealEstateApp = () => {
                 </div>
             </section>
 
-            {/* 5. Features Grid (#1E2A3A Background) */}
-            <section className="py-24 bg-[#1E2A3A] relative">
-                <div className="absolute inset-0 bg-[url('/grid-pattern-light.svg')] opacity-[0.05]" />
+            {/* 5. Features Grid (Light Background matching reference) */}
+            <section className="py-24 bg-[#F8FAFF] relative">
+                <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03]" />
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-display drop-shadow-sm">
-                            Platform <span className="text-blue-400">Capabilities</span>
+                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 font-display">
+                            Platform <span className="text-blue-600">Capabilities</span>
                         </h2>
-                        <div className="flex justify-center gap-4 mt-8 bg-blue-900/30 p-2 rounded-2xl w-max mx-auto border border-blue-800/50 backdrop-blur-sm">
+                        <div className="flex justify-center gap-4 mt-8 bg-white p-2 rounded-2xl w-max mx-auto border border-slate-200 shadow-sm backdrop-blur-sm">
                             <button
                                 onClick={() => setActiveFeatureTab("Common")}
-                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Common" ? "bg-blue-500 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Common" ? "bg-blue-500 text-white shadow-lg" : "text-slate-600 hover:text-blue-600"
                                     }`}
                             >
                                 Core Essentials
                             </button>
                             <button
                                 onClick={() => setActiveFeatureTab("Advance")}
-                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Advance" ? "bg-blue-500 text-white shadow-lg" : "text-gray-300 hover:text-white"
+                                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Advance" ? "bg-blue-500 text-white shadow-lg" : "text-slate-600 hover:text-blue-600"
                                     }`}
                             >
                                 Premium Tools
@@ -450,15 +450,20 @@ const RealEstateApp = () => {
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0, scale: 0.98 }}
                             transition={{ duration: 0.3 }}
-                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                         >
                             {(activeFeatureTab === "Common" ? commonFeatures : advanceFeatures).map((feature, idx) => (
-                                <div key={idx} className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 p-8 rounded-2xl hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-blue-500/30 group">
-                                    <div className="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors border border-blue-800/50">
-                                        <feature.icon className="text-blue-400 group-hover:text-white transition-colors" size={26} />
+                                <div key={idx} className="bg-white border border-slate-100 p-8 rounded-[2rem] hover:shadow-2xl transition-all duration-500 group relative overflow-hidden shadow-sm">
+                                    <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-all duration-300">
+                                        <feature.icon className="text-blue-600 group-hover:text-white transition-colors" size={28} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-                                    <p className="text-blue-200/70 font-light leading-relaxed">{feature.desc}</p>
+                                    <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
+                                    <p className="text-slate-500 font-medium leading-relaxed">{feature.desc}</p>
+                                    
+                                    {/* Subtle Watermark-style icon in background */}
+                                    <div className="absolute -bottom-4 -right-4 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity">
+                                        <feature.icon size={120} />
+                                    </div>
                                 </div>
                             ))}
                         </motion.div>
