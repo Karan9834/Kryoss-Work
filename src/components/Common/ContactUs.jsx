@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import {
   MapPin,
   Phone,
@@ -49,7 +48,6 @@ const ContactUs = ({
       gradient: "from-orange-500 to-teal-500",
       badge: "bg-orange-100 text-orange-600",
     },
-
     blue: {
       light: "blue-50",
       medium: "blue-500",
@@ -177,12 +175,7 @@ const ContactUs = ({
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <div
             className={`inline-flex items-center gap-2 px-4 py-2 ${colors.badge} rounded-full mb-6`}
           >
@@ -201,25 +194,15 @@ const ContactUs = ({
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Have questions about our {productName} solution? We're here to help!
           </p>
-        </motion.div>
+        </div>
 
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           {/* Left Side - Company Details */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:w-1/2 space-y-8"
-          >
+          <div className="lg:w-1/2 space-y-8">
             {/* Image with improved layout */}
             {showImage && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="relative mb-10"
-              >
+              <div className="relative mb-10">
                 {/* Decorative elements around image */}
                 <div
                   className={`absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-2xl opacity-20`}
@@ -248,7 +231,7 @@ const ContactUs = ({
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             )}
 
             {/* Company Details Grid */}
@@ -256,12 +239,8 @@ const ContactUs = ({
               {companyDetails.map((item, index) => {
                 const Icon = item.icon;
                 return (
-                  <motion.div
+                  <div
                     key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4 + index * 0.1 }}
-                    whileHover={{ y: -5 }}
                     className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
                   >
                     <div
@@ -277,45 +256,14 @@ const ContactUs = ({
                         {detail}
                       </p>
                     ))}
-                  </motion.div>
+                  </div>
                 );
               })}
             </div>
-
-            {/* Social Links */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
-              className="flex items-center gap-4 pt-4"
-            >
-              <span className="text-gray-700 font-medium">Follow us:</span>
-              <div className="flex gap-3">
-                {socialLinks.map((social, index) => {
-                  const Icon = social.icon;
-                  return (
-                    <motion.a
-                      key={index}
-                      href={social.url}
-                      whileHover={{ y: -3, scale: 1.1 }}
-                      className={`w-10 h-10 rounded-full bg-gradient-to-r ${currentAccentGradient} text-white flex items-center justify-center hover:shadow-lg transition-all duration-300`}
-                      aria-label={social.label}
-                    >
-                      <Icon size={18} />
-                    </motion.a>
-                  );
-                })}
-              </div>
-            </motion.div>
-          </motion.div>
+          </div>
 
           {/* Right Side - Form in Box */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="lg:w-1/2"
-          >
+          <div className="lg:w-1/2">
             <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border border-gray-100 relative overflow-hidden">
               {/* Decorative gradient elements */}
               <div
@@ -338,14 +286,12 @@ const ContactUs = ({
 
               {/* Success Message */}
               {formStatus.success && (
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
+                <div
                   className={`mb-6 p-4 bg-gradient-to-r ${currentAccentGradient} text-white rounded-xl flex items-center gap-3`}
                 >
                   <CheckCircle size={20} />
                   <span>{formStatus.message}</span>
-                </motion.div>
+                </div>
               )}
 
               {/* Form */}
@@ -414,10 +360,8 @@ const ContactUs = ({
                 </div>
 
                 {/* Submit Button */}
-                <motion.button
+                <button
                   type="submit"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
                   disabled={formStatus.submitted}
                   className={`w-full px-8 py-4 bg-gradient-to-r ${currentButtonGradient} text-white font-semibold rounded-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed`}
                 >
@@ -432,7 +376,7 @@ const ContactUs = ({
                       />
                     </>
                   )}
-                </motion.button>
+                </button>
 
                 {/* Privacy Note */}
                 <p className="text-xs text-gray-500 text-center mt-4">
@@ -441,7 +385,7 @@ const ContactUs = ({
                 </p>
               </form>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
