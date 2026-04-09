@@ -25,9 +25,9 @@ const features = [
 ];
 
 const FeatureSection = ({
-  title = "Our Impact in",
-  highlight = "Numbers",
-  description = "Transforming businesses with measurable results and unwavering commitment",
+  title = "Our Product",
+  highlight = "Impact",
+  description = "Scaling businesses with top-tier application solutions.",
   featuresData
 }) => {
   const displayFeatures = featuresData || features;

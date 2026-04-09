@@ -1,19 +1,19 @@
 import React from "react";
-import { 
-  TrendingUp, 
-  Clock, 
-  Lightbulb, 
-  Crown, 
-  AlertTriangle, 
-  Brain, 
-  DollarSign, 
-  Target 
+import {
+  TrendingUp,
+  Clock,
+  Lightbulb,
+  Crown,
+  AlertTriangle,
+  Brain,
+  DollarSign,
+  Target
 } from "lucide-react";
 
 const ProsConsSection = ({
-  badge = "⚖️ Weighing the Balance",
-  title = "Pros & Cons of",
-  highlight = "Start-ups",
+  badge = "⚖️ Product Evaluation",
+  title = "Pros & Cons of Our",
+  highlight = "Products",
   description = "Understanding both sides before taking the entrepreneurial leap",
   prosData,
   consData
@@ -68,29 +68,29 @@ const ProsConsSection = ({
   const displayCons = consData || defaultCons;
 
   return (
-    <section className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 py-16 md:py-20 overflow-hidden relative">
-      
+    <section className="bg-gradient-to-br from-fuchsia-900 via-purple-900 to-gray-900 py-16 md:py-20 overflow-hidden relative">
+
       {/* Background Effects */}
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-purple-500/10 to-transparent"></div>
-      
+
       {/* Animated particles */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
-      
+
       {/* Subtle grid */}
-      <div 
+      <div
         className="absolute inset-0 opacity-5"
         style={{
           backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)",
           backgroundSize: "50px 50px"
         }}
       />
-      
+
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-        
+
         {/* Section Heading - Mobile: 30px, Desktop: 36px, Weight: 700 */}
         <div className="text-center mb-10 md:mb-12">
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-5">
@@ -105,13 +105,13 @@ const ProsConsSection = ({
             {description}
           </p>
         </div>
-        
+
         {/* Two Medium Cards Grid */}
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
-          
+
           {/* PROS CARD - Medium Size */}
           <div className="group relative bg-gradient-to-br from-emerald-500/10 to-teal-500/5 backdrop-blur-sm rounded-2xl border border-emerald-500/30 shadow-xl hover:shadow-emerald-500/20 transition-all duration-500 hover:-translate-y-1 overflow-hidden">
-            
+
             {/* Card Header */}
             <div className="relative p-6 pb-0">
               <div className="flex items-center gap-3 mb-4">
@@ -125,7 +125,7 @@ const ProsConsSection = ({
               </div>
               <div className="h-0.5 w-16 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
             </div>
-            
+
             {/* Pros List */}
             <div className="p-6 pt-4 space-y-4">
               {displayPros.map((pro, index) => (
@@ -142,15 +142,15 @@ const ProsConsSection = ({
                 </div>
               ))}
             </div>
-            
+
             {/* Decorative Elements */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-teal-500/10 rounded-full blur-2xl"></div>
           </div>
-          
+
           {/* CONS CARD - Medium Size */}
           <div className="group relative bg-gradient-to-br from-rose-500/10 to-orange-500/5 backdrop-blur-sm rounded-2xl border border-rose-500/30 shadow-xl hover:shadow-rose-500/20 transition-all duration-500 hover:-translate-y-1 overflow-hidden">
-            
+
             {/* Card Header */}
             <div className="relative p-6 pb-0">
               <div className="flex items-center gap-3 mb-4">
@@ -164,7 +164,7 @@ const ProsConsSection = ({
               </div>
               <div className="h-0.5 w-16 bg-gradient-to-r from-rose-500 to-orange-500 rounded-full"></div>
             </div>
-            
+
             {/* Cons List */}
             <div className="p-6 pt-4 space-y-4">
               {displayCons.map((con, index) => (
@@ -181,21 +181,21 @@ const ProsConsSection = ({
                 </div>
               ))}
             </div>
-            
+
             {/* Decorative Elements */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-rose-500/10 rounded-full blur-2xl"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-orange-500/10 rounded-full blur-2xl"></div>
           </div>
-          
+
         </div>
-        
+
         {/* Bottom CTA */}
         <div className="text-center mt-10 pt-6">
           <p className="text-gray-400 text-xs md:text-sm font-normal">
             Thinking of starting your journey? Let us help you navigate both sides.
           </p>
         </div>
-        
+
       </div>
     </section>
   );

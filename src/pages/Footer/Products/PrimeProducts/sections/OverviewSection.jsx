@@ -2,9 +2,9 @@ import React from "react";
 import overview from "../../../../../assets/Application-Solutions/overview.png"
 
 const OverviewSection = ({
-  badge = "📊 Market Insights",
-  title = "A Snapshot of",
-  highlight = "Start-ups",
+  badge = "📈 Prime Insights",
+  title = "Overview of",
+  highlight = "Prime Products",
   descriptionParagraphs = [
     "Start-ups represent entrepreneurial ventures focused on delivering specific products or services that solve authentic market challenges. These enterprises typically launch with limited capital and flexible operational approaches.",
     "During early stages, founders primarily self-fund operations before approaching family circles, professional networks, angel investors, or venture capital firms for external financing. While creativity powers start-up momentum, sustained success hinges on scaling capabilities, regulatory compliance, and precise implementation."
@@ -14,8 +14,8 @@ const OverviewSection = ({
     { id: 2, text: "Investor Ready" },
     { id: 3, text: "Scalable Growth" }
   ],
-  badge2 = "Active Start-ups",
-  badge2Val = "50,000+"
+  badge2 = "Global Deployments",
+  badge2Val = "10,000+"
 }) => {
   return (
     <section className="relative w-full bg-gradient-to-r from-purple-50 via-white to-indigo-50 py-16 md:py-20 overflow-hidden">

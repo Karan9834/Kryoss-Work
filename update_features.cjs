@@ -1,20 +1,7 @@
 const fs = require('fs');
-const path = require('path');
+const glob = require('glob');
 
-function getFiles(dir, files = []) {
-    const fileList = fs.readdirSync(dir);
-    for (const file of fileList) {
-        const name = dir + '/' + file;
-        if (fs.statSync(name).isDirectory()) {
-            getFiles(name, files);
-        } else if (name.endsWith('.jsx') || name.endsWith('.js')) {
-            files.push(name);
-        }
-    }
-    return files;
-}
-
-const files = getFiles('src/pages/solutions');
+const files = glob.sync('src/pages/solutions/**/*.{jsx,js}');
 let updatedCount = 0;
 
 files.forEach(file => {

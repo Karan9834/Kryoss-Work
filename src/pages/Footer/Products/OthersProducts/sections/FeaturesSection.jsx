@@ -25,9 +25,9 @@ const features = [
 ];
 
 const FeatureSection = ({
-  title = "Our Impact in",
-  highlight = "Numbers",
-  description = "Transforming businesses with measurable results and unwavering commitment",
+  title = "Niche Market",
+  highlight = "Growth",
+  description = "Empowering specialized sectors with custom software.",
   featuresData
 }) => {
   const displayFeatures = featuresData || features;

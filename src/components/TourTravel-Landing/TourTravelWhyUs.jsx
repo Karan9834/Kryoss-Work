@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, Shield, Clock, Headphones, TrendingUp, Layers, Zap, Star } from 'lucide-react';
+import { Globe, Shield, Clock, Headphones, TrendingUp, Layers, Zap, Star, Cpu } from 'lucide-react';
 
 const reasons = [
     {
@@ -55,6 +55,15 @@ const reasons = [
         glow: "shadow-rose-200",
         span: "",
         tag: "Tech",
+    },
+    {
+        icon: Cpu,
+        title: "AI Smart Recommendations",
+        desc: "Leverage AI-driven insights to deliver personalized travel suggestions, increasing user engagement and bookings.",
+        gradient: "from-cyan-400 to-blue-500",
+        glow: "shadow-cyan-200",
+        span: "",
+        tag: "AI",
     },
 ];
 

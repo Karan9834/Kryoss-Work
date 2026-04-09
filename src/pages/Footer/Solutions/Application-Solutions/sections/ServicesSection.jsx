@@ -1,18 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { 
-  Car, 
-  Utensils, 
-  ShoppingCart, 
-  Scissors, 
-  Tv, 
-  Heart, 
-  Sparkles, 
-  Home, 
-  ShoppingBag, 
-  List, 
-  Building, 
-  Hotel 
+import {
+  Car,
+  Utensils,
+  ShoppingCart,
+  Scissors,
+  Tv,
+  Heart,
+  Sparkles,
+  Home,
+  ShoppingBag,
+  List,
+  Building,
+  Hotel
 } from "lucide-react";
 
 const services = [
@@ -148,7 +148,7 @@ const ServicesSection = () => {
   return (
     <section className="bg-gray-50 py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        
+
         {/* Section Heading */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -168,7 +168,7 @@ const ServicesSection = () => {
             >
               {/* Animated gradient background on hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
-              
+
               {/* Icon with gradient background */}
               <div className={`relative z-10 w-16 h-16 flex items-center justify-center rounded-xl bg-gradient-to-br ${service.color} shadow-lg mb-5 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
                 <div className="text-white">
@@ -193,10 +193,10 @@ const ServicesSection = () => {
                   className="w-full px-4 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-sm font-semibold rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 group/btn"
                 >
                   <span>Get Started</span>
-                  <svg 
-                    className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" 
-                    fill="none" 
-                    stroke="currentColor" 
+                  <svg
+                    className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

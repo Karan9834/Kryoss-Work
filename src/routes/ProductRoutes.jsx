@@ -211,14 +211,14 @@ export const ProductRoutes = [
     <Route key="webinar-engine" path="/products/prime/webinar-engine" element={<WebinarEnginePage />} />,
     <Route key="news-management" path="/products/enterprise/nms" element={<NewsMAnagement />} />,
     <Route key="hotel-management-system" path="/products/enterprise/hms-hotel" element={<HSMHotel />} />,
-<Route key="ims" path="/products/enterprise/ims" element={<IMSPager />} />,
-<Route key="sms" path="/products/enterprise/sms" element={<SMSLanding />} />,
-<Route key="pms" path="/products/enterprise/pms" element={<PMSLanding />} />,
+    <Route key="ims" path="/products/enterprise/ims" element={<IMSPager />} />,
+    <Route key="sms" path="/products/enterprise/sms" element={<SMSLanding />} />,
+    <Route key="pms" path="/products/enterprise/pms" element={<PMSLanding />} />,
 
-<Route key="footer-our-products" path="products/our-products" element={<OurProducts />} />,
-<Route key="footer-prime-products" path="products/prime-products" element={<PrimeProducts />} />,
-<Route key="footer-enterprise-products" path="products/enterprise-products" element={<EnterpriseProducts />} />,
-<Route key="footer-gaming-products" path="products/gaming-products" element={<GamingProducts />} />,
-<Route key="footer-others-products" path="products/others-products" element={<OthersProducts />} />,
+    <Route key="footer-our-products" path="products/our-products" element={<OurProducts />} />,
+    <Route key="footer-prime-products" path="products/prime-products" element={<PrimeProducts />} />,
+    <Route key="footer-enterprise-products" path="products/enterprise-products" element={<EnterpriseProducts />} />,
+    <Route key="footer-gaming-products" path="products/gaming-products" element={<GamingProducts />} />,
+    <Route key="footer-others-products" path="products/others-products" element={<OthersProducts />} />,
 
 ];

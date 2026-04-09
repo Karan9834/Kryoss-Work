@@ -11,9 +11,9 @@ import {
 } from "lucide-react";
 
 const ProsConsSection = ({
-  badge = "⚖️ Weighing the Balance",
-  title = "Pros & Cons of",
-  highlight = "Start-ups",
+  badge = "⚖️ Enterprise Assessment",
+  title = "Pros & Cons of Enterprise",
+  highlight = "Software",
   description = "Understanding both sides before taking the entrepreneurial leap",
   prosData,
   consData
@@ -68,7 +68,7 @@ const ProsConsSection = ({
   const displayCons = consData || defaultCons;
 
   return (
-    <section className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 py-16 md:py-20 overflow-hidden relative">
+    <section className="bg-gradient-to-br from-rose-900 via-pink-900 to-gray-900 py-16 md:py-20 overflow-hidden relative">
       
       {/* Background Effects */}
       <div className="absolute inset-0 bg-black/40"></div>

@@ -2,15 +2,15 @@ import React from 'react';
 import hero from "../../../../../assets/Application-Solutions/hero.png";
 
 const Hero = ({
-  title = "Application",
-  highlight = "Solutions",
+  title = "Other",
+  highlight = "Products",
   description = "Transform your business with cutting-edge application solutions. We deliver scalable, secure, and innovative software tailored to your needs.",
-  badge = "✨ Trusted by 5000+ Businesses",
-  bgGradient = "bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900",
+  badge = "🚀 Specialized Systems",
+  bgGradient = "bg-gradient-to-br from-slate-900 via-emerald-900 to-slate-900",
   highlightGradient = "bg-gradient-to-r from-cyan-400 to-blue-500",
   badgeColor = "text-cyan-400",
-  buttonColor = "bg-gradient-to-r from-cyan-500 to-blue-600",
-  glowColor = "bg-cyan-500/20",
+  buttonColor = "bg-gradient-to-r from-emerald-500 to-teal-600",
+  glowColor = "bg-emerald-500/20",
   particleColor1 = "bg-cyan-400",
   particleColor2 = "bg-blue-400"
 }) => {

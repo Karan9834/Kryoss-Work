@@ -147,7 +147,7 @@ const SocialNetworkingIndustry = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -237,6 +237,7 @@ const SocialNetworkingIndustry = () => {
             </section>
 
             {/* 3. Must Have Features (Tabs Layout) */}
+            {/* 3. Must Have Features (Tabs Layout) */}
             <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-orange-50/40 py-20 px-6">
                 <div className="absolute inset-0 opacity-30 pointer-events-none">
                     <div className="absolute top-20 left-10 w-72 h-72 bg-orange-200/30 rounded-full blur-3xl"></div>
@@ -277,25 +278,26 @@ const SocialNetworkingIndustry = () => {
                         })}
                     </div>
 
-                    {/* Layout - Simple image, no box */}
+                    {/* Layout */}
                     <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 items-start">
+
                         {/* LEFT COLUMN */}
                         <div ref={leftRef} className="grid grid-cols-2 gap-3 min-h-[400px]">
+
+                            {/* Column 1 */}
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(0, 2).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
+                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start"
                                     >
-                                        <div className="flex gap-2 w-full">
-                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                                                <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5" />
-                                            </span>
+                                        <div className="flex gap-2 w-full items-start">
+                                            <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
                                             <div>
                                                 <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-xs text-slate-500 mt-1 leading-relaxed">
                                                     Integrated module for seamless functionality
                                                 </p>
                                             </div>
@@ -303,21 +305,21 @@ const SocialNetworkingIndustry = () => {
                                     </div>
                                 ))}
                             </div>
+
+                            {/* Column 2 */}
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(2, 4).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
+                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start"
                                     >
-                                        <div className="flex gap-2 w-full">
-                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                                                <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5" />
-                                            </span>
+                                        <div className="flex gap-2 w-full items-start">
+                                            <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
                                             <div>
                                                 <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-xs text-slate-500 mt-1 leading-relaxed">
                                                     Advanced workflow logic optimization
                                                 </p>
                                             </div>
@@ -327,34 +329,36 @@ const SocialNetworkingIndustry = () => {
                             </div>
                         </div>
 
-                        {/* CENTER - Just the image, no frame, no box */}
+                        {/* CENTER IMAGE */}
                         <div className="flex justify-center">
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
                                 className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
-                                style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
-                                onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                style={{ height: leftHeight > 0 ? `${leftHeight}px` : "auto" }}
+                                onError={(e) => {
+                                    e.target.src = "/SolAps/FallbackEcom.png";
+                                }}
                             />
                         </div>
 
                         {/* RIGHT COLUMN */}
                         <div className="grid grid-cols-2 gap-3 min-h-[400px]">
+
+                            {/* Column 1 */}
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(4, 6).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
+                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start"
                                     >
-                                        <div className="flex gap-2 w-full">
-                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                                                <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5" />
-                                            </span>
+                                        <div className="flex gap-2 w-full items-start">
+                                            <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
                                             <div>
                                                 <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-xs text-slate-500 mt-1 leading-relaxed">
                                                     Robust tool implementation structure
                                                 </p>
                                             </div>
@@ -362,21 +366,21 @@ const SocialNetworkingIndustry = () => {
                                     </div>
                                 ))}
                             </div>
+
+                            {/* Column 2 */}
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(6, 8).map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
+                                        className="group bg-white p-3 rounded-xl border-2 border-orange-200 hover:border-orange-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start"
                                     >
-                                        <div className="flex gap-2 w-full">
-                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                                                <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5" />
-                                            </span>
+                                        <div className="flex gap-2 w-full items-start">
+                                            <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
                                             <div>
                                                 <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-xs text-slate-500 mt-1 leading-relaxed">
                                                     Enhanced ecosystem control features
                                                 </p>
                                             </div>
@@ -385,6 +389,7 @@ const SocialNetworkingIndustry = () => {
                                 ))}
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>

@@ -25,16 +25,16 @@ const features = [
 ];
 
 const FeatureSection = ({
-  title = "Our Impact in",
-  highlight = "Numbers",
-  description = "Transforming businesses with measurable results and unwavering commitment",
+  title = "Enterprise",
+  highlight = "Metrics",
+  description = "Streamlining global operations with specialized software.",
   featuresData
 }) => {
   const displayFeatures = featuresData || features;
   return (
     <section className="bg-white py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        
+
         {/* Section Heading - Mobile: 30px, Desktop: 36px, Weight: 700 */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-[1.875rem] md:text-[2.25rem] font-bold text-gray-900 mb-3">
@@ -44,7 +44,7 @@ const FeatureSection = ({
             {description}
           </p>
         </div>
-        
+
         {/* GRID - Fixed shape cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
 
@@ -53,10 +53,10 @@ const FeatureSection = ({
               key={index}
               className="group relative bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-100 rounded-2xl p-6 shadow-md hover:shadow-purple-200/50 transition-all duration-300 hover:-translate-y-2 cursor-pointer overflow-hidden min-h-[280px] flex flex-col"
             >
-              
+
               {/* Background gradient on hover */}
               <div className="absolute inset-0 bg-gradient-to-r from-purple-100 to-indigo-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
+
               {/* ICON BOX */}
               <div className="relative z-10 w-14 h-14 flex items-center justify-center rounded-xl bg-white shadow-md mb-5 group-hover:scale-110 group-hover:shadow-purple-200 transition-all duration-300">
                 {item.icon}
@@ -74,7 +74,7 @@ const FeatureSection = ({
 
               {/* Bottom border animation on hover */}
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 group-hover:w-full transition-all duration-300"></div>
-              
+
               {/* Shine effect on hover */}
               <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12"></div>
             </div>
