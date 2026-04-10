@@ -2,9 +2,6 @@ import React from 'react';
 import { MapPin, Layers, Palette, Settings } from 'lucide-react';
 import whyUsImg from '../../assets/saloonlanding-img/saloonlandingwhyus.jpg';
 
-
-
-
 const SalonWhyUs = () => {
    const cards = [
       {
@@ -57,17 +54,18 @@ const SalonWhyUs = () => {
       <section className="py-16 bg-white relative overflow-hidden flex flex-col items-center">
          <div className="max-w-7xl mx-auto px-6 w-full">
 
-            {/* Header (Optional, but good for context) */}
+            {/* Header - Updated Typography ONLY */}
             <div className="text-center mb-20 space-y-4">
-               <h2 className="text-2xl lg:text-3xl font-semibold text-[#1A1C2C]">
+               {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                   Why Choose Our <span className="bg-gradient-to-r from-rose-600 via-orange-500 to-amber-500 bg-clip-text text-transparent">Salon Solution</span>
                </h2>
-               <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+               
+               {/* Description - 16px, weight 400, line-height 1.6 */}
+               <p className="text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                   We provide the best salon software to help you manage your salon business
                </p>
             </div>
-
-
 
             {/* Main Interactive Layout */}
             <div className="relative flex flex-col lg:flex-row items-center justify-center min-h-auto lg:min-h-[700px] gap-12 lg:gap-0">
@@ -86,7 +84,7 @@ const SalonWhyUs = () => {
                   </div>
                </div>
 
-               {/* Cards Container */}
+               {/* Cards Container - Card fonts KEPT ORIGINAL */}
                <div className="w-full lg:absolute lg:inset-0 pointer-events-none z-20">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:block gap-6 pointer-events-auto max-w-7xl mx-auto px-4 lg:px-0">
                      {cards.map((card, index) => {
@@ -108,7 +106,9 @@ const SalonWhyUs = () => {
                                   <Icon size={24} />
                                </div>
                                <div className="space-y-2">
+                                  {/* Card Title - ORIGINAL FONT (unchanged) */}
                                   <h3 className={`text-lg font-bold text-[#1A1C2C] group-hover:${card.themeColor} transition-colors`}>{card.title}</h3>
+                                  {/* Card Description - ORIGINAL FONT (unchanged) */}
                                   <p className="text-xs text-gray-500 leading-relaxed font-medium">
                                      {card.desc}
                                   </p>

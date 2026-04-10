@@ -50,19 +50,24 @@ const RealEstateWhyUs = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                {/* Header */}
+                {/* Header - Updated Typography ONLY */}
                 <div className="text-center mb-16">
-                    <span className="text-emerald-400 font-bold text-sm uppercase tracking-[0.3em] block mb-4">Why Choose Us</span>
-                    <h2 className="text-2xl lg:text-3xl font-semibold leading-tight mb-4">
+                    {/* Badge - 12px, weight 500, letter-spacing 0.05em */}
+                    <span className="text-emerald-400 text-[12px] font-medium tracking-[0.05em] uppercase block mb-4">Why Choose Us</span>
+                    
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-4">
                         Why Top <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Property Developers</span> &{" "}
                         <span className="text-amber-400">Agencies</span> Choose Us
                     </h2>
-                    <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+                    
+                    {/* Description - 16px mobile, 18px desktop, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] text-slate-400 max-w-2xl mx-auto">
                         We combine cutting-edge technology with deep real estate domain expertise to deliver platforms that agents and buyers love.
                     </p>
                 </div>
 
-                {/* Gradient icon cards — different look from taxi's number cards */}
+                {/* Gradient icon cards - Card fonts KEPT ORIGINAL */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {reasons.map((r, idx) => (
                         <div
@@ -72,7 +77,9 @@ const RealEstateWhyUs = () => {
                             <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${r.gradient} flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                                 <r.icon size={26} />
                             </div>
+                            {/* Card Title - ORIGINAL FONT (unchanged) */}
                             <h3 className="text-base font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">{r.title}</h3>
+                            {/* Card Description - ORIGINAL FONT (unchanged) */}
                             <p className="text-slate-400 text-sm leading-relaxed">{r.desc}</p>
                         </div>
                     ))}

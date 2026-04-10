@@ -2,9 +2,6 @@ import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import aboutImg from '../../assets/saloonlanding-img/saloonlandingabout.png';
 
-
-
-
 const SalonAbout = () => {
   const highlights = [
     { text: "Smart Appointment Scheduling", color: "bg-rose-50", iconColor: "text-rose-500", hoverBg: "hover:bg-rose-100" },
@@ -24,25 +21,24 @@ const SalonAbout = () => {
             <div className="absolute -inset-4 bg-orange-100/40 blur-3xl opacity-0 group-hover:opacity-100 transition duration-1000"></div>
             <img
               src={aboutImg}
-
               alt="About Salon Vision"
               className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700"
-
             />
-            {/* Background Blob */}
-            {/* <div className="absolute -top-10 -left-10 w-32 h-32 bg-pink-100 rounded-full blur-2xl -z-10 opacity-60"></div> */}
           </div>
 
-          {/* Right Side - Content */}
+          {/* Right Side - Content - Updated Typography */}
           <div className="space-y-8 animate-fadeInRight">
             <div className="space-y-4">
-              <span className="text-rose-600 font-bold text-sm uppercase tracking-[0.3em]">About </span>
-              <h2 className="text-2xl lg:text-3xl font-semibold text-[#1A1C2C] leading-tight">
+              {/* Badge - Updated: text-[14px] font-bold tracking-[0.3em] uppercase */}
+              <span className="text-rose-600 text-[14px] font-bold tracking-[0.3em] uppercase">About</span>
+              
+              {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+              <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                 Revolutionizing the <span className="bg-gradient-to-r from-purple-600 via-rose-500 to-orange-500 bg-clip-text text-transparent">Beauty Industry</span> Through Tech
               </h2>
 
-
-              <p className="text-[#4A4B5E] text-lg leading-relaxed">
+              {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+              <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-[#4A4B5E]">
                 We provide a holistic digital ecosystem for salon owners to streamline their operations,
                 enhance customer satisfaction, and scale their business with data-driven insights.
                 Our platform is designed to be as intuitive for your staff as it is delightful for your clients.
@@ -53,7 +49,8 @@ const SalonAbout = () => {
               {highlights.map((item, index) => (
                 <div key={index} className={`flex items-center gap-3 p-4 ${item.color} rounded-2xl ${item.hoverBg} transition-colors group cursor-default border border-transparent hover:border-white shadow-sm`}>
                   <CheckCircle2 size={20} className={`${item.iconColor} group-hover:scale-110 transition-transform`} />
-                  <span className="text-[#1A1C2C] font-semibold text-sm">{item.text}</span>
+                  {/* Highlight text - Updated: text-[14px] md:text-[16px] font-semibold */}
+                  <span className="text-[#1A1C2C] font-semibold text-[14px] md:text-[16px]">{item.text}</span>
                 </div>
               ))}
             </div>

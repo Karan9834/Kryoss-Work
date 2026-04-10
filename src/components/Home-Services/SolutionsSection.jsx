@@ -93,7 +93,7 @@ const SolutionsSection = () => {
 
       <div className="relative z-10 container mx-auto px-6 lg:px-8">
 
-        {/* Premium Heading */}
+        {/* Premium Heading - Updated Typography ONLY */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -103,18 +103,22 @@ const SolutionsSection = () => {
         >
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-100 to-pink-100 border border-purple-200 px-5 py-2.5 rounded-full mb-6">
             <Sparkles className="w-4 h-4 text-purple-500" />
-            <span className="text-sm font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            {/* Badge - Updated: text-[14px] font-semibold */}
+            <span className="text-[14px] font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               How It Works
             </span>
           </div>
           
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-4">
             Smart{" "}
             <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-500 text-transparent bg-clip-text">
               Solutions
             </span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             Built to simplify your home service experience with cutting-edge technology
           </p>
         </motion.div>
@@ -137,7 +141,7 @@ const SolutionsSection = () => {
           />
         </div>
 
-        {/* Content */}
+        {/* Content - Card fonts KEPT ORIGINAL */}
         <div className="flex flex-col gap-32 lg:gap-40">
           {solutions.map((item, index) => {
             const isLeft = index % 2 === 0;
@@ -194,10 +198,12 @@ const SolutionsSection = () => {
                     </span>
                   </div>
                   
+                  {/* Card Title - ORIGINAL FONT (unchanged) */}
                   <h3 className={`text-2xl lg:text-3xl font-bold text-gray-900 mb-4 ${isLeft ? "lg:text-right" : ""}`}>
                     {item.title}
                   </h3>
 
+                  {/* Card Description - ORIGINAL FONT (unchanged) */}
                   <p className={`text-gray-600 leading-relaxed max-w-md ${isLeft ? "lg:ml-auto lg:text-right" : ""}`}>
                     {item.description}
                   </p>

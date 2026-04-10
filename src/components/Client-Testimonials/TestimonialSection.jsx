@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Quote, PlayCircle } from "lucide-react";
+import { Quote, Star, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
@@ -8,164 +8,263 @@ const testimonials = [
     title: "Food Delivery App Success",
     role: "CEO, Tech Startup",
     image: "https://whitelabelfox.com/assets/images/testimonial/Mr-Medyan.webp",
-    text: "Mr. Medyan from Jordan shares his experience working with Kryoss Work after purchasing our food delivery application (Fox-Food) for his business. After collaborating with multiple development companies in the past, he found our approach to be more structured, responsive, and dependable. He highlights our quick response time and clear communication throughout the project. Managing a large logistics-focused operation required a stable and professionally built mobile application. Our team delivered a solution that met his operational needs while maintaining strong performance, usability, and technical reliability.",
-    accent: "purple"
+    text: "Mr. Medyan from Jordan shares his experience working with Kryoss Work after purchasing our food delivery application. He highlights our quick response time and clear communication throughout the project.",
+    rating: 5,
+    cardColor: "from-purple-500 to-purple-600",
+    badgeColor: "bg-purple-100 text-purple-700 border-purple-200",
+    iconColor: "text-purple-200",
+    starColor: "fill-purple-400 text-purple-400"
   },
   {
     name: "Ms. Emilie",
     title: "Carpool App Revolution",
     role: "Product Manager",
     image: "https://whitelabelfox.com/assets/images/testimonial/Ms-Emilie.webp",
-    text: "Ms. Emilie from Costa Rica shares her honest and positive experience working with Kryoss Work for her Carpool App project. She mentions that our pricing was far more competitive compared to other providers, which made it the right choice for launching her carpooling idea in her region. She appreciated how smoothly the entire project was managed — from understanding her requirements to delivering a high-quality, ready-to-launch solution. Our team communicated with her on a daily basis, responded quickly to her questions, and ensured every feature aligned with her expectations.",
-    accent: "blue"
+    text: "Ms. Emilie shares her positive experience and highlights competitive pricing and smooth delivery. Our team communicated daily and ensured every feature aligned with her expectations.",
+    rating: 5,
+    cardColor: "from-blue-500 to-blue-600",
+    badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
+    iconColor: "text-blue-200",
+    starColor: "fill-blue-400 text-blue-400"
   },
   {
     name: "Mr. Tapiwa",
     title: "InDrive Clone Solution",
     role: "Founder",
     image: "https://whitelabelfox.com/assets/images/testimonial/Mr-Tapiwa.webp",
-    text: "Mr. Tapiwa from Zimbabwe shares his positive experience collaborating with Kryoss Work for his Fox-Drive (inDrive Clone App) project. He highlights the team’s professionalism, clear communication, and commitment to timely delivery. He appreciated how smoothly the project was handled — from initial setup to final deployment. Our team ensured every feature met his business requirements with full customization and white-label branding. The Fox-Drive app was delivered with essential features like real-time tracking and driver-rider communication tools.",
-    accent: "orange"
+    text: "Great collaboration experience with clear communication and professionalism. The team ensured every feature met his business requirements with full customization.",
+    rating: 5,
+    cardColor: "from-emerald-500 to-emerald-600",
+    badgeColor: "bg-emerald-100 text-emerald-700 border-emerald-200",
+    iconColor: "text-emerald-200",
+    starColor: "fill-emerald-400 text-emerald-400"
   },
   {
     name: "Mr. Jacques Rocca Serra",
     title: "Gojek Clone Enterprise App",
     role: "Operations Head",
     image: "https://whitelabelfox.com/assets/images/testimonial/jacques-rocca-serra.webp",
-    text: "In this testimonial, Mr. Jacques Rocca Serra shares his smooth and successful experience working with Kryoss Work for his Fox-Jek (Gojek Clone App) project. What makes this testimonial even more special is that Mr. Jacques personally visited our office, giving him direct insight into our development process. He highlights the team's professionalism, responsiveness, and ability to deliver a feature-rich, multi-service super app on time. The Fox-Jek solution included services such as taxi booking, food delivery, and parcel delivery.",
-    accent: "teal"
+    text: "Smooth and successful experience working with Kryoss Work. The team delivered a feature-rich, multi-service super app on time with complete professionalism.",
+    rating: 5,
+    cardColor: "from-orange-500 to-orange-600",
+    badgeColor: "bg-orange-100 text-orange-700 border-orange-200",
+    iconColor: "text-orange-200",
+    starColor: "fill-orange-400 text-orange-400"
   },
+  {
+    name: "Sarah Johnson",
+    title: "E-Learning Platform",
+    role: "Education Director",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    text: "The team delivered an exceptional e-learning platform that exceeded our expectations. Students love the intuitive interface and interactive features.",
+    rating: 5,
+    cardColor: "from-rose-500 to-rose-600",
+    badgeColor: "bg-rose-100 text-rose-700 border-rose-200",
+    iconColor: "text-rose-200",
+    starColor: "fill-rose-400 text-rose-400"
+  },
+  {
+    name: "David Chen",
+    title: "Real Estate App",
+    role: "Property Developer",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    text: "Our real estate app has transformed how we connect with buyers. The features are game-changing for property tours and client engagement.",
+    rating: 5,
+    cardColor: "from-indigo-500 to-indigo-600",
+    badgeColor: "bg-indigo-100 text-indigo-700 border-indigo-200",
+    iconColor: "text-indigo-200",
+    starColor: "fill-indigo-400 text-indigo-400"
+  },
+  {
+    name: "Maria Garcia",
+    title: "Healthcare Platform",
+    role: "Medical Director",
+    image: "https://randomuser.me/api/portraits/women/45.jpg",
+    text: "The healthcare platform has revolutionized how we manage patient data. Secure, reliable, and user-friendly for both staff and patients.",
+    rating: 5,
+    cardColor: "from-teal-500 to-teal-600",
+    badgeColor: "bg-teal-100 text-teal-700 border-teal-200",
+    iconColor: "text-teal-200",
+    starColor: "fill-teal-400 text-teal-400"
+  },
+  {
+    name: "James Wilson",
+    title: "Logistics Solution",
+    role: "Operations Director",
+    image: "https://randomuser.me/api/portraits/men/52.jpg",
+    text: "The logistics solution streamlined our entire supply chain. Real-time tracking and automated dispatch saved us countless hours.",
+    rating: 5,
+    cardColor: "from-cyan-500 to-cyan-600",
+    badgeColor: "bg-cyan-100 text-cyan-700 border-cyan-200",
+    iconColor: "text-cyan-200",
+    starColor: "fill-cyan-400 text-cyan-400"
+  }
 ];
 
-const TestimonialSection = () => {
+const TestimonialCard = ({ testimonial }) => {
   return (
-    <section className="py-24 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-900 text-sm font-medium mb-4"
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-purple-600 animate-pulse"></span>
-            Video Testimonials & Stories
-          </motion.div>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-slate-900 mb-6"
-          >
-            Real Success <span className="text-purple-600">Stories</span>
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-slate-600 text-lg max-w-3xl mx-auto"
-          >
-            Hear from our visionary clients about their journey with Kryoss Work. We don't just build apps; we forge long-term partnerships.
-          </motion.p>
+    <div className="w-[380px] flex-shrink-0 mx-4 group">
+      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100 hover:border-slate-200 transform hover:-translate-y-1">
+        
+        {/* TOP SECTION - Different color per card */}
+        <div className={`relative h-32 bg-gradient-to-r ${testimonial.cardColor}`}>
+          
+          {/* Subtle pattern overlay */}
+          <div className="absolute inset-0 opacity-10" style={{
+            backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 1px)",
+            backgroundSize: "20px 20px"
+          }}></div>
+          
+          {/* Soft gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+
+          {/* PROFILE IMAGE */}
+          <div className="absolute -bottom-10 left-6 w-20 h-20 rounded-full border-4 border-white shadow-xl overflow-hidden z-10 bg-white">
+            <img
+              src={testimonial.image}
+              alt={testimonial.name}
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                e.target.src = "https://via.placeholder.com/80x80?text=Client";
+              }}
+            />
+          </div>
         </div>
 
-        {/* Stories Grid */}
-        <div className="space-y-32">
-          {testimonials.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className={`flex flex-col ${
-                index % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
-              } gap-12 items-center`}
-            >
-              {/* Visual Side */}
-              <div className="w-full md:w-1/2 relative group">
-                <div className={`absolute -inset-4 bg-gradient-to-tr ${
-                  item.accent === 'purple' ? 'from-purple-100 to-pink-100' :
-                  item.accent === 'blue' ? 'from-blue-100 to-cyan-100' :
-                  item.accent === 'orange' ? 'from-orange-100 to-yellow-100' :
-                  'from-teal-100 to-emerald-100'
-                } rounded-[2.5rem] -rotate-2 group-hover:rotate-0 transition-transform duration-500 opacity-60`}></div>
-                
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-900">
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
-                  />
-                  {/* Play Button Overlay */}
-                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 text-white transform scale-90 group-hover:scale-100 transition-transform duration-300">
-                       <PlayCircle size={48} className="fill-white/20" />
-                    </div>
-                  </div>
-                </div>
+        {/* CONTENT */}
+        <div className="p-6 pt-12">
 
-                {/* Decorative Elements */}
-                <div className={`absolute -bottom-6 ${index % 2 === 0 ? '-right-6' : '-left-6'} w-24 h-24 bg-white rounded-3xl shadow-xl flex items-center justify-center p-2 hidden lg:flex`}>
-                  <div className={`w-full h-full rounded-2xl ${
-                    item.accent === 'purple' ? 'bg-purple-50' :
-                    item.accent === 'blue' ? 'bg-blue-50' :
-                    item.accent === 'orange' ? 'bg-orange-50' :
-                    'bg-teal-50'
-                  } flex items-center justify-center text-slate-300`}>
-                    <Quote size={40} className="opacity-20 translate-y-2" />
-                  </div>
-                </div>
-              </div>
+          {/* STARS - Different color per card */}
+          <div className="flex gap-1 mb-3">
+            {[...Array(testimonial.rating)].map((_, i) => (
+              <Star key={i} size={16} className={testimonial.starColor} />
+            ))}
+          </div>
 
-              {/* Content Side */}
-              <div className="w-full md:w-1/2 space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className={`h-1 w-12 rounded-full ${
-                    item.accent === 'purple' ? 'bg-purple-600' :
-                    item.accent === 'blue' ? 'bg-blue-600' :
-                    item.accent === 'orange' ? 'bg-orange-600' :
-                    'bg-teal-600'
-                  }`}></div>
-                  <span className={`text-sm font-bold uppercase tracking-widest ${
-                    item.accent === 'purple' ? 'text-purple-600' :
-                    item.accent === 'blue' ? 'text-blue-600' :
-                    item.accent === 'orange' ? 'text-orange-600' :
-                    'text-teal-600'
-                  }`}>{item.title}</span>
-                </div>
+          {/* QUOTE ICON - Different color per card */}
+          <Quote size={28} className={`${testimonial.iconColor} mb-3 opacity-60`} />
 
-                <h3 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
-                  {item.name}
-                </h3>
-                
-                <p className="text-indigo-600 font-semibold text-lg">{item.role}</p>
+          {/* TESTIMONIAL TEXT */}
+          <p className="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-4">
+            "{testimonial.text}"
+          </p>
 
-                <div className="relative">
-                  <Quote size={48} className="absolute -top-6 -left-8 text-slate-100 z-0" />
-                  <p className="text-slate-600 text-lg leading-relaxed relative z-10 italic">
-                    "{item.text}"
-                  </p>
-                </div>
+          {/* FOOTER */}
+          <div className="border-t border-slate-100 pt-4 mt-2">
+            <h4 className="font-bold text-slate-900 text-base">{testimonial.name}</h4>
+            <p className={`text-xs mt-1 font-medium ${testimonial.badgeColor.split(' ')[0]} ${testimonial.badgeColor.split(' ')[1]}`}>
+              {testimonial.role}
+            </p>
+            
+            <div className="mt-3 flex items-center justify-between">
+              <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${testimonial.badgeColor}`}>
+                {testimonial.title}
+              </span>
+              <ChevronRight size={14} className="text-slate-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-                <button className={`mt-4 px-6 py-3 rounded-xl font-bold transition-all duration-300 ${
-                  item.accent === 'purple' ? 'bg-purple-600 hover:bg-purple-700 text-white shadow-lg shadow-purple-600/20' :
-                  item.accent === 'blue' ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-600/20' :
-                  item.accent === 'orange' ? 'bg-orange-600 hover:bg-orange-700 text-white shadow-lg shadow-orange-600/20' :
-                  'bg-teal-600 hover:bg-teal-700 text-white shadow-lg shadow-teal-600/20'
-                }`}>
-                  Read Case Study
-                </button>
-              </div>
-            </motion.div>
+const TestimonialSection = () => {
+  const duplicated = [...testimonials, ...testimonials, ...testimonials];
+
+  return (
+    <section className="py-24 bg-gradient-to-br from-slate-50 via-white to-slate-50 overflow-hidden">
+      
+      {/* Background decorative elements */}
+      <div className="relative">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-300 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse delay-2000"></div>
+      </div>
+
+      {/* HEADER */}
+      <div className="max-w-7xl mx-auto px-6 text-center mb-16 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 text-sm font-medium mb-6"
+        >
+          <span className="w-2 h-2 rounded-full bg-purple-600 animate-pulse"></span>
+          Trusted by 500+ Happy Clients Worldwide
+        </motion.div>
+        
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-4xl md:text-6xl font-bold text-slate-900 mb-6"
+        >
+          Real Success{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-emerald-600">
+            Stories
+          </span>
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-slate-600 text-lg max-w-2xl mx-auto"
+        >
+          Hear from our visionary clients who transformed their business with Kryoss Work.
+          We don't just build apps; we forge long-term partnerships.
+        </motion.p>
+      </div>
+
+      {/* MARQUEE CONTAINER */}
+      <div className="relative">
+        
+        {/* LEFT FADE */}
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-slate-50 via-slate-50/80 to-transparent z-10 pointer-events-none"></div>
+        
+        {/* RIGHT FADE */}
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent z-10 pointer-events-none"></div>
+        
+        {/* FIRST ROW - Left to Right */}
+        <div className="flex animate-marquee gap-4 py-6">
+          {duplicated.map((t, i) => (
+            <TestimonialCard key={`row1-${i}`} testimonial={t} />
+          ))}
+        </div>
+
+        {/* SECOND ROW - Right to Left (reverse direction) */}
+        <div className="flex animate-marquee-reverse gap-4 py-6 mt-4">
+          {[...duplicated].reverse().map((t, i) => (
+            <TestimonialCard key={`row2-${i}`} testimonial={t} />
           ))}
         </div>
       </div>
 
+      {/* ANIMATION STYLES */}
       <style>{`
-        @keyframes float {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        
+        @keyframes marquee-reverse {
+          0% { transform: translateX(-50%); }
+          100% { transform: translateX(0); }
+        }
+        
+        .animate-marquee {
+          animation: marquee 40s linear infinite;
+          width: fit-content;
+        }
+        
+        .animate-marquee-reverse {
+          animation: marquee-reverse 40s linear infinite;
+          width: fit-content;
+        }
+        
+        .animate-marquee:hover,
+        .animate-marquee-reverse:hover {
+          animation-play-state: paused;
         }
       `}</style>
     </section>

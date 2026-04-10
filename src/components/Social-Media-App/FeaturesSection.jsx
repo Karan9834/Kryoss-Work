@@ -87,7 +87,7 @@ const FeaturesSection = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-6 lg:px-8">
-        {/* Section Header */}
+        {/* Section Header - Updated Typography ONLY */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -100,17 +100,19 @@ const FeaturesSection = () => {
             <span className="text-sm font-medium text-purple-300">Features</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white mb-4">
             Powerful Features for
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"> Modern Connection</span>
           </h2>
 
-          <p className="text-gray-400 text-lg">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-400">
             Everything you need to create meaningful connections
           </p>
         </motion.div>
 
-        {/* Features Grid */}
+        {/* Features Grid - Card fonts KEPT ORIGINAL */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -127,17 +129,17 @@ const FeaturesSection = () => {
               className="group"
             >
               <div className="relative h-full bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700 hover:border-purple-500/50 transition-all duration-300">
-                {/* Icon - Using Emoji for guaranteed visibility */}
+                {/* Icon */}
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-gray-700 to-gray-600 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform duration-300 text-2xl">
                   {feature.icon}
                 </div>
 
-                {/* Title */}
+                {/* Card Title - ORIGINAL FONT (unchanged) */}
                 <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors duration-300">
                   {feature.title}
                 </h3>
 
-                {/* Description */}
+                {/* Card Description - ORIGINAL FONT (unchanged) */}
                 <p className="text-gray-400 text-sm leading-relaxed">
                   {feature.description}
                 </p>

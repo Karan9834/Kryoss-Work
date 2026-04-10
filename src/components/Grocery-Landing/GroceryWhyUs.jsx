@@ -11,11 +11,14 @@ const GroceryWhyUs = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
+                {/* Header - Updated Typography */}
                 <div className="text-center mb-20 space-y-4">
-                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#1A1C2C]">
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                         Why Industry <span className="text-emerald-600 font-black">Leaders Choose Us</span>
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                    {/* Description Text - 16px, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                         We provide the technology that powers millions of deliveries worldwide with unmatched reliability and speed.
                     </p>
                 </div>
@@ -30,15 +33,17 @@ const GroceryWhyUs = () => {
                                 <ShieldCheck size={32} />
                             </div>
                             <div className="space-y-3">
-                                <h3 className="text-2xl lg:text-3xl font-black text-[#1A1C2C]">Military-Grade Security</h3>
-                                <p className="text-gray-500 lg:text-lg leading-relaxed max-w-md">
+                                {/* Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+                                <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] text-[#1A1C2C]">Military-Grade Security</h3>
+                                {/* Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                                <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-500 max-w-md">
                                     Your data and transactions are protected by world-class encryption and security protocols, ensuring 100% safety for you and your customers.
                                 </p>
                             </div>
                         </div>
                         <div className="mt-8 flex flex-wrap gap-4">
-                            <span className="px-4 py-2 bg-white rounded-full text-xs lg:text-sm font-bold text-emerald-700 shadow-sm border border-emerald-50 italic">PCI DSS Compliant</span>
-                            <span className="px-4 py-2 bg-white rounded-full text-xs lg:text-sm font-bold text-emerald-700 shadow-sm border border-emerald-50 italic">ISO 27001 Certified</span>
+                            <span className="px-4 py-2 bg-white rounded-full text-[12px] lg:text-[14px] font-bold text-emerald-700 shadow-sm border border-emerald-50 italic">PCI DSS Compliant</span>
+                            <span className="px-4 py-2 bg-white rounded-full text-[12px] lg:text-[14px] font-bold text-emerald-700 shadow-sm border border-emerald-50 italic">ISO 27001 Certified</span>
                         </div>
                     </div>
 
@@ -48,8 +53,10 @@ const GroceryWhyUs = () => {
                             <div className="w-14 h-14 rounded-2xl bg-orange-500 text-white flex items-center justify-center shadow-lg transition-all duration-500">
                                 <Zap size={28} />
                             </div>
-                            <h3 className="text-xl font-black text-[#1A1C2C]">Lightning Fast Speed</h3>
-                            <p className="text-gray-500 text-sm leading-relaxed">
+                            {/* Title H3 - 24px mobile, 30px desktop */}
+                            <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] text-[#1A1C2C]">Lightning Fast Speed</h3>
+                            {/* Description - 14px mobile, 16px desktop */}
+                            <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-500">
                                 Our optimized architecture ensures sub-second response times across all devices.
                             </p>
                         </div>
@@ -61,8 +68,8 @@ const GroceryWhyUs = () => {
                             <div className="w-14 h-14 rounded-2xl bg-indigo-600 text-white flex items-center justify-center shadow-lg transition-all duration-500">
                                 <Globe size={28} />
                             </div>
-                            <h3 className="text-xl font-black text-[#1A1C2C]">Global Scalability</h3>
-                            <p className="text-gray-500 text-sm leading-relaxed">
+                            <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] text-[#1A1C2C]">Global Scalability</h3>
+                            <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-500">
                                 Scale to millions of users globally with our cloud-native infrastructure.
                             </p>
                         </div>
@@ -74,20 +81,20 @@ const GroceryWhyUs = () => {
                         <div className="space-y-4 relative z-10 lg:max-w-xl text-center lg:text-left">
                             <div className="flex items-center justify-center lg:justify-start gap-3 mb-2">
                                 <Award className="text-yellow-400" size={32} />
-                                <span className="text-yellow-400 font-bold uppercase tracking-widest text-[10px] lg:text-sm">Award-Winning Tech</span>
+                                <span className="text-yellow-400 font-bold uppercase tracking-widest text-[10px] lg:text-[14px]">Award-Winning Tech</span>
                             </div>
-                            <h3 className="text-2xl lg:text-4xl font-black italic">Transforming the <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Future of Delivery</span></h3>
-                            <p className="text-gray-400 text-sm lg:text-lg">
+                            <h3 className="text-[24px] md:text-[36px] font-black italic">Transforming the <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Future of Delivery</span></h3>
+                            <p className="text-gray-400 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                                 Join 500+ businesses that have successfully launched their grocery delivery brands with KryossWork.
                             </p>
                         </div>
                         <div className="flex gap-6 lg:gap-10 relative z-10 w-full lg:w-auto justify-center lg:justify-end border-t border-white/10 lg:border-none pt-8 lg:pt-0">
                             <div className="text-center transition-transform duration-500 group-hover:scale-110">
-                                <p className="text-3xl lg:text-5xl font-black mb-1">99.9%</p>
+                                <p className="text-[28px] lg:text-[48px] font-black mb-1">99.9%</p>
                                 <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Uptime Guaranteed</p>
                             </div>
                             <div className="text-center transition-transform duration-500 group-hover:scale-110">
-                                <p className="text-3xl lg:text-5xl font-black mb-1">24/7</p>
+                                <p className="text-[28px] lg:text-[48px] font-black mb-1">24/7</p>
                                 <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Expert Support</p>
                             </div>
                         </div>
@@ -95,10 +102,10 @@ const GroceryWhyUs = () => {
                 </div>
 
                 <div className="mt-16 flex flex-wrap justify-center gap-10 opacity-40">
-                    <div className="flex items-center gap-2 font-black italic text-[#1A1C2C]"><Heart className="text-rose-500" /> Made for Growth</div>
-                    <div className="flex items-center gap-2 font-black italic text-[#1A1C2C]"><Sparkles className="text-yellow-500" /> Premium Design</div>
-                    <div className="flex items-center gap-2 font-black italic text-[#1A1C2C]"><TrendingUp className="text-emerald-500" /> ROI Focused</div>
-                    <div className="flex items-center gap-2 font-black italic text-[#1A1C2C]"><Handshake className="text-orange-500" /> Partner Oriented</div>
+                    <div className="flex items-center gap-2 font-black italic text-[#1A1C2C] text-[14px]"><Heart className="text-rose-500" /> Made for Growth</div>
+                    <div className="flex items-center gap-2 font-black italic text-[#1A1C2C] text-[14px]"><Sparkles className="text-yellow-500" /> Premium Design</div>
+                    <div className="flex items-center gap-2 font-black italic text-[#1A1C2C] text-[14px]"><TrendingUp className="text-emerald-500" /> ROI Focused</div>
+                    <div className="flex items-center gap-2 font-black italic text-[#1A1C2C] text-[14px]"><Handshake className="text-orange-500" /> Partner Oriented</div>
                 </div>
             </div>
         </section>

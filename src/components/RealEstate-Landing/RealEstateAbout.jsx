@@ -53,26 +53,34 @@ const RealEstateAbout = () => {
                             </div>
                         </div>
 
-                        {/* Metrics Row */}
+                        {/* Metrics Row - Updated Stats Typography */}
                         <div className="grid grid-cols-3 gap-4">
                             {metrics.map((m, i) => (
                                 <div key={i} className="bg-gray-50 rounded-2xl p-4 text-center border border-gray-100 hover:shadow-sm transition-all">
                                     <m.icon size={20} className={`${m.color} mx-auto mb-2`} />
-                                    <p className={`text-xl font-black ${m.color}`}>{m.value}</p>
-                                    <p className="text-gray-500 text-xs font-semibold mt-1">{m.label}</p>
+                                    {/* Stats Number - 20px mobile, 24px desktop, font-weight: 700 */}
+                                    <p className={`text-[20px] md:text-[24px] font-bold ${m.color}`}>{m.value}</p>
+                                    {/* Stats Label - 12px, font-weight: 400, letter-spacing: 0.02em */}
+                                    <p className="text-[12px] font-normal tracking-[0.02em] text-gray-500 mt-1">{m.label}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
-                    {/* Right: Content */}
+
+                    {/* Right: Content - Updated Typography */}
                     <div className="space-y-8 animate-fadeInLeft order-1 lg:order-2">
                         <div className="space-y-3">
-                            <span className="text-amber-600 font-bold text-sm uppercase tracking-[0.3em] block">Transforming Real Estate</span>
-                            <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E293B] leading-tight">
+                            {/* Badge - 12px, font-weight: 500, letter-spacing: 0.05em */}
+                            <span className="text-amber-600 text-[12px] font-medium tracking-[0.05em] uppercase block">Transforming Real Estate</span>
+                            
+                            {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                                 From Listing to Closing —<br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">All in One Platform</span>
                             </h2>
-                            <p className="text-[#4A4B5E] text-lg leading-relaxed">
+                            
+                            {/* Description - 16px mobile, 18px desktop, weight 400, line-height 1.6 */}
+                            <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] text-[#4A4B5E]">
                                 We build digitally-driven property portals that connect buyers, sellers, agents, and property managers on a single, intuitive platform.
                             </p>
                         </div>
@@ -85,15 +93,15 @@ const RealEstateAbout = () => {
                                         <span className={`text-sm font-black ${t.color}`}>{t.step}</span>
                                     </div>
                                     <div>
+                                        {/* Step Title - font-weight: 700 */}
                                         <h4 className={`font-bold text-sm ${t.color} mb-1`}>{t.title}</h4>
-                                        <p className="text-gray-600 text-sm leading-relaxed">{t.desc}</p>
+                                        {/* Step Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                                        <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">{t.desc}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
-
-
                 </div>
             </div>
 

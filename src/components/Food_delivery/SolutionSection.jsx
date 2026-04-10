@@ -60,21 +60,23 @@ const SolutionSection = () => {
     <section className="relative py-28 bg-gradient-to-br from-orange-50 via-white to-amber-50 overflow-hidden">
       <div ref={containerRef} className="relative max-w-6xl mx-auto px-4">
         
-        {/* SECTION HEADER */}
+        {/* SECTION HEADER - Updated Typography */}
         <div className="text-center mb-20 space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-orange-200 bg-orange-50/50 backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-            <span className="text-orange-700 text-sm font-bold uppercase tracking-widest">Our Solutions</span>
+            <span className="text-orange-700 text-[14px] font-bold uppercase tracking-widest">Our Solutions</span>
           </div>
           
-          <h2 className="text-3xl md:text-5xl font-extrabold leading-tight">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Powerful Features for{" "}
             <span className="bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent">
               Seamless Food Delivery
             </span>
           </h2>
           
-          <p className="max-w-2xl mx-auto text-lg text-gray-600 font-medium">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="max-w-2xl mx-auto text-[16px] font-normal leading-[1.6] text-gray-600">
             We provide end-to-end digital solutions to transform how you deliver food, ensuring speed, safety, and ultimate customer satisfaction.
           </p>
         </div>
@@ -143,35 +145,41 @@ const SolutionSection = () => {
                   </motion.div>
                 </motion.div>
 
-                {/* CONTENT */}
+                {/* CONTENT - Updated Typography */}
                 <div className="flex-1 space-y-5 text-center lg:text-left">
-                  <h3 className="text-3xl font-bold">
+                  {/* Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+                  <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3]">
                     <span className="bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent">
                       {item.title}
                     </span>
                   </h3>
 
-                  <p className="text-lg text-gray-600 leading-relaxed">
+                  {/* Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                  <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
                     {item.desc}
                   </p>
 
-                  {/* Highlight line */}
-                  <div className="w-16 h-1 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full"></div>
+                  {/* Highlight line - width 64px, height 2px */}
+                  <div className="w-16 h-[2px] bg-gradient-to-r from-orange-500 to-amber-500 rounded-full"></div>
                 </div>
               </motion.div>
             );
           })}
         </div>
 
-        {/* MOBILE VERSION */}
+        {/* MOBILE VERSION - Updated Typography */}
         <div className="lg:hidden mt-16 space-y-10 border-l-2 border-orange-300 pl-6">
           {solutions.map((item) => (
             <div key={item.id} className="relative">
               <div className="absolute -left-[10px] top-2 w-4 h-4 bg-orange-500 rounded-full"></div>
-              <h3 className="font-bold text-xl text-orange-600">
+              {/* Title H3 mobile - 24px, weight 700, line-height 1.3 */}
+              <h3 className="text-[24px] font-bold leading-[1.3] text-orange-600">
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-sm">{item.desc}</p>
+              {/* Description mobile - 14px, weight 400, line-height 1.6 */}
+              <p className="text-[14px] font-normal leading-[1.6] text-gray-600">
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>

@@ -118,14 +118,14 @@ const WhyChooseUs = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
 
-        {/* HEADER SECTION */}
+        {/* HEADER SECTION - Updated Typography ONLY */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          {/* Badge - Updated for dark theme */}
+          {/* Badge - Updated */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -133,21 +133,24 @@ const WhyChooseUs = () => {
             className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6 border border-white/20"
           >
             <Sparkles size={16} className="text-purple-300" />
-            <span className="text-sm font-medium text-purple-300">Why Choose Us</span>
+            <span className="text-[14px] font-medium text-purple-300">Why Choose Us</span>
           </motion.div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          {/* Heading H2 - Updated: 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white mb-4">
             The Smart Choice for
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-pink-300 to-blue-300">
               Your E-Commerce Success
             </span>
           </h2>
-          <p className="text-purple-200 text-lg max-w-2xl mx-auto">
+          
+          {/* Description - Updated: 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-purple-200 max-w-2xl mx-auto">
             Discover why thousands of online stores trust us for their e-commerce needs
           </p>
         </motion.div>
 
-        {/* FEATURES GRID - ONLY CARDS */}
+        {/* FEATURES GRID - Card fonts NOT changed */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {features.map((feature, index) => {
             const Icon = feature.icon;
@@ -171,10 +174,12 @@ const WhyChooseUs = () => {
                   <Icon size={28} />
                 </div>
 
-                {/* Content */}
+                {/* Title - ORIGINAL FONT (unchanged) */}
                 <h3 className="text-lg font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-pink-300 transition-all duration-300">
                   {feature.title}
                 </h3>
+
+                {/* Description - ORIGINAL FONT (unchanged) */}
                 <p className="text-purple-200 text-sm leading-relaxed">
                   {feature.desc}
                 </p>

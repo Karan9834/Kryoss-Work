@@ -50,20 +50,24 @@ const TaxiWhyUs = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
+                {/* Header - Updated Typography ONLY */}
                 <div className="flex flex-col lg:flex-row items-center justify-between mb-20 gap-8">
                     <div className="lg:max-w-xl text-center lg:text-left">
-                        <h2 className="text-3xl lg:text-4xl font-semibold leading-tight">
+                        {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                        <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
                             Why the Best <span className="text-yellow-500 italic">Fleet Owners</span> <br />
                             Choose Our Technology
                         </h2>
                     </div>
                     <div className="lg:max-w-md text-center lg:text-left">
-                        <p className="text-slate-400 text-lg">
+                        {/* Description - 16px, weight 400, line-height 1.6 */}
+                        <p className="text-[16px] font-normal leading-[1.6] text-slate-400">
                             We bridge the gap between complex transport logistics and simple user experiences with our award-winning taxi software.
                         </p>
                     </div>
                 </div>
 
+                {/* Cards - Fonts KEPT ORIGINAL (unchanged) */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8">
                     {reasons.map((reason, idx) => (
                         <div key={idx} className="relative group p-8 rounded-3xl bg-slate-800/50 border border-slate-700 hover:bg-slate-800 hover:border-yellow-500/50 transition-all duration-300">
@@ -77,7 +81,11 @@ const TaxiWhyUs = () => {
                                     <reason.icon size={28} />
                                 </div>
                                 <div className="space-y-3">
-                                    <h3 className="text-xl font-bold group-hover:text-yellow-500 transition-colors">{reason.title}</h3>
+                                    {/* Card Title - ORIGINAL FONT (unchanged) */}
+                                    <h3 className="text-xl font-bold group-hover:text-yellow-500 transition-colors">
+                                        {reason.title}
+                                    </h3>
+                                    {/* Card Description - ORIGINAL FONT (unchanged) */}
                                     <p className="text-slate-400 text-sm leading-relaxed">
                                         {reason.desc}
                                     </p>

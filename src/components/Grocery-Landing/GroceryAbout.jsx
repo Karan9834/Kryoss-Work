@@ -23,7 +23,7 @@ const GroceryAbout = () => {
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-                    {/* Left: Single Image Layout (Matching Education) */}
+                    {/* Left: Single Image Layout */}
                     <div className="relative group animate-fadeInLeft">
                         <div className="absolute -inset-10 bg-emerald-50 rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
 
@@ -46,15 +46,20 @@ const GroceryAbout = () => {
                         </div>
                     </div>
 
-                    {/* Right: Content */}
+                    {/* Right: Content - Updated Typography */}
                     <div className="space-y-8 animate-fadeInRight">
                         <div className="space-y-4">
-                            <span className="text-orange-600 font-bold text-sm uppercase tracking-[0.3em] block">Our Solutions</span>
-                            <h2 className="text-2xl lg:text-3xl font-semibold text-[#1A1C2C] leading-tight">
+                            {/* Badge - Updated: text-[14px] font-bold tracking-[0.3em] uppercase */}
+                            <span className="text-orange-600 text-[14px] font-bold tracking-[0.3em] uppercase block">Our Solutions</span>
+                            
+                            {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                                 Empowering Your <br />
                                 <span className="text-emerald-600">Grocery Empire</span>
                             </h2>
-                            <p className="text-[#4A4B5E] text-lg leading-relaxed">
+                            
+                            {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                            <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-[#4A4B5E]">
                                 We don't just build apps; we create seamless shopping experiences. Our grocery delivery solutions are designed to handle peak volumes while ensuring every orange and every loaf of bread reaches your customers in perfect condition.
                             </p>
                         </div>
@@ -63,7 +68,8 @@ const GroceryAbout = () => {
                             {highlights.map((item, index) => (
                                 <div key={index} className="flex items-center gap-3 p-4 bg-emerald-50/50 rounded-2xl hover:bg-emerald-100 transition-all group cursor-default border border-transparent hover:border-emerald-100">
                                     <CheckCircle2 size={20} className="text-emerald-600 group-hover:scale-110 transition-transform" />
-                                    <span className="text-[#1A1C2C] font-semibold text-sm">{item}</span>
+                                    {/* Highlight text - Updated: font-semibold text-[14px] md:text-[16px] */}
+                                    <span className="text-[#1A1C2C] font-semibold text-[14px] md:text-[16px]">{item}</span>
                                 </div>
                             ))}
                         </div>

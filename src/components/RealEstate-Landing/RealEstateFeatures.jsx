@@ -88,23 +88,28 @@ const RealEstateFeatures = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                {/* Header */}
+                {/* Header - Updated Typography */}
                 <div className="text-center mb-16 space-y-4">
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <div className="w-8 h-px bg-emerald-400"></div>
-                        <span className="text-emerald-600 font-bold text-sm uppercase tracking-widest">Industry Leading Features</span>
+                        {/* Badge - 12px, weight 500, letter-spacing 0.05em */}
+                        <span className="text-emerald-600 text-[12px] font-medium tracking-[0.05em] uppercase">Industry Leading Features</span>
                         <div className="w-8 h-px bg-emerald-400"></div>
                     </div>
-                    <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E293B]">
+                    
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                         Everything You Need to <span className="text-emerald-600">Close Deals</span>{' '}
                         <span className="text-amber-500">Faster</span>
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                    
+                    {/* Description - 16px mobile, 18px desktop, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                         Our real estate platform is equipped with powerful tools for buyers, sellers, agents, and property managers.
                     </p>
                 </div>
 
-                {/* 3-column feature grid */}
+                {/* 3-column feature grid - Card fonts KEPT ORIGINAL */}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {features.map((feat, idx) => (
                         <div
@@ -115,7 +120,9 @@ const RealEstateFeatures = () => {
                                 <feat.icon size={26} />
                             </div>
                             <div className="space-y-1 pt-1">
+                                {/* Card Title - ORIGINAL FONT (unchanged) */}
                                 <h3 className={`text-base font-bold text-[#1E293B] group-hover:${feat.color} transition-colors`}>{feat.title}</h3>
+                                {/* Card Description - ORIGINAL FONT (unchanged) */}
                                 <p className="text-gray-500 text-sm leading-relaxed">{feat.desc}</p>
                             </div>
                         </div>

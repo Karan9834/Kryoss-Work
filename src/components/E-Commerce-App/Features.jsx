@@ -82,9 +82,9 @@ const Features = () => {
     <section className="w-full bg-[#f5f3ff] py-20 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
 
-        {/* Heading */}
+        {/* Heading - Updated Typography: 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             E-Commerce Features that
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500">
               Drive Growth
@@ -104,13 +104,13 @@ const Features = () => {
                 className="group relative bg-white rounded-2xl p-6 border border-gray-100 shadow-sm transition duration-500 hover:-translate-y-3 hover:shadow-xl overflow-hidden"
               >
                 
-                {/* 🔥 TOP ANIMATED LINE */}
+                {/* TOP ANIMATED LINE */}
                 <span className={`absolute top-0 left-[-100%] w-full h-[2px] bg-gradient-to-r ${feature.gradient} group-hover:left-0 transition-all duration-700 ease-out`}></span>
 
-                {/* 👻 WATERMARK ICON */}
+                {/* WATERMARK ICON */}
                 <Icon className="absolute right-4 bottom-4 w-20 h-20 text-gray-100 opacity-40 group-hover:scale-110 transition duration-500" />
 
-                {/* 🌈 BOTTOM RIGHT GRADIENT BLOB */}
+                {/* BOTTOM RIGHT GRADIENT BLOB */}
                 <div className={`absolute right-0 bottom-0 w-24 h-24 bg-gradient-to-tr ${feature.gradient} opacity-10 blur-2xl`} />
 
                 {/* ICON */}
@@ -118,13 +118,13 @@ const Features = () => {
                   <Icon className={`${feature.text}`} size={22} />
                 </div>
 
-                {/* TITLE */}
-                <h3 className="relative z-10 text-lg font-semibold text-gray-900 mb-2 group-hover:text-purple-600 transition">
+                {/* TITLE - Updated Typography: 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+                <h3 className="relative z-10 text-[24px] md:text-[30px] font-bold leading-[1.3] text-gray-900 mb-2 group-hover:text-purple-600 transition">
                   {feature.title}
                 </h3>
 
-                {/* DESC */}
-                <p className="relative z-10 text-sm text-gray-600 leading-relaxed">
+                {/* DESC - Updated Typography: 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                <p className="relative z-10 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
                   {feature.desc}
                 </p>
 

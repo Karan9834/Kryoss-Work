@@ -44,30 +44,32 @@ const ProductsSection = () => {
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 z-10">
 
-        {/* Header */}
+        {/* Header - Updated Typography */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-100 rounded-full px-4 py-2 mb-6">
             <Sparkles size={16} className="text-teal-600" />
-            <span className="text-sm font-semibold text-teal-700 tracking-wide">
+            <span className="text-[14px] font-semibold text-teal-700 tracking-wide uppercase">
               Our Products
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Hotel Solutions{" "}
             <span className="bg-gradient-to-r from-teal-600 to-cyan-600 text-transparent bg-clip-text">
               Made Simple
             </span>
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="mt-6 text-[16px] font-normal leading-[1.6] text-gray-600">
             Innovative solutions designed for modern hospitality
           </p>
         </div>
 
-        {/* Category Button (unchanged style logic-wise) */}
+        {/* Category Button */}
         <div className="flex justify-center mb-12">
-          <button className="px-8 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-semibold rounded-xl shadow-md">
+          <button className="px-8 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-semibold rounded-xl shadow-md text-sm md:text-base tracking-wide uppercase">
             {category.name}
           </button>
         </div>
@@ -79,7 +81,7 @@ const ProductsSection = () => {
 
               {/* Clickable Image */}
               <div
-                onClick={() => handleViewDetails(product.id)} // ✅ SAME routing
+                onClick={() => handleViewDetails(product.id)}
                 className="cursor-pointer group"
               >
                 <img
@@ -89,8 +91,8 @@ const ProductsSection = () => {
                 />
               </div>
 
-              {/* Text */}
-              <p className="mt-4 text-sm md:text-base">
+              {/* Text - Updated Typography */}
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span 
                   onClick={() => handleViewDetails(product.id)}
                   className="text-teal-600 font-semibold cursor-pointer hover:underline"
@@ -105,9 +107,9 @@ const ProductsSection = () => {
           ))}
         </div>
 
-        {/* Bottom */}
+        {/* Bottom - Updated Typography */}
         <div className="mt-16 text-center">
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-[14px] font-normal leading-[1.6]">
             Click on any product to explore more
           </p>
         </div>

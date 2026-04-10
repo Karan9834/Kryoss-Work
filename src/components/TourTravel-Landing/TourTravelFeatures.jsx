@@ -87,22 +87,27 @@ const TourTravelFeatures = () => {
             <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-amber-400 via-cyan-400 to-sky-400"></div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                {/* Header */}
+                {/* Header - Updated Typography ONLY */}
                 <div className="text-center mb-16 space-y-4">
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <div className="w-8 h-px bg-sky-400"></div>
-                        <span className="text-sky-600 font-bold text-sm uppercase tracking-widest">Packed with Power</span>
+                        {/* Badge - Updated: text-[14px] font-bold tracking-widest uppercase */}
+                        <span className="text-sky-600 text-[14px] font-bold tracking-widest uppercase">Packed with Power</span>
                         <div className="w-8 h-px bg-sky-400"></div>
                     </div>
-                    <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E293B]">
+                    
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                         Features that <span className="text-sky-600">Elevate</span> Every <span className="text-amber-500">Journey</span>
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                    
+                    {/* Description - 16px, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                         Our travel platform comes packed with tools to deliver a seamless booking experience for travelers and operators alike.
                     </p>
                 </div>
 
-                {/* Zigzag alternating strip layout */}
+                {/* Zigzag alternating strip layout - Card fonts KEPT ORIGINAL */}
                 <div className="space-y-5">
                     {features.map((feat, idx) => {
                         const isEven = idx % 2 === 0;
@@ -125,11 +130,13 @@ const TourTravelFeatures = () => {
                                     </div>
                                 </div>
 
-                                {/* Text content */}
+                                {/* Text content - Card fonts ORIGINAL (unchanged) */}
                                 <div className={`flex-1 flex flex-col justify-center px-8 py-6 bg-white group-hover:${feat.light} transition-colors duration-300`}>
+                                    {/* Card Title - ORIGINAL FONT */}
                                     <h3 className={`text-base font-bold text-[#1E293B] mb-2 group-hover:${feat.color} transition-colors duration-300 uppercase tracking-tight`}>
                                         {feat.title}
                                     </h3>
+                                    {/* Card Description - ORIGINAL FONT */}
                                     <p className="text-gray-500 text-sm leading-relaxed max-w-xl">{feat.desc}</p>
                                 </div>
 

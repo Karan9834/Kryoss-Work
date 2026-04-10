@@ -75,21 +75,25 @@ const TourTravelWhyUs = () => {
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-amber-500 rounded-full blur-[160px] opacity-5 pointer-events-none -mb-20 -ml-20"></div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                {/* Header */}
+                {/* Header - Updated Typography ONLY */}
                 <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between mb-16 gap-6">
                     <div>
-                        <span className="text-sky-400 font-bold text-sm uppercase tracking-[0.3em] block mb-4">Why Choose Us</span>
-                        <h2 className="text-2xl lg:text-3xl font-semibold text-white leading-tight">
+                        {/* Badge - Updated: text-[14px] font-bold tracking-[0.3em] uppercase */}
+                        <span className="text-sky-400 text-[14px] font-bold tracking-[0.3em] uppercase block mb-4">Why Choose Us</span>
+                        
+                        {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                        <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white">
                             Why Top <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-cyan-400">Travel Businesses</span><br />
                             Trust Our Platform
                         </h2>
                     </div>
-                    <p className="text-slate-400 text-base leading-relaxed lg:max-w-md">
+                    {/* Description - 16px, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] font-normal leading-[1.6] text-slate-400 lg:max-w-md">
                         From boutique travel agencies to enterprise OTAs, our proven technology helps travel businesses scale faster and serve customers better.
                     </p>
                 </div>
 
-                {/* Bento-box colorful grid */}
+                {/* Bento-box colorful grid - Card fonts KEPT ORIGINAL */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-[minmax(180px,auto)]">
                     {reasons.map((r, idx) => (
                         <div
@@ -107,6 +111,7 @@ const TourTravelWhyUs = () => {
                             <div className="relative z-10 p-7 h-full flex flex-col justify-between gap-4">
                                 {/* Top: tag + icon */}
                                 <div className="flex items-start justify-between">
+                                    {/* Card Tag - ORIGINAL FONT */}
                                     <span className="text-white/70 text-xs font-bold uppercase tracking-widest border border-white/20 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm">
                                         {r.tag}
                                     </span>
@@ -117,7 +122,9 @@ const TourTravelWhyUs = () => {
 
                                 {/* Bottom: title + desc */}
                                 <div>
+                                    {/* Card Title - ORIGINAL FONT */}
                                     <h3 className="text-white text-base font-bold mb-2">{r.title}</h3>
+                                    {/* Card Description - ORIGINAL FONT */}
                                     <p className="text-white/75 text-sm leading-relaxed">{r.desc}</p>
                                 </div>
                             </div>
@@ -125,7 +132,7 @@ const TourTravelWhyUs = () => {
                     ))}
                 </div>
 
-                {/* Bottom strip */}
+                {/* Bottom strip - Updated Typography */}
                 <div className="mt-16 pt-10 border-t border-white/10 flex flex-wrap justify-center gap-10 opacity-40 hover:opacity-70 transition-opacity duration-500">
                     <span className="font-bold text-base uppercase tracking-widest flex items-center gap-2 text-sky-400">
                         <Globe size={18} /> TravelNest

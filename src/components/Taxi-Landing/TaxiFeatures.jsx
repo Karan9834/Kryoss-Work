@@ -74,16 +74,22 @@ const TaxiFeatures = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
+                {/* Header - Updated Typography */}
                 <div className="text-center mb-16 space-y-4">
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <div className="w-8 h-px bg-yellow-400"></div>
-                        <span className="text-yellow-600 font-bold text-sm uppercase tracking-widest">Industry Leading Features</span>
+                        {/* Badge - Updated: text-[14px] font-bold tracking-widest uppercase */}
+                        <span className="text-yellow-600 text-[14px] font-bold tracking-widest uppercase">Industry Leading Features</span>
                         <div className="w-8 h-px bg-yellow-400"></div>
                     </div>
-                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#1E293B]">
+                    
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                         Everything You Need to <span className="text-yellow-600">Scale</span>
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                    
+                    {/* Description - 16px, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                         Our platform is packed with powerful features designed to provide a seamless experience for both riders and drivers.
                     </p>
                 </div>
@@ -94,8 +100,14 @@ const TaxiFeatures = () => {
                         {featureGroups[0].items.map((item, idx) => (
                             <div key={idx} className="flex items-center lg:items-end flex-col lg:flex-row gap-6 group">
                                 <div className="text-center lg:text-right flex-1 order-2 lg:order-1">
-                                    <h3 className="text-xl font-bold text-[#1E293B] mb-2 group-hover:text-yellow-600 transition-colors uppercase tracking-tight">{item.title}</h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed max-w-xs ml-auto">{item.desc}</p>
+                                    {/* Card Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+                                    <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] text-[#1E293B] mb-2 group-hover:text-yellow-600 transition-colors uppercase tracking-tight">
+                                        {item.title}
+                                    </h3>
+                                    {/* Card Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                                    <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-500 max-w-xs ml-auto">
+                                        {item.desc}
+                                    </p>
                                 </div>
                                 <div className={`w-16 h-16 shrink-0 rounded-2xl ${item.bg} flex items-center justify-center ${item.color} shadow-lg group-hover:scale-110 transition-all duration-500 order-1 lg:order-2 border border-white`}>
                                     <item.icon size={30} />
@@ -123,8 +135,14 @@ const TaxiFeatures = () => {
                                     <item.icon size={30} />
                                 </div>
                                 <div className="text-center lg:text-left flex-1">
-                                    <h3 className="text-xl font-bold text-[#1E293B] mb-2 group-hover:text-yellow-600 transition-colors uppercase tracking-tight">{item.title}</h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed max-w-xs">{item.desc}</p>
+                                    {/* Card Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+                                    <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] text-[#1E293B] mb-2 group-hover:text-yellow-600 transition-colors uppercase tracking-tight">
+                                        {item.title}
+                                    </h3>
+                                    {/* Card Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                                    <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-500 max-w-xs">
+                                        {item.desc}
+                                    </p>
                                 </div>
                             </div>
                         ))}

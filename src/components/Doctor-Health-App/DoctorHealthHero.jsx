@@ -22,7 +22,7 @@ const DoctorHealthHero = () => {
           
           {/* Left Content */}
           <div className="order-2 lg:order-1">
-            {/* Premium logo with glow */}
+            {/* Premium logo - Updated Typography */}
             <div className="flex items-center gap-2 mb-4 md:mb-6">
               <div className="flex items-center gap-2">
                 <span className="text-2xl md:text-3xl font-bold text-white drop-shadow-lg">
@@ -33,21 +33,24 @@ const DoctorHealthHero = () => {
               <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse"></div>
             </div>
 
-            {/* Premium heading with gradient accent */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6">
+            {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-4 md:mb-6">
               <span className="block text-white">Your Health,</span>
               <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-amber-300 bg-clip-text text-transparent">
                 Our Priority
               </span>
             </h1>
 
-            {/* Description - light gray for readability */}
-            <p className="text-base sm:text-lg text-gray-300 mb-6 md:mb-8 max-w-lg">
+            {/* Hero Description - Updated: text-base md:text-lg font-normal leading-relaxed */}
+            <p className="text-base md:text-lg font-normal leading-relaxed text-gray-300 mb-6 md:mb-8 max-w-lg">
               Connect with trusted doctors, book appointments instantly, and manage your family's health journey all in one secure platform.
             </p>
 
-            {/* Premium button with glow effect */}
-            <button className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold rounded-lg text-base sm:text-lg shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transform hover:-translate-y-0.5 transition-all duration-200 overflow-hidden" onClick={() => document.getElementById('explore-health')?.scrollIntoView({ behavior: 'smooth' })}>
+            {/* Hero Button - Updated: text-sm md:text-base font-semibold tracking-wide uppercase */}
+            <button 
+              className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold rounded-lg shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transform hover:-translate-y-0.5 transition-all duration-200 overflow-hidden text-sm md:text-base tracking-wide uppercase"
+              onClick={() => document.getElementById('explore-health')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <span className="relative z-10 flex items-center gap-2">
                 Explore Services
                 <svg className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,22 +59,6 @@ const DoctorHealthHero = () => {
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-emerald-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
-
-            {/* Trust indicators - light colored for dark bg */}
-            <div className="flex flex-wrap gap-4 sm:gap-6 mt-6 md:mt-10">
-              <div className="flex items-center gap-2">
-                <span className="text-emerald-400">✓</span>
-                <span className="text-sm text-gray-300">500+ Specialists</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-emerald-400">✓</span>
-                <span className="text-sm text-gray-300">24/7 Availability</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-emerald-400">✓</span>
-                <span className="text-sm text-gray-300">Secure Booking</span>
-              </div>
-            </div>
           </div>
 
           {/* Right Image - Simple with subtle glow */}

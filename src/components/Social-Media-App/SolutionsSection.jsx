@@ -73,16 +73,18 @@ const SolutionsSection = () => {
 
       <div className="relative z-10 container mx-auto px-6">
 
-        {/* Heading */}
+        {/* Heading - Updated Typography ONLY */}
         <div className="text-center mb-20 relative z-20">
-          <h2 className="text-4xl font-bold mb-4">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-4">
             <span className="text-gray-900">Our </span>
             <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-500 text-transparent bg-clip-text">
               Solutions
             </span>
           </h2>
 
-          <p className="text-gray-600 max-w-xl mx-auto">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600 max-w-xl mx-auto">
             Designed to elevate your digital experience with cutting-edge technology.
           </p>
         </div>
@@ -134,11 +136,12 @@ const SolutionsSection = () => {
                     isLeft ? "lg:text-right" : "lg:order-2"
                   }`}
                 >
+                  {/* Card Title - ORIGINAL FONT (unchanged) */}
                   <h3 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-4">
                     {item.title}
                   </h3>
 
-                  {/* 🔥 DESCRIPTION WITH HOVER EFFECT */}
+                  {/* Card Description - ORIGINAL FONT (unchanged) */}
                   <p className="relative text-gray-600 text-base lg:text-lg leading-relaxed max-w-md transition-all duration-300 group-hover:text-gray-900">
 
                     {/* Accent line */}

@@ -57,7 +57,7 @@ const TimelineSection = () => {
         if (top < windowHeight - 100) {
           setTimeout(() => {
             el.classList.add("opacity-100", "translate-y-0");
-          }, i * 150); // stagger effect
+          }, i * 150);
         }
       });
     };
@@ -71,20 +71,22 @@ const TimelineSection = () => {
   return (
     <section className="w-full bg-gradient-to-br from-cyan-50 via-white to-emerald-50 py-20 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
-        {/* Heading */}
+        {/* Heading - Updated Typography */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-cyan-600 via-teal-500 to-emerald-500 bg-clip-text text-transparent">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-3 bg-gradient-to-r from-cyan-600 via-teal-500 to-emerald-500 bg-clip-text text-transparent">
             Our Solution Process
           </h2>
 
-          <p className="text-gray-600 max-w-xl mx-auto">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600 max-w-xl mx-auto">
             Designed for speed, clarity, and seamless execution across every
             stage of your hotel operations
           </p>
 
-          {/* subtle accent line */}
+          {/* Section Underline - width: 64px, height: 2px */}
           <div className="mt-4 flex justify-center">
-            <div className="w-16 h-1 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-full opacity-70"></div>
+            <div className="w-16 h-[2px] bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-full opacity-70"></div>
           </div>
         </div>
 
@@ -129,16 +131,18 @@ const TimelineSection = () => {
                         }}
                       />
 
-                      {/* STEP NUMBER */}
+                      {/* STEP NUMBER
                       <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-white text-gray-900 text-sm font-bold flex items-center justify-center shadow-lg">
                         {index + 1}
-                      </div>
+                      </div> */}
 
-                      <h3 className="text-lg font-semibold mb-2 relative z-10">
+                      {/* Project Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+                      <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] mb-2 relative z-10">
                         {item.title}
                       </h3>
 
-                      <p className="text-sm text-white/90 leading-relaxed relative z-10">
+                      {/* Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                      <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-white/90 relative z-10">
                         {item.desc}
                       </p>
                     </div>

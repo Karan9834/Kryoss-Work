@@ -100,28 +100,31 @@ const WhyChooseUs = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-6">
-        {/* HEADING */}
+        {/* HEADING - Updated Typography ONLY */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-purple-100 px-4 py-2 rounded-full mb-4">
             <Sparkles className="w-4 h-4 text-purple-500" />
-            <span className="text-sm text-purple-600 font-semibold">
+            {/* Badge - Updated: text-[14px] font-semibold */}
+            <span className="text-[14px] font-semibold text-purple-600">
               Why Choose Us
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-4">
             The{" "}
             <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-500 text-transparent bg-clip-text">
               Smart Choice
             </span>
           </h2>
 
-          <p className="text-gray-600 max-w-xl mx-auto">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600 max-w-xl mx-auto">
             Discover why thousands trust us for their home services
           </p>
         </div>
 
-        {/* GRID */}
+        {/* GRID - Card fonts KEPT ORIGINAL */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => {
             const Icon = feature.icon;
@@ -134,19 +137,19 @@ const WhyChooseUs = () => {
                     className={`absolute inset-0 bg-gradient-to-br ${feature.bgGradient} opacity-0 group-hover:opacity-30 blur-xl transition duration-300`}
                   ></div>
 
-                  {/* ICON FIXED */}
+                  {/* ICON */}
                   <div
                     className={`relative mb-5 w-14 h-14 rounded-xl ${feature.iconBg} flex items-center justify-center group-hover:scale-110 transition`}
                   >
                     <Icon className="w-7 h-7 text-gray-700 group-hover:text-purple-600 transition-all duration-300" />
                   </div>
 
-                  {/* TITLE */}
+                  {/* Card Title - ORIGINAL FONT (unchanged) */}
                   <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-purple-600 transition">
                     {feature.title}
                   </h3>
 
-                  {/* DESC */}
+                  {/* Card Description - ORIGINAL FONT (unchanged) */}
                   <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-800 transition">
                     {feature.description}
                   </p>

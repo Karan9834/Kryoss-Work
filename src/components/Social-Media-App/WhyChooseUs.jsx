@@ -82,28 +82,31 @@ const WhyChooseUs = () => {
 
       <div className="relative z-10 container mx-auto px-6 lg:px-8">
 
-        {/* Heading */}
+        {/* Heading - Updated Typography ONLY */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-100 px-4 py-2 rounded-full mb-5">
             <Sparkles className="w-4 h-4 text-purple-500" />
-            <span className="text-sm font-semibold text-purple-600">
+            {/* Badge - Updated: text-[14px] font-semibold */}
+            <span className="text-[14px] font-semibold text-purple-600">
               Why Choose Us
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             The{" "}
             <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 bg-clip-text text-transparent">
               Smart Choice
             </span>
           </h2>
 
-          <p className="text-gray-600 text-lg">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600">
             Discover why leading brands trust us to power their platforms
           </p>
         </div>
 
-        {/* Cards */}
+        {/* Cards - Fonts KEPT ORIGINAL (unchanged) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           {features.map((feature, index) => {
@@ -120,7 +123,7 @@ const WhyChooseUs = () => {
                   {/* Hover Glow */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${feature.bgGradient} opacity-0 group-hover:opacity-100 transition duration-500`} />
 
-                  {/* ICON (FIXED) */}
+                  {/* ICON */}
                   <div className={`relative mb-5 w-14 h-14 rounded-xl bg-gradient-to-br ${feature.bgGradient} flex items-center justify-center group-hover:scale-110 transition`}>
 
                     {/* Glow layer */}
@@ -129,12 +132,12 @@ const WhyChooseUs = () => {
                     <Icon className="w-7 h-7 text-gray-700 group-hover:text-purple-600 transition" />
                   </div>
 
-                  {/* Title */}
+                  {/* Card Title - ORIGINAL FONT (unchanged) */}
                   <h3 className="relative text-lg font-semibold text-gray-900 mb-2 group-hover:text-purple-600 transition">
                     {feature.title}
                   </h3>
 
-                  {/* Desc */}
+                  {/* Card Description - ORIGINAL FONT (unchanged) */}
                   <p className="relative text-gray-600 text-sm leading-relaxed group-hover:text-gray-800 transition">
                     {feature.desc}
                   </p>

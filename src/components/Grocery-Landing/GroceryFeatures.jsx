@@ -65,16 +65,22 @@ const GroceryFeatures = () => {
     return (
         <section className="py-24 bg-transparent relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 relative z-10">
+                {/* Header - Updated Typography */}
                 <div className="text-center mb-20 space-y-4">
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <Star className="text-amber-500 fill-amber-500" size={16} />
-                        <span className="text-emerald-600 font-bold text-sm uppercase tracking-widest leading-none">Premium Experience</span>
+                        {/* Badge - Updated: text-[14px] font-bold tracking-widest uppercase */}
+                        <span className="text-emerald-600 text-[14px] font-bold tracking-widest uppercase leading-none">Premium Experience</span>
                         <Star className="text-amber-500 fill-amber-500" size={16} />
                     </div>
-                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#1A1C2C]">
+                    
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                         Modern <span className="text-emerald-600">Grocery Journey</span>
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                    
+                    {/* Description Text - 16px, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                         Elevate your business with features designed for speed, reliability, and customer satisfaction.
                     </p>
                 </div>
@@ -94,12 +100,14 @@ const GroceryFeatures = () => {
                                         <Icon size={32} />
                                     </div>
                                     <div className="space-y-3">
-                                        <h3 className="text-xl font-bold text-[#1A1C2C]">{feature.title}</h3>
-                                        <p className="text-gray-500 text-sm leading-relaxed">
+                                        {/* Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+                                        <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] text-[#1A1C2C]">{feature.title}</h3>
+                                        {/* Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                                        <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-500">
                                             {feature.desc}
                                         </p>
                                     </div>
-                                    <div className="pt-4 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#1A1C2C]/30 group-hover:text-emerald-600 transition-colors">
+                                    <div className="pt-4 flex items-center gap-2 text-[12px] font-bold uppercase tracking-wider text-[#1A1C2C]/30 group-hover:text-emerald-600 transition-colors">
                                         Explore More <div className="w-8 h-px bg-current"></div>
                                     </div>
                                 </div>
