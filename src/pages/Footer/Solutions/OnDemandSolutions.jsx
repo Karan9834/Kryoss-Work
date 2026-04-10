@@ -1,10 +1,9 @@
+import CTASection from '../Products/OurProducts/sections/Cta';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Hero from './On-Demand/Hero';
-import WhyChooseUs from './On-Demand/WhyChooseUs';
 import ServicesSection from './On-Demand/ServicesSection';
 import WhatIsOnDemand from './On-Demand/WhatIsOnDemand';
-import ProsConsSection from './On-Demand/ProsConsSection';
 import Industries from '../../../components/Common/Industries';
 import Testimonial from '../../../components/Common/Testimonial';
 import OurWork from '../../../components/Common/OurWork';
@@ -14,12 +13,21 @@ const OnDemandSolutions = () => {
   return (
     <>
       <Hero />
-      <WhyChooseUs />
       <ServicesSection />
       <WhatIsOnDemand />
-      <ProsConsSection />
-      
+
       {/* Testimonial with Light Blue Theme */}
+      <CTASection 
+        bgGradient="bg-white"
+        cardGradient="bg-gradient-to-br from-cyan-50 to-blue-50"
+        textColor="text-cyan-900"
+        subtextColor="text-cyan-700"
+        buttonBg="bg-cyan-600"
+        hoverButtonBg="hover:bg-cyan-700"
+        outlineButtonBorder="border-cyan-200"
+        outlineButtonText="text-cyan-700"
+        outlineButtonHover="hover:bg-cyan-100"
+      />
       <Testimonial
         theme="blue"
         bgGradient="from-blue-50 to-cyan-50"

@@ -1,199 +1,160 @@
-import { ArrowRight, CheckCircle, Play } from 'lucide-react';
-import hero from "../../../../assets/custom-software/hero.png"
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import hero from '../../../../assets/custom-software/hero.png';
 
-const Hero = () => {
+const Hero = ({
+  title = "Build Better",
+  highlight = "Digital Solutions",
+  description = "Create powerful applications that users love. Our platform gives you everything you need to build, deploy, and scale modern web solutions.",
+  badge = "⚡ Next-Gen Platform",
+  bgGradient = "bg-gradient-to-br from-slate-900 via-rose-900 to-slate-900",
+  highlightGradient = "bg-gradient-to-r from-rose-400 to-pink-500",
+  badgeColor = "text-rose-400",
+  buttonColor = "bg-gradient-to-r from-rose-500 to-pink-600",
+  glowColor = "bg-rose-500/20",
+  particleColor1 = "bg-rose-400",
+  particleColor2 = "bg-pink-400"
+}) => {
+  const navigate = useNavigate();
+
   return (
-    <section className="relative bg-gradient-to-br from-orange-600 via-amber-700 to-red-800 overflow-hidden">
-      
-      {/* Ember/Glow Effects */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-400/30 via-transparent to-transparent"></div>
-      
-      {/* Floating ember particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-1/4 w-2 h-2 bg-orange-300 rounded-full animate-float opacity-70"></div>
-        <div className="absolute top-40 right-1/3 w-3 h-3 bg-amber-400 rounded-full animate-float-delay opacity-60"></div>
-        <div className="absolute bottom-32 left-1/3 w-2 h-2 bg-red-400 rounded-full animate-float-slow opacity-50"></div>
-        <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-orange-200 rounded-full animate-float opacity-40"></div>
-        <div className="absolute bottom-1/4 right-1/2 w-2.5 h-2.5 bg-amber-300 rounded-full animate-float-delay opacity-60"></div>
-      </div>
-      
-      {/* Subtle grid pattern */}
-      <div 
+    <section className={`relative ${bgGradient} overflow-hidden py-20 md:py-28`}>
+
+      {/* Modern grid pattern */}
+      <div
         className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)",
-          backgroundSize: "50px 50px"
+          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+          backgroundSize: '30px 30px'
         }}
       />
-      
-      {/* Diagonal slash lines */}
-      <div 
-        className="absolute inset-0 opacity-10"
+
+      {/* Diagonal accent lines */}
+      <div className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0 L60 60 M60 0 L0 60' stroke='%23ffffff' stroke-width='1' fill='none' /%3E%3C/svg%3E")`,
-          backgroundSize: '40px 40px'
+          backgroundImage: `repeating-linear-gradient(45deg, white 0px, white 1px, transparent 1px, transparent 40px)`,
         }}
       />
-      
-      {/* Top wave */}
+
+      {/* Gradient orbs */}
+      <div className={`absolute top-20 left-10 w-64 h-64 ${glowColor} rounded-full blur-3xl`}></div>
+      <div className={`absolute bottom-20 right-10 w-80 h-80 ${glowColor} rounded-full blur-3xl`}></div>
+
+      {/* Top wave decoration */}
       <div className="absolute top-0 left-0 w-full">
-        <svg className="w-full h-[40px] md:h-[60px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <svg className="w-full h-[30px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86C321.39,50.47,258.71,66.66,183.44,85.59,135.05,108.87,59.71,118.11,0,95.8V0H1200V95.8C1146.53,108.87,1070.05,101.29,985.66,92.83Z"
+            d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
             fill="white"
             fillOpacity="0.05"
           />
         </svg>
       </div>
-      
-      {/* Main Container */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24 lg:py-32">
-        
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
+
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
-          {/* LEFT CONTENT */}
-          <div className="text-center md:text-left">
-            
-            {/* Badge - Size: 12px, Weight: 400 */}
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
-              <span className="text-xs font-normal text-orange-200 tracking-wide">
-                🔥 Custom Software Development
+
+          {/* LEFT COLUMN */}
+          <div className="space-y-6">
+
+            {/* Modern badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 backdrop-blur-sm border border-white/10">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              <span className={`text-xs font-semibold ${badgeColor}`}>
+                {badge}
               </span>
             </div>
-            
-            {/* Heading H1 - Mobile: 30px, Desktop: 48px, Weight: 700 */}
-            <h1 className="text-[1.875rem] md:text-[3rem] font-bold text-white leading-tight mb-4">
-              Build <span className="bg-gradient-to-r from-orange-300 to-amber-300 bg-clip-text text-transparent">Tailored Software</span>
-              <span className="block">That Drives Growth</span>
+
+            {/* Heading */}
+            <h1 className="text-[1.875rem] md:text-[3rem] font-bold text-white leading-tight">
+              {title}{" "}
+              <span className={`bg-clip-text text-transparent ${highlightGradient}`}>
+                {highlight}
+              </span>
             </h1>
-            
-            {/* Description - Size: 16px, Weight: 400 */}
-            <p className="text-base font-normal text-orange-100/90 leading-relaxed mb-6 max-w-lg mx-auto md:mx-0">
-              Transform your business with custom software solutions designed specifically for your unique needs. 
-              Scalable, secure, and built for performance.
+
+            {/* Description */}
+            <p className="text-base text-gray-300 leading-relaxed">
+              {description}
             </p>
-            
-            {/* Features list */}
-            <div className="space-y-2 mb-8">
-              <div className="flex items-center gap-2 justify-center md:justify-start">
-                <CheckCircle className="w-4 h-4 text-orange-300" />
-                <span className="text-sm text-orange-100">Enterprise-grade security</span>
-              </div>
-              <div className="flex items-center gap-2 justify-center md:justify-start">
-                <CheckCircle className="w-4 h-4 text-orange-300" />
-                <span className="text-sm text-orange-100">Scalable architecture</span>
-              </div>
-              <div className="flex items-center gap-2 justify-center md:justify-start">
-                <CheckCircle className="w-4 h-4 text-orange-300" />
-                <span className="text-sm text-orange-100">24/7 dedicated support</span>
-              </div>
-            </div>
-            
-            {/* CTA Buttons - Size: 16px, Weight: 600 */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              
-              {/* Get Started Button - Fixed hover shine */}
-              <button className="group relative px-8 py-3.5 bg-gradient-to-r from-orange-500 to-amber-600 text-white font-semibold text-base rounded-full shadow-lg hover:shadow-orange-500/30 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 overflow-hidden">
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+              <button onClick={() => navigate('/company/contact')} className={`group px-6 py-3 ${buttonColor} text-white rounded-full font-semibold text-base shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2`}>
                 <span>Get Started</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
               </button>
-              
-              {/* Secondary Button */}
-              <button className="px-8 py-3.5 border border-white/30 text-white font-semibold text-base rounded-full hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2">
-                <Play className="w-4 h-4" />
-                <span>Watch Demo</span>
-              </button>
-              
             </div>
-            
-            {/* Stats Section */}
-            <div className="mt-10 pt-6 border-t border-white/20">
-              <div className="flex flex-wrap gap-8 justify-center md:justify-start">
-                
-                {/* Stat 1 */}
-                <div className="text-center md:text-left">
-                  {/* Stats Numbers - Size: 20px, Weight: 700 */}
-                  <div className="text-xl font-bold text-white">500+</div>
-                  {/* Stats Labels - Size: 12px, Weight: 400 */}
-                  <div className="text-xs font-normal text-orange-200/80 mt-1">Projects Delivered</div>
+
+            {/* Stats with modern design */}
+            <div className="pt-6 border-t border-white/10">
+              <div className="grid grid-cols-3 gap-6">
+                <div>
+                  <div className="text-2xl font-bold text-white">5000+</div>
+                  <div className="text-xs text-gray-400 mt-1">Projects</div>
+                  <div className="w-8 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 mt-2"></div>
                 </div>
-                
-                {/* Stat 2 */}
-                <div className="text-center md:text-left">
-                  <div className="text-xl font-bold text-white">98%</div>
-                  <div className="text-xs font-normal text-orange-200/80 mt-1">Client Satisfaction</div>
+                <div>
+                  <div className="text-2xl font-bold text-white">98%</div>
+                  <div className="text-xs text-gray-400 mt-1">Satisfaction</div>
+                  <div className="w-8 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 mt-2"></div>
                 </div>
-                
-                {/* Stat 3 */}
-                <div className="text-center md:text-left">
-                  <div className="text-xl font-bold text-white">50+</div>
-                  <div className="text-xs font-normal text-orange-200/80 mt-1">Expert Developers</div>
+                <div>
+                  <div className="text-2xl font-bold text-white">24/7</div>
+                  <div className="text-xs text-gray-400 mt-1">Support</div>
+                  <div className="w-8 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 mt-2"></div>
                 </div>
-                
               </div>
             </div>
-            
+
           </div>
-          
-          {/* RIGHT IMAGE */}
+
+          {/* RIGHT COLUMN - Image without glow effect */}
           <div className="relative flex justify-center md:justify-end">
-            
-            {/* Glowing orb effects */}
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-amber-500/30 rounded-full blur-3xl"></div>
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-orange-400/20 rounded-full blur-2xl"></div>
-            <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-amber-500/20 rounded-full blur-2xl"></div>
-            
-            {/* Main image container with glass effect */}
-            <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-white/20">
-              
-              {/* Inner glow */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-amber-500/20 rounded-2xl"></div>
-              
-              {/* Image */}
-              <img 
+
+            {/* Decorative rings only - NO GLOW EFFECT */}
+            <div className="absolute -top-4 -right-4 w-20 h-20 border border-cyan-400/30 rounded-full"></div>
+            <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-blue-400/30 rounded-full"></div>
+
+            {/* Image container - removed glow effects */}
+            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-white/5 backdrop-blur-sm">
+              <img
                 src={hero}
-                alt="Custom Software Development"
-                className="relative w-full max-w-md lg:max-w-lg h-auto rounded-xl shadow-2xl"
+                alt="Application Solutions"
+                className="relative w-full max-w-sm md:max-w-md transform transition-transform duration-500 hover:scale-105"
               />
-              
-              {/* Overlay gradient */}
-              <div className="absolute inset-4 rounded-xl bg-gradient-to-t from-orange-600/20 via-transparent to-transparent pointer-events-none"></div>
-              
-              {/* Floating badge */}
-              <div className="absolute bottom-6 left-6 bg-black/50 backdrop-blur-md rounded-lg px-3 py-1.5 border border-orange-500/30">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-xs font-normal text-white">Live Projects</span>
-                  <span className="text-xs font-bold text-orange-400">250+</span>
-                </div>
-              </div>
-              
-              {/* Top right badge */}
-              <div className="absolute top-6 right-6 bg-orange-500/90 backdrop-blur-md rounded-lg px-3 py-1.5 shadow-lg">
-                <span className="text-xs font-normal text-white">⚡ Fast Delivery</span>
-              </div>
-              
             </div>
-            
+
           </div>
-          
+
         </div>
-        
       </div>
-      
-      {/* Bottom wave */}
+
+      {/* Bottom wave decoration */}
       <div className="absolute bottom-0 left-0 w-full">
-        <svg className="w-full h-[40px] md:h-[60px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <svg className="w-full h-[30px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.11,135.05,108.87,183.44,85.59,223.46,66.66,258.71,50.47,321.39,56.44Z"
+            d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
             fill="white"
             fillOpacity="0.05"
           />
         </svg>
       </div>
-      
-      <style jsx>{`
+
+      {/* Floating particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className={`absolute top-1/4 left-1/4 w-1.5 h-1.5 ${particleColor1} rounded-full animate-float opacity-60`}></div>
+        <div className={`absolute top-3/4 right-1/4 w-2 h-2 ${particleColor2} rounded-full animate-float-delay opacity-60`}></div>
+        <div className="absolute bottom-1/3 left-1/3 w-1 h-1 bg-white rounded-full animate-float-slow opacity-40"></div>
+        <div className={`absolute top-1/2 right-1/3 w-1.5 h-1.5 ${particleColor1} rounded-full animate-float opacity-50`}></div>
+        <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-white rounded-full animate-float opacity-30"></div>
+      </div>
+
+      <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-15px); }

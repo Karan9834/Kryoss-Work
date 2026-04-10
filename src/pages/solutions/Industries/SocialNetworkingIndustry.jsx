@@ -222,7 +222,7 @@ const SocialNetworkingIndustry = () => {
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3">
                                         <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                            <CheckCircle className="w-4 h-4 text-orange-600" />
+                                            <CheckCircle className="w-4 h-4 text-orange-600 flex-shrink-0" />
                                         </div>
                                         <span className="text-gray-700 font-medium">{item}</span>
                                     </li>

@@ -1,5 +1,6 @@
 import React from 'react';
-import hero from "../../../../../assets/Application-Solutions/hero.png";
+import { useNavigate } from 'react-router-dom';
+import hero from '../../../../../assets/Products/prod3.png';
 
 const Hero = ({
   title = "Prime",
@@ -14,6 +15,8 @@ const Hero = ({
   particleColor1 = "bg-cyan-400",
   particleColor2 = "bg-blue-400"
 }) => {
+  const navigate = useNavigate();
+
   return (
     <section className={`relative ${bgGradient} overflow-hidden py-20 md:py-28`}>
 
@@ -78,12 +81,8 @@ const Hero = ({
             {/* CTA Buttons - Size: 16px, Weight: 600 */}
             <div className="mt-7 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
 
-              <button className={`px-6 py-3 ${buttonColor} text-white rounded-full font-semibold text-base shadow-lg hover:opacity-90 transition-all duration-300 hover:scale-105`}>
+              <button onClick={() => navigate('/company/contact')} className={`px-6 py-3 ${buttonColor} text-white rounded-full font-semibold text-base shadow-lg hover:opacity-90 transition-all duration-300 hover:scale-105`}>
                 Get Started →
-              </button>
-
-              <button className="px-6 py-3 border border-white/20 text-white rounded-full font-semibold text-base hover:bg-white/10 transition-all duration-300">
-                Learn More
               </button>
 
             </div>
