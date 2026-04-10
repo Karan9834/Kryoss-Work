@@ -10,7 +10,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(({ mode }) => {
-  const isProd = mode === 'production';
+  // ✅ Detect Vercel environment — skip heavy image processing on CI/CD
   const isVercel = !!process.env.VERCEL;
 
   return {
@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
       tailwindcss(),
       react(),
       visualizer({
-        open: false, // Set to false for remote builds to avoid hanging
+        open: false,
         filename: "bundle-analysis.html",
         gzipSize: true,
         brotliSize: true,
@@ -31,16 +31,17 @@ export default defineConfig(({ mode }) => {
         ext: '.gz',
       }),
       viteCompression({
-          verbose: true,
-          disable: false,
-          threshold: 10240,
-          algorithm: 'brotliCompress',
-          ext: '.br',
-        }),
-      // ✅ Only run image optimization if NOT on Vercel to save build time
-      // This reduces deployment time from 20+ minutes to ~3 minutes
+        verbose: true,
+        disable: false,
+        threshold: 10240,
+        algorithm: 'brotliCompress',
+        ext: '.br',
+      }),
+      // ✅ VERCEL BYPASS: Skip image optimization during Vercel deploys.
+      // This was causing 1hr+ build times due to processing 500MB+ of images.
+      // Image optimization runs normally during local builds.
       !isVercel && ViteImageOptimizer({
-        exclude: /\.(avif|AVIF)$/, 
+        exclude: /\.(avif|AVIF)$/,
         png: { quality: 80 },
         jpeg: { quality: 80 },
         jpg: { quality: 80 },
@@ -62,67 +63,71 @@ export default defineConfig(({ mode }) => {
         },
       }),
     ].filter(Boolean),
-  server: {
-    proxy: {
-      '/whitelabel-assets': {
-        target: 'https://whitelabelfox.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/whitelabel-assets/, '')
+
+    server: {
+      proxy: {
+        '/whitelabel-assets': {
+          target: 'https://whitelabelfox.com',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/whitelabel-assets/, '')
+        }
       }
-    }
-  },
-  build: {
-    target: 'esnext',
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-        pure_funcs: ['console.log', 'console.info', 'console.debug', 'console.warn'],
-      },
-      format: {
-        comments: false,
-      },
     },
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            if (id.includes('gsap') || id.includes('tsparticles')) return 'vendor-heavy';
-            return 'vendor';
-          }
+
+    build: {
+      target: 'esnext',
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+          pure_funcs: ['console.log', 'console.info', 'console.debug', 'console.warn'],
         },
-        entryFileNames: 'assets/[name]-[hash].js',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash][extname]',
+        format: {
+          comments: false,
+        },
+      },
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              if (id.includes('gsap') || id.includes('tsparticles')) return 'vendor-heavy';
+              return 'vendor';
+            }
+          },
+          entryFileNames: 'assets/[name]-[hash].js',
+          chunkFileNames: 'assets/[name]-[hash].js',
+          assetFileNames: 'assets/[name]-[hash][extname]',
+        }
+      },
+      chunkSizeWarningLimit: 2000,
+      cssCodeSplit: true,
+      cssMinify: "esbuild",
+      sourcemap: false,
+      assetsInlineLimit: 1024,
+    },
+
+    esbuild: {
+      drop: ['console', 'debugger'],
+    },
+
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "./src")
       }
     },
-    chunkSizeWarningLimit: 2000,
-    cssCodeSplit: true,
-    cssMinify: "esbuild", // Terser is for JS; Vite uses esbuild for CSS
-    sourcemap: false,
-    assetsInlineLimit: 1024,
-  },
-  esbuild: {
-    // Keep esbuild drop as a fallback, though terser will handle it
-    drop: ['console', 'debugger'],
-  },
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src")
+
+    optimizeDeps: {
+      include: [
+        "react-icons/fa",
+        "react-icons/si",
+        "react-icons/md",
+        "lucide-react",
+        "@radix-ui/react-tooltip",
+        "@radix-ui/react-toast",
+        "clsx",
+        "tailwind-merge"
+      ]
     }
-  },
-  optimizeDeps: {
-    include: [
-      "react-icons/fa",
-      "react-icons/si",
-      "react-icons/md",
-      "lucide-react",
-      "@radix-ui/react-tooltip",
-      "@radix-ui/react-toast",
-      "clsx",
-      "tailwind-merge"
-    ]
-  }
-};
+  };
 });
