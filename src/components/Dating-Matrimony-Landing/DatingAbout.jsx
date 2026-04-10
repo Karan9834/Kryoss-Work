@@ -25,30 +25,22 @@ const DatingAbout = () => {
                         <div className="relative z-10 w-full aspect-[5/5] bg-white rounded-[40px] border-8 border-white shadow-xl flex items-center justify-center overflow-hidden transition-transform duration-700 group-hover:scale-[1.01]">
                             <img src={aboutImg} alt="About Matrimony Platform" className="w-full h-full object-cover rounded-[32px]" />
                         </div>
-
-                        {/* Floating Success Card */}
-                        {/* <div className="absolute -right-6 bottom-12 bg-white p-6 rounded-3xl shadow-2xl z-20 animate-float border border-rose-50 hidden sm:block">
-                            <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 bg-rose-500 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-rose-200">
-                                    <Zap size={24} />
-                                </div>
-                                <div>
-                                    <p className="text-xs font-bold text-slate-400 uppercase">AI Accuracy</p>
-                                    <p className="text-lg font-black text-slate-900">98.5%</p>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
 
-                    {/* Right: Content Section */}
+                    {/* Right: Content Section - Updated Typography */}
                     <div className="lg:w-1/2 space-y-8 animate-fadeIn">
                         <div className="space-y-4">
-                            <span className="text-purple-600 font-bold text-sm uppercase tracking-[0.2em] block">Redefining Connection</span>
-                            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">
+                            {/* Badge - Updated: text-[14px] font-bold tracking-[0.2em] uppercase */}
+                            <span className="text-purple-600 text-[14px] font-bold tracking-[0.2em] uppercase block">Redefining Connection</span>
+                            
+                            {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-slate-900">
                                 More Than Just a Swipe, <br />
                                 <span className="text-rose-500">A Meaningful Journey</span>
                             </h2>
-                            <p className="text-slate-600 text-lg leading-relaxed">
+                            
+                            {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                            <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-slate-600">
                                 Our platform isn't just about finding dates; it's about building lasting relationships. We combine cutting-edge AI technology with deep psychological insights to connect people who truly resonate with each other.
                             </p>
                         </div>
@@ -59,18 +51,15 @@ const DatingAbout = () => {
                                     <div className="w-6 h-6 rounded-full bg-rose-50 flex items-center justify-center text-rose-500 group-hover:bg-rose-500 group-hover:text-white transition-all">
                                         <CheckCircle size={16} />
                                     </div>
-                                    <span className="text-slate-700 font-semibold">{benefit}</span>
+                                    {/* Benefit text - Updated: text-[14px] md:text-[16px] font-semibold */}
+                                    <span className="text-slate-700 font-semibold text-[14px] md:text-[16px]">{benefit}</span>
                                 </div>
                             ))}
                         </div>
 
                         <div className="pt-8 border-t border-slate-100 flex items-center gap-6">
-                            {/* <div className="flex -space-x-2">
-                                {[1].map(i => (
-                                    <div key={i} className="w-12 h-12 rounded-full border-2 border-white bg-slate-100"></div>
-                                ))}
-                            </div> */}
-                            <p className="text-sm text-slate-500 font-medium">
+                            {/* Stats text - Updated: text-[14px] font-normal leading-[1.6] */}
+                            <p className="text-[14px] font-normal leading-[1.6] text-slate-500 font-medium">
                                 <span className="text-slate-900 font-bold">10k+ active users</span> currently searching for their match.
                             </p>
                         </div>

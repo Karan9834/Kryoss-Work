@@ -70,21 +70,25 @@ const WhyChooseUs = () => {
     <section className="w-full bg-gradient-to-br from-slate-900 via-gray-900 to-black py-20 md:py-24 text-white">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
 
-        {/* Heading */}
+        {/* Heading - Updated Typography ONLY */}
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 bg-clip-text text-transparent">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-3 bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 bg-clip-text text-transparent">
             Why Choose Us
           </h2>
-          <p className="text-gray-400">
+          
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-400">
             Built for modern hotels that demand performance, reliability, and scale
           </p>
 
+          {/* Section Underline - width: 64px, height: 2px */}
           <div className="mt-4 flex justify-center">
-            <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-full opacity-70"></div>
+            <div className="w-16 h-[2px] bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-full opacity-70"></div>
           </div>
         </div>
 
-        {/* Cards */}
+        {/* Cards - Fonts KEPT ORIGINAL (unchanged) */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 [perspective:1200px]">
           {benefits.map((b, i) => {
             const Icon = b.icon;
@@ -118,12 +122,12 @@ const WhyChooseUs = () => {
                   <Icon size={26} />
                 </div>
 
-                {/* TITLE */}
+                {/* Card Title - ORIGINAL FONT (unchanged) */}
                 <h3 className="text-lg font-semibold mb-2 group-hover:text-white">
                   {b.title}
                 </h3>
 
-                {/* DESC */}
+                {/* Card Description - ORIGINAL FONT (unchanged) */}
                 <p className="text-gray-400 text-sm leading-relaxed">
                   {b.desc}
                 </p>
@@ -133,26 +137,6 @@ const WhyChooseUs = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* Stats */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          {[
-            { val: "10K+", label: "Hotels" },
-            { val: "99.9%", label: "Uptime" },
-            { val: "24/7", label: "Support" },
-            { val: "100+", label: "Integrations" },
-          ].map((s, i) => (
-            <div
-              key={i}
-              className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-xl p-4 hover:bg-white/10 transition"
-            >
-              <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
-                {s.val}
-              </div>
-              <div className="text-gray-400 text-sm">{s.label}</div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

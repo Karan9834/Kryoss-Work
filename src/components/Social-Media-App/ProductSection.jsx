@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 import prod1 from "../../assets/Socila-media-app/prod1.jpg";
 import prod2 from "../../assets/Socila-media-app/prod2.jpg";
+
 const ProductSection = () => {
   const navigate = useNavigate();
 
@@ -53,7 +54,7 @@ const ProductSection = () => {
       className="w-full bg-white py-20 lg:py-28 overflow-hidden"
     >
       <div className="container mx-auto px-6 lg:px-8">
-        {/* Section Header */}
+        {/* Section Header - Updated Typography */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -63,12 +64,14 @@ const ProductSection = () => {
         >
           <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-100 px-4 py-2 rounded-full mb-5">
             <Sparkles className="w-4 h-4 text-purple-500" />
-            <span className="text-sm font-semibold text-purple-600">
+            {/* Badge - Updated: text-[14px] font-semibold */}
+            <span className="text-[14px] font-semibold text-purple-600">
               Our Products
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             Choose Your Perfect
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               {" "}
@@ -76,7 +79,8 @@ const ProductSection = () => {
             </span>
           </h2>
 
-          <p className="text-gray-600 text-lg">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600">
             Discover powerful tools designed to help you connect, create, and
             grow
           </p>
@@ -134,8 +138,8 @@ const ProductSection = () => {
                 />
               </div>
 
-              {/* TITLE AND DESCRIPTION */}
-              <p className="mt-4 text-sm md:text-base">
+              {/* TITLE AND DESCRIPTION - Updated Typography */}
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span
                   onClick={() => navigate(product.route)}
                   className="text-purple-600 font-semibold hover:underline cursor-pointer"

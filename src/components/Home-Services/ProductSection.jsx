@@ -101,23 +101,26 @@ const ProductSection = () => {
     >
       <div className="container mx-auto px-6 lg:px-8">
 
-        {/* HEADER */}
+        {/* HEADER - Updated Typography */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-100 px-4 py-2 rounded-full mb-5">
             <Sparkles className="w-4 h-4 text-purple-500" />
-            <span className="text-sm font-semibold text-purple-600">
+            {/* Badge - Updated: text-[14px] font-semibold */}
+            <span className="text-[14px] font-semibold text-purple-600">
               Our Services
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-3">
             Professional{" "}
             <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-500 text-transparent bg-clip-text">
               Home Services
             </span>
           </h2>
 
-          <p className="text-gray-600 text-lg">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600">
             Explore services designed for your convenience
           </p>
         </div>
@@ -160,8 +163,8 @@ const ProductSection = () => {
                 />
               </div>
 
-              {/* TITLE AND DESCRIPTION */}
-              <p className="mt-4 text-sm md:text-base">
+              {/* TITLE AND DESCRIPTION - Updated Typography */}
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span
                   onClick={() => navigate(product.route)}
                   className="text-purple-600 font-semibold hover:underline cursor-pointer"

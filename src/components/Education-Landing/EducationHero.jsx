@@ -21,24 +21,28 @@ const EducationHero = () => {
 
         {/* Left Content */}
         <div className="text-left space-y-8 animate-fadeInLeft">
+          {/* Hero Badge - Updated: text-xs font-medium tracking-wider uppercase */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-md border border-indigo-50">
             <span className="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span>
-            <span className="text-indigo-600 text-xs font-bold uppercase tracking-widest">Future of Learning</span>
+            <span className="text-indigo-600 text-[12px] font-medium tracking-wider uppercase">Future of Learning</span>
           </div>
 
-          <h1 className="text-3xl lg:text-4xl font-semibold text-[#1A1C2C] leading-[1.2]">
+          {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#1A1C2C]">
             Empower Minds with Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-teal-500">Education App</span> Solutions
           </h1>
 
-          <p className="text-[#4A4B5E] text-lg lg:text-xl max-w-xl leading-relaxed">
+          {/* Hero Description - Updated: text-base md:text-lg font-normal leading-relaxed */}
+          <p className="text-base md:text-lg font-normal leading-relaxed text-[#4A4B5E] max-w-xl">
             Transform traditional learning into an interactive digital experience.
             Our solutions offer seamless student engagement, expert tutoring, and effortless management.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
+            {/* Hero Button - Updated: text-sm md:text-base font-semibold tracking-wide uppercase */}
             <button 
               onClick={() => document.getElementById('education-products')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-10 py-4 bg-gradient-to-r from-indigo-600 to-teal-500 text-white font-bold rounded-full shadow-xl shadow-indigo-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group"
+              className="px-10 py-4 bg-gradient-to-r from-indigo-600 to-teal-500 text-white font-semibold rounded-full shadow-xl shadow-indigo-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group text-sm md:text-base tracking-wide uppercase"
             >
               Explore Our Products
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

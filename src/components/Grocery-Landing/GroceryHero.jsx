@@ -14,44 +14,50 @@ const GroceryHero = () => {
 
                     {/* Left Content */}
                     <div className="space-y-8 animate-fadeInLeft">
+                        {/* Hero Badge - Updated: text-xs font-medium tracking-wider uppercase */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 rounded-full border border-emerald-100">
                             <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-                            <span className="text-emerald-700 text-xs font-bold uppercase tracking-widest">Freshness Guaranteed</span>
+                            <span className="text-emerald-700 text-[12px] font-medium tracking-wider uppercase">Freshness Guaranteed</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl font-semibold text-[#1A1C2C] leading-tight">
-                            Your Daily <span className="text-emerald-600">Freshness</span>, Delivered in <span className="text-orange-500 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">Minutes</span>
+                        {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#1A1C2C]">
+                            Your Daily <span className="text-emerald-600">Freshness</span>, Delivered in <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">Minutes</span>
                         </h1>
 
-                        <p className="text-[#4A4B5E] text-lg lg:text-xl max-w-xl leading-relaxed">
+                        {/* Hero Description - Updated: text-base md:text-lg font-normal leading-relaxed */}
+                        <p className="text-base md:text-lg font-normal leading-relaxed text-[#4A4B5E] max-w-xl">
                             Skip the queues and let us bring the best of the market to your doorstep. Hyper-local, hyper-fresh, and exceptionally fast.
                         </p>
 
                         <div className="flex flex-wrap gap-4 pt-4">
+                            {/* Hero Button - Updated: text-sm md:text-base font-semibold tracking-wide uppercase */}
                             <button
                                 onClick={() => document.getElementById('grocery-products')?.scrollIntoView({ behavior: 'smooth' })}
-                                className="px-10 py-4 bg-gradient-to-r from-emerald-600 to-teal-500 text-white font-bold rounded-full shadow-xl shadow-emerald-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group"
+                                className="px-10 py-4 bg-gradient-to-r from-emerald-600 to-teal-500 text-white font-semibold rounded-full shadow-xl shadow-emerald-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group text-sm md:text-base tracking-wide uppercase"
                             >
                                 Explore Our Products
                                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </button>
                         </div>
 
-                        {/* Trust Badges */}
+                        {/* Trust Badges - Updated Stats Typography */}
                         <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
                             <div>
-                                <p className="text-2xl font-black text-[#1A1C2C]">10k+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Active Users</p>
+                                {/* Stats Number - Updated: text-xl md:text-2xl font-bold */}
+                                <p className="text-xl md:text-2xl font-bold text-[#1A1C2C]">10k+</p>
+                                {/* Stats Label - Updated: text-xs font-normal tracking-wider uppercase */}
+                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">Active Users</p>
                             </div>
                             <div className="w-px h-10 bg-gray-100"></div>
                             <div>
-                                <p className="text-2xl font-black text-[#1A1C2C]">500+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Dark Stores</p>
+                                <p className="text-xl md:text-2xl font-bold text-[#1A1C2C]">500+</p>
+                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">Dark Stores</p>
                             </div>
                             <div className="w-px h-10 bg-gray-100"></div>
                             <div>
-                                <p className="text-2xl font-black text-[#1A1C2C]">4.9/5</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">App Ratings</p>
+                                <p className="text-xl md:text-2xl font-bold text-[#1A1C2C]">4.9/5</p>
+                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">App Ratings</p>
                             </div>
                         </div>
                     </div>

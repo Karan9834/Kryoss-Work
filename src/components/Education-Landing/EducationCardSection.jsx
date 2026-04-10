@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
-
 import React from 'react';
-
 import card1Img from '@/assets/educationlanding-img/educationlandingcard1.jpg';
 import card2Img from '@/assets/educationlanding-img/educationlandingcard2.jpg';
 
@@ -24,18 +22,24 @@ const EducationCardSection = () => {
    return (
       <section id="education-products" className="py-16 bg-white">
          <div className="max-w-7xl mx-auto px-6">
+            {/* Header - Updated Typography */}
             <div className="text-center mb-16 space-y-4">
                <div className="flex items-center justify-center gap-2 mb-4">
                   <div className="w-8 h-px bg-indigo-300"></div>
-                  <span className="text-teal-600 font-semibold text-sm tracking-wider uppercase">
+                  {/* Badge - Updated: text-[14px] font-semibold tracking-wider uppercase */}
+                  <span className="text-teal-600 text-[14px] font-semibold tracking-wider uppercase">
                      Our Products
                   </span>
                   <div className="w-8 h-px bg-indigo-300"></div>
                </div>
-               <h2 className="text-2xl lg:text-3xl font-semibold text-[#1A1C2C]">
+               
+               {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                   Our Premium <span className="text-indigo-600">Education Solutions</span>
                </h2>
-               <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+               
+               {/* Description - 16px, weight 400, line-height 1.6 */}
+               <p className="text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                   Pick the ideal platform to transform your traditional teaching into a
                   modern, interactive digital learning experience.
                </p>
@@ -57,8 +61,8 @@ const EducationCardSection = () => {
                         />
                      </Link>
 
-                     {/* TITLE AND DESCRIPTION */}
-                     <p className="mt-4 text-sm md:text-base">
+                     {/* TITLE AND DESCRIPTION - Updated Typography */}
+                     <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         <Link to={card.path} className="text-indigo-600 font-semibold hover:underline">
                            {card.title}
                         </Link>{" "}
@@ -71,9 +75,9 @@ const EducationCardSection = () => {
                ))}
             </div>
 
-            {/* Bottom note */}
+            {/* Bottom note - Updated Typography */}
             <div className="text-center mt-16">
-               <p className="text-sm text-gray-400 font-medium">
+               <p className="text-[14px] font-normal leading-[1.6] text-gray-400">
                   ✦ More educational products coming soon ✦
                </p>
             </div>

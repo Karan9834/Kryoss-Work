@@ -67,21 +67,23 @@ const FeaturesSection = () => {
 
       <div className="relative z-10 container mx-auto px-6">
 
-        {/* HEADING */}
+        {/* HEADING - Updated Typography ONLY */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-4 text-white">
             Powerful{" "}
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 text-transparent bg-clip-text">
               Features
             </span>
           </h2>
 
-          <p className="text-gray-400 max-w-xl mx-auto">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-400 max-w-xl mx-auto">
             Everything you need to manage home services effortlessly and efficiently.
           </p>
         </div>
 
-        {/* GRID */}
+        {/* GRID - Card fonts KEPT ORIGINAL */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {features.map((feature, index) => {
@@ -106,12 +108,12 @@ const FeaturesSection = () => {
                     <Icon className="w-7 h-7 text-white" />
                   </div>
 
-                  {/* TITLE */}
+                  {/* Card Title - ORIGINAL FONT (unchanged) */}
                   <h3 className="relative text-lg font-semibold text-white mb-2 group-hover:text-purple-300 transition">
                     {feature.title}
                   </h3>
 
-                  {/* DESC */}
+                  {/* Card Description - ORIGINAL FONT (unchanged) */}
                   <p className="relative text-gray-400 text-sm leading-relaxed group-hover:text-gray-200 transition">
                     {feature.desc}
                   </p>

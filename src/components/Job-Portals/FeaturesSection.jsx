@@ -98,14 +98,16 @@ const FeaturesSection = () => {
               <span className="text-blue-700 font-semibold text-sm">Platform Features</span>
             </div>
             
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
               Powerful Features to{" "}
               <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
                 Boost Your Career
               </span>
             </h2>
             
-            <p className="mt-4 text-gray-600 text-lg max-w-xl">
+            {/* Description - 16px, weight 400, line-height 1.6 */}
+            <p className="mt-4 text-[16px] font-normal leading-[1.6] text-gray-600 max-w-xl">
               Everything you need to find your dream job, all in one place.
             </p>
           </div>
@@ -123,7 +125,7 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        {/* ===== FEATURES CARDS GRID (8 Cards) ===== */}
+        {/* ===== FEATURES CARDS GRID (8 Cards) - Card fonts KEPT ORIGINAL ===== */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((item, index) => (
             <div
@@ -137,12 +139,12 @@ const FeaturesSection = () => {
                 </div>
               </div>
               
-              {/* Title */}
+              {/* Card Title - ORIGINAL FONT (unchanged) */}
               <h3 className="text-lg font-bold text-gray-900 mb-2">
                 {item.title}
               </h3>
               
-              {/* Description */}
+              {/* Card Description - ORIGINAL FONT (unchanged) */}
               <p className="text-gray-600 text-sm leading-relaxed">
                 {item.desc}
               </p>

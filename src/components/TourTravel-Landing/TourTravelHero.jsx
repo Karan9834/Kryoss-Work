@@ -15,45 +15,31 @@ const TourTravelHero = () => {
 
                     {/* Left Content */}
                     <div className="space-y-8 animate-fadeInLeft">
+                        {/* Hero Badge - Updated: text-xs font-medium tracking-wider uppercase */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-sky-100 rounded-full border border-sky-200">
                             <span className="w-2 h-2 rounded-full bg-sky-600 animate-pulse"></span>
-                            <span className="text-sky-800 text-xs font-bold uppercase tracking-widest">Explore the World with Ease</span>
+                            <span className="text-sky-800 text-[12px] font-medium tracking-wider uppercase">Explore the World with Ease</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl font-semibold text-[#1E293B] leading-tight">
-                            Your Complete <span className="text-sky-600">Tour & Travel</span> Platform for <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500 font-bold">Seamless Adventures</span>
+                        {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#1E293B]">
+                            Your Complete <span className="text-sky-600">Tour & Travel</span> Platform for <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Seamless Adventures</span>
                         </h1>
 
-                        <p className="text-[#4A4B5E] text-lg lg:text-xl max-w-xl leading-relaxed">
+                        {/* Hero Description - Updated: text-base md:text-lg font-normal leading-relaxed */}
+                        <p className="text-base md:text-lg font-normal leading-relaxed text-[#4A4B5E] max-w-xl">
                             Launch a world-class travel booking platform. From flights and hotels to curated tour packages — manage it all from one powerful dashboard.
                         </p>
 
                         <div className="flex flex-wrap gap-4 pt-4">
+                            {/* Hero Button - Updated: text-sm md:text-base font-semibold tracking-wide uppercase */}
                             <button
                                 onClick={() => document.getElementById('tour-products')?.scrollIntoView({ behavior: 'smooth' })}
-                                className="px-10 py-4 bg-gradient-to-r from-sky-600 to-cyan-500 text-white font-bold rounded-full shadow-xl shadow-sky-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group"
+                                className="px-10 py-4 bg-gradient-to-r from-sky-600 to-cyan-500 text-white font-semibold rounded-full shadow-xl shadow-sky-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group text-sm md:text-base tracking-wide uppercase"
                             >
                                 Explore Our Products
                                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </button>
-                        </div>
-
-                        {/* Trust Badges */}
-                        <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
-                            <div>
-                                <p className="text-2xl font-black text-[#1E293B]">120+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Countries</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-2xl font-black text-[#1E293B]">50k+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Happy Travelers</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-2xl font-black text-[#1E293B]">4.9/5</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Satisfaction</p>
-                            </div>
                         </div>
                     </div>
 

@@ -32,15 +32,20 @@ const TaxiAbout = () => {
                         </div>
                     </div>
 
-                    {/* Right: Content */}
+                    {/* Right: Content - Updated Typography */}
                     <div className="space-y-8 animate-fadeInRight order-1 lg:order-2">
                         <div className="space-y-4">
-                            <span className="text-orange-600 font-bold text-sm uppercase tracking-[0.3em] block">Future of Mobility</span>
-                            <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E293B] leading-tight">
+                            {/* Badge - Updated: text-[14px] font-bold tracking-[0.3em] uppercase */}
+                            <span className="text-orange-600 text-[14px] font-bold tracking-[0.3em] uppercase block">Future of Mobility</span>
+                            
+                            {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                                 Drive Your Business <br />
-                                <span className="text-yellow-600 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-500">Toward Success</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-500">Toward Success</span>
                             </h2>
-                            <p className="text-[#4A4B5E] text-lg leading-relaxed">
+                            
+                            {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                            <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-[#4A4B5E]">
                                 We provide a comprehensive taxi management system designed to streamline your operations and enhance user experience. From real-time tracking to automated billing, our platform handles everything so you can focus on scaling your fleet.
                             </p>
                         </div>
@@ -49,7 +54,8 @@ const TaxiAbout = () => {
                             {highlights.map((item, index) => (
                                 <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-2xl hover:bg-yellow-50 transition-all group cursor-default border border-transparent hover:border-yellow-100">
                                     <CheckCircle2 size={20} className="text-yellow-600 group-hover:scale-110 transition-transform" />
-                                    <span className="text-[#1E293B] font-semibold text-sm">{item}</span>
+                                    {/* Highlight text - Updated: text-[14px] md:text-[16px] font-semibold */}
+                                    <span className="text-[#1E293B] font-semibold text-[14px] md:text-[16px]">{item}</span>
                                 </div>
                             ))}
                         </div>

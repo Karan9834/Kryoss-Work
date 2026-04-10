@@ -77,7 +77,7 @@ const SolutionsSection = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
+    handleScroll();
     
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -104,14 +104,16 @@ const SolutionsSection = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         
-        {/* ===== HEADER SECTION ===== */}
+        {/* ===== HEADER SECTION - Updated Typography ===== */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-4 border border-blue-200">
             <Sparkles className="w-4 h-4 text-blue-600" />
-            <span className="text-blue-700 font-semibold text-sm">Our Solutions</span>
+            {/* Badge - 12px, weight 500, letter-spacing 0.05em */}
+            <span className="text-blue-700 text-[12px] font-medium tracking-[0.05em] uppercase">Our Solutions</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Comprehensive{" "}
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
               Solutions
@@ -119,7 +121,8 @@ const SolutionsSection = () => {
             for Every Need
           </h2>
           
-          <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="mt-4 text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             Discover how our platform can transform your hiring and job search experience.
           </p>
         </div>
@@ -146,7 +149,7 @@ const SolutionsSection = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-blue-400/20 via-indigo-400/20 to-purple-400/20 blur-md"></div>
           </div>
 
-          {/* Solutions */}
+          {/* Solutions - Card fonts KEPT ORIGINAL */}
           <div className="space-y-24">
             {solutions.map((solution, index) => (
               <div
@@ -154,7 +157,7 @@ const SolutionsSection = () => {
                 ref={(el) => (solutionRefs.current[index] = el)}
                 className="relative group"
               >
-                {/* Timeline Dot - Changes color when active */}
+                {/* Timeline Dot */}
                 <div className={`absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full border-4 border-white shadow-lg hidden lg:block z-20 transition-all duration-300 ${
                   activeIndex >= index 
                     ? "bg-gradient-to-r from-blue-500 to-indigo-500 scale-125" 
@@ -168,7 +171,7 @@ const SolutionsSection = () => {
                 {/* Alternating Layout */}
                 <div className={`flex flex-col ${solution.direction === 'left' ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}>
                   
-                  {/* Image Side with Hover Effect */}
+                  {/* Image Side */}
                   <div className="flex-1 relative">
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl group/image">
                       <img
@@ -188,9 +191,9 @@ const SolutionsSection = () => {
                     <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-indigo-500/20 rounded-full blur-2xl group-hover:bg-indigo-500/30 transition-all duration-500"></div>
                   </div>
 
-                  {/* Content Side with Hover Effect */}
+                  {/* Content Side - Card fonts KEPT ORIGINAL */}
                   <div className="flex-1 transform transition-all duration-500 group-hover:translate-x-2">
-                    {/* Icon Badge - Animates on Hover */}
+                    {/* Icon Badge */}
                     <div className={`inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-6 border border-blue-200 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg`}>
                       <div className={`text-blue-600 transition-all duration-300 group-hover:scale-110 group-hover:rotate-12`}>
                         {solution.icon}
@@ -198,12 +201,12 @@ const SolutionsSection = () => {
                       <span className="text-blue-700 font-semibold text-sm">Solution {solution.id}</span>
                     </div>
 
-                    {/* Title with Gradient on Hover */}
+                    {/* Card Title - ORIGINAL FONT (unchanged) */}
                     <h3 className={`text-2xl md:text-3xl lg:text-4xl font-bold mb-4 transition-all duration-500 group-hover:bg-gradient-to-r ${solution.hoverEffect} group-hover:bg-clip-text group-hover:text-transparent`}>
                       {solution.title}
                     </h3>
 
-                    {/* Description with Hover Effect */}
+                    {/* Card Description - ORIGINAL FONT (unchanged) */}
                     <p className="text-gray-600 text-lg leading-relaxed transition-all duration-500 group-hover:text-gray-800">
                       {solution.description}
                     </p>

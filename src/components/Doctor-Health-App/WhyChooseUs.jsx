@@ -86,29 +86,32 @@ const WhyChooseUs = () => {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-amber-100 rounded-full blur-3xl opacity-20"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
+        {/* Section header - Updated Typography ONLY */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-8 h-px bg-emerald-300"></div>
-            <span className="text-emerald-600 font-semibold text-sm tracking-wider uppercase">
+            {/* Badge - Updated: text-[12px] font-medium tracking-wider uppercase */}
+            <span className="text-emerald-600 text-[12px] font-medium tracking-wider uppercase">
               Why Thousands Trust Us
             </span>
             <div className="w-8 h-px bg-amber-300"></div>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
             Why Choose{' '}
             <span className="bg-gradient-to-r from-emerald-600 to-amber-600 bg-clip-text text-transparent">
               Vyom Health
             </span>
           </h2>
           
-          <p className="text-lg text-gray-600">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600">
             We're redefining healthcare with a patient-first approach, combining medical expertise with cutting-edge technology.
           </p>
         </div>
 
-        {/* Main reasons grid */}
+        {/* Main reasons grid - Card fonts NOT changed */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           {reasons.map((reason, index) => (
             <div
@@ -132,10 +135,12 @@ const WhyChooseUs = () => {
                   </span>
                 </div>
 
-                {/* Content */}
+                {/* Card Title - ORIGINAL FONT (unchanged) */}
                 <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-gray-900">
                   {reason.title}
                 </h3>
+                
+                {/* Card Description - ORIGINAL FONT (unchanged) */}
                 <p className="text-gray-600 leading-relaxed">
                   {reason.description}
                 </p>
@@ -147,21 +152,23 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        {/* Key metrics/benefits */}
+        {/* Key metrics/benefits - Updated Typography */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {benefits.map((benefit, index) => (
             <div key={index} className="text-center group">
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-600 to-amber-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
+              {/* Stats Number - text-xl md:text-2xl font-bold */}
+              <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-emerald-600 to-amber-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
                 {benefit.number}
               </div>
-              <div className="text-sm font-semibold text-gray-700 mb-1">{benefit.label}</div>
-              <div className="text-xs text-gray-400">{benefit.description}</div>
+              {/* Stats Label - text-xs font-normal tracking-wider uppercase */}
+              <div className="text-[12px] font-normal tracking-wider uppercase text-gray-700 mb-1">{benefit.label}</div>
+              <div className="text-[12px] font-normal leading-[1.6] text-gray-400">{benefit.description}</div>
             </div>
           ))}
         </div>
 
-        {/* Bottom trust indicators - simplified */}
-        <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-gray-400">
+        {/* Bottom trust indicators - Updated Typography */}
+        <div className="flex flex-wrap items-center justify-center gap-8 text-[14px] font-normal leading-[1.6] text-gray-400">
           <span>🔒 HIPAA Compliant</span>
           <span>🏥 500+ Hospitals</span>
           <span>💳 Secure Payments</span>
