@@ -20,7 +20,7 @@ import LmsProductShowcase from '@/components/enterprise-lms/LmsProductShowcase';
 import LmsAwards from '@/components/enterprise-lms/LmsAwards';
 import LmsFAQ from '@/components/enterprise-lms/LmsFAQ';
 import LmsTechStack from '@/components/enterprise-lms/LmsTechStack';
-import LmsContact from '@/components/enterprise-lms/LmsContact';
+import ContactUs from '@/components/Common/ContactUs';
 import LmsBlogs from '@/components/enterprise-lms/LmsBlogs';
 import LmsGetUpdates from '@/components/enterprise-lms/LmsGetUpdates';
 
@@ -54,7 +54,7 @@ const LmsPage = () => {
             <LmsAwards />
             <LmsFAQ />
             <LmsTechStack />
-            <LmsContact />
+            <ContactUs theme="purple" productName="LMS" />
             <LmsBlogs />
             <LmsGetUpdates />
         </>

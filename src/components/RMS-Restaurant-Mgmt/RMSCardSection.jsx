@@ -9,7 +9,7 @@ import card2 from '@/assets/rmslanding-img/rmslandingcard2.jpg';
 const RMSCardSection = () => {
    const cards = [
       {
-         title: "Restulator",
+         title: "Random Restulator",
          desc: "Comprehensive restaurant management with integrated POS and live kitchen tracking for efficient service.",
          path: "/products/enterprise/rms/restulator",
          image: card1

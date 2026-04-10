@@ -317,7 +317,7 @@ const TikTokClonePage = () => {
   return (
     <div className="w-full">
       {/* ================= HERO SECTION ================= */}
-      <section className="w-full bg-black py-20 flex items-center overflow-hidden">
+      <section className="w-full bg-black py-12 flex items-center overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 items-center gap-16">
           {/* LEFT CONTENT */}
           <div className="text-white space-y-6 max-w-xl">
@@ -346,10 +346,9 @@ const TikTokClonePage = () => {
                 <span className="text-white ml-1">VIDEO</span>
               </span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Build Your Own{" "}
-              <span className="text-pink-500">TikTok Clone App</span> for the
-              Entertainment Business
+              <span className="text-pink-500">TikTok Clone App</span>
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed">
@@ -374,7 +373,7 @@ const TikTokClonePage = () => {
             <img
               src="/Video-App/hero-image.webp"
               alt="TikTok Clone App"
-              className="w-[650px] md:w-[750px] lg:w-[800px] max-w-none"
+              className="w-[450px] md:w-[650px] lg:w-[700px] max-w-none"
             />
           </div>
         </div>
@@ -716,14 +715,14 @@ const TikTokClonePage = () => {
             <div
               key={index}
               className={`rounded-2xl p-10 border hover:shadow-xl transition ${item.dark
-                  ? "bg-white/5 border-white/20"
-                  : "bg-white text-gray-800 border-pink-400"
+                ? "bg-white/5 border-white/20"
+                : "bg-white text-gray-800 border-pink-400"
                 }`}
             >
               <div
                 className={`w-14 h-14 flex items-center justify-center rounded-full mb-6 ${item.dark
-                    ? "bg-white/10 text-pink-400"
-                    : "bg-pink-500 text-white"
+                  ? "bg-white/10 text-pink-400"
+                  : "bg-pink-500 text-white"
                   }`}
               >
                 {item.icon}

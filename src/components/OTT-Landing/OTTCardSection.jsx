@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Sparkles } from "lucide-react";
-import card1Img from "../../assets/OTT-Product/prod1.png";
-import card2Img from "../../assets/OTT-Product/prod2.avif";
+import card1Img from "@/assets/ottlanding-img/ottlandingcard1.jpg";
+import card2Img from "@/assets/ottlanding-img/ottlandingcard2.jpg";
 
 const OTTCardSection = () => {
   const cards = [
@@ -67,7 +67,7 @@ const OTTCardSection = () => {
 
               {/* Text Below */}
               <p className="mt-4 text-sm md:text-base">
-                <Link 
+                <Link
                   to={card.path}
                   className="text-red-600 font-semibold hover:underline"
                 >

@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Sparkles } from "lucide-react";
 
-import img1 from "../../assets/Games-Product/betpro.jpg";
-import img2 from "../../assets/Games-Product/betlab.png";
+import img1 from "@/assets/Games-Product/betpro.jpeg";
+import img2 from "@/assets/Games-Product/betlab1.jpeg";
 
 const FantasyCasinoCardSection = () => {
   const cards = [
@@ -53,21 +53,20 @@ const FantasyCasinoCardSection = () => {
         </div>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {cards.map((card, index) => (
             <div key={index} className="text-center">
 
               {/* Image */}
               <Link to={card.path} className="cursor-pointer group block">
-                <div className="w-full aspect-video overflow-hidden rounded-lg border-[4px] border-transparent hover:border-green-500 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] transition-all duration-300 bg-gray-50">
-                  
-                  <img
-                    src={card.image}
-                    alt={card.title}
-                    className="w-full h-full object-cover"
-                  />
+                {/* <div className="w-full aspect-video overflow-hidden rounded-lg border-[4px] border-transparent hover:border-green-500 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] transition-all duration-300 bg-gray-50"> */}
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="w-full aspect-video overflow-hidden rounded-xl border-[5px] border-transparent hover:border-green-500 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] transition-all duration-300 bg-gray-50 object-cover"
+                />
 
-                </div>
+                {/* </div> */}
               </Link>
 
               {/* Text */}

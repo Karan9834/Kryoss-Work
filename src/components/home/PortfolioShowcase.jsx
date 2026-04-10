@@ -6,8 +6,8 @@ import prod1 from "../../assets/E-Commerce-Product/prod1.jpg";
 import prod2 from "../../assets/E-Commerce-Product/prod2.jpg";
 import card1Img from '@/assets/educationlanding-img/educationlandingcard1.jpg';
 import card2Img from '@/assets/educationlanding-img/educationlandingcard2.jpg';
-import trans1 from '../../assets/transportlanding-img/flower.jpg';
-import trans2 from '../../assets/transportlanding-img/towy.jpg';
+import trans1 from '../../assets/transportlanding-img/towy.jpg';
+import trans2 from '../../assets/transportlanding-img/flower.jpg';
 
 const categories = [
   {
@@ -151,27 +151,27 @@ const PortfolioShowcase = () => {
     >
       {/* Dynamic Background that changes with category */}
       <div className="absolute inset-0 transition-all duration-700 ease-in-out">
-        <div 
+        <div
           className={`absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] rounded-full blur-3xl transition-all duration-700 ease-in-out`}
-          style={{ 
+          style={{
             background: `radial-gradient(circle, ${active.color}20 0%, transparent 70%)`,
           }}
         />
-        <div 
+        <div
           className={`absolute bottom-0 right-0 w-[600px] h-[500px] rounded-full blur-3xl transition-all duration-700 ease-in-out`}
-          style={{ 
+          style={{
             background: `radial-gradient(circle, ${active.color}15 0%, transparent 70%)`,
           }}
         />
-        <div 
+        <div
           className={`absolute top-20 right-20 w-[400px] h-[400px] rounded-full blur-3xl transition-all duration-700 ease-in-out`}
-          style={{ 
+          style={{
             background: `radial-gradient(circle, ${active.color}10 0%, transparent 70%)`,
           }}
         />
-        <div 
+        <div
           className={`absolute bottom-20 left-20 w-[500px] h-[500px] rounded-full blur-3xl transition-all duration-700 ease-in-out`}
-          style={{ 
+          style={{
             background: `radial-gradient(circle, ${active.color}08 0%, transparent 70%)`,
           }}
         />
@@ -207,17 +207,16 @@ const PortfolioShowcase = () => {
             <button
               key={cat.label}
               onClick={() => setActiveTab(i)}
-              className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 relative overflow-hidden group ${
-                activeTab === i
-                  ? `bg-gradient-to-r ${cat.gradient} text-white shadow-lg transform scale-105`
-                  : `bg-white/80 backdrop-blur-sm ${cat.textColor} border-2 ${cat.borderColor} hover:scale-105`
-              }`}
+              className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 relative overflow-hidden group ${activeTab === i
+                ? `bg-gradient-to-r ${cat.gradient} text-white shadow-lg transform scale-105`
+                : `bg-white/80 backdrop-blur-sm ${cat.textColor} border-2 ${cat.borderColor} hover:scale-105`
+                }`}
               style={{
                 boxShadow: activeTab === i ? `0 10px 25px -5px ${cat.color}40` : "none",
               }}
             >
               {activeTab !== i && (
-                <span 
+                <span
                   className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
                   style={{ backgroundColor: `${cat.color}15` }}
                 />
@@ -241,7 +240,7 @@ const PortfolioShowcase = () => {
                     src={item.img}
                     alt={item.title}
                     className="w-full rounded-lg transition duration-300 group-hover:scale-[1.02]"
-                    style={{ 
+                    style={{
                       objectFit: 'contain',
                       maxHeight: '300px',
                       backgroundColor: '#f8fafc'
