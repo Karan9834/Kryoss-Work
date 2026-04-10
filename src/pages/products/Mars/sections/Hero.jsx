@@ -1,5 +1,5 @@
 import React from "react";
-import { Play, ArrowRight } from "lucide-react";
+import { Play, ArrowRight, MessageCircle } from "lucide-react";
 
 const HotelHero = () => {
   // The URL you want to open when clicking Live Demo
@@ -63,8 +63,8 @@ const HotelHero = () => {
               designed for modern hospitality.
             </p>
             
-            {/* Single CTA Button - Live Demo with External Link */}
-            <div className="pt-3">
+            {/* CTA Buttons */}
+            <div className="pt-3 flex flex-wrap gap-4">
               <button
                 onClick={handleLiveDemo}
                 className="group relative px-7 py-3.5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl font-semibold overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-105 hover:bg-white/20 cursor-pointer"
@@ -76,6 +76,17 @@ const HotelHero = () => {
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-blue-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </button>
+              <a
+                href="/company/contact"
+                className="group relative px-7 py-3.5 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-xl font-semibold overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-105 hover:bg-white/20 cursor-pointer"
+              >
+                <span className="relative z-10 flex items-center gap-2 text-sm md:text-base">
+                  <MessageCircle size={16} />
+                  Let's Discuss
+                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-blue-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </a>
             </div>
           </div>
           

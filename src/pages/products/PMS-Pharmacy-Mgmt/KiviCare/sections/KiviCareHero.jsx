@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, ShieldCheck, Heart, Cross, Stethoscope, HeartPulse, ShieldPlus } from "lucide-react";
+import { ArrowRight, ShieldCheck, Heart, Cross, Stethoscope, HeartPulse, ShieldPlus, MessageCircle } from "lucide-react";
 import heroImg from "@/assets/kivicarepms-img/kivicarepmshero.webp";
 
 const KiviCareHero = () => {
@@ -52,7 +52,7 @@ const KiviCareHero = () => {
                         ))}
                     </div>
 
-                    <div className="pt-2">
+                    <div className="pt-2 flex flex-wrap gap-4">
                         <a
                             href="https://preview.codecanyon.net/item/kivicare-tm-pharma-addon-pharmacy-inventory-management-in-laravel/full_screen_preview/60994895"
                             target="_blank"
@@ -61,6 +61,14 @@ const KiviCareHero = () => {
                             style={{ background: "linear-gradient(90deg, #0d9488, #0f766e)", boxShadow: "0 8px 30px rgba(13,148,136,0.3)" }}
                         >
                             Live Demo
+                            <ArrowRight size={22} />
+                        </a>
+                        <a
+                            href="/company/contact"
+                            className="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-teal-800 border border-teal-200 bg-white/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white"
+                        >
+                            <MessageCircle size={22} />
+                            Let's Discuss
                             <ArrowRight size={22} />
                         </a>
                     </div>

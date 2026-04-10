@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Users, TrendingUp } from "lucide-react";
+import { Star, Users, TrendingUp, MessageCircle, ArrowRight } from "lucide-react";
 
 const RevPTCHero = () => {
     return (
@@ -33,7 +33,7 @@ const RevPTCHero = () => {
                         </p>
 
                         {/* CTA */}
-                        <div>
+                        <div className="flex flex-wrap gap-4">
                             <a
                                 href="https://script.viserlab.com/revptc/"
                                 target="_blank"
@@ -41,6 +41,14 @@ const RevPTCHero = () => {
                                 className="inline-block bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition shadow-lg"
                             >
                                 Live Demo
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 px-8 py-3 rounded-lg font-semibold hover:bg-white/20 transition shadow-lg backdrop-blur-md"
+                            >
+                                <MessageCircle size={18} />
+                                Let's Discuss
+                                <ArrowRight size={18} />
                             </a>
                         </div>
 

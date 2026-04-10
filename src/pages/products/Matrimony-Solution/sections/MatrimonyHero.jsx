@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Search, Users, ShieldCheck, Sparkles, PlayCircle, ArrowRight } from 'lucide-react';
+import { Heart, Search, Users, ShieldCheck, Sparkles, PlayCircle, ArrowRight, MessageCircle } from 'lucide-react';
 import heroImg from '@/assets/matrimonysolution-img/matrimonysolutionhero.jpg';
 
 const MatrimonyHero = () => {
@@ -33,10 +33,18 @@ const MatrimonyHero = () => {
                                 href="https://preview.codecanyon.net/item/dating-app-social-match-making-matrimony-theme-react-native-ui-ux-design-tinder-bumble-badoo-clone/full_screen_preview/56904398"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-8 py-4 bg-gradient-to-r from-rose-500 to-purple-600 text-white font-bold rounded-full shadow-xl shadow-rose-200 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 group text-center"
+                                className="px-8 py-4 bg-gradient-to-r from-rose-50 to-rose-100 text-rose-600 font-bold border border-rose-200 rounded-full shadow-lg shadow-rose-200 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 group text-center"
                             >
                                 Try Live Demo
                                 <PlayCircle size={20} className="group-hover:scale-110 transition-transform" />
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="px-8 py-4 bg-gradient-to-r from-rose-500 to-purple-600 text-white font-bold rounded-full shadow-xl shadow-rose-200 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 group text-center"
+                            >
+                                <MessageCircle size={20} />
+                                Let's Discuss
+                                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </a>
                         </div>
 

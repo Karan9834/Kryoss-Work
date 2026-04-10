@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Play, CheckCircle } from 'lucide-react'
+import { ArrowRight, Play, CheckCircle, MessageCircle } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -71,10 +71,11 @@ const Hero = () => {
               </a>
               
               <a
-                href="#contact"
+                href="/company/contact"
                 className="inline-flex items-center gap-2 px-5 py-2.5 border border-gray-600 text-gray-300 rounded-lg font-semibold hover:bg-white/10 hover:border-gray-500 transition-all duration-300 text-sm"
               >
-                Contact Sales
+                <MessageCircle className="w-3.5 h-3.5" />
+                Let's Discuss
                 <ArrowRight className="w-3.5 h-3.5" />
               </a>
             </div>

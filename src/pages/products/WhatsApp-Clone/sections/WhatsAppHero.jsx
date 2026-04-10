@@ -125,20 +125,33 @@ const WhatsAppHero = () => {
             </motion.div>
 
             {/* CTA */}
-            <a
-              href="https://preview.codecanyon.net/item/meetzy-mobile-app-addon-whatsapp-clone-chat-realtime-chat-audio-video-calling-group-chat/full_screen_preview/62323991"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <motion.button
-                variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
-                className="px-8 py-3 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center gap-2 shadow-lg"
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://preview.codecanyon.net/item/meetzy-mobile-app-addon-whatsapp-clone-chat-realtime-chat-audio-video-calling-group-chat/full_screen_preview/62323991"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Live Demo
-                <ArrowRight className="w-5 h-5" />
-              </motion.button>
-            </a>
+                <motion.button
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.05 }}
+                  className="px-8 py-3 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full flex items-center gap-2 shadow-lg"
+                >
+                  Live Demo
+                  <ArrowRight className="w-5 h-5" />
+                </motion.button>
+              </a>
+              <a href="/company/contact">
+                <motion.button
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.05 }}
+                  className="px-8 py-3 bg-white/10 text-white border border-white/20 rounded-full flex items-center gap-2 shadow-lg backdrop-blur-sm"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  Let's Discuss
+                  <ArrowRight className="w-5 h-5" />
+                </motion.button>
+              </a>
+            </div>
           </motion.div>
 
           {/* RIGHT IMAGE */}

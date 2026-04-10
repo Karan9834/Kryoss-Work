@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { MessageCircle, ArrowRight } from 'lucide-react';
 import taxibidding from "../../../../assets/Product-update/taxibidding.png"
 
 const Herosection = ({ demoUrl = "https://preview.codecanyon.net/item/exicube-bidcab-app/full_screen_preview/40458430" }) => {
@@ -58,16 +59,29 @@ const Herosection = ({ demoUrl = "https://preview.codecanyon.net/item/exicube-bi
               </p>
 
               {/* Live Demo Button */}
-              <motion.button
-                onClick={handleLiveDemo}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-medium rounded-xl shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-300 flex items-center gap-2 group"
-              >
-                <i className="fas fa-play-circle text-sm"></i>
-                Live Demo
-                <i className="fas fa-external-link-alt text-sm group-hover:translate-x-1 transition-transform"></i>
-              </motion.button>
+              <div className="flex flex-wrap gap-4">
+                <motion.button
+                  onClick={handleLiveDemo}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-medium rounded-xl shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-300 flex items-center gap-2 group"
+                >
+                  <i className="fas fa-play-circle text-sm"></i>
+                  Live Demo
+                  <i className="fas fa-external-link-alt text-sm group-hover:translate-x-1 transition-transform"></i>
+                </motion.button>
+                <a href="/company/contact">
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="px-6 py-3 bg-gray-800 text-white border border-gray-700 font-medium rounded-xl shadow-lg hover:bg-gray-700 transition-all duration-300 flex items-center gap-2 group"
+                  >
+                    <MessageCircle size={18} className="text-orange-500" />
+                    Let's Discuss
+                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                  </motion.button>
+                </a>
+              </div>
 
               {/* Stats */}
               <div className="flex gap-6 mt-8 pt-6 border-t border-gray-800">

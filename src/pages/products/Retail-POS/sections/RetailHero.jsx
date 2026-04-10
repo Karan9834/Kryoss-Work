@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, ShoppingBag, BarChart, Zap } from 'lucide-react';
+import { ArrowRight, ShoppingBag, BarChart, Zap, MessageCircle } from 'lucide-react';
 import heroImg from "../../../../assets/retailpos-img/retailposhero.jpg";
 
 const RetailHero = () => {
@@ -39,6 +39,14 @@ const RetailHero = () => {
                                 className="px-10 py-5 bg-gradient-to-r from-indigo-600 to-emerald-600 text-white font-black rounded-3xl hover:scale-105 transition-all shadow-xl flex items-center gap-3 group"
                             >
                                 Try Live Demo
+                                <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="px-10 py-5 bg-white/5 text-white font-black rounded-3xl border border-white/10 hover:bg-white/10 hover:scale-105 transition-all shadow-xl flex items-center gap-3 group backdrop-blur-sm"
+                            >
+                                <MessageCircle size={24} />
+                                Let's Discuss
                                 <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
                             </a>
                         </div>

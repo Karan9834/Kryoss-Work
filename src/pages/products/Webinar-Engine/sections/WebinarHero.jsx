@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Globe, Users, PlayCircle, BarChart } from "lucide-react";
+import { ArrowRight, Globe, Users, PlayCircle, BarChart, MessageCircle } from "lucide-react";
 import heroImg from "@/assets/webinar-img/webinarhero.jpg";
 
 const WebinarHero = () => {
@@ -38,6 +38,14 @@ const WebinarHero = () => {
                             className="flex items-center gap-3 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-xl shadow-sky-500/20 hover:-translate-y-1"
                         >
                             Live Demo
+                            <ArrowRight size={20} />
+                        </a>
+                        <a
+                            href="/company/contact"
+                            className="flex items-center gap-3 bg-white text-sky-600 border-2 border-sky-500 hover:bg-sky-50 px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:-translate-y-1"
+                        >
+                            <MessageCircle size={20} />
+                            Let's Discuss
                             <ArrowRight size={20} />
                         </a>
                     </div>

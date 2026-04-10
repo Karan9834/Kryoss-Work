@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Users, TrendingUp } from "lucide-react";
+import { Star, Users, TrendingUp, MessageCircle } from "lucide-react";
 import b2bwholesaleheroimg from "@/assets/b2bwholesale-img/b2bwholesalehero.jpg";
 const B2BWholesaleHero = () => {
     return (
@@ -33,7 +33,7 @@ const B2BWholesaleHero = () => {
                         </p>
 
                         {/* CTA */}
-                        <div>
+                        <div className="flex flex-wrap gap-4">
                             <a
                                 href="https://preview.codecanyon.net/item/wholesale-b2b-wholesale-pricing-customer-groups-for-botble-ecommerce/full_screen_preview/61763729"
                                 target="_blank"
@@ -41,6 +41,13 @@ const B2BWholesaleHero = () => {
                                 className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition shadow-md"
                             >
                                 Live Demo
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="inline-flex items-center gap-2 bg-white text-blue-600 border border-blue-200 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition shadow-md"
+                            >
+                                <MessageCircle size={18} />
+                                Let's Discuss
                             </a>
                         </div>
 

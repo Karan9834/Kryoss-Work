@@ -1,5 +1,5 @@
 import React from "react";
-import { Play, ArrowRight, Clock, Calendar, Users, Star } from "lucide-react";
+import { Play, ArrowRight, Clock, Calendar, Users, Star, MessageCircle } from "lucide-react";
 
 const TimeStayHero = () => {
   const liveDemoUrl ="https://preview.codecanyon.net/item/timestay-multivendor-hourly-hotel-booking-laravel-website-saas/full_screen_preview/56212618";
@@ -73,7 +73,7 @@ const TimeStayHero = () => {
             </div>
             
             {/* Live Demo Button */}
-            <div className="pt-3">
+            <div className="pt-3 flex flex-wrap gap-4">
               <button
                 onClick={handleLiveDemo}
                 className="group inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
@@ -82,6 +82,14 @@ const TimeStayHero = () => {
                 Live Demo
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
               </button>
+              <a
+                href="/company/contact"
+                className="group inline-flex items-center gap-2 px-7 py-3.5 bg-white/10 text-white border border-emerald-400/30 backdrop-blur-sm rounded-xl font-semibold hover:scale-105 hover:bg-white/20 transition-all duration-300 shadow-lg"
+              >
+                <MessageCircle size={16} />
+                Let's Discuss
+                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
+              </a>
             </div>
           </div>
           

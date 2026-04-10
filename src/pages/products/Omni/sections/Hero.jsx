@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Play, ShoppingBag, Star, Truck, Shield } from "lucide-react";
+import { ArrowRight, Play, ShoppingBag, Star, Truck, Shield, MessageCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -80,6 +80,14 @@ const HeroSection = () => {
             >
               <Play className="w-4 h-4 mr-1.5" />
               Live Demo
+              <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition" />
+            </a>
+            <a
+              href="/company/contact"
+              className="group inline-flex items-center justify-center px-5 py-2.5 bg-orange-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition text-sm border border-orange-400"
+            >
+              <MessageCircle className="w-4 h-4 mr-1.5" />
+              Let's Discuss
               <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition" />
             </a>
           </div>

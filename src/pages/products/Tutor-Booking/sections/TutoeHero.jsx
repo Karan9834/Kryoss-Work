@@ -1,4 +1,5 @@
 import React from "react";
+import { MessageCircle, ArrowRight } from "lucide-react";
 
 const TutorBookingHero = () => {
   const handleLiveDemo = () => {
@@ -56,15 +57,23 @@ const TutorBookingHero = () => {
             </p>
 
             {/* CTA Button */}
-            <button
-              onClick={handleLiveDemo}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3.5 rounded-xl font-semibold text-lg shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transform hover:scale-105 transition-all duration-300"
-            >
-              View Live Demo
-              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
+            <div className="flex flex-wrap gap-4">
+              <button
+                onClick={handleLiveDemo}
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3.5 rounded-xl font-semibold text-lg shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transform hover:scale-105 transition-all duration-300"
+              >
+                View Live Demo
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+              <a
+                href="/company/contact"
+                className="inline-flex items-center gap-2 bg-white/5 backdrop-blur border border-white/10 text-white px-8 py-3.5 rounded-xl font-semibold text-lg shadow-lg hover:bg-white/10 transform hover:scale-105 transition-all duration-300"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Let's Discuss
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
 
             {/* Features row */}
             <div className="flex flex-wrap gap-6 pt-4">

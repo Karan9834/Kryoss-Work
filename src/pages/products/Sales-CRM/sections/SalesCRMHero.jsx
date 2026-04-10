@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Users, TrendingUp } from "lucide-react";
+import { Star, Users, TrendingUp, MessageCircle } from "lucide-react";
 import crmheroimg from "@/assets/salescrm-img/salescrmhero.jpg";
 const SalesCRMHero = () => {
     return (
@@ -47,7 +47,7 @@ const SalesCRMHero = () => {
                         </p>
 
                         {/* CTA */}
-                        <div className="mt-8">
+                        <div className="mt-8 flex flex-wrap gap-4">
                             <a
                                 href="https://preview.codecanyon.net/item/sales-saas-business-sales-crm/full_screen_preview/30241292"
                                 target="_blank"
@@ -55,6 +55,13 @@ const SalesCRMHero = () => {
                                 className="inline-block bg-indigo-600 text-white px-7 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
                             >
                                 Live Demo
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="inline-flex items-center gap-2 bg-white text-indigo-600 border border-indigo-200 px-7 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition shadow-sm"
+                            >
+                                <MessageCircle size={18} />
+                                Let's Discuss
                             </a>
                         </div>
 

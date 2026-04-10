@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Users, TrendingUp } from "lucide-react";
+import { Star, Users, TrendingUp, MessageCircle } from "lucide-react";
 import telemedicineheroimg from "@/assets/telemedicine-img/telemedicinehero.jpg";
 const TelemedicineHero = () => {
     return (
@@ -47,7 +47,7 @@ const TelemedicineHero = () => {
                         </p>
 
                         {/* CTA */}
-                        <div className="mt-8">
+                        <div className="mt-8 flex flex-wrap gap-4">
                             <a
                                 href="https://preview.codecanyon.net/item/eyecare-pro-complete-eye-treatment-hospital-management-system/full_screen_preview/62156186"
                                 target="_blank"
@@ -55,6 +55,13 @@ const TelemedicineHero = () => {
                                 className="inline-block bg-teal-600 text-white px-7 py-3 rounded-lg font-semibold hover:bg-teal-700 transition"
                             >
                                 Live Demo
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="inline-flex items-center gap-2 bg-white text-teal-600 border border-teal-200 px-7 py-3 rounded-lg font-semibold hover:bg-teal-50 transition shadow-sm"
+                            >
+                                <MessageCircle size={18} />
+                                Let's Discuss
                             </a>
                         </div>
 

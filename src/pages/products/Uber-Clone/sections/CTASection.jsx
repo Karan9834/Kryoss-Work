@@ -1,4 +1,5 @@
 import React from "react";
+import { MessageCircle } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -29,6 +30,14 @@ const CTASection = () => {
             className="px-7 py-3 border border-white font-semibold rounded-lg hover:bg-white hover:text-black transition"
           >
             Live Demo
+          </a>
+
+          <a
+            href="/company/contact"
+            className="px-7 py-3 bg-white/10 text-white border border-white/20 font-semibold rounded-lg hover:bg-white/20 transition flex items-center gap-2"
+          >
+            <MessageCircle size={18} />
+            Let's Discuss
           </a>
 
         </div>
