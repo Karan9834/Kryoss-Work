@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 
@@ -297,4 +297,4 @@ const TestimonialCard = ({ testimonial, cardGradient }) => {
   );
 };
 
-export default Testimonial;
+export default memo(Testimonial);

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import card1 from "../../assets/Doctor-Health-App/product1.jpg";
 import card2 from "../../assets/Doctor-Health-App/product2.jpg";
@@ -138,7 +138,7 @@ const categories = [
   },
 ];
 
-export default function PortfolioShowcase() {
+const PortfolioShowcase = () => {
   const [activeTab, setActiveTab] = useState(0);
   const navigate = useNavigate();
   const active = categories[activeTab];
@@ -308,4 +308,6 @@ export default function PortfolioShowcase() {
       </div>
     </section>
   );
-}
+};
+
+export default PortfolioShowcase;

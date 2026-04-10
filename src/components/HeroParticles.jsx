@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo, memo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
@@ -114,4 +112,4 @@ const HeroParticles = () => {
     );
 };
 
-export default HeroParticles;
+export default memo(HeroParticles);

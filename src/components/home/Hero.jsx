@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 "use client";
 
-import React from "react";
+import React, { memo } from "react";
 import { ArrowRight } from "lucide-react";
 import { FaGoogle, FaAmazon, FaSlack, FaMicrosoft, FaApple } from "react-icons/fa";
 import HeroParticles from "../HeroParticles";
@@ -10,7 +10,6 @@ import HeroParticles from "../HeroParticles";
 const Hero = () => {
     return (
         <section className="relative h-auto min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] flex items-center overflow-hidden bg-white">
-
             {/* LAYER 1: Background Image (Lowest Layer) */}
             <div
                 className="absolute inset-0 z-0"
@@ -29,11 +28,7 @@ const Hero = () => {
             </div>
 
             {/* LAYER 3: Subtle Gradient Overlay (Above Image & Particles) */}
-            {/* Light semi-transparent gradient that ensures readability without washing out the image */}
             <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-white/60 via-white/20 to-transparent" />
-
-            {/* Optional subtle blur only on the very edge for text pop, or remove completely as per user request */}
-            {/* <div className="absolute inset-0 z-[8] pointer-events-none backdrop-blur-[1px] lg:w-1/3" /> */}
 
             {/* LAYER 4: Content (Top Layer) */}
             <div className="w-full relative z-20 px-6 lg:pl-20 lg:pr-12">
@@ -104,4 +99,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default memo(Hero);

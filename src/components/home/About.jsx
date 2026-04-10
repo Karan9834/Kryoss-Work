@@ -200,6 +200,7 @@ export default function About() {
               <img
                 src="/whitelabel-assets/assets/images/about-team.jpg"
                 alt="KryossWork Team"
+                loading="lazy"
                 className="w-full h-[480px] object-cover transition-transform duration-700 group-hover:scale-105"
                 onError={(e) => {
                   if (!e.currentTarget.dataset.error) {
