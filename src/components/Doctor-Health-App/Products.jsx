@@ -32,23 +32,25 @@ const Products = () => {
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32 z-10">
 
-        {/* Header */}
+        {/* Header - Updated Typography */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-100 rounded-full px-4 py-2 mb-6">
             <Sparkles size={16} className="text-emerald-600" />
-            <span className="text-sm font-semibold text-emerald-700 tracking-wide">
+            <span className="text-[14px] font-semibold text-emerald-700 tracking-wide uppercase">
               Healthcare Products
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Choose the Perfect{" "}
             <span className="bg-gradient-to-r from-emerald-600 to-amber-600 text-transparent bg-clip-text">
               Healthcare Solution
             </span>
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="mt-6 text-[16px] font-normal leading-[1.6] text-gray-600">
             Powerful healthcare solutions designed to simplify patient care and services
           </p>
         </div>
@@ -70,8 +72,8 @@ const Products = () => {
                 />
               </div>
 
-              {/* Title Below */}
-              <p className="mt-4 text-sm md:text-base">
+              {/* Title Below - Updated Typography */}
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span 
                   onClick={() => navigate(product.route)}
                   className="text-emerald-600 font-semibold cursor-pointer hover:underline"
@@ -86,9 +88,9 @@ const Products = () => {
           ))}
         </div>
 
-        {/* Bottom Text */}
+        {/* Bottom Text - Updated Typography */}
         <div className="mt-16 text-center">
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-[14px] font-normal leading-[1.6]">
             Click on any product to explore more
           </p>
         </div>

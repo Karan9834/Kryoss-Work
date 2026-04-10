@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Utensils, Info } from 'lucide-react';
+import { ArrowRight, Utensils, Info, MessageCircle } from 'lucide-react';
 import heroImg from "../../../../assets/resturantpos-img/resturantposhero.jpg";
 
 const RestoHero = () => {
@@ -39,6 +39,14 @@ const RestoHero = () => {
                                 className="px-10 py-5 bg-white text-indigo-700 font-black rounded-3xl hover:bg-amber-400 hover:text-white hover:scale-110 transition-all shadow-2xl flex items-center gap-3 group"
                             >
                                 Try Live Demo
+                                <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="px-10 py-5 bg-white/10 text-white font-black rounded-3xl border border-white/20 hover:bg-white/20 hover:scale-110 transition-all shadow-2xl flex items-center gap-3 group backdrop-blur-sm"
+                            >
+                                <MessageCircle size={24} />
+                                Let's Discuss
                                 <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
                             </a>
                         </div>

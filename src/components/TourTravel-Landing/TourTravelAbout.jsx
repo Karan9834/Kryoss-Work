@@ -23,29 +23,21 @@ const TourTravelAbout = () => {
             <div className="absolute bottom-0 left-0 w-72 h-72 bg-amber-50 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                {/* Top label */}
+                {/* Top label - Updated Typography */}
                 <div className="text-center mb-16">
-                    <span className="text-amber-600 font-bold text-sm uppercase tracking-[0.3em] block mb-3">Powering the Travel Industry</span>
-                    <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E293B] leading-tight">
+                    {/* Badge - Updated: text-[14px] font-bold tracking-[0.3em] uppercase */}
+                    <span className="text-amber-600 text-[14px] font-bold tracking-[0.3em] uppercase block mb-3">Powering the Travel Industry</span>
+                    
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                         A Platform Built for <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-500">Modern Travelers</span> &{" "}
                         <span className="text-amber-500">Tour Operators</span>
                     </h2>
-                    <p className="text-[#4A4B5E] text-lg leading-relaxed max-w-3xl mx-auto mt-4">
+                    
+                    {/* Description - 16px, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] font-normal leading-[1.6] text-[#4A4B5E] max-w-3xl mx-auto mt-4">
                         From solo backpackers to enterprise travel agencies — our platform delivers a frictionless booking experience, real-time inventory management, and rich analytics to scale your travel business globally.
                     </p>
-                </div>
-
-                {/* Stats Row */}
-                <div className="grid grid-cols-3 gap-6 mb-16">
-                    {stats.map((s, i) => (
-                        <div key={i} className={`flex flex-col items-center gap-3 p-6 rounded-3xl ${s.bg} border border-white shadow-sm hover:shadow-md transition-all`}>
-                            <div className={`w-12 h-12 rounded-2xl bg-white flex items-center justify-center shadow-sm`}>
-                                <s.icon size={24} className={s.color} />
-                            </div>
-                            <p className={`text-3xl font-black ${s.color}`}>{s.value}</p>
-                            <p className="text-gray-600 text-sm font-semibold text-center">{s.label}</p>
-                        </div>
-                    ))}
                 </div>
 
                 {/* Two-column layout */}
@@ -59,9 +51,10 @@ const TourTravelAbout = () => {
                         </div>
                     </div>
 
-                    {/* Right: Pillars */}
+                    {/* Right: Pillars - Updated Typography */}
                     <div className="space-y-8 animate-fadeInRight order-1 lg:order-2">
-                        <p className="text-[#4A4B5E] text-base leading-relaxed">
+                        {/* Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                        <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-[#4A4B5E]">
                             We help travel agencies, tour operators, and OTAs launch feature-rich apps with dynamic packaging, real-time availability, and seamless payment processing — designed to delight travelers at every touchpoint.
                         </p>
                         <div className="grid grid-cols-2 gap-4">
@@ -70,7 +63,8 @@ const TourTravelAbout = () => {
                                     <div className={`w-10 h-10 rounded-xl bg-white flex items-center justify-center shrink-0 shadow-sm`}>
                                         <p.icon size={20} className={p.color} />
                                     </div>
-                                    <span className="text-[#1E293B] font-semibold text-sm">{p.title}</span>
+                                    {/* Pillar title - 14px mobile, 16px desktop, font-semibold */}
+                                    <span className="text-[#1E293B] font-semibold text-[14px] md:text-[16px]">{p.title}</span>
                                 </div>
                             ))}
                         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Download, Users, Star, ArrowRight, Sparkles, BookOpen, Clock, ShieldCheck } from "lucide-react";
+import { Download, Users, Star, ArrowRight, Sparkles, BookOpen, Clock, ShieldCheck, MessageCircle } from "lucide-react";
 import heroImg from "@/assets/inilabssms-img/inilabssmshero.jpg";
 
 const InilabsHero = () => {
@@ -57,7 +57,7 @@ const InilabsHero = () => {
                         ))}
                     </div>
 
-                    <div className="pt-2">
+                    <div className="pt-2 flex flex-wrap gap-4">
                         <a
                             href="https://preview.codecanyon.net/item/inilabs-school-management-system-express/full_screen_preview/11630340"
                             target="_blank"
@@ -66,6 +66,14 @@ const InilabsHero = () => {
                             style={{ background: "linear-gradient(90deg, #059669, #4f46e5)", boxShadow: "0 8px 30px rgba(5,150,105,0.4)" }}
                         >
                             Live Demo
+                            <ArrowRight size={22} />
+                        </a>
+                        <a
+                            href="/company/contact"
+                            className="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-white border border-white/20 bg-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white/20"
+                        >
+                            <MessageCircle size={22} />
+                            Let's Discuss
                             <ArrowRight size={22} />
                         </a>
                     </div>

@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
-
 import React from 'react';
-
 import { Home, Building2 } from 'lucide-react';
 import card1Img from '../../assets/realestatelanding-img/realestatelandingcard1.jpg';
 import card2Img from '../../assets/realestatelanding-img/realestatelandingcard2.jpg';
@@ -25,18 +23,24 @@ const RealEstateCardSection = () => {
     return (
         <section id="realestate-products" className="py-16 bg-transparent">
             <div className="max-w-7xl mx-auto px-6">
+                {/* Header - Updated Typography */}
                 <div className="text-center mb-16 space-y-4">
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <div className="w-8 h-px bg-emerald-400"></div>
-                        <span className="text-amber-600 font-bold text-sm tracking-wider uppercase">
+                        {/* Badge - Updated: text-[14px] font-bold tracking-wider uppercase */}
+                        <span className="text-amber-600 text-[14px] font-bold tracking-wider uppercase">
                             Our Products
                         </span>
                         <div className="w-8 h-px bg-emerald-400"></div>
                     </div>
-                    <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E293B]">
+                    
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                         Our Premium <span className="text-emerald-600">Real Estate Solutions</span>
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                    
+                    {/* Description - 16px, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                         Choose the ideal platform to transform your property business into a modern, digital-first experience.
                     </p>
                 </div>
@@ -56,8 +60,8 @@ const RealEstateCardSection = () => {
                                 />
                             </Link>
 
-                            {/* TITLE AND DESCRIPTION */}
-                            <p className="mt-4 text-sm md:text-base">
+                            {/* TITLE AND DESCRIPTION - Updated Typography */}
+                            <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                                 <Link to={card.path} className="text-emerald-600 font-semibold hover:underline">
                                     {card.title}
                                 </Link>{" "}
@@ -69,9 +73,9 @@ const RealEstateCardSection = () => {
                     ))}
                 </div>
 
-                {/* Bottom note */}
+                {/* Bottom note - Updated Typography */}
                 <div className="text-center mt-16">
-                    <p className="text-sm text-gray-400 font-medium">
+                    <p className="text-[14px] font-normal leading-[1.6] text-gray-400">
                         ✦ More real estate solutions coming soon ✦
                     </p>
                 </div>

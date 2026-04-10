@@ -1,4 +1,5 @@
 import React from "react";
+import { MessageCircle } from "lucide-react";
 import managehero from "../../../../assets/Hotel-Management/managehero.png"
 const HotelHero = () => {
   const demoLink =
@@ -47,7 +48,7 @@ const HotelHero = () => {
             </p>
 
             {/* CTA */}
-            <div className="pt-4 flex justify-center lg:justify-start">
+            <div className="pt-4 flex flex-wrap justify-center lg:justify-start gap-4">
               <a
                 href={demoLink}
                 target="_blank"
@@ -68,6 +69,13 @@ const HotelHero = () => {
                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                   />
                 </svg>
+              </a>
+              <a
+                href="/company/contact"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-white/5 text-white border border-white/20 font-semibold rounded-xl shadow-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 backdrop-blur-sm"
+              >
+                <MessageCircle size={20} />
+                Let's Discuss
               </a>
             </div>
           </div>

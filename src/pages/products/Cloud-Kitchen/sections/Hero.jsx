@@ -1,5 +1,6 @@
 import React from "react";
 import cloudHero from "@/assets/cloud-kitchen-img/cloudHero.jpeg"
+import { MessageCircle } from "lucide-react";
 const Hero = () => {
     return (
         <section className="relative bg-gradient-to-b from-[#0b2239] to-[#061726] text-white overflow-hidden">
@@ -28,14 +29,21 @@ const Hero = () => {
                         </p>
 
                         {/* CTA */}
-                        <div>
+                        <div className="flex flex-wrap gap-4">
                             <a
                                 href="http://preview.codecanyon.net/item/foodhat-restaurant-menu-food-ordering-system/full_screen_preview/46780682"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-900 transition px-7 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue-500/30"
+                                className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 transition px-7 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue-500/30"
                             >
                                 👁 Live Demo
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 px-7 py-3 rounded-lg font-medium hover:bg-white/20 transition shadow-lg backdrop-blur-md"
+                            >
+                                <MessageCircle size={18} />
+                                Let's Discuss
                             </a>
                         </div>
 

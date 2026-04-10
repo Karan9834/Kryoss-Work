@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
-
 import React from 'react';
-
 import cardImg1 from '../../assets/datinglanding-img/datinglandingcard1.jpg';
 import cardImg2 from '../../assets/datinglanding-img/datinglandingcard2.jpg';
 
@@ -24,18 +22,24 @@ const DatingCardSection = () => {
    return (
       <section id="dating-products" className="py-16 bg-transparent">
          <div className="max-w-7xl mx-auto px-6">
+            {/* Header - Updated Typography */}
             <div className="text-center mb-16 space-y-4">
                <div className="flex items-center justify-center gap-2 mb-4">
                   <div className="w-8 h-px bg-rose-300"></div>
-                  <span className="text-orange-600 font-bold text-sm tracking-wider uppercase">
+                  {/* Badge - Updated: text-[14px] font-bold tracking-wider uppercase */}
+                  <span className="text-orange-600 text-[14px] font-bold tracking-wider uppercase">
                      Our Premium Solutions
                   </span>
                   <div className="w-8 h-px bg-rose-300"></div>
                </div>
-               <h2 className="text-2xl lg:text-3xl font-semibold text-slate-900">
+               
+               {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-slate-900">
                   Choose Your <span className="text-rose-600">Perfect Model</span>
                </h2>
-               <p className="text-slate-500 text-lg max-w-2xl mx-auto font-medium">
+               
+               {/* Description - 16px, weight 400, line-height 1.6 */}
+               <p className="text-[16px] font-normal leading-[1.6] text-slate-500 max-w-2xl mx-auto">
                   Pick the ideal platform to transform your matchmaking business into a modern, global digital experience.
                </p>
             </div>
@@ -56,8 +60,8 @@ const DatingCardSection = () => {
                         />
                      </Link>
 
-                     {/* TITLE AND DESCRIPTION */}
-                     <p className="mt-4 text-sm md:text-base">
+                     {/* TITLE AND DESCRIPTION - Updated Typography */}
+                     <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         <Link to={card.path} className="text-rose-600 font-semibold hover:underline">
                            {card.title}
                         </Link>{" "}
@@ -70,9 +74,9 @@ const DatingCardSection = () => {
                ))}
             </div>
 
-            {/* Bottom note */}
+            {/* Bottom note - Updated Typography */}
             <div className="text-center mt-16">
-               <p className="text-sm text-slate-400 font-medium">
+               <p className="text-[14px] font-normal leading-[1.6] text-slate-400">
                   ✦ More matchmaking solutions coming soon ✦
                </p>
             </div>

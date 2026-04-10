@@ -1,4 +1,5 @@
 import React from "react";
+import { MessageCircle } from "lucide-react";
 import propertyHero from "@/assets/property-listing-img/propertyHero.jpeg"
 const Hero = () => {
     return (
@@ -27,15 +28,21 @@ const Hero = () => {
                             Advanced real estate marketplace for buyers and agents.
                         </p>
 
-                        {/* CTA */}
-                        <div>
+                        <div className="flex flex-wrap gap-4">
                             <a
                                 href="https://preview.codecanyon.net/item/estatelab-real-estate-property-listing-platform/full_screen_preview/33445105"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-900 transition px-7 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue-500/30"
+                                className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-900 transition px-7 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue-500/30 text-white"
                             >
                                 👁 Live Demo
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 px-7 py-3 rounded-lg font-medium shadow-lg hover:bg-white/20 transition backdrop-blur"
+                            >
+                                <MessageCircle size={18} />
+                                Let's Discuss
                             </a>
                         </div>
 

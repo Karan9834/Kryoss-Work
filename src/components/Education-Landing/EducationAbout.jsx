@@ -42,15 +42,19 @@ const EducationAbout = () => {
                         </div>
                     </div>
 
-                    {/* Right Side - Content */}
+                    {/* Right Side - Content - Updated Typography */}
                     <div className="space-y-8 animate-fadeInRight order-1 lg:order-2">
                         <div className="space-y-4">
-                            <span className="text-indigo-600 font-bold text-sm uppercase tracking-[0.3em]">Our Vision</span>
-                            <h2 className="text-2xl lg:text-3xl font-semibold text-[#1A1C2C] leading-tight">
+                            {/* Badge - Updated: text-[14px] font-bold tracking-[0.3em] uppercase */}
+                            <span className="text-indigo-600 text-[14px] font-bold tracking-[0.3em] uppercase">Our Vision</span>
+                            
+                            {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                                 Empowering Global <span className="text-indigo-600">Education</span> Through Technology
                             </h2>
 
-                            <p className="text-[#4A4B5E] text-lg leading-relaxed">
+                            {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                            <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-[#4A4B5E]">
                                 We're on a mission to make world-class education accessible to everyone. Our platform bridges the gap between expert tutors and eager learners, creating a dynamic ecosystem that adapts to individual needs.
                             </p>
                         </div>
@@ -59,7 +63,8 @@ const EducationAbout = () => {
                             {highlights.map((item, index) => (
                                 <div key={index} className="flex items-center gap-3 p-4 bg-indigo-50/50 rounded-2xl hover:bg-indigo-100 transition-all group cursor-default border border-transparent hover:border-indigo-100">
                                     <CheckCircle2 size={20} className="text-indigo-600 group-hover:scale-110 transition-transform" />
-                                    <span className="text-[#1A1C2C] font-semibold text-sm">{item}</span>
+                                    {/* Highlight text - Updated: text-[14px] md:text-[16px] font-semibold */}
+                                    <span className="text-[#1A1C2C] font-semibold text-[14px] md:text-[16px]">{item}</span>
                                 </div>
                             ))}
                         </div>

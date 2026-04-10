@@ -69,13 +69,18 @@ const DatingFeatures = () => {
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-200/40 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2"></div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
+                {/* Header - Updated Typography ONLY */}
                 <div className="text-center mb-20 space-y-4">
-                    <span className="text-rose-600 font-bold text-sm uppercase tracking-widest px-4 py-1 bg-white rounded-full shadow-sm border border-rose-100">Premium Capabilities</span>
-                    <h2 className="text-3xl lg:text-5xl font-bold text-slate-900">
+                    {/* Badge - Updated: text-[14px] font-bold tracking-widest */}
+                    <span className="text-rose-600 text-[14px] font-bold tracking-widest px-4 py-1 bg-white rounded-full shadow-sm border border-rose-100">Premium Capabilities</span>
+                    
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-slate-900">
                         Designed for <span className="text-purple-600">Engagement</span>
                     </h2>
                 </div>
 
+                {/* Cards - Fonts KEPT ORIGINAL (unchanged) */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {features.map((feature, idx) => (
                         <div 
@@ -90,10 +95,12 @@ const DatingFeatures = () => {
                                     <feature.icon size={32} />
                                 </div>
                                 
+                                {/* Card Title - ORIGINAL FONT (unchanged) */}
                                 <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-slate-800 transition-colors">
                                     {feature.title}
                                 </h3>
                                 
+                                {/* Card Description - ORIGINAL FONT (unchanged) */}
                                 <p className="text-slate-600 leading-relaxed mb-8 flex-grow">
                                     {feature.desc}
                                 </p>

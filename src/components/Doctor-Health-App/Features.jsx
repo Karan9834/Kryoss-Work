@@ -91,24 +91,26 @@ const Features = () => {
       <div className="absolute bottom-20 left-20 w-80 h-80 bg-amber-100 rounded-full opacity-20 blur-3xl"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
+        {/* Section header - Updated Typography */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-8 h-px bg-emerald-200"></div>
-            <span className="text-emerald-600 font-semibold text-sm tracking-wider uppercase">
+            <span className="text-emerald-600 font-semibold text-[14px] tracking-wider uppercase">
               Why Choose Us
             </span>
             <div className="w-8 h-px bg-amber-200"></div>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
             Comprehensive Healthcare{' '}
             <span className="bg-gradient-to-r from-emerald-600 to-amber-600 bg-clip-text text-transparent">
               Features
             </span>
           </h2>
           
-          <p className="text-lg text-gray-600">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600">
             We've designed the perfect healthcare experience with features that put you first. 
             From instant appointments to secure health records.
           </p>
@@ -121,23 +123,24 @@ const Features = () => {
               key={index}
               className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden"
             >
-              {/* Colored line that appears on hover - different color for each card */}
+              {/* Colored line that appears on hover */}
               <div className={`absolute top-0 left-0 w-full h-1 ${feature.lineColor} transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out`}></div>
               
               {/* Second line from bottom on hover */}
               <div className={`absolute bottom-0 right-0 w-full h-1 ${feature.lineColor} transform translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out delay-100`}></div>
               
-              {/* Icon with pop and tilt effect on hover */}
+              {/* Icon */}
               <div className={`inline-flex p-4 rounded-xl bg-${feature.color}-50 text-${feature.color}-600 mb-6 group-hover:scale-110 group-hover:rotate-3 group-hover:-translate-y-1 transition-all duration-300 ease-out`}>
                 {feature.icon}
               </div>
 
-              {/* Content */}
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              {/* Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+              <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] text-gray-900 mb-3">
                 {feature.title}
               </h3>
               
-              <p className="text-gray-600 leading-relaxed">
+              {/* Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+              <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
                 {feature.description}
               </p>
 
@@ -148,31 +151,9 @@ const Features = () => {
           ))}
         </div>
 
-        {/* Simple stats bar */}
-        <div className="mt-16 pt-12 border-t border-gray-100">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-emerald-600">50k+</div>
-              <div className="text-sm text-gray-500 mt-1">Active Users</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-amber-600">500+</div>
-              <div className="text-sm text-gray-500 mt-1">Specialists</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-emerald-600">100k+</div>
-              <div className="text-sm text-gray-500 mt-1">Consultations</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-amber-600">4.9</div>
-              <div className="text-sm text-gray-500 mt-1">User Rating</div>
-            </div>
-          </div>
-        </div>
-
-        {/* Simple trust message */}
+        {/* Simple trust message - Updated Typography */}
         <div className="text-center mt-12">
-          <p className="text-sm text-gray-400">
+          <p className="text-[14px] font-normal leading-[1.6] text-gray-400">
             Trusted by thousands of patients across the country
           </p>
         </div>

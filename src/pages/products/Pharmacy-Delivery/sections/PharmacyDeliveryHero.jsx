@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Users, TrendingUp } from "lucide-react";
+import { Star, Users, TrendingUp, MessageCircle } from "lucide-react";
 import pharmacyheroimg from "@/assets/pharmacy-img/pharmacyhero.jpg";
 const PharmacyDeliveryHero = () => {
     return (
@@ -48,7 +48,7 @@ const PharmacyDeliveryHero = () => {
                         </p>
 
                         {/* CTA */}
-                        <div className="mt-8">
+                        <div className="mt-8 flex flex-wrap gap-4">
                             <a
                                 href="https://preview.codecanyon.net/item/drmedico-online-healthcare-android-app-with-order-medicine-and-upload-prescription/full_screen_preview/28842064"
                                 target="_blank"
@@ -56,6 +56,13 @@ const PharmacyDeliveryHero = () => {
                                 className="inline-block bg-rose-600 text-white px-7 py-3 rounded-lg font-semibold hover:bg-rose-700 transition"
                             >
                                 Live Demo
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="inline-flex items-center gap-2 bg-white text-rose-600 border border-rose-200 px-7 py-3 rounded-lg font-semibold hover:bg-rose-50 transition shadow-sm"
+                            >
+                                <MessageCircle size={18} />
+                                Let's Discuss
                             </a>
                         </div>
 

@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
-
 import React from 'react';
-
 import card1Img from '../../assets/taxilanding-img/taxilandingcard1.jpg';
 import card2Img from '../../assets/taxilanding-img/taxilandingcard2.jpg';
 
@@ -24,18 +22,24 @@ const TaxiCardSection = () => {
    return (
       <section id="taxi-products" className="py-16 bg-transparent">
          <div className="max-w-7xl mx-auto px-6">
+            {/* Header - Updated Typography */}
             <div className="text-center mb-16 space-y-4">
                <div className="flex items-center justify-center gap-2 mb-4">
                   <div className="w-8 h-px bg-yellow-400"></div>
-                  <span className="text-orange-600 font-bold text-sm tracking-wider uppercase">
+                  {/* Badge - Updated: text-[14px] font-bold tracking-wider uppercase */}
+                  <span className="text-orange-600 text-[14px] font-bold tracking-wider uppercase">
                      Our Products
                   </span>
                   <div className="w-8 h-px bg-yellow-400"></div>
                </div>
-               <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E293B]">
+               
+               {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                   Choice Your Ideal <span className="text-yellow-600">Transport Model</span>
                </h2>
-               <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+               
+               {/* Description - 16px, weight 400, line-height 1.6 */}
+               <p className="text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                   Whether you want a traditional booking system or a modern bidding marketplace, we have the perfect solution for you.
                </p>
             </div>
@@ -56,8 +60,8 @@ const TaxiCardSection = () => {
                         />
                      </Link>
 
-                     {/* TITLE AND DESCRIPTION */}
-                     <p className="mt-4 text-sm md:text-base">
+                     {/* TITLE AND DESCRIPTION - Updated Typography */}
+                     <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         <Link to={card.path} className="text-yellow-600 font-semibold hover:underline">
                            {card.title}
                         </Link>{" "}
@@ -70,9 +74,9 @@ const TaxiCardSection = () => {
                ))}
             </div>
 
-            {/* Bottom note */}
+            {/* Bottom note - Updated Typography */}
             <div className="text-center mt-16">
-               <p className="text-sm text-gray-400 font-medium">
+               <p className="text-[14px] font-normal leading-[1.6] text-gray-400">
                   ✦ More transport solutions coming soon ✦
                </p>
             </div>

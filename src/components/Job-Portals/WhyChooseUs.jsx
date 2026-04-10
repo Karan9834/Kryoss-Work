@@ -92,26 +92,29 @@ const WhyChooseUsSection = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         
-        {/* ===== HEADER SECTION ===== */}
+        {/* ===== HEADER SECTION - Updated Typography ONLY ===== */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-4 border border-blue-200">
             <Sparkles className="w-4 h-4 text-blue-600" />
-            <span className="text-blue-700 font-semibold text-sm">Why Choose Us</span>
+            {/* Badge - 12px, weight 500, letter-spacing 0.05em */}
+            <span className="text-blue-700 text-[12px] font-medium tracking-[0.05em] uppercase">Why Choose Us</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Why Thousands{" "}
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
               Trust Our Platform
             </span>
           </h2>
           
-          <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="mt-4 text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             Discover what makes us the preferred choice for job seekers and employers worldwide.
           </p>
         </div>
 
-        {/* ===== REASONS GRID with Enhanced Hover Effects ===== */}
+        {/* ===== REASONS GRID - Card fonts KEPT ORIGINAL ===== */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (
             <div
@@ -126,7 +129,7 @@ const WhyChooseUsSection = () => {
               
               {/* Card Content */}
               <div className="relative bg-white rounded-2xl p-2">
-                {/* Icon Container with Enhanced Hover */}
+                {/* Icon Container */}
                 <div className={`relative w-16 h-16 ${reason.iconBg} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 group-hover:shadow-xl ${reason.shadowColor}`}>
                   <div className={`${reason.iconColor} group-hover:scale-110 transition-transform duration-500`}>
                     {reason.icon}
@@ -135,12 +138,12 @@ const WhyChooseUsSection = () => {
                   <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${reason.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
                 </div>
                 
-                {/* Title with Gradient on Hover */}
+                {/* Card Title - ORIGINAL FONT (unchanged) */}
                 <h3 className={`text-xl font-bold text-gray-900 mb-3 transition-all duration-500 group-hover:bg-gradient-to-r ${reason.gradient} group-hover:bg-clip-text group-hover:text-transparent`}>
                   {reason.title}
                 </h3>
                 
-                {/* Description */}
+                {/* Card Description - ORIGINAL FONT (unchanged) */}
                 <p className="text-gray-600 leading-relaxed transition-all duration-500 group-hover:text-gray-800">
                   {reason.description}
                 </p>

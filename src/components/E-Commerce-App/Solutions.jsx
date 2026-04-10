@@ -62,14 +62,14 @@ const Solutions = () => {
           <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
         </div>
 
-        {/* HEADER SECTION */}
+        {/* HEADER SECTION - Updated Typography ONLY */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-20 relative z-10"
         >
-          {/* Badge with purple theme */}
+          {/* Badge - Updated */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -77,24 +77,27 @@ const Solutions = () => {
             className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 rounded-full mb-6"
           >
             <Sparkles size={16} className="text-purple-600" />
-            <span className="text-sm font-medium text-purple-600">Our Process</span>
+            <span className="text-[14px] font-medium text-purple-600">Our Process</span>
           </motion.div>
 
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+          {/* Heading H2 - Updated: 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             How We
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600">
               Transform Your Business
             </span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          
+          {/* Description - Updated: 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             A systematic approach to launching and scaling your e-commerce success
           </p>
         </motion.div>
 
-        {/* TIMELINE CONTAINER */}
+        {/* TIMELINE CONTAINER - Card fonts remain unchanged */}
         <div className="relative max-w-5xl mx-auto">
           
-          {/* CENTER LINE - Purple theme */}
+          {/* CENTER LINE */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-purple-200 via-pink-200 to-purple-200 rounded-full"></div>
           
           {/* ANIMATED PROGRESS LINE */}
@@ -103,7 +106,7 @@ const Solutions = () => {
             className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gradient-to-b from-purple-500 via-pink-500 to-purple-500 rounded-full shadow-lg shadow-purple-500/25"
           />
 
-          {/* TIMELINE ITEMS */}
+          {/* TIMELINE ITEMS - Card fonts NOT changed */}
           <div className="relative space-y-16 md:space-y-24">
             {solutions.map((item, index) => {
               const isEven = index % 2 === 0;
@@ -136,12 +139,12 @@ const Solutions = () => {
                         </span>
                       </div>
 
-                      {/* Title */}
+                      {/* Title - ORIGINAL FONT (unchanged) */}
                       <h3 className={`text-2xl font-bold text-gray-900 mb-3 ${isEven ? "md:text-right" : "md:text-left"}`}>
                         {item.title}
                       </h3>
 
-                      {/* Description */}
+                      {/* Description - ORIGINAL FONT (unchanged) */}
                       <p className={`text-gray-600 mb-4 ${isEven ? "md:text-right" : "md:text-left"}`}>
                         {item.desc}
                       </p>
@@ -164,26 +167,21 @@ const Solutions = () => {
                       transition={{ delay: item.delay + 0.3, type: "spring" }}
                       className="relative"
                     >
-                      {/* Pulse rings */}
                       <span className="absolute inset-0 rounded-full bg-purple-400 animate-ping opacity-25"></span>
                       <span className={`absolute inset-0 rounded-full bg-gradient-to-r ${item.gradient} opacity-40 blur-md`}></span>
-                      
-                      {/* Dot */}
                       <div className={`relative w-4 h-4 rounded-full bg-gradient-to-r ${item.gradient} shadow-lg`}></div>
                     </motion.div>
                   </div>
 
-                  {/* IMAGE SECTION - No blur on hover */}
+                  {/* IMAGE SECTION */}
                   <div className="w-full md:w-1/2">
                     <motion.div
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.3 }}
                       className="relative group"
                     >
-                      {/* Decorative gradient background */}
                       <div className={`absolute -inset-1 bg-gradient-to-r ${item.gradient} rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition duration-500`}></div>
                       
-                      {/* Image container - removed blur overlay */}
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <img
                           src={item.img}
@@ -191,7 +189,6 @@ const Solutions = () => {
                           className="w-full h-64 object-cover group-hover:scale-105 transition duration-700"
                         />
                         
-                        {/* Simple icon overlay on hover - no blur background */}
                         <motion.div 
                           initial={{ opacity: 0 }}
                           whileHover={{ opacity: 1 }}

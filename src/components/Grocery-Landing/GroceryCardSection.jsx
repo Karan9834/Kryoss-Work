@@ -22,19 +22,23 @@ const GroceryCardSection = () => {
     return (
         <section id="grocery-products" className="py-16 bg-transparent">
             <div className="max-w-7xl mx-auto px-6">
-                {/* Header */}
+                {/* Header - Updated Typography */}
                 <div className="text-center mb-16 space-y-4">
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <div className="w-8 h-px bg-emerald-400"></div>
-                        <span className="text-emerald-600 font-bold text-sm tracking-wider uppercase">
+                        <span className="text-emerald-600 text-[14px] font-bold tracking-wider uppercase">
                             Grocery Solutions
                         </span>
                         <div className="w-8 h-px bg-emerald-400"></div>
                     </div>
-                    <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E293B]">
+                    
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                         Our Premium <span className="text-emerald-600">Grocery Solutions</span>
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                    
+                    {/* Description Text - 16px, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                         Pick the ideal platform to transform your grocery business into a modern, efficient digital experience.
                     </p>
                 </div>
@@ -55,8 +59,8 @@ const GroceryCardSection = () => {
                                 />
                             </Link>
 
-                            {/* TITLE AND DESCRIPTION */}
-                            <p className="mt-4 text-sm md:text-base transition-colors group-hover:text-emerald-600">
+                            {/* TITLE AND DESCRIPTION - Updated Typography */}
+                            <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6] transition-colors group-hover:text-emerald-600">
                                 <Link to={card.path} className="text-emerald-600 font-semibold hover:underline">
                                     {card.title}
                                 </Link>{" "}
@@ -70,7 +74,7 @@ const GroceryCardSection = () => {
 
                 {/* Bottom note */}
                 <div className="text-center mt-16">
-                    <p className="text-sm text-gray-400 font-medium">
+                    <p className="text-[14px] font-normal leading-[1.6] text-gray-400">
                         ✦ More grocery solutions coming soon ✦
                     </p>
                 </div>

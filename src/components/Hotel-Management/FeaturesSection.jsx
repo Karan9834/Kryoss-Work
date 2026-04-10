@@ -94,23 +94,28 @@ const FeaturesSection = () => {
     <section className="w-full bg-gradient-to-br from-cyan-50 via-white to-emerald-50 py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Section Header */}
+        {/* Section Header - Updated Typography ONLY */}
         <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <div className="inline-flex items-center justify-center mb-4">
-            <div className="w-12 h-0.5 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full"></div>
+            {/* Section Underline - width: 64px, height: 2px */}
+            <div className="w-16 h-[2px] bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full"></div>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             Powerful{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">
               Features
             </span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-xl mx-auto">
+          
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600 max-w-xl mx-auto">
             Built to simplify and elevate hotel operations
           </p>
         </div>
 
-        {/* Cards Grid */}
+        {/* Cards Grid - Card fonts NOT changed */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {features.map((feature, index) => (
             <div
@@ -146,12 +151,12 @@ const FeaturesSection = () => {
                 </div>
               </div>
 
-              {/* Title */}
+              {/* Card Title - ORIGINAL FONT (unchanged) */}
               <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:translate-x-1 transition-transform duration-300">
                 {feature.title}
               </h3>
 
-              {/* Description */}
+              {/* Card Description - ORIGINAL FONT (unchanged) */}
               <p className="text-gray-600 leading-relaxed">
                 {feature.desc}
               </p>
@@ -168,7 +173,7 @@ const FeaturesSection = () => {
 
         {/* Bottom Decoration */}
         <div className="flex justify-center mt-12">
-          <div className="w-16 h-1 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full opacity-50"></div>
+          <div className="w-16 h-[2px] bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full opacity-50"></div>
         </div>
       </div>
     </section>

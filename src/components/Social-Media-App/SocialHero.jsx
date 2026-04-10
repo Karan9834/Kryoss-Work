@@ -71,21 +71,21 @@ const SocialHero = () => {
             animate="visible"
             className="flex-1 max-w-xl mx-auto lg:mx-0"
           >
-            {/* Badge */}
+            {/* Hero Badge - Updated: text-xs font-medium tracking-wider uppercase */}
             <motion.div
               variants={itemVariants}
               className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 rounded-full mb-6"
             >
               <Sparkles className="w-4 h-4 text-purple-400" />
-              <span className="text-sm font-medium text-purple-300">
+              <span className="text-[12px] font-medium tracking-wider uppercase text-purple-300">
                 Next Gen Social Platform
               </span>
             </motion.div>
 
-            {/* Heading */}
+            {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
             <motion.h1
               variants={itemVariants}
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-[1.2]"
+              className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6"
             >
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 text-transparent bg-clip-text">
                 Connect, Share,
@@ -94,16 +94,16 @@ const SocialHero = () => {
               <span className="text-white">Grow Together</span>
             </motion.h1>
 
-            {/* Description */}
+            {/* Hero Description - Updated: text-base md:text-lg font-normal leading-relaxed */}
             <motion.p
               variants={itemVariants}
-              className="text-gray-300 text-base sm:text-lg mb-8 max-w-lg leading-relaxed"
+              className="text-base md:text-lg font-normal leading-relaxed text-gray-300 mb-8 max-w-lg"
             >
               Experience meaningful connections with a modern, fast, and
               engaging platform designed for authentic interactions.
             </motion.p>
 
-            {/* CTA Button */}
+            {/* Hero Button - Updated: text-sm md:text-base font-semibold tracking-wide uppercase */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
@@ -111,38 +111,11 @@ const SocialHero = () => {
                 const section = document.getElementById("products");
                 section?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="group px-8 py-3.5 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 text-white rounded-full text-base font-semibold flex items-center gap-2 shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300"
+              className="group px-8 py-3.5 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 text-white rounded-full text-sm md:text-base font-semibold tracking-wide uppercase flex items-center gap-2 shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300"
             >
               Explore Products
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </motion.button>
-
-            {/* FEATURES - Better Spacing */}
-            <motion.div
-              variants={itemVariants}
-              className="flex flex-wrap gap-6 pt-2 border-t border-white/10"
-            >
-              <div className="flex items-center gap-2.5 text-sm text-gray-400">
-                <div className="p-1.5 rounded-full bg-purple-500/20">
-                  <Zap className="w-4 h-4 text-purple-400" />
-                </div>
-                <span>Lightning Fast</span>
-              </div>
-
-              <div className="flex items-center gap-2.5 text-sm text-gray-400">
-                <div className="p-1.5 rounded-full bg-pink-500/20">
-                  <Shield className="w-4 h-4 text-pink-400" />
-                </div>
-                <span>Bank-Grade Security</span>
-              </div>
-
-              <div className="flex items-center gap-2.5 text-sm text-gray-400">
-                <div className="p-1.5 rounded-full bg-indigo-500/20">
-                  <Users className="w-4 h-4 text-indigo-400" />
-                </div>
-                <span>Global Community</span>
-              </div>
-            </motion.div>
           </motion.div>
 
           {/* RIGHT IMAGE - Controlled Size & Spacing */}

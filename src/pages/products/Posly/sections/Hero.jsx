@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Play, Zap, Shield, TrendingUp } from "lucide-react";
+import { ArrowRight, Play, Zap, Shield, TrendingUp, MessageCircle } from "lucide-react";
 
 const HeroSection = () => {
   const productLink = "https://preview.codecanyon.net/item/posly-pos-with-inventory-management-system/full_screen_preview/46842690";
@@ -49,6 +49,14 @@ const HeroSection = () => {
               >
                 <Play size={16} className="fill-white" />
                 Live Demo
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition" />
+              </a>
+              <a
+                href="/company/contact"
+                className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 text-white border border-white/20 rounded-lg font-semibold hover:bg-white/20 transition-all text-sm group backdrop-blur-sm"
+              >
+                <MessageCircle size={16} />
+                Let's Discuss
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition" />
               </a>
             </div>

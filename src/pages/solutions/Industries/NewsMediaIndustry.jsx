@@ -223,11 +223,9 @@ const NewsMediaIndustry = () => {
 
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(0, 2).map((item, idx) => (
-                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-gray-200 hover:border-gray-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex">
-                                        <div className="flex gap-2 w-full">
-                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                                                <CheckCircle className="w-5 h-5 text-gray-500 mt-0.5" />
-                                            </span>
+                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-gray-200 hover:border-gray-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start">
+                                        <div className="flex gap-2 w-full items-start">
+                                            <CheckCircle className="w-5 h-5 text-gray-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div className="flex flex-col justify-center">
                                                 <h4 className="text-sm font-semibold text-slate-800 group-hover:text-gray-600 transition-colors leading-tight">
                                                     {item}
@@ -240,11 +238,9 @@ const NewsMediaIndustry = () => {
 
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(2, 4).map((item, idx) => (
-                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-gray-200 hover:border-gray-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex">
-                                        <div className="flex gap-2 w-full">
-                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                                                <CheckCircle className="w-5 h-5 text-gray-500 mt-0.5" />
-                                            </span>
+                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-gray-200 hover:border-gray-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start">
+                                        <div className="flex gap-2 w-full items-start">
+                                            <CheckCircle className="w-5 h-5 text-gray-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div className="flex flex-col justify-center">
                                                 <h4 className="text-sm font-semibold text-slate-800 group-hover:text-gray-600 transition-colors leading-tight">
                                                     {item}
@@ -272,11 +268,9 @@ const NewsMediaIndustry = () => {
 
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(4, 6).map((item, idx) => (
-                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-gray-200 hover:border-gray-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex">
-                                        <div className="flex gap-2 w-full">
-                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                                                <CheckCircle className="w-5 h-5 text-gray-500 mt-0.5" />
-                                            </span>
+                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-gray-200 hover:border-gray-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start">
+                                        <div className="flex gap-2 w-full items-start">
+                                            <CheckCircle className="w-5 h-5 text-gray-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div className="flex flex-col justify-center">
                                                 <h4 className="text-sm font-semibold text-slate-800 group-hover:text-gray-600 transition-colors leading-tight">
                                                     {item}
@@ -289,11 +283,9 @@ const NewsMediaIndustry = () => {
 
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(6, 8).map((item, idx) => (
-                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-gray-200 hover:border-gray-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex">
-                                        <div className="flex gap-2 w-full">
-                                            <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                                                <CheckCircle className="w-5 h-5 text-gray-500 mt-0.5" />
-                                            </span>
+                                    <div key={idx} className="group bg-white p-3 rounded-xl border-2 border-gray-200 hover:border-gray-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start">
+                                        <div className="flex gap-2 w-full items-start">
+                                            <CheckCircle className="w-5 h-5 text-gray-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div className="flex flex-col justify-center">
                                                 <h4 className="text-sm font-semibold text-slate-800 group-hover:text-gray-600 transition-colors leading-tight">
                                                     {item}

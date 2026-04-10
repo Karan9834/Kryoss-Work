@@ -74,21 +74,24 @@ const SalonFeatures = () => {
     <section className="py-24 bg-[#FFF8F5]">
       <div className="max-w-7xl mx-auto px-6">
         
-        {/* Header */}
+        {/* Header - Updated Typography ONLY */}
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-            <span className="text-rose-600 font-bold text-sm uppercase tracking-[0.3em]">Our Premium Modules</span>
-            <h2 className="text-3xl lg:text-4xl font-semibold text-[#1A1C2C]">
+            {/* Badge - Updated: text-[14px] font-bold tracking-[0.3em] uppercase */}
+            <span className="text-rose-600 text-[14px] font-bold tracking-[0.3em] uppercase">Our Premium Modules</span>
+            
+            {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                Features That <span className="bg-gradient-to-r from-rose-600 via-orange-500 to-amber-500 bg-clip-text text-transparent">Empower</span> Your Business
             </h2>
 
-
-            <p className="text-[#4A4B5E] text-lg">
+            {/* Description - 16px, weight 400, line-height 1.6 */}
+            <p className="text-[16px] font-normal leading-[1.6] text-[#4A4B5E]">
                Our salon management software is packed with intuitive features designed 
                to handle every aspect of your beauty business with precision and ease.
             </p>
         </div>
 
-        {/* Features Grid */}
+        {/* Features Grid - Card fonts KEPT ORIGINAL */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => {
               const Icon = feature.icon;
@@ -106,7 +109,9 @@ const SalonFeatures = () => {
                     </div>
                     
                     <div className="space-y-3">
+                      {/* Card Title - ORIGINAL FONT (unchanged) */}
                       <h3 className="text-xl font-bold text-[#1A1C2C] group-hover:text-[#FF4D29] transition-colors">{feature.title}</h3>
+                      {/* Card Description - ORIGINAL FONT (unchanged) */}
                       <p className="text-gray-500 text-sm leading-relaxed">{feature.desc}</p>
                     </div>
                   </div>

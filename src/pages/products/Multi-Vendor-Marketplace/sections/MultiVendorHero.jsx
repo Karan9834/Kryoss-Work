@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Users, TrendingUp } from "lucide-react";
+import { Star, Users, TrendingUp, MessageCircle } from "lucide-react";
 import multivendorheroimg from "@/assets/multivendor-img/multivendorhero.jpg";
 const MultiVendorHero = () => {
     return (
@@ -51,7 +51,7 @@ const MultiVendorHero = () => {
                         </p>
 
                         {/* CTA */}
-                        <div>
+                        <div className="flex flex-wrap gap-4">
                             <a
                                 href="https://preview.codecanyon.net/item/eshop-web-multi-vendor-ecommerce-marketplace-cms/full_screen_preview/34380052"
                                 target="_blank"
@@ -59,6 +59,13 @@ const MultiVendorHero = () => {
                                 className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-medium transition shadow"
                             >
                                 Live Demo
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="inline-flex items-center gap-2 bg-white text-orange-600 border border-orange-200 px-6 py-3 rounded-lg font-medium transition shadow hover:bg-orange-50"
+                            >
+                                <MessageCircle size={18} />
+                                Let's Discuss
                             </a>
                         </div>
 

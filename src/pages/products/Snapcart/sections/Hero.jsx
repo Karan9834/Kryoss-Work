@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, MessageCircle } from "lucide-react";
 
 const Hero = () => {
   const demoLink =
@@ -38,7 +38,7 @@ const Hero = () => {
           </p>
 
           {/* CTA */}
-          <div className="mt-7">
+          <div className="mt-7 flex flex-wrap gap-4">
             <a
               href={demoLink}
               target="_blank"
@@ -47,6 +47,14 @@ const Hero = () => {
             >
               <Play size={16} className="fill-white" />
               Live Demo
+              <ArrowRight size={16} className="group-hover:translate-x-1 transition" />
+            </a>
+            <a
+              href="/company/contact"
+              className="group inline-flex items-center gap-2 px-6 py-2.5 bg-white text-orange-600 border border-orange-500 rounded-lg font-semibold shadow-md hover:bg-orange-50 transition hover:scale-105"
+            >
+              <MessageCircle size={16} />
+              Let's Discuss
               <ArrowRight size={16} className="group-hover:translate-x-1 transition" />
             </a>
           </div>

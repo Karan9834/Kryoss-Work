@@ -42,16 +42,19 @@ const DatingWhyUs = () => {
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
                     
-                    {/* Left: Content Card */}
+                    {/* Left: Content Card - Updated Heading */}
                     <div className="space-y-8">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-rose-400 font-bold text-xs uppercase tracking-widest">
                             <Award size={14} />
                             The Industry Standard
                         </div>
-                        <h2 className="text-3xl lg:text-5xl font-bold text-white leading-tight">
+                        
+                        {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                        <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white">
                             Build Your Legacy <br />
                             In the <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-500">Love Tech</span> Market
                         </h2>
+                        
                         <p className="text-slate-400 text-lg leading-relaxed">
                             We don't just provide code; we provide a complete business ecosystem. Our matchmaking solutions are battle-tested and designed for maximum retention.
                         </p>
@@ -68,7 +71,7 @@ const DatingWhyUs = () => {
                         </div>
                     </div>
 
-                    {/* Right: Feature Grid */}
+                    {/* Right: Feature Grid - Fonts KEPT ORIGINAL */}
                     <div className="grid sm:grid-cols-2 gap-4">
                         {reasons.map((item, idx) => (
                             <div 
@@ -78,7 +81,9 @@ const DatingWhyUs = () => {
                                 <div className={`w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center ${item.color} mb-6 group-hover:scale-110 transition-transform`}>
                                     <item.icon size={24} />
                                 </div>
+                                {/* Card Title - ORIGINAL FONT (unchanged) */}
                                 <h3 className="text-xl font-bold text-white mb-3 tracking-tight">{item.title}</h3>
+                                {/* Card Description - ORIGINAL FONT (unchanged) */}
                                 <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
                                 
                                 {/* Background Number Overlay */}

@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, TrendingUp, Shield, PieChart, Play } from "lucide-react";
+import { ArrowRight, TrendingUp, Shield, PieChart, Play, MessageCircle } from "lucide-react";
 
 const WealthHero = () => {
   const handleLiveDemo = () => {
@@ -77,6 +77,14 @@ const WealthHero = () => {
               Live Demo
               <Play className="w-4 h-4 group-hover:translate-x-1 transition" />
             </button>
+            <a
+              href="/company/contact"
+              className="group flex items-center gap-2 bg-white/10 text-white border border-cyan-400/20 px-7 py-3 rounded-lg font-semibold hover:scale-105 transition shadow-lg backdrop-blur-sm"
+            >
+              <MessageCircle className="w-4 h-4" />
+              Let's Discuss
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition" />
+            </a>
           </div>
 
           {/* Trust */}

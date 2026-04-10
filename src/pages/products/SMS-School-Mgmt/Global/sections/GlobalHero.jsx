@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Globe, Award, ShieldCheck, GraduationCap } from "lucide-react";
+import { ArrowRight, Globe, Award, ShieldCheck, GraduationCap, MessageCircle } from "lucide-react";
 import heroImg from "@/assets/globalsms-img/globalsmshero.jpg";
 
 const GlobalHero = () => {
@@ -57,8 +57,7 @@ const GlobalHero = () => {
                         ))}
                     </div>
 
-                    <div className="pt-2">
-                        <link rel="stylesheet" href="" />
+                    <div className="pt-2 flex flex-wrap gap-4">
                         <a
                             href="https://preview.codecanyon.net/item/global-multi-school-management-system-express/full_screen_preview/21975378"
                             target="_blank"
@@ -67,6 +66,14 @@ const GlobalHero = () => {
                             style={{ background: "linear-gradient(90deg, #facc15, #fbbf24)", boxShadow: "0 8px 30px rgba(250,204,21,0.4)" }}
                         >
                             Live Demo
+                            <ArrowRight size={22} />
+                        </a>
+                        <a
+                            href="/company/contact"
+                            className="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-white border border-white/20 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
+                        >
+                            <MessageCircle size={22} />
+                            Let's Discuss
                             <ArrowRight size={22} />
                         </a>
                     </div>

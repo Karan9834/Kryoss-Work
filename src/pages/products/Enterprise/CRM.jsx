@@ -8,7 +8,7 @@ import CRMDashboard from '../../../components/Enterprise-Product/CRM/CRMDashboar
 import CRMLaunchWhy from '../../../components/Enterprise-Product/CRM/CRMLaunchWhy'
 import CRMFinalCTA from '../../../components/Enterprise-Product/CRM/CRMFinalCTA'
 import TechStack from '../../../components/PestControl/PestTech'
-import Contact from '../../../components/Massage Therapy/Contact'
+import ContactUs from '@/components/Common/ContactUs'
 import CRMNewsletter from '../../../components/Enterprise-Product/CRM/CRMNewsletter'
 
 const CRM = () => {
@@ -23,7 +23,7 @@ const CRM = () => {
     <CRMLaunchWhy/>
     <CRMFinalCTA/>
     <TechStack/>
-    <Contact/>
+    <ContactUs theme="blue" productName="CRM" />
     <CRMNewsletter/>
     </>
   )

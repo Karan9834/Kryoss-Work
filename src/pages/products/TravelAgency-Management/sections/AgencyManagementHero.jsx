@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Settings } from "lucide-react";
+import { ArrowRight, Settings, MessageCircle } from "lucide-react";
 import heroImg from "@/assets/travelagency-img/travelagencyhero.jpg";
 
 const AgencyManagementHero = () => {
@@ -40,6 +40,14 @@ const AgencyManagementHero = () => {
                 className="px-10 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold rounded-full shadow-2xl shadow-amber-500/20 hover:scale-105 transition-all duration-300 flex items-center gap-2 group"
               >
                 Live Demo
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+              <a
+                href="/company/contact"
+                className="px-10 py-4 bg-white/5 text-white border border-white/20 font-bold rounded-full shadow-2xl backdrop-blur-md hover:scale-105 hover:bg-white/10 transition-all duration-300 flex items-center gap-2 group"
+              >
+                <MessageCircle size={20} />
+                Let's Discuss
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
             </div>

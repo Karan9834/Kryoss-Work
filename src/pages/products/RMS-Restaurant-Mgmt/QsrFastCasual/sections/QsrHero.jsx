@@ -1,6 +1,6 @@
 import React from "react";
 import qsrHeroImg from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmshero.jpg";
-import { ArrowRight, Zap, Clock, TrendingUp } from "lucide-react";
+import { ArrowRight, Zap, Clock, TrendingUp, MessageCircle } from "lucide-react";
 
 const QsrHero = () => {
     return (
@@ -60,7 +60,7 @@ const QsrHero = () => {
                         ))}
                     </div>
 
-                    <div className="pt-2">
+                    <div className="pt-2 flex flex-wrap gap-4">
                         <a
                             href="https://preview.codecanyon.net/item/restaurant-website-management-with-qr-code-menu-food-order/full_screen_preview/28396210"
                             target="_blank"
@@ -69,6 +69,14 @@ const QsrHero = () => {
                             style={{ background: "linear-gradient(90deg, #7c2d12, #ea580c)", boxShadow: "0 8px 30px rgba(234,88,12,0.5)" }}
                         >
                             Live Demo
+                            <ArrowRight size={20} />
+                        </a>
+                        <a
+                            href="/company/contact"
+                            className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-white border border-white/20 bg-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white/20"
+                        >
+                            <MessageCircle size={20} />
+                            Let's Discuss
                             <ArrowRight size={20} />
                         </a>
                     </div>

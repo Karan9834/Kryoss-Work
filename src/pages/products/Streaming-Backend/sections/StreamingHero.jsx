@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Play, Server, Zap, Tv } from "lucide-react";
+import { ArrowRight, Play, Server, Zap, Tv, MessageCircle } from "lucide-react";
 import heroImg from "@/assets/streaming-img/streaminghero.jpg";
 
 const StreamingHero = () => {
@@ -38,6 +38,14 @@ const StreamingHero = () => {
                 className="px-10 py-4 bg-gradient-to-r from-red-600 to-purple-600 text-white font-bold rounded-full shadow-2xl shadow-red-500/20 hover:scale-105 transition-all duration-300 flex items-center gap-2 group"
               >
                 Live Demo
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+              <a
+                href="/company/contact"
+                className="px-10 py-4 bg-white/5 text-white border border-white/10 backdrop-blur-md font-bold rounded-full shadow-2xl hover:scale-105 hover:bg-white/10 transition-all duration-300 flex items-center gap-2 group"
+              >
+                <MessageCircle size={20} />
+                Let's Discuss
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
             </div>

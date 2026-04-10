@@ -13,14 +13,14 @@ const ProductSection = () => {
       name: "FoodHat",
       description: "Premium Cloud Kitchen Management",
       image: product1,
-      route: "/products/cloud-kitchen",  // Kept original route
+      route: "/products/cloud-kitchen",
     },
     {
       id: 2,
       name: "FoodBite",
       description: "Multi-Restaurant Food Delivery Platform",
       image: product2,
-      route: "/products/coming-soon",  // Kept original route
+      route: "/products/coming-soon",
     },
   ];
 
@@ -37,7 +37,7 @@ const ProductSection = () => {
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32 z-10">
 
-        {/* Header */}
+        {/* Header - Updated Typography ONLY */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-100 rounded-full px-4 py-2 mb-6">
             <Sparkles size={16} className="text-orange-600" />
@@ -46,14 +46,16 @@ const ProductSection = () => {
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Choose the Perfect{" "}
             <span className="bg-gradient-to-r from-orange-600 to-red-600 text-transparent bg-clip-text">
               Food Delivery Solution
             </span>
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="mt-6 text-[16px] font-normal leading-[1.6] text-gray-600">
             Powerful, scalable food delivery solutions designed to streamline your restaurant operations
           </p>
         </div>
@@ -82,7 +84,7 @@ const ProductSection = () => {
                 />
               </div>
 
-              {/* Title Below */}
+              {/* Title Below - Keeping original */}
               <p className="mt-4 text-sm md:text-base">
                 <span 
                   onClick={() => handleProductClick(product.route)}

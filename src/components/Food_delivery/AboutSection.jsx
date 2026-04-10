@@ -1,5 +1,6 @@
 import React from "react";
 import foodabout from "../../assets/Food-delivery/foodabout.png";
+
 const AboutSection = () => {
   return (
     <section className="relative w-full py-24 md:py-32 overflow-hidden bg-white">
@@ -42,20 +43,20 @@ const AboutSection = () => {
 
           {/* Right Side - Content Section */}
           <div className="flex-1 space-y-8">
-            {/* Premium Tag */}
+            {/* Premium Tag - Updated */}
             <div className="inline-block">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-amber-500 blur opacity-30"></div>
                 <div className="relative px-4 py-2 bg-gradient-to-r from-orange-50 to-amber-50 rounded-full border border-orange-200/50">
-                  <span className="text-sm font-semibold tracking-wider text-orange-600 uppercase">
+                  <span className="text-[14px] font-semibold tracking-wider text-orange-600 uppercase">
                     About Us
                   </span>
                 </div>
               </div>
             </div>
 
-            {/* Main Heading */}
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            {/* Main Heading H2 - Updated: 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] tracking-tight">
               <span className="text-gray-900">More Than Just</span>
               <br />
               <span className="bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
@@ -63,14 +64,14 @@ const AboutSection = () => {
               </span>
             </h2>
 
-            {/* Description */}
-            <div className="space-y-5 text-gray-600 leading-relaxed">
-              <p className="text-lg">
+            {/* Description - Updated: 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+            <div className="space-y-5 text-gray-600">
+              <p className="text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 We're redefining the way you experience food by connecting you
                 with the finest local restaurants and delivering culinary
                 excellence right to your doorstep.
               </p>
-              <p className="text-base">
+              <p className="text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 Our passionate team works tirelessly to ensure every meal
                 arrives fresh, every order is accurate, and every customer feels
                 valued. We believe that great food has the power to bring people

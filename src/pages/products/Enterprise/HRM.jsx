@@ -9,7 +9,7 @@ import DashboardPreview from '../../../components/Enterprise-Product/HRM/Dashboa
 import LaunchAndWhySection from '../../../components/Handyman-service/LaunchAndWhySection'
 import HRMLaunchWhy from '../../../components/Enterprise-Product/HRM/HRMLaunchWhy'
 import TechStack from '../../../components/PestControl/PestTech'
-import Contact from '../../../components/Salon & Beauty/Contact'
+import ContactUs from '@/components/Common/ContactUs'
 import HRMNewsletter from '../../../components/Enterprise-Product/HRM/HRMNewsletter'
 import ProductsSection from '../../../components/Enterprise-Product/HRM/ProductsSection'
 
@@ -27,7 +27,7 @@ const HRM = () => {
     <DashboardPreview/>
     <HRMLaunchWhy/>
     <TechStack/>
-    <Contact/>
+    <ContactUs theme="purple" productName="HRM" />
     <HRMNewsletter/>
     </>
 

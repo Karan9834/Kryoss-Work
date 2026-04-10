@@ -79,24 +79,27 @@ const Solutions = () => {
       <div className="absolute bottom-40 left-20 w-96 h-96 bg-amber-100 rounded-full opacity-20 blur-3xl"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
+        {/* Section header - Updated Typography */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-8 h-px bg-emerald-200"></div>
-            <span className="text-emerald-600 font-semibold text-sm tracking-wider uppercase">
+            {/* Hero Badge style - Updated: text-[12px] font-medium tracking-wider uppercase */}
+            <span className="text-emerald-600 text-[12px] font-medium tracking-wider uppercase">
               Our Solutions
             </span>
             <div className="w-8 h-px bg-amber-200"></div>
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
             Comprehensive{' '}
             <span className="bg-gradient-to-r from-emerald-600 to-amber-600 bg-clip-text text-transparent">
               Healthcare Solutions
             </span>
           </h2>
           
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          {/* Hero Description style - Updated: text-base md:text-lg font-normal leading-relaxed */}
+          <p className="text-base md:text-lg font-normal leading-relaxed text-gray-600 max-w-2xl mx-auto">
             Tailored approaches to meet your unique healthcare needs, combining technology with compassionate care.
           </p>
         </div>
@@ -121,16 +124,12 @@ const Solutions = () => {
                   solution.imageSide === 'left' ? '' : ''
                 }`}>
                   
-                  {/* Left side - Content or Image based on alternation */}
                   {solution.imageSide === 'left' ? (
                     <>
                       {/* Image - Left side */}
                       <div className="order-1 group/image">
                         <div className="relative">
-                          {/* Hover effect line for image */}
                           <div className={`absolute -inset-1 bg-gradient-to-r from-${solution.color}-200 to-transparent rounded-2xl opacity-0 group-hover/image:opacity-100 blur-md transition-opacity duration-500`}></div>
-                          
-                          {/* Image container */}
                           <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden transform group-hover/image:scale-105 transition-transform duration-500">
                             <div className={`absolute inset-0 bg-gradient-to-tr from-${solution.color}-500/10 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-500`}></div>
                             <img 
@@ -139,8 +138,6 @@ const Solutions = () => {
                               className="w-full h-auto object-cover"
                             />
                           </div>
-                          
-                          {/* Floating line effect */}
                           <div className={`absolute top-1/2 -right-4 w-8 h-0.5 bg-${solution.color}-400 transform -translate-y-1/2 opacity-0 group-hover/image:opacity-100 group-hover/image:translate-x-2 transition-all duration-500 hidden lg:block`}></div>
                         </div>
                       </div>
@@ -148,7 +145,6 @@ const Solutions = () => {
                       {/* Content - Right side */}
                       <div className="order-2 group/content">
                         <div className="relative pl-0 lg:pl-8">
-                          {/* Connecting line from timeline to content */}
                           <div className={`absolute left-0 top-8 w-8 h-0.5 bg-${solution.color}-400 opacity-0 group-hover/content:opacity-100 transition-opacity duration-500 hidden lg:block`}></div>
                           
                           {/* Number badge */}
@@ -156,11 +152,13 @@ const Solutions = () => {
                             0{solution.id}
                           </div>
                           
-                          <h3 className={`text-3xl font-bold text-gray-900 mb-4 group-hover/content:text-${solution.color}-600 transition-colors duration-300`}>
+                          {/* Project Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+                          <h3 className={`text-[24px] md:text-[30px] font-bold leading-[1.3] text-gray-900 mb-4 group-hover/content:text-${solution.color}-600 transition-colors duration-300`}>
                             {solution.title}
                           </h3>
                           
-                          <p className="text-lg text-gray-600 mb-6">
+                          {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                          <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6">
                             {solution.description}
                           </p>
                           
@@ -171,7 +169,8 @@ const Solutions = () => {
                                 <span className={`inline-flex mt-1 w-5 h-5 rounded-full bg-${solution.color}-100 text-${solution.color}-600 items-center justify-center text-xs group-hover/point:scale-110 transition-transform duration-300`}>
                                   ✓
                                 </span>
-                                <span className="text-gray-700 group-hover/point:text-gray-900 transition-colors duration-300">
+                                {/* Point text - 14px mobile, 16px desktop */}
+                                <span className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-700 group-hover/point:text-gray-900 transition-colors duration-300">
                                   {point}
                                 </span>
                               </li>
@@ -179,7 +178,7 @@ const Solutions = () => {
                           </ul>
                           
                           {/* Hover underline effect */}
-                          <div className={`absolute -bottom-2 left-0 w-0 h-0.5 bg-${solution.color}-400 group-hover/content:w-full transition-all duration-500`}></div>
+                          <div className={`absolute -bottom-2 left-0 w-0 h-[2px] bg-${solution.color}-400 group-hover/content:w-full transition-all duration-500`}></div>
                         </div>
                       </div>
                     </>
@@ -188,7 +187,6 @@ const Solutions = () => {
                       {/* Content - Left side */}
                       <div className="order-2 lg:order-1 group/content">
                         <div className="relative pr-0 lg:pr-8">
-                          {/* Connecting line from timeline to content */}
                           <div className={`absolute right-0 top-8 w-8 h-0.5 bg-${solution.color}-400 opacity-0 group-hover/content:opacity-100 transition-opacity duration-500 hidden lg:block`}></div>
                           
                           {/* Number badge */}
@@ -196,11 +194,13 @@ const Solutions = () => {
                             0{solution.id}
                           </div>
                           
-                          <h3 className={`text-3xl font-bold text-gray-900 mb-4 group-hover/content:text-${solution.color}-600 transition-colors duration-300`}>
+                          {/* Project Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+                          <h3 className={`text-[24px] md:text-[30px] font-bold leading-[1.3] text-gray-900 mb-4 group-hover/content:text-${solution.color}-600 transition-colors duration-300`}>
                             {solution.title}
                           </h3>
                           
-                          <p className="text-lg text-gray-600 mb-6">
+                          {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                          <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6">
                             {solution.description}
                           </p>
                           
@@ -211,7 +211,8 @@ const Solutions = () => {
                                 <span className={`inline-flex mt-1 w-5 h-5 rounded-full bg-${solution.color}-100 text-${solution.color}-600 items-center justify-center text-xs group-hover/point:scale-110 transition-transform duration-300`}>
                                   ✓
                                 </span>
-                                <span className="text-gray-700 group-hover/point:text-gray-900 transition-colors duration-300">
+                                {/* Point text - 14px mobile, 16px desktop */}
+                                <span className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-700 group-hover/point:text-gray-900 transition-colors duration-300">
                                   {point}
                                 </span>
                               </li>
@@ -219,17 +220,14 @@ const Solutions = () => {
                           </ul>
                           
                           {/* Hover underline effect */}
-                          <div className={`absolute -bottom-2 right-0 w-0 h-0.5 bg-${solution.color}-400 group-hover/content:w-full transition-all duration-500`}></div>
+                          <div className={`absolute -bottom-2 right-0 w-0 h-[2px] bg-${solution.color}-400 group-hover/content:w-full transition-all duration-500`}></div>
                         </div>
                       </div>
 
                       {/* Image - Right side */}
                       <div className="order-1 lg:order-2 group/image">
                         <div className="relative">
-                          {/* Hover effect line for image */}
                           <div className={`absolute -inset-1 bg-gradient-to-l from-${solution.color}-200 to-transparent rounded-2xl opacity-0 group-hover/image:opacity-100 blur-md transition-opacity duration-500`}></div>
-                          
-                          {/* Image container */}
                           <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden transform group-hover/image:scale-105 transition-transform duration-500">
                             <div className={`absolute inset-0 bg-gradient-to-tl from-${solution.color}-500/10 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-500`}></div>
                             <img 
@@ -238,8 +236,6 @@ const Solutions = () => {
                               className="w-full h-auto object-cover"
                             />
                           </div>
-                          
-                          {/* Floating line effect */}
                           <div className={`absolute top-1/2 -left-4 w-8 h-0.5 bg-${solution.color}-400 transform -translate-y-1/2 opacity-0 group-hover/image:opacity-100 group-hover/image:-translate-x-2 transition-all duration-500 hidden lg:block`}></div>
                         </div>
                       </div>
@@ -247,7 +243,7 @@ const Solutions = () => {
                   )}
                 </div>
 
-                {/* Connecting line between sections (for animation) */}
+                {/* Connecting line between sections */}
                 {index < solutions.length - 1 && (
                   <div className={`absolute left-1/2 transform -translate-x-1/2 bottom-0 w-0.5 h-16 bg-gradient-to-b from-${solution.color}-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-500 hidden lg:block`}></div>
                 )}
@@ -256,11 +252,11 @@ const Solutions = () => {
           </div>
         </div>
 
-        {/* Bottom decorative element */}
+        {/* Bottom decorative element - Updated Typography */}
         <div className="mt-20 text-center">
           <div className="inline-flex items-center gap-3">
             <div className="w-12 h-0.5 bg-emerald-200"></div>
-            <span className="text-sm text-gray-400">Complete care solutions for every need</span>
+            <span className="text-[14px] font-normal leading-[1.6] text-gray-400">Complete care solutions for every need</span>
             <div className="w-12 h-0.5 bg-amber-200"></div>
           </div>
         </div>

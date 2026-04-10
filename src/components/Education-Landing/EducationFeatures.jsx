@@ -42,12 +42,18 @@ const EducationFeatures = () => {
     return (
         <section className="py-24 bg-[#F8FAFC]">
             <div className="max-w-7xl mx-auto px-6">
+                {/* Header - Updated Typography */}
                 <div className="text-center mb-20 space-y-4">
-                    <span className="text-indigo-600 font-bold text-sm uppercase tracking-[0.3em]">Core Features</span>
-                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#1A1C2C]">
+                    {/* Badge - Updated: text-[14px] font-bold tracking-[0.3em] uppercase */}
+                    <span className="text-indigo-600 text-[14px] font-bold tracking-[0.3em] uppercase">Core Features</span>
+                    
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                         Everything You Need for <span className="text-indigo-600">Modern Learning</span>
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                    
+                    {/* Description - 16px, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                         Experience a comprehensive suite of tools designed to enhance teaching effectiveness and student success.
                     </p>
                 </div>
@@ -75,12 +81,14 @@ const EducationFeatures = () => {
                                             <Icon size={24} />
                                         </div>
                                         <div className="space-y-2">
-                                            <h3 className={`text-xl font-bold transition-colors ${
+                                            {/* Card Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+                                            <h3 className={`text-[24px] md:text-[30px] font-bold leading-[1.3] transition-colors ${
                                                 isActive ? 'text-indigo-600' : 'text-[#1A1C2C]'
                                             }`}>
                                                 {feature.title}
                                             </h3>
-                                            <p className={`text-sm leading-relaxed transition-opacity duration-500 ${
+                                            {/* Card Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+                                            <p className={`text-[14px] md:text-[16px] font-normal leading-[1.6] transition-opacity duration-500 ${
                                                 isActive ? 'opacity-100' : 'opacity-60'
                                             }`}>
                                                 {feature.desc}

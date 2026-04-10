@@ -1,6 +1,6 @@
 import React from "react";
 import RestulatorHeroImg from "../../../../../assets/resulatorrms-img/resulatorrmshero.jpg";
-import { ArrowRight, UtensilsCrossed, Star, Clock } from "lucide-react";
+import { ArrowRight, UtensilsCrossed, Star, Clock, MessageCircle } from "lucide-react";
 
 const RestulatorHero = () => {
     return (
@@ -61,7 +61,7 @@ const RestulatorHero = () => {
                         ))}
                     </div>
 
-                    <div className="pt-2">
+                    <div className="pt-2 flex flex-wrap gap-4">
                         <a
                             href="https://preview.codecanyon.net/item/restulator-restaurant-management-system-in-laravel-55-with-pusher-and-jquery/full_screen_preview/20732111"
                             target="_blank"
@@ -70,6 +70,14 @@ const RestulatorHero = () => {
                             style={{ background: "linear-gradient(90deg, #b45309, #d97706)", boxShadow: "0 8px 30px rgba(180,83,9,0.5)" }}
                         >
                             Live Demo
+                            <ArrowRight size={20} />
+                        </a>
+                        <a
+                            href="/company/contact"
+                            className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-white border border-white/20 bg-white/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white/20"
+                        >
+                            <MessageCircle size={20} />
+                            Let's Discuss
                             <ArrowRight size={20} />
                         </a>
                     </div>

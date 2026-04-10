@@ -10,16 +10,18 @@
   <meta name="description" content="KryossWork React Application" />
   <meta name="author" content="KryossWork" />
 
-  <!-- Open Graph tags -->
-  <meta property="og:title" content="KryossWork App" />
-  <meta property="og:description" content="KryossWork React Application" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og-image.png" />
+  <!-- Preconnect to font origins to reduce DNS lookup time -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Twitter tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@KryossWork" />
-  <meta name="twitter:image" content="/og-image.png" />
+  <!-- Preload critical LCP hero image so browser fetches it immediately -->
+  <link rel="preload" as="image" href="/images/hero-visual.png" fetchpriority="high" />
+
+  <!-- Load fonts with font-display:swap to block CLS from late font rendering -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 
 <body>

@@ -1,4 +1,5 @@
 import React from "react";
+import { MessageCircle } from "lucide-react";
 
 const ElearningHero = () => {
 
@@ -43,13 +44,20 @@ const ElearningHero = () => {
           </p>
 
           {/* CTA */}
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <button
               onClick={handleLiveDemo}
               className="bg-gradient-to-r from-purple-600 to-pink-500 px-8 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition"
             >
               Live Demo
             </button>
+            <a
+              href="/company/contact"
+              className="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 px-8 py-3 rounded-lg font-semibold hover:bg-white/20 transition shadow-lg backdrop-blur-md"
+            >
+              <MessageCircle size={18} />
+              Let's Discuss
+            </a>
           </div>
 
           {/* stats */}

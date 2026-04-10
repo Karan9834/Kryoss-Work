@@ -5,6 +5,7 @@ import {
   Sparkles,
   TrendingUp,
   Shield,
+  MessageCircle,
   Play,
   Star,
   Globe,
@@ -92,7 +93,7 @@ const TechDailyHero = () => {
           </div>
 
           {/* BUTTON with Live Demo */}
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <button
               onClick={handleLiveDemo}
               className="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 px-6 py-3 rounded-lg text-white font-semibold shadow-md hover:scale-105 transition"
@@ -100,6 +101,14 @@ const TechDailyHero = () => {
               Live Demo
               <ArrowRight className="w-4 h-4" />
             </button>
+            <a
+              href="/company/contact"
+              className="flex items-center gap-2 bg-white text-orange-600 border border-orange-500 px-6 py-3 rounded-lg font-semibold shadow-md hover:scale-105 transition"
+            >
+              <MessageCircle className="w-4 h-4" />
+              Let's Discuss
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
 
           <div className="flex gap-4 text-sm text-gray-500">

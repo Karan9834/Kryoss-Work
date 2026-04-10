@@ -101,7 +101,7 @@ const AboutSection = () => {
             </motion.div>
           </motion.div>
 
-          {/* RIGHT CONTENT */}
+          {/* RIGHT CONTENT - Updated Typography */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -109,20 +109,20 @@ const AboutSection = () => {
             className="flex-1 max-w-xl"
           >
 
-            {/* Badge */}
+            {/* Badge - Updated: text-[14px] font-semibold */}
             <motion.div variants={itemVariants} className="mb-6">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 border border-purple-100">
                 <Sparkles className="w-4 h-4 text-purple-500" />
-                <span className="text-sm font-semibold text-purple-600">
+                <span className="text-[14px] font-semibold text-purple-600">
                   About Us
                 </span>
               </span>
             </motion.div>
 
-            {/* Heading */}
+            {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
             <motion.h2
               variants={itemVariants}
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6"
+              className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6"
             >
               A Better Way to{" "}
               <span className="bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
@@ -130,10 +130,10 @@ const AboutSection = () => {
               </span>
             </motion.h2>
 
-            {/* Description */}
+            {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
             <motion.p
               variants={itemVariants}
-              className="text-gray-600 text-lg mb-4"
+              className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 mb-4"
             >
               Our platform empowers users to connect, share experiences, and build
               meaningful relationships through a seamless digital environment.
@@ -141,13 +141,13 @@ const AboutSection = () => {
 
             <motion.p
               variants={itemVariants}
-              className="text-gray-600 text-lg mb-8"
+              className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 mb-8"
             >
               Designed with performance, privacy, and scalability in mind, we bring
               people closer with a secure and intuitive experience.
             </motion.p>
 
-            {/* Features */}
+            {/* Features - Card fonts kept original */}
             <motion.div
               variants={itemVariants}
               className="grid grid-cols-2 gap-5 mb-8"
@@ -160,9 +160,11 @@ const AboutSection = () => {
                   <feature.icon
                     className={`w-8 h-8 ${feature.iconColor} mb-3`}
                   />
+                  {/* Card Title - ORIGINAL FONT (unchanged) */}
                   <h4 className="font-semibold text-gray-900">
                     {feature.title}
                   </h4>
+                  {/* Card Description - ORIGINAL FONT (unchanged) */}
                   <p className="text-sm text-gray-500">
                     {feature.description}
                   </p>

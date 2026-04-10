@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Video, Mic, Share2 } from "lucide-react";
+import { ArrowRight, Video, Mic, Share2, MessageCircle } from "lucide-react";
 import heroImg from "@/assets/zoomclone-img/zoomclonehero.jpg";
 
 const ZoomHero = () => {
@@ -37,6 +37,14 @@ const ZoomHero = () => {
                             className="flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-purple-500/30 hover:-translate-y-1"
                         >
                             Live Demo
+                            <ArrowRight size={20} />
+                        </a>
+                        <a
+                            href="/company/contact"
+                            className="flex items-center gap-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-full font-semibold transition-all backdrop-blur-md hover:-translate-y-1"
+                        >
+                            <MessageCircle size={20} />
+                            Let's Discuss
                             <ArrowRight size={20} />
                         </a>
                     </div>

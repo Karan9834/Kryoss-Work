@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 const ServiceHero = () => {
   const handleLiveDemo = () => {
@@ -39,14 +39,22 @@ const ServiceHero = () => {
           </p>
 
           {/* ===== SINGLE CTA with Demo Link ===== */}
-          <div className="mt-10">
+          <div className="mt-10 flex flex-wrap gap-4">
             <button 
               onClick={handleLiveDemo}
-              className="group bg-gradient-to-r from-orange-500 to-orange-600 px-10 py-4 rounded-xl font-semibold flex items-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-orange-500/20"
+              className="group bg-gradient-to-r from-orange-500 to-orange-600 px-10 py-4 rounded-xl font-semibold flex items-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-orange-500/20 text-white"
             >
               🚀 Live Demo
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
             </button>
+            <a
+              href="/company/contact"
+              className="group bg-white/5 border border-white/10 px-10 py-4 rounded-xl font-semibold flex items-center gap-2 hover:scale-105 active:scale-95 transition-all backdrop-blur-sm text-white"
+            >
+              <MessageCircle className="w-5 h-5" />
+              Let's Discuss
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
+            </a>
           </div>
 
         </div>

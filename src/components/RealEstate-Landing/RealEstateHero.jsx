@@ -15,44 +15,50 @@ const RealEstateHero = () => {
 
                     {/* Left Content */}
                     <div className="space-y-8 animate-fadeInLeft">
+                        {/* Hero Badge - Updated: font-size: 12px, font-weight: 500, letter-spacing: 0.05em */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 rounded-full border border-emerald-200">
                             <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-                            <span className="text-emerald-800 text-xs font-bold uppercase tracking-widest">Smart Property Solutions</span>
+                            <span className="text-emerald-800 text-[12px] font-medium tracking-[0.05em] uppercase">Smart Property Solutions</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl font-semibold text-[#1E293B] leading-tight">
-                            The Ultimate <span className="text-emerald-600">Real Estate</span> Platform to Buy, Sell & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-yellow-500 font-bold">Rent Properties</span>
+                        {/* Hero H1 - Mobile: 30px, Tablet/Desktop: 48px, Large Desktop: 60px, weight: 700, line-height: 1.2, letter-spacing: -0.02em */}
+                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-[#1E293B]">
+                            The Ultimate <span className="text-emerald-600">Real Estate</span> Platform to Buy, Sell & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-yellow-500">Rent Properties</span>
                         </h1>
 
-                        <p className="text-[#4A4B5E] text-lg lg:text-xl max-w-xl leading-relaxed">
+                        {/* Hero Description - Mobile: 16px, Tablet/Desktop: 18px, weight: 400, line-height: 1.6 */}
+                        <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] text-[#4A4B5E] max-w-xl">
                             Launch a feature-rich property portal with advanced search, virtual tours, and smart agent tools — powering the future of real estate transactions.
                         </p>
 
                         <div className="flex flex-wrap gap-4 pt-4">
+                            {/* Hero Button - font-size: 16px, font-weight: 600, letter-spacing: 0.01em */}
                             <button
                                 onClick={() => document.getElementById('realestate-products')?.scrollIntoView({ behavior: 'smooth' })}
-                                className="px-10 py-4 bg-gradient-to-r from-emerald-600 to-teal-500 text-white font-bold rounded-full shadow-xl shadow-emerald-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group"
+                                className="px-10 py-4 bg-gradient-to-r from-emerald-600 to-teal-500 text-white font-semibold rounded-full shadow-xl shadow-emerald-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group text-[16px] tracking-[0.01em]"
                             >
                                 Explore Our Products
                                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </button>
                         </div>
 
-                        {/* Trust Badges */}
+                        {/* Trust Badges - Updated Stats Typography */}
                         <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
                             <div>
-                                <p className="text-2xl font-black text-[#1E293B]">5k+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Properties Listed</p>
+                                {/* Stats Number - Mobile: 20px, Tablet/Desktop: 24px, font-weight: 700 */}
+                                <p className="text-[20px] md:text-[24px] font-bold text-[#1E293B]">5k+</p>
+                                {/* Stats Label - font-size: 12px, font-weight: 400, letter-spacing: 0.02em */}
+                                <p className="text-[12px] font-normal tracking-[0.02em] text-gray-400 uppercase">Properties Listed</p>
                             </div>
                             <div className="w-px h-10 bg-gray-100"></div>
                             <div>
-                                <p className="text-2xl font-black text-[#1E293B]">300+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Agent Partners</p>
+                                <p className="text-[20px] md:text-[24px] font-bold text-[#1E293B]">300+</p>
+                                <p className="text-[12px] font-normal tracking-[0.02em] text-gray-400 uppercase">Agent Partners</p>
                             </div>
                             <div className="w-px h-10 bg-gray-100"></div>
                             <div>
-                                <p className="text-2xl font-black text-[#1E293B]">4.8/5</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Client Rating</p>
+                                <p className="text-[20px] md:text-[24px] font-bold text-[#1E293B]">4.8/5</p>
+                                <p className="text-[12px] font-normal tracking-[0.02em] text-gray-400 uppercase">Client Rating</p>
                             </div>
                         </div>
                     </div>

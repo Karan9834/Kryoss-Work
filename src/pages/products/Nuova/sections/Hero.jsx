@@ -1,5 +1,5 @@
 import React from "react";
-import { Play, ArrowRight, Sparkles } from "lucide-react";
+import { Play, ArrowRight, Sparkles, MessageCircle } from "lucide-react";
 
 const NuovaNewsHero = () => {
   const liveDemoUrl =
@@ -55,15 +55,25 @@ const NuovaNewsHero = () => {
   Our next-generation news management platform is designed to transform how you create, manage, and distribute content. Powered by AI-driven insights and automation, it streamlines workflows, enhances efficiency, and gives you the edge needed to dominate the modern media landscape.
 </p>
 
-            {/* BUTTON */}
-            <button
-              onClick={handleLiveDemo}
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-red-600 via-purple-600 to-blue-600 text-white font-bold rounded-full hover:scale-105 transition"
-            >
-              <Play size={18} />
-              LIVE DEMO
-              <ArrowRight className="group-hover:translate-x-1 transition" />
-            </button>
+            {/* BUTTONS */}
+            <div className="flex flex-wrap gap-4">
+              <button
+                onClick={handleLiveDemo}
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-red-600 via-purple-600 to-blue-600 text-white font-bold rounded-full hover:scale-105 transition"
+              >
+                <Play size={18} />
+                LIVE DEMO
+                <ArrowRight className="group-hover:translate-x-1 transition" />
+              </button>
+              <a
+                href="/company/contact"
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-white/5 border border-white/20 text-white font-bold rounded-full hover:scale-105 transition backdrop-blur-sm"
+              >
+                <MessageCircle size={18} />
+                LET'S DISCUSS
+                <ArrowRight className="group-hover:translate-x-1 transition" />
+              </a>
+            </div>
           </div>
 
           {/* RIGHT IMAGE */}

@@ -50,21 +50,24 @@ const ProductsSection = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
 
-        {/* ===== HEADER SECTION ===== */}
+        {/* ===== HEADER SECTION - Updated Typography ===== */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-4 border border-blue-200">
             <Sparkles className="w-4 h-4 text-blue-600" />
-            <span className="text-blue-700 font-semibold text-sm">Our Products</span>
+            {/* Badge - 12px, weight 500, letter-spacing 0.05em */}
+            <span className="text-blue-700 text-[12px] font-medium tracking-[0.05em] uppercase">Our Products</span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Solutions for{" "}
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
               Job Seekers & Employers
             </span>
           </h2>
 
-          <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="mt-4 text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             Powerful tools designed to help you succeed in your career journey.
           </p>
         </div>
@@ -73,7 +76,7 @@ const ProductsSection = () => {
         <div className="flex justify-center mb-12">
           <button
             onClick={() => navigate("/products")}
-            className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+            className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 text-[14px] tracking-[0.01em]"
           >
             🔥 Popular Products
           </button>
@@ -97,8 +100,8 @@ const ProductsSection = () => {
                 />
               </div>
 
-              {/* TITLE AND DESCRIPTION */}
-              <p className="mt-4 text-sm md:text-base">
+              {/* TITLE AND DESCRIPTION - Updated Typography */}
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span
                   onClick={() => handleNavigate(product.route)}
                   className="text-blue-600 font-semibold hover:underline cursor-pointer"

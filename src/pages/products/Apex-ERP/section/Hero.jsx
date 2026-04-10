@@ -11,7 +11,8 @@ import {
   Layers,
   Database,
   Star,
-  CheckCircle
+  CheckCircle,
+  MessageCircle
 } from "lucide-react";
 
 const Hero = () => {
@@ -117,6 +118,13 @@ const Hero = () => {
                 <Play className="w-4 h-4 text-emerald-400" />
                 <span>Live Demo</span>
               </button>
+              <a
+                href="/company/contact"
+                className="group inline-flex items-center justify-center gap-2 bg-emerald-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition-all duration-300"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span>Let's Discuss</span>
+              </a>
             </div>
           </div>
 

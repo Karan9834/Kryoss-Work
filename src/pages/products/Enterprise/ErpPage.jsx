@@ -20,7 +20,7 @@ import ErpProductShowcase from '@/components/enterprise-erp/ErpProductShowcase';
 import ErpAwards from '@/components/enterprise-erp/ErpAwards';
 import ErpFAQ from '@/components/enterprise-erp/ErpFAQ';
 import ErpTechStack from '@/components/enterprise-erp/ErpTechStack';
-import ErpContact from '@/components/enterprise-erp/ErpContact';
+import ContactUs from '@/components/Common/ContactUs';
 import ErpBlogs from '@/components/enterprise-erp/ErpBlogs';
 import ErpGetUpdates from '@/components/enterprise-erp/ErpGetUpdates';
 
@@ -49,7 +49,7 @@ const ErpPage = () => {
             <ErpAwards />
             <ErpFAQ />
             <ErpTechStack />
-            <ErpContact />
+            <ContactUs theme="blue" productName="ERP" />
             <ErpBlogs />
             <ErpGetUpdates />
 

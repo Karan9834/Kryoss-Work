@@ -101,18 +101,19 @@ const FeaturesSection = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        {/* Section Header - Updated Typography */}
         <div className="text-center mb-16 md:mb-20">
           <div className="inline-block mb-4">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-amber-500 blur opacity-30"></div>
               <div className="relative px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-orange-200/50">
-                <span className="text-sm font-semibold tracking-wider text-orange-600 uppercase">Why Choose Us</span>
+                <span className="text-[14px] font-semibold tracking-wider text-orange-600 uppercase">Why Choose Us</span>
               </div>
             </div>
           </div>
           
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-6">
             <span className="text-gray-900">Delivering </span>
             <span className="bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
               Happiness
@@ -120,7 +121,8 @@ const FeaturesSection = () => {
             <span className="text-gray-900"> Since Day One</span>
           </h2>
           
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          {/* Description - 16px, weight 400, line-height 1.6 */}
+          <p className="text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             We're passionate about bringing the best culinary experiences directly to you. 
             Here's why millions trust us with their meals.
           </p>
@@ -134,7 +136,7 @@ const FeaturesSection = () => {
               className="group relative bg-white rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 overflow-hidden"
             >
               {/* Top gradient line */}
-              <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${feature.topLine} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`}></div>
+              <div className={`absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r ${feature.topLine} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`}></div>
               
               {/* Animated gradient background on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -146,12 +148,13 @@ const FeaturesSection = () => {
                 </div>
               </div>
               
-              {/* Content */}
-              <h3 className="relative text-xl font-bold text-gray-900 mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-amber-600 transition-all duration-300">
+              {/* Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
+              <h3 className="relative text-[24px] md:text-[30px] font-bold leading-[1.3] text-gray-900 mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-amber-600 transition-all duration-300">
                 {feature.title}
               </h3>
               
-              <p className="relative text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+              {/* Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+              <p className="relative text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
                 {feature.description}
               </p>
               
@@ -171,7 +174,7 @@ const FeaturesSection = () => {
         <div className="mt-20 text-center">
           <div className="inline-flex items-center gap-2 text-gray-500">
             <span className="w-12 h-px bg-gradient-to-r from-transparent to-orange-300"></span>
-            <span className="text-sm">Trusted by 10,000+ happy customers</span>
+            <span className="text-[14px] font-normal leading-[1.6]">Trusted by 10,000+ happy customers</span>
             <span className="w-12 h-px bg-gradient-to-l from-transparent to-orange-300"></span>
           </div>
         </div>

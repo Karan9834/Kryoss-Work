@@ -63,15 +63,19 @@ const EducationWhyUs = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
+                {/* Header - Updated Typography ONLY */}
                 <div className="text-center mb-20 space-y-4">
-                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#1A1C2C]">
+                    {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                         Why Experts <span className="text-indigo-600">Choose Us</span>
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                    {/* Description - 16px, weight 400, line-height 1.6 */}
+                    <p className="text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                         We combine cutting-edge technology with instructional design to deliver the best learning experience possible.
                     </p>
                 </div>
 
+                {/* Cards - Fonts KEPT ORIGINAL (unchanged) */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {reasons.map((reason, index) => {
                         const Icon = reason.icon;
@@ -91,9 +95,11 @@ const EducationWhyUs = () => {
                                     </div>
 
                                     <div className="space-y-3">
+                                        {/* Card Title - ORIGINAL FONT (unchanged) */}
                                         <h3 className="text-xl font-bold text-[#1A1C2C] group-hover:text-indigo-600 transition-colors">
                                             {reason.title}
                                         </h3>
+                                        {/* Card Description - ORIGINAL FONT (unchanged) */}
                                         <p className="text-gray-500 text-sm leading-relaxed">
                                             {reason.desc}
                                         </p>

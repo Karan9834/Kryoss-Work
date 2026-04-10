@@ -22,30 +22,32 @@ const AboutSection = () => {
             <div className="absolute -z-10 inset-0 bg-gradient-to-r from-teal-100 to-cyan-100 blur-2xl opacity-40 rounded-full"></div>
           </div>
 
-          {/* RIGHT - CONTENT */}
+          {/* RIGHT - CONTENT - Updated Typography */}
           <div>
-            {/* small accent line */}
-            <div className="w-14 h-1 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full mb-5"></div>
+            {/* Section Underline - width: 64px, height: 2px */}
+            <div className="w-16 h-[2px] bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full mb-5"></div>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
               About Our Platform
             </h2>
 
-            <div className="space-y-5 text-gray-600 text-base md:text-lg leading-relaxed">
-              <p>
+            {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+            <div className="space-y-5 text-gray-600">
+              <p className="text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 We are redefining hotel operations with a modern platform built
                 for speed, simplicity, and seamless control. From bookings to
                 guest management, everything is unified into one intuitive
                 experience.
               </p>
 
-              <p>
+              <p className="text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 Designed with real hospitality challenges in mind, our solution
                 reduces manual work, improves coordination, and helps teams
                 deliver exceptional service without complexity.
               </p>
 
-              <p>
+              <p className="text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 Whether you're running a boutique hotel or a large chain, our
                 technology empowers you to operate smarter and focus on what
                 truly matters — creating unforgettable guest experiences.

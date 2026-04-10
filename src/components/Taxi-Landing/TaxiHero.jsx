@@ -14,44 +14,50 @@ const TaxiHero = () => {
 
                     {/* Left Content */}
                     <div className="space-y-8 animate-fadeInLeft">
+                        {/* Hero Badge - Updated: text-xs font-medium tracking-wider uppercase */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-100 rounded-full border border-yellow-200">
                             <span className="w-2 h-2 rounded-full bg-yellow-600 animate-pulse"></span>
-                            <span className="text-yellow-800 text-xs font-bold uppercase tracking-widest">Reliable & Fast Rides</span>
+                            <span className="text-yellow-800 text-[12px] font-medium tracking-wider uppercase">Reliable & Fast Rides</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl font-semibold text-[#1E293B] leading-tight">
-                            Smart <span className="text-yellow-600">Taxi Booking</span> Solutions for Modern <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-500 font-bold">Mobility</span>
+                        {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#1E293B]">
+                            Smart <span className="text-yellow-600">Taxi Booking</span> Solutions for Modern <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-500">Mobility</span>
                         </h1>
 
-                        <p className="text-[#4A4B5E] text-lg lg:text-xl max-w-xl leading-relaxed">
+                        {/* Hero Description - Updated: text-base md:text-lg font-normal leading-relaxed */}
+                        <p className="text-base md:text-lg font-normal leading-relaxed text-[#4A4B5E] max-w-xl">
                             Revolutionize your transport business with our cutting-edge taxi dispatch software. Scalable, efficient, and built for growth.
                         </p>
 
                         <div className="flex flex-wrap gap-4 pt-4">
+                            {/* Hero Button - Updated: text-sm md:text-base font-semibold tracking-wide uppercase */}
                             <button
                                 onClick={() => document.getElementById('taxi-products')?.scrollIntoView({ behavior: 'smooth' })}
-                                className="px-10 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-[#1E293B] font-bold rounded-full shadow-xl shadow-yellow-100 hover:scale-105 transition-all duration-300 flex items-center gap-2 group"
+                                className="px-10 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-[#1E293B] font-semibold rounded-full shadow-xl shadow-yellow-100 hover:scale-105 transition-all duration-300 flex items-center gap-2 group text-sm md:text-base tracking-wide uppercase"
                             >
                                 Explore Our Products
                                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </button>
                         </div>
 
-                        {/* Trust Badges */}
+                        {/* Trust Badges - Updated Stats Typography */}
                         <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
                             <div>
-                                <p className="text-2xl font-black text-[#1E293B]">50k+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Global Rides</p>
+                                {/* Stats Number - text-xl md:text-2xl font-bold */}
+                                <p className="text-xl md:text-2xl font-bold text-[#1E293B]">50k+</p>
+                                {/* Stats Label - text-xs font-normal tracking-wider uppercase */}
+                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">Global Rides</p>
                             </div>
                             <div className="w-px h-10 bg-gray-100"></div>
                             <div>
-                                <p className="text-2xl font-black text-[#1E293B]">200+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Fleet Owners</p>
+                                <p className="text-xl md:text-2xl font-bold text-[#1E293B]">200+</p>
+                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">Fleet Owners</p>
                             </div>
                             <div className="w-px h-10 bg-gray-100"></div>
                             <div>
-                                <p className="text-2xl font-black text-[#1E293B]">4.8/5</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">User Satisfaction</p>
+                                <p className="text-xl md:text-2xl font-bold text-[#1E293B]">4.8/5</p>
+                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">User Satisfaction</p>
                             </div>
                         </div>
                     </div>
