@@ -17,18 +17,18 @@ const Hero = () => {
     }, []);
     return (
         <section className="relative h-auto min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] flex items-center overflow-hidden bg-white">
-            {/* LAYER 1: Background Image - fetchpriority="high" signals this as the LCP element */}
-            <div
-                className="absolute inset-0 z-0"
-                style={{
-                    backgroundImage: "url('/images/hero-visual.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center right",
-                    backgroundRepeat: "no-repeat",
-                    filter: "brightness(1.05) contrast(1.02)",
-                    // Reserve exact layout space to prevent CLS
-                    willChange: "transform"
-                }}
+            {/* LAYER 1: Hero Background — real <img> so browser preload scanner finds it immediately.
+                CSS background-image is NOT visible to the preload scanner, causing ~100s LCP.
+                This img is visually identical: absolute-fill + object-cover + same filter. */}
+            <img
+                src="/images/hero-visual.png"
+                alt=""
+                aria-hidden="true"
+                fetchpriority="high"
+                loading="eager"
+                decoding="sync"
+                className="absolute inset-0 z-0 w-full h-full object-cover object-right"
+                style={{ filter: "brightness(1.05) contrast(1.02)" }}
             />
 
             {/* LAYER 2: Particles Effect — deferred 1.5s to not compete with LCP */}
