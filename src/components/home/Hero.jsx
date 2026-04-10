@@ -2,15 +2,22 @@ import { Link } from 'react-router-dom';
 
 "use client";
 
-import React, { memo } from "react";
+import React, { memo, useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { FaGoogle, FaAmazon, FaSlack, FaMicrosoft, FaApple } from "react-icons/fa";
 import HeroParticles from "../HeroParticles";
 
 const Hero = () => {
+    // Defer HeroParticles rendering until after the hero content has painted
+    // This frees up the main thread for LCP (H1 + hero image) to render first
+    const [showParticles, setShowParticles] = useState(false);
+    useEffect(() => {
+        const timer = setTimeout(() => setShowParticles(true), 1500);
+        return () => clearTimeout(timer);
+    }, []);
     return (
         <section className="relative h-auto min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] flex items-center overflow-hidden bg-white">
-            {/* LAYER 1: Background Image (Lowest Layer) */}
+            {/* LAYER 1: Background Image - fetchpriority="high" signals this as the LCP element */}
             <div
                 className="absolute inset-0 z-0"
                 style={{
@@ -18,14 +25,18 @@ const Hero = () => {
                     backgroundSize: "cover",
                     backgroundPosition: "center right",
                     backgroundRepeat: "no-repeat",
-                    filter: "brightness(1.05) contrast(1.02)"
+                    filter: "brightness(1.05) contrast(1.02)",
+                    // Reserve exact layout space to prevent CLS
+                    willChange: "transform"
                 }}
             />
 
-            {/* LAYER 2: Particles Effect (Above Background) */}
-            <div className="absolute inset-0 z-[5] pointer-events-none">
-                <HeroParticles />
-            </div>
+            {/* LAYER 2: Particles Effect — deferred 1.5s to not compete with LCP */}
+            {showParticles && (
+                <div className="absolute inset-0 z-[5] pointer-events-none">
+                    <HeroParticles />
+                </div>
+            )}
 
             {/* LAYER 3: Subtle Gradient Overlay (Above Image & Particles) */}
             <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-white/60 via-white/20 to-transparent" />
