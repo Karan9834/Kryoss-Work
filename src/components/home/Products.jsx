@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo, memo } from "react";
 import { CheckCircle, ArrowRight } from "lucide-react";
 
 const products = [
@@ -196,9 +196,9 @@ const products = [
   }];
 
 
-export default function Products() {
+const Products = () => {
   const [active, setActive] = useState("delivery");
-  const current = products.find((p) => p.id === active);
+  const current = useMemo(() => products.find((p) => p.id === active), [active]);
 
   return (
     <section id="products" className="py-24 bg-white">
@@ -275,6 +275,7 @@ export default function Products() {
                 <img
                   src={src}
                   alt={`App screenshot ${i + 1}`}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     if (!e.currentTarget.dataset.error) {
@@ -289,5 +290,6 @@ export default function Products() {
         </div>
       </div>
     </section>);
+};
 
-}
+export default memo(Products);
