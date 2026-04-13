@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Play, CheckCircle, Users, Clock, BarChart, Shield } from 'lucide-react'
+import { ArrowRight, Play, CheckCircle, Users, Clock, BarChart, Shield, MessageCircle } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -91,6 +91,10 @@ const Hero = () => {
                 Live Demo
                 <Play className="w-3.5 h-3.5" />
               </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
               
               <a
                 href="#contact"
@@ -122,7 +126,7 @@ const Hero = () => {
             {/* Floating Card 1 */}
             <div className="absolute -top-4 -left-4 bg-gray-800/90 backdrop-blur-sm rounded-lg p-2.5 shadow-xl border border-gray-700">
               <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-green-500/20 flex items-center justify-center">
+                <div className="w-7 h-7 rounded-lg bg-green-500/20 flex items-center justify-center flex-wrap gap-4">
                   <CheckCircle className="w-3.5 h-3.5 text-green-500" />
                 </div>
                 <div>
@@ -135,7 +139,7 @@ const Hero = () => {
             {/* Floating Card 2 */}
             <div className="absolute -bottom-4 -right-4 bg-gray-800/90 backdrop-blur-sm rounded-lg p-2.5 shadow-xl border border-gray-700">
               <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-emerald-500/20 flex items-center justify-center">
+                <div className="w-7 h-7 rounded-lg bg-emerald-500/20 flex items-center justify-center flex-wrap gap-4">
                   <Shield className="w-3.5 h-3.5 text-emerald-500" />
                 </div>
                 <div>

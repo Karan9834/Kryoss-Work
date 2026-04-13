@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Play, Sparkles, CheckCircle, Rocket, Shield, Clock } from 'lucide-react'
+import { ArrowRight, Play, Sparkles, CheckCircle, Rocket, Shield, Clock, MessageCircle } from "lucide-react";
 
 const FinalCTA = () => {
   return (
@@ -78,6 +78,10 @@ const FinalCTA = () => {
             <Play className="w-5 h-5 group-hover:animate-pulse" />
             Live Demo
           </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
           
           {/* Contact Sales Button - Internal Link */}
           <a
@@ -92,7 +96,7 @@ const FinalCTA = () => {
         {/* Trust Indicators */}
         <div className="mt-12 flex flex-wrap justify-center gap-8 pt-8 border-t border-white/10">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-wrap gap-4">
               <Rocket className="w-4 h-4 text-white" />
             </div>
             <div className="text-left">
@@ -101,7 +105,7 @@ const FinalCTA = () => {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-wrap gap-4">
               <Shield className="w-4 h-4 text-white" />
             </div>
             <div className="text-left">
@@ -110,7 +114,7 @@ const FinalCTA = () => {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+            <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-wrap gap-4">
               <Clock className="w-4 h-4 text-white" />
             </div>
             <div className="text-left">

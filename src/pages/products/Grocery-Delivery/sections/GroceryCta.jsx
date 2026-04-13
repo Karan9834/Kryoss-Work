@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import React from 'react';
 
 const GroceryCta = () => {
@@ -28,9 +29,13 @@ const GroceryCta = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
         </button>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
 
         {/* Small stats */}
-        <div className="flex items-center justify-center gap-4 mt-4 text-xs text-green-100">
+        <div className="flex items-center justify-center gap-4 mt-4 text-xs text-green-100 flex-wrap gap-4">
           <span>✓ Free Delivery*</span>
           <span>✓ 30 Min Delivery</span>
           <span>✓ 100% Fresh</span>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Activity, ShieldPlus, Zap, LayoutDashboard } from 'lucide-react';
+import { ArrowRight, Activity, ShieldPlus, Zap, LayoutDashboard, MessageCircle } from "lucide-react";
 import acadifyHero from '@/assets/acadifyeduerp-img/acadifyeduerphero.webp';
 
 const AcadifyEduERPHero = () => {
@@ -40,6 +40,10 @@ const AcadifyEduERPHero = () => {
                             Live Demo
                             <ArrowRight size={22} />
                         </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
                     </div>
                 </div>
 
@@ -47,7 +51,7 @@ const AcadifyEduERPHero = () => {
                 <div className="relative mt-8 lg:mt-0">
                     <div className="absolute inset-0 rounded-full blur-3xl opacity-10 bg-gradient-to-br from-blue-400 to-indigo-500" />
                     <div className="relative z-10 w-full max-w-lg mx-auto">
-                        <div className="w-full h-64 sm:h-80 lg:h-[400px] rounded-[3rem] border-8 border-white shadow-2xl bg-slate-100 flex items-center justify-center overflow-hidden">
+                        <div className="w-full h-64 sm:h-80 lg:h-[400px] rounded-[3rem] border-8 border-white shadow-2xl bg-slate-100 flex items-center justify-center overflow-hidden flex-wrap gap-4">
                             <img
                                 src={acadifyHero}
                                 alt="Acadify Dashboard"
@@ -56,7 +60,7 @@ const AcadifyEduERPHero = () => {
                         </div>
                         {/* Status elements */}
                         <div className="absolute -bottom-6 -left-6 bg-white p-5 rounded-3xl shadow-2xl flex items-center gap-4 border border-slate-50">
-                            <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0">
+                            <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600 flex-shrink-0 flex-wrap gap-4">
                                 <ShieldPlus size={24} />
                             </div>
                             <div>

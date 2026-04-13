@@ -1,16 +1,14 @@
 // src/pages/products/Apex-ERP/section/FinalCTA.jsx
 import React from "react";
 import prod5 from "../../../../assets/Products/prod5.png"
-import { 
-  ArrowRight, 
+import { ArrowRight, 
   Play, 
   Sparkles, 
   Shield, 
   TrendingUp,
   Crown,
   Star,
-  CheckCircle
-} from "lucide-react";
+  CheckCircle, MessageCircle } from "lucide-react";
 
 const FinalCTA = () => {
   const handleLiveDemo = () => {
@@ -104,15 +102,19 @@ const FinalCTA = () => {
         </div>
         
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4"> 
+        <div className="flex flex-col sm:flex-row justify-center gap-4 flex-wrap gap-4"> 
           {/* Secondary Button - Live Demo */}
           <button 
             onClick={handleLiveDemo}
-            className="group inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border border-sky-500/30 text-gray-300 px-8 py-4 rounded-xl font-semibold hover:bg-white/20 hover:border-sky-500/50 transition-all duration-300"
+            className="group inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border border-sky-500/30 text-gray-300 px-8 py-4 rounded-xl font-semibold hover:bg-white/20 hover:border-sky-500/50 transition-all duration-300 flex-wrap gap-4"
           >
             <Play className="w-5 h-5 text-emerald-400 group-hover:text-emerald-300" />
             <span>Live Demo</span>
           </button>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
         </div>
         
         {/* Trust Text */}

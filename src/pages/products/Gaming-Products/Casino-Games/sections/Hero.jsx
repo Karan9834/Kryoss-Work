@@ -1,5 +1,5 @@
 import React from "react";
-import { Play } from "lucide-react";
+import { Play, MessageCircle } from "lucide-react";
 
 import heroImg from "../../../../../assets/Games-Product/stakehero.webp";
 
@@ -47,7 +47,7 @@ const StakeHero = () => {
           </p>
 
           {/* Single Button - 1rem (16px) / weight 600 */}
-          <div className="mt-8">
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             <button
               onClick={handleDemo}
               className="group relative flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-amber-500 to-yellow-500 text-black font-semibold text-base rounded-md shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 hover:scale-105 transition-all duration-300 overflow-hidden"
@@ -56,11 +56,15 @@ const StakeHero = () => {
               <Play size={16} className="relative z-10 fill-black" /> 
               <span className="relative z-10">Live Demo</span>
             </button>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
           </div>
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center flex-wrap gap-4">
           {/* Casino-style glow behind image */}
           <div className="absolute inset-0 bg-gradient-to-t from-amber-500/20 via-amber-500/5 to-transparent blur-2xl rounded-full"></div>
           

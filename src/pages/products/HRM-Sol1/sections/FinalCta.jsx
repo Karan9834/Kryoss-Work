@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Play, Sparkles, CheckCircle, Rocket } from 'lucide-react'
+import { ArrowRight, Play, Sparkles, CheckCircle, Rocket, MessageCircle } from 'lucide-react'
 
 const FinalCTA = () => {
   return (
@@ -79,13 +79,13 @@ const FinalCTA = () => {
             Live Demo
           </a>
           
-          {/* Contact Sales Button */}
+          {/* Contact Button */}
           <a
-            href="#contact"
+            href="/company/contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 text-white rounded-xl font-semibold hover:bg-white/20 hover:scale-105 transition-all duration-300 group"
           >
-            Contact Sales
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <MessageCircle className="w-5 h-5" />
+            Let's Discuss
           </a>
         </div>
       </div>

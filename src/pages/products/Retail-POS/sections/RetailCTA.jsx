@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 const RetailCTA = () => {
   return (
@@ -17,7 +17,7 @@ const RetailCTA = () => {
           Don't let legacy software hold you back. Join the world's most innovative retail brands and experience the power of a unified cloud POS.
         </p>
 
-        <div className="flex justify-center pt-8">
+        <div className="flex justify-center pt-8 flex-wrap gap-4">
           <a
             href="https://preview.codecanyon.net/item/point-of-sale-billing-and-stock-management-system/full_screen_preview/38661505"
             target="_blank"
@@ -27,6 +27,10 @@ const RetailCTA = () => {
             Try Live Demo
             <ArrowRight size={28} className="group-hover:translate-x-2 transition-transform" />
           </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
         </div>
       </div>
     </section>

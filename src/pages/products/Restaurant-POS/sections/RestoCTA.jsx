@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 const RestoCTA = () => {
   return (
@@ -17,7 +17,7 @@ const RestoCTA = () => {
           Join thousands of successful restaurateurs who have automated their operations and increased their revenue with our POS.
         </p>
 
-        <div className="flex justify-center pt-4">
+        <div className="flex justify-center pt-4 flex-wrap gap-4">
           <a
             href="https://preview.codecanyon.net/item/pos-saas-addon-for-salepro-multitenant-inventory-billing-module/full_screen_preview/58373948"
             target="_blank"
@@ -27,6 +27,10 @@ const RestoCTA = () => {
             Try Live Demo
             <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
           </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
         </div>
       </div>
     </section>

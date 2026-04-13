@@ -13,7 +13,7 @@ import {
   ChevronRight,
   Rocket,
   Eye,
-  TrendingUp,
+  TrendingUp,, MessageCircle
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
@@ -28,7 +28,7 @@ const techLogos = {
   "Flutter (Cross-platform)": { bg: "#02569B", color: "#FFFFFF", icon: "🦋" },
   "jQuery": { bg: "#0769AD", color: "#FFFFFF", icon: "🔶" },
   "Bootstrap": { bg: "#7952B3", color: "#FFFFFF", icon: "🅱️" },
-  
+
   // Backend
   "Node.js": { bg: "#339933", color: "#FFFFFF", icon: "🟢" },
   "Node.js with Express": { bg: "#339933", color: "#FFFFFF", icon: "🟢" },
@@ -40,7 +40,7 @@ const techLogos = {
   "PHP": { bg: "#777BB4", color: "#FFFFFF", icon: "🐘" },
   "RESTful API": { bg: "#25A162", color: "#FFFFFF", icon: "🔗" },
   "GraphQL": { bg: "#E10098", color: "#FFFFFF", icon: "📊" },
-  
+
   // Databases
   "MongoDB": { bg: "#47A248", color: "#FFFFFF", icon: "🍃" },
   "MongoDB for user data": { bg: "#47A248", color: "#FFFFFF", icon: "🍃" },
@@ -49,29 +49,29 @@ const techLogos = {
   "Redis": { bg: "#DC382D", color: "#FFFFFF", icon: "📀" },
   "Redis for caching & sessions": { bg: "#DC382D", color: "#FFFFFF", icon: "📀" },
   "Elasticsearch": { bg: "#005571", color: "#FFFFFF", icon: "🔍" },
-  
+
   // Message Queues
   "Apache Kafka": { bg: "#231F20", color: "#FFFFFF", icon: "⚡" },
-  
+
   // Real-time
   "Socket.io": { bg: "#010101", color: "#FFFFFF", icon: "🔌" },
   "Socket.io for real-time tracking": { bg: "#010101", color: "#FFFFFF", icon: "🔌" },
-  
+
   // Maps
   "Google Maps API": { bg: "#4285F4", color: "#FFFFFF", icon: "🗺️" },
   "Google Maps APIs": { bg: "#4285F4", color: "#FFFFFF", icon: "🗺️" },
   "OpenStreetMap API": { bg: "#7EBC6F", color: "#FFFFFF", icon: "🗺️" },
-  
+
   // Payments
   "Stripe": { bg: "#635BFF", color: "#FFFFFF", icon: "💳" },
   "Stripe & PayPal integration": { bg: "#635BFF", color: "#FFFFFF", icon: "💳" },
   "Stripe & PayPal": { bg: "#635BFF", color: "#FFFFFF", icon: "💳" },
   "PayPal": { bg: "#00457C", color: "#FFFFFF", icon: "🅿️" },
   "Razorpay": { bg: "#0B2B4F", color: "#FFFFFF", icon: "💰" },
-  
+
   // AI/ML
   "TensorFlow Lite": { bg: "#FF6F00", color: "#FFFFFF", icon: "🤖" },
-  
+
   // Cloud & Auth
   "Firebase": { bg: "#FFCA28", color: "#000000", icon: "🔥" },
   "Firebase Cloud Messaging": { bg: "#FFCA28", color: "#000000", icon: "🔥" },
@@ -79,18 +79,18 @@ const techLogos = {
   "JWT Authentication": { bg: "#000000", color: "#FFFFFF", icon: "🔐" },
   "AWS S3": { bg: "#FF9900", color: "#000000", icon: "☁️" },
   "AWS S3 for media storage": { bg: "#FF9900", color: "#000000", icon: "☁️" },
-  
+
   // DevOps & CI/CD
   "Docker": { bg: "#2496ED", color: "#FFFFFF", icon: "🐳" },
   "Docker for containerization": { bg: "#2496ED", color: "#FFFFFF", icon: "🐳" },
   "Kubernetes": { bg: "#326CE5", color: "#FFFFFF", icon: "☸️" },
   "Jenkins": { bg: "#D24939", color: "#FFFFFF", icon: "🔧" },
   "GitHub Actions": { bg: "#2088FF", color: "#FFFFFF", icon: "⚙️" },
-  
+
   // Monitoring
   "Sentry": { bg: "#362D59", color: "#FFFFFF", icon: "📡" },
   "New Relic": { bg: "#008C99", color: "#FFFFFF", icon: "📈" },
-  
+
   // Default
   "default": { bg: "#6B7280", color: "#FFFFFF", icon: "🔹" }
 };
@@ -133,8 +133,8 @@ const ProductDetailsPlaceholder = () => {
 
   if (!product) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50 pt-32 pb-20 flex flex-col items-center justify-center text-center px-4">
-        <motion.h1 
+      <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50 pt-32 pb-20 flex flex-col items-center justify-center text-center px-4 flex-wrap gap-4">
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-bold text-gray-800 mb-4"
@@ -150,7 +150,7 @@ const ProductDetailsPlaceholder = () => {
             to="/products"
             className="group px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-lg flex items-center gap-2 hover:shadow-lg transition-all duration-300"
           >
-            <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" /> 
+            <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
             Back to Products
           </Link>
         </motion.div>
@@ -179,7 +179,7 @@ const ProductDetailsPlaceholder = () => {
                 {/* Decorative blur circles */}
                 <div className="absolute -top-4 -left-4 w-32 h-32 bg-amber-200 rounded-full blur-3xl opacity-40"></div>
                 <div className="absolute -bottom-4 -right-4 w-40 h-40 bg-orange-200 rounded-full blur-3xl opacity-40"></div>
-                
+
                 {/* Main image */}
                 <motion.div
                   whileHover={{ y: -4 }}
@@ -189,7 +189,7 @@ const ProductDetailsPlaceholder = () => {
                 >
                   <div className="relative" style={{ paddingBottom: '75%' }}>
                     {!imageLoaded && (
-                      <div className="absolute inset-0 bg-amber-100 animate-pulse flex items-center justify-center">
+                      <div className="absolute inset-0 bg-amber-100 animate-pulse flex items-center justify-center flex-wrap gap-4">
                         <span className="text-amber-400">Loading...</span>
                       </div>
                     )}
@@ -199,13 +199,12 @@ const ProductDetailsPlaceholder = () => {
                         src={product.image}
                         alt={product.name}
                         onLoad={() => setImageLoaded(true)}
-                        className={`absolute inset-0 w-full h-full object-fit transition-opacity duration-500 ${
-                          imageLoaded ? 'opacity-100' : 'opacity-0'
-                        } group-hover:scale-105 transition-transform duration-500`}
+                        className={`absolute inset-0 w-full h-full object-fit transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'
+                          } group-hover:scale-105 transition-transform duration-500`}
                       />
                     </picture>
                   </div>
-                  
+
                   {/* Badge */}
                   <div className="absolute top-3 right-3 bg-white/90 px-3 py-1.5 rounded-full border border-amber-200 shadow-sm">
                     <span className="text-xs font-medium text-amber-700 flex items-center gap-1">
@@ -258,8 +257,8 @@ const ProductDetailsPlaceholder = () => {
                     { icon: Users, value: "10k+", label: "Users" },
                     { icon: TrendingUp, value: "99.9%", label: "Uptime" },
                   ].map((stat, i) => (
-                    <motion.div 
-                      key={i} 
+                    <motion.div
+                      key={i}
                       whileHover={{ y: -2 }}
                       className="bg-white/60 p-2 rounded-lg border border-amber-100"
                     >
@@ -302,7 +301,7 @@ const ProductDetailsPlaceholder = () => {
               {product.features?.map((feature, i) => {
                 const colorIndex = i % featureColors.length;
                 const colors = featureColors[colorIndex];
-                
+
                 return (
                   <motion.div
                     key={i}
@@ -316,10 +315,10 @@ const ProductDetailsPlaceholder = () => {
                     className={`bg-white p-6 rounded-xl border-2 ${colors.border} shadow-md hover:shadow-xl transition-all relative overflow-hidden`}
                   >
                     {/* Background gradient on hover */}
-                    <motion.div 
+                    <motion.div
                       className={`absolute inset-0 bg-gradient-to-br ${colors.bg} opacity-0 hover:opacity-5 transition-opacity duration-300`}
                     />
-                    
+
                     <motion.div
                       animate={{
                         scale: hoveredFeature === i ? 1.15 : 1,
@@ -330,7 +329,7 @@ const ProductDetailsPlaceholder = () => {
                       <CheckCircle2 size={20} className="text-white" />
                     </motion.div>
                     <p className="font-semibold text-gray-800 text-base">{feature}</p>
-                    
+
                     {/* Decorative dot pattern */}
                     <div className="absolute bottom-2 right-2 opacity-10">
                       <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${colors.bg}`} />
@@ -354,7 +353,7 @@ const ProductDetailsPlaceholder = () => {
                 {product.steps.slice(0, 3).map((step, i) => {
                   const colorIndex = i % featureColors.length;
                   const colors = featureColors[colorIndex];
-                  
+
                   return (
                     <motion.div
                       key={i}
@@ -399,7 +398,7 @@ const ProductDetailsPlaceholder = () => {
                       transition={{ delay: i * 0.03 }}
                       whileHover={{ scale: 1.05, y: -4 }}
                       className="flex items-center gap-3 p-4 rounded-xl border shadow-md transition-all"
-                      style={{ 
+                      style={{
                         backgroundColor: style.bg,
                         borderColor: style.bg,
                       }}
@@ -428,7 +427,7 @@ const ProductDetailsPlaceholder = () => {
                 {product.images.slice(0, 3).map((img, i) => {
                   const colorIndex = i % featureColors.length;
                   const colors = featureColors[colorIndex];
-                  
+
                   return (
                     <motion.div
                       key={i}
@@ -483,7 +482,7 @@ const ProductDetailsPlaceholder = () => {
         </section>
 
         {/* Back Button */}
-        <motion.div 
+        <motion.div
           className="fixed bottom-4 left-4 z-40"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}

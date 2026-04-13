@@ -1,13 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Star, 
+import { Star, 
   Users, 
   Bike, 
   ChefHat,
   Sparkles,
-  ArrowRight
-} from 'lucide-react';
+  ArrowRight, MessageCircle } from "lucide-react";
 import ctaImage from "../../../../assets/Product-update/foodcta.png"; 
 
 const FoodCTASection = ({ demoUrl = "https://food-demo.vercel.app" }) => {
@@ -96,8 +94,8 @@ const FoodCTASection = ({ demoUrl = "https://food-demo.vercel.app" }) => {
               {/* Trust Badge */}
               <div className="flex items-center gap-2 mt-5">
                 <div className="flex -space-x-2">
-                  <div className="w-6 h-6 bg-green-500 rounded-full border-2 border-gray-900 flex items-center justify-center text-[10px] font-bold text-white">5K</div>
-                  <div className="w-6 h-6 bg-green-600 rounded-full border-2 border-gray-900 flex items-center justify-center text-[10px] font-bold text-white">✓</div>
+                  <div className="w-6 h-6 bg-green-500 rounded-full border-2 border-gray-900 flex items-center justify-center text-[10px] font-bold text-white flex-wrap gap-4">5K</div>
+                  <div className="w-6 h-6 bg-green-600 rounded-full border-2 border-gray-900 flex items-center justify-center text-[10px] font-bold text-white flex-wrap gap-4">✓</div>
                 </div>
                 <span className="text-xs text-gray-400">Trusted by 500+ businesses</span>
               </div>
@@ -174,7 +172,7 @@ const FoodCTASection = ({ demoUrl = "https://food-demo.vercel.app" }) => {
             <p className="text-xs text-gray-400 italic max-w-2xl mx-auto">
               "Complete white-label solution with source code. Launch in days, not months."
             </p>
-            <div className="flex justify-center items-center gap-1 mt-2">
+            <div className="flex justify-center items-center gap-1 mt-2 flex-wrap gap-4">
               <Star className="w-3 h-3 text-green-400 fill-green-400" />
               <Star className="w-3 h-3 text-green-400 fill-green-400" />
               <Star className="w-3 h-3 text-green-400 fill-green-400" />

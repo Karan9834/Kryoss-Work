@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Play, Sparkles } from "lucide-react";
+import { ArrowRight, Play, Sparkles, MessageCircle } from "lucide-react";
 
 const FinalCTA = () => {
   return (
@@ -24,24 +24,28 @@ const FinalCTA = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap gap-4">
             {/* Live Demo Button */}
             <a
               href="https://preview.codecanyon.net/item/snapcart-mobilefocused-laravel-ecommerce-system/full_screen_preview/62455250"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center px-8 py-3 bg-white text-orange-600 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="group inline-flex items-center justify-center px-8 py-3 bg-white text-orange-600 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex-wrap gap-4"
             >
               <Play className="w-4 h-4 mr-2" />
               Live Demo
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
 
             
           </div>
 
           {/* Trust Indicator */}
-          <div className="mt-8">
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             <p className="text-white/80 text-sm">
               Trusted by 500+ businesses • No credit card required • 30-day money-back guarantee
             </p>

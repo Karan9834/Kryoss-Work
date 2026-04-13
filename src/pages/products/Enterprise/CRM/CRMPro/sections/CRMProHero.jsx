@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import React from 'react';
 import crmprohero from '@/assets/crmpro-img/crmprohero.jpg';
 
@@ -33,6 +34,10 @@ const CRMProHero = () => {
                             <span className="relative z-10">Live Demo</span>
                             <div className="absolute inset-0 rounded-2xl bg-indigo-50 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                         </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
                     </div>
                 </div>
 

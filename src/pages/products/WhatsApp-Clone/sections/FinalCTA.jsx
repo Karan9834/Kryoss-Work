@@ -147,6 +147,16 @@ const FinalCTA = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.button>
             </a>
+            <a href="/company/contact">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+                className="group px-8 py-4 bg-white/10 text-white border border-white/20 rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300 backdrop-blur-sm flex items-center gap-2"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Let's Discuss
+              </motion.button>
+            </a>
           </motion.div>
         </motion.div>
       </div>

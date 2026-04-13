@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, MessageCircle } from "lucide-react";
 
 const FinalCTA = () => {
   const handleLiveDemo = () => {
@@ -43,6 +43,14 @@ const FinalCTA = () => {
             <Play className="text-orange-400 group-hover:text-orange-300" />
             Live Demo
           </button>
+          {/* Let's Discuss */}
+          <a
+            href="/company/contact"
+            className="group flex items-center justify-center gap-2 bg-white/10 text-white border border-white/20 px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition duration-300"
+          >
+            <MessageCircle size={18} className="text-orange-400" />
+            Let's Discuss
+          </a>
         </div>
 
         <p className="text-xs text-gray-500 mt-6">

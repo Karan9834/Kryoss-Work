@@ -1,6 +1,6 @@
 import React from "react";
 import festHeroImg from "../../../../../assets/eventnextems-img/eventnextemshero.jpg";
-import { ArrowRight, Zap, Star } from "lucide-react";
+import { ArrowRight, Zap, Star, MessageCircle } from "lucide-react";
 
 const EventNextHero = () => {
     return (
@@ -62,11 +62,15 @@ const EventNextHero = () => {
                             Live Demo
                             <ArrowRight size={20} />
                         </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
                     </div>
                 </div>
 
                 {/* Right Visual */}
-                <div className="relative flex items-center justify-center">
+                <div className="relative flex items-center justify-center flex-wrap gap-4">
                     <div className="absolute inset-0 rounded-full blur-3xl opacity-30"
                         style={{ background: "linear-gradient(135deg, #2563eb, #fbbf24)" }} />
                     <div className="relative z-10 w-full max-w-lg">

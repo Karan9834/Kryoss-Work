@@ -1,5 +1,5 @@
 import React from "react";
-import { Play } from "lucide-react";
+import { Play, MessageCircle } from "lucide-react";
 import heroImg from "../../../../../../assets/Games-Product/stakehero.webp";
 
 const CasinoHero = () => {
@@ -55,11 +55,15 @@ const CasinoHero = () => {
             <Play size={16} />
             Live Demo
           </button>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
 
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center flex-wrap gap-4">
 
           {/* Glow behind image */}
           <div className="absolute w-[250px] h-[250px] bg-green-500/20 blur-[100px] rounded-full"></div>

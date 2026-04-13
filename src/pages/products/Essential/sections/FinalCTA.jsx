@@ -1,5 +1,5 @@
 import React from "react";
-import { Play, ArrowRight, Rocket, Sparkles, Zap } from "lucide-react";
+import { Play, ArrowRight, Rocket, Sparkles, Zap, MessageCircle } from "lucide-react";
 
 const FinalCTA = () => {
   const liveDemoUrl = "https://preview.codecanyon.net/item/wp-news-and-scrolling-widgets-pro-wordpress-news-plugin/full_screen_preview/19274189";
@@ -33,7 +33,7 @@ const FinalCTA = () => {
       <div className="relative max-w-5xl mx-auto text-center px-6 lg:px-8 z-10">
         
         {/* Icon with Glow */}
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 mb-8 relative">
+        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 mb-8 relative flex-wrap gap-4">
           <Rocket size={36} className="text-white" />
           <div className="absolute inset-0 rounded-full bg-white/20 blur-xl animate-ping-slow"></div>
         </div>
@@ -64,6 +64,10 @@ const FinalCTA = () => {
           </span>
           <div className="absolute inset-0 bg-gradient-to-r from-purple-100 to-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </button>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
         
         {/* Trust Badges */}
         <div className="mt-8 flex flex-wrap justify-center gap-6">

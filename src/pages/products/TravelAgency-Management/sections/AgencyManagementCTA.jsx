@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 const AgencyManagementCTA = () => {
   return (
@@ -17,7 +17,7 @@ const AgencyManagementCTA = () => {
           Stop struggling with manual updates. Switch to our automated agency and focus on what you do best: growing your business.
         </p>
 
-        <div className="flex justify-center pt-4">
+        <div className="flex flex-wrap justify-center gap-4 pt-4">
           <a
             href="https://preview.codecanyon.net/item/wootour-woocommerce-travel-tour-and-appointment-booking/full_screen_preview/19404740"
             target="_blank"
@@ -26,6 +26,13 @@ const AgencyManagementCTA = () => {
           >
             Try Live Demo
             <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
+          </a>
+          <a
+            href="/company/contact"
+            className="px-10 py-5 bg-white/10 text-white border border-white/20 font-semibold rounded-full hover:bg-white/20 transition-all duration-300 flex items-center gap-3 backdrop-blur-sm"
+          >
+            <MessageCircle size={20} />
+            Let's Discuss
           </a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 const TourBookingCTA = () => {
   return (
@@ -17,7 +17,7 @@ const TourBookingCTA = () => {
           Join the next generation of travel operators who trust our technology. Experience the platform in action today.
         </p>
 
-        <div className="flex justify-center pt-4">
+        <div className="flex flex-wrap justify-center gap-4 pt-4">
           <a
             href="https://preview.codecanyon.net/item/tour-master-tour-booking-travel-wordpress-plugin/full_screen_preview/20539780"
             target="_blank"
@@ -26,6 +26,13 @@ const TourBookingCTA = () => {
           >
             Live Demo
             <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
+          </a>
+          <a
+            href="/company/contact"
+            className="px-10 py-5 bg-white/10 text-white border border-white/20 font-semibold rounded-full hover:bg-white/20 transition-all duration-300 flex items-center gap-3 backdrop-blur-sm"
+          >
+            <MessageCircle size={20} />
+            Let's Discuss
           </a>
         </div>
       </div>

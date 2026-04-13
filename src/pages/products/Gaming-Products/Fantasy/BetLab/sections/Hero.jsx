@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, ArrowRight, Trophy, Zap, Shield } from 'lucide-react';
+import { Play, ArrowRight, Trophy, Zap, Shield, MessageCircle } from "lucide-react";
 import betlab from "../../../../../../assets/Games-Product/betlab.jpg"
 
 
@@ -74,6 +74,10 @@ const Hero = () => {
             >
               <Play size={16} /> Live Demo
             </button>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
           </div>
 
           {/* Trust Badges */}
@@ -94,7 +98,7 @@ const Hero = () => {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center flex-wrap gap-4">
           {/* Glow behind image */}
           <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/30 to-cyan-600/30 blur-2xl rounded-full"></div>
           

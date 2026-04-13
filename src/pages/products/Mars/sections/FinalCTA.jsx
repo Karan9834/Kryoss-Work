@@ -1,5 +1,5 @@
 import React from "react";
-import { Play, ArrowRight } from "lucide-react";
+import { Play, ArrowRight, MessageCircle } from "lucide-react";
 
 const SimpleCTA = () => {
   const liveDemoUrl = "https://preview.codecanyon.net/item/mars-room-management-system/full_screen_preview/21646390";
@@ -26,15 +26,24 @@ const SimpleCTA = () => {
           Experience the future of news management. Try our platform today.
         </p>
         
-        {/* Live Demo Button */}
-        <button
-          onClick={handleLiveDemo}
-          className="inline-flex items-center gap-2 px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-        >
-          <Play size={18} />
-          Live Demo
-          <ArrowRight size={16} />
-        </button>
+        {/* Buttons */}
+        <div className="flex flex-wrap justify-center gap-4">
+          <button
+            onClick={handleLiveDemo}
+            className="inline-flex items-center gap-2 px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            <Play size={18} />
+            Live Demo
+            <ArrowRight size={16} />
+          </button>
+          <a
+            href="/company/contact"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-lg font-semibold hover:bg-white/30 transition-all duration-300"
+          >
+            <MessageCircle size={18} />
+            Let's Discuss
+          </a>
+        </div>
         
       </div>
     </section>

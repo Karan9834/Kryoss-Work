@@ -1,5 +1,5 @@
 import React from "react";
-import { Play, ArrowRight } from "lucide-react";
+import { Play, ArrowRight, MessageCircle } from "lucide-react";
 
 const FinalCTA = () => {
   const handleLiveDemo = () => {
@@ -36,7 +36,7 @@ const FinalCTA = () => {
         </p>
 
         {/* Buttons */}
-        <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+        <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 flex-wrap gap-4">
 
           {/* Live Demo Button */}
           <button
@@ -46,6 +46,10 @@ const FinalCTA = () => {
             <Play size={18} />
             Live Demo
           </button>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
         </div>
 
       </div>

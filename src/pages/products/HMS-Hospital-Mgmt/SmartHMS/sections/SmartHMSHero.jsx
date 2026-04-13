@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import React from 'react';
 import heroImg from "@/assets/smarthms-img/smarthmshero.jpg";
 
@@ -31,14 +32,14 @@ const SmartHMSHero = () => {
                         Transform operations with our all-in-one platform. Streamline patient care, automate billing, and enhance medical staff collaboration.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 flex-wrap gap-4">
                         <a
                             href="https://preview.codecanyon.net/item/smart-hospital-hospital-management-system/full_screen_preview/23205038"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-xl font-semibold text-white overflow-hidden  text-lg transition-transform hover:scale-[1.02]"
                         >
-                            <span className="relative z-10 flex items-center justify-center gap-2">
+                            <span className="relative z-10 flex items-center justify-center gap-2 flex-wrap gap-4">
                                 Live Demo
                                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -46,12 +47,16 @@ const SmartHMSHero = () => {
                             </span>
                             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-teal-400 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                         </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
                     </div>
                 </div>
 
                 {/* Image on Right */}
-                <div className="w-full lg:w-1/2 flex justify-center lg:justify-end relative">
-                    <div className="relative w-full max-w-lg aspect-video lg:aspect-[4/3] bg-teal-900/40 rounded-[3rem] border border-cyan-500/20 backdrop-blur-md overflow-hidden flex items-center justify-center shadow-2xl mt-12 lg:mt-0">
+                <div className="w-full lg:w-1/2 flex justify-center lg:justify-end relative flex-wrap gap-4">
+                    <div className="relative w-full max-w-lg aspect-video lg:aspect-[4/3] bg-teal-900/40 rounded-[3rem] border border-cyan-500/20 backdrop-blur-md overflow-hidden flex items-center justify-center shadow-2xl mt-12 lg:mt-0 flex-wrap gap-4">
                         {/* Decorative background gradients for the right image placeholder */}
                         <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/30 rounded-full blur-[80px]"></div>
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-teal-500/30 rounded-full blur-[80px]"></div>
@@ -62,7 +67,7 @@ const SmartHMSHero = () => {
                     </div>
                     {/* Floating badge */}
                     {/* <div className="absolute top-1/2 -translate-y-1/2 -left-6 lg:-left-12 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce hover:animate-none">
-                        <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold text-xl">
+                        <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold text-xl flex-wrap gap-4">
                             +
                         </div>
                         <div>

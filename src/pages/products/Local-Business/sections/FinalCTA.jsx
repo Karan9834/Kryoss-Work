@@ -1,5 +1,5 @@
 import React from "react";
-import { Rocket, Play, ArrowRight, Sparkles, CheckCircle, Zap, Building2, Star, Users } from "lucide-react";
+import { Rocket, Play, ArrowRight, Sparkles, CheckCircle, Zap, Building2, Star, Users, MessageCircle } from "lucide-react";
 
 const FinalCTASection = () => {
   const features = [
@@ -98,7 +98,7 @@ const FinalCTASection = () => {
           </div>
 
           {/* ===== CTA BUTTONS ===== */}
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center flex-wrap gap-4">
             {/* Live Demo Button with Link */}
             <button
               onClick={handleLiveDemo}
@@ -111,10 +111,14 @@ const FinalCTASection = () => {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </button>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
           </div>
 
           {/* Trust Badge */}
-          <div className="mt-8">
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             <p className="text-xs text-gray-300">
               🚀 No credit card required • Free forever plan • Cancel anytime
             </p>

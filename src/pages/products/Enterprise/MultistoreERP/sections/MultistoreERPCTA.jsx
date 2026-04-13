@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Activity } from "lucide-react";
+import { ArrowRight, Activity, MessageCircle } from "lucide-react";
 
 const MultistoreERPCTA = () => {
     const demoUrl = "https://preview.codecanyon.net/item/invoice-os-invoice-management-software-with-email-accounting-inventory-store-functionality/full_screen_preview/42021434";
@@ -38,6 +38,10 @@ const MultistoreERPCTA = () => {
                     >
                         Try Live Demo
                         <ArrowRight size={22} className="sm:w-[26px] sm:h-[26px]" />
+                    </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
                     </a>
                 </div>
             </div>

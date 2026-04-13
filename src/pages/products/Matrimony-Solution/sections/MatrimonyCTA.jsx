@@ -1,5 +1,5 @@
 import React from "react";
-import { PlayCircle } from "lucide-react";
+import { PlayCircle, MessageCircle } from "lucide-react";
 
 const MatrimonyCTA = () => {
     return (
@@ -18,7 +18,7 @@ const MatrimonyCTA = () => {
                     Join leading matchmaking businesses who trust our secure, scalable infrastructure to power millions of connections. Start your journey today.
                 </p>
 
-                <div className="flex justify-center pt-8">
+                <div className="flex justify-center pt-8 flex-wrap gap-4">
                     <a
                         href="https://preview.codecanyon.net/item/dating-app-social-match-making-matrimony-theme-react-native-ui-ux-design-tinder-bumble-badoo-clone/full_screen_preview/56904398"
                         target="_blank"
@@ -27,6 +27,10 @@ const MatrimonyCTA = () => {
                     >
                         Try Live Demo
                         <PlayCircle size={24} className="group-hover:scale-110 transition-transform" />
+                    </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
                     </a>
                 </div>
 

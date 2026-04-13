@@ -1,4 +1,5 @@
 import React from "react";
+import { MessageCircle } from "lucide-react";
 
 const BetLabCTA = () => {
     return (
@@ -19,8 +20,8 @@ const BetLabCTA = () => {
                     on maximizing your total bet revenue immediately.
                 </p>
 
-                {/* CTA Button */}
-                <div className="mt-8">
+                {/* CTA Buttons */}
+                <div className="mt-8 flex flex-wrap justify-center gap-4">
                     <a
                         href="https://preview.codecanyon.net/item/betlab-sports-betting-platform/full_screen_preview/36256044"
                         target="_blank"
@@ -28,6 +29,13 @@ const BetLabCTA = () => {
                         className="inline-block bg-white text-emerald-800 font-semibold px-8 py-3 rounded-lg hover:bg-emerald-50 transition duration-300 shadow-lg"
                     >
                         Try Live Demo
+                    </a>
+                    <a
+                        href="/company/contact"
+                        className="inline-flex items-center gap-2 bg-white/20 text-white border border-white/30 px-8 py-3 rounded-lg font-semibold hover:bg-white/30 transition duration-300"
+                    >
+                        <MessageCircle size={18} />
+                        Let's Discuss
                     </a>
                 </div>
 

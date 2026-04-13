@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import React from "react";
 
 const GroceryHero = () => {
@@ -64,6 +65,10 @@ const GroceryHero = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </button>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
 
             {/* Features row */}
             <div className="flex flex-wrap gap-6 pt-4">
@@ -89,7 +94,7 @@ const GroceryHero = () => {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="relative flex justify-center">
+          <div className="relative flex justify-center flex-wrap gap-4">
             {/* Main image */}
             <div className="relative z-10">
               <div className="absolute -inset-2 bg-gradient-to-r from-green-400 to-emerald-400 rounded-3xl blur-2xl opacity-30"></div>
@@ -102,7 +107,7 @@ const GroceryHero = () => {
               {/* Floating offer card */}
               <div className="absolute -bottom-5 -left-5 bg-white rounded-xl shadow-2xl p-4 min-w-[180px] border border-green-100">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-wrap gap-4">
                     <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                     </svg>

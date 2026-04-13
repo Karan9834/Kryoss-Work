@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import React from "react";
 
 const CRMCTA = () => {
@@ -15,7 +16,7 @@ const CRMCTA = () => {
                     enterprise CRM solution.
                 </p>
 
-                <div className="mt-8">
+                <div className="mt-8 flex flex-wrap justify-center gap-4">
                     <a
                         href="https://preview.codecanyon.net/item/sales-saas-business-sales-crm/full_screen_preview/30241292"
                         target="_blank"
@@ -23,6 +24,10 @@ const CRMCTA = () => {
                         className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-200 transition"
                     >
                         Try Live Demo
+                    </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
                     </a>
                 </div>
 

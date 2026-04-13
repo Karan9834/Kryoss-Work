@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 const SpotCTA = () => {
   return (
@@ -17,7 +17,7 @@ const SpotCTA = () => {
           Get the institutional-grade infrastructure you need to compete with the industry giants. Secure, scalable, and ready for deployment.
         </p>
 
-        <div className="flex justify-center pt-4">
+        <div className="flex justify-center pt-4 flex-wrap gap-4">
           <a
             href="https://preview.codecanyon.net/item/localcoins-ultimate-peer-to-peer-crypto-exchange-platform/full_screen_preview/34781557"
             target="_blank"
@@ -27,6 +27,10 @@ const SpotCTA = () => {
             Try Live Demo
             <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
           </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
         </div>
       </div>
     </section>

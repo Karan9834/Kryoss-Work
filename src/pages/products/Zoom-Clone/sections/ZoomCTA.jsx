@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 const ZoomCTA = () => {
   return (
@@ -17,7 +17,7 @@ const ZoomCTA = () => {
           Don't settle for basic meetings. Build a collaborative empire with our highly scalable and secure video engine.
         </p>
 
-        <div className="flex justify-center pt-8">
+        <div className="flex flex-wrap justify-center gap-4 pt-8">
           <a
             href="https://preview.codecanyon.net/item/jupitermeet-pro-video-conference/full_screen_preview/37367339"
             target="_blank"
@@ -26,6 +26,13 @@ const ZoomCTA = () => {
           >
             Try Live Demo
             <ArrowRight size={28} className="group-hover:translate-x-2 transition-transform" />
+          </a>
+          <a
+            href="/company/contact"
+            className="px-10 py-6 bg-white/10 text-white border border-white/20 font-semibold rounded-3xl hover:bg-white/20 transition-all duration-500 flex items-center gap-3 backdrop-blur-md"
+          >
+            <MessageCircle size={22} />
+            Let's Discuss
           </a>
         </div>
       </div>

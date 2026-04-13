@@ -1,4 +1,5 @@
 import React from "react";
+import { MessageCircle } from "lucide-react";
 
 const TelemedicineCTA = () => {
     return (
@@ -18,8 +19,8 @@ const TelemedicineCTA = () => {
                     and secure medical communication.
                 </p>
 
-                {/* CTA Button */}
-                <div className="mt-8">
+                {/* CTA Buttons */}
+                <div className="mt-8 flex flex-wrap justify-center gap-4">
                     <a
                         href="DEMO_URL"
                         target="_blank"
@@ -27,6 +28,13 @@ const TelemedicineCTA = () => {
                         className="inline-block bg-white text-teal-700 font-semibold px-8 py-3 rounded-lg hover:bg-sky-200 transition duration-300 shadow-lg"
                     >
                         Try Live Demo
+                    </a>
+                    <a
+                        href="/company/contact"
+                        className="inline-flex items-center gap-2 bg-white/20 text-white border border-white/30 px-8 py-3 rounded-lg font-semibold hover:bg-white/30 transition duration-300"
+                    >
+                        <MessageCircle size={18} />
+                        Let's Discuss
                     </a>
                 </div>
 

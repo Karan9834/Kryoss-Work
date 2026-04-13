@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import React from "react";
 
 const RevPTCCTA = () => {
@@ -19,7 +20,7 @@ const RevPTCCTA = () => {
                 </p>
 
                 {/* CTA Button */}
-                <div className="mt-8">
+                <div className="mt-8 flex flex-wrap justify-center gap-4">
                     <a
                         href="https://script.viserlab.com/revptc/"
                         target="_blank"
@@ -27,6 +28,10 @@ const RevPTCCTA = () => {
                         className="inline-block bg-white text-blue-800 font-semibold px-8 py-3 rounded-lg hover:bg-blue-50 transition duration-300 shadow-lg"
                     >
                         Try Live Demo
+                    </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
                     </a>
                 </div>
 

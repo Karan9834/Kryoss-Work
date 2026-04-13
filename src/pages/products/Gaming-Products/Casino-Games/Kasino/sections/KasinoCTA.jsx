@@ -1,5 +1,5 @@
 import React from "react";
-import { Play } from "lucide-react";
+import { Play, MessageCircle } from "lucide-react";
 
 const KasinoCTA = () => {
   const handleLiveDemo = () => {
@@ -35,7 +35,7 @@ const KasinoCTA = () => {
         </p>
 
         {/* Button */}
-        <div className="mt-8 flex justify-center">
+        <div className="mt-8 flex justify-center flex-wrap gap-4">
           <button
             onClick={handleLiveDemo}
             className="flex items-center gap-2 px-7 py-3 bg-green-500 text-black text-[15px] font-semibold rounded-md hover:bg-green-400 transition shadow-lg shadow-green-500/20 hover:shadow-green-400/40"
@@ -43,6 +43,10 @@ const KasinoCTA = () => {
             <Play size={18} />
             Live Demo
           </button>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
         </div>
 
       </div>

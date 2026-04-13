@@ -1,6 +1,6 @@
 import React from "react";
 import corporateEmsHero from "../../../../../assets/eventrightems-img/eventrightemshero.jpg";
-import { ArrowRight, Shield, Calendar, Users } from "lucide-react";
+import { ArrowRight, Shield, Calendar, Users, MessageCircle } from "lucide-react";
 
 const EventRightHero = () => {
     return (
@@ -50,7 +50,7 @@ const EventRightHero = () => {
                             { icon: <Shield size={18} />, label: "Enterprise Clients", value: "300+" },
                         ].map((stat, i) => (
                             <div key={i} className="flex items-center gap-3">
-                                <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-indigo-200">
+                                <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-indigo-200 flex-wrap gap-4">
                                     {stat.icon}
                                 </div>
                                 <div>
@@ -72,11 +72,15 @@ const EventRightHero = () => {
                             Live Demo
                             <ArrowRight size={20} />
                         </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
                     </div>
                 </div>
 
                 {/* Right Visual */}
-                <div className="relative flex items-center justify-center">
+                <div className="relative flex items-center justify-center flex-wrap gap-4">
                     <div className="absolute inset-0 rounded-full blur-3xl opacity-30"
                         style={{ background: "linear-gradient(135deg, #6366f1, #06b6d4)" }} />
                     <div className="relative z-10 w-full max-w-lg">

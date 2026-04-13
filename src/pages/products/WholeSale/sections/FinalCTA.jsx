@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, MessageCircle } from "lucide-react";
 
 const FinalCTA = () => {
   const demoLink =
@@ -28,8 +28,8 @@ const FinalCTA = () => {
           automation. Take control of your inventory like never before.
         </p>
 
-        {/* CTA BUTTON */}
-        <div className="mt-8 flex justify-center">
+        {/* CTA BUTTONS */}
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
             href={demoLink}
             target="_blank"
@@ -39,6 +39,13 @@ const FinalCTA = () => {
             <Play size={18} className="fill-white" />
             Live Demo
             <ArrowRight size={18} className="group-hover:translate-x-1 transition" />
+          </a>
+          <a
+            href="/company/contact"
+            className="group inline-flex items-center gap-2 px-8 py-3 bg-white text-blue-700 border border-blue-200 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition"
+          >
+            <MessageCircle size={18} />
+            Let's Discuss
           </a>
         </div>
 

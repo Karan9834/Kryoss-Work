@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Zap, Target, Rocket, Activity } from 'lucide-react';
+import { ArrowRight, Zap, Target, Rocket, Activity, MessageCircle } from "lucide-react";
 import rocketHero from '@/assets/rocketlms-img/rocketlmshero.jpg';
 
 const RocketLMSHero = () => {
@@ -39,7 +39,7 @@ const RocketLMSHero = () => {
                             { icon: <Rocket size={20} />, label: "Uptime", value: "99.9%" },
                         ].map((stat, i) => (
                             <div key={i} className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-orange-300 flex-shrink-0">
+                                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-orange-300 flex-shrink-0 flex-wrap gap-4">
                                     {stat.icon}
                                 </div>
                                 <div>
@@ -61,6 +61,10 @@ const RocketLMSHero = () => {
                             Live Demo
                             <ArrowRight size={22} />
                         </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
                     </div>
                 </div>
 
@@ -68,7 +72,7 @@ const RocketLMSHero = () => {
                 <div className="relative mt-8 lg:mt-0">
                     <div className="absolute inset-0 rounded-full blur-3xl opacity-20 bg-gradient-to-br from-orange-400 to-red-600" />
                     <div className="relative z-10 w-full max-w-lg mx-auto">
-                        <div className="w-full h-64 sm:h-80 lg:h-[400px] rounded-[3rem] border-8 border-white/10 shadow-2xl bg-slate-900/40 backdrop-blur-md flex items-center justify-center overflow-hidden">
+                        <div className="w-full h-64 sm:h-80 lg:h-[400px] rounded-[3rem] border-8 border-white/10 shadow-2xl bg-slate-900/40 backdrop-blur-md flex items-center justify-center overflow-hidden flex-wrap gap-4">
                             <img
                                 src={rocketHero}
                                 alt="Rocket Admin Desk"
@@ -77,7 +81,7 @@ const RocketLMSHero = () => {
                         </div>
                         {/* Status badge */}
                         <div className="absolute -bottom-6 -left-6 bg-white p-5 rounded-3xl shadow-2xl flex items-center gap-4 border border-slate-50">
-                            <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 flex-shrink-0">
+                            <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 flex-shrink-0 flex-wrap gap-4">
                                 <Zap size={24} />
                             </div>
                             <div>

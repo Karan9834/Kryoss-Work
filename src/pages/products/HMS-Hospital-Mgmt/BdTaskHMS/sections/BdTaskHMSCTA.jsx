@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import React from 'react';
 
 const BdTaskHMSCTA = () => {
@@ -25,6 +26,10 @@ const BdTaskHMSCTA = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                 </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
             </div>
         </section>
     );

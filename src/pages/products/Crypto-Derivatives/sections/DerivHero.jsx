@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Zap, ShieldCheck, TrendingUp } from 'lucide-react';
+import { ArrowRight, Zap, ShieldCheck, TrendingUp, MessageCircle } from "lucide-react";
 import heroImg from "../../../../assets/cryptoderivatives-img/cryptoderivativeshero.jpg";
 
 const DerivHero = () => {
@@ -41,6 +41,10 @@ const DerivHero = () => {
                                 Try Live Demo
                                 <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
                             </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
                         </div>
 
                         <div className="pt-8 flex flex-wrap items-center justify-center lg:justify-start gap-8 opacity-60">

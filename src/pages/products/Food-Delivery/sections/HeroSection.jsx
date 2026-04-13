@@ -1,13 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  ShoppingBag, 
+import { ShoppingBag, 
   Clock, 
   Star, 
   Bike, 
   Leaf,
-  ExternalLink
-} from 'lucide-react';
+  ExternalLink, MessageCircle } from "lucide-react";
 import foodHeroImage from "../../../../assets/Product-update/food.jpg";
 
 const FoodHeroSection = ({ demoUrl = "http://preview.codecanyon.net/item/viavi-food-delivery-script/full_screen_preview/15509686" }) => {
@@ -66,25 +64,25 @@ const FoodHeroSection = ({ demoUrl = "http://preview.codecanyon.net/item/viavi-f
               {/* Features List */}
               <div className="grid grid-cols-2 gap-3 mb-6">
                 <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center flex-wrap gap-4">
                     <Leaf className="w-3 h-3 text-green-400" />
                   </div>
                   <span className="text-xs text-gray-300">Restaurant Panel</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center flex-wrap gap-4">
                     <Bike className="w-3 h-3 text-green-400" />
                   </div>
                   <span className="text-xs text-gray-300">Driver App</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center flex-wrap gap-4">
                     <Clock className="w-3 h-3 text-green-400" />
                   </div>
                   <span className="text-xs text-gray-300">Real-time Tracking</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center flex-wrap gap-4">
                     <Star className="w-3 h-3 text-green-400" />
                   </div>
                   <span className="text-xs text-gray-300">Rating System</span>
@@ -96,7 +94,7 @@ const FoodHeroSection = ({ demoUrl = "http://preview.codecanyon.net/item/viavi-f
                 onClick={handleLiveDemo}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-xl shadow-lg shadow-green-500/25 hover:shadow-green-500/40 transition-all duration-300 flex items-center justify-center gap-2 group w-fit"
+                className="px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-xl shadow-lg shadow-green-500/25 hover:shadow-green-500/40 transition-all duration-300 flex items-center justify-center gap-2 group w-fit flex-wrap gap-4"
               >
                 <span>Live Demo</span>
                 <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />

@@ -1,5 +1,5 @@
 import React from "react";
-import { Play, ArrowRight, Rocket, Sparkles } from "lucide-react";
+import { Play, ArrowRight, Rocket, Sparkles, MessageCircle } from "lucide-react";
 
 const FinalCTA = () => {
   // Updated with TimeStay demo link
@@ -44,15 +44,24 @@ const FinalCTA = () => {
           Experience the power of TimeStay — the ultimate multivendor hourly hotel booking platform. See it in action today.
         </p>
         
-        {/* Live Demo Button */}
-        <button
-          onClick={handleLiveDemo}
-          className="group inline-flex items-center gap-2 px-8 py-4 bg-white text-teal-600 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
-        >
-          <Play size={18} className="fill-teal-600" />
-          Live Demo
-          <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
-        </button>
+        {/* Buttons */}
+        <div className="flex flex-wrap justify-center gap-4">
+          <button
+            onClick={handleLiveDemo}
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-white text-teal-600 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
+          >
+            <Play size={18} className="fill-teal-600" />
+            Live Demo
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
+          </button>
+          <a
+            href="/company/contact"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-white/20 text-white border border-white/30 rounded-xl font-semibold hover:bg-white/30 hover:scale-105 transition-all duration-300"
+          >
+            <MessageCircle size={18} />
+            Let's Discuss
+          </a>
+        </div>
         
         {/* Trust Badge */}
         <div className="mt-8 flex flex-wrap justify-center gap-4 text-white/70 text-sm">

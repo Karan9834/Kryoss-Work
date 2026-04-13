@@ -1,4 +1,5 @@
 import React from "react";
+import { MessageCircle } from "lucide-react";
 
 const CTA = () => {
     return (
@@ -19,8 +20,8 @@ const CTA = () => {
                     transportation solution for modern cities.
                 </p>
 
-                {/* Button */}
-                <div className="mt-8">
+                {/* Buttons */}
+                <div className="mt-8 flex flex-wrap justify-center gap-4">
                     <a
                         href="http://preview.codecanyon.net/item/foodhat-restaurant-menu-food-ordering-system/full_screen_preview/46780682"
                         target="_blank"
@@ -28,6 +29,13 @@ const CTA = () => {
                         className="inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-lg hover:bg-sky-200 transition duration-300 shadow-lg"
                     >
                         Try Live Demo
+                    </a>
+                    <a
+                        href="/company/contact"
+                        className="inline-flex items-center gap-2 bg-white/20 text-white border border-white/30 px-8 py-3 rounded-lg font-semibold hover:bg-white/30 transition duration-300"
+                    >
+                        <MessageCircle size={18} />
+                        Let's Discuss
                     </a>
                 </div>
 

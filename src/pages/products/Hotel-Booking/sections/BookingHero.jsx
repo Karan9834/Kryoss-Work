@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import React from "react";
 import bookinghero from "../../../../assets/Hotel-Management/bookinghero.png"
 
@@ -42,13 +43,17 @@ const BookingHero = () => {
               href="https://preview.codecanyon.net/item/tourex-travel-agency-hotel-bookingsolution/full_screen_preview/58775119"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-semibold hover:shadow-lg hover:shadow-teal-500/30 hover:scale-105 transform transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-semibold hover:shadow-lg hover:shadow-teal-500/30 hover:scale-105 transform transition-all duration-300 flex-wrap gap-4"
             >
               Live Demo
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
           </div>
 
           {/* Enhanced Feature Points */}

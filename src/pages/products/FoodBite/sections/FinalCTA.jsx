@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import React from 'react';
 
 const FinalCTA = () => {
@@ -27,6 +28,10 @@ const FinalCTA = () => {
             >
               <i className="fas fa-eye"></i> Live Demo
             </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
 
             <a
               href="#"

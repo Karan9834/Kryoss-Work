@@ -327,7 +327,7 @@ const TikTokClonePage = () => {
               <div
                 className="w-12 h-12 flex items-center justify-center rounded-xl
       bg-gradient-to-br from-pink-500 to-purple-500
-      shadow-[0_0_16px_rgba(236,72,153,0.9)]"
+      shadow-[0_0_16px_rgba(236,72,153,0.9)] flex-wrap gap-4"
               >
                 <span className="text-xl drop-shadow-[0_0_6px_rgba(255,255,255,0.9)]">
                   🎬
@@ -366,10 +366,14 @@ const TikTokClonePage = () => {
             >
               Live Demo →
             </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center md:justify-end flex-wrap gap-4">
             <img
               src="/Video-App/hero-image.webp"
               alt="TikTok Clone App"
@@ -383,7 +387,7 @@ const TikTokClonePage = () => {
       <section className="w-full bg-white py-32 flex items-center">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 grid-cols-1 items-center gap-20 px-10">
           {/* LEFT IMAGE */}
-          <div className="flex justify-center">
+          <div className="flex justify-center flex-wrap gap-4">
             <img
               src="/Video-App/tik-tok-clone-about-us.webp"
               alt="TikTok Clone App"
@@ -443,7 +447,7 @@ const TikTokClonePage = () => {
 
             {/* STEP 1 */}
             <div className="flex gap-5 mb-8">
-              <div className="w-12 h-12 border border-white rounded flex items-center justify-center text-lg">
+              <div className="w-12 h-12 border border-white rounded flex items-center justify-center text-lg flex-wrap gap-4">
                 4
               </div>
 
@@ -458,7 +462,7 @@ const TikTokClonePage = () => {
 
             {/* STEP 2 */}
             <div className="flex gap-5 mb-8">
-              <div className="w-12 h-12 border border-white rounded flex items-center justify-center text-lg">
+              <div className="w-12 h-12 border border-white rounded flex items-center justify-center text-lg flex-wrap gap-4">
                 5
               </div>
 
@@ -473,7 +477,7 @@ const TikTokClonePage = () => {
 
             {/* STEP 3 */}
             <div className="flex gap-5">
-              <div className="w-12 h-12 border border-white rounded flex items-center justify-center text-lg">
+              <div className="w-12 h-12 border border-white rounded flex items-center justify-center text-lg flex-wrap gap-4">
                 6
               </div>
 
@@ -490,7 +494,7 @@ const TikTokClonePage = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="flex justify-center">
+          <div className="flex justify-center flex-wrap gap-4">
             <img
               src="/Video-App/tiktok-clone-work.webp"
               alt="TikTok Clone Work"
@@ -553,7 +557,7 @@ const TikTokClonePage = () => {
         </div>
 
         {/* Illustration */}
-        <div className="flex justify-center mb-24">
+        <div className="flex justify-center mb-24 flex-wrap gap-4">
           <img
             src="/Video-App/tiktok-features.webp"
             alt="TikTok features illustration"
@@ -570,7 +574,7 @@ const TikTokClonePage = () => {
                 className="flex gap-6 p-10 rounded-2xl border border-red-300 bg-white hover:shadow-xl hover:-translate-y-1 transition duration-300 min-h-[160px]"
               >
                 {/* Icon */}
-                <div className="w-14 h-14 flex items-center justify-center rounded-lg bg-red-500 text-white shrink-0">
+                <div className="w-14 h-14 flex items-center justify-center rounded-lg bg-red-500 text-white shrink-0 flex-wrap gap-4">
                   {item.icon}
                 </div>
 
@@ -620,7 +624,7 @@ const TikTokClonePage = () => {
                 key={index}
                 className="bg-white rounded-2xl p-8 shadow-lg flex gap-5 hover:-translate-y-1 hover:shadow-xl transition duration-300"
               >
-                <div className="w-14 h-14 flex items-center justify-center rounded-full border border-red-400 text-red-500 shrink-0">
+                <div className="w-14 h-14 flex items-center justify-center rounded-full border border-red-400 text-red-500 shrink-0 flex-wrap gap-4">
                   {item.icon}
                 </div>
 
@@ -638,7 +642,7 @@ const TikTokClonePage = () => {
           </div>
 
           {/* Right Image */}
-          <div className="bg-[#4b0009] rounded-3xl p-14 flex justify-center">
+          <div className="bg-[#4b0009] rounded-3xl p-14 flex justify-center flex-wrap gap-4">
             <img
               src="/Video-App/admin-panel.webp"
               alt="Admin Panel"
@@ -675,7 +679,7 @@ const TikTokClonePage = () => {
               key={index}
               className="relative border border-red-400 rounded-2xl p-10 text-left hover:shadow-xl transition"
             >
-              <div className="absolute -top-7 left-10 w-14 h-14 rounded-full bg-red-500 text-white flex items-center justify-center shadow-lg">
+              <div className="absolute -top-7 left-10 w-14 h-14 rounded-full bg-red-500 text-white flex items-center justify-center shadow-lg flex-wrap gap-4">
                 {item.icon}
               </div>
 
@@ -742,7 +746,7 @@ const TikTokClonePage = () => {
 
       {/* ================= PART 5 ================= */}
 
-      <section className="w-full py-32 flex items-center justify-center bg-gray-100">
+      <section className="w-full py-32 flex items-center justify-center bg-gray-100 flex-wrap gap-4">
         <div
           className="relative w-[92%] max-w-[1400px] py-20 rounded-3xl 
   bg-gradient-to-r from-[#3c2b7a] via-[#c43b3b] to-[#f3a01b] 
@@ -804,7 +808,7 @@ const TikTokClonePage = () => {
                   {step.title}
                 </h3>
 
-                <div className="bg-white rounded-2xl p-8 flex justify-center">
+                <div className="bg-white rounded-2xl p-8 flex justify-center flex-wrap gap-4">
                   <img
                     src={step.image}
                     alt={step.title}
@@ -820,7 +824,7 @@ const TikTokClonePage = () => {
       {/* SECTION 7 LAUNCH APP */}
       <section className="w-full bg-[#4b0009] text-white py-32">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-20 items-center px-10">
-          <div className="flex justify-center">
+          <div className="flex justify-center flex-wrap gap-4">
             <img
               src="/Video-App/team-laptop.webp"
               alt="Team discussion"
@@ -872,7 +876,7 @@ const TikTokClonePage = () => {
         </div>
 
         {/* Middle Image */}
-        <div className="flex justify-center mt-16 px-6">
+        <div className="flex justify-center mt-16 px-6 flex-wrap gap-4">
           <img
             src="/Video-App/why-choose.webp"
             alt="Why Choose TikTok Clone"
@@ -944,7 +948,7 @@ const TikTokClonePage = () => {
 
                   <div
                     className="absolute bottom-[-10px] left-1/2 -translate-x-1/2
-            w-9 h-9 bg-red-500 text-white rounded-full flex items-center justify-center"
+            w-9 h-9 bg-red-500 text-white rounded-full flex items-center justify-center flex-wrap gap-4"
                   >
                     <Play size={16} />
                   </div>

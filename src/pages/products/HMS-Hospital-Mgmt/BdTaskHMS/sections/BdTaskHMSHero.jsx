@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import React from 'react';
 import heroImg from "@/assets/bdtaskhms-img/bdtaskhmshero.webp";
 
@@ -37,10 +38,14 @@ const BdTaskHMSHero = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
                         </div>
                     </div>
 
-                    <div className="w-full lg:w-1/2 flex justify-center">
+                    <div className="w-full lg:w-1/2 flex justify-center flex-wrap gap-4">
                         <div className="w-full max-w-md aspect-square rounded-[2rem] bg-indigo-900/50 border border-purple-500/30 backdrop-blur-sm shadow-2xl relative overflow-hidden group p-2">
                             <img src={heroImg} alt="BdTask HMS Dashboard" className="w-full h-full object-cover rounded-[1.5rem] group-hover:scale-105 transition-transform duration-700" />
                         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Users, TrendingUp } from "lucide-react";
+import { Star, Users, TrendingUp, MessageCircle } from "lucide-react";
 
 const EneftiHero = () => {
     return (
@@ -43,6 +43,10 @@ const EneftiHero = () => {
                             >
                                 Live Demo
                             </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
                         </div>
 
                         {/* Stats */}
@@ -77,7 +81,7 @@ const EneftiHero = () => {
                     </div>
 
                     {/* RIGHT IMAGE */}
-                    <div className="relative flex justify-center lg:justify-end order-1 lg:order-2 ml-auto">
+                    <div className="relative flex justify-center lg:justify-end order-1 lg:order-2 ml-auto flex-wrap gap-4">
 
                         {/* Premium Badge */}
                         <div className="absolute top-4 right-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm px-4 py-1 rounded-full z-10">

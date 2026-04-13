@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import React from "react";
 import carrentalheroimg from "@/assets/carrental-app-img/carrentalhero.avif"
 const CarRentalHero = () => {
@@ -39,6 +40,10 @@ const CarRentalHero = () => {
                             >
                                 👁 Live Demo
                             </a>
+                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                        <MessageCircle size={18} />
+                        Let's Discuss
+                    </a>
                         </div>
 
                         {/* STATS */}
@@ -64,13 +69,13 @@ const CarRentalHero = () => {
                     </div>
 
                     {/* RIGHT IMAGE */}
-                    <div className="relative flex justify-center lg:justify-end">
+                    <div className="relative flex justify-center lg:justify-end flex-wrap gap-4">
 
                         {/* Glow */}
                         <div className="absolute w-[420px] h-[420px]  blur-[120px] rounded-full"></div>
 
                         {/* IMAGE PLACEHOLDER */}
-                        <div className="relative w-full max-w-md h-[420px]  rounded-2xl flex items-center justify-center text-gray-300">
+                        <div className="relative w-full max-w-md h-[420px]  rounded-2xl flex items-center justify-center text-gray-300 flex-wrap gap-4">
                             <img src={carrentalheroimg}
                                 alt="Car Rental App"
                                 className="w-full h-full object-cover rounded-2xl" />
