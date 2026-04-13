@@ -13,7 +13,7 @@ import {
   ChevronRight,
   Rocket,
   Eye,
-  TrendingUp,, MessageCircle
+  TrendingUp, MessageCircle
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
