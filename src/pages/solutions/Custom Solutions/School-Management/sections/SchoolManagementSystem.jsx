@@ -37,7 +37,7 @@ const SchoolManagementSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             <span className="text-orange-600">School</span> Management Software
             <br />
-            <span className="bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
               Development Platform
             </span>
           </h2>

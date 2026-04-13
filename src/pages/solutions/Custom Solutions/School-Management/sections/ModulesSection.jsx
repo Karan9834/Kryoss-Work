@@ -37,7 +37,7 @@ const ModulesSection = () => {
 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             Modules Of{" "}
-            <span className="bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
               School Management System
             </span>
           </h2>

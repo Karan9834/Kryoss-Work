@@ -124,16 +124,16 @@ const CryptoExchangeApp = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-gray-900"
+                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
                             >
-                                Cryptocurrency Exchange <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Development</span>
+                                Cryptocurrency Exchange <br /> <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Development</span>
                             </motion.h1>
 
                             <motion.p
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.4, duration: 0.8 }}
-                                className="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0 font-semibold"
+                                className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto lg:mx-0 mb-6 text-gray-600"
                             >
                                 We are a top Cryptocurrency Exchange Development Company that has been developing cutting edge solutions using Blockchain. Complete solutions to unlock revenue and growth for your Crypto business.
                             </motion.p>
@@ -144,7 +144,7 @@ const CryptoExchangeApp = () => {
                                 transition={{ delay: 0.6, duration: 0.8 }}
                                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
                             >
-                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-blue-600 transition-all duration-300 flex items-center justify-center gap-2">
+                                <button className="text-[16px] font-semibold tracking-[0.01em] normal-case group px-8 py-4 bg-gray-900 text-white rounded-full hover:bg-blue-600 transition-all duration-300 flex items-center justify-center gap-2">
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
@@ -176,7 +176,7 @@ const CryptoExchangeApp = () => {
             <section className="relative overflow-hidden bg-white py-20 px-6">
                 <div className="relative z-10 max-w-7xl mx-auto">
                     <div className="text-center mb-16">
-                        <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold tracking-wide mb-4">
+                        <span className="text-[12px] font-medium tracking-[0.05em] uppercase inline-block px-4 py-1.5 bg-blue-100 text-blue-600 rounded-full mb-4">
                             Exchange Platforms
                         </span>
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900">
@@ -194,7 +194,7 @@ const CryptoExchangeApp = () => {
                                     <service.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">{service.desc}</p>
+                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600">{service.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -206,7 +206,7 @@ const CryptoExchangeApp = () => {
                 <div className="absolute inset-0 bg-[url('/grid-pattern-light.svg')] opacity-[0.05]" />
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-display">
+                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-white mb-6 font-display">
                             Cryptocurrency Exchange <span className="text-blue-400">Development Solutions</span>
                         </h2>
                     </div>
@@ -217,7 +217,7 @@ const CryptoExchangeApp = () => {
                                 <div className="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors border border-blue-800/50">
                                     <feature.icon className="text-blue-400 group-hover:text-white transition-colors" size={26} />
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                                <h3 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-white mb-3">{feature.title}</h3>
                                 <p className="text-blue-200/70 text-sm font-light leading-relaxed">{feature.desc}</p>
                             </div>
                         ))}
@@ -247,7 +247,7 @@ const CryptoExchangeApp = () => {
             <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/40 py-20 px-6">
                 <div className="relative z-10 max-w-7xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">
+                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-slate-900">
                             Advanced Features of <span className="text-blue-600">Crypto Exchange Software</span>
                         </h2>
                     </div>
@@ -259,7 +259,7 @@ const CryptoExchangeApp = () => {
                                     <feature.icon className="w-8 h-8 text-blue-600" />
                                     <h3 className="text-xl font-bold text-gray-900">{feature.title}</h3>
                                 </div>
-                                <p className="text-gray-600 text-sm leading-relaxed">{feature.desc}</p>
+                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600">{feature.desc}</p>
                             </div>
                         ))}
                     </div>

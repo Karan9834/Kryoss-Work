@@ -152,16 +152,16 @@ const ECommerceApp = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-gray-900"
+                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
                             >
-                                E-Commerce <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">App Development</span>
+                                E-Commerce <br /> <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">App Development</span>
                             </motion.h1>
 
                             <motion.p
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.4, duration: 0.8 }}
-                                className="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0 font-semibold"
+                                className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto lg:mx-0 mb-6 text-gray-600"
                             >
                                 Build your e-commerce solution with us and be ahead of the pack. Empower your business platform with our lightning-fast mobile infrastructure.
                             </motion.p>
@@ -172,7 +172,7 @@ const ECommerceApp = () => {
                                 transition={{ delay: 0.6, duration: 0.8 }}
                                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
                             >
-                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-orange-500 transition-all duration-300 flex items-center justify-center gap-2" onClick={() => document.getElementById('product-section')?.scrollIntoView({ behavior: 'smooth' })}>
+                                <button className="text-[16px] font-semibold tracking-[0.01em] normal-case group px-8 py-4 bg-gray-900 text-white rounded-full hover:bg-orange-500 transition-all duration-300 flex items-center justify-center gap-2" onClick={() => document.getElementById('product-section')?.scrollIntoView({ behavior: 'smooth' })}>
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
@@ -236,10 +236,10 @@ const ECommerceApp = () => {
                         </motion.div>
 
                         <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
                                 Complete multi-panel <span className="text-orange-500">Seamless System</span>
                             </h2>
-                            <p className="text-gray-600 mb-6 text-base font-semibold leading-relaxed max-w-lg">
+                            <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
                                 Kryoss Softech is a leading one-stop solution that provides impressive features and turnkey solutions using friendly services at affordable prices to give an edge to the competitors.
                             </p>
                             <ul className="space-y-4 mb-8">
@@ -275,13 +275,13 @@ const ECommerceApp = () => {
                 <div className="relative z-10 max-w-7xl mx-auto">
                     {/* Heading */}
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">
-                            <span className="bg-gradient-to-r from-orange-600 to-slate-800 bg-clip-text text-transparent">
+                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-slate-900">
+                            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-600 to-slate-800 bg-clip-text text-transparent">
                                 Must-Have
                             </span>{" "}
                             Features for E-Commerce
                         </h2>
-                        <p className="text-slate-500 mt-4 max-w-2xl mx-auto">
+                        <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-4 max-w-2xl mx-auto">
                             Complete solutions with dedicated panels ensuring flawless operations
                         </p>
                         <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-slate-500 rounded-full mx-auto mt-4"></div>
@@ -320,10 +320,10 @@ const ECommerceApp = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-orange-600 transition-colors">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                                                     Integrated module for seamless functionality
                                                 </p>
                                             </div>
@@ -340,10 +340,10 @@ const ECommerceApp = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-orange-600 transition-colors">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                                                     Advanced workflow logic optimization
                                                 </p>
                                             </div>
@@ -375,10 +375,10 @@ const ECommerceApp = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-orange-600 transition-colors">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                                                     Robust tool implementation structure
                                                 </p>
                                             </div>
@@ -395,10 +395,10 @@ const ECommerceApp = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-orange-600 transition-colors leading-tight">
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-orange-600 transition-colors">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                                                     Enhanced ecosystem control features
                                                 </p>
                                             </div>
@@ -416,7 +416,7 @@ const ECommerceApp = () => {
                 <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03]" />
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 font-display">
+                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-slate-900 mb-6 font-display">
                             Platform <span className="text-orange-600">Capabilities</span>
                         </h2>
                         <div className="flex justify-center gap-4 mt-8 bg-white p-2 rounded-2xl w-max mx-auto border border-slate-200 shadow-sm backdrop-blur-sm">
@@ -451,8 +451,8 @@ const ECommerceApp = () => {
                                     <div className="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-all duration-300">
                                         <feature.icon className="text-orange-600 group-hover:text-white transition-colors" size={28} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
-                                    <p className="text-slate-500 font-medium leading-relaxed">{feature.desc}</p>
+                                    <h3 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-900 mb-3">{feature.title}</h3>
+                                    <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500">{feature.desc}</p>
                                     
                                     {/* Subtle Watermark-style icon in background */}
                                     <div className="absolute -bottom-4 -right-4 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity">
@@ -492,10 +492,10 @@ const ECommerceApp = () => {
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
                     {/* Heading & Subheading - Top centered */}
                     <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-                        <span className="inline-block px-4 py-1.5 bg-orange-100 text-orange-600 rounded-full text-sm font-semibold tracking-wide mb-4">
+                        <span className="text-[12px] font-medium tracking-[0.05em] uppercase inline-block px-4 py-1.5 bg-orange-100 text-orange-600 rounded-full mb-4">
                             Why Choose Us
                         </span>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
                             Tailored to your{" "}
                             <span className="text-orange-500 relative inline-block">
                                 unique business
@@ -505,7 +505,7 @@ const ECommerceApp = () => {
                             </span>{" "}
                             needs
                         </h2>
-                        <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto">
+                        <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                             Our solution guarantees power, stability, and lifetime value packed with extraordinary integrations.
                         </p>
                     </div>
@@ -555,8 +555,8 @@ const ECommerceApp = () => {
                                                     <Icon size={24} strokeWidth={1.8} />
                                                 </div>
                                                 <div>
-                                                    <h4 className="font-bold text-gray-900 text-lg mb-2">{sol.title}</h4>
-                                                    <p className="text-gray-500 text-sm leading-relaxed">{sol.desc}</p>
+                                                    <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-900 mb-2">{sol.title}</h4>
+                                                    <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-500">{sol.desc}</p>
                                                 </div>
                                             </div>
                                         </div>

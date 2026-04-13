@@ -8,7 +8,7 @@ const AboutUs = () => {
         <div className="text-center mb-10 md:mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
             Job Portal {" "}
-            <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
               Development Company
             </span>
           </h2>

@@ -110,10 +110,10 @@ const SaasWorks = () => {
                     transition={{ duration: 0.8 }}
                     className="relative z-10 container mx-auto px-4"
                 >
-                    <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+                    <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">
                         SaaS <span className="text-orange-500">Works</span>
                     </h1>
-                    <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+                    <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto text-gray-200">
                         Explore our powerful SaaS platforms built to streamline business operations, automate workflows, and drive growth at scale.
                     </p>
                 </motion.div>
@@ -136,7 +136,7 @@ const SaasWorks = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-3xl md:text-4xl font-bold text-black mb-4"
+                            className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-black mb-4"
                         >
                             Our <span className="text-orange-500">SaaS</span> Portfolio
                         </motion.h2>
@@ -174,17 +174,17 @@ const SaasWorks = () => {
                                             <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-500">Project 0{idx + 1}</span>
                                         </div>
 
-                                        <h3 className="text-3xl md:text-4xl font-black text-gray-950 mb-6 leading-tight tracking-tight">
+                                        <h3 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-950 mb-6">
                                             {project.title}
                                         </h3>
 
-                                        <p className="text-lg text-gray-600 leading-relaxed mb-10 font-light">
+                                        <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-10">
                                             {project.description}
                                         </p>
 
                                         <div className="flex flex-wrap gap-2 mb-8">
                                             {project.tags?.map((tag) => (
-                                                <span key={tag} className="px-5 py-2 rounded-xl bg-white border border-gray-100 text-[10px] font-black uppercase tracking-widest text-gray-500 shadow-sm">
+                                                <span key={tag} className="px-5 py-2 rounded-xl bg-white border border-gray-100 text-[12px] font-medium tracking-[0.05em] uppercase text-gray-500 shadow-sm">
                                                     {tag}
                                                 </span>
                                             ))}

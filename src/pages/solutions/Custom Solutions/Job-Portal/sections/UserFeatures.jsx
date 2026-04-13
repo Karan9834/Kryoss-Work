@@ -64,12 +64,12 @@ const UsersFeature = () => {
 
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mt-6">
             Impressive Feature{" "}
-            <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
                of Job Portals
             </span>
           </h2>
 
-          <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
+          <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-400 mt-4 max-w-2xl mx-auto">
             Everything you need to run a successful job portal platform
           </p>
 

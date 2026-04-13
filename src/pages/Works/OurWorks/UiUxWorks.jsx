@@ -35,8 +35,8 @@ const UiUxWorks = () => {
                     transition={{ duration: 0.8 }}
                     className="relative z-10 container mx-auto px-4"
                 >
-                    <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">UI/UX <span className="text-orange-500">Works</span></h1>
-                    <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+                    <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">UI/UX <span className="text-orange-500">Works</span></h1>
+                    <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto text-gray-200">
                         We deliver the best UI/UX design services to build your product with a creative and user-friendly interface.
                     </p>
                 </motion.div>
@@ -62,7 +62,7 @@ const UiUxWorks = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-3xl md:text-4xl font-bold text-black mb-4"
+                            className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-black mb-4"
                         >
                             Our <span className="text-orange-500">Creative</span> Portfolio
                         </motion.h2>

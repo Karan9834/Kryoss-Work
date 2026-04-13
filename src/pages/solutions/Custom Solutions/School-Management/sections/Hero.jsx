@@ -43,7 +43,7 @@ const SchoolHero = () => {
           {/* HEADING */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
             Smart School <br className="hidden sm:block" />
-            <span className="bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
               Management Solution
             </span>
           </h1>

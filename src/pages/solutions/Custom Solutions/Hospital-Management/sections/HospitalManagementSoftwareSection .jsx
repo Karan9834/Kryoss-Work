@@ -103,12 +103,12 @@ const HospitalManagementSoftwareSection = () => {
 
           <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
             Smart Hospital Management <br />
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Powered by Technology
             </span>
           </h1>
 
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+          <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-400 mt-4 max-w-2xl mx-auto">
             Automate operations, improve patient care, and manage everything from one unified platform.
           </p>
         </div>
@@ -131,7 +131,7 @@ const HospitalManagementSoftwareSection = () => {
               </h3>
 
               {/* Description */}
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-400">
                 {feature.description}
               </p>
 

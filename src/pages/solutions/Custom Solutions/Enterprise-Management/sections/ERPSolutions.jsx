@@ -77,7 +77,7 @@ const ERPSolutions = () => {
           {/* Heading */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
             Modern, Integrated,{" "}
-            <span className="bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
               Custom ERP Solutions
             </span>
           </h2>
@@ -98,7 +98,7 @@ const ERPSolutions = () => {
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-gray-900">{item.title}</h3>
-                  <p className="text-xs text-gray-500 mt-0.5 leading-relaxed">{item.description}</p>
+                  <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-500 mt-0.5">{item.description}</p>
                 </div>
               </div>
             ))}

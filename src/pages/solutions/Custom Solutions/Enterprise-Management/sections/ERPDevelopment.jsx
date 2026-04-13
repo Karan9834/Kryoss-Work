@@ -37,7 +37,7 @@ const ERPDevelopment = () => {
           {/* Heading */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
             ERP - Enterprise Resource Planning{" "}
-            <span className="bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
               Development Company
             </span>
           </h2>

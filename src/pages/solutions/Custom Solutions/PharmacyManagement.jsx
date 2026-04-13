@@ -99,16 +99,16 @@ const PharmacyManagement = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-gray-900"
+                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
                             >
-                                Pharmacy Management <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">System Solution</span>
+                                Pharmacy Management <br /> <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">System Solution</span>
                             </motion.h1>
 
                             <motion.p
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.4, duration: 0.8 }}
-                                className="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0 font-semibold"
+                                className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto lg:mx-0 mb-6 text-gray-600"
                             >
                                 In concurrent times when pharmacy management software development is in outstanding demand, our developers leave no stones unturned to provide custom-made, cost-effective solutions. 100% Guaranteed Compliance.
                             </motion.p>
@@ -119,7 +119,7 @@ const PharmacyManagement = () => {
                                 transition={{ delay: 0.6, duration: 0.8 }}
                                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
                             >
-                                <button className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-green-600 transition-all duration-300 flex items-center justify-center gap-2">
+                                <button className="text-[16px] font-semibold tracking-[0.01em] normal-case group px-8 py-4 bg-gray-900 text-white rounded-full hover:bg-green-600 transition-all duration-300 flex items-center justify-center gap-2">
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
@@ -166,10 +166,10 @@ const PharmacyManagement = () => {
                         </motion.div>
 
                         <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
                                 What is <span className="text-green-600">Pharmacy Management</span> Software?
                             </h2>
-                            <p className="text-gray-600 mb-6 text-base font-semibold leading-relaxed max-w-lg">
+                            <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
                                 Pharmacy management software enables users at pharmacy stores to optimize operational efficiency, leverage actionable data points, and reduce costs, compliance risks, and flaws. The solutions are enriched with an extensive range of features that streamline the workflows for a majority of tasks, including drug dispensing, medical claims management, as well as patient's medication adherence.
                             </p>
                             <p className="text-gray-600 mb-8 text-base leading-relaxed max-w-lg">
@@ -187,7 +187,7 @@ const PharmacyManagement = () => {
             <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-green-50/40 py-20 px-6">
                 <div className="relative z-10 max-w-7xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">
+                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-slate-900">
                             Wide Range of <span className="text-green-600">Pharmacy Software Development</span> Services
                         </h2>
                         <div className="w-20 h-1 bg-gradient-to-r from-green-500 to-teal-500 rounded-full mx-auto mt-6"></div>
@@ -200,7 +200,7 @@ const PharmacyManagement = () => {
                                     <service.icon className="w-8 h-8 text-green-600 group-hover:text-white transition-colors" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">{service.desc}</p>
+                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600">{service.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -212,7 +212,7 @@ const PharmacyManagement = () => {
                 <div className="absolute inset-0 bg-[url('/grid-pattern-light.svg')] opacity-[0.05]" />
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-display">
+                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-white mb-6 font-display">
                             Pharmacy Management <span className="text-green-400">System Features</span>
                         </h2>
                     </div>
@@ -223,7 +223,7 @@ const PharmacyManagement = () => {
                                 <div className="w-14 h-14 bg-green-900/50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors border border-green-800/50">
                                     <feature.icon className="text-green-400 group-hover:text-white transition-colors" size={26} />
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                                <h3 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-white mb-3">{feature.title}</h3>
                                 <p className="text-green-200/70 text-sm font-light leading-relaxed">{feature.desc}</p>
                             </div>
                         ))}
@@ -237,7 +237,7 @@ const PharmacyManagement = () => {
                     <div className="flex flex-col lg:flex-row gap-16 xl:gap-20">
                         {/* Benefits Panel */}
                         <div className="w-full lg:w-1/2">
-                            <span className="inline-block px-4 py-1.5 bg-green-100 text-green-600 rounded-full text-sm font-semibold tracking-wide mb-4">
+                            <span className="text-[12px] font-medium tracking-[0.05em] uppercase inline-block px-4 py-1.5 bg-green-100 text-green-600 rounded-full mb-4">
                                 Why Upgrade?
                             </span>
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">

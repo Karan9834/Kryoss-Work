@@ -78,7 +78,7 @@ const NewsMagazine = () => {
           transition={{ duration: 0.8 }}
           className="relative z-10 container mx-auto px-4"
         >
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">News & Magazine <span className="text-orange-500">Works</span></h1>
+          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">News & Magazine <span className="text-orange-500">Works</span></h1>
         </motion.div>
       </section>
 

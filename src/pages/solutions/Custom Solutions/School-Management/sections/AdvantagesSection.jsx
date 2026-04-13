@@ -65,7 +65,7 @@ const AdvantagesSection = () => {
 
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
               Why Choose{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
+              <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
                 Kryoss Work?
               </span>
             </h2>
@@ -95,7 +95,7 @@ const AdvantagesSection = () => {
                   <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600">
                     {item.desc}
                   </p>
                 </div>

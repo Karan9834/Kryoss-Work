@@ -299,12 +299,12 @@ const FeatureSection = () => {
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900">
-            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
               Must-Have
             </span>{" "}
             Features for Job Portal
           </h2>
-          <p className="text-slate-500 mt-4 max-w-2xl mx-auto">
+          <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-4 max-w-2xl mx-auto">
             Complete job portal solution with user, recruiter and admin panels
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mx-auto mt-4"></div>
@@ -346,10 +346,10 @@ const FeatureSection = () => {
                       {item.icon}
                     </span>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight">
+                      <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-indigo-600 transition-colors">
                         {item.title}
                       </h4>
-                      <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                      <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                         {item.description}
                       </p>
                     </div>
@@ -368,10 +368,10 @@ const FeatureSection = () => {
                       {item.icon}
                     </span>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight">
+                      <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-indigo-600 transition-colors">
                         {item.title}
                       </h4>
-                      <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                      <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                         {item.description}
                       </p>
                     </div>
@@ -404,10 +404,10 @@ const FeatureSection = () => {
                       {item.icon}
                     </span>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight">
+                      <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-indigo-600 transition-colors">
                         {item.title}
                       </h4>
-                      <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                      <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                         {item.description}
                       </p>
                     </div>
@@ -426,10 +426,10 @@ const FeatureSection = () => {
                       {item.icon}
                     </span>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors leading-tight">
+                      <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-indigo-600 transition-colors">
                         {item.title}
                       </h4>
-                      <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                      <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                         {item.description}
                       </p>
                     </div>

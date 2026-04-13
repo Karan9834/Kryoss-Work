@@ -120,16 +120,16 @@ const FoodRestaurantIndustry = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-gray-900"
+                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
                             >
-                                Food & Restaurant <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500">App Development</span>
+                                Food & Restaurant <br /> <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500">App Development</span>
                             </motion.h1>
 
                             <motion.p
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.4, duration: 0.8 }}
-                                className="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0 font-semibold"
+                                className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto lg:mx-0 mb-6 text-gray-600"
                             >
                                 Kryoss builds highly efficient, beautifully categorized food ordering and delivery management platforms for established restaurant chains aiming to drastically scale order volume operations directly.
                             </motion.p>
@@ -177,10 +177,10 @@ const FoodRestaurantIndustry = () => {
                         </motion.div>
 
                         <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
                                 Restaurant & Food <span className="text-red-500">Tech Solutions</span>
                             </h2>
-                            <p className="text-gray-600 mb-6 text-base font-semibold leading-relaxed max-w-lg">
+                            <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
                                 Whether you are a small takeaway joint or a nationwide chain, our custom systems cover multi-store inventory setups, automated kitchen display screens, and delivery personnel routing flawlessly under one hood.
                             </p>
                         </div>
@@ -192,8 +192,8 @@ const FoodRestaurantIndustry = () => {
             <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-red-50/40 py-20 px-6">
                 <div className="relative z-10 max-w-7xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">
-                            <span className="bg-gradient-to-r from-red-600 to-slate-800 bg-clip-text text-transparent">
+                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-slate-900">
+                            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-red-600 to-slate-800 bg-clip-text text-transparent">
                                 Must-Have
                             </span>{" "}
                             Features of Delivery Platform
@@ -226,7 +226,7 @@ const FoodRestaurantIndustry = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-red-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div className="flex flex-col justify-center">
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-red-600 transition-colors leading-tight">{item}</h4>
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-red-600 transition-colors">{item}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -238,7 +238,7 @@ const FoodRestaurantIndustry = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-red-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div className="flex flex-col justify-center">
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-red-600 transition-colors leading-tight">{item}</h4>
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-red-600 transition-colors">{item}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -262,7 +262,7 @@ const FoodRestaurantIndustry = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-red-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div className="flex flex-col justify-center">
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-red-600 transition-colors leading-tight">{item}</h4>
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-red-600 transition-colors">{item}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -274,7 +274,7 @@ const FoodRestaurantIndustry = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-red-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div className="flex flex-col justify-center">
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-red-600 transition-colors leading-tight">{item}</h4>
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-red-600 transition-colors">{item}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -305,7 +305,7 @@ const FoodRestaurantIndustry = () => {
                                     <div className="w-14 h-14 bg-red-900/50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-500 transition-colors border border-red-800/50">
                                         <feature.icon className="text-red-400 group-hover:text-white transition-colors" size={26} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                                    <h3 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-white mb-3">{feature.title}</h3>
                                     <p className="text-red-100/70 font-light leading-relaxed">{feature.desc}</p>
                                 </div>
                             ))}
@@ -332,8 +332,8 @@ const FoodRestaurantIndustry = () => {
             <section className="py-24 bg-gradient-to-br from-white via-red-50/30 to-white relative overflow-hidden">
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-                        <span className="inline-block px-4 py-1.5 bg-red-100 text-red-600 rounded-full text-sm font-semibold tracking-wide mb-4">Why Choose Us</span>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        <span className="text-[12px] font-medium tracking-[0.05em] uppercase inline-block px-4 py-1.5 bg-red-100 text-red-600 rounded-full mb-4">Why Choose Us</span>
+                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
                             Tailored to your <span className="text-red-500 relative inline-block">unique business</span> needs
                         </h2>
                     </div>
@@ -357,8 +357,8 @@ const FoodRestaurantIndustry = () => {
                                                     <Icon size={24} strokeWidth={1.8} />
                                                 </div>
                                                 <div>
-                                                    <h4 className="font-bold text-gray-900 text-lg mb-2">{sol.title}</h4>
-                                                    <p className="text-gray-500 text-sm leading-relaxed">{sol.desc}</p>
+                                                    <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-900 mb-2">{sol.title}</h4>
+                                                    <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-500">{sol.desc}</p>
                                                 </div>
                                             </div>
                                         </div>

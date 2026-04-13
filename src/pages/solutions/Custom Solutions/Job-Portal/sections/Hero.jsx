@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="max-w-xl">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight">
             Find your{" "}
-            <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
               dream job
             </span>{" "}
             faster & smarter

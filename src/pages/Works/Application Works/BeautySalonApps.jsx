@@ -21,8 +21,8 @@ const BeautySalonApps = () => {
                 }}
             >
                 <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="relative z-10 container mx-auto px-4">
-                    <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Beauty & <span className="text-orange-500">Salon Apps</span></h1>
-                    <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+                    <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">Beauty & <span className="text-orange-500">Salon Apps</span></h1>
+                    <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto text-gray-200">
                         Elegant beauty and salon booking application solutions for the modern wellness industry.
                     </p>
                 </motion.div>
@@ -39,7 +39,7 @@ const BeautySalonApps = () => {
             <section className="pt-16 md:pt-24 bg-white relative z-10 w-full mb-16">
                 <div className="container mx-auto px-4 lg:px-8">
                     <div className="text-center mb-12">
-                        <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-3xl md:text-4xl font-bold text-black mb-4">
+                        <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-black mb-4">
                             Our <span className="text-orange-500">Beauty & Salon</span> Portfolio
                         </motion.h2>
                         <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>

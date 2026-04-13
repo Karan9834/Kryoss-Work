@@ -81,7 +81,7 @@ const CustomFeatureUpgrades = () => {
           {/* HEADING */}
           <h2 className="text-[1.875rem] md:text-[2.5rem] lg:text-[3rem] font-bold text-gray-900 leading-tight mb-4">
             Custom{" "}
-            <span className="bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent">
               Feature Upgrades
             </span>
           </h2>

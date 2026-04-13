@@ -126,16 +126,16 @@ const LaundryApp = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-gray-900"
+                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
                             >
-                                On Demand Laundry <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">App Development</span>
+                                On Demand Laundry <br /> <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">App Development</span>
                             </motion.h1>
 
                             <motion.p
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.4, duration: 0.8 }}
-                                className="text-base text-gray-600 mb-6 max-w-lg mx-auto lg:mx-0 font-semibold"
+                                className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto lg:mx-0 mb-6 text-gray-600"
                             >
                                 Giving You Time Behind For The Important Stuff! We provide custom and readymade mobile app services all around the globe.
                             </motion.p>
@@ -146,7 +146,7 @@ const LaundryApp = () => {
                                 transition={{ delay: 0.6, duration: 0.8 }}
                                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
                             >
-                                <Link to="/company/contact" className="group px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-blue-600 transition-all duration-300 flex items-center justify-center gap-2">
+                                <Link to="/company/contact" className="text-[16px] font-semibold tracking-[0.01em] normal-case group px-8 py-4 bg-gray-900 text-white rounded-full hover:bg-blue-600 transition-all duration-300 flex items-center justify-center gap-2">
                                     Get Started
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </Link>
@@ -212,10 +212,10 @@ const LaundryApp = () => {
                         </motion.div>
 
                         <div className="w-full lg:w-1/2">
-                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
                                 Integrated <span className="text-blue-600">Laundry Solution</span>
                             </h2>
-                            <p className="text-gray-600 mb-6 text-base font-semibold leading-relaxed max-w-lg">
+                            <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
                                 We help you create an effective dry cleaning app to provide to your customers and make the target ROI. Our solution is comprehensive and powerful.
                             </p>
                             <ul className="space-y-4 mb-8">
@@ -250,13 +250,13 @@ const LaundryApp = () => {
 
                 <div className="relative z-10 max-w-7xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">
-                            <span className="bg-gradient-to-r from-blue-600 to-slate-800 bg-clip-text text-transparent">
+                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-slate-900">
+                            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-600 to-slate-800 bg-clip-text text-transparent">
                                 Must-Have
                             </span>{" "}
                             Laundry App Features
                         </h2>
-                        <p className="text-slate-500 mt-4 max-w-2xl mx-auto">
+                        <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-4 max-w-2xl mx-auto">
                             Complete on-demand laundry solution with user, vendor and admin panels
                         </p>
                         <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-slate-500 rounded-full mx-auto mt-4"></div>
@@ -294,10 +294,10 @@ const LaundryApp = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-blue-600 transition-colors leading-tight">
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-blue-600 transition-colors">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                                                     Streamlined service flow
                                                 </p>
                                             </div>
@@ -314,10 +314,10 @@ const LaundryApp = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-blue-600 transition-colors leading-tight">
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-blue-600 transition-colors">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                                                     Enhanced business logic
                                                 </p>
                                             </div>
@@ -349,10 +349,10 @@ const LaundryApp = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-blue-600 transition-colors leading-tight">
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-blue-600 transition-colors">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                                                     User engagement tools
                                                 </p>
                                             </div>
@@ -369,10 +369,10 @@ const LaundryApp = () => {
                                         <div className="flex gap-2 w-full items-start">
                                             <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                                             <div>
-                                                <h4 className="text-sm font-semibold text-slate-800 group-hover:text-blue-600 transition-colors leading-tight">
+                                                <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-blue-600 transition-colors">
                                                     {item}
                                                 </h4>
-                                                <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-0.5">
                                                     Management operations
                                                 </p>
                                             </div>
@@ -425,7 +425,7 @@ const LaundryApp = () => {
                                     <div className="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors border border-blue-800/50">
                                         <feature.icon className="text-blue-400 group-hover:text-white transition-colors" size={26} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                                    <h3 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-white mb-3">{feature.title}</h3>
                                     <p className="text-blue-200/70 font-light leading-relaxed text-sm">{feature.desc}</p>
                                 </div>
                             ))}
@@ -459,10 +459,10 @@ const LaundryApp = () => {
 
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-                        <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold tracking-wide mb-4">
+                        <span className="text-[12px] font-medium tracking-[0.05em] uppercase inline-block px-4 py-1.5 bg-blue-100 text-blue-600 rounded-full mb-4">
                             Premium Benefits
                         </span>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
                             Tailored to your{" "}
                             <span className="text-blue-600 relative inline-block">
                                 laundry business
@@ -471,7 +471,7 @@ const LaundryApp = () => {
                                 </svg>
                             </span>{" "}
                         </h2>
-                        <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto">
+                        <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
                             Our solution will be tailored to the unique needs of our Clients and packed with powerful features and integrations.
                         </p>
                     </div>
@@ -515,8 +515,8 @@ const LaundryApp = () => {
                                                     <Icon size={24} strokeWidth={1.8} />
                                                 </div>
                                                 <div>
-                                                    <h4 className="font-bold text-gray-900 text-lg mb-2">{sol.title}</h4>
-                                                    <p className="text-gray-500 text-sm leading-relaxed">{sol.desc}</p>
+                                                    <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-900 mb-2">{sol.title}</h4>
+                                                    <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-500">{sol.desc}</p>
                                                 </div>
                                             </div>
                                         </div>

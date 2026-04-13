@@ -36,7 +36,7 @@ const LmsCardSection = () => {
                </div>
 
                <h2 className="text-3xl lg:text-4xl font-semibold leading-tight tracking-tight">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-700 via-purple-600 to-fuchsia-500 uppercase">
+                  <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-violet-700 via-purple-600 to-fuchsia-500 uppercase">
                      Specialized LMS Modules
                   </span>
                </h2>

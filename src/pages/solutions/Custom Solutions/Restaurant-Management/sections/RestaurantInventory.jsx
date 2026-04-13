@@ -51,7 +51,7 @@ const RestaurantInventory = () => {
           {/* Heading */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
             Restaurant{" "}
-            <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
               Inventory Software
             </span>
           </h2>

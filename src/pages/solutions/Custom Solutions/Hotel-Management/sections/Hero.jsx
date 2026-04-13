@@ -39,7 +39,7 @@ const Hero = () => {
             >
               <span className="text-gray-800">Streamline Your</span>
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">
+              <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">
                 Hotel Operations
               </span>
             </motion.h1>

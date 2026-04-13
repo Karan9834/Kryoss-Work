@@ -56,7 +56,7 @@ const NewsHero = () => {
             >
               <span className="text-white">Manage Your</span>
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-200 to-rose-200">
+              <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-red-200 to-rose-200">
                 News & Content
               </span>
             </motion.h1>
