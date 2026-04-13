@@ -76,11 +76,18 @@ const CareerWhyUs = () => {
                         advanced resources, and celebrating every milestone together!
                     </p>
 
+                    {/* Why Us Image */}
+                    <img
+                        src="/images/company/companyabout/commitment.png"
+                        alt="Work Culture at Kryoss Work"
+                        className="mt-8 w-full max-w-[600px] max-h-[450px] rounded-2xl object-cover shadow-lg"
+                    />
+
                 </div>
 
                 {/* RIGHT CARDS */}
 
-                <div className="h-[620px] overflow-y-auto pr-4 space-y-6"
+                <div className="h-[650px] overflow-y-auto pr-4 space-y-6"
                     style={{
                         scrollbarWidth: "none",
                         msOverflowStyle: "none",

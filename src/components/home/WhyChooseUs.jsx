@@ -1,45 +1,47 @@
 import { Link } from 'react-router-dom';
 import React from "react";
 
+// Images
+import industryImg from "../../assets/Home/Industry-Specific Solutions.png";
+import expertImg from "../../assets/Home/Expert Team & Support.png";
+import trackImg from "../../assets/Home/Proven Track Record.png";
+import techImg from "../../assets/Home/Cutting-Edge Technology.png";
+import userImg from "../../assets/Home/User-Centric Approach4.png";
+import e2eImg from "../../assets/Home/End-to-End Service.png";
+
 const reasons = [
   {
-    image: "/whitelabel-assets/assets/images/why-choose/industry-solutions.webp",
-    fallback: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80",
+    image: industryImg,
     title: "Industry-Specific Solutions",
     description: "We deeply understand your industry's nuances and deliver solutions crafted for your specific vertical and user base.",
     icon: "🏭"
   },
   {
-    image: "/whitelabel-assets/assets/images/why-choose/expert-team.webp",
-    fallback: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&q=80",
+    image: expertImg,
     title: "Expert Team & Support",
     description: "Our 40+ skilled developers, designers, and consultants are with you every step — from planning to post-launch.",
     icon: "👥"
   },
   {
-    image: "/whitelabel-assets/assets/images/why-choose/track-record.webp",
-    fallback: "https://images.unsplash.com/photo-1551135049-8a33b5883817?w=400&q=80",
+    image: trackImg,
     title: "Proven Track Record",
     description: "250+ successfully delivered projects across 70+ countries speak to our reliability and commitment to excellence.",
     icon: "🏆"
   },
   {
-    image: "/whitelabel-assets/assets/images/why-choose/tech.webp",
-    fallback: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80",
+    image: techImg,
     title: "Cutting-Edge Technology",
     description: "We leverage the latest frameworks, AI tools, and cloud infrastructure to future-proof your product.",
     icon: "⚡"
   },
   {
-    image: "/whitelabel-assets/assets/images/why-choose/user-centric.webp",
-    fallback: "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400&q=80",
+    image: userImg,
     title: "User-Centric Approach",
     description: "Every design and development decision is guided by deep user research and proven UX principles.",
     icon: "🎯"
   },
   {
-    image: "/whitelabel-assets/assets/images/why-choose/end-to-end.webp",
-    fallback: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80",
+    image: e2eImg,
     title: "End-to-End Service",
     description: "From ideation and design to development, deployment, and ongoing support — we handle it all.",
     icon: "🔄"
@@ -116,12 +118,6 @@ export default function WhyChooseUs() {
                   src={r.image}
                   alt={r.title}
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    if (!e.currentTarget.dataset.error) {
-                      e.currentTarget.dataset.error = "true";
-                      e.currentTarget.src = r.fallback;
-                    }
-                  }}
                 />
 
                 {/* Icon Badge */}

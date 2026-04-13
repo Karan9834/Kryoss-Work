@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from "react";
 import { Cpu, Users, Rocket, ArrowRight } from "lucide-react";
-import img from "../../assets/Home/about.png";
+import img from "../../assets/Home/approach.png";
 
 const WorkApproach = () => {
   return (

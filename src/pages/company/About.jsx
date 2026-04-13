@@ -8,7 +8,7 @@ import EmpoweringGrowth from '../../components/About/EmpoweringGrowth';
 import MovingStats from '../../components/About/MovingStats';
 import VisionMission from '../../components/About/VisionMission';
 import AwardsRecognition from '../../components/About/AwardsRecognition';
-import LeadershipInsights from '../../components/About/LeadershipInsights';
+// import LeadershipInsights from '../../components/About/LeadershipInsights';
 import Commitment from '../../components/About/Commitment';
 import AwardRecognition from '../../components/About/AwardRecognition';
 import Contact from '../../components/About/Contact';
@@ -28,20 +28,20 @@ const AboutPage = () => {
         // </div>
 
         <>
-        <Hero/>
-        <About/>
-        <GrowthJourney/>
-        <EmpoweringGrowth/>
-        <MovingStats/>
-        <VisionMission/>
-        <AwardsRecognition/>
-        <LeadershipInsights/>
-        <Commitment/>
-        <AwardRecognition/>
-        <Contact/>
-        <NewsletterSection/>
-        <TeamMoments/>
-        
+            <Hero />
+            <About />
+            <GrowthJourney />
+            <EmpoweringGrowth />
+            <MovingStats />
+            <VisionMission />
+            <AwardsRecognition />
+            {/* <LeadershipInsights/> */}
+            <Commitment />
+            <AwardRecognition />
+            <Contact />
+            <NewsletterSection />
+            <TeamMoments />
+
         </>
     );
 };
