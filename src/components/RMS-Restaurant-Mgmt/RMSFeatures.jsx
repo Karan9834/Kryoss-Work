@@ -43,15 +43,20 @@ const RMSFeatures = () => {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
                 <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-red-500/30 bg-red-500/10 shadow-sm text-sm font-bold uppercase tracking-wider text-rose-300">
+                    {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-red-500/30 bg-red-500/10 shadow-sm text-[12px] font-medium tracking-[0.05em] uppercase text-rose-300">
                         Premium Hospitality Tools
                     </div>
-                    <h2 className="text-3xl lg:text-4xl font-bold leading-tight">
+                    
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-300 to-amber-300">
                             Engineered For Excellence
                         </span>
                     </h2>
-                    <p className="text-gray-400 text-lg">
+                    
+                    {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-gray-400 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         We developed modules specific to the restaurant industry to cover your entire workflow from procurement to plate, wrapped in a sleek interface.
                     </p>
                 </div>
@@ -70,14 +75,15 @@ const RMSFeatures = () => {
                                 {feature.icon}
                             </div>
 
-                            <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-300 transition-colors">{feature.title}</h3>
-                            <p className="text-gray-400 leading-relaxed font-medium">
+                            {/* Card Title - Updated: text-[20px] md:text-[22px] font-bold leading-[1.3] */}
+                            <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 group-hover:text-red-300 transition-colors">
+                                {feature.title}
+                            </h3>
+                            
+                            {/* Card Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                            <p className="text-gray-400 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                                 {feature.desc}
                             </p>
-
-                            {/* <div className="mt-auto pt-8 flex items-center gap-2 text-sm font-bold text-gray-500 group-hover:text-red-400 cursor-pointer transition-colors w-full">
-                                Explore Module <div className="w-10 h-[1px] bg-red-900 group-hover:bg-red-400 transition-colors duration-300"></div>
-                            </div> */}
                         </div>
                     ))}
                 </div>

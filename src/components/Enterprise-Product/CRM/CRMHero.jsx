@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -25,20 +24,20 @@ const CRMHero = () => {
           className="text-white"
         >
 
-          {/* Badge */}
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="flex items-center gap-3 mb-6">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center
               bg-white/10 backdrop-blur-md border border-white/20">
               📊
             </div>
 
-            <span className="uppercase tracking-widest text-sm font-semibold text-gray-300">
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-300">
               VYOM CRM
             </span>
           </div>
 
-          {/* Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">
             <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
               Customer Relationship
             </span>
@@ -46,20 +45,19 @@ const CRMHero = () => {
             Management Platform
           </h1>
 
-          {/* Description */}
-          <p className="text-gray-400 mb-8 max-w-xl text-lg">
+          {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+          <p className="text-gray-400 mb-8 max-w-xl text-[16px] md:text-[18px] font-normal leading-[1.6]">
             Manage leads, track sales, and build stronger customer relationships
             with a powerful CRM platform designed for modern businesses.
           </p>
 
-          {/* CTA */}
+          {/* CTA Button - Updated typography */}
           <Link to="/company/contact"
-            
             className="inline-flex items-center gap-3 
               bg-gradient-to-r from-blue-500 to-indigo-600
               px-8 py-3 rounded-full font-semibold text-white
               shadow-lg hover:shadow-blue-500/40 
-              hover:scale-105 transition-all duration-300"
+              hover:scale-105 transition-all duration-300 text-[16px] tracking-[0.01em]"
           >
             Get Free Consultation
             <ArrowRight size={18} />

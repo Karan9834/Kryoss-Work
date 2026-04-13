@@ -53,15 +53,20 @@ const EMSFeatures = () => {
                 
                 {/* Header Phase */}
                 <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-100 shadow-sm text-sm font-bold uppercase tracking-wider text-pink-500">
+                    {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-100 shadow-sm text-[12px] font-medium tracking-[0.05em] uppercase text-pink-500">
                         Powerful Modules
                     </div>
-                    <h2 className="text-3xl lg:text-4xl font-bold leading-tight">
+                    
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-pink-600 to-orange-500">
                             Everything You Need to Host Brilliant Events
                         </span>
                     </h2>
-                    <p className="text-gray-600 text-lg">
+                    
+                    {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         Our comprehensive suit of tools empowers you to handle the logistics while you focus on the actual experience.
                     </p>
                 </div>
@@ -76,8 +81,12 @@ const EMSFeatures = () => {
                             <div className="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-6 border border-white group-hover:scale-110 transition-transform duration-300">
                                 {feature.icon}
                             </div>
-                            <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.title}</h3>
-                            <p className="text-gray-600 leading-relaxed font-medium">
+                            {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                            <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-gray-800 mb-3">
+                                {feature.title}
+                            </h3>
+                            {/* Card Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                            <p className="text-gray-600 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                                 {feature.desc}
                             </p>
                         </div>

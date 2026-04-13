@@ -89,22 +89,22 @@ const Features = () => {
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          {/* Badge */}
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
-            <Sparkles size={16} className="text-yellow-400" />
-            <span className="text-sm font-semibold text-white">Powerful Features</span>
+            <Sparkles size={14} className="text-yellow-400" />
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-white">Powerful Features</span>
           </div>
           
-          {/* Title */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white mb-4">
             Everything You Need to{" "}
             <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
               Scale Your Business
             </span>
           </h2>
           
-          {/* Description */}
-          <p className="text-blue-100 text-lg max-w-2xl mx-auto">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-blue-100 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
             Discover the powerful features that make our platform the best choice for modern inventory management
           </p>
         </div>
@@ -131,15 +131,16 @@ const Features = () => {
                   </div>
                 </div>
                 
-                {/* Title */}
-                <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-blue-200 group-hover:bg-clip-text transition-all duration-300">
+                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-blue-200 group-hover:bg-clip-text transition-all duration-300">
                   {feature.title}
                 </h3>
                 
-                {/* Description */}
-                <p className="text-blue-100 text-sm leading-relaxed">
+                {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+                <p className="text-blue-100 text-[14px] md:text-[14px] font-normal leading-[1.6]">
                   {feature.description}
-                </p> 
+                </p>
+                
                 {/* Animated Border */}
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
               </div>

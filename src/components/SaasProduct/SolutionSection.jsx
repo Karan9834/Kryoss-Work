@@ -64,13 +64,23 @@ const SolutionsSection = () => {
 
         {/* HEADER */}
         <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+          {/* Optional Badge - Add if needed */}
+          {/* <div className="inline-flex items-center justify-center mb-4">
+            <div className="px-4 py-1.5 rounded-full bg-purple-50 border border-purple-100">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-purple-600">Our Solutions</span>
+            </div>
+          </div> */}
+          
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Next-Gen SaaS{" "}
             <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">
               Experience
             </span>
           </h2>
-          <p className="text-gray-600 mt-4 text-lg">
+          
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Designed for performance, built for scale.
           </p>
         </div>
@@ -123,26 +133,28 @@ const SolutionsSection = () => {
                         <Icon className="text-white w-5 h-5" />
                       </div>
 
-                      <h3 className="text-2xl font-semibold mb-2">
+                      {/* Card Title - Updated: text-[20px] md:text-[24px] font-bold leading-[1.3] */}
+                      <h3 className="text-[20px] md:text-[24px] font-bold leading-[1.3] mb-2">
                         {item.title}
                       </h3>
 
-                      <p className="text-gray-600 mb-4">
+                      {/* Card Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                      <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] mb-4">
                         {item.description}
                       </p>
 
-                      {/* BULLETS */}
+                      {/* BULLETS - Updated: text-[13px] md:text-[14px] font-normal */}
                       <ul className="space-y-2 mb-4">
                         {item.points.map((p, i) => (
-                          <li key={i} className="flex items-center gap-2 text-sm">
+                          <li key={i} className="flex items-center gap-2 text-[13px] md:text-[14px] font-normal text-gray-600">
                             <CheckCircle className="w-4 h-4 text-purple-500" />
                             {p}
                           </li>
                         ))}
                       </ul>
 
-                      {/* CTA */}
-                      <button className="inline-flex items-center gap-2 text-sm font-medium text-purple-600 hover:text-purple-800 transition">
+                      {/* CTA - Updated: text-[13px] md:text-[14px] font-medium */}
+                      <button className="inline-flex items-center gap-2 text-[13px] md:text-[14px] font-medium text-purple-600 hover:text-purple-800 transition">
                         Learn more
                         <ArrowRight className="w-4 h-4" />
                       </button>

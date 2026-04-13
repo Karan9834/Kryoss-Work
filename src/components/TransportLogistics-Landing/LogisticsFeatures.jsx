@@ -58,10 +58,17 @@ const LogisticsFeatures = () => {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="text-center mb-16 space-y-4">
-                    <span className="text-orange-400 font-bold text-sm uppercase tracking-widest bg-orange-500/10 px-4 py-2 rounded-full border border-orange-500/20">Platform Features</span>
-                    <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-white leading-tight mt-6">
+                    {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                    <span className="text-orange-400 text-[12px] font-medium tracking-[0.05em] uppercase bg-orange-500/10 px-4 py-2 rounded-full border border-orange-500/20">
+                        Platform Features
+                    </span>
+                    
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white mt-6">
                         Powerful Tools for <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-400 to-blue-400">Modern Logistics.</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-400 to-blue-400">
+                            Modern Logistics.
+                        </span>
                     </h2>
                 </div>
 
@@ -78,8 +85,13 @@ const LogisticsFeatures = () => {
                                 {feature.icon}
                             </div>
 
-                            <h3 className="text-2xl font-bold text-white mb-4 relative z-10 group-hover:text-orange-400 transition-colors">{feature.title}</h3>
-                            <p className="text-slate-400 font-medium leading-relaxed relative z-10">
+                            {/* Card Title - Updated: text-[20px] md:text-[22px] font-bold leading-[1.3] */}
+                            <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 relative z-10 group-hover:text-orange-400 transition-colors">
+                                {feature.title}
+                            </h3>
+                            
+                            {/* Card Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                            <p className="text-slate-400 text-[14px] md:text-[15px] font-normal leading-[1.6] relative z-10">
                                 {feature.description}
                             </p>
 

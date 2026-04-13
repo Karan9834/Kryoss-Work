@@ -38,6 +38,16 @@ const StickyFeatures = () => {
 
       <div className="max-w-7xl mx-auto px-6">
 
+        {/* Optional Section Header - Add if needed */}
+        {/* <div className="text-center mb-12">
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
+            Powerful <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">HR Features</span>
+          </h2>
+          <p className="text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+            Everything you need to manage your workforce efficiently
+          </p>
+        </div> */}
+
         {/* CONTAINER */}
         <div className="grid md:grid-cols-2 gap-16 h-[620px] overflow-hidden">
 
@@ -58,11 +68,13 @@ const StickyFeatures = () => {
                 {/* Accent Line */}
                 <div className="w-10 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mb-4"></div>
 
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-gray-900 mb-2">
                   {item.title}
                 </h3>
 
-                <p className="text-gray-600 text-sm leading-relaxed">
+                {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+                <p className="text-gray-600 text-[14px] md:text-[14px] font-normal leading-[1.6]">
                   {item.desc}
                 </p>
               </div>

@@ -105,20 +105,23 @@ const WhyChooseUs = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center justify-center mb-6">
             <div className="px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-100 to-blue-100 border border-purple-200/50 shadow-sm">
-              <span className="text-sm font-medium bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                 Why Choose Us
               </span>
             </div>
           </div>
           
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             Why Businesses
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600"> Trust Us</span>
           </h2>
           
-          <p className="text-gray-600 text-lg leading-relaxed">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Discover what makes us the preferred choice for thousands of successful businesses worldwide
           </p>
           
@@ -156,13 +159,13 @@ const WhyChooseUs = () => {
                       </div>
                     </div>
                     
-                    {/* Title */}
-                    <h3 className={`text-xl font-bold text-gray-900 mb-3 group-hover:bg-gradient-to-r ${reason.gradient} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300`}>
+                    {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                    <h3 className={`text-[18px] md:text-[20px] font-bold leading-[1.3] text-gray-900 mb-3 group-hover:bg-gradient-to-r ${reason.gradient} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300`}>
                       {reason.title}
                     </h3>
                     
-                    {/* Description */}
-                    <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                    {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+                    <p className="text-gray-600 text-[14px] md:text-[14px] font-normal leading-[1.6] group-hover:text-gray-700 transition-colors duration-300">
                       {reason.description}
                     </p>
                     

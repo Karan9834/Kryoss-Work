@@ -93,31 +93,35 @@ const SaaSHero = () => {
 
         {/* 🧠 LEFT CONTENT */}
         <div className="backdrop-blur-sm">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm border border-gray-200/50 shadow-sm mb-6">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
             </span>
-            <span className="text-sm font-medium text-gray-700">Trusted by 10,000+ businesses</span>
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-700">Trusted by 10,000+ businesses</span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+          {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-gray-900">
             Smart SaaS Solutions <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600">
+            {/* Highlighted Text - Same typography as H1 with gradient */}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               Built for Growth
             </span>
           </h1>
 
-          <p className="mt-6 text-gray-600 text-lg leading-relaxed max-w-xl">
+          {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+          <p className="mt-6 text-gray-600 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-xl">
             Launch, manage, and scale your digital products with powerful SaaS tools designed for modern businesses. 
             From automation to analytics, everything you need in one platform.
           </p>
 
-          {/* 🚀 SINGLE CTA - Now scrolls to products section */}
+          {/* 🚀 SINGLE CTA - Updated button typography */}
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <button
               onClick={scrollToProducts}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-lg font-medium text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 hover:scale-105 transition-all duration-300 shadow-lg shadow-purple-500/25"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[16px] tracking-[0.01em] font-semibold text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 hover:scale-105 transition-all duration-300 shadow-lg shadow-purple-500/25"
             >
               Explore Product
               <ArrowRight size={20} />
@@ -149,7 +153,7 @@ const SaaSHero = () => {
           <div className="absolute -bottom-4 -right-4 bg-white/90 backdrop-blur-md rounded-xl px-4 py-2 shadow-lg border border-gray-200/50">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-              <span className="text-xs font-semibold text-gray-700">Live Preview</span>
+              <span className="text-[10px] font-semibold uppercase tracking-[0.05em] text-gray-700">Live Preview</span>
             </div>
           </div>
         </div>

@@ -60,13 +60,23 @@ const FeaturesDark = () => {
 
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold text-white">
+          {/* Optional Badge - Add if needed */}
+          {/* <div className="inline-flex items-center justify-center mb-4">
+            <div className="px-4 py-1.5 rounded-full bg-white/10 border border-white/20">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-blue-300">Platform Features</span>
+            </div>
+          </div> */}
+          
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white">
             Powerful Features for{" "}
             <span className="bg-gradient-to-r from-blue-400 to-indigo-400 text-transparent bg-clip-text">
               Modern ERP
             </span>
           </h2>
-          <p className="text-gray-400 mt-4">
+          
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-400 mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Everything you need to manage and scale your business efficiently.
           </p>
         </div>
@@ -87,13 +97,13 @@ const FeaturesDark = () => {
                   <Icon className="text-white w-6 h-6" />
                 </div>
 
-                {/* TITLE */}
-                <h3 className="text-lg font-semibold text-white mb-2">
+                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-white mb-2">
                   {feature.title}
                 </h3>
 
-                {/* DESC */}
-                <p className="text-gray-400 text-sm leading-relaxed">
+                {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+                <p className="text-gray-400 text-[14px] md:text-[14px] font-normal leading-[1.6]">
                   {feature.desc}
                 </p>
 

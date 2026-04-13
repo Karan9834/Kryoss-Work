@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 import React from "react";
 import hrmImage from "../../../assets/Enterprise-Product/hrmhero.png";
 
@@ -21,20 +20,23 @@ const HRMCTA = () => {
           {/* LEFT CONTENT */}
           <div className="text-white max-w-xl z-10">
 
-            <h2 className="text-2xl md:text-4xl font-bold mb-5 leading-snug">
+            {/* Heading - Updated: text-[24px] md:text-[32px] font-bold leading-[1.2] */}
+            <h2 className="text-[24px] md:text-[32px] font-bold leading-[1.2] mb-5">
               Ready to Transform Your HR Operations?
             </h2>
 
-            <p className="text-purple-100 mb-6">
+            {/* Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+            <p className="text-purple-100 mb-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Streamline hiring, payroll, and workforce management with our powerful
               HRM solution. Start your journey today with a scalable and intelligent system.
             </p>
 
-            {/* CTA BUTTON */}
+            {/* CTA BUTTON - Updated typography */}
             <Link to="/company/contact" className="
               bg-white text-purple-700 font-semibold
               px-6 py-3 rounded-full
               hover:scale-105 transition duration-300
+              text-[14px] md:text-[15px] tracking-[0.01em]
             ">
               Request a Consultation
             </Link>

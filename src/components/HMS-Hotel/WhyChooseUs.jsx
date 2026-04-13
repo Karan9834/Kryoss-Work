@@ -141,21 +141,24 @@ const WhyChooseUs = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm border border-orange-200 rounded-full px-4 py-2 mb-6">
-            <Heart size={16} className="text-orange-500" />
-            <span className="text-sm font-semibold bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
+            <Heart size={14} className="text-orange-500" />
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
               Why Choose Us
             </span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             The Smart Choice for{" "}
             <span className="bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
               Modern Newsrooms
             </span>
           </h2>
           
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="mt-6 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
             Join hundreds of media organizations that trust NewsFlow to power their operations
           </p>
         </div>
@@ -184,13 +187,13 @@ const WhyChooseUs = () => {
                   <IconComponent size={26} className="text-white" />
                 </div>
                 
-                {/* Title */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors duration-300">
+                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-gray-900 mb-3 group-hover:text-orange-600 transition-colors duration-300">
                   {reason.title}
                 </h3>
                 
-                {/* Description */}
-                <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+                <p className="text-gray-600 text-[14px] md:text-[14px] font-normal leading-[1.6] group-hover:text-gray-700 transition-colors duration-300">
                   {reason.description}
                 </p>
                 
@@ -207,26 +210,6 @@ const WhyChooseUs = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* Trust Badge */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex flex-wrap items-center justify-center gap-6 bg-white/80 backdrop-blur-sm rounded-full px-8 py-4 border border-orange-200/50 shadow-md">
-            <div className="flex items-center gap-2">
-              <Award size={20} className="text-orange-500" />
-              <span className="text-gray-700 text-sm font-medium">Trusted by 500+ Newsrooms</span>
-            </div>
-            <div className="w-px h-6 bg-orange-200 hidden sm:block"></div>
-            <div className="flex items-center gap-2">
-              <Brain size={20} className="text-teal-500" />
-              <span className="text-gray-700 text-sm font-medium">98% Customer Satisfaction</span>
-            </div>
-            <div className="w-px h-6 bg-orange-200 hidden sm:block"></div>
-            <div className="flex items-center gap-2">
-              <BarChart3 size={20} className="text-orange-500" />
-              <span className="text-gray-700 text-sm font-medium">24/7 Premium Support</span>
-            </div>
-          </div>
         </div>
       </div>
 

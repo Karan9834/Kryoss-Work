@@ -20,8 +20,6 @@ const WhyChooseUs = () => {
       description:
         "Every story undergoes rigorous fact-checking and verification from multiple reliable sources before publication.",
       gradient: "from-blue-500 to-cyan-500",
-      stat: "99.9%",
-      statLabel: "Accuracy Rate",
       delay: "0s",
     },
     {
@@ -30,8 +28,6 @@ const WhyChooseUs = () => {
       description:
         "Breaking news delivered instantly with live updates as events unfold around the world.",
       gradient: "from-indigo-500 to-purple-500",
-      stat: "< 60s",
-      statLabel: "Response Time",
       delay: "0.1s",
     },
     {
@@ -40,8 +36,6 @@ const WhyChooseUs = () => {
       description:
         "Journalists and correspondents in 50+ countries bringing you diverse perspectives from every corner.",
       gradient: "from-purple-500 to-pink-500",
-      stat: "50+",
-      statLabel: "Countries",
       delay: "0.2s",
     },
     {
@@ -50,8 +44,6 @@ const WhyChooseUs = () => {
       description:
         "Round-the-clock news coverage ensuring you're always informed, day or night.",
       gradient: "from-amber-500 to-orange-500",
-      stat: "24/7",
-      statLabel: "Live Coverage",
       delay: "0s",
     },
     {
@@ -60,8 +52,6 @@ const WhyChooseUs = () => {
       description:
         "Seasoned reporters and industry experts with decades of combined experience.",
       gradient: "from-emerald-500 to-teal-500",
-      stat: "100+",
-      statLabel: "Expert Team",
       delay: "0.1s",
     },
     {
@@ -70,8 +60,6 @@ const WhyChooseUs = () => {
       description:
         "Recognized globally for excellence in journalism and digital innovation.",
       gradient: "from-rose-500 to-red-500",
-      stat: "25+",
-      statLabel: "Industry Awards",
       delay: "0.2s",
     },
   ];
@@ -91,15 +79,17 @@ const WhyChooseUs = () => {
       <div className="relative max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 mb-4">
             <Sparkles className="w-5 h-5 text-blue-500" />
-            <span className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent uppercase tracking-wider">
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               Why Choose Us
             </span>
             <Sparkles className="w-5 h-5 text-indigo-500" />
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             The{" "}
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
               Trusted Choice
@@ -108,7 +98,8 @@ const WhyChooseUs = () => {
             for Modern Readers
           </h2>
 
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
             Discover why millions of readers rely on us for accurate, timely,
             and insightful news coverage
           </p>
@@ -140,27 +131,15 @@ const WhyChooseUs = () => {
                     </div>
                   </div>
 
-                  {/* Title */}
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-blue-900 group-hover:bg-clip-text transition-all duration-300">
+                  {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                  <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-gray-900 mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-blue-900 group-hover:bg-clip-text transition-all duration-300">
                     {feature.title}
                   </h3>
 
-                  {/* Description */}
-                  <p className="text-gray-600 leading-relaxed mb-4 group-hover:text-gray-700 transition-colors duration-300">
+                  {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+                  <p className="text-gray-600 text-[14px] md:text-[14px] font-normal leading-[1.6] group-hover:text-gray-700 transition-colors duration-300">
                     {feature.description}
                   </p>
-
-                  {/* Stats */}
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100 group-hover:border-gray-200 transition-colors">
-                    <span
-                      className={`text-2xl font-bold bg-gradient-to-r ${feature.gradient} bg-clip-text text-transparent`}
-                    >
-                      {feature.stat}
-                    </span>
-                    <span className="text-xs text-gray-500 group-hover:text-gray-600 transition-colors">
-                      {feature.statLabel}
-                    </span>
-                  </div>
 
                   {/* Decorative Bottom Line */}
                   <div

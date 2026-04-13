@@ -47,16 +47,23 @@ const LogisticsWhyUs = () => {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="text-center mb-16 space-y-4">
+                    {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <div className="w-8 h-px bg-slate-300"></div>
-                        <span className="text-blue-600 font-bold text-sm uppercase tracking-widest">Why Us</span>
+                        <span className="text-blue-600 text-[12px] font-medium tracking-[0.05em] uppercase">Why Us</span>
                         <div className="w-8 h-px bg-slate-300"></div>
                     </div>
-                    <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#0F172A] leading-tight mt-6">
+                    
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#0F172A] mt-6">
                         Why Choose Our <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Logistics Platform?</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+                            Logistics Platform?
+                        </span>
                     </h2>
-                    <p className="text-slate-500 text-lg max-w-2xl mx-auto mt-6 font-medium">
+                    
+                    {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-slate-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto mt-6">
                         We combine cutting-edge technology with industry expertise to deliver unparalleled logistics solutions.
                     </p>
                 </div>
@@ -70,9 +77,19 @@ const LogisticsWhyUs = () => {
                             <div className="w-16 h-16 rounded-2xl bg-slate-50 shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform group-hover:bg-white duration-500">
                                 {reason.icon}
                             </div>
-                            <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 transition-colors group-hover:text-orange-600">{reason.stat}</span>
-                            <h3 className="text-xl font-bold text-[#0F172A] mb-4 group-hover:text-blue-600 transition-colors">{reason.title}</h3>
-                            <p className="text-slate-500 text-sm font-medium leading-relaxed">
+                            
+                            {/* Stat Badge - Updated: text-[10px] font-semibold uppercase tracking-[0.05em] */}
+                            <span className="text-[10px] font-semibold uppercase tracking-[0.05em] text-slate-400 mb-3 transition-colors group-hover:text-orange-600">
+                                {reason.stat}
+                            </span>
+                            
+                            {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                            <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-[#0F172A] mb-4 group-hover:text-blue-600 transition-colors">
+                                {reason.title}
+                            </h3>
+                            
+                            {/* Card Description - Updated: text-[13px] md:text-[14px] font-normal leading-[1.6] */}
+                            <p className="text-slate-500 text-[13px] md:text-[14px] font-normal leading-[1.6]">
                                 {reason.description}
                             </p>
 

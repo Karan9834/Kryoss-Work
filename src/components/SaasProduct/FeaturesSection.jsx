@@ -108,20 +108,23 @@ const FeaturesSection = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center justify-center mb-6">
             <div className="px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-              <span className="text-sm font-medium text-white">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-white">
                 Powerful Features
               </span>
             </div>
           </div>
           
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white mb-4">
             Everything You Need to
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300"> Scale Success</span>
           </h2>
           
-          <p className="text-gray-300 text-lg leading-relaxed">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-300 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Discover powerful tools and features designed to help your business grow faster
           </p>
           
@@ -153,13 +156,13 @@ const FeaturesSection = () => {
                       </div>
                     </div>
                     
-                    {/* Title */}
-                    <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-blue-300 transition-all duration-300">
+                    {/* Card Title - Updated: text-[20px] md:text-[22px] font-bold leading-[1.3] */}
+                    <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-blue-300 transition-all duration-300">
                       {feature.title}
                     </h3>
                     
-                    {/* Description */}
-                    <p className="text-gray-300 leading-relaxed">
+                    {/* Card Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                    <p className="text-gray-300 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                       {feature.description}
                     </p>
                     
@@ -178,11 +181,11 @@ const FeaturesSection = () => {
           })}
         </div>
         
-        {/* Optional: Feature Highlight Badge */}
+        {/* Optional: Feature Highlight Badge - Updated typography */}
         <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
             <Sparkles className="w-4 h-4 text-purple-300" />
-            <span className="text-sm text-gray-300">Plus many more powerful features</span>
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-300">Plus many more powerful features</span>
             <Rocket className="w-4 h-4 text-blue-300" />
           </div>
         </div>

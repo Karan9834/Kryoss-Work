@@ -53,16 +53,21 @@ const PMSFeatures = () => {
 
                 {/* Header Phase */}
                 <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-emerald-300 text-sm font-bold uppercase tracking-widest shadow-xl">
-                        <HeartPulse size={16} /> Clinical Module Network
+                    {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-emerald-300 text-[12px] font-medium tracking-[0.05em] uppercase shadow-xl">
+                        <HeartPulse size={14} /> Clinical Module Network
                     </div>
-                    <h2 className="text-3xl lg:text-4xl font-bold font-black leading-tight tracking-tight ">
-                        Operational {" "}
+                    
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] tracking-tight">
+                        Operational{" "}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-emerald-100 to-white">
                             Pharmacy Intelligence
                         </span>
                     </h2>
-                    <p className="text-emerald-50/60 text-xl font-medium">
+                    
+                    {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-emerald-50/60 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         Our specialized modules are engineered to provide maximum precision, speed, and safety for your clinical operations.
                     </p>
                 </div>
@@ -77,20 +82,23 @@ const PMSFeatures = () => {
                             <div className={`w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center ${feature.color} mb-8 border border-white/10 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 shadow-inner`}>
                                 {feature.icon}
                             </div>
-                            <h3 className="text-2xl font-bold text-white mb-4  tracking-tighter leading-none">
+                            {/* Card Title - Updated: text-[20px] md:text-[22px] font-bold leading-[1.3] */}
+                            <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 tracking-tighter">
                                 {feature.title}
                             </h3>
-                            <p className="text-emerald-50/60 font-medium leading-relaxed">
+                            {/* Card Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                            <p className="text-emerald-50/60 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                                 {feature.desc}
                             </p>
                         </div>
                     ))}
                 </div>
 
+                {/* Footer Badge - Updated typography */}
                 <div className="mt-20 text-center">
                     <div className="inline-flex items-center gap-4 px-8 py-4 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-md shadow-2xl">
-                        <Zap size={20} className="text-emerald-400" />
-                        <span className="font-bold text-emerald-100 uppercase tracking-widest text-xs">AI-Enhanced Dispensing Integrated as Standard</span>
+                        <Zap size={18} className="text-emerald-400" />
+                        <span className="font-semibold text-emerald-100 text-[10px] md:text-[11px] uppercase tracking-[0.05em]">AI-Enhanced Dispensing Integrated as Standard</span>
                     </div>
                 </div>
 

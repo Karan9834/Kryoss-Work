@@ -19,22 +19,34 @@ const BettingWhyUs = () => {
         <section className="py-24 max-w-7xl mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-20 items-center">
                 <div className="space-y-10">
-                    <div className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-[0.2em]">
+                    {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                    <div className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-[12px] font-medium tracking-[0.05em] uppercase">
                         Why Kryoss Betting
                     </div>
-                    <h2 className="text-4xl font-extrabold text-[#1E293B] leading-tight">
+                    
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                         Developing Next-Gen <br />
                         <span className="text-emerald-600">Sports Betting Apps</span>
                     </h2>
-                    <p className="text-[#4A4B5E] text-lg leading-relaxed">
+                    
+                    {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-[#4A4B5E] text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         Kryoss develops next-generation sports betting apps backed by a team of enthusiasts. We create applications equipped with state-of-the-art features like one-touch betting and cryptocurrency support.
                     </p>
+                    
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         {reasons.map((reason, i) => (
                             <div key={i}>
                                 {reason.icon}
-                                <h4 className="text-xl font-bold text-[#1E293B] mb-3">{reason.title}</h4>
-                                <p className="text-gray-500 text-sm leading-relaxed">{reason.desc}</p>
+                                {/* Reason Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                                <h4 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-[#1E293B] mb-3">
+                                    {reason.title}
+                                </h4>
+                                {/* Reason Description - Updated: text-[13px] md:text-[14px] font-normal leading-[1.6] */}
+                                <p className="text-gray-500 text-[13px] md:text-[14px] font-normal leading-[1.6]">
+                                    {reason.desc}
+                                </p>
                             </div>
                         ))}
                     </div>

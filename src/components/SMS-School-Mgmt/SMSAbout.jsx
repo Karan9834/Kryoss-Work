@@ -37,15 +37,15 @@ const SMSAbout = () => {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent"></div>
 
-                            {/* Floating Card */}
+                            {/* Floating Card - Updated typography */}
                             <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-xl border border-white/50">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white">
                                         <Zap fill="currentColor" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-gray-900 text-lg">Next-Gen Education</h4>
-                                        <p className="text-blue-600 font-bold text-sm">Smart AI-Driven Insights</p>
+                                        <h4 className="font-bold text-gray-900 text-[16px] md:text-[18px]">Next-Gen Education</h4>
+                                        <p className="text-blue-600 font-semibold text-[11px] md:text-[12px] uppercase tracking-[0.05em]">Smart AI-Driven Insights</p>
                                     </div>
                                 </div>
                             </div>
@@ -54,22 +54,26 @@ const SMSAbout = () => {
 
                     {/* Content Side */}
                     <div className="space-y-8 order-1 lg:order-2">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-sm font-bold uppercase tracking-wider">
-                            <GraduationCap size={16} />
+                        {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[12px] font-medium tracking-[0.05em] uppercase">
+                            <GraduationCap size={14} />
                             <span>About Our Platform</span>
                         </div>
 
-                        <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 leading-tight">
+                        {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                        <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
                             Transforming Institutions <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-emerald-500">
                                 Beyond the Classroom
                             </span>
                         </h2>
 
-                        <p className="text-gray-600 text-xl leading-relaxed font-medium">
+                        {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                        <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                             Our School Management System (SMS) is built to unify administrators, teachers, parents, and students. By automating complex workflows, we allow educators to focus on what matters most—teaching.
                         </p>
 
+                        {/* Feature Highlights - Updated typography */}
                         <div className="space-y-6 pt-4">
                             {highlights.map((item, idx) => (
                                 <div key={idx} className="flex gap-4 group cursor-default">
@@ -77,10 +81,12 @@ const SMSAbout = () => {
                                         {item.icon}
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-600 transition-colors duration-300">
+                                        {/* Feature Title - Updated: text-[16px] md:text-[18px] font-bold */}
+                                        <h4 className="font-bold text-[16px] md:text-[18px] text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                                             {item.title}
                                         </h4>
-                                        <p className="text-gray-500 font-medium">
+                                        {/* Feature Description - Updated: text-[13px] md:text-[14px] font-normal */}
+                                        <p className="text-gray-500 text-[13px] md:text-[14px] font-normal">
                                             {item.text}
                                         </p>
                                     </div>

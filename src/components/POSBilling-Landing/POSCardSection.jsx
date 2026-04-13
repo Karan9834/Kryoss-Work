@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
-
 import React from 'react';
-
 import card1 from '../../assets/poslanding-img/card1.jpg';
 import card2 from '../../assets/poslanding-img/card2.jpg';
 
@@ -14,7 +12,7 @@ const POSCardSection = () => {
          image: card1
       },
       {
-         title: "POS27: Retail POS ",
+         title: "POS27: Retail POS",
          desc: "Robust retail POS featuring barcode scanning, multi-store sync, and stock alerts.",
          path: "/products/retail-pos",
          image: card2
@@ -25,21 +23,24 @@ const POSCardSection = () => {
       <section id="pos-products" className="py-24 bg-white">
          <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16 space-y-4">
-               {/* "Our Products" Header (Matching Grocery) */}
+               {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                <div className="flex items-center justify-center gap-2 mb-4">
                   <div className="w-8 h-px bg-indigo-200"></div>
-                  <span className="text-amber-600 font-semibold text-sm tracking-wider uppercase">
+                  <span className="text-amber-600 text-[12px] font-medium tracking-[0.05em] uppercase">
                      Our Products
                   </span>
                   <div className="w-8 h-px bg-emerald-200"></div>
                </div>
 
-               <h2 className="text-3xl lg:text-4xl font-semibold leading-tight">
+               {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-emerald-600 to-amber-500">
                      Specialized POS Modules
                   </span>
                </h2>
-               <p className="text-[#4A4B5E] text-lg max-w-2xl mx-auto mt-6">
+               
+               {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+               <p className="text-[#4A4B5E] text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto mt-6">
                   Choose the specialized platform that fits your business model perfectly.
                </p>
             </div>
@@ -59,12 +60,12 @@ const POSCardSection = () => {
                         />
                      </Link>
 
-                     {/* TITLE AND DESCRIPTION */}
-                     <p className="mt-4 text-sm md:text-base">
+                     {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                     <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         <Link to={card.path} className="text-indigo-600 font-semibold hover:underline">
                            {card.title}
                         </Link>{" "}
-                        <span className="text-gray-700">- {card.desc}</span>
+                        <span className="text-gray-700">{card.desc}</span>
                      </p>
                   </div>
                ))}

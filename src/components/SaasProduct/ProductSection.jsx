@@ -39,20 +39,23 @@ const ProductsSection = () => {
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center justify-center mb-6">
             <div className="px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-100/50 shadow-sm">
-              <span className="text-sm font-medium bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                 Analytics Suite
               </span>
             </div>
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             Powerful Analytics Solutions
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600"> For Data-Driven Decisions</span>
           </h2>
 
-          <p className="text-gray-600 text-lg leading-relaxed">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Discover our range of powerful analytics products designed to help you succeed
           </p>
         </div>
@@ -75,8 +78,8 @@ const ProductsSection = () => {
                 />
               </div>
 
-              {/* TITLE AND DESCRIPTION */}
-              <p className="mt-4 text-sm md:text-base">
+              {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span
                   onClick={() => handleViewDetails(product.route)}
                   className="text-purple-600 font-semibold hover:underline cursor-pointer"
@@ -85,7 +88,7 @@ const ProductsSection = () => {
                 >
                   {product.title}
                 </span>{" "}
-                <span className="text-gray-700">- {product.description}</span>
+                <span className="text-gray-700">{product.description}</span>
               </p>
             </div>
           ))}

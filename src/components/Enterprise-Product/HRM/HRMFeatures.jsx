@@ -46,14 +46,23 @@ const HRMFeatures = () => {
 
         {/* HEADING */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5">
+          {/* Optional Badge - Add if needed */}
+          {/* <div className="inline-flex items-center justify-center mb-4">
+            <div className="px-4 py-1.5 rounded-full bg-white/10 border border-white/20">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-purple-300">Platform Features</span>
+            </div>
+          </div> */}
+          
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white mb-5">
             Powerful Features for{" "}
             <span className="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">
               Modern HR Teams
             </span>
           </h2>
 
-          <p className="text-gray-400 text-lg">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-400 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Everything you need to manage your workforce efficiently — all in one powerful platform.
           </p>
         </div>
@@ -84,13 +93,13 @@ const HRMFeatures = () => {
                   <Icon className="text-white" size={20} />
                 </div>
 
-                {/* TITLE */}
-                <h3 className="text-lg font-semibold text-white mb-2">
+                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-white mb-2">
                   {feature.title}
                 </h3>
 
-                {/* DESC */}
-                <p className="text-gray-400 text-sm leading-relaxed">
+                {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+                <p className="text-gray-400 text-[14px] md:text-[14px] font-normal leading-[1.6]">
                   {feature.desc}
                 </p>
 

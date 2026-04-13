@@ -20,16 +20,17 @@ const AboutSection = () => {
         
         {/* Section Header with Pill */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          {/* Pill Indicator */}
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center justify-center mb-6">
             <div className="px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-100/50 shadow-sm backdrop-blur-sm">
-              <span className="text-sm font-medium bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                 About Us
               </span>
             </div>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             Redefining How Businesses
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600"> Scale Digitally</span>
           </h2>
@@ -60,53 +61,57 @@ const AboutSection = () => {
           
           {/* Right - Content */}
           <div className="space-y-6">
-            <h3 className="text-2xl md:text-3xl font-semibold text-gray-800">
+            {/* Subheading - Updated: text-[24px] md:text-[28px] font-bold leading-[1.3] */}
+            <h3 className="text-[24px] md:text-[28px] font-bold leading-[1.3] text-gray-800">
               Built for Modern Teams
             </h3>
             
-            <p className="text-gray-600 leading-relaxed">
+            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+            <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               We believe that great software should empower teams to do their best work. 
               Our platform combines powerful analytics, seamless automation, and intuitive 
               design to create an experience that your entire team will love.
             </p>
             
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               From startups to enterprises, thousands of organizations trust us to handle 
               their most critical operations. We're committed to continuous innovation, 
               ensuring you always have access to cutting-edge tools that drive real results.
             </p>
             
-            {/* Feature Highlights */}
+            {/* Feature Highlights - Updated typography */}
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="flex items-start gap-3 group/item">
                 <div className="w-5 h-5 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 mt-1 group-hover/item:scale-110 transition-transform"></div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Intelligent Insights</h4>
-                  <p className="text-sm text-gray-500">Data-driven decisions</p>
+                  {/* Feature Title - Updated: text-[16px] font-semibold */}
+                  <h4 className="font-semibold text-[16px] text-gray-800">Intelligent Insights</h4>
+                  {/* Feature Description - Updated: text-[13px] md:text-[14px] font-normal */}
+                  <p className="text-[13px] md:text-[14px] font-normal text-gray-500">Data-driven decisions</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3 group/item">
                 <div className="w-5 h-5 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 mt-1 group-hover/item:scale-110 transition-transform"></div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Seamless Integration</h4>
-                  <p className="text-sm text-gray-500">Connect your stack</p>
+                  <h4 className="font-semibold text-[16px] text-gray-800">Seamless Integration</h4>
+                  <p className="text-[13px] md:text-[14px] font-normal text-gray-500">Connect your stack</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3 group/item">
                 <div className="w-5 h-5 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 mt-1 group-hover/item:scale-110 transition-transform"></div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Enterprise Security</h4>
-                  <p className="text-sm text-gray-500">Bank-grade protection</p>
+                  <h4 className="font-semibold text-[16px] text-gray-800">Enterprise Security</h4>
+                  <p className="text-[13px] md:text-[14px] font-normal text-gray-500">Bank-grade protection</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3 group/item">
                 <div className="w-5 h-5 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 mt-1 group-hover/item:scale-110 transition-transform"></div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">24/7 Support</h4>
-                  <p className="text-sm text-gray-500">Always here to help</p>
+                  <h4 className="font-semibold text-[16px] text-gray-800">24/7 Support</h4>
+                  <p className="text-[13px] md:text-[14px] font-normal text-gray-500">Always here to help</p>
                 </div>
               </div>
             </div>

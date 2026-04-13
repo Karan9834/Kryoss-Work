@@ -29,12 +29,20 @@ const POSWhyUs = () => {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="text-center mb-20 space-y-4">
-                    <h2 className="text-3xl lg:text-4xl font-semibold leading-tight mb-6">
+                    {/* Optional Badge - Add if needed */}
+                    {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20">
+                        <span className="text-white text-[12px] font-medium tracking-[0.05em] uppercase">Why Choose Us</span>
+                    </div> */}
+                    
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-6">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-indigo-200 to-emerald-400">
-                             Why Global Leaders Choose Our POS
+                            Why Global Leaders Choose Our POS
                         </span>
                     </h2>
-                    <p className="text-indigo-200 text-lg mt-6 max-w-2xl mx-auto font-medium">
+                    
+                    {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-indigo-200 text-[14px] md:text-[16px] font-normal leading-[1.6] mt-6 max-w-2xl mx-auto">
                         Combining retail expertise with cutting-edge architecture to give you the competitive edge in modern commerce.
                     </p>
                 </div>
@@ -46,19 +54,21 @@ const POSWhyUs = () => {
                             <Award size={32} />
                         </div>
                         <div className="space-y-4 relative z-10">
-                            <h3 className="text-2xl font-bold">Gold-Standard Reliability</h3>
-                            <p className="text-gray-600 text-lg leading-relaxed font-medium">
+                            {/* Card Title - Updated: text-[24px] md:text-[28px] font-bold leading-[1.3] */}
+                            <h3 className="text-[24px] md:text-[28px] font-bold leading-[1.3]">Gold-Standard Reliability</h3>
+                            {/* Card Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                            <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                                 Our platform consistently outperforms industry standards in checkout speed and transaction success rates.
                             </p>
                         </div>
                         <div className="flex gap-10 pt-6 border-t border-gray-100">
                             <div>
                                 <p className="text-4xl font-bold text-indigo-600 italic">99.9%</p>
-                                <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Uptime Rate</p>
+                                <p className="text-[10px] font-bold uppercase tracking-[0.05em] text-gray-400">Uptime Rate</p>
                             </div>
                             <div>
                                 <p className="text-4xl font-bold text-emerald-600 italic">10M+</p>
-                                <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Sales Processed</p>
+                                <p className="text-[10px] font-bold uppercase tracking-[0.05em] text-gray-400">Sales Processed</p>
                             </div>
                         </div>
                      </div>
@@ -71,8 +81,10 @@ const POSWhyUs = () => {
                                     <point.icon size={28} />
                                 </div>
                                 <div className="space-y-2">
-                                    <h4 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors tracking-tight">{point.title}</h4>
-                                    <p className="text-indigo-200 text-base leading-relaxed font-medium">{point.desc}</p>
+                                    {/* Point Title - Updated: text-[20px] md:text-[22px] font-bold leading-[1.3] */}
+                                    <h4 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white group-hover:text-emerald-400 transition-colors">{point.title}</h4>
+                                    {/* Point Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                                    <p className="text-indigo-200 text-[14px] md:text-[15px] font-normal leading-[1.6]">{point.desc}</p>
                                 </div>
                             </div>
                         ))}

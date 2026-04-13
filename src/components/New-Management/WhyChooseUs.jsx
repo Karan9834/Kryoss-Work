@@ -94,21 +94,24 @@ const WhyChooseUs = () => {
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-100 rounded-full px-4 py-2 mb-6">
-            <Sparkles size={16} className="text-orange-600" />
-            <span className="text-sm font-semibold text-orange-700">
+            <Sparkles size={14} className="text-orange-600" />
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-orange-700">
               Why Choose Us
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Built for{" "}
             <span className="bg-gradient-to-r from-orange-600 to-amber-500 text-transparent bg-clip-text">
               Modern Newsrooms
             </span>
           </h2>
 
-          <p className="mt-6 text-gray-600 text-lg">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="mt-6 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
             Powerful features designed to scale your newsroom operations efficiently.
           </p>
         </div>
@@ -131,13 +134,13 @@ const WhyChooseUs = () => {
                   <Icon size={26} />
                 </div>
 
-                {/* Title */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition">
+                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-gray-900 mb-3 group-hover:text-orange-600 transition">
                   {reason.title}
                 </h3>
 
-                {/* Desc */}
-                <p className="text-gray-600 text-sm leading-relaxed">
+                {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+                <p className="text-gray-600 text-[14px] md:text-[14px] font-normal leading-[1.6]">
                   {reason.description}
                 </p>
 
@@ -148,20 +151,20 @@ const WhyChooseUs = () => {
           })}
         </div>
 
-        {/* Bottom badge */}
+        {/* Bottom badge - Stats Removed, Updated typography */}
         <div className="mt-20 text-center">
           <div className="inline-flex items-center gap-6 bg-orange-50 rounded-full px-8 py-4 border border-orange-100">
             <div className="flex items-center gap-2">
               <Award size={18} className="text-orange-500" />
-              <span className="text-orange-700 text-sm">
-                Trusted by 500+ Newsrooms
+              <span className="text-orange-700 text-[12px] md:text-[13px] font-medium">
+                Trusted Newsrooms
               </span>
             </div>
             <div className="w-px h-6 bg-orange-200"></div>
             <div className="flex items-center gap-2">
               <Heart size={18} className="text-orange-500" />
-              <span className="text-orange-700 text-sm">
-                98% Satisfaction Rate
+              <span className="text-orange-700 text-[12px] md:text-[13px] font-medium">
+                High Satisfaction
               </span>
             </div>
           </div>

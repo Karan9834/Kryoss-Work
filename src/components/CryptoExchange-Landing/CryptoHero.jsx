@@ -22,38 +22,43 @@ const CryptoHero = () => {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left: Content */}
                     <div className="space-y-8 text-center lg:text-left">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-bold">
-                            <Zap size={16} />
+                        {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[12px] font-medium tracking-[0.05em] uppercase">
+                            <Zap size={14} />
                             <span>Next-Gen Crypto Infrastructure</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-5xl font-semibold text-white leading-tight">
+                        {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-white">
                             Build Your Own <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400">
+                            {/* Highlighted Text - Same typography as H1 with gradient */}
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
                                 Crypto Exchange
                             </span>
                         </h1>
 
-                        <p className="text-gray-400 text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+                        <p className="text-gray-400 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-xl mx-auto lg:mx-0">
                             Launch a high-performance, secure, and scalable cryptocurrency exchange platform.
                             Empower your users with institutional-grade trading tools and real-time asset management.
                         </p>
 
+                        {/* CTA Buttons */}
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
                             <button
                                 onClick={scrollToProducts}
-                                className="px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-2xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(37,99,235,0.3)] flex items-center gap-3"
+                                className="px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-2xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(37,99,235,0.3)] flex items-center gap-3 text-[16px] tracking-[0.01em]"
                             >
                                 Explore Our Products <ArrowRight size={20} />
                             </button>
                         </div>
 
-                        {/* Trust Badges */}
+                        {/* Trust Badges - Updated: text-[14px] font-semibold */}
                         <div className="pt-8 flex flex-wrap items-center justify-center lg:justify-start gap-8 opacity-50">
-                            <div className="flex items-center gap-2 text-white font-bold text-sm">
+                            <div className="flex items-center gap-2 text-white font-semibold text-[14px]">
                                 <ShieldCheck className="text-blue-500" size={18} /> Secure Infrastructure
                             </div>
-                            <div className="flex items-center gap-2 text-white font-bold text-sm">
+                            <div className="flex items-center gap-2 text-white font-semibold text-[14px]">
                                 <Rocket className="text-purple-500" size={18} /> High Performance
                             </div>
                         </div>

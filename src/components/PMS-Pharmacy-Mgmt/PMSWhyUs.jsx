@@ -40,14 +40,14 @@ const PMSWhyUs = () => {
                                     <div className="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 mb-6 group-hover/card:bg-emerald-600 group-hover/card:text-white transition-colors duration-300">
                                         <Zap fill="currentColor" size={24} />
                                     </div>
-                                    <h4 className="font-bold text-gray-900 text-lg uppercase leading-none mb-2">Fast Dispense</h4>
+                                    <h4 className="font-bold text-gray-900 text-[16px] md:text-[18px] uppercase leading-none mb-2">Fast Dispense</h4>
                                     <div className="h-1 w-12 bg-emerald-500 rounded-full"></div>
                                 </div>
                                 <div className="bg-white p-8 rounded-[3rem] shadow-2xl border border-emerald-100 hover:scale-105 transition-transform duration-500 cursor-pointer group/card">
                                     <div className="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 mb-6 group-hover/card:bg-emerald-600 group-hover/card:text-white transition-colors duration-300">
                                         <ShieldCheck size={24} />
                                     </div>
-                                    <h4 className="font-bold text-gray-900 text-lg uppercase leading-none mb-2">Error Free</h4>
+                                    <h4 className="font-bold text-gray-900 text-[16px] md:text-[18px] uppercase leading-none mb-2">Error Free</h4>
                                     <div className="h-1 w-12 bg-emerald-500 rounded-full"></div>
                                 </div>
                             </div>
@@ -56,14 +56,14 @@ const PMSWhyUs = () => {
                                     <div className="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 mb-6 group-hover/card:bg-emerald-600 group-hover/card:text-white transition-colors duration-300">
                                         <Activity size={24} />
                                     </div>
-                                    <h4 className="font-bold text-gray-900 text-lg uppercase leading-none mb-2">Formulary Sync</h4>
+                                    <h4 className="font-bold text-gray-900 text-[16px] md:text-[18px] uppercase leading-none mb-2">Formulary Sync</h4>
                                     <div className="h-1 w-12 bg-emerald-500 rounded-full"></div>
                                 </div>
                                 <div className="bg-white p-8 rounded-[3rem] shadow-2xl border border-emerald-100 hover:scale-105 transition-transform duration-500 cursor-pointer group/card">
                                     <div className="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 mb-6 group-hover/card:bg-emerald-600 group-hover/card:text-white transition-colors duration-300">
                                         <CheckCircle2 size={24} />
                                     </div>
-                                    <h4 className="font-bold text-gray-900 text-lg uppercase leading-none mb-2">Market Leader</h4>
+                                    <h4 className="font-bold text-gray-900 text-[16px] md:text-[18px] uppercase leading-none mb-2">Market Leader</h4>
                                     <div className="h-1 w-12 bg-emerald-500 rounded-full"></div>
                                 </div>
                             </div>
@@ -73,16 +73,21 @@ const PMSWhyUs = () => {
                     {/* Right: Content */}
                     <div className="space-y-10">
                         <div className="space-y-4">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-emerald-300 text-sm font-bold uppercase tracking-widest shadow-xl">
-                                <HeartPulse size={16} /> The Clinical Advantage
+                            {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-emerald-300 text-[12px] font-medium tracking-[0.05em] uppercase shadow-xl">
+                                <HeartPulse size={14} /> The Clinical Advantage
                             </div>
-                            <h2 className="text-3xl lg:text-4xl font-bold leading-[1.1] tracking-tight ">
+                            
+                            {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] tracking-tight">
                                 Why Pharmacies <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-emerald-100 to-white">
                                     Trust Our Unified App
                                 </span>
                             </h2>
-                            <p className="text-emerald-50/60 font-medium text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+                            
+                            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                            <p className="text-emerald-50/60 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-xl mx-auto lg:mx-0">
                                 We combine pharmaceutical expertise with cutting-edge infrastructure to provide a platform that doesn't just manage business—it enhances patient wellness.
                             </p>
                         </div>
@@ -94,10 +99,12 @@ const PMSWhyUs = () => {
                                         {reason.icon}
                                     </div>
                                     <div className="space-y-1">
-                                        <h4 className="text-xl font-bold text-white group-hover:text-emerald-300 transition-colors  tracking-tight leading-none">
+                                        {/* Reason Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                                        <h4 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-white group-hover:text-emerald-300 transition-colors tracking-tight">
                                             {reason.title}
                                         </h4>
-                                        <p className="text-emerald-100/50 font-medium leading-relaxed">
+                                        {/* Reason Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                                        <p className="text-emerald-100/50 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                                             {reason.desc}
                                         </p>
                                     </div>

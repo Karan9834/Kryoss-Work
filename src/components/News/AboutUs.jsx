@@ -75,9 +75,10 @@ const AboutUs = () => {
       <div className="relative max-w-7xl mx-auto">
         {/* Centered Header with Colored Text */}
         <div className="text-center max-w-3xl mx-auto mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 mb-4">
             <div className="w-8 h-[2px] bg-gradient-to-r from-blue-500 to-indigo-500"></div>
-            <span className="text-sm font-medium">
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase">
               <span className="text-blue-600">About</span>
               <span className="text-gray-400 mx-1">•</span>
               <span className="text-indigo-600">Us</span>
@@ -85,7 +86,8 @@ const AboutUs = () => {
             <div className="w-8 h-[2px] bg-gradient-to-r from-indigo-500 to-blue-500"></div>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-4">
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
               Where Stories
             </span>
@@ -106,7 +108,8 @@ const AboutUs = () => {
             </span>
           </h2>
           
-          <p className="text-lg text-gray-600">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Built on principles of <span className="text-blue-600 font-medium">integrity</span>, 
             <span className="text-indigo-600 font-medium"> accuracy</span>, and 
             <span className="text-purple-600 font-medium"> innovation</span>
@@ -176,12 +179,14 @@ const AboutUs = () => {
           {/* RIGHT COLUMN - Text Content with Colored Highlights */}
           <div className="space-y-8 order-2">
             <div>
-              <h3 className="text-2xl font-semibold mb-3">
+              {/* Subheading - Updated: text-[22px] md:text-[24px] font-bold leading-[1.3] */}
+              <h3 className="text-[22px] md:text-[24px] font-bold leading-[1.3] mb-3">
                 <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                   Our Mission
                 </span>
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              {/* Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+              <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 To empower readers with <span className="text-blue-600 font-medium">accurate</span>, 
                 <span className="text-indigo-600 font-medium"> unbiased</span> news that helps them understand 
                 the world around them. We're committed to journalistic excellence and 
@@ -192,7 +197,8 @@ const AboutUs = () => {
             </div>
             
             <div>
-              <h3 className="text-2xl font-semibold mb-3">
+              {/* Subheading - Updated: text-[22px] md:text-[24px] font-bold leading-[1.3] */}
+              <h3 className="text-[22px] md:text-[24px] font-bold leading-[1.3] mb-3">
                 <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                   Our Values
                 </span>
@@ -200,30 +206,32 @@ const AboutUs = () => {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start gap-3 group">
                   <span className="text-blue-500 mt-1 text-lg">✦</span>
-                  <span><strong className="text-gray-800">Truth First:</strong> <span className="text-blue-600">Uncompromising</span> commitment to factual reporting</span>
+                  <span className="text-[14px] md:text-[15px] font-normal leading-[1.6]"><strong className="text-gray-800">Truth First:</strong> <span className="text-blue-600">Uncompromising</span> commitment to factual reporting</span>
                 </li>
                 <li className="flex items-start gap-3 group">
                   <span className="text-indigo-500 mt-1 text-lg">✦</span>
-                  <span><strong className="text-gray-800">Diverse Voices:</strong> <span className="text-indigo-600">Amplifying perspectives</span> from around the globe</span>
+                  <span className="text-[14px] md:text-[15px] font-normal leading-[1.6]"><strong className="text-gray-800">Diverse Voices:</strong> <span className="text-indigo-600">Amplifying perspectives</span> from around the globe</span>
                 </li>
                 <li className="flex items-start gap-3 group">
                   <span className="text-purple-500 mt-1 text-lg">✦</span>
-                  <span><strong className="text-gray-800">Editorial Independence:</strong> <span className="text-purple-600">Free from external influence</span> or bias</span>
+                  <span className="text-[14px] md:text-[15px] font-normal leading-[1.6]"><strong className="text-gray-800">Editorial Independence:</strong> <span className="text-purple-600">Free from external influence</span> or bias</span>
                 </li>
                 <li className="flex items-start gap-3 group">
                   <span className="text-cyan-500 mt-1 text-lg">✦</span>
-                  <span><strong className="text-gray-800">Innovation:</strong> <span className="text-cyan-600">Embracing new ways</span> to tell important stories</span>
+                  <span className="text-[14px] md:text-[15px] font-normal leading-[1.6]"><strong className="text-gray-800">Innovation:</strong> <span className="text-cyan-600">Embracing new ways</span> to tell important stories</span>
                 </li>
               </ul>
             </div>
             
             <div>
-              <h3 className="text-2xl font-semibold mb-3">
+              {/* Subheading - Updated: text-[22px] md:text-[24px] font-bold leading-[1.3] */}
+              <h3 className="text-[22px] md:text-[24px] font-bold leading-[1.3] mb-3">
                 <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                   Our Impact
                 </span>
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              {/* Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+              <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 Reaching <span className="text-blue-600 font-bold">millions of readers</span> across 
                 <span className="text-indigo-600 font-bold"> 100+ countries</span>, our journalism has sparked 
                 meaningful conversations, driven <span className="text-purple-600 font-medium">accountability</span>, 

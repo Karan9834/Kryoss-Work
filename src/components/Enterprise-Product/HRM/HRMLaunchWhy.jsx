@@ -29,12 +29,14 @@ const HRMLaunchWhy = () => {
           {/* TEXT */}
           <div>
 
-            <span className="inline-block px-4 py-1 mb-4 text-sm rounded-full 
-              bg-white/10 text-white font-medium">
+            {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+            <span className="inline-block px-4 py-1 mb-4 rounded-full 
+              bg-white/10 text-white text-[12px] font-medium tracking-[0.05em] uppercase">
               Launch Your HRM Platform
             </span>
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-6">
               Launch Your{" "}
               <span className="text-purple-200">
                 HRM Platform
@@ -42,12 +44,13 @@ const HRMLaunchWhy = () => {
               in Days, Not Weeks
             </h2>
 
-            <p className="text-purple-100 mb-5 leading-relaxed">
+            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+            <p className="text-purple-100 mb-5 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Get your HRM system live quickly with our ready-to-use solution.
               No long development cycles — just fast deployment.
             </p>
 
-            <p className="text-purple-100 leading-relaxed">
+            <p className="text-purple-100 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Focus on managing your workforce while we handle the technology.
             </p>
 
@@ -57,12 +60,14 @@ const HRMLaunchWhy = () => {
         {/* ================= WHY ================= */}
         <div className="text-center">
 
-          <span className="inline-block px-4 py-1 mb-4 text-sm rounded-full 
-            bg-white/10 text-white font-medium">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+          <span className="inline-block px-4 py-1 mb-4 rounded-full 
+            bg-white/10 text-white text-[12px] font-medium tracking-[0.05em] uppercase">
             Why Choose Our HRM?
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-16">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-16">
             Why Choose Our{" "}
             <span className="text-purple-200">
               HRM Solution
@@ -78,26 +83,26 @@ const HRMLaunchWhy = () => {
             />
           </div>
 
-          {/* BULLETS */}
+          {/* BULLETS - Updated typography */}
           <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto text-left text-purple-100">
 
             <ul className="space-y-4">
-              <li className="flex gap-3">
+              <li className="flex gap-3 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                 <span>•</span>
                 Easily scalable HRM system that grows with your business.
               </li>
-              <li className="flex gap-3">
+              <li className="flex gap-3 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                 <span>•</span>
                 Advanced security and employee data protection.
               </li>
             </ul>
 
             <ul className="space-y-4">
-              <li className="flex gap-3">
+              <li className="flex gap-3 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                 <span>•</span>
                 Full customization control for your workflows.
               </li>
-              <li className="flex gap-3">
+              <li className="flex gap-3 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                 <span>•</span>
                 Smooth and intuitive user experience.
               </li>

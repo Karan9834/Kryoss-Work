@@ -23,8 +23,6 @@ const Features = () => {
       title: "Enterprise Security",
       description:
         "Bank-grade encryption and security protocols to protect your sensitive financial data.",
-      stat: "256-bit",
-      statLabel: "Encryption",
       gradient: "from-amber-500 to-orange-500",
     },
     {
@@ -32,8 +30,6 @@ const Features = () => {
       title: "Real-Time Analytics",
       description:
         "Instant insights and predictive analytics to make informed decisions faster.",
-      stat: "< 100ms",
-      statLabel: "Response Time",
       gradient: "from-orange-500 to-rose-500",
     },
     {
@@ -41,8 +37,6 @@ const Features = () => {
       title: "Market Intelligence",
       description:
         "AI-powered market trends and competitor analysis for strategic advantage.",
-      stat: "24/7",
-      statLabel: "Live Monitoring",
       gradient: "from-amber-500 to-rose-500",
     },
     {
@@ -50,8 +44,6 @@ const Features = () => {
       title: "Asset Management",
       description:
         "Comprehensive portfolio tracking and risk assessment tools.",
-      stat: "$2.5T+",
-      statLabel: "Assets Tracked",
       gradient: "from-orange-500 to-amber-500",
     },
     {
@@ -59,8 +51,6 @@ const Features = () => {
       title: "Predictive Modeling",
       description:
         "Advanced algorithms to forecast market trends and identify opportunities.",
-      stat: "95%",
-      statLabel: "Accuracy Rate",
       gradient: "from-rose-500 to-orange-500",
     },
     {
@@ -68,8 +58,6 @@ const Features = () => {
       title: "Risk Assessment",
       description:
         "Real-time risk scoring and compliance monitoring for informed decisions.",
-      stat: "99.9%",
-      statLabel: "Risk Detection",
       gradient: "from-amber-500 to-orange-500",
     },
   ];
@@ -111,15 +99,17 @@ const Features = () => {
       <div className="relative max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm px-5 py-2 rounded-full border border-orange-200/50 shadow-sm">
             <Sparkles className="w-4 h-4 text-orange-500" />
-            <span className="text-sm font-medium bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
               Powerful Features
             </span>
             <Sparkles className="w-4 h-4 text-amber-500" />
           </div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-gray-900">Everything You Need for</span>
             <br />
             <span className="bg-gradient-to-r from-amber-600 via-orange-500 to-rose-500 bg-clip-text text-transparent">
@@ -127,7 +117,8 @@ const Features = () => {
             </span>
           </h2>
 
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
             Comprehensive tools and insights to transform your financial
             operations
           </p>
@@ -174,9 +165,9 @@ const Features = () => {
                     </div>
                   </div>
 
-                  {/* Title */}
+                  {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
                   <h3
-                    className={`text-xl font-bold mb-3 transition-all duration-300 ${
+                    className={`text-[18px] md:text-[20px] font-bold leading-[1.3] mb-3 transition-all duration-300 ${
                       isHovered
                         ? "text-transparent bg-gradient-to-r from-gray-900 to-orange-900 bg-clip-text"
                         : "text-gray-900"
@@ -185,30 +176,16 @@ const Features = () => {
                     {feature.title}
                   </h3>
 
-                  {/* Description */}
+                  {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
                   <p
-                    className={`text-sm leading-relaxed mb-4 transition-colors duration-300 ${
+                    className={`text-[14px] md:text-[14px] font-normal leading-[1.6] mb-4 transition-colors duration-300 ${
                       isHovered ? "text-gray-700" : "text-gray-600"
                     }`}
                   >
                     {feature.description}
                   </p>
 
-                  {/* Stats with Gradient */}
-                  <div className="flex items-center justify-between pt-4 border-t border-orange-100/50 group-hover:border-orange-200/70 transition-colors">
-                    <span
-                      className={`text-2xl font-bold bg-gradient-to-r ${feature.gradient} bg-clip-text text-transparent`}
-                    >
-                      {feature.stat}
-                    </span>
-                    <span
-                      className={`text-xs transition-colors duration-300 ${
-                        isHovered ? "text-gray-600" : "text-gray-500"
-                      }`}
-                    >
-                      {feature.statLabel}
-                    </span>
-                  </div>
+                  {/* Stats Section Removed */}
 
                   {/* Decorative Bottom Line */}
                   <div
@@ -220,7 +197,7 @@ const Features = () => {
           })}
         </div>
 
-        {/* Additional Feature Cards */}
+        {/* Additional Feature Cards - Updated typography */}
         <div className="mt-20 grid md:grid-cols-3 gap-6">
           {/* AI-Powered Insights */}
           <div className="group relative">
@@ -232,11 +209,11 @@ const Features = () => {
                     <TrendingUp className="w-6 h-6 text-orange-500 group-hover:text-white transition-colors" />
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900">
+                <h3 className="text-[16px] md:text-[18px] font-bold leading-[1.3] text-gray-900">
                   AI-Powered Insights
                 </h3>
               </div>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-[13px] md:text-[14px] font-normal leading-[1.6]">
                 Machine learning algorithms that adapt to your business needs
               </p>
             </div>
@@ -252,11 +229,11 @@ const Features = () => {
                     <Clock className="w-6 h-6 text-rose-500 group-hover:text-white transition-colors" />
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900">
+                <h3 className="text-[16px] md:text-[18px] font-bold leading-[1.3] text-gray-900">
                   24/7 Expert Support
                 </h3>
               </div>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-[13px] md:text-[14px] font-normal leading-[1.6]">
                 Dedicated support team available around the clock
               </p>
             </div>
@@ -272,11 +249,11 @@ const Features = () => {
                     <Shield className="w-6 h-6 text-amber-500 group-hover:text-white transition-colors" />
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900">
+                <h3 className="text-[16px] md:text-[18px] font-bold leading-[1.3] text-gray-900">
                   Enterprise Ready
                 </h3>
               </div>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-[13px] md:text-[14px] font-normal leading-[1.6]">
                 Scalable solutions for institutions of all sizes
               </p>
             </div>

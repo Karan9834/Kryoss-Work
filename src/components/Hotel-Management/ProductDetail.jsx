@@ -46,14 +46,15 @@ const ProductsSection = () => {
 
         {/* Header - Updated Typography */}
         <div className="text-center max-w-3xl mx-auto mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-100 rounded-full px-4 py-2 mb-6">
-            <Sparkles size={16} className="text-teal-600" />
-            <span className="text-[14px] font-semibold text-teal-700 tracking-wide uppercase">
+            <Sparkles size={14} className="text-teal-600" />
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-teal-700">
               Our Products
             </span>
           </div>
 
-          {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
+          {/* Section Heading H2 - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Hotel Solutions{" "}
             <span className="bg-gradient-to-r from-teal-600 to-cyan-600 text-transparent bg-clip-text">
@@ -61,15 +62,15 @@ const ProductsSection = () => {
             </span>
           </h2>
 
-          {/* Description - 16px, weight 400, line-height 1.6 */}
-          <p className="mt-6 text-[16px] font-normal leading-[1.6] text-gray-600">
+          {/* Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="mt-6 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
             Innovative solutions designed for modern hospitality
           </p>
         </div>
 
-        {/* Category Button */}
+        {/* Category Button - Updated typography */}
         <div className="flex justify-center mb-12">
-          <button className="px-8 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-semibold rounded-xl shadow-md text-sm md:text-base tracking-wide uppercase">
+          <button className="px-8 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-semibold rounded-xl shadow-md text-[13px] md:text-[14px] tracking-[0.01em] uppercase">
             {category.name}
           </button>
         </div>
@@ -91,7 +92,7 @@ const ProductsSection = () => {
                 />
               </div>
 
-              {/* Text - Updated Typography */}
+              {/* Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
               <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span 
                   onClick={() => handleViewDetails(product.id)}
@@ -107,9 +108,9 @@ const ProductsSection = () => {
           ))}
         </div>
 
-        {/* Bottom - Updated Typography */}
+        {/* Bottom - Updated typography */}
         <div className="mt-16 text-center">
-          <p className="text-gray-400 text-[14px] font-normal leading-[1.6]">
+          <p className="text-gray-400 text-[12px] md:text-[13px] font-normal leading-[1.6]">
             Click on any product to explore more
           </p>
         </div>

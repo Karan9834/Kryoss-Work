@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 import React from 'react';
 
 // Images will be added by the user later
@@ -17,7 +16,7 @@ const EMSCardSection = () => {
       {
          title: "Event Next",
          desc: "Multivendor event management, intelligent ticketing, and revolutionary access control.",
-         path: "/products/enterprise/ems/event-next", // Add specific paths later if needed
+         path: "/products/enterprise/ems/event-next",
          image: card2
       }
    ];
@@ -26,21 +25,24 @@ const EMSCardSection = () => {
       <section id="ems-cards" className="py-24 bg-white relative">
          <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16 space-y-4">
-               {/* "Our Products" Header */}
+               {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                <div className="flex items-center justify-center gap-2 mb-4">
                   <div className="w-8 h-px bg-fuchsia-200"></div>
-                  <span className="text-orange-500 font-semibold text-sm tracking-wider uppercase">
+                  <span className="text-orange-500 text-[12px] font-medium tracking-[0.05em] uppercase">
                      Our Products
                   </span>
                   <div className="w-8 h-px bg-pink-200"></div>
                </div>
 
-               <h2 className="text-3xl lg:text-4xl font-semibold leading-tight">
+               {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-700 via-pink-600 to-orange-500">
                      Specialized Event Modules
                   </span>
                </h2>
-               <p className="text-[#4A4B5E] text-lg max-w-2xl mx-auto mt-6">
+               
+               {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+               <p className="text-[#4A4B5E] text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto mt-6">
                   Choose the specialized platform that fits your event scale perfectly.
                </p>
             </div>
@@ -60,8 +62,8 @@ const EMSCardSection = () => {
                         />
                      </Link>
 
-                     {/* TITLE AND DESCRIPTION */}
-                     <p className="mt-4 text-sm md:text-base">
+                     {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                     <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         <Link to={card.path} className="text-fuchsia-600 font-semibold hover:underline">
                            {card.title}
                         </Link>{" "}

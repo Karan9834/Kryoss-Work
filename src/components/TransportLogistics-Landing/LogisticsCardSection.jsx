@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
-
 import React from 'react';
-
 import { Truck, Snowflake, Map, Search, ArrowRight } from 'lucide-react';
 import card1 from '../../assets/transportlanding-img/towy.jpg';
 import card2 from '../../assets/transportlanding-img/flower.jpg';
@@ -26,20 +24,24 @@ const LogisticsCardSection = () => {
       <section id="logistics-products" className="py-24 bg-white">
          <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16 space-y-4">
+               {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                <div className="flex items-center justify-center gap-2 mb-4">
                   <div className="w-8 h-px bg-slate-200"></div>
-                  <span className="text-orange-600 font-semibold text-sm tracking-widest uppercase">
+                  <span className="text-orange-600 text-[12px] font-medium tracking-[0.05em] uppercase">
                      Our Products
                   </span>
                   <div className="w-8 h-px bg-slate-200"></div>
                </div>
 
-               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold leading-tight">
+               {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0F172A] via-slate-700 to-[#0F172A]">
                      Scalable Logistics Infrastructure
                   </span>
                </h2>
-               <p className="text-slate-500 text-lg max-w-2xl mx-auto mt-6 font-medium">
+               
+               {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+               <p className="text-slate-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto mt-6">
                   Enterprise-grade platforms built to power your delivery and supply chain operations.
                </p>
             </div>
@@ -59,12 +61,12 @@ const LogisticsCardSection = () => {
                         />
                      </Link>
 
-                     {/* TITLE AND DESCRIPTION */}
-                     <p className="mt-4 text-sm md:text-base">
+                     {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                     <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         <Link to={card.path} className="text-orange-600 font-semibold hover:underline">
                            {card.title}
                         </Link>{" "}
-                        <span className="text-gray-700">- {card.desc}</span>
+                        <span className="text-gray-700">{card.desc}</span>
                      </p>
                   </div>
                ))}

@@ -23,30 +23,46 @@ const VideoAbout = () => {
                     {/* Right: Content */}
                     <div className="space-y-10 order-1 lg:order-2">
                         <div className="space-y-6">
-                            <span className="text-purple-600 font-bold text-sm uppercase tracking-[0.3em] block">Better Together</span>
-                            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-[#1A1C3C] leading-tight">
+                            {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                            <span className="text-purple-600 text-[12px] font-medium tracking-[0.05em] uppercase block">
+                                Better Together
+                            </span>
+                            
+                            {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C3C]">
                                 Redefining the <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-sky-600">Unified Workspace.</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-sky-600">
+                                    Unified Workspace.
+                                </span>
                             </h2>
-                            <p className="text-slate-500 text-lg font-medium leading-relaxed max-w-xl">
+                            
+                            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                            <p className="text-slate-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-xl">
                                 Break down barriers with a platform that combines immersive video conferencing with powerful collaboration tools, keeping everyone in sync.
                             </p>
                         </div>
 
                         <div className="grid grid-cols-2 gap-8">
+                            {/* Card 1 - Hybrid Layouts */}
                             <div className="space-y-4 p-8 bg-slate-50 rounded-[2.5rem] hover:bg-purple-50 transition-colors duration-500 group border border-transparent hover:border-purple-100">
                                 <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-purple-600 group-hover:scale-110 transition-transform">
                                     <Layout size={24} />
                                 </div>
-                                <h3 className="font-bold text-[#1A1C3C]">Hybrid Layouts</h3>
-                                <p className="text-slate-500 text-sm font-medium">Auto-adjusting grids that spotlight active speakers.</p>
+                                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                                <h3 className="font-bold text-[18px] md:text-[20px] leading-[1.3] text-[#1A1C3C]">Hybrid Layouts</h3>
+                                {/* Card Description - Updated: text-[13px] md:text-[14px] font-normal leading-[1.6] */}
+                                <p className="text-slate-500 text-[13px] md:text-[14px] font-normal leading-[1.6]">Auto-adjusting grids that spotlight active speakers.</p>
                             </div>
+                            
+                            {/* Card 2 - Low Latency */}
                             <div className="space-y-4 p-8 bg-slate-50 rounded-[2.5rem] hover:bg-sky-50 transition-colors duration-500 group border border-transparent hover:border-sky-100">
                                 <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-sky-600 group-hover:scale-110 transition-transform">
                                     <Zap size={24} />
                                 </div>
-                                <h3 className="font-bold text-[#1A1C3C]">Low Latency</h3>
-                                <p className="text-slate-500 text-sm font-medium">Optimized for global stability and sub-second lag.</p>
+                                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                                <h3 className="font-bold text-[18px] md:text-[20px] leading-[1.3] text-[#1A1C3C]">Low Latency</h3>
+                                {/* Card Description - Updated: text-[13px] md:text-[14px] font-normal leading-[1.6] */}
+                                <p className="text-slate-500 text-[13px] md:text-[14px] font-normal leading-[1.6]">Optimized for global stability and sub-second lag.</p>
                             </div>
                         </div>
                     </div>

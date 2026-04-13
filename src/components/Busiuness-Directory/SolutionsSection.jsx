@@ -106,20 +106,24 @@ const SolutionsSection = () => {
         
         {/* ===== HEADER SECTION ===== */}
         <div className="text-center mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-4 border border-blue-200">
             <Sparkles className="w-4 h-4 text-blue-600" />
-            <span className="text-blue-700 font-semibold text-sm">Our Solutions</span>
+            <span className="text-blue-700 text-[12px] font-medium tracking-[0.05em] uppercase">Our Solutions</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Comprehensive{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
+            {/* Highlighted Text - Updated: same typography as H2 */}
+            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Solutions
             </span>{" "}
             for Every Business
           </h2>
           
-          <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             Discover how our platform can transform your business discovery and growth journey.
           </p>
         </div>
@@ -176,8 +180,8 @@ const SolutionsSection = () => {
                         alt={solution.title}
                         className="w-full h-[400px] object-cover transition-all duration-700 group-hover/image:scale-110"
                       />
-                      {/* Solution Label on Image */}
-                      <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-full text-white text-sm font-semibold">
+                      {/* Solution Label on Image - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                      <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-full text-white text-[12px] font-medium tracking-[0.05em] uppercase">
                         {solution.label}
                       </div>
                       {/* Gradient Overlay on Hover */}
@@ -191,21 +195,21 @@ const SolutionsSection = () => {
 
                   {/* Content Side with Hover Effect */}
                   <div className="flex-1 transform transition-all duration-500 group-hover:translate-x-2">
-                    {/* Icon Badge */}
+                    {/* Icon Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                     <div className={`inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-6 border border-blue-200 transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg`}>
                       <div className={`text-blue-600 transition-all duration-300 group-hover:scale-110 group-hover:rotate-12`}>
                         {solution.icon}
                       </div>
-                      <span className="text-blue-700 font-semibold text-sm">Solution {solution.id}</span>
+                      <span className="text-blue-700 text-[12px] font-medium tracking-[0.05em] uppercase">Solution {solution.id}</span>
                     </div>
 
-                    {/* Title with Gradient on Hover */}
-                    <h3 className={`text-2xl md:text-3xl lg:text-4xl font-bold mb-4 transition-all duration-500 group-hover:bg-gradient-to-r ${solution.hoverEffect} group-hover:bg-clip-text group-hover:text-transparent`}>
+                    {/* Title - Updated: text-[24px] md:text-[28px] lg:text-[32px] font-bold leading-[1.2] */}
+                    <h3 className={`text-[24px] md:text-[28px] lg:text-[32px] font-bold leading-[1.2] mb-4 transition-all duration-500 group-hover:bg-gradient-to-r ${solution.hoverEffect} group-hover:bg-clip-text group-hover:text-transparent`}>
                       {solution.title}
                     </h3>
 
-                    {/* Description with Hover Effect */}
-                    <p className="text-gray-600 text-lg leading-relaxed transition-all duration-500 group-hover:text-gray-800">
+                    {/* Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 transition-all duration-500 group-hover:text-gray-800">
                       {solution.description}
                     </p>
 

@@ -27,14 +27,23 @@ const HowItWorks = () => {
 
         {/* HEADING */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-5">
+          {/* Optional Badge - Add if needed */}
+          {/* <div className="inline-flex items-center justify-center mb-4">
+            <div className="px-4 py-1.5 rounded-full bg-purple-50 border border-purple-100">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-purple-600">How It Works</span>
+            </div>
+          </div> */}
+          
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-5">
             Get Started in{" "}
             <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
               3 Simple Steps
             </span>
           </h2>
 
-          <p className="text-gray-500 text-lg">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Launch and manage your HR operations effortlessly with a simple and powerful workflow.
           </p>
         </div>
@@ -65,18 +74,18 @@ const HowItWorks = () => {
                   <Icon className="text-white" size={22} />
                 </div>
 
-                {/* STEP */}
-                <div className="text-purple-600 font-semibold mb-2">
+                {/* Step Number - Updated: text-[13px] font-semibold uppercase tracking-[0.05em] */}
+                <div className="text-purple-600 font-semibold text-[13px] uppercase tracking-[0.05em] mb-2">
                   Step {index + 1}
                 </div>
 
-                {/* TITLE */}
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-gray-900 mb-3">
                   {step.title}
                 </h3>
 
-                {/* DESC */}
-                <p className="text-gray-600 text-sm leading-relaxed">
+                {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+                <p className="text-gray-600 text-[14px] md:text-[14px] font-normal leading-[1.6]">
                   {step.desc}
                 </p>
 

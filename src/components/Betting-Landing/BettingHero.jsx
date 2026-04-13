@@ -11,35 +11,37 @@ const BettingHero = ({ onExplore }) => {
             <div className="max-w-7xl mx-auto px-6 relative z-10 w-full pt-10 lg:pt-0">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="space-y-8 animate-fadeInLeft">
+                        {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 rounded-full border border-emerald-200">
                             <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-                            <span className="text-emerald-800 text-xs font-bold uppercase tracking-widest">Premium Betting App Softwares</span>
+                            <span className="text-emerald-800 text-[12px] font-medium tracking-[0.05em] uppercase">Premium Betting App Softwares</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl font-semibold text-[#1E293B] leading-tight">
-                            World-Class <span className="text-emerald-600">Betting Solutions</span> for <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500 font-bold">Unmatched Thrills</span>
+                        {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-[#1E293B]">
+                            World-Class <span className="text-emerald-600">Betting Solutions</span> for <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Unmatched Thrills</span>
                         </h1>
 
-                        <p className="text-[#4A4B5E] text-lg lg:text-xl max-w-xl leading-relaxed">
+                        {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+                        <p className="text-[#4A4B5E] text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-xl">
                             Kryoss Softech is a world-renowned betting app development agency. We create feature-rich, high-speed, and scalable real-time sports betting applications.
                         </p>
 
-
-
+                        {/* Trust Badges - Updated typography (Stats kept as requested) */}
                         <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
                             <div>
-                                <p className="text-2xl font-black text-[#1E293B]">50k+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Active Players</p>
+                                <p className="text-[24px] md:text-[28px] font-bold text-[#1E293B]">50k+</p>
+                                <p className="text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.05em] text-gray-400">Active Players</p>
                             </div>
                             <div className="w-px h-10 bg-gray-100"></div>
                             <div>
-                                <p className="text-2xl font-black text-[#1E293B]">100%</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Payment Security</p>
+                                <p className="text-[24px] md:text-[28px] font-bold text-[#1E293B]">100%</p>
+                                <p className="text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.05em] text-gray-400">Payment Security</p>
                             </div>
                             <div className="w-px h-10 bg-gray-100"></div>
                             <div>
-                                <p className="text-2xl font-black text-[#1E293B]">24/7</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Live Support</p>
+                                <p className="text-[24px] md:text-[28px] font-bold text-[#1E293B]">24/7</p>
+                                <p className="text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.05em] text-gray-400">Live Support</p>
                             </div>
                         </div>
                     </div>
