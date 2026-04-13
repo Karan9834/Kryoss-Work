@@ -155,16 +155,6 @@ const ContactUs = ({
     details: ["011 6926 9633", "Mon–Fri, 10AM–6PM"],
     gradient: currentAccentGradient,
   },
-  {
-    icon: Clock,
-    title: "Working Hours",
-    details: [
-      "Monday - Friday: 10AM - 6PM",
-      "Saturday: Closed",
-      "Sunday: Closed",
-    ],
-    gradient: currentAccentGradient,
-  },
 ];
 
   const socialLinks = [
