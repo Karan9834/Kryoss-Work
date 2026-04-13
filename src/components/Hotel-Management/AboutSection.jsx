@@ -5,16 +5,16 @@ const AboutSection = () => {
   return (
     <section className="w-full bg-gradient-to-b from-white to-slate-50 py-20 md:py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        
+
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
+
           {/* LEFT - IMAGE */}
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
               <img
                 src={hotelhero}
                 alt="Hotel management system"
-                className="w-full h-[360px] md:h-[420px] object-fit"
+                className="w-full h-[400px] md:h-[450px] object-cover"
               />
             </div>
 

@@ -48,7 +48,7 @@ const solutions = [
 
 const Solutions = () => {
   const { scrollYProgress } = useScroll();
-  
+
   // Smooth progress line
   const lineHeight = useTransform(scrollYProgress, [0, 0.8], ["0%", "100%"]);
 
@@ -63,7 +63,7 @@ const Solutions = () => {
         </div>
 
         {/* HEADER SECTION - Updated Typography ONLY */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -87,7 +87,7 @@ const Solutions = () => {
               Transform Your Business
             </span>
           </h2>
-          
+
           {/* Description - Updated: 16px, weight 400, line-height 1.6 */}
           <p className="text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             A systematic approach to launching and scaling your e-commerce success
@@ -96,10 +96,10 @@ const Solutions = () => {
 
         {/* TIMELINE CONTAINER - Card fonts remain unchanged */}
         <div className="relative max-w-5xl mx-auto">
-          
+
           {/* CENTER LINE */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-purple-200 via-pink-200 to-purple-200 rounded-full"></div>
-          
+
           {/* ANIMATED PROGRESS LINE */}
           <motion.div
             style={{ height: lineHeight }}
@@ -119,9 +119,8 @@ const Solutions = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: item.delay }}
                   viewport={{ once: true, margin: "-100px" }}
-                  className={`relative flex flex-col md:flex-row items-center gap-8 md:gap-12 ${
-                    isEven ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
+                  className={`relative flex flex-col md:flex-row items-center gap-8 md:gap-12 ${isEven ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
                 >
                   {/* CONTENT CARD */}
                   <div className={`w-full md:w-1/2 ${isEven ? "md:text-right" : "md:text-left"}`}>
@@ -181,15 +180,15 @@ const Solutions = () => {
                       className="relative group"
                     >
                       <div className={`absolute -inset-1 bg-gradient-to-r ${item.gradient} rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition duration-500`}></div>
-                      
+
                       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <img
                           src={item.img}
                           alt={item.title}
-                          className="w-full h-64 object-cover group-hover:scale-105 transition duration-700"
+                          className="w-full h-80 object-cover group-hover:scale-105 transition duration-700"
                         />
-                        
-                        <motion.div 
+
+                        <motion.div
                           initial={{ opacity: 0 }}
                           whileHover={{ opacity: 1 }}
                           className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent flex items-center justify-center"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle2, Tv, Globe, Shield, Zap, TrendingUp, Image as ImageIcon } from 'lucide-react';
-import aboutImg from '../../assets/ottlanding-img/ottlandingabout.jpg';
+import aboutImg from '../../assets/ottlanding-img/ottlandingabout.png';
 
 const OTTAbout = ({ isLight = false }) => {
     const features = [
@@ -28,8 +28,12 @@ const OTTAbout = ({ isLight = false }) => {
                         <div className={`absolute -inset-10 bg-gradient-to-br from-red-600/20 via-purple-600/20 to-transparent rounded-full blur-[100px] ${isLight ? 'opacity-30' : 'opacity-60'} group-hover:opacity-100 transition duration-1000`}></div>
 
                         {/* Image container */}
-                        <div className={`relative z-10 w-full aspect-square max-w-[500px] mx-auto ${isLight ? 'bg-gray-100' : 'bg-gradient-to-br from-white/10 to-transparent'} rounded-[60px] border-8 ${isLight ? 'border-white' : 'border-white/10'} shadow-2xl flex items-center justify-center overflow-hidden transition-transform duration-700 group-hover:scale-[1.02]`}>
-                            <img src={aboutImg} alt="OTT About" className="w-full h-full object-cover" />
+                        <div className={`relative z-10 w-full h-auto max-w-[700px] mx-auto ${isLight ? 'bg-gray-100' : 'bg-gradient-to-br from-white/10 to-transparent'} rounded-[30px] md:rounded-[50px] border-4 md:border-8 ${isLight ? 'border-white' : 'border-white/10'} shadow-2xl flex items-center justify-center overflow-hidden transition-transform duration-700 group-hover:scale-[1.02]`}>
+                            <img 
+                                src={aboutImg} 
+                                alt="OTT About" 
+                                className="w-full h-auto block object-contain" 
+                            />
                         </div>
 
                     </div>

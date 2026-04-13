@@ -80,14 +80,14 @@ const CareerWhyUs = () => {
                     <img
                         src="/images/company/companyabout/commitment.png"
                         alt="Work Culture at Kryoss Work"
-                        className="mt-8 w-full max-w-[600px] max-h-[450px] rounded-2xl object-cover shadow-lg"
+                        className="mt-8 w-full max-w-[600px] max-h-[480px] rounded-2xl object-cover shadow-lg"
                     />
 
                 </div>
 
                 {/* RIGHT CARDS */}
 
-                <div className="h-[650px] overflow-y-auto pr-4 space-y-6"
+                <div className="h-[680px] overflow-y-auto pr-4 space-y-6"
                     style={{
                         scrollbarWidth: "none",
                         msOverflowStyle: "none",

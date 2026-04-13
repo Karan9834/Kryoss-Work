@@ -1,5 +1,5 @@
 import { Mail, Phone, Linkedin } from "lucide-react";
-import Careerjoin from "../../assets/company-career-img/Careerjoin.webp";
+import Careerjoin from "../../assets/company-career-img/Careerjoin.png";
 const CareerJoinUs = () => {
     return (
         <section className="py-24 bg-[#faf7f2]">
@@ -101,7 +101,7 @@ const CareerJoinUs = () => {
                     <img
                         src={Careerjoin}
                         alt="team"
-                        className="rounded-3xl w-full object-cover"
+                        className="rounded-3xl w-full object-cover h-[500px]"
                     />
 
                     {/* CONTACT BOX */}

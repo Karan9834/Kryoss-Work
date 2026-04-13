@@ -1,8 +1,8 @@
 import React from 'react'
 import solution1 from "../../assets/Doctor-Health-App/solution1.png"
 import solution2 from "../../assets/Doctor-Health-App/solution2.png"
-import solution3 from "../../assets/Doctor-Health-App/solution3.jpg"
-import solution4 from "../../assets/Doctor-Health-App/solution4.jpg"
+import solution3 from "../../assets/Doctor-Health-App/solution3.png"
+import solution4 from "../../assets/Doctor-Health-App/solution4.png"
 
 const Solutions = () => {
   const solutions = [
@@ -89,7 +89,7 @@ const Solutions = () => {
             </span>
             <div className="w-8 h-px bg-amber-200"></div>
           </div>
-          
+
           {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
             Comprehensive{' '}
@@ -97,7 +97,7 @@ const Solutions = () => {
               Healthcare Solutions
             </span>
           </h2>
-          
+
           {/* Hero Description style - Updated: text-base md:text-lg font-normal leading-relaxed */}
           <p className="text-base md:text-lg font-normal leading-relaxed text-gray-600 max-w-2xl mx-auto">
             Tailored approaches to meet your unique healthcare needs, combining technology with compassionate care.
@@ -118,12 +118,11 @@ const Solutions = () => {
               >
                 {/* Timeline dot with hover effect */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 -top-6 w-4 h-4 rounded-full bg-white border-2 border-emerald-400 z-10 hidden lg:block group-hover:scale-150 group-hover:border-amber-400 transition-all duration-300"></div>
-                
+
                 {/* Content grid - alternates left/right */}
-                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${
-                  solution.imageSide === 'left' ? '' : ''
-                }`}>
-                  
+                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${solution.imageSide === 'left' ? '' : ''
+                  }`}>
+
                   {solution.imageSide === 'left' ? (
                     <>
                       {/* Image - Left side */}
@@ -132,7 +131,7 @@ const Solutions = () => {
                           <div className={`absolute -inset-1 bg-gradient-to-r from-${solution.color}-200 to-transparent rounded-2xl opacity-0 group-hover/image:opacity-100 blur-md transition-opacity duration-500`}></div>
                           <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden transform group-hover/image:scale-105 transition-transform duration-500">
                             <div className={`absolute inset-0 bg-gradient-to-tr from-${solution.color}-500/10 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-500`}></div>
-                            <img 
+                            <img
                               src={solution.image}
                               alt={solution.title}
                               className="w-full h-auto object-cover"
@@ -146,22 +145,22 @@ const Solutions = () => {
                       <div className="order-2 group/content">
                         <div className="relative pl-0 lg:pl-8">
                           <div className={`absolute left-0 top-8 w-8 h-0.5 bg-${solution.color}-400 opacity-0 group-hover/content:opacity-100 transition-opacity duration-500 hidden lg:block`}></div>
-                          
+
                           {/* Number badge */}
                           <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-${solution.color}-50 text-${solution.color}-600 font-bold text-lg mb-6 group-hover/content:scale-110 group-hover/content:rotate-3 transition-all duration-300`}>
                             0{solution.id}
                           </div>
-                          
+
                           {/* Project Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
                           <h3 className={`text-[24px] md:text-[30px] font-bold leading-[1.3] text-gray-900 mb-4 group-hover/content:text-${solution.color}-600 transition-colors duration-300`}>
                             {solution.title}
                           </h3>
-                          
+
                           {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
                           <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6">
                             {solution.description}
                           </p>
-                          
+
                           {/* Points list */}
                           <ul className="space-y-3">
                             {solution.points.map((point, idx) => (
@@ -176,7 +175,7 @@ const Solutions = () => {
                               </li>
                             ))}
                           </ul>
-                          
+
                           {/* Hover underline effect */}
                           <div className={`absolute -bottom-2 left-0 w-0 h-[2px] bg-${solution.color}-400 group-hover/content:w-full transition-all duration-500`}></div>
                         </div>
@@ -188,22 +187,22 @@ const Solutions = () => {
                       <div className="order-2 lg:order-1 group/content">
                         <div className="relative pr-0 lg:pr-8">
                           <div className={`absolute right-0 top-8 w-8 h-0.5 bg-${solution.color}-400 opacity-0 group-hover/content:opacity-100 transition-opacity duration-500 hidden lg:block`}></div>
-                          
+
                           {/* Number badge */}
                           <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-${solution.color}-50 text-${solution.color}-600 font-bold text-lg mb-6 group-hover/content:scale-110 group-hover/content:-rotate-3 transition-all duration-300`}>
                             0{solution.id}
                           </div>
-                          
+
                           {/* Project Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
                           <h3 className={`text-[24px] md:text-[30px] font-bold leading-[1.3] text-gray-900 mb-4 group-hover/content:text-${solution.color}-600 transition-colors duration-300`}>
                             {solution.title}
                           </h3>
-                          
+
                           {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
                           <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6">
                             {solution.description}
                           </p>
-                          
+
                           {/* Points list */}
                           <ul className="space-y-3">
                             {solution.points.map((point, idx) => (
@@ -218,7 +217,7 @@ const Solutions = () => {
                               </li>
                             ))}
                           </ul>
-                          
+
                           {/* Hover underline effect */}
                           <div className={`absolute -bottom-2 right-0 w-0 h-[2px] bg-${solution.color}-400 group-hover/content:w-full transition-all duration-500`}></div>
                         </div>
@@ -230,7 +229,7 @@ const Solutions = () => {
                           <div className={`absolute -inset-1 bg-gradient-to-l from-${solution.color}-200 to-transparent rounded-2xl opacity-0 group-hover/image:opacity-100 blur-md transition-opacity duration-500`}></div>
                           <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden transform group-hover/image:scale-105 transition-transform duration-500">
                             <div className={`absolute inset-0 bg-gradient-to-tl from-${solution.color}-500/10 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-500`}></div>
-                            <img 
+                            <img
                               src={solution.image}
                               alt={solution.title}
                               className="w-full h-auto object-cover"
