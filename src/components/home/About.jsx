@@ -1,4 +1,5 @@
 import { CheckCircle, ArrowRight } from "lucide-react";
+import aboutImg from "../../assets/Home/about.png";
 
 const pills = [
   "Customer-Centric Approach",
@@ -198,17 +199,10 @@ export default function About() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
               <img
-                src="/whitelabel-assets/assets/images/about-team.jpg"
+                src={aboutImg}
                 alt="KryossWork Team"
                 loading="lazy"
                 className="w-full h-[480px] object-cover transition-transform duration-700 group-hover:scale-105"
-                onError={(e) => {
-                  if (!e.currentTarget.dataset.error) {
-                    e.currentTarget.dataset.error = "true";
-                    e.currentTarget.src =
-                      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80";
-                  }
-                }}
               />
             </div>
 

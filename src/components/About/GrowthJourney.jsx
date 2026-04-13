@@ -6,35 +6,35 @@ const timelineData = [
     badge: "Our Success Story",
     title: "Global Leadership",
     desc: "Established Kryoss Work as a global leader by advancing DevOps-driven, secure, and ready-to-launch white-label platforms across Europe and Asia.",
-    image: "https://whitelabelfox.com/assets/images/about-us/2025.webp",
+    image: "/images/company/companyabout/growth1.png",
   },
   {
     year: "2024",
     badge: "Scaling New Heights",
     title: "Ecosystem Expansion",
     desc: "Expanded our product ecosystem and strengthened partnerships with global startups, reaching a milestone of 100+ active enterprise clients.",
-    image: "https://whitelabelfox.com/assets/images/about-us/2024.webp",
+    image: "/images/company/companyabout/growth2.png",
   },
   {
     year: "2023",
     badge: "Innovation Phase",
     title: "AI Integration",
     desc: "Scaled operations and introduced multiple AI-driven on-demand solutions, streamlining business workflows for modern enterprises.",
-    image: "https://whitelabelfox.com/assets/images/about-us/2023.webp",
+    image: "/images/company/companyabout/growth3.png",
   },
   {
     year: "2022",
     badge: "Market Penetration",
     title: "Enterprise Solutions",
     desc: "Reached major milestones with successful enterprise deployments in the logistics and fintech sectors.",
-    image: "https://whitelabelfox.com/assets/images/about-us/2022.webp",
+    image: "/images/company/companyabout/growth4.png",
   },
   {
     year: "2021",
     badge: "The Beginning",
     title: "Visionary Foundation",
     desc: "The journey started with a vision to build scalable digital solutions.",
-    image: "https://whitelabelfox.com/assets/images/about-us/2018.webp",
+    image: "/images/company/companyabout/growth5.png",
   },
 ];
 
@@ -54,7 +54,7 @@ const GrowthJourney = () => {
 
   return (
     <section
-      className="relative w-full lg:h-[calc(100vh-80px)] min-h-[550px] flex items-center bg-[#2d004b] py-10 overflow-hidden"
+      className="relative w-full lg:h-[calc(100vh-80px)] min-h-[700px] flex items-center bg-[#2d004b] py-10 overflow-hidden"
       style={{
         backgroundImage:
           "url('https://whitelabelfox.com/assets/images/about-us/about-us-page-our-journey-bg-image.webp')",
@@ -86,7 +86,7 @@ const GrowthJourney = () => {
 
           {/* LEFT SIDE */}
           <div className="relative flex flex-col justify-center">
-            
+
             {/* YEAR */}
             <h1 className="text-[80px] md:text-[110px] lg:text-[140px] font-extrabold text-white/10 leading-none -mb-4">
               {current.year}
@@ -105,7 +105,7 @@ const GrowthJourney = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="relative flex justify-center md:justify-end -mt-6">
+          <div className="relative flex justify-center md:justify-end md:-mt-32 mt-10">
             <div className="relative p-2 bg-white shadow-2xl rounded transform rotate-2 max-w-[500px]">
 
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-20 h-6 bg-white/40 border border-white/20"></div>
@@ -114,7 +114,7 @@ const GrowthJourney = () => {
                 <img
                   src={current.image}
                   alt={current.year}
-                  className="w-full h-auto max-h-[360px] object-cover"
+                  className="w-full h-auto max-h-[500px] object-contain"
                 />
               </div>
 
@@ -128,7 +128,7 @@ const GrowthJourney = () => {
         </div>
 
         {/* TIMELINE */}
-        <div className="mt-10 relative">
+        <div className="mt-2 relative">
           <div className="h-[2px] bg-white/20 w-full absolute top-1/2"></div>
 
           <div
@@ -143,9 +143,8 @@ const GrowthJourney = () => {
               <button
                 key={index}
                 onClick={() => setActive(index)}
-                className={`w-6 h-6 rounded-full ${
-                  active === index ? "bg-orange-400 scale-125" : "bg-gray-300"
-                } transition`}
+                className={`w-6 h-6 rounded-full ${active === index ? "bg-orange-400 scale-125" : "bg-gray-300"
+                  } transition`}
               />
             ))}
           </div>

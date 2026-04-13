@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 // Import your image
-import contactImage from "../../assets/E-Commerce-App/contact.png";
+import contactImage from "../../assets/E-Commerce-App/contact2.jpg";
 
 const ContactUs = ({
   theme = "purple",
@@ -221,7 +221,7 @@ const ContactUs = ({
                   <img
                     src={customImage || contactImage}
                     alt="Contact us"
-                    className="w-full h-[280px] object-fit group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-[300px] object-fit group-hover:scale-105 transition-transform duration-700"
                   />
 
                   {/* Floating badge */}

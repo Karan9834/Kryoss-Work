@@ -48,7 +48,7 @@ const CRMCardSection = () => {
                             {/* CLICKABLE IMAGE */}
                             <Link
                                 to={card.path}
-                                className="cursor-pointer group block "
+                                className="cursor-pointer group block"
                             >
                                 <img
                                     src={card.image}
