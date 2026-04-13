@@ -1,15 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Star, 
-  Users, 
-  Bike, 
+import {
+  Star,
+  Users,
+  Bike,
   ChefHat,
   Sparkles,
-  ArrowRight, MessageCircle } from "lucide-react";
-import ctaImage from "../../../../assets/Product-update/foodcta.png"; 
+  ArrowRight, MessageCircle
+} from "lucide-react";
+import ctaImage from "../../../../assets/Product-update/foodcta.png";
 
 const FoodCTASection = ({ demoUrl = "https://food-demo.vercel.app" }) => {
-  
+
   const handleLiveDemo = () => {
     window.open(demoUrl, '_blank', 'noopener,noreferrer');
   };
@@ -113,7 +115,7 @@ const FoodCTASection = ({ demoUrl = "https://food-demo.vercel.app" }) => {
               <div className="relative">
                 {/* Glow Effect */}
                 <div className="absolute -inset-3 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-[2rem] blur-xl" />
-                
+
                 {/* Image Frame */}
                 <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 border border-green-500/20 shadow-2xl">
                   <div className="aspect-[4/3] relative">
@@ -122,7 +124,7 @@ const FoodCTASection = ({ demoUrl = "https://food-demo.vercel.app" }) => {
                       alt="FoodExpress App"
                       className="w-full h-full object-contain p-4"
                     />
-                    
+
                     {/* Floating Badge - Customer App */}
                     <motion.div
                       animate={{ y: [0, -5, 0] }}

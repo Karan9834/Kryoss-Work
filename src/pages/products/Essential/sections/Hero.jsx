@@ -33,21 +33,21 @@ const EssentialPluginHero = () => {
 
   return (
     <section className="relative w-full h-[85vh] md:h-[80vh] lg:h-[75vh] overflow-hidden bg-gradient-to-br from-slate-950 via-purple-950 to-indigo-950">
-      
+
       {/* Animated Grid Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(168,85,247,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(168,85,247,0.1)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
       </div>
-      
+
       {/* Interactive Glow Following Mouse */}
-      <div 
+      <div
         className="absolute w-[600px] h-[600px] bg-purple-500/20 rounded-full blur-3xl pointer-events-none transition-all duration-300"
         style={{
           left: mousePosition.x - 300,
           top: mousePosition.y - 300,
         }}
       ></div>
-      
+
       {/* Animated Cubes */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
@@ -65,7 +65,7 @@ const EssentialPluginHero = () => {
           ></div>
         ))}
       </div>
-      
+
       {/* Floating Particles */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(30)].map((_, i) => (
@@ -84,7 +84,7 @@ const EssentialPluginHero = () => {
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 h-full flex items-center z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
-          
+
           {/* LEFT CONTENT */}
           <div className="space-y-6">
             {/* Futuristic Badge */}
@@ -92,7 +92,7 @@ const EssentialPluginHero = () => {
               <Sparkles size={14} className="text-purple-400 animate-pulse" />
               <span className="text-xs font-mono text-purple-300 tracking-wider">[ PLUGIN ECOSYSTEM v2.0 ]</span>
             </div>
-            
+
             {/* Main Heading */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight">
               <span className="text-white">Essential</span>
@@ -100,14 +100,14 @@ const EssentialPluginHero = () => {
                 Plugins
               </span>
             </h1>
-            
+
             {/* Description with Cyberpunk Style */}
             <p className="text-base md:text-lg text-gray-400 leading-relaxed max-w-lg border-l-2 border-purple-500 pl-4">
               <span className="text-purple-400 font-mono">{'>'}</span> Modular. Scalable. Deadly fast.
               <br />
               <span className="text-gray-500 text-sm">Unleash the power of 50+ high-performance plugins</span>
             </p>
-            
+
             {/* Tech Specs */}
             <div className="flex flex-wrap gap-4 pt-2">
               <div className="flex items-center gap-2 bg-black/50 backdrop-blur rounded-full px-3 py-1.5 border border-purple-500/30">
@@ -123,7 +123,7 @@ const EssentialPluginHero = () => {
                 <span className="text-xs text-gray-400">Lightning Fast</span>
               </div>
             </div>
-            
+
             {/* Dual Buttons with Holographic Effect */}
             <div className="flex flex-wrap gap-4 pt-4">
               <button
@@ -139,13 +139,13 @@ const EssentialPluginHero = () => {
               </button>
             </div>
           </div>
-          
+
           {/* RIGHT - 3D Holographic Card */}
           <div className="relative flex justify-center items-center perspective">
             {/* Rotating Ring */}
             <div className="absolute w-[380px] h-[380px] border-2 border-purple-500/30 rounded-full animate-spin-slow"></div>
             <div className="absolute w-[320px] h-[320px] border-2 border-blue-500/30 rounded-full animate-spin-reverse"></div>
-            
+
             {/* Main Image with Holographic Effect */}
             <div className="relative group transform-style-3d hover:rotate-y-12 transition-all duration-700">
               <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl blur-2xl opacity-50 group-hover:opacity-100 transition"></div>
@@ -158,7 +158,7 @@ const EssentialPluginHero = () => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 via-transparent to-blue-500/20 rounded-xl"></div>
               </div>
             </div>
-            
+
             {/* Floating Holographic Badges */}
             <div className="absolute -top-8 -right-8 bg-black/80 backdrop-blur-lg rounded-2xl p-3 border border-purple-500/50 animate-float-glow">
               <div className="flex items-center gap-2">
@@ -169,7 +169,7 @@ const EssentialPluginHero = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="absolute -bottom-8 -left-8 bg-black/80 backdrop-blur-lg rounded-2xl p-3 border border-blue-500/50 animate-float-glow animation-delay-1000">
               <div className="flex items-center gap-2">
                 <Puzzle size={20} className="text-purple-400" />
@@ -182,7 +182,7 @@ const EssentialPluginHero = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Custom CSS */}
       <style>{`
         @keyframes spin-slow {

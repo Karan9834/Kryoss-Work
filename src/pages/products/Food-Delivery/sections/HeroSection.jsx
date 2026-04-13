@@ -89,16 +89,26 @@ const FoodHeroSection = ({ demoUrl = "http://preview.codecanyon.net/item/viavi-f
                 </div>
               </div>
 
-              {/* Live Demo Button - Only CTA */}
-              <motion.button
-                onClick={handleLiveDemo}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-xl shadow-lg shadow-green-500/25 hover:shadow-green-500/40 transition-all duration-300 flex items-center justify-center gap-2 group w-fit flex-wrap gap-4"
-              >
-                <span>Live Demo</span>
-                <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </motion.button>
+              <div className="flex flex-wrap gap-4">
+                <motion.button
+                  onClick={handleLiveDemo}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-xl shadow-lg shadow-green-500/25 hover:shadow-green-500/40 transition-all duration-300 flex items-center justify-center gap-2 group w-fit"
+                >
+                  <span>Live Demo</span>
+                  <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+                </motion.button>
+                <motion.a
+                  href="/company/contact"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-2 group w-fit"
+                >
+                  <MessageCircle size={18} />
+                  <span>Let's Discuss</span>
+                </motion.a>
+              </div>
             </motion.div>
 
             {/* Right Column - Image */}
