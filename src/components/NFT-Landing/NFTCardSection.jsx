@@ -21,17 +21,22 @@ const NFTCardSection = () => {
         <section id="nft-products" className="py-16 bg-transparent">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16 space-y-4">
+                    {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <div className="w-8 h-px bg-violet-400"></div>
-                        <span className="text-violet-600 font-bold text-sm tracking-wider uppercase">
+                        <span className="text-violet-600 text-[12px] font-medium tracking-[0.05em] uppercase">
                             Our Products
                         </span>
                         <div className="w-8 h-px bg-violet-400"></div>
                     </div>
-                    <h2 className="text-2xl lg:text-3xl font-semibold text-[#1E293B]">
+                    
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                         Ready-made <span className="text-violet-600">NFT Marketplace</span> Clones
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                    
+                    {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
                         Industry-leading clones and custom solutions crafted for high performance and security.
                     </p>
                 </div>
@@ -51,8 +56,8 @@ const NFTCardSection = () => {
                                 />
                             </Link>
 
-                            {/* TITLE AND DESCRIPTION */}
-                            <p className="mt-4 text-sm md:text-base">
+                            {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                            <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                                 <Link to={product.link} className="text-violet-600 font-semibold hover:underline">
                                     {product.title}
                                 </Link>{" "}
@@ -64,9 +69,9 @@ const NFTCardSection = () => {
                     ))}
                 </div>
 
-                {/* Bottom note */}
+                {/* Bottom note - Updated typography */}
                 <div className="text-center mt-16">
-                    <p className="text-sm text-gray-400 font-medium">
+                    <p className="text-[12px] font-medium uppercase tracking-[0.05em] text-gray-400">
                         ✦ More NFT solutions coming soon ✦
                     </p>
                 </div>
@@ -76,4 +81,3 @@ const NFTCardSection = () => {
 };
 
 export default NFTCardSection;
-

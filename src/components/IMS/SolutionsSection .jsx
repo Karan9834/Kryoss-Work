@@ -34,7 +34,6 @@ const SolutionsSection = () => {
       bgGradient: "from-blue-50 to-cyan-50",
       borderColor: "border-blue-200",
       iconBg: "bg-blue-100",
-      stat: "100+",
       statLabel: "Projects Analyzed"
     },
     {
@@ -53,7 +52,6 @@ const SolutionsSection = () => {
       bgGradient: "from-purple-50 to-pink-50",
       borderColor: "border-purple-200",
       iconBg: "bg-purple-100",
-      stat: "98%",
       statLabel: "Project Success"
     },
     {
@@ -72,7 +70,6 @@ const SolutionsSection = () => {
       bgGradient: "from-orange-50 to-red-50",
       borderColor: "border-orange-200",
       iconBg: "bg-orange-100",
-      stat: "500+",
       statLabel: "Designs Created"
     },
     {
@@ -91,7 +88,6 @@ const SolutionsSection = () => {
       bgGradient: "from-green-50 to-emerald-50",
       borderColor: "border-green-200",
       iconBg: "bg-green-100",
-      stat: "1000+",
       statLabel: "Features Built"
     },
     {
@@ -110,7 +106,6 @@ const SolutionsSection = () => {
       bgGradient: "from-indigo-50 to-blue-50",
       borderColor: "border-indigo-200",
       iconBg: "bg-indigo-100",
-      stat: "24/7",
       statLabel: "Support Available"
     }
   ];
@@ -130,35 +125,38 @@ const SolutionsSection = () => {
         
         {/* Section Header */}
         <div className="text-center mb-12">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-500 p-[1px] rounded-full mb-6">
             <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-2">
-              <Sparkles size={16} className="text-blue-600" />
-              <span className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <Sparkles size={14} className="text-blue-600" />
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Our Process
               </span>
             </div>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             How We Transform Your{" "}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Business Ideas
             </span>
           </h2>
           
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
             A systematic approach to deliver exceptional results for your business
           </p>
         </div>
 
-        {/* Category Buttons - 5 Solutions */}
+        {/* Category Buttons - Updated typography */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           {solutions.map((solution) => (
             <button
               key={solution.id}
               onClick={() => setActiveSolution(solution.id)}
               className={`
-                relative group px-6 py-2.5 rounded-full font-semibold text-sm
+                relative group px-6 py-2.5 rounded-full font-semibold text-[13px] md:text-[14px]
                 transition-all duration-300 transform hover:scale-105
                 ${activeSolution === solution.id 
                   ? `bg-gradient-to-r ${solution.color} text-white shadow-lg shadow-${solution.color.split(' ')[1]}/50` 
@@ -188,7 +186,7 @@ const SolutionsSection = () => {
           ))}
         </div>
 
-        {/* Active Solution Content - Shiny Section */}
+        {/* Active Solution Content */}
         <div 
           className={`
             relative rounded-2xl overflow-hidden transition-all duration-500
@@ -216,32 +214,32 @@ const SolutionsSection = () => {
                     {React.cloneElement(activeData.icon, { size: 28 })}
                   </div>
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                    {/* Card Title - Updated: text-[24px] md:text-[28px] font-bold leading-[1.3] */}
+                    <h3 className="text-[24px] md:text-[28px] font-bold leading-[1.3] text-gray-900">
                       {activeData.title}
                     </h3>
                     <div className={`w-20 h-1 bg-gradient-to-r ${activeData.color} rounded-full mt-2`}></div>
                   </div>
                 </div>
                 
-                {/* Description */}
-                <p className="text-gray-700 text-lg leading-relaxed">
+                {/* Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                <p className="text-gray-700 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                   {activeData.description}
                 </p>
                 
-                {/* Features List */}
+                {/* Features List - Updated typography */}
                 <div className="space-y-3">
                   {activeData.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center gap-3 group cursor-pointer">
                       <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${activeData.color} flex items-center justify-center group-hover:scale-110 transition-transform`}>
                         <CheckCircle size={12} className="text-white" />
                       </div>
-                      <span className="text-gray-700 group-hover:text-gray-900 transition-colors">
+                      <span className="text-gray-700 text-[14px] md:text-[15px] font-normal group-hover:text-gray-900 transition-colors">
                         {feature}
                       </span>
                     </div>
                   ))}
                 </div>
-                
               </div>
               
               {/* Right Content - Stats & Visual */}
@@ -249,10 +247,10 @@ const SolutionsSection = () => {
                 {/* Stats Card */}
                 <div className={`bg-white/80 backdrop-blur-sm rounded-xl p-6 border ${activeData.borderColor} shadow-lg`}>
                   <div className="text-center">
-                    <div className={`text-4xl md:text-5xl font-bold bg-gradient-to-r ${activeData.color} bg-clip-text text-transparent`}>
+                    <div className={`text-3xl md:text-4xl font-bold bg-gradient-to-r ${activeData.color} bg-clip-text text-transparent`}>
                       {activeData.stat}
                     </div>
-                    <div className="text-gray-600 mt-2">{activeData.statLabel}</div>
+                    <div className="text-gray-600 text-[13px] md:text-[14px] font-normal mt-2">{activeData.statLabel}</div>
                     <div className="flex justify-center gap-1 mt-3">
                       {[...Array(5)].map((_, i) => (
                         <div key={i} className={`w-2 h-2 rounded-full bg-gradient-to-r ${activeData.color} ${i < 4 ? 'opacity-100' : 'opacity-30'}`}></div>
@@ -264,8 +262,8 @@ const SolutionsSection = () => {
                 {/* Progress Indicator */}
                 <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6">
                   <div className="flex justify-between mb-2">
-                    <span className="text-sm text-gray-600">Process Progress</span>
-                    <span className={`text-sm font-semibold bg-gradient-to-r ${activeData.color} bg-clip-text text-transparent`}>
+                    <span className="text-[12px] md:text-[13px] font-normal text-gray-600">Process Progress</span>
+                    <span className={`text-[12px] md:text-[13px] font-semibold bg-gradient-to-r ${activeData.color} bg-clip-text text-transparent`}>
                       Step {activeSolution + 1}/5
                     </span>
                   </div>
@@ -290,45 +288,25 @@ const SolutionsSection = () => {
                   </div>
                 </div>
                 
-                {/* Trust Badge */}
+                {/* Trust Badge - Updated typography */}
                 <div className="flex items-center justify-center gap-4 pt-4">
                   <div className="flex items-center gap-2">
-                    <Zap size={16} className="text-yellow-500" />
-                    <span className="text-xs text-gray-600">Fast Delivery</span>
+                    <Zap size={14} className="text-yellow-500" />
+                    <span className="text-[11px] md:text-[12px] font-normal text-gray-600">Fast Delivery</span>
                   </div>
-                  <div className="w-px h-4 bg-gray-300"></div>
+                  <div className="w-px h-3 bg-gray-300"></div>
                   <div className="flex items-center gap-2">
-                    <TrendingUp size={16} className="text-green-500" />
-                    <span className="text-xs text-gray-600">Proven Results</span>
+                    <TrendingUp size={14} className="text-green-500" />
+                    <span className="text-[11px] md:text-[12px] font-normal text-gray-600">Proven Results</span>
                   </div>
-                  <div className="w-px h-4 bg-gray-300"></div>
+                  <div className="w-px h-3 bg-gray-300"></div>
                   <div className="flex items-center gap-2">
-                    <Users size={16} className="text-blue-500" />
-                    <span className="text-xs text-gray-600">Expert Team</span>
+                    <Users size={14} className="text-blue-500" />
+                    <span className="text-[11px] md:text-[12px] font-normal text-gray-600">Expert Team</span>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        
-        {/* Bottom Stats */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="text-center p-3 bg-white rounded-xl border border-gray-200 shadow-sm">
-            <div className="text-lg font-bold text-gray-900">5+</div>
-            <div className="text-xs text-gray-500">Years Experience</div>
-          </div>
-          <div className="text-center p-3 bg-white rounded-xl border border-gray-200 shadow-sm">
-            <div className="text-lg font-bold text-gray-900">50+</div>
-            <div className="text-xs text-gray-500">Team Members</div>
-          </div>
-          <div className="text-center p-3 bg-white rounded-xl border border-gray-200 shadow-sm">
-            <div className="text-lg font-bold text-gray-900">100+</div>
-            <div className="text-xs text-gray-500">Projects Delivered</div>
-          </div>
-          <div className="text-center p-3 bg-white rounded-xl border border-gray-200 shadow-sm">
-            <div className="text-lg font-bold text-gray-900">98%</div>
-            <div className="text-xs text-gray-500">Client Satisfaction</div>
           </div>
         </div>
       </div>

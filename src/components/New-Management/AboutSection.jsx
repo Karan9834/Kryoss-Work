@@ -44,58 +44,43 @@ const AboutSection = () => {
               
               {/* Subtle Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/5 via-transparent to-amber-500/5 pointer-events-none"></div>
-              
-              {/* Simple Caption Card - No Stats */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-lg border border-orange-100/50">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
-                    <svg className="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-xs text-orange-600 font-semibold">Global News Network</p>
-                    <p className="text-sm text-gray-700 font-medium">Seamless collaboration across 40+ countries</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
           {/* RIGHT CONTENT - TEXT */}
           <div className="flex flex-col justify-center">
-            {/* Section Badge */}
+            {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
             <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-100 rounded-full px-4 py-2 mb-6 w-fit">
-              <Sparkles size={16} className="text-orange-600" />
-              <span className="text-sm font-semibold text-orange-700 tracking-wide">About NewsFlow</span>
+              <Sparkles size={14} className="text-orange-600" />
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-orange-700">About NewsFlow</span>
             </div>
 
-            {/* Heading */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
               Revolutionizing How{" "}
               <span className="bg-gradient-to-r from-orange-600 to-amber-600 text-transparent bg-clip-text">
                 News Gets Made
               </span>
             </h2>
 
-            {/* Description */}
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+            <p className="mt-6 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
               NewsFlow is the world's first AI-powered news management platform designed for modern media enterprises. We combine cutting-edge artificial intelligence with intuitive workflows to help newsrooms produce, distribute, and optimize content at scale.
             </p>
 
-            <p className="mt-4 text-gray-600 leading-relaxed">
+            <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
               Founded by journalists and technologists, we understand the unique challenges of modern newsrooms. Our platform empowers over 500 news organizations across 40 countries to deliver accurate, timely, and engaging content while reducing operational complexity.
             </p>
 
-            {/* Feature Grid - No Stats, Just Features */}
+            {/* Feature Grid - No Stats, Just Features - Updated typography */}
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div className="flex items-start gap-3">
                 <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Zap size={18} className="text-orange-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">AI-Powered Workflows</h3>
-                  <p className="text-sm text-gray-500 mt-1">Automate repetitive tasks and focus on storytelling</p>
+                  <h3 className="font-semibold text-[15px] md:text-[16px] text-gray-900">AI-Powered Workflows</h3>
+                  <p className="text-[12px] md:text-[13px] font-normal text-gray-500 mt-1">Automate repetitive tasks and focus on storytelling</p>
                 </div>
               </div>
               
@@ -104,8 +89,8 @@ const AboutSection = () => {
                   <Globe size={18} className="text-orange-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Global Distribution</h3>
-                  <p className="text-sm text-gray-500 mt-1">Reach audiences across any channel or platform</p>
+                  <h3 className="font-semibold text-[15px] md:text-[16px] text-gray-900">Global Distribution</h3>
+                  <p className="text-[12px] md:text-[13px] font-normal text-gray-500 mt-1">Reach audiences across any channel or platform</p>
                 </div>
               </div>
               
@@ -114,8 +99,8 @@ const AboutSection = () => {
                   <TrendingUp size={18} className="text-orange-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Real-Time Analytics</h3>
-                  <p className="text-sm text-gray-500 mt-1">Data-driven insights to optimize content performance</p>
+                  <h3 className="font-semibold text-[15px] md:text-[16px] text-gray-900">Real-Time Analytics</h3>
+                  <p className="text-[12px] md:text-[13px] font-normal text-gray-500 mt-1">Data-driven insights to optimize content performance</p>
                 </div>
               </div>
               
@@ -124,8 +109,8 @@ const AboutSection = () => {
                   <Shield size={18} className="text-orange-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Enterprise Security</h3>
-                  <p className="text-sm text-gray-500 mt-1">Bank-grade encryption and compliance standards</p>
+                  <h3 className="font-semibold text-[15px] md:text-[16px] text-gray-900">Enterprise Security</h3>
+                  <p className="text-[12px] md:text-[13px] font-normal text-gray-500 mt-1">Bank-grade encryption and compliance standards</p>
                 </div>
               </div>
             </div>

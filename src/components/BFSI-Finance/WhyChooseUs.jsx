@@ -25,8 +25,6 @@ const WhyChooseUs = () => {
       description:
         "Enterprise-level encryption and security protocols to protect your sensitive financial data at all times.",
       gradient: "from-amber-500 to-orange-500",
-      stat: "256-bit",
-      statLabel: "Encryption",
       delay: "0s",
     },
     {
@@ -35,8 +33,6 @@ const WhyChooseUs = () => {
       description:
         "Sub-millisecond response times for real-time trading and analytics, ensuring you never miss an opportunity.",
       gradient: "from-orange-500 to-rose-500",
-      stat: "< 100ms",
-      statLabel: "Latency",
       delay: "0.1s",
     },
     {
@@ -45,8 +41,6 @@ const WhyChooseUs = () => {
       description:
         "Access to 100+ financial markets worldwide with localized insights and global perspectives.",
       gradient: "from-amber-500 to-rose-500",
-      stat: "100+",
-      statLabel: "Markets",
       delay: "0.2s",
     },
     {
@@ -55,8 +49,6 @@ const WhyChooseUs = () => {
       description:
         "Round-the-clock surveillance of market movements and portfolio performance with instant alerts.",
       gradient: "from-orange-500 to-amber-500",
-      stat: "24/7",
-      statLabel: "Monitoring",
       delay: "0s",
     },
     {
@@ -65,8 +57,6 @@ const WhyChooseUs = () => {
       description:
         "Seasoned financial experts and data scientists with decades of combined industry experience.",
       gradient: "from-rose-500 to-orange-500",
-      stat: "100+",
-      statLabel: "Experts",
       delay: "0.1s",
     },
     {
@@ -75,8 +65,6 @@ const WhyChooseUs = () => {
       description:
         "Recognized globally for innovation in financial technology and excellence in service delivery.",
       gradient: "from-amber-500 to-orange-500",
-      stat: "25+",
-      statLabel: "Awards",
       delay: "0.2s",
     },
   ];
@@ -118,13 +106,15 @@ const WhyChooseUs = () => {
       <div className="relative max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 mb-4">
             <div className="w-12 h-px bg-gradient-to-r from-transparent to-orange-400"></div>
             <Heart className="w-5 h-5 text-orange-500" />
             <div className="w-12 h-px bg-gradient-to-l from-transparent to-orange-400"></div>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             Why Financial Leaders{" "}
             <span className="bg-gradient-to-r from-amber-600 via-orange-500 to-rose-500 bg-clip-text text-transparent">
               Choose Us
@@ -133,7 +123,8 @@ const WhyChooseUs = () => {
 
           <div className="flex items-center justify-center gap-4 mt-4">
             <div className="w-16 h-px bg-gradient-to-r from-transparent to-orange-300"></div>
-            <p className="text-gray-600 text-lg max-w-2xl">
+            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+            <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl">
               Trusted by top institutions for our commitment to excellence,
               security, and innovation
             </p>
@@ -179,9 +170,9 @@ const WhyChooseUs = () => {
                     </div>
                   </div>
 
-                  {/* Title */}
+                  {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
                   <h3
-                    className={`text-xl font-bold mb-3 transition-all duration-300 ${
+                    className={`text-[18px] md:text-[20px] font-bold leading-[1.3] mb-3 transition-all duration-300 ${
                       isHovered
                         ? "text-transparent bg-gradient-to-r from-gray-900 to-orange-900 bg-clip-text"
                         : "text-gray-900"
@@ -190,30 +181,16 @@ const WhyChooseUs = () => {
                     {feature.title}
                   </h3>
 
-                  {/* Description */}
+                  {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
                   <p
-                    className={`text-sm leading-relaxed mb-4 transition-colors duration-300 ${
+                    className={`text-[14px] md:text-[14px] font-normal leading-[1.6] mb-4 transition-colors duration-300 ${
                       isHovered ? "text-gray-700" : "text-gray-600"
                     }`}
                   >
                     {feature.description}
                   </p>
 
-                  {/* Stats */}
-                  <div className="flex items-center justify-between pt-4 border-t border-orange-100/50 group-hover:border-orange-200/70 transition-colors">
-                    <span
-                      className={`text-2xl font-bold bg-gradient-to-r ${feature.gradient} bg-clip-text text-transparent`}
-                    >
-                      {feature.stat}
-                    </span>
-                    <span
-                      className={`text-xs transition-colors duration-300 ${
-                        isHovered ? "text-gray-600" : "text-gray-500"
-                      }`}
-                    >
-                      {feature.statLabel}
-                    </span>
-                  </div>
+                  {/* Stats Section Removed */}
 
                   {/* Decorative Bottom Line */}
                   <div
@@ -223,57 +200,6 @@ const WhyChooseUs = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* Trust Indicators with Icons */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div className="group text-center">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-orange-50 group-hover:bg-orange-100 transition-all duration-300 mb-3">
-              <Users className="w-7 h-7 text-orange-500" />
-            </div>
-            <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
-              500+
-            </div>
-            <div className="text-sm text-gray-500 group-hover:text-orange-600 transition-colors">
-              Institutions Trust Us
-            </div>
-          </div>
-
-          <div className="group text-center">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-amber-50 group-hover:bg-amber-100 transition-all duration-300 mb-3">
-              <Globe className="w-7 h-7 text-amber-500" />
-            </div>
-            <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
-              100+
-            </div>
-            <div className="text-sm text-gray-500 group-hover:text-amber-600 transition-colors">
-              Global Markets
-            </div>
-          </div>
-
-          <div className="group text-center">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-rose-50 group-hover:bg-rose-100 transition-all duration-300 mb-3">
-              <Clock className="w-7 h-7 text-rose-500" />
-            </div>
-            <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
-              24/7
-            </div>
-            <div className="text-sm text-gray-500 group-hover:text-rose-600 transition-colors">
-              Real-Time Support
-            </div>
-          </div>
-
-          <div className="group text-center">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-emerald-50 group-hover:bg-emerald-100 transition-all duration-300 mb-3">
-              <Award className="w-7 h-7 text-emerald-500" />
-            </div>
-            <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
-              25+
-            </div>
-            <div className="text-sm text-gray-500 group-hover:text-emerald-600 transition-colors">
-              Industry Awards
-            </div>
-          </div>
         </div>
 
         {/* Decorative Bottom Element */}

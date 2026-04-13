@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
-
 import React from 'react';
-
 import { Video, Globe, Zap, Users, ArrowRight } from 'lucide-react';
 import card1 from '../../assets/videolanding-img/image1.jpg';
 import card2 from '../../assets/videolanding-img/image.jpg';
+
 const VideoCardSection = () => {
    const cards = [
       {
@@ -25,20 +24,24 @@ const VideoCardSection = () => {
       <section id="video-products" className="py-24 bg-white overflow-hidden">
          <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16 space-y-4">
+               {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                <div className="flex items-center justify-center gap-2 mb-4">
                   <div className="w-8 h-px bg-purple-200"></div>
-                  <span className="text-sky-600 font-semibold text-sm tracking-wider uppercase">
+                  <span className="text-sky-600 text-[12px] font-medium tracking-[0.05em] uppercase">
                      Our Products
                   </span>
                   <div className="w-8 h-px bg-sky-200"></div>
                </div>
 
-               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold leading-relaxed">
+               {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-sky-600 to-pink-600">
                      Unified Communication Suite
                   </span>
                </h2>
-               <p className="text-slate-500 text-lg max-w-2xl mx-auto mt-6 font-medium">
+               
+               {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+               <p className="text-slate-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto mt-6">
                   Scale your meetings and webinars with global infrastructure built for clarity.
                </p>
             </div>
@@ -58,12 +61,12 @@ const VideoCardSection = () => {
                         />
                      </Link>
 
-                     {/* TITLE AND DESCRIPTION */}
-                     <p className="mt-4 text-sm md:text-base">
+                     {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                     <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         <Link to={card.path} className="text-purple-600 font-semibold hover:underline">
                            {card.title}
                         </Link>{" "}
-                        <span className="text-gray-700">- {card.desc}</span>
+                        <span className="text-gray-700">{card.desc}</span>
                      </p>
                   </div>
                ))}

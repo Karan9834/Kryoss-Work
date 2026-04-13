@@ -48,33 +48,33 @@ const Hero = () => {
           
           {/* LEFT CONTENT */}
           <div className="space-y-8">
-            {/* Badge - Warm Colors */}
+            {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-amber-200/50 shadow-sm">
               <Shield className="w-4 h-4 text-amber-600" />
-              <span className="text-sm font-medium text-gray-700">Trusted by Leading Financial Institutions</span>
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-700">Trusted by Leading Financial Institutions</span>
               <Sparkles className="w-3 h-3 text-rose-400" />
             </div>
             
-            {/* Main Heading with Warm Gradient */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+            <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               <span className="text-gray-900">Intelligent </span>
-              <span className="bg-gradient-to-r from-amber-600 via-rose-500 to-orange-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-amber-600 via-rose-500 to-orange-500 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
                 Financial Intelligence
               </span>
               <br />
               <span className="text-gray-900">for Modern Banking</span>
             </h1>
             
-            {/* Description */}
-            <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+            {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+            <p className="text-gray-600 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-xl">
               Transform your financial operations with real-time insights, predictive analytics, 
               and enterprise-grade security. Powering decisions for banks, insurers, and investment firms worldwide.
             </p>
             
-            {/* CTA Button - Warm Gradient */}
+            {/* CTA Button - Updated typography */}
             <button 
               onClick={handleExploreNow}
-              className="group inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 via-rose-500 to-orange-500 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="group inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 via-rose-500 to-orange-500 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 text-[16px] tracking-[0.01em]"
             >
               <span>Explore Now</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -96,26 +96,6 @@ const Hero = () => {
               
               {/* Gradient Overlay - Warm */}
               <div className="absolute inset-0 bg-gradient-to-t from-amber-900/20 via-transparent to-transparent"></div>
-              
-              {/* Floating Stats Card - Warm Theme */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-lg border border-amber-100/50">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-xs text-gray-500 mb-1">Market Trend</p>
-                    <p className="text-lg font-bold text-amber-600">+12.5%</p>
-                  </div>
-                  <div className="w-px h-10 bg-amber-200"></div>
-                  <div>
-                    <p className="text-xs text-gray-500 mb-1">Risk Score</p>
-                    <p className="text-lg font-bold text-emerald-600">Low Risk</p>
-                  </div>
-                  <div className="w-px h-10 bg-amber-200"></div>
-                  <div>
-                    <p className="text-xs text-gray-500 mb-1">Liquidity</p>
-                    <p className="text-lg font-bold text-rose-500">High</p>
-                  </div>
-                </div>
-              </div>
             </div>
             
             {/* Decorative Corners - Warm */}

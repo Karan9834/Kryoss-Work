@@ -45,14 +45,23 @@ const CRMDashboard = () => {
 
         {/* HEADING */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          {/* Optional Badge - Add if needed */}
+          {/* <div className="inline-flex items-center justify-center mb-4">
+            <div className="px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-blue-600">Dashboard</span>
+            </div>
+          </div> */}
+          
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             Powerful CRM Dashboard for{" "}
             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               Smarter Decisions
             </span>
           </h2>
 
-          <p className="text-gray-600 max-w-xl mx-auto">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-xl mx-auto">
             Track sales, manage leads, and analyze performance — all from one clean dashboard.
           </p>
         </div>
@@ -111,9 +120,9 @@ const CRMDashboard = () => {
                   />
                 </div>
 
-                {/* TITLE */}
+                {/* Card Title - Updated: text-[15px] md:text-[16px] font-semibold */}
                 <h3 className="
-                  relative z-10 font-semibold text-gray-800 
+                  relative z-10 font-semibold text-[15px] md:text-[16px] text-gray-800 
                   group-hover:text-blue-700 transition
                 ">
                   {item.title}

@@ -62,15 +62,20 @@ const SMSFeatures = () => {
 
                 {/* Header Phase */}
                 <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-sm font-bold uppercase tracking-widest text-blue-300">
-                        <Sparkles size={16} /> Elite Educational Ecosystem
+                    {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-[12px] font-medium tracking-[0.05em] uppercase text-blue-300">
+                        <Sparkles size={14} /> Elite Educational Ecosystem
                     </div>
-                    <h2 className="text-3xl lg:text-4xl font-semibold leading-tight">
+                    
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-cyan-300 to-emerald-200">
                             Revolutionizing Institutions with 3D Precision
                         </span>
                     </h2>
-                    <p className="text-blue-100/70 text-xl font-medium">
+                    
+                    {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-blue-100/70 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         Our immersive interface provides a futuristic perspective on school management, designed for the next generation of educators.
                     </p>
                 </div>
@@ -92,10 +97,12 @@ const SMSFeatures = () => {
                                 <div className="w-18 h-18 rounded-3xl bg-white/10 flex items-center justify-center mb-8 border border-white/10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-inner">
                                     {feature.icon}
                                 </div>
-                                <h3 className="text-2xl font-bold text-white mb-4 tracking-tighter leading-none">
+                                {/* Card Title - Updated: text-[20px] md:text-[22px] font-bold leading-[1.3] */}
+                                <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4">
                                     {feature.title}
                                 </h3>
-                                <p className="text-blue-100/60 leading-relaxed font-medium">
+                                {/* Card Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                                <p className="text-blue-100/60 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                                     {feature.desc}
                                 </p>
 
@@ -109,10 +116,11 @@ const SMSFeatures = () => {
                     ))}
                 </div>
 
+                {/* Footer Badge - Updated typography */}
                 <div className="mt-24 text-center">
                     <div className="inline-flex items-center gap-4 px-8 py-4 bg-white/10 border border-white/20 rounded-2xl backdrop-blur-md shadow-2xl group hover:bg-white/20 transition-all cursor-pointer">
                         <Shield className="text-emerald-400" />
-                        <span className="font-bold text-blue-100 tracking-wide uppercase text-sm">Enterprise Grade Security & 3D Analytics Integrated</span>
+                        <span className="font-semibold text-blue-100 text-[11px] md:text-[12px] uppercase tracking-[0.05em]">Enterprise Grade Security & 3D Analytics Integrated</span>
                     </div>
                 </div>
 

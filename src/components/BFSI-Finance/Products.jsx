@@ -60,13 +60,15 @@ const ProductSection = () => {
 
         {/* Section Heading in Between */}
         <div className="text-center mb-16">
+          {/* Decorative Icons - Keep as is */}
           <div className="inline-flex items-center gap-2 mb-4">
             <div className="w-12 h-px bg-gradient-to-r from-transparent to-orange-400"></div>
             <Sparkles className="w-5 h-5 text-orange-500" />
             <div className="w-12 h-px bg-gradient-to-l from-transparent to-orange-400"></div>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             Financial Intelligence{" "}
             <span className="bg-gradient-to-r from-amber-600 via-orange-500 to-rose-500 bg-clip-text text-transparent">
               Solutions
@@ -75,7 +77,8 @@ const ProductSection = () => {
 
           <div className="flex items-center justify-center gap-4 mt-4">
             <div className="w-16 h-px bg-gradient-to-r from-transparent to-orange-300"></div>
-            <p className="text-gray-600 text-lg">
+            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+            <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Enterprise-grade platforms for modern financial institutions
             </p>
             <div className="w-16 h-px bg-gradient-to-l from-transparent to-orange-300"></div>
@@ -98,8 +101,8 @@ const ProductSection = () => {
                 />
               </Link>
 
-              {/* TITLE AND DESCRIPTION */}
-              <p className="mt-4 text-sm md:text-base">
+              {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <Link to={product.route} className="text-orange-600 font-semibold hover:underline">
                   {product.title}
                 </Link>{" "}
@@ -108,32 +111,6 @@ const ProductSection = () => {
             </div>
           ))}
         </div>
-
-        {/* Trust Badge - No Buttons */}
-        <div className="mt-20 text-center">
-          <div className="inline-flex flex-wrap items-center justify-center gap-6 bg-orange-50/30 backdrop-blur-sm border border-orange-100/50 px-8 py-4 rounded-full shadow-sm">
-            <div className="flex items-center gap-2">
-              <Award className="w-4 h-4 text-amber-500" />
-              <span className="text-xs text-gray-600">Trusted by 500+ Institutions</span>
-            </div>
-            <div className="w-px h-4 bg-orange-200"></div>
-            <div className="flex items-center gap-2">
-              <Shield className="w-4 h-4 text-orange-500" />
-              <span className="text-xs text-gray-600">Bank-Grade Security</span>
-            </div>
-            <div className="w-px h-4 bg-orange-200"></div>
-            <div className="flex items-center gap-2">
-              <Zap className="w-4 h-4 text-amber-500" />
-              <span className="text-xs text-gray-600">24/7 Enterprise Support</span>
-            </div>
-            <div className="w-px h-4 bg-orange-200"></div>
-            <div className="flex items-center gap-2">
-              <Globe className="w-4 h-4 text-orange-500" />
-              <span className="text-xs text-gray-600">Global Coverage</span>
-            </div>
-          </div>
-        </div>
-
         {/* Decorative Bottom Element */}
         <div className="mt-12 flex justify-center">
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-orange-400 to-transparent rounded-full"></div>

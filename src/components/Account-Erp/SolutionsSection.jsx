@@ -60,13 +60,23 @@ const SolutionsSection = () => {
 
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+          {/* Optional Badge - Add if needed */}
+          {/* <div className="inline-flex items-center justify-center mb-4">
+            <div className="px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-blue-600">Our Solutions</span>
+            </div>
+          </div> */}
+          
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Complete Solutions for{" "}
             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">
               Modern Businesses
             </span>
           </h2>
-          <p className="text-gray-600 mt-4">
+          
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Powerful tools designed to simplify operations and drive growth.
           </p>
         </div>
@@ -134,13 +144,13 @@ const SolutionsSection = () => {
                           <Icon className="text-white w-6 h-6" />
                         </div>
 
-                        {/* TITLE */}
-                        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition">
+                        {/* Card Title - Updated: text-[22px] md:text-[28px] font-bold leading-[1.3] */}
+                        <h3 className="text-[22px] md:text-[28px] font-bold leading-[1.3] text-gray-900 mb-3 group-hover:text-blue-600 transition">
                           {item.title}
                         </h3>
 
-                        {/* DESC */}
-                        <p className="text-gray-600 leading-relaxed text-lg">
+                        {/* Card Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                        <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                           {item.desc}
                         </p>
 

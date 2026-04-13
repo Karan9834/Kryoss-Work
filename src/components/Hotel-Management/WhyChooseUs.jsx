@@ -70,15 +70,15 @@ const WhyChooseUs = () => {
     <section className="w-full bg-gradient-to-br from-slate-900 via-gray-900 to-black py-20 md:py-24 text-white">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
 
-        {/* Heading - Updated Typography ONLY */}
+        {/* Heading - Updated Typography */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-3 bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 bg-clip-text text-transparent">
             Why Choose Us
           </h2>
           
-          {/* Description - 16px, weight 400, line-height 1.6 */}
-          <p className="text-[16px] font-normal leading-[1.6] text-gray-400">
+          {/* Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+          <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-400">
             Built for modern hotels that demand performance, reliability, and scale
           </p>
 
@@ -88,7 +88,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
 
-        {/* Cards - Fonts KEPT ORIGINAL (unchanged) */}
+        {/* Cards - Updated Fonts */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 [perspective:1200px]">
           {benefits.map((b, i) => {
             const Icon = b.icon;
@@ -122,13 +122,13 @@ const WhyChooseUs = () => {
                   <Icon size={26} />
                 </div>
 
-                {/* Card Title - ORIGINAL FONT (unchanged) */}
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-white">
+                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] mb-2 group-hover:text-white">
                   {b.title}
                 </h3>
 
-                {/* Card Description - ORIGINAL FONT (unchanged) */}
-                <p className="text-gray-400 text-sm leading-relaxed">
+                {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+                <p className="text-gray-400 text-[14px] md:text-[14px] font-normal leading-[1.6]">
                   {b.desc}
                 </p>
 

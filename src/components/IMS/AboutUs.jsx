@@ -38,11 +38,11 @@ const AboutUs = () => {
 
       <div className="relative max-w-7xl mx-auto px-6 py-24">
         
-        {/* Section Badge */}
+        {/* Section Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-full px-4 py-2">
-            <Sparkles size={16} className="text-blue-600" />
-            <span className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <Sparkles size={14} className="text-blue-600" />
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               About Our Platform
             </span>
           </div>
@@ -67,71 +67,58 @@ const AboutUs = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-blue-500/10 via-transparent to-indigo-500/10 rounded-xl"></div>
             </div>
 
-            {/* Floating Stats Cards */}
-            <div className="absolute -top-6 -right-6 bg-white rounded-xl shadow-xl p-3 animate-float">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                  <Users size={18} className="text-white" />
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500">Active Users</p>
-                  <p className="text-lg font-bold text-gray-900">10,000+</p>
-                </div>
-              </div>
-            </div>
-
             <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-3 animate-float-delayed">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
                   <Globe size={18} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500">Countries</p>
-                  <p className="text-lg font-bold text-gray-900">50+</p>
+                  <p className="text-[10px] font-medium uppercase tracking-[0.05em] text-gray-500">Global Reach</p>
+                  <p className="text-sm font-semibold text-gray-900">Worldwide Presence</p>
                 </div>
               </div>
             </div>
 
-            {/* Experience Badge */}
+            {/* Experience Badge - Stats Removed */}
             <div className="absolute top-1/2 -left-4 -translate-y-1/2 bg-white rounded-lg shadow-lg p-2 hidden lg:block">
               <div className="flex flex-col items-center">
-                <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">5+</span>
-                <span className="text-xs text-gray-500">Years</span>
+                <span className="text-lg font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Trusted</span>
+                <span className="text-[10px] font-medium uppercase tracking-[0.05em] text-gray-500">Globally</span>
               </div>
             </div>
           </div>
 
           {/* RIGHT - Content Section */}
           <div className="space-y-6">
-            {/* Heading */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
               Powering the{" "}
               <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 Future of Work
               </span>
             </h2>
             
-            {/* Description */}
-            <p className="text-gray-600 leading-relaxed text-base">
+            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+            <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               We build powerful, scalable solutions designed to simplify complex workflows
               and enhance productivity. Our platform combines cutting-edge technology with
               intuitive design to deliver seamless user experiences across industries.
             </p>
             
-            <p className="text-gray-500 leading-relaxed">
+            <p className="text-gray-500 text-[14px] md:text-[15px] font-normal leading-[1.6]">
               Trusted by businesses worldwide, we're committed to innovation and excellence
               in everything we create.
             </p>
 
-            {/* Feature Points with Icons */}
+            {/* Feature Points with Icons - Updated typography */}
             <div className="space-y-3 pt-2">
               <div className="flex items-start gap-3 group cursor-pointer">
                 <div className="w-6 h-6 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 flex items-center justify-center mt-0.5 group-hover:scale-110 transition-transform">
                   <CheckCircle size={12} className="text-white" />
                 </div>
                 <div>
-                  <span className="text-gray-800 font-medium">AI-powered automation</span>
-                  <p className="text-sm text-gray-500">Smart workflows & predictive analytics</p>
+                  <span className="text-gray-800 font-medium text-[14px] md:text-[15px]">AI-powered automation</span>
+                  <p className="text-[12px] md:text-[13px] font-normal text-gray-500">Smart workflows & predictive analytics</p>
                 </div>
               </div>
 
@@ -140,8 +127,8 @@ const AboutUs = () => {
                   <CheckCircle size={12} className="text-white" />
                 </div>
                 <div>
-                  <span className="text-gray-800 font-medium">Scalable architecture</span>
-                  <p className="text-sm text-gray-500">Built for growing businesses</p>
+                  <span className="text-gray-800 font-medium text-[14px] md:text-[15px]">Scalable architecture</span>
+                  <p className="text-[12px] md:text-[13px] font-normal text-gray-500">Built for growing businesses</p>
                 </div>
               </div>
 
@@ -150,33 +137,13 @@ const AboutUs = () => {
                   <Shield size={12} className="text-white" />
                 </div>
                 <div>
-                  <span className="text-gray-800 font-medium">Enterprise-grade security</span>
-                  <p className="text-sm text-gray-500">Bank-level encryption & compliance</p>
+                  <span className="text-gray-800 font-medium text-[14px] md:text-[15px]">Enterprise-grade security</span>
+                  <p className="text-[12px] md:text-[13px] font-normal text-gray-500">Bank-level encryption & compliance</p>
                 </div>
               </div>
             </div>
 
-            {/* Achievement Stats */}
-            <div className="grid grid-cols-3 gap-4 pt-4">
-              <div className="text-center p-3 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl">
-                <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                  500+
-                </div>
-                <div className="text-xs text-gray-600">Projects Delivered</div>
-              </div>
-              <div className="text-center p-3 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl">
-                <div className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                  98%
-                </div>
-                <div className="text-xs text-gray-600">Client Satisfaction</div>
-              </div>
-              <div className="text-center p-3 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl">
-                <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  24/7
-                </div>
-                <div className="text-xs text-gray-600">Support</div>
-              </div>
-            </div>
+            {/* Achievement Stats - REMOVED */}
           </div>
         </div>
       </div>

@@ -23,28 +23,28 @@ const CRMAbout = () => {
           bg-white shadow-sm
         ">
 
-          {/* TAG */}
-          <span className="inline-block px-4 py-1 mb-5 text-sm rounded-full 
-            bg-blue-100 text-blue-600 font-medium">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+          <span className="inline-block px-4 py-1 mb-5 rounded-full 
+            bg-blue-100 text-blue-600 text-[12px] font-medium tracking-[0.05em] uppercase">
             About CRM
           </span>
 
-          {/* HEADING */}
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
             Transform Your Sales with{" "}
             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               Smart CRM Solutions
             </span>
           </h2>
 
-          {/* PARA 1 */}
-          <p className="text-gray-600 mb-5 leading-relaxed">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 mb-5 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Our CRM platform helps businesses manage leads, track customer interactions, 
             and streamline sales processes — all in one powerful system designed for growth.
           </p>
 
-          {/* PARA 2 */}
-          <p className="text-gray-600 leading-relaxed">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             From pipeline management to analytics and automation, our solution empowers teams 
             to close deals faster, improve customer relationships, and drive consistent revenue.
           </p>

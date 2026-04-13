@@ -32,16 +32,19 @@ const CasinoWhyUs = () => {
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     <div className="lg:w-1/2 space-y-8 animate-fadeInLeft">
+                        {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 rounded-full border border-orange-500/20">
                             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-                            <span className="text-orange-400 text-xs font-bold uppercase tracking-widest">Why Choose Kryoss</span>
+                            <span className="text-orange-400 text-[12px] font-medium tracking-[0.05em] uppercase">Why Choose Kryoss</span>
                         </div>
 
-                        <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
+                        {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                        <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
                             Build Your <span className="text-orange-500">Casino Empire</span> with Confidence
                         </h2>
 
-                        <p className="text-gray-400 text-lg leading-relaxed">
+                        {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                        <p className="text-gray-400 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                             We provide end-to-end casino game development services, from conceptualization and design to deployment and post-launch support. Our solutions are built to scale and perform.
                         </p>
 
@@ -52,8 +55,10 @@ const CasinoWhyUs = () => {
                                         <reason.icon className="w-6 h-6 text-orange-500 group-hover:text-white transition-colors" />
                                     </div>
                                     <div>
-                                        <h4 className="text-lg font-bold mb-1">{reason.title}</h4>
-                                        <p className="text-sm text-gray-500">{reason.desc}</p>
+                                        {/* Reason Title - Updated: text-[16px] md:text-[18px] font-bold */}
+                                        <h4 className="text-[16px] md:text-[18px] font-bold mb-1">{reason.title}</h4>
+                                        {/* Reason Description - Updated: text-[12px] md:text-[13px] font-normal */}
+                                        <p className="text-gray-500 text-[12px] md:text-[13px] font-normal">{reason.desc}</p>
                                     </div>
                                 </div>
                             ))}

@@ -132,35 +132,40 @@ const ContactUs = ({
   };
 
   const companyDetails = [
-    {
-      icon: MapPin,
-      title: "Visit Us",
-      details: ["123 E-Commerce Blvd", "Suite 200", "San Francisco, CA 94105"],
-      gradient: currentAccentGradient,
-    },
-    {
-      icon: Phone,
-      title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
-      gradient: currentAccentGradient,
-    },
-    {
-      icon: Mail,
-      title: "Email Us",
-      details: ["sales@ecommerceapp.com", "support@ecommerceapp.com"],
-      gradient: currentAccentGradient,
-    },
-    {
-      icon: Clock,
-      title: "Working Hours",
-      details: [
-        "Monday - Friday: 9am - 8pm EST",
-        "Saturday: 10am - 4pm EST",
-        "Sunday: Closed",
-      ],
-      gradient: currentAccentGradient,
-    },
-  ];
+  {
+    icon: MapPin,
+    title: "Office Address",
+    details: [
+      "Kryoss Softech Private Ltd,",
+      "Office No. 837-A, 8th Floor",
+      "JMD Megapolis, Sohna Road",
+      "Gurgaon, Haryana, India",
+    ],
+    gradient: currentAccentGradient,
+  },
+  {
+    icon: Mail,
+    title: "Email",
+    details: ["sales@kryoss.com", "info@kryoss.com"],
+    gradient: currentAccentGradient,
+  },
+  {
+    icon: Phone,
+    title: "Phone",
+    details: ["011 6926 9633", "Mon–Fri, 10AM–6PM"],
+    gradient: currentAccentGradient,
+  },
+  {
+    icon: Clock,
+    title: "Working Hours",
+    details: [
+      "Monday - Friday: 10AM - 6PM",
+      "Saturday: Closed",
+      "Sunday: Closed",
+    ],
+    gradient: currentAccentGradient,
+  },
+];
 
   const socialLinks = [
     { icon: Facebook, url: "#", label: "Facebook" },

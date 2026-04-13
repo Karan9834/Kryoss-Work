@@ -15,7 +15,7 @@ const ProductsSection = () => {
       title: "BdTask",
       image: card2Img,
       path: "/products/bdtask",
-      desc: "Comprehensive online  management solution.",
+      desc: "Comprehensive online management solution.",
     },
   ];
 
@@ -32,22 +32,25 @@ const ProductsSection = () => {
         
         {/* HEADER */}
         <div className="text-center mb-16 space-y-4">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-8 h-px bg-purple-300"></div>
-            <span className="text-purple-600 font-semibold text-sm tracking-wider uppercase">
+            <span className="text-purple-600 text-[12px] font-medium tracking-[0.05em] uppercase">
               Our Products
             </span>
             <div className="w-8 h-px bg-purple-300"></div>
           </div>
 
-          <h2 className="text-2xl lg:text-3xl font-semibold text-[#1A1C2C]">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
             Our Premium{" "}
             <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
               Education Solutions
             </span>
           </h2>
 
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
             Pick the ideal platform to transform your traditional teaching into a
             modern, interactive digital learning experience.
           </p>
@@ -69,8 +72,8 @@ const ProductsSection = () => {
                 />
               </Link>
 
-              {/* TEXT */}
-              <p className="mt-4 text-sm md:text-base leading-relaxed">
+              {/* TEXT - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <Link
                   to={card.path}
                   className="text-purple-600 font-semibold hover:underline"
@@ -83,9 +86,9 @@ const ProductsSection = () => {
           ))}
         </div>
 
-        {/* FOOTER NOTE */}
+        {/* FOOTER NOTE - Updated typography */}
         <div className="text-center mt-16">
-          <p className="text-sm text-gray-400 font-medium">
+          <p className="text-[12px] font-medium uppercase tracking-[0.05em] text-gray-400">
             ✦ More educational products coming soon ✦
           </p>
         </div>

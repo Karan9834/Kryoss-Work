@@ -92,17 +92,23 @@ const FeaturesSection = () => {
 
         {/* ===== HEADING ===== */}
         <div className="text-center max-w-2xl mx-auto">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-4 border border-blue-200">
             <Sparkles className="w-4 h-4 text-blue-600" />
-            <span className="text-blue-700 font-semibold text-sm">Platform Features</span>
+            <span className="text-blue-700 text-[12px] font-medium tracking-[0.05em] uppercase">Platform Features</span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Powerful Features for{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
+            {/* Highlighted Text - Same typography as H2 with gradient */}
+            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Better Discovery
             </span>
           </h2>
-          <p className="mt-4 text-gray-600 text-lg">
+          
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
             Everything you need to find and connect with the right businesses quickly and efficiently.
           </p>
         </div>
@@ -122,13 +128,13 @@ const FeaturesSection = () => {
                   <Icon size={24} className={item.iconColor} />
                 </div>
                 
-                {/* Title */}
+                {/* Title - Keep as is (text-xl font-bold) */}
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
                   {item.title}
                 </h3>
                 
-                {/* Description */}
-                <p className="text-gray-600 leading-relaxed">
+                {/* Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
                   {item.desc}
                 </p>
                 

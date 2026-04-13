@@ -68,12 +68,20 @@ const POSFeatures = () => {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="text-center mb-20 space-y-4">
-                    <h2 className="text-3xl lg:text-4xl font-semibold leading-tight mb-6">
+                    {/* Optional Badge - Add if needed */}
+                    {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-100/50 border border-indigo-200 mb-4">
+                        <span className="text-indigo-700 text-[12px] font-medium tracking-[0.05em] uppercase">Platform Features</span>
+                    </div> */}
+                    
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-6">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-emerald-600 to-amber-500">
                             Scale Your Business With Intelligence
                         </span>
                     </h2>
-                    <p className="text-[#4A4B5E] text-lg max-w-2xl mx-auto mt-6">
+                    
+                    {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-[#4A4B5E] text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto mt-6">
                         Powerful features designed to automate boring tasks and let you focus on what actually matters for your growth.
                     </p>
                 </div>
@@ -92,8 +100,10 @@ const POSFeatures = () => {
                                     <feature.icon size={32} />
                                 </div>
                                 <div className="space-y-3">
-                                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors">{feature.title}</h3>
-                                    <p className="text-gray-500 text-base leading-relaxed font-medium">
+                                    {/* Card Title - Updated: text-[20px] md:text-[22px] font-bold leading-[1.3] */}
+                                    <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-gray-900 group-hover:text-indigo-600 transition-colors">{feature.title}</h3>
+                                    {/* Card Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                                    <p className="text-gray-500 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                                         {feature.desc}
                                     </p>
                                 </div>

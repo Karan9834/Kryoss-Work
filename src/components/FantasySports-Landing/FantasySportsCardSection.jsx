@@ -33,21 +33,24 @@ const FantasyCasinoCardSection = () => {
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-green-50 border border-green-100 rounded-full px-4 py-2 mb-5">
             <Sparkles size={14} className="text-green-600" />
-            <span className="text-sm font-semibold text-green-700 tracking-wide">
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-green-700">
               Fantasy Products
             </span>
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Fantasy Sports{" "}
             <span className="bg-gradient-to-r from-green-500 to-emerald-500 text-transparent bg-clip-text">
               Made Powerful
             </span>
           </h2>
 
-          <p className="mt-3 text-sm text-gray-600">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="mt-3 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
             Build and scale your fantasy sports platform with powerful solutions.
           </p>
         </div>
@@ -59,18 +62,15 @@ const FantasyCasinoCardSection = () => {
 
               {/* Image */}
               <Link to={card.path} className="cursor-pointer group block">
-                {/* <div className="w-full aspect-video overflow-hidden rounded-lg border-[4px] border-transparent hover:border-green-500 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] transition-all duration-300 bg-gray-50"> */}
                 <img
                   src={card.image}
                   alt={card.title}
                   className="w-full aspect-video overflow-hidden rounded-xl border-[5px] border-transparent hover:border-green-500 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] transition-all duration-300 bg-gray-50 object-cover"
                 />
-
-                {/* </div> */}
               </Link>
 
-              {/* Text */}
-              <p className="mt-3 text-sm leading-relaxed">
+              {/* Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+              <p className="mt-3 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <Link to={card.path} className="text-green-600 font-semibold hover:underline">
                   {card.title}
                 </Link>{" "}
@@ -83,9 +83,9 @@ const FantasyCasinoCardSection = () => {
           ))}
         </div>
 
-        {/* Bottom */}
+        {/* Bottom - Updated typography */}
         <div className="mt-12 text-center">
-          <p className="text-gray-400 text-xs">
+          <p className="text-gray-400 text-[11px] md:text-[12px] font-normal">
             Click on any product to explore more
           </p>
         </div>

@@ -50,40 +50,40 @@ const AboutUs = () => {
 
           {/* RIGHT CONTENT - TEXT */}
           <div className="order-1 lg:order-2">
-            {/* Section Badge */}
+            {/* Section Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-teal-50 border border-orange-100 rounded-full px-4 py-2 mb-6">
-              <Heart size={16} className="text-orange-500" />
-              <span className="text-sm font-semibold bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
+              <Heart size={14} className="text-orange-500" />
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
                 About NewsFlow
               </span>
             </div>
 
-            {/* Heading with Gradient */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
               Revolutionizing How{" "}
               <span className="bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
                 News Gets Made
               </span>
             </h2>
 
-            {/* Description */}
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+            <p className="mt-6 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
               NewsFlow is the world's first AI-powered news management platform designed for modern media enterprises. We combine cutting-edge artificial intelligence with intuitive workflows to help newsrooms produce, distribute, and optimize content at scale.
             </p>
 
-            <p className="mt-4 text-gray-600 leading-relaxed">
+            <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
               Founded by journalists and technologists, we understand the unique challenges of modern newsrooms. Our platform empowers over 500 news organizations across 40 countries to deliver accurate, timely, and engaging content while reducing operational complexity.
             </p>
 
-            {/* Feature Highlights */}
+            {/* Feature Highlights - Updated typography */}
             <div className="mt-8 grid grid-cols-2 gap-4">
               <div className="flex items-center gap-3 group cursor-pointer">
                 <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-orange-100 to-teal-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Zap size={18} className="text-orange-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900 text-sm">AI-Powered</p>
-                  <p className="text-xs text-gray-500">Smart workflows</p>
+                  <p className="font-semibold text-gray-900 text-[13px] md:text-[14px]">AI-Powered</p>
+                  <p className="text-[11px] md:text-[12px] font-normal text-gray-500">Smart workflows</p>
                 </div>
               </div>
               
@@ -92,8 +92,8 @@ const AboutUs = () => {
                   <Globe size={18} className="text-teal-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900 text-sm">Global Reach</p>
-                  <p className="text-xs text-gray-500">40+ countries</p>
+                  <p className="font-semibold text-gray-900 text-[13px] md:text-[14px]">Global Reach</p>
+                  <p className="text-[11px] md:text-[12px] font-normal text-gray-500">40+ countries</p>
                 </div>
               </div>
               
@@ -102,8 +102,8 @@ const AboutUs = () => {
                   <Shield size={18} className="text-orange-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900 text-sm">Enterprise Grade</p>
-                  <p className="text-xs text-gray-500">Bank-level security</p>
+                  <p className="font-semibold text-gray-900 text-[13px] md:text-[14px]">Enterprise Grade</p>
+                  <p className="text-[11px] md:text-[12px] font-normal text-gray-500">Bank-level security</p>
                 </div>
               </div>
               
@@ -112,8 +112,8 @@ const AboutUs = () => {
                   <Award size={18} className="text-teal-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900 text-sm">Trusted Leader</p>
-                  <p className="text-xs text-gray-500">500+ newsrooms</p>
+                  <p className="font-semibold text-gray-900 text-[13px] md:text-[14px]">Trusted Leader</p>
+                  <p className="text-[11px] md:text-[12px] font-normal text-gray-500">500+ newsrooms</p>
                 </div>
               </div>
             </div>

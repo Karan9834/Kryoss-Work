@@ -113,21 +113,24 @@ const WhyChooseUs = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* HEADER */}
         <div className="text-center mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full mb-6 border border-blue-100">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            <span className="text-sm font-semibold bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent">
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent">
               Why Choose Us
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-4 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
             Built for Performance & Scale
           </h2>
 
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-[14px] md:text-[16px] font-normal leading-[1.6]">
             We combine technology, speed, and reliability to deliver powerful solutions
             that drive real business growth.
           </p>
@@ -150,59 +153,28 @@ const WhyChooseUs = () => {
                 {item.icon}
               </div>
 
-              {/* TITLE */}
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+              {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+              <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-gray-900 mb-3 group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                 {item.title}
               </h3>
 
-              {/* DESC */}
-              <p className="text-gray-600 leading-relaxed mb-4">{item.desc}</p>
+              {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+              <p className="text-gray-600 text-[14px] md:text-[14px] font-normal leading-[1.6] mb-4">
+                {item.desc}
+              </p>
 
-              {/* LEARN MORE LINK */}
-              <div className="flex items-center gap-2 text-sm font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+              {/* LEARN MORE LINK - Updated typography */}
+              <div className="flex items-center gap-2 text-[12px] md:text-[13px] font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
                 <span className={`bg-gradient-to-r ${item.color} bg-clip-text text-transparent`}>
                   Learn More
                 </span>
-                <ArrowRight size={16} className={`transition-transform group-hover:translate-x-1 ${item.color === "from-amber-500 to-orange-500" ? "text-amber-500" : item.color === "from-blue-500 to-cyan-500" ? "text-blue-500" : item.color === "from-purple-500 to-pink-500" ? "text-purple-500" : item.color === "from-green-500 to-emerald-500" ? "text-green-500" : item.color === "from-red-500 to-rose-500" ? "text-red-500" : "text-indigo-500"}`} />
+                <ArrowRight size={14} className={`transition-transform group-hover:translate-x-1 ${item.color === "from-amber-500 to-orange-500" ? "text-amber-500" : item.color === "from-blue-500 to-cyan-500" ? "text-blue-500" : item.color === "from-purple-500 to-pink-500" ? "text-purple-500" : item.color === "from-green-500 to-emerald-500" ? "text-green-500" : item.color === "from-red-500 to-rose-500" ? "text-red-500" : "text-indigo-500"}`} />
               </div>
 
               {/* Background Hover Effect */}
               <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none bg-gradient-to-br ${item.color}`}></div>
             </div>
           ))}
-        </div>
-
-        {/* TRUST SECTION */}
-        <div className="mt-20 pt-8 border-t border-gray-100">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-center">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-                <Shield size={18} className="text-green-600" />
-              </div>
-              <div>
-                <div className="text-sm text-gray-500">Security</div>
-                <div className="font-semibold text-gray-900">99.9% Uptime</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                <Users size={18} className="text-blue-600" />
-              </div>
-              <div>
-                <div className="text-sm text-gray-500">Trusted By</div>
-                <div className="font-semibold text-gray-900">100+ Businesses</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
-                <Rocket size={18} className="text-purple-600" />
-              </div>
-              <div>
-                <div className="text-sm text-gray-500">Scalability</div>
-                <div className="font-semibold text-gray-900">Enterprise Ready</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 

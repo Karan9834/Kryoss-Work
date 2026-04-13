@@ -49,14 +49,14 @@ const NewsManagementHero = () => {
           
           {/* LEFT CONTENT */}
           <div className="text-center lg:text-left">
-            {/* Enterprise Badge - Orange Theme */}
+            {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
             <div className="inline-flex items-center gap-2 bg-orange-50/80 backdrop-blur-sm border border-orange-200 rounded-full px-4 py-2 mb-6 shadow-sm">
-              <Sparkles size={16} className="text-orange-600" />
-              <span className="text-sm font-semibold text-orange-700 tracking-wide">AI-Powered News Platform</span>
+              <Sparkles size={14} className="text-orange-600" />
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-orange-700">AI-Powered News Platform</span>
             </div>
 
-            {/* Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.2] tracking-tight">
+            {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+            <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-gray-900">
               Powering the Future of{" "}
               <span className="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-600 text-transparent bg-clip-text relative">
                 News Operations
@@ -67,15 +67,15 @@ const NewsManagementHero = () => {
               </span>
             </h1>
 
-            {/* Description */}
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+            <p className="mt-6 text-[16px] md:text-[18px] font-normal leading-[1.6] text-gray-600 max-w-xl mx-auto lg:mx-0">
               A unified platform to create, manage, and distribute news across global
               channels with AI-powered workflows and enterprise-grade scalability.
             </p>
 
-            {/* Single CTA Button - Explore Products */}
+            {/* CTA Button - Updated typography */}
             <div className="mt-8 flex justify-center lg:justify-start">
-              <button className="group px-10 py-4 bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2" onClick={() => document.getElementById('explore-news')?.scrollIntoView({ behavior: 'smooth' })}>
+              <button className="group px-10 py-4 bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 text-[16px] tracking-[0.01em]" onClick={() => document.getElementById('explore-news')?.scrollIntoView({ behavior: 'smooth' })}>
                 Explore Products
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </button>
@@ -107,7 +107,7 @@ const NewsManagementHero = () => {
               {/* Overlay Gradient for depth */}
               <div className="absolute inset-0 bg-gradient-to-t from-orange-500/5 via-transparent to-transparent pointer-events-none"></div>
               
-              {/* Floating Card Overlay - Orange Theme */}
+              {/* Floating Card Overlay - Orange Theme - Updated typography */}
               <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-lg border border-orange-100/50">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
@@ -117,13 +117,13 @@ const NewsManagementHero = () => {
                       </svg>
                     </div>
                     <div>
-                      <p className="text-xs text-gray-500">AI Content Score</p>
-                      <p className="text-sm font-bold text-gray-900">Optimized for reach</p>
+                      <p className="text-[10px] font-medium uppercase tracking-[0.05em] text-gray-500">AI Content Score</p>
+                      <p className="text-[12px] font-semibold text-gray-900">Optimized for reach</p>
                     </div>
                   </div>
                   <div className="text-right">
-                    <p className="text-xs text-gray-500">Real-time</p>
-                    <p className="text-sm font-bold text-orange-600">Live Analytics</p>
+                    <p className="text-[10px] font-medium uppercase tracking-[0.05em] text-gray-500">Real-time</p>
+                    <p className="text-[12px] font-semibold text-orange-600">Live Analytics</p>
                   </div>
                 </div>
               </div>

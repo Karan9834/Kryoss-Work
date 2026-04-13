@@ -81,31 +81,6 @@ const AboutUs = () => {
               
               {/* Gradient Overlay - Orange Theme */}
               <div className="absolute inset-0 bg-gradient-to-t from-amber-900/20 via-transparent to-transparent"></div>
-              
-              {/* Floating Card */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-lg border border-amber-100/50">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center">
-                      <Target className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-500">Success Rate</p>
-                      <p className="text-lg font-bold text-gray-900">99.9%</p>
-                    </div>
-                  </div>
-                  <div className="w-px h-10 bg-amber-200"></div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-rose-500 to-pink-500 flex items-center justify-center">
-                      <Users className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-500">Happy Clients</p>
-                      <p className="text-lg font-bold text-gray-900">500+</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             
             {/* Decorative Orange Corners */}
@@ -119,17 +94,17 @@ const AboutUs = () => {
           
           {/* RIGHT COLUMN - Text Content (Now on Right) */}
           <div className="space-y-8 order-2">
-            {/* Section Label */}
+            {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
             <div className="inline-flex items-center gap-2">
               <div className="w-8 h-[2px] bg-gradient-to-r from-amber-500 to-orange-500"></div>
-              <span className="text-sm font-semibold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent uppercase tracking-wider">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
                 About Us
               </span>
               <div className="w-8 h-[2px] bg-gradient-to-r from-orange-500 to-amber-500"></div>
             </div>
             
-            {/* Heading */}
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
               Redefining{" "}
               <span className="bg-gradient-to-r from-amber-600 via-orange-500 to-rose-500 bg-clip-text text-transparent">
                 Financial Intelligence
@@ -138,71 +113,53 @@ const AboutUs = () => {
               <span className="text-gray-900">for the Digital Age</span>
             </h2>
             
-            {/* Description */}
-            <p className="text-gray-600 leading-relaxed">
+            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+            <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Founded with a mission to transform financial services through cutting-edge technology, 
               we've built a platform where data meets intelligence. Our commitment to innovation and 
               security has made us a trusted partner for financial institutions worldwide.
             </p>
             
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Every solution we deliver undergoes rigorous testing and validation, ensuring that our 
               clients receive accurate, reliable, and actionable insights. We believe in the power of 
               data to drive better financial decisions and create lasting value.
             </p>
             
-            {/* Stats - Clean and Minimal with Orange Accents */}
-            <div className="grid grid-cols-3 gap-6 pt-4">
-              <div className="group">
-                <div className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-                  2018
-                </div>
-                <div className="text-sm text-gray-500 mt-1 group-hover:text-orange-600 transition-colors">Founded</div>
-              </div>
-              <div className="group">
-                <div className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-                  500+
-                </div>
-                <div className="text-sm text-gray-500 mt-1 group-hover:text-orange-600 transition-colors">Institutions</div>
-              </div>
-              <div className="group">
-                <div className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-                  24/7
-                </div>
-                <div className="text-sm text-gray-500 mt-1 group-hover:text-orange-600 transition-colors">Support</div>
-              </div>
-            </div>
+            {/* Stats Removed - Clean Values Section Removed */}
             
-            {/* Key Values */}
+            {/* Key Values - Updated typography */}
             <div className="grid grid-cols-2 gap-4 pt-2">
               <div className="flex items-center gap-2">
                 <Shield className="w-4 h-4 text-amber-500" />
-                <span className="text-sm text-gray-600">Enterprise Security</span>
+                <span className="text-[13px] md:text-[14px] font-normal text-gray-600">Enterprise Security</span>
               </div>
               <div className="flex items-center gap-2">
                 <TrendingUp className="w-4 h-4 text-orange-500" />
-                <span className="text-sm text-gray-600">Real-time Analytics</span>
+                <span className="text-[13px] md:text-[14px] font-normal text-gray-600">Real-time Analytics</span>
               </div>
               <div className="flex items-center gap-2">
                 <Target className="w-4 h-4 text-rose-500" />
-                <span className="text-sm text-gray-600">Precision Accuracy</span>
+                <span className="text-[13px] md:text-[14px] font-normal text-gray-600">Precision Accuracy</span>
               </div>
               <div className="flex items-center gap-2">
                 <Users className="w-4 h-4 text-amber-500" />
-                <span className="text-sm text-gray-600">Expert Team</span>
+                <span className="text-[13px] md:text-[14px] font-normal text-gray-600">Expert Team</span>
               </div>
             </div>
           </div>
         </div>
         
-        {/* Mission & Vision Section */}
+        {/* Mission & Vision Section - Updated typography */}
         <div className="mt-20 grid md:grid-cols-2 gap-8 pt-8 border-t border-orange-100">
           <div className="group p-6 rounded-2xl bg-gradient-to-br from-orange-50/50 to-amber-50/30 hover:shadow-lg transition-all duration-300">
             <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center mb-4">
               <Target className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Our Mission</h3>
-            <p className="text-gray-600 leading-relaxed">
+            {/* Subheading - Updated: text-[20px] md:text-[22px] font-bold leading-[1.3] */}
+            <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-gray-900 mb-2">Our Mission</h3>
+            {/* Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+            <p className="text-gray-600 text-[14px] md:text-[15px] font-normal leading-[1.6]">
               To democratize financial intelligence by providing institutions with powerful, 
               accessible tools that drive better decision-making and create lasting value.
             </p>
@@ -212,8 +169,10 @@ const AboutUs = () => {
             <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-rose-500 to-orange-500 flex items-center justify-center mb-4">
               <Eye className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Our Vision</h3>
-            <p className="text-gray-600 leading-relaxed">
+            {/* Subheading - Updated: text-[20px] md:text-[22px] font-bold leading-[1.3] */}
+            <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-gray-900 mb-2">Our Vision</h3>
+            {/* Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+            <p className="text-gray-600 text-[14px] md:text-[15px] font-normal leading-[1.6]">
               To become the world's most trusted financial intelligence platform, 
               empowering every institution to make data-driven decisions with confidence.
             </p>

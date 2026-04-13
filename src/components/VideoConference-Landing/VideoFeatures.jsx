@@ -38,14 +38,21 @@ const VideoFeatures = () => {
                     {/* Left: Content Area */}
                     <div className="space-y-12">
                         <div className="space-y-6">
-                            <span className="text-purple-400 font-bold text-sm uppercase tracking-[0.3em] flex items-center gap-2">
+                            {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                            <span className="text-purple-400 text-[12px] font-medium tracking-[0.05em] uppercase flex items-center gap-2">
                                 <Sparkles size={18} /> Technical Excellence
                             </span>
-                            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-white leading-tight">
+                            
+                            {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white">
                                 Built for High-Stakes <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-sky-400 to-pink-400">Collaboration.</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-sky-400 to-pink-400">
+                                    Collaboration.
+                                </span>
                             </h2>
-                            <p className="text-slate-400 text-lg font-medium leading-relaxed max-w-xl">
+                            
+                            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                            <p className="text-slate-400 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-xl">
                                 We've re-engineered the video engine from the ground up to support massive scale without sacrificing a single frame of quality.
                             </p>
                         </div>
@@ -61,8 +68,14 @@ const VideoFeatures = () => {
                                         {feature.icon}
                                     </div>
                                     <div className="space-y-1">
-                                        <h3 className="text-xl font-bold text-white group-hover:text-purple-300 transition-colors">{feature.title}</h3>
-                                        <p className="text-slate-400 text-sm font-medium leading-relaxed">{feature.description}</p>
+                                        {/* Feature Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                                        <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-white group-hover:text-purple-300 transition-colors">
+                                            {feature.title}
+                                        </h3>
+                                        {/* Feature Description - Updated: text-[13px] md:text-[14px] font-normal leading-[1.6] */}
+                                        <p className="text-slate-400 text-[13px] md:text-[14px] font-normal leading-[1.6]">
+                                            {feature.description}
+                                        </p>
                                     </div>
                                 </div>
                             ))}
@@ -70,7 +83,7 @@ const VideoFeatures = () => {
                     </div>
 
                     {/* Right: Integrated Visual Showcase */}
-                    <div className="relative group ">
+                    <div className="relative group">
                         <div className="absolute -inset-10 bg-purple-500/20 rounded-full blur-[100px] group-hover:bg-purple-500/30 transition-colors duration-1000"></div>
                         <div className="relative bg-[#1A1C3C] p-8 rounded-[4rem] border border-white/10 shadow-2xl overflow-hidden aspect-square flex items-center justify-center">
                             <img

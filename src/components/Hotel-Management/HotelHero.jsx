@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950bg-emerald-400 / bg-green-500 from-emerald-300 to-green-40 from-emerald-500 to-green-600 hover:shadow-emerald-500/30">
+    <section className="relative w-full bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950 overflow-hidden">
       {/* Background decorative elements - subtle and modern */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-72 h-72 bg-teal-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
@@ -15,20 +15,22 @@ const HeroSection = () => {
           
           {/* Left side - Content */}
           <div className="text-center lg:text-left space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+            <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-white">
               Streamline Your
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-cyan-400">
                 Hotel Management
               </span>
             </h1>
             
-            <p className="text-gray-300 text-lg md:text-xl max-w-xl mx-auto lg:mx-0">
+            {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+            <p className="text-gray-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-xl mx-auto lg:mx-0">
               Powerful, intuitive dashboard to manage bookings, staff, rooms, and guest experiences — all in one place.
             </p>
 
-            {/* Only the Explore Products button - no badges */}
+            {/* Only the Explore Products button - Updated typography */}
             <div className="pt-4">
-              <button className="px-8 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-teal-500/30 hover:scale-105 transform transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-slate-900" onClick={() => document.getElementById('explore-hotel-products')?.scrollIntoView({ behavior: 'smooth' })}>
+              <button className="px-8 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-teal-500/30 hover:scale-105 transform transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-slate-900 text-[16px] tracking-[0.01em]" onClick={() => document.getElementById('explore-hotel-products')?.scrollIntoView({ behavior: 'smooth' })}>
                 Explore Products
               </button>
             </div>

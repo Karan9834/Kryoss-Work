@@ -78,8 +78,8 @@ const TimelineSection = () => {
             Our Solution Process
           </h2>
 
-          {/* Description - 16px, weight 400, line-height 1.6 */}
-          <p className="text-[16px] font-normal leading-[1.6] text-gray-600 max-w-xl mx-auto">
+          {/* Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
+          <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-xl mx-auto">
             Designed for speed, clarity, and seamless execution across every
             stage of your hotel operations
           </p>
@@ -131,18 +131,13 @@ const TimelineSection = () => {
                         }}
                       />
 
-                      {/* STEP NUMBER
-                      <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-white text-gray-900 text-sm font-bold flex items-center justify-center shadow-lg">
-                        {index + 1}
-                      </div> */}
-
-                      {/* Project Title H3 - 24px mobile, 30px desktop, weight 700, line-height 1.3 */}
-                      <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] mb-2 relative z-10">
+                      {/* Card Title - Updated: text-[22px] md:text-[26px] font-bold leading-[1.3] */}
+                      <h3 className="text-[22px] md:text-[26px] font-bold leading-[1.3] mb-2 relative z-10">
                         {item.title}
                       </h3>
 
-                      {/* Description - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
-                      <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-white/90 relative z-10">
+                      {/* Card Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                      <p className="text-[14px] md:text-[15px] font-normal leading-[1.6] text-white/90 relative z-10">
                         {item.desc}
                       </p>
                     </div>

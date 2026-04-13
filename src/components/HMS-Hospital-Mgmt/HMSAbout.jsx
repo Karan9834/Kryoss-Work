@@ -15,39 +15,31 @@ const HMSAbout = () => {
                                 <img src={aboutImg} alt="HMS About" className="w-full h-full object-cover" />
                                 <div className="absolute inset-0 bg-gradient-to-tr from-teal-600/10 to-cyan-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             </div>
-
-                            {/* Floating Stats */}
-                            <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-3xl shadow-xl shadow-teal-900/10 border border-teal-50 flex items-center gap-6 animate-bounce-slow">
-                                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center">
-                                    <Activity className="text-teal-600 w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h4 className="text-3xl font-bold text-slate-800">99.9%</h4>
-                                    <p className="text-slate-500 font-medium tracking-wide text-sm">Uptime Guarantee</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
                     {/* Right: Content */}
                     <div className="space-y-8 order-1 lg:order-2">
+                        {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                         <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-teal-50 border border-teal-100">
                             <ShieldCheck className="w-5 h-5 text-teal-600" />
-                            <span className="text-teal-700 font-bold text-sm tracking-widest uppercase">About Our HMS</span>
+                            <span className="text-teal-700 text-[12px] font-medium tracking-[0.05em] uppercase">About Our HMS</span>
                         </div>
 
-                        <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 leading-tight">
+                        {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                        <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-slate-900">
                             Compassionate Care <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">
                                 Meets Smart Technology
                             </span>
                         </h2>
 
-                        <p className="text-lg text-slate-600 leading-relaxed">
+                        {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                        <p className="text-slate-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                             Managing a healthcare facility shouldn't be a diagnostic puzzle. Our Hospital Management System is designed from the ground up to reduce administrative load, optimize bed management, and let doctors focus purely on what matters: patient care.
                         </p>
 
-                        {/* Feature List */}
+                        {/* Feature List - Updated typography */}
                         <div className="grid sm:grid-cols-2 gap-6 pt-6">
                             {[
                                 { title: "HIPAA Compliant", desc: "Military-grade data protection." },
@@ -60,8 +52,10 @@ const HMSAbout = () => {
                                         <div className="w-2 h-2 bg-white rounded-full"></div>
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-slate-800">{item.title}</h4>
-                                        <p className="text-sm text-slate-500 mt-1">{item.desc}</p>
+                                        {/* Feature Title - Updated: text-[15px] md:text-[16px] font-bold */}
+                                        <h4 className="font-bold text-[15px] md:text-[16px] text-slate-800">{item.title}</h4>
+                                        {/* Feature Description - Updated: text-[12px] md:text-[13px] font-normal */}
+                                        <p className="text-slate-500 text-[12px] md:text-[13px] font-normal mt-1">{item.desc}</p>
                                     </div>
                                 </div>
                             ))}

@@ -97,7 +97,7 @@ const FeaturesSection = () => {
       {/* Decorative Wave Top */}
       <div className="absolute top-0 left-0 w-full overflow-hidden">
         <svg className="relative w-full h-20 opacity-20" viewBox="0 0 1440 120" preserveAspectRatio="none">
-          <path fill="url(#gradient-wave)" fillOpacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,53.3C1120,53,1280,75,1360,85.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+          <path fill="url(#gradient-wave)" fillOpacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,53.3C1120,53,1280,75,1360,85.3L1440,96L1440,0L1360,0C1280,0,1120,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,80,0L0,0Z">
           </path>
           <defs>
             <linearGradient id="gradient-wave" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -112,19 +112,22 @@ const FeaturesSection = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
-            <Zap size={16} className="text-orange-400" />
-            <span className="text-sm font-semibold text-orange-300 tracking-wide">Powerful Features</span>
+            <Zap size={14} className="text-orange-400" />
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-orange-300">Powerful Features</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white">
             Everything You Need to{" "}
             <span className="bg-gradient-to-r from-orange-400 to-amber-400 text-transparent bg-clip-text">
               Scale Your News Operations
             </span>
           </h2>
           
-          <p className="mt-6 text-lg text-gray-300 leading-relaxed">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="mt-6 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-300">
             Discover the tools that empower modern newsrooms to work smarter, faster, and more efficiently
           </p>
         </div>
@@ -148,13 +151,13 @@ const FeaturesSection = () => {
                   </div>
                 </div>
                 
-                {/* Title */}
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors duration-300">
+                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-white mb-3 group-hover:text-orange-400 transition-colors duration-300">
                   {feature.title}
                 </h3>
                 
-                {/* Description */}
-                <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
+                {/* Card Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                <p className="text-gray-400 text-[14px] md:text-[15px] font-normal leading-[1.6] group-hover:text-gray-300 transition-colors duration-300">
                   {feature.description}
                 </p>
                 
@@ -165,12 +168,12 @@ const FeaturesSection = () => {
           })}
         </div>
 
-        {/* Bottom Decorative Element */}
+        {/* Bottom Decorative Element - Updated typography */}
         <div className="mt-20 text-center">
           <div className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-full px-6 py-3 border border-white/10">
-            <span className="text-gray-300 text-sm">And many more powerful tools</span>
+            <span className="text-gray-300 text-[12px] md:text-[13px] font-normal">And many more powerful tools</span>
             <div className="w-1 h-1 bg-orange-400 rounded-full"></div>
-            <span className="text-orange-400 text-sm font-semibold">Constantly evolving</span>
+            <span className="text-orange-400 text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.05em]">Constantly evolving</span>
           </div>
         </div>
       </div>
@@ -178,7 +181,7 @@ const FeaturesSection = () => {
       {/* Decorative Wave Bottom */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden rotate-180">
         <svg className="relative w-full h-20 opacity-20" viewBox="0 0 1440 120" preserveAspectRatio="none">
-          <path fill="url(#gradient-wave-bottom)" fillOpacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,53.3C1120,53,1280,75,1360,85.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+          <path fill="url(#gradient-wave-bottom)" fillOpacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,53.3C1120,53,1280,75,1360,85.3L1440,96L1440,0L1360,0C1280,0,1120,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,80,0L0,0Z">
           </path>
           <defs>
             <linearGradient id="gradient-wave-bottom" x1="0%" y1="0%" x2="100%" y2="0%">

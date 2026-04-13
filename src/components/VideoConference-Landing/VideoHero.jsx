@@ -23,37 +23,43 @@ const VideoHero = () => {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left: Content */}
                     <div className="space-y-8 text-center lg:text-left">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sky-400 text-xs font-bold uppercase tracking-widest">
+                        {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sky-400 text-[12px] font-medium tracking-[0.05em] uppercase">
                             <Video size={14} />
                             <span>Enterprise Video Collaboration</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight tracking-tight">
+                        {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-white">
                             Connect the World <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-sky-400">
+                            {/* Highlighted Text - Same typography as H1 with gradient */}
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-sky-400 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
                                 Seamlessly & Securely.
                             </span>
                         </h1>
 
-                        <p className="text-slate-300 text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                        {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+                        <p className="text-slate-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-xl mx-auto lg:mx-0">
                             Ultra-HD video, crystal-clear audio, and real-time collaboration tools designed for the modern workspace. Scalable for any team size.
                         </p>
 
+                        {/* CTA Button - Updated typography */}
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
                             <button
                                 onClick={scrollToProducts}
-                                className="px-10 py-5 bg-gradient-to-r from-purple-600 via-indigo-600 to-sky-600 text-white font-bold rounded-2xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(124,58,237,0.3)] flex items-center gap-3 group"
+                                className="px-10 py-5 bg-gradient-to-r from-purple-600 via-indigo-600 to-sky-600 text-white font-semibold rounded-2xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(124,58,237,0.3)] flex items-center gap-3 group text-[16px] tracking-[0.01em]"
                             >
                                 Explore Our Products
-                                <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
+                                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </button>
                         </div>
 
+                        {/* Trust Badges - Updated typography */}
                         <div className="pt-8 flex flex-wrap items-center justify-center lg:justify-start gap-8 opacity-60">
-                            <div className="flex items-center gap-2 text-white font-bold text-sm uppercase tracking-widest">
+                            <div className="flex items-center gap-2 text-white font-semibold text-[12px] uppercase tracking-[0.05em]">
                                 <ShieldCheck className="text-sky-500" size={18} /> End-to-End Encryption
                             </div>
-                            <div className="flex items-center gap-2 text-white font-bold text-sm uppercase tracking-widest">
+                            <div className="flex items-center gap-2 text-white font-semibold text-[12px] uppercase tracking-[0.05em]">
                                 <Share2 className="text-pink-500" size={18} /> HD Screen Sharing
                             </div>
                         </div>

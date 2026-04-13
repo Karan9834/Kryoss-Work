@@ -36,16 +36,21 @@ const SMSWhyUs = () => {
                     {/* Left: Content */}
                     <div className="space-y-10">
                         <div className="space-y-4 text-center lg:text-left">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-blue-200 text-sm font-bold uppercase tracking-widest backdrop-blur-sm shadow-sm">
-                                <ShieldCheck size={16} /> Why Choose Our SMS
+                            {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-blue-200 text-[12px] font-medium tracking-[0.05em] uppercase backdrop-blur-sm shadow-sm">
+                                <ShieldCheck size={14} /> Why Choose Our SMS
                             </div>
-                            <h2 className="text-3xl lg:text-4xl font-semibold leading-tight tracking-tighter">
+                            
+                            {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] tracking-tighter">
                                 Empowering the Next <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-cyan-300 to-emerald-200">
                                     Generation with 3D Precision
                                 </span>
                             </h2>
-                            <p className="text-blue-100/70 font-medium text-lg max-w-xl leading-relaxed mx-auto lg:mx-0">
+                            
+                            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                            <p className="text-blue-100/70 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-xl mx-auto lg:mx-0">
                                 We go beyond simple administration. Our platform is designed to nurture growth, enhance collaboration, and ensure future-ready educational environments.
                             </p>
                         </div>
@@ -57,10 +62,12 @@ const SMSWhyUs = () => {
                                         {reason.icon}
                                     </div>
                                     <div className="space-y-1">
-                                        <h4 className="text-xl font-bold text-white group-hover:text-blue-300 transition-colors uppercase tracking-tight">
+                                        {/* Reason Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                                        <h4 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-white group-hover:text-blue-300 transition-colors uppercase tracking-tight">
                                             {reason.title}
                                         </h4>
-                                        <p className="text-blue-100/60 font-medium leading-relaxed">
+                                        {/* Reason Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                                        <p className="text-blue-100/60 text-[14px] md:text-[15px] font-normal leading-[1.6]">
                                             {reason.desc}
                                         </p>
                                     </div>
@@ -83,25 +90,25 @@ const SMSWhyUs = () => {
                                     <Sparkles size={48} />
                                 </div>
                                 <div className="space-y-1">
-                                    <h3 className="text-3xl font-black text-white tracking-tighter uppercase whitespace-pre-line leading-none">UNITY <br /> ECOSYSTEM</h3>
-                                    <p className="text-blue-300 font-bold uppercase tracking-widest text-xs">One Unified System</p>
+                                    <h3 className="text-[24px] md:text-[28px] font-black text-white tracking-tighter uppercase whitespace-pre-line leading-none">UNITY <br /> ECOSYSTEM</h3>
+                                    <p className="text-blue-300 font-semibold uppercase tracking-[0.05em] text-[10px] md:text-[11px]">One Unified System</p>
                                 </div>
                             </div>
 
-                            {/* Floating Benefit Nodes */}
+                            {/* Floating Benefit Nodes - Updated typography */}
                             <div className="absolute top-0 left-1/2 -track-x-1/2 -translate-y-1/2 p-6 bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl border border-white/50 flex items-center gap-4 hover:scale-110 transition-transform cursor-pointer">
-                                <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 font-bold shadow-inner">01</div>
-                                <span className="font-bold text-gray-800 whitespace-nowrap">Parents</span>
+                                <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 font-bold shadow-inner text-[14px]">01</div>
+                                <span className="font-bold text-gray-800 whitespace-nowrap text-[14px] md:text-[15px]">Parents</span>
                             </div>
 
                             <div className="absolute bottom-[10%] right-[-5%] p-6 bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl border border-white/50 flex items-center gap-4 hover:scale-110 transition-transform cursor-pointer">
-                                <div className="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 font-bold shadow-inner">02</div>
-                                <span className="font-bold text-gray-800 whitespace-nowrap">Teachers</span>
+                                <div className="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 font-bold shadow-inner text-[14px]">02</div>
+                                <span className="font-bold text-gray-800 whitespace-nowrap text-[14px] md:text-[15px]">Teachers</span>
                             </div>
 
                             <div className="absolute bottom-[10%] left-[-5%] p-6 bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl border border-white/50 flex items-center gap-4 hover:scale-110 transition-transform cursor-pointer">
-                                <div className="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 font-bold shadow-inner">03</div>
-                                <span className="font-bold text-gray-800 whitespace-nowrap">Students</span>
+                                <div className="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 font-bold shadow-inner text-[14px]">03</div>
+                                <span className="font-bold text-gray-800 whitespace-nowrap text-[14px] md:text-[15px]">Students</span>
                             </div>
                         </div>
 

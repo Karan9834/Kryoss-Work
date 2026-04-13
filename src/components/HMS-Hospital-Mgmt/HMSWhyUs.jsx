@@ -44,22 +44,25 @@ const HMSWhyUs = () => {
 
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-                    {/* Section Subheading */}
+                    {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <div className="w-8 h-px bg-teal-500"></div>
-                        <span className="text-teal-400 font-semibold text-sm tracking-wider uppercase">
+                        <span className="text-teal-400 text-[12px] font-medium tracking-[0.05em] uppercase">
                             Why Choose Us
                         </span>
                         <div className="w-8 h-px bg-cyan-500"></div>
                     </div>
 
-                    <h2 className="text-3xl lg:text-5xl font-semibold text-white leading-tight">
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white">
                         Why Choose Our <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
                             Hospital Platform?
                         </span>
                     </h2>
-                    <p className="text-slate-400 text-lg leading-relaxed mt-4">
+                    
+                    {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-slate-400 text-[14px] md:text-[16px] font-normal leading-[1.6] mt-4">
                         Legacy systems slow you down. Our platform is built on a modern stack designed to increase operational throughput and drastically improve patient satisfaction scores.
                     </p>
                 </div>
@@ -71,8 +74,14 @@ const HMSWhyUs = () => {
                             <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg ${reason.bg} ${reason.color}`}>
                                 {reason.icon}
                             </div>
-                            <h3 className="text-2xl font-bold text-white mb-3">{reason.title}</h3>
-                            <p className="text-slate-400 text-base">{reason.desc}</p>
+                            {/* Card Title - Updated: text-[20px] md:text-[22px] font-bold leading-[1.3] */}
+                            <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-3">
+                                {reason.title}
+                            </h3>
+                            {/* Card Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                            <p className="text-slate-400 text-[14px] md:text-[15px] font-normal leading-[1.6]">
+                                {reason.desc}
+                            </p>
                         </div>
                     ))}
                 </div>

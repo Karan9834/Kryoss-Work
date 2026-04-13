@@ -14,38 +14,21 @@ const FantasySportsHero = ({ onExplore }) => {
 
                     {/* Left Content */}
                     <div className="space-y-8 animate-fadeInLeft">
+                        {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full border border-green-200">
                             <span className="w-2 h-2 rounded-full bg-green-600 animate-pulse"></span>
-                            <span className="text-green-800 text-xs font-bold uppercase tracking-widest">Next-Gen Fantasy Sports</span>
+                            <span className="text-green-800 text-[12px] font-medium tracking-[0.05em] uppercase">Next-Gen Fantasy Sports</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl font-semibold text-[#1E293B] leading-tight">
-                            Premier <span className="text-green-600">Fantasy Sports</span> App Development for <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-600 font-bold">Absolute Winning</span>
+                        {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-[#1E293B]">
+                            Premier <span className="text-green-600">Fantasy Sports</span> App Development for <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-600">Absolute Winning</span>
                         </h1>
 
-                        <p className="text-[#4A4B5E] text-lg lg:text-xl max-w-xl leading-relaxed">
+                        {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+                        <p className="text-[#4A4B5E] text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-xl">
                             Specializing in developing high-performance Fantasy Sports software and mobile app solutions. Scalable, reliable, and built to dominate the game.
                         </p>
-
-
-
-                        {/* Trust Badges */}
-                        <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
-                            <div>
-                                <p className="text-2xl font-black text-[#1E293B]">10+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Sports Covered</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-2xl font-black text-[#1E293B]">5M+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Users Enabled</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-2xl font-black text-[#1E293B]">Real-Time</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Stats Engine</p>
-                            </div>
-                        </div>
                     </div>
 
                     {/* Right Content - Visuals */}

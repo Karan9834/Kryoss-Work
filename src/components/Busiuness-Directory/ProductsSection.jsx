@@ -52,19 +52,23 @@ const ProductsSection = () => {
 
         {/* ===== HEADER SECTION ===== */}
         <div className="text-center mb-12">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-4 border border-blue-200">
             <Sparkles className="w-4 h-4 text-blue-600" />
-            <span className="text-blue-700 font-semibold text-sm">Our Products</span>
+            <span className="text-blue-700 text-[12px] font-medium tracking-[0.05em] uppercase">Our Products</span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Solutions for{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
+            {/* Highlighted Gradient Text - Updated: same typography as H2 */}
+            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Businesses & Customers
             </span>
           </h2>
 
-          <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             Powerful tools designed to help businesses grow and customers find the best services.
           </p>
         </div>
@@ -73,7 +77,7 @@ const ProductsSection = () => {
         <div className="flex justify-center mb-12">
           <button
             onClick={() => navigate("/products")}
-            className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+            className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 text-[14px] md:text-[16px]"
           >
             🔥 Popular Products
           </button>
@@ -97,8 +101,8 @@ const ProductsSection = () => {
                 />
               </div>
 
-              {/* TITLE AND DESCRIPTION */}
-              <p className="mt-4 text-sm md:text-base">
+              {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span
                   onClick={() => handleNavigate(product.route)}
                   className="text-blue-600 font-semibold hover:underline cursor-pointer"
@@ -107,7 +111,7 @@ const ProductsSection = () => {
                 >
                   {product.title}
                 </span>{" "}
-                <span className="text-gray-700">- {product.description}</span>
+                <span className="text-gray-700">{product.description}</span>
               </p>
             </div>
           ))}

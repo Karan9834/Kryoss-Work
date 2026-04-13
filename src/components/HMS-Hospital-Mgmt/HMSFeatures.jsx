@@ -41,21 +41,24 @@ const HMSFeatures = () => {
 
          <div className="max-w-7xl mx-auto px-6 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-               {/* Section Subheading */}
+               {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                <div className="flex items-center justify-center gap-2 mb-4">
                   <div className="w-8 h-px bg-teal-500"></div>
-                  <span className="text-teal-400 font-bold text-sm tracking-wider uppercase">
+                  <span className="text-teal-400 text-[12px] font-medium tracking-[0.05em] uppercase">
                      Our Features
                   </span>
                   <div className="w-8 h-px bg-cyan-500"></div>
                </div>
 
-               <h2 className="text-3xl md:text-5xl font-semibold text-white tracking-tight">
+               {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-300">
                      Core Hospital Modules
                   </span>
                </h2>
-               <p className="text-slate-400 text-lg mt-4">
+               
+               {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+               <p className="text-slate-400 text-[14px] md:text-[16px] font-normal leading-[1.6] mt-4">
                   An interactive look at how our platform handles every department seamlessly.
                </p>
             </div>
@@ -63,7 +66,7 @@ const HMSFeatures = () => {
             {/* Interactive Tabbed Interface */}
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 bg-slate-900/50 rounded-[2.5rem] p-6 lg:p-8 border border-slate-800 shadow-2xl backdrop-blur-sm">
 
-               {/* Left side: Feature Tabs */}
+               {/* Left side: Feature Tabs - Updated typography */}
                <div className="lg:w-1/3 flex flex-col gap-3">
                   {features.map((feature, idx) => (
                      <button
@@ -79,29 +82,34 @@ const HMSFeatures = () => {
                            {feature.icon}
                         </div>
                         <div>
-                           <h4 className={`font-bold ${activeFeature === idx ? "text-teal-300" : "text-slate-300"}`}>
+                           {/* Tab Title - Updated: text-[15px] md:text-[16px] font-bold */}
+                           <h4 className={`font-bold text-[15px] md:text-[16px] ${activeFeature === idx ? "text-teal-300" : "text-slate-300"}`}>
                               {feature.title}
                            </h4>
-                           <p className="text-sm text-slate-500 mt-1">{feature.shortDesc}</p>
+                           {/* Tab Short Description - Updated: text-[12px] md:text-[13px] font-normal */}
+                           <p className="text-slate-500 text-[12px] md:text-[13px] font-normal mt-1">{feature.shortDesc}</p>
                         </div>
                      </button>
                   ))}
                </div>
 
-               {/* Right side: Active Feature Content */}
+               {/* Right side: Active Feature Content - Updated typography */}
                <div className="lg:w-2/3 relative h-full">
                   <div
                      key={activeFeature}
                      className="h-full bg-slate-800/40 rounded-3xl p-6 md:p-8 lg:p-10 border border-slate-700/50 flex flex-col justify-between group animate-in fade-in duration-500"
                   >
                      <div>
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-300 text-sm font-bold mb-6">
+                        {/* Module Badge - Updated typography */}
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-300 text-[11px] md:text-[12px] font-semibold uppercase tracking-[0.05em] mb-6">
                            Module Overview
                         </div>
-                        <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                        {/* Active Title - Updated: text-[24px] md:text-[30px] font-bold leading-[1.3] */}
+                        <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] text-white mb-6">
                            {features[activeFeature].title}
                         </h3>
-                        <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-3xl">
+                        {/* Active Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                        <p className="text-slate-400 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-3xl">
                            {features[activeFeature].desc}
                         </p>
                      </div>

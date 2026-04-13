@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Star, Eye, CheckCircle2, Sparkles } from "lucide-react";
-import prod5 from "../../assets/Products/exp.jpg"
-import prod2 from "../../assets/SaasProduct/prod2.png";
+import prod5 from "../../assets/Products/exp.jpg";
+import prod2 from "../../assets/erp-img/erp12.jpg";
 
 const ProductSection = () => {
   const navigate = useNavigate();
@@ -59,12 +59,12 @@ const ProductSection = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
 
-        {/* Category Badge */}
+        {/* Category Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
         <div className="flex justify-center mb-6">
           <div className="group relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
             <div className="relative px-5 py-2 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200/50 shadow-sm">
-              <span className="text-sm font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Enterprise ERP Solutions
               </span>
             </div>
@@ -73,12 +73,15 @@ const ProductSection = () => {
 
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             Industry-Leading
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> ERP Platforms</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full my-6"></div>
-          <p className="text-gray-600 text-lg leading-relaxed">
+          
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Trusted by thousands of businesses worldwide for seamless operations and growth
           </p>
         </div>
@@ -101,8 +104,8 @@ const ProductSection = () => {
                 />
               </div>
 
-              {/* TITLE AND DESCRIPTION */}
-              <p className="mt-4 text-sm md:text-base">
+              {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span
                   onClick={() => navigate(product.route)}
                   className="text-blue-600 font-semibold hover:underline cursor-pointer"
@@ -111,21 +114,21 @@ const ProductSection = () => {
                 >
                   {product.title}
                 </span>{" "}
-                <span className="text-gray-700">- {product.desc}</span>
+                <span className="text-gray-700">{product.desc}</span>
               </p>
             </div>
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        {/* Bottom CTA - Updated button typography */}
         <div className="text-center mt-16">
           <button
             onClick={() => navigate("/products")}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white border-2 border-blue-200 text-blue-600 font-semibold hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white hover:border-transparent transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white border-2 border-blue-200 text-blue-600 font-semibold hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white hover:border-transparent transition-all duration-300 shadow-lg hover:shadow-xl text-[14px] md:text-[15px]"
           >
-            <Sparkles size={20} />
+            <Sparkles size={18} />
             <span>Explore All ERP Solutions</span>
-            <ArrowRight size={18} />
+            <ArrowRight size={16} />
           </button>
         </div>
       </div>

@@ -46,18 +46,19 @@ const NewsHero = () => {
         
         {/* LEFT COLUMN */}
         <div className="space-y-8">
-          {/* Badge */}
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm px-5 py-2 rounded-full border border-blue-100 shadow-sm">
             <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-            <span className="text-sm font-medium text-gray-700">Trusted News Platform</span>
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-700">Trusted News Platform</span>
           </div>
           
-          {/* Heading */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight tracking-tight">
+          {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-gray-900">
             Stories That
             <br />
             <span className="relative inline-block mt-2">
-              <span className="relative z-10 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              {/* Highlighted Text - Same typography as H1 with gradient */}
+              <span className="relative z-10 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
                 Shape Our World
               </span>
               {/* Subtle underline */}
@@ -65,36 +66,36 @@ const NewsHero = () => {
             </span>
           </h1>
           
-          {/* Description */}
-          <p className="text-lg text-gray-600 max-w-xl leading-relaxed">
+          {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-xl">
             Breaking news, expert insights, and global coverage curated for modern readers. 
             Get the stories that matter, delivered fresh every day.
           </p>
           
-          {/* CTA Buttons */}
+          {/* CTA Buttons - Updated button typography */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <button 
               onClick={handleExploreNews}
-              className="group flex items-center justify-center gap-2 bg-gray-900 text-white px-8 py-3.5 rounded-xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group flex items-center justify-center gap-2 bg-gray-900 text-white px-8 py-3.5 rounded-xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl text-[16px] tracking-[0.01em] font-semibold"
             >
               Explore News
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
           
-          {/* Trust Indicators */}
+          {/* Trust Indicators - Updated typography */}
           <div className="flex flex-wrap items-center gap-8 pt-6">
             <div className="flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-blue-500" />
-              <span className="text-sm text-gray-600">50K+ Daily Readers</span>
+              <span className="text-[13px] md:text-[14px] font-normal text-gray-600">50K+ Daily Readers</span>
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-indigo-500" />
-              <span className="text-sm text-gray-600">100+ Countries</span>
+              <span className="text-[13px] md:text-[14px] font-normal text-gray-600">100+ Countries</span>
             </div>
             <div className="flex items-center gap-2">
               <Award className="w-5 h-5 text-blue-500" />
-              <span className="text-sm text-gray-600">Award-Winning</span>
+              <span className="text-[13px] md:text-[14px] font-normal text-gray-600">Award-Winning</span>
             </div>
           </div>
         </div>

@@ -129,21 +129,24 @@ const FeaturesSection = () => {
 
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-teal-50 border border-orange-100 rounded-full px-4 py-2 mb-6">
-            <Sparkles size={16} className="text-orange-500" />
-            <span className="text-sm font-semibold bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
+            <Sparkles size={14} className="text-orange-500" />
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
               Powerful Features
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Everything You Need to{" "}
             <span className="bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
               Scale
             </span>
           </h2>
 
-          <p className="mt-4 text-lg text-gray-600">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
             Tools designed for modern, high-performance newsrooms.
           </p>
         </div>
@@ -173,13 +176,13 @@ const FeaturesSection = () => {
                   <Icon size={26} className="text-white" />
                 </div>
 
-                {/* TITLE */}
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">
+                {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">
                   {feature.title}
                 </h3>
 
-                {/* DESC */}
-                <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                {/* Card Description - Updated: text-[14px] md:text-[14px] font-normal leading-[1.6] */}
+                <p className="text-gray-600 text-[14px] md:text-[14px] font-normal leading-[1.6] group-hover:text-gray-700 transition-colors duration-300">
                   {feature.description}
                 </p>
                 
@@ -195,12 +198,12 @@ const FeaturesSection = () => {
           })}
         </div>
 
-        {/* FOOTER */}
+        {/* FOOTER - Updated typography */}
         <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-teal-50 rounded-full px-6 py-3 border border-orange-100">
-            <span className="text-gray-600 text-sm">And many more powerful features</span>
+            <span className="text-gray-600 text-[12px] md:text-[13px] font-normal">And many more powerful features</span>
             <div className="w-1 h-1 bg-orange-400 rounded-full"></div>
-            <span className="text-orange-600 text-sm font-semibold">🚀 Constantly evolving</span>
+            <span className="text-orange-600 text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.05em]">🚀 Constantly evolving</span>
           </div>
         </div>
       </div>

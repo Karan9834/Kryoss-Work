@@ -60,13 +60,13 @@ const HotelHero = () => {
             {/* Premium Divider Line */}
             <div className="flex items-center gap-3">
               <div className="w-12 h-px bg-white/50"></div>
-              <span className="text-xs font-light tracking-[0.2em] text-white/80 uppercase">
+              <span className="text-[10px] font-medium tracking-[0.2em] text-white/80 uppercase">
                 Luxury Hospitality
               </span>
             </div>
             
-            {/* Main Heading with Shiny Effect */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] tracking-tight">
+            {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+            <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               Smart Hospitality
               <span className="block relative">
                 <span className="relative inline-block bg-gradient-to-r from-white via-amber-200 to-white bg-clip-text text-transparent bg-[length:200%_auto] animate-shine">
@@ -75,17 +75,17 @@ const HotelHero = () => {
               </span>
             </h1>
             
-            {/* Description with Subtle Shine */}
-            <p className="text-base md:text-lg text-white/80 leading-relaxed max-w-lg">
+            {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+            <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] text-white/80 max-w-lg">
               Elevate your hotel operations with intelligent booking systems, 
               personalized guest experiences, and seamless management tools 
               designed for modern hospitality.
             </p>
             
-            {/* Premium CTA Button */}
+            {/* Premium CTA Button - Updated typography */}
             <div className="pt-3">
-              <button className="group relative px-7 py-3.5 bg-white text-[#F97316] rounded-xl font-semibold overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-105" onClick={() => document.getElementById('explore-hotel-solutions')?.scrollIntoView({ behavior: 'smooth' })}>
-                <span className="relative z-10 flex items-center gap-2 text-sm md:text-base">
+              <button className="group relative px-7 py-3.5 bg-white text-[#F97316] rounded-xl font-semibold overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-105 text-[14px] md:text-[15px] tracking-[0.01em]" onClick={() => document.getElementById('explore-hotel-solutions')?.scrollIntoView({ behavior: 'smooth' })}>
+                <span className="relative z-10 flex items-center gap-2">
                   Explore Solutions
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
                 </span>

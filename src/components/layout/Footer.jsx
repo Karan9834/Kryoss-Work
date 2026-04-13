@@ -186,7 +186,7 @@ const Footer = () => {
 
         {/* 🔥 WHATSAPP FLOATING BUTTON */}
         <a
-          href="https://wa.me/YOUR_PHONE_NUMBER" // Replace with your actual WhatsApp number
+          href="https://wa.me/918448909389" // Replace with your actual WhatsApp number
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-8 right-8 w-12 h-12 bg-[#25D366] rounded-2xl text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300 z-50 group overflow-visible"

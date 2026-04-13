@@ -21,7 +21,6 @@ const solutions = [
     image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c",
     icon: Zap,
     gradient: "from-blue-500 to-cyan-500",
-    stat: "< 60s",
     statLabel: "Response Time",
   },
   {
@@ -30,7 +29,6 @@ const solutions = [
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
     icon: Brain,
     gradient: "from-indigo-500 to-purple-500",
-    stat: "99.9%",
     statLabel: "Accuracy Rate",
   },
   {
@@ -39,7 +37,6 @@ const solutions = [
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
     icon: Sparkles,
     gradient: "from-purple-500 to-pink-500",
-    stat: "10K+",
     statLabel: "Daily Stories",
   },
   {
@@ -48,7 +45,6 @@ const solutions = [
     image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620",
     icon: Globe,
     gradient: "from-emerald-500 to-teal-500",
-    stat: "50+",
     statLabel: "Countries",
   },
 ];
@@ -132,20 +128,25 @@ const Solutions = () => {
 
         {/* HEADER */}
         <div className="text-center mb-16 md:mb-24 relative z-10">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 mb-4">
             <TrendingUp className="w-5 h-5 text-blue-500" />
-            <span className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent uppercase tracking-wider">
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               Our Process
             </span>
             <Clock className="w-5 h-5 text-indigo-500" />
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             How We Deliver{" "}
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
               Trusted News
             </span>
           </h2>
-          <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
+          
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
             A seamless process powered by technology and human expertise
           </p>
         </div>
@@ -201,9 +202,9 @@ const Solutions = () => {
                   <div className="md:hidden flex justify-center mb-6">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 shadow-sm">
                       <IconComponent className={`w-4 h-4 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`} />
-                      <span className="text-xs font-semibold text-gray-700">Step {index + 1}</span>
+                      <span className="text-[11px] font-semibold text-gray-700">Step {index + 1}</span>
                       <div className="w-1 h-1 rounded-full bg-blue-400"></div>
-                      <span className={`text-xs font-bold bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}>
+                      <span className={`text-[11px] font-bold bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}>
                         {item.stat}
                       </span>
                     </div>
@@ -222,23 +223,25 @@ const Solutions = () => {
                       {/* Desktop Step Badge */}
                       <div className={`hidden md:inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-full bg-white shadow-sm border border-gray-100 ${!isTextLeft ? 'md:ml-auto' : ''}`}>
                         <IconComponent className={`w-4 h-4 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`} />
-                        <span className="text-xs font-medium text-gray-600">Step {index + 1}</span>
+                        <span className="text-[11px] font-medium text-gray-600">Step {index + 1}</span>
                       </div>
                       
-                      <h3 className={`text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}>
+                      {/* Card Title - Updated: text-[22px] md:text-[26px] lg:text-[30px] font-bold leading-[1.3] */}
+                      <h3 className={`text-[22px] md:text-[26px] lg:text-[30px] font-bold leading-[1.3] mb-3 md:mb-4 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}>
                         {item.title}
                       </h3>
 
-                      <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4 md:mb-6">
+                      {/* Card Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+                      <p className="text-gray-600 text-[14px] md:text-[15px] font-normal leading-[1.6] mb-4 md:mb-6">
                         {item.desc}
                       </p>
 
-                      {/* Stats */}
+                      {/* Stats - Updated typography */}
                       <div className={`inline-flex items-center gap-2 md:gap-3 bg-gray-50 md:bg-white md:shadow-sm px-3 md:px-4 py-1.5 md:py-2 rounded-lg border border-gray-100 ${!isTextLeft ? 'md:ml-auto md:justify-end' : ''}`}>
-                        <span className={`text-base md:text-xl font-bold bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}>
+                        <span className={`text-[16px] md:text-[20px] font-bold bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}>
                           {item.stat}
                         </span>
-                        <span className="text-xs text-gray-500">{item.statLabel}</span>
+                        <span className="text-[11px] md:text-[12px] font-normal text-gray-500">{item.statLabel}</span>
                       </div>
                     </div>
 
@@ -286,13 +289,13 @@ const Solutions = () => {
           </div>
         </div>
 
-        {/* Decorative Bottom Element - No Button */}
+        {/* Decorative Bottom Element - Updated typography */}
         <div className="mt-20 md:mt-28 text-center relative z-10">
           <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/60 backdrop-blur-sm border border-gray-200 shadow-sm">
             <Shield className="w-4 h-4 text-emerald-500" />
-            <span className="text-sm text-gray-600">Trusted by 50,000+ readers worldwide</span>
+            <span className="text-[12px] md:text-[13px] font-normal text-gray-600">Trusted by 50,000+ readers worldwide</span>
             <div className="w-1 h-1 rounded-full bg-blue-400"></div>
-            <span className="text-sm text-gray-600">24/7 Live Coverage</span>
+            <span className="text-[12px] md:text-[13px] font-normal text-gray-600">24/7 Live Coverage</span>
           </div>
         </div>
       </div>

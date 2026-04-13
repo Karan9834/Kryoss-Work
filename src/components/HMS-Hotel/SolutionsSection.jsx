@@ -55,21 +55,24 @@ const SolutionsSection = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-teal-50 border border-orange-100 rounded-full px-4 py-2 mb-6">
-            <Sparkles size={16} className="text-orange-500" />
-            <span className="text-sm font-semibold bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
+            <Sparkles size={14} className="text-orange-500" />
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
               Comprehensive Solutions
             </span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Complete Solutions for{" "}
             <span className="bg-gradient-to-r from-orange-600 to-teal-600 text-transparent bg-clip-text">
               Modern Newsrooms
             </span>
           </h2>
           
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="mt-6 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
             Integrated tools and workflows designed to streamline your entire news operation
           </p>
         </div>
@@ -96,7 +99,7 @@ const SolutionsSection = () => {
                   <div className="absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:flex">
                     <div className="relative">
                       <div className="w-10 h-10 rounded-full bg-gradient-to-r from-orange-500 to-teal-500 flex items-center justify-center shadow-lg ring-4 ring-white">
-                        <span className="text-white font-bold text-sm">{solution.id}</span>
+                        <span className="text-white font-bold text-[13px]">{solution.id}</span>
                       </div>
                       <div className="absolute inset-0 w-10 h-10 rounded-full bg-gradient-to-r from-orange-500 to-teal-500 animate-ping opacity-50"></div>
                     </div>
@@ -105,7 +108,7 @@ const SolutionsSection = () => {
                   {/* Mobile Dot */}
                   <div className="md:hidden flex justify-center mb-6">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-teal-500 flex items-center justify-center shadow-lg">
-                      <span className="text-white font-bold text-lg">{solution.id}</span>
+                      <span className="text-white font-bold text-[16px]">{solution.id}</span>
                     </div>
                   </div>
 
@@ -114,10 +117,12 @@ const SolutionsSection = () => {
                     
                     {/* Text Section - Full height */}
                     <div className={`group flex flex-col justify-center ${isLeft ? 'md:order-1' : 'md:order-2'}`}>
-                      <h3 className={`text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-orange-600 transition-colors duration-300 ${isLeft ? '' : 'md:text-right'}`}>
+                      {/* Card Title - Updated: text-[24px] md:text-[30px] font-bold leading-[1.3] */}
+                      <h3 className={`text-[24px] md:text-[30px] font-bold leading-[1.3] text-gray-900 mb-4 group-hover:text-orange-600 transition-colors duration-300 ${isLeft ? '' : 'md:text-right'}`}>
                         {solution.title}
                       </h3>
-                      <p className={`text-gray-600 leading-relaxed text-base md:text-lg ${isLeft ? '' : 'md:text-right'}`}>
+                      {/* Card Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                      <p className={`text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] ${isLeft ? '' : 'md:text-right'}`}>
                         {solution.description}
                       </p>
                     </div>

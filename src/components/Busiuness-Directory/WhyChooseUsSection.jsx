@@ -101,19 +101,23 @@ const WhyChooseUsSection = () => {
         
         {/* ===== HEADER SECTION ===== */}
         <div className="text-center mb-16">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-4 border border-blue-200">
             <Heart className="w-4 h-4 text-blue-600" />
-            <span className="text-blue-700 font-semibold text-sm">Why Choose Us</span>
+            <span className="text-blue-700 text-[12px] font-medium tracking-[0.05em] uppercase">Why Choose Us</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Why Thousands{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
+            {/* Highlighted Text - Updated: same typography as H2 */}
+            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Trust Our Platform
             </span>
           </h2>
           
-          <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             Discover what makes us the preferred choice for businesses and customers nationwide.
           </p>
         </div>
@@ -125,20 +129,20 @@ const WhyChooseUsSection = () => {
               key={index}
               className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border border-gray-100"
             >
-              {/* Icon */}
+              {/* Icon - Keep as is */}
               <div className={`w-14 h-14 ${reason.bgColor} rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
                 <div className={reason.iconColor}>
                   {reason.icon}
                 </div>
               </div>
               
-              {/* Title */}
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+              {/* Title - Updated: text-[20px] md:text-[22px] font-bold leading-[1.3] */}
+              <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
                 {reason.title}
               </h3>
               
-              {/* Description */}
-              <p className="text-gray-600 leading-relaxed">
+              {/* Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
+              <p className="text-[14px] md:text-[15px] font-normal leading-[1.6] text-gray-600">
                 {reason.description}
               </p>
               

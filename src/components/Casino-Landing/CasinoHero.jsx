@@ -14,38 +14,21 @@ const CasinoHero = ({ onExplore }) => {
 
                     {/* Left Content */}
                     <div className="space-y-8 animate-fadeInLeft">
+                        {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 rounded-full border border-orange-200">
                             <span className="w-2 h-2 rounded-full bg-orange-600 animate-pulse"></span>
-                            <span className="text-orange-800 text-xs font-bold uppercase tracking-widest">Premium Casino Software</span>
+                            <span className="text-orange-800 text-[12px] font-medium tracking-[0.05em] uppercase">Premium Casino Software</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl font-semibold text-[#1E293B] leading-tight">
-                            World-Class <span className="text-orange-600">Casino Gaming</span> Solutions for <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500 font-bold">Unmatched Gameplay</span>
+                        {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
+                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-[#1E293B]">
+                            World-Class <span className="text-orange-600">Casino Gaming</span> Solutions for <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Unmatched Gameplay</span>
                         </h1>
 
-                        <p className="text-[#4A4B5E] text-lg lg:text-xl max-w-xl leading-relaxed">
+                        {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
+                        <p className="text-[#4A4B5E] text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-xl">
                             Custom casino game software solutions catering to mobile gaming, land-based systems, and online platforms. Elevate your gaming business with Kryoss.
                         </p>
-
-
-
-                        {/* Trust Badges */}
-                        <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
-                            <div>
-                                <p className="text-2xl font-black text-[#1E293B]">50+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Casino Games</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-2xl font-black text-[#1E293B]">1M+</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Active Players</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-2xl font-black text-[#1E293B]">100%</p>
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Secure RNG</p>
-                            </div>
-                        </div>
                     </div>
 
                     {/* Right Content - Visuals */}

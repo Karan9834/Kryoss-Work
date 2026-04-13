@@ -1,5 +1,5 @@
 import React from "react";
-import hotelhero from "../../assets//Hotel-Management/hotelhero.png"
+import hotelhero from "../../assets/Hotel-Management/hotelhero.png"
 
 const AboutSection = () => {
   return (
@@ -24,7 +24,7 @@ const AboutSection = () => {
 
           {/* RIGHT - CONTENT - Updated Typography */}
           <div>
-            {/* Section Underline - width: 64px, height: 2px */}
+            {/* Section Underline - width: 64px, height: 2px - Keep as is */}
             <div className="w-16 h-[2px] bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full mb-5"></div>
 
             {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}

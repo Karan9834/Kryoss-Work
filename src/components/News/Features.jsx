@@ -24,8 +24,6 @@ const Features = () => {
       title: "Global Network",
       description:
         "Correspondents in 50+ countries delivering local insights with global perspective.",
-      stat: "100+",
-      statLabel: "Countries",
       color: "from-blue-400 to-cyan-400",
     },
     {
@@ -33,8 +31,6 @@ const Features = () => {
       title: "Verified Content",
       description:
         "Triple-checked facts with sources and citations for complete transparency.",
-      stat: "99.9%",
-      statLabel: "Accuracy Rate",
       color: "from-indigo-400 to-purple-400",
     },
     {
@@ -42,8 +38,6 @@ const Features = () => {
       title: "Instant Alerts",
       description:
         "Push notifications for breaking news delivered straight to your device.",
-      stat: "< 60s",
-      statLabel: "Response Time",
       color: "from-purple-400 to-pink-400",
     },
     {
@@ -51,8 +45,6 @@ const Features = () => {
       title: "Expert Team",
       description:
         "Seasoned journalists and industry experts behind every story.",
-      stat: "50+",
-      statLabel: "Expert Journalists",
       color: "from-amber-400 to-orange-400",
     },
     {
@@ -60,8 +52,6 @@ const Features = () => {
       title: "Smart Analytics",
       description:
         "AI-powered insights showing what stories matter to your community.",
-      stat: "24/7",
-      statLabel: "Live Analytics",
       color: "from-emerald-400 to-teal-400",
     },
     {
@@ -69,8 +59,6 @@ const Features = () => {
       title: "Award-Winning",
       description:
         "Recognized for excellence in journalism and digital innovation.",
-      stat: "15+",
-      statLabel: "Industry Awards",
       color: "from-rose-400 to-red-400",
     },
   ];
@@ -89,16 +77,19 @@ const Features = () => {
 
         {/* HEADER */}
         <div className="text-center mb-16 space-y-4">
+          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <div className="inline-flex items-center gap-2 bg-white/5 px-5 py-2 rounded-full border border-white/10">
             <Sparkles className="w-4 h-4 text-blue-400" />
-            <span className="text-sm text-gray-300">Why Choose Us</span>
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-300">Why Choose Us</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white">
             Trusted News Platform for Modern Readers
           </h2>
 
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+          <p className="text-gray-400 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
             Reliable journalism, real-time updates, and expert insights — all in one place.
           </p>
         </div>
@@ -134,25 +125,15 @@ const Features = () => {
                     </div>
                   </div>
 
-                  {/* Title */}
-                  <h3 className="text-xl font-semibold text-white mb-2">
+                  {/* Card Title - Updated: text-[18px] md:text-[20px] font-bold leading-[1.3] */}
+                  <h3 className="text-[18px] md:text-[20px] font-bold leading-[1.3] text-white mb-2">
                     {feature.title}
                   </h3>
 
-                  {/* Desc */}
-                  <p className="text-gray-400 text-sm mb-4">
+                  {/* Card Description - Updated: text-[13px] md:text-[14px] font-normal leading-[1.6] */}
+                  <p className="text-gray-400 text-[13px] md:text-[14px] font-normal leading-[1.6]">
                     {feature.description}
                   </p>
-
-                  {/* Stats */}
-                  <div className="flex justify-between items-center border-t border-white/10 pt-4">
-                    <span className={`text-2xl font-bold bg-gradient-to-r ${feature.color} bg-clip-text text-transparent`}>
-                      {feature.stat}
-                    </span>
-                    <span className="text-xs text-gray-500">
-                      {feature.statLabel}
-                    </span>
-                  </div>
                 </div>
               </div>
             );
@@ -166,11 +147,9 @@ const Features = () => {
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex gap-4">
             <BookOpen className="text-blue-400" />
             <div>
-              <h3 className="text-white font-semibold">Daily Newsletter</h3>
-              <p className="text-gray-400 text-sm">
-                Get top stories delivered every morning.
-              </p>
-              <div className="flex items-center gap-1 text-xs text-gray-500 mt-2">
+              <h3 className="text-white font-semibold text-[16px] md:text-[18px]">Daily Newsletter</h3>
+              <p className="text-gray-400 text-[13px] md:text-[14px] font-normal">Get top stories delivered every morning.</p>
+              <div className="flex items-center gap-1 text-[11px] text-gray-500 mt-2">
                 <Lock size={12} /> Free subscription
                 <ChevronRight size={12} className="ml-auto" />
               </div>
@@ -181,11 +160,9 @@ const Features = () => {
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex gap-4">
             <Headphones className="text-purple-400" />
             <div>
-              <h3 className="text-white font-semibold">Audio Articles</h3>
-              <p className="text-gray-400 text-sm">
-                Listen to news on the go.
-              </p>
-              <div className="flex items-center gap-1 text-xs text-gray-500 mt-2">
+              <h3 className="text-white font-semibold text-[16px] md:text-[18px]">Audio Articles</h3>
+              <p className="text-gray-400 text-[13px] md:text-[14px] font-normal">Listen to news on the go.</p>
+              <div className="flex items-center gap-1 text-[11px] text-gray-500 mt-2">
                 <Star size={12} /> Premium feature
                 <ChevronRight size={12} className="ml-auto" />
               </div>

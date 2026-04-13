@@ -48,13 +48,18 @@ const SolutionsSection = () => {
 
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-20 px-6 relative z-10">
+        {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
         <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-100 rounded-full px-4 py-2 mb-6">
-          <span className="text-sm font-semibold text-orange-700 tracking-wide">Comprehensive Solutions</span>
+          <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-orange-700">Comprehensive Solutions</span>
         </div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+        
+        {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+        <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
           Our <span className="bg-gradient-to-r from-orange-600 to-amber-600 text-transparent bg-clip-text">Solutions</span>
         </h2>
-        <p className="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
+        
+        {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+        <p className="mt-6 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
           Designed to empower modern news organizations with scalable, intelligent, and efficient workflows.
         </p>
       </div>
@@ -74,16 +79,16 @@ const SolutionsSection = () => {
                 key={item.id}
                 className="relative grid md:grid-cols-2 gap-12 items-center"
               >
-                {/* NUMBER - Orange Theme */}
+                {/* NUMBER - Orange Theme - Updated typography */}
                 <div className="absolute left-1/2 -translate-x-1/2 z-20 hidden md:flex">
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-r from-orange-600 to-amber-600 text-white flex items-center justify-center font-bold text-lg shadow-lg ring-4 ring-white">
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-r from-orange-600 to-amber-600 text-white flex items-center justify-center font-bold text-[18px] shadow-lg ring-4 ring-white">
                     {item.id}
                   </div>
                 </div>
 
                 {/* Mobile Number */}
                 <div className="md:hidden flex justify-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-600 to-amber-600 text-white flex items-center justify-center font-bold text-lg shadow-lg">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-600 to-amber-600 text-white flex items-center justify-center font-bold text-[16px] shadow-lg">
                     {item.id}
                   </div>
                 </div>
@@ -91,12 +96,14 @@ const SolutionsSection = () => {
                 {/* LEFT / RIGHT CONTENT */}
                 {isLeft ? (
                   <>
-                    {/* TEXT - Larger Text */}
+                    {/* TEXT */}
                     <div className="text-center md:text-right group">
-                      <h3 className="text-3xl md:text-4xl font-bold text-gray-900 group-hover:text-orange-600 transition duration-300 mb-4">
+                      {/* Card Title - Updated: text-[24px] md:text-[30px] font-bold leading-[1.3] */}
+                      <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] text-gray-900 group-hover:text-orange-600 transition duration-300 mb-4">
                         {item.title}
                       </h3>
-                      <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                      {/* Card Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                      <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
                         {item.description}
                       </p>
                     </div>
@@ -127,12 +134,14 @@ const SolutionsSection = () => {
                       </div>
                     </div>
 
-                    {/* TEXT - Larger Text */}
+                    {/* TEXT */}
                     <div className="text-center md:text-left group md:order-2">
-                      <h3 className="text-3xl md:text-4xl font-bold text-gray-900 group-hover:text-orange-600 transition duration-300 mb-4">
+                      {/* Card Title - Updated: text-[24px] md:text-[30px] font-bold leading-[1.3] */}
+                      <h3 className="text-[24px] md:text-[30px] font-bold leading-[1.3] text-gray-900 group-hover:text-orange-600 transition duration-300 mb-4">
                         {item.title}
                       </h3>
-                      <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                      {/* Card Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                      <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
                         {item.description}
                       </p>
                     </div>
