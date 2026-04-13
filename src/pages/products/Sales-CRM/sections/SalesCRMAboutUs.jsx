@@ -9,7 +9,7 @@ const SalesCRMAboutUs = () => {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
                     {/* LEFT IMAGE */}
-                    <div className="flex justify-center lg:justify-start">
+                    <div className="flex justify-center lg:justify-start lg:order-1 order-2">
                         <img
                             src={crmaboutimg}
                             alt="CRM Dashboard"
@@ -18,7 +18,7 @@ const SalesCRMAboutUs = () => {
                     </div>
 
                     {/* RIGHT CONTENT */}
-                    <div className="bg-white border border-indigo-100 rounded-3xl p-8 lg:p-12 shadow-sm space-y-6">
+                    <div className="bg-white border border-indigo-100 rounded-3xl p-8 lg:p-12 shadow-sm space-y-6 lg:order-2 order-1">
 
                         {/* Badge */}
                         <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 text-sm px-4 py-2 rounded-full w-fit">

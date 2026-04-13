@@ -9,24 +9,9 @@ const SalesCRMHero = () => {
 
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-                    {/* LEFT IMAGE */}
-                    <div className="relative">
 
-                        {/* Premium badge */}
-                        <span className="absolute top-4 right-4 bg-white text-indigo-600 px-4 py-1 rounded-full text-sm shadow">
-                            ✨ Premium
-                        </span>
 
-                        {/* Replace with your image */}
-                        <img
-                            src={crmheroimg}
-                            alt="Enterprise CRM Dashboard"
-                            className="w-full rounded-3xl shadow-xl object-cover"
-                        />
-
-                    </div>
-
-                    {/* RIGHT CONTENT */}
+                    {/* LEFT CONTENT */}
                     <div>
 
                         {/* Badge */}
@@ -95,7 +80,22 @@ const SalesCRMHero = () => {
                         </div>
 
                     </div>
+                    {/* RIGHT IMAGE */}
+                    <div className="relative">
 
+                        {/* Premium badge */}
+                        <span className="absolute top-4 right-4 bg-white text-indigo-600 px-4 py-1 rounded-full text-sm shadow">
+                            ✨ Premium
+                        </span>
+
+                        {/* Replace with your image */}
+                        <img
+                            src={crmheroimg}
+                            alt="Enterprise CRM Dashboard"
+                            className="w-full rounded-3xl shadow-xl object-cover"
+                        />
+
+                    </div>
                 </div>
 
             </div>

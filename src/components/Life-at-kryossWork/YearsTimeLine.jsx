@@ -5,31 +5,43 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 // Images
-import img2025 from "../../assets/Life/companylife-at-kryosswork/image1.png";
-import img2024 from "../../assets/Life/companylife-at-kryosswork/image2.png";
-import img2023 from "../../assets/Life/companylife-at-kryosswork/image3.png";
+import journey1 from "../../assets/Life/companylife-at-kryosswork/journey1.png";
+import journey2 from "../../assets/Life/companylife-at-kryosswork/journey2.png";
+import journey3 from "../../assets/Life/companylife-at-kryosswork/journey3.png";
+import journey4 from "../../assets/Life/companylife-at-kryosswork/journey4.png";
+import journey5 from "../../assets/Life/companylife-at-kryosswork/journey5.png";
+import journey6 from "../../assets/Life/companylife-at-kryosswork/journey6.png";
 
 const years = [
   {
     year: "2025",
-    img: img2025,
+    img: journey1,
     bg: "from-yellow-200 to-orange-200",
-    title: "Latest Milestones",
-    description: "Achieved new heights with innovative solutions",
   },
   {
     year: "2024",
-    img: img2024,
+    img: journey2,
     bg: "from-green-200 to-emerald-300",
-    title: "Growth & Expansion",
-    description: "Expanded our team and client base globally",
   },
   {
     year: "2023",
-    img: img2023,
+    img: journey3,
     bg: "from-purple-200 to-pink-200",
-    title: "Foundation Years",
-    description: "Built strong foundations for future success",
+  },
+  {
+    year: "2022",
+    img: journey4,
+    bg: "from-blue-200 to-indigo-200",
+  },
+  {
+    year: "2021",
+    img: journey5,
+    bg: "from-orange-200 to-red-200",
+  },
+  {
+    year: "2020",
+    img: journey6,
+    bg: "from-teal-200 to-cyan-200",
   },
 ];
 
@@ -64,7 +76,7 @@ const YearsTimeline = () => {
       ScrollTrigger.create({
         trigger: sectionRef.current,
         start: "top top",
-        end: "+=" + window.innerHeight * years.length,
+        end: "+=" + window.innerHeight * (years.length + 1), // Increased buffer to prevent last card jumping
         pin: true,
         scrub: true,
       });
@@ -110,29 +122,24 @@ const YearsTimeline = () => {
         {years.map((item, index) => (
           <div
             key={index}
-            className="year-card absolute top-0 left-0 w-full h-screen flex items-center justify-center px-6"
+            className="year-card absolute top-0 left-0 w-full h-screen flex items-center justify-center px-4 md:px-6"
             style={{ zIndex: index + 1 }}
           >
-            <div className={`relative bg-gradient-to-r ${item.bg} rounded-[40px] p-6 md:p-10 shadow-2xl max-w-6xl w-full h-[75vh] md:h-[80vh]`}>
-
+            <div className={`relative bg-gradient-to-r ${item.bg} rounded-[30px] md:rounded-[40px] p-4 md:p-10 shadow-2xl max-w-6xl w-full h-[50vh] md:h-[80vh]`}>
+              
               {/* YEAR BADGE */}
-              <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
-                <span className="text-lg font-bold text-gray-800">{item.year}</span>
+              <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 md:px-4 md:py-2 shadow-lg z-20">
+                <span className="text-sm md:text-lg font-bold text-gray-800">{item.year}</span>
               </div>
 
               {/* IMAGE */}
-              <img
-                src={item.img}
-                alt={`Company ${item.year}`}
-                className="w-full rounded-2xl h-[60vh] md:h-[65vh] object-cover shadow-lg"
-              />
-
-              {/* TEXT */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-                <h3 className="text-xl font-bold text-gray-800 mb-1">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.description}</p>
+              <div className="w-full h-full relative z-10">
+                <img
+                  src={item.img}
+                  alt={`Company ${item.year}`}
+                  className="w-full h-full object-contain rounded-xl md:rounded-2xl"
+                />
               </div>
-
             </div>
           </div>
         ))}

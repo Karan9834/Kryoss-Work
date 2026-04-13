@@ -56,11 +56,16 @@ const Commitment = () => {
             your business stays ahead with reliable technology, expert support,
             and cost-effective solutions.
           </p>
-
+          {/* IMAGE PLACEHOLDER */}
+          <img
+            src="/images/company/companyabout/commitment1.png"
+            alt="Our commitment"
+            className="mt-8 w-[600px] max-h-[470px] rounded-xl object-cover"
+          />
         </div>
 
         {/* RIGHT SIDE SCROLLABLE CARDS */}
-        <div className="max-h-[500px] overflow-y-auto space-y-6 pr-4">
+        <div className="max-h-[650px] overflow-y-auto space-y-6 pr-4">
 
           {commitments.map((item, index) => (
             <div

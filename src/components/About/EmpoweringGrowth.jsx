@@ -56,14 +56,12 @@ const EmpoweringGrowth = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="h-full">
-
+          <div className="flex items-center">
             <img
-              src="https://whitelabelfox.com/assets/images/about-us/about-us-page-weve-empowered-image.webp"
+              src="/images/company/companyabout/OK.png"
               alt="Empowering Growth"
-              className="w-full h-full object-cover rounded-2xl shadow-lg"
+              className="w-full max-h-[630px] object-cover rounded-2xl shadow-lg"
             />
-
           </div>
 
         </div>
