@@ -132,9 +132,8 @@ const SolutionsSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.7 }}
                   viewport={{ once: true }}
-                  className={`flex-1 group ${
-                    isLeft ? "lg:text-right" : "lg:order-2"
-                  }`}
+                  className={`flex-1 group ${isLeft ? "lg:text-right" : "lg:order-2"
+                    }`}
                 >
                   {/* Card Title - ORIGINAL FONT (unchanged) */}
                   <h3 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-4">
@@ -142,12 +141,12 @@ const SolutionsSection = () => {
                   </h3>
 
                   {/* Card Description - ORIGINAL FONT (unchanged) */}
-                  <p className="relative text-gray-600 text-base lg:text-lg leading-relaxed max-w-md transition-all duration-300 group-hover:text-gray-900">
+                  <p className={`relative text-gray-600 text-base lg:text-lg leading-relaxed max-w-md transition-all duration-300 group-hover:text-gray-900 ${isLeft ? "lg:ml-auto text-left lg:text-right" : "lg:mr-auto text-left"}`}>
 
                     {/* Accent line */}
-                    <span className="absolute left-0 top-0 h-full w-[3px] bg-gradient-to-b from-purple-500 to-pink-500 scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-300 rounded-full" />
+                    <span className={`absolute top-0 h-full w-[3px] bg-gradient-to-b from-purple-500 to-pink-500 scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-300 rounded-full ${isLeft ? "lg:right-0 lg:left-auto left-0" : "left-0"}`} />
 
-                    <span className="pl-4 block">
+                    <span className={`block ${isLeft ? "lg:pr-4 lg:pl-0 pl-4" : "pl-4"}`}>
                       {item.description}
                     </span>
                   </p>
@@ -156,11 +155,10 @@ const SolutionsSection = () => {
                 {/* IMAGE */}
                 <motion.div
                   style={{ y }}
-                  className={`flex-1 flex justify-center ${
-                    isLeft ? "" : "lg:order-1"
-                  }`}
+                  className={`flex-1 flex justify-center ${isLeft ? "lg:justify-start" : "lg:order-1 lg:justify-end"
+                    }`}
                 >
-                  <div className="relative w-[300px] sm:w-[340px] lg:w-[380px]">
+                  <div className="relative w-[320px] sm:w-[380px] lg:w-[480px]">
 
                     <div className="absolute inset-0 bg-gradient-to-r from-purple-200 via-pink-200 to-indigo-200 blur-2xl opacity-40 rounded-2xl" />
 

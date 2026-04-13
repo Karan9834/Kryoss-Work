@@ -149,7 +149,7 @@ const TimelineSection = () => {
                       <img
                         src={item.image}
                         alt=""
-                        className="w-full h-[180px] object-fit transition-transform duration-500 hover:scale-105"
+                        className="w-full h-[350px] object-fit transition-transform duration-500 hover:scale-105"
                       />
                     </div>
                   </div>

@@ -80,7 +80,7 @@ const SolutionsSection = () => {
     >
       {/* Premium Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-purple-50/50 via-white to-purple-50/30" />
-      
+
       {/* Animated Gradient Orbs */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-[10%] w-[500px] h-[500px] bg-purple-200/30 rounded-full blur-[100px] animate-pulse" />
@@ -108,7 +108,7 @@ const SolutionsSection = () => {
               How It Works
             </span>
           </div>
-          
+
           {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-4">
             Smart{" "}
@@ -116,7 +116,7 @@ const SolutionsSection = () => {
               Solutions
             </span>
           </h2>
-          
+
           {/* Description - 16px, weight 400, line-height 1.6 */}
           <p className="text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             Built to simplify your home service experience with cutting-edge technology
@@ -127,13 +127,13 @@ const SolutionsSection = () => {
         <div className="absolute left-1/2 top-[280px] w-[3px] h-[calc(100%-560px)] transform -translate-x-1/2 hidden lg:block">
           {/* Base Line */}
           <div className="absolute inset-0 bg-gradient-to-b from-gray-200 via-gray-200 to-gray-200 rounded-full" />
-          
+
           {/* Animated Gradient Line */}
           <motion.div
             style={{ height }}
             className="absolute top-0 left-0 right-0 bg-gradient-to-b from-purple-500 via-pink-500 to-indigo-500 rounded-full shadow-lg shadow-purple-500/30"
           />
-          
+
           {/* Glow Effect */}
           <motion.div
             style={{ opacity: glowIntensity }}
@@ -166,14 +166,14 @@ const SolutionsSection = () => {
                   >
                     {/* Outer Glow */}
                     <div className={`absolute inset-0 bg-gradient-to-r ${item.color} rounded-full blur-md opacity-60`} />
-                    
+
                     {/* Pulse Ring */}
                     <motion.div
                       animate={{ scale: [1, 1.2, 1] }}
                       transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                       className={`absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r ${item.color} opacity-30`}
                     />
-                    
+
                     {/* Main Badge */}
                     <div className={`relative w-14 h-14 bg-white border-2 border-${item.color.split(' ')[0].replace('from-', '')}/20 flex items-center justify-center rounded-full shadow-xl`}>
                       <span className={`text-lg font-bold bg-gradient-to-r ${item.color} bg-clip-text text-transparent`}>
@@ -197,7 +197,7 @@ const SolutionsSection = () => {
                       Step {item.id}
                     </span>
                   </div>
-                  
+
                   {/* Card Title - ORIGINAL FONT (unchanged) */}
                   <h3 className={`text-2xl lg:text-3xl font-bold text-gray-900 mb-4 ${isLeft ? "lg:text-right" : ""}`}>
                     {item.title}
@@ -228,31 +228,18 @@ const SolutionsSection = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: 0.1 }}
                   viewport={{ once: true }}
-                  className={`flex-1 flex justify-center ${isLeft ? "" : "lg:order-1"}`}
+                  className={`flex-1 flex justify-center ${isLeft ? "lg:justify-start" : "lg:order-1 lg:justify-end"}`}
                 >
-                  <div className="relative w-[300px] sm:w-[340px] lg:w-[400px]">
+                  <div className="relative w-[320px] sm:w-[380px] lg:w-[480px]">
                     {/* Premium Glow Effect */}
                     <motion.div
                       animate={{ scale: [1, 1.05, 1] }}
                       transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                       className={`absolute inset-0 bg-gradient-to-r ${item.color} rounded-2xl blur-2xl opacity-30`}
                     />
-                    
-                    {/* Floating Icon */}
-                    <motion.div
-                      animate={{ y: [0, -12, 0], rotate: [0, 5, 0] }}
-                      transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                      className={`absolute -top-5 -right-5 bg-white shadow-xl p-3 rounded-xl z-20 border border-${item.color.split(' ')[0].replace('from-', '')}/20`}
-                    >
-                      <Icon className={`w-6 h-6 bg-gradient-to-r ${item.color} bg-clip-text text-transparent`} />
-                    </motion.div>
 
                     {/* Main Image Card */}
-                    <motion.div
-                      whileHover={{ scale: 1.03 }}
-                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                      className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100 bg-white"
-                    >
+                    <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100 bg-white">
                       <img
                         src={item.image}
                         alt={item.title}
@@ -260,10 +247,7 @@ const SolutionsSection = () => {
                       />
                       {/* Gradient Overlay */}
                       <div className={`absolute inset-0 bg-gradient-to-t ${item.color} opacity-0 hover:opacity-10 transition-opacity duration-500`} />
-                    </motion.div>
-
-                    {/* Decorative Corner */}
-                    <div className={`absolute -bottom-3 -left-3 w-16 h-16 border-2 border-${item.color.split(' ')[0].replace('from-', '')}/20 rounded-xl opacity-50`} />
+                    </div>
                   </div>
                 </motion.div>
               </div>
