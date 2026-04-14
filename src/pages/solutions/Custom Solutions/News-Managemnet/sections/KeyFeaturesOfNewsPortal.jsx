@@ -40,7 +40,7 @@ const KeyFeaturesOfNewsPortal = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-[1.875rem] md:text-[2.25rem] font-bold">
+          <h2 className="text-[1.875rem] md:text-[2.25rem] text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-red-600">Key Features</span>{" "}
             <span className="text-gray-800">Of News Portal</span>
           </h2>
@@ -54,7 +54,7 @@ const KeyFeaturesOfNewsPortal = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-center mb-12 max-w-3xl mx-auto"
         >
-          <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+          <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             <span className="font-semibold text-red-700">Kryoss Work</span> adores designing; we are highly fervent 
             and motivated about new designing, as well as own a strong awareness of the customary aspects 
             of design such as structure and font. We believe in ease, manner and honesty! We don't just 
@@ -82,7 +82,7 @@ const KeyFeaturesOfNewsPortal = () => {
                 </div>
                 
                 {/* Description */}
-                <p className="text-[0.875rem] md:text-[0.95rem] font-normal text-gray-600 leading-relaxed">
+                <p className="text-[0.875rem] md:text-[0.95rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                   {feature.description}
                 </p>
               </div>

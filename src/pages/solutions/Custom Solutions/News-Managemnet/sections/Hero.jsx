@@ -80,7 +80,7 @@ const NewsHero = () => {
               transition={{ delay: 0.7 }}
               className="flex justify-center md:justify-start"
             >
-              <button className="px-8 py-3 bg-gradient-to-r from-red-500 to-rose-500 text-white rounded-xl font-semibold text-[1rem] hover:shadow-2xl hover:shadow-red-500/30 hover:scale-105 transition-all duration-300">
+              <button className="px-8 py-3 bg-gradient-to-r from-red-500 to-rose-500 text-white rounded-xl text-[1rem] hover:shadow-2xl hover:shadow-red-500/30 hover:scale-105 transition-all duration-300 text-[16px] font-semibold tracking-[0.01em] normal-case">
                 EXPLORE NOW
               </button>
             </motion.div>

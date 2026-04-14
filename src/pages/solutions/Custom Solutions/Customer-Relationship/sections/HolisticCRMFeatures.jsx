@@ -127,12 +127,12 @@ const HolisticCRMFeatures = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-[1.875rem] md:text-[2.25rem] font-bold">
+          <h2 className="text-[1.875rem] md:text-[2.25rem] text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-teal-400">Holistic</span>{" "}
-            <span className="text-white">CRM Feature Set</span>
+            <span className="text-white text-[30px] md:text-[36px] font-bold leading-[1.2]">CRM Feature Set</span>
           </h2>
           <div className="w-16 h-[2px] bg-teal-500 mx-auto mt-3" />
-          <p className="text-teal-200/70 mt-4 max-w-2xl mx-auto text-[0.875rem] md:text-[1rem] font-normal">
+          <p className="text-teal-200/70 mt-4 mx-auto text-[0.875rem] md:text-[1rem] text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Comprehensive CRM solutions tailored to meet your business needs
           </p>
         </motion.div>
@@ -173,7 +173,7 @@ const HolisticCRMFeatures = () => {
                     <h3 className="text-[1rem] md:text-[1.125rem] font-bold text-white mb-3 leading-tight">
                       {feature.title}
                     </h3>
-                    <p className="text-[0.875rem] md:text-[0.95rem] font-normal text-gray-300 leading-relaxed">
+                    <p className="text-[0.875rem] md:text-[0.95rem] text-gray-300 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                       {feature.description}
                     </p>
                   </div>

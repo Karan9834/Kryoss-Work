@@ -41,14 +41,14 @@ const HotelProducts = () => {
             </span>
           </div>
 
-          <h2 className="text-4xl font-bold text-gray-900">
+          <h2 className="text-gray-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Explore Our{" "}
             <span className="text-cyan-600">
               Hotel Solutions
             </span>
           </h2>
 
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Powerful tools designed for modern hospitality businesses
           </p>
         </div>
@@ -72,7 +72,7 @@ const HotelProducts = () => {
               </div>
 
               {/* TEXT */}
-              <p className="mt-4 text-sm md:text-base">
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600 font-semibold">
                   {product.name}
                 </span>{" "}

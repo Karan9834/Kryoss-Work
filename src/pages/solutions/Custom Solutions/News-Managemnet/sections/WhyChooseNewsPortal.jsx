@@ -60,12 +60,12 @@ const WhyChooseNewsPortal = () => {
         <div className="md:w-1/2 bg-[#f3f3f3] px-8 py-10">
 
           {/* TITLE */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+          <h2 className="text-gray-800 mb-4 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-red-600">Why</span> Choose News Porals Development
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-600 text-sm mb-8 leading-relaxed">
+          <p className="text-gray-600 mb-8 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             We offer one roof solution to your internet existence necessities.
             We also offer web consultancy, web designing, redesigning of accessible websites.
           </p>
@@ -86,7 +86,7 @@ const WhyChooseNewsPortal = () => {
                   <h4 className="font-semibold text-gray-800 text-sm">
                     <span className="text-red-600">{item.title}</span>
                   </h4>
-                  <p className="text-xs text-gray-600 mt-1 leading-relaxed">
+                  <p className="text-gray-600 mt-1 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                     {item.description}
                   </p>
                 </div>

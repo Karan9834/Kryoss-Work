@@ -22,23 +22,23 @@ const InventoryModule = () => {
             </h3>
 
             <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Purchase Entry with Item wise Purchase Rate.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Department wise Material Issue & Purchase Return.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Material Return Entry from Department to Store.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Department wise Material Issue Report.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Department wise Material Return Report.
               </li>

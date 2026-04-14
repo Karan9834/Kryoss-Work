@@ -26,15 +26,15 @@ const RestaurantCost = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+          <h2 className="text-gray-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             How Much Does A{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Restaurant Management Software Cost?
             </span>
           </h2>
 
           {/* Description */}
-          <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="mt-4 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             If you are thinking to build a cloud-based restaurant management software, it is important 
             to choose the right developers with great technical expertise. Whether you own a chain of 
             restaurants or a single location mini outlet, you need a reliable system that can help you 
@@ -42,7 +42,7 @@ const RestaurantCost = () => {
             all orders correctly on time.
           </p>
 
-          <p className="mt-3 text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="mt-3 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Though the price shouldn't be the ultimate deciding factor when it comes to choosing a 
             Restaurant POS Solution, cost undoubtedly plays a significant role. Check out the estimated 
             restaurant management software price by selecting only the features you need and pay for 

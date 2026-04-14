@@ -18,10 +18,10 @@ const DevelopmentProcess = () => {
           </div>
 
           {/* HEADING */}
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-snug">
+          <h2 className="text-gray-900 mb-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-orange-600">Our School</span> Management Software
             <br />
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Development Process
             </span>
           </h2>
@@ -36,7 +36,7 @@ const DevelopmentProcess = () => {
               "Perform rigorous testing for reliability",
               "Deploy with ongoing support and maintenance",
             ].map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-gray-600 text-sm">
+              <li key={index} className="flex items-start gap-3 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="mt-2 w-2 h-2 rounded-full bg-gradient-to-r from-orange-500 to-cyan-500"></span>
                 {item}
               </li>

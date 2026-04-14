@@ -22,23 +22,23 @@ const BanquetModule = () => {
             </h3>
 
             <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Party Order Booking In Different types of Banquets.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Banquet Billing & Equipment Billing.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Date wise, Banquet wise Vacant & Occupied Status.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Party Order Booking Report.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Banquet Sales Summary / Detail Summary.
               </li>

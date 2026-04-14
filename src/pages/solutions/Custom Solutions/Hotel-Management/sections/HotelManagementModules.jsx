@@ -148,7 +148,7 @@ const HotelManagementModules = () => {
           </h3>
 
           {/* Desc */}
-          <p className="text-gray-300 text-center text-sm line-clamp-3">
+          <p className="text-gray-300 text-center line-clamp-3 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             {module.description}
           </p>
         </div>
@@ -162,10 +162,10 @@ const HotelManagementModules = () => {
 
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white">
+          <h2 className="text-white text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Hotel Management Software Modules
           </h2>
-          <p className="text-gray-400 mt-3">
+          <p className="text-gray-400 mt-3 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Modern modules powered with neon SaaS experience
           </p>
         </div>

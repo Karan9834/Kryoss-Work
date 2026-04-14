@@ -92,12 +92,12 @@ const CRMSoftwareSolutions = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-[1.875rem] md:text-[2.25rem] font-bold">
+          <h2 className="text-[1.875rem] md:text-[2.25rem] text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-teal-600">CRM Software</span>{" "}
             <span className="text-gray-800">Solutions</span>
           </h2>
           <div className="w-16 h-[2px] bg-teal-600 mx-auto mt-3" />
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-[0.875rem] md:text-[1rem]">
+          <p className="text-gray-600 mt-4 mx-auto text-[0.875rem] md:text-[1rem] text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Comprehensive CRM solutions to streamline your business processes and boost customer relationships
           </p>
         </motion.div>
@@ -142,7 +142,7 @@ const CRMSoftwareSolutions = () => {
                       <h3 className="text-[0.95rem] md:text-[1rem] font-bold text-gray-800 mb-1 leading-tight">
                         {feature.title}
                       </h3>
-                      <p className="text-[0.8rem] md:text-[0.875rem] font-normal text-gray-600 leading-relaxed">
+                      <p className="text-[0.8rem] md:text-[0.875rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         {feature.description}
                       </p>
                     </div>
@@ -179,7 +179,7 @@ const CRMSoftwareSolutions = () => {
                       <h3 className="text-[0.95rem] md:text-[1rem] font-bold text-gray-800 mb-1 leading-tight">
                         {feature.title}
                       </h3>
-                      <p className="text-[0.8rem] md:text-[0.875rem] font-normal text-gray-600 leading-relaxed">
+                      <p className="text-[0.8rem] md:text-[0.875rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         {feature.description}
                       </p>
                     </div>

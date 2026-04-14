@@ -17,21 +17,21 @@ const Hero = () => {
       <div className="relative w-full max-w-7xl mx-auto">
         {/* LEFT CONTENT */}
         <div className="max-w-xl">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight">
+          <h1 className="text-white text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
             Find your{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               dream job
             </span>{" "}
             faster & smarter
           </h1>
 
-          <p className="mt-4 text-slate-300 text-base">
+          <p className="mt-4 text-slate-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">
             Discover opportunities and connect with top companies.
           </p>
 
           {/* CTA */}
           <div className="mt-6">
-            <button className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 shadow-lg transition">
+            <button className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:from-indigo-700 hover:to-purple-700 shadow-lg transition text-[16px] font-semibold tracking-[0.01em] normal-case">
               Explore Jobs
             </button>
           </div>

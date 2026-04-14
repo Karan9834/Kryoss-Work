@@ -62,14 +62,14 @@ const UsersFeature = () => {
             Premium Features
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mt-6">
+          <h2 className="text-white mt-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Impressive Feature{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
                of Job Portals
             </span>
           </h2>
 
-          <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-400 mt-4 max-w-2xl mx-auto">
+          <p className="leading-[1.6] text-slate-400 mt-4 mx-auto text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Everything you need to run a successful job portal platform
           </p>
 
@@ -94,7 +94,7 @@ const UsersFeature = () => {
               </h3>
 
               {/* Description */}
-              <p className="text-slate-400 text-sm mt-3 leading-relaxed">
+              <p className="text-slate-400 mt-3 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 {feature.description}
               </p>
             </div>

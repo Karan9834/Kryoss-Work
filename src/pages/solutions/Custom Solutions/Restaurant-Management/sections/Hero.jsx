@@ -32,16 +32,16 @@ const Hero = () => {
           </div>
 
           {/* Heading - Smaller */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-            <span className="text-white">Streamline Your</span>
+          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+            <span className="text-white text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">Streamline Your</span>
             <br />
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-400 via-amber-400 to-orange-500 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-orange-400 via-amber-400 to-orange-500 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               Restaurant Operations
             </span>
           </h1>
 
           {/* Description - Smaller */}
-          <p className="mt-4 text-gray-400 text-sm md:text-base max-w-xl">
+          <p className="mt-4 text-gray-400 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             All-in-one platform to manage orders, inventory, staff, and customers. 
             Boost efficiency and increase revenue with our smart restaurant solution.
           </p>
@@ -49,23 +49,23 @@ const Hero = () => {
           {/* Stats - Smaller */}
           <div className="mt-6 flex gap-6">
             <div>
-              <p className="text-xl font-bold text-orange-400">500+</p>
-              <p className="text-xs text-gray-500">Restaurants</p>
+              <p className="text-orange-400 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">500+</p>
+              <p className="text-gray-500 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">Restaurants</p>
             </div>
             <div>
-              <p className="text-xl font-bold text-orange-400">99.9%</p>
-              <p className="text-xs text-gray-500">Uptime</p>
+              <p className="text-orange-400 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">99.9%</p>
+              <p className="text-gray-500 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">Uptime</p>
             </div>
             <div>
-              <p className="text-xl font-bold text-orange-400">24/7</p>
-              <p className="text-xs text-gray-500">Support</p>
+              <p className="text-orange-400 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">24/7</p>
+              <p className="text-gray-500 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">Support</p>
             </div>
           </div>
 
           {/* Buttons - Smaller */}
           <div className="mt-6 flex flex-wrap gap-3">
             <button
-              className="flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-lg shadow-lg shadow-orange-500/30 hover:scale-105 hover:shadow-xl transition-all duration-300 text-sm"
+              className="flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-lg shadow-lg shadow-orange-500/30 hover:scale-105 hover:shadow-xl transition-all duration-300 text-[16px] font-semibold tracking-[0.01em] normal-case"
             >
               Explore Product <ArrowRight size={16} />
             </button>

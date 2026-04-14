@@ -79,15 +79,15 @@ const CustomFeatureUpgrades = () => {
           </div>
           
           {/* HEADING */}
-          <h2 className="text-[1.875rem] md:text-[2.5rem] lg:text-[3rem] font-bold text-gray-900 leading-tight mb-4">
+          <h2 className="text-[1.875rem] md:text-[2.5rem] lg:text-[3rem] text-gray-900 mb-4 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Custom{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Feature Upgrades
             </span>
           </h2>
           
           {/* DESCRIPTION */}
-          <p className="text-[0.875rem] md:text-base font-normal text-gray-700 max-w-2xl mx-auto">
+          <p className="text-[0.875rem] text-gray-700 mx-auto text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Our dedicated team offers add-on features to upgrade your LMS Software and customize 
             the system as per business requirements.
           </p>
@@ -123,7 +123,7 @@ const CustomFeatureUpgrades = () => {
                 </h3>
                 
                 {/* DESCRIPTION */}
-                <p className="text-[0.75rem] md:text-[0.875rem] font-normal text-gray-600 leading-relaxed">
+                <p className="text-[0.75rem] md:text-[0.875rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                   {feature.desc}
                 </p>
                 

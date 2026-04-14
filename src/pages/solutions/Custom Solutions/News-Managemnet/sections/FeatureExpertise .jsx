@@ -29,7 +29,7 @@ const FeatureExpertise = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-[1.875rem] md:text-[2.25rem] font-bold">
+          <h2 className="text-[1.875rem] md:text-[2.25rem] text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-red-600">Feature Expertise</span>{" "}
             <span className="text-gray-800">that We Offer In News Portal And Mobile Applications Services</span>
           </h2>
@@ -47,7 +47,7 @@ const FeatureExpertise = () => {
             className="md:w-1/2 space-y-4"
           >
             {/* Description */}
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               <span className="font-semibold text-red-700">Kryoss Work</span> provides a one-stop solution 
               for all your internet existence necessities. We offer web consultancy, web designing, 
               and redesigning of accessible websites. As a news portal development company, 

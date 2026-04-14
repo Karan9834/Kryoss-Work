@@ -33,20 +33,20 @@ const CRMHero = () => {
             </div>
 
             {/* Heading - Mobile: 2rem (32px), Desktop: 3.5rem (56px), Weight: 700 */}
-            <h1 className="text-[2rem] md:text-[3.5rem] font-bold leading-tight text-white">
+            <h1 className="text-[2rem] md:text-[3.5rem] text-white text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               Build Stronger <br />
-              <span className="text-emerald-200">Customer Relationships</span>
+              <span className="text-emerald-200 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">Customer Relationships</span>
             </h1>
 
             {/* Description - Size: 1rem (16px), Weight: 400 */}
-            <p className="text-[1rem] font-normal text-white/70 max-w-lg leading-relaxed">
+            <p className="text-[1rem] text-white/70 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">
               Transform how you connect with customers. Our intelligent CRM
               platform helps you understand, engage, and delight your audience
               like never before.
             </p>
 
             {/* Button - Size: 1rem (16px), Weight: 600 */}
-            <button className="px-8 py-3 bg-white text-emerald-900 rounded-xl font-semibold text-[1rem] hover:scale-105 transition duration-300">
+            <button className="px-8 py-3 bg-white text-emerald-900 rounded-xl text-[1rem] hover:scale-105 transition duration-300 text-[16px] font-semibold tracking-[0.01em] normal-case">
               EXPLORE PRODUCTS
             </button>
 

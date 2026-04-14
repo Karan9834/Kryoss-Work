@@ -32,12 +32,12 @@ const HotelModuleHighlight = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <h2 className="text-[1.875rem] md:text-[2.25rem] font-bold">
+          <h2 className="text-[1.875rem] md:text-[2.25rem] text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-cyan-600">Hotel</span>{" "}
             <span className="text-gray-800">Management Modules</span>
           </h2>
           <div className="w-16 h-[2px] bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto mt-3"></div>
-          <p className="text-cyan-700/60 mt-4 text-[0.875rem] md:text-[1rem] font-normal">
+          <p className="text-cyan-700/60 mt-4 text-[0.875rem] md:text-[1rem] text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Comprehensive modules for complete hotel management
           </p>
         </motion.div>

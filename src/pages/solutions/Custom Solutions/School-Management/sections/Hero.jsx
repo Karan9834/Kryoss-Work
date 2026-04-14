@@ -41,21 +41,21 @@ const SchoolHero = () => {
           </div>
 
           {/* HEADING */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
+          <h1 className="text-gray-900 mb-4 sm:mb-6 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
             Smart School <br className="hidden sm:block" />
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               Management Solution
             </span>
           </h1>
 
           {/* TEXT */}
-          <p className="text-gray-600 text-sm sm:text-base mb-6 sm:mb-8 max-w-md mx-auto lg:mx-0">
+          <p className="text-gray-600 mb-6 sm:mb-8 mx-auto lg:mx-0 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Simplify administration, enhance communication, and manage students,
             teachers, and operations seamlessly — all in one powerful platform.
           </p>
 
           {/* BUTTON */}
-          <button className="bg-gradient-to-r from-orange-500 to-cyan-500 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition text-sm sm:text-base">
+          <button className="bg-gradient-to-r from-orange-500 to-cyan-500 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full shadow-lg hover:shadow-xl transition text-[16px] font-semibold tracking-[0.01em] normal-case">
             Explore Product →
           </button>
 

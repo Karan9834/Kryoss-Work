@@ -19,12 +19,12 @@ const HousekeepingModule = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="text-gray-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-cyan-600">Hotel</span>{" "}
             Management Modules
           </h2>
           <div className="w-16 h-[2px] bg-cyan-600 mx-auto mt-3"></div>
-          <p className="text-gray-600 mt-4 text-sm md:text-base">
+          <p className="text-gray-600 mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Comprehensive modules for complete hotel management
           </p>
         </motion.div>
@@ -44,23 +44,23 @@ const HousekeepingModule = () => {
             </h3>
 
             <ul className="space-y-3 text-gray-600 text-sm md:text-base">
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-500">–</span>
                 Room status: Dirty, Clean, Inspected, Under Repair.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-500">–</span>
                 Manage Room status from housekeeping.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-500">–</span>
                 Real-time updates for front desk.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-500">–</span>
                 Staff communication system.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-500">–</span>
                 Maid assignment to rooms.
               </li>

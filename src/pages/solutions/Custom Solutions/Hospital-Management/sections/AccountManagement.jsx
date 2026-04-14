@@ -34,12 +34,12 @@ const AccountManagement = () => {
           </div>
 
           {/* HEADING */}
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-gray-900 mb-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-blue-600">Account</span> Management
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-gray-600 mb-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             A powerful account management system designed to streamline financial operations across hospitals, ensuring accuracy, transparency, and efficiency in handling billing, payroll, and financial records.
           </p>
 
@@ -53,7 +53,7 @@ const AccountManagement = () => {
               "Real-time financial updates and notifications",
               "Centralized control over accounting operations",
             ].map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-gray-600 text-sm">
+              <li key={index} className="flex items-start gap-3 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></span>
                 {item}
               </li>

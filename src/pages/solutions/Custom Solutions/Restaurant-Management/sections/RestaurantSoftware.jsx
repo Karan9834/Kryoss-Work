@@ -42,19 +42,19 @@ const RestaurantSoftware = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+          <h2 className="text-gray-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Restaurant Management{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Software Development
             </span>
           </h2>
 
           {/* Description */}
-          <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="mt-4 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Restaurant software is an extensive range of solutions that caters to various operations in a restaurant business and streamlines the same. It encompasses software and hardware tools like POS systems, inventory management software, and other tailor-made tools to tap into technology and reap the benefits of the digital era.
           </p>
 
-          <p className="mt-3 text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="mt-3 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             These enable operations like online ordering, billing and invoicing, feedback management, CRM, reports, and analytics, etc. All-inclusive restaurant management software solutions that help your business manage operations efficiently and scale new heights while getting closer to your customers.
           </p>
 

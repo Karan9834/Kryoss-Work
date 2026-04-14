@@ -34,19 +34,19 @@ const DoctorPortal = () => {
           </div>
 
           {/* HEADING */}
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-gray-900 mb-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
+            <span className="leading-[1.2] bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Doctor
             </span>{" "}
             Portal
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-gray-600 mb-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Our hospital management platform provides a powerful Doctor Portal designed to enhance patient care, streamline workflows, and improve operational efficiency — all within a clean and intuitive interface.
           </p>
 
-          <p className="text-gray-500 mb-6 leading-relaxed">
+          <p className="text-gray-500 mb-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             The system is fully customizable and includes essential tools to help doctors manage their daily activities effectively:
           </p>
 
@@ -63,7 +63,7 @@ const DoctorPortal = () => {
               "Access to payroll and administrative data",
               "Intelligent scheduling for availability management",
             ].map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-gray-600 text-sm">
+              <li key={index} className="flex items-start gap-3 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
 
                 {/* Bullet */}
                 <span className="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></span>

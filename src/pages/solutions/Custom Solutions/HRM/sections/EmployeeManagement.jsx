@@ -166,12 +166,12 @@ const EmployeeManagement = () => {
 
         {/* LEFT */}
         <div>
-          <h2 className="em-heading">
+          <h2 className="em-heading text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Employee Management <br />
             <em>Software Solutions</em>
           </h2>
 
-          <p className="em-lead">
+          <p className="em-lead text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Kryoss Work develops employee management software solutions designed as a centralized database.
           </p>
 
@@ -191,16 +191,6 @@ const EmployeeManagement = () => {
         {/* RIGHT */}
         <div className="em-img-col">
           <div className="em-img-bg"></div>
-
-          <div className="em-stat-pill em-pill-top">
-            <strong style={{ color: ACCENT }}>99%</strong>
-            <div style={{ fontSize: "12px" }}>Uptime SLA</div>
-          </div>
-
-          <div className="em-stat-pill em-pill-bottom">
-            <strong style={{ color: ACCENT }}>500+</strong>
-            <div style={{ fontSize: "12px" }}>Enterprises</div>
-          </div>
 
           <div className="em-img-wrapper">
             <img src={sectionImage} alt="Employee" className="em-phone-img" />

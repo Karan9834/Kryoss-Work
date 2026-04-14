@@ -57,14 +57,14 @@ const ProductsSection = () => {
             <span className="text-blue-700 font-semibold text-sm">Our Products</span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-gray-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Solutions for{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Job Seekers & Employers
             </span>
           </h2>
 
-          <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="mt-4 text-gray-600 mx-auto text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Powerful tools designed to help you succeed in your career journey.
           </p>
         </div>
@@ -98,7 +98,7 @@ const ProductsSection = () => {
               </div>
 
               {/* TITLE AND DESCRIPTION */}
-              <p className="mt-4 text-sm md:text-base">
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span
                   onClick={() => handleNavigate(product.route)}
                   className="text-blue-600 font-semibold hover:underline cursor-pointer"

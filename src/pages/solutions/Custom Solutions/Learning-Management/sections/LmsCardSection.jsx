@@ -35,12 +35,12 @@ const LmsCardSection = () => {
                   <div className="w-8 h-px bg-violet-200"></div>
                </div>
 
-               <h2 className="text-3xl lg:text-4xl font-semibold leading-tight tracking-tight">
-                  <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-violet-700 via-purple-600 to-fuchsia-500 uppercase">
+               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
+                  <span className="leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-violet-700 via-purple-600 to-fuchsia-500 text-[30px] md:text-[36px] font-bold leading-[1.2]">
                      Specialized LMS Modules
                   </span>
                </h2>
-               <p className="text-[#4A4B5E] text-lg max-w-2xl mx-auto mt-6 font-medium">
+               <p className="text-[#4A4B5E] mx-auto mt-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                   Choose the specialized platform that fits your academy's type and scale perfectly.
                </p>
             </div>
@@ -61,7 +61,7 @@ const LmsCardSection = () => {
                      </Link>
 
                      {/* TITLE AND DESCRIPTION */}
-                     <p className="mt-4 text-sm md:text-base">
+                     <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         <Link
                            to={card.path}
                            className="text-violet-600 font-semibold hover:underline"

@@ -69,9 +69,9 @@ const CustomizedERP = () => {
             <span>Customized Solutions</span>
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-bold text-white">
+          <h2 className="text-white text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Customized{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               ERP Applications
             </span>
           </h2>
@@ -80,7 +80,7 @@ const CustomizedERP = () => {
             <div className="w-16 h-1 bg-gradient-to-r from-violet-400 to-purple-400 rounded-full"></div>
           </div>
 
-          <p className="mt-4 text-gray-400 text-sm max-w-2xl mx-auto">
+          <p className="mt-4 text-gray-400 mx-auto text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Tailored ERP solutions to streamline every aspect of your business operations
           </p>
         </div>
@@ -103,7 +103,7 @@ const CustomizedERP = () => {
               </h3>
 
               {/* Description */}
-              <p className="text-gray-400 text-xs leading-relaxed group-hover:text-gray-300 transition-colors">
+              <p className="text-gray-400 group-hover:text-gray-300 transition-colors text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 {item.description}
               </p>
 

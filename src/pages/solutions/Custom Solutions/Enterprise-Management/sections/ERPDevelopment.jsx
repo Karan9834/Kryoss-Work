@@ -35,15 +35,15 @@ const ERPDevelopment = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+          <h2 className="text-gray-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             ERP - Enterprise Resource Planning{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Development Company
             </span>
           </h2>
 
           {/* Description */}
-          <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="mt-4 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             ERP software development company to help you align your business goals and resource planning 
             with cutting-edge technology. Resource planning made effortless with solutions that capture 
             all information with minimal manual intervention. Our experienced ERP specialists have over 
@@ -51,7 +51,7 @@ const ERPDevelopment = () => {
             following services.
           </p>
 
-          <p className="mt-3 text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="mt-3 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Overall, an ERP (Enterprise Resource Planning) provides a business with a centralized and 
             integrated platform to operate efficiently across its core functions including finance, 
             accounting, human resources, manufacturing, supply chain management, project management, 

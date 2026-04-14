@@ -139,17 +139,17 @@ const PayrollBenefits = () => {
 
         {/* LEFT */}
         <div>
-          <h2 className="pb-heading">
+          <h2 className="pb-heading text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Payroll & Benefits <br />
             <em>Administration Software</em>
           </h2>
 
-          <p className="pb-lead">
+          <p className="pb-lead text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Kryoss Work engineers payroll & benefits systems with employee self-service dashboards.
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-            
+
             <div className="pb-feature">
               <div className="pb-icon-wrap">💰</div>
               <div>
@@ -187,16 +187,6 @@ const PayrollBenefits = () => {
         <div className="pb-img-col">
 
           <div className="pb-img-bg"></div>
-
-          <div className="pb-stat-pill pb-pill-top">
-            <div className="pb-stat-pill-num">99.9%</div>
-            <div className="pb-stat-pill-label">Accuracy</div>
-          </div>
-
-          <div className="pb-stat-pill pb-pill-bottom">
-            <div className="pb-stat-pill-num">1000+</div>
-            <div className="pb-stat-pill-label">Companies</div>
-          </div>
 
           <div className="pb-img-wrapper">
             <img src={sectionImage} alt="Payroll" className="pb-main-img" />

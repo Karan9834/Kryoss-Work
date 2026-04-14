@@ -35,14 +35,14 @@ const ModulesSection = () => {
             Modules
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+          <h2 className="text-gray-900 mb-3 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Modules Of{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               School Management System
             </span>
           </h2>
 
-          <p className="text-gray-700 text-sm">
+          <p className="text-gray-700 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Powerful modules designed to streamline operations and improve efficiency.
           </p>
 
@@ -64,7 +64,7 @@ const ModulesSection = () => {
                 {module.title}
               </h3>
 
-              <p className="text-gray-600 text-xs leading-relaxed">
+              <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 {module.desc}
               </p>
 

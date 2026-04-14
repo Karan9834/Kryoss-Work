@@ -13,7 +13,7 @@ const HotelManagementServices = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-[1.875rem] md:text-[2.25rem] font-bold">
+          <h2 className="text-[1.875rem] md:text-[2.25rem] text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-cyan-600">Hotel Management</span>{" "}
             <span className="text-gray-800">Software Development</span>
           </h2>
@@ -49,19 +49,19 @@ const HotelManagementServices = () => {
             className="md:w-1/2 space-y-4 text-center md:text-left"
           >
             {/* Description */}
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Hotel management system is a software which helps hoteliers in managing their 
               bookings, guests, and other aspects of their hotel. There are many hotel 
               management software solutions popular in the world today.
             </p>
 
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               <span className="font-semibold text-cyan-700">Kryoss Softech</span> wants to help 
               you design, upgrade, and integrate new technology into your site so that you can 
               stand out from the competition and appeal to your clients.
             </p>
 
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Our focus is to provide our customers with a hotel management site that will help 
               you not only in retaining clients but also help you with growing your client base.
             </p>

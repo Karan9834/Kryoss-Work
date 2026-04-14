@@ -26,8 +26,8 @@ const Hero = () => {
             {/* BADGE - 0.75rem (12px), Weight: 400 */}
             <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full border border-blue-100 shadow-sm mb-6">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75 text-[12px] font-medium tracking-[0.05em] uppercase"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600 text-[12px] font-medium tracking-[0.05em] uppercase"></span>
               </span>
               <span className="text-[0.75rem] font-normal">
                 Next-Gen Learning Platform
@@ -35,27 +35,27 @@ const Hero = () => {
             </div>
             
             {/* HEADING - Mobile: 1.875rem (30px), Desktop: 3rem (48px), Weight: 700 */}
-            <h1 className="text-[1.875rem] md:text-[3rem] font-bold text-gray-900 leading-tight mb-6">
+            <h1 className="text-[1.875rem] md:text-[3rem] text-gray-900 mb-6 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               Transform Your
-              <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
                 {" "}Learning Experience
               </span>
             </h1>
             
             {/* DESCRIPTION - 1rem (16px), Weight: 400 */}
-            <p className="text-gray-600 text-base font-normal max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+            <p className="text-gray-600 mx-auto lg:mx-0 mb-8 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">
               Empower your students and educators with our all-in-one Learning Management System. 
               Create, manage, and deliver engaging online courses with ease.
             </p>
             
             {/* BUTTON - 1rem (16px), Weight: 600 */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="group relative px-8 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden">
+              <button className="group relative px-8 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden text-[16px] font-semibold tracking-[0.01em] normal-case">
                 <span className="relative z-10 text-base font-semibold">Explore Products →</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
               
-              <button className="px-8 py-3.5 bg-white text-gray-700 font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-blue-300 hover:text-blue-600">
+              <button className="px-8 py-3.5 bg-white text-gray-700 rounded-full shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-blue-300 hover:text-blue-600 text-[16px] font-semibold tracking-[0.01em] normal-case">
                 <span className="text-base font-semibold">Watch Demo 🎥</span>
               </button>
             </div>

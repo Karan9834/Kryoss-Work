@@ -67,15 +67,15 @@ const LMSServices = () => {
             </div>
             
             {/* HEADING */}
-            <h2 className="text-[1.875rem] md:text-[2.5rem] lg:text-[3rem] font-bold text-gray-900 leading-tight mb-4">
+            <h2 className="text-[1.875rem] md:text-[2.5rem] lg:text-[3rem] text-gray-900 mb-4 text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Learning Management System
-              <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
                 {" "}Development Services
               </span>
             </h2>
             
             {/* DESCRIPTION */}
-            <p className="text-[0.875rem] md:text-base font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Acting as an LMS development company, Kryoss Softech offers full-cycle services 
               that cover each stage of product development.
             </p>
@@ -100,7 +100,7 @@ const LMSServices = () => {
                   <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-1">
                     {service.title}
                   </h3>
-                  <p className="text-[0.75rem] md:text-[0.875rem] font-normal text-gray-600 leading-relaxed">
+                  <p className="text-[0.75rem] md:text-[0.875rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                     {service.desc}
                   </p>
                 </div>

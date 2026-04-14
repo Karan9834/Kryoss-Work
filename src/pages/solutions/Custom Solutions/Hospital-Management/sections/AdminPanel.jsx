@@ -17,12 +17,12 @@ const AdminPanel = () => {
           </div>
 
           {/* HEADING */}
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-gray-900 mb-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-purple-600">Admin</span> Panel
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-gray-600 mb-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             The Admin Panel serves as the central control system for managing hospital operations, ensuring smooth coordination, compliance, and efficient decision-making across all departments.
           </p>
 
@@ -40,7 +40,7 @@ const AdminPanel = () => {
               "Configure system settings and permissions",
               "Create and broadcast notifications",
             ].map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-gray-600 text-sm">
+              <li key={index} className="flex items-start gap-3 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500"></span>
                 {item}
               </li>

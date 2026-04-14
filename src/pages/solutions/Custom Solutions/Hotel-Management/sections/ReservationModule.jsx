@@ -22,23 +22,23 @@ const ReservationModule = () => {
             </h3>
 
             <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Room status: Dirty, Clean, Inspected, Under Repair.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Manage Room status from the Housekeeping area.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Front Desk Staff can see real-time room updated status.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Housekeeper to front desk communications.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Maid assignment to rooms.
               </li>

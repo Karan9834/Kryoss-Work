@@ -27,22 +27,22 @@ const LookingForLMS = () => {
             {/* PILL BADGE - GLASSY BLUE */}
             <div className="inline-flex items-center gap-2 bg-blue-100/60 backdrop-blur-sm text-blue-700 px-4 py-1.5 rounded-full border border-blue-200/50 shadow-sm mb-6">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75 text-[12px] font-medium tracking-[0.05em] uppercase"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600 text-[12px] font-medium tracking-[0.05em] uppercase"></span>
               </span>
               <span className="text-[0.75rem] font-normal">Kryoss Work</span>
             </div>
             
             {/* HEADING */}
-            <h2 className="text-[1.875rem] md:text-[3rem] font-bold text-gray-900 leading-tight mb-6">
+            <h2 className="text-[1.875rem] md:text-[3rem] text-gray-900 mb-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Looking For{" "}
-              <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
                 LMS Development?
               </span>
             </h2>
             
             {/* DESCRIPTION 1 */}
-            <p className="text-[0.875rem] md:text-base font-normal text-gray-700 leading-relaxed mb-4">
+            <p className="text-[0.875rem] text-gray-700 mb-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Seeking the finest solutions to build software for an e-learning management system? 
               Kryoss Softech LMS system development services is the perfect destination for you. 
               Our LMS system is a free and open-source software learning management platform. When 
@@ -61,7 +61,7 @@ const LookingForLMS = () => {
                     </svg>
                   </div>
                 </div>
-                <p className="text-[0.875rem] md:text-base font-normal text-gray-700 leading-relaxed">
+                <p className="text-[0.875rem] text-gray-700 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                   As the premier LMS development company, we leverage our deep expertise to deliver exceptional results.
                 </p>
               </div>
@@ -75,7 +75,7 @@ const LookingForLMS = () => {
                     </svg>
                   </div>
                 </div>
-                <p className="text-[0.875rem] md:text-base font-normal text-gray-700 leading-relaxed">
+                <p className="text-[0.875rem] text-gray-700 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                   Our cutting-edge tools and technologies enable us to address the unique requirements of your business.
                 </p>
               </div>
@@ -89,7 +89,7 @@ const LookingForLMS = () => {
                     </svg>
                   </div>
                 </div>
-                <p className="text-[0.875rem] md:text-base font-normal text-gray-700 leading-relaxed">
+                <p className="text-[0.875rem] text-gray-700 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                   Highly intuitive and visually appealing user interface designed to deliver a superior user experience.
                 </p>
               </div>
@@ -103,7 +103,7 @@ const LookingForLMS = () => {
                     </svg>
                   </div>
                 </div>
-                <p className="text-[0.875rem] md:text-base font-normal text-gray-700 leading-relaxed">
+                <p className="text-[0.875rem] text-gray-700 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                   Expert LMS developers with extensive experience in crafting tailor-made LMS development solutions.
                 </p>
               </div>

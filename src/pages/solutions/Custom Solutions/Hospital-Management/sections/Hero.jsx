@@ -34,22 +34,22 @@ const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+          <h1 className="text-gray-900 mb-6 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
             Modern Hospital <br />
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               Management System
             </span>
           </h1>
 
           {/* Description */}
-          <p className="text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+          <p className="text-gray-600 mb-8 mx-auto lg:mx-0 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">
             Digitize your hospital operations with AI-powered workflows,
             real-time analytics, and seamless patient management.
           </p>
 
           {/* Buttons */}
           <div className="flex gap-4 justify-center lg:justify-start">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition font-semibold">
+            <button className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition text-[16px] font-semibold tracking-[0.01em] normal-case">
               Explore Product
             </button>
           </div>

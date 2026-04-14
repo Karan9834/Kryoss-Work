@@ -47,7 +47,7 @@ const CRMDevelopmentServices = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-[1.875rem] md:text-[2.25rem] font-bold">
+          <h2 className="text-[1.875rem] md:text-[2.25rem] text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-teal-600">What Custom CRM Development</span>{" "}
             <span className="text-gray-800">Services Include:</span>
           </h2>
@@ -87,7 +87,7 @@ const CRMDevelopmentServices = () => {
                     <h3 className="text-[1rem] md:text-[1.125rem] font-bold text-gray-800 mb-2">
                       {service.title}
                     </h3>
-                    <p className="text-[0.875rem] md:text-[0.95rem] font-normal text-gray-600 leading-relaxed">
+                    <p className="text-[0.875rem] md:text-[0.95rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                       {service.description}
                     </p>
                   </div>

@@ -34,22 +34,22 @@ const SchoolManagementSection = () => {
           </div>
 
           {/* HEADING */}
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 className="text-gray-900 mb-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-orange-600">School</span> Management Software
             <br />
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Development Platform
             </span>
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-600 mb-4 leading-relaxed text-lg">
+          <p className="text-gray-600 mb-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Transform the way your institution operates with a modern,
             all-in-one school management system built to simplify academic
             and administrative workflows.
           </p>
 
-          <p className="text-gray-500 mb-8 leading-relaxed">
+          <p className="text-gray-500 mb-8 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Manage admissions, attendance, examinations, finance, payroll,
             and communication — all from one unified digital platform.
           </p>

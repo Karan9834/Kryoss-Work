@@ -37,16 +37,16 @@ const Hero = () => {
           </div>
 
           {/* Heading - Smaller */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-            <span className="text-white">Streamline Your</span>
+          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+            <span className="text-white text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">Streamline Your</span>
             <br />
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-violet-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-violet-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               Business Operations
             </span>
           </h1>
 
           {/* Description - Smaller */}
-          <p className="mt-4 text-gray-200 text-sm md:text-base max-w-xl">
+          <p className="mt-4 text-gray-200 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             All-in-one ERP solutions to manage finance, inventory, HR, and customer relationships. 
             Boost efficiency and scale your business with our integrated platform.
           </p>
@@ -54,16 +54,16 @@ const Hero = () => {
           {/* Stats - Smaller */}
           <div className="mt-6 flex gap-6">
             <div>
-              <p className="text-xl font-bold text-violet-300">500+</p>
-              <p className="text-xs text-gray-300">Businesses</p>
+              <p className="text-violet-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">500+</p>
+              <p className="text-gray-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">Businesses</p>
             </div>
             <div>
-              <p className="text-xl font-bold text-violet-300">99.9%</p>
-              <p className="text-xs text-gray-300">Uptime</p>
+              <p className="text-violet-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">99.9%</p>
+              <p className="text-gray-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">Uptime</p>
             </div>
             <div>
-              <p className="text-xl font-bold text-violet-300">24/7</p>
-              <p className="text-xs text-gray-300">Support</p>
+              <p className="text-violet-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">24/7</p>
+              <p className="text-gray-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">Support</p>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="mt-6 flex flex-wrap gap-3">
             <button
               onClick={handleExploreProduct}
-              className="flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-bold rounded-lg shadow-lg shadow-violet-600/30 hover:scale-105 hover:shadow-xl transition-all duration-300 text-sm"
+              className="flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-lg shadow-lg shadow-violet-600/30 hover:scale-105 hover:shadow-xl transition-all duration-300 text-[16px] font-semibold tracking-[0.01em] normal-case"
             >
               Explore Product <ArrowRight size={16} />
             </button>

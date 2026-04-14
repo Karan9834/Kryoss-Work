@@ -59,9 +59,9 @@ const FeaturesGrid = () => {
           </div>
           
           {/* HEADING */}
-          <h2 className="text-[1.875rem] md:text-[2.5rem] lg:text-[3rem] font-bold text-gray-900 leading-tight mb-4">
+          <h2 className="text-[1.875rem] md:text-[2.5rem] lg:text-[3rem] text-gray-900 mb-4 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Get All The Features Required To Run Your
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               {" "}Online Digital Academy
             </span>
           </h2>

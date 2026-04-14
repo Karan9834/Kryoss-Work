@@ -148,16 +148,6 @@ const EmployeePerformance = () => {
 
           <div className="ep-img-bg"></div>
 
-          <div className="ep-stat-pill ep-pill-top">
-            <div className="ep-stat-pill-num">360°</div>
-            <div className="ep-stat-pill-label">Feedback</div>
-          </div>
-
-          <div className="ep-stat-pill ep-pill-bottom">
-            <div className="ep-stat-pill-num">98%</div>
-            <div className="ep-stat-pill-label">Satisfaction</div>
-          </div>
-
           <div className="ep-img-wrapper">
             <img src={sectionImage} alt="Performance" className="ep-main-img" />
           </div>
@@ -167,12 +157,12 @@ const EmployeePerformance = () => {
         {/* RIGHT CONTENT */}
         <div>
 
-          <h2 className="ep-heading">
+          <h2 className="ep-heading text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Employee Performance <br />
             <em>Management Software</em>
           </h2>
 
-          <p className="ep-lead">
+          <p className="ep-lead text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Kryoss Work builds performance management systems with analytics, feedback, and employee insights.
           </p>
 

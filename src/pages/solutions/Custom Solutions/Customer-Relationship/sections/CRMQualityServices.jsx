@@ -15,7 +15,7 @@ const CRMQualityServices = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-[1.875rem] md:text-[2.25rem] font-bold">
+          <h2 className="text-[1.875rem] md:text-[2.25rem] text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-teal-600">Best Quality</span>{" "}
             <span className="text-gray-800">CRM Software Development Services</span>
           </h2>
@@ -48,13 +48,13 @@ const CRMQualityServices = () => {
             className="md:w-1/2 space-y-4 text-center md:text-left"
           >
             {/* Description */}
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               We have a team of professionals who will help you make business expansion 
               with lucrative customer service and relationship administration in the 
               course of roping in CRM Development Company with the new IT ambiance.
             </p>
 
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               We will help you create valuable customer relationships with CRM software 
               solutions personalized based on your requirements. Our CRM software solutions 
               help you integrate cutting edge solutions in your daily business transactions 
@@ -62,13 +62,13 @@ const CRMQualityServices = () => {
               potential customers.
             </p>
 
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               With <span className="font-semibold text-teal-600">Kryoss Work</span>, you are able to opt for CRM software solutions 
               that help integrate multiple customer touch points that add up building loyalty 
               to get higher satisfaction and long term business partnerships as outcomes.
             </p>
 
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               At <span className="font-semibold text-teal-600">Kryoss Work</span> we have a team of well experienced CRM developers 
               who you can expect designing CMS adaptable for small businesses and also for 
               large corporate. Making the most out of the best available customer facing 

@@ -49,23 +49,23 @@ const AccountingModule = () => {
             </h3>
 
             <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 General Ledger Profit / Cost Centres.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Automatic Direct Billing from Front Desk.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Printing and Mailing of Room / Monthly Guest Bills to Companies with statement and past due alerts.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Ability to flag Accounts due for Payments or Payment Delays.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Vendor detail management.
               </li>

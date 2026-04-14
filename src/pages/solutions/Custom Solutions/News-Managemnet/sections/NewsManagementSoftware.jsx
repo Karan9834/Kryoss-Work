@@ -14,7 +14,7 @@ const NewsManagementSoftware = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-[1.875rem] md:text-[2.25rem] font-bold">
+          <h2 className="text-[1.875rem] md:text-[2.25rem] text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-red-600">News Management</span>{" "}
             <span className="text-gray-800">Software</span>
           </h2>
@@ -31,20 +31,20 @@ const NewsManagementSoftware = () => {
             transition={{ duration: 0.6 }}
             className="md:w-1/2 space-y-4"
           >
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               A news web portal is a digital platform that aggregates and delivers news from 
               various sources. In today's digital era, everyone from children to educators, 
               business leaders to students, professionals to homemakers prefers accessing 
               news updates on their smartphones at their convenience.
             </p>
 
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               <span className="font-semibold text-red-700">Kryoss Softech</span> designs and 
               develops dynamic news portals with customizable categories and sections including 
               regional and national news, sports updates, business coverage, and informative content.
             </p>
 
-            <p className="text-[0.875rem] md:text-[1rem] font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Our custom News Website CMS empowers news publishers to manage breaking news, 
               press releases, articles, blogs, online polls, and other related content seamlessly.
             </p>

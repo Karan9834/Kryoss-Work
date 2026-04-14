@@ -47,15 +47,15 @@ const PayrollModule = () => {
             </h3>
 
             <ul className="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 The Scheme is reciprocal, and applicable only to the functioning hotels which are individual members of the Federation.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 Hotels will allow a discount of 30% to a visiting hotelier on the production of a membership card.
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-cyan-600">–</span>
                 To avail the discount on hotel accommodation, card holders should make an advance reservation.
               </li>

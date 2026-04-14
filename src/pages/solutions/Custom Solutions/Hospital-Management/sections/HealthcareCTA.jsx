@@ -17,12 +17,12 @@ const HealthcareCTA = () => {
           </div>
 
           {/* HEADING */}
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-snug">
+          <h2 className="text-gray-900 mb-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-purple-600">Your One-Stop</span> Healthcare Solution Provider
           </h2>
 
           {/* SUBTEXT */}
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-gray-600 mb-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Explore our comprehensive range of healthcare solutions designed to empower digital transformation and enhance operational efficiency across medical ecosystems.
           </p>
 
@@ -36,7 +36,7 @@ const HealthcareCTA = () => {
               "Fitness App Development",
               "Clinical Management Software",
             ].map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-gray-600 text-sm">
+              <li key={index} className="flex items-start gap-3 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500"></span>
                 {item}
               </li>

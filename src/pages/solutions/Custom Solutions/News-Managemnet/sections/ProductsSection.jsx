@@ -45,14 +45,14 @@ const ProductsSection = () => {
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-gray-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Choose the Perfect{" "}
-            <span className="bg-gradient-to-r from-orange-600 to-amber-600 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-orange-600 to-amber-600 text-transparent bg-clip-text text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Solution for Your Newsroom
             </span>
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+          <p className="mt-6 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Powerful, scalable products designed to transform how you create and distribute news
           </p>
         </div>
@@ -81,7 +81,7 @@ const ProductsSection = () => {
               </div>
 
               {/* TITLE BELOW */}
-              <p className="mt-4 text-sm md:text-base">
+              <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="text-red-500 font-semibold">
                   {product.name}
                 </span>{" "}
@@ -95,7 +95,7 @@ const ProductsSection = () => {
 
         {/* Bottom Text */}
         <div className="mt-16 text-center">
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Click on any product to explore more
           </p>
         </div>

@@ -63,14 +63,14 @@ const AdvantagesSection = () => {
               Advantages
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+            <h2 className="text-gray-900 mb-4 text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Why Choose{" "}
-              <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
+              <span className="leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
                 Kryoss Work?
               </span>
             </h2>
 
-            <p className="text-gray-600 text-sm md:text-base mb-8">
+            <p className="text-gray-600 mb-8 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Kryoss Work provides a set of tools, that enables school administrators to smoothly 
               run the institution and do so in a way that demonstrates efficiency, cost-savings and ingenuity.
             </p>
@@ -95,7 +95,7 @@ const AdvantagesSection = () => {
                   <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600">
+                  <p className="leading-[1.6] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                     {item.desc}
                   </p>
                 </div>

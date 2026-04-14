@@ -94,7 +94,7 @@ const HRModules = () => {
     updateHeight();
     const timer = setTimeout(updateHeight, 300);
     window.addEventListener('resize', updateHeight);
-    
+
     return () => {
       clearTimeout(timer);
       window.removeEventListener('resize', updateHeight);
@@ -119,8 +119,8 @@ const HRModules = () => {
             HR Software Suite
           </div>
           <h2
-            className="text-4xl font-bold leading-tight text-slate-900 mb-2"
-            style={{ fontFamily: "'Syne', sans-serif" }}
+            className="text-slate-900 mb-2 text-[30px] md:text-[36px] font-bold leading-[1.2]"
+
           >
             Main HR Software{" "}
             <span style={{ color: themeColor }}>Functional Modules</span>
@@ -129,7 +129,7 @@ const HRModules = () => {
             className="w-8 h-0.5 rounded-full mb-3 transition-colors duration-300"
             style={{ background: themeColor }}
           />
-          <p className="text-sm text-slate-600 max-w-md">
+          <p className="text-slate-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Comprehensive HR solutions built for modern businesses — from payroll to talent.
           </p>
         </div>
@@ -140,9 +140,9 @@ const HRModules = () => {
           {/* LEFT — Image with themed border and stats */}
           <div className="md:w-5/12 flex flex-col gap-3">
             {/* Image with subtle themed border */}
-            <div 
+            <div
               className="rounded-2xl overflow-hidden flex justify-center p-1"
-              style={{ 
+              style={{
                 border: `2px solid ${themeColor}20`,
                 background: `linear-gradient(135deg, ${themeColor}08, white)`
               }}
@@ -152,7 +152,7 @@ const HRModules = () => {
                 src={activeModule.img}
                 alt={activeModule.title}
                 className="object-contain transition-all duration-300 rounded-xl"
-                style={{ 
+                style={{
                   height: rightHeight > 0 ? `${rightHeight}px` : 'auto',
                   width: 'auto',
                   maxWidth: '100%'

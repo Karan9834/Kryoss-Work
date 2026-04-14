@@ -108,7 +108,7 @@ const HospitalManagementSoftwareSection = () => {
             </span>
           </h1>
 
-          <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-400 mt-4 max-w-2xl mx-auto">
+          <p className="leading-[1.6] text-gray-400 mt-4 mx-auto text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Automate operations, improve patient care, and manage everything from one unified platform.
           </p>
         </div>
@@ -131,7 +131,7 @@ const HospitalManagementSoftwareSection = () => {
               </h3>
 
               {/* Description */}
-              <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-400">
+              <p className="leading-[1.6] text-gray-400 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 {feature.description}
               </p>
 

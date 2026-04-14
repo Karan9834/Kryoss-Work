@@ -34,12 +34,12 @@ const SuperAdmin = () => {
           </div>
 
           {/* HEADING */}
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-gray-900 mb-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-blue-600">Super</span> Admin
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-gray-600 mb-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             The Super Admin Panel acts as the highest level of control within the hospital management system, enabling centralized management of operations, staff, and system configurations.
           </p>
 
@@ -57,7 +57,7 @@ const SuperAdmin = () => {
               "Manage system settings, CMS, and calendars",
               "Handle modules, backups, and restore systems",
             ].map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-gray-600 text-sm">
+              <li key={index} className="flex items-start gap-3 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span className="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></span>
                 {item}
               </li>

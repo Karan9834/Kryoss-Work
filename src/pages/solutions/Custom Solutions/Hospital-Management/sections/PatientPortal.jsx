@@ -17,16 +17,16 @@ const PatientPortal = () => {
           </div>
 
           {/* HEADING */}
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-gray-900 mb-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             <span className="text-purple-600">Patient</span> Portal
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-gray-600 mb-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Provide patients with a seamless digital experience through an interactive portal designed to enhance satisfaction, improve engagement, and ensure transparency across healthcare services.
           </p>
 
-          <p className="text-gray-500 mb-6 leading-relaxed">
+          <p className="text-gray-500 mb-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Our modern patient portal simplifies access to essential healthcare services and empowers patients with features such as:
           </p>
 
@@ -42,7 +42,7 @@ const PatientPortal = () => {
               "Download invoices and billing details",
               "Get notifications, updates, and documents in one place",
             ].map((item, index) => (
-              <li key={index} className="flex items-start gap-3 text-gray-600 text-sm">
+              <li key={index} className="flex items-start gap-3 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
 
                 {/* Bullet */}
                 <span className="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500"></span>

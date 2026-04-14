@@ -100,9 +100,9 @@ const Features = () => {
             <Sparkles size={12} className="text-violet-500" />
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="text-gray-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Enterprise{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Features
             </span>
           </h2>
@@ -111,7 +111,7 @@ const Features = () => {
             <div className="w-20 h-1 bg-gradient-to-r from-violet-400 to-purple-400 rounded-full"></div>
           </div>
 
-          <p className="mt-6 text-gray-500 text-base max-w-2xl mx-auto">
+          <p className="mt-6 text-gray-500 mx-auto text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Comprehensive ERP features to streamline and optimize your business operations
           </p>
         </div>
@@ -150,7 +150,7 @@ const Features = () => {
               </h3>
 
               {/* Description */}
-              <p className="relative text-gray-500 text-xs leading-relaxed group-hover:text-gray-600 transition-colors duration-300">
+              <p className="relative text-gray-500 group-hover:text-gray-600 transition-colors duration-300 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 {item.description}
               </p>
 

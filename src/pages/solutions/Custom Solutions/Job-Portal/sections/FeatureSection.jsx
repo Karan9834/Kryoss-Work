@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { CheckCircle } from "lucide-react";
 import feature1 from "../../../../../assets/jobs/features1.png";
 import feature2 from "../../../../../assets/jobs/feature2.png";
 import feature3 from "../../../../../assets/jobs/feature3.png";
@@ -298,13 +299,13 @@ const FeatureSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900">
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-slate-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
+            <span className="leading-[1.2] bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Must-Have
             </span>{" "}
             Features for Job Portal
           </h2>
-          <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-4 max-w-2xl mx-auto">
+          <p className="leading-[1.6] text-slate-500 mt-4 mx-auto text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Complete job portal solution with user, recruiter and admin panels
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mx-auto mt-4"></div>
@@ -320,11 +321,10 @@ const FeatureSection = () => {
             <button
               key={tab.id}
               onClick={() => setActive(tab.id)}
-              className={`px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${
-                active === tab.id
+              className={`px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${active === tab.id
                   ? "bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg shadow-indigo-200 scale-105"
                   : "bg-white text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 border-2 border-indigo-200 hover:border-indigo-400"
-              }`}
+                }`}
             >
               {tab.name}
             </button>
@@ -334,17 +334,15 @@ const FeatureSection = () => {
         {/* Layout - Simple image, no box */}
         <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 items-start">
           {/* LEFT COLUMN */}
-          <div ref={leftRef} className="grid grid-cols-2 gap-3">
+          <div ref={leftRef} className="grid grid-cols-2 gap-3 min-h-[400px]">
             <div className="space-y-3">
               {leftCol1.map((item, idx) => (
                 <div
                   key={idx}
-                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
+                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start"
                 >
-                  <div className="flex gap-2 w-full">
-                    <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                      {item.icon}
-                    </span>
+                  <div className="flex gap-2 w-full items-start">
+                    <CheckCircle className="w-5 h-5 text-indigo-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                     <div>
                       <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-indigo-600 transition-colors">
                         {item.title}
@@ -361,12 +359,10 @@ const FeatureSection = () => {
               {leftCol2.map((item, idx) => (
                 <div
                   key={idx}
-                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
+                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start"
                 >
-                  <div className="flex gap-2 w-full">
-                    <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                      {item.icon}
-                    </span>
+                  <div className="flex gap-2 w-full items-start">
+                    <CheckCircle className="w-5 h-5 text-indigo-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                     <div>
                       <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-indigo-600 transition-colors">
                         {item.title}
@@ -386,23 +382,21 @@ const FeatureSection = () => {
             <img
               src={current.image}
               alt={`${active} panel`}
-              className="w-full max-w-[300px] h-auto object-contain"
+              className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
               style={{ height: leftHeight > 0 ? `${leftHeight}px` : "auto" }}
             />
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 gap-3 min-h-[400px]">
             <div className="space-y-3">
               {rightCol1.map((item, idx) => (
                 <div
                   key={idx}
-                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
+                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start"
                 >
-                  <div className="flex gap-2 w-full">
-                    <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                      {item.icon}
-                    </span>
+                  <div className="flex gap-2 w-full items-start">
+                    <CheckCircle className="w-5 h-5 text-indigo-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                     <div>
                       <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-indigo-600 transition-colors">
                         {item.title}
@@ -419,12 +413,10 @@ const FeatureSection = () => {
               {rightCol2.map((item, idx) => (
                 <div
                   key={idx}
-                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer h-[80px] flex"
+                  className="group bg-white p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer flex items-start"
                 >
-                  <div className="flex gap-2 w-full">
-                    <span className="text-xl group-hover:scale-110 transition-transform flex-shrink-0">
-                      {item.icon}
-                    </span>
+                  <div className="flex gap-2 w-full items-start">
+                    <CheckCircle className="w-5 h-5 text-indigo-500 mt-0.5 group-hover:scale-110 transition-transform flex-shrink-0" />
                     <div>
                       <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-800 group-hover:text-indigo-600 transition-colors">
                         {item.title}

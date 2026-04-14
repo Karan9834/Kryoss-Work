@@ -90,8 +90,6 @@ const HRISServices = () => {
       className="py-20 px-6"
     >
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap');
-
         .service-card {
           background: #111118;
           border: 1px solid rgba(232,93,47,0.15);
@@ -135,7 +133,6 @@ const HRISServices = () => {
           margin-bottom: 20px;
         }
         .service-num {
-          font-family: 'Syne', sans-serif;
           font-size: 12px;
           font-weight: 600;
           letter-spacing: 0.1em;
@@ -144,7 +141,6 @@ const HRISServices = () => {
           opacity: 0.8;
         }
         .service-title {
-          font-family: 'Syne', sans-serif;
           font-size: 18px;
           font-weight: 600;
           color: #F0EEE8;
@@ -194,7 +190,6 @@ const HRISServices = () => {
           .grid-services { grid-template-columns: 1fr; }
         }
         .hero-tag {
-          font-family: 'Syne', sans-serif;
           font-size: clamp(32px, 5vw, 52px);
           font-weight: 700;
           color: #F0EEE8;
@@ -230,7 +225,7 @@ const HRISServices = () => {
             <em>HRIS & HRMS</em> Experts
           </h1>
           <div className="divider-line" />
-          <p className="hero-sub">
+          <p className="hero-sub text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Kryoss Work helps companies build a unique culture, facilitate hiring & onboarding,
             prepare compensation packages, and establish practices that empower businesses to thrive.
           </p>
@@ -248,7 +243,7 @@ const HRISServices = () => {
               <div className="service-icon-wrap">{s.icon}</div>
               <div className="service-num">{s.id}</div>
               <div className="service-title">{s.title}</div>
-              <p className="service-desc">{s.description}</p>
+              <p className="service-desc text-[14px] md:text-[16px] font-normal leading-[1.6]">{s.description}</p>
             </div>
           ))}
         </div>

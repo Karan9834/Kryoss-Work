@@ -82,9 +82,9 @@ const UniqueOfferings = () => {
             <Sparkles size={12} className="text-orange-500" />
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+          <h2 className="text-gray-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Unique Offerings To{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Boost Your Restaurant Business
             </span>
           </h2>
@@ -128,7 +128,7 @@ const UniqueOfferings = () => {
               </h3>
 
               {/* Description */}
-              <p className="relative text-gray-500 text-sm leading-relaxed group-hover:text-gray-600 transition-colors duration-300">
+              <p className="relative text-gray-500 group-hover:text-gray-600 transition-colors duration-300 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 {item.description}
               </p>
 

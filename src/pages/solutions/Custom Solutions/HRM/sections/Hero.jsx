@@ -30,21 +30,21 @@ const Hero = () => {
 
           {/* LEFT CONTENT */}
           <div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight">
+            <h1 className="text-white text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               Smart{" "}
-              <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
+              <span className="leading-[1.2] bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
                 HR Management
               </span>{" "}
               for Modern Teams
             </h1>
 
-            <p className="mt-4 text-slate-200 text-base max-w-lg">
+            <p className="mt-4 text-slate-200 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">
               Manage hiring, onboarding, payroll, and performance — all in one powerful SaaS platform designed for growing teams.
             </p>
 
             {/* BUTTONS */}
             <div className="mt-6 flex flex-wrap gap-4">
-              <Link to="/company/contact" className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg transition-all duration-300 hover:scale-105">
+              <Link to="/company/contact" className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white px-6 py-3 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 text-[16px] font-semibold tracking-[0.01em] normal-case">
                 Get Started
               </Link>
             </div>

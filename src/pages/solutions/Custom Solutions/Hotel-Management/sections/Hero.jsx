@@ -62,7 +62,7 @@ const Hero = () => {
               transition={{ delay: 0.7 }}
               className="flex justify-center md:justify-start"
             >
-              <button className="px-8 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-xl font-semibold text-[1rem] hover:shadow-2xl hover:shadow-cyan-500/30 hover:scale-105 transition-all duration-300">
+              <button className="px-8 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-xl text-[1rem] hover:shadow-2xl hover:shadow-cyan-500/30 hover:scale-105 transition-all duration-300 text-[16px] font-semibold tracking-[0.01em] normal-case">
                 EXPLORE NOW
               </button>
             </motion.div>
@@ -117,7 +117,7 @@ const Hero = () => {
           <path 
             d="M0,64L80,58.7C160,53,320,43,480,48C640,53,800,75,960,80C1120,85,1280,75,1360,69.3L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
             fill="url(#neonGradient)"
-            className="animate-wave"
+            className="animate-wave text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]"
           />
           <defs>
             <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">

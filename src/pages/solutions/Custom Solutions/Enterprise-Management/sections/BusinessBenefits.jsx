@@ -91,14 +91,14 @@ const BusinessBenefits = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-gray-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Benefits In Your Business Of{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               ERP Solutions & CRM Implementation
             </span>
           </h2>
 
-          <p className="mt-3 text-gray-500 text-sm">
+          <p className="mt-3 text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Transform your business operations with integrated ERP and CRM solutions
           </p>
 
@@ -116,7 +116,7 @@ const BusinessBenefits = () => {
                   <h3 className="text-sm font-bold text-gray-900">
                     {item.title}
                   </h3>
-                  <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-500 mt-0.5">
+                  <p className="leading-[1.6] text-gray-500 mt-0.5 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                     {item.description}
                   </p>
                 </div>

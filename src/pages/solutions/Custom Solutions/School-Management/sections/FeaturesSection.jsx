@@ -58,14 +58,14 @@ const FeaturesSection = () => {
             Salient Features
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-gray-900 mb-4 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Salient Features Of Our{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               School Management System
             </span>
           </h2>
 
-          <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto">
+          <p className="text-gray-600 mx-auto text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Designed to streamline school operations and enhance productivity with smart automation.
           </p>
 
@@ -94,7 +94,7 @@ const FeaturesSection = () => {
                   {feature.title}
                 </h3>
 
-                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600">
+                <p className="leading-[1.6] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                   {feature.desc}
                 </p>
 

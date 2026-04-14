@@ -6,9 +6,9 @@ const AboutUs = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12">
         {/* Section Title */}
         <div className="text-center mb-10 md:mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
+          <h2 className="text-slate-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Job Portal {" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Development Company
             </span>
           </h2>
@@ -38,7 +38,7 @@ const AboutUs = () => {
           {/* Right Content */}
           <div className="flex-1">
             {/* First paragraph */}
-            <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-5">
+            <p className="text-slate-700 mb-5 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               We are a premier <span className="font-semibold text-indigo-600">job portal development company</span> delivering fully responsive and 
               feature-rich job portal solutions at competitive prices. Our platforms serve as an 
               essential bridge connecting <span className="font-semibold text-purple-600">job seekers, recruiters, and employers</span> in today's 
@@ -46,7 +46,7 @@ const AboutUs = () => {
             </p>
 
             {/* Second paragraph */}
-            <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-5">
+            <p className="text-slate-700 mb-5 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               With our comprehensive job portal development service, job seekers can effortlessly 
               upload their <span className="font-semibold text-indigo-600">resumes, photographs, signatures, and professional biodata</span>. Simultaneously, 
               recruiters gain the ability to post job advertisements and manage candidate applications 
@@ -56,7 +56,7 @@ const AboutUs = () => {
             </p>
 
             {/* Third paragraph */}
-            <p className="text-base md:text-lg text-slate-700 leading-relaxed">
+            <p className="text-slate-700 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               As a trusted leader in job portal development, <span className="font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Kryoss Work</span> offers exceptional solutions 
               for organizations seeking to develop effective, user-friendly, and hassle-free job 
               portal websites. Our team of specialized professionals brings deep expertise across 

@@ -37,15 +37,15 @@ const CustomLMSDevelopment = () => {
           </div>
           
           {/* HEADING */}
-          <h2 className="text-[1.875rem] md:text-[2.5rem] lg:text-[3rem] font-bold text-gray-900 leading-tight mb-6">
+          <h2 className="text-[1.875rem] md:text-[2.5rem] lg:text-[3rem] text-gray-900 mb-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Custom{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               LMS Development Services
             </span>
           </h2>
           
           {/* DESCRIPTION 1 */}
-          <p className="text-[0.875rem] md:text-base font-normal text-gray-600 leading-relaxed mb-4">
+          <p className="text-[0.875rem] text-gray-600 mb-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Streamline learning and development and convert instructor-led training into a cloud-based, 
             configurable learning management system.
           </p>
@@ -59,7 +59,7 @@ const CustomLMSDevelopment = () => {
           </div>
           
           {/* DESCRIPTION 2 */}
-          <p className="text-[0.875rem] md:text-base font-normal text-gray-600 leading-relaxed">
+          <p className="text-[0.875rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Accelerate employee training and development and deliver extended enterprise training for 
             business growth. Achieve and demonstrate positive training ROI by assessing, prioritizing 
             and managing your training resources and delivering exceptional learning experiences. 

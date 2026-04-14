@@ -38,28 +38,28 @@ const CustomLMSSection = () => {
             {/* PILL BADGE - BLUE THEME */}
             <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full border border-blue-100 shadow-sm mb-6">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75 text-[12px] font-medium tracking-[0.05em] uppercase"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600 text-[12px] font-medium tracking-[0.05em] uppercase"></span>
               </span>
               <span className="text-[0.75rem] font-normal">Kryoss Woek</span>
             </div>
             
             {/* HEADING - Mobile: 1.875rem (30px), Desktop: 3rem (48px), Weight: 700 */}
-            <h2 className="text-[1.875rem] md:text-[3rem] font-bold text-gray-900 leading-tight mb-6">
+            <h2 className="text-[1.875rem] md:text-[3rem] text-gray-900 mb-6 text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Custom Learning Management System Development
-              <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
                 {" "}(LMS Solution)
               </span>
             </h2>
             
             {/* DESCRIPTION 1 - Mobile: 0.875rem (14px), Desktop: 1rem (16px), Weight: 400 */}
-            <p className="text-[0.875rem] md:text-base font-normal text-gray-600 leading-relaxed mb-4">
+            <p className="text-[0.875rem] text-gray-600 mb-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Insightful, resourceful and highly intuitive learning management system development services 
               as per your custom business needs to boost your learning experiences.
             </p>
             
             {/* DESCRIPTION 2 */}
-            <p className="text-[0.875rem] md:text-base font-normal text-gray-600 leading-relaxed mb-4">
+            <p className="text-[0.875rem] text-gray-600 mb-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               A Learning Management System (LMS) is the backbone of most enterprise elearning programmes. 
               An LMS controls who has access to your courses, and keeps records of learner progress and 
               test scores. Many LMS platforms include resource booking, collaboration and social networking 
@@ -68,7 +68,7 @@ const CustomLMSSection = () => {
             </p>
             
             {/* DESCRIPTION 3 */}
-            <p className="text-[0.875rem] md:text-base font-normal text-gray-600 leading-relaxed">
+            <p className="text-[0.875rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               Streamline learning and development and convert instructor-led training into a cloud-based, 
               configurable learning management system. Track the impact of learning on critical KPIs like 
               engagement, retention and skills. Compare training goals to organizational performance, scale 

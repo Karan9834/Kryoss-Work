@@ -173,16 +173,6 @@ const HiringOnboarding = () => {
 
           <div className="ho-img-bg"></div>
 
-          <div className="ho-pill ho-pill-tr">
-            <div className="ho-pill-num">3x</div>
-            <div className="ho-pill-label">Faster Hiring</div>
-          </div>
-
-          <div className="ho-pill ho-pill-bl">
-            <div className="ho-pill-num">98%</div>
-            <div className="ho-pill-label">Compliance</div>
-          </div>
-
           <img src={sectionImage} alt="Hiring" className="ho-phone-img" />
 
         </div>
@@ -190,12 +180,12 @@ const HiringOnboarding = () => {
         {/* RIGHT CONTENT */}
         <div>
 
-          <h2 className="ho-heading">
+          <h2 className="ho-heading text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Employee Hiring & <br />
             <em>Onboarding Solutions</em>
           </h2>
 
-          <p className="ho-lead">
+          <p className="ho-lead text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Kryoss builds custom onboarding software to streamline hiring and employee lifecycle management.
           </p>
 

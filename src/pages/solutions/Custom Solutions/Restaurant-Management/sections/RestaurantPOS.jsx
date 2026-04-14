@@ -65,15 +65,15 @@ const RestaurantPOS = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+          <h2 className="text-gray-900 text-[30px] md:text-[36px] font-bold leading-[1.2]">
             Restaurant{" "}
-            <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+            <span className="leading-[1.2] bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
               POS Solutions
             </span>
           </h2>
 
           {/* Description */}
-          <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="mt-4 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             User-centric restaurant POS software that seamlessly integrates point of sale system 
             with your restaurant and helps you manage it efficiently.
           </p>
@@ -90,7 +90,7 @@ const RestaurantPOS = () => {
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-gray-900">{item.title}</h3>
-                  <p className="text-xs text-gray-500 mt-0.5">{item.description}</p>
+                  <p className="text-gray-500 mt-0.5 text-[14px] md:text-[16px] font-normal leading-[1.6]">{item.description}</p>
                 </div>
               </div>
             ))}
