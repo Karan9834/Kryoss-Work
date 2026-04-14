@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../../assets/Appointment/about.webp"
+import about from "@/assets/Appointment/about.jpg"
 const DoctorAboutSection = () => {
   return (
     <section className="py-16 bg-white">
@@ -31,7 +31,7 @@ const DoctorAboutSection = () => {
             <img
               src={about}
               alt="doctor booking app"
-              className="max-h-[420px] object-contain"
+              className="max-h-[420px] rounded-xl object-contain"
             />
 
           </div>

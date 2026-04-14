@@ -17,31 +17,43 @@ const years = [
     year: "2025",
     img: journey1,
     bg: "from-yellow-200 to-orange-200",
+    // title: "Innovation & Excellence",
+    // description: "Leading the way in digital transformation and next-gen solutions.",
   },
   {
     year: "2024",
     img: journey2,
     bg: "from-green-200 to-emerald-300",
+    // title: "Global Expansion",
+    // description: "Scaling our operations to serve a diverse global clientele.",
   },
   {
     year: "2023",
     img: journey3,
     bg: "from-purple-200 to-pink-200",
+    // title: "Team Growth",
+    // description: "Welcoming new talents and fostering a culture of creativity and collaboration.",
   },
   {
     year: "2022",
     img: journey4,
     bg: "from-blue-200 to-indigo-200",
+    // title: "Achievement Milestone",
+    // description: "Celebrating our 200th successful project delivery across various industries.",
   },
   {
     year: "2021",
     img: journey5,
     bg: "from-orange-200 to-red-200",
+    // title: "Strategic Partnerships",
+    // description: "Building strong alliances with industry leaders to deliver superior value.",
   },
   {
     year: "2020",
     img: journey6,
     bg: "from-teal-200 to-cyan-200",
+    // title: "Foundation & Vision",
+    // description: "The inception of Kryoss Work with a clear mission to innovate and excel.",
   },
 ];
 
@@ -126,7 +138,7 @@ const YearsTimeline = () => {
             style={{ zIndex: index + 1 }}
           >
             <div className={`relative bg-gradient-to-r ${item.bg} rounded-[30px] md:rounded-[40px] p-4 md:p-10 shadow-2xl max-w-6xl w-full h-[50vh] md:h-[80vh]`}>
-              
+
               {/* YEAR BADGE */}
               <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 md:px-4 md:py-2 shadow-lg z-20">
                 <span className="text-sm md:text-lg font-bold text-gray-800">{item.year}</span>
@@ -139,6 +151,12 @@ const YearsTimeline = () => {
                   alt={`Company ${item.year}`}
                   className="w-full h-full object-contain rounded-xl md:rounded-2xl"
                 />
+
+                {/* TEXT */}
+                {/* <div className="absolute bottom-6 left-10 right-10 p-4">
+                <h3 className="text-2xl font-bold text-gray-900 mb-1">{item.title}</h3>
+                <p className="text-gray-800 font-medium">{item.description}</p>
+              </div> */}
               </div>
             </div>
           </div>

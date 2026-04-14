@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-
+import heroimg from '@/assets/dtbasket-grocery-img/hero.jpg';
 const Hero = () => {
   return (
     <section className="relative min-h-[85vh] flex items-center bg-[#f8fafc] overflow-hidden py-12 px-4 sm:px-10 lg:px-20">
@@ -45,7 +45,7 @@ const Hero = () => {
 
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
               DTBasket App<br />
-  
+
             </h1>
 
             <p className="text-lg text-gray-600 max-w-xl leading-relaxed">
@@ -90,11 +90,11 @@ const Hero = () => {
 
           {/* Right Image */}
           <div className="relative animate-fade-in-right">
-            <div className="absolute -inset-10 bg-gradient-to-tr from-[#10B981]/20 to-transparent rounded-full blur-[100px] -z-10"></div>
+            <div className="absolute -inset-10 rounded-4xl bg-gradient-to-tr from-[#10B981]/20 to-transparent rounded-full blur-[100px] -z-10"></div>
             <img
-              src="https://whitelabelfox.com/assets/images/on-demand-grocery-delivery-app/hero-section-image.webp"
+              src={heroimg}
               alt="Grocery Delivery App Mockup"
-              className="w-full h-auto drop-shadow-[0_20px_50px_rgba(16,185,129,0.2)] transform hover:rotate-1 transition-transform duration-500"
+              className="w-full h-auto rounded-4xl shadow-xl drop-shadow-[0_20px_50px_rgba(16,185,129,0.2)] transform hover:rotate-1 transition-transform duration-500"
             />
           </div>
         </div>

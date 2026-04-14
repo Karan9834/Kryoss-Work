@@ -1,14 +1,15 @@
 import React from 'react';
-
+import aboutimg from "../../../../assets/Food-Delivery_product/about.png"
 const About = () => {
   return (
     <section className="about">
       <div className="about-container">
-        <div className="about-image">
+        <div className="about-image order-2 lg:order-1">
           <div className="image-wrapper">
             <img
-              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format"
+              src={aboutimg}
               alt="FoodBite chefs preparing delicious food"
+              className='w-full h-full object-contain'
               loading="lazy"
             />
             <div className="floating-card">
@@ -19,7 +20,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about-content">
+        <div className="about-content order-1 lg:order-2">
           <div className="section-badge">
             <i className="fas fa-heart"></i> ABOUT US
           </div>
@@ -28,14 +29,14 @@ const About = () => {
             with every bite
           </h2>
           <p className="about-description">
-            At FoodBite, we're more than just a food delivery platform. We're a team of food 
-            enthusiasts dedicated to bringing the best culinary experiences right to your doorstep. 
-            Since our founding, we've partnered with top-rated restaurants and passionate chefs 
+            At FoodBite, we're more than just a food delivery platform. We're a team of food
+            enthusiasts dedicated to bringing the best culinary experiences right to your doorstep.
+            Since our founding, we've partnered with top-rated restaurants and passionate chefs
             to ensure every meal is an unforgettable experience.
           </p>
           <p className="about-description second">
-            Our mission is simple: to make great food accessible to everyone, with lightning-fast 
-            delivery, zero compromises on quality, and a seamless ordering experience that keeps 
+            Our mission is simple: to make great food accessible to everyone, with lightning-fast
+            delivery, zero compromises on quality, and a seamless ordering experience that keeps
             you coming back for more.
           </p>
 

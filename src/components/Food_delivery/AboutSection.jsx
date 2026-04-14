@@ -1,5 +1,5 @@
 import React from "react";
-import foodabout from "../../assets/Food-delivery/foodabout.png";
+import foodabout from "../../assets/Food-delivery/foodabout1.jpg";
 
 const AboutSection = () => {
   return (

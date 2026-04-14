@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
+import heroImg from '../../assets/company-testimonial-img/56070.jpg';
 
 const TestimonialPage = () => {
     const testimonials = [
@@ -149,7 +150,7 @@ const TestimonialPage = () => {
     return (
         <div className="bg-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 overflow-hidden bg-slate-950 text-white">
+            <section className="relative pt-40 pb-32 lg:pt-48 lg:pb-40 min-h-[60vh] flex items-center overflow-hidden bg-slate-950 text-white">
                 <div className="absolute top-0 left-0 w-full h-full opacity-30">
                     <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px]"></div>
                     <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px]"></div>
@@ -184,28 +185,19 @@ const TestimonialPage = () => {
                             </motion.p>
                         </div>
 
-                        {/* Right Side - Decorative Pattern */}
+                        {/* Right Side - Image */}
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.2 }}
                             className="flex-1 flex justify-center lg:justify-end"
                         >
-                            <div className="relative w-full max-w-md">
-                                <div className="relative grid grid-cols-4 gap-3 p-4">
-                                    {[...Array(16)].map((_, i) => (
-                                        <div key={i} className="aspect-square rounded-xl bg-gradient-to-br from-purple-500/20 to-purple-600/10 border border-purple-400/20 backdrop-blur-sm"></div>
-                                    ))}
-                                </div>
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-gradient-to-br from-purple-600/40 to-blue-600/40 backdrop-blur-md rounded-2xl rotate-45 border border-purple-400/30 shadow-xl">
-                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45">
-                                        <Quote className="w-8 h-8 text-purple-300" />
-                                    </div>
-                                </div>
-                                <div className="absolute -top-3 -left-3 w-16 h-16 border-l-2 border-t-2 border-purple-400/30 rounded-tl-2xl"></div>
-                                <div className="absolute -top-3 -right-3 w-16 h-16 border-r-2 border-t-2 border-blue-400/30 rounded-tr-2xl"></div>
-                                <div className="absolute -bottom-3 -left-3 w-16 h-16 border-l-2 border-b-2 border-blue-400/30 rounded-bl-2xl"></div>
-                                <div className="absolute -bottom-3 -right-3 w-16 h-16 border-r-2 border-b-2 border-purple-400/30 rounded-br-2xl"></div>
+                            <div className="relative w-full max-w-[500px]">
+                                <img
+                                    src={heroImg}
+                                    alt="Client Testimonials"
+                                    className="w-full h-auto object-contain rounded-2xl shadow-xl border border-purple-500/20"
+                                />
                             </div>
                         </motion.div>
                     </div>

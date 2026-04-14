@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import react from 'react';
-import Careerheroimg from "../../assets/company-career-img/Careerhero.webp";
+import Careerheroimg from "../../assets/company-career-img/Careerhero.png";
 const CareerHeroSection = () => {
     return (
         <section className="relative w-full min-h-[80vh]  bg-gradient-to-r from-[#5b000a] via-[#7a0010] to-[#8c0016] py-24 overflow-hidden">

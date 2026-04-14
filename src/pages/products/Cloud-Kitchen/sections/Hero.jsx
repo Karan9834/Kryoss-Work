@@ -1,16 +1,16 @@
 import React from "react";
-import cloudHero from "@/assets/cloud-kitchen-img/cloudHero.jpeg"
+import cloudHero from "@/assets/cloud-kitchen-img/cloudHero.png"
 import { MessageCircle } from "lucide-react";
 const Hero = () => {
     return (
         <section className="relative bg-gradient-to-b from-[#0b2239] to-[#061726] text-white overflow-hidden">
 
-            <div className="max-w-7xl mx-auto px-6 py-20 lg:py-28">
+            <div className="max-w-7xl mx-auto px-6 pt-20 pb-0 lg:py-28">
 
-                <div className="grid lg:grid-cols-2 gap-14 items-center">
+                <div className="grid lg:grid-cols-2 gap-6 lg:gap-14 items-center">
 
                     {/* LEFT CONTENT */}
-                    <div className="space-y-8">
+                    <div className="space-y-6 lg:space-y-8">
 
                         {/* Badge */}
                         <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-sm px-4 py-2 rounded-full backdrop-blur w-fit">
@@ -70,17 +70,17 @@ const Hero = () => {
                     </div>
 
                     {/* RIGHT IMAGE */}
-                    <div className="relative flex justify-center lg:justify-end">
+                    <div className="relative flex justify-center lg:justify-end lg:mt-0 mt-4">
 
                         {/* glow */}
-                        <div className="absolute w-[420px] h-[420px]  blur-[120px] rounded-full"></div>
+                        <div className="absolute w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] blur-[120px] rounded-full"></div>
 
                         {/* IMAGE PLACEHOLDER */}
-                        <div className="relative w-full max-w-md h-[420px] rounded-2xl flex items-center justify-center text-gray-300">
+                        <div className="relative w-full max-w-lg h-[400px] lg:h-[500px] rounded-2xl flex items-center justify-center text-gray-300">
                             <img
                                 src={cloudHero}
                                 alt="Carpool App"
-                                className="w-full h-full object-cover rounded-2xl"
+                                className="w-full h-full object-contain rounded-2xl object-bottom lg:object-center"
                             />
                         </div>
 

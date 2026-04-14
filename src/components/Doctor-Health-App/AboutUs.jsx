@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImage from "../../assets/Doctor-Health-App/doctorhealthabout.png"
+import aboutImage from "../../assets/Doctor-Health-App/doctorhealthabout1.jpg"
 
 const AboutUs = () => {
   return (
@@ -14,10 +14,10 @@ const AboutUs = () => {
 
       {/* Main content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
-          
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-26 items-stretch">
+
           {/* Left Content - Text */}
-          <div className="order-2 lg:order-1 flex flex-col justify-center">
+          <div className="order-1 lg:order-2 flex flex-col justify-center ">
             {/* Section label - Updated Typography */}
             <div className="flex items-center gap-2 mb-4">
               <span className="text-emerald-600 font-semibold text-[14px] tracking-wider uppercase">About Us</span>
@@ -51,15 +51,15 @@ const AboutUs = () => {
           </div>
 
           {/* Right Content - Image (same height as content) */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="order-2 lg:order-1 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-md h-full">
               {/* Simple decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-emerald-100 rounded-full opacity-50"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-amber-100 rounded-full opacity-50"></div>
-              
+
               {/* Image container - full height to match content */}
               <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden h-full min-h-[400px] md:min-h-[450px]">
-                <img 
+                <img
                   src={aboutImage}
                   alt="About Vyom Health"
                   className="w-full h-full object-cover"

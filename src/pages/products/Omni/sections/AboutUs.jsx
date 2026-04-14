@@ -1,6 +1,6 @@
 import React from "react";
 import { ShoppingBag, Truck, Shield, Star, Zap, Clock, Users, Globe } from "lucide-react";
-
+import omniabout from "../../../../assets/Omnicart/omnicartabout.png"
 const AboutUs = () => {
   const stats = [
     { value: "1000+", label: "Active Stores", icon: <ShoppingBag size={18} /> },
@@ -34,7 +34,7 @@ const AboutUs = () => {
 
   return (
     <section className="relative py-16 bg-white overflow-hidden">
-      
+
       {/* Background Pattern - Yellow/Orange Dots */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -42,27 +42,27 @@ const AboutUs = () => {
           backgroundSize: '40px 40px'
         }}></div>
       </div>
-      
+
       {/* Gradient Orbs */}
       <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-500 rounded-full filter blur-3xl opacity-5"></div>
       <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-yellow-500 rounded-full filter blur-3xl opacity-5"></div>
 
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* LEFT - IMAGE SECTION */}
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             {/* Glow Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl filter blur-2xl opacity-20"></div>
-            
+
             {/* Main Image Card */}
             <div className="relative bg-white rounded-2xl border border-orange-100 p-2 shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=500&fit=crop"
+              <img
+                src={omniabout}
                 alt="Ecommerce Dashboard"
                 className="rounded-xl w-full h-auto shadow-lg"
               />
-              
+
               {/* Floating Experience Badge */}
               <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-orange-500 to-yellow-500 shadow-xl rounded-xl p-3 border border-white/20">
                 <div className="text-center">
@@ -70,7 +70,7 @@ const AboutUs = () => {
                   <p className="text-xs text-white/90">Years of Excellence</p>
                 </div>
               </div>
-              
+
               {/* Floating Rating Badge */}
               <div className="absolute -top-4 -left-4 bg-white shadow-lg rounded-xl p-2 border border-orange-100">
                 <div className="flex items-center gap-1">
@@ -86,9 +86,9 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          
+
           {/* RIGHT - CONTENT SECTION */}
-          <div>
+          <div className="order-1 lg:order-2">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-50 rounded-full mb-5 border border-orange-200">
               <span className="relative flex h-2 w-2">
@@ -97,7 +97,7 @@ const AboutUs = () => {
               </span>
               <span className="text-sm font-semibold text-orange-700">About Snapcart</span>
             </div>
-            
+
             {/* Heading */}
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Powering E-commerce
@@ -105,16 +105,16 @@ const AboutUs = () => {
                 {" "}Success Stories
               </span>
             </h2>
-            
+
             {/* Description */}
             <p className="text-gray-600 mb-4 leading-relaxed">
               Snapcart is a cutting-edge e-commerce platform designed to help businesses launch and scale their online stores with ease. Our mobile-first approach ensures your customers get the best shopping experience across all devices.
             </p>
-            
+
             <p className="text-gray-600 mb-6 leading-relaxed">
               Founded in 2019, we've helped over 1,000 businesses transform their online presence, processing millions of orders with 99.9% uptime and unmatched reliability.
             </p>
-            
+
             {/* Features Grid */}
             <div className="grid sm:grid-cols-2 gap-4 mb-6">
               {features.map((feature, index) => (
@@ -131,7 +131,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Stats Section - Below both columns */}
         <div className="mt-12 pt-6 border-t-2 border-orange-100">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
