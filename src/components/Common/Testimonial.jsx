@@ -131,29 +131,33 @@ const Testimonial = ({
       className={`w-full bg-gradient-to-b ${currentBgGradient} py-24 px-4 sm:px-6 lg:px-8 overflow-hidden`}
     >
       <div className="max-w-7xl mx-auto relative">
-        {/* Header - Customizable */}
+        {/* Header - Customizable with Updated Typography */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
+          {/* Badge - Updated Typography */}
           <div
-            className={`inline-flex items-center gap-2 px-4 py-2 ${colors.badge} rounded-full mb-6`}
+            className={`inline-flex items-center gap-2 px-4 py-2 ${colors.badge} rounded-full mb-6 text-[12px] font-medium tracking-[0.05em] uppercase`}
           >
-            <Quote size={16} />
-            <span className="text-sm font-medium">Testimonials</span>
+            <Quote size={14} />
+            <span>Testimonials</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight pb-2">
+          {/* Heading - Updated Typography */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             {headingText.split(" ").slice(0, -1).join(" ")}
             <span
-              className={`block text-transparent bg-clip-text bg-gradient-to-r ${colors.gradient} leading-tight`}
+              className={`block text-transparent bg-clip-text bg-gradient-to-r ${colors.gradient}`}
             >
               {headingText.split(" ").slice(-1)}
             </span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          
+          {/* Description - Updated Typography */}
+          <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             {subheadingText}
           </p>
         </motion.div>
@@ -266,8 +270,8 @@ const TestimonialCard = ({ testimonial, cardGradient }) => {
         ))}
       </div>
 
-      {/* Content */}
-      <p className="text-gray-700 text-sm leading-relaxed mb-6 line-clamp-4">
+      {/* Content - Updated Typography */}
+      <p className="text-gray-700 text-[14px] md:text-[16px] font-normal leading-[1.6] mb-6 line-clamp-4">
         "{testimonial.content}"
       </p>
 
@@ -284,8 +288,14 @@ const TestimonialCard = ({ testimonial, cardGradient }) => {
           />
         </div>
         <div>
-          <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-          <p className="text-xs text-gray-500">{testimonial.role}</p>
+          {/* Author Name - Updated Typography */}
+          <h4 className="font-semibold text-gray-900 text-[14px] md:text-[16px]">
+            {testimonial.name}
+          </h4>
+          {/* Author Role - Updated Typography */}
+          <p className="text-[12px] md:text-[14px] text-gray-500">
+            {testimonial.role}
+          </p>
         </div>
       </div>
 

@@ -30,16 +30,19 @@ const BlogsSection = () => {
             <div className="max-w-7xl mx-auto px-4">
                 {/* Heading */}
                 <div className="text-center mb-14">
-                    <span className="inline-flex items-center gap-2 px-4 py-1 border rounded-full text-sm text-gray-600 mb-4">
+                    {/* Badge - Updated Typography */}
+                    <span className="inline-flex items-center gap-2 px-4 py-1 border rounded-full text-[12px] font-medium tracking-[0.05em] uppercase text-gray-600 mb-4">
                         <span className="w-2 h-2 bg-blue-400 rounded-full" />
                         Blogs
                     </span>
 
-                    <h2 className="text-4xl font-semibold text-gray-900">
+                    {/* Heading - Updated Typography */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
                         Our <span className="text-blue-900">Related Blogs</span>
                     </h2>
 
-                    <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+                    {/* Description - Updated Typography */}
+                    <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-3xl mx-auto">
                         Stay updated with the latest trends, insights, and tips in the on-demand app industry. Explore our newest blogs to gain valuable knowledge and ideas to grow your business!
                     </p>
                 </div>
@@ -56,7 +59,8 @@ const BlogsSection = () => {
                             />
                         </div>
 
-                        <h3 className="mt-6 text-xl font-semibold text-gray-900 group-hover:text-blue-400 transition">
+                        {/* Blog Title - Updated Typography */}
+                        <h3 className="mt-6 text-[18px] md:text-[20px] font-semibold text-gray-900 group-hover:text-blue-400 transition leading-[1.4]">
                             {blogs[0].title}
                         </h3>
                     </div>
@@ -77,7 +81,8 @@ const BlogsSection = () => {
                                 </div>
 
                                 <div className="md:w-1/2 flex items-center">
-                                    <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-400 transition">
+                                    {/* Blog Title - Updated Typography */}
+                                    <h3 className="text-[16px] md:text-[18px] font-semibold text-gray-900 group-hover:text-blue-400 transition leading-[1.4]">
                                         {blog.title}
                                     </h3>
                                 </div>

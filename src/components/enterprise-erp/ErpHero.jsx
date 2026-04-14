@@ -34,23 +34,23 @@ const ErpHero = () => {
                         </span>
                     </div>
 
-                    {/* Heading */}
-                    <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+                    {/* Heading - Updated Typography */}
+                    <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">
                         <span className="text-[#3b82f6]">Enterprise Resource Planning</span> Product
                         Development
                     </h1>
 
-                    {/* Paragraph */}
-                    <p className="text-gray-200 max-w-xl mb-8">
+                    {/* Paragraph - Updated Typography */}
+                    <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] text-gray-200 max-w-[29rem] mb-8">
                         Empower your organization with our custom ERP solutions. Our
                         feature-rich system for finance, HR, and supply chain ensures
                         maximum efficiency and real-time data visibility.
                     </p>
 
-                    {/* CTA */}
+                    {/* CTA - Updated Typography */}
                     <a
                         href="#explore-erp"
-                        className="inline-flex items-center gap-3 bg-[#3b82f6] text-white font-medium px-6 py-3 rounded-full hover:opacity-90 transition shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+                        className="inline-flex items-center gap-3 bg-[#3b82f6] text-white font-semibold text-[16px] tracking-[0.01em] px-6 py-3 rounded-full hover:opacity-90 transition shadow-[0_0_15px_rgba(59,130,246,0.5)]"
                     >
                         Explore Our Products
                         <ArrowRight size={18} />

@@ -33,7 +33,8 @@ const ErpDevelopmentProcess = () => {
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
 
-                <h2 className="text-2xl lg:text-3xl font-semibold mb-14 text-center">
+                {/* Heading - Updated Typography */}
+                <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-14 text-center">
                     ERP App <span className="text-blue-700">Development Process</span>
                 </h2>
 
@@ -48,8 +49,14 @@ const ErpDevelopmentProcess = () => {
                                         <span className="text-xl">{step.icon}</span>
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-white mb-2">{step.title}</h4>
-                                        <p className="text-gray-400 text-xs leading-relaxed">{step.desc}</p>
+                                        {/* Step Title - Updated Typography */}
+                                        <h4 className="font-semibold text-white mb-2 text-[14px] md:text-[16px]">
+                                            {step.title}
+                                        </h4>
+                                        {/* Step Description - Updated Typography */}
+                                        <p className="text-gray-400 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+                                            {step.desc}
+                                        </p>
                                     </div>
                                 </div>
                             ))}
