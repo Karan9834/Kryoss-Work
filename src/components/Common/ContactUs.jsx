@@ -223,25 +223,25 @@ const ContactUs = ({
           </p>
         </div>
 
-        {/* Main Content - Flex row with equal heights using items-stretch */}
-        <div className="flex flex-col lg:flex-row gap-8 items-stretch">
+        {/* Main Content - Flex row with equal heights */}
+        <div className="flex flex-col lg:flex-row gap-6 items-stretch">
           {/* Left Side - Company Details */}
           <div className="lg:w-1/2 flex flex-col">
-            {/* Image - Properly sized */}
+            {/* Image - Smaller and balanced */}
             {showImage && (
-              <div className="relative mb-6 flex-shrink-0">
+              <div className="relative mb-5 flex-shrink-0">
                 <div
-                  className={`absolute -top-3 -left-3 w-20 h-20 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-2xl opacity-20`}
+                  className={`absolute -top-3 -left-3 w-16 h-16 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-2xl opacity-20`}
                 ></div>
                 <div
-                  className={`absolute -bottom-3 -right-3 w-20 h-20 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-2xl opacity-20`}
+                  className={`absolute -bottom-3 -right-3 w-16 h-16 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-2xl opacity-20`}
                 ></div>
 
-                <div className="relative rounded-2xl overflow-hidden shadow-xl group">
+                <div className="relative rounded-xl overflow-hidden shadow-lg group">
                   <img
                     src={customImage || contactImage}
                     alt="Contact us"
-                    className="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-48 sm:h-52 object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div
                     className={`absolute inset-0 bg-gradient-to-r ${currentAccentGradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
@@ -255,21 +255,21 @@ const ContactUs = ({
               </div>
             )}
 
-            {/* Company Details Grid - 2x2 layout that grows to fill space */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 flex-1">
+            {/* Company Details Grid - 2x2 layout with equal box sizes */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
               {companyDetails.map((item, index) => {
                 const Icon = item.icon;
                 return (
                   <div
                     key={index}
-                    className="bg-white rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col h-full"
+                    className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col h-full"
                   >
                     <div
-                      className={`inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-r ${item.gradient} text-white mb-3 flex-shrink-0`}
+                      className={`inline-flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-r ${item.gradient} text-white mb-2 flex-shrink-0`}
                     >
-                      <Icon size={20} />
+                      <Icon size={18} />
                     </div>
-                    <h3 className="text-base font-semibold text-gray-900 mb-2">
+                    <h3 className="text-sm font-semibold text-gray-900 mb-1.5">
                       {item.title}
                     </h3>
                     
@@ -277,7 +277,7 @@ const ContactUs = ({
                       {item.isLinkable && (
                         <>
                           {item.details.map((detail, idx) => (
-                            <p key={idx} className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] mb-0.5">
+                            <p key={idx} className="text-gray-600 text-[12px] md:text-[13px] font-normal leading-[1.5] mb-0.5">
                               {detail}
                             </p>
                           ))}
@@ -285,21 +285,21 @@ const ContactUs = ({
                             href={item.linkUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-[14px] md:text-[16px] font-medium mt-2 transition-colors text-purple-600 hover:text-purple-700"
+                            className="inline-flex items-center gap-1 text-[12px] md:text-[13px] font-medium mt-1.5 transition-colors text-purple-600 hover:text-purple-700"
                           >
                             {item.linkText}
-                            <ExternalLink size={14} />
+                            <ExternalLink size={12} />
                           </a>
                         </>
                       )}
 
                       {item.isEmail && (
-                        <div className="space-y-1.5">
+                        <div className="space-y-1">
                           {item.details.map((detail, idx) => (
                             <a
                               key={idx}
                               href={detail.mailto}
-                              className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] hover:text-purple-600 transition-colors block break-words"
+                              className="text-gray-600 text-[12px] md:text-[13px] font-normal leading-[1.5] hover:text-purple-600 transition-colors block break-words"
                             >
                               {detail.text}
                             </a>
@@ -308,17 +308,17 @@ const ContactUs = ({
                       )}
 
                       {item.isPhone && (
-                        <div className="space-y-1.5">
+                        <div className="space-y-1">
                           {item.details.map((detail, idx) => (
                             detail.isPlain ? (
-                              <p key={idx} className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+                              <p key={idx} className="text-gray-600 text-[12px] md:text-[13px] font-normal leading-[1.5]">
                                 {detail.text}
                               </p>
                             ) : (
                               <a
                                 key={idx}
                                 href={detail.tel}
-                                className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] hover:text-purple-600 transition-colors block font-medium"
+                                className="text-gray-600 text-[12px] md:text-[13px] font-normal leading-[1.5] hover:text-purple-600 transition-colors block font-medium"
                               >
                                 {detail.text}
                               </a>
@@ -331,26 +331,26 @@ const ContactUs = ({
                 );
               })}
 
-              {/* Office Timings Box */}
-              <div className="bg-white rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col h-full">
+              {/* Office Timings Box - Same size as others */}
+              <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col h-full">
                 <div
-                  className={`inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-r ${officeTimings.gradient} text-white mb-3 flex-shrink-0`}
+                  className={`inline-flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-r ${officeTimings.gradient} text-white mb-2 flex-shrink-0`}
                 >
-                  <Clock size={20} />
+                  <Clock size={18} />
                 </div>
-                <h3 className="text-base font-semibold text-gray-900 mb-2">
+                <h3 className="text-sm font-semibold text-gray-900 mb-1.5">
                   {officeTimings.title}
                 </h3>
-                <div className="space-y-2 flex-1">
+                <div className="space-y-1.5 flex-1">
                   {officeTimings.schedule.map((item, idx) => (
-                    <div key={idx} className="flex justify-between items-baseline text-[14px] md:text-[16px] font-normal leading-[1.6]">
+                    <div key={idx} className="flex justify-between items-baseline text-[12px] md:text-[13px] font-normal leading-[1.5]">
                       <span className="font-medium text-gray-800">{item.day}</span>
                       <span className="text-gray-600">{item.hours}</span>
                     </div>
                   ))}
-                  <div className="pt-1.5 mt-1.5 border-t border-gray-100">
-                    <p className="text-[12px] md:text-[14px] text-gray-500 flex items-center gap-1">
-                      <Clock size={12} />
+                  <div className="pt-1 mt-1 border-t border-gray-100">
+                    <p className="text-[11px] md:text-[12px] text-gray-500 flex items-center gap-1">
+                      <Clock size={10} />
                       {officeTimings.note}
                     </p>
                   </div>
@@ -359,23 +359,23 @@ const ContactUs = ({
             </div>
           </div>
 
-          {/* Right Side - Form in Box - Now aligned with boxes bottom */}
+          {/* Right Side - Form in Box - Compact and balanced */}
           <div className="lg:w-1/2 flex">
-            <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-gray-100 relative overflow-hidden w-full flex flex-col">
+            <div className="bg-white rounded-xl shadow-lg p-5 md:p-6 border border-gray-100 relative overflow-hidden w-full flex flex-col">
               {/* Decorative gradient elements */}
               <div
-                className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-3xl opacity-10`}
+                className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-3xl opacity-10`}
               ></div>
               <div
-                className={`absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-3xl opacity-10`}
+                className={`absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-r ${currentAccentGradient} rounded-full blur-3xl opacity-10`}
               ></div>
 
               {/* Form Header */}
-              <div className="mb-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-1">
+              <div className="mb-4">
+                <h3 className="text-lg font-bold text-gray-900 mb-1">
                   Send us a Message
                 </h3>
-                <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+                <p className="text-gray-600 text-[13px] md:text-[14px] font-normal leading-[1.5]">
                   Interested in our {productName} solution? Fill out the form
                   and we'll get back to you within 24 hours.
                 </p>
@@ -384,18 +384,18 @@ const ContactUs = ({
               {/* Success Message */}
               {formStatus.success && (
                 <div
-                  className={`mb-5 p-3 bg-gradient-to-r ${currentAccentGradient} text-white rounded-lg flex items-center gap-2 text-sm`}
+                  className={`mb-4 p-2.5 bg-gradient-to-r ${currentAccentGradient} text-white rounded-lg flex items-center gap-2 text-sm`}
                 >
-                  <CheckCircle size={16} />
+                  <CheckCircle size={14} />
                   <span>{formStatus.message}</span>
                 </div>
               )}
 
-              {/* Form - Will stretch to fill available space */}
-              <form onSubmit={handleSubmit} className="space-y-4 flex-1 flex flex-col">
+              {/* Form - Increased textarea height and reduced gap */}
+              <form onSubmit={handleSubmit} className="space-y-3 flex-1 flex flex-col">
                 {/* Name Field */}
                 <div>
-                  <label className="block text-[14px] md:text-[16px] font-medium text-gray-700 mb-1.5">
+                  <label className="block text-[13px] md:text-[14px] font-medium text-gray-700 mb-1">
                     Full Name *
                   </label>
                   <input
@@ -404,14 +404,14 @@ const ContactUs = ({
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className={`w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[14px] md:text-[16px]`}
+                    className={`w-full px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[13px] md:text-[14px]`}
                     placeholder="John Doe"
                   />
                 </div>
 
                 {/* Email Field */}
                 <div>
-                  <label className="block text-[14px] md:text-[16px] font-medium text-gray-700 mb-1.5">
+                  <label className="block text-[13px] md:text-[14px] font-medium text-gray-700 mb-1">
                     Email Address *
                   </label>
                   <input
@@ -420,14 +420,14 @@ const ContactUs = ({
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className={`w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[14px] md:text-[16px]`}
+                    className={`w-full px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[13px] md:text-[14px]`}
                     placeholder="john@example.com"
                   />
                 </div>
 
                 {/* Phone Field */}
                 <div>
-                  <label className="block text-[14px] md:text-[16px] font-medium text-gray-700 mb-1.5">
+                  <label className="block text-[13px] md:text-[14px] font-medium text-gray-700 mb-1">
                     Phone Number
                   </label>
                   <input
@@ -435,14 +435,14 @@ const ContactUs = ({
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className={`w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[14px] md:text-[16px]`}
+                    className={`w-full px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[13px] md:text-[14px]`}
                     placeholder="+1 (555) 000-0000"
                   />
                 </div>
 
-                {/* Message Field - Grows to take remaining space */}
+                {/* Message Field - Increased textarea height */}
                 <div className="flex-1">
-                  <label className="block text-[14px] md:text-[16px] font-medium text-gray-700 mb-1.5">
+                  <label className="block text-[13px] md:text-[14px] font-medium text-gray-700 mb-1">
                     Message *
                   </label>
                   <textarea
@@ -450,17 +450,17 @@ const ContactUs = ({
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    rows="4"
-                    className={`w-full h-full min-h-[100px] px-4 py-2.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 resize-none text-[14px] md:text-[16px]`}
+                    rows="5"
+                    className={`w-full px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 resize-none text-[13px] md:text-[14px]`}
                     placeholder="Tell us about your project..."
                   />
                 </div>
 
-                {/* Submit Button */}
+                {/* Submit Button - Reduced top margin to close gap */}
                 <button
                   type="submit"
                   disabled={formStatus.submitted}
-                  className={`w-full px-6 py-3 bg-gradient-to-r ${currentButtonGradient} text-white font-semibold text-[16px] tracking-[0.01em] rounded-lg hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed mt-2`}
+                  className={`w-full px-4 py-2.5 bg-gradient-to-r ${currentButtonGradient} text-white font-semibold text-[14px] tracking-[0.01em] rounded-lg hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed`}
                 >
                   {formStatus.submitted ? (
                     "Sending..."
@@ -468,7 +468,7 @@ const ContactUs = ({
                     <>
                       Send Message
                       <Send
-                        size={16}
+                        size={14}
                         className="group-hover:translate-x-1 transition-transform"
                       />
                     </>
@@ -476,7 +476,7 @@ const ContactUs = ({
                 </button>
 
                 {/* Privacy Note */}
-                <p className="text-[12px] text-gray-500 text-center mt-3">
+                <p className="text-[11px] text-gray-500 text-center mt-2">
                   By submitting, you agree to our privacy policy and consent to
                   being contacted.
                 </p>
