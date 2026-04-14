@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle, Sparkles } from "lucide-react";
-import aboutImg from "../../assets/Home-Service/about.png";
+import aboutImg from "../../assets/homeservices-product/Making Home ServicesSimple & Reliable.jpg";
 
 const AboutSection = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Target, Shield, Zap, CheckCircle, Flame, Heart } from 'lucide-react';
-import aboutImg from '../../assets/datinglanding-img/datinglandingabout.jpg';
+import aboutImg from '../../assets/maternitydating-product/More Than Just a Swipe A Meaningful Journey.png';
 
 const DatingAbout = () => {
     const benefits = [

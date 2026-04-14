@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Shield, Zap, Globe, Sparkles, ArrowRight } from "lucide-react";
-import aboutImg from "../../assets/Socila-media-app/heroabout.png";
+import aboutImg from "../../assets/socialmedia-product/About Us.jpg";
 
 const AboutSection = () => {
   const containerVariants = {

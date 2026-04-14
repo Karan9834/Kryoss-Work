@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Layers, Palette, Settings } from 'lucide-react';
-import whyUsImg from '../../assets/saloonlanding-img/saloonlandingwhyus.jpg';
+import whyUsImg from '../../assets/salonbeauty-product/Why Choose Our Salon Solutiona.jpg';
 
 const SalonWhyUs = () => {
    const cards = [

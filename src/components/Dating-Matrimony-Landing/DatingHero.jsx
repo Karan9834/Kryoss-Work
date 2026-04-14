@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart, Search, Users, ShieldCheck, Sparkles } from 'lucide-react';
-import heroImg from '../../assets/datinglanding-img/datinglandinghero.jpg';
+import heroImg from '../../assets/maternitydating-product/every where begin love a.png';
 
 const DatingHero = () => {
     return (

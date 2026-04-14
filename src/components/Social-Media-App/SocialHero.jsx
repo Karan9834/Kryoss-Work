@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, Zap, Shield, Users } from "lucide-react";
-import socialhero from "../../assets/Socila-media-app/socialhero.png";
+import socialhero from "../../assets/socialmedia-product/heroabout-Baztic_O.png";
 
 const SocialHero = () => {
   const containerVariants = {

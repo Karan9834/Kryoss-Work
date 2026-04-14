@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Star, Clock, Shield } from 'lucide-react';
-import heroImg from '../../assets/taxilanding-img/taxilandinghero.jpg';
+import heroImg from '../../assets/taxi-product/Smart Taxi Booking Solutions for Modern Mobility.jpg';
 
 const TaxiHero = () => {
     return (

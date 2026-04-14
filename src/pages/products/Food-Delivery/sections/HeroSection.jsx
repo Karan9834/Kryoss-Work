@@ -1,15 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShoppingBag, 
-  Clock, 
-  Star, 
-  Bike, 
+import {
+  ShoppingBag,
+  Clock,
+  Star,
+  Bike,
   Leaf,
-  ExternalLink, MessageCircle } from "lucide-react";
+  ExternalLink, MessageCircle
+} from "lucide-react";
 import foodHeroImage from "../../../../assets/Product-update/food.jpg";
 
 const FoodHeroSection = ({ demoUrl = "http://preview.codecanyon.net/item/viavi-food-delivery-script/full_screen_preview/15509686" }) => {
-  
+
   const handleLiveDemo = () => {
     window.open(demoUrl, '_blank', 'noopener,noreferrer');
   };
@@ -122,16 +124,16 @@ const FoodHeroSection = ({ demoUrl = "http://preview.codecanyon.net/item/viavi-f
               <div className="relative">
                 {/* Glow Effect */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-[2rem] blur-2xl" />
-                
+
                 {/* Main Image */}
                 <div className="relative rounded-[2rem] overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 border border-green-500/20 shadow-2xl">
                   <div className="aspect-[4/3] relative">
-                    <img 
+                    <img
                       src={foodHeroImage}
                       alt="FoodExpress Clone"
                       className="w-full h-full object-contain p-6"
                     />
-                    
+
                     {/* Floating Demo Badge */}
                     <motion.div
                       animate={{ y: [0, -5, 0] }}

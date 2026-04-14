@@ -8,7 +8,7 @@ import {
     History,
     Star
 } from 'lucide-react';
-import featuresImg from '../../assets/taxilanding-img/taxilandingfeatures.webp';
+import featuresImg from '../../assets/taxi-product/Everything You Need to Scale.png';
 
 const TaxiFeatures = () => {
     const featureGroups = [

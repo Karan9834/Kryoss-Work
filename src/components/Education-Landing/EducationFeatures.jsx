@@ -7,7 +7,7 @@ import {
   Shield, 
   Clock 
 } from 'lucide-react';
-import featuresImg from '../../assets/educationlanding-img/educationlandingfeatures.jpg';
+import featuresImg from '../../assets/education-product/Everything You Need for.jpg';
 
 const EducationFeatures = () => {
     const [activeFeature, setActiveFeature] = useState(0);

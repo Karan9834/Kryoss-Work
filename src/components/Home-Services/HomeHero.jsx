@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRight, Sparkles, Wrench, Paintbrush, Shield, Clock } from "lucide-react";
 import { motion } from "framer-motion";
-import heroImg from "../../assets/Home-Service/homehero.png";
+import heroImg from "../../assets/homeservices-product/Your Home Our Responsibility.jpg";
 
 const HomeServicesHero = () => {
   const handleScroll = () => {

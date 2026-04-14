@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle2, Zap, Globe, Smartphone, BarChart3, Users } from 'lucide-react';
-import aboutImg from '../../assets/taxilanding-img/taxilandingabout.jpg';
+import aboutImg from '../../assets/taxi-product/drive your business 2nd image.jpg';
 
 const TaxiAbout = () => {
     const highlights = [

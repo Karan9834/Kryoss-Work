@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import heroImg from '../../assets/saloonlanding-img/saloonlandinghero.webp';
+import heroImg from '../../assets/salonbeauty-product/Your Trusted Salon AppDevelopment Company.png';
 
 const SalonHero = () => {
   return (
