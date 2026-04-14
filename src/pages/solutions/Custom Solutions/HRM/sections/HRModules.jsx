@@ -106,7 +106,6 @@ const HRModules = () => {
       style={{ fontFamily: "'DM Sans', sans-serif" }}
       className="py-16 px-6 bg-gradient-to-br from-orange-50 via-orange-100/30 to-amber-50"
     >
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=DM+Sans:wght@400;500&display=swap');`}</style>
 
       <div className="max-w-5xl mx-auto">
         {/* Header */}
