@@ -1,15 +1,15 @@
 import React from 'react';
-
+import aboutimg from '@/assets/Grocery-Delivery/about.jpg';
 const GroceryAbout = () => {
   return (
     <section className="w-full bg-white py-16 px-4 lg:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* LEFT COLUMN - IMAGE */}
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/4498166/pexels-photo-4498166.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={aboutimg}
                 alt="Fresh grocery store"
                 className="w-full h-[400px] object-cover"
               />
@@ -24,7 +24,7 @@ const GroceryAbout = () => {
           </div>
 
           {/* RIGHT COLUMN - CONTENT */}
-          <div className="space-y-5">
+          <div className="space-y-5 order-1 lg:order-2">
             {/* Section badge */}
             <div className="inline-block bg-green-100 px-4 py-1.5 rounded-full">
               <span className="text-green-700 text-sm font-medium">About Us</span>
@@ -38,12 +38,12 @@ const GroceryAbout = () => {
 
             {/* Description */}
             <p className="text-gray-600 leading-relaxed">
-              Founded in 2020, we've been serving fresh groceries to thousands of happy customers. 
+              Founded in 2020, we've been serving fresh groceries to thousands of happy customers.
               We work directly with local farmers and suppliers to bring you the freshest products at the best prices.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              From farm-fresh vegetables to organic fruits, dairy, and pantry essentials - we've got everything 
+              From farm-fresh vegetables to organic fruits, dairy, and pantry essentials - we've got everything
               you need for your daily meals. Quality and freshness are our top priorities.
             </p>
 
@@ -67,19 +67,19 @@ const GroceryAbout = () => {
             <div className="flex flex-wrap gap-4 pt-2">
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                 </svg>
                 <span className="text-sm text-gray-600">100% Fresh</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                 </svg>
                 <span className="text-sm text-gray-600">Organic Options</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                 </svg>
                 <span className="text-sm text-gray-600">Local Farmers</span>
               </div>

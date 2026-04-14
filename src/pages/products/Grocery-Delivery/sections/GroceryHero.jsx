@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import React from "react";
-
+import heroimg from '@/assets/Grocery-Delivery/hero.jpg';
 const GroceryHero = () => {
   const handleLiveDemo = () => {
     window.open(
@@ -65,10 +65,10 @@ const GroceryHero = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </button>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+            <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+              <MessageCircle size={18} />
+              Let's Discuss
+            </a>
 
             {/* Features row */}
             <div className="flex flex-wrap gap-6 pt-4">
@@ -99,7 +99,7 @@ const GroceryHero = () => {
             <div className="relative z-10">
               <div className="absolute -inset-2 bg-gradient-to-r from-green-400 to-emerald-400 rounded-3xl blur-2xl opacity-30"></div>
               <img
-                src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={heroimg}
                 alt="Fresh groceries"
                 className="relative rounded-3xl shadow-2xl max-h-[450px] w-auto object-cover border-8 border-white"
               />

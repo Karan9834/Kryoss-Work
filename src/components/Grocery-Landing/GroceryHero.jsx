@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import heroImg from '../../assets/grocerylanding-img/grocerylandinghero.jpg';
+import heroImg from '../../assets/grocerylanding-img/grocerylandinghero1.jpg';
 
 const GroceryHero = () => {
     return (

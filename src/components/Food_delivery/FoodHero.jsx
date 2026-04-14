@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import foodhero from "../../assets/Food-delivery/foodhero.png";
+import foodhero from "../../assets/Food-delivery/foodhero1.jpg";
 
 const FoodHero = () => {
   const cardRef = useRef(null);

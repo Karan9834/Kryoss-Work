@@ -185,8 +185,8 @@ const ContactUs = ({
     title: "Office Timings",
     schedule: [
       { day: "Monday - Friday", hours: "10:00 AM - 6:00 PM" },
-      { day: "Saturday", hours: "10:00 AM - 2:00 PM" },
-      { day: "Sunday", hours: "Closed" },
+      // { day: "Saturday", hours: "10:00 AM - 2:00 PM" },
+      { day: "Saturday-Sunday", hours: "Closed" },
     ],
     note: "IST (Indian Standard Time)",
     gradient: currentAccentGradient,
@@ -216,7 +216,7 @@ const ContactUs = ({
               Our Team
             </span>
           </h2>
-          
+
           {/* Description - Updated Typography */}
           <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             Have questions about our {productName} solution? We're here to help!
@@ -272,7 +272,7 @@ const ContactUs = ({
                     <h3 className="text-sm font-semibold text-gray-900 mb-1.5">
                       {item.title}
                     </h3>
-                    
+
                     <div className="flex-1">
                       {item.isLinkable && (
                         <>

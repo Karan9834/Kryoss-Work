@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import heroimg from '@/assets/medixpro-medicinedelivery-img/hero.jpg';
 const Hero = () => {
     return (
         <section
@@ -79,9 +80,9 @@ const Hero = () => {
                             initial={{ opacity: 0, x: 60, scale: 0.9 }}
                             animate={{ opacity: 1, x: 0, scale: 1 }}
                             transition={{ duration: 0.8 }}
-                            src="https://whitelabelfox.com/assets/images/medicine-delivery-app-development/Medicine-Delivery-hero-section-image.webp"
+                            src={heroimg}
                             alt="Medicine App"
-                            className="w-[560px] object-contain mt-6"
+                            className="w-[560px] rounded-xl object-contain mt-6"
                         />
 
 

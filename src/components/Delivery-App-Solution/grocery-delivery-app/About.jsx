@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShoppingBasket, Zap, TrendingUp, Handshake } from 'lucide-react';
-
+import aboutimg from '@/assets/dtbasket-grocery-img/about.png';
 const About = () => {
     const stats = [
         { icon: <Zap size={24} />, label: "Quick Setup", value: "1-2 Weeks" },
@@ -14,7 +14,7 @@ const About = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
                     {/* Left: Content */}
-                    <div className="order-2 lg:order-1 space-y-8">
+                    <div className="order-1 lg:order-2 space-y-8">
                         <div className="space-y-4">
                             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
                                 Transform Your Offline Store Into <br />
@@ -51,10 +51,10 @@ const About = () => {
                     </div>
 
                     {/* Right: Illustration */}
-                    <div className="order-1 lg:order-2 relative group">
+                    <div className="order-2 lg:order-1 relative group">
                         <div className="absolute inset-0 bg-[#10B981]/10 rounded-full blur-[80px] group-hover:bg-[#10B981]/20 transition-all duration-700"></div>
                         <img
-                            src="https://whitelabelfox.com/assets/images/on-demand-grocery-delivery-app/fox-grocery-about-us.webp"
+                            src={aboutimg}
                             alt="Fox Grocery Platform Overview"
                             className="relative w-full h-auto z-10 drop-shadow-2xl rounded-3xl"
                         />

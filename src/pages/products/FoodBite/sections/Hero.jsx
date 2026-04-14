@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import React from 'react';
-
+import heroimg from "../../../../assets/Food-Delivery_product/hero.png"
 const Hero = () => {
   return (
     <section className="hero">
@@ -40,10 +40,10 @@ const Hero = () => {
             >
               <i className="fas fa-eye"></i> Live Demo
             </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+            <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+              <MessageCircle size={18} />
+              Let's Discuss
+            </a>
             <a href="#" className="btn-outline">
               <i className="fas fa-arrow-right"></i> Explore menu
             </a>
@@ -53,8 +53,9 @@ const Hero = () => {
         <div className="hero-image">
           <div className="image-card">
             <img
-              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format"
+              src={heroimg}
               alt="Delicious FoodBite meal - burger and fries"
+              className="w-full h-full"
               loading="eager"
             />
           </div>
@@ -209,7 +210,7 @@ const Hero = () => {
           padding: 1.2rem;
           box-shadow: 0 40px 50px -25px rgba(0, 0, 0, 0.25);
           transition: all 0.3s ease;
-          max-width: 550px;
+          max-width: 750px;
           width: 100%;
         }
 
@@ -223,8 +224,7 @@ const Hero = () => {
           height: auto;
           border-radius: 48px;
           display: block;
-          object-fit: cover;
-          aspect-ratio: 4 / 3;
+          object-fit: contain;
           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
 

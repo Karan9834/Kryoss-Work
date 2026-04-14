@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from "../../assets/Doctor-Health-App/doctorhealthhero.png"
+import hero from "../../assets/Doctor-Health-App/doctorhealthhero1.png"
 
 const DoctorHealthHero = () => {
   return (
@@ -17,11 +17,11 @@ const DoctorHealthHero = () => {
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-700"></div>
 
       {/* Main content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 min-h-[600px] md:min-h-[550px] flex items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:pt-20 pb-0 min-h-[600px] lg:min-h-[650px] flex items-stretch">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
-          
+
           {/* Left Content */}
-          <div className="order-2 lg:order-1">
+          <div className="order-1 pb-16 lg:pb-20">
             {/* Premium logo - Updated Typography */}
             <div className="flex items-center gap-2 mb-4 md:mb-6">
               <div className="flex items-center gap-2">
@@ -47,7 +47,7 @@ const DoctorHealthHero = () => {
             </p>
 
             {/* Hero Button - Updated: text-sm md:text-base font-semibold tracking-wide uppercase */}
-            <button 
+            <button
               className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold rounded-lg shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transform hover:-translate-y-0.5 transition-all duration-200 overflow-hidden text-sm md:text-base tracking-wide uppercase"
               onClick={() => document.getElementById('explore-health')?.scrollIntoView({ behavior: 'smooth' })}
             >
@@ -62,14 +62,14 @@ const DoctorHealthHero = () => {
           </div>
 
           {/* Right Image - Simple with subtle glow */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-md lg:max-w-lg">
+          <div className="order-2 flex justify-center lg:justify-start items-end self-end h-full w-full">
+            <div className="relative w-full max-w-md lg:max-w-2xl lg:-translate-x-12 flex items-end justify-center">
               {/* Subtle glow behind image */}
-              <div className="absolute inset-0 bg-emerald-500 rounded-full filter blur-3xl opacity-20"></div>
-              <img 
+              <div className="absolute inset-0 bg-emerald-500 rounded-full filter blur-[100px] opacity-20 -z-10 translate-y-20"></div>
+              <img
                 src={hero}
                 alt="Doctor consultation"
-                className="relative w-full h-auto object-contain drop-shadow-2xl"
+                className="w-full max-w-none h-auto object-bottom object-contain relative z-10 scale-[1.15] lg:scale-[1.35] origin-bottom"
               />
             </div>
           </div>

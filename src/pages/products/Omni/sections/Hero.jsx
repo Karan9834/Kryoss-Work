@@ -1,10 +1,10 @@
 import React from "react";
 import { ArrowRight, Play, ShoppingBag, Star, Truck, Shield, MessageCircle } from "lucide-react";
-
+import omnihero from "../../../../assets/Omnicart/omnicarthero.png"
 const HeroSection = () => {
   return (
     <section className="w-full relative overflow-hidden bg-gradient-to-br from-orange-500 via-yellow-400 to-orange-600">
-      
+
       {/* Background Glow */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse" />
@@ -16,10 +16,10 @@ const HeroSection = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 py-16 md:py-20 grid lg:grid-cols-2 gap-10 items-center">
-        
+
         {/* LEFT CONTENT */}
         <div className="text-center lg:text-left space-y-6">
-          
+
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/20 backdrop-blur rounded-full">
             <ShoppingBag className="w-3.5 h-3.5 text-white" />
@@ -71,7 +71,7 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-            
+
             <a
               href="https://preview.codecanyon.net/item/omnimart-multipurpose-ecommerce-shopping-platform/full_screen_preview/33771074"
               target="_blank"
@@ -111,16 +111,16 @@ const HeroSection = () => {
 
         {/* RIGHT IMAGE */}
         <div className="relative flex justify-center">
-          
+
           {/* Glow */}
           <div className="absolute inset-0 bg-gradient-to-r from-orange-300 to-yellow-300 blur-3xl opacity-20 rounded-2xl"></div>
 
           {/* Image Card */}
           <div className="relative bg-white/10 backdrop-blur-xl p-2 rounded-xl shadow-2xl border border-white/20">
             <img
-              src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=450&fit=crop"
+              src={omnihero}
               alt="Ecommerce Platform"
-              className="rounded-lg w-[380px] object-cover transition duration-500 hover:scale-105"
+              className="rounded-lg w-[500px] object-cover transition duration-500 hover:scale-105"
             />
           </div>
 

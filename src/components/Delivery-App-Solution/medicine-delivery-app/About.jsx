@@ -1,21 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import aboutimg from '@/assets/medixpro-medicinedelivery-img/about.jpg';
 const About = () => {
     return (
         <section className="min-h-screen flex items-center py-10 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
-                <div className="flex flex-col lg:flex-row items-center gap-10">
-                    <div className="lg:w-1/2">
+                <div className="flex flex-col lg:flex-row items-center gap-4">
+                    <div className="lg:w-1/2 order-2 lg:order-1">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
-                            className="relative max-w-sm lg:max-w-md mx-auto"
+                            className="relative max-w-md lg:max-w-lg mx-auto"
                         >
                             <img
-                                src="https://whitelabelfox.com/assets/images/medicine-delivery-app-development/fox-medicine-about-us-image.webp"
+                                src={aboutimg}
                                 alt="Medicine Delivery Solution"
                                 className="w-full h-auto rounded-3xl shadow-2xl"
                             />
@@ -23,7 +23,7 @@ const About = () => {
                         </motion.div>
                     </div>
 
-                    <div className="lg:w-1/2">
+                    <div className="lg:w-1/2 order-1 lg:order-2">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}

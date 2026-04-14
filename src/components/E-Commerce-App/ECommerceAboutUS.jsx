@@ -1,26 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
-import aboutImg from "../../assets/E-Commerce-App/aboutus.png";
+import aboutImg from "../../assets/E-Commerce-App/aboutus1.jpg";
 
 const AboutUs = () => {
   return (
     <section className="w-full bg-white relative overflow-hidden">
-      
+
       {/* Container SAME as hero */}
-      <div className="container mx-auto px-6 md:px-16 py-20 flex flex-col md:flex-row items-center justify-between gap-12">
-        
+      <div className="container mx-auto px-6 md:px-16 py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+
         {/* LEFT IMAGE (same style as hero image positioning) */}
         <motion.div
           initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="md:w-1/2 flex justify-center md:justify-start"
+          className="md:w-1/2 flex justify-center md:justify-center"
         >
           <img
             src={aboutImg}
             alt="About Us"
-            className="w-[95%] md:w-[100%] max-w-[500px] h-auto object-contain"
+            className="w-[95%] md:w-[100%] max-w-[500px] h-auto rounded-3xl shadow-2xl object-contain"
           />
         </motion.div>
 
@@ -32,7 +32,7 @@ const AboutUs = () => {
           viewport={{ once: true }}
           className="md:w-1/2 space-y-6 text-center md:text-left"
         >
-          
+
           {/* Badge - Updated Typography */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-100 border border-purple-200">
             <span className="h-2 w-2 bg-purple-500 rounded-full"></span>
@@ -52,8 +52,8 @@ const AboutUs = () => {
 
           {/* Description - Updated Typography: 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
           <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-lg mx-auto md:mx-0">
-            Our platform empowers businesses to streamline operations, boost sales, 
-            and deliver exceptional customer experiences. With powerful tools and 
+            Our platform empowers businesses to streamline operations, boost sales,
+            and deliver exceptional customer experiences. With powerful tools and
             seamless integrations, we help you grow faster and smarter.
           </p>
 

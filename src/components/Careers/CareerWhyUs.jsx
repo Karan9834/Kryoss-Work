@@ -1,7 +1,7 @@
 import react from 'react';
 
 import { Users, Gamepad2, MessageCircle, Cpu, Smile, Cake, BookOpen, Gem, Sparkles } from "lucide-react";
-
+import whyusimg from "../../assets/company-career-img/careerwhyus.jpg";
 const CareerWhyUs = () => {
 
     const features = [
@@ -78,7 +78,7 @@ const CareerWhyUs = () => {
 
                     {/* Why Us Image */}
                     <img
-                        src="/images/company/companyabout/commitment.png"
+                        src={whyusimg}
                         alt="Work Culture at Kryoss Work"
                         className="mt-8 w-full max-w-[600px] max-h-[480px] rounded-2xl object-cover shadow-lg"
                     />

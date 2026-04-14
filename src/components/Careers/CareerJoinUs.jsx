@@ -127,10 +127,26 @@ const CareerJoinUs = () => {
                                     </p>
                                 </div>
                             </a>
-
-                            {/* LINKEDIN */}
+                            {/* PHONE */}
 
                             <a
+                                href="tel:+916352587360"
+                                className="flex items-center gap-4 bg-white p-5 rounded-2xl hover:shadow transition"
+                            >
+                                <div className="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-xl text-orange-500">
+                                    <Phone size={22} />
+                                </div>
+
+                                <div>
+                                    <h4 className="font-semibold">Phone</h4>
+                                    <p className="text-gray-600 text-sm">
+                                        +91 6352 587 360
+                                    </p>
+                                </div>
+                            </a>
+                            {/* LINKEDIN */}
+
+                            {/* <a
                                 href="https://linkedin.com"
                                 target="_blank"
                                 className="flex items-center gap-4 bg-white p-5 rounded-2xl hover:shadow transition"
@@ -145,27 +161,11 @@ const CareerJoinUs = () => {
                                         HR Manager
                                     </p>
                                 </div>
-                            </a>
+                            </a> */}
 
                         </div>
 
-                        {/* PHONE */}
 
-                        <a
-                            href="tel:+916352587360"
-                            className="flex items-center gap-4 bg-white p-5 rounded-2xl hover:shadow transition mt-6"
-                        >
-                            <div className="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-xl text-orange-500">
-                                <Phone size={22} />
-                            </div>
-
-                            <div>
-                                <h4 className="font-semibold">Phone</h4>
-                                <p className="text-gray-600 text-sm">
-                                    +91 6352 587 360
-                                </p>
-                            </div>
-                        </a>
 
                     </div>
 

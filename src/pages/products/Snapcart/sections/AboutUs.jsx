@@ -1,9 +1,9 @@
 import React from "react";
-
+import aboutimg from "../../../../assets/snapcart/snapcartabout.png";
 const AboutUs = () => {
   return (
     <section className="relative w-full py-24 bg-white overflow-hidden">
-      
+
       {/* 🔥 Top Wave */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
         <svg
@@ -33,19 +33,19 @@ const AboutUs = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        
+
         {/* LEFT IMAGE */}
-        <div className="relative flex justify-center">
-          
+        <div className="relative flex justify-center order-2 lg:order-1">
+
           {/* Glow */}
           <div className="absolute inset-0 bg-gradient-to-r from-orange-300 to-yellow-300 blur-3xl opacity-20 rounded-xl"></div>
 
           {/* Image */}
           <div className="relative bg-white p-3 rounded-xl shadow-xl border border-gray-100">
             <img
-              src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df"
+              src={aboutimg}
               alt="About us ecommerce"
-              className="rounded-lg w-[400px] object-cover"
+              className="rounded-lg w-[650px] object-cover"
             />
           </div>
 
@@ -56,8 +56,8 @@ const AboutUs = () => {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div>
-          
+        <div className="order-1 lg:order-2">
+
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-1.5 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-5">
             About Us
@@ -73,9 +73,9 @@ const AboutUs = () => {
 
           {/* Text */}
           <p className="mt-5 text-gray-600 text-base leading-relaxed max-w-lg">
-            We build powerful, scalable, and user-friendly e-commerce solutions 
-            that help businesses grow faster. From startups to enterprises, our 
-            platforms are designed to deliver seamless shopping experiences and 
+            We build powerful, scalable, and user-friendly e-commerce solutions
+            that help businesses grow faster. From startups to enterprises, our
+            platforms are designed to deliver seamless shopping experiences and
             maximize conversions.
           </p>
 

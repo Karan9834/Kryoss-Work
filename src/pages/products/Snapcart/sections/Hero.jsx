@@ -1,22 +1,22 @@
 import React from "react";
 import { ArrowRight, Play, MessageCircle } from "lucide-react";
-
+import heroimg from "../../../../assets/snapcart/snapcarthero.png";
 const Hero = () => {
   const demoLink =
     "https://preview.codecanyon.net/item/snapcart-mobilefocused-laravel-ecommerce-system/full_screen_preview/62455250";
 
   return (
     <section className="relative w-full py-20 md:py-28 overflow-hidden bg-gradient-to-br from-yellow-50 via-orange-50 to-amber-100">
-      
+
       {/* 🔥 Soft Glow */}
       <div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-yellow-300 rounded-full blur-[120px] opacity-30"></div>
       <div className="absolute -bottom-24 -right-24 w-[300px] h-[300px] bg-orange-300 rounded-full blur-[120px] opacity-30"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-        
+
         {/* LEFT */}
         <div>
-          
+
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/80 backdrop-blur border border-orange-200 rounded-full text-sm text-orange-700 mb-5 shadow-sm">
             🚀 Modern E-Commerce Platform
@@ -67,16 +67,16 @@ const Hero = () => {
 
         {/* RIGHT IMAGE */}
         <div className="relative flex justify-center">
-          
+
           {/* Glow Behind */}
           <div className="absolute inset-0 bg-gradient-to-r from-orange-300 to-yellow-300 blur-3xl opacity-20 rounded-xl"></div>
 
           {/* Image */}
           <div className="relative bg-white/70 backdrop-blur-xl p-3 rounded-xl shadow-xl border border-white/60">
             <img
-              src="https://images.unsplash.com/photo-1607082349566-187342175e2f"
+              src={heroimg}
               alt="E-commerce dashboard"
-              className="rounded-lg w-[380px] object-cover"
+              className="rounded-lg w-[500px] object-cover"
             />
           </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle2, Lightbulb, Target, Rocket } from 'lucide-react';
-import aboutImg from '../../assets/grocerylanding-img/grocerylandingabout.jpg';
+import aboutImg from '../../assets/grocerylanding-img/grocerylandingabout2.jpg';
 
 const GroceryAbout = () => {
     const highlights = [
@@ -9,7 +9,9 @@ const GroceryAbout = () => {
         "AI-driven demand forecasting",
         "Multi-vendor & Dark Store support",
         "Seamless Store Onboarding",
-        "Advanced Analytics Dashboard"
+        "Advanced Analytics Dashboard",
+        "Customizable Solutions",
+        "24/7 Service"
     ];
 
     const stats = [
@@ -24,11 +26,11 @@ const GroceryAbout = () => {
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
 
                     {/* Left: Single Image Layout */}
-                    <div className="relative group animate-fadeInLeft">
+                    <div className="relative group animate-fadeInLeft order-2 lg:order-1">
                         <div className="absolute -inset-10 bg-emerald-50 rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition duration-1000"></div>
 
-                        <div className="relative z-10 w-full aspect-square bg-gradient-to-br from-emerald-50 to-white rounded-[60px] border-8 border-white shadow-2xl flex items-center justify-center overflow-hidden transition-transform duration-700 group-hover:scale-[1.02]">
-                            <img src={aboutImg} alt="Grocery About" className="w-full h-full object-cover" />
+                        <div className="relative z-10 w-full  bg-gradient-to-br from-emerald-50 to-white rounded-[60px] border-8 border-white shadow-2xl flex items-center justify-center overflow-hidden transition-transform duration-700 group-hover:scale-[1.02]">
+                            <img src={aboutImg} alt="Grocery About" className="w-full h-auto object-contain" />
                         </div>
 
                         {/* Interactive Stats Overlay */}
@@ -47,17 +49,17 @@ const GroceryAbout = () => {
                     </div>
 
                     {/* Right: Content - Updated Typography */}
-                    <div className="space-y-8 animate-fadeInRight">
+                    <div className="space-y-8 animate-fadeInRight order-1 lg:order-2">
                         <div className="space-y-4">
                             {/* Badge - Updated: text-[14px] font-bold tracking-[0.3em] uppercase */}
                             <span className="text-orange-600 text-[14px] font-bold tracking-[0.3em] uppercase block">Our Solutions</span>
-                            
+
                             {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
                             <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                                 Empowering Your <br />
                                 <span className="text-emerald-600">Grocery Empire</span>
                             </h2>
-                            
+
                             {/* Description Text - 14px mobile, 16px desktop, weight 400, line-height 1.6 */}
                             <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-[#4A4B5E]">
                                 We don't just build apps; we create seamless shopping experiences. Our grocery delivery solutions are designed to handle peak volumes while ensuring every orange and every loaf of bread reaches your customers in perfect condition.

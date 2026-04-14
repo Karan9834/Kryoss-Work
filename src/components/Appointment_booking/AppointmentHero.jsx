@@ -1,19 +1,19 @@
 import React from "react";
-import hero from "../../assets/Appointment/appointmenthero.webp";
+import hero from "@/assets/Appointment/hero1.jpg";
 const AppointmentHero = () => {
   return (
-    <section className="text-white bg-gradient-to-r from-[#0b0f3b] via-[#121a5a] to-[#1e2a78] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-end gap-10 pt-16">
+    <section className="relative text-white min-h-[90vh] flex items-center bg-gradient-to-r from-[#0b0f3b] via-[#121a5a] to-[#1e2a78] overflow-hidden pt-20 pb-10 lg:py-0">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-12 w-full z-10">
         {/* LEFT CONTENT */}
-        <div className="pb-10">
+        <div className="space-y-6">
           {/* App label */}
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-3">
             <div
               className="w-12 h-12 flex items-center justify-center 
                   rounded-xl font-bold text-lg text-white
                   bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600
                   shadow-[0_0_15px_rgba(56,189,248,0.8)]
-                  border border-white/20 backdrop-blur-md"
+                  border border-white/20 backdrop-blur-md shrink-0"
             >
               V
             </div>
@@ -26,36 +26,41 @@ const AppointmentHero = () => {
           {/* Title */}
           <h1 className="text-3xl md:text-4xl font-semibold leading-snug mb-5">
             Uber for Doctors App –{" "}
-            <span className="text-cyan-400">
-              Simplify Online Doctor Appointments
+            <span className="text-cyan-400 block mt-2">
+              Simplify Online Appointments
             </span>
           </h1>
 
           {/* Description */}
-          <p className="text-gray-300 mb-8 max-w-xl">
+          <p className="text-gray-300 text-lg leading-relaxed max-w-xl">
             Improve healthcare accessibility with an advanced doctor appointment
             platform. Patients can easily book consultations while doctors
-            manage schedules and appointments seamlessly through a powerful
-            mobile solution available on Android and iOS.
+            manage schedules seamlessly through a powerful mobile solution available on Android and iOS.
           </p>
 
           {/* CTA */}
-          <a
-            href="https://preview.codecanyon.net/item/docrib-doctor-appointment-system/full_screen_preview/31305957"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-to-r from-cyan-400 to-blue-500 px-7 py-3 rounded-full font-medium hover:scale-105 transition inline-block w-fit"
-          >
-            Live Demo →
-          </a>
+          <div className="pt-4">
+            <a
+              href="https://preview.codecanyon.net/item/docrib-doctor-appointment-system/full_screen_preview/31305957"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-cyan-400 to-blue-500 text-white px-8 py-3.5 rounded-full font-semibold hover:scale-105 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all inline-flex items-center gap-2"
+            >
+              Live Demo
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="flex justify-center">
+        <div className="flex justify-center relative mt-10 md:mt-0">
+          {/* Decorative glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-cyan-500/20 rounded-full blur-[80px] -z-10"></div>
+
           <img
             src={hero}
             alt="Doctor appointment app"
-            className="max-h-[420px] object-contain"
+            className="w-full max-w-md lg:max-w-lg rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 object-cover"
           />
         </div>
       </div>

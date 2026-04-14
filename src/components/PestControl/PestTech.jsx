@@ -13,11 +13,11 @@ const techStack = [
   { name: "PHP", icon: "https://cdn.simpleicons.org/php/777BB4" },
   { name: "Firebase", icon: "https://cdn.simpleicons.org/firebase/FFCA28" },
   { name: "100ms", icon: "https://cdn.simpleicons.org/webrtc/FF0000" },
-  { name: "AWS", icon: "https://cdn.simpleicons.org/amazonaws/232F3E" },
+  { name: "AWS", icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
   { name: "Java", icon: "https://cdn.simpleicons.org/openjdk/ED8B00" },
   { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql/4479A1" },
   { name: "Bootstrap", icon: "https://cdn.simpleicons.org/bootstrap/7952B3" },
-  { name: "CSS3", icon: "https://cdn.simpleicons.org/css3/1572B6" },
+  { name: "CSS3", icon: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" },
   { name: "HTML5", icon: "https://cdn.simpleicons.org/html5/E34F26" }
 ];
 
