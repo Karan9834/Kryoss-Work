@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { navigationData } from "./navbar.data";
 import NavItem from "./NavItem";
 import GojekMegaMenu from "./GojekMegaMenu";
@@ -17,6 +17,7 @@ const Navbar = () => {
   const [mobileExpanded, setMobileExpanded] = useState("");
   const [activeMenu, setActiveMenu] = useState(null);
   const menuTimeoutRef = useRef(null);
+  const location = useLocation();
 
   const handleMenuEnter = (menuName) => {
     if (menuTimeoutRef.current) clearTimeout(menuTimeoutRef.current);
@@ -74,6 +75,7 @@ const Navbar = () => {
 
             <NavItem
               label="Products"
+              href="/products"
               isOpen={activeMenu === "Products"}
               onMouseEnter={() => handleMenuEnter("Products")}
               onClick={() => setActiveMenu(null)}
@@ -81,19 +83,10 @@ const Navbar = () => {
               <ProductsMegaMenu />
             </NavItem>
 
-{/* 
-            <NavItem
-              label="Services"
-              isOpen={activeMenu === "Services"}
-              onMouseEnter={() => handleMenuEnter("Services")}
-              onClick={() => setActiveMenu(null)}
-            >
-              <ServicesMegaMenu />
-            </NavItem> 
-            */}
-
             <NavItem
               label="Solutions"
+              href="/solutions"
+              activePaths={['/industries']}
               isOpen={activeMenu === "Solutions"}
               onMouseEnter={() => handleMenuEnter("Solutions")}
               onClick={() => setActiveMenu(null)}
@@ -103,6 +96,7 @@ const Navbar = () => {
 
             <NavItem
               label="Works"
+              href="/works"
               isOpen={activeMenu === "Works"}
               onMouseEnter={() => handleMenuEnter("Works")}
               onClick={() => setActiveMenu(null)}
@@ -112,6 +106,7 @@ const Navbar = () => {
 
             <NavItem
               label="Company"
+              href="/company"
               isOpen={activeMenu === "Company"}
               onMouseEnter={() => handleMenuEnter("Company")}
               onClick={() => setActiveMenu(null)}
@@ -121,7 +116,9 @@ const Navbar = () => {
 
             <Link
               to="/blog"
-              className="px-3 py-2 text-[15.5px] font-semibold text-gray-800 hover:text-primary transition-colors"
+              className={`px-3 py-2 text-[15.5px] font-semibold transition-colors ${
+                location.pathname.startsWith('/blog') ? 'text-primary' : 'text-gray-800 hover:text-primary'
+              }`}
             >
               Blog
             </Link>
@@ -158,10 +155,12 @@ const Navbar = () => {
             <div>
               <button 
                 onClick={() => setMobileExpanded(mobileExpanded === 'products' ? '' : 'products')}
-                className="w-full flex justify-between items-center text-lg font-bold text-gray-800 hover:text-primary py-2"
+                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${
+                  location.pathname.startsWith('/products') ? 'text-primary' : 'text-gray-800 hover:text-primary'
+                }`}
               >
                 <span>Products</span>
-                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'products' ? 'rotate-180 text-primary' : ''}`} size={20} />
+                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'products' ? 'rotate-180 text-primary' : ''} ${location.pathname.startsWith('/products') ? 'text-primary' : ''}`} size={20} />
               </button>
               {mobileExpanded === 'products' && (
                 <div className="mt-2">
@@ -174,10 +173,12 @@ const Navbar = () => {
             <div>
               <button 
                 onClick={() => setMobileExpanded(mobileExpanded === 'solutions' ? '' : 'solutions')}
-                className="w-full flex justify-between items-center text-lg font-bold text-gray-800 hover:text-primary py-2"
+                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${
+                  (location.pathname.startsWith('/solutions') || location.pathname.startsWith('/industries')) ? 'text-primary' : 'text-gray-800 hover:text-primary'
+                }`}
               >
                 <span>Solutions</span>
-                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'solutions' ? 'rotate-180 text-primary' : ''}`} size={20} />
+                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'solutions' ? 'rotate-180 text-primary' : ''} ${(location.pathname.startsWith('/solutions') || location.pathname.startsWith('/industries')) ? 'text-primary' : ''}`} size={20} />
               </button>
               {mobileExpanded === 'solutions' && (
                 <div className="mt-2">
@@ -190,10 +191,12 @@ const Navbar = () => {
             <div>
               <button 
                 onClick={() => setMobileExpanded(mobileExpanded === 'works' ? '' : 'works')}
-                className="w-full flex justify-between items-center text-lg font-bold text-gray-800 hover:text-primary py-2"
+                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${
+                  location.pathname.startsWith('/works') ? 'text-primary' : 'text-gray-800 hover:text-primary'
+                }`}
               >
                 <span>Works</span>
-                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'works' ? 'rotate-180 text-primary' : ''}`} size={20} />
+                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'works' ? 'rotate-180 text-primary' : ''} ${location.pathname.startsWith('/works') ? 'text-primary' : ''}`} size={20} />
               </button>
               {mobileExpanded === 'works' && (
                 <div className="mt-2">
@@ -206,30 +209,39 @@ const Navbar = () => {
             <div>
               <button 
                 onClick={() => setMobileExpanded(mobileExpanded === 'company' ? '' : 'company')}
-                className="w-full flex justify-between items-center text-lg font-bold text-gray-800 hover:text-primary py-2"
+                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${
+                  location.pathname.startsWith('/company') ? 'text-primary' : 'text-gray-800 hover:text-primary'
+                }`}
               >
                 <span>Company</span>
-                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'company' ? 'rotate-180 text-primary' : ''}`} size={20} />
+                <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'company' ? 'rotate-180 text-primary' : ''} ${location.pathname.startsWith('/company') ? 'text-primary' : ''}`} size={20} />
               </button>
               {mobileExpanded === 'company' && (
                 <div className="pl-4 mt-2 space-y-2 border-l-2 border-orange-100">
-                  {navigationData.company.items.map((item, idx) => (
-                    <Link
-                      key={idx}
-                      to={item.href}
-                      className="block text-[15px] font-semibold text-gray-700 hover:text-primary py-1"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                  {navigationData.company.items.map((item, idx) => {
+                    const isItemActive = location.pathname === item.href;
+                    return (
+                      <Link
+                        key={idx}
+                        to={item.href}
+                        className={`block text-[15px] font-semibold py-1 transition-colors ${
+                          isItemActive ? 'text-primary' : 'text-gray-700 hover:text-primary'
+                        }`}
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.label}
+                      </Link>
+                    );
+                  })}
                 </div>
               )}
             </div>
 
             <Link
               to="/blog"
-              className="text-lg font-bold text-gray-800 hover:text-primary py-2"
+              className={`text-lg font-bold py-2 transition-colors ${
+                location.pathname.startsWith('/blog') ? 'text-primary' : 'text-gray-800 hover:text-primary'
+              }`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
