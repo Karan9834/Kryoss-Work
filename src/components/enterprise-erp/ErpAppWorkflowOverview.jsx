@@ -38,8 +38,8 @@ const ErpAppWorkflowOverview = () => {
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 
-                {/* Heading */}
-                <h2 className="text-2xl lg:text-3xl font-semibold mb-14 text-center">
+                {/* Heading - Updated Typography */}
+                <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-14 text-center">
                     ERP App <span className="text-blue-700">Workflow</span> Overview
                 </h2>
 
@@ -53,12 +53,20 @@ const ErpAppWorkflowOverview = () => {
                                 <item.icon size={32} className="text-blue-600 group-hover:text-white transition" />
                             </div>
                             
-                            <div className="bg-white border border-gray-100 rounded-full px-4 py-1 text-xs font-semibold text-blue-700 mb-4 shadow-sm group-hover:border-blue-600 transition">
+                            {/* Step Badge - Updated Typography */}
+                            <div className="bg-white border border-gray-100 rounded-full px-4 py-1 text-[12px] font-medium tracking-[0.05em] uppercase text-blue-700 mb-4 shadow-sm group-hover:border-blue-600 transition">
                                 Step {item.num}
                             </div>
 
-                            <h3 className="text-xl font-semibold mb-3 text-gray-900">{item.title}</h3>
-                            <p className="text-gray-500 text-sm leading-relaxed px-4">{item.desc}</p>
+                            {/* Title - Updated Typography */}
+                            <h3 className="text-[18px] md:text-[20px] font-semibold mb-3 text-gray-900">
+                                {item.title}
+                            </h3>
+                            
+                            {/* Description - Updated Typography */}
+                            <p className="text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6] px-4">
+                                {item.desc}
+                            </p>
                         </div>
                     ))}
                 </div>

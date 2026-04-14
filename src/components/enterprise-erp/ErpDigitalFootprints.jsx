@@ -20,23 +20,23 @@ const DigitalFootprints = () => {
                     {/* RIGHT : CONTENT */}
                     <div className="flex flex-col justify-center px-6 lg:px-16 pt-6 lg:pt-10 pb-20 lg:py-20 text-white">
 
-                        {/* Chip */}
+                        {/* Chip/Badge - Updated Typography */}
                         <div className="mb-6">
-                            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/40 text-sm w-fit">
+                            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/40 text-[12px] font-medium tracking-[0.05em] uppercase w-fit">
                                 <span className="w-2 h-2 bg-white rounded-full" />
                                 Get Your ERP Solution
                             </span>
                         </div>
 
-                        {/* Heading */}
-                        <h2 className="text-2xl lg:text-3xl font-bold leading-tight mb-6">
+                        {/* Heading - Updated Typography */}
+                        <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-6">
                             Launch Your{" "}
-                            <span className="text-blue-900"> ERP System</span>{" "}
+                            <span className="text-blue-900">ERP System</span>{" "}
                             in just 5 days
                         </h2>
 
-                        {/* Text Content */}
-                        <div className="space-y-6 text-white/80 text-[16px] leading-[1.6]">
+                        {/* Text Content - Updated Typography */}
+                        <div className="space-y-6 text-white/80 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                             <p>
                                 With our ERP development solution, get your system up and running in just 5 working days. Skip complex and time-consuming development processes and launch a fully functional business management platform quickly.
                             </p>

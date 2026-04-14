@@ -88,20 +88,21 @@ const ErpFeatures = () => {
         <section className="py-24 bg-blue-50">
             <div className="max-w-7xl mx-auto px-6">
 
-                {/* Capsule */}
+                {/* Capsule/Badge - Updated Typography */}
                 <div className="flex justify-center mb-4">
-                    <span className="border border-blue-600 rounded-full px-4 py-1 text-sm flex items-center gap-2 text-blue-700 bg-white">
+                    <span className="border border-blue-600 rounded-full px-4 py-1 text-[12px] font-medium tracking-[0.05em] uppercase flex items-center gap-2 text-blue-700 bg-white">
                         <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
                         Features
                     </span>
                 </div>
 
-                {/* Heading */}
-                <h2 className="text-center text-2xl lg:text-3xl font-semibold mb-4 text-[#1a1a1a]">
+                {/* Heading - Updated Typography */}
+                <h2 className="text-center text-[30px] md:text-[36px] font-bold leading-[1.2] mb-4 text-[#1a1a1a]">
                     Key Features of Our <span className="text-blue-700">ERP Solution</span>
                 </h2>
 
-                <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
+                {/* Description - Updated Typography */}
+                <p className="text-center text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-3xl mx-auto mb-10">
                     Our ERP solution offers a range of powerful features designed to streamline
                     service booking, management, and delivery.
                 </p>
@@ -112,7 +113,7 @@ const ErpFeatures = () => {
 
                         <button
                             onClick={() => setActiveTab("admin")}
-                            className={`px-6 py-2 rounded-full flex items-center gap-2 transition ${activeTab === "admin"
+                            className={`px-6 py-2 rounded-full flex items-center gap-2 transition text-[14px] md:text-[16px] font-medium ${activeTab === "admin"
                                 ? "bg-white text-blue-700"
                                 : "text-white"
                                 }`}
@@ -122,7 +123,7 @@ const ErpFeatures = () => {
 
                         <button
                             onClick={() => setActiveTab("modules")}
-                            className={`px-6 py-2 rounded-full transition ${activeTab === "modules"
+                            className={`px-6 py-2 rounded-full transition text-[14px] md:text-[16px] font-medium ${activeTab === "modules"
                                 ? "bg-white text-blue-700"
                                 : "text-white"
                                 }`}
@@ -154,11 +155,13 @@ const ErpFeatures = () => {
                                     </div>
 
                                     <div>
-                                        <h3 className="font-semibold text-lg mb-2">
+                                        {/* Feature Title - Updated Typography */}
+                                        <h3 className="font-semibold text-[16px] md:text-[18px] mb-2">
                                             {item.title}
                                         </h3>
 
-                                        <p className="text-gray-600 text-sm leading-relaxed">
+                                        {/* Feature Description - Updated Typography */}
+                                        <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                                             {item.desc}
                                         </p>
                                     </div>
