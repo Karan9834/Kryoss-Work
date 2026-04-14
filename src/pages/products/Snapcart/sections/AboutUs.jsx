@@ -1,5 +1,5 @@
 import React from "react";
-import aboutimg from "../../../../assets/snapcart/snapcartabout.png";
+import aboutimg from "../../../../assets/SnapCart/snapcartabout.png";
 const AboutUs = () => {
   return (
     <section className="relative w-full py-24 bg-white overflow-hidden">
