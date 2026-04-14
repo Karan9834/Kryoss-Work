@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, Play, MessageCircle } from "lucide-react";
-import heroimg from "../../../../assets/snapcart/snapcarthero.png";
+import heroimg from "../../../../assets/SnapCart/snapcarthero.png";
 const Hero = () => {
   const demoLink =
     "https://preview.codecanyon.net/item/snapcart-mobilefocused-laravel-ecommerce-system/full_screen_preview/62455250";
