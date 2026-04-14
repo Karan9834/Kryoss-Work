@@ -23,7 +23,8 @@ const ErpBenifits = () => {
 
                 {/* Content */}
                 <div className="order-1 lg:order-2 text-white">
-                    <h2 className="text-2xl lg:text-3xl font-semibold leading-tight mb-10">
+                    {/* Heading - Updated Typography */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-10">
                         Benefits of <span className="text-blue-400">Custom ERP Development</span>
                     </h2>
 
@@ -34,8 +35,14 @@ const ErpBenifits = () => {
                                     ✓
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-                                    <p className="text-blue-100/70 text-sm leading-relaxed">{item.desc}</p>
+                                    {/* Benefit Title - Updated Typography */}
+                                    <h4 className="text-[18px] md:text-[20px] font-semibold mb-2">
+                                        {item.title}
+                                    </h4>
+                                    {/* Benefit Description - Updated Typography */}
+                                    <p className="text-blue-100/70 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+                                        {item.desc}
+                                    </p>
                                 </div>
                             </div>
                         ))}

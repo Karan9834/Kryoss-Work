@@ -39,13 +39,18 @@ const ErpBusinessWeSupport = () => {
             <div className="max-w-7xl mx-auto px-6">
                 
                 <div className="text-center mb-16 px-4">
-                    <span className="inline-block px-4 py-1 rounded-full border border-blue-200 bg-blue-50 text-sm font-medium text-blue-700 mb-6 uppercase tracking-wider">
+                    {/* Badge - Updated Typography */}
+                    <span className="inline-block px-4 py-1 rounded-full border border-blue-200 bg-blue-50 text-[12px] font-medium tracking-[0.05em] uppercase text-blue-700 mb-6">
                         Omni-Vertical Support
                     </span>
-                    <h2 className="text-2xl lg:text-3xl font-semibold text-[#1a1a1a] mb-6">
+                    
+                    {/* Heading - Updated Typography */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1a1a1a] mb-6">
                         Industries We <span className="text-blue-700">Transform</span>
                     </h2>
-                    <p className="text-gray-500 max-w-3xl mx-auto text-lg leading-relaxed font-medium">
+                    
+                    {/* Description - Updated Typography */}
+                    <p className="text-gray-500 max-w-3xl mx-auto text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         Our ERP solutions are engineered to be industry-agnostic at the core, while remaining highly customizable for your specific vertical needs.
                     </p>
                 </div>
@@ -62,8 +67,14 @@ const ErpBusinessWeSupport = () => {
                                 />
                              </div>
                              <div className="p-8 flex-grow">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-700 transition">{item.title}</h3>
-                                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                                {/* Industry Title - Updated Typography */}
+                                <h3 className="text-[18px] md:text-[20px] font-semibold text-gray-900 mb-3 group-hover:text-blue-700 transition">
+                                    {item.title}
+                                </h3>
+                                {/* Industry Description - Updated Typography */}
+                                <p className="text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+                                    {item.desc}
+                                </p>
                              </div>
                         </div>
                     ))}

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import React from 'react';
 import { navigationData } from './navbar.data';
@@ -125,11 +125,16 @@ const COMPANY_CSS = `
     text-decoration: none;
     transition: background 0.13s, color 0.13s, transform 0.13s, box-shadow 0.13s;
   }
-  .cm-link:hover {
+  .cm-link:hover,
+  .cm-link.active {
     background: rgba(249,115,22,0.09);
     color: #ea580c;
     transform: translateX(3px);
     box-shadow: inset 3px 0 0 #f97316;
+  }
+  .cm-link.active {
+    background: rgba(249,115,22,0.14);
+    font-weight: 700;
   }
   .cm-link-icon {
     font-size: 16px;
@@ -138,11 +143,13 @@ const COMPANY_CSS = `
     text-align: center;
     transition: transform 0.18s cubic-bezier(0.34,1.56,0.64,1);
   }
-  .cm-link:hover .cm-link-icon { transform: scale(1.22) rotate(-4deg); }
+  .cm-link:hover .cm-link-icon,
+  .cm-link.active .cm-link-icon { transform: scale(1.22) rotate(-4deg); }
 `;
 
 const CompanyMenu = () => {
   const data = navigationData.company;
+  const location = useLocation();
   return (
     <>
       <style>{COMPANY_CSS}</style>
@@ -159,12 +166,15 @@ const CompanyMenu = () => {
         </div>
 
         <div className="cm-links">
-          {data.items.map((item, idx) => (
-            <Link key={idx} to={item.href} className="cm-link">
-              <span className="cm-link-icon">{ITEM_ICONS[item.label] || '→'}</span>
-              {item.label}
-            </Link>
-          ))}
+          {data.items.map((item, idx) => {
+            const isActive = location.pathname === item.href;
+            return (
+              <Link key={idx} to={item.href} className={`cm-link ${isActive ? 'active' : ''}`}>
+                <span className="cm-link-icon">{ITEM_ICONS[item.label] || '→'}</span>
+                {item.label}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </>

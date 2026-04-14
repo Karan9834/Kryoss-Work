@@ -24,21 +24,24 @@ const ErpCardSection = () => {
       <section id="explore-erp" className="py-24 bg-white relative">
          <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16 space-y-4">
-               {/* "Our Products" Header */}
+               {/* "Our Products" Header - Badge Typography */}
                <div className="flex items-center justify-center gap-2 mb-4">
                   <div className="w-8 h-px bg-blue-200"></div>
-                  <span className="text-blue-600 font-bold text-sm tracking-wider uppercase">
+                  <span className="text-blue-600 font-medium text-[12px] tracking-[0.05em] uppercase">
                      Our Products
                   </span>
                   <div className="w-8 h-px bg-blue-200"></div>
                </div>
 
-               <h2 className="text-3xl lg:text-4xl font-semibold leading-tight tracking-tight">
+               {/* Heading - Updated Typography */}
+               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] tracking-[-0.02em]">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-blue-500 uppercase">
                      Specialized ERP Modules
                   </span>
                </h2>
-               <p className="text-[#4A4B5E] text-lg max-w-2xl mx-auto mt-6 font-medium">
+               
+               {/* Description - Updated Typography */}
+               <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-[#4A4B5E] max-w-2xl mx-auto mt-6">
                   Choose the specialized platform that fits your institution's type and scale perfectly.
                </p>
             </div>
@@ -58,8 +61,8 @@ const ErpCardSection = () => {
                         />
                      </Link>
 
-                     {/* TITLE AND DESCRIPTION */}
-                     <p className="mt-4 text-sm md:text-base">
+                     {/* TITLE AND DESCRIPTION - Updated Typography */}
+                     <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                         <Link
                            to={card.path}
                            className="text-blue-600 font-semibold hover:underline"

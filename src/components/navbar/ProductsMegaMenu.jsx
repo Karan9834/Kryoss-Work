@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import React, { useState } from 'react';
 
@@ -96,71 +96,75 @@ const megaMenuData = [
 /* ─────────────────────────────────────────────
    MegaMenuColumn
 ───────────────────────────────────────────── */
-const MegaMenuColumn = ({ col }) => (
-  <div className="pmm-col">
-    {/* SaaS-style header: icon + title + gradient accent underline */}
-    <div className="pmm-col-heading-wrap">
-      {col.href ? (
-        <Link to={col.href} className="pmm-col-heading-row" style={{ textDecoration: 'none' }}>
-          <span className="pmm-cat-icon">{col.icon}</span>
-          <h3 className="pmm-col-title" style={{ transition: 'color 0.2s' }}>{col.title}</h3>
-        </Link>
-      ) : (
-        <div className="pmm-col-heading-row">
-          <span className="pmm-cat-icon">{col.icon}</span>
-          <h3 className="pmm-col-title">{col.title}</h3>
-        </div>
-      )}
-      <div className="pmm-col-accent-bar" />
-    </div>
-
-    <ul className="pmm-link-list">
-      {col.items.map((item, i) => (
-        <li key={i}>
-          <Link to={item.href} className="pmm-link">
-            <span className="pmm-item-icon">{item.icon}</span>
-            <span className="pmm-item-label">{item.label}</span>
+const MegaMenuColumn = ({ col }) => {
+  const location = useLocation();
+  return (
+    <div className="pmm-col">
+      {/* SaaS-style header: icon + title + gradient accent underline */}
+      <div className="pmm-col-heading-wrap">
+        {col.href ? (
+          <Link to={col.href} className={`pmm-col-heading-row ${location.pathname === col.href ? 'active' : ''}`} style={{ textDecoration: 'none' }}>
+            <span className="pmm-cat-icon">{col.icon}</span>
+            <h3 className="pmm-col-title" style={{ transition: 'color 0.2s' }}>{col.title}</h3>
           </Link>
-        </li>
-      ))}
-    </ul>
-
-    {col.subGroups?.map((sg, si) => (
-      <div key={si} className="pmm-subgroup">
-        <div className="pmm-col-heading-wrap">
-          {sg.href ? (
-            <Link to={sg.href} className="pmm-col-heading-row" style={{ textDecoration: 'none' }}>
-              <span className="pmm-cat-icon">{sg.icon}</span>
-              <h3 className="pmm-col-title" style={{ transition: 'color 0.2s' }}>{sg.title}</h3>
-            </Link>
-          ) : (
-            <div className="pmm-col-heading-row">
-              <span className="pmm-cat-icon">{sg.icon}</span>
-              <h3 className="pmm-col-title">{sg.title}</h3>
-            </div>
-          )}
-          <div className="pmm-col-accent-bar" />
-        </div>
-        <ul className="pmm-link-list">
-          {sg.items.map((item, i) => (
-            <li key={i}>
-              <Link to={item.href} className="pmm-link">
-                <span className="pmm-item-icon">{item.icon}</span>
-                <span className="pmm-item-label">{item.label}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        ) : (
+          <div className="pmm-col-heading-row">
+            <span className="pmm-cat-icon">{col.icon}</span>
+            <h3 className="pmm-col-title">{col.title}</h3>
+          </div>
+        )}
+        <div className="pmm-col-accent-bar" />
       </div>
-    ))}
-  </div>
-);
+
+      <ul className="pmm-link-list">
+        {col.items.map((item, i) => (
+          <li key={i}>
+            <Link to={item.href} className={`pmm-link ${location.pathname === item.href ? 'active' : ''}`}>
+              <span className="pmm-item-icon">{item.icon}</span>
+              <span className="pmm-item-label">{item.label}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      {col.subGroups?.map((sg, si) => (
+        <div key={si} className="pmm-subgroup">
+          <div className="pmm-col-heading-wrap">
+            {sg.href ? (
+              <Link to={sg.href} className={`pmm-col-heading-row ${location.pathname === sg.href ? 'active' : ''}`} style={{ textDecoration: 'none' }}>
+                <span className="pmm-cat-icon">{sg.icon}</span>
+                <h3 className="pmm-col-title" style={{ transition: 'color 0.2s' }}>{sg.title}</h3>
+              </Link>
+            ) : (
+              <div className="pmm-col-heading-row">
+                <span className="pmm-cat-icon">{sg.icon}</span>
+                <h3 className="pmm-col-title">{sg.title}</h3>
+              </div>
+            )}
+            <div className="pmm-col-accent-bar" />
+          </div>
+          <ul className="pmm-link-list">
+            {sg.items.map((item, i) => (
+              <li key={i}>
+                <Link to={item.href} className={`pmm-link ${location.pathname === item.href ? 'active' : ''}`}>
+                  <span className="pmm-item-icon">{item.icon}</span>
+                  <span className="pmm-item-label">{item.label}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 /* ─────────────────────────────────────────────
    MobileAccordionSection
 ───────────────────────────────────────────── */
 const MobileAccordionSection = ({ col, onLinkClick }) => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <div className="pmm-mob-section">
@@ -176,7 +180,7 @@ const MobileAccordionSection = ({ col, onLinkClick }) => {
         }}>
           <span className="pmm-mob-cat-icon">{col.icon}</span>
           {col.href ? (
-            <Link to={col.href} className="pmm-mob-title" onClick={onLinkClick} style={{ textDecoration: 'none' }}>
+            <Link to={col.href} className={`pmm-mob-title ${location.pathname === col.href ? 'active' : ''}`} onClick={onLinkClick} style={{ textDecoration: 'none' }}>
               {col.title}
             </Link>
           ) : (
@@ -197,7 +201,7 @@ const MobileAccordionSection = ({ col, onLinkClick }) => {
       {open && (
         <div className="pmm-mob-body">
           {col.items.map((item, i) => (
-            <Link key={i} to={item.href} className="pmm-mob-link" onClick={onLinkClick}>
+            <Link key={i} to={item.href} className={`pmm-mob-link ${location.pathname === item.href ? 'active' : ''}`} onClick={onLinkClick}>
               <span className="pmm-mob-item-icon">{item.icon}</span>
               {item.label}
             </Link>
@@ -208,7 +212,7 @@ const MobileAccordionSection = ({ col, onLinkClick }) => {
               <p className="pmm-mob-subgroup-title">
                 <span style={{ marginRight: 4 }}>{sg.icon}</span>
                 {sg.href ? (
-                  <Link to={sg.href} onClick={onLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  <Link to={sg.href} className={location.pathname === sg.href ? 'active' : ''} onClick={onLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>
                     {sg.title}
                   </Link>
                 ) : (
@@ -216,7 +220,7 @@ const MobileAccordionSection = ({ col, onLinkClick }) => {
                 )}
               </p>
               {sg.items.map((item, i) => (
-                <Link key={i} to={item.href} className="pmm-mob-link" onClick={onLinkClick}>
+                <Link key={i} to={item.href} className={`pmm-mob-link ${location.pathname === item.href ? 'active' : ''}`} onClick={onLinkClick}>
                   <span className="pmm-mob-item-icon">{item.icon}</span>
                   {item.label}
                 </Link>
@@ -366,11 +370,16 @@ const PMM_CSS = `
                 transform 0.13s ease, box-shadow 0.13s ease;
     line-height: 1.42;
   }
-  .pmm-link:hover {
+  .pmm-link:hover,
+  .pmm-link.active {
     background: rgba(249,115,22,0.09);
     color: #ea580c;
     transform: translateX(3px);
     box-shadow: inset 3px 0 0 #f97316;
+  }
+  .pmm-link.active {
+    background: rgba(249,115,22,0.14);
+    font-weight: 700;
   }
   .pmm-item-icon {
     font-size: 16px;
@@ -380,7 +389,8 @@ const PMM_CSS = `
     text-align: center;
     transition: transform 0.18s cubic-bezier(0.34,1.56,0.64,1);
   }
-  .pmm-link:hover .pmm-item-icon {
+  .pmm-link:hover .pmm-item-icon,
+  .pmm-link.active .pmm-item-icon {
     transform: scale(1.25) rotate(-4deg);
   }
   .pmm-item-label {
@@ -513,6 +523,9 @@ const PMM_CSS = `
     color: #1e293b;
     text-align: left;
   }
+  .pmm-mob-title.active {
+    color: #f97316;
+  }
   .pmm-mob-body {
     padding: 4px 12px 14px 16px;
     display: flex;
@@ -531,9 +544,14 @@ const PMM_CSS = `
     text-decoration: none;
     transition: background 0.12s, color 0.12s;
   }
-  .pmm-mob-link:hover {
+  .pmm-mob-link:hover,
+  .pmm-mob-link.active {
     background: rgba(249,115,22,0.07);
     color: #ea580c;
+  }
+  .pmm-mob-link.active {
+    background: rgba(249,115,22,0.12);
+    font-weight: 700;
   }
   .pmm-mob-item-icon { font-size: 14px; flex-shrink: 0; width: 18px; text-align: center; }
   .pmm-mob-subgroup-title {

@@ -47,8 +47,16 @@ const ErpAdminPanel = () => {
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 
-                {/* Heading */}
-                <h2 className="text-2xl lg:text-3xl font-semibold mb-14 leading-snug text-center">
+                {/* Badge - Added */}
+                <div className="flex justify-center mb-6">
+                    <span className="border rounded-full px-4 py-1 text-[12px] font-medium tracking-[0.05em] uppercase flex items-center gap-2 border-blue-200 bg-blue-50">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                        Admin Control Panel
+                    </span>
+                </div>
+
+                {/* Heading - Updated Typography */}
+                <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-14 text-center">
                     Powerful <span className="text-blue-700">Admin Panel</span> for Complete Control
                 </h2>
 
@@ -63,8 +71,14 @@ const ErpAdminPanel = () => {
                                         <feature.icon size={22} className="text-blue-600 group-hover:text-white" />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-gray-900">{feature.title}</h4>
-                                        <p className="text-gray-500 text-xs leading-relaxed">{feature.desc}</p>
+                                        {/* Feature Title - Updated Typography */}
+                                        <h4 className="font-semibold text-gray-900 text-[14px] md:text-[16px]">
+                                            {feature.title}
+                                        </h4>
+                                        {/* Feature Description - Updated Typography */}
+                                        <p className="text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+                                            {feature.desc}
+                                        </p>
                                     </div>
                                 </div>
                             ))}

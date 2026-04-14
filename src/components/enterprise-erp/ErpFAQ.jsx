@@ -39,8 +39,8 @@ const ErpFAQ = () => {
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
 
-                {/* Heading */}
-                <h2 className="text-center text-2xl lg:text-3xl font-semibold mb-14 leading-snug">
+                {/* Heading - Updated Typography */}
+                <h2 className="text-center text-[30px] md:text-[36px] font-bold leading-[1.2] mb-14">
                     Common <span className="text-blue-700">Enterprise</span> Inquiries
                 </h2>
 
@@ -52,7 +52,8 @@ const ErpFAQ = () => {
                         return (
                             <div key={index} className="border-b border-gray-100 py-6 last:border-none group cursor-pointer" onClick={() => toggle(index)}>
                                 <div className="flex justify-between items-center w-full text-left">
-                                    <h3 className={`text-lg font-medium transition-colors ${isOpen ? 'text-blue-600' : 'text-gray-900 group-hover:text-blue-600'}`}>
+                                    {/* Question - Updated Typography */}
+                                    <h3 className={`text-[16px] md:text-[18px] font-medium transition-colors ${isOpen ? 'text-blue-600' : 'text-gray-900 group-hover:text-blue-600'}`}>
                                         {faq.q}
                                     </h3>
                                     <span className={`ml-4 w-8 h-8 rounded-full flex items-center justify-center transition-all ${isOpen ? 'bg-blue-600 text-white' : 'bg-blue-50 text-blue-600 group-hover:bg-blue-100'}`}>
@@ -60,9 +61,9 @@ const ErpFAQ = () => {
                                     </span>
                                 </div>
 
-                                {/* answer */}
+                                {/* Answer - Updated Typography */}
                                 <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 mt-4 opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <p className="text-gray-500 leading-relaxed text-sm">
+                                    <p className="text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                                         {faq.a}
                                     </p>
                                 </div>

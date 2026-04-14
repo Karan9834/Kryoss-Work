@@ -7,6 +7,7 @@ import showcase5 from "../../assets/homeservice-tutor-img/showcase5.webp";
 import showcase6 from "../../assets/homeservice-tutor-img/showcase6.webp";
 import showcase7 from "../../assets/homeservice-tutor-img/showcase7.webp";
 import showcase8 from "../../assets/homeservice-tutor-img/showcase8.webp";
+
 const products = [
     { title: "Gojek Clone App", image: showcase1 },
     { title: "Uber Clone App", image: showcase2 },
@@ -23,22 +24,22 @@ const ProductShowcase = () => {
         <section className="w-full py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4">
 
-                {/* Badge */}
+                {/* Badge - Updated Typography */}
                 <div className="flex justify-center mb-4">
-                    <span className="flex items-center gap-2 border border-gray-300 rounded-full px-4 py-1 text-sm">
+                    <span className="flex items-center gap-2 border border-gray-300 rounded-full px-4 py-1 text-[12px] font-medium tracking-[0.05em] uppercase">
                         <span className="w-2 h-2 rounded-full bg-blue-400" />
                         Product Showcase
                     </span>
                 </div>
 
-                {/* Heading */}
-                <h2 className="text-center text-3xl md:text-4xl font-semibold text-gray-800">
+                {/* Heading - Updated Typography */}
+                <h2 className="text-center text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-800">
                     Explore Our{" "}
                     <span className="text-blue-900">On-Demand App Solutions</span>
                 </h2>
 
-                {/* Subtext */}
-                <p className="text-center mt-4 text-gray-600 max-w-2xl mx-auto">
+                {/* Subtext/Description - Updated Typography */}
+                <p className="text-center mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
                     Check out our best-selling on-demand solutions and find the perfect fit
                     for your unique business needs.
                 </p>
@@ -59,9 +60,9 @@ const ProductShowcase = () => {
                                 />
                             </div>
 
-                            {/* Title */}
+                            {/* Title - Updated Typography */}
                             <div className="p-4">
-                                <h3 className="text-lg font-semibold text-gray-800">
+                                <h3 className="text-[16px] md:text-[18px] font-semibold text-gray-800">
                                     {item.title}
                                 </h3>
                             </div>

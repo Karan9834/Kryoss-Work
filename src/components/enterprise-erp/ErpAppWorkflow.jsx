@@ -45,20 +45,21 @@ const ErpAppWorkflow = () => {
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
 
-                {/* Capsule */}
+                {/* Capsule/Badge - Updated Typography */}
                 <div className="mb-4">
-                    <span className="border rounded-full px-4 py-1 text-sm flex items-center w-fit gap-2 border-blue-200 bg-blue-50">
+                    <span className="border rounded-full px-4 py-1 text-[12px] font-medium tracking-[0.05em] uppercase flex items-center w-fit gap-2 border-blue-200 bg-blue-50">
                         <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
                         ERP Workflow
                     </span>
                 </div>
 
-                {/* Heading */}
-                <h2 className="text-2xl lg:text-3xl font-semibold mb-4">
+                {/* Heading - Updated Typography */}
+                <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-4">
                     How Our <span className="text-blue-700">ERP Solution</span> Optimizes Workflow
                 </h2>
 
-                <p className="text-gray-600 max-w-xl mb-14">
+                {/* Description - Updated Typography */}
+                <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-xl mb-14">
                     Experience the power of centralized management. Follow these core phases
                     to transform your business operations with our custom ERP system.
                 </p>
@@ -83,20 +84,21 @@ const ErpAppWorkflow = () => {
                         {steps.map((step, index) => (
                             <div key={index}>
 
-                                {/* Title pill */}
+                                {/* Title pill - Updated Typography */}
                                 <div className="flex items-center gap-4 mb-3">
 
-                                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-50 text-blue-700 font-semibold">
+                                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-50 text-blue-700 font-semibold text-[16px]">
                                         {(index + 1).toString().padStart(2, "0")}
                                     </div>
 
-                                    <div className="border border-blue-100 rounded-full px-5 py-2 font-medium">
+                                    <div className="border border-blue-100 rounded-full px-5 py-2 font-medium text-[14px] md:text-[16px]">
                                         {step.title}
                                     </div>
 
                                 </div>
 
-                                <p className="text-gray-600 ml-16 leading-relaxed">
+                                {/* Description - Updated Typography */}
+                                <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 ml-16">
                                     {step.desc}
                                 </p>
 
