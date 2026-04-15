@@ -1,54 +1,55 @@
-import react from 'react';
+import React from 'react';
 
 import { Users, Gamepad2, MessageCircle, Cpu, Smile, Cake, BookOpen, Gem, Sparkles } from "lucide-react";
 import whyusimg from "../../assets/company-career-img/careerwhyus.jpg";
+
 const CareerWhyUs = () => {
 
     const features = [
         {
             icon: Users,
-            title: "Employee First",
-            desc: "We prioritize our employees' well-being, growth, and success."
+            title: "People First",
+            desc: "We prioritize our team members' well-being, development, and achievements."
         },
         {
             icon: Gamepad2,
-            title: "Fun Connect",
-            desc: "Engaging activities and events to keep work enjoyable."
+            title: "Engaging Culture",
+            desc: "Regular activities and team events to keep work enjoyable and balanced."
         },
         {
             icon: MessageCircle,
-            title: "Transparent Comm.",
-            desc: "Open and honest communication for collaboration."
+            title: "Open Communication",
+            desc: "Clear and honest dialogue that enables effective collaboration."
         },
         {
             icon: Cpu,
-            title: "Advanced Resources",
-            desc: "Access to cutting-edge tools and technology."
+            title: "Modern Tools",
+            desc: "Access to up-to-date technologies and professional resources."
         },
         {
             icon: Smile,
-            title: "Positive Environment",
-            desc: "A supportive workplace that fosters innovation."
+            title: "Supportive Atmosphere",
+            desc: "A nurturing workplace that encourages creativity and initiative."
         },
         {
             icon: Cake,
-            title: "Birthday Celebration",
-            desc: "Making every employee feel special on their big day."
+            title: "Personal Milestones",
+            desc: "Recognizing and celebrating important moments with our team."
         },
         {
             icon: BookOpen,
-            title: "Learning sessions",
-            desc: "Continuous learning opportunities to enhance skills."
+            title: "Skill Development",
+            desc: "Ongoing learning opportunities to grow professional capabilities."
         },
         {
             icon: Gem,
-            title: "Rewards & benefits",
-            desc: "Recognizing hard work with exciting perks."
+            title: "Recognition & Rewards",
+            desc: "Acknowledging dedication with meaningful incentives and perks."
         },
         {
             icon: Sparkles,
-            title: "Festival celebration",
-            desc: "Celebrating cultural diversity with joyful events."
+            title: "Inclusive Celebrations",
+            desc: "Embracing diversity through shared festivities and gatherings."
         }
     ];
 
@@ -63,23 +64,23 @@ const CareerWhyUs = () => {
 
                     <div className="inline-flex items-center gap-2 border rounded-full px-4 py-1 text-sm mb-6">
                         <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-                        Work Culture
+                        Our Culture
                     </div>
 
                     <h2 className="text-4xl font-semibold mb-6">
-                        Why <span className="text-orange-500">Work With Us?</span>
+                        Why <span className="text-orange-500">Join Our Team?</span>
                     </h2>
 
                     <p className="text-gray-600 leading-relaxed max-w-lg">
-                        Join a workplace that values employees, fosters growth, and ensures
-                        a positive, fun-filled environment. We believe in transparency,
-                        advanced resources, and celebrating every milestone together!
+                        Become part of a workplace that values its people, encourages growth, and maintains
+                        a positive, engaging atmosphere. We believe in transparency,
+                        modern resources, and celebrating achievements together.
                     </p>
 
                     {/* Why Us Image */}
                     <img
                         src={whyusimg}
-                        alt="Work Culture at Kryoss Work"
+                        alt="Team culture at Kryoss Work"
                         className="mt-8 w-full max-w-[600px] max-h-[480px] rounded-2xl object-cover shadow-lg"
                     />
 

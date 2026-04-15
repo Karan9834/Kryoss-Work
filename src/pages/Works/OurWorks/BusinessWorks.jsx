@@ -193,7 +193,7 @@ const BusinessWorks = () => {
                                             <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-600">Project 0{idx + 1}</span>
                                         </div>
 
-                                        <h3 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-950 mb-6">
+                                        <h3 className="text-[30px] lg:text-[36px] font-medium leading-[1.2] text-gray-950 mb-6">
                                             {project.title}
                                         </h3>
 

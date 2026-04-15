@@ -8,7 +8,7 @@ import {
   Lock,
   Heart
 } from "lucide-react";
-import whatsabout from "../../../../assets/Socila-media-app/whatsabout.png"
+import whatsabout from "../../../../assets/Meetzy/2.png"
 
 const AboutUs = () => {
   const stats = [
@@ -167,25 +167,6 @@ const AboutUs = () => {
                       <h4 className="font-semibold text-gray-900 mb-1">{feature.title}</h4>
                       <p className="text-sm text-gray-500">{feature.description}</p>
                     </div>
-                  </div>
-                );
-              })}
-            </motion.div>
-
-            {/* Stats Grid */}
-            <motion.div
-              variants={itemVariants}
-              className="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100"
-            >
-              {stats.map((stat, idx) => {
-                const Icon = stat.icon;
-                return (
-                  <div key={idx} className="text-center">
-                    <div className="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-2">
-                      <Icon className="w-5 h-5 text-green-600" />
-                    </div>
-                    <p className="text-xl font-bold text-gray-900">{stat.value}</p>
-                    <p className="text-xs text-gray-500">{stat.label}</p>
                   </div>
                 );
               })}

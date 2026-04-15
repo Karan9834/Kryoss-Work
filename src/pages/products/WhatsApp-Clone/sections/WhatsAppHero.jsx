@@ -9,7 +9,7 @@ import {
   Sparkles,
   Send,
 } from "lucide-react";
-import whatshero from "../../../../assets/Socila-media-app/whatshero.png";
+import whatshero from "../../../../assets/Meetzy/1.jpg";
 
 const WhatsAppHero = () => {
   const containerVariants = {

@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import uberhero from "../../assets/transport-uber-img/uberhero.webp";
+import uberhero from "../../assets/Global taxi booking app/1.jpg";
 const UberHero = () => {
   return (
     <section

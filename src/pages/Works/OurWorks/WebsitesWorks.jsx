@@ -726,7 +726,7 @@ const WebsitesWorks = () => {
                                                     <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-500">Case Study 0{idx + 1}</span>
                                                 </div>
 
-                                                <h3 className="text-3xl md:text-5xl font-black text-gray-950 mb-6 leading-tight tracking-tight">
+                                                <h3 className="text-3xl md:text-5xl font-medium text-gray-950 mb-6 leading-tight tracking-tight">
                                                     {project.title}
                                                 </h3>
 
