@@ -14,19 +14,19 @@ export default function PlatformsSection() {
         {/* Badge */}
         <div className="text-center mb-5">
           <span className="border px-4 py-1 rounded-full text-xs md:text-sm">
-            What we Offer
+            Our Deliverables
           </span>
         </div>
 
         {/* Title */}
         <h2 className="text-center text-2xl md:text-4xl font-semibold mb-4">
-          Uber for Doctors App for{" "}
-          <span className="text-cyan-400">Various Platforms</span>
+          Healthcare Applications Spanning{" "}
+          <span className="text-cyan-400">Multiple Environments</span>
         </h2>
 
         <p className="text-center text-gray-300 max-w-3xl mx-auto mb-10 md:mb-14 text-sm md:text-base">
-          Bring healthcare services online with customizable doctor appointment
-          solutions for Android, iOS, and Web platforms.
+          Digitize clinical provisions utilizing extensively adaptable scheduling
+          architectures natively bridging Android, iOS, plus Web portals.
         </p>
 
         {/* GRID */}
@@ -53,13 +53,13 @@ export default function PlatformsSection() {
                 </div>
 
                 <h3 className="text-lg md:text-xl font-semibold mb-3">
-                  Doctor Android + iOS App
+                  Specialist Mobile Applications
                 </h3>
 
                 <p className="text-gray-300 text-sm">
-                  Our ready-to-use doctor application helps healthcare
-                  providers manage appointments, patient data and schedules
-                  seamlessly across Android and iOS devices.
+                  Our pre-built practitioner software assists clinical teams
+                  overseeing sessions, health records alongside timetables
+                  flawlessly via smartphones.
                 </p>
 
               </div>
@@ -90,13 +90,13 @@ export default function PlatformsSection() {
                 </div>
 
                 <h3 className="text-lg md:text-xl font-semibold mb-3">
-                  Patient Android + iOS App
+                  Client Mobile Frameworks
                 </h3>
 
                 <p className="text-gray-300 text-sm">
-                  Patients can easily discover doctors, book appointments,
-                  manage consultations and access medical services through a
-                  smooth and user-friendly mobile experience.
+                  Individuals rapidly identify local specialists, secure visits,
+                  regulate sessions alongside obtaining diverse medical resources
+                  via intuitive mobile interfaces.
                 </p>
 
               </div>
@@ -123,13 +123,13 @@ export default function PlatformsSection() {
               </div>
 
               <h3 className="text-lg md:text-xl font-semibold mb-4">
-                Web Admin Panel
+                Central Management Dashboard
               </h3>
 
               <p className="text-gray-300 text-sm mb-6">
-                Our admin dashboard provides complete control over doctors,
-                patients, appointments, payments and analytics ensuring smooth
-                operations for your healthcare platform.
+                Our overarching management portal supplies absolute authority covering
+                personnel, users, bookings, financial tracking alongside insightful
+                analytics, validating efficient operations.
               </p>
 
             </div>

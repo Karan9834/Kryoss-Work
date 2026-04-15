@@ -1,5 +1,5 @@
 import React from "react";
-import hotelhero from "../../assets/Hotel-Management/hotelhero.png"
+import hotelhero from "../../assets/Hotel-Management/about.jpg"
 
 const AboutSection = () => {
   return (

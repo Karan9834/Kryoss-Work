@@ -6,16 +6,16 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const faqs = [
-    "What is an Uber For Doctors App, and how does it work?",
-    "How long does it take to develop an Uber For Doctors App?",
-    "Is the app customizable to fit my business needs?",
-    "Can the app handle both Android and iOS users?",
-    "What features are included in the app?",
-    "Is the app secure for storing patient data?",
-    "Can I scale the app as my business grows?",
-    "Do you provide support after the app is launched?",
-    "How does the payment system work in the app?",
-    "Why should I choose your On-Demand Doctor App Development service?"
+    "What describes an on-demand clinical app, and how does it function?",
+    "What timeline is expected to engineer a medical booking platform?",
+    "Can the software be tailored to align with my organizational goals?",
+    "Is the solution compatible across both Apple and Android ecosystems?",
+    "Which core functionalities are packaged within the base application?",
+    "How secure is the architecture regarding sensitive medical records?",
+    "Is it possible to expand the system capacity alongside business growth?",
+    "Are maintenance and technical assistance provided post-deployment?",
+    "In what manner are financial transactions processed through the system?",
+    "Why ought I select your specialized healthcare software development services?"
   ];
 
   const toggleFAQ = (index) => {
@@ -30,13 +30,13 @@ export default function FAQSection() {
         {/* Badge */}
         <div className="text-center mb-6">
           <span className="border px-4 py-1 rounded-full text-sm">
-            FAQ's
+            Common Queries
           </span>
         </div>
 
         {/* Title */}
         <h2 className="text-center text-3xl md:text-4xl font-semibold text-blue-700 mb-16">
-          Frequently Asked Questions
+          Most Common Client Inquiries
         </h2>
 
         <div className="grid md:grid-cols-2 gap-x-16">

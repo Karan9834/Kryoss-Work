@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle2, Tv, Image as ImageIcon } from "lucide-react";
-import aboutImg from "@/assets/streaming-img/streamingabout.jpg";
+import aboutImg from "@/assets/streaming-img/streamingabout1.webp";
 
 const StreamingAbout = () => {
     const points = [

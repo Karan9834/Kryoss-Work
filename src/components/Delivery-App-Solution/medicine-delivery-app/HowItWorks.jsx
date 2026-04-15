@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 const HowItWorks = () => {
     const steps = [
-        { title: "Sign Up", desc: "Users sign up via email, phone, or social login.", icon: "👤" },
-        { title: "Search Medicine", desc: "Browse products, upload prescriptions, and add to cart.", icon: "🔍" },
-        { title: "Secure Payment", desc: "Multiple payment options for a safe checkout.", icon: "💳" },
-        { title: "Store Processing", desc: "Pharmacy receives and prepares the order.", icon: "💊" },
-        { title: "Auto Dispatch", desc: "System assigns driver based on location.", icon: "🚚" },
-        { title: "Real-time Tracking", desc: "Track order status and delivery updates.", icon: "📍" },
-        { title: "Doorstep Delivery", desc: "Driver delivers medicines to the location.", icon: "🏡" },
-        { title: "Review & Reorder", desc: "Rate the experience and easily reorder.", icon: "⭐" },
+        { title: "Profile Creation", desc: "Participants register via electronic mail, mobile digits, or social credentials.", icon: "👤" },
+        { title: "Curate Treatment", desc: "Examine inventories, submit medical authorizations, and aggregate requirements.", icon: "🔍" },
+        { title: "Encrypted Settlement", desc: "Diverse transaction gateways for a protected checkout experience.", icon: "💳" },
+        { title: "Merchant Preparation", desc: "Pharmacy receives and organizes the specified clinical request.", icon: "💊" },
+        { title: "Automated Dispatch", desc: "Infrastructure assigns logistics personnel based on proximity metrics.", icon: "🚚" },
+        { title: "Live Tracking", desc: "Observe request milestones and logistical progression updates.", icon: "📍" },
+        { title: "Residential Arrival", desc: "Personnel facilitate clinical supply directly to the specified location.", icon: "🏡" },
+        { title: "Evaluation", desc: "Rate the overall journey and facilitate rapid recurring procurement.", icon: "⭐" },
     ];
 
     return (
@@ -24,28 +24,28 @@ const HowItWorks = () => {
                 />
             </div>
 
-            <div className="container mx-auto px-4 relative z-10 flex-grow flex flex-col justify-center">
+            <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10 flex-grow flex flex-col justify-center max-w-7xl">
                 <div className="text-center max-w-2xl mx-auto mb-8">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-teal-400 font-bold text-sm mb-2 uppercase tracking-widest font-ibm-plex"
+                        className="text-teal-400 font-bold text-sm mb-2 uppercase tracking-widest"
                     >
-                        Easy Process
+                        Simplified Architecture
                     </motion.h2>
                     <motion.h3
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="text-3xl lg:text-4xl font-black text-white font-nunito"
+                        className="text-3xl lg:text-4xl font-semibold text-white"
                     >
-                        How Our Medicine App Delivery Works
+                        Functional Path of Our Pharmaceutical Ecosystem
                     </motion.h3>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 mb-10">
                     {steps.map((step, index) => (
                         <motion.div
                             key={index}
@@ -53,7 +53,7 @@ const HowItWorks = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-white/5 backdrop-blur-sm border border-white/10 p-5 rounded-2xl hover:bg-white/10 transition-all group relative overflow-hidden"
+                            className="bg-white/5 backdrop-blur-sm border border-white/10 p-5 lg:p-6 rounded-2xl hover:bg-white/10 transition-all group relative overflow-hidden min-h-[160px] flex flex-col justify-start"
                         >
                             <div className="absolute -right-4 -top-4 text-teal-500 font-black text-5xl opacity-10 pointer-events-none">
                                 0{index + 1}
@@ -62,9 +62,9 @@ const HowItWorks = () => {
                                 <div className="w-12 h-12 shrink-0 bg-teal-500/20 text-teal-400 rounded-xl flex items-center justify-center text-2xl group-hover:bg-teal-500 group-hover:text-white transition-all transform group-hover:rotate-6">
                                     {step.icon}
                                 </div>
-                                <h4 className="text-lg font-bold text-white font-nunito leading-tight">{step.title}</h4>
+                                <h4 className="text-lg font-bold text-white leading-tight">{step.title}</h4>
                             </div>
-                            <p className="text-gray-400 font-ibm-plex text-xs leading-relaxed">{step.desc}</p>
+                            <p className="text-gray-400 text-xs leading-relaxed">{step.desc}</p>
                         </motion.div>
                     ))}
                 </div>
@@ -73,7 +73,7 @@ const HowItWorks = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="mx-auto block bg-white/5 rounded-3xl p-3 border border-white/10 max-w-4xl"
+                    className="mx-auto block bg-white/5 rounded-3xl p-3 border border-white/10 max-w-3xl"
                 >
                     <img
                         src="https://whitelabelfox.com/assets/images/medicine-delivery-app-development/Medicine-Delivery-how-does-platform-works-image.webp"

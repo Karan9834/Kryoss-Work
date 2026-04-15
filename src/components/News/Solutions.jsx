@@ -1,24 +1,27 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { 
-  Zap, 
-  Brain, 
-  Sparkles, 
-  Globe, 
+import {
+  Zap,
+  Brain,
+  Sparkles,
+  Globe,
   ChevronRight,
   TrendingUp,
   Clock,
   Shield
 } from "lucide-react";
-
+import img1 from '@/assets/news-magazine-img/sol1.png';
+import img2 from '@/assets/news-magazine-img/sol2.jpg';
+import img3 from '@/assets/news-magazine-img/sol3.jpg';
+import img4 from '@/assets/news-magazine-img/sol4.jpg';
 gsap.registerPlugin(ScrollTrigger);
 
 const solutions = [
   {
     title: "Real-Time News Collection",
     desc: "We gather breaking news instantly from trusted sources worldwide. Our network spans across 100+ countries with 24/7 monitoring, ensuring you never miss important updates as they happen.",
-    image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c",
+    image: img1,
     icon: Zap,
     gradient: "from-blue-500 to-cyan-500",
     statLabel: "Response Time",
@@ -26,7 +29,7 @@ const solutions = [
   {
     title: "AI-Powered Analysis",
     desc: "Advanced machine learning algorithms analyze millions of data points to filter noise, identify trends, and surface only the most important and relevant stories for you.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+    image: img2,
     icon: Brain,
     gradient: "from-indigo-500 to-purple-500",
     statLabel: "Accuracy Rate",
@@ -34,7 +37,7 @@ const solutions = [
   {
     title: "Curated Delivery",
     desc: "Only relevant, verified content reaches our readers. Our expert editors hand-pick stories that matter, delivering personalized content tailored to your interests.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image: img3,
     icon: Sparkles,
     gradient: "from-purple-500 to-pink-500",
     statLabel: "Daily Stories",
@@ -42,7 +45,7 @@ const solutions = [
   {
     title: "Global Coverage",
     desc: "Coverage from 50+ countries with real-time updates. Our journalists and correspondents bring you local insights with a global perspective, covering stories that shape our world.",
-    image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620",
+    image: img4,
     icon: Globe,
     gradient: "from-emerald-500 to-teal-500",
     statLabel: "Countries",
@@ -58,7 +61,7 @@ const Solutions = () => {
   useEffect(() => {
     // Only run timeline animations on desktop
     const isDesktop = window.innerWidth >= 768;
-    
+
     if (isDesktop) {
       // Progress line animation
       gsap.fromTo(
@@ -136,7 +139,7 @@ const Solutions = () => {
             </span>
             <Clock className="w-5 h-5 text-indigo-500" />
           </div>
-          
+
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             How We Deliver{" "}
@@ -144,7 +147,7 @@ const Solutions = () => {
               Trusted News
             </span>
           </h2>
-          
+
           {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
           <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
             A seamless process powered by technology and human expertise
@@ -157,7 +160,7 @@ const Solutions = () => {
           {/* CENTER LINE - Desktop only */}
           <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-[2px] top-0 bottom-0">
             <div className="absolute inset-0 bg-gradient-to-b from-gray-200 via-gray-200 to-gray-200/50"></div>
-            
+
             {/* PROGRESS LINE */}
             <div
               ref={lineRef}
@@ -171,7 +174,7 @@ const Solutions = () => {
               className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full shadow-lg ring-4 ring-blue-200"
               style={{ top: 0 }}
             ></div>
-            
+
             {/* Static Dots */}
             {solutions.map((_, index) => (
               <div
@@ -209,23 +212,22 @@ const Solutions = () => {
                       </span>
                     </div>
                   </div>
-                  
+
                   <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
-                    
+
                     {/* TEXT SECTION - Position based on isTextLeft */}
                     <div
-                      className={`${
-                        isTextLeft
-                          ? "md:order-1 md:text-left md:pr-8 lg:pr-12"
-                          : "md:order-2 md:text-left md:pl-8 lg:pl-12"
-                      }`}
+                      className={`${isTextLeft
+                        ? "md:order-1 md:text-left md:pr-8 lg:pr-12"
+                        : "md:order-2 md:text-left md:pl-8 lg:pl-12"
+                        }`}
                     >
                       {/* Desktop Step Badge */}
                       <div className={`hidden md:inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-full bg-white shadow-sm border border-gray-100 ${!isTextLeft ? 'md:ml-auto' : ''}`}>
                         <IconComponent className={`w-4 h-4 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`} />
                         <span className="text-[11px] font-medium text-gray-600">Step {index + 1}</span>
                       </div>
-                      
+
                       {/* Card Title - Updated: text-[22px] md:text-[26px] lg:text-[30px] font-bold leading-[1.3] */}
                       <h3 className={`text-[22px] md:text-[26px] lg:text-[30px] font-bold leading-[1.3] mb-3 md:mb-4 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}>
                         {item.title}
@@ -247,16 +249,15 @@ const Solutions = () => {
 
                     {/* IMAGE SECTION - Position opposite of text */}
                     <div
-                      className={`${
-                        isTextLeft
-                          ? "md:order-2 md:pl-8 lg:pl-12"
-                          : "md:order-1 md:pr-8 lg:pr-12"
-                      }`}
+                      className={`${isTextLeft
+                        ? "md:order-2 md:pl-8 lg:pl-12"
+                        : "md:order-1 md:pr-8 lg:pr-12"
+                        }`}
                     >
                       <div className="group relative">
                         {/* Glow Effect */}
                         <div className={`absolute -inset-2 bg-gradient-to-r ${item.gradient} rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl`}></div>
-                        
+
                         {/* Image Container */}
                         <div className="relative rounded-xl md:rounded-2xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500">
                           <img
@@ -264,10 +265,10 @@ const Solutions = () => {
                             alt={item.title}
                             className="w-full h-[220px] md:h-[280px] lg:h-[320px] object-cover group-hover:scale-105 transition-transform duration-700"
                           />
-                          
+
                           {/* Gradient Overlay */}
                           <div className={`absolute inset-0 bg-gradient-to-t ${item.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
-                          
+
                           {/* Decorative Corner */}
                           <div className="absolute bottom-3 right-3 md:bottom-4 md:right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div className="w-6 h-6 md:w-8 md:h-8 border-r-2 border-b-2 border-white/60 rounded-br-lg"></div>
@@ -276,7 +277,7 @@ const Solutions = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Mobile Divider */}
                   {index < solutions.length - 1 && (
                     <div className="md:hidden mt-8 pt-6">

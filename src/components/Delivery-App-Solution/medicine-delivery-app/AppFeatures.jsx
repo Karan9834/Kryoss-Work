@@ -12,45 +12,45 @@ const AppFeatures = () => {
 
     const featureData = {
         customer: {
-            title: "Customer App",
+            title: "Individual Portal",
             image: "https://whitelabelfox.com/assets/images/medicine-delivery-app-development/fox-medicine-customer-app-ui.webp",
             features: [
-                { title: "Upload Prescription", desc: "Users can upload the medicine prescription and can order medicine in a very convenient way." },
-                { title: "Easy Call", desc: "If a user has any query regarding the order, they have the option to call to store/driver within the app." },
-                { title: "Track Order", desc: "A user can view the live location of the delivery person on the map and get an idea about the delivery time." },
-                { title: "Wallet", desc: "Add and manage funds for quick and hassle-free payments." },
-                { title: "Easy Search", desc: "The search option allows the user to easily search the medicine based on their requirement." },
-                { title: "Payment Option", desc: "A user has a flexible payment option such as cash, credit or in-app wallet to pay for the amount of the services." },
-                { title: "Add to Cart", desc: "A user can add items to add to the cart option. After he/she can add or remove the item based on their availability." },
-                { title: "Manage History", desc: "Track past orders and reorder medicines easily." }
+                { title: "Prescription Submission", desc: "Individuals easily upload clinical authorizations to secure necessary treatments efficiently." },
+                { title: "Direct Assistance", desc: "Users can instantaneously contact merchant partners or logistics personnel within the platform." },
+                { title: "Live Monitoring", desc: "Observe the real-time movement of logistics personnel on interactive maps for arrival estimates." },
+                { title: "Virtual Credits", desc: "Consolidate and manage account balances for streamlined, instant transaction processing." },
+                { title: "Intuitive Filtering", desc: "Advanced filtering mechanisms allow individuals to identify specific medications with precision." },
+                { title: "Transaction Versatility", desc: "Supports diverse settlement methods including digital wallets, credit options, or physical fulfillment." },
+                { title: "Selection Basket", desc: "Aggregate required items in a consolidated list prior to final procurement or adjustment." },
+                { title: "Activity Records", desc: "Review comprehensive historical records and facilitate rapid recurring procurement." }
             ]
         },
         driver: {
-            title: "Driver App",
+            title: "Logistics Interface",
             image: "https://whitelabelfox.com/assets/images/medicine-delivery-app-development/fox-medicine-driver-app-ui.webp",
             features: [
-                { title: "Upload Document", desc: "After login, the driver can upload required documents such as vehicle insurance, driving license, and ID Proof." },
-                { title: "Social Login", desc: "A driver can log in or signup through their social account like Facebook, Google or via Email." },
-                { title: "Manage Bank Details", desc: "A driver can add or manage bank details to get the order earning from the admin." },
-                { title: "Manage Orders", desc: "Accept, update, and track delivery requests efficiently." },
-                { title: "Map Navigation", desc: "A driver can use Google map navigation to find the shortest rough to reach the user location in minimal time." },
-                { title: "Manage Profile", desc: "A driver can manage their profile information such as name, email, address, and profile picture." },
-                { title: "Earning Report", desc: "A driver can view earning report with all complete, cancel, running, and pending order request." },
-                { title: "View Order Details", desc: "Access complete order information for smooth deliveries." }
+                { title: "Registry Submission", desc: "Personnel submit foundational records including vehicle insurance and professional credentials directly." },
+                { title: "Integrated Access", desc: "Facilitate rapid platform entry utilizing established social identifiers or secondary email authentication." },
+                { title: "Settlement Profiles", desc: "Distribution personnel regulate banking information to facilitate automated periodic earnings distribution." },
+                { title: "Route Governance", desc: "Supervise incoming distribution requests and finalize logistics paths with precision." },
+                { title: "Dynamic Routing", desc: "Utilize integrated navigation to identify the most efficient corridors for rapid clinical fulfillment." },
+                { title: "Account Oversight", desc: "Personnel regulate identification data, contact details, and professional visual representation." },
+                { title: "Performance Metrics", desc: "Review detailed activity logs covering pending, active, and finalized distribution assignments." },
+                { title: "Assignment Details", desc: "Access comprehensive data points for each distribution to ensure operational accuracy." }
             ]
         },
         store: {
-            title: "Store App",
+            title: "Merchant Dashboard",
             image: "https://whitelabelfox.com/assets/images/medicine-delivery-app-development/fox-medicine-store-app-ui.webp",
             features: [
-                { title: "Manage Profile", desc: "A store owner can manage their profile information such as name, address, profile picture, delivery radius, etc." },
-                { title: "View Feedback", desc: "A store owner can view their review & rating given by the user with all details like order ID, date & time, etc." },
-                { title: "Store Setting", desc: "A store owner can manage tax, extra cancellation charges, delivery radius, store opening and closing time with setting options." },
-                { title: "Manage Orders", desc: "Process incoming orders and update order status." },
-                { title: "Manage Product", desc: "A store owner has an option to on/off the product based on their availability. They don't have the option to add products." },
-                { title: "Order History", desc: "A store owner can view order history with all complete, cancel, running, and pending order requests." },
-                { title: "Delivery Service Radius", desc: "A store owner can set an exact flexible X range limit of delivery radius to offer medicine delivery services." },
-                { title: "Earning Details", desc: "Track daily, weekly, and monthly earnings effortlessly." }
+                { title: "Outlet Governance", desc: "Pharmacy partners regulate facility data including operational status, locations, and branding assets." },
+                { title: "Client Evaluations", desc: "Review client-provided feedback and performance scores linked to specific transaction identifiers." },
+                { title: "Operational Parameters", desc: "Regulate essential variables such as regional coverage, cancellation policies, and daily schedules." },
+                { title: "Workflow Oversight", desc: "Systematically process incoming requests and categorize distribution stages in real-time." },
+                { title: "Stock Regulation", desc: "Merchant partners can moderate existing inventory availability to reflect current physical stock levels." },
+                { title: "Transaction Archives", desc: "Access broad historical data covering all merchant activities and fulfillment statuses." },
+                { title: "Fulfillment Boundaries", desc: "Precisely define local distribution ranges to optimize regional clinical supply chains." },
+                { title: "Revenue Analysis", desc: "Monitor periodic financial performance covering daily, weekly, and longer business cycles." }
             ]
         }
     };
@@ -63,19 +63,19 @@ const AppFeatures = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl lg:text-4xl font-black text-gray-900 mb-4 font-nunito leading-tight"
+                        className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-4 leading-tight"
                     >
-                        Powerful Features We Built For a <br />
-                        <span className="text-teal-600">Seamless Medicine Delivery Experience</span>
+                        Sophisticated Functionalities Built For a <br />
+                        <span className="text-teal-600">Unified Clinical Distribution Journey</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-base text-gray-600 font-ibm-plex max-w-2xl mx-auto"
+                        className="text-base text-gray-600 max-w-2xl mx-auto"
                     >
-                        Our medicine delivery app development solution is designed with latest and essential features that improve convenience of all users and ensure a seamless delivery experience.
+                        Our pharmaceutical ecosystem architecture integrates essential, modern features that enhance user experience while ensuring absolute logistical accuracy.
                     </motion.p>
                 </div>
 
@@ -85,7 +85,7 @@ const AppFeatures = () => {
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`px-6 py-2 rounded-xl lg:rounded-full font-bold text-sm transition-all transform font-ibm-plex ${activeTab === tab.id ? `${tab.color} text-white shadow-lg scale-105` : 'text-gray-500 hover:text-gray-900 hover:bg-white'}`}
+                                className={`px-6 py-2 rounded-xl lg:rounded-full font-bold text-sm transition-all transform ${activeTab === tab.id ? `${tab.color} text-white shadow-lg scale-105` : 'text-gray-500 hover:text-gray-900 hover:bg-white'}`}
                             >
                                 {tab.label}
                             </button>
@@ -112,8 +112,8 @@ const AppFeatures = () => {
                         </div>
 
                         <div className="order-1 lg:order-2">
-                            <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-6 font-nunito border-b-2 border-teal-500 pb-2 inline-block">
-                                {featureData[activeTab].title} Features
+                            <h3 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-6 border-b-2 border-teal-500 pb-2 inline-block">
+                                {featureData[activeTab].title} Capabilities
                             </h3>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {featureData[activeTab].features.map((feature, idx) => (
@@ -129,8 +129,8 @@ const AppFeatures = () => {
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                             </svg>
                                         </div>
-                                        <h4 className="text-base font-bold text-gray-900 mb-1 font-nunito">{feature.title}</h4>
-                                        <p className="text-gray-600 text-xs font-ibm-plex leading-snug">{feature.desc}</p>
+                                        <h4 className="text-base font-bold text-gray-900 mb-1">{feature.title}</h4>
+                                        <p className="text-gray-600 text-xs leading-snug">{feature.desc}</p>
                                     </motion.div>
                                 ))}
                             </div>

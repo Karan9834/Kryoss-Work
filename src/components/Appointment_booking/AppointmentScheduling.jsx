@@ -14,14 +14,14 @@ export default function AppointmentScheduling() {
 
             {/* Badge */}
             <span className="border px-4 py-1 rounded-full text-sm">
-              Seamless Doctor Appointments
+              Effortless Health Bookings
             </span>
 
             {/* Title */}
             <h2 className="text-3xl md:text-4xl font-semibold mt-6 mb-6">
-              Simplify Appointment Scheduling with Our{" "}
+              Streamline Medical Timetables via Our{" "}
               <span className="text-blue-600">
-                Uber For Doctors App
+                Healthcare Scheduling App
               </span>
             </h2>
 
@@ -29,22 +29,22 @@ export default function AppointmentScheduling() {
             <div className="space-y-6 text-gray-600 text-[15px] leading-relaxed">
 
               <p>
-                Booking doctor appointments has never been easier with our
-                On-Demand Doctor App solution. Patients can schedule
-                consultations in just a few taps through an intuitive and
-                user-friendly interface.
+                Reserving clinical visits remains exceptionally uncomplex using our
+                sophisticated medical reservation system. Individuals secure virtual
+                or physical sessions swiftly via a highly accessible
+                frontend interface.
               </p>
 
               <p>
-                Doctors get a powerful dashboard to manage appointments,
-                schedules and patient details. Real-time notifications and
-                reminders help ensure that no consultation is missed.
+                Physicians receive a robust control panel to oversee their roster,
+                availability, alongside health records. Live alerts plus automated
+                prompts guarantee absolutely zero missed checkups.
               </p>
 
               <p>
-                Patients can browse doctors, check availability, and book
-                appointments conveniently from their mobile devices, improving
-                the overall healthcare experience.
+                Users rapidly navigate specialist directories, verify open slots,
+                and confirm appointments purely from smartphones, significantly
+                elevating the holistic clinical patient journey.
               </p>
 
             </div>
@@ -65,8 +65,8 @@ export default function AppointmentScheduling() {
                 <div>
                   <h4 className="font-semibold text-lg">Startup</h4>
                   <p className="text-sm text-gray-600">
-                    Perfect for health startups looking to launch a doctor
-                    appointment booking platform quickly.
+                    Ideal for clinical enterprises wanting to deploy a digital health
+                    scheduling network efficiently.
                   </p>
                 </div>
 
@@ -80,8 +80,8 @@ export default function AppointmentScheduling() {
                 <div>
                   <h4 className="font-semibold text-lg">Clinic</h4>
                   <p className="text-sm text-gray-600">
-                    Clinics can manage doctor availability and appointments
-                    easily using our powerful scheduling tools.
+                    Hospitals oversee practitioner timetables alongside
+                    visit queues effortlessly via our comprehensive backend mechanisms.
                   </p>
                 </div>
 
@@ -95,8 +95,8 @@ export default function AppointmentScheduling() {
                 <div>
                   <h4 className="font-semibold text-lg">Doctor</h4>
                   <p className="text-sm text-gray-600">
-                    Doctors can manage their schedules, track appointments
-                    and view patient information in one place.
+                    Specialists direct their daily planners, monitor upcoming
+                    visits, and review health histories centrally.
                   </p>
                 </div>
 

@@ -4,39 +4,39 @@ const TutorBookingGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      url: "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "Math Tutoring",
-      category: "Mathematics"
+      url: "https://demo.creativeitem.com/academy/uploads/thumbnails/category_thumbnails/8d436745ca324eec1a1aea9b646520fa.jpg"
+      // title: "Math Tutoring",
+      // category: "Mathematics"
     },
     {
       id: 2,
-      url: "https://images.pexels.com/photos/4143790/pexels-photo-4143790.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "Science Lab",
-      category: "Science"
+      url: "https://demo.creativeitem.com/academy/uploads/thumbnails/category_thumbnails/5fb578a098b4ca89b556339e6c9119ad.jpg"
+      // title: "Science Lab",
+      // category: "Science"
     },
     {
       id: 3,
-      url: "https://images.pexels.com/photos/4143800/pexels-photo-4143800.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "Language Learning",
-      category: "Languages"
+      url: "https://demo.creativeitem.com/academy/uploads/thumbnails/category_thumbnails/1897e188299ebae95ec61536d88f97b9.jpg"
+      // title: "Language Learning",
+      // category: "Languages"
     },
     {
       id: 4,
-      url: "https://images.pexels.com/photos/4143791/pexels-photo-4143791.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "Music Session",
-      category: "Music"
+      url: "https://demo.creativeitem.com/academy/uploads/thumbnails/category_thumbnails/ea95f9606daf1fb4e9dba12e65877e50.jpg"
+      // title: "Music Session",
+      // category: "Music"
     },
     {
       id: 5,
-      url: "https://images.pexels.com/photos/4143792/pexels-photo-4143792.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "Coding Class",
-      category: "Computer Science"
+      url: "https://demo.creativeitem.com/academy/uploads/thumbnails/category_thumbnails/f25e41087002a57ed32047a16c9ebba9.jpg"
+      // title: "Coding Class",
+      // category: "Computer Science"
     },
     {
       id: 6,
-      url: "https://images.pexels.com/photos/4143793/pexels-photo-4143793.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "Test Prep",
-      category: "Exam Preparation"
+      url: "https://demo.creativeitem.com/academy/uploads/thumbnails/category_thumbnails/6c8b048c9a74206c08d416946dde6b49.jpg"
+      // title: "Test Prep",
+      // category: "Exam Preparation"
     }
   ];
 
@@ -80,17 +80,17 @@ const TutorBookingGallery = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
               {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              {/* <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                 <span className="text-xs font-medium bg-indigo-600 px-2 py-1 rounded-full mb-2 inline-block">
                   {image.category}
                 </span>
                 <h3 className="text-lg font-semibold">{image.title}</h3>
-              </div>
+              </div> */}
 
               {/* Category badge (always visible) */}
-              <div className="absolute top-3 left-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-medium text-indigo-600 shadow">
+              {/* <div className="absolute top-3 left-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-medium text-indigo-600 shadow">
                 {image.category}
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

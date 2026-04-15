@@ -1,6 +1,6 @@
 import React from 'react';
 import { Share2, Users, Layout, Zap } from 'lucide-react';
-import aboutImg from '../../assets/videolanding-img/videolandingabout.jpg';
+import aboutImg from '../../assets/videolanding-img/videolandingabout1.jpg';
 
 const VideoAbout = () => {
     return (
@@ -12,11 +12,11 @@ const VideoAbout = () => {
                     <div className="relative order-2 lg:order-1 group">
                         <div className="absolute -inset-10 bg-purple-50 rounded-full blur-[100px] opacity-60 group-hover:opacity-100 transition duration-1000"></div>
                         <div className="relative bg-white p-4 rounded-[4rem] shadow-2xl border border-gray-100 overflow-hidden">
-                             <img 
-                                src={aboutImg} 
-                                alt="Video Collaboration" 
-                                className="w-full h-[400px] object-cover rounded-[3rem] transition-transform duration-700 group-hover:scale-105" 
-                             />
+                            <img
+                                src={aboutImg}
+                                alt="Video Collaboration"
+                                className="w-full h-[400px] object-cover rounded-[3rem] transition-transform duration-700 group-hover:scale-105"
+                            />
                         </div>
                     </div>
 
@@ -27,7 +27,7 @@ const VideoAbout = () => {
                             <span className="text-purple-600 text-[12px] font-medium tracking-[0.05em] uppercase block">
                                 Better Together
                             </span>
-                            
+
                             {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
                             <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C3C]">
                                 Redefining the <br />
@@ -35,7 +35,7 @@ const VideoAbout = () => {
                                     Unified Workspace.
                                 </span>
                             </h2>
-                            
+
                             {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
                             <p className="text-slate-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-xl">
                                 Break down barriers with a platform that combines immersive video conferencing with powerful collaboration tools, keeping everyone in sync.
@@ -53,7 +53,7 @@ const VideoAbout = () => {
                                 {/* Card Description - Updated: text-[13px] md:text-[14px] font-normal leading-[1.6] */}
                                 <p className="text-slate-500 text-[13px] md:text-[14px] font-normal leading-[1.6]">Auto-adjusting grids that spotlight active speakers.</p>
                             </div>
-                            
+
                             {/* Card 2 - Low Latency */}
                             <div className="space-y-4 p-8 bg-slate-50 rounded-[2.5rem] hover:bg-sky-50 transition-colors duration-500 group border border-transparent hover:border-sky-100">
                                 <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-sky-600 group-hover:scale-110 transition-transform">

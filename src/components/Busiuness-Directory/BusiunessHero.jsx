@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import businessHero from "../../assets/Busiuness-directory/hero.png";
+import businessHero from "../../assets/Busiuness-directory/hero.jpg";
 
 const BusinessHero = () => {
   return (
@@ -38,8 +38,8 @@ const BusinessHero = () => {
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
 
             {/* Primary CTA - Updated: text-[16px] tracking-[0.01em] font-semibold */}
-            <button 
-              className="group bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition flex items-center gap-2 text-[16px] tracking-[0.01em]" 
+            <button
+              className="group bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition flex items-center gap-2 text-[16px] tracking-[0.01em]"
               onClick={() => document.getElementById('explore-business')?.scrollIntoView({ behavior: 'smooth' })}
             >
               🚀 Explore Products
@@ -54,7 +54,7 @@ const BusinessHero = () => {
           <img
             src={businessHero}
             alt="Business directory"
-            className="w-full max-w-lg object-contain drop-shadow-2xl"
+            className="w-full max-w-lg object-contain rounded-3xl drop-shadow-2xl"
           />
         </div>
 

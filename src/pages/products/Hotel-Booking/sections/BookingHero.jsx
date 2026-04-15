@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import React from "react";
-import bookinghero from "../../../../assets/Hotel-Management/bookinghero.png"
+import bookinghero from "../../../../assets/Hotel-Management/bookinghero.jpg"
 
 const BookingHero = () => {
   return (
@@ -50,10 +50,10 @@ const BookingHero = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+            <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+              <MessageCircle size={18} />
+              Let's Discuss
+            </a>
           </div>
 
           {/* Enhanced Feature Points */}
@@ -84,7 +84,7 @@ const BookingHero = () => {
         <div className="relative">
           {/* Image Glow Effect */}
           <div className="absolute -inset-1 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition duration-500"></div>
-          
+
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 backdrop-blur-sm">
             <img
               src={bookinghero}

@@ -10,7 +10,12 @@ import {
   Shield,
   Sparkles,
 } from "lucide-react";
-
+import img1 from '@/assets/bfsi-finance-img/sol1.png';
+import img2 from '@/assets/bfsi-finance-img/sol2.jpg';
+import img3 from '@/assets/bfsi-finance-img/sol3.jpg';
+import img4 from '@/assets/bfsi-finance-img/sol4.jpeg';
+import img5 from '@/assets/bfsi-finance-img/sol5.jpeg';
+import img6 from '@/assets/bfsi-finance-img/sol6.jpg';
 gsap.registerPlugin(ScrollTrigger);
 
 const Solutions = () => {
@@ -24,7 +29,7 @@ const Solutions = () => {
       description: "Capture market movements instantly with AI-powered insights and real-time data processing.",
       icon: Zap,
       features: ["Real-time monitoring", "Predictive analytics", "Market trends"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+      image: img1,
       gradient: "from-amber-500 to-orange-500",
     },
     {
@@ -32,7 +37,7 @@ const Solutions = () => {
       description: "Analyze risks and detect anomalies in real-time with advanced machine learning.",
       icon: Brain,
       features: ["Risk scoring", "Anomaly detection", "Compliance monitoring"],
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+      image: img2,
       gradient: "from-orange-500 to-rose-500",
     },
     {
@@ -40,7 +45,7 @@ const Solutions = () => {
       description: "Optimize investments using predictive models and real-time analytics.",
       icon: BarChart3,
       features: ["Asset allocation", "Performance tracking", "Scenario analysis"],
-      image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=800&q=80",
+      image: img3,
       gradient: "from-amber-500 to-rose-500",
     },
     {
@@ -48,7 +53,7 @@ const Solutions = () => {
       description: "Execute trades with smart algorithms and real-time market analysis.",
       icon: TrendingUp,
       features: ["Algorithmic execution", "Smart routing", "Backtesting"],
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80",
+      image: img4,
       gradient: "from-orange-500 to-amber-500",
     },
     {
@@ -56,7 +61,7 @@ const Solutions = () => {
       description: "Manage assets and client portfolios with comprehensive wealth tools.",
       icon: Wallet,
       features: ["Goal planning", "Client reports", "Tax optimization"],
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+      image: img5,
       gradient: "from-rose-500 to-orange-500",
     },
     {
@@ -64,7 +69,7 @@ const Solutions = () => {
       description: "Bank-grade encryption ensuring complete data protection and compliance.",
       icon: Shield,
       features: ["Data encryption", "Access control", "Audit trails"],
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+      image: img6,
       gradient: "from-amber-500 to-orange-500",
     },
   ];
@@ -136,7 +141,7 @@ const Solutions = () => {
               Our Solutions
             </span>
           </div>
-          
+
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Intelligent Solutions for{" "}
@@ -144,7 +149,7 @@ const Solutions = () => {
               Financial Excellence
             </span>
           </h2>
-          
+
           {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
           <p className="text-gray-600 mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
             Powerful financial tools designed for growth and success
@@ -182,18 +187,17 @@ const Solutions = () => {
                 >
                   {/* TEXT SECTION - Position based on index */}
                   <div
-                    className={`${
-                      isTextLeft
+                    className={`${isTextLeft
                         ? "md:order-1 md:text-left md:pr-8 lg:pr-12"
                         : "md:order-2 md:text-left md:pl-8 lg:pl-12"
-                    }`}
+                      }`}
                   >
                     {/* Icon for mobile */}
                     <div className={`md:hidden inline-flex items-center gap-2 mb-3 px-3 py-1.5 rounded-full bg-orange-50 border border-orange-200`}>
                       <Icon className={`w-4 h-4 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`} />
                       <span className="text-[11px] font-medium text-gray-600">Step {index + 1}</span>
                     </div>
-                    
+
                     {/* Card Title - Updated: text-[22px] md:text-[28px] font-bold leading-[1.3] */}
                     <h3
                       className={`text-[22px] md:text-[28px] font-bold leading-[1.3] mb-3 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}
@@ -221,11 +225,10 @@ const Solutions = () => {
 
                   {/* IMAGE SECTION - Position based on index (opposite of text) */}
                   <div
-                    className={`${
-                      isTextLeft
+                    className={`${isTextLeft
                         ? "md:order-2 md:pl-8 lg:pl-12"
                         : "md:order-1 md:pr-8 lg:pr-12"
-                    }`}
+                      }`}
                   >
                     <div className="group relative">
                       <div className={`absolute -inset-2 bg-gradient-to-r ${item.gradient} rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl pointer-events-none`}></div>

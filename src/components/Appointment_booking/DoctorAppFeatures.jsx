@@ -21,66 +21,66 @@ export default function DoctorAppFeatures() {
   const doctorFeatures = [
     {
       icon: <Calendar size={22} />,
-      title: "Appointment List",
-      text: "Doctors can quickly view all scheduled consultations with patient details and timing."
+      title: "Clinical Overview",
+      text: "Practitioners rapidly examine all upcoming patient visits alongside detailed medical background notes."
     },
     {
       icon: <User size={22} />,
-      title: "Manage Profile",
-      text: "Doctors can update their professional profile including specialization and contact information."
+      title: "Profile Setup",
+      text: "Specialists modify their public portfolios covering medical expertise along with direct contact paths."
     },
     {
       icon: <Settings size={22} />,
-      title: "Settings",
-      text: "Doctors can manage password, notifications and system preferences easily."
+      title: "Configurations",
+      text: "Professionals handle access credentials, alert parameters, alongside broad application operational preferences."
     },
     {
       icon: <Clock size={22} />,
-      title: "Manage Time",
-      text: "Doctors can control availability and manage appointment schedules efficiently."
+      title: "Roster Control",
+      text: "Physicians thoroughly dictate their open hours alongside structurally organizing clinical availability routines."
     },
     {
       icon: <FileText size={22} />,
-      title: "Patient Details",
-      text: "Doctors can access patient contact details and appointment information."
+      title: "Health Records",
+      text: "Experts instantly retrieve individual contact documents alongside corresponding comprehensive session histories."
     },
     {
       icon: <LogIn size={22} />,
-      title: "Secure Login",
-      text: "Doctors can log in safely using protected authentication systems."
+      title: "Encrypted Access",
+      text: "Practitioners authenticate securely leveraging high-standard data protection verification methodologies safely."
     }
   ];
 
   const patientFeatures = [
     {
       icon: <UserPlus size={22} />,
-      title: "Registration",
-      text: "Patients can quickly create an account using basic information."
+      title: "Onboarding Process",
+      text: "Individuals rapidly set up personal profiles supplying essential demographic medical statistics."
     },
     {
       icon: <Calendar size={22} />,
-      title: "Appointments",
-      text: "Patients can view upcoming and past consultations easily."
+      title: "Session Tracking",
+      text: "Users comprehensively monitor forthcoming bookings alongside historical clinical consultation archives thoroughly."
     },
     {
       icon: <User size={22} />,
-      title: "Doctor Details",
-      text: "Patients can explore doctor profiles with experience and specialization."
+      title: "Specialist Intel",
+      text: "Individuals meticulously browse practitioner backgrounds highlighting clinical expertise alongside medical credentials."
     },
     {
       icon: <List size={22} />,
-      title: "Doctor List",
-      text: "Patients can browse available doctors and choose specialists."
+      title: "Medical Directory",
+      text: "Users navigate across active specialist listings and select aligned healthcare professionals."
     },
     {
       icon: <CheckCircle size={22} />,
-      title: "Confirm Appointment",
-      text: "Patients can confirm bookings and receive appointment updates."
+      title: "Booking Verification",
+      text: "Individuals lock in chosen timings and simultaneously acquire instant booking confirmations."
     },
     {
       icon: <User size={22} />,
-      title: "Manage Profile",
-      text: "Patients can update personal information and contact details."
+      title: "Account Management",
+      text: "Users modify sensitive personal demographics alongside associated emergency contact data securely."
     }
   ];
 
@@ -93,20 +93,20 @@ export default function DoctorAppFeatures() {
       <div className="max-w-7xl mx-auto px-6 text-center">
 
         <span className="border px-4 py-1 rounded-full text-sm">
-          Features
+          Capabilities
         </span>
 
         <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-4">
-          Key Features of Our{" "}
+          Core Functionalities of Our{" "}
           <span className="text-blue-600">
-            Uber For Doctors App
+            Healthcare Mobile Platform
           </span>
         </h2>
 
         <p className="text-gray-600 max-w-3xl mx-auto mb-10">
-          Our doctor appointment platform includes powerful features
-          for both doctors and patients, ensuring seamless scheduling,
-          better communication and efficient healthcare services.
+          Our medical reservation ecosystem packs advanced technical tools
+          serving practitioners and users, ensuring frictionless bookings,
+          enhanced interactions, alongside optimized clinical operations.
         </p>
 
         {/* Toggle */}

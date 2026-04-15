@@ -26,39 +26,39 @@ export default function LaunchSection() {
 
             {/* Badge */}
             <span className="border border-white/40 px-4 py-1 rounded-full text-sm">
-              Get Your Digital Footprint
+              Establish Your Virtual Presence
             </span>
 
             {/* Title */}
             <h2 className="text-3xl md:text-4xl font-semibold mt-6 leading-snug">
-              Launch Your{" "}
+              Deploy Your{" "}
               <span className="text-blue-400">
-                Uber For Doctors App
+                Healthcare Scheduling System
               </span>{" "}
-              in Just 5 Days
+              Within a Week
             </h2>
 
             {/* Paragraph */}
             <div className="space-y-6 text-gray-300 mt-6 text-[15px] leading-relaxed">
 
               <p>
-                Get your Uber For Doctors App up and running in just 5 working
-                days with our rapid deployment solution. Skip long development
-                timelines and launch a fully functional doctor appointment
-                platform without delays.
+                Establish your medical appointment software efficiently within five business
+                days leveraging our accelerated rollout infrastructure. Bypass extended
+                programming cycles completely, obtaining an operational clinical
+                reservation framework rapidly.
               </p>
 
               <p>
-                Our ready-made platform connects patients with trusted
-                healthcare professionals instantly. Essential features like
-                appointment scheduling, doctor availability tracking and secure
-                payments are available from day one.
+                Our pre-engineered ecosystem links individuals alongside certified
+                medical personnel instantaneously. Core functionalities including calendar
+                bookings, physician tracking alongside encrypted transactions remain available
+                from inception.
               </p>
 
               <p>
-                The platform is scalable and reliable so you can focus on
-                providing quality healthcare services while we handle the
-                technical infrastructure.
+                This architecture proves exceptionally robust alongside scalable,
+                allowing you to prioritize exceptional patient care whilst our team
+                actively manages underlying backend complexities.
               </p>
 
             </div>

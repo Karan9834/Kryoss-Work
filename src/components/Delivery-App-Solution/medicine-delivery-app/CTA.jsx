@@ -20,12 +20,12 @@ const CTA = () => {
                     viewport={{ once: true }}
                     className="max-w-3xl mx-auto"
                 >
-                    <h2 className="text-3xl lg:text-5xl font-black text-white mb-6 font-nunito leading-tight">
-                        Ready to Start Your <br />
-                        <span className="text-teal-400">Medicine Delivery Business?</span>
+                    <h2 className="text-3xl lg:text-5xl font-semibold text-white mb-6 leading-tight">
+                        Prepared to Launch Your <br />
+                        <span className="text-teal-400">Clinical Logistics Network?</span>
                     </h2>
-                    <p className="text-base text-gray-300 font-ibm-plex mb-10 max-w-2xl mx-auto">
-                        Consult with our experts and get a custom quote for your requirements. Launch your own pharmacy delivery app and digitize your healthcare business quickly and efficiently.
+                    <p className="text-base text-gray-300 mb-10 max-w-2xl mx-auto">
+                        Engage with our consultants to receive a personalized strategy for your specific objectives. Establish your digital pharmacy presence and optimize health product distribution with speed and precision.
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -33,8 +33,8 @@ const CTA = () => {
                             style={{ background: 'linear-gradient(90deg, #FFAA01 0%, #E54E01 100%)' }}>
                             GET A FREE QUOTE
                         </button>
-                        <button className="w-full sm:w-auto px-8 py-4 rounded-full font-black text-white text-base border-2 border-teal-500 hover:bg-teal-500/20 transition-all font-ibm-plex">
-                            BOOK A LIVE DEMO
+                        <button className="w-full sm:w-auto px-8 py-4 rounded-full font-black text-white text-base border-2 border-teal-500 hover:bg-teal-500/20 transition-all">
+                            SCHEDULE A WALKTHROUGH
                         </button>
                     </div>
                 </motion.div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShieldCheck, Zap, BarChart3, Users } from 'lucide-react';
-import aboutImg from '../../assets/transportlanding-img/transportlandingabout.jpg';
+import aboutImg from '../../assets/transportlanding-img/transportlandingabout1.jpg';
 
 const LogisticsAbout = () => {
     return (
@@ -12,10 +12,10 @@ const LogisticsAbout = () => {
                     <div className="relative order-2 lg:order-1 group animate-fadeInRight">
                         <div className="absolute -inset-10 bg-orange-50 rounded-full blur-[100px] opacity-60 group-hover:opacity-100 transition duration-1000"></div>
                         <div className="relative bg-white p-4 rounded-[3.5rem] shadow-2xl border border-gray-100 overflow-hidden">
-                            <img 
-                                src={aboutImg} 
-                                alt="About Logistics" 
-                                className="w-full h-[400px] object-cover rounded-[2.5rem] transition-transform duration-700 group-hover:scale-105" 
+                            <img
+                                src={aboutImg}
+                                alt="About Logistics"
+                                className="w-full h-[400px] object-cover rounded-[2.5rem] transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
                     </div>
@@ -27,7 +27,7 @@ const LogisticsAbout = () => {
                             <span className="text-orange-600 text-[12px] font-medium tracking-[0.05em] uppercase block">
                                 Data-Driven Logistics
                             </span>
-                            
+
                             {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
                             <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#0F172A]">
                                 Streamline Global <br />
@@ -35,7 +35,7 @@ const LogisticsAbout = () => {
                                     Operations with Precision.
                                 </span>
                             </h2>
-                            
+
                             {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
                             <p className="text-slate-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-xl">
                                 We provide more than just software. Our platform integrates deep analytics and AI to predict bottlenecks and optimize your entire supply chain.
@@ -53,7 +53,7 @@ const LogisticsAbout = () => {
                                 {/* Card Description - Updated: text-[13px] md:text-[14px] font-normal leading-[1.6] */}
                                 <p className="text-slate-500 text-[13px] md:text-[14px] font-normal leading-[1.6]">Enterprise-level protection for your shipment data.</p>
                             </div>
-                            
+
                             {/* Card 2 - Instant Tracking */}
                             <div className="space-y-4 p-6 bg-slate-50 rounded-[2rem] hover:bg-blue-50 transition-colors duration-500 group">
                                 <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-blue-600 group-hover:scale-110 transition-transform">

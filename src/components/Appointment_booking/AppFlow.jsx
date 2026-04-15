@@ -3,22 +3,22 @@ import React from "react";
 const steps = [
   {
     id: 1,
-    title: "Login / Signup",
+    title: "Authentication",
     img: "https://cdn-icons-png.flaticon.com/512/942/942748.png",
   },
   {
     id: 2,
-    title: "Browse Nearest Doctor",
+    title: "Discover Local Specialists",
     img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
   },
   {
     id: 3,
-    title: "Select Date & Time",
+    title: "Pick Availability Slot",
     img: "https://cdn-icons-png.flaticon.com/512/747/747310.png",
   },
   {
     id: 4,
-    title: "Book Appointment",
+    title: "Confirm Reservation",
     img: "https://cdn-icons-png.flaticon.com/512/747/747376.png",
   },
 ];
@@ -31,20 +31,20 @@ export default function AppFlow() {
 
         {/* Badge */}
         <span className="border px-4 py-1 rounded-full text-sm">
-          Graphical Flow Of Application
+          Visual Application Journey
         </span>
 
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-4">
-          Graphical Flow of Our{" "}
+          Operational Sequence of Our{" "}
           <span className="text-blue-600">
-            Uber For Doctors App
+            Medical Scheduling Platform
           </span>
         </h2>
 
         <p className="text-gray-600 max-w-3xl mx-auto mb-16">
-          Visualize the seamless process of how our doctor appointment platform
-          works — from finding a doctor to scheduling an appointment easily.
+          Observe the structured pathway outlining our clinical reservation ecosystem
+          — navigating from practitioner discovery straight through effortlessly confirming sessions.
         </p>
 
         {/* Steps */}

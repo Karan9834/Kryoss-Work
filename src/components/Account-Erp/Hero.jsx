@@ -1,12 +1,12 @@
 import React from "react";
 import { ArrowRight, BarChart3, Shield, Zap } from "lucide-react";
-
+import heroimg from "@/assets/account-erp-img/hero.jpeg";
 const HeroERP = () => {
   // Scroll to products section function
   const scrollToProducts = () => {
     const productsSection = document.getElementById("erp-products-section");
     if (productsSection) {
-      productsSection.scrollIntoView({ 
+      productsSection.scrollIntoView({
         behavior: "smooth",
         block: "start"
       });
@@ -78,7 +78,7 @@ const HeroERP = () => {
 
           {/* CTA - Updated button typography */}
           <div className="mt-10 flex gap-4">
-            <button 
+            <button
               onClick={scrollToProducts}
               className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold text-[16px] tracking-[0.01em] shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
@@ -96,7 +96,7 @@ const HeroERP = () => {
           {/* IMAGE */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
             <img
-              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1400"
+              src={heroimg}
               alt="ERP Dashboard"
               className="w-full h-[420px] object-cover"
             />

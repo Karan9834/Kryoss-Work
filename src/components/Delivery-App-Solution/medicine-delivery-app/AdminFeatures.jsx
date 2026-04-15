@@ -4,43 +4,43 @@ import { motion } from 'framer-motion';
 const AdminFeatures = () => {
     const features = [
         {
-            title: "Dashboard",
-            desc: "With the powerful dashboard, admin can see all the order request, manage product, driver/store statistics, etc.",
+            title: "Management Console",
+            desc: "Utilizing the robust administration interface, managers oversee all request status, inventory flows, and personnel performance metrics.",
             icon: "📊"
         },
         {
-            title: "Manage Document",
-            desc: "Admin can add or edit the required document for the store/driver like vehicle insurance, ID proof, store license, driving license, etc.",
+            title: "Registry Control",
+            desc: "Administrators efficiently regulate essential certifications for partners, including insurance records, identity verification, and operating licenses.",
             icon: "📄"
         },
         {
-            title: "Payment Setting",
-            desc: "An admin can set tax, store commission, driver commission, system commission and payment types such as cash, credit, or wallet.",
+            title: "Financial Configuration",
+            desc: "System controllers define taxation, merchant splits, delivery provider commissions, and supported transaction methods like digital wallets.",
             icon: "💳"
         },
         {
-            title: "Manage Promo Code",
-            desc: "Admin can add and modified promo code with details such as promo code name, type, percentage/amount, and expired date.",
+            title: "Incentive Programs",
+            desc: "Manage promotional campaigns by defining specific identifiers, discount percentages, fixed deductions, and operational validity periods.",
             icon: "🏷️"
         },
         {
-            title: "Vehicle Management",
-            desc: "An admin can add, edit, or delete a vehicle for the driver. Also, they can on/off the vehicle from the system.",
+            title: "Fleet Organization",
+            desc: "Administrative teams manage delivery vehicles within the ecosystem, with full authority to activate or deactivate assets as needed.",
             icon: "🚗"
         },
         {
-            title: "Manage User",
-            desc: "Admin can see or check the user profile information. Also, they have the option to remove or block the user account.",
+            title: "User Oversight",
+            desc: "Review demographic data and usage patterns. Maintain platform integrity with the capability to moderate or restrict specific access.",
             icon: "👥"
         },
         {
-            title: "Manage Store",
-            desc: "Admin can see or check the store profile information. They have the option to remove or block the store account.",
+            title: "Merchant Monitoring",
+            desc: "Evaluate pharmacy partner profiles and performance. Centralized tools allow for merchant account moderation and network optimization.",
             icon: "🏪"
         },
         {
-            title: "Review & Rating",
-            desc: "Admin can see store and driver review & rating with all order ID, date & time and user details which provided.",
+            title: "Feedback Analytics",
+            desc: "Observe merchant and courier performance records alongside specific transaction identifiers, timestamps, and detailed user critiques.",
             icon: "⭐"
         }
     ];
@@ -76,12 +76,12 @@ const AdminFeatures = () => {
                             viewport={{ once: true }}
                             className="text-left mb-8"
                         >
-                            <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-4 font-nunito leading-tight">
-                                Medicine Delivery <br />
-                                <span className="text-teal-600">Super Admin Web Features</span>
+                            <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-4 leading-tight">
+                                Clinical Supply <br />
+                                <span className="text-teal-600">Enterprise Administration Portal</span>
                             </h2>
-                            <p className="text-base text-gray-600 font-ibm-plex">
-                                Check our super admin web panel features of online medicine ordering system. Control every aspect of your business securely.
+                            <p className="text-base text-gray-600">
+                                Observe the high-level management capabilities of our digital pharmaceutical ecosystem. Oversee all operational facets with precision.
                             </p>
                         </motion.div>
 
@@ -98,10 +98,10 @@ const AdminFeatures = () => {
                                     <div className="w-10 h-10 bg-teal-50 text-xl flex items-center justify-center rounded-lg mb-3 group-hover:bg-teal-500 group-hover:text-white transition-all">
                                         {feature.icon}
                                     </div>
-                                    <h3 className="text-base font-bold text-gray-900 mb-1 font-nunito group-hover:text-teal-600 transition-colors">
+                                    <h3 className="text-base font-bold text-gray-900 mb-1 group-hover:text-teal-600 transition-colors">
                                         {feature.title}
                                     </h3>
-                                    <p className="text-gray-600 text-xs font-ibm-plex leading-snug line-clamp-3">
+                                    <p className="text-gray-600 text-xs leading-snug line-clamp-3">
                                         {feature.desc}
                                     </p>
                                 </motion.div>

@@ -1,16 +1,16 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
-
+import aboutimg from "@/assets/account-erp-img/about.jpg";
 const AboutSection = () => {
   return (
     <section className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT IMAGE */}
-        <div className="relative">
+        <div className="relative order-2 lg:order-1">
           <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
             <img
-              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1200"
+              src={aboutimg}
               alt="Team working"
               className="w-full h-[420px] object-cover"
             />
@@ -21,14 +21,14 @@ const AboutSection = () => {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div>
+        <div className="order-1 lg:order-2">
           {/* Optional Badge - Add if needed */}
           {/* <div className="inline-flex items-center justify-center mb-4">
             <div className="px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100">
               <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-blue-600">About Us</span>
             </div>
           </div> */}
-          
+
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Built for Businesses That Want

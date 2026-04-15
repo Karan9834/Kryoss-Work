@@ -7,7 +7,7 @@ const SaaSHero = () => {
   const scrollToProducts = () => {
     const productsSection = document.getElementById("products-section");
     if (productsSection) {
-      productsSection.scrollIntoView({ 
+      productsSection.scrollIntoView({
         behavior: "smooth",
         block: "start"
       });
@@ -101,7 +101,7 @@ const SaaSHero = () => {
             </span>
             <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-700">Trusted by 10,000+ businesses</span>
           </div>
-          
+
           {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
           <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-gray-900">
             Smart SaaS Solutions <br />
@@ -113,7 +113,7 @@ const SaaSHero = () => {
 
           {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
           <p className="mt-6 text-gray-600 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-xl">
-            Launch, manage, and scale your digital products with powerful SaaS tools designed for modern businesses. 
+            Launch, manage, and scale your digital products with powerful SaaS tools designed for modern businesses.
             From automation to analytics, everything you need in one platform.
           </p>
 
@@ -134,11 +134,11 @@ const SaaSHero = () => {
           {/* Premium Glow Effects */}
           <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="absolute inset-0 bg-gradient-to-tr from-purple-200/40 to-blue-200/40 blur-2xl rounded-3xl"></div>
-          
+
           {/* Decorative Elements */}
           <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-purple-400/20 to-blue-400/20 rounded-full blur-2xl"></div>
           <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-tr from-indigo-400/20 to-purple-400/20 rounded-full blur-2xl"></div>
-          
+
           {/* Image Container with Premium Border */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/50 bg-white/10 backdrop-blur-sm">
             <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-blue-500/10 pointer-events-none"></div>
@@ -148,7 +148,7 @@ const SaaSHero = () => {
               className="relative w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
             />
           </div>
-          
+
           {/* Premium Badge */}
           <div className="absolute -bottom-4 -right-4 bg-white/90 backdrop-blur-md rounded-xl px-4 py-2 shadow-lg border border-gray-200/50">
             <div className="flex items-center gap-2">

@@ -30,21 +30,21 @@ const About = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
                         >
-                            <h2 className="text-teal-600 font-bold text-sm mb-2 uppercase tracking-wider font-ibm-plex">About The Solution</h2>
-                            <h3 className="text-3xl lg:text-4xl font-black text-gray-900 mb-6 font-nunito leading-tight">
-                                Pharmacy App Development <br />
-                                <span className="text-teal-600">Solution To Simplify</span> Medicine Delivery
+                            <h2 className="text-teal-600 font-bold text-sm mb-2 uppercase tracking-wider">Solution Insights</h2>
+                            <h3 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-6 leading-tight">
+                                Pharmacy Digital Framework <br />
+                                <span className="text-teal-600">Architectures To Optimize</span> Clinical Supply
                             </h3>
 
-                            <div className="space-y-4 text-gray-600 text-base leading-relaxed font-ibm-plex">
+                            <div className="space-y-4 text-gray-600 text-base leading-relaxed">
                                 <p>
-                                    The healthcare industry is one of the fastest-growing sectors, and the appearance of online medicine delivery apps have become a game changer. Instead of visiting a physical pharmacy, users can order medicines conveniently from the comfort of their homes.
+                                    The clinical sector represents a primary high-growth territory, where the introduction of virtual medication dispatch frameworks has fundamentally altered operations. Rather than seeking out local dispensaries, individuals can now secure prescriptions effortlessly from their primary residences.
                                 </p>
                                 <p>
-                                    At Kryoss Work, we provide end-to-end pharmacy delivery app development solutions that serve the evolving needs of pharmacies and healthcare businesses. Our ready-to-use medicine delivery app includes a customer app, driver app, store app and a web panel for controlling operations.
+                                    At Kryoss Work, we deliver comprehensive clinical distribution software architectures designed to meet the shifting requirements of modern pharmaceutical enterprises. Our ready-to-deploy medical ecosystem incorporates dedicated user portals, courier interfaces, merchant dashboards, and centralized management consoles.
                                 </p>
                                 <p>
-                                    Whether you are a pharmacy owner looking to digitize your business or an entrepreneur looking to launch an on-demand medicine delivery platform, our customized medicine delivery app development solutions can help.
+                                    Whether you maintain a physical pharmacy aiming for digital expansion or an industry disruptor launching a broad clinical supply network, our tailored pharmaceutical software architectures facilitate your goals.
                                 </p>
                             </div>
 
@@ -56,8 +56,8 @@ const About = () => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <div className="font-bold text-gray-900">Custom Apps</div>
-                                        <div className="text-sm">iOS & Android</div>
+                                        <div className="font-bold text-gray-900">Tailored Interfaces</div>
+                                        <div className="text-sm">Multi-Platform Ready</div>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4 p-4 bg-orange-50 rounded-2xl">
@@ -67,8 +67,8 @@ const About = () => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <div className="font-bold text-gray-900">Secure Panel</div>
-                                        <div className="text-sm">Store & Admin</div>
+                                        <div className="font-bold text-gray-900">Encrypted Console</div>
+                                        <div className="text-sm">Merchant & Admin</div>
                                     </div>
                                 </div>
                             </div>

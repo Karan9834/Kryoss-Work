@@ -1,10 +1,10 @@
 import React from "react";
 import { ArrowRight, Play, Server, Zap, Tv, MessageCircle } from "lucide-react";
-import heroImg from "@/assets/streaming-img/streaminghero.jpg";
+import heroImg from "@/assets/streaming-img/streaminghero1.jpg";
 
 const StreamingHero = () => {
   return (
-    <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-[#0A0A0B]">
+    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-[#0A0A0B]">
       {/* Cinematic Background Elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-purple-600/20 rounded-full blur-[150px] -translate-y-1/2 translate-x-1/4 opacity-60"></div>
@@ -31,7 +31,7 @@ const StreamingHero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              <a 
+              <a
                 href="https://preview.codecanyon.net/item/streamit-laravel-movie-tv-show-video-streaming-platform-with-laravel/full_screen_preview/54895738"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -57,11 +57,11 @@ const StreamingHero = () => {
               <div className="absolute -inset-10 bg-gradient-to-tr from-purple-600/30 to-red-600/30 rounded-[60px] blur-3xl opacity-40 group-hover:opacity-60 transition-all duration-700"></div>
               <div className="relative z-10 w-full max-w-[500px] mx-auto aspect-video bg-gradient-to-br from-white/10 to-transparent rounded-[40px] border-8 border-white/10 shadow-2xl overflow-hidden transition-all duration-700 group-hover:scale-[1.02]">
                 <img src={heroImg} alt="Streaming Hero" className="w-full h-full object-cover" />
-                
+
                 {/* Overlay status badge */}
                 <div className="absolute bottom-6 right-6 p-3 bg-black/60 backdrop-blur-md border border-white/10 rounded-xl flex items-center gap-2">
-                   <div className="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.8)]"></div>
-                   <span className="text-[10px] text-white font-bold uppercase tracking-wider">System Optimal</span>
+                  <div className="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.8)]"></div>
+                  <span className="text-[10px] text-white font-bold uppercase tracking-wider">System Optimal</span>
                 </div>
               </div>
             </div>

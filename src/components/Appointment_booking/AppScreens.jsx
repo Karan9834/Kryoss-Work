@@ -28,23 +28,23 @@ export default function AppScreens() {
 
         {/* Badge */}
         <span className="border px-4 py-1 rounded-full text-sm">
-          Uber For Doctors App At A Glance
+          Medical Software Overview
         </span>
 
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-4">
-          Explore Our{" "}
+          Navigate Our{" "}
           <span className="text-cyan-400">
-            Doctor Booking App
+            Health Scheduling
           </span>{" "}
-          Screens
+          Dashboard
         </h2>
 
         {/* Subtitle */}
         <p className="text-gray-300 max-w-3xl mx-auto mb-10">
-          Discover how our doctor appointment platform simplifies
-          booking, scheduling, and patient management through a
-          modern and intuitive mobile experience.
+          Examine how our clinical reservation infrastructure streamlines
+          bookings, calendaring, and individual tracking via an advanced
+          alongside highly accessible mobile interface.
         </p>
 
         {/* Toggle Buttons */}

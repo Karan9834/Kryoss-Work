@@ -11,19 +11,19 @@ export default function RelatedBlogs() {
         {/* Badge */}
         <div className="text-center mb-4">
           <span className="border px-4 py-1 rounded-full text-sm">
-            Blogs
+            Articles
           </span>
         </div>
 
         {/* Title */}
         <h2 className="text-center text-3xl md:text-4xl font-semibold mb-4">
-          Our <span className="text-blue-600">Related Blogs</span>
+          Our <span className="text-blue-600">Latest Publications</span>
         </h2>
 
         <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
-          Stay updated with the latest trends, insights, and tips in the on-demand
-          app industry. Explore our newest blogs to gain valuable knowledge and
-          ideas to grow your business!
+          Remain informed regarding recent tech movements, deep analyses, plus development
+          strategies within digital healthcare. Read our emerging articles acquiring
+          crucial perspectives boosting your operational insights.
         </p>
 
         <div className="grid md:grid-cols-2 gap-10">
@@ -38,7 +38,7 @@ export default function RelatedBlogs() {
             />
 
             <h3 className="p-6 text-blue-600 font-semibold">
-              On-Demand Doctor Apps: Future of Telemedicine in 2025
+              Digital Health Platforms: The Next Era of Telehealth Software
             </h3>
 
           </div>
@@ -55,7 +55,7 @@ export default function RelatedBlogs() {
               />
 
               <h3 className="font-semibold">
-                Doctor Appointment Booking App: Features & Cost
+                Medical Scheduling Interfaces: Core Toolsets & Investment Models
               </h3>
 
             </div>
@@ -69,7 +69,7 @@ export default function RelatedBlogs() {
               />
 
               <h3 className="font-semibold">
-                How To Launch Your Own On-Demand Doctor App For Startup Business?
+                Steps for Deploying Your Proprietary Healthcare Digital Solution Today
               </h3>
 
             </div>

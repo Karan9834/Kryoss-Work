@@ -9,16 +9,15 @@ const DoctorAboutSection = () => {
         {/* Badge */}
         <div className="text-center mb-4">
           <span className="inline-flex items-center gap-2 border px-4 py-1 rounded-full text-sm">
-            <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-            About Doctor Booking App
+            Overview of Our Medical App
           </span>
         </div>
 
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          Uber for Doctors App –{" "}
+          On-Demand Medical App –{" "}
           <span className="text-blue-600">
-            Smart Doctor Appointment Booking
+            Intelligent Healthcare Scheduling
           </span>
         </h2>
 
@@ -40,34 +39,35 @@ const DoctorAboutSection = () => {
           <div className="text-gray-600 space-y-5 leading-relaxed">
 
             <p>
-              Our Uber for Doctors app offers a powerful and reliable platform
-              for booking doctor appointments effortlessly. Patients can
-              discover doctors, schedule consultations, and manage their health
-              appointments with just a few taps. The platform works smoothly on
-              both Android and iOS devices.
+              Our on-demand doctor solution provides an extensive and secure framework
+              to reserve medical appointments seamlessly. Users can locate
+              physicians, book virtual or clinic visits, and handle their health
+              records using a few clicks. The system functions flawlessly across
+              iOS and Android ecosystems.
             </p>
 
             <p>
-              With rapid advancements in digital healthcare, technology plays a
-              major role in improving how medical services are delivered. From
-              telemedicine solutions to appointment scheduling systems, modern
-              apps are transforming the healthcare ecosystem by making services
-              faster and more accessible.
+              Amidst fast-paced innovations in health technology, digital solutions take
+              front stage in upgrading the delivery of clinical care. Ranging
+              from telehealth software to automated booking portals, contemporary
+              applications are revolutionizing the medical landscape, rendering treatments
+              much quicker and readily available.
             </p>
 
             <p>
-              This doctor appointment application allows patients to easily
-              browse doctors, choose available slots, and confirm appointments
-              within seconds. Doctors can efficiently organize their schedules,
-              manage patient visits, and focus more on delivering quality care.
+              This medical scheduling software empowers individuals to effortlessly
+              search specialists, pick open time slots, and verify health
+              checkups in moments. Practitioners can systematically arrange their
+              routines, oversee patient interactions, and concentrate heavily on
+              providing exceptional medical treatments.
             </p>
 
             <p>
-              The platform is designed to bridge the gap between healthcare
-              providers and patients. Whether you're a medical professional
-              looking to digitize your practice or a patient seeking convenient
-              healthcare access, this solution delivers a seamless and reliable
-              experience.
+              Our infrastructure is structured to eliminate distance between clinical
+              practitioners and individuals. Whether you operate as a healthcare
+              expert aiming to modernize your clinic or an individual demanding
+              effortless medical support, our architecture ensures a flawless, dependable
+              user journey.
             </p>
 
           </div>

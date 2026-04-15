@@ -317,7 +317,7 @@ const TikTokClonePage = () => {
   return (
     <div className="w-full">
       {/* ================= HERO SECTION ================= */}
-      <section className="w-full bg-black py-12 flex items-center overflow-hidden">
+      <section className="w-full min-h-[90vh] bg-black py-12 flex items-center overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 items-center gap-16">
           {/* LEFT CONTENT */}
           <div className="text-white space-y-6 max-w-xl">
@@ -366,18 +366,18 @@ const TikTokClonePage = () => {
             >
               Live Demo →
             </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+            <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+              <MessageCircle size={18} />
+              Let's Discuss
+            </a>
           </div>
 
           {/* RIGHT IMAGE */}
           <div className="flex justify-center md:justify-end flex-wrap gap-4">
             <img
-              src="/Video-App/hero-image.webp"
+              src="/Video-App/hero-image1.jpg"
               alt="TikTok Clone App"
-              className="w-[450px] md:w-[650px] lg:w-[700px] max-w-none"
+              className="w-[350px] md:w-[450px] lg:w-[550px] rounded-3xl shadow-lg max-w-none"
             />
           </div>
         </div>
@@ -387,16 +387,16 @@ const TikTokClonePage = () => {
       <section className="w-full bg-white py-32 flex items-center">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 grid-cols-1 items-center gap-20 px-10">
           {/* LEFT IMAGE */}
-          <div className="flex justify-center flex-wrap gap-4">
+          <div className="flex justify-center flex-wrap gap-4 order-2 lg:order-1">
             <img
-              src="/Video-App/tik-tok-clone-about-us.webp"
+              src="/Video-App/tik-tok-clone-about-us1.png"
               alt="TikTok Clone App"
-              className="w-[520px] object-contain"
+              className="w-[520px] rounded-3xl shadow-lg object-contain"
             />
           </div>
 
           {/* RIGHT CONTENT */}
-          <div>
+          <div className="order-1 lg:order-2">
             <span className="text-sm bg-gray-100 px-5 py-1 rounded-full text-pink-600 font-medium">
               About TikTok Clone
             </span>

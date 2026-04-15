@@ -17,19 +17,19 @@ const IndustryRecognition = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl lg:text-4xl font-black text-gray-900 mb-4 font-nunito leading-tight"
+                        className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-4 leading-tight"
                     >
-                        Recognized by Global Review Platforms{' '}
-                        <span className="text-teal-600">& Industry Leaders</span>
+                        Validated by Global Evaluation Platforms{' '}
+                        <span className="text-teal-600">& Industrial Authorities</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-base text-gray-600 font-ibm-plex"
+                        className="text-base text-gray-600"
                     >
-                        We are proud to be recognized by top industry platforms such as Trustpilot, Google, Clutch, and GoodFirms. With excellent ratings and reviews, our commitment to delivering high-quality solutions is trusted worldwide.
+                        We are honored to receive validation from premier analytic frameworks like Trustpilot, Google, Clutch, and GoodFirms. With superior performance metrics, our dedication to engineering high-integrity frameworks is universally acknowledged.
                     </motion.p>
                 </div>
 
@@ -44,7 +44,7 @@ const IndustryRecognition = () => {
                             className="bg-gray-50 border border-gray-100 px-8 py-6 rounded-2xl text-center hover:shadow-xl hover:-translate-y-1 transition-all group min-w-[180px]"
                         >
                             <div className="text-4xl mb-3">{p.icon}</div>
-                            <h3 className="text-lg font-bold text-gray-900 font-nunito mb-1 group-hover:text-teal-600 transition-colors">
+                            <h3 className="text-lg font-bold text-gray-900 mb-1 group-hover:text-teal-600 transition-colors">
                                 {p.name}
                             </h3>
                             <p className="text-teal-600 font-black text-xl">{p.rating}</p>

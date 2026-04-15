@@ -10,15 +10,15 @@ export default function AppBenefits() {
         {/* Badge */}
         <div className="text-center mb-6">
           <span className="border px-4 py-1 rounded-full text-sm">
-            Benefits
+            Advantages
           </span>
         </div>
 
         {/* Title */}
         <h2 className="text-center text-3xl md:text-4xl font-semibold mb-16">
-          Benefits of Our{" "}
+          Key Perks of Our{" "}
           <span className="text-blue-600">
-            Uber For Doctors App
+            Medical Appointment App
           </span>
         </h2>
 
@@ -43,42 +43,46 @@ export default function AppBenefits() {
           <div className="space-y-6 text-gray-600 text-[15px] leading-relaxed">
 
             <p>
-              Our Uber For Doctors App provides powerful benefits for both
-              healthcare providers and patients. From simplified appointment
-              booking to improved clinic management, the platform enhances
-              overall healthcare delivery.
+              Our on-demand health application delivers substantial advantages for
+              clinical facilities as well as individuals. Ranging from streamlined
+              scheduling procedures to optimized hospital operations, the system
+              comprehensively elevates medical care provisions.
             </p>
 
             <p>
-              Patients can easily search for doctors and schedule appointments
-              in just a few taps, while doctors can manage their schedules and
-              availability efficiently.
+              Patients intuitively find physicians and secure time slots
+              using minimal screen clicks, whereas doctors meticulously oversee
+              their daily agendas and operational availability flawlessly.
             </p>
 
             <p>
-              Real-time availability updates ensure that patients only book
-              slots that match the doctor’s schedule, reducing confusion and
-              saving time.
+              Live inventory sync guarantees that individuals exclusively reserve
+              times corresponding with the physician’s calendar, minimizing scheduling
+              conflicts and conserving valuable hours.
             </p>
 
             <p>
-              Built-in communication tools and appointment tracking help
-              improve patient satisfaction and streamline healthcare services.
+              Integrated messaging features alongside visit monitoring directly
+              boost individual gratification whilst heavily optimizing the overall clinical
+              service workflow.
             </p>
 
             <p>
-              The system automates scheduling, reminders, and payment
-              processing so medical staff can focus more on patient care.
+              Our architecture automatically handles bookings, alerts, and transaction
+              settlements, allowing clinical personnel to concentrate deeply on superior
+              patient treatments.
             </p>
 
             <p>
-              The platform is customizable and scalable, making it suitable for
-              clinics, hospitals, and large healthcare networks.
+              Our framework remains highly adaptable and expandable, rendering it
+              perfect for individual practices, independent clinics, and massive
+              metropolitan health networks.
             </p>
 
             <p>
-              Advanced security and compliance features ensure patient data
-              protection and adherence to healthcare regulations.
+              Sophisticated encryption paired with regulatory adherence modules
+              guarantees robust health data privacy and strict compliance with
+              global medical guidelines.
             </p>
 
           </div>

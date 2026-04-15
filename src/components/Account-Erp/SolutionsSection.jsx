@@ -1,7 +1,10 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { BarChart3, Shield, Zap, Users } from "lucide-react";
-
+import img1 from "@/assets/account-erp-img/sol1.jpg";
+import img2 from "@/assets/account-erp-img/sol2.jpeg";
+import img3 from "@/assets/account-erp-img/sol3.jpeg";
+import img4 from "@/assets/account-erp-img/sol4.jpg";
 const SolutionsSection = () => {
   const ref = useRef(null);
 
@@ -17,28 +20,28 @@ const SolutionsSection = () => {
       title: "AI-Powered Analytics",
       desc: "Transform your business data into actionable insights with real-time dashboards and predictive analytics.",
       image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200",
+        img1,
       icon: BarChart3,
     },
     {
       title: "Enterprise Security",
       desc: "Protect your operations with advanced encryption, access control, and compliance-ready infrastructure.",
       image:
-        "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200",
+        img2,
       icon: Shield,
     },
     {
       title: "Automation Workflows",
       desc: "Eliminate repetitive tasks and streamline processes with intelligent automation tools.",
       image:
-        "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200",
+        img3,
       icon: Zap,
     },
     {
       title: "Team Collaboration",
       desc: "Enhance communication and productivity with integrated collaboration tools.",
       image:
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200",
+        img4,
       icon: Users,
     },
   ];
@@ -66,7 +69,7 @@ const SolutionsSection = () => {
               <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-blue-600">Our Solutions</span>
             </div>
           </div> */}
-          
+
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Complete Solutions for{" "}
@@ -74,7 +77,7 @@ const SolutionsSection = () => {
               Modern Businesses
             </span>
           </h2>
-          
+
           {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
           <p className="text-gray-600 mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Powerful tools designed to simplify operations and drive growth.
@@ -111,9 +114,8 @@ const SolutionsSection = () => {
 
                   {/* IMAGE CARD */}
                   <div
-                    className={`group relative ${
-                      isEven ? "lg:order-1" : "lg:order-2"
-                    }`}
+                    className={`group relative ${isEven ? "lg:order-1" : "lg:order-2"
+                      }`}
                   >
                     <div className="relative rounded-3xl overflow-hidden shadow-md transition group-hover:shadow-2xl group-hover:-translate-y-2">
 
@@ -131,12 +133,11 @@ const SolutionsSection = () => {
 
                   {/* TEXT CARD */}
                   <div
-                    className={`${
-                      isEven ? "lg:order-2" : "lg:order-1"
-                    }`}
+                    className={`${isEven ? "lg:order-2" : "lg:order-1"
+                      }`}
                   >
                     <div className="relative group rounded-3xl p-[1px] bg-gradient-to-r from-transparent hover:from-blue-500 hover:to-indigo-500 transition duration-500">
-                      
+
                       <div className="relative p-8 rounded-3xl bg-white shadow-md border border-gray-100 transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
 
                         {/* ICON */}

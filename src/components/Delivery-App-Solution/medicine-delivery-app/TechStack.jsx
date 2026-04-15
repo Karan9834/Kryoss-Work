@@ -32,19 +32,19 @@ const TechStack = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl lg:text-4xl font-black text-white mb-4 font-nunito leading-tight"
+                        className="text-3xl lg:text-4xl font-semibold text-white mb-4 leading-tight"
                     >
-                        Technologies We Use to Build{' '}
-                        <span className="text-teal-400">Scalable Digital Solutions</span>
+                        Architectural Foundations for{' '}
+                        <span className="text-teal-400">Elastic Digital Infrastructures</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-base text-gray-400 font-ibm-plex"
+                        className="text-base text-gray-400"
                     >
-                        We use modern, scalable, and secure technologies to develop high-performance mobile applications, web platforms, and backend systems.
+                        We employ contemporary, extensible, and high-integrity technologies to engineer superior mobile interfaces, web ecosystems, and computational backbones.
                     </motion.p>
                 </div>
 
@@ -69,7 +69,7 @@ const TechStack = () => {
                                     }}
                                 />
                             </div>
-                            <span className="text-xs font-semibold text-gray-400 group-hover:text-white transition-colors font-ibm-plex">
+                            <span className="text-xs font-semibold text-gray-400 group-hover:text-white transition-colors">
                                 {tech.name}
                             </span>
                         </motion.div>

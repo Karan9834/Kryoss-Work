@@ -1,11 +1,11 @@
 import React from "react";
-import tutorhero from "../../assets/homeservice-tutor-img/tutorhero.webp";
+import tutorhero from "../../assets/homeservice-tutor-img/tutorhero1.jpg";
 const Hero = () => {
   return (
-    <section className="relative w-full bg-[radial-gradient(circle_at_top_left,#301a14,#1a0705)] overflow-hidden">
-      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-12 pt-10 pb-0 flex flex-col lg:flex-row lg:items-end justify-between">
+    <section className="relative min-h-[90vh] bg-[radial-gradient(circle_at_top_left,#301a14,#1a0705)] overflow-hidden">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-12 pt-0 pb-0 flex flex-col lg:flex-row lg:items-center justify-between">
         {/* LEFT CONTENT */}
-        <div className="w-full lg:w-[50%] text-white pb-12 lg:pb-20 lg:pr-10">
+        <div className="w-full lg:w-[50%] text-white pt-28 sm:pt-32 pb-8 lg:pt-30 lg:pb-20 lg:pr-10">
           {/* LOGO */}
           <div className="flex items-center gap-3 mb-6">
             {/* Icon */}
@@ -70,7 +70,7 @@ const Hero = () => {
               <img
                 src={tutorhero}
                 alt="Tutor Booking App"
-                className="w-full h-full object-cover"
+                className="w-full h-full rounded-3xl shadow-2xl object-cover"
               />
             </div>
           </div>

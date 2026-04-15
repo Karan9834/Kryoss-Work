@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle, TrendingUp, Award, Users, ArrowRight, Target, Sparkles } from "lucide-react";
-import aboutImage from "../../assets/Job-Portals/features.png";
+import aboutImage from "../../assets/Job-Portals/about.jpg";
 
 const AboutSection = () => {
   return (
@@ -42,7 +42,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* ===== LEFT SIDE - IMAGE (no floating cards) ===== */}
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             {/* Main Image Container with Blue Gradient Border */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-blue-100">
               <img
@@ -63,7 +63,7 @@ const AboutSection = () => {
           </div>
 
           {/* ===== RIGHT SIDE - CONTENT ===== */}
-          <div>
+          <div className="order-1 lg:order-2">
             {/* Badge Matching Hero Theme */}
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-6 border border-blue-200">
               <Sparkles className="w-4 h-4 text-blue-600" />

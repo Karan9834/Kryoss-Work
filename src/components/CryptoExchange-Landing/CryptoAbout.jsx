@@ -37,7 +37,7 @@ const CryptoAbout = () => {
                             <span className="text-blue-600 text-[12px] font-medium tracking-[0.05em] uppercase block">
                                 Our Foundation
                             </span>
-                            
+
                             {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
                             <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                                 Architecting the Future of <br />
@@ -46,7 +46,7 @@ const CryptoAbout = () => {
                                     Digital Asset Exchange
                                 </span>
                             </h2>
-                            
+
                             {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
                             <p className="text-[#4A4B5E] text-[14px] md:text-[16px] font-normal leading-[1.6]">
                                 We provide a comprehensive crypto exchange management system designed to streamline your trading operations and enhance user security. From real-time matching to institutional-grade custody, our platform handles everything so you can focus on scaling your business.

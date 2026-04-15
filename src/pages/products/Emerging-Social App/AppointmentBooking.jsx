@@ -17,7 +17,7 @@ import OnDemandApps from '../../../components/DatingApp/OnDemandApps'
 import OnDemandSolutions from '../../../components/DatingApp/OnDemandSolutions'
 import TechStack from '../../../components/PestControl/PestTech'
 import AppFaqs from '../../../components/Appointment_booking/AppFaqs'
-import AppContact from '../../../components/Appointment_booking/AppContact'
+import ContactUs from '../../../components/Common/ContactUs'
 import AppBlog from '../../../components/Appointment_booking/AppBlog'
 import AppFinalCta from '../../../components/Appointment_booking/AppFinalCta'
 
@@ -42,7 +42,7 @@ const AppointmentBooking = () => {
     <OnDemandSolutions/>
     <TechStack/>
     <AppFaqs/>
-    <AppContact/>
+    <ContactUs productName="Doctor Appointment App" theme="blue" />
     <AppBlog/>
     <AppFinalCta/>
     </>
