@@ -1,10 +1,10 @@
 import React from 'react'
 import { Shield, TrendingUp, Users, Award, Sparkles, Heart, Target, Eye } from 'lucide-react'
-
+import aboutimg from '@/assets/bfsi-finance-img/about.png'
 const AboutUs = () => {
   return (
     <section className="relative bg-white px-6 md:px-16 py-20 md:py-28 overflow-hidden">
-      
+
       {/* Orange Wave Decorations */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Top Wave */}
@@ -26,7 +26,7 @@ const AboutUs = () => {
             />
           </svg>
         </div>
-        
+
         {/* Bottom Wave */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
           <svg
@@ -46,14 +46,14 @@ const AboutUs = () => {
             />
           </svg>
         </div>
-        
+
         {/* Decorative Orange Orbs */}
         <div className="absolute top-20 right-20 w-72 h-72 bg-orange-100/30 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-20 w-72 h-72 bg-amber-100/30 rounded-full blur-3xl"></div>
-        
+
         {/* Subtle Orange Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#f9731608_1px,transparent_1px),linear-gradient(to_bottom,#f9731608_1px,transparent_1px)] bg-[size:40px_40px]"></div>
-        
+
         {/* Floating Sparkles */}
         <div className="absolute top-1/3 left-1/4 opacity-20">
           <Sparkles className="w-12 h-12 text-amber-400" />
@@ -65,33 +65,33 @@ const AboutUs = () => {
 
       <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
+
           {/* LEFT COLUMN - Image (Now on Left) */}
           <div className="relative group order-1">
             {/* Orange Glow Effect */}
             <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-rose-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
+
             {/* Main Image Container */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+                src={aboutimg}
                 alt="Financial team analyzing data"
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              
+
               {/* Gradient Overlay - Orange Theme */}
               <div className="absolute inset-0 bg-gradient-to-t from-amber-900/20 via-transparent to-transparent"></div>
             </div>
-            
+
             {/* Decorative Orange Corners */}
             <div className="absolute -bottom-3 -right-3 w-24 h-24 border-r-2 border-b-2 border-amber-300/50 rounded-br-2xl"></div>
             <div className="absolute -top-3 -left-3 w-24 h-24 border-l-2 border-t-2 border-orange-300/50 rounded-tl-2xl"></div>
-            
+
             {/* Orange Accent Dot */}
             <div className="absolute top-1/2 -right-2 w-3 h-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-500"></div>
             <div className="absolute bottom-1/3 -left-2 w-2 h-2 rounded-full bg-orange-400"></div>
           </div>
-          
+
           {/* RIGHT COLUMN - Text Content (Now on Right) */}
           <div className="space-y-8 order-2">
             {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
@@ -102,7 +102,7 @@ const AboutUs = () => {
               </span>
               <div className="w-8 h-[2px] bg-gradient-to-r from-orange-500 to-amber-500"></div>
             </div>
-            
+
             {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
             <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
               Redefining{" "}
@@ -112,22 +112,22 @@ const AboutUs = () => {
               <br />
               <span className="text-gray-900">for the Digital Age</span>
             </h2>
-            
+
             {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
             <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              Founded with a mission to transform financial services through cutting-edge technology, 
-              we've built a platform where data meets intelligence. Our commitment to innovation and 
+              Founded with a mission to transform financial services through cutting-edge technology,
+              we've built a platform where data meets intelligence. Our commitment to innovation and
               security has made us a trusted partner for financial institutions worldwide.
             </p>
-            
+
             <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              Every solution we deliver undergoes rigorous testing and validation, ensuring that our 
-              clients receive accurate, reliable, and actionable insights. We believe in the power of 
+              Every solution we deliver undergoes rigorous testing and validation, ensuring that our
+              clients receive accurate, reliable, and actionable insights. We believe in the power of
               data to drive better financial decisions and create lasting value.
             </p>
-            
+
             {/* Stats Removed - Clean Values Section Removed */}
-            
+
             {/* Key Values - Updated typography */}
             <div className="grid grid-cols-2 gap-4 pt-2">
               <div className="flex items-center gap-2">
@@ -149,7 +149,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Mission & Vision Section - Updated typography */}
         <div className="mt-20 grid md:grid-cols-2 gap-8 pt-8 border-t border-orange-100">
           <div className="group p-6 rounded-2xl bg-gradient-to-br from-orange-50/50 to-amber-50/30 hover:shadow-lg transition-all duration-300">
@@ -160,11 +160,11 @@ const AboutUs = () => {
             <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-gray-900 mb-2">Our Mission</h3>
             {/* Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
             <p className="text-gray-600 text-[14px] md:text-[15px] font-normal leading-[1.6]">
-              To democratize financial intelligence by providing institutions with powerful, 
+              To democratize financial intelligence by providing institutions with powerful,
               accessible tools that drive better decision-making and create lasting value.
             </p>
           </div>
-          
+
           <div className="group p-6 rounded-2xl bg-gradient-to-br from-orange-50/50 to-rose-50/30 hover:shadow-lg transition-all duration-300">
             <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-rose-500 to-orange-500 flex items-center justify-center mb-4">
               <Eye className="w-6 h-6 text-white" />
@@ -173,7 +173,7 @@ const AboutUs = () => {
             <h3 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-gray-900 mb-2">Our Vision</h3>
             {/* Description - Updated: text-[14px] md:text-[15px] font-normal leading-[1.6] */}
             <p className="text-gray-600 text-[14px] md:text-[15px] font-normal leading-[1.6]">
-              To become the world's most trusted financial intelligence platform, 
+              To become the world's most trusted financial intelligence platform,
               empowering every institution to make data-driven decisions with confidence.
             </p>
           </div>

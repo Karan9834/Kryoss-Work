@@ -3,24 +3,24 @@ import processImg from "../../assets/Appointment/develop.webp";
 
 const steps = [
   {
-    title: "Gathering Requirements",
-    desc: "We begin by understanding your specific needs and goals, ensuring we tailor the app features to meet both healthcare provider and patient requirements."
+    title: "Requirement Analysis",
+    desc: "We start by evaluating your precise objectives and targets, guaranteeing we adapt the platform functions to fulfill clinical and consumer demands."
   },
   {
-    title: "Design & Development",
-    desc: "Our team focuses on creating an intuitive and user-friendly design followed by robust development."
+    title: "UI/UX & Coding",
+    desc: "Our specialists concentrate on drafting a highly accessible interface, subsequently backed by powerful backend engineering."
   },
   {
-    title: "Collect Third-Party Accounts",
-    desc: "Integration of payment gateways, APIs, SMS notifications and other services."
+    title: "Integration Services",
+    desc: "Implementing required transactional portals, varied APIs, automated messaging modules, and external connectivity."
   },
   {
-    title: "Testing & QA",
-    desc: "Our QA team performs multiple testing phases ensuring smooth functionality."
+    title: "Quality Assurance",
+    desc: "Our testing squad executes rigorous validation cycles to absolutely guarantee flawless application performance."
   },
   {
-    title: "Launch & Deployment",
-    desc: "After testing we launch the application on app stores and deploy the web admin panel."
+    title: "Release & Handover",
+    desc: "Post-validation, we publish your software onto digital marketplaces and configure the central management dashboard."
   }
 ];
 
@@ -33,15 +33,15 @@ export default function DevelopmentProcess() {
         {/* Heading */}
         <div className="text-center mb-16">
           <span className="border border-white/40 px-4 py-1 rounded-full text-sm">
-            Development Process
+            Creation Methodology
           </span>
 
           <h2 className="text-3xl md:text-4xl font-semibold mt-4">
-            Our <span className="text-cyan-400">Uber For Doctors App</span> Development Process
+            Our <span className="text-cyan-400">Custom Medical App Engineering</span> Workflow
           </h2>
 
           <p className="text-gray-300 max-w-3xl mx-auto mt-4">
-            Our development process ensures a seamless and customized solution from idea to launch.
+            Our structured methodology guarantees a flawless, tailored product journey from conception until deployment.
           </p>
         </div>
 

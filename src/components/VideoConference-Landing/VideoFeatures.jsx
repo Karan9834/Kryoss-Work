@@ -1,6 +1,6 @@
 import React from 'react';
 import { Video, Shield, Monitor, MessageSquare, Image, MicOff, Sparkles, Zap, Smartphone } from 'lucide-react';
-import featuresImg from '../../assets/videolanding-img/videolandingfeatures.jpg';
+import featuresImg from '../../assets/videolanding-img/videolandingfeatures1.webp';
 
 const VideoFeatures = () => {
     const features = [
@@ -42,7 +42,7 @@ const VideoFeatures = () => {
                             <span className="text-purple-400 text-[12px] font-medium tracking-[0.05em] uppercase flex items-center gap-2">
                                 <Sparkles size={18} /> Technical Excellence
                             </span>
-                            
+
                             {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
                             <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white">
                                 Built for High-Stakes <br />
@@ -50,7 +50,7 @@ const VideoFeatures = () => {
                                     Collaboration.
                                 </span>
                             </h2>
-                            
+
                             {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
                             <p className="text-slate-400 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-xl">
                                 We've re-engineered the video engine from the ground up to support massive scale without sacrificing a single frame of quality.

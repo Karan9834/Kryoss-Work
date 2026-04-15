@@ -1,5 +1,5 @@
 import React from "react";
-import tutorabout from "../../assets/homeservice-tutor-img/tutoraboutus.webp"
+import tutorabout from "../../assets/homeservice-tutor-img/tutoraboutus1.png"
 const AboutUs = () => {
     return (
         <section className="w-full bg-[#f6f6f6] py-16 sm:py-20">
@@ -27,14 +27,14 @@ const AboutUs = () => {
                     <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-start">
 
                         {/* LEFT IMAGE (SINGLE IMAGE ONLY) */}
-                        <div className="w-full lg:w-1/2">
-                            <div className="relative mx-auto w-full max-w-[460px]">
+                        <div className="w-full lg:w-1/2 lg:pt-30">
+                            <div className="relative mx-auto w-full max-w-[500px]">
 
                                 {/* IMAGE PLACEHOLDER */}
 
                                 <img src={tutorabout}
                                     alt="tutor about us"
-                                    className="w-full h-full scale-110 object-cover" />
+                                    className="w-full h-full scale-110 rounded-3xl shadow-2xl object-cover" />
 
 
                             </div>
@@ -67,13 +67,13 @@ const AboutUs = () => {
                                 Store and App Store.
                             </p>
 
-                            <p className="mb-6">
+                            {/* <p className="mb-6">
                                 Our app is designed for scalability and adaptability. As your
                                 business grows, you can easily add more services or features to
                                 enhance the user experience. The seamless functionality of our
                                 on-demand tutor app ensures both students and tutors have everything
                                 they need at their fingertips.
-                            </p>
+                            </p> */}
 
                             <p>
                                 Choose Kryoss Work for a stress-free development journey. With

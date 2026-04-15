@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle2, Tv, Globe, Shield, Zap, TrendingUp, Image as ImageIcon } from 'lucide-react';
-import aboutImg from '../../assets/ottlanding-img/ottlandingabout.png';
+import aboutImg from '../../assets/ottlanding-img/ottlandingabout.jpg';
 
 const OTTAbout = ({ isLight = false }) => {
     const features = [
@@ -29,10 +29,10 @@ const OTTAbout = ({ isLight = false }) => {
 
                         {/* Image container */}
                         <div className={`relative z-10 w-full h-auto max-w-[700px] mx-auto ${isLight ? 'bg-gray-100' : 'bg-gradient-to-br from-white/10 to-transparent'} rounded-[30px] md:rounded-[50px] border-4 md:border-8 ${isLight ? 'border-white' : 'border-white/10'} shadow-2xl flex items-center justify-center overflow-hidden transition-transform duration-700 group-hover:scale-[1.02]`}>
-                            <img 
-                                src={aboutImg} 
-                                alt="OTT About" 
-                                className="w-full h-auto block object-contain" 
+                            <img
+                                src={aboutImg}
+                                alt="OTT About"
+                                className="w-full h-auto block object-contain"
                             />
                         </div>
 

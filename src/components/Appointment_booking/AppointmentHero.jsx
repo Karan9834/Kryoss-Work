@@ -19,23 +19,21 @@ const AppointmentHero = () => {
             </div>
 
             <span className="text-lg font-semibold text-white tracking-wide">
-              Vyom Appointment Booking App
+              On-Demand Doctor Booking Platform
             </span>
           </div>
 
           {/* Title */}
           <h1 className="text-3xl md:text-4xl font-semibold leading-snug mb-5">
-            Uber for Doctors App –{" "}
+            Smart Doctor Appointment App –{" "}
             <span className="text-cyan-400 block mt-2">
-              Simplify Online Appointments
+              Redefining Patient Care
             </span>
           </h1>
 
           {/* Description */}
           <p className="text-gray-300 text-lg leading-relaxed max-w-xl">
-            Improve healthcare accessibility with an advanced doctor appointment
-            platform. Patients can easily book consultations while doctors
-            manage schedules seamlessly through a powerful mobile solution available on Android and iOS.
+            Enhance medical service accessibility through a sophisticated doctor scheduling system. Patients effortlessly reserve visits, while physicians coordinate their timetables flawlessly using a robust mobile application for both iOS and Android.
           </p>
 
           {/* CTA */}

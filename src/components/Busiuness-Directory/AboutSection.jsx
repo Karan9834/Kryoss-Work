@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle, Building2, Star, Users } from "lucide-react";
-import about from "../../assets/Busiuness-directory/about.jpg"
+import aboutimg from "../../assets/Busiuness-directory/about.jpg"
 
 const AboutSection = () => {
   return (
@@ -8,16 +8,16 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
         {/* ===== LEFT IMAGE (ONLINE) ===== */}
-        <div className="flex justify-center">
+        <div className="flex justify-center order-2 lg:order-1">
           <img
-            src="https://undraw.co/api/illustrations/undraw_business_deal_re_up4u.svg"
+            src={aboutimg}
             alt="About Business Directory"
-            className="w-full max-w-md object-contain drop-shadow-xl"
+            className="w-full max-w-lg object-contain rounded-3xl drop-shadow-xl"
           />
         </div>
 
         {/* ===== RIGHT CONTENT ===== */}
-        <div>
+        <div className="order-1 lg:order-2">
 
           {/* Badge/Tag - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
           <span className="inline-block text-[12px] font-medium tracking-[0.05em] uppercase text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full">

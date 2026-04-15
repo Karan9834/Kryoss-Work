@@ -9,17 +9,17 @@ export default function DoctorAppSolutions() {
   const cards = [
     {
       title: "MFine App",
-      desc: "MFine provides users with access to virtual consultations with doctors from various specialties through its mobile app.",
+      desc: "This model grants individuals direct pathways to digital medical sessions spanning diverse specialist categories via smartphones.",
       img: mfineImg
     },
     {
       title: "Dr. On Demand App",
-      desc: "Dr. On Demand is a telemedicine platform that allows users to have virtual medical visits with licensed healthcare professionals.",
+      desc: "An integrated telehealth framework empowering individuals to experience remote clinical checkups utilizing certified and practicing medical specialists.",
       img: drOnDemandImg
     },
     {
       title: "Practo App",
-      desc: "Practo is a healthcare technology company based in India that provides a variety of digital health services.",
+      desc: "A premier health-tech infrastructure delivering an extensive spectrum of modern consumer-focused digital medical management resources globally.",
       img: practoImg
     }
   ];
@@ -31,21 +31,21 @@ export default function DoctorAppSolutions() {
 
         {/* Badge */}
         <span className="border px-4 py-1 rounded-full text-sm">
-          On-Demand Doctor Solutions
+          Digital Healthcare Models
         </span>
 
         {/* Heading + Description */}
         <div className="grid md:grid-cols-2 gap-12 mt-6 mb-16">
 
           <h2 className="text-3xl md:text-4xl font-semibold text-blue-700">
-            Explore Top On-Demand Doctor App Solutions
+            Discover Prominent Telehealth Mobile Platform Inspirations
           </h2>
 
           <p className="text-gray-600">
-            Discover innovative solutions like MFine, Dr. On Demand, and Practo
-            with our On-Demand Doctor App Development. These apps streamline
-            healthcare services, connecting patients with doctors instantly for
-            seamless appointments and consultations.
+            Examine pioneering platforms akin to leading telehealth architectures
+            leveraging our bespoke medical programming services. Such applications
+            optimize clinical provisions, bridging practitioners and users
+            instantly facilitating straightforward digital consultations.
           </p>
 
         </div>

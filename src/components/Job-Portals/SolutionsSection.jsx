@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Sparkles, CheckCircle, Zap, TrendingUp, Users, Award, Clock, Target, Rocket } from "lucide-react";
 import sol1 from "../../assets/Job-Portals/sol1.png"
-import sol2 from "../../assets/Job-Portals/sol2.png"
-import sol3 from "../../assets/Job-Portals/sol3.png"
-import sol4 from "../../assets/Job-Portals/sol4.png"
-import sol5 from "../../assets/Job-Portals/sol5.png"
+import sol2 from "../../assets/Job-Portals/sol2.jpg"
+import sol3 from "../../assets/Job-Portals/sol3.jpg"
+import sol4 from "../../assets/Job-Portals/sol4.jpg"
+import sol5 from "../../assets/Job-Portals/sol5.jpg"
 
 const SolutionsSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -62,13 +62,13 @@ const SolutionsSection = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2;
-      
+
       solutionRefs.current.forEach((ref, index) => {
         if (ref) {
           const rect = ref.getBoundingClientRect();
           const elementTop = rect.top + window.scrollY;
           const elementBottom = elementTop + rect.height;
-          
+
           if (scrollPosition >= elementTop && scrollPosition <= elementBottom) {
             setActiveIndex(index);
           }
@@ -78,13 +78,13 @@ const SolutionsSection = () => {
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
-    
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <section ref={sectionRef} className="relative bg-gradient-to-b from-gray-50 to-white py-20 px-6 overflow-hidden">
-      
+
       {/* ===== Blue Waves at Top ===== */}
       <div className="absolute top-0 left-0 w-full">
         <svg viewBox="0 0 1440 120" className="w-full">
@@ -103,7 +103,7 @@ const SolutionsSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* ===== HEADER SECTION - Updated Typography ===== */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 px-4 py-2 rounded-full mb-4 border border-blue-200">
@@ -111,7 +111,7 @@ const SolutionsSection = () => {
             {/* Badge - 12px, weight 500, letter-spacing 0.05em */}
             <span className="text-blue-700 text-[12px] font-medium tracking-[0.05em] uppercase">Our Solutions</span>
           </div>
-          
+
           {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Comprehensive{" "}
@@ -120,7 +120,7 @@ const SolutionsSection = () => {
             </span>{" "}
             for Every Need
           </h2>
-          
+
           {/* Description - 16px, weight 400, line-height 1.6 */}
           <p className="mt-4 text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
             Discover how our platform can transform your hiring and job search experience.
@@ -133,9 +133,9 @@ const SolutionsSection = () => {
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full hidden lg:block">
             {/* Base Line */}
             <div className="absolute inset-0 bg-gradient-to-b from-blue-200 via-gray-200 to-blue-200"></div>
-            
+
             {/* Animated Progress Line */}
-            <div 
+            <div
               className="absolute left-0 w-full bg-gradient-to-b from-blue-500 via-indigo-500 to-purple-500 transition-all duration-500 ease-out"
               style={{
                 height: `${((activeIndex + 1) / solutions.length) * 100}%`,
@@ -144,7 +144,7 @@ const SolutionsSection = () => {
             >
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full shadow-lg animate-pulse"></div>
             </div>
-            
+
             {/* Glow Effect */}
             <div className="absolute inset-0 bg-gradient-to-b from-blue-400/20 via-indigo-400/20 to-purple-400/20 blur-md"></div>
           </div>
@@ -158,34 +158,32 @@ const SolutionsSection = () => {
                 className="relative group"
               >
                 {/* Timeline Dot */}
-                <div className={`absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full border-4 border-white shadow-lg hidden lg:block z-20 transition-all duration-300 ${
-                  activeIndex >= index 
-                    ? "bg-gradient-to-r from-blue-500 to-indigo-500 scale-125" 
-                    : "bg-gray-300"
-                }`}>
-                  <div className={`absolute inset-0 rounded-full animate-ping ${
-                    activeIndex === index ? "bg-blue-400" : "hidden"
-                  }`}></div>
+                <div className={`absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full border-4 border-white shadow-lg hidden lg:block z-20 transition-all duration-300 ${activeIndex >= index
+                  ? "bg-gradient-to-r from-blue-500 to-indigo-500 scale-125"
+                  : "bg-gray-300"
+                  }`}>
+                  <div className={`absolute inset-0 rounded-full animate-ping ${activeIndex === index ? "bg-blue-400" : "hidden"
+                    }`}></div>
                 </div>
-                
+
                 {/* Alternating Layout */}
                 <div className={`flex flex-col ${solution.direction === 'left' ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}>
-                  
+
                   {/* Image Side */}
                   <div className="flex-1 relative">
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl group/image">
                       <img
                         src={solution.image}
                         alt={solution.title}
-                        className="w-full h-[400px] object-fit transition-all duration-700 group-hover/image:scale-110 group-hover/image:rotate-1"
+                        className="w-full h-[350px] object-fit transition-all duration-700 group-hover/image:scale-110 group-hover/image:rotate-1"
                       />
                       {/* Gradient Overlay on Hover */}
                       <div className={`absolute inset-0 bg-gradient-to-r ${solution.hoverEffect} opacity-0 group-hover/image:opacity-30 transition-opacity duration-500`}></div>
-                      
+
                       {/* Shine Effect on Hover */}
                       <div className="absolute inset-0 translate-x-[-100%] group-hover/image:translate-x-[100%] bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-1000"></div>
                     </div>
-                    
+
                     {/* Decorative Elements */}
                     <div className="absolute -top-4 -left-4 w-24 h-24 bg-blue-500/20 rounded-full blur-2xl group-hover:bg-blue-500/30 transition-all duration-500"></div>
                     <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-indigo-500/20 rounded-full blur-2xl group-hover:bg-indigo-500/30 transition-all duration-500"></div>

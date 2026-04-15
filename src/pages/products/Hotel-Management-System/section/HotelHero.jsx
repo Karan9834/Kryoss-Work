@@ -1,6 +1,6 @@
 import React from "react";
 import { MessageCircle } from "lucide-react";
-import managehero from "../../../../assets/Hotel-Management/managehero.png"
+import manageheroimg from "../../../../assets/Hotel-Management/managehero1.jpg"
 const HotelHero = () => {
   const demoLink =
     "https://preview.codecanyon.net/item/xain-hotel-management-system-with-website/full_screen_preview/31264738";
@@ -90,7 +90,7 @@ const HotelHero = () => {
               {/* Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-purple-500/20">
                 <img
-                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+                  src={manageheroimg}
                   alt="Hotel Dashboard"
                   className="w-full h-auto object-cover"
                 />

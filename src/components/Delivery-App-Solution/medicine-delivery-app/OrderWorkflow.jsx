@@ -5,17 +5,17 @@ const OrderWorkflow = () => {
     const [activeTab, setActiveTab] = useState('without');
 
     const withoutPrescriptionSteps = [
-        { title: "Select Medicines", desc: "Users explore the app to select over-the-counter medicines.", img: "1" },
-        { title: "Add to Cart", desc: "Selected products are added to the cart with quantity preferences.", img: "2" },
-        { title: "Secure Payment", desc: "Users pay securely using multiple payment options.", img: "3" },
-        { title: "Quick Delivery", desc: "The order is delivered promptly to the user's doorstep.", img: "4" }
+        { title: "Identify Products", desc: "Individuals navigate the framework to select required over-the-counter medications.", img: "1" },
+        { title: "Aggregate Selection", desc: "Identified items are consolidated with specific volume requirements.", img: "2" },
+        { title: "Authenticated Payment", desc: "Participants settle accounts through diverse encrypted transaction channels.", img: "3" },
+        { title: "Expedited Fulfillment", desc: "The clinical request is facilitated immediately to the participant's doorstep.", img: "4" }
     ];
 
     const withPrescriptionSteps = [
-        { title: "Select Store", desc: "Users choose their preferred pharmacy from the available list.", img: "1" },
-        { title: "Upload Prescription", desc: "The prescription is uploaded securely through the app.", img: "2" },
-        { title: "Add Notes", desc: "User can add note if they want specific medicine from the prescription.", img: "3" },
-        { title: "Delivered", desc: "Medicine are packed securely & delivered to the customer's location.", img: "4" }
+        { title: "Identify Merchant", desc: "Participants select an authorized pharmacy from the verified merchant list.", img: "1" },
+        { title: "Authorization Upload", desc: "Clinical documentation is submitted securely through the integrated portal.", img: "2" },
+        { title: "Operational Notes", desc: "Participants can provide specific instructions for medication fulfillment details.", img: "3" },
+        { title: "Fulfillment Finalized", desc: "Clinical supplies are packaged with integrity and distributed to the participant.", img: "4" }
     ];
 
     return (
@@ -34,19 +34,19 @@ const OrderWorkflow = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl lg:text-4xl font-black text-gray-900 mb-4 font-nunito"
+                        className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-4"
                     >
-                        Seamless Medicine Ordering Workflow: <br />
-                        <span className="text-teal-600">With & Without Prescription</span>
+                        Unified Clinical Logistics Flow: <br />
+                        <span className="text-teal-600">Authorized & Non-Authorized Path</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-base text-gray-600 font-ibm-plex"
+                        className="text-base text-gray-600"
                     >
-                        Easily order prescription and non-prescription medicines. Enjoy a smooth, secure, and hassle-free experience.
+                        Effortlessly secure both foundational and specialized medications. Experience a streamlined, high-integrity, and intuitive logistics journey.
                     </motion.p>
                 </div>
 
@@ -54,15 +54,15 @@ const OrderWorkflow = () => {
                     <div className="bg-white p-2 rounded-full shadow-md border border-gray-100 flex gap-1">
                         <button
                             onClick={() => setActiveTab('without')}
-                            className={`px-6 py-3 rounded-full font-bold text-xs lg:text-sm transition-all font-ibm-plex ${activeTab === 'without' ? 'bg-teal-600 text-white shadow-md' : 'text-gray-600 hover:bg-gray-50'}`}
+                            className={`px-6 py-3 rounded-full font-bold text-xs lg:text-sm transition-all ${activeTab === 'without' ? 'bg-teal-600 text-white shadow-md' : 'text-gray-600 hover:bg-gray-50'}`}
                         >
-                            ORDER WITHOUT PRESCRIPTION
+                            PROCURE WITHOUT AUTHORIZATION
                         </button>
                         <button
                             onClick={() => setActiveTab('with')}
-                            className={`px-6 py-3 rounded-full font-bold text-xs lg:text-sm transition-all font-ibm-plex ${activeTab === 'with' ? 'bg-orange-500 text-white shadow-md' : 'text-gray-600 hover:bg-gray-50'}`}
+                            className={`px-6 py-3 rounded-full font-bold text-xs lg:text-sm transition-all ${activeTab === 'with' ? 'bg-orange-500 text-white shadow-md' : 'text-gray-600 hover:bg-gray-50'}`}
                         >
-                            ORDER WITH PRESCRIPTION
+                            PROCURE WITH AUTHORIZATION
                         </button>
                     </div>
                 </div>
@@ -98,8 +98,8 @@ const OrderWorkflow = () => {
                                         {/* Connector Line */}
                                         {idx < 3 && <div className="hidden lg:block absolute top-12 left-[60%] w-[80%] h-[2px] bg-gradient-to-r from-teal-200 to-transparent -z-10"></div>}
 
-                                        <h4 className="text-base lg:text-lg font-bold text-gray-900 mb-2 font-nunito leading-tight">{step.title}</h4>
-                                        <p className="text-gray-600 font-ibm-plex text-xs lg:text-sm leading-snug">{step.desc}</p>
+                                        <h4 className="text-base lg:text-lg font-bold text-gray-900 mb-2 leading-tight">{step.title}</h4>
+                                        <p className="text-gray-600 text-xs lg:text-sm leading-snug">{step.desc}</p>
                                     </div>
                                 ))}
                             </div>

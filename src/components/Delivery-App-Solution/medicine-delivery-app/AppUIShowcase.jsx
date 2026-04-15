@@ -46,19 +46,19 @@ const AppUIShowcase = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl lg:text-4xl font-black text-gray-900 mb-4 font-nunito leading-tight"
+                        className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-4 leading-tight"
                     >
-                        Modern & User-Friendly UI of{' '}
-                        <span className="text-teal-600">Medicine Delivery App</span>
+                        Contemporary & Intuitive Interfaces of{' '}
+                        <span className="text-teal-600">Clinical Logistics Frameworks</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-base text-gray-600 font-ibm-plex"
+                        className="text-base text-gray-600"
                     >
-                        Have a look at our intuitive UI of our pharmacy app development solution. With a clean layout and easy navigation, users can order & deliver medicines effortlessly.
+                        Examine our refined visual designs for modern pharmaceutical distribution. With streamlined layouts and logical navigation, individuals manage medications and deliveries flawlessly.
                     </motion.p>
                 </div>
 
@@ -68,7 +68,7 @@ const AppUIShowcase = () => {
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`px-6 py-2.5 rounded-full font-bold text-sm transition-all font-ibm-plex ${activeTab === tab.id ? `${tab.color} text-white shadow-md` : 'text-gray-500 hover:text-gray-900 hover:bg-white'}`}
+                                className={`px-6 py-2.5 rounded-full font-bold text-sm transition-all ${activeTab === tab.id ? `${tab.color} text-white shadow-md` : 'text-gray-500 hover:text-gray-900 hover:bg-white'}`}
                             >
                                 {tab.label}
                             </button>

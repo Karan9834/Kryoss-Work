@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Truck, BarChart3, Globe2 } from 'lucide-react';
-import heroImg from '../../assets/transportlanding-img/transportlandinghero.jpg';
+import heroImg from '../../assets/transportlanding-img/transportlandinghero1.jpg';
 
 const LogisticsHero = () => {
     const scrollToProducts = () => {
@@ -68,10 +68,10 @@ const LogisticsHero = () => {
                     <div className="relative animate-float block scale-90 md:scale-100">
                         <div className="absolute -inset-4 bg-orange-500/20 rounded-[4rem] blur-3xl opacity-50"></div>
                         <div className="relative bg-[#1E293B] h-[400px] md:h-[500px] rounded-[3rem] border-2 border-white/10 overflow-hidden shadow-2xl flex items-center justify-center">
-                            <img 
-                                src={heroImg} 
-                                alt="Transport Logistics" 
-                                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" 
+                            <img
+                                src={heroImg}
+                                alt="Transport Logistics"
+                                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                             />
                         </div>
                     </div>

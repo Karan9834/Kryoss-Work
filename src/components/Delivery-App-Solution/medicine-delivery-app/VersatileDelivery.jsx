@@ -21,19 +21,19 @@ const VersatileDelivery = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl lg:text-4xl font-black text-gray-900 mb-4 font-nunito leading-tight"
+                        className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-4 leading-tight"
                     >
-                        Versatile Delivery App Solutions{' '}
-                        <span className="text-teal-600">for Your Startup</span>
+                        Comprehensive Distribution Frameworks{' '}
+                        <span className="text-teal-600">For Your Enterprise</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-base text-gray-600 font-ibm-plex"
+                        className="text-base text-gray-600"
                     >
-                        If you are looking for other similar on-demand delivery solutions like grocery, flower, medicine, etc. We customize the food app to other delivery app solutions for your business startup.
+                        Should you require additional on-demand logistics architectures for groceries, floral supplies, pharmaceuticals, or more, we tailor our core distribution engineering to suit your startup's specific trajectory.
                     </motion.p>
                 </div>
 
@@ -51,7 +51,7 @@ const VersatileDelivery = () => {
                             <div className="text-3xl mb-3 group-hover:scale-110 transition-transform">
                                 {sol.icon}
                             </div>
-                            <h3 className="text-sm font-bold text-gray-900 font-nunito group-hover:text-teal-600 transition-colors">
+                            <h3 className="text-sm font-bold text-gray-900 group-hover:text-teal-600 transition-colors">
                                 {sol.name}
                             </h3>
                         </motion.a>

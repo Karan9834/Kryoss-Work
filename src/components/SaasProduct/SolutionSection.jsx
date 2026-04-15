@@ -8,7 +8,10 @@ import {
   CheckCircle,
   ArrowRight,
 } from "lucide-react";
-
+import img1 from "../../assets/SaasProduct/sol1.jpg";
+import img2 from "../../assets/SaasProduct/sol2.jpeg";
+import img3 from "../../assets/SaasProduct/sol3.jpeg";
+import img4 from "../../assets/SaasProduct/sol4.jpg";
 const SolutionsSection = () => {
   const solutions = [
     {
@@ -18,7 +21,7 @@ const SolutionsSection = () => {
       points: ["Real-time insights", "Predictive AI", "Smart dashboards"],
       icon: Sparkles,
       image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200",
+        img1,
       color: "from-purple-500 to-pink-500",
     },
     {
@@ -28,7 +31,7 @@ const SolutionsSection = () => {
       points: ["Zero-trust system", "AI threat detection", "Secure APIs"],
       icon: Shield,
       image:
-        "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200",
+        img2,
       color: "from-emerald-500 to-teal-500",
     },
     {
@@ -38,7 +41,7 @@ const SolutionsSection = () => {
       points: ["No-code builder", "Workflow automation", "Time saving"],
       icon: Zap,
       image:
-        "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200",
+        img3,
       color: "from-orange-500 to-amber-500",
     },
     {
@@ -48,7 +51,7 @@ const SolutionsSection = () => {
       points: ["Live chat", "Video calls", "Shared workspace"],
       icon: Users,
       image:
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200",
+        img4,
       color: "from-blue-500 to-cyan-500",
     },
   ];

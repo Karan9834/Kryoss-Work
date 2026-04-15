@@ -1,5 +1,5 @@
 import React from "react";
-
+import aboutimg from "@/assets/academy-tutor-img/about.jpg";
 const TutorAbout = () => {
   return (
     <section className="bg-white py-24 relative overflow-hidden">
@@ -11,9 +11,9 @@ const TutorAbout = () => {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative">
 
         {/* LEFT IMAGE */}
-        <div className="relative group">
+        <div className="relative group order-2 lg:order-1">
           <img
-            src="https://img.freepik.com/free-vector/online-tutor-concept_23-2148629039.jpg"
+            src={aboutimg}
             alt="Tutor Booking"
             className="rounded-2xl shadow-lg object-cover w-full group-hover:scale-105 transition duration-500"
           />
@@ -33,7 +33,7 @@ const TutorAbout = () => {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div>
+        <div className="order-1 lg:order-2">
 
           {/* label */}
           <p className="text-indigo-600 font-semibold mb-3 uppercase tracking-wider text-sm">

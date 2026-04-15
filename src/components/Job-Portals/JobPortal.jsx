@@ -42,7 +42,7 @@ const HeroSection = () => {
 
           {/* ===== CTA BUTTON - Button Text: 16px, weight: 600, letter-spacing: 0.01em ===== */}
           <div className="mt-10">
-            <button 
+            <button
               aria-label="Explore job opportunities"
               className="group bg-yellow-400 text-black font-semibold px-10 py-4 rounded-2xl shadow-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 active:scale-95 text-[16px] tracking-[0.01em]"
               onClick={() => document.getElementById('explore-job')?.scrollIntoView({ behavior: 'smooth' })}
@@ -62,11 +62,11 @@ const HeroSection = () => {
             src={jobhero}
             alt="Job illustration"
             loading="eager"
-            className="w-full max-w-md mx-auto relative z-10"
+            className="min-w-[500px] min-h-[500px] relative z-10"
           />
 
           {/* Floating Cards - Updated Stats Typography */}
-          <div className="absolute top-8 -left-4 md:-left-8 bg-white/95 backdrop-blur-lg p-4 rounded-2xl shadow-xl">
+          {/* <div className="absolute top-8 -left-4 md:-left-8 bg-white/95 backdrop-blur-lg p-4 rounded-2xl shadow-xl">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                 <Briefcase className="w-5 h-5 text-green-600" />
@@ -80,7 +80,7 @@ const HeroSection = () => {
                 <Briefcase className="w-5 h-5 text-yellow-600" />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -10,18 +10,18 @@ export default function DoctorAppCTA() {
         <div className="max-w-xl z-10">
 
           <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-4">
-            Launch Your On-Demand Doctor Appointment App Today
+            Deploy Your Custom Medical Scheduling Platform Now
           </h2>
 
           <p className="text-white/90 mb-6">
-            Transform healthcare services with a modern doctor booking
-            platform. Enable patients to schedule consultations easily
-            while doctors manage appointments efficiently through a
-            powerful digital solution.
+            Revolutionize clinical provisions utilizing an advanced medical
+            reservation architecture. Allow individuals to secure visits
+            effortlessly whilst practitioners organize daily rosters flawlessly
+            using an integrated digital framework.
           </p>
 
           <button className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-orange-600 transition">
-            Launch Your App Today
+            Start Your Digital Project
           </button>
 
         </div>

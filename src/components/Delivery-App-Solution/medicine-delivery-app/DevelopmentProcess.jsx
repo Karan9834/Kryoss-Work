@@ -5,23 +5,23 @@ import { motion } from 'framer-motion';
 const DevelopmentProcess = () => {
     const steps = [
         {
-            title: "Requirement Gathering",
-            desc: "We begin by understanding your business needs in detail to create a tailored solution. Our in-depth research helps define essential features and user flows.",
+            title: "Objectives Identification",
+            desc: "We initiate by comprehensively analyzing your operational objectives to engineer a precise framework. Our detailed investigations assist in establishing fundamental modules and user journeys.",
             img: "requirement-gathering"
         },
         {
-            title: "Design And Development",
-            desc: "Our design team crafts an intuitive interface for easy navigation by customers, pharmacies, and drivers. Our expert developers then build a robust, scalable app.",
+            title: "Architecture & Implementation",
+            desc: "Our creative department crafts seamless navigational paths for individuals, merchants, and logistics personnel. Elite engineers then construct a high-capacity, extensible ecosystem.",
             img: "design-and-development"
         },
         {
-            title: "Collect Third Party Accounts",
-            desc: "We integrate third-party accounts such as payment gateways, mapping services, and authentication providers to enhance app functionality securely.",
+            title: "Integration Ecosystem",
+            desc: "We incorporate essential third-party modules such as transaction processors, spatial mapping services, and verification protocols to broaden platform utility with high integrity.",
             img: "collect-third-party-accounts"
         },
         {
-            title: "Test And Launch",
-            desc: "After successful testing, we deploy your app on Android and iOS stores. Post-launch, we offer continuous support and maintenance services.",
+            title: "Validation & Deployment",
+            desc: "Following comprehensive validation cycles, we initiate platform presence on major mobile stores. Post-deployment, we provide ongoing operational refinement and technical assistance.",
             img: "test-and-launch"
         }
     ];
@@ -34,19 +34,19 @@ const DevelopmentProcess = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl lg:text-4xl font-black text-gray-900 mb-4 font-nunito leading-tight"
+                        className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-4 leading-tight"
                     >
-                        Our Medicine Delivery App <br />
-                        <span className="text-teal-600">Development Process</span>
+                        Our Clinical Logistics <br />
+                        <span className="text-teal-600">Platform Engineering Lifecycle</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-base text-gray-600 font-ibm-plex"
+                        className="text-base text-gray-600"
                     >
-                        Our process is structured to ensure a seamless experience from start to finish. Here's how we bring your on-demand delivery app to life.
+                        Our methodology is calibrated to ensure a flawless progression from concept to operational status. Here is how we manifest your distribution vision.
                     </motion.p>
                 </div>
 
@@ -81,10 +81,10 @@ const DevelopmentProcess = () => {
                                     </div>
                                 </div>
 
-                                <h3 className="text-base lg:text-lg font-bold text-gray-900 mb-2 font-nunito group-hover:text-teal-600 transition-colors">
+                                <h3 className="text-base lg:text-lg font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors">
                                     {step.title}
                                 </h3>
-                                <p className="text-gray-600 text-xs font-ibm-plex px-2 leading-tight">
+                                <p className="text-gray-600 text-xs px-2 leading-tight">
                                     {step.desc}
                                 </p>
                             </motion.div>
@@ -98,8 +98,8 @@ const DevelopmentProcess = () => {
                     viewport={{ once: true }}
                     className="mt-12 text-center"
                 >
-                    <h3 className="text-2xl font-black text-gray-900 mb-6 font-nunito">
-                        Launch Your Medicine Delivery App with <span className="text-teal-600">Top-Notch Features!</span>
+                    <h3 className="text-2xl font-black text-gray-900 mb-6">
+                        Evoke Growth With An <span className="text-teal-600">Elite Pharmacy Logistics Framework!</span>
                     </h3>
                     <Link to="/company/contact" className="px-8 py-4 rounded-full font-black text-white text-base hover:scale-105 transition-transform shadow-xl relative z-10"
                         style={{ background: 'linear-gradient(100deg, #002B2C 0%, #001515 100%)' }}>

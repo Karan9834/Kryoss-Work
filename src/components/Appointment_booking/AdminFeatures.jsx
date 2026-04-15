@@ -15,32 +15,32 @@ export default function AdminFeatures() {
     {
       icon: <Users size={24} />,
       title: "Manage Doctors",
-      text: "Admins can view doctor profiles, update information, and add or remove doctors from the system.",
+      text: "Administrators visually inspect practitioner accounts, modify credentials, plus register or delete individual medical experts.",
     },
     {
       icon: <CreditCard size={24} />,
       title: "Payments & Billing",
-      text: "Track transactions, generate invoices, monitor billing and process refunds securely.",
+      text: "Track financial exchanges, export invoicing records, observe payments, plus administer secure monetary refunds.",
     },
     {
       icon: <ClipboardList size={24} />,
       title: "Manage Appointments",
-      text: "Admins can oversee appointment schedules and edit or manage bookings easily.",
+      text: "Managers thoroughly control session logs alongside seamlessly modifying or rearranging patient checkup schedules.",
     },
     {
       icon: <CalendarDays size={24} />,
       title: "Calendar Booking",
-      text: "Integrate with Google and iOS calendars to monitor doctor schedules and availability.",
+      text: "Synchronize directly utilizing Google alongside Apple schedulers to accurately track physician availability periods.",
     },
     {
       icon: <Clock size={24} />,
       title: "Manage Time",
-      text: "Control clinic timings, appointment slots, and schedule adjustments in real time.",
+      text: "Govern hospital operating hours, individual timeframes, alongside immediate live slot modifications dynamically.",
     },
     {
       icon: <BarChart3 size={24} />,
       title: "Analytics & Reports",
-      text: "Gain insights into appointments, patient activity, and revenue using detailed reports.",
+      text: "Extract analytical intelligence covering clinical visits, user retention, plus overarching system revenue statistics.",
     },
   ];
 
@@ -49,21 +49,21 @@ export default function AdminFeatures() {
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Badge */}
         <span className="border px-4 py-1 rounded-full text-sm">
-          Web Admin Features
+          Management Dashboard Tools
         </span>
 
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-4">
-          Super Admin Web{" "}
+          Super Admin Backend{" "}
           <span className="text-blue-600">
-            Features of Our Uber For Doctors App
+            Capabilities of Our Medical App
           </span>
         </h2>
 
         <p className="text-gray-600 max-w-3xl mx-auto mb-16">
-          Manage doctors, appointments, payments and platform operations through
-          a powerful admin dashboard designed to give complete control over your
-          healthcare ecosystem.
+          Oversee physicians, bookings, financials, alongside system parameters
+          utilizing a robust centralized panel structured to provide absolute
+          authority within your clinical platform.
         </p>
       </div>
 

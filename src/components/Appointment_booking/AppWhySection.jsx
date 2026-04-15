@@ -17,15 +17,15 @@ export default function WhyChooseUs() {
 
         {/* Title */}
         <h2 className="text-center text-3xl md:text-4xl font-semibold mb-4">
-          Why Choose Our{" "}
+          Why Select Our{" "}
           <span className="text-cyan-400">
-            Uber For Doctors App?
+            Medical Appointment Software?
           </span>
         </h2>
 
         <p className="text-center text-gray-300 max-w-3xl mx-auto mb-14">
-          Our Uber For Doctors App is the ideal solution to quickly launch your
-          on-demand healthcare platform with ease.
+          Our bespoke medical software serves as the perfect blueprint to rapidly launch
+          your digital health infrastructure effortlessly.
         </p>
 
         {/* GRAPHIC IMAGE */}
@@ -42,28 +42,28 @@ export default function WhyChooseUs() {
 
           <ul className="space-y-4 list-disc pl-6">
             <li>
-              Get your app live in only 5 working days without long
-              development cycles.
+              Deploy your platform officially within a week, avoiding
+              extended engineering timeframes.
             </li>
             <li>
-              Customize the app to match your branding and business model.
+              Tailor the platform fully to reflect your unique brand identity perfectly.
             </li>
             <li>
-              Designed with simplicity to ensure seamless navigation
-              for doctors and patients.
+              Engineered prioritizing clarity to guarantee effortless navigation
+              across all user profiles.
             </li>
           </ul>
 
           <ul className="space-y-4 list-disc pl-6">
             <li>
-              Built on a robust scalable platform ensuring security
+              Constructed utilizing a highly expansive framework guaranteeing security
               and high performance.
             </li>
             <li>
-              Real-time notifications for appointments and updates.
+              Instantaneous push alerts concerning upcoming slots and critical updates.
             </li>
             <li>
-              Multi-language and multi-currency support for global users.
+              Comprehensive multilingual alongside multiple currency integrations tailored for international audiences.
             </li>
           </ul>
 

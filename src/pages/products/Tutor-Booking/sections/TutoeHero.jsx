@@ -1,6 +1,6 @@
 import React from "react";
 import { MessageCircle, ArrowRight } from "lucide-react";
-
+import heroimg from "@/assets/academy-tutor-img/hero.jpg";
 const TutorBookingHero = () => {
   const handleLiveDemo = () => {
     window.open(
@@ -22,7 +22,7 @@ const TutorBookingHero = () => {
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#6366f1" strokeWidth="0.5"/>
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#6366f1" strokeWidth="0.5" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#grid)" />
@@ -80,7 +80,7 @@ const TutorBookingHero = () => {
               <div className="flex items-center gap-2">
                 <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
                   <svg className="w-3 h-3 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                   </svg>
                 </div>
                 <span className="text-gray-300">Instant Booking</span>
@@ -88,7 +88,7 @@ const TutorBookingHero = () => {
               <div className="flex items-center gap-2">
                 <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
                   <svg className="w-3 h-3 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                   </svg>
                 </div>
                 <span className="text-gray-300">Verified Tutors</span>
@@ -96,7 +96,7 @@ const TutorBookingHero = () => {
               <div className="flex items-center gap-2">
                 <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
                   <svg className="w-3 h-3 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                   </svg>
                 </div>
                 <span className="text-gray-300">Flexible Scheduling</span>
@@ -106,7 +106,7 @@ const TutorBookingHero = () => {
             {/* Stats */}
             <div className="flex items-center gap-6 pt-4">
               <div className="flex -space-x-2">
-                {[1,2,3,4].map((i) => (
+                {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 border-2 border-[#1A1F35]"></div>
                 ))}
                 <div className="w-8 h-8 rounded-full bg-white/10 border-2 border-[#1A1F35] flex items-center justify-center text-xs text-white">10k+</div>
@@ -121,17 +121,17 @@ const TutorBookingHero = () => {
             <div className="relative z-10">
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl blur-2xl opacity-30"></div>
               <img
-                src="https://img.freepik.com/free-vector/online-education-concept_23-2148525673.jpg"
+                src={heroimg}
                 alt="Tutor Booking"
                 className="relative rounded-2xl shadow-2xl max-h-[400px] w-auto object-cover border border-white/10"
               />
-              
+
               {/* Floating booking card */}
               <div className="absolute -bottom-4 -left-4 bg-[#1A1F35] backdrop-blur rounded-xl shadow-2xl p-4 w-56 border border-white/10">
                 <div className="flex items-center gap-2 mb-2">
                   <div className="w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                     </svg>
                   </div>
                   <div>
@@ -148,9 +148,9 @@ const TutorBookingHero = () => {
               <div className="absolute top-4 -right-4 bg-[#1A1F35] backdrop-blur rounded-xl shadow-2xl px-4 py-2 border border-white/10">
                 <div className="flex items-center gap-2">
                   <div className="flex">
-                    {[1,2,3,4,5].map((star) => (
+                    {[1, 2, 3, 4, 5].map((star) => (
                       <svg key={star} className="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2L15 9H22L16 14L19 21L12 16.5L5 21L8 14L2 9H9L12 2Z"/>
+                        <path d="M12 2L15 9H22L16 14L19 21L12 16.5L5 21L8 14L2 9H9L12 2Z" />
                       </svg>
                     ))}
                   </div>
@@ -170,7 +170,7 @@ const TutorBookingHero = () => {
               {/* Live demo indicator */}
               <div className="absolute -top-3 -right-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full p-2 shadow-lg">
                 <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
+                  <path d="M8 5v14l11-7z" />
                 </svg>
               </div>
             </div>

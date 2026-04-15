@@ -6,27 +6,27 @@ import { motion } from 'framer-motion';
 const ClientTestimonials = () => {
     const testimonials = [
         {
-            name: "Mr. Medyan",
+            name: "Ibrahim Medyan",
             location: "Jordan",
-            desc: "Mr. Medyan from Jordan shares his experience after purchasing our food delivery app, highlighting clear communication & strong delivery quality.",
+            desc: "Mr. Medyan from Jordan discussed his journey after selecting our distribution platform, noting the exceptional clarity in dialogue and robust system integrity.",
             videoId: "cuU7_6vTdhc"
         },
         {
-            name: "Anurag Borkar",
+            name: "A. Borkar",
             location: "Papua New Guinea",
-            desc: "Mr. Anurag Borkar from Papua New Guinea appreciates our timely delivery and dedicated after-sales support, even on holidays.",
+            desc: "Mr. Borkar from Papua New Guinea valued the expedited delivery scheduled alongside our consistent technical assistance, maintaining continuity throughout.",
             videoId: "kk3zIuMX_OA"
         },
         {
-            name: "Sertima",
+            name: "R. Sertima",
             location: "Trinidad and Tobago",
-            desc: "Mr. Sertima from Trinidad and Tobago praises our professionalism, transparency, and support for his delivery project.",
+            desc: "Mr. Sertima from Trinidad and Tobago appreciated the ethical standards, openness, and strategic assistance provided for his logistics initiative.",
             videoId: "IBS0Dl7elJk"
         },
         {
-            name: "Elizabeth Ramos",
+            name: "E. Ramos",
             location: "Philippines",
-            desc: "Ms. Elizabeth Ramos from the Philippines shares her experience, praising our ability to deliver the app as expected.",
+            desc: "Ms. Ramos from the Philippines articulated her satisfaction, highlighting our capacity to implement the software exactly as conceptualized.",
             videoId: "z99Bn7GFypc"
         }
     ];
@@ -39,10 +39,10 @@ const ClientTestimonials = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl lg:text-4xl font-black text-gray-900 mb-4 font-nunito leading-tight"
+                        className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-4 leading-tight"
                     >
-                        What Our Clients Say About{' '}
-                        <span className="text-teal-600">Working With Us</span>
+                        Client Insights Regarding{' '}
+                        <span className="text-teal-600">Collaborating With Us</span>
                     </motion.h2>
                 </div>
 

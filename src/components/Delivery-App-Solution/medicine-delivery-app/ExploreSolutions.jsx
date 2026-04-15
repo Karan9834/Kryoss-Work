@@ -21,18 +21,18 @@ const ExploreSolutions = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl lg:text-4xl font-black text-gray-900 mb-4 font-nunito leading-tight"
+                        className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-4 leading-tight"
                     >
-                        Explore Our <span className="text-teal-600">On-Demand App Solutions</span>
+                        Discover Our <span className="text-teal-600">Virtual Distribution Architectures</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-base text-gray-600 font-ibm-plex"
+                        className="text-base text-gray-600"
                     >
-                        Check out our best-selling on-demand solutions and find the perfect fit for your unique business needs.
+                        Review our high-performance on-demand ecosystems and identify the optimal framework for your specific operational requirements.
                     </motion.p>
                 </div>
 
@@ -50,7 +50,7 @@ const ExploreSolutions = () => {
                             <div className="text-3xl mb-3 group-hover:scale-110 transition-transform">
                                 {sol.icon}
                             </div>
-                            <h3 className="text-sm font-bold text-gray-900 font-nunito group-hover:text-teal-600 transition-colors">
+                            <h3 className="text-sm font-bold text-gray-900 group-hover:text-teal-600 transition-colors">
                                 {sol.name}
                             </h3>
                         </motion.a>

@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const LaunchIn5Days = () => {
     const points = [
-        "Skip lengthy development phases and launch a fully functional, scalable platform",
-        "Connects pharmacies, customers, and delivery agents in real-time",
-        "Prescription uploads and live order tracking included",
-        "Secure payments and instant notifications built-in"
+        "Eliminate extensive engineering cycles and deploy a comprehensive, elastic clinical ecosystem",
+        "Synchronizes pharmacies, participants, and distribution personnel using live protocols",
+        "Clinical authorization submission and dynamic logistical monitoring integrated",
+        "Encrypted transaction gateways and instant algorithmic alerts built-in"
     ];
 
     return (
@@ -40,12 +40,12 @@ const LaunchIn5Days = () => {
                         viewport={{ once: true }}
                         className="lg:w-1/2"
                     >
-                        <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-4 font-nunito leading-tight">
-                            Launch Your Medicine Delivery App{' '}
-                            <span className="text-teal-600">in Just 5 Days</span>
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-4 leading-tight">
+                            Establish Your Clinical Supply Infrastructure{' '}
+                            <span className="text-teal-600">Within Standard Business Week</span>
                         </h2>
-                        <p className="text-base text-gray-600 font-ibm-plex mb-6 leading-relaxed">
-                            Get your Medicine Delivery App live in just 5 working days with our quick, ready-to-deploy solution. Unlike traditional custom development that takes weeks or months, our pre-built platform accelerates your time-to-market.
+                        <p className="text-base text-gray-600 mb-6 leading-relaxed">
+                            Activate your clinical logistics framework in exactly five operational days utilizing our rapid-deployment architecture. Unlike traditional custom engineering that requires months, our pre-configured foundation accelerates your operational presence.
                         </p>
 
                         <div className="space-y-4 mb-8">
@@ -56,7 +56,7 @@ const LaunchIn5Days = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
                                     </div>
-                                    <p className="text-sm text-gray-700 font-ibm-plex">{point}</p>
+                                    <p className="text-sm text-gray-700">{point}</p>
                                 </div>
                             ))}
                         </div>

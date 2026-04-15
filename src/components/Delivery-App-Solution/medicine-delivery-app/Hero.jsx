@@ -43,9 +43,9 @@ const Hero = () => {
                             className="text-[46px] leading-[56px] font-bold mb-6"
                         >
                             <span className="text-teal-400">
-                                Medicine Delivery
+                                Pharmaceutical Logistics
                             </span>{" "}
-                            App Development
+                            Platform Engineering
                         </motion.h1>
 
                         <motion.p
@@ -54,10 +54,10 @@ const Hero = () => {
                             transition={{ delay: 0.2 }}
                             className="text-gray-300 text-[18px] leading-relaxed mb-8"
                         >
-                            We build secure, user-friendly medicine delivery apps that simplify
-                            ordering, tracking, and delivery. With our expert pharmacy app
-                            development solutions you can ensure fast, reliable service for
-                            your customers.
+                            We engineer robust, intuitive clinical supply applications that streamline
+                            purchasing, monitoring, and distribution. Utilizing our premium pharmacy software
+                            architectures, you can guarantee swift, dependable logistics for
+                            your clientele.
                         </motion.p>
 
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">

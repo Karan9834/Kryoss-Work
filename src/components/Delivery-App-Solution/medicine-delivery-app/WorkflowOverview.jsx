@@ -5,25 +5,25 @@ const WorkflowOverview = () => {
     const [activeTab, setActiveTab] = useState('without');
 
     const withoutPrescription = [
-        { step: "Login - Sign Up", num: "01" },
-        { step: "Browse Store", num: "02" },
-        { step: "Find Medicine And Select Size", num: "03" },
-        { step: "Add To Cart", num: "04" },
-        { step: "Upload Prescription", num: "05" },
-        { step: "Track Order", num: "06" },
-        { step: "Order Received", num: "07" },
-        { step: "Give Review And Secure Payment", num: "08" }
+        { step: "Authentication", num: "01" },
+        { step: "Examine Merchant", num: "02" },
+        { step: "Selection & Size Calibration", num: "03" },
+        { step: "Aggregate to Selection", num: "04" },
+        { step: "Submit Documentation", num: "05" },
+        { step: "Monitor Logistics", num: "06" },
+        { step: "Clinical Reception", num: "07" },
+        { step: "Validation & Settlement", num: "08" }
     ];
 
     const withPrescription = [
-        { step: "Register", num: "01" },
-        { step: "Find Store", num: "02" },
-        { step: "Upload Prescription", num: "03" },
-        { step: "Place Order", num: "04" },
-        { step: "Review Available Medicine", num: "05" },
-        { step: "Confirm Order And Proceed To Pay", num: "06" },
-        { step: "Track Order", num: "07" },
-        { step: "Give Review", num: "08" }
+        { step: "Registration", num: "01" },
+        { step: "Merchant Discovery", num: "02" },
+        { step: "Authorization Upload", num: "03" },
+        { step: "Initiate Request", num: "04" },
+        { step: "Review Therapeutic Inventory", num: "05" },
+        { step: "Confirm & Execute Settlement", num: "06" },
+        { step: "Logistical Tracking", num: "07" },
+        { step: "Journey Evaluation", num: "08" }
     ];
 
     const flowImages = [
@@ -43,18 +43,18 @@ const WorkflowOverview = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl lg:text-4xl font-black text-white mb-4 font-nunito leading-tight"
+                        className="text-3xl lg:text-4xl font-semibold text-white mb-4 leading-tight"
                     >
-                        Overview of <span className="text-teal-400">Medicine App Workflow</span>
+                        Foundation of the <span className="text-teal-400">Clinical Framework Workflow</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-base text-gray-400 font-ibm-plex"
+                        className="text-base text-gray-400"
                     >
-                        Explore the step-by-step graphical flow of our medicine delivery app development. From ordering medicines to securing payments, see how our simple process ensures convenience for all users.
+                        Examine the granular graphical progression of our pharmaceutical logistics engineering. From clinical procurement to authenticated settlement, observe how our streamlined architecture facilitates absolute convenience.
                     </motion.p>
                 </div>
 
@@ -84,15 +84,15 @@ const WorkflowOverview = () => {
                     <div className="bg-white/10 p-1.5 rounded-full flex gap-1 border border-white/20">
                         <button
                             onClick={() => setActiveTab('without')}
-                            className={`px-6 py-3 rounded-full font-bold text-sm transition-all font-ibm-plex ${activeTab === 'without' ? 'bg-teal-600 text-white shadow-md' : 'text-gray-300 hover:text-white hover:bg-white/10'}`}
+                            className={`px-6 py-3 rounded-full font-bold text-sm transition-all ${activeTab === 'without' ? 'bg-teal-600 text-white shadow-md' : 'text-gray-300 hover:text-white hover:bg-white/10'}`}
                         >
-                            ORDER WITHOUT PRESCRIPTION
+                            PROCURE WITHOUT AUTHORIZATION
                         </button>
                         <button
                             onClick={() => setActiveTab('with')}
-                            className={`px-6 py-3 rounded-full font-bold text-sm transition-all font-ibm-plex ${activeTab === 'with' ? 'bg-orange-500 text-white shadow-md' : 'text-gray-300 hover:text-white hover:bg-white/10'}`}
+                            className={`px-6 py-3 rounded-full font-bold text-sm transition-all ${activeTab === 'with' ? 'bg-orange-500 text-white shadow-md' : 'text-gray-300 hover:text-white hover:bg-white/10'}`}
                         >
-                            ORDER WITH PRESCRIPTION
+                            PROCURE WITH AUTHORIZATION
                         </button>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ const WorkflowOverview = () => {
                                     <div className="w-10 h-10 mx-auto mb-3 bg-teal-500/20 rounded-full flex items-center justify-center text-teal-400 font-black text-sm group-hover:bg-teal-500 group-hover:text-white transition-all">
                                         {item.num}
                                     </div>
-                                    <p className="text-white text-sm font-semibold font-nunito leading-snug">{item.step}</p>
+                                    <p className="text-white text-sm font-semibold leading-snug">{item.step}</p>
                                 </motion.div>
                             ))}
                         </div>

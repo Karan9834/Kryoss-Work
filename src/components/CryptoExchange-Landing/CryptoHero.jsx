@@ -1,6 +1,6 @@
 import React from 'react';
 import { Rocket, ShieldCheck, Zap, ArrowRight, Coins } from 'lucide-react';
-import heroImg from '../../assets/cryptolanding-img/cryptolandinghero.jpg';
+import heroImg from '../../assets/cryptolanding-img/cryptolandinghero.png';
 
 const CryptoHero = () => {
     const scrollToProducts = () => {
