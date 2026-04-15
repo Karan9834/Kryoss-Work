@@ -32,12 +32,12 @@ const AboutPage = () => {
       <About />
       <GrowthJourney />
       <EmpoweringGrowth />
-      <MovingStats />
+      {/* <MovingStats /> */}
       <VisionMission />
-      <AwardsRecognition />
+      {/* <AwardsRecognition /> */}
       {/* <LeadershipInsights/> */}
       <Commitment />
-      <AwardRecognition />
+      {/* <AwardRecognition /> */}
       <ContactUs
         theme="orange"
         productName="Business Directory"

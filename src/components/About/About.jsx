@@ -19,36 +19,36 @@ const About = () => {
 
           {/* Badge */}
           <span className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 px-4 py-1 rounded-full text-sm font-medium mb-4">
-            ● About Us
+            ● Our Company
           </span>
 
           {/* Heading */}
           <h2 className="text-4xl font-bold leading-snug mb-6">
-            Kryoss Work:{" "}
             <span className="text-orange-500">
-              Setting the Pace to Build Next-gen Solutions
-            </span>
+              Kryoss Work:
+            </span>{" "}
+            Leading the Way in Next-Generation Digital Innovation
           </h2>
 
           {/* Paragraphs */}
           <p className="text-gray-600 mb-4 leading-relaxed">
-            With 8+ years of experience in digital solutions, Kryoss Work
-            has established itself as a trusted technology partner. We combine
-            innovation and expertise to deliver scalable solutions that align
-            with evolving business needs.
+            With over 5 years of experience in digital transformation, Kryoss Work
+            has become a reliable technology partner. We merge creativity and 
+            technical excellence to provide adaptable solutions that meet 
+            changing business demands.
           </p>
 
           <p className="text-gray-600 mb-4 leading-relaxed">
-            We help startups, SMEs, and enterprises build efficient,
-            market-ready products. From understanding unique business
-            requirements to delivering robust solutions, we ensure our clients
-            stay ahead in the global market.
+            We assist startups, mid-sized companies, and large enterprises in building 
+            efficient, production-ready platforms. From analyzing unique operational 
+            needs to delivering dependable systems, we help our clients maintain 
+            a competitive edge in the international marketplace.
           </p>
 
           <p className="text-gray-600 leading-relaxed">
-            Our dedicated team of developers, designers, and strategists
-            leverages cutting-edge technologies to deliver seamless,
-            cloud-powered solutions tailored for success.
+            Our skilled team of engineers, creatives, and planners 
+            utilizes advanced technologies to deliver streamlined,
+            cloud-enabled systems engineered for sustained success.
           </p>
 
         </div>

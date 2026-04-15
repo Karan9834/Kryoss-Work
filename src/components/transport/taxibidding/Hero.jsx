@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import taxi from "../../../assets/taxibidding.webp";
+import taxi from "../../../assets/Global taxi booking app/1.jpg";
 
 const Hero = () => {
   return (

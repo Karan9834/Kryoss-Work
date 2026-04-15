@@ -1,5 +1,5 @@
 import React from 'react';
-import uberclonebusiness from '@/assets/transport-uber-img/uberclonebusiness.webp'
+import uberclonebusiness from '../../assets/Global taxi booking app/2.png'
 const UberCloneForBusiness = () => {
     return (
         <section

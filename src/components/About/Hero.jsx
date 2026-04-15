@@ -38,25 +38,25 @@ const Hero = () => {
       {/* 4. CENTER CONTENT BOX */}
       <div className="relative z-20 max-w-3xl mx-auto text-center px-6 py-12">
         <span className="inline-block px-4 py-1 mb-6 text-xs font-semibold tracking-widest text-orange-500 uppercase bg-orange-500/10 border border-orange-500/20 rounded-full">
-          Who We Are
+          Our Story
         </span>
 
         <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
-          About <span className="text-orange-500">Kryoss Work</span>
+          Meet <span className="text-orange-500">Kryoss Work</span>
         </h1>
 
         <h2 className="text-xl md:text-2xl font-medium text-gray-200 mb-6 max-w-2xl mx-auto">
-          Innovating Digital Solutions for a Modern Era
+          Crafting Tomorrow's Digital Landscape
         </h2>
 
         <p className="text-gray-300 leading-relaxed text-base md:text-lg max-w-xl mx-auto mb-8">
-          Discover our journey, expertise, and commitment to delivering scalable
-          digital solutions. We empower businesses with cutting-edge technology
-          and seamless development services.
+          Explore our path, expertise, and dedication to providing robust
+          digital solutions. We enable enterprises with advanced technology
+          and streamlined development services.
         </p>
 
         <Link to="/company/contact" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-500/20">
-          Book a Consultation
+          Schedule a Free Consultation
         </Link>
       </div>
     </section>

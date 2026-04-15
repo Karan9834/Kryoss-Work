@@ -138,7 +138,7 @@ const OnDemandWorks = () => {
                                             {/* Content Box */}
                                             <div className="w-full lg:w-1/2 flex flex-col justify-center z-20">
                                                 <h3
-                                                    className="text-2xl md:text-4xl font-extrabold text-black mb-6 leading-tight hover:text-orange-600 transition-colors duration-300"
+                                                    className="text-2xl md:text-4xl font-medium text-black mb-6 leading-tight hover:text-orange-600 transition-colors duration-300"
                                                     dangerouslySetInnerHTML={{ __html: item.titleHtml || item.titleText }}
                                                 />
                                                 <p className="text-gray-600 leading-relaxed mb-8 text-lg font-light">

@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import DatingHero from "../../assets/DatingApp/DatingHero.webp";
+import DatingHero from  "../../assets/Datingkit/1.jpg";
 
 const DatingAppHero = () => {
   return (
