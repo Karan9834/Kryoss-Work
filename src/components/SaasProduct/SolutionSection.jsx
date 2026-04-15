@@ -55,7 +55,7 @@ const SolutionsSection = () => {
 
   return (
     <section className="relative py-28 bg-gradient-to-br from-gray-50 via-white to-purple-50 overflow-hidden">
-      
+
       {/* LIGHT BACKGROUND (optimized) */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-purple-200/20 blur-2xl rounded-full"></div>
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-200/20 blur-2xl rounded-full"></div>
@@ -70,7 +70,7 @@ const SolutionsSection = () => {
               <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-purple-600">Our Solutions</span>
             </div>
           </div> */}
-          
+
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Next-Gen SaaS{" "}
@@ -78,7 +78,7 @@ const SolutionsSection = () => {
               Experience
             </span>
           </h2>
-          
+
           {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
           <p className="text-gray-600 mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
             Designed for performance, built for scale.
@@ -106,7 +106,7 @@ const SolutionsSection = () => {
                   transition={{ duration: 0.5 }}
                   className="grid lg:grid-cols-2 gap-12 items-center relative"
                 >
-                  
+
                   {/* DOT */}
                   <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-purple-500 to-blue-500"></div>
 
@@ -125,7 +125,7 @@ const SolutionsSection = () => {
                   {/* CONTENT */}
                   <div className={`${isEven ? "lg:order-2" : "lg:order-1"}`}>
                     <div className="p-6 rounded-2xl bg-white shadow-md border border-gray-100">
-                      
+
                       {/* ICON */}
                       <div
                         className={`w-10 h-10 flex items-center justify-center rounded-lg bg-gradient-to-r ${item.color} mb-4`}

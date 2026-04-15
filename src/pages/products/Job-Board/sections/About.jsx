@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircle, Users, Briefcase, Star } from "lucide-react";
+import jobAboutImg from "@/assets/job portal products in/About Platfor Connectin.png";
 
 const JobAbout = () => {
   return (
@@ -7,7 +8,8 @@ const JobAbout = () => {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
         <img
-          src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
+          src={jobAboutImg}
+          alt="About Platform Connecting"
           className="w-full max-w-lg rounded-2xl shadow-2xl"
         />
 

@@ -12,50 +12,50 @@ import ContactUs from '../../../components/Common/ContactUs'
 
 const SaasPage = () => {
   return (
-   <>
-   <SaasHero/>
-   <AboutSection/>
-   <FeaturesSection/>
-   <ProductSection/>
-   <SolutionSection/>
-   <WhyChooseUS/>
-   {/* Testimonial */}
-<Testimonial
-  theme="blue"
-  bgGradient="from-blue-50 via-white to-blue-50"
-  cardGradient="from-blue-500 to-indigo-500"
-  headingText="What Our Clients Say"
-  subheadingText="Trusted by 500+ businesses worldwide"
-/>
+    <>
+      <SaasHero />
+      <AboutSection />
+      <FeaturesSection />
+      <ProductSection />
+      <SolutionSection />
+      <WhyChooseUS />
+      {/* Testimonial */}
+      <Testimonial
+        theme="blue"
+        bgGradient="from-blue-50 via-white to-blue-50"
+        cardGradient="from-blue-500 to-indigo-500"
+        headingText="What Our Clients Say"
+        subheadingText="Trusted by 500+ businesses worldwide"
+      />
 
-{/* Industries */}
-<Industries
-  theme={{
-    bg: "bg-gradient-to-b from-blue-50 via-white to-blue-50",
-    primary: "text-blue-600",
-    iconBg: "bg-blue-50",
-    iconColor: "text-blue-600",
-  }}
-/>
+      {/* Industries */}
+      <Industries
+        theme={{
+          bg: "bg-gradient-to-b from-blue-50 via-white to-blue-50",
+          primary: "text-blue-600",
+          iconBg: "bg-blue-50",
+          iconColor: "text-blue-600",
+        }}
+      />
 
-{/* Our Work */}
-<OurWork
-  theme={{
-    primary: "text-blue-600",
-    accent: "bg-gradient-to-r from-blue-500 to-indigo-500",
-  }}
-/>
+      {/* Our Work */}
+      <OurWork
+        theme={{
+          primary: "text-blue-600",
+          accent: "bg-gradient-to-r from-blue-500 to-indigo-500",
+        }}
+      />
 
-{/* Contact */}
-<ContactUs
-  theme="blue"
-  productName="Your SaaS Product"
-  bgGradient="from-blue-50 via-white to-blue-50"
-  accentGradient="from-blue-500 to-indigo-500"
-  buttonGradient="from-blue-600 to-indigo-600"
-  showImage={true}
-/>
-   </>
+      {/* Contact */}
+      <ContactUs
+        theme="blue"
+        productName="Your SaaS Product"
+        bgGradient="from-blue-50 via-white to-blue-50"
+        accentGradient="from-blue-500 to-indigo-500"
+        buttonGradient="from-blue-600 to-indigo-600"
+        showImage={true}
+      />
+    </>
   )
 }
 

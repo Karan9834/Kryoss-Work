@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout, Users, Shield, TrendingUp } from "lucide-react";
-import aboutImg from "@/assets/travelagency-img/travelagencyabout.jpg";
+import aboutImg from "@/assets/WooTour -  product/One Platform forEvery Travel Experience.jpg";
 
 const AgencyManagementAbout = () => {
     const stats = [

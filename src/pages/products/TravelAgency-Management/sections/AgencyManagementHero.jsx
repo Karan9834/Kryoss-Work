@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, Settings, MessageCircle } from "lucide-react";
-import heroImg from "@/assets/travelagency-img/travelagencyhero.jpg";
+import heroImg from "@/assets/WooTour -  product/Complete Tour & Travel Booking App for Modern Explorers.jpg";
 
 const AgencyManagementHero = () => {
   return (

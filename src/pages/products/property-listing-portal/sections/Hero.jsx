@@ -1,6 +1,6 @@
 import React from "react";
 import { MessageCircle } from "lucide-react";
-import propertyHero from "@/assets/property-listing-img/propertyHero.jpeg"
+import propertyHero from "@/assets/EstateLab Property Listing Portal - product/Property Listing Portal.jpg";
 const Hero = () => {
     return (
         <section className="relative bg-gradient-to-b from-[#0b2239] to-[#061726] text-white overflow-hidden">
@@ -78,7 +78,7 @@ const Hero = () => {
                         <div className="relative w-full max-w-md h-[420px] rounded-2xl flex items-center justify-center text-gray-300">
                             <img
                                 src={propertyHero}
-                                alt="Carpool App"
+                                alt="Property Listing Portal"
                                 className="w-full h-full object-cover rounded-2xl"
                             />
                         </div>

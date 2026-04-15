@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import jobHeroImg from "@/assets/job portal products in/Find Your Next Dream Job.png";
 
 const JobHero = () => {
   const handleViewDemo = () => {
@@ -60,7 +61,7 @@ const JobHero = () => {
         {/* ===== RIGHT IMAGE ===== */}
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
+            src={jobHeroImg}
             alt="Job Board"
             className="w-full max-w-lg rounded-2xl object-cover shadow-2xl"
           />
