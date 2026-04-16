@@ -89,7 +89,7 @@ const EcommerceIndustry = () => {
     const stats = [
         { value: "750+", label: "Projects Delivered" },
         { value: "150+", label: "Development Staff" },
-        { value: "10+", label: "Years of Experience" },
+        { value: "5+", label: "Years of Experience" },
         { value: "450+", label: "Satisfied Clients" }
     ];
 

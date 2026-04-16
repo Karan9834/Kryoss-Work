@@ -82,7 +82,7 @@ const VideoConfApp = () => {
     const stats = [
         { value: "750+", label: "Projects Delivered" },
         { value: "150+", label: "Development Staff" },
-        { value: "10+", label: "Years Experience" },
+        { value: "5+", label: "Years Experience" },
         { value: "450+", label: "Satisfied Clients" }
     ];
 
@@ -216,7 +216,7 @@ const VideoConfApp = () => {
                                 Integrated <span className="text-indigo-600">Video Conference Solution</span>
                             </h2>
                             <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
-                                Kryoss Softech is a prominent company with 10+ years of expertise in the IT sector and video conferencing app development. We are associated with many small and big businesses looking for a reliable video conferencing app development company with years of experience.
+                                Kryoss Softech is a prominent company with 5+ years of expertise in the IT sector and video conferencing app development. We are associated with many small and big businesses looking for a reliable video conferencing app development company with years of experience.
                             </p>
                             <ul className="space-y-4 mb-8">
                                 {[

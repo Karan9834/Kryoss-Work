@@ -46,7 +46,7 @@ const projects = [
 const stats = [
   { value: '750', label: 'Project Delivered', icon: <CheckCircle className="text-orange-500" /> },
   { value: '150', label: 'Development Staff', icon: <Briefcase className="text-orange-500" /> },
-  { value: '10', label: 'Years of Experience', icon: <Star className="text-orange-500" /> },
+  { value: '5', label: 'Years of Experience', icon: <Star className="text-orange-500" /> },
   { value: '450', label: 'Satisfied Clients', icon: <CheckCircle className="text-orange-500" /> },
 ];
 

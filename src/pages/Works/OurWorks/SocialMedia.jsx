@@ -204,7 +204,7 @@ const SocialMedia = () => {
               <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Development Staff</p>
             </div>
             <div className="p-4">
-              <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">10+</h3>
+              <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">5+</h3>
               <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Years of Experience</p>
             </div>
             <div className="p-4">

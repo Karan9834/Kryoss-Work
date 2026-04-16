@@ -111,7 +111,7 @@ const BusinessDirectoryApp = () => {
     const stats = [
         { value: "750+", label: "Projects Delivered" },
         { value: "150+", label: "Development Staff" },
-        { value: "10+", label: "Years Experience" },
+        { value: "5+", label: "Years Experience" },
         { value: "450+", label: "Satisfied Clients" }
     ];
 

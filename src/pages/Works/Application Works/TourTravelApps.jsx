@@ -92,7 +92,7 @@ const TourTravelApps = () => {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-700/50">
                         <div className="p-4"><h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">450+</h3><p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Satisfied Clients</p></div>
                         <div className="p-4"><h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">750+</h3><p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Project Delivered</p></div>
-                        <div className="p-4"><h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">10+</h3><p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Years of Experience</p></div>
+                        <div className="p-4"><h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">5+</h3><p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Years of Experience</p></div>
                         <div className="p-4"><h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">150+</h3><p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Development Staff</p></div>
                     </div>
                 </div>

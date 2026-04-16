@@ -32,7 +32,7 @@ const About = () => {
 
           {/* Paragraphs */}
           <p className="text-gray-600 mb-4 leading-relaxed">
-            With over 5 years of experience in digital transformation, Kryoss Work
+            With 5+ years of experience in digital transformation, Kryoss Work
             has become a reliable technology partner. We merge creativity and 
             technical excellence to provide adaptable solutions that meet 
             changing business demands.
