@@ -29,12 +29,14 @@ const CtaSection = () => {
         <div className="text-white max-w-xl text-center md:text-left">
 
           <h2 className="text-3xl md:text-4xl font-semibold leading-snug mb-6">
-            Don’t Wait Start Your Journey to Success Now!
+            Scale Your Enterprise with our <span className="text-[#6dbb1a]">inDrive-Inspired Ecosystem</span>
           </h2>
 
           <p className="text-white/80 mb-8 leading-relaxed">
-            Take charge of your business with our feature-rich inDriver clone app.
-            Launch quickly, scale effortlessly, and achieve success today!
+            Take the definitive step towards establishing a market-leading mobility 
+            venture with our production-ready inDrive replica. Facilitate seamless 
+            coordination between users and partners, implement autonomous fare 
+            setting, and maintain absolute operational authority.
           </p>
 
           <button
@@ -51,7 +53,7 @@ const CtaSection = () => {
               duration-300
             "
           >
-            Contact Us
+            Get a Professional Quote
           </button>
 
         </div>

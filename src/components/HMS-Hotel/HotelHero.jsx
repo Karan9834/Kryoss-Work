@@ -1,22 +1,22 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-
+import heroimg from "../../assets/HMS-Hotel/hero.avif";
 const HotelHero = () => {
   return (
-    <section className="relative w-full h-[85vh] md:h-[80vh] lg:h-[75vh] overflow-hidden bg-[#F97316]">
-      
+    <section className="relative w-full h-[85vh] md:h-[80vh] lg:h-[90vh] overflow-hidden bg-[#F97316]">
+
       {/* Premium Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#F97316]/90 via-[#F97316]/80 to-[#F97316]/70 z-0"></div>
-      
+
       {/* Teal Wave Cut Section */}
       <div className="absolute inset-0 z-0">
         {/* Teal Background Section */}
         <div className="absolute bottom-0 left-0 w-full h-[55%] bg-gradient-to-t from-[#0D9488] to-[#14b8a6]"></div>
-        
+
         {/* Main Wave Divider - Premium Organic Shape */}
         <div className="absolute bottom-[45%] left-0 w-full z-10">
-          <svg 
-            viewBox="0 0 1440 320" 
+          <svg
+            viewBox="0 0 1440 320"
             className="w-full h-auto"
             preserveAspectRatio="none"
           >
@@ -27,11 +27,11 @@ const HotelHero = () => {
             />
           </svg>
         </div>
-        
+
         {/* Secondary Wave for Depth */}
         <div className="absolute bottom-[43%] left-0 w-full z-5 opacity-50">
-          <svg 
-            viewBox="0 0 1440 320" 
+          <svg
+            viewBox="0 0 1440 320"
             className="w-full h-auto"
             preserveAspectRatio="none"
           >
@@ -46,7 +46,7 @@ const HotelHero = () => {
 
       {/* Premium Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(45deg,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(-45deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] z-5"></div>
-      
+
       {/* Soft Radial Gradient */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#0D9488]/20 rounded-full blur-3xl"></div>
@@ -54,7 +54,7 @@ const HotelHero = () => {
       {/* Content Container */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 h-full flex items-center z-20">
         <div className="grid lg:grid-cols-2 gap-10 items-center w-full">
-          
+
           {/* LEFT CONTENT */}
           <div className="text-white space-y-5">
             {/* Premium Divider Line */}
@@ -64,7 +64,7 @@ const HotelHero = () => {
                 Luxury Hospitality
               </span>
             </div>
-            
+
             {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
             <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
               Smart Hospitality
@@ -74,14 +74,14 @@ const HotelHero = () => {
                 </span>
               </span>
             </h1>
-            
+
             {/* Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] */}
             <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] text-white/80 max-w-lg">
-              Elevate your hotel operations with intelligent booking systems, 
-              personalized guest experiences, and seamless management tools 
+              Elevate your hotel operations with intelligent booking systems,
+              personalized guest experiences, and seamless management tools
               designed for modern hospitality.
             </p>
-            
+
             {/* Premium CTA Button - Updated typography */}
             <div className="pt-3">
               <button className="group relative px-7 py-3.5 bg-white text-[#F97316] rounded-xl font-semibold overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-105 text-[14px] md:text-[15px] tracking-[0.01em]" onClick={() => document.getElementById('explore-hotel-solutions')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -93,27 +93,27 @@ const HotelHero = () => {
               </button>
             </div>
           </div>
-          
+
           {/* RIGHT IMAGE - Premium Glass Card */}
           <div className="relative flex justify-center items-center">
             {/* Glow Effect Behind Image */}
             <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-[#0D9488]/20 rounded-full blur-2xl"></div>
-            
+
             {/* Premium Image Container */}
             <div className="relative group">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-white/30 to-[#0D9488]/30 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-2 border border-white/20 shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+                  src={heroimg}
                   alt="Luxury Hotel Suite"
-                  className="w-full max-w-md rounded-xl shadow-xl transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-[300px] rounded-xl shadow-xl transition-transform duration-700 group-hover:scale-105"
                 />
-                
+
                 {/* Premium Overlay Gradient */}
                 <div className="absolute inset-2 rounded-xl bg-gradient-to-tr from-[#F97316]/20 via-transparent to-[#0D9488]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               </div>
             </div>
-            
+
             {/* Floating Premium Icon */}
             <div className="absolute -bottom-5 -right-5 bg-white/95 backdrop-blur-sm rounded-xl p-3 shadow-xl border border-white/30 animate-float">
               <svg className="w-6 h-6 text-[#F97316]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,7 +123,7 @@ const HotelHero = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Premium Bottom Wave */}
       <div className="absolute bottom-0 left-0 w-full">
         <svg viewBox="0 0 1440 120" className="w-full h-auto">

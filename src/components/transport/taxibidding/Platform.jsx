@@ -21,23 +21,23 @@ const PlatformsSection = () => {
             rounded-full
           ">
             <span className="w-2 h-2 bg-[#5aa114] rounded-full"></span>
-            inDriver Clone for Various Platforms
+            Vyom Drive Cross-Platform Suite
           </span>
         </div>
 
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-semibold text-gray-800 leading-snug">
-            Unlock Your{" "}
+            Maximize your{" "}
             <span className="text-[#5aa114]">
-              Business Potential
+              Market Presence
             </span>{" "}
-            Across All Platforms with inDriver Clone Script
+            with our Multi-Platform inDrive Solution
           </h2>
 
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-base">
-            Our feature-rich inDriver Clone Script works seamlessly across
-            mobile and web platforms.
+            Our sophisticated inDrive clone framework operates flawlessly 
+            throughout mobile and web ecosystems.
           </p>
         </div>
 
@@ -63,14 +63,13 @@ const PlatformsSection = () => {
             </div>
 
             <h3 className="text-xl font-semibold mb-4">
-              iOS & Android
+              Native iOS & Android Apps
             </h3>
 
             <p className="text-white/90 leading-relaxed max-w-md">
-              We offer a ready-to-use inDriver like app that allows you to
-              provide your services seamlessly across both iOS and Android
-              platforms. Fully customizable, scalable, and optimized to help
-              you scale effortlessly.
+              We deliver a production-ready inDriver-style application that enables 
+              you to deploy your services across the complete mobile spectrum. 
+              Highly adaptable, extensible, and engineered to support rapid growth.
             </p>
 
             {/* IMAGE */}
@@ -99,13 +98,13 @@ const PlatformsSection = () => {
             </div>
 
             <h3 className="text-xl font-semibold mb-4">
-              Feature-Rich Web Solution
+              Advanced Web Dashboard
             </h3>
 
             <p className="text-white/90 leading-relaxed max-w-md">
-              Deliver a smooth and efficient experience to users and service
-              providers across web browsers. Packed with essential features,
-              it enhances the overall user experience.
+              Coordinate a frictionless experience for both riders and vendors 
+              within modern web browsers. Loaded with professional utilities, 
+              it elevates the total user interaction model.
             </p>
 
             {/* IMAGE */}

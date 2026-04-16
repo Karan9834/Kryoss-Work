@@ -1,5 +1,5 @@
 import React from 'react';
-import lmscta1 from "../../assets/lms-img/lmscta1.jpg";
+import lmscta1 from "../../assets/lms-img/lmscta11.jpeg";
 
 const LmsCTA1 = () => {
     return (
@@ -9,14 +9,14 @@ const LmsCTA1 = () => {
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-600/10 blur-[120px] rounded-full -ml-64 -mb-64"></div>
 
             <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
-                
+
                 {/* Image */}
                 <div className="relative order-2 lg:order-1 flex justify-center">
                     <div className="relative">
                         <div className="absolute -inset-4 bg-violet-500/20 blur-2xl rounded-[40px]"></div>
-                        <img 
-                            src={lmscta1} 
-                            alt="LMS Mobile Placeholder" 
+                        <img
+                            src={lmscta1}
+                            alt="LMS Mobile Placeholder"
                             className="relative w-full max-w-[520px] rounded-[40px] shadow-2xl border-8 border-white/5 min-h-[300px] bg-indigo-900/50 object-cover"
                         />
                     </div>
@@ -29,8 +29,8 @@ const LmsCTA1 = () => {
                     </h2>
 
                     <p className="text-lg text-indigo-100/80 mb-10 leading-relaxed max-w-xl">
-                        Break geographic barriers. Manage your global academy from a 
-                        unified learning app, ensuring educators and students stay connected 
+                        Break geographic barriers. Manage your global academy from a
+                        unified learning app, ensuring educators and students stay connected
                         to knowledge 24/7, even on the move.
                     </p>
 
@@ -42,7 +42,7 @@ const LmsCTA1 = () => {
                 </div>
 
             </div>
-            
+
             <style>{`
                 .text-glow {
                     text-shadow: 0 0 10px rgba(167, 139, 250, 0.4);

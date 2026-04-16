@@ -11,7 +11,7 @@ import ProductShowcase from "../../../components/Salon & Beauty/ProductShowcase"
 import AwardRecognition from "../../../components/Salon & Beauty/AwardRecognition";
 import FAQ from "../../../components/Salon & Beauty/FAQ";
 import TechStack from "../../../components/Salon & Beauty/TechStack";
-import Contact from "../../../components/Salon & Beauty/Contact";
+import ContactUs from "../../../components/Common/ContactUs";
 import BlogsSection from "../../../components/Salon & Beauty/BlogsSection";
 import NewsletterSection from "../../../components/Salon & Beauty/NewsletterSection";
 import TeamMoments from "../../../components/Salon & Beauty/TeamMoments";
@@ -42,7 +42,7 @@ const SalonBeauty = ()=>{
         <AwardRecognition/>
         <FAQ/>
         <TechStack/>
-        <Contact/>
+        <ContactUs theme="purple" productName="Vyom Beauty" />
         <BlogsSection/>
         <NewsletterSection/>
         <TeamMoments/>

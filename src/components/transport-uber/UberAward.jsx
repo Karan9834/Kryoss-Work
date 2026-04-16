@@ -38,17 +38,20 @@ const UberAward = () => {
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 bg-[#1a1a1a] border border-white/20 rounded-full px-5 py-1.5 mb-8 text-[13px] font-medium tracking-widest uppercase text-white">
                     <div className="w-2 h-2 rounded-full bg-white animate-pulse"></div>
-                    Awards & Recognition
+                    Professional Validation
                 </div>
 
                 {/* Title */}
                 <h2 className="text-3xl md:text-[45px] leading-tight md:leading-[55px] font-bold text-white mb-6 max-w-4xl mx-auto">
-                    Recognized by Global Review Platforms & Industry Leaders
+                    Global Industry Recognition and Trusted Performance Ratings
                 </h2>
 
                 {/* Description */}
                 <p className="text-gray-400 text-sm md:text-[16px] leading-[26px] max-w-5xl mx-auto mb-16">
-                    We are proud to be recognized by top industry platforms such as Trustpilot, Google, Clutch, and GoodFirms. With excellent ratings and reviews, our commitment to delivering high-quality, clone app development solutions is trusted by businesses and users worldwide.
+                    We take pride in our consistent validation by top-tier review ecosystems.
+                    Our high-performance mobility solutions are rigorously evaluated and
+                    endorsed by global industry leaders, reflecting our unwavering commitment
+                    to engineering excellence and client success.
                 </p>
 
                 {/* Awards Grid */}

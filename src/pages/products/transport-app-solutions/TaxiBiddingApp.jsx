@@ -21,11 +21,11 @@ import Cta3 from '../../../components/transport/taxibidding/Cta3';
 import Working from '../../../components/transport/taxibidding/Working';
 import QuickFlow from '../../../components/transport/taxibidding/QuickFlow';
 import ClientInfo from '../../../components/transport/taxibidding/ClientInfo';
-import Explore from '../../../components/transport/taxibidding/Explore';
 import Faqs from '../../../components/transport/taxibidding/Faqs';
 import Technologies from '../../../components/transport/taxibidding/Technologies';
-import Contact from '../../../components/transport/taxibidding/Contact';
+import ContactUs from '../../../components/Common/ContactUs';
 import Blog from '../../../components/transport/taxibidding/Blog';
+import Explore from '../../../components/transport/taxibidding/Explore';
 import Updated from '../../../components/transport/taxibidding/Updated';
 const TaxiBiddingApp = () => {
     return (
@@ -53,7 +53,7 @@ const TaxiBiddingApp = () => {
             <Explore/>
             <Faqs/>
             <Technologies/>
-            <Contact/>
+            <ContactUs theme="green" productName="Vyom Drive" />
             <Blog/>
             <Updated/>
         </>

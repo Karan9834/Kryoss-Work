@@ -1,9 +1,9 @@
 import React from "react";
 import { Sparkles, ArrowRight } from "lucide-react";
-import sol1 from "../../assets/HMS-Hotel/sol1.png";
-import sol2 from "../../assets/HMS-Hotel/sol2.png";
-import sol3 from "../../assets/HMS-Hotel/sol3.png";
-import sol4 from "../../assets/HMS-Hotel/sol4.png";
+import sol1 from "../../assets/HMS-Hotel/sol1.jpeg";
+import sol2 from "../../assets/HMS-Hotel/sol2.jpg";
+import sol3 from "../../assets/HMS-Hotel/sol3.jpeg";
+import sol4 from "../../assets/HMS-Hotel/sol4.jpeg";
 
 const SolutionsSection = () => {
   const solutions = [
@@ -43,16 +43,16 @@ const SolutionsSection = () => {
 
   return (
     <section className="relative w-full overflow-hidden bg-gradient-to-br from-gray-50 via-white to-orange-50/30 py-24 lg:py-32">
-      
+
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#f9731605_1px,transparent_1px),linear-gradient(to_bottom,#0d948805_1px,transparent_1px)] bg-[size:40px_40px]"></div>
-      
+
       {/* Decorative Orbs */}
       <div className="absolute top-20 right-20 w-80 h-80 bg-orange-400/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-20 w-80 h-80 bg-teal-400/10 rounded-full blur-3xl"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
@@ -62,7 +62,7 @@ const SolutionsSection = () => {
               Comprehensive Solutions
             </span>
           </div>
-          
+
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
             Complete Solutions for{" "}
@@ -70,7 +70,7 @@ const SolutionsSection = () => {
               Modern Newsrooms
             </span>
           </h2>
-          
+
           {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
           <p className="mt-6 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600">
             Integrated tools and workflows designed to streamline your entire news operation
@@ -79,7 +79,7 @@ const SolutionsSection = () => {
 
         {/* Timeline Container */}
         <div className="relative">
-          
+
           {/* Animated Vertical Line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-orange-200 via-orange-400 to-teal-400 hidden md:block">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-orange-500 rounded-full animate-ping"></div>
@@ -92,7 +92,7 @@ const SolutionsSection = () => {
           <div className="space-y-24 md:space-y-32">
             {solutions.map((solution, index) => {
               const isLeft = solution.alignment === "left";
-              
+
               return (
                 <div key={solution.id} className="relative">
                   {/* Timeline Dot */}
@@ -114,7 +114,7 @@ const SolutionsSection = () => {
 
                   {/* Content with equal height columns */}
                   <div className={`grid md:grid-cols-2 gap-12 items-stretch ${isLeft ? '' : 'md:text-right'}`}>
-                    
+
                     {/* Text Section - Full height */}
                     <div className={`group flex flex-col justify-center ${isLeft ? 'md:order-1' : 'md:order-2'}`}>
                       {/* Card Title - Updated: text-[24px] md:text-[30px] font-bold leading-[1.3] */}

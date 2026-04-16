@@ -1,6 +1,6 @@
 import React from 'react';
 import lmsdev1 from "../../assets/lms-img/lmsdev1.jpg";
-import lmsdev2 from "../../assets/lms-img/lmsdev2.jpg";
+import lmsdev2 from "../../assets/lms-img/lmsdev2.jpeg";
 import lmsdev3 from "../../assets/lms-img/lmsdev3.jpg";
 
 const LmsAppDevelopment = () => {

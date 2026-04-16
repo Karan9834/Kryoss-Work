@@ -1,33 +1,33 @@
 import React from "react";
-
+import aboutimg from '@/assets/saloon-beauty-img/about1.jpg'
 const About = () => {
   return (
     <section className="bg-white py-12 md:py-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 px-5 md:px-0">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 px-5 md:px-0 lg:gap-30">
 
         {/* LEFT SIDE */}
-        <div className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-3xl flex items-center justify-center md:w-125 z-10 p-6 md:p-0">
+        <div className=" order-2 lg:order-1 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-3xl flex items-center justify-center md:mt-24 md:w-120 md:h-120 z-10 p-6 md:p-0">
           <img
-            src="https://whitelabelfox.com/assets/images/uber-beauty-app/Fox-Beauty-about-us-UI-medium.webp"
-            alt="Carpooling App"
+            src={aboutimg}
+            alt="beauty App"
             className="w-full max-w-sm md:max-w-md"
           />
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="bg-[#eaf4fd] border border-[#b7d4f6] rounded-3xl md:rounded-r-3xl p-6 md:p-12 md:ml-[-150px] mt-8 md:mt-10">
+        <div className=" order-1 lg:order-2 bg-[#eaf4fd] border border-[#b7d4f6] rounded-3xl md:rounded-r-3xl p-6 mb-10 md:p-12 md:ml-[-150px] mt-8 md:mt-10">
 
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full mb-6 text-sm">
             <span className="w-2.5 h-2.5 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
-            About Uber for Beauty App
+            About the Vyom Beauty Ecosystem
           </div>
 
           {/* Heading */}
           <h2 className="text-[26px] md:text-[36px] font-semibold leading-tight mb-6 text-gray-800">
-            Boost Your Business with an{" "}
+            Amplify Your Commercial Potential with{" "}
             <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">
-              Uber for Beauty App Solution
+              Vyom Beauty Frameworks
             </span>
           </h2>
 
@@ -35,19 +35,33 @@ const About = () => {
           <div className="text-gray-700 space-y-5 text-[15px] md:text-[16px] leading-relaxed">
 
             <p>
-              Offer seamless beauty services with our Uber for Beauty App. We provide a complete solution, including user and service provider apps, plus a robust admin panel, tailored to your business needs.
+              Deliver frictionless aesthetic experiences through the Vyom Beauty
+              platform. We supply a comprehensive architecture, incorporating
+              specialized participant modules and an advanced administrative
+              console, engineered for your unique venture.
             </p>
 
             <p>
-              The traditional salon experience often involved long waits for services, but technology has transformed this process. With on-demand beauty apps, customers can now easily book beauticians and enjoy professional services at their convenience, directly at their doorstep.
+              The conventional styling lifecycle frequently required excessive
+              scheduling delays, yet digital innovation has revolutionized this
+              interaction. Through on-demand aesthetic frameworks, clients can now
+              effortlessly coordinate with specialists and experience elite care at
+              their preferred location.
             </p>
 
-            <p>
-              For beauty service providers, offering on-demand services opens up new opportunities to grow your business. A mobile salon app allows you to manage bookings efficiently, reach more customers, and enhance service delivery—all while boosting client satisfaction.
-            </p>
+            {/* <p>
+              For independent practitioners and boutique firms, provide immediate
+              service synchronization to catalyze your professional expansion. A
+              dedicated mobile framework enables you to orchestrate assignments
+              fluidly, engage a broader demographic, and optimize delivery metrics—
+              simultaneously elevating participant loyalty.
+            </p> */}
 
             <p>
-              At Kryoss Work, we provide a complete on-demand beauty app solution. Our platform includes a user app, service provider app, and an admin panel, all customized to fit your business needs.
+              At Vyom Solutions, we deliver an integrated on-demand aesthetic suite.
+              Our ecosystem encompasses personal modules, practitioner interfaces,
+              and a sophisticated control center, all adapted to harmonize with
+              your enterprise vision.
             </p>
 
           </div>

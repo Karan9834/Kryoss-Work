@@ -48,15 +48,14 @@ const ProductShowcase = () => {
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-          Explore Our{" "}
+          Discover our Diverse Mobility Suite{" "}
           <span className="text-[#6dbb1a]">
             On-Demand App Solutions
           </span>
         </h2>
 
-        <p className="text-gray-600 mb-16">
-          Check out our best-selling on-demand solutions and find the perfect fit
-          for your unique business needs.
+        <p className="text-gray-600 max-w-2xl mx-auto text-base mb-16">
+          Explore our comprehensive range of on-demand transportation frameworks designed for global markets.
         </p>
 
         {/* Grid */}

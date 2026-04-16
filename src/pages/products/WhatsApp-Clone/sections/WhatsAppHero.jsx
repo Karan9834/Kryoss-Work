@@ -65,8 +65,8 @@ const WhatsAppHero = () => {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+      <div className="relative z-10 container mx-auto px-6 lg:px-30">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-30">
 
           {/* LEFT */}
           <motion.div
@@ -161,14 +161,14 @@ const WhatsAppHero = () => {
             animate="visible"
             className="flex-1 flex justify-center items-center"
           >
-            <div className="relative w-[260px] sm:w-[300px] lg:w-[340px]">
+            <div className="relative w-[350px] sm:w-[400px] lg:w-[600px]">
 
               {/* IMAGE */}
               <div className="rounded-2xl overflow-hidden shadow-2xl shadow-green-500/20">
                 <img
                   src={whatshero}
                   alt="WhatsApp Clone"
-                  className="w-full h-[480px] object-cover"
+                  className="w-full h-[400px] object-cover"
                 />
               </div>
 

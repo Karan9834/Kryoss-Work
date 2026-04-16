@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import lmshero from "../../assets/lms-img/lmshero.jpg";
+import lmshero from "../../assets/lms-img/lmshero.png";
 
 const LmsHero = () => {
     return (

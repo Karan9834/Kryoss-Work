@@ -19,7 +19,7 @@ import UberAward from '@/components/transport-uber/UberAward';
 import UberIndustries from '@/components/transport-uber/UberIndustries';
 import UberFAQ from '@/components/transport-uber/UberFAQ';
 import UberTechStack from '@/components/transport-uber/UberTechStack';
-import UberContact from '@/components/transport-uber/UberContact';
+import ContactUs from '@/components/Common/ContactUs';
 import UberProductShowCase from '@/components/transport-uber/UberProductShowCase';
 import UberBlogs from '@/components/transport-uber/UberBlogs';
 import UberGetUpdates from '@/components/transport-uber/UberGetUpdates';
@@ -51,7 +51,7 @@ const TaxiBookingUber = () => {
             <UberIndustries />
             <UberFAQ />
             <UberTechStack />
-            <UberContact />
+            <ContactUs theme="blue" productName="Vyom Taxi" />
             <UberProductShowCase />
             <UberBlogs />
             <UberGetUpdates />

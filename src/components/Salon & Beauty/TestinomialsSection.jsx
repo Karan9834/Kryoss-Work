@@ -5,22 +5,22 @@ const TestinomialsSection = () => {
     {
       name: "Acharya",
       image: "https://whitelabelfox.com/assets/images/what-our-client-says/DP-Acharya.webp",
-      desc: "M.R. Acharya from Nepal praises Kryoss Work for seamless service, fast support, and highly recommends us for online business solutions..",
+      desc: "Acharya from Nepal acknowledges the Vyom team for frictionless delivery and rapid technical assistance, endorsing our frameworks for digital commerce.",
     },
     {
-      name: "pablo",
+      name: "Pablo",
       image: "https://whitelabelfox.com/assets/images/what-our-client-says/Pablo.webp",
-      desc: "Watch our happy client, Mr. Pablo from Mexico, share his experience with our Gojek clone app, praising our professionalism and responsiveness.!",
+      desc: "Review the testimonial from Mr. Pablo in Mexico, who highlights our systematic professionalism and operational agility during his platform launch.",
     },
     {
       name: "David",
       image: "https://whitelabelfox.com/assets/images/what-our-client-says/David.webp",
-      desc: "Mr. David highly praised our team as superb, expressing great satisfaction with our service and eagerness for future successful collaboration.",
+      desc: "David conveys exceptional satisfaction with our collaborative engineering, emphasizing technical excellence and anticipating long-term strategic partnership.",
     },
     {
       name: "George",
       image: "https://whitelabelfox.com/assets/images/what-our-client-says/George-Nwokeabia.webp",
-      desc: "Mr. George Nwokeabia praised our professionalism and plans future collaboration after a successful Fox-Jek app purchase.",
+      desc: "George Nwokeabia recognizes our specialized expertise and technical integrity, initiating further coordination following a smooth transition to our ecosystem.",
     },
   ];
 
@@ -40,11 +40,11 @@ const TestinomialsSection = () => {
           <div className="inline-flex items-center gap-2 border border-[#55D7FF] 
                           text-black px-4 py-1.5 rounded-full text-sm mb-6">
             <span className="w-2 h-2 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
-            People Love Our Platform!
+            Community Validation
           </div>
 
           <h2 className="text-3xl md:text-5xl font-semibold">
-           Let's Check <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text"> What Our Clients Love to Share!</span>
+           Examine the <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text"> Experiences shared by Our Global Partners</span>
           </h2>
 
           

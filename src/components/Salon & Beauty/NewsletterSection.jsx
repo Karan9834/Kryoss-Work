@@ -9,20 +9,21 @@ const NewsletterSection = () => {
          <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 border px-4 py-1.5 rounded-full text-sm text-gray-700 bg-white">
             <span className="w-2.5 h-2.5 bg-pink-500 rounded-full"></span>
-          Get Updates
+          System Briefings
           </div>
         </div>
 
         {/* Heading */}
         <h2 className="text-4xl font-bold mt-4 mb-4">
-          Stay Ahead with Our Latest Updates
+          Maintain Competitive Advantage through technical bulletins
         </h2>
 
         {/* Description */}
         <p className="text-gray-600 mb-10">
-          Subscribe to our newsletter for exclusive updates, and tips on the
-          latest trends in app development solutions. Stay informed and never
-          miss out on important updates!
+          Register for our systemic updates to receive exclusive technical 
+          insights and operational strategies regarding the latest architectural 
+          trends. Secure your market position and ensure continuous awareness of 
+          platform evolution.
         </p>
 
         {/* Subscribe Input */}

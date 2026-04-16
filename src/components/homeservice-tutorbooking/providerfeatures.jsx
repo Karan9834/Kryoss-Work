@@ -10,33 +10,33 @@ import {
 import providerappfeatures from "../../assets/homeservice-tutor-img/providerfeatures.webp";
 const features = [
     {
-        title: "Add Packages",
-        desc: "After successful login into the app, the tutor can add service packages with details of package name, price, and more.",
+        title: "Define Instructional Bundles",
+        desc: "Following authenticated access, educators can construct specialized service tiers, outlining curriculum specifics, duration, and financial parameters.",
         icon: PackagePlus,
     },
     {
-        title: "Manage Request",
-        desc: "A tutor can view the new request with full details they have the option to accept or reject the request with cancellation reason.",
+        title: "Coordinate Engagement Requests",
+        desc: "Instructors can evaluate incoming instructional inquiries with complete context, possessing authority to confirm or decline based on availability.",
         icon: ClipboardList,
     },
     {
-        title: "Map Navigation",
-        desc: "If a tutor can’t find the student address, they can use the map navigation within the app.",
+        title: "Precision Navigation",
+        desc: "Utilize integrated spatial mapping to pinpoint student locations accurately, ensuring punctual attendance for all in-person instructional sessions.",
         icon: MapPinned,
     },
     {
-        title: "Manage Document",
-        desc: "A tutor can manage the document which is required for the tutor service.",
+        title: "Credential Management",
+        desc: "Educators can effectively manage and update essential instructional certifications and academic documentation required for platform participation.",
         icon: FileText,
     },
     {
-        title: "View Order Details",
-        desc: "Once the new order request gets tutor can view the order with details and manage it.",
+        title: "Assignment Overview",
+        desc: "Upon notification of a new educational assignment, instructors can review specific learning objectives and manage session logistics immediately.",
         icon: Receipt,
     },
     {
-        title: "Order History",
-        desc: "A tutor can view the complete, running, cancel, and pending order history with details.",
+        title: "Performance Tracking",
+        desc: "Maintain a comprehensive record of all finalized, active, or cancelled educational sessions to monitor instructional growth and financial earnings.",
         icon: History,
     },
 ];
@@ -50,18 +50,18 @@ const ProviderAppFeatures = () => {
                 <div className="mb-4 flex justify-center">
                     <span className="inline-flex items-center gap-2 rounded-full border px-4 py-1 text-sm text-gray-700">
                         <span className="h-2 w-2 rounded-full bg-orange-500" />
-                        Provider App Features
+                        Instructor Empowerment Tools
                     </span>
                 </div>
 
                 {/* HEADING */}
                 <h2 className="mb-4 text-center text-[30px] font-semibold sm:text-[36px]">
-                    Fox-Tutor <span className="text-orange-500">Provider App Features</span>
+                    Vyom Tutor <span className="text-orange-500">Expert Ecosystem Capabilities</span>
                 </h2>
 
                 {/* ONE-LINE PARAGRAPH */}
                 <p className="mx-auto mb-12 max-w-[1100px] text-center font-medium text-gray-700 whitespace-normal lg:whitespace-nowrap">
-                    Fox-Tutor Provider App allows tutors to add packages, manage requests, navigate with maps, and view order details and history, all with ease.
+                    Our dedicated Professional Application empowers instructors to design educational bundles, coordinate request logistics, utilize spatial guidance, and evaluate session performance through a streamlined interface.
                 </p>
 
                 {/* CONTENT */}

@@ -36,9 +36,9 @@ const AppUISnapsSection = () => {
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-          Snaps of our{" "}
+          Interface Showcase: Our{" "}
           <span className="text-[#7CFC00]">
-            inDriver Clone
+            inDrive Replica
           </span>
         </h2>
 
@@ -46,32 +46,28 @@ const AppUISnapsSection = () => {
         <div className="flex justify-center gap-4 mb-12">
           <button
             onClick={() => setMode("passenger")}
-            className={`px-6 py-3 rounded-full font-medium transition-all
-              ${
-                mode === "passenger"
-                  ? "bg-[#6dbb1a] text-black"
-                  : "bg-white/10 text-white border border-white/30"
-              }`}
+            className={`px-8 py-2.5 rounded-full text-sm font-medium transition-all ${
+              mode === "passenger"
+                ? "bg-[#6dbb1a] text-black shadow-lg shadow-[#6dbb1a]/20"
+                : "bg-white/10 text-white hover:bg-white/20"
+            }`}
           >
-            Passenger Mode
+            Rider Mode
           </button>
-
           <button
             onClick={() => setMode("driver")}
-            className={`px-6 py-3 rounded-full font-medium transition-all
-              ${
-                mode === "driver"
-                  ? "bg-[#6dbb1a] text-black"
-                  : "bg-white/10 text-white border border-white/30"
-              }`}
+            className={`px-8 py-2.5 rounded-full text-sm font-medium transition-all ${
+              mode === "driver"
+                ? "bg-[#6dbb1a] text-black shadow-lg shadow-[#6dbb1a]/20"
+                : "bg-white/10 text-white hover:bg-white/20"
+            }`}
           >
-            Driver Mode
+            Partner Mode
           </button>
         </div>
 
         {/* Infinite Loop Slider */}
         <div className="relative w-full overflow-hidden">
-
           <div className="flex gap-6 animate-[scroll_30s_linear_infinite]">
             {[...images, ...images].map((img, i) => (
               <div
@@ -86,7 +82,6 @@ const AppUISnapsSection = () => {
               </div>
             ))}
           </div>
-
         </div>
 
       </div>

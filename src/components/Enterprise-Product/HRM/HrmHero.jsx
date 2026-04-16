@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import hrmImage from "../../../assets/Enterprise-Product/hrmhero.png";
+import hrmImage from "../../../assets/Enterprise-Product/hrmhero.jpg";
 
 const HRMHero = () => {
   return (
@@ -10,8 +10,8 @@ const HRMHero = () => {
 
       {/* Background Glow */}
       <div className="absolute inset-0">
-        <div className="absolute top-[20%] left-[20%] w-[400px] h-[400px] bg-purple-600/20 blur-[120px] rounded-full"></div>
-        <div className="absolute bottom-[10%] right-[10%] w-[350px] h-[350px] bg-indigo-500/20 blur-[100px] rounded-full"></div>
+        <div className="absolute top-[20%] left-[10%] w-[250px] md:w-[400px] h-[250px] md:h-[400px] bg-purple-600/20 blur-[80px] md:blur-[120px] rounded-full"></div>
+        <div className="absolute bottom-[10%] right-[5%] w-[200px] md:w-[350px] h-[200px] md:h-[350px] bg-indigo-500/20 blur-[60px] md:blur-[100px] rounded-full"></div>
       </div>
 
       {/* MAIN CONTAINER */}
@@ -38,7 +38,7 @@ const HRMHero = () => {
           </div>
 
           {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">
+          <h1 className="text-[28px] sm:text-[40px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">
             <span className="bg-gradient-to-r from-purple-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">
               Human Resource
             </span>
@@ -76,7 +76,7 @@ const HRMHero = () => {
           <img
             src={hrmImage}
             alt="HRM System"
-            className="block max-h-[500px] w-auto object-contain"
+            className="block max-h-[500px] rounded-3xl w-auto max-w-full object-contain"
           />
         </motion.div>
 

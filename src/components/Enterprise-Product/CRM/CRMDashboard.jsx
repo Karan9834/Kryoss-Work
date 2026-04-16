@@ -1,5 +1,5 @@
 import React from "react";
-import crmDashboard from "../../../assets/Enterprise-Product/crmdashboard.png";
+import crmDashboard from "../../../assets/Enterprise-Product/crmdashboard.jpg";
 
 import {
   BarChart3,
@@ -51,7 +51,7 @@ const CRMDashboard = () => {
               <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-blue-600">Dashboard</span>
             </div>
           </div> */}
-          
+
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
             Powerful CRM Dashboard for{" "}
@@ -73,7 +73,7 @@ const CRMDashboard = () => {
             alt="CRM Dashboard"
             className="
               w-full max-w-3xl 
-              rounded-xl 
+              rounded-3xl 
               shadow-[0_20px_60px_rgba(37,99,235,0.15)]
             "
           />
@@ -114,9 +114,9 @@ const CRMDashboard = () => {
                   group-hover:from-blue-500 group-hover:to-indigo-600
                   transition
                 ">
-                  <Icon 
-                    size={20} 
-                    className="text-blue-600 group-hover:text-white transition" 
+                  <Icon
+                    size={20}
+                    className="text-blue-600 group-hover:text-white transition"
                   />
                 </div>
 

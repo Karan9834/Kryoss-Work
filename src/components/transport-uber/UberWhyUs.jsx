@@ -12,43 +12,43 @@ import {
 
 const whyUsData = [
     {
-        title: "100% White-Label with Source Code",
-        desc: "No more dependency, just complete freedom. You receive the platform with full source code access.",
+        title: "Transparent White-Label Ownership",
+        desc: "Eliminate third-party reliance and gain complete autonomy. We deliver the entire platform with exhaustive source code access.",
         icon: Smartphone,
     },
     {
-        title: "Rapid Deployment & Go-Live Support",
-        desc: "Delays can hurt your revenue, so we address all issues faster with real human guidance and priority technical assistance.",
+        title: "Priority Deployment & Expert Care",
+        desc: "Time-to-market is critical; we bypass delays with personalized engineering guidance and high-priority technical support during your launch.",
         icon: Rocket,
     },
     {
-        title: "NDA Protection",
-        desc: "We sign a Non-Disclosure Agreement to keep your business data details fully confidential and legally protected at all times.",
+        title: "Rigid Professional Confidentiality",
+        desc: "We formalize our partnership with a comprehensive NDA, ensuring your proprietary business intelligence remains legally shielded and strictly private.",
         icon: FileLock,
     },
     {
-        title: "Scalable Architecture Design",
-        desc: "No more performance breakdown – an Uber like taxi app grows with your business without rebuilding the tech stack.",
+        title: "Future-Ready Elastic Framework",
+        desc: "Our high-performance architecture expands alongside your venture, allowing for massive scaling without the need for expensive core re-engineering.",
         icon: Layers,
     },
     {
-        title: "Third-Party API Integration",
-        desc: "We integrate third-party APIs to meet your requirements. Just specify what you want, and we will do it for you.",
+        title: "Bespoke API Orchestration",
+        desc: "We integrate custom third-party services tailored to your specific operational roadmap. Simply define your requirements, and our team handles the complexity.",
         icon: Plug,
     },
     {
-        title: "App Store Deployment",
-        desc: "We guide you through the tricky store approval process, reducing back-and-forth delays and rejections effectively.",
+        title: "Frictionless App Store Strategy",
+        desc: "Navigate the complexities of platform approval with our expert assistance, significantly reducing the probability of rejections and publication delays.",
         icon: Store,
     },
     {
-        title: "1 Year Bug-Fix Support",
-        desc: "Our team provides 12 months of technical support to fix bugs & maintain smooth operations without unexpected extra costs.",
+        title: "Annual Performance Assurance",
+        desc: "Our engineering team provides 12 months of dedicated technical oversight to maintain operational continuity and address anomalies without hidden costs.",
         icon: Bug,
     },
     {
-        title: "Dedicated Project Management",
-        desc: "Our project manager is here to coordinate. They will understand what you want to solve all your queries quickly.",
+        title: "Strategic Project Coordination",
+        desc: "A dedicated lead manages your implementation, acting as a direct bridge to our technical resources to resolve your inquiries with speed.",
         icon: ClipboardList,
     },
 ];
@@ -61,21 +61,20 @@ const WhyUs = () => {
                 {/* TOP TAG */}
                 <div className="flex justify-center mb-6">
                     <span className="border border-gray-300 rounded-full px-5 py-1 text-sm text-gray-600">
-                        Why we better
+                        Our Competitive Advantage
                     </span>
                 </div>
 
                 {/* HEADING */}
                 <h2 className="text-center text-[32px] md:text-[42px] leading-[44px] md:leading-[56px] font-semibold text-[#2f2f2f] mb-6">
-                    Why Kryoss Work as a Taxi App Development Company?
+                    What Makes Kryoss Work the Premier Mobility Engineering Partner?
                 </h2>
 
                 {/* SUB TEXT */}
                 <p className="text-center text-[16px] text-[#5f5f5f] max-w-4xl mx-auto mb-16">
-                    Choosing the right taxi app development company is a big decision, as
-                    they help you build a long-term business. We create a taxi booking app
-                    like Uber for every business owner who wants more than a packaged
-                    script. Check what sets Kryoss Work apart:
+                    Selecting a long-term engineering partner is the most consequential decision for your
+                    transportation venture. We build advanced mobility ecosystems for entrepreneurs
+                    who demand sophisticated solutions over generic scripts. Discover our competitive edge:
                 </p>
 
                 {/* CARDS GRID */}

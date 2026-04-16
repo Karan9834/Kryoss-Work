@@ -12,43 +12,43 @@ import {
 import adminpanel from "../../assets/homeservice-tutor-img/adminpanel.webp"
 const features = [
     {
-        title: "Dashboard",
-        desc: "With the powerful dashboard, admin can view the total order request, total revenue, new order request, and new users.",
+        title: "Operational Dashboard",
+        desc: "Through our sophisticated control center, administrators can monitor request volumes, overall fiscal performance, recent sign-ups, and emerging user trends.",
         icon: LayoutDashboard,
     },
     {
-        title: "Manage Document",
-        desc: "Admin can add and edit the required document for a tutor like a Professional id, education document, and more document.",
+        title: "Certification Governance",
+        desc: "Authority to configure and modify essential verification requirements for instructors, including professional identification and academic credentials.",
         icon: FileText,
     },
     {
-        title: "Mass Notification",
-        desc: "Admin can send a mass notification to the user and tutor for new offers, festival greeting and more.",
+        title: "Broadcast Communication",
+        desc: "Deploy large-scale electronic notifications to the entire user and instructor base regarding promotional incentives and critical system announcements.",
         icon: Bell,
     },
     {
-        title: "Review & Rating",
-        desc: "Admin can see all the reviews and ratings with the service details and user details who provide it.",
+        title: "Feedback Moderation",
+        desc: "Examine comprehensive user testimonials and performance scores, correlated with specific instructional sessions and participant profiles.",
         icon: Star,
     },
     {
-        title: "Approve Tutor",
-        desc: "Admin can check approved tutor details with name, email, total pending, completed requests, and status.",
+        title: "Expert Verification",
+        desc: "Validate instructor credentials, monitoring their professional status, engagement history, pending requests, and overall platform standing.",
         icon: UserCheck,
     },
     {
-        title: "Earning Report",
-        desc: "Admin can view each detailed earning report of the tutor and system total commission earning.",
+        title: "Revenue Analytics",
+        desc: "Access granular financial summaries detailing individual instructor earnings alongside consolidated platform commission performance.",
         icon: BarChart3,
     },
     {
-        title: "Tutor Details",
-        desc: "Admin can see all the tutor details with name, email, contact number, address, history, and uploaded document.",
+        title: "Instructor Profiles",
+        desc: "Gain a detailed perspective of all instructional partners, including contact parameters, residential data, assignment history, and verified documentation.",
         icon: Users,
     },
     {
-        title: "Promo Code",
-        desc: "Admin can manage promo code details including promo code name, offer type, usage limit and expired date of promo code.",
+        title: "Incentive Management",
+        desc: "Configure and manage promotional campaigns, defining discount parameters, usage constraints, and expiration schedules for high-conversion marketing.",
         icon: TicketPercent,
     },
 ];
@@ -65,19 +65,19 @@ const AdminPanelFeatures = () => {
                 <div className="mb-4 flex justify-center">
                     <span className="inline-flex items-center gap-2 rounded-full border border-white/40 px-4 py-1 text-sm text-white">
                         <span className="h-2 w-2 rounded-full bg-white" />
-                        Web Admin Panel
+                        Centralized Management Hub
                     </span>
                 </div>
 
                 {/* HEADING */}
                 <h2 className="mb-4 text-center text-[30px] font-semibold text-white sm:text-[38px]">
-                    <span className="text-yellow-400">Super Web Admin Panel</span>{" "}
-                    Features for Your Tutor App
+                    <span className="text-yellow-400">Comprehensive Administrative Portal</span>{" "}
+                    for your Education Marketplace
                 </h2>
 
                 {/* SUB TEXT */}
                 <p className="mx-auto mb-12 max-w-[900px] text-center font-medium text-white/80">
-                    Explore the powerful features of our Super Web Admin Panel, designed to give you complete control over your on-demand tutor app. Manage users, tutors, and more with ease.
+                    Discover the extensive capabilities of our Master Oversight Dashboard, engineered to provide absolute governance over your on-demand learning ecosystem. Coordinate participants and financial logistics seamlessly.
                 </p>
 
                 {/* IMAGE */}

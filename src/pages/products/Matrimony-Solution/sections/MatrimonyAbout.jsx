@@ -1,6 +1,6 @@
 import React from 'react';
 import { Shield, Target, Users, Search, Activity, Lock } from 'lucide-react';
-
+import aboutimg from '../../../../assets/Matrimony portal/about.jpg';
 const MatrimonyAbout = () => {
     return (
         <section className="py-24 bg-white relative overflow-hidden">
@@ -9,9 +9,9 @@ const MatrimonyAbout = () => {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
-                    
+
                     {/* Visual Grid Layout */}
-                    <div className="lg:w-1/2 w-full grid grid-cols-2 gap-4">
+                    {/* <div className="lg:w-1/2 w-full grid grid-cols-2 gap-4">
                         <div className="space-y-4 pt-12">
                             <div className="bg-rose-50 rounded-3xl p-6 aspect-square flex flex-col justify-center items-center text-center shadow-sm hover:shadow-md transition-shadow">
                                 <Search size={40} className="text-rose-500 mb-4" />
@@ -38,10 +38,18 @@ const MatrimonyAbout = () => {
                                 <h3 className="font-bold text-slate-900 mt-2">High Retention</h3>
                             </div>
                         </div>
+                    </div> */}
+                    {/* Image Section */}
+                    <div className="lg:w-1/2 w-full order-2 lg:order-1">
+                        <img
+                            src={aboutimg}
+                            alt="about the matrimony"
+                            className="w-full h-auto rounded-3xl shadow-4xl object-cover"
+                        />
                     </div>
 
                     {/* Content */}
-                    <div className="lg:w-1/2 space-y-8">
+                    <div className="lg:w-1/2 space-y-8 order-1 lg:order-2">
                         <div>
                             <span className="text-rose-600 font-bold text-sm uppercase tracking-widest block mb-3">Why Choose Our Framework</span>
                             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">
@@ -49,7 +57,7 @@ const MatrimonyAbout = () => {
                                 <span className="text-purple-600">Modern Matchmaking</span>
                             </h2>
                         </div>
-                        
+
                         <p className="text-slate-600 text-lg leading-relaxed">
                             Traditional matrimony is evolving. Our solution bridges the gap between deep cultural traditions and modern dating expectations, giving your users a secure, respectful, and highly engaging platform to find their life partners.
                         </p>

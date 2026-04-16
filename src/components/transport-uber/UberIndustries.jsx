@@ -13,57 +13,57 @@ import electrician from "../../assets/transport-uber-img/uber-for-electrician.we
 const UberIndustries = () => {
     const industries = [
         {
-            title: "Uber For Dog Walking",
-            description: "A trusted network with an easy-to-use Uber for dog walking app helps you handle everything from a single place.",
+            title: "Vyom For Pet Assistance",
+            description: "A secure framework featuring an intuitive interface for pet care, helping you manage companion assistance from a centralized hub.",
             bgColor: "bg-[#fffbeb]",
             titleColor: "text-[#b28e2a]",
             image: dogWalking,
         },
         {
-            title: "Uber For Food Delivery",
-            description: "No more relying on third-party aggregators. Launch your delivery ecosystem with full operational control.",
+            title: "Vyom For Culinary Delivery",
+            description: "Gain independence from external aggregators. Establish your own gourmet delivery network with total structural control.",
             bgColor: "bg-[#fff6ef]",
             titleColor: "text-[#c26d2b]",
             image: foodDelivery,
         },
         {
-            title: "Uber For Grocery Delivery",
-            description: "Are you operating supermarkets or local grocery stores? An Uber like grocery delivery app is for you.",
+            title: "Vyom For Essential Goods",
+            description: "Modernize regional retail or supermarket operations with a high-performance logistics framework for household supplies.",
             bgColor: "bg-[#f0f9f1]",
             titleColor: "text-[#2d8a3c]",
             image: groceryDelivery,
         },
         {
-            title: "Uber Handyman Service",
-            description: "Running a home service company is overwhelming. But it's not the case with a handyman service app like Uber.",
+            title: "Vyom Maintenance Support",
+            description: "Managing technical home services is complex. Streamline your operational flow with our specialized maintenance interface.",
             bgColor: "bg-[#f0f7ff]",
             titleColor: "text-[#2e68a1]",
             image: handyman,
         },
         {
-            title: "Uber tutor",
-            description: "Whether you're operating locally or expanding globally, an Uber clone app helps you maintain consistent teaching standards.",
+            title: "Vyom Academic Portal",
+            description: "Whether managing specialized local tutoring or global educational scaling, our platform maintains elite pedagogical standards.",
             bgColor: "bg-[#f8f5ff]",
             titleColor: "text-[#7b5db3]",
             image: tutor,
         },
         {
-            title: "Uber Beauty",
-            description: "Manage your beauty business with a feature-rich dashboard that drives repeat bookings and boosts your visibility.",
+            title: "Vyom Wellness & Beauty",
+            description: "Empower your aesthetic enterprise with a sophisticated scheduling engine that drives repeat engagement and visibility.",
             bgColor: "bg-[#fff1f5]",
             titleColor: "text-[#be3d5e]",
             image: beauty,
         },
         {
-            title: "Uber For Tow Truck",
-            description: "Instead of relying on a random call, manage your towing vehicle service from an easy-to-use platform.",
+            title: "Vyom Vehicle Recovery",
+            description: "Transition from manual dispatching to a high-precision assistance platform for your specialized towing fleet operations.",
             bgColor: "bg-[#f0f4ff]",
             titleColor: "text-[#2e57a1]",
             image: towTruck,
         },
         {
-            title: "Uber For Electrician",
-            description: "With an Uber-style electrician platform, you get complete operational control -helping you maintain service quality.",
+            title: "Vyom Technical Services",
+            description: "With our advanced electrical service framework, you achieve granular oversight and superior quality assurance for your technicians.",
             bgColor: "bg-[#fff1ed]",
             titleColor: "text-[#be423d]",
             image: electrician,
@@ -81,11 +81,14 @@ const UberIndustries = () => {
                     </div>
 
                     <h2 className="text-3xl md:text-[42px] leading-tight md:leading-[52px] font-bold text-[#141414] mb-6">
-                        Turn the Uber-Style Model Into a Powerful App for Your Niche
+                        Adapt the Core Mobility Architecture to Any Vertical Ecosystem
                     </h2>
 
                     <p className="text-gray-600 text-sm md:text-[16px] leading-[26px] max-w-5xl mx-auto">
-                        The Uber model is no longer limited to taxis; we power almost every service-based business. Every element of the Uber clone is tailored to match how your business operates. The result? A niche-focused on-demand Uber like taxi app designed to attract more users.
+                        The elite mobility framework is no longer restricted to traditional transit. We power a
+                        diverse spectrum of service-centric enterprises. Each functional element is meticulously
+                        refined to match your specific operational dynamics, resulting in a niche-optimized
+                        solution destined for market leadership.
                     </p>
                 </div>
 

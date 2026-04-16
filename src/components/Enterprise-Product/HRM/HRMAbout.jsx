@@ -1,5 +1,5 @@
 import React from "react";
-import hrmImage from "../../../assets/Enterprise-Product/hrmabout.png";
+import hrmImage from "../../../assets/Enterprise-Product/hrmabout.jpg";
 
 const HRMAbout = () => {
   return (
@@ -12,7 +12,7 @@ const HRMAbout = () => {
           <img
             src={hrmImage}
             alt="HRM System"
-            className="w-full max-w-[520px] object-contain"
+            className="w-full max-w-[520px] rounded-3xl object-contain"
           />
         </div>
 
@@ -25,7 +25,7 @@ const HRMAbout = () => {
               <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-purple-600">About Us</span>
             </div>
           </div> */}
-          
+
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
           <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-6">
             <span className="text-purple-600">About</span>{" "}

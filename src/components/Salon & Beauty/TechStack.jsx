@@ -41,12 +41,13 @@ const TechStack = () => {
           </div>
 
           <h2 className="text-3xl md:text-5xl font-semibold mb-6">
-            Technologies We Use to Build Scalable Digital Solutions
+            Our Technical Architecture for High-Capacity Digital Ecosystems
           </h2>
 
           <p className="text-white/90 text-lg">
-            We use modern, scalable, and secure technologies to develop
-            high-performance mobile applications, web platforms, and backend systems.
+            We utilize advanced, agile, and resilient technologies to engineer
+            professional-grade mobile interfaces, web modules, and distributed 
+            backend architectures.
           </p>
 
         </div>

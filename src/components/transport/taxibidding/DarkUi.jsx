@@ -21,16 +21,14 @@ const DarkModeSection = () => {
       </span>
     </div>
 
-    <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-[#1f2937]">
-      Dark Mode UI –{" "}
-      <span className="text-[#5aa114]">
-        A Better User Experience
-      </span>
-    </h2>
+        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          Sleek Dark Mode for{" "}
+          <span className="text-[#9FE870]">Enhanced Experience</span>
+        </h2>
 
     <p className="max-w-2xl mx-auto text-[#4b5563] mb-10 leading-relaxed">
-      Experience the modern look of our Indrive Clone App with stunning
-      Dark and Light theme modes.
+      Provide your riders and partners with a visually striking and eye-friendly 
+      interface designed for optimal low-light navigation.
     </p>
 
     <div className="relative flex justify-center">

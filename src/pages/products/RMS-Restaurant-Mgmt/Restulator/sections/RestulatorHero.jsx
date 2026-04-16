@@ -1,5 +1,5 @@
 import React from "react";
-import RestulatorHeroImg from "../../../../../assets/resulatorrms-img/resulatorrmshero.jpg";
+import RestulatorHeroImg from "../../../../../assets/resulatorrms-img/resulatorrmshero1.jpg";
 import { ArrowRight, UtensilsCrossed, Star, Clock, MessageCircle } from "lucide-react";
 
 const RestulatorHero = () => {

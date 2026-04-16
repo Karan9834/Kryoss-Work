@@ -8,12 +8,12 @@ const BenefitsSection = () => {
                 <div className="text-center mb-14">
                     <span className="inline-flex items-center gap-2 px-4 py-1 border border-gray-300 rounded-full text-sm text-gray-700 mb-4">
                         <span className="w-2 h-2 rounded-full bg-orange-500"></span>
-                        Benefits
+                        Strategic Advantages
                     </span>
 
                     <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">
-                        Benefits of Using Our{" "}
-                        <span className="text-orange-500">On-Demand Tutor App</span>
+                        Value Propositions of our{" "}
+                        <span className="text-orange-500">Instructional Ecosystem</span>
                     </h2>
                 </div>
 
@@ -23,62 +23,65 @@ const BenefitsSection = () => {
                     <div className="space-y-8 text-gray-700 leading-relaxed order-2 lg:order-1">
                         <p>
                             <span className="font-semibold text-gray-900">
-                                Quick and Easy Access to Tutors
+                                Accelerated Expert Matching
                             </span>{" "}
-                            Our on-demand tutor app provides students with instant access to
-                            skilled tutors, making it easy to find the right fit based on
-                            location, subject, and availability. This ensures a seamless
-                            learning experience for users anytime, anywhere.
+                            Our specialized educational platform offers learners immediate 
+                            connection with qualified instructors, facilitating an optimal 
+                            match based on geographic proximity, academic focus, and 
+                            availability. This guarantees a frictionless instructional 
+                            journey for participants at any time.
                         </p>
 
                         <p>
                             <span className="font-semibold text-gray-900">
-                                Flexible Scheduling
+                                Autonomous Time Coordination
                             </span>{" "}
-                            Students and tutors can easily coordinate sessions that fit their
-                            schedules. The app offers convenient options for booking and
-                            rescheduling, giving users the flexibility they need to balance
-                            learning with other commitments.
+                            Learners and educators can effortlessly organize learning 
+                            sessions that align with their personal obligations. The 
+                            interface provides versatile tools for reservation and 
+                            rescheduling, delivering the operational flexibility needed 
+                            to synchronize education with lifestyle.
                         </p>
 
                         <p>
                             <span className="font-semibold text-gray-900">
-                                Real-Time Notifications and Updates
+                                Instant Operational Intel
                             </span>{" "}
-                            Stay informed with instant updates about bookings, cancellations,
-                            and session reminders. Real-time notifications ensure that
-                            students and tutors are always on the same page, enhancing
-                            communication and reducing delays.
+                            Maintain awareness through instantaneous alerts regarding 
+                            instructional bookings, session adjustments, and logistical 
+                            reminders. These real-time communications guarantee that both 
+                            participants remain synchronized, optimizing coordination and 
+                            eliminating friction.
                         </p>
 
                         <p>
                             <span className="font-semibold text-gray-900">
-                                Secure and Transparent Payments
+                                Protected Financial Gateways
                             </span>{" "}
-                            Our app integrates reliable payment gateways, ensuring that
-                            transactions are secure and transparent. Users can pay
-                            confidently and track their payment history directly within the
-                            app.
+                            Our architecture incorporates premier settlement portals, 
+                            guaranteeing that all educational transactions are protected 
+                            and auditable. Users can execute payments with complete assurance 
+                            and monitor their fiscal history through our integrated ledger.
                         </p>
 
                         <p>
                             <span className="font-semibold text-gray-900">
-                                Customizable and Scalable Solution
+                                Extensible Enterprise Framework
                             </span>{" "}
-                            Whether you're just starting or looking to expand, our on-demand
-                            tutor app is designed to grow with your business. Its fully
-                            customizable features allow you to tailor the app to your
-                            specific needs and branding.
+                            Regardless of your current scale, our instructional framework 
+                            is engineered to expand alongside your corporate growth. Its 
+                            highly adaptable logic enables you to configure the ecosystem 
+                            to satisfy your unique commercial objectives and brand identity.
                         </p>
 
                         <p>
                             <span className="font-semibold text-gray-900">
-                                Comprehensive Admin Control
+                                Sophisticated Oversight Infrastructure
                             </span>{" "}
-                            Manage your tutoring business effortlessly with an intuitive
-                            admin panel. From tracking sessions to managing users and
-                            handling payments, our admin dashboard provides everything you
-                            need to oversee your operations effectively.
+                            Coordinate your instructional marketplace with precision via our 
+                            centralized administrative interface. From monitoring session 
+                            velocity to managing user demographics and financial settlements, 
+                            our master dashboard delivers ultimate operational authority.
                         </p>
                     </div>
 

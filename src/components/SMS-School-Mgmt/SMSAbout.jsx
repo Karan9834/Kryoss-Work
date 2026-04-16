@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle2, GraduationCap, Users, ShieldCheck, Zap } from 'lucide-react';
-import aboutImg from "@/assets/smslanding-img/smslandingabout.jpg";
+import aboutImg from "@/assets/smslanding-img/smslandingabout11.png";
 
 const SMSAbout = () => {
     const highlights = [
@@ -33,7 +33,7 @@ const SMSAbout = () => {
                             <img
                                 src={aboutImg}
                                 alt="Modern School Management"
-                                className="w-full h-full object-cover aspect-[4/5] lg:aspect-auto group-hover:scale-105 transition-transform duration-700"
+                                className="w-full h-[550px] object-cover group-hover:scale-105 transition-transform duration-700"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent"></div>
 

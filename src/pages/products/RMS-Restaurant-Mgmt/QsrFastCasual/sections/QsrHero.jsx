@@ -1,5 +1,5 @@
 import React from "react";
-import qsrHeroImg from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmshero.jpg";
+import qsrHeroImg from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmshero1.jpg";
 import { ArrowRight, Zap, Clock, TrendingUp, MessageCircle } from "lucide-react";
 
 const QsrHero = () => {

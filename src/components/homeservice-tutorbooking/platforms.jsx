@@ -24,19 +24,18 @@ const PlatformsSection = () => {
                 <div className="mb-4 flex justify-center">
                     <span className="inline-flex items-center gap-2 rounded-full border px-4 py-1 text-sm text-gray-700">
                         <span className="h-2 w-2 rounded-full bg-orange-500" />
-                        Uber For Tutor Clone for Various Platforms
+                        Cross-Platform Delivery Ecosystem
                     </span>
                 </div>
 
                 {/* HEADING */}
                 <h2 className="mb-4 text-center text-[28px] font-semibold text-gray-800 sm:text-[36px]">
-                    Unlock Your <span className="text-orange-500">Business Potential</span>{" "}
-                    Across All Platforms with Uber For Tutor Clone Script
+                    Maximize <span className="text-orange-500">Commercial Reach</span> Across All Digital Channels with Vyom Tutor Architecture
                 </h2>
 
                 {/* SUBTEXT */}
                 <p className="mx-auto mb-14 max-w-[900px] text-center text-gray-600">
-                    Our feature-rich Uber for tutor clone is designed to work seamlessly across multiple platforms.
+                    Our enterprise-grade educational framework is engineered for flawless execution across diverse hardware environments.
                 </p>
 
                 {/* PLATFORM CARDS */}
@@ -56,14 +55,15 @@ const PlatformsSection = () => {
                         </div>
 
                         <h3 className="mb-4 text-2xl font-semibold">
-                            iOS and Android
+                            Native Mobile Experiences
                         </h3>
 
                         <p className="mb-10 text-white/80 leading-relaxed">
-                            We offer a ready-to-use on-demand tutor app like uber that allows you
-                            to provide your services seamlessly across both iOS and Android
-                            platforms. Our solution is fully customizable, scalable, and optimized,
-                            helping you reach a wider audience and scale your business effortlessly.
+                            We provide production-ready mobile environments that enable you to 
+                            deploy instructional services flawlessly across both iOS and Android 
+                            ecosystems. Our framework is fully extensible, resilient, and 
+                            performance-tuned, empowering you to engage a global audience and 
+                            expand your enterprise with ease.
                         </p>
 
                         {/* IMAGE */}
@@ -85,14 +85,15 @@ const PlatformsSection = () => {
                         </div>
 
                         <h3 className="mb-4 text-2xl font-semibold">
-                            Feature-Rich Web Solution
+                            Advanced Browser Solutions
                         </h3>
 
                         <p className="mb-10 text-white/80 leading-relaxed">
-                            With our Uber for tutor clone app, you can offer a smooth and efficient
-                            experience to both users and service providers across various web
-                            browsers. Packed with all the essential features, it’s designed to drive
-                            success and enhance the overall user experience.
+                            Through our specialized tutoring web portal, you can deliver a 
+                            sophisticated and high-velocity journey for both students and 
+                            instructors across all modern browsing environments. Integrated 
+                            with mission-critical logic, it is architected to accelerate growth 
+                            and optimize the participant experience.
                         </p>
 
                         {/* IMAGE */}

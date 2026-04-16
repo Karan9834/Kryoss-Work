@@ -18,61 +18,59 @@ const QuickFlowSection = () => {
           {/* Pill */}
           <div className="inline-flex items-center gap-2 border border-white/20 px-4 py-1 rounded-full text-sm mb-6">
             <span className="w-2 h-2 bg-[#9FE870] rounded-full"></span>
-            Quick Flow
+            Operational Roadmap
           </div>
 
           {/* Heading */}
           <h2 className="text-3xl lg:text-4xl font-semibold mb-6 leading-snug">
-            How Does the{" "}
+            Understanding the{" "}
             <span className="text-[#9FE870]">
-              indrive clone App
-            </span>{" "}
-            Work ?
+              Mechanics of Our inDrive Replica
+            </span>
           </h2>
 
           <p className="text-white/80 mb-10">
-            Have a look at our seamless and structured workflow that ensures
-            smooth service execution and transparent communication between
-            customers and drivers.
+            Examine our streamlined and systematic process designed to guarantee 
+            efficient service delivery and crystal-clear interactions between 
+            users and providers.
           </p>
 
-          {/* STEP 1 */}
           <div className="mb-14">
-            <h3 className="text-xl font-semibold mb-3">1. Taxi Booking Flow</h3>
+            <h3 className="text-xl font-semibold mb-3">1. Passenger Trip Workflow</h3>
 
             <p className="text-white/80 mb-4">
-              Users log into the platform, select vehicle type, enter pickup and drop locations,
-              and place a bid amount according to their preference.
+              Users access the system, choose their preferred transport mode, define route 
+              endpoints, and propose a fare that matches their budget.
             </p>
 
             <p className="text-white/80 mb-4">
-              Nearby drivers receive the request instantly and respond
-              by accepting or counter-offering, ensuring fair pricing.
+              Local partners are notified immediately and can confirm the rate 
+              or suggest an alternative, ensuring an equitable marketplace.
             </p>
 
             <p className="text-white/80">
-              Once confirmed, real-time tracking begins and the ride
-              concludes with secure in-app payment and rating.
+              Following mutual agreement, live GPS monitoring activates, 
+              leading to an integrated payment settlement and quality review.
             </p>
           </div>
 
           {/* STEP 2 */}
           <div className="mb-14">
-            <h3 className="text-xl font-semibold mb-3">2. Courier Delivery Flow</h3>
+            <h3 className="text-xl font-semibold mb-3">2. Logistics Parcel Workflow</h3>
 
             <p className="text-white/80 mb-4">
-              Customers provide pickup and drop details along with
-              package specifications and suggested delivery price.
+              Riders specify collection and delivery points, describe the 
+              shipment, and offer a transparent delivery fee.
             </p>
 
             <p className="text-white/80 mb-4">
-              Delivery agents nearby receive the request and respond
-              in real-time, creating a transparent negotiation model.
+              Available couriers in the vicinity evaluate the request and 
+              engage in real-time negotiation to finalize terms.
             </p>
 
             <p className="text-white/80">
-              Live tracking and secure payments ensure smooth delivery
-              and confirmation upon completion.
+              End-to-end tracking and protected financial protocols facilitate 
+              a dependable shipment experience and successful delivery validation.
             </p>
           </div>
 

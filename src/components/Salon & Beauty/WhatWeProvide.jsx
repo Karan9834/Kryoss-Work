@@ -23,17 +23,17 @@ const WhatWeProvide = () => {
 
         {/* Heading */}
         <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">
-          Comprehensive Uber for{" "}
+          Holistic Vyom Beauty{" "}
           <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">
-            Beauty App Solution for All Platforms
+            Architecture for Multi-Platform Deployment
           </span>
         </h2>
 
         {/* Description */}
         <p className="text-center text-gray-300 max-w-3xl mx-auto mb-16">
-          Transform your traditional beauty business with our customizable Uber
-          for Beauty app. Available for both Android and iOS, it enables
-          efficient on-demand beauty services.
+          Modernize your conventional styling enterprise with our adaptable Vyom
+          Beauty framework. Engineered for cross-platform utility, it facilitates
+          professional on-demand aesthetic coordination.
         </p>
 
         {/* Content Layout */}
@@ -76,12 +76,12 @@ const WhatWeProvide = () => {
             {/* Features */}
             <ul className="space-y-3">
               {[
-                "Customer Android + iOS App",
-                "Provider Android + iOS App",
-                "Super Admin Web Panel",
-                "Provider Web Panel",
-                "Static Landing Page Website",
-                "Billing Account",
+                "Participant Mobile Interfaces (iOS & Android)",
+                "Specialist Practitioner Modules",
+                "Centralized Governance Console",
+                "Practitioner Management Portal",
+                "Professional Digital Presence Site",
+                "Integrated Fiscal Records System",
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3">
                   <span className="w-2.5 h-2.5 bg-pink-500 rounded-full"></span>

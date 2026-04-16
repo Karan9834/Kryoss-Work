@@ -115,17 +115,18 @@ const UberAppScreenshots = () => {
                 <div className="flex justify-center mb-8">
                     <div className="inline-flex items-center gap-2 bg-[#1a1a1a] border border-[#333] rounded-full px-5 py-1.5 shadow-[0_0_20px_rgba(255,255,255,0.05)]">
                         <div className="w-2 h-2 rounded-full bg-white animate-pulse"></div>
-                        <span className="text-white text-[13px] font-medium tracking-wide">Fox-Taxi App Screenshots</span>
+                        <span className="text-white text-[13px] font-medium tracking-wide">Vyom Mobility Interface Views</span>
                     </div>
                 </div>
 
                 {/* Content */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-[48px] leading-tight md:leading-[62px] font-bold text-white mb-6">
-                        Understand the Customer and Driver App Workflow
+                        Explore the Seamless Operational Environment
                     </h2>
                     <p className="text-[#999] text-base md:text-[18px] max-w-4xl mx-auto leading-relaxed md:px-12">
-                        Check the screens to experience the customer and driver app journey in action. Walk through each step and understand how smoothly the Uber clone script operates.
+                        Examine our detailed interfaces to visualize the integrated passenger and partner experience.
+                        Observe the refined choreography of each functional step within our high-performance mobility platform.
                     </p>
                 </div>
 

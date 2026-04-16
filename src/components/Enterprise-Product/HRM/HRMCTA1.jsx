@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from "react";
-import hrmImage from "../../../assets/Enterprise-Product/hrmhero.png";
+import hrmImage from "../../../assets/Enterprise-Product/hrmctaimg.png";
 
 const HRMCTA = () => {
   return (
@@ -12,8 +12,8 @@ const HRMCTA = () => {
         <div className="
           relative overflow-hidden
           bg-gradient-to-r from-purple-600 to-indigo-700
-          rounded-[60px] md:rounded-[120px]
-          px-10 md:px-16 py-16
+          rounded-[40px] md:rounded-[120px]
+          px-8 md:px-16 py-12 md:py-16
           flex flex-col md:flex-row items-center justify-between
         ">
 
@@ -50,9 +50,9 @@ const HRMCTA = () => {
               src={hrmImage}
               alt="HRM"
               className="
-                w-[260px] md:w-[380px]
-                object-contain
-                md:translate-x-10 md:-translate-y-6
+                w-[220px] md:w-[350px]
+                object-contain rounded-3xl
+                md:translate-x-6 md:-translate-y-4
               "
             />
 

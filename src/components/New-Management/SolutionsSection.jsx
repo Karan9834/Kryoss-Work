@@ -1,8 +1,8 @@
 import React from "react";
 import sol1 from "../../assets/News-Management/sol1.png";
-import sol2 from "../../assets/News-Management/sol2.png";
-import sol3 from "../../assets/News-Management/sol3.png";
-import sol4 from "../../assets/News-Management/sol4.png";
+import sol2 from "../../assets/News-Management/sol2.jpg";
+import sol3 from "../../assets/News-Management/sol3.jpg";
+import sol4 from "../../assets/News-Management/sol4.jpeg";
 
 const solutions = [
   {
@@ -42,7 +42,7 @@ const SolutionsSection = () => {
       {/* Background Glow - Orange Theme */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-orange-100 blur-3xl opacity-30 rounded-full"></div>
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-amber-100 blur-3xl opacity-20 rounded-full"></div>
-      
+
       {/* Subtle Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#f9731608_1px,transparent_1px),linear-gradient(to_bottom,#f9731608_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
@@ -52,12 +52,12 @@ const SolutionsSection = () => {
         <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-100 rounded-full px-4 py-2 mb-6">
           <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-orange-700">Comprehensive Solutions</span>
         </div>
-        
+
         {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
         <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
           Our <span className="bg-gradient-to-r from-orange-600 to-amber-600 text-transparent bg-clip-text">Solutions</span>
         </h2>
-        
+
         {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
         <p className="mt-6 text-[14px] md:text-[16px] font-normal leading-[1.6] text-gray-600 max-w-2xl mx-auto">
           Designed to empower modern news organizations with scalable, intelligent, and efficient workflows.

@@ -17,17 +17,18 @@ const CTA2 = () => {
                     <div className="relative z-10 flex flex-col items-center md:items-start lg:flex-row w-full">
                         <div className="max-w-[650px] text-center md:text-left">
                             <h2 className="text-[28px] font-bold text-white sm:text-[40px] lg:text-[45px] leading-[1.15]">
-                                Start Your On-Demand Tutoring <br className="hidden sm:block" /> Business Today!
+                                Initiate Your Specialized Instruction <br className="hidden sm:block" /> Venture Immediately!
                             </h2>
 
                             <p className="mt-6 text-white/90 text-[15px] sm:text-[18px] leading-relaxed max-w-[550px]">
-                                Ready to make an impact in the education industry? Get your customized
-                                tutor app now and connect students with the best tutors.
+                                Prepared to transform the landscape of modern education? Secure your 
+                                personalized instructional platform today and bridge the gap between 
+                                learners and elite educators.
                             </p>
 
                             <div className="mt-8">
                                 <button className="inline-flex items-center justify-center rounded-full border-2 border-white px-10 py-3 text-white font-semibold transition-all duration-300 hover:bg-white hover:text-[#4f7fdc] hover:shadow-xl">
-                                    Get Your App Now
+                                    Acquire Your Platform
                                 </button>
                             </div>
                         </div>

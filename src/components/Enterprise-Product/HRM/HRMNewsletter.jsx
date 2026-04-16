@@ -35,9 +35,9 @@ const HRMNewsletter = () => {
 
           {/* INPUT BOX */}
           <div className="
-            max-w-xl mx-auto flex items-center gap-3
-            bg-white border border-gray-200
-            rounded-full px-4 py-2 shadow-sm
+            max-w-xl mx-auto flex flex-col sm:flex-row items-center gap-3
+            bg-white sm:border border-gray-200
+            rounded-2xl sm:rounded-full px-4 py-2 sm:shadow-sm
           ">
 
             {/* ICON */}

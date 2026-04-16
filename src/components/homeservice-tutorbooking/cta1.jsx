@@ -15,19 +15,19 @@ const CTA1 = () => {
                         {/* LEFT CONTENT */}
                         <div className="w-full text-white lg:w-1/2">
                             <h2 className="mb-6 text-[28px] font-semibold leading-snug sm:text-[34px] lg:text-[40px]">
-                                Ready to Launch Your On-
+                                Prepared to Establish Your Custom
                                 <br />
-                                Demand Tutor App?
+                                Tutoring Marketplace?
                             </h2>
 
                             <p className="mb-8 max-w-[520px] text-[15px] leading-relaxed text-white/90 sm:text-[16px]">
-                                Don’t miss out on the opportunity to create your own Uber for tutors.
-                                With Kryoss Work, you can have a fully customizable tutoring app
-                                up and running in no time.
+                                Capitalize on the growing demand for personalized instruction with our 
+                                elite educational framework. At Vyom Solutions, we bridge the gap by 
+                                delivering a fully adaptable tutor environment with minimum turnaround.
                             </p>
 
                             <Link to="/company/contact" className="rounded-full border border-white px-8 py-3 text-sm font-semibold transition hover:bg-white hover:text-[#5a002b]">
-                                Book a Consultation
+                                Schedule Enterprise Review
                             </Link>
                         </div>
 

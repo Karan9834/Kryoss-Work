@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-  MessageCircle, 
-  Shield, 
-  Users, 
-  Globe, 
+import {
+  MessageCircle,
+  Shield,
+  Users,
+  Globe,
   Lock,
   Heart
 } from "lucide-react";
@@ -78,29 +78,29 @@ const AboutUs = () => {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-100/30 rounded-full blur-[100px]" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald-100/30 rounded-full blur-[100px]" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-50/40 rounded-full blur-[80px]" />
-        
+
         {/* Subtle Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(34,197,94,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(34,197,94,0.02)_1px,transparent_1px)] bg-[size:50px_50px]" />
-        
+
         {/* Top Accent Line */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-green-200 to-transparent" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 lg:px-8">
+      <div className="relative z-10 container mx-auto px-6 lg:px-18">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          
+
           {/* LEFT IMAGE */}
           <motion.div
             variants={imageVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="flex-1 flex justify-center"
+            className="flex-1 flex justify-center order-2 lg:order-1"
           >
-            <div className="relative w-full max-w-md lg:max-w-lg">
+            <div className="relative w-full max-w-md lg:max-w-[500px]">
               {/* Premium Glow Effect */}
               <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-green-200/40 via-emerald-200/40 to-teal-200/40 blur-2xl" />
-              
+
               {/* Main Image Card */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-green-500/10 border border-gray-100">
                 <img
@@ -119,7 +119,7 @@ const AboutUs = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="flex-1 max-w-xl"
+            className="flex-1 max-w-xl order-1 lg:order-2"
           >
             {/* Heading */}
             <motion.h2
@@ -137,8 +137,8 @@ const AboutUs = () => {
               variants={itemVariants}
               className="text-gray-600 text-lg leading-relaxed mb-6"
             >
-              We're on a mission to revolutionize how people communicate. Our platform brings 
-              friends, families, and communities closer together through seamless, secure, and 
+              We're on a mission to revolutionize how people communicate. Our platform brings
+              friends, families, and communities closer together through seamless, secure, and
               delightful messaging experiences.
             </motion.p>
 
@@ -146,8 +146,8 @@ const AboutUs = () => {
               variants={itemVariants}
               className="text-gray-600 leading-relaxed mb-8"
             >
-              Founded with a vision to create a safer, more connected world, we've grown into 
-              a trusted platform used by millions worldwide. Privacy, security, and user 
+              Founded with a vision to create a safer, more connected world, we've grown into
+              a trusted platform used by millions worldwide. Privacy, security, and user
               experience are at the heart of everything we do.
             </motion.p>
 

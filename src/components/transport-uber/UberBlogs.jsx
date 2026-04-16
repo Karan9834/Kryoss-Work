@@ -32,15 +32,17 @@ const BlogsSection = () => {
                 <div className="text-center mb-14">
                     <span className="inline-flex items-center gap-2 px-4 py-1 border rounded-full text-sm text-gray-600 mb-4">
                         <span className="w-2 h-2 bg-black rounded-full" />
-                        Blogs
+                        Industry Insights
                     </span>
 
                     <h2 className="text-4xl font-semibold text-gray-900">
-                        Our <span className="text-black">Related Blogs</span>
+                        Expertise & <span className="text-black">Strategic Guidance</span>
                     </h2>
 
                     <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-                        Stay updated with the latest trends, insights, and tips in the on-demand app industry. Explore our newest blogs to gain valuable knowledge and ideas to grow your business!
+                        Remain at the forefront of the mobility landscape with the latest engineering shifts and
+                        business logic. Explore our expert analyses to acquire the proprietary knowledge required
+                        to accelerate your enterprise trajectory.
                     </p>
                 </div>
 

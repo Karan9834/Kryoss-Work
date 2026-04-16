@@ -1,11 +1,11 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import DatingHero from  "../../assets/Datingkit/1.jpg";
+import DatingHero from "../../assets/Datingkit/hero.jpg";
 
 const DatingAppHero = () => {
   return (
-    <section className="bg-gradient-to-r from-purple-900 via-indigo-900 to-black text-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 pt-14 grid md:grid-cols-2 items-center gap-8">
+    <section className=" min-h-[90vh] bg-gradient-to-r from-purple-900 via-indigo-900 to-black text-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 pt-24 grid md:grid-cols-2 items-center gap-8">
         {/* LEFT CONTENT */}
         <div className="max-w-xl">
           <div className="flex items-center gap-3 mb-4">
@@ -58,7 +58,7 @@ const DatingAppHero = () => {
           <img
             src={DatingHero}
             alt="Dating App"
-            className="w-full max-w-[620px] object-contain"
+            className="w-full max-w-[600px] rounded-3xl shadow-4xl object-contain"
           />
         </div>
       </div>

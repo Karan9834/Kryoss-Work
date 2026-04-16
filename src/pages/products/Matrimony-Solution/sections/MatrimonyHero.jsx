@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart, Search, Users, ShieldCheck, Sparkles, PlayCircle, ArrowRight, MessageCircle } from 'lucide-react';
-import heroImg from '../../../../assets/Matrimony portal/1.jpg';
+import heroImg from '../../../../assets/Matrimony portal/hero.jpg';
 
 const MatrimonyHero = () => {
     return (

@@ -2,20 +2,20 @@ import React from "react";
 
 const blogs = [
   {
-    title: "How to Register as an inDriver Conductor: A Step-by-Step Guide",
+    title: "The Economics of Bidding: Why the InDrive Model is Winning",
     image:
       "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",
     featured: true,
   },
   {
     title:
-      "How inDriver Creates a Win-Win Scenario for Riders and Drivers",
+      "Scaling Your Mobility Startup: Lessons from Global Ride-Hailing Giants",
     image:
       "https://images.unsplash.com/photo-1518770660439-4636190af475",
   },
   {
     title:
-      "Top Features to Include in Your InDriver Clone App for 2025",
+      "Future-Proofing Your Transport App: Essential Tech Stack Trends for 2025",
     image:
       "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
   },
@@ -36,11 +36,11 @@ const BlogSection = () => {
 
         {/* Heading */}
         <h2 className="text-center text-3xl md:text-4xl font-semibold mb-4">
-          Our <span className="text-[#6dbb1a]">Related Blogs</span>
+          Explore the <span className="text-[#6dbb1a]">Strategic Innovations</span> in Modern Mobility
         </h2>
 
         <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
-          Stay updated with the latest trends, insights, and expert tips
+          Industry Intelligence: Stay updated with the latest trends, insights, and expert tips
           in the on-demand app industry. Explore our newest blogs to
           gain valuable knowledge and grow your business.
         </p>

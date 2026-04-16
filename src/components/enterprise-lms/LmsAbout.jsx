@@ -18,7 +18,7 @@ const LmsAbout = () => {
                             <img
                                 src={lmsabout}
                                 alt="About our LMS - Showcase Image Placeholder"
-                                className="w-full h-auto min-h-[400px] object-cover bg-violet-50"
+                                className="w-full h-auto min-h-[350px] object-cover bg-violet-50"
                             />
                         </div>
                         {/* Experience Badge */}

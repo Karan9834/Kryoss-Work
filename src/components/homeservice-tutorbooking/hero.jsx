@@ -35,18 +35,18 @@ const Hero = () => {
           {/* HEADING */}
           <h1 className="font-bold leading-tight mb-6">
             <span className="block text-[#f5b301] text-[32px] md:text-[40px]">
-              Uber for Tutors
+              Uber-Style Tutor
             </span>
             <span className="block text-white text-[38px] md:text-[46px]">
-              App Development
+              Platform Creation
             </span>
           </h1>
 
           {/* DESCRIPTION */}
           <p className="text-gray-300 text-[16px] leading-[28px] max-w-xl mb-10">
-            Uber for tutoring app development solution for your education
-            system. Simple and secure way to connect private tutors & students
-            on one platform with our on-demand tutor app.
+            Advanced instructor booking solution tailored for the modern learning
+            era. A streamlined and protected ecosystem to link expert educators
+            with students via our high-performance tutoring framework.
           </p>
 
           {/* CTA */}

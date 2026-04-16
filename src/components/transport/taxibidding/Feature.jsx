@@ -15,48 +15,48 @@ import {
 const passengerFeatures = [
   {
     icon: Car,
-    title: "Book Ride with Own Fare",
-    desc: "Customers take control of their budget and book rides at flexible fares.",
+    title: "Propose Custom Trip Rates",
+    desc: "Riders manage their travel costs by suggesting price points that fit their budget.",
   },
   {
     icon: DollarSign,
-    title: "Price Negotiations",
-    desc: "Negotiate fair prices before confirming the ride.",
+    title: "Interactive Fare Bargaining",
+    desc: "Coordinate with drivers to establish mutually beneficial costs before departure.",
   },
   {
     icon: CheckCircle,
-    title: "Accept/Reject Offer",
-    desc: "Approve or reject ride offers easily.",
+    title: "Manage Service Proposals",
+    desc: "Easily review and select or decline incoming trip offers with one tap.",
   },
   {
     icon: MapPin,
-    title: "Real-Time Tracking",
-    desc: "Track ride location and ETA directly in the app.",
+    title: "Live Trip Monitoring",
+    desc: "Observe vehicle movement and estimated arrival times through integrated GPS.",
   },
   {
     icon: User,
-    title: "Check Driver’s Details",
-    desc: "Review ratings, vehicle info and credentials.",
+    title: "Verify Partner Profiles",
+    desc: "Access driver performance history, vehicle data, and verified identification.",
   },
   {
     icon: UserPlus,
-    title: "Become a Driver",
-    desc: "Register and start earning flexibly.",
+    title: "Transition to Driver Role",
+    desc: "Join our partner network and begin generating income on your own schedule.",
   },
   {
     icon: Phone,
-    title: "In-App Call",
-    desc: "Secure communication inside the app.",
+    title: "Protected In-App Voice",
+    desc: "Maintain privacy while communicating directly through our secure platform.",
   },
   {
     icon: Star,
-    title: "Ratings & Reviews",
-    desc: "Maintain transparency with feedback system.",
+    title: "Feedback Ecosystem",
+    desc: "Support community integrity by sharing ratings and detailed service reviews.",
   },
   {
     icon: Shield,
-    title: "Secure Payments",
-    desc: "Multiple safe payment methods supported.",
+    title: "Encrypted Payment Suite",
+    desc: "Complete transactions using various protected digital and card-based options.",
   },
 ];
 
@@ -64,48 +64,48 @@ const passengerFeatures = [
 const driverFeatures = [
   {
     icon: Car,
-    title: "View Ride Requests",
-    desc: "Drivers receive ride requests with full ride details and fare offers.",
+    title: "Monitor Incoming Leads",
+    desc: "Partners access detailed trip requests including pickup points and user fare offers.",
   },
   {
     icon: DollarSign,
-    title: "Counter Offer",
-    desc: "Send counter offers to negotiate better fares.",
+    title: "Submit Custom Counter-Bids",
+    desc: "Engage in negotiations by proposing alternative rates to potential riders.",
   },
   {
     icon: CheckCircle,
-    title: "Accept or Decline Rides",
-    desc: "Drivers choose rides based on fare and location.",
+    title: "Autonomous Trip Selection",
+    desc: "Partners retain the right to accept or refuse requests based on profitability.",
   },
   {
     icon: MapPin,
-    title: "Navigation Support",
-    desc: "Built-in navigation to reach pickup and drop locations.",
+    title: "Integrated Routing Tools",
+    desc: "Utilize precise mapping systems to navigate to destinations efficiently.",
   },
   {
     icon: User,
-    title: "Passenger Details",
-    desc: "View passenger information before accepting rides.",
+    title: "Review Rider Histories",
+    desc: "Check passenger ratings and basic profiles to ensure a safe work environment.",
   },
   {
     icon: Star,
-    title: "Performance Ratings",
-    desc: "Maintain ratings to increase trust and visibility.",
+    title: "Quality Performance Metrics",
+    desc: "Build professional reputation through high user ratings and service excellence.",
   },
   {
     icon: Phone,
-    title: "Direct Communication",
-    desc: "Call or message passengers securely inside the app.",
+    title: "Direct Partner Support",
+    desc: "Connect with passengers or support teams via secure integrated channels.",
   },
   {
     icon: Shield,
-    title: "Secure Earnings",
-    desc: "Track earnings and withdraw securely anytime.",
+    title: "Protected Revenue Portal",
+    desc: "Monitor daily earnings and initiate secure transfers to your bank account.",
   },
   {
     icon: UserPlus,
-    title: "Flexible Work Hours",
-    desc: "Work anytime and maximize your income potential.",
+    title: "Self-Managed Schedule",
+    desc: "Define your own working hours and optimize your personal productivity.",
   },
 ];
 
@@ -132,20 +132,20 @@ const StakeholderFeaturesSection = () => {
                            bg-white/70 backdrop-blur-sm
                            px-3 md:px-4 py-1 rounded-full">
             <span className="w-2 h-2 bg-[#5aa114] rounded-full"></span>
-            Stakeholder Features
+            Participant Functionalities
           </span>
         </div>
 
         {/* Heading */}
         <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold text-gray-800 mb-3 md:mb-4">
-          What Do You Get With an{" "}
+          Which Specialized Capabilities Does Our{" "}
           <span className="text-[#5aa114]">
-            App Similar to inDriver?
+            inDrive Replica Offer?
           </span>
         </h2>
 
         <p className="text-gray-600 text-sm md:text-base max-w-xl mx-auto mb-8 md:mb-12">
-          Get a powerful set of features designed to enhance ride-hailing and parcel delivery for all stakeholders.
+          Experience a robust suite of tools engineered to optimize transportation and logistics for every user and partner.
         </p>
 
         {/* Toggle */}

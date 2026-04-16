@@ -31,12 +31,12 @@ const ProductsSection = () => {
                         </span>
                         <div className="w-8 h-px bg-orange-400"></div>
                     </div>
-                    
+
                     {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
                     <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                         Choose the Perfect <span className="text-orange-600">Solution for Your Newsroom</span>
                     </h2>
-                    
+
                     {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
                     <p className="text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
                         Powerful, scalable products designed to transform how you create and distribute news.
@@ -54,7 +54,7 @@ const ProductsSection = () => {
                                 <img
                                     src={product.image}
                                     alt={product.title}
-                                    className="w-full rounded-xl border-[5px] border-transparent hover:border-orange-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover aspect-[16/9]"
+                                    className="w-full rounded-xl border-[5px] border-transparent hover:border-orange-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-contain "
                                 />
                             </Link>
 

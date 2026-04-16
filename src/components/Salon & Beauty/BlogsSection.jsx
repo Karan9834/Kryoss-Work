@@ -29,19 +29,20 @@ const BlogsSection = () => {
        <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 border px-4 py-1.5 rounded-full text-sm text-gray-700 bg-white">
             <span className="w-2.5 h-2.5 bg-pink-500 rounded-full"></span>
-            Blogs
+            Insights & Analytics
           </div>
         </div>
 
         {/* Heading */}
         <h2 className="text-4xl font-semibold text-center mb-4 ">
-          Our <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text"> Related Blogs</span>
+          Examine our <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text"> specialized Industry Briefings</span>
         </h2>
 
         <p className="text-center text-gray-600 max-w-3xl mx-auto mb-14">
-          Stay updated with the latest trends, insights, and tips in the
-          on-demand app industry. Explore our newest blogs to gain valuable
-          knowledge and ideas to grow your business!
+          Maintain sector awareness with the most recent tactical developments, 
+          technical insights, and architectural strategies within the on-demand 
+          ecosystem. Explore our latest publications to acquire specialized 
+          methodology for enterprise expansion.
         </p>
 
         {/* Blog Layout */}

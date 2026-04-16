@@ -2,36 +2,36 @@ import React from "react";
 
 const steps = [
   {
-    title: "User Registration & Profile Setup",
-    desc: "Be a customer or driver, they can follow a quick registration process and create profiles with details like name, contact info, etc.",
+    title: "Unified Onboarding Process",
+    desc: "Whether joining as a rider or service provider, users complete a streamlined registration to establish their professional digital identity.",
   },
   {
-    title: "Booking a Ride or Sending a Parcel",
-    desc: "Customers can file a taxi service or parcel delivery request by entering the required details, helping them get started smoothly.",
+    title: "Initiating Service Requests",
+    desc: "Users can instantly post transport or delivery requirements by providing destination details and essential service parameters.",
   },
   {
-    title: "Fare Bidding",
-    desc: "Customers enter the fare they're willing to pay while drivers can choose to accept or decline or counter-offer on the app like inDriver.",
+    title: "Dynamic Fare Negotiation",
+    desc: "Riders propose their budget-friendly rates, giving partners the flexibility to confirm or negotiate via optimized bidding tools.",
   },
   {
-    title: "Driver Selection",
-    desc: "Customers review driver profiles and other details before accepting their service, helping them choose what suits their needs.",
+    title: "Partner Evaluation & Approval",
+    desc: "Riders assess driver performance history and vehicle metrics to select the most qualified partner for their specific journey.",
   },
   {
-    title: "Real-Time Tracking",
-    desc: "Once a driver is selected, customers can track their ride or package delivery in real-time through GPS-enabled tracking.",
+    title: "Live Service Monitoring",
+    desc: "Following confirmation, users gain access to precise GPS tracking to observe the real-time progress of their ride or parcel delivery.",
   },
   {
-    title: "Payments",
-    desc: "Customers can make payments through multiple options including wallets, cards, etc.",
+    title: "Integrated Secure Transactions",
+    desc: "The platform supports diverse payment architectures, allowing for frictionless settlements via digital wallets and credit systems.",
   },
   {
-    title: "Feedback & Ratings",
-    desc: "After the service is completed, both customers and drivers can rate and review each other.",
+    title: "Community Integrity Review",
+    desc: "Post-service, both participants contribute to platform quality by exchanging objective ratings and descriptive testimonials.",
   },
   {
-    title: "Admin Dashboard",
-    desc: "Manage customer requests, driver earnings, and analytics via a powerful dashboard.",
+    title: "Centralized Command Oversight",
+    desc: "Administrators supervise service volume, partner revenue, and data insights through a high-performance management console.",
   },
 ];
 
@@ -46,21 +46,21 @@ const WorkflowSection = () => {
                            text-[#5aa114] border border-[#c7d8a4] 
                            px-4 py-1 rounded-full">
             <span className="w-2 h-2 bg-[#6dbb1a] rounded-full"></span>
-            On-demand Taxi & Delivery Solution Workflow
+            End-to-End Operational Lifecycle: Taxi & Logistics
           </span>
         </div>
 
         {/* Heading */}
         <h2 className="text-center text-3xl md:text-4xl font-semibold mb-6 text-[#1f2937]">
-          How Does an{" "}
+          How Does Our{" "}
           <span className="text-[#5aa114]">
-            inDriver-like App Work?
+            inDrive Replica Function?
           </span>
         </h2>
 
         <p className="text-center text-[#4b5563] max-w-3xl mx-auto mb-16">
-          Our feature-rich inDriver like app combines ride booking with fare
-          negotiation and parcel delivery services into a single platform.
+          Our versatile inDrive-style platform merges trip coordination, price
+          negotiation, and shipment services into a unified digital environment.
         </p>
 
         {/* Cards Grid */}

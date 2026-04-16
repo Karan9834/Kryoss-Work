@@ -9,28 +9,28 @@ import {
 import strategy from "../../assets/transport-uber-img/strategy.webp";
 const revenueItems = [
     {
-        title: "Commission-Based Earnings Model",
-        desc: "You can configure different commission rates to earn revenue from every completed ride. Increase in ride volume = revenue growth, creating a predictable income engine.",
+        title: "Profit-Sharing Revenue Engine",
+        desc: "Configure granular commission parameters to generate income from every successful trip. As your journey volume scales, your revenue engine produces predictable, growing returns.",
         icon: Percent,
     },
     {
-        title: "Dynamic Surge Pricing",
-        desc: "Smart surge helps you balance rider demand and driver supply simultaneously to boost per-trip earnings without manual intervention.",
+        title: "Dynamic Demand Surcharges",
+        desc: "Our intelligent surcharge logic balances passenger demand with partner availability in real-time, boosting per-assignment margins without requiring manual adjustment.",
         icon: TrendingUp,
     },
     {
-        title: "Ride Cancellation & Waiting Charges",
-        desc: "Decrease unnecessary booking abuse to improve platform discipline and add a revenue layer to keep operations fair for drivers.",
+        title: "Accountability Fee Structures",
+        desc: "Deter platform misuse through structured cancellation and waiting fees, fostering a disciplined ecosystem while adding a layer of compensatory income for partners.",
         icon: Ban,
     },
     {
-        title: "Subscription & Membership Plans",
-        desc: "Offer premium memberships to riders or drivers for exclusive benefits, ensuring recurring monthly revenue.",
+        title: "Premium Membership Tiers",
+        desc: "Launch exclusive subscription options for regular passengers or dedicated partners, securing a steady stream of recurring monthly capital for your business.",
         icon: Wallet,
     },
     {
-        title: "Peak Hour Pricing Rules",
-        desc: "Apply intelligent pricing rules during peak hours to maximize profitability without affecting customer trust.",
+        title: "High-Activity Fare Logic",
+        desc: "Execute precise pricing strategies during peak hours to maximize profit saturation while maintaining long-term user trust and transparency.",
         icon: Clock,
     },
 ];
@@ -43,20 +43,20 @@ const RevenueMonetization = () => {
                 {/* TOP TAG */}
                 <div className="flex justify-center mb-6">
                     <span className="border border-gray-600 rounded-full px-5 py-1 text-sm text-gray-300">
-                        Revenue & Monetization Strategy
+                        Revenue Orchestration
                     </span>
                 </div>
 
                 {/* HEADING */}
                 <h2 className="text-center text-[32px] md:text-[42px] leading-[44px] md:leading-[56px] font-semibold text-white mb-6">
-                    How Can You Bring More Profit to Your Table with Uber Clone Script?
+                    Maximize Your Market Earnings with Our Advanced Mobility Framework
                 </h2>
 
                 {/* SUBTEXT */}
                 <p className="text-center text-[15.5px] text-gray-300 max-w-4xl mx-auto mb-16">
-                    Built with multiple revenue models – a taxi booking app like Uber helps
-                    you earn from every transaction. Go for a different option or combine
-                    different ones based on your business strategy.
+                    Architected with diverse monetization layers, our elite transportation suite ensures
+                    you capture value from every ecosystem interaction. Implement individual models
+                    or combine them for a customized revenue strategy.
                 </p>
 
                 {/* MAIN GRID */}

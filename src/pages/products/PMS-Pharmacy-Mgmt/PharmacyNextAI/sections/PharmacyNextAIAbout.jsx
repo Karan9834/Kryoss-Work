@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
-import aboutImg from "@/assets/pharmacynextaipms-img/pharmacynextaipmsabout.jpg";
+import aboutImg from "@/assets/pharmacynextaipms-img/pharmacynextaipmsabout.jpeg";
 
 const PharmacyNextAIAbout = () => {
     return (
@@ -8,7 +8,7 @@ const PharmacyNextAIAbout = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     {/* Left: Visual Space (IMAGE ON LEFT) */}
-                    <div className="relative group mb-12 lg:mb-0">
+                    <div className="relative group mb-12 lg:mb-0 order-2 lg:order-1">
                         <div className="relative z-10 w-full h-64 sm:h-80 md:h-96 lg:h-[500px] bg-slate-50 rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem] overflow-hidden border border-slate-100 flex items-center justify-center transition-all duration-700 group-hover:scale-[1.02]">
                             <img src={aboutImg} alt="PharmacyNext AI Inventory" className="w-full h-full object-cover" />
                         </div>
@@ -21,10 +21,10 @@ const PharmacyNextAIAbout = () => {
                     </div>
 
                     {/* Right: Content (CONTENT ON RIGHT) */}
-                    <div className="space-y-8">
+                    <div className="space-y-8 order-1 lg:order-2">
                         <div className="space-y-4">
                             <span className="text-teal-600 font-bold text-sm uppercase tracking-widest block font-medium">The AI Edge</span>
-                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-slate-900 leading-tight tracking-tight">
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-slate-900 leading-tight tracking-tight">
                                 Pharmacy Management,{" "}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-indigo-600">
                                     Redefined for Retail.

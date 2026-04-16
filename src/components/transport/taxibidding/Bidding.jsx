@@ -19,25 +19,25 @@ const BiddingSection = () => {
             rounded-full
           ">
             <span className="w-2 h-2 bg-[#6dbb1a] rounded-full"></span>
-            Bidding Flow of inDrive Clone
+            Bidding Logic of Vyom Drive
           </span>
         </div>
 
         {/* Heading */}
         <div className="text-center max-w-4xl mx-auto mb-8">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">
-            How Does{" "}
+            Understanding the{" "}
             <span className="text-[#6dbb1a]">
-              Bidding Work
+              Bidding Mechanism
             </span>{" "}
-            in Online Taxi Booking App?
+            in Next-Gen Mobility Apps
           </h2>
 
           <p className="text-gray-600 mt-4 leading-relaxed">
-            Bidding introduces a dynamic and interactive process where customers and drivers
-            negotiate fares in real-time, offering flexibility and fair pricing for both parties.
-            Through this innovative algorithm, the online taxi booking experience becomes
-            not only more efficient but also more equitable.
+            Bidding establishes a transparent and collaborative environment where riders and operators 
+            bargain over trip costs in real-time, delivering adaptability and equitable rates for 
+            everyone involved. This strategic approach transforms standard booking into a 
+            highly efficient and balanced marketplace.
           </p>
         </div>
 
@@ -49,30 +49,30 @@ const BiddingSection = () => {
 
             <ul className="space-y-4 list-disc pl-6">
               <li>
-                Customers initiate the bidding process by entering their desired fare for the ride.
+                Riders start the process by suggesting an affordable price point for their specific journey.
               </li>
 
               <li>
-                The app then matches this bid with available drivers in the vicinity.
+                The platform subsequently transmits this proposal to active drivers within the local radius.
               </li>
 
               <li>
-                Drivers have the option to either accept or counter the offer.
+                Operators can immediately confirm the price or respond with a personalized counter-bid.
               </li>
 
               <li>
-                If both parties agree on the fare, the booking proceeds.
+                Upon mutual agreement on the trip value, the reservation is finalized instantly.
               </li>
 
               <li>
-                In case of disagreement or no response within a specified time frame,
-                the bid is automatically declined or expired.
+                Should no agreement be reached or if the timer runs out, 
+                the request is closed automatically.
               </li>
             </ul>
 
             <p className="mt-6">
-              This dynamic bidding model ensures fair pricing for customers while
-              allowing drivers to optimize their earnings.
+              This interactive framework facilitates competitive pricing for users while
+              empowering drivers to maximize their daily revenue.
             </p>
 
           </div>

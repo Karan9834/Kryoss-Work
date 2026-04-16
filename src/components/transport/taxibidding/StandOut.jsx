@@ -25,32 +25,31 @@ const StandOutSection = () => {
             rounded-full
           ">
             <span className="w-2 h-2 bg-[#6dbb1a] rounded-full"></span>
-            Add-Ons to Help You Lead!
+            Exclusive Features for Market Leadership
           </span>
         </div>
 
         {/* Heading */}
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">
-            What Makes Our{" "}
+            What Distinguishes Our{" "}
             <span className="text-[#6dbb1a]">
-              inDriver Clone App
-            </span>{" "}
-            Stand Out?
+              inDrive Clone Framework?
+            </span>
           </h2>
 
           <p className="text-gray-600 mt-3">
-            Our Platform: Revolutionary Solution for Taxi and Delivery Domain
+            Our Architecture: A Game-Changing Framework for Mobility and Logistics
           </p>
         </div>
 
         {/* Feature Pills */}
         <div className="flex flex-wrap justify-center gap-4 mb-16">
           {[
-            "Real-Time Tracking",
-            "Fare Breakdown",
-            "Manage all your services in one place for a cohesive workflow.",
-            "Enhanced Reports"
+            "Live Navigation",
+            "Transparent Pricing",
+            "Unified Service Dashboard for Peak Efficiency",
+            "Dynamic Analytics"
           ].map((item, i) => (
             <span
               key={i}
@@ -68,33 +67,33 @@ const StandOutSection = () => {
           {[
             {
               icon: <Smartphone size={22} />,
-              title: "Single App For Driver & Customer",
-              desc: "Our inDriver Clone Script connects drivers and customers with a single app. You can manage rides, request trips, and track deliveries effortlessly. Say goodbye to separate apps and enjoy the convenience of a unified platform that simplifies operations for all users."
+              title: "Unified Interface for All Users",
+              desc: "Our inDrive Clone Software integrates passenger and partner functionalities into a single, cohesive experience. Coordinate trips and manage deliveries without switching applications, providing a frictionless journey for every participant."
             },
             {
               icon: <Truck size={22} />,
-              title: "Book a Ride & Courier",
-              desc: "Go beyond traditional ride-hailing by enabling users to request rides and book courier services, all in one app. Whether you need a ride or want to send a package, you get reliable, efficient, and value-added transportation services, all with a few simple taps."
+              title: "Integrated Mobility & Delivery",
+              desc: "Expand your service horizon by offering both personal transport and parcel logistics within one environment. From daily commutes to urgent package transfers, users access high-quality, versatile solutions in seconds."
             },
             {
               icon: <Coins size={22} />,
-              title: "Negotiate Prices with Drivers",
-              desc: "Negotiate fares freely with our inDriver Clone Script. No more fixed prices! Empower customers to set their own fares, giving them the flexibility to choose options that best suit their budget. It’s all about fair, transparent pricing without the hassle."
+              title: "Dynamic Price Negotiation",
+              desc: "Eliminate rigid cost structures with our flexible bidding script. Grant users the autonomy to suggest their own fares, fostering a transparent marketplace that respects both consumer budgets and driver expectations."
             },
             {
               icon: <CreditCard size={22} />,
-              title: "In-App Payments",
-              desc: "Say goodbye to cash exchanges with our secure in-app payment system. Whether for rides, courier services, or other features, our inDriver Clone Script enables users to make quick and secure payments, making transactions hassle-free."
+              title: "Integrated Digital Wallet",
+              desc: "Simplify financial interactions through a protected, built-in payment gateway. Whether managing trip costs or delivery fees, our infrastructure supports instant, cashless transactions for maximum convenience."
             },
             {
               icon: <Settings size={22} />,
-              title: "100% Customizable",
-              desc: "Customize your inDriver Clone Script to suit your brand and business needs. Our solution is 100% customizable, allowing you to tailor the experience and features to your specific requirements, helping you stand out."
+              title: "Complete Brand Adaptation",
+              desc: "Shape the platform to reflect your unique business identity and operational vision. Our framework is fully extensible, allowing for deep customization of features and aesthetics to ensure your brand truly resonates."
             },
             {
               icon: <MapPin size={22} />,
-              title: "Real-Time Live Tracking",
-              desc: "Track rides & deliveries in real-time with our live tracking feature. Get full visibility into each ride/delivery, ensuring smooth operations & an enhanced user experience from start to finish."
+              title: "Precision Live Monitoring",
+              desc: "Access minute-by-minute updates on every active trip or shipment with advanced GPS integration. Gain total operational oversight while providing users with the security and reliability they deserve."
             }
           ].map((card, index) => (
             <div

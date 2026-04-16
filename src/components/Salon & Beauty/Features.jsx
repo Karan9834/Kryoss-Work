@@ -5,28 +5,28 @@ const featuresData = {
     image:
       "https://whitelabelfox.com/assets/images/uber-beauty-app/Fox-Beauty-user-app-features-Ui.webp",
     items: [
-      { title: "Social Login", desc: "A user can easily signup and login through social media sites like Facebook, Instagram etc." },
-      { title: "Live Chat", desc: "After the provider accepts an order request, a user can chat with the provider within the app." },
-      { title: "View Available Provider", desc: "A user can view the information of beautician such as name, ratings, offer services, and how far away from their location." },
-      { title: "View Provider Portfolio", desc: "Browse stylist profiles, services, and past work before booking." },
-      { title: "Book Multiple Packages", desc: "A user can book more than one package service in a single order which provided by the beautician." },
-      { title: "Payment Option", desc: "A user has multiple payment options to pay for beauty services such as cash, card, and wallet." },
-      { title: "Review & Rating", desc: "A user can give review and rating to beautician after complete the services request." },
-      { title: "Order History", desc: "Track past appointments and rebook favorite services easily." },
+      { title: "Integrated Authentication", desc: "Participants can fluidly initialize accounts or authenticate via established social platforms like Meta or Google." },
+      { title: "Real-time Communication", desc: "Upon specialist confirmation, participants can engage in immediate synchronized dialogue within the module." },
+      { title: "Specialist Discovery", desc: "Determine proximate practitioners by evaluating credentials, peer benchmarks, service menus, and geographic distance." },
+      { title: "Portfolio Investigation", desc: "Examine comprehensive stylist credentials, service history, and aesthetic results prior to commitment." },
+      { title: "Multi-Service Bundling", desc: "Participants may consolidate diverse aesthetic treatments into a unified scheduling assignment provided by the specialist." },
+      { title: "Fiscal Versatility", desc: "Multiple settlement channels are available including digital wallets, protected card protocols, and traditional tender." },
+      { title: "Experience Validation", desc: "Provide categorical feedback and credential verification for specialists upon fulfillment of the aesthetic assignment." },
+      { title: "Engagement Records", desc: "Audit historical treatments and effortlessly re-initialize preferred aesthetic sessions." },
     ],
   },
   provider: {
     image:
       "https://whitelabelfox.com/assets/images/uber-beauty-app/Fox-Beauty-Provider-app-features-Ui.webp",
     items: [
-      { title: "Add Packages", desc: "The beautician adds the category wise multiple packages with the details of name, price, description of the package." },
-      { title: "Manage Request", desc: "A beautician can view the complete details of the request and have an option to accept/reject the requests." },
-      { title: "Map Navigation", desc: "After the order accepted, the provider can use Map Navigation within the app to find the user’s location." },
-      { title: "Manage Portfolio", desc: "Showcase services, update work samples, and attract more clients." },
-      { title: "Manage Document", desc: "A provider can efficiently manage and upload all the necessary documents required for offering beauty services." },
-      { title: "Set Service Radius", desc: "A provider can set the service radius to their home location where he/she want to offer their beauty service." },
-      { title: "Order History", desc: "A beautician can check the earning history with the total number of completed, canceled and pending order requests." },
-      { title: "Review & Rating", desc: "Receive customer feedback to improve services and build credibility." },
+      { title: "Service Menu Configuration", desc: "Specialists categorize diverse aesthetic bundles, specifying valuations, nomenclature, and treatment details." },
+      { title: "Assignment Orchestration", desc: "Practitioners evaluate comprehensive engagement metrics with the authority to authorize or decline service requests." },
+      { title: "Geographic Guidance", desc: "Following engagement authorization, specialists utilize integrated navigation protocols to locate the participant's site." },
+      { title: "Professional Showcase", desc: "Demonstrate technical methodology, archive past results, and engage a broader demographic of clients." },
+      { title: "Credential Management", desc: "Practitioners can systematically organize and submit mandatory certification required for professional aesthetic delivery." },
+      { title: "Operational Radius", desc: "Define localized service boundaries relative to the specialist's hub for efficient treatment deployment." },
+      { title: "Financial Analytics", desc: "Examine comprehensive fiscal trajectories including finalized, annulled, and anticipated revenue assignments." },
+      { title: "Reputation Metrics", desc: "Analyze participant testimonials to optimize technical delivery and reinforce professional authority." },
     ],
   },
 };
@@ -44,15 +44,15 @@ const Features = () => {
         <div className="max-w-3xl mx-auto mb-12">
           <div className="flex items-center justify-center gap-2 bg-white px-4 py-1.5 rounded-full mb-6 w-fit mx-auto border-2">
             <span className="w-2.5 h-2.5 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
-            Features
+            Technical Features
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
-            <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">Key Features </span> of the Customer & Provider Apps
+            <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">Key Capabilities </span> of the Stakeholder Ecosystem
           </h2>
 
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-            The customer app offers easy booking and service tracking, while the provider app helps beauticians manage appointments and deliver services efficiently, ensuring a seamless experience for both.   </p>
+            The participant interface facilitates effortless scheduling and tracking, while the practitioner module empowers specialists to orchestrate treatments and deliver services with high efficiency.   </p>
         </div>
 
         {/* ===== Toggle Buttons ===== */}
@@ -66,7 +66,7 @@ const Features = () => {
                   : "border border-gray-300 text-gray-700"
                 }`}
             >
-              {type === "user" ? "User App" : "Provider App"}
+              {type === "user" ? "Participant App" : "Specialist App"}
             </button>
           ))}
         </div>

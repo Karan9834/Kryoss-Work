@@ -22,14 +22,14 @@ const ErpAbout = () => {
                 </h2>
 
                 {/* Main Container */}
-                <div className="bg-[#f7f7f7] rounded-[40px] px-8 md:px-12 pt-16 pb-0 flex flex-col md:flex-row items-end gap-10">
+                <div className="bg-[#f7f7f7] rounded-[40px] px-8 md:px-12 pt-10 pb-0 flex flex-col md:flex-row items-center gap-10">
 
                     {/* LEFT IMAGE */}
-                    <div className="md:w-1/2 flex items-end justify-center">
+                    <div className="md:w-1/2 flex justify-center">
                         <img
                             src={erpabout}
                             alt="ERP About"
-                            className="w-[420px] md:w-[520px] rounded-3xl"
+                            className="w-[420px] md:w-[570px] rounded-3xl"
                         />
                     </div>
 

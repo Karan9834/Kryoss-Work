@@ -3,44 +3,44 @@ import { Plus, Minus } from "lucide-react";
 
 const uberFaqs = [
     {
-        q: "How does a ride-hailing app work for taxi businesses?",
-        a: "A ride-hailing app connects passengers with drivers through a mobile platform. Users can book rides, track drivers in real time, and make payments through integrated gateways."
+        q: "How does an integrated mobility framework serve transportation enterprises?",
+        a: "A high-performance mobility platform bridges the gap between passengers and service partners through a robust digital interface. This allows for real-time request handling, automated tracking, and secure financial reconciliation."
     },
     {
-        q: "What is the best way to launch a taxi booking app quickly?",
-        a: "The fastest way is to start with a scalable white-label solution that can be customized with your branding and features before launch."
+        q: "What is the most effective strategy for a rapid market entry?",
+        a: "The most efficient path is leveraging a sophisticated, white-label architectural core that can be rapidly customized with your specific branding and feature requirements before deployment."
     },
     {
-        q: "Who should invest in a ride-hailing app solution?",
-        a: "Taxi companies, entrepreneurs, mobility startups, and transportation service providers can benefit from investing in ride-hailing applications."
+        q: "Which organizations should consider a dedicated transportation solution?",
+        a: "A range of entities, including established fleet owners, ambitious tech entrepreneurs, regional mobility startups, and corporate logistics providers, can derive significant value from these platforms."
     },
     {
-        q: "Can the platform be customized for local taxi operations?",
-        a: "Yes, ride-hailing apps can be customized with local pricing models, city-based operations, driver management, and regional regulations."
+        q: "Is it possible to adapt the platform for regional operational nuances?",
+        a: "Certainly. Our mobility framework can be precision-tuned to accommodate localized rate structures, city-specific logistics, partner management protocols, and regional regulatory compliance."
     },
     {
-        q: "Does the solution support multiple ride services in one app?",
-        a: "Yes, the platform can support services like bike rides, car rides, premium rides, and delivery services in a single app."
+        q: "Does the architecture support heterogeneous service types in a single interface?",
+        a: "Yes. The system is designed to seamlessly orchestrate diverse offerings—such as car-shares, courier services, premium executive transit, and last-mile delivery—within a unified user environment."
     },
     {
-        q: "How long does it usually take to go live with the platform?",
-        a: "Depending on customization and testing, the platform can typically go live within 4 to 8 weeks."
+        q: "What is the typical timeframe from implementation to market launch?",
+        a: "Subject to the level of custom engineering and rigorous quality assurance required, a full platform deployment generally occurs within a 4 to 8-week window."
     },
     {
-        q: "Is the platform scalable as the business grows?",
-        a: "Yes, the platform is designed to scale easily by supporting more drivers, users, cities, and additional services."
+        q: "Can the infrastructure handle significant volume increases over time?",
+        a: "Absolutely. The platform utilizes an elastic architecture designed to scale effortlessly, supporting a growing volume of partners, participants, geographical regions, and service categories."
     },
     {
-        q: "What revenue models are supported in the system?",
-        a: "Common revenue models include ride commissions, subscription plans for drivers, surge pricing, and service fees."
+        q: "What diversified revenue structures are integrated into the system?",
+        a: "The framework supports numerous monetization strategies, including per-journey commissions, partner subscription tiers, intelligent demand-based pricing, and structured service fees."
     },
     {
-        q: "How do admins manage drivers and trips efficiently?",
-        a: "Admins can monitor trips, manage drivers, track earnings, and control operations through a centralized admin dashboard."
+        q: "How are administrative tasks and journey oversight managed?",
+        a: "Administrative leads maintain granular control through a centralized operational headquarters, enabling real-time journey monitoring, partner management, and financial auditing."
     },
     {
-        q: "Are security and safety features included?",
-        a: "Yes, the platform includes features like driver verification, emergency alerts, trip tracking, and secure payment processing."
+        q: "Are comprehensive safety protocols and security features standard?",
+        a: "Yes. The platform incorporates rigid security measures, including multi-factor partner verification, integrated emergency response alerts, live trip telemetry, and encrypted payment processing."
     }
 ];
 
@@ -61,11 +61,11 @@ const UberFaqs = () => {
 
                     <span className="border rounded-full px-4 py-1 text-sm inline-flex items-center gap-2 mb-4">
                         <span className="w-2 h-2 bg-black rounded-full"></span>
-                        FAQ's
+                        Project Queries
                     </span>
 
                     <h2 className="text-4xl font-semibold">
-                        Frequently Asked Questions
+                        Core System Intelligence & Inquiries
                     </h2>
 
                 </div>

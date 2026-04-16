@@ -9,19 +9,20 @@ const WhyUs = () => {
                 <div className="flex justify-center mb-6">
                     <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-white/30 text-white text-sm">
                         <span className="w-2 h-2 bg-white rounded-full" />
-                        Why Choose Us
+                        Core Advantages
                     </span>
                 </div>
 
                 {/* HEADING */}
                 <h2 className="text-center text-[34px] lg:text-[48px] font-bold text-white mb-6 leading-tight">
-                    Why <span className="text-[#f5b301]">Choose Our</span> Uber for Tutor App?
+                    Why <span className="text-[#f5b301]">Vyom Tutor is the</span> Superior Launchpad for Your Venture?
                 </h2>
 
                 {/* SUBTEXT */}
                 <p className="text-center text-white/70 text-[16px] lg:text-[18px] max-w-4xl mx-auto mb-20">
-                    Our Uber for Tutor app is the perfect solution for launching your tutoring business
-                    quickly and efficiently. Here's why it's the best choice:
+                    Our specialized tutoring framework provides the ideal foundation for 
+                    establishing your education marketplace with maximum efficiency. 
+                    Discover our unique benefits:
                 </p>
 
                 {/* INFOGRAPHIC IMAGE PLACEHOLDER */}
@@ -41,22 +42,25 @@ const WhyUs = () => {
                         <div className="flex items-start gap-5">
                             <div className="mt-2 w-2 h-2 rounded-full bg-[#f5b301] shrink-0" />
                             <p className="text-white/80 text-[15px] lg:text-[17px] leading-relaxed font-medium">
-                                Get your on-demand tutor app up and running within 5 working days, not
-                                weeks, so you can start connecting students with tutors right away.
+                                Deploy your personalized instructor marketplace in just 5 business 
+                                days, enabling you to begin educator coordination without the 
+                                typical industry delays.
                             </p>
                         </div>
                         <div className="flex items-start gap-5">
                             <div className="mt-2 w-2 h-2 rounded-full bg-[#f5b301] shrink-0" />
                             <p className="text-white/80 text-[15px] lg:text-[17px] leading-relaxed font-medium">
-                                Tailor the app to suit your specific business needs, features, and
-                                branding for a unique user experience.
+                                Adapt the framework to satisfy your precise commercial objectives, 
+                                functional requirements, and brand identity for a truly distinct 
+                                market presence.
                             </p>
                         </div>
                         <div className="flex items-start gap-5">
                             <div className="mt-2 w-2 h-2 rounded-full bg-[#f5b301] shrink-0" />
                             <p className="text-white/80 text-[15px] lg:text-[17px] leading-relaxed font-medium">
-                                Enjoy an intuitive design that ensures a seamless experience for both
-                                students and tutors, making the platform easy to navigate.
+                                Leverage a sophisticated user experience prioritized for effortless 
+                                interaction, ensuring a high-fidelity journey for both learners 
+                                and experts.
                             </p>
                         </div>
                     </div>
@@ -66,23 +70,25 @@ const WhyUs = () => {
                         <div className="flex items-start gap-5">
                             <div className="mt-2 w-2 h-2 rounded-full bg-[#f5b301] shrink-0" />
                             <p className="text-white/80 text-[15px] lg:text-[17px] leading-relaxed font-medium">
-                                Our app is built to scale as your business grows, with top-notch
-                                security measures to protect user data and ensure reliability.
+                                Our architecture is engineered for long-term scalability and 
+                                incorporates enterprise-grade protection to optimize data 
+                                integrity and platform stability.
                             </p>
                         </div>
                         <div className="flex items-start gap-5">
                             <div className="mt-2 w-2 h-2 rounded-full bg-[#f5b301] shrink-0" />
                             <p className="text-white/80 text-[15px] lg:text-[17px] leading-relaxed font-medium">
-                                Keep your users updated with instant notifications for new sessions,
-                                bookings, and other important updates.
+                                Ensure your audience remains engaged through real-time push alerts 
+                                for educational sessions, confirm appointments, and critical 
+                                system updates.
                             </p>
                         </div>
                         <div className="flex items-start gap-5">
                             <div className="mt-2 w-2 h-2 rounded-full bg-[#f5b301] shrink-0" />
                             <p className="text-white/80 text-[15px] lg:text-[17px] leading-relaxed font-medium">
-                                Take full control with an easy-to-use admin panel that allows you to
-                                manage users, payments, and other key activities from a single
-                                dashboard.
+                                Possess total operational oversight via a simplified administrative 
+                                interface, allowing you to coordinate user activities and financial 
+                                settlements from one hub.
                             </p>
                         </div>
                     </div>

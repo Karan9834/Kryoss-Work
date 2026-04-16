@@ -3,33 +3,33 @@ import React from "react";
 const steps = [
   {
     number: "1",
-    title: "Login/Signup",
-    desc: "Customers can log in or sign up by providing basic information or through social sites like Facebook or Google.",
+    title: "Profile Activation",
+    desc: "Participants securely register or authenticate their credentials using core profile data or integrated social protocols like Google or Facebook.",
   },
   {
     number: "2",
-    title: "Search Provider",
-    desc: "Customers can find the nearest beautician, view their profile, service pricing, ratings, and distance from their location.",
+    title: "Specialist Discovery",
+    desc: "Clients identify proximate stylists, evaluating professional portfolios, service valuations, peer benchmarks, and geographic proximity.",
   },
   {
     number: "3",
-    title: "Place Order",
-    desc: "After viewing the beautician's profile and pricing, customers can select the service and place their order.",
+    title: "Service Reservation",
+    desc: "Following the evaluation of specialist credentials and logistics, participants select their desired treatment and finalize the booking.",
   },
   {
     number: "4",
-    title: "Provider Offer Service",
-    desc: "After accepting customer requests, the beautician arrives at the customer location and offers the beauty service.",
+    title: "Technical Fulfillment",
+    desc: "Upon confirming the engagement, the specialist proceeds to the client's designated site to deliver the requested aesthetic care.",
   },
   {
     number: "5",
-    title: "Secure Payment",
-    desc: "Once the service is completed, customers have flexible payment options like cash, card, or in-app wallet.",
+    title: "Protected Settlement",
+    desc: "At the conclusion of the treatment cycle, clients utilize versatile fiscal channels including digital wallets, protected cards, or physical tender.",
   },
   {
     number: "6",
-    title: "Rating & Review",
-    desc: "After payment, both customer and provider can leave ratings and reviews based on their experience.",
+    title: "Performance Validation",
+    desc: "Post-settlement, both the participant and specialist provide reciprocal evaluations based on their professional encounter.",
   },
 ];
 
@@ -42,22 +42,22 @@ const HowitWorks = () => {
        
       <div className="flex items-center justify-center gap-2 bg-white px-4 py-1.5 rounded-full mb-6 w-fit mx-auto border-2">
   <span className="w-2.5 h-2.5 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
-  About Uber for Beauty App
+  The Vyom Beauty Workflow
 </div>
 
         {/* Heading */}
         <h2 className="text-4xl font-bold text-center mb-6">
-          How the  <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">
-          Uber for Beauty App Works
+          How the <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">
+          Vyom Beauty Platform Operates
             </span> 
         </h2>
 
         {/* Description */}
         <p className="text-gray-600 text-center max-w-3xl mx-auto mb-16">
-          Our Uber for Beauty App is designed to streamline the beauty service
-          process for both customers and beauticians. From booking appointments
-          to managing services, every feature is crafted to offer a seamless
-          experience. Here’s how the app works step-by-step.
+          The Vyom Beauty framework is engineered to optimize the aesthetic 
+          coordination lifecycle for both participants and specialists. From 
+          initial reservation to final fulfillment, every module is designed 
+          for effortless interaction. Here is our systemic operational flow.
         </p>
 
         {/* Cards */}

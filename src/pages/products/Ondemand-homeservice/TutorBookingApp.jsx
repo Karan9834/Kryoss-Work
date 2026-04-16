@@ -22,7 +22,7 @@ import ProductShowcase from '@/components/homeservice-tutorbooking/productshowca
 import Awards from '@/components/homeservice-tutorbooking/awards';
 import FAQs from '@/components/homeservice-tutorbooking/faqs';
 import TechStack from '@/components/homeservice-tutorbooking/techstack';
-import Contact from '@/components/homeservice-tutorbooking/contact';
+import ContactUs from '@/components/Common/ContactUs';
 import Blogs from '@/components/homeservice-tutorbooking/blogs';
 import GetUpdate from '@/components/homeservice-tutorbooking/getupdate';
 
@@ -49,7 +49,7 @@ const TutorBookingApp = () => {
             <Awards />
             <FAQs />
             <TechStack />
-            <Contact />
+            <ContactUs theme="orange" productName="Vyom Tutor" />
             <Blogs />
             <GetUpdate />
 

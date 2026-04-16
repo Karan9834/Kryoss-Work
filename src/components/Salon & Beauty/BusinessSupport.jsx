@@ -63,20 +63,20 @@ const BusinessSupport = () => {
         <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 border px-4 py-1.5 rounded-full text-sm text-gray-700 bg-white">
             <span className="w-2.5 h-2.5 bg-pink-500 rounded-full"></span>
-            Businesses We Support
+            Adaptive Enterprise Solutions
           </div>
         </div>
 
         {/* Heading */}
         <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">
-          Explore Our <span className="text-pink-500">Diverse Range</span> of
-          On-Demand Apps
+          Examine our <span className="text-pink-500">Extensive Portfolio</span> of
+          Platform Architecture
         </h2>
 
         <p className="text-center text-gray-600 max-w-3xl mx-auto mb-14">
-          We offer a variety of ready-to-launch, customizable on-demand apps to
-          suit your business needs. From Dog Walking to Grocery Delivery and
-          Beauty Services.
+          We provide a versatile collection of deployable, adaptable on-demand 
+          frameworks tailored for enterprise growth. Spanning from Canine 
+          Logistics to Essential Fulfillment and Aesthetic Services.
         </p>
 
         {/* FIRST ROW */}

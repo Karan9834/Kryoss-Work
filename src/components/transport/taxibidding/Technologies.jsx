@@ -49,18 +49,19 @@ const TechStackSection = () => {
         {/* Pill */}
         <div className="inline-flex items-center gap-2 border border-white/40 px-4 py-1 rounded-full text-sm mb-6 bg-white/10 backdrop-blur-md">
           <span className="w-2 h-2 bg-white rounded-full"></span>
-          Tech-Stack
+          Technology Ecosystem
         </div>
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-          Technologies We Use to Build Scalable Digital Solutions
+          Advanced Frameworks Powering our High-Performance Platforms
         </h2>
 
         <p className="text-white/90 max-w-3xl mx-auto mb-16">
-          We use modern, scalable, and secure technologies to develop high-performance 
-          mobile applications, web platforms, and backend systems. Our stack ensures 
-          reliability, fast deployment, seamless integrations, and long-term scalability.
+          We leverage a contemporary, extensible, and protected technology stack 
+          to engineer robust mobile environments, web interfaces, and server 
+          architectures. Our selection guarantees operational stability, 
+          rapid market entry, fluid interoperability, and future-proof scaling.
         </p>
 
         {/* Tech Badges */}

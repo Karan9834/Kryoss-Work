@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
-import aboutImg from '../../assets/saloonlanding-img/saloonlandingabout.png';
+import aboutImg from '../../assets/saloonlanding-img/saloonlandingabout.jpg';
 
 const SalonAbout = () => {
   const highlights = [
@@ -17,21 +17,21 @@ const SalonAbout = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          <div className="relative group">
+          <div className="relative group order-2 lg:order-1">
             <div className="absolute -inset-4 bg-orange-100/40 blur-3xl opacity-0 group-hover:opacity-100 transition duration-1000"></div>
             <img
               src={aboutImg}
               alt="About Salon Vision"
-              className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700"
+              className="w-full h-full rounded-3xl shadow-xl object-contain group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
 
           {/* Right Side - Content - Updated Typography */}
-          <div className="space-y-8 animate-fadeInRight">
+          <div className="space-y-8 animate-fadeInRight order-1 lg:order-2">
             <div className="space-y-4">
               {/* Badge - Updated: text-[14px] font-bold tracking-[0.3em] uppercase */}
               <span className="text-rose-600 text-[14px] font-bold tracking-[0.3em] uppercase">About</span>
-              
+
               {/* Section Heading H2 - 30px mobile, 36px desktop, weight 700, line-height 1.2 */}
               <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
                 Revolutionizing the <span className="bg-gradient-to-r from-purple-600 via-rose-500 to-orange-500 bg-clip-text text-transparent">Beauty Industry</span> Through Tech

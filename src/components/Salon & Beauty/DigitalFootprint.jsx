@@ -25,28 +25,38 @@ const DigitalFootprint = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-1.5 rounded-full border border-white/20 text-sm mb-6">
             <span className="w-2.5 h-2.5 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
-            Get Your Digital Footprint
+            Establish Your Market Presence
           </div>
 
           {/* Heading */}
           <h2 className="text-[38px] font-semibold mb-6 leading-tight">
-           Launch Your Uber for<span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text"> House Cleaning App in Just 5 Days</span>
+           Initialize Your Aesthetic<span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text"> Service Ecosystem in a 5-Day Window</span>
           </h2>
 
           {/* Paragraphs */}
           <div className="space-y-6 text-white/80 leading-relaxed text-sm">
 
             <p>
-             Get your Uber for Beauty App up and running in just 5 working days with our fast and easy-to-deploy solution. Unlike traditional custom development, which can take weeks or months, our pre-built platform accelerates your time-to-market, allowing you to offer on-demand beauty services immediately.   </p>
-
-            <p>
-           Our pre-built solution includes all essential features for a modern, scalable beauty service business, from real-time bookings and provider tracking to secure payments and customer reviews. It’s everything you need to deliver a smooth, efficient experience. </p>
-
-            <p>
-           Focus on growing your business, not on coding, debugging, and testing—our platform is ready to scale and deliver from day one.
+              Deploy your dedicated styling platform within 5 business days utilizing 
+              our rapid-deployment architecture. Contrasting with conventional 
+              technical development cycles that persist for months, our engineered 
+              framework accelerates your commercial launch, facilitating immediate 
+              aesthetic service synchronization.
             </p>
 
-         
+            <p>
+              Our architectural solution encompasses all vital modules for a 
+              contemporary, expanding styling enterprise, from synchronized 
+              reservation tracking to protected fiscal settlements and participant 
+              feedback loops. It provides the essential infrastructure for 
+              professional service delivery.
+            </p>
+
+            <p>
+              Concentrate on enterprise expansion rather than technical maintenance—
+              our framework is engineered for immediate scalability and professional 
+              performance from the initial launch.
+            </p>
 
           </div>
 
@@ -58,20 +68,3 @@ const DigitalFootprint = () => {
 };
 
 export default DigitalFootprint;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

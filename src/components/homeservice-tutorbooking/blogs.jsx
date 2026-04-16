@@ -7,19 +7,19 @@ import blog3 from "../../assets/homeservice-tutor-img/blog3.webp"
 const blogs = [
     {
         id: 1,
-        title: "Kickstart Your Handyman App like Uber: Feature & Cost",
+        title: "Initiating your Service Marketplace: Functional Logic & Investment Analysis",
         image: blog1
     },
     {
         id: 2,
         title:
-            "On-demand Tutor App Development: Check Benefits, Ideas, and Features Right Here!",
+            "The Blueprint for Tutor-on-Demand Engineering: Advantages, Concepts, and Integrated Modules",
         image: blog2
     },
     {
         id: 3,
         title:
-            "Uber for Tutor App: Learning Strategies in this Covid-19 Situation",
+            "Specialized Learning Ecosystems: Navigating Modern Instructional Paradigms & Digital Strategies",
         image: blog3
     },
 ];
@@ -32,16 +32,16 @@ const BlogsSection = () => {
                 <div className="text-center mb-14">
                     <span className="inline-flex items-center gap-2 px-4 py-1 border rounded-full text-sm text-gray-600 mb-4">
                         <span className="w-2 h-2 bg-orange-500 rounded-full" />
-                        Blogs
+                        Insights & Perspectives
                     </span>
 
                     <h2 className="text-4xl font-semibold text-gray-900">
-                        Our <span className="text-orange-500">Related Blogs</span>
+                        Our Educational <span className="text-orange-500">Marketplace Articles</span>
                     </h2>
 
                     <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-                        Stay updated with the latest trends, insights, and tips in the
-                        on-demand app industry.
+                        Remain informed regarding the latest industrial breakthroughs, strategic 
+                        insights, and expert perspectives within the on-demand instructional sector.
                     </p>
                 </div>
 

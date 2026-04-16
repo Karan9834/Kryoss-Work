@@ -12,15 +12,15 @@ const AboutUs = () => {
                     <div className="mb-6 flex justify-center">
                         <span className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-4 py-1 text-sm font-medium text-gray-700">
                             <span className="h-3 w-3 rounded-full bg-[#f5b301]" />
-                            Tutor App Like Uber
+                            Uber-Inspired Tutor Ecosystem
                         </span>
                     </div>
 
                     {/* HEADING */}
                     <h2 className="mx-auto mb-12 max-w-[900px] text-center text-[28px] font-semibold leading-snug text-[#2b2b2b] sm:text-[34px] md:text-[40px]">
-                        Build Your Own{" "}
-                        <span className="text-[#f5a623]">On-Demand Tutor App Like Uber</span>{" "}
-                        – Kryoss Work
+                        Launch Your Premier{" "}
+                        <span className="text-[#f5a623]">On-Demand Tutoring Platform</span>{" "}
+                        – Vyom Solutions
                     </h2>
 
                     {/* CONTENT */}
@@ -43,43 +43,38 @@ const AboutUs = () => {
                         {/* RIGHT TEXT */}
                         <div className="w-full text-[15px] leading-[1.8] text-gray-700 lg:w-1/2">
                             <p className="mb-6">
-                                Our on-demand tutor app script connects students with tutors in a
-                                simple, efficient way. During the COVID-19 pandemic, many parents
-                                turned to online tutoring, seeking a safe and convenient way to
-                                support their children’s education from home. With our Uber-style
-                                tutoring app, students can quickly find and connect with local
-                                tutors who meet their needs.
+                                Our specialized instructor booking framework facilitates seamless
+                                coordination between learners and educators. As the demand for
+                                remote education continues to grow, our solution provides a
+                                secure, digital-first environment for personalized learning.
+                                Through our Uber-style interface, students can effortlessly
+                                identify and book qualified local experts.
                             </p>
 
                             <p className="mb-6">
-                                At Kryoss Work, our experienced development team specializes in
-                                creating custom tutoring apps like Uber. We offer a fully tailored
-                                solution, including the user app, tutor app, super admin web panel,
-                                and tutor web panel. Our on-demand tutor clone script includes all
-                                the essential features to help you launch a real-time tutoring
-                                service.
+                                At Vyom Solutions, our veteran engineering team focuses on
+                                architecting sophisticated, custom education marketplaces. We
+                                deliver a complete end-to-end ecosystem, encompassing dedicated
+                                interfaces for students and tutors, alongside powerful
+                                administrative management portals. Our flexible tutor clone
+                                script is engineered with every core utility needed for a
+                                robust launch.
                             </p>
 
                             <p className="mb-6">
-                                What sets us apart is our ability to launch your project in just
-                                5 working days. Once development and customization are complete,
-                                your app is fully tested and ready to go live on both the Play
-                                Store and App Store.
+                                Our distinction lies in our rapid deployment methodology,
+                                enabling project completion in just 5 business days. Once your
+                                specialized configuration is finalized, our rigorous quality
+                                assurance protocol guarantees a production-ready launch on both
+                                major mobile marketplaces.
                             </p>
-
-                            {/* <p className="mb-6">
-                                Our app is designed for scalability and adaptability. As your
-                                business grows, you can easily add more services or features to
-                                enhance the user experience. The seamless functionality of our
-                                on-demand tutor app ensures both students and tutors have everything
-                                they need at their fingertips.
-                            </p> */}
 
                             <p>
-                                Choose Kryoss Work for a stress-free development journey. With
-                                our quick delivery timelines, feature-packed scripts, and
-                                white-label solutions, you’ll have a market-ready app that drives
-                                your business forward and delivers measurable results.
+                                Partner with Vyom Solutions for a frictionless digital
+                                transformation. With our industry-leading turnaround times,
+                                feature-rich logic, and professional white-label frameworks,
+                                you will possess a high-conversion application that accelerates
+                                your business growth and achieves verifiable success.
                             </p>
                         </div>
                     </div>
