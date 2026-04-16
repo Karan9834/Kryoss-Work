@@ -1,6 +1,6 @@
 import React from "react";
 import { Truck, Shield, Clock, TrendingUp, Package, Users, Globe, Headphones } from "lucide-react";
-import about from "../../../../assets/WholeSale/2!.png"
+import about from "../../../../assets/Wholesale/2.png"
 const AboutUs = () => {
 
   const features = [
