@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import saashero from "../../assets/SaasProduct/saashero.png";
+import saashero from "../../assets/saas products 1/AI ContentGenerato SaaS.jpg";
 
 const SaaSHero = () => {
   // Scroll to products section function

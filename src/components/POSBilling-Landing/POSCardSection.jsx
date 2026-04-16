@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import card1 from '../../assets/poslanding-img/card1.jpg';
+import card1 from '../../assets/pos belling/Elevate EveryDining ExperienceWith Precision POS.jpg';
 import card2 from '../../assets/poslanding-img/card2.jpg';
 
 const POSCardSection = () => {
@@ -56,7 +56,7 @@ const POSCardSection = () => {
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full rounded-xl border-[5px] border-transparent hover:border-indigo-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
+                           className="w-full aspect-square h-full rounded-xl border-[5px] border-transparent hover:border-indigo-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-contain bg-gray-50"
                         />
                      </Link>
 

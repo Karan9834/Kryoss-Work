@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Sparkles, ArrowRight, Building2, Star, Users, TrendingUp, Clock, Shield } from "lucide-react";
-import prod1 from "../../assets/Busiuness-directory/prod1.jpg"
-import prod2 from "../../assets/Busiuness-directory/prod2.jpg" 
+import prod1 from "../../assets/Business Directory product 1/Book Trusted Professionals with Ease.jpg"
+import prod2 from "../../assets/Business Directory product 1/Book Trusted Services Instantly.jpg" 
 
 const ProductsSection = () => {
   const navigate = useNavigate();
@@ -11,14 +11,14 @@ const ProductsSection = () => {
     {
       id: "local-business-directory",
       image: prod1,
-      title: "CreativeItem: Local Business Directory",
+      title: "ProBook: Professionals Directory",
       description: "A powerful platform to discover nearby businesses with verified listings, real customer reviews, and detailed business profiles. Find the best services around you in seconds.",
       route: "/products/business-directory",
     },
     {
       id: "service-booking-platform",
       image: prod2,
-      title: "Slotty: Service Booking Platform",
+      title: "QuickService: Booking Platform",
       description: "Book trusted professionals like electricians, plumbers, and salon experts instantly. A complete service marketplace with scheduling and customer reviews.",
       route: "/products/service-booking",
     },
@@ -97,7 +97,7 @@ const ProductsSection = () => {
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full rounded-xl border-[5px] border-transparent hover:border-blue-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
+                  className="w-full aspect-square rounded-xl border-[5px] border-transparent hover:border-blue-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-contain bg-gray-50"
                 />
               </div>
 

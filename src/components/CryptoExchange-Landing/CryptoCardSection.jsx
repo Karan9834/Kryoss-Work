@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import card1 from '../../assets/cryptolanding-img/card1.jpg';
-import card2 from '../../assets/cryptolanding-img/card2.jpg';
+import card1 from '../../assets/crypto exchange 1/Professional Performance Without Compromise.jpg';
+import card2 from '../../assets/crypto exchange 1/The Future o Leverage Trading.jpg';
 
 const CryptoCardSection = () => {
    const cards = [
       {
-         title: "LocalCoins: Spot Trading Solution",
-         desc: "Advanced spot setup with multi-currency support and real-time trading engine.",
+         title: "Spot Advantage: Trading Solution",
+         desc: "Advanced spot setup with multi-currency support and professional-grade performance.",
          path: "/products/crypto-spot-exchange",
          image: card1
       },
       {
-         title: "Tradexpro Exchange: Derivative Trading",
-         desc: "Comprehensive derivative platform offering leverage trading, futures & options.",
+         title: "Tradexpro: Leverage Trading",
+         desc: "Comprehensive derivative platform offering leverage trading and future markets.",
          path: "/products/crypto-derivatives",
          image: card2
       }
@@ -54,7 +54,7 @@ const CryptoCardSection = () => {
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full rounded-xl border-[5px] border-transparent hover:border-blue-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
+                           className="w-full aspect-square h-full rounded-xl border-[5px] border-transparent hover:border-blue-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-contain bg-gray-50"
                         />
                      </Link>
 

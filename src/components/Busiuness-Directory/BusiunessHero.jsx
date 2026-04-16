@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import businessHero from "../../assets/Busiuness-directory/hero.jpg";
+import businessHero from "../../assets/Business Directory product 1/Discover & Connect with Trusted Businesses.jpg";
 
 const BusinessHero = () => {
   return (

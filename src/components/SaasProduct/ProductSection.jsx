@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Eye, Star, CheckCircle } from "lucide-react";
-import prod3 from "../../assets/SaasProduct/prod1.jpg"
-import prod4 from "../../assets/SaasProduct/prod2.jpg"
+import prod1 from "../../assets/saas products 1/Generate Content at Lightning Speed.jpg"
+import prod2 from "../../assets/saas products 1/Built to Help You Write Faster & Smarter.jpg"
 
 const ProductsSection = () => {
   const navigate = useNavigate();
@@ -10,16 +10,16 @@ const ProductsSection = () => {
   const products = [
     {
       id: 1,
-      title: "Writerap: AI Copywriter Saas",
-      description: "Transform raw data into actionable insights with AI-powered analytics. Real-time dashboards, predictive modeling, and custom reporting tools that help you make data-driven decisions faster.",
-      image: prod3,
+      title: "Lightning Content AI",
+      description: "Generate high-quality content at lightning speed. Our AI understands your brand voice and creates perfectly tailored articles in seconds.",
+      image: prod1,
       route: "/products/ai-content-generator"
     },
     {
       id: 2,
-      title: "WriteFlow AI",
-      description: "Comprehensive business intelligence platform with advanced visualization tools. Track KPIs, monitor performance metrics, and get deep insights into your business operations.",
-      image: prod4,
+      title: "Smart Writer Pro",
+      description: "Built to help you write faster and smarter. Advanced writing suggestions, grammar checking, and tone optimization for professional results.",
+      image: prod2,
       route: "/product/visionboard-metrics"
     }
   ];
@@ -74,7 +74,7 @@ const ProductsSection = () => {
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full rounded-xl border-[5px] border-transparent hover:border-purple-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
+                  className="w-full aspect-square rounded-xl border-[5px] border-transparent hover:border-purple-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover h-full"
                 />
               </div>
 

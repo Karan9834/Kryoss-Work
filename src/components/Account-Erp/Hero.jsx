@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, BarChart3, Shield, Zap } from "lucide-react";
-import heroimg from "@/assets/account-erp-img/hero.jpeg";
+import heroimg from "../../assets/account and erp 1/Enterprise Grade ERP Solution ERP OS Peak Financial Performance.jpg";
 const HeroERP = () => {
   // Scroll to products section function
   const scrollToProducts = () => {

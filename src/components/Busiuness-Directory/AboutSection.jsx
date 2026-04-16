@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle, Building2, Star, Users } from "lucide-react";
-import aboutimg from "../../assets/Busiuness-directory/about.jpg"
+import aboutimg from "../../assets/Business Directory product 1/Simplifying the Way You Find Businesses.jpg"
 
 const AboutSection = () => {
   return (
@@ -12,7 +12,7 @@ const AboutSection = () => {
           <img
             src={aboutimg}
             alt="About Business Directory"
-            className="w-full max-w-lg object-contain rounded-3xl drop-shadow-xl"
+            className="w-full max-w-lg aspect-square object-cover rounded-3xl drop-shadow-xl"
           />
         </div>
 

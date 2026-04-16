@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle2, Store } from 'lucide-react';
-import aboutImg from '../../assets/poslanding-img/poslandingabout.jpg';
+import aboutImg from '../../assets/pos belling/Mastering Hospitality.jpg';
 
 const POSAbout = () => {
     const highlights = [

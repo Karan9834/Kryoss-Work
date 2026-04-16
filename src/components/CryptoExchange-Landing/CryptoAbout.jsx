@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle2, Shield, Globe, Cpu } from 'lucide-react';
-import aboutImg from '../../assets/cryptolanding-img/cryptolandingabout.jpg';
+import aboutImg from '../../assets/crypto exchange 1/Built for Volume Forge for Security.jpg';
 
 const CryptoAbout = () => {
     const highlights = [

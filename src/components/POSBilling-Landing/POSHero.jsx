@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShoppingCart, CreditCard, PieChart, ArrowRight, Zap, ShieldCheck } from 'lucide-react';
-import heroImg from '../../assets/poslanding-img/poslandinghero.jpg';
+import heroImg from '../../assets/pos belling/Modern CommercStarts Here.jpg';
 
 const POSHero = () => {
     const scrollToProducts = () => {

@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Star, Eye, CheckCircle2, Sparkles } from "lucide-react";
-import prod5 from "../../assets/Products/exp.jpg";
-import prod2 from "../../assets/erp-img/erp12.jpg";
+import prod1 from "../../assets/account and erp 1/Enterprise Sales CRM.jpg"
+import prod2 from "../../assets/account and erp 1/What is an Enterprise CRM.jpg"
 
 const ProductSection = () => {
   const navigate = useNavigate();
@@ -10,17 +10,17 @@ const ProductSection = () => {
   const products = [
     {
       id: 1,
-      title: "ERP OS: Apex Erp",
-      desc: "Complete ERP solution for small to medium businesses with integrated financials, sales, inventory, and customer management in a single platform.",
-      image: prod5,
-      route: "/products/enterprise/Apex-Erp",
+      title: "Enterprise Sales CRM",
+      desc: "Comprehensive CRM solution designed for enterprise-level sales teams to manage leads, track performance, and close deals faster.",
+      image: prod1,
+      route: "/products/sales-crm",
     },
     {
       id: 2,
-      title: "Enterprise Sales CRM",
-      desc: "Cloud-based ERP platform for growing businesses featuring real-time financials, inventory management, order processing, and global business operations.",
+      title: "ERP Insights & OS",
+      desc: "Advanced enterprise CRM providing deep insights into customer behavior and operational efficiency for seamless business growth.",
       image: prod2,
-      route: "/products/sales-crm",
+      route: "/products/enterprise/crm",
     }
   ];
 
@@ -100,7 +100,7 @@ const ProductSection = () => {
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full rounded-xl border-[5px] border-transparent hover:border-blue-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
+                  className="w-full aspect-square rounded-xl border-[5px] border-transparent hover:border-blue-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover h-full"
                 />
               </div>
 

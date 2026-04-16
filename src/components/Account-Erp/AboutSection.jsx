@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
-import aboutimg from "@/assets/account-erp-img/about.jpg";
+import aboutimg from "../../assets/account and erp 1/About Apex ERP.jpg";
 const AboutSection = () => {
   return (
     <section className="bg-white py-24">
@@ -8,11 +8,11 @@ const AboutSection = () => {
 
         {/* LEFT IMAGE */}
         <div className="relative order-2 lg:order-1">
-          <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+          <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-square">
             <img
               src={aboutimg}
               alt="Team working"
-              className="w-full h-[420px] object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
 

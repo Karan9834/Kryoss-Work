@@ -1,5 +1,5 @@
 import React from "react";
-import saasabout from "../../assets/SaasProduct/saasabout.jpeg"
+import saasabout from "../../assets/saas products 1/What is an AIContent Generator.jpg"
 
 const AboutSection = () => {
   return (
@@ -45,12 +45,12 @@ const AboutSection = () => {
             {/* Premium Frame Effects */}
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-200/30 to-blue-200/30 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-white">
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-white">
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/5 to-blue-500/5 pointer-events-none"></div>
               <img
                 src={saasabout}
                 alt="Team collaboration and analytics"
-                className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
               />
             </div>
 
