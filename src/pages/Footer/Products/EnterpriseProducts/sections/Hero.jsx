@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import hero from '../../../../../assets/Enterprise-Product/crmhero.png';
+import hero from '../../../../../assets/Enterprise-Product/crmhero.jpg';
 
 const Hero = ({
   title = "Enterprise",
