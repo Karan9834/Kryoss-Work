@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import React from 'react';
-import crmprohero from '@/assets/crmpro-img/crmprohero.jpg';
+import crmprohero from '../../../../../../assets/CRM pro/1.,.jpg';
 
 const CRMProHero = () => {
     return (

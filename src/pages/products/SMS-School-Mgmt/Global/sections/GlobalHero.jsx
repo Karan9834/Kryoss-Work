@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, Globe, Award, ShieldCheck, GraduationCap, MessageCircle } from "lucide-react";
-import heroImg from "@/assets/globalsms-img/globalsmshero.jpg";
+import heroImg from "../../../../../assets/Global school management/1.,,.jpeg";
 
 const GlobalHero = () => {
     return (
@@ -38,25 +38,6 @@ const GlobalHero = () => {
                         Global School Management is an enterprise-grade ERP designed for universities and multi-campus institutions. Manage complex enrollments, faculty research, and alumni networks effortlessly.
                     </p>
 
-                    {/* Stats row */}
-                    <div className="flex flex-wrap gap-6 sm:gap-8 py-6 border-t border-white/10">
-                        {[
-                            { icon: <Award size={20} />, label: "Accredited", value: "Global" },
-                            { icon: <GraduationCap size={20} />, label: "Students", value: "500K+" },
-                            { icon: <ShieldCheck size={20} />, label: "Security", value: "ISO 27001" },
-                        ].map((stat, i) => (
-                            <div key={i} className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-yellow-400 border border-white/10 flex-shrink-0">
-                                    {stat.icon}
-                                </div>
-                                <div>
-                                    <p className="text-white font-bold text-lg sm:text-xl leading-none">{stat.value}</p>
-                                    <p className="text-slate-400 text-[10px] sm:text-xs mt-1 font-medium">{stat.label}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
                     <div className="pt-2 flex flex-wrap gap-4">
                         <a
                             href="https://preview.codecanyon.net/item/global-multi-school-management-system-express/full_screen_preview/21975378"
@@ -86,11 +67,6 @@ const GlobalHero = () => {
                     <div className="relative z-10 w-full max-w-lg mx-auto">
                         <div className="w-full h-64 sm:h-80 lg:h-[400px] rounded-[2rem] sm:rounded-[3rem] border-4 sm:border-[12px] border-white/5 shadow-2xl bg-slate-800/80 flex items-center justify-center relative overflow-hidden group">
                            <img src={heroImg} alt="Global University Dashboard" className="w-full h-full object-cover" />
-                        </div>
-                        {/* Floating elements */}
-                        <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-white p-3 sm:p-5 rounded-2xl sm:rounded-3xl shadow-2xl skew-x-[-2deg]">
-                            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mb-1">Global Ranking</p>
-                            <p className="text-xl sm:text-3xl font-black text-slate-900 leading-none">Top 1%</p>
                         </div>
                     </div>
                 </div>

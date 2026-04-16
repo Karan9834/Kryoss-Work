@@ -1,13 +1,7 @@
 import React from "react";
 import { Truck, Shield, Clock, TrendingUp, Package, Users, Globe, Headphones } from "lucide-react";
-
+import about from "../../../../assets/WholeSale/2!.png"
 const AboutUs = () => {
-  const stats = [
-    { value: "500+", label: "Business Partners", icon: <Users size={20} /> },
-    { value: "50k+", label: "Daily Deliveries", icon: <Truck size={20} /> },
-    { value: "99.9%", label: "Uptime", icon: <Shield size={20} /> },
-    { value: "24/7", label: "Support", icon: <Headphones size={20} /> },
-  ];
 
   const features = [
     {
@@ -54,18 +48,10 @@ const AboutUs = () => {
             {/* Main Image Card */}
             <div className="relative bg-white rounded-2xl border border-gray-200 p-3 shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=500&fit=crop"
+                src={about}
                 alt="Wholesale Food Distribution"
                 className="rounded-xl w-full h-auto shadow-lg"
               />
-              
-              {/* Floating Experience Badge */}
-              <div className="absolute -bottom-5 -right-5 bg-white shadow-xl rounded-xl p-4 border border-gray-200">
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-emerald-600">5+</p>
-                  <p className="text-xs text-gray-500">Years of Excellence</p>
-                </div>
-              </div>
             </div>
           </div>
           
@@ -115,21 +101,6 @@ const AboutUs = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-        
-        {/* Stats Section - Below both columns */}
-        <div className="mt-16 pt-8 border-t-2 border-gray-200">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center group cursor-pointer">
-                <div className="w-12 h-12 mx-auto mb-3 bg-emerald-100 rounded-full flex items-center justify-center group-hover:bg-emerald-200 transition-all duration-300 group-hover:scale-110">
-                  <div className="text-emerald-600">{stat.icon}</div>
-                </div>
-                <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
-                <p className="text-xs text-gray-500">{stat.label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>

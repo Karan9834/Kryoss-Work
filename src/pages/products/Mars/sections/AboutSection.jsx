@@ -1,6 +1,6 @@
 import React from "react";
 import { Sparkles, Zap, Shield, Globe, Award, Heart, ChevronRight, Users, Clock } from "lucide-react";
-
+import about from "../../../../assets/Mars hotel management/2.jpg"
 const AboutUs = () => {
   return (
     <section className="relative w-full overflow-hidden bg-white py-20 lg:py-28">
@@ -37,26 +37,13 @@ const AboutUs = () => {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-400/30 to-indigo-400/30 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-2 shadow-xl border border-blue-100/50">
                 <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                  src={about}
                   alt="Team collaboration in modern workspace"
                   className="w-full rounded-xl shadow-lg transition-transform duration-700 group-hover:scale-105"
                 />
                 
                 {/* Glass Overlay */}
                 <div className="absolute inset-2 rounded-xl bg-gradient-to-tr from-blue-500/10 via-transparent to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-              </div>
-            </div>
-            
-            {/* Floating Glass Badge */}
-            <div className="absolute -bottom-5 -right-5 bg-white/90 backdrop-blur-md rounded-xl p-3 shadow-xl border border-blue-200/50 animate-float">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center">
-                  <Users size={16} className="text-white" />
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500">Team Members</p>
-                  <p className="text-sm font-bold text-blue-600">50+ Experts</p>
-                </div>
               </div>
             </div>
           </div>

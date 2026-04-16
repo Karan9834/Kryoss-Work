@@ -1,6 +1,6 @@
 import React from 'react'
 import { CheckCircle, Award, Users, Rocket, ArrowRight } from 'lucide-react'
-
+import about from "../../../../assets/hrm/2..jpg"
 const AboutUs = () => {
   return (
     <section className="relative py-20 bg-white overflow-hidden">
@@ -26,25 +26,12 @@ const AboutUs = () => {
             {/* Main Image Container */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+                src={about}
                 alt="About KryossWork Team"
                 className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-            </div>
-
-            {/* Floating Experience Badge */}
-            <div className="absolute -bottom-5 -right-5 bg-white rounded-xl shadow-lg p-4 border-l-4 border-blue-500">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center">
-                  <Award className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-gray-900">10+ Years</div>
-                  <div className="text-xs text-gray-500">of Excellence</div>
-                </div>
-              </div>
             </div>
 
             {/* Floating Dot Pattern */}
@@ -84,22 +71,6 @@ const AboutUs = () => {
               Our team of 40+ experts combines deep industry knowledge with cutting-edge technology
               to build scalable, high-performance digital products that actually grow businesses.
             </p>
-
-            {/* Stats Grid */}
-            <div className="grid grid-cols-3 gap-4 py-4">
-              <div className="text-center p-3 rounded-xl bg-gradient-to-br from-gray-50 to-white border border-gray-100">
-                <div className="text-2xl font-bold text-blue-600">250+</div>
-                <div className="text-xs text-gray-500">Projects Delivered</div>
-              </div>
-              <div className="text-center p-3 rounded-xl bg-gradient-to-br from-gray-50 to-white border border-gray-100">
-                <div className="text-2xl font-bold text-purple-600">70+</div>
-                <div className="text-xs text-gray-500">Countries Served</div>
-              </div>
-              <div className="text-center p-3 rounded-xl bg-gradient-to-br from-gray-50 to-white border border-gray-100">
-                <div className="text-2xl font-bold text-blue-600">40+</div>
-                <div className="text-xs text-gray-500">Expert Team</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircle, Sparkles, ArrowRight, Zap, Shield, Globe, Users } from "lucide-react";
+import about from "../../../../assets/Nuova/2...jpg";
 
 const AboutUs = () => {
   return (
@@ -21,37 +22,13 @@ const AboutUs = () => {
           {/* Main Image Container */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80"
+              src={about}
               alt="Team collaboration in modern workspace"
               className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
             />
             
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-orange-500/10 via-transparent to-teal-500/10"></div>
-            
-            {/* Floating Badge */}
-            <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-lg border border-orange-100/50 animate-float">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-teal-500 flex items-center justify-center">
-                    <Users size={14} className="text-white" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-500">Active Users</p>
-                    <p className="text-sm font-bold text-gray-900">10,000+</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-teal-500 to-orange-500 flex items-center justify-center">
-                    <Globe size={14} className="text-white" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-500">Countries</p>
-                    <p className="text-sm font-bold text-gray-900">50+</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           
           {/* Decorative Elements */}

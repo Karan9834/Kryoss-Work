@@ -1,6 +1,6 @@
 import React from "react";
 import { Play, ArrowRight, MessageCircle } from "lucide-react";
-
+import hero from "../../../../assets/Mars hotel management/1.jpg"
 const HotelHero = () => {
   // The URL you want to open when clicking Live Demo
   const liveDemoUrl = "https://preview.codecanyon.net/item/mars-room-management-system/full_screen_preview/21646390";
@@ -100,7 +100,7 @@ const HotelHero = () => {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-white/20 to-blue-400/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative bg-white/10 backdrop-blur-xl rounded-xl p-2 border border-white/20 shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+                  src={hero}
                   alt="Luxury Hotel Suite"
                   className="w-full max-w-md rounded-lg shadow-xl transition-transform duration-700 group-hover:scale-105"
                 />
@@ -108,13 +108,6 @@ const HotelHero = () => {
                 {/* Glass Overlay */}
                 <div className="absolute inset-2 rounded-lg bg-gradient-to-tr from-white/10 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               </div>
-            </div>
-            
-            {/* Floating Premium Icon */}
-            <div className="absolute -bottom-5 -right-5 bg-white/95 backdrop-blur-sm rounded-xl p-3 shadow-xl border border-white/30 animate-float">
-              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-              </svg>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import onestcrmabout from '@/assets/onestcrm-img/onestcrmabout.jpg';
+import onestcrmabout from '../../../../../../assets/Onset CRM/2,.jpg';
 
 const OnestCRMAbout = () => {
     return (

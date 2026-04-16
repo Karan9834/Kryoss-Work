@@ -1,5 +1,6 @@
 import React from 'react'
 import { CheckCircle, Award, Users, Rocket, Target, Heart } from 'lucide-react'
+import about from "../../../../assets/bdtask/2.png"
 
 const AboutUs = () => {
   return (
@@ -26,25 +27,12 @@ const AboutUs = () => {
             {/* Main Image Container */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+                src={about}
                 alt="BDTASK Team"
                 className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-            </div>
-
-            {/* Floating Experience Badge */}
-            <div className="absolute -bottom-5 -right-5 bg-white rounded-xl shadow-lg p-3 border-l-4 border-green-500">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center">
-                  <Award className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <div className="text-xl font-bold text-gray-900">10+ Years</div>
-                  <div className="text-xs text-gray-500">of Excellence</div>
-                </div>
-              </div>
             </div>
 
             {/* Decorative Dot Pattern */}

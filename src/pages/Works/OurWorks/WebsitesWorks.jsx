@@ -77,6 +77,7 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+
 const WebsitesWorks = () => {
     const categories = [
         { name: 'Business', icon: <Briefcase size={18} /> },
@@ -160,7 +161,7 @@ const WebsitesWorks = () => {
             },
             {
                 title: 'OyeBusy - Home Services Platform',
-                description: 'India’s best online platform for providing top-notch home services relating to maintenance, repair, and more delivered to your doorstep.',
+                description: 'India\'s best online platform for providing top-notch home services relating to maintenance, repair, and more delivered to your doorstep.',
                 stats: 'Home Services, Maintenance, Repair',
                 tags: ['Home Services', 'Maintenance', 'On-Demand'],
                 image: oyebusyImg,
@@ -533,7 +534,7 @@ const WebsitesWorks = () => {
             },
             {
                 title: 'GroceryFactory - DTC Brand',
-                description: 'India’s 1st Full Stack DTC Brand for FMCG. Products meticulously selected and processed to deliver perfect standards within 24 hours.',
+                description: 'India\'s 1st Full Stack DTC Brand for FMCG. Products meticulously selected and processed to deliver perfect standards within 24 hours.',
                 stats: 'Direct-to-Consumer Grocery',
                 tags: ['DTC', 'Full-Stack', 'FMCG'],
                 image: groceryfactoryImg,
@@ -544,7 +545,7 @@ const WebsitesWorks = () => {
             },
             {
                 title: 'Foodmazone - Online Supermarket',
-                description: 'Kerala’s largest online food store with 18,000+ products across 100 brands. Everything from rice to personal care in one place.',
+                description: 'Kerala\'s largest online food store with 18,000+ products across 100 brands. Everything from rice to personal care in one place.',
                 stats: 'Kerala\'s Largest Supermarket',
                 tags: ['Large Inventory', 'Local Leader', 'Convenience'],
                 image: foodmazoneImg,
@@ -711,26 +712,38 @@ const WebsitesWorks = () => {
                                         <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
 
                                             {/* Image Box */}
-                                            <div className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl">
+                                            <motion.div
+                                                initial={{ opacity: 0, scale: 0.9 }}
+                                                whileInView={{ opacity: 1, scale: 1 }}
+                                                viewport={{ once: true, margin: "-100px" }}
+                                                transition={{ duration: 0.6, delay: 0.2 }}
+                                                className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl"
+                                            >
                                                 <img
                                                     src={project.image}
                                                     alt={project.title}
-                                                    className="max-h-[450px] w-full object-contain"
+                                                    className="max-h-[450px] w-full object-contain hover:scale-105 transition-transform duration-500"
                                                 />
-                                            </div>
+                                            </motion.div>
 
                                             {/* Content Box */}
-                                            <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                                            <motion.div
+                                                initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+                                                whileInView={{ opacity: 1, x: 0 }}
+                                                viewport={{ once: true, margin: "-100px" }}
+                                                transition={{ duration: 0.6 }}
+                                                className="w-full lg:w-1/2 flex flex-col justify-center"
+                                            >
                                                 <div className="flex items-center gap-3 mb-6">
                                                     <span className="h-px w-8 bg-orange-500"></span>
                                                     <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-500">Case Study 0{idx + 1}</span>
                                                 </div>
 
-                                                <h3 className="text-3xl md:text-5xl font-medium text-gray-950 mb-6 leading-tight tracking-tight">
+                                                <h3 className="text-2xl md:text-3xl font-medium text-black mb-6 leading-tight hover:text-orange-600 transition-colors duration-300">
                                                     {project.title}
                                                 </h3>
 
-                                                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-10">
+                                                <p className="text-gray-600 leading-relaxed mb-8 text-lg font-light">
                                                     {project.description}
                                                 </p>
 
@@ -744,44 +757,32 @@ const WebsitesWorks = () => {
 
                                                 {/* Download/Link Buttons */}
                                                 {project.links && project.links.length > 0 && (
-                                                    <div className="flex flex-wrap gap-4 mb-10">
+                                                    <div className="flex flex-wrap gap-4">
                                                         {project.links.map((link, lIdx) => (
                                                             <a
                                                                 key={lIdx}
                                                                 href={link.href}
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
-                                                                className="flex items-center gap-3 bg-gray-800 text-white px-5 py-2.5 rounded-xl hover:bg-orange-500 hover:shadow-lg transition-all duration-300 group/btn"
+                                                                className="inline-block mt-4 hover:opacity-90 transition-opacity"
                                                             >
                                                                 {link.type === 'playstore' ? (
-                                                                    <>
-                                                                        <div className="w-6 h-6 flex items-center justify-center">
-                                                                            <img
-                                                                                src="https://kryosssoftech.org/icons/Health-&-Fitness/google app store.png"
-                                                                                alt="Play Store"
-                                                                                className="w-full h-full object-contain brightness-0 invert"
-                                                                                onError={(e) => { e.target.parentElement.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="5 3 19 12 5 21 5 3"/></svg>' }}
-                                                                            />
-                                                                        </div>
-                                                                        <div className="flex flex-col items-start leading-tight">
-                                                                            <span className="text-[9px] uppercase font-bold text-gray-400 group-hover/btn:text-orange-100 italic">Get it on</span>
-                                                                            <span className="text-sm font-black tracking-tight">Google Play</span>
-                                                                        </div>
-                                                                    </>
+                                                                    <img
+                                                                        src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
+                                                                        alt="Get it on Google Play"
+                                                                        className="h-12 object-contain"
+                                                                    />
                                                                 ) : (
-                                                                    <>
-                                                                        <div className="w-6 h-6 flex items-center justify-center">
-                                                                            <Globe size={22} className="text-white group-hover/btn:scale-110 transition-transform" />
-                                                                        </div>
-                                                                        <span className="text-sm font-black uppercase tracking-widest">Web Link</span>
-                                                                    </>
+                                                                    <span className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-xl hover:bg-orange-500 transition-all duration-300 text-sm font-semibold">
+                                                                        <Globe size={18} />
+                                                                        Visit Website
+                                                                    </span>
                                                                 )}
                                                             </a>
                                                         ))}
                                                     </div>
                                                 )}
-
-                                            </div>
+                                            </motion.div>
                                         </div>
                                     </div>
                                 );

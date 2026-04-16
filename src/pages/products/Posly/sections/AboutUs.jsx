@@ -9,6 +9,7 @@ import {
   Package,
   ShoppingCart
 } from "lucide-react";
+import about from "../../../../assets/Posly/2,,,.jpg"
 
 const AboutUs = () => {
   const features = [
@@ -34,13 +35,6 @@ const AboutUs = () => {
     }
   ];
 
-  const stats = [
-    { value: "500+", label: "Businesses" },
-    { value: "50k+", label: "Daily Orders" },
-    { value: "99.9%", label: "Uptime" },
-    { value: "24/7", label: "Support" }
-  ];
-
   return (
     <section className="relative py-20 bg-gradient-to-br from-white via-gray-50 to-blue-50/30 overflow-hidden">
       {/* Background Decorative Elements */}
@@ -58,29 +52,10 @@ const AboutUs = () => {
             {/* Main Image Card */}
             <div className="relative bg-gradient-to-br from-gray-800/10 to-gray-900/10 backdrop-blur-sm rounded-2xl border border-gray-200 p-3 shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=500&fit=crop"
+                src={about}
                 alt="POSly Inventory Management Dashboard"
                 className="rounded-xl w-full h-auto shadow-lg object-cover"
               />
-              
-              {/* Floating Badge 1 - Top Right */}
-              <div className="absolute -top-4 -right-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-xl flex items-center gap-2">
-                <Package size={16} />
-                <span>Real-time Tracking</span>
-              </div>
-              
-              {/* Floating Badge 2 - Bottom Left */}
-              <div className="absolute -bottom-4 -left-4 bg-white shadow-xl rounded-lg p-3 border border-gray-200">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                    <ShoppingCart size={20} className="text-white" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-500">Daily Orders</p>
-                    <p className="text-xl font-bold text-gray-900">50,000+</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           
@@ -126,16 +101,6 @@ const AboutUs = () => {
                     <h3 className="font-semibold text-gray-900 mb-1">{feature.title}</h3>
                     <p className="text-sm text-gray-500">{feature.desc}</p>
                   </div>
-                </div>
-              ))}
-            </div>
-            
-            {/* Stats Section */}
-            <div className="grid grid-cols-4 gap-4 pt-6 border-t border-gray-200">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
-                  <p className="text-xs text-gray-500">{stat.label}</p>
                 </div>
               ))}
             </div>

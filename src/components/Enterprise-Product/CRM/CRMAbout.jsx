@@ -1,5 +1,5 @@
 import React from "react";
-import crmAboutImg from "../../../assets/Enterprise-Product/crmabout.png";
+import crmAboutImg from "../../../assets/CRM pro/1.,.jpg";
 
 const CRMAbout = () => {
   return (

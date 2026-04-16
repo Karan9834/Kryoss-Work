@@ -1,6 +1,6 @@
 import React from "react";
 import { Download, Users, Star, ArrowRight, Sparkles, BookOpen, Clock, ShieldCheck, MessageCircle } from "lucide-react";
-import heroImg from "@/assets/inilabssms-img/inilabssmshero.jpg";
+import heroImg from "../../../../../assets/Inilabs/1....jpeg";
 
 const InilabsHero = () => {
     return (

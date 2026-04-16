@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import React from 'react';
-import onestcrmhero from '@/assets/onestcrm-img/onestcrmhero.jpg';
+import onestcrmhero from '../../../../../../assets/Onset CRM/1,.jpg';
 
 const OnestCRMHero = () => {
     return (

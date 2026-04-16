@@ -1,5 +1,6 @@
 import React from "react";
 import { Play, ArrowRight, Sparkles, MessageCircle } from "lucide-react";
+import hero from "../../../../assets/Nuova/1....jpg";
 
 const NuovaNewsHero = () => {
   const liveDemoUrl =
@@ -81,7 +82,7 @@ const NuovaNewsHero = () => {
             <div className="absolute -inset-4 bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 blur-2xl opacity-50"></div>
 
             <img
-              src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=800&q=80"
+              src={hero}
               alt="News"
               className="relative w-full max-w-md rounded-xl shadow-2xl"
             />

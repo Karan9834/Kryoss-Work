@@ -15,12 +15,13 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+
 // Import Components
 const BusinessWorks = () => {
     const projects = [
         {
             title: "CWJobs - Job Search App",
-            description: "Looking for a job while on the move? The CWJobs Job Search App is here to help! Here’s how: CWJobs.co.uk is a market leader in specialist IT recruitment, attracting around 500,000 IT professionals to its site and listing more than 9,000 live job ads every month. This activity cements its strong reputation among jobseekers and recruiters alike, so whether you’re looking to fill a vacancy or find a new job, you can trust CWJobs to be your first port of call.",
+            description: "Looking for a job while on the move? The CWJobs Job Search App is here to help! Here's how: CWJobs.co.uk is a market leader in specialist IT recruitment, attracting around 500,000 IT professionals to its site and listing more than 9,000 live job ads every month. This activity cements its strong reputation among jobseekers and recruiters alike, so whether you're looking to fill a vacancy or find a new job, you can trust CWJobs to be your first port of call.",
             image: "https://kryosssoftech.org/icons/business/CWjob.png",
             links: [
                 { href: "https://play.google.com/store/apps/details?id=com.stepstone.cwjobs", type: 'playstore' }
@@ -56,7 +57,7 @@ const BusinessWorks = () => {
         },
         {
             title: "24Task: Hire Freelancers",
-            description: "Take the initial steps towards hiring the best talents for your project with the 24Task Employers app. 24 Task is a reputed freelancing platform that allows employers to post multiple jobs and details at once and collaborate with the freelancers in no time. Gain more efficiency with our employer’s app when it comes to hiring freelancers and enhancing your workflow.",
+            description: "Take the initial steps towards hiring the best talents for your project with the 24Task Employers app. 24 Task is a reputed freelancing platform that allows employers to post multiple jobs and details at once and collaborate with the freelancers in no time. Gain more efficiency with our employer's app when it comes to hiring freelancers and enhancing your workflow.",
             image: "https://kryosssoftech.org/icons/business/24%20task.png",
             links: [
                 { href: "https://play.google.com/store/apps/details?id=com.task24.android.apps.employer.hire.freelancer", type: 'playstore' }
@@ -128,7 +129,7 @@ const BusinessWorks = () => {
                     className="relative z-10 container mx-auto px-4"
                 >
                     <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">
-                        Business <span className="text-orange-600">Works</span>
+                        Business <span className="text-orange-500">Works</span>
                     </h1>
                     <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto text-gray-200">
                         Discover our comprehensive portfolio of business applications designed to optimize operations, enhance productivity, and drive organizational success.
@@ -139,9 +140,11 @@ const BusinessWorks = () => {
             {/* 2. Breadcrumb */}
             <section className="bg-gray-100/80 py-4 border-b border-gray-200 backdrop-blur-md sticky top-0 z-40 shadow-sm">
                 <div className="container mx-auto px-4 flex flex-wrap items-center text-sm md:text-base font-semibold text-gray-600">
-                    <a href="/" className="hover:text-orange-600 transition-colors duration-300">Home</a>
+                    <a href="/" className="hover:text-orange-500 transition-colors duration-300">Home</a>
                     <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-                    <span className="text-orange-600">Business Apps Work</span>
+                    <a href="/works" className="hover:text-orange-500 transition-colors duration-300">Our Works</a>
+                    <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+                    <span className="text-orange-500">Business Applications Works</span>
                 </div>
             </section>
 
@@ -155,9 +158,9 @@ const BusinessWorks = () => {
                             viewport={{ once: true }}
                             className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-black mb-4"
                         >
-                            Our <span className="text-orange-600">Business App</span> Portfolio
+                            Our <span className="text-orange-500">Business App</span> Portfolio
                         </motion.h2>
-                        <div className="w-24 h-1 bg-orange-600 mx-auto rounded-full"></div>
+                        <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
                     </div>
                 </div>
 
@@ -169,13 +172,19 @@ const BusinessWorks = () => {
                                 <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
 
                                     {/* Image Box */}
-                                    <div className="w-full lg:w-1/2 flex justify-center items-center relative">
+                                    <motion.div
+                                        initial={{ opacity: 0, scale: 0.9 }}
+                                        whileInView={{ opacity: 1, scale: 1 }}
+                                        viewport={{ once: true, margin: "-100px" }}
+                                        transition={{ duration: 0.6, delay: 0.2 }}
+                                        className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl"
+                                    >
                                         <div className="overflow-hidden relative group w-full flex items-center justify-center min-h-[300px]">
                                             {project.image ? (
                                                 <img
                                                     src={project.image}
                                                     alt={project.title}
-                                                    className="max-h-[450px] w-full object-contain"
+                                                    className="max-h-[450px] w-full object-contain hover:scale-105 transition-transform duration-500"
                                                 />
                                             ) : (
                                                 <div className="flex flex-col items-center justify-center text-gray-300 py-16 gap-4">
@@ -184,20 +193,26 @@ const BusinessWorks = () => {
                                                 </div>
                                             )}
                                         </div>
-                                    </div>
+                                    </motion.div>
 
                                     {/* Content Box */}
-                                    <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                                    <motion.div
+                                        initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        viewport={{ once: true, margin: "-100px" }}
+                                        transition={{ duration: 0.6 }}
+                                        className="w-full lg:w-1/2 flex flex-col justify-center"
+                                    >
                                         <div className="flex items-center gap-3 mb-6">
-                                            <span className="h-px w-8 bg-orange-600"></span>
-                                            <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-600">Project 0{idx + 1}</span>
+                                            <span className="h-px w-8 bg-orange-500"></span>
+                                            <span className="text-xs font-black uppercase tracking-[0.2em] text-orange-500">Project 0{idx + 1}</span>
                                         </div>
 
-                                        <h3 className="text-[30px] lg:text-[36px] font-medium leading-[1.2] text-gray-950 mb-6">
+                                        <h3 className="text-2xl md:text-3xl font-medium text-black mb-6 leading-tight hover:text-orange-600 transition-colors duration-300">
                                             {project.title}
                                         </h3>
 
-                                        <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-10">
+                                        <p className="text-gray-600 leading-relaxed mb-8 text-lg font-light">
                                             {project.description}
                                         </p>
 
@@ -210,44 +225,25 @@ const BusinessWorks = () => {
                                         </div>
 
                                         {project.links && project.links.length > 0 && (
-                                            <div className="flex flex-wrap gap-4 mb-10">
+                                            <div className="flex flex-wrap gap-4">
                                                 {project.links.map((link, lIdx) => (
                                                     <a
                                                         key={lIdx}
                                                         href={link.href}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        className="flex items-center gap-3 bg-gray-800 text-white px-5 py-2.5 rounded-xl hover:bg-orange-600 hover:shadow-lg transition-all duration-300 group/btn"
+                                                        className="inline-block mt-4 hover:opacity-90 transition-opacity"
                                                     >
-                                                        {link.type === 'playstore' ? (
-                                                            <>
-                                                                <div className="w-6 h-6 flex items-center justify-center">
-                                                                    <img
-                                                                        src="https://kryosssoftech.org/icons/Health-&-Fitness/google app store.png"
-                                                                        alt="Play Store"
-                                                                        className="w-full h-full object-contain brightness-0 invert"
-                                                                        onError={(e) => { e.target.parentElement.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>' }}
-                                                                    />
-                                                                </div>
-                                                                <div className="flex flex-col items-start leading-tight">
-                                                                    <span className="text-[9px] uppercase font-bold text-gray-400 group-hover/btn:text-orange-100 italic">Get it on</span>
-                                                                    <span className="text-sm font-black tracking-tight">Google Play</span>
-                                                                </div>
-                                                            </>
-                                                        ) : (
-                                                            <>
-                                                                <Globe size={20} className="text-white group-hover/btn:scale-110 transition-transform" />
-                                                                <div className="flex flex-col items-start leading-tight">
-                                                                    <span className="text-[9px] uppercase font-bold text-gray-400 group-hover/btn:text-orange-100 italic">Visit</span>
-                                                                    <span className="text-sm font-black tracking-tight">Website</span>
-                                                                </div>
-                                                            </>
-                                                        )}
+                                                        <img
+                                                            src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
+                                                            alt="Get it on Google Play"
+                                                            className="h-12 object-contain"
+                                                        />
                                                     </a>
                                                 ))}
                                             </div>
                                         )}
-                                    </div>
+                                    </motion.div>
                                 </div>
                             </div>
                         );
@@ -270,7 +266,7 @@ const BusinessWorks = () => {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-700/50">
                         {stats.map((stat, index) => (
                             <div key={index} className="p-4">
-                                <h3 className="text-4xl md:text-5xl font-extrabold text-orange-600 mb-2">{stat.value}+</h3>
+                                <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">{stat.value}+</h3>
                                 <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">{stat.label}</p>
                             </div>
                         ))}
@@ -278,10 +274,6 @@ const BusinessWorks = () => {
                 </div>
             </section>
 
-            
-            
-
-        
             {/* New Added Sections */}
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />

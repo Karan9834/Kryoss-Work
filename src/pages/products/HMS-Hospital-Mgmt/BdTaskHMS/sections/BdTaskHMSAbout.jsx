@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImg from "@/assets/bdtaskhms-img/bdtaskhmsabout.webp";
+import aboutImg from "../../../../../assets/Bd task hms/2,.jpeg";
 
 const BdTaskHMSAbout = () => {
     return (
