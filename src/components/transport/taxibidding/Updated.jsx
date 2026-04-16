@@ -19,16 +19,15 @@ const NewsletterSection = () => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-          Stay Ahead with Our{" "}
-          <span className="text-[#6dbb1a]">Latest Updates</span>
+        <h2 className="text-3xl md:text-5xl font-black mb-6">
+          Stay Informed with{" "}
+          <span className="text-[#9FE870]">Industry Evolution</span>
         </h2>
 
         {/* Description */}
-        <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-          Subscribe to our newsletter for exclusive updates, insights,
-          and tips on the latest trends in app development solutions.
-          Stay informed and never miss an important update!
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+          Join our professional network to receive curated market updates,
+          technical insights, and platform news directly to your inbox.
         </p>
 
         {/* Email Input */}
@@ -39,7 +38,7 @@ const NewsletterSection = () => {
           <input
             type="email"
             required
-            placeholder="Enter your email here"
+            placeholder="Your professional email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="flex-1 px-6 py-4 outline-none text-gray-700"
@@ -47,9 +46,9 @@ const NewsletterSection = () => {
 
           <button
             type="submit"
-            className="bg-[#6dbb1a] hover:bg-[#5aa014] text-white px-8 py-4 font-medium transition duration-300"
+            className="bg-[#9FE870] text-black px-8 py-4 rounded-xl font-bold transition-all hover:scale-105"
           >
-            Subscribe
+            Connect Now
           </button>
         </form>
 

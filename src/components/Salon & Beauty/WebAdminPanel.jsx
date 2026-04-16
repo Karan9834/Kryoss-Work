@@ -13,43 +13,43 @@ import {
 const WebAdminPanel = () => {
   const features = [
     {
-      title: "Dashboard",
-      desc: "With the powerful dashboard, admin can view the total order request, total revenue, new order request, and new users & providers.",
+      title: "Operational Analytics",
+      desc: "Utilizing the advanced analytics hub, administrators monitor global assignment volumes, fiscal trajectories, incoming requests, and stakeholder growth metrics.",
       icon: LayoutDashboard,
     },
     {
-      title: "Manage Provider",
-      desc: "Admin can approved pending providers and blocked the provider and also view & edit the provider’s details like name, contact details, address, etc.",
+      title: "Practitioner Governance",
+      desc: "Authorize pending specialist credentials or restrict specific accounts while maintaining a comprehensive registry of practitioner profile data.",
       icon: Users,
     },
     {
-      title: "Manage Document",
-      desc: "Admin can add and edit the required document for beauticians like a salon certificate, beautician id, and more document.",
+      title: "Certification Compliance",
+      desc: "Define and modify mandatory documentation protocols for specialists, including professional licenses, identification, and specialized aesthetic permits.",
       icon: FileCheck,
     },
     {
-      title: "View Order List",
-      desc: "Admin can view the list of pending, approved, rejected, ongoing, completed, and canceled order with details.",
+      title: "Assignment Monitoring",
+      desc: "Audit a comprehensive ledger of anticipated, authorized, current, fulfilled, and annulled treatments with high-fidelity detail.",
       icon: ClipboardList,
     },
     {
-      title: "Manage Service Category",
-      desc: "Admin can add, update, and delete the category of service. They can also set the status of the category as ON/OFF.",
+      title: "Service Taxonomy",
+      desc: "Administrators can initialize, refine, or remove aesthetic categories, with the capability to toggle service availability status globally.",
       icon: Layers,
     },
     {
-      title: "Payment Setting",
-      desc: "Admin can manage the payment settings of the site provider commission amount, payment methods of the site like cash, card, wallet.",
+      title: "Fiscal Protocols",
+      desc: "Orchestrate commission structures, authorized settlement gateways, and comprehensive platform financial parameters from a centralized module.",
       icon: CreditCard,
     },
     {
-      title: "Site Setting",
-      desc: "Admin can change the site logo, site name, contact details, app links, SMS gateway key, Google map API key from site setting.",
+      title: "Global Configuration",
+      desc: "Modify core platform identity, including brand logos, nomenclature, technical API integrations, and communication gateways.",
       icon: Settings,
     },
     {
-      title: "Mass Notifications",
-      desc: "Admin can send the mass notification message to all users, and service providers. The features used when an admin wants to broadcast message.",
+      title: "Broadcast Systems",
+      desc: "Disseminate localized or global broadcast alerts to the entire stakeholder network for critical updates or promotional campaigns.",
       icon: Bell,
     },
   ];
@@ -63,18 +63,19 @@ const WebAdminPanel = () => {
 
           <div className="inline-flex items-center gap-2 bg-[#eaf4fd] px-4 py-1.5 rounded-full border border-[#b7d4f6] text-sm text-gray-700 mb-6">
             <span className="w-2.5 h-2.5 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
-            Web Admin Panel
+            Governance Control Center
           </div>
 
           <h3 className="text-lg sm:text-4xl font-bold text-gray-700 mb-6">
             <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">
-              Super Admin Web Features
+              Elite Administrative Suite
             </span>{" "}
-            for Beauty Services
+            for Aesthetic Enterprise Oversight
           </h3>
 
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-            Explore the powerful features of our Super Admin Web Panel, designed to help you efficiently manage your on-demand beauty service business.
+            Discover the sophisticated modules within our Governance Control Center, specifically 
+            engineered to orchestrate your high-capacity aesthetic platform with precision.
           </p>
 
         </div>

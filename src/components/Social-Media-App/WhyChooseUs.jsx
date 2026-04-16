@@ -80,7 +80,7 @@ const WhyChooseUs = () => {
         <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-pink-100/40 blur-[100px] rounded-full" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 lg:px-8">
+      <div className="relative z-10 container mx-auto px-6 lg:px-24">
 
         {/* Heading - Updated Typography ONLY */}
         <div className="text-center max-w-2xl mx-auto mb-16">

@@ -3,28 +3,28 @@ import howitworks from "../../assets/homeservice-tutor-img/howitwork.webp";
 
 const steps = [
     {
-        title: "1. Login/Signup",
-        desc: "Student can log in or sign up with providing basic information or through social sites like Facebook, or Google.",
+        title: "1. Account Initialization",
+        desc: "Riders can authenticate or register by submitting essential details or utilizing external social credentials like Google or Facebook.",
     },
     {
-        title: "2. Search Tutors",
-        desc: "Students can search the nearest tutor, they can view provider profile details with name, far from their location, service pricing, ratings, etc.",
+        title: "2. Instructor Discovery",
+        desc: "Learners can identify proximate educators, examine comprehensive partner profiles including credentials, proximity, service rates, and user feedback.",
     },
     {
-        title: "3. Place Order",
-        desc: "After checking the tutor profile and pricing, students can choose the service based on their requirements and place the order.",
+        title: "3. Booking Initiation",
+        desc: "Upon reviewing educator expertise and pricing, users can select the most appropriate service and finalize their instructional request.",
     },
     {
-        title: "4. Provider Offer Service",
-        desc: "After accepting student requests, the tutor arrived at the student location and offer a service.",
+        title: "4. Service Execution",
+        desc: "Following the acceptance of the request, the instructor arrives at the designated venue to provide professional educational support.",
     },
     {
-        title: "5. Secure Payment",
-        desc: "Once the service is completed, the student has a flexible payment option like cash, card, and in-app wallet.",
+        title: "5. Protected Settlement",
+        desc: "After the instructional session concludes, students utilized diverse payment methods including digital portals, cards, or integrated virtual wallets.",
     },
     {
-        title: "6. Rating & Review",
-        desc: "Once payment completed, the student & provider both can give reviews and ratings to each other based on the service experience.",
+        title: "6. Performance Assessment",
+        desc: "Post-transaction, both the learner and the educator can exchange testimonials and ratings based on the quality of their instructional interaction.",
     },
 ];
 
@@ -39,12 +39,12 @@ const HowItWorks = () => {
                     {/* HEADER */}
                     <div className="mb-8">
                         <span className="inline-flex items-center gap-2 rounded-full border border-white/30 px-4 py-1 text-sm text-white">
-                            <span className="h-2 w-2 rounded-full bg-white" />
-                            How the App Works
+                            <span className="w-2 h-2 bg-[#f5b301] rounded-full" />
+                            Product Architecture
                         </span>
 
-                        <h2 className="mt-5 max-w-[520px] text-[30px] font-semibold leading-snug text-white sm:text-[36px]">
-                            How the On-Demand Tutor App Works
+                        <h2 className="text-center text-[34px] lg:text-[40px] font-bold text-white mb-4">
+                            The Mechanics of our <span className="text-[#f5a623]">Tutor Acquisition Portal</span>
                         </h2>
                     </div>
 
@@ -75,6 +75,10 @@ const HowItWorks = () => {
                   }
                 `}
                             </style>
+                            <p className="text-white/70 text-[16px] max-w-2xl mb-8">
+                                Our ecosystem facilitates a frictionless coordination between 
+                                learners and specialized educators.
+                            </p>
                             {steps.map((item, index) => (
                                 <div
                                     key={index}

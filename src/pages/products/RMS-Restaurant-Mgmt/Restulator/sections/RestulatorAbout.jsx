@@ -1,5 +1,5 @@
 import React from "react";
-import RestulatorAboutImg from "../../../../../assets/resulatorrms-img/resulatorrmsabout.jpg";
+import RestulatorAboutImg from "../../../../../assets/resulatorrms-img/resulatorrmsabout1.jpeg";
 import { CheckCircle } from "lucide-react";
 
 const RestulatorAbout = () => {
@@ -9,7 +9,7 @@ const RestulatorAbout = () => {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
                     {/* Left: Single Image */}
-                    <div className="relative">
+                    <div className="relative order-2 lg:order-1">
                         <div className="relative w-full h-[440px] rounded-[2.5rem] overflow-hidden shadow-xl">
                             <img src={RestulatorAboutImg} alt="About Fine Dining" className="w-full h-full object-cover" />
                         </div>
@@ -24,7 +24,7 @@ const RestulatorAbout = () => {
                     </div>
 
                     {/* Right: Text Content */}
-                    <div className="space-y-8 lg:pl-4">
+                    <div className="space-y-8 lg:pl-4 order-1 lg:order-2">
                         <div className="space-y-3">
                             <span className="inline-block text-amber-700 font-bold text-sm uppercase tracking-widest">
                                 About the Platform

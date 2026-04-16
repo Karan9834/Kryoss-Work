@@ -7,7 +7,7 @@ import {
     Bell,
     Users
 } from 'lucide-react';
-import erpadminpanel from "../../assets/erp-img/erpadminpanel.jpg";
+import erpadminpanel from "../../assets/erp-img/erpadminpanel1.jpg";
 
 const ErpAdminPanel = () => {
     const adminFeatures = [
@@ -46,7 +46,7 @@ const ErpAdminPanel = () => {
     return (
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
-                
+
                 {/* Badge - Added */}
                 <div className="flex justify-center mb-6">
                     <span className="border rounded-full px-4 py-1 text-[12px] font-medium tracking-[0.05em] uppercase flex items-center gap-2 border-blue-200 bg-blue-50">
@@ -61,7 +61,7 @@ const ErpAdminPanel = () => {
                 </h2>
 
                 <div className="bg-[#f7f7f7] rounded-[40px] px-8 md:px-12 pt-16 pb-0 flex flex-col md:flex-row items-center gap-10">
-                    
+
                     {/* LEFT CONTENT */}
                     <div className="md:w-1/2 pb-14">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -87,10 +87,10 @@ const ErpAdminPanel = () => {
 
                     {/* RIGHT IMAGE */}
                     <div className="md:w-1/2 flex justify-center items-end">
-                        <img 
-                            src={erpadminpanel} 
-                            alt="ERP Admin Control Panel" 
-                            className="w-[520px] h-auto"
+                        <img
+                            src={erpadminpanel}
+                            alt="ERP Admin Control Panel"
+                            className="w-[520px] rounded-3xl h-auto"
                         />
                     </div>
                 </div>

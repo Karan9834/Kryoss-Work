@@ -2,28 +2,28 @@ import React from "react";
 
 const testimonials = [
   {
-    name: "Mr. Stan",
+    name: "Alex Rivera",
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
-    text: "Mr. Stan shares his seamless and rewarding journey with our taxi app solution during the development of his ride-hailing platform. He highlights the team’s dedication, professionalism, and timely delivery."
+    text: "Alex Rivera shares his seamless and rewarding journey with our mobility solution during the launch of his transportation platform. He highlights our team’s dedication, professional expertise, and precision delivery."
   },
   {
-    name: "Mr. Labeeb",
+    name: "Labeeb Al-Farsi",
     image:
       "https://images.unsplash.com/photo-1556157382-97eda2f9e2bf",
-    text: "Mr. Labeeb praises the platform for delivering a powerful and scalable taxi booking app. He appreciates the commitment, transparency, and ongoing technical support provided throughout the process."
+    text: "Labeeb praises the architecture for delivering a robust and high-performance ride-hailing app. He values the transparency, commitment, and continuous technical assistance provided throughout our partnership."
   },
   {
-    name: "Oliveira Osman",
+    name: "Sofia Osman",
     image:
       "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c",
-    text: "Oliveira shares how the white-label solution helped him launch quickly and build strong relationships with his customers. The smooth workflow and modern design exceeded expectations."
+    text: "Sofia explains how our specialized white-label solution enabled a rapid market entry and helped foster genuine connections with her user base. The integrated workflow and premium design exceeded all expectations."
   },
   {
-    name: "Alfanzo",
+    name: "Mark Alfanzo",
     image:
       "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
-    text: "Our USA-based client Alfanzo explains how the solution helped transform his startup into a profitable business within weeks. He appreciates the flexibility and advanced features."
+    text: "Our international partner Mark describes how our innovative bidding script helped transform his local startup into a high-growth enterprise within weeks. He values the total flexibility and cutting-edge features."
   }
 ];
 
@@ -35,12 +35,12 @@ const ClientFeedbackSection = () => {
         {/* Pill */}
         <div className="inline-flex items-center gap-2 border border-[#cbd5c0] bg-white px-4 py-1 rounded-full text-sm text-gray-700 mb-6">
           <span className="w-2 h-2 bg-[#6dbb1a] rounded-full"></span>
-          Client Feedback
+          Operational Success
         </div>
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-16">
-          What Clients Say About Working With Our Taxi App Solutions
+          Success Stories from our Partners
         </h2>
 
         {/* Cards */}
@@ -84,7 +84,7 @@ const ClientFeedbackSection = () => {
         {/* CTA Button */}
         <div className="mt-16">
           <button className="bg-[#6dbb1a] hover:bg-[#5aa115] text-white px-8 py-3 rounded-full font-semibold transition duration-300 shadow-md">
-            Watch Client Reviews
+            Watch Partner Reviews
           </button>
         </div>
 

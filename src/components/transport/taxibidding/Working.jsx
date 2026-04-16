@@ -10,19 +10,19 @@ const HowItWorksSection = () => {
         <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 border border-[#cfe3a6] bg-white px-4 py-1 rounded-full text-sm text-gray-700">
             <span className="w-2 h-2 bg-[#6dbb1a] rounded-full"></span>
-            inDriver like App StakeHolders Flow
+            Operational Flow of our inDrive Replica
           </div>
         </div>
 
         {/* Heading */}
         <h2 className="text-center text-3xl md:text-4xl font-semibold mb-4">
           How Does{" "}
-          <span className="text-[#6dbb1a]">inDriver App</span>{" "}
-          Clone Work ?
+          <span className="text-[#6dbb1a]">Vyom Drive</span>{" "}
+          Architecture
         </h2>
 
         <p className="text-center text-gray-600 mb-16">
-          Explore the exclusive features along with the inner workings of the inDriver app
+          Understand the specialized features and internal logic of our white-label solution.
         </p>
 
         {/* Main Grid */}
@@ -58,15 +58,17 @@ const HowItWorksSection = () => {
           <div className="border border-[#9ac64d] rounded-[25px] p-10 bg-white/40">
 
             <p className="text-gray-700 leading-relaxed">
-              Experience the frictionless functionality of our inDriver clone through our
-              comprehensive demonstration. Explore how our innovative platform
-              operates all apps and panels, showcasing its stunning interface and robust features.
+              Witness the seamless operation of our inDrive-style platform through this 
+              detailed overview. Observe how our sophisticated ecosystem coordinates various 
+              applications and management interfaces, highlighting its premium design 
+              and powerful capabilities.
             </p>
 
             <p className="text-gray-700 leading-relaxed mt-4">
-              Discover the uniqueness of our platform as the inDriver clone app is developed
-              just like the original bidding application. From appealing interfaces to efficient
-              bidding processes, our application helps you upscale your existing transportation business.
+              Experience the distinction of a platform engineered to match the 
+              successful bidding models of industry leaders. With intuitive user 
+              experiences and precision price negotiation, our solution empowers 
+              you to modernize and scale your mobility enterprise.
             </p>
 
           </div>

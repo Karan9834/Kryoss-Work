@@ -1,5 +1,5 @@
 import React from "react";
-import festAboutImg from "../../../../../assets/eventnextems-img/eventnextemsabout.jpg";
+import festAboutImg from "../../../../../assets/eventnextems-img/eventnextemsabout1.jpeg";
 import { CheckCircle } from "lucide-react";
 
 const EventNextAbout = () => {
@@ -9,7 +9,7 @@ const EventNextAbout = () => {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
                     {/* Left: Image with decorative frame */}
-                    <div className="relative">
+                    <div className="relative order-2 lg:order-1">
                         <div className="relative w-full h-[420px] rounded-[2.5rem] overflow-hidden shadow-xl">
                             <img src={festAboutImg} alt="About Event Next" className="w-full h-full object-cover" />
                         </div>
@@ -24,7 +24,7 @@ const EventNextAbout = () => {
                     </div>
 
                     {/* Right: Text */}
-                    <div className="space-y-8">
+                    <div className="space-y-8 order-1 lg:order-2">
                         <div className="space-y-3">
                             <span className="inline-block text-blue-600 font-bold text-sm uppercase tracking-widest">
                                 About the Platform

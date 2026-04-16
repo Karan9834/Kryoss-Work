@@ -1,6 +1,6 @@
 import React from "react";
 import { MessageCircle } from "lucide-react";
-import salonHero from "@/assets/salon-booking-img/salonHero.jpeg"
+import salonHero from "@/assets/salon-booking-img/salonHero.jpg"
 const Hero = () => {
     return (
         <section className="relative bg-gradient-to-b from-[#0b2239] to-[#061726] text-white overflow-hidden">
@@ -15,17 +15,17 @@ const Hero = () => {
                         {/* Badge */}
                         <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-sm px-4 py-2 rounded-full backdrop-blur w-fit">
                             <span className="text-blue-400">&lt;/&gt;</span>
-                           Saas
+                            Saas
                         </div>
 
                         {/* Heading */}
                         <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight">
-                      Salon Booking System
+                            Salon Booking System
                         </h1>
 
                         {/* Description */}
                         <p className="text-gray-300 text-lg max-w-xl leading-relaxed">
-                     Appointment management for beauty and wellness centers.
+                            Appointment management for beauty and wellness centers.
                         </p>
 
                         <div className="flex flex-wrap gap-4">

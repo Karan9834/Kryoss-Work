@@ -1,10 +1,10 @@
 import React from "react";
 import { CheckCircle, Sparkles, Zap, Shield, TrendingUp, ArrowRight, Award, Users, Globe } from "lucide-react";
-
+import aboutimg from "../../assets/IMS/about.jpg";
 const AboutUs = () => {
   return (
     <section className="relative w-full bg-white overflow-hidden">
-      
+
       {/* Top Wave */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-0 rotate-180">
         <svg
@@ -37,7 +37,7 @@ const AboutUs = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 py-24">
-        
+
         {/* Section Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-full px-4 py-2">
@@ -49,20 +49,20 @@ const AboutUs = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
+
           {/* LEFT - Image Section */}
-          <div className="relative group">
+          <div className="relative group order-2 lg:order-1">
             {/* Animated Border Glow */}
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
+
             {/* Main Image Container */}
             <div className="relative bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-2">
               <img
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80"
+                src={aboutimg}
                 alt="Team collaboration in modern workspace"
                 className="w-full h-auto rounded-xl shadow-2xl transform group-hover:scale-105 transition-transform duration-700"
               />
-              
+
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-blue-500/10 via-transparent to-indigo-500/10 rounded-xl"></div>
             </div>
@@ -89,7 +89,7 @@ const AboutUs = () => {
           </div>
 
           {/* RIGHT - Content Section */}
-          <div className="space-y-6">
+          <div className="space-y-6 order-1 lg:order-2">
             {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
             <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900">
               Powering the{" "}
@@ -97,14 +97,14 @@ const AboutUs = () => {
                 Future of Work
               </span>
             </h2>
-            
+
             {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
             <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
               We build powerful, scalable solutions designed to simplify complex workflows
               and enhance productivity. Our platform combines cutting-edge technology with
               intuitive design to deliver seamless user experiences across industries.
             </p>
-            
+
             <p className="text-gray-500 text-[14px] md:text-[15px] font-normal leading-[1.6]">
               Trusted by businesses worldwide, we're committed to innovation and excellence
               in everything we create.

@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, Zap, Shield, TrendingUp, Sparkles, CheckCircle } from "lucide-react";
-
+import heroimg from "../../assets/IMS/hero.jpg";
 const IMSHero = () => {
   const handleScroll = () => {
     document.getElementById("products")?.scrollIntoView({
@@ -9,7 +9,7 @@ const IMSHero = () => {
   };
 
   return (
-    <section className="relative w-full py-16 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 overflow-hidden">
+    <section className="relative min-h-[90vh] w-full py-16 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 overflow-hidden">
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -21,7 +21,7 @@ const IMSHero = () => {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:40px_40px]"></div>
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center z-10">
+      <div className="relative max-w-6xl mx-auto px-8 lg:pt-20 grid md:grid-cols-2 gap-14 items-center z-10">
 
         {/* LEFT CONTENT */}
         <div className="space-y-4">
@@ -78,7 +78,7 @@ const IMSHero = () => {
             <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl rounded-xl border border-white/20 shadow-xl overflow-hidden">
               <div className="p-1">
                 <img
-                  src="https://images.unsplash.com/photo-1556740749-887f6717d7e4"
+                  src={heroimg}
                   alt="IMS Dashboard"
                   className="rounded-lg w-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />

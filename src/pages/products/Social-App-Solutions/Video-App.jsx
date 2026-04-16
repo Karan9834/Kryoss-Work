@@ -34,63 +34,63 @@ import {
 const featureList = [
   {
     icon: <User size={20} />,
-    title: "User-friendly Interface",
-    desc: "Appealing design that ensures seamless navigation, making TikTok-like app development effortless for users of all levels.",
+    title: "User-Friendly Design",
+    desc: "Attractive layout that guarantees smooth navigation, making the creation of a custom short-video app simple for all users.",
   },
   {
     icon: <User size={20} />,
-    title: "Profile Management",
-    desc: "Let users fill out all the details such as name, bio, preferences and other relevant info for creating and managing profiles.",
+    title: "Account Management",
+    desc: "Enable individuals to provide details like their name, bio, interests, and other vital data to build and maintain their accounts.",
   },
   {
     icon: <Video size={20} />,
-    title: "Video Posting",
-    desc: "Let users post videos with catchy hashtags, captions etc. Location and person can also be tagged while posting videos.",
+    title: "Video Uploading",
+    desc: "Allow creators to publish clips using engaging hashtags, descriptions, etc. People and places can be mentioned while uploading clips.",
   },
   {
     icon: <MessageCircle size={20} />,
-    title: "Social Features",
-    desc: "Make the most out of interactive social features such as like, share and comment to boost video engagement.",
+    title: "Community Features",
+    desc: "Utilize dynamic networking tools like liking, sharing, and commenting to maximize video interactions and audience reach.",
   },
   {
     icon: <Video size={20} />,
-    title: "Video Creation Tools",
-    desc: "Leverage advanced editing tools like filters, effects, texts, and AR filters to enhance videos.",
+    title: "Advanced Creation Tools",
+    desc: "Utilize powerful editing options like color filters, visual effects, text overlays, and AR elements to elevate visual quality.",
   },
   {
     icon: <MapPin size={20} />,
-    title: "Geolocation Tagging",
-    desc: "Users are allowed to tag videos with accurate location connecting users with local content.",
+    title: "Location Tagging",
+    desc: "Creators are permitted to pinpoint clips with precise geospatial data, linking audiences with relevant regional entertainment.",
   },
   {
     icon: <Bell size={20} />,
-    title: "Push Notification",
-    desc: "Enable users to stay connected with followers whenever new content or videos are posted.",
+    title: "Real-Time Alerts",
+    desc: "Allow audiences to remain engaged with favorite creators whenever fresh updates or brand-new clips are published online.",
   },
   {
     icon: <Video size={20} />,
-    title: "Create Your Channel",
-    desc: "Users can create and manage their unique channel among their friends and followers.",
+    title: "Channel Creation",
+    desc: "Creators can easily build and supervise their distinct profile spaces to interact with companions and their fan base.",
   },
   {
     icon: <Globe size={20} />,
-    title: "GoLive",
-    desc: "Users can go live and instantly notify their followers and friends about their activities.",
+    title: "Live Streaming",
+    desc: "Broadcasters can initiate live sessions and promptly alert their audience and peers regarding their current broadcasting sessions.",
   },
   {
     icon: <Music size={20} />,
-    title: "Song / Audio Selection",
-    desc: "Choose favorite tracks or upload audio to make the video posting experience personalized.",
+    title: "Soundtrack Integration",
+    desc: "Select preferred music or import personal audio files to ensure the clip sharing journey is highly customized and engaging.",
   },
   {
     icon: <Heart size={20} />,
-    title: "Like / Comment on Videos",
-    desc: "Users can like and comment on videos from other creators they find interesting.",
+    title: "Engage with Content",
+    desc: "Audiences can express appreciation and leave remarks on clips from various publishers they consider entertaining or useful.",
   },
   {
     icon: <Settings size={20} />,
-    title: "Other Important Settings",
-    desc: "Allow users to block people, manage privacy settings, and customize their experience.",
+    title: "Additional Preferences",
+    desc: "Permit individuals to restrict users, adjust visibility options, and tailor their overall platform journey as they see fit.",
   },
 ];
 
@@ -101,18 +101,18 @@ const featureList = [
 const adminFeatures = [
   {
     icon: <LayoutDashboard size={22} />,
-    title: "Centralized Dashboard",
-    desc: "Our TikTok like app comes with an interactive dashboard that helps you manage and monitor all the operations seamlessly.",
+    title: "Unified Administration",
+    desc: "Our short-video platform features a comprehensive control panel that assists you in supervising and directing all activities effortlessly.",
   },
   {
     icon: <Users size={22} />,
-    title: "User Management",
-    desc: "Enable admins to manage users, keep eyes on their profiles, and take the necessary actions when required.",
+    title: "Audience Supervision",
+    desc: "Permit administrators to oversee accounts, monitor individual details, and execute required interventions whenever necessary.",
   },
   {
     icon: <Settings size={22} />,
-    title: "General Settings",
-    desc: "Let Admin change the general settings, from features to payment settings to app layout, languages, and other settings.",
+    title: "System Configurations",
+    desc: "Allow operators to adjust primary configurations, ranging from modules to billing setups, interface design, dialects, and beyond.",
   },
 ];
 
@@ -123,18 +123,18 @@ const adminFeatures = [
 const platforms = [
   {
     icon: <Globe size={22} />,
-    title: "Web",
-    desc: "Give your users a branded web platform to access all the features they are looking for in the seamless browsing experience.",
+    title: "Web Portal",
+    desc: "Provide your audience with a customized browser platform to utilize all desired modules in a highly fluid navigation journey.",
   },
   {
     icon: <Smartphone size={22} />,
-    title: "Android App",
-    desc: "Make the most out of our TikTok clone app for the Android platform, and enjoy all the features from a single window.",
+    title: "Android Application",
+    desc: "Maximize the potential of our customized video platform for the Android ecosystem, accessing every module from one unified screen.",
   },
   {
     icon: <Apple size={22} />,
-    title: "iOS App",
-    desc: "Leverage a separate iOS app, allow users to go live and connect with their followers while delivering a great video-sharing experience.",
+    title: "iOS Application",
+    desc: "Utilize a dedicated iOS software, enabling individuals to stream live and interact with fans while providing excellent video sharing.",
   },
 ];
 
@@ -145,45 +145,45 @@ const platforms = [
 const monetization = [
   {
     icon: <ShoppingCart size={24} />,
-    title: "In-app Purchase",
-    desc: "Boost your revenue with in-app purchases. Offer exclusive features for a fee to enhance user experience.",
+    title: "Premium Upgrades",
+    desc: "Increase your income with internal transactions. Provide special modules for a charge to elevate the overall audience journey.",
     dark: true,
   },
   {
     icon: <Users size={24} />,
-    title: "Venture Capital",
-    desc: "Share your business idea with potential investors & connect with them to invest in your TikTok-like app.",
+    title: "Angel Investments",
+    desc: "Present your enterprise concept to interested funders and engage with them to secure capital for your short-video platform.",
     dark: true,
   },
   {
     icon: <Handshake size={24} />,
-    title: "Sponsored Post",
-    desc: "Allow users to get maximum engagement on their videos and earn through sponsored content.",
+    title: "Promoted Content",
+    desc: "Permit creators to secure optimal interaction on their clips and generate income through partnerships and backed materials.",
     dark: true,
   },
   {
     icon: <Megaphone size={24} />,
-    title: "Advertising",
-    desc: "Make the most out of advertising by promoting services and generating revenue.",
+    title: "Brand Advertising",
+    desc: "Maximize the potential of commercial placements by highlighting external products and establishing steady streams of income.",
     dark: false,
   },
 ];
 
 const steps = [
   {
-    title: "Gathering Requirements",
+    title: "Requirement Analysis",
     image: "/Video-App/process1.png",
   },
   {
-    title: "Design & Development",
+    title: "UI/UX & Engineering",
     image: "/Video-App/process1.png",
   },
   {
-    title: "Collect Third-Party Accounts",
+    title: "Third-Party Integration",
     image: "/Video-App/process1.png",
   },
   {
-    title: "Test and Launch",
+    title: "Quality Assurance",
     image: "/Video-App/process1.png",
   },
 ];
@@ -191,23 +191,23 @@ const steps = [
 const features = [
   {
     icon: <BadgeCheck size={28} />,
-    title: "Your Brand Name & Logo",
+    title: "Custom Brand Identity",
   },
   {
     icon: <Smartphone size={28} />,
-    title: "Android, iOS & Web",
+    title: "Cross-Platform Access",
   },
   {
     icon: <Rocket size={28} />,
-    title: "Ready To Launch",
+    title: "Quick Deployment",
   },
   {
     icon: <Globe size={28} />,
-    title: "Multi Language & Currency",
+    title: "Global Localization",
   },
   {
     icon: <Headphones size={28} />,
-    title: "Tech Support",
+    title: "Dedicated Assistance",
   },
 ];
 
@@ -215,34 +215,34 @@ const testimonials = [
   {
     name: "David",
     image: "/Video-App/client1.webp",
-    text: "Mr. David highly praised our team for superb, engaging great satisfaction with our service and eagerness for future successful collaboration.",
+    text: "Mr. David heavily commended our crew for excellent, captivating results and great contentment with our assistance and readiness for future success.",
   },
   {
     name: "Aman",
     image: "/Video-App/client2.webp",
-    text: "Mr. Aman expressed his excitement and satisfaction with the project, highlighting the exceptional work accomplished by the team.",
+    text: "Mr. Aman conveyed his enthusiasm and contentment regarding the delivery, emphasizing the outstanding execution achieved by the development team.",
   },
   {
     name: "Nora",
     image: "/Video-App/client3.webp",
-    text: "I am very happy and satisfied with work done over our project and the outcomes as well, highly recommend the team’s dedication.",
+    text: "I am extremely pleased and content with the effort invested in our initiative and the results as well, strongly suggesting the staff's commitment.",
   },
   {
     name: "George",
     image: "/Video-App/client4.webp",
-    text: "Mr. George Nkwocha praised our professionalism and plans future collaboration after a successful Fox-task app purchase.",
+    text: "Mr. George Nkwocha commended our expertise and envisions upcoming partnerships following a highly effective digital application acquisition.",
   },
 ];
 
 const apps = [
-  { title: "Gojek Clone App", image: "/Video-App/app1.webp" },
-  { title: "Uber Clone App", image: "/Video-App/app2.webp" },
-  { title: "Food Delivery App", image: "/Video-App/app3.webp" },
-  { title: "Medicine Delivery App", image: "/Video-App/app4.webp" },
-  { title: "Handyman Service App", image: "/Video-App/app5.webp" },
-  { title: "Carpool Ride App", image: "/Video-App/app6.webp" },
-  { title: "Indrive Clone App", image: "/Video-App/app7.webp" },
-  { title: "Delivery Anything App", image: "/Video-App/app8.webp" },
+  { title: "Gojek Alternative App", image: "/Video-App/app1.webp" },
+  { title: "Uber Alternative App", image: "/Video-App/app2.webp" },
+  { title: "Food Dispatch App", image: "/Video-App/app3.webp" },
+  { title: "Pharmacy Delivery App", image: "/Video-App/app4.webp" },
+  { title: "Handyman Booking App", image: "/Video-App/app5.webp" },
+  { title: "Ride Sharing App", image: "/Video-App/app6.webp" },
+  { title: "Indrive Alternative App", image: "/Video-App/app7.webp" },
+  { title: "Universal Delivery App", image: "/Video-App/app8.webp" },
 ];
 
 const recognitionPlatforms = [
@@ -254,56 +254,56 @@ const recognitionPlatforms = [
 
 const faqs = [
   {
-    question: "What is a TikTok Clone App, and how does it work?",
+    question: "What exactly is a Short-Video Clone App, and how does it function?",
     answer:
-      "A TikTok clone app is a ready-made platform that allows businesses to launch a short-video sharing app similar to TikTok with features like video uploads, filters, likes, comments, and sharing.",
+      "A short-video clone app is a pre-built system that permits enterprises to release a video-centric platform akin to popular networks with modules like publishing, effects, appreciation, remarks, and distribution.",
   },
   {
-    question: "How does the real-time video sharing feature work?",
+    question: "In what way does the instant video distribution module operate?",
     answer:
-      "The real-time video sharing feature allows users to upload and share videos instantly while interacting with others through comments, likes, and live engagement.",
+      "The instant video distribution module permits individuals to publish and distribute clips promptly while engaging with peers via remarks, appreciation, and live interactions.",
   },
   {
-    question: "How long does it take to launch my own TikTok Clone App?",
+    question: "What is the timeframe for releasing my personal Short-Video App?",
     answer:
-      "With our ready-made solution, your TikTok clone app can be launched within 5 working days depending on customization requirements.",
-  },
-  {
-    question:
-      "What are the essential features included in the TikTok Clone App?",
-    answer:
-      "Essential features include video uploading, live streaming, video editing tools, notifications, profile management, monetization tools, and analytics.",
-  },
-  {
-    question: "Is the TikTok Clone App customizable for my brand?",
-    answer:
-      "Yes, you can customize branding elements such as logo, colors, features, and additional integrations according to your business requirements.",
-  },
-  {
-    question: "How secure is the TikTok Clone App for users and creators?",
-    answer:
-      "Our platform uses secure authentication, data protection, and content moderation features to ensure a safe experience.",
-  },
-  {
-    question: "Can I monetize my TikTok Clone App?",
-    answer:
-      "Yes, monetization options include ads, subscriptions, sponsored content, and in-app purchases.",
-  },
-  {
-    question: "Can I integrate third-party services into the TikTok Clone App?",
-    answer:
-      "Yes, third-party integrations like payment gateways, analytics tools, and social login can be added.",
+      "Utilizing our pre-built framework, your personalized short-video application can be deployed within five business days contingent on specific modification needs.",
   },
   {
     question:
-      "Does the TikTok Clone App support both Android and iOS platforms?",
+      "Which core modules are integrated into this Short-Video Platform?",
     answer:
-      "Yes, our TikTok clone app supports Android, iOS, and web platforms.",
+      "Core modules encompass video publishing, live broadcasting, visual drafting utilities, alerts, account administration, profit-generation integrations, and reporting.",
   },
   {
-    question: "Will I get support after launching the TikTok Clone App?",
+    question: "Can this Short-Video App be tailored for my corporate identity?",
     answer:
-      "Yes, we provide post-launch support, maintenance, and upgrades for your platform.",
+      "Indeed, you may tailor corporate elements including logos, palettes, tools, and extra connections in accordance with your explicit organizational necessities.",
+  },
+  {
+    question: "How safe is the platform for active audiences and publishers?",
+    answer:
+      "Our system employs robust verification, information privacy, and material review mechanisms to guarantee a secure environment for all participants.",
+  },
+  {
+    question: "Am I able to generate revenue from my Short-Video App?",
+    answer:
+      "Certainly, revenue generation methods comprise advertisements, premium memberships, promoted materials, and internal virtual transactions.",
+  },
+  {
+    question: "Is it possible to attach external integrations into the App?",
+    answer:
+      "Absolutely, external connections such as billing processors, reporting dashboards, and external network authentications can be seamlessly incorporated.",
+  },
+  {
+    question:
+      "Is the Short-Video application compatible with Android and iOS ecosystems?",
+    answer:
+      "Yes, our provided short-video framework is fully compatible with Android, iOS, and browser-based administrative ecosystems.",
+  },
+  {
+    question: "Do you offer technical maintenance following the App rollout?",
+    answer:
+      "We certainly deliver complete post-deployment maintenance, troubleshooting, and system enhancements for your digital ecosystem.",
   },
 ];
 
@@ -347,15 +347,12 @@ const TikTokClonePage = () => {
               </span>
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-              Build Your Own{" "}
-              <span className="text-pink-500">TikTok Clone App</span>
+              Launch Your Very Own{" "}
+              <span className="text-pink-500">Short-Video Platform</span>
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              Launch your own TikTok-like app with ease! Our customizable TikTok
-              clone lets users create and share videos, helping your business
-              tap into the booming entertainment market. Get started in just 5
-              days and scale your app globally.
+              Introduce your proprietary video-sharing platform effortlessly! Our highly adaptable short-video framework allows audiences to generate and distribute clips, aiding your enterprise in entering the thriving digital media sector. Initiate operations in just 5 days and expand your audience worldwide.
             </p>
 
             <a
@@ -364,11 +361,11 @@ const TikTokClonePage = () => {
               rel="noopener noreferrer"
               className="bg-pink-500 hover:bg-pink-600 text-white px-7 py-3 rounded-full font-semibold transition duration-300 inline-block w-fit"
             >
-              Live Demo →
+              View Live Demo →
             </a>
             <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
               <MessageCircle size={18} />
-              Let's Discuss
+              Talk to Us
             </a>
           </div>
 
@@ -398,29 +395,23 @@ const TikTokClonePage = () => {
           {/* RIGHT CONTENT */}
           <div className="order-1 lg:order-2">
             <span className="text-sm bg-gray-100 px-5 py-1 rounded-full text-pink-600 font-medium">
-              About TikTok Clone
+              Platform Overview
             </span>
 
             <h2 className="text-4xl md:text-5xl font-bold mt-6 mb-8 leading-tight">
-              What is a <span className="text-pink-600">TikTok Clone App?</span>
+              Exactly What is a <span className="text-pink-600">Short-Video Application?</span>
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-5">
-              A TikTok clone app is a ready-to-launch, white-label platform that
-              allows entrepreneurs and businesses to create their own
-              short-video sharing app, similar to TikTok, without writing a
-              single line of code.
+              A short-video application is a fully prepared, white-label framework that permits visionaries and enterprises to construct their personalized quick-video sharing application, similar to trending apps, without coding from scratch.
             </p>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-5">
-              Our solution comes with advanced tools like real-time video
-              sharing, unlimited filters, interactive audio customization, and
-              more.
+              Our framework is equipped with sophisticated utilities such as instant video distribution, boundless visual effects, engaging sound modifications, and far more.
             </p>
 
             <p className="text-gray-600 text-lg leading-relaxed">
-              With scalable and customizable features, you can adjust the app to
-              suit changing market demands and user preferences.
+              Featuring adaptable and expandable attributes, you may tweak the platform to align with fluctuating industry patterns and audience expectations.
             </p>
           </div>
         </div>
@@ -432,17 +423,16 @@ const TikTokClonePage = () => {
           {/* LEFT CONTENT */}
           <div className="text-white">
             <span className="text-sm border border-white px-4 py-1 rounded-full">
-              TikTok Clone App Works
+              Operation Mechanism
             </span>
 
             <h2 className="text-4xl md:text-5xl font-bold mt-6 mb-8 leading-tight">
               How the{" "}
-              <span className="text-pink-400">TikTok Clone App Works</span>
+              <span className="text-pink-400">Short-Video Platform Operates</span>
             </h2>
 
             <p className="text-gray-200 mb-10 text-lg max-w-xl">
-              Our TikTok clone app is designed to provide an easy experience for
-              users and business owners to create, share and manage videos.
+              Our short-video application is crafted to deliver a seamless journey for audiences and enterprise leaders to generate, distribute, and supervise multimedia content.
             </p>
 
             {/* STEP 1 */}
@@ -452,10 +442,9 @@ const TikTokClonePage = () => {
               </div>
 
               <div>
-                <h4 className="font-semibold text-lg">Personalized Feed</h4>
+                <h4 className="font-semibold text-lg">Tailored Content Stream</h4>
                 <p className="text-gray-300">
-                  The app creates a personalized feed for each user based on
-                  interests and interactions.
+                  The system assembles a tailored content stream for every individual relying on personal preferences and activities.
                 </p>
               </div>
             </div>
@@ -467,10 +456,9 @@ const TikTokClonePage = () => {
               </div>
 
               <div>
-                <h4 className="font-semibold text-lg">Monetization Options</h4>
+                <h4 className="font-semibold text-lg">Revenue Opportunities</h4>
                 <p className="text-gray-300">
-                  Creators can monetize through ads, sponsored content, or
-                  direct support.
+                  Broadcasters can generate income via commercials, backed materials, or immediate follower contributions.
                 </p>
               </div>
             </div>
@@ -483,11 +471,10 @@ const TikTokClonePage = () => {
 
               <div>
                 <h4 className="font-semibold text-lg">
-                  Admin Control & Analytics
+                  Administrative Governance
                 </h4>
                 <p className="text-gray-300">
-                  Admin panel helps track performance and manage users
-                  efficiently.
+                  The control dashboard aids in monitoring metrics and administrating active profiles with optimal efficiency.
                 </p>
               </div>
             </div>
@@ -510,17 +497,15 @@ const TikTokClonePage = () => {
           {/* LEFT CONTENT */}
           <div className="w-1/2 text-white z-10">
             <h2 className="text-4xl font-semibold leading-snug mb-6">
-              Ready to Launch Your Own TikTok-Like App?
+              Prepared to Release Your Custom Video-Sharing Software?
             </h2>
 
             <p className="text-gray-200 mb-8 max-w-lg">
-              Don’t wait to start your entertainment business! With our
-              customizable TikTok clone app, you can launch in just 5 days and
-              begin capturing the attention of millions.
+              Do not delay launching your digital media venture! Utilizing our adaptable video-sharing framework, you may deploy in merely 5 days and start attracting the focus of millions.
             </p>
 
             <Link to="/company/contact" className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-[#0b2d63] transition">
-              Request a Consultation
+              Get a Free Estimate
             </Link>
           </div>
 
@@ -541,18 +526,16 @@ const TikTokClonePage = () => {
         {/* Heading */}
         <div className="text-center max-w-5xl mx-auto mb-24 px-4">
           <span className="text-xs border px-4 py-1 rounded-full text-red-500 border-red-200">
-            Features
+            System Capabilities
           </span>
 
           <h2 className="text-4xl md:text-5xl font-bold mt-6 leading-tight">
-            Key Features of{" "}
-            <span className="text-red-500">Our TikTok Clone App</span>
+            Primary Attributes of{" "}
+            <span className="text-red-500">Our Video Sharing System</span>
           </h2>
 
           <p className="text-gray-600 mt-6 text-lg leading-relaxed">
-            Unlock your entertainment platform’s potential with our TikTok clone
-            app. Enjoy real-time video sharing, unlimited filters, and seamless
-            customization for a unique user experience.
+            Maximize your media framework’s capabilities utilizing our video-sharing solution. Experience instant media distribution, boundless visual effects, and flawless adaptability for an exceptional audience journey.
           </p>
         </div>
 
@@ -600,18 +583,16 @@ const TikTokClonePage = () => {
         {/* Heading */}
         <div className="text-center max-w-5xl mx-auto px-6 mb-20">
           <span className="text-sm border border-red-300 text-red-500 px-5 py-1 rounded-full">
-            Admin Panel
+            Control Dashboard
           </span>
 
           <h2 className="text-4xl md:text-5xl font-semibold mt-6 leading-tight">
-            Control Your App with a{" "}
-            <span className="text-red-500">Powerful Admin Panel</span>
+            Supervise Your Platform via a{" "}
+            <span className="text-red-500">Robust Command Center</span>
           </h2>
 
           <p className="text-gray-600 mt-6 text-lg leading-relaxed">
-            Manage your TikTok clone app effortlessly with our intuitive admin
-            panel. Designed for ease of use, it gives you full control over user
-            management, content moderation, and performance tracking.
+            Direct your video-streaming platform easily using our user-friendly dashboard. Crafted for maximum convenience, it grants complete authority regarding profile administration, media screening, and metrics evaluation.
           </p>
         </div>
 
@@ -657,19 +638,18 @@ const TikTokClonePage = () => {
       <section className="w-full bg-white py-32">
         <div className="text-center max-w-5xl mx-auto px-6 mb-20">
           <span className="text-sm border border-red-300 text-red-500 px-5 py-1 rounded-full">
-            What We Provide
+            Our Offerings
           </span>
 
           <h2 className="text-4xl md:text-5xl font-semibold mt-6 leading-tight">
-            Cross-Platform Availability{" "}
+            Multi-Environment Accessibility{" "}
             <span className="text-red-500">
-              Android, iOS, and Web Admin Panel
+              Android, iOS, and Browser Dashboard
             </span>
           </h2>
 
           <p className="text-gray-600 mt-6 text-lg">
-            Our TikTok clone app is designed to provide an exceptional
-            experience across multiple platforms.
+            Our video-sharing software is optimized to deliver an outstanding journey across various digital environments.
           </p>
         </div>
 
@@ -700,17 +680,16 @@ const TikTokClonePage = () => {
       <section className="w-full py-32 text-white bg-gradient-to-r from-[#3b0006] via-[#0a1b22] to-[#02242b]">
         <div className="text-center max-w-5xl mx-auto px-6 mb-20">
           <span className="text-sm border border-white px-5 py-1 rounded-full">
-            Monetization
+            Revenue Generation
           </span>
 
           <h2 className="text-4xl md:text-5xl font-semibold mt-6 leading-tight">
-            <span className="text-pink-400">Multiple Ways to Monetize</span>{" "}
-            Your TikTok Clone App
+            <span className="text-pink-400">Diverse Methods to Profit</span>{" "}
+            From Your Platform
           </h2>
 
           <p className="text-gray-300 mt-6 text-lg">
-            Maximize your revenue potential with various monetization
-            strategies.
+            Optimize your commercial opportunities employing distinct revenue-generating methodologies.
           </p>
         </div>
 
@@ -754,16 +733,15 @@ const TikTokClonePage = () => {
         >
           <div className="text-white max-w-xl z-10">
             <h2 className="text-5xl font-semibold leading-tight mb-8">
-              Take the First Step Towards Your TikTok Clone App
+              Initiate the First Move Toward Your Custom Media App
             </h2>
 
             <p className="text-gray-200 text-lg mb-10">
-              Ready to make your mark in the entertainment industry? With our
-              TikTok clone app, you can launch your business in just 5 days.
+              Prepared to establish your presence within the digital media sector? Utilizing our short-video network software, you may initiate your operations within just 5 days.
             </p>
 
             <button className="border border-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-black transition">
-              Launch Your Platform
+              Deploy Your System
             </button>
           </div>
 
@@ -781,19 +759,18 @@ const TikTokClonePage = () => {
       <section className="w-full bg-white py-32">
         <div className="text-center max-w-5xl mx-auto mb-20 px-6">
           <span className="text-sm border px-5 py-1 rounded-full border-red-200 text-red-500">
-            Development Process
+            Engineering Workflow
           </span>
 
           <h2 className="text-4xl md:text-5xl font-bold mt-6 leading-tight">
-            Our Seamless{" "}
+            Our Fluid{" "}
             <span className="text-red-500">
-              TikTok Clone App Development Process
+              Application Construction Procedure
             </span>
           </h2>
 
           <p className="text-gray-600 mt-6 text-lg">
-            We follow a structured and efficient process to bring your TikTok
-            clone app to life, ensuring the highest quality and fast deployment.
+            We employ an organized and agile approach to materialize your short-video network, guaranteeing premium standards and accelerated release times.
           </p>
         </div>
 
@@ -834,26 +811,24 @@ const TikTokClonePage = () => {
 
           <div>
             <span className="text-sm border border-pink-400 px-5 py-1 rounded-full">
-              Get Your Digital Footprint
+              Establish Your Presence
             </span>
 
             <h2 className="text-4xl md:text-5xl font-semibold mt-6 mb-8 leading-tight">
-              Launch Your TikTok Clone{" "}
-              <span className="text-pink-400">App in Just 5 Days</span>
+              Deploy Your Digital Network{" "}
+              <span className="text-pink-400">in Merely 5 Days</span>
             </h2>
 
             <p className="text-gray-300 mb-5 text-lg">
-              Get your TikTok clone app up and running in just 5 working days
-              with our fast, easy-to-deploy solution.
+              Get your custom video platform fully operational within 5 business days utilizing our rapid, simple-to-implement architecture.
             </p>
 
             <p className="text-gray-300 mb-5 text-lg">
-              Our ready-made TikTok clone includes all essential features to
-              keep users engaged.
+              Our pre-configured framework incorporates all necessary modules to ensure audiences remain deeply involved.
             </p>
 
             <p className="text-gray-300 text-lg">
-              Focus on growing your platform while we handle fast deployment.
+              Concentrate on expanding your network while we manage the rapid technical implementation.
             </p>
           </div>
         </div>
@@ -861,17 +836,16 @@ const TikTokClonePage = () => {
         {/* Why Choose */}
         <div className="text-center max-w-5xl mx-auto px-6 mt-32">
           <span className="text-sm border border-pink-400 text-pink-300 px-5 py-1 rounded-full">
-            Why Choose Us
+            Why Pick Us
           </span>
 
           <h2 className="text-4xl md:text-5xl font-semibold mt-6">
-            Why Choose{" "}
-            <span className="text-pink-400">Our TikTok Clone App?</span>
+            Why Select{" "}
+            <span className="text-pink-400">Our Video Network Solution?</span>
           </h2>
 
           <p className="text-gray-300 mt-5 text-lg">
-            Our TikTok Clone App is the ideal solution for quickly launching
-            your short-video sharing platform with minimal effort.
+            Our digital framework forms the perfect methodology for rapidly deploying your brief-video broadcasting network with very minimal friction.
           </p>
         </div>
 
@@ -888,35 +862,29 @@ const TikTokClonePage = () => {
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-16 mt-16 px-10 text-base text-gray-200">
           <ul className="space-y-5 list-disc pl-6">
             <li>
-              Launch your TikTok-like app in just 5 working days, not weeks, so
-              you can start engaging users immediately.
+              Deploy your media-centric application in merely 5 business days, instead of months, ensuring you start captivating audiences right away.
             </li>
 
             <li>
-              Tailor the app to fit your unique business needs, services, and
-              branding, creating a personalized experience.
+              Customize the software to match your specific corporate requirements, offerings, and visual identity, establishing a bespoke atmosphere.
             </li>
 
             <li>
-              Enjoy a simple and intuitive interface that ensures a smooth
-              experience for users watching or creating videos.
+              Experience a streamlined and user-friendly interface that guarantees a frictionless journey for audiences viewing or publishing media.
             </li>
           </ul>
 
           <ul className="space-y-5 list-disc pl-6">
             <li>
-              Designed to grow with your business with top-tier security
-              features to protect user data and ensure reliability.
+              Architected to expand alongside your enterprise utilizing premium protective security to safeguard client information and ensure uptime.
             </li>
 
             <li>
-              Keep users informed in real time with notifications about uploads,
-              interactions, and updates.
+              Ensure audiences stay updated instantaneously via prompt alerts regarding fresh content, social engagements, and system enhancements.
             </li>
 
             <li>
-              Expand your reach effortlessly with built-in multi-currency and
-              multi-language options.
+              Broaden your demographic effortlessly utilizing integrated multi-currency logic and comprehensive language translation parameters.
             </li>
           </ul>
         </div>
@@ -926,13 +894,13 @@ const TikTokClonePage = () => {
       <section className="w-full py-32 bg-gradient-to-r from-[#d7e4f2] via-[#d7e7d8] to-[#f4e3c9]">
         <div className="max-w-[1400px] mx-auto px-10 text-center">
           <span className="text-sm border px-5 py-1 rounded-full border-red-300 text-red-500">
-            People Love Our Platform
+            Users Admire Our System
           </span>
 
           <h2 className="text-4xl font-semibold mt-6 mb-16">
-            Let's Check{" "}
+            Discover{" "}
             <span className="text-red-500">
-              What Our Clients Love to Share!
+              What Our Patrons Enthusiastically Report!
             </span>
           </h2>
 
@@ -967,12 +935,12 @@ const TikTokClonePage = () => {
       <section className="w-full bg-gray-50 py-32">
         <div className="text-center mb-20 px-6">
           <span className="text-sm border border-red-300 px-5 py-1 rounded-full text-red-500">
-            Product Showcase
+            Catalogue Display
           </span>
 
           <h2 className="text-4xl md:text-5xl font-semibold mt-6">
-            Explore Our{" "}
-            <span className="text-red-500">On-Demand App Solutions</span>
+            Examine Our{" "}
+            <span className="text-red-500">On-Demand Software Offerings</span>
           </h2>
         </div>
 
@@ -1002,13 +970,13 @@ const TikTokClonePage = () => {
       <section className="w-full py-32 bg-[#4b0009]">
         <div className="max-w-[1400px] mx-auto px-10 text-center">
           <span className="text-sm border border-pink-400 text-pink-300 px-5 py-1 rounded-full">
-            Awards & Recognition
+            Honors & Accolades
           </span>
 
           <h2 className="text-4xl md:text-5xl font-semibold text-white mt-6">
-            Recognized by{" "}
+            Acknowledged by{" "}
             <span className="text-pink-400">
-              Global Review Platforms & Industry Leaders
+              Important Evaluation Boards & Market Pioneers
             </span>
           </h2>
 
@@ -1041,11 +1009,11 @@ const TikTokClonePage = () => {
       <section className="w-full bg-white py-32">
         <div className="text-center mb-20">
           <span className="text-sm border border-red-300 text-red-500 px-5 py-1 rounded-full">
-            FAQ's
+            Inquiries
           </span>
 
           <h2 className="text-4xl md:text-5xl font-semibold mt-6 text-red-500">
-            Frequently Asked Questions
+            Commonly Raised Questions
           </h2>
         </div>
 

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import crmHero from "../../../assets/Enterprise-Product/crmhero.png";
+import crmHero from "../../../assets/Enterprise-Product/crmhero.jpg";
 
 const CRMHero = () => {
   return (
@@ -75,7 +75,7 @@ const CRMHero = () => {
           <img
             src={crmHero}
             alt="CRM Dashboard"
-            className="w-full max-w-[620px] object-contain"
+            className="w-full max-w-[620px] rounded-3xl object-contain"
           />
         </motion.div>
 

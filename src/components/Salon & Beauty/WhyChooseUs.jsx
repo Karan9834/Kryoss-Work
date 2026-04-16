@@ -2,12 +2,12 @@ import React from "react";
 
 const WhyChooseUs = () => {
   const points = [
-    "Get your On-Demand Beauty App up and running within just 5 working days, allowing you to connect clients with professional beauticians instantly.",
-    "Customize the app to meet your business’s unique needs, incorporating tailored features and branding to enhance the user experience.",
-    "Enjoy an intuitive design that ensures a smooth and seamless experience for both users and beauticians, making the platform easy to navigate.",
-    "Built to scale, our app grows alongside your business, with robust security measures in place to protect user data and ensure app reliability.",
-    "Keep your users informed with instant notifications for new bookings, service updates, and other important alerts.",
-    "Take full control of your app with an easy-to-use admin panel that enables you to manage users, payments, and all other key activities from one central dashboard." ];
+    "Initialize your dedicated aesthetic application within a 5-day operational window, facilitating immediate synchronization between clients and elite practitioners.",
+    "Adapt the framework to align with your specific commercial requirements, integrating specialized modules and unique branding to optimize participant engagement.",
+    "Leverage a sophisticated UI architecture that guarantees a frictionless interactions for both participants and specialists, optimizing platform usability.",
+    "Engineered for expansion, our framework evolves with your enterprise, utilizing rigorous defensive protocols to safeguard participant data and system integrity.",
+    "Maintain participant awareness through immediate broadcast alerts for new reservations, technical updates, and critical operational milestones.",
+    "Exercise comprehensive governance via an intuitive administrative console, facilitating orchestration of participants, fiscal settlements, and core operations from a unified center." ];
 
   return (
     <section className="py-14  text-white"
@@ -21,13 +21,13 @@ const WhyChooseUs = () => {
           <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-1.5 rounded-full border border-white/20 text-sm mb-6">
             <span className="w-2.5 h-2.5 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
           
-            Why Choose Us
+            Our Value Proposition
           </div>
 
           <h2 className="text-[38px] font-semibold">
-           <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text"> Why Choose Our</span> Uber for Beauty App?
+           <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text"> Why Select the</span> Vyom Beauty Ecosystem?
           </h2>
-          <p>Our Uber for Beauty App is the ultimate solution for quickly and efficiently launching your beauty service business. Here’s why our app stands out as the best choice:</p>
+          <p>The Vyom Beauty platform represents the definitive architecture for rapid and high-efficiency deployment of your aesthetic services firm. Here is why our framework is the industry benchmark:</p>
 
         </div>
 
@@ -60,18 +60,3 @@ const WhyChooseUs = () => {
 };
 
 export default WhyChooseUs;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

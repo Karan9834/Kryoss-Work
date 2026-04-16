@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Shield, Zap, Globe, Sparkles, ArrowRight } from "lucide-react";
-import aboutImg from "../../assets/socialmedia-product/About Us.jpg";
+import aboutImg from "../../assets/socialmedia-product/aboutus.png";
 
 const AboutSection = () => {
   const containerVariants = {
@@ -65,19 +65,19 @@ const AboutSection = () => {
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-pink-50 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+      <div className="relative z-10 container mx-auto px-20">
+        <div className="flex flex-col lg:flex-row items-center gap-30">
 
           {/* LEFT IMAGE */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex-1 flex justify-center"
+            className="flex-1 flex justify-center order-2 lg:order-1"
           >
             <motion.div
               whileHover={{ scale: 1.03 }}
-              className="relative w-[360px] sm:w-[420px] lg:w-[520px]"
+              className="relative w-[360px] sm:w-[420px] lg:w-[550px]"
             >
               {/* Glow */}
               <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-purple-200 via-pink-200 to-indigo-200 blur-2xl opacity-40" />
@@ -106,7 +106,7 @@ const AboutSection = () => {
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
-            className="flex-1 max-w-xl"
+            className="flex-1 max-w-xl order-1 lg:order-2"
           >
 
             {/* Badge - Updated: text-[14px] font-semibold */}

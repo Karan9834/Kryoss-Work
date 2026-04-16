@@ -1,5 +1,5 @@
 import React from "react";
-import festHeroImg from "../../../../../assets/eventnextems-img/eventnextemshero.jpg";
+import festHeroImg from "../../../../../assets/eventnextems-img/eventnextemshero1.jpeg";
 import { ArrowRight, Zap, Star, MessageCircle } from "lucide-react";
 
 const EventNextHero = () => {
@@ -62,10 +62,10 @@ const EventNextHero = () => {
                             Live Demo
                             <ArrowRight size={20} />
                         </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+                        <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                            <MessageCircle size={18} />
+                            Let's Discuss
+                        </a>
                     </div>
                 </div>
 

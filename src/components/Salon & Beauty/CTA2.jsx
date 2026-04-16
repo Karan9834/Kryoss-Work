@@ -25,13 +25,17 @@ background: "linear-gradient(84.32deg, #913417 0.19%, #AC573D 100%)",
             <h2 className="text-2xl sm:text-3xl md:text-4xl 
                            font-semibold text-white 
                            leading-tight mb-5">
-      Grow Your Beauty Business with an On-Demand App!
+      Scale Your Aesthetic Enterprise via a Dynamic On-Demand Suite!
             </h2>
 
             <p className="text-white/90 text-sm sm:text-base 
                           leading-relaxed mb-6 max-w-xl 
                           mx-auto md:mx-0">
-              Take your beauty business to the next level with an on-demand Uber for Beauty App. Streamline bookings, enhance customer experiences, and expand your services efficiently.    </p>
+              Elevate your professional styling firm to its maximum potential 
+              with our high-utility Vyom Beauty framework. Optimize scheduling, 
+              refine participant interactions, and broaden your technical service 
+              reach with high efficiency.
+            </p>
 
             <Link to="/company/contact" className="bg-white text-blue-600 
                                font-semibold 

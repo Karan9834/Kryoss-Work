@@ -1,15 +1,15 @@
 import React from "react";
-
+import heroimg from '@/assets/saloon-beauty-img/hero1.jpg'
 const Hero = () => {
   return (
     <section
-      className="relative w-full bg-cover bg-center bg-no-repeat"
+      className="relative min-h-[90vh] w-full bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
           "url('https://whitelabelfox.com/assets/images/uber-beauty-app/Fox-Beauty-Hero-section-BG.webp')",
       }}
     >
-      <div className="max-w-8xl mx-auto px-6 md:px-10 py-20 md:py-10 flex flex-col-reverse md:flex-row items-center md:justify-between gap-10">
+      <div className="max-w-8xl mx-auto px-6 md:px-24 py-20 md:py-10 flex flex-col-reverse md:flex-row items-center md:justify-between gap-10">
         {/* LEFT CONTENT */}
         <div className="md:w-1/2 flex flex-col justify-center text-center md:text-left">
           {/* Logo Badge */}
@@ -43,20 +43,21 @@ const Hero = () => {
 
           {/* Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-snug text-white">
-            Launch Your{" "}
+            Establish Your{" "}
             <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] bg-clip-text text-transparent">
               {" "}
-              Own Uber for Beauty{" "}
+              Premiere On-Demand Aesthetic{" "}
             </span>
-            App
+            Ecosystem
           </h1>
 
           {/* Paragraph */}
           <p className="text-gray-200 text-base sm:text-lg md:text-lg mb-8 max-w-xl">
-            Transform your salon business or startup with a cutting-edge beauty
-            service app. We offer on-demand beauty app development, delivering
-            advanced solutions tailored to your needs.
-            Transform your salon business or startup with a cutting-edge beauty service app. We offer on-demand beauty app development, delivering advanced solutions tailored to your needs.
+            Elevate your professional beauty enterprise or boutique startup with a
+            sophisticated styling application. Our team provides specialized beauty
+            platform engineering, supplying elite logical frameworks customized to
+            your unique commercial objectives.
+
           </p>
 
           {/* Button */}
@@ -81,7 +82,7 @@ const Hero = () => {
         {/* RIGHT IMAGE */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
           <img
-            src="https://whitelabelfox.com/assets/images/uber-beauty-app/Fox-Beauty-Hero-section-image.webp"
+            src={heroimg}
             alt="Home Cleaning App"
             className="w-full max-w-md md:max-w-lg rounded-xl shadow-xl"
           />

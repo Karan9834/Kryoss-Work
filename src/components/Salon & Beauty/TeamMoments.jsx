@@ -10,8 +10,8 @@ const TeamMoments = () => {
 
         {/* Heading */}
         <h2 className="text-center text-4xl font-bold mb-14">
-          Inside Our Team:{" "}
-          <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">Moments That Matter</span>
+          Behind the Scenes:{" "}
+          <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">Strategic Collaboration & Technical Synergy</span>
         </h2>
 
         {/* Single Image */}

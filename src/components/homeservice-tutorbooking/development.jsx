@@ -6,28 +6,28 @@ import development4 from "../../assets/homeservice-tutor-img/development4.webp";
 
 const steps = [
     {
-        title: "Gathering Requirements",
+        title: "Strategic Discovery",
         image: development1,
         description:
-            "The first step is to understand your business needs and objectives. We work closely with you to gather detailed requirements, ensuring we tailor the app to your specific goals. This phase includes discussing features, design preferences, and overall functionality, making sure every aspect aligns with your vision.",
+            "The foundational phase involves comprehensive analysis of your commercial objectives and user demographic needs. We collaborate intensely with your team to architect specific requirements, ensuring the final application resonates with your enterprise goals. This stage focuses on functional logic, aesthetic signature, and specialized utility integration.",
     },
     {
-        title: "Design & Development",
+        title: "Aesthetic & Logic Engineering",
         image: development2,
         description:
-            "Our skilled developers and designers work together to bring your app to life. We focus on creating a user-friendly interface and developing robust functionality. The design enhances usability while the app is built with scalable and secure code.",
+            "Our veteran designers and software engineers synchronize their expertise to materialize your digital vision. We prioritize the development of a frictionless user interface integrated with sophisticated functional modules. The visual architecture optimizes participant engagement while the backend is constructed on resilient, enterprise-grade logic.",
     },
     {
-        title: "Collect Third-Party Accounts",
+        title: "Ecosystem Integration",
         image: development3,
         description:
-            "Next, we integrate necessary third-party services such as payment gateways, messaging platforms, and location services. This ensures the app functions seamlessly and enables essential features like secure transactions and real-time notifications.",
+            "We execute the seamless orchestration of critical external services, ranging from protected financial gateways and communication protocols to spatial mapping systems. This guarantees consistent platform performance and enables mission-critical functionalities such as auditable transactions and instant alerts.",
     },
     {
-        title: "Test and Launch",
+        title: "Validation & Deployment",
         image: development4,
         description:
-            "Before launch, the app undergoes rigorous testing for bugs, compatibility, and performance. Once approved, we deploy it on the Play Store and App Store, bringing your on-demand tutoring service to users.",
+            "Prior to market introduction, the framework is subjected to exhaustive quality assurance testing to verify stability, device compatibility, and performance efficiency. Upon successful validation, we oversee the distribution to premier mobile marketplaces, initiating your instructional venture.",
     },
 ];
 
@@ -39,17 +39,18 @@ const DevelopmentProcess = () => {
                 <div className="text-center mb-14">
                     <span className="inline-flex items-center gap-2 px-4 py-1 border border-gray-300 rounded-full text-sm text-gray-700 mb-4">
                         <span className="w-2 h-2 rounded-full bg-orange-500"></span>
-                        Development Process
+                        Engineering Lifecycle
                     </span>
 
                     <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">
-                        Our <span className="text-orange-500">Seamless Development</span>{" "}
-                        Process
+                        Our <span className="text-orange-500">Integrated Platform</span>{" "}
+                        Development Framework
                     </h2>
 
                     <p className="max-w-3xl mx-auto mt-4 text-gray-600">
-                        We follow a structured approach to deliver your on-demand tutor app,
-                        from gathering requirements to the final launch.
+                        We adhere to a rigorous architectural methodology to deploy your 
+                        instructional ecosystem, spanning from initial strategic discovery 
+                        to ultimate market deployment.
                     </p>
                 </div>
 
@@ -75,7 +76,7 @@ const DevelopmentProcess = () => {
                                     <h3 className="text-xl font-semibold text-orange-500 mb-4">
                                         {item.title}
                                     </h3>
-                                    <p className="text-gray-700 text-center leading-relaxed">
+                                    <p className="text-gray-700 text-center text-sm leading-relaxed">
                                         {item.description}
                                     </p>
                                 </div>

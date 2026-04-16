@@ -4,23 +4,23 @@ import { ClipboardList, Plug, Code, Rocket } from "lucide-react";
 const DevelopmentProcess = () => {
   const features = [
     {
-      title: "Gathering Requirements",
-      desc: "The first step is understanding your beauty business needs and goals. We collaborate closely with you to gather detailed requirements, ensuring the app is tailored to meet your objectives.",
+      title: "Strategic Analysis",
+      desc: "The foundational phase involves auditing your specific aesthetic enterprise objectives. We prioritize deep collaboration to synthesize technical requirements, ensuring the architectural alignment of the final module.",
       icon: ClipboardList,
     },
     {
-      title: "Collect Thira-party Accounts",
-      desc: "Next, we integrate essential third-party services including payment gateways, messaging platforms, and location tracking.",
+      title: "Technical Integration",
+      desc: "Subsequently, we configure vital external API protocols including fiscal settlement gateways, synchronized communication modules, and geographic positioning systems.",
       icon: Plug,
     },
     {
-      title: "Design & Development",
-      desc: "Our designers and developers create a visually appealing interface while building robust functionality.",
+      title: "Prototyping & Logic",
+      desc: "Our architects and engineers synthesize high-fidelity visual interfaces while simultaneously constructing the underlying technical logic.",
       icon: Code,
     },
     {
-      title: "Test and launch",
-      desc: "Before launching, your app undergoes thorough testing to ensure everything works flawlessly.",
+      title: "Quality Assurance & Deployment",
+      desc: "Prior to final initialization, your platform undergoes rigorous validation protocols to guarantee maximum operational stability and performance.",
       icon: Rocket,
     },
   ];
@@ -34,18 +34,19 @@ const DevelopmentProcess = () => {
 
           <div className="inline-flex items-center gap-2 border border-white/40 px-4 py-1.5 rounded-full text-sm mb-6">
             <span className="w-2.5 h-2.5 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
-            Development Process
+            Engineering Lifecycle
           </div>
 
           <h3 className="text-lg sm:text-4xl font-bold text-gray-700 mb-6">
             <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">
-              Our Seamless
+              Our Integrated
             </span>{" "}
-            Development Process
+            Deployment Methodology
           </h3>
 
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-            We follow a structured approach to deliver your on-demand beauty app.
+            We utilize a systemic framework to facilitate the arrival of your 
+            aesthetic service ecosystem.
           </p>
 
         </div>

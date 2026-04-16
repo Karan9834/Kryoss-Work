@@ -17,63 +17,63 @@ import {
 
 const features = [
     {
-        title: "Live Driver Tracking",
-        desc: "From the moment a driver accepts an order, they can easily track everything in real-time.",
+        title: "Real-Time Courier Monitoring",
+        desc: "The moment a request is acknowledged, passengers can observe the detailed progress in a live environment.",
         icon: MapPin,
     },
     {
-        title: "Surge Pricing Visibility",
-        desc: "Before confirming the booking, users can check surge pricing during high demand for services.",
+        title: "Peak Frequency Pricing",
+        desc: "Prior to making a reservation, passengers can view adjusted rates during periods of high platform activity.",
         icon: TrendingUp,
     },
     {
-        title: "Accessibility Options",
-        desc: "Easy accessibility facilitates the Uber clone script users to book a ride comfortably without barriers.",
+        title: "Inclusion Capabilities",
+        desc: "Simplified accessibility options empower all platform participants to book transportation without any obstacles.",
         icon: Accessibility,
     },
     {
-        title: "Saved Locations",
-        desc: "Customers can save their favourite destination to speed up the repeat bookings process.",
+        title: "Frequently Visited Places",
+        desc: "Passengers can store their preferred destinations to accelerate the process for subsequent reservations.",
         icon: Bookmark,
     },
     {
-        title: "Multiple Vehicle Types",
-        desc: "Different vehicle options enable customers to choose an option that matches their expectations.",
+        title: "Diverse Fleet Options",
+        desc: "Multiple vehicle categories permit passengers to select a transportation mode that suits their specific needs.",
         icon: Car,
     },
     {
-        title: "Multi-Stop Trips",
-        desc: "The Uber clone's customer app allows multiple stops within a single trip.",
+        title: "Multi-Destination Paths",
+        desc: "The mobility application supports the addition of various waypoints within a single scheduled journey.",
         icon: Route,
     },
     {
-        title: "Customer Support Ticketing",
-        desc: "Raising and managing a customer support ticket becomes easier with the feature-rich platform.",
+        title: "Integrated Support Dashboard",
+        desc: "Submitting and supervising support inquiries is simplified through our feature-dense communication portal.",
         icon: Headset,
     },
     {
-        title: "In-App Chat & Call",
-        desc: "In-app chat and call ensure smooth communication between drivers and customers.",
+        title: "Direct Secure Communication",
+        desc: "In-platform messaging and voice calls facilitate seamless interaction between drivers and passengers.",
         icon: PhoneCall,
     },
     {
-        title: "Multiple Payment Methods",
-        desc: "The app supports various payment options, increasing booking completion rates.",
+        title: "Versatile Billing Solutions",
+        desc: "The platform integrates numerous payment gateways, significantly improving successful booking rates.",
         icon: CreditCard,
     },
     {
-        title: "Fare Estimation Before Booking",
-        desc: "Before confirming a ride, customers can check the estimated fare to avoid paying more.",
+        title: "Pre-Booking Fare Quotes",
+        desc: "Before a journey is finalized, passengers can review anticipated costs to maintain budget transparency.",
         icon: Calculator,
     },
     {
-        title: "Scheduled Ride Booking",
-        desc: "Scheduling a ride for the airport and events becomes easier with an Uber clone customer app.",
+        title: "Advanced Journey Scheduling",
+        desc: "Reserving transportation for upcoming flights or private events is streamlined via the passenger interface.",
         icon: CalendarClock,
     },
     {
-        title: "In-App Wallet",
-        desc: "No more repeated payment authorization steps, just quick pay with the in-app wallet system.",
+        title: "Built-in Digital Balance",
+        desc: "Avoid repetitive payment steps by utilizing the rapid-pay features of the integrated digital wallet system.",
         icon: Wallet,
     },
 ];
@@ -95,13 +95,13 @@ const UberRiderFeatures = () => {
 
                 {/* HEADING */}
                 <h2 className="text-center text-[34px] md:text-[42px] leading-[46px] md:leading-[56px] font-semibold text-[#2f2f2f] mb-6">
-                    Uber Clone Customer App Features for Better Experience
+                    Optimized Passenger Interface for an Elevated Transit Experience
                 </h2>
 
                 {/* SUB TEXT */}
                 <p className="text-center text-[16px] text-[#5f5f5f] max-w-3xl mx-auto mb-16">
-                    Designed to make ride booking stress-free. Uber clone's customer app focuses on
-                    secure transactions so customers can complete trips with confidence.
+                    Engineered to make every reservation effortless. Our passenger-centric solution
+                    prioritizes secure handling and intuitive flows so users can travel with absolute peace of mind.
                 </p>
 
                 {/* CARDS */}

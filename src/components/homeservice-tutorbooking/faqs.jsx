@@ -3,44 +3,44 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
     {
-        q: "What is an Uber for Tutor App?",
-        a: "An Uber for Tutor App is an on-demand platform that connects students with nearby or online tutors instantly. It allows students to search, book, and pay tutors easily while tutors can manage schedules and sessions."
+        q: "What defines a specialized Tutor-on-Demand solution?",
+        a: "A Tutor-on-Demand solution is an optimized digital ecosystem that facilitates immediate synchronization between learners and geographically proximate or global educators. It simplifies the discovery, reservation, and settlement processes while empowering instructors to oversee their academic assignments."
     },
     {
-        q: "How does an On-Demand Tutor App work?",
-        a: "Students search for tutors based on subject, location, or availability. Tutors receive requests, accept sessions, and conduct tutoring online or offline. Payments and session tracking are handled within the app."
+        q: "What is the operational lifecycle of a learning platform?",
+        a: "Learners identify instructors based on academic focus, proximity, or credentialing. Educators evaluate incoming inquiries, confirm sessions, and deliver instruction via digital or physical channels. Financial settlements and session auditing are integrated within the framework."
     },
     {
-        q: "Can I customize my On-Demand Tutor App?",
-        a: "Yes, the app is fully customizable. You can modify features, branding, UI design, payment methods, and even add new functionalities based on your business requirements."
+        q: "Is there flexibility to modify the instructional framework?",
+        a: "Absolutely. The architecture is designed for full adaptability, allowing you to configure functional modules, aesthetic signatures, unique branding, and diverse financial portals to align with your specific commercial objectives."
     },
     {
-        q: "How quickly can I launch my Uber for Tutor App?",
-        a: "With our ready-made solution, you can launch your app within a few weeks depending on customization, testing, and deployment requirements."
+        q: "What is the projected timeline for platform deployment?",
+        a: "By leveraging our pre-engineered modular solution, your educational marketplace can be production-ready within a hyper-brief window, with actual duration depending on specific structural adjustments and verification cycles."
     },
     {
-        q: "What features does the Uber for Tutor App include?",
-        a: "Key features include tutor search, instant booking, scheduling, secure payments, real-time notifications, reviews & ratings, admin dashboard, and analytics."
+        q: "Which mission-critical functionalities are integrated?",
+        a: "Core modules include advanced instructor discovery, immediate session reservation, autonomous coordination, protected fiscal gateways, real-time alerts, participant testimonials, and comprehensive administrative oversight."
     },
     {
-        q: "Is the Uber for Tutor App secure for payments?",
-        a: "Yes, the app integrates secure and trusted payment gateways with encryption to ensure safe and transparent transactions for both students and tutors."
+        q: "Are financial transactions protected within the system?",
+        a: "Yes, our architecture incorporates industry-standard encryption protocols and elite financial gateways to guarantee that all instructional settlements are protected, transparent, and auditable for both participants."
     },
     {
-        q: "Can the Uber for Tutor Clone App scale as my business grows?",
-        a: "Absolutely. The app is built on a scalable architecture that supports increasing users, tutors, sessions, and transactions without performance issues."
+        q: "Can the educational ecosystem expand alongside my venture?",
+        a: "Our framework is constructed on resilient, extensible architecture designed to accommodate significant increases in participant volume, instructional sessions, and transaction velocity without compromising system stability."
     },
     {
-        q: "How do students find tutors using the On-Demand Tutor App?",
-        a: "Students can find tutors using filters like subject, experience, ratings, availability, pricing, and location, ensuring the best match for their needs."
+        q: "Through what mechanisms do learners identify instructors?",
+        a: "Users can utilize sophisticated filtering parameters including academic specialty, professional experience, peer testimonials, temporal availability, and geographic location to identify their optimal instructional match."
     },
     {
-        q: "Can tutors manage their schedule using the Uber for Tutor App?",
-        a: "Yes, tutors can set availability, manage bookings, accept or reject requests, and reschedule sessions directly from the app."
+        q: "Is autonomous schedule coordination available for instructors?",
+        a: "Instructors possess total authority over their temporal availability, session logistics, and participant engagement directly through their dedicated professional interface."
     },
     {
-        q: "How can I get started with the Uber for Tutor App?",
-        a: "You can get started by contacting our team for a demo. We’ll help you choose the right solution, customize it, and launch your app successfully."
+        q: "What are the initial steps for platform acquisition?",
+        a: "You can initiate the process by coordinating a product demonstration with our strategy team. We will facilitate the selection of appropriate modules, oversee configuration, and manage your successful market introduction."
     }
 ];
 
@@ -59,14 +59,14 @@ const FAQSection = () => {
                 <div className="flex justify-center mb-4">
                     <span className="flex items-center gap-2 border border-gray-300 rounded-full px-4 py-1 text-sm">
                         <span className="w-2 h-2 rounded-full bg-orange-500" />
-                        FAQ’s
+                        Knowledge Base
                     </span>
                 </div>
 
                 {/* Heading */}
                 <h2 className="text-center text-3xl md:text-4xl font-semibold text-gray-800 mb-14">
-                    Frequently{" "}
-                    <span className="text-orange-500">Asked Questions</span>
+                    Common{" "}
+                    <span className="text-orange-500">Inquiries & Operational Insights</span>
                 </h2>
 
                 {/* FAQ Grid */}

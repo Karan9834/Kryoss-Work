@@ -1,5 +1,5 @@
 import React from "react";
-import erpworkflow from "../../assets/erp-img/erpworkflow.jpg";
+import erpworkflow from "../../assets/erp-img/erpworkflow.png";
 
 const ErpAppWorkflow = () => {
     const steps = [

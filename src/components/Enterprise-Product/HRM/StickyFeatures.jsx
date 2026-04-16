@@ -1,5 +1,5 @@
 import React from "react";
-import hrmImage from "../../../assets/Enterprise-Product/hrmabout.png";
+import hrmImage from "../../../assets/Enterprise-Product/hrmfeatures.png";
 
 const features = [
   {
@@ -49,7 +49,7 @@ const StickyFeatures = () => {
         </div> */}
 
         {/* CONTAINER */}
-        <div className="grid md:grid-cols-2 gap-16 h-[620px] overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-16 md:h-[620px] md:overflow-hidden">
 
           {/* LEFT (SCROLLABLE CARDS) */}
           <div className="overflow-y-auto pr-4 space-y-6">
@@ -85,16 +85,16 @@ const StickyFeatures = () => {
           {/* RIGHT (BIG IMAGE - 50% AREA) */}
           <div className="relative flex items-center justify-center">
 
-            <div className="sticky top-10 w-full h-full flex items-center justify-center">
+            <div className="relative md:sticky md:top-10 w-full h-full flex items-center justify-center">
 
               <img
                 src={hrmImage}
                 alt="HRM Preview"
                 className="
-                  w-full 
-                  max-w-[650px] 
+                  w-[550px]
+                 
                   h-auto 
-                  object-contain
+                  object-contain rounded-4xl
                 "
               />
 

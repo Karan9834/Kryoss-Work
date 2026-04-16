@@ -19,35 +19,35 @@ import DatingTestimonials from '../../../components/DatingApp/DatingTestimonials
 import OnDemandSolutions from '../../../components/DatingApp/OnDemandSolutions';
 import DatingFaqs from '../../../components/DatingApp/DatingFaqs';
 import DatingTechStack from '../../../components/DatingApp/DatingTechStack';
-import DatingContactUs from '../../../components/DatingApp/DatingContactUs';
+import ContactUs from '../../../components/Common/ContactUs';
 import BlogSection from '../../../components/DatingApp/BlogSection';
 import NewsletterSection from '../../../components/DatingApp/NewsletterSection';
 const DatingApp = () => {
   return (
     <>
-    <DatingHero />
-    <DatingAbout/>
-    <DatingAppUI/>
-    <DatingAppCTA1/>
-    <DatingAppFeatures/>
-    <DatingAdminPanel/>
-    <DatingAppPlatforms/>
-    <DatingCTA2/>
-    <DatingAppBenefits/>
-    <DatingAppFeatures2/>
-    <AdvancedFeatures/>
-    <DatingDevelopmentProcess/>
-    <DatingCTA3/>
-    <DatingLaunch/>
-    <DatingWhy/>
-    <OnDemandApps/>
-    <DatingTestimonials/>
-    <OnDemandSolutions/>
-    <DatingFaqs/>
-    <DatingTechStack/>
-    <DatingContactUs/>
-    <BlogSection/>
-    <NewsletterSection/>
+      <DatingHero />
+      <DatingAbout />
+      <DatingAppUI />
+      <DatingAppCTA1 />
+      <DatingAppFeatures />
+      <DatingAdminPanel />
+      <DatingAppPlatforms />
+      <DatingCTA2 />
+      <DatingAppBenefits />
+      <DatingAppFeatures2 />
+      <AdvancedFeatures />
+      <DatingDevelopmentProcess />
+      <DatingCTA3 />
+      <DatingLaunch />
+      <DatingWhy />
+      <OnDemandApps />
+      <DatingTestimonials />
+      <OnDemandSolutions />
+      <DatingFaqs />
+      <DatingTechStack />
+      <ContactUs theme="purple" productName="Dating App" />
+      <BlogSection />
+      <NewsletterSection />
     </>
   )
 }

@@ -22,13 +22,13 @@ const SmallCtaSection = () => {
           {/* LEFT CONTENT */}
           <div className="text-white w-full md:w-1/2 text-center md:text-left">
             <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold leading-snug mb-5">
-              Get White-Labeled inDriver Clone Script in a Few Days!
+              Deploy your Custom inDrive Replica in Record Time!
             </h2>
 
             <p className="text-white/80 text-sm sm:text-base mb-6 md:mb-8 max-w-md mx-auto md:mx-0">
-              Go live in no time with a fully customized inDriver clone script
-              and start making profits from every ride booking and parcel
-              delivery request.
+              Accelerate your market entry with a highly adaptable inDrive-style framework 
+              and begin generating revenue from every transport booking and 
+              logistics shipment.
             </p>
 
             <Link to="/company/contact"
@@ -41,7 +41,7 @@ const SmallCtaSection = () => {
               transition-all duration-300
             "
             >
-              Request a Quote
+              Get an Instant Quote
             </Link>
           </div>
 

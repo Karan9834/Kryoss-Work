@@ -13,7 +13,7 @@ const features = [
 
 const DashboardShowcase = () => {
   return (
-    <section className="w-full bg-white py-28 relative overflow-hidden">
+    <section className="w-full bg-white py-12 md:py-28 relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -21,7 +21,7 @@ const DashboardShowcase = () => {
         <div className="flex justify-center relative mb-20">
 
           {/* Subtle Glow */}
-          <div className="absolute w-[500px] h-[500px] bg-purple-500/10 blur-3xl rounded-full"></div>
+          <div className="absolute w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-purple-500/10 blur-3xl rounded-full"></div>
 
           <img
             src={dashboardImg}
@@ -33,14 +33,14 @@ const DashboardShowcase = () => {
               rounded-xl
               shadow-2xl
               border border-gray-200
-              -mb-24
+              -mb-12 md:-mb-24
             "
           />
 
         </div>
 
         {/* CONTENT BELOW IMAGE */}
-        <div className="pt-24">
+        <div className="pt-12 md:pt-24">
 
           {/* HEADING */}
           <div className="text-center mb-16 max-w-2xl mx-auto">

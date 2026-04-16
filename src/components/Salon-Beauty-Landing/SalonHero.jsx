@@ -47,7 +47,7 @@ const SalonHero = () => {
           <img
             src={heroImg}
             alt="Salon App Hero"
-            className="w-[530px] h-[530px] object-contain"
+            className="w-[450px] h-[450px] rounded-4xl shadow-lg object-contain"
           />
         </div>
 

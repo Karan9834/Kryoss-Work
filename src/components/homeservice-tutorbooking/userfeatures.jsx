@@ -10,33 +10,33 @@ import {
 import tutorappfeatures from "../../assets/homeservice-tutor-img/tutorfeatures.webp";
 const features = [
     {
-        title: "Social Login",
-        desc: "A student can log in through social media sites like Facebook, Google, etc. So, a student can quickly login without fill any form details.",
+        title: "External Authentication",
+        desc: "Users can instantly access the platform via established social identities such as Google or Facebook, eliminating the need for tedious manual data entry.",
         icon: LogIn,
     },
     {
-        title: "View Tutor Profile",
-        desc: "A student can view tutor profiles with full details like tutor name, degree, packages charges, contact number, and address.",
+        title: "Expert Profile Analysis",
+        desc: "Learners can examine comprehensive instructor portfolios, including academic credentials, instructional packages, contact availability, and physical locations.",
         icon: User,
     },
     {
-        title: "Schedule Appointment",
-        desc: "A student can book a new tutor service request now or schedule for future use. They can also cancel the booking request.",
+        title: "Session Coordination",
+        desc: "Schedule immediate instructional support or organize future academic sessions with ease. The interface also allows for flexible session cancellation management.",
         icon: CalendarCheck,
     },
     {
-        title: "Live Chat",
-        desc: "After the tutor accepts the service request, the student and tutor chat with each other if they have any queries.",
+        title: "Integrated Communication",
+        desc: "Facilitate real-time dialogue with your instructor following request acceptance, ensuring all academic queries are addressed promptly.",
         icon: MessageCircle,
     },
     {
-        title: "Payment Option",
-        desc: "The app offers a flexible payment option like cash, credit, in-app wallet for pay for tutor services.",
+        title: "Diverse Settlement Portals",
+        desc: "Our framework supports multiple financial channels, including digital cards, bank transfers, and integrated virtual wallets for instruction settlement.",
         icon: CreditCard,
     },
     {
-        title: "Rating & Review",
-        desc: "A student can place their review and rating for the tutor after complete the service based on their experience.",
+        title: "Instructional Feedback",
+        desc: "Students can contribute to platform integrity by submitting testimonials and performance ratings based on their personalized educational experience.",
         icon: Star,
     },
 ];
@@ -50,17 +50,17 @@ const UserAppFeatures = () => {
                 <div className="mb-4 flex justify-center">
                     <span className="inline-flex items-center gap-2 rounded-full border px-4 py-1 text-sm text-gray-700">
                         <span className="h-2 w-2 rounded-full bg-orange-500" />
-                        User App Features
+                        Student Empowerment Tools
                     </span>
                 </div>
 
                 {/* HEADING */}
                 <h2 className="mb-4 text-center text-[30px] font-semibold sm:text-[36px]">
-                    Fox-Tutor <span className="text-orange-500">User App Features</span>
+                    Vyom Tutor <span className="text-orange-500">Learner Ecosystem Functionalities</span>
                 </h2>
 
                 <p className="mx-auto mb-12 max-w-[900px] text-center font-medium text-gray-700 whitespace-normal lg:whitespace-nowrap">
-                    Fox-Tutor User App allows students to easily find and connect with tutors, make secure payments, all through a simple, intuitive interface.
+                    Our dedicated Student Application enables learners to effortlessly discover elite educators, execute protected transactions, and manage their learning path through our optimized digital framework.
                 </p>
 
                 {/* CONTENT */}

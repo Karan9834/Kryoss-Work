@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, Zap, Shield, Users } from "lucide-react";
-import socialhero from "../../assets/socialmedia-product/heroabout-Baztic_O.png";
+import socialhero from "../../assets/socialmedia-product/hero.png";
 
 const SocialHero = () => {
   const containerVariants = {
@@ -40,7 +40,7 @@ const SocialHero = () => {
   };
 
   return (
-    <section className="relative w-full min-h-[85vh] flex items-center overflow-hidden bg-[#020617]">
+    <section className="relative w-full min-h-[90vh] flex items-center overflow-hidden bg-[#020617]">
       {/* BASE GRADIENT */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#1e1b4b]" />
 
@@ -62,7 +62,7 @@ const SocialHero = () => {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
       {/* CONTENT - Adjusted Spacing */}
-      <div className="relative z-10 container mx-auto px-6 lg:px-8">
+      <div className="relative z-10 container mx-auto px-6 lg:px-30">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
           {/* LEFT CONTENT - Better Spacing */}
           <motion.div
@@ -125,7 +125,7 @@ const SocialHero = () => {
             animate="visible"
             className="flex-1 flex justify-center lg:justify-end"
           >
-            <div className="relative w-[280px] sm:w-[340px] lg:w-[400px] xl:w-[440px]">
+            <div className="relative w-[380px] sm:w-[340px] lg:w-[600px] xl:w-[540px]">
               {/* Premium Glow Effect */}
               <div className="absolute -inset-3 rounded-2xl bg-gradient-to-r from-purple-500/40 via-pink-500/40 to-indigo-500/40 blur-2xl opacity-60" />
 
@@ -134,7 +134,7 @@ const SocialHero = () => {
                 <img
                   src={socialhero}
                   alt="Social Media App Interface"
-                  className="w-full h-auto object-cover transform transition-transform duration-500 hover:scale-105"
+                  className="w-full  object-cover transform transition-transform duration-500 hover:scale-105"
                 />
 
                 {/* Subtle Overlay */}

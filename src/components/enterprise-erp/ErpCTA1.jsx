@@ -5,12 +5,12 @@ const ErpCTA1 = () => {
     return (
         <section className="py-24 bg-blue-900 relative">
             <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-                
+
                 {/* Image */}
                 <div className="relative order-2 lg:order-1 flex justify-center">
-                    <img 
-                        src={erpcta1} 
-                        alt="ERP Mobile" 
+                    <img
+                        src={erpcta1}
+                        alt="ERP Mobile"
                         className="w-full max-w-[520px] rounded-[40px] shadow-2xl border-8 border-white/10"
                     />
                 </div>
@@ -24,8 +24,8 @@ const ErpCTA1 = () => {
 
                     {/* Description - Updated Typography */}
                     <p className="text-[14px] md:text-[16px] font-normal leading-[1.6] text-blue-100/80 mb-10">
-                        Break geographic barriers. Manage your global operations from a 
-                        unified smartphone app, ensuring decision-makers stay connected 
+                        Break geographic barriers. Manage your global operations from a
+                        unified smartphone app, ensuring decision-makers stay connected
                         to the heartbeat of the business 24/7.
                     </p>
 

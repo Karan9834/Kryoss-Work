@@ -46,15 +46,16 @@ const ProductShowcase = () => {
           <div className="inline-flex items-center gap-2 border border-[#55D7FF] 
                           text-black px-4 py-1.5 rounded-full text-sm mb-6">
             <span className="w-2 h-2 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
-            Product Showcase
+            Platform Gallery
           </div>
 
           <h2 className="text-3xl md:text-5xl font-semibold">
-            Explore  Our <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text"> On-Demand App Solutions</span>
+            Examine our <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text"> Versatile On-Demand Framework Solutions</span>
           </h2>
 
           <p className="mt-4 text-gray-600 text-lg">
-            Check out our best-selling on-demand solutions and find the perfect fit for your unique business needs.
+            Audit our highest-performing on-demand architectures and identify the 
+            ideal logical framework for your specific commercial requirements.
           </p>
 
         </div>

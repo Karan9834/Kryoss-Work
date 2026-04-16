@@ -8,21 +8,21 @@ const GetUpdatesSection = () => {
                 <div className="flex justify-center mb-5">
                     <span className="inline-flex items-center gap-2 px-4 py-1 border border-gray-300 rounded-full text-sm text-gray-600">
                         <span className="w-2 h-2 bg-black rounded-full" />
-                        Get Updates
+                        Executive Briefing
                     </span>
                 </div>
 
                 {/* Heading */}
                 <h2 className="text-4xl md:text-5xl font-semibold text-gray-900">
-                    Stay Ahead with Our{" "}
-                    <span className="text-black">Latest Updates</span>
+                    Lead the Market with Our{" "}
+                    <span className="text-black">Strategic Notifications</span>
                 </h2>
 
                 {/* Description */}
                 <p className="mt-5 text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    Subscribe to our newsletter for exclusive updates, and tips on the
-                    latest trends in app development solutions. Stay informed and never
-                    miss out on important Update!
+                    Join our professional intelligence network for exclusive architectural
+                    updates and tactical guidance on modern engineering trends.
+                    Ensure your enterprise remains informed and agile.
                 </p>
 
                 {/* Input Box */}

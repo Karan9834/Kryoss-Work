@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, ShieldCheck, Heart, Cross, Stethoscope, HeartPulse, ShieldPlus, MessageCircle } from "lucide-react";
-import heroImg from "@/assets/kivicarepms-img/kivicarepmshero.webp";
+import heroImg from "@/assets/kivicarepms-img/kivicarepmshero.jpeg";
 
 const KiviCareHero = () => {
     return (
@@ -80,7 +80,7 @@ const KiviCareHero = () => {
                         style={{ background: "linear-gradient(135deg, #2dd4bf, #10b981)" }} />
                     <div className="relative z-10 w-full max-w-lg mx-auto">
                         <div className="w-full h-64 sm:h-80 lg:h-[400px] rounded-[2rem] sm:rounded-[3rem] border-4 sm:border-[12px] border-white shadow-2xl bg-teal-50 flex items-center justify-center relative overflow-hidden group">
-                           <img src={heroImg} alt="KiviCare Dashboard" className="w-full h-full object-cover" />
+                            <img src={heroImg} alt="KiviCare Dashboard" className="w-full h-full object-cover" />
                         </div>
                         {/* Floating elements */}
                         <div className="absolute -bottom-4 -left-4 sm:-bottom-8 sm:-left-8 bg-white p-3 sm:p-5 rounded-2xl sm:rounded-3xl shadow-2xl flex items-center gap-3 sm:gap-4 border border-teal-50">

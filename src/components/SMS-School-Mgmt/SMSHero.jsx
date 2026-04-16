@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, BookOpen, GraduationCap, Star, School } from 'lucide-react';
-import heroimg from "@/assets/smslanding-img/smslandinghero.jpg";
+import heroimg from "@/assets/smslanding-img/smslandinghero1.jpg";
 
 const SMSHero = () => {
     const scrollToProducts = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Activity, HeartPulse, Star, Microscope } from 'lucide-react';
-import heroImg from "@/assets/hmslanding-img/hmslandinghero.jpg";
+import heroImg from "@/assets/hmslanding-img/hmslandinghero.jpeg";
 
 const HMSHero = () => {
     const scrollToProducts = () => {

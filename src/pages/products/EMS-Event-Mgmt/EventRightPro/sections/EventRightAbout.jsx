@@ -1,5 +1,5 @@
 import React from "react";
-import corpAboutImg from "../../../../../assets/eventrightems-img/eventrightemsabout.jpg";
+import corpAboutImg from "../../../../../assets/eventrightems-img/eventrightemsabout1.jpeg";
 import { CheckCircle, TrendingUp, Award, Clock } from "lucide-react";
 
 const stats = [
@@ -16,7 +16,7 @@ const EventRightAbout = () => {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
                     {/* Left: Image with overlapping stat cards */}
-                    <div className="relative">
+                    <div className="relative order-2 lg:order-1">
                         <div className="relative w-full h-[420px] rounded-[2.5rem] overflow-hidden shadow-xl">
                             <img src={corpAboutImg} alt="About corporate Events" className="w-full h-full object-cover" />
                         </div>
@@ -44,7 +44,7 @@ const EventRightAbout = () => {
                     </div>
 
                     {/* Right: Text Content */}
-                    <div className="space-y-8 lg:pl-6">
+                    <div className="space-y-8 lg:pl-6 order-1 lg:order-2">
                         <div className="space-y-3">
                             <span className="inline-block text-indigo-600 font-bold text-sm uppercase tracking-widest">
                                 About the Platform

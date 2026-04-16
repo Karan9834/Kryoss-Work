@@ -1,24 +1,24 @@
 import React from "react";
-import AboutDating from "../../assets/DatingApp/datingabout.webp";
+import AboutDating from "../../assets/Datingkit/about.jpg";
 
 const DatingAppAbout = () => {
   return (
     <section className="bg-[#f5f5f7] py-16">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-6 items-center">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-36 items-center">
 
         {/* LEFT IMAGE */}
-        <div className="flex justify-center md:justify-end">
-          <div className="rounded-3xl overflow-hidden shadow-xl w-full max-w-[360px] md:max-w-[420px]">
+        <div className="flex justify-center md:justify-end order-2 lg:order-1">
+          <div className="rounded-3xl overflow-hidden shadow-xl w-full max-w-[400px] md:max-w-[500px]">
             <img
               src={AboutDating}
               alt="Dating Platform"
-              className="w-full object-cover"
+              className="w-full h-[300px] object-cover"
             />
           </div>
         </div>
 
         {/* RIGHT CONTENT BOX */}
-        <div className="bg-white border border-pink-200 rounded-3xl p-6 md:p-10 shadow-sm md:-ml-12 max-w-xl">
+        <div className="bg-white border border-pink-200 rounded-3xl p-6 md:p-10 shadow-sm md:-ml-12 max-w-xl order-1 lg:order-2">
 
           {/* TAG */}
           <span className="inline-block text-xs md:text-sm bg-pink-50 text-pink-500 px-3 py-1 rounded-full mb-3">

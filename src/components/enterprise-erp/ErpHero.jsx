@@ -5,7 +5,7 @@ import erphero from "../../assets/erp-img/erphero.jpg";
 const ErpHero = () => {
     return (
         <section className="relative w-full min-h-[80vh] bg-gradient-to-r from-[#001f3f] to-[#00102b] overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-10 pb-0 flex flex-col lg:flex-row lg:items-end justify-between">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-10 pb-0 flex flex-col lg:flex-row lg:items-center justify-between">
                 {/* LEFT CONTENT */}
                 <div className="w-full lg:w-[50%] text-white pb-12 mt-20 lg:pb-20 lg:pr-10">
                     {/* Logo + Brand */}
@@ -58,7 +58,7 @@ const ErpHero = () => {
                 </div>
 
                 {/* RIGHT IMAGE */}
-                <div className="w-full lg:w-[50%] flex justify-center lg:justify-end mt-14 lg:mt-0">
+                <div className="w-full lg:w-[50%] flex justify-center  mt-14 lg:mt-20">
                     <img
                         src={erphero}
                         alt="ERP App"

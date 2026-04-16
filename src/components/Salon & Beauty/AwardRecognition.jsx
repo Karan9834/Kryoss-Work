@@ -40,15 +40,19 @@ const AwardRecognition = () => {
           <div className="inline-flex items-center gap-2 border border-gray-200 
                           text-white px-4 py-1.5 rounded-full text-sm mb-6">
             <span className="w-2 h-2 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
-            Awards & Recognition
+            Industry Commendations
           </div>
 
           <h2 className="text-3xl md:text-5xl font-semibold">
-            Recognized by <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">Global Review Platforms & Industry Leaders</span>
+            Validated by <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">Premier Global Analytics & Market Authorities</span>
           </h2>
 
           <p className="mt-6 text-white/80 text-lg leading-relaxed">
-            We are proud to be recognized by top industry platforms such as Trustpilot, Google, Clutch, and GoodFirms. With excellent ratings and reviews, our commitment to delivering high-quality, clone app development solutions is trusted by businesses and users worldwide.
+            Our architectural excellence is acknowledged by elite sector 
+            platforms including Clutch, Trustpilot, and GoodFirms. Maintaining 
+            superior evaluation metrics, our dedication to constructing 
+            high-integrity, versatile framework solutions is prioritized by 
+            global enterprises and startup founders.
           </p>
 
         </div>

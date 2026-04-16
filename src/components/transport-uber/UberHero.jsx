@@ -5,10 +5,10 @@ const UberHero = () => {
   return (
     <section
       id="hero-section"
-      className="w-full bg-[rgb(245,245,245)] pt-[30px] pb-[30px]"
+      className="w-full min-h-[90vh] bg-[rgb(245,245,245)] pt-[30px] pb-[30px]"
       style={{ fontFamily: "IBM Plex Sans, sans-serif" }}
     >
-      <div className="max-w-[1400px] mx-auto px-4">
+      <div className="max-w-[1400px] mx-auto px-4 lg:mt-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           {/* LEFT CONTENT */}
           <div className="pr-0 lg:pr-16">
@@ -95,7 +95,7 @@ const UberHero = () => {
                 <img
                   src={uberhero}
                   alt="Uber Clone App"
-                  className="w-full h-full object-cover"
+                  className="w-full h-[400px] rounded-3xl shadow-xl object-cover"
                 />
                 {/* HERO IMAGE */}
               </div>

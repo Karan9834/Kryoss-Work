@@ -1,11 +1,11 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import taxi from "../../../assets/Global taxi booking app/1.jpg";
+import taxi from "@/assets/taxi-bidding-indrive-img/hero.webp";
 
 const Hero = () => {
   return (
     <section
-      className="relative w-full overflow-hidden
+      className="relative w-full min-h-[90vh] overflow-hidden
                  pt-20 md:pt-24
                  pb-10 md:pb-0
                  px-4 md:px-6"
@@ -44,7 +44,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-3xl md:text-5xl font-bold mb-5">
-            <span className="text-lime-400">inDriver</span> Clone
+            <span className="text-lime-400">inDrive</span> Clone Script
           </h1>
 
           <p
@@ -53,9 +53,10 @@ const Hero = () => {
                         max-w-md md:max-w-xl 
                         mx-auto md:mx-0 mb-7"
           >
-            A ready-to-use inDriver Clone provides you with complete control
-            over your business operations. It connects passengers and drivers
-            efficiently.
+            A high-performance inDriver Clone architecture grants you<br /> absolute authority
+            over your digital logistics.<br />
+            It facilitates dynamic links between riders and drivers
+            with peak efficiency.
           </p>
 
           <div className="flex justify-center md:justify-start">
@@ -89,7 +90,7 @@ const Hero = () => {
             alt="Taxi Bidding App"
             className="w-[85%] md:w-[95%] 
                        max-w-[380px] md:max-w-[650px] 
-                       object-contain"
+                       object-contain rounded-4xl shadow-xl"
           />
         </div>
       </div>

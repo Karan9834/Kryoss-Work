@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-  Shield, 
-  Zap, 
-  Heart, 
+import {
+  Shield,
+  Zap,
+  Heart,
   Globe,
   Clock,
   Users,
@@ -121,15 +121,15 @@ const WhyChooseUs = () => {
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-green-100/40 rounded-full blur-[100px]" />
         <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-emerald-100/40 rounded-full blur-[100px]" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-50/50 rounded-full blur-[80px]" />
-        
+
         {/* Subtle Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(34,197,94,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(34,197,94,0.02)_1px,transparent_1px)] bg-[size:50px_50px]" />
-        
+
         {/* Top Accent Line */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-green-200 to-transparent" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 lg:px-8">
+      <div className="relative z-10 container mx-auto px-6 lg:px-24">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

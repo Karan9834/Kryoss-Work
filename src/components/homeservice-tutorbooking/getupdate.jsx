@@ -8,21 +8,22 @@ const GetUpdatesSection = () => {
                 <div className="flex justify-center mb-5">
                     <span className="inline-flex items-center gap-2 px-4 py-1 border border-gray-300 rounded-full text-sm text-gray-600">
                         <span className="w-2 h-2 bg-orange-500 rounded-full" />
-                        Get Updates
+                        Operational Intel
                     </span>
                 </div>
 
                 {/* Heading */}
                 <h2 className="text-4xl md:text-5xl font-semibold text-gray-900">
-                    Stay Ahead with Our{" "}
-                    <span className="text-orange-500">Latest Updates</span>
+                    Maintain Competitive Advantage through our{" "}
+                    <span className="text-orange-500">Primary Updates</span>
                 </h2>
 
                 {/* Description */}
                 <p className="mt-5 text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    Subscribe to our newsletter for exclusive updates, and tips on the
-                    latest trends in app development solutions. Stay informed and never
-                    miss out on important Update!
+                    Register for our strategic bulletins to receive exclusive intelligence 
+                    and specialized perspectives on emerging paradigms in software 
+                    architecture. Ensure your venture remains synchronized with 
+                    mission-critical platform enhancements.
                 </p>
 
                 {/* Input Box */}
@@ -30,12 +31,12 @@ const GetUpdatesSection = () => {
                     <div className="relative w-full sm:w-[520px]">
                         <input
                             type="email"
-                            placeholder="Enter your email here"
+                            placeholder="Provide your professional email"
                             className="w-full h-14 px-6 pr-36 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"
                         />
 
                         <button className="absolute right-2 top-1/2 -translate-y-1/2 h-10 px-6 rounded-full bg-orange-500 text-white font-medium hover:bg-orange-600 transition">
-                            Subscribe
+                            Register Now
                         </button>
                     </div>
                 </div>

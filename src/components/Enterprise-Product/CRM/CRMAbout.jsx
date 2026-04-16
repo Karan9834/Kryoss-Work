@@ -8,11 +8,11 @@ const CRMAbout = () => {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
         {/* LEFT IMAGE */}
-        <div className="flex justify-center md:justify-start">
+        <div className="flex justify-center md:justify-start order-2 lg:order-1">
           <img
             src={crmAboutImg}
             alt="CRM About"
-            className="w-full max-w-[520px] object-contain"
+            className="w-full max-w-[520px] rounded-3xl object-contain"
           />
         </div>
 
@@ -20,7 +20,7 @@ const CRMAbout = () => {
         <div className="
           border border-blue-200 
           rounded-2xl p-8 md:p-10
-          bg-white shadow-sm
+          bg-white shadow-sm order-1 lg:order-2
         ">
 
           {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
@@ -39,13 +39,13 @@ const CRMAbout = () => {
 
           {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
           <p className="text-gray-600 mb-5 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-            Our CRM platform helps businesses manage leads, track customer interactions, 
+            Our CRM platform helps businesses manage leads, track customer interactions,
             and streamline sales processes — all in one powerful system designed for growth.
           </p>
 
           {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
           <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-            From pipeline management to analytics and automation, our solution empowers teams 
+            From pipeline management to analytics and automation, our solution empowers teams
             to close deals faster, improve customer relationships, and drive consistent revenue.
           </p>
 

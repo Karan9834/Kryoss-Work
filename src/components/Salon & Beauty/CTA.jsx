@@ -20,13 +20,16 @@ const CTA = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl 
                            font-semibold text-white 
                            leading-tight mb-5">
-           Ready to Launch Your Uber for Beauty App?
+           Ready to Initialize Your Dedicated Aesthetic Platform?
             </h2>
 
             <p className="text-white/90 text-sm sm:text-base 
                           leading-relaxed mb-6 max-w-xl 
                           mx-auto md:mx-0">
-              Get in touch with us today to start building your customized on-demand beauty service app. Let us help you transform your beauty business with the latest technology!
+              Coordinate with our technical team today to begin constructing your 
+              adaptable on-demand styling framework. Permit us to facilitate your 
+              aesthetic enterprise transition through advanced architectural 
+              engineering!
             </p>
 
             <button className="bg-white text-blue-600 

@@ -46,23 +46,22 @@ const TechStackSection = () => {
         <section className="w-full py-20 bg-gradient-to-r from-blue-500 to-purple-500">
             <div className="max-w-7xl mx-auto px-6 text-center text-white">
 
-                {/* top pill */}
                 <div className="inline-flex items-center gap-2 px-4 py-1 mb-6 rounded-full border border-white/40 text-sm">
                     <span className="w-2 h-2 rounded-full bg-white"></span>
-                    Tech-Stack
+                    Engineering Framework
                 </div>
 
                 {/* heading */}
                 <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-                    Technologies We Use to Build Scalable Digital Solutions
+                    Sophisticated Technologies Behind Our Elastic Mobility Solutions
                 </h2>
 
                 {/* paragraph */}
                 <p className="max-w-4xl mx-auto text-white/90 mb-12 text-sm md:text-base">
-                    We use modern, scalable, and secure technologies to develop high-performance
-                    mobile applications, web platforms, and backend systems. Our technology
-                    stack is carefully selected to ensure reliability, fast deployment,
-                    seamless integrations, and long-term scalability.
+                    We utilize a curated selection of advanced, high-performance technologies to engineer
+                    robust mobile ecosystems and sophisticated backend architectures. Our engineering
+                    framework is meticulously calibrated to ensure structural reliability, rapid
+                    deployment cycles, and longitudinal enterprise scaling.
                 </p>
 
                 {/* capsules */}

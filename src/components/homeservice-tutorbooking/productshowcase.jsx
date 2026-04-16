@@ -27,20 +27,20 @@ const ProductShowcase = () => {
                 <div className="flex justify-center mb-4">
                     <span className="flex items-center gap-2 border border-gray-300 rounded-full px-4 py-1 text-sm">
                         <span className="w-2 h-2 rounded-full bg-orange-500" />
-                        Product Showcase
+                        Enterprise Portfolio
                     </span>
                 </div>
 
                 {/* Heading */}
                 <h2 className="text-center text-3xl md:text-4xl font-semibold text-gray-800">
-                    Explore Our{" "}
-                    <span className="text-orange-500">On-Demand App Solutions</span>
+                    Navigate our{" "}
+                    <span className="text-orange-500">Specialized On-Demand Frameworks</span>
                 </h2>
 
                 {/* Subtext */}
                 <p className="text-center mt-4 text-gray-600 max-w-2xl mx-auto">
-                    Check out our best-selling on-demand solutions and find the perfect fit
-                    for your unique business needs.
+                    Examine our flagship multi-industry solutions and identify the 
+                    architectural template that aligns with your specific commercial objectives.
                 </p>
 
                 {/* Cards */}

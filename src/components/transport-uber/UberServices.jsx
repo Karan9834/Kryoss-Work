@@ -8,49 +8,49 @@ import Uberservice6 from '../../assets/transport-uber-img/Uberservice6.webp';
 const services = [
     {
         id: 1,
-        title: "Taxi Ride",
-        description: "No complicated steps. Offer your customers easy access to your taxi ride services through a user-friendly platform.",
-        tags: ["On-Demand Rides", "Real-Time Tracking", "Instant Booking", "Secure Payments", "Urban Mobility", "Daily Commutes"],
+        title: "Standard Taxi",
+        description: "Streamline your transportation business. Provide your clients with effortless access to standard taxi services through a modern, intuitive interface.",
+        tags: ["On-Demand Travel", "Live Vehicle Search", "Swift Booking", "Encrypted Payments", "City Transit", "Daily Hub"],
         bgColor: "from-[#29224d] to-[#120e26]",
         image: Uberservice1
     },
     {
         id: 2,
-        title: "Intercity Service",
-        description: "Allow your customers to book long-distance travel with fixed and scheduled fare pricing options.",
-        tags: ["Long-Distance Travel", "City-to-City Rides", "Scheduled Trips", "Auto Toll", "Comfortable Journeys"],
+        title: "Cross-City Transit",
+        description: "Enable your passengers to reserve long-range transportation with transparent, pre-determined pricing and scheduling.",
+        tags: ["Long-Haul Journeys", "Regional Connections", "Pre-Booked Trips", "Auto Toll Integration", "Premium Comfort"],
         bgColor: "from-[#064e40] to-[#022c22]",
         image: Uberservice2
     },
     {
         id: 3,
-        title: "Bike Ride",
-        description: "Grab a smart way to attract price-sensitive customers looking to avoid traffic in busy urban areas.",
-        tags: ["Low-Cost Rides", "Two-Wheeler", "Quick Travel", "Traffic Friendly", "Short Trips", "Urban Speed"],
+        title: "Two-Wheeler Dash",
+        description: "Tap into a massive market of commuters seeking budget-friendly ways to navigate dense urban traffic quickly.",
+        tags: ["Economical Transit", "Bike Dispatch", "Rapid Commute", "Traffic Bypass", "Short Distances", "Agile Mobility"],
         bgColor: "from-[#0f172a] to-[#1e293b]",
         image: Uberservice3
     },
     {
         id: 4,
-        title: "Taxi Bidding",
-        description: "Empower users and drivers to negotiate fares in real-time. A unique bidding system that ensures fair pricing.",
-        tags: ["Real-time Bidding", "Fare Negotiation", "Driver Selection", "Cost-Effective", "Marketplace Model"],
+        title: "Fare Negotiation",
+        description: "Grant riders and drivers the freedom to settle on a price through a transparent, real-time bidding ecosystem.",
+        tags: ["Dynamic Bidding", "Price Settlement", "Driver Preference", "Budget Optimized", "P2P Marketplace"],
         bgColor: "from-[#2e1065] to-[#4c1d95]",
         image: Uberservice4
     },
     {
         id: 5,
-        title: "Taxi Pool",
-        description: "Reduce travel costs and carbon footprint by sharing rides. Perfect for regular commuters.",
-        tags: ["Shared Rides", "Eco-Friendly", "Cost Saving", "Route Matching", "Social Commute"],
+        title: "Ride Pooling",
+        description: "Minimize environmental impact and individual costs by connecting commuters heading on similar routes.",
+        tags: ["Shared Commute", "Sustainability Focused", "Cost Efficiency", "Intelligent Routing", "Community Transit"],
         bgColor: "from-[#450a0a] to-[#7f1d1d]",
         image: Uberservice5
     },
     {
         id: 6,
-        title: "Car Rental",
-        description: "Book vehicles for hours or days. Chauffeur-driven or self-drive options available.",
-        tags: ["Hourly Rental", "Daily Rental", "Self-Drive", "Outstation", "Corporate Travel"],
+        title: "Vehicle Leasing",
+        description: "Reserve automobiles for short or extended durations. Choose between professional drivers or personal handling.",
+        tags: ["Hourly Access", "Flexible Leasing", "Self-Managed", "Long-Range Travel", "Corporate Fleet"],
         bgColor: "from-[#083344] to-[#164e63]",
         image: Uberservice6
     }
@@ -107,14 +107,14 @@ const UberServices = () => {
                 <div className="flex justify-center mb-8">
                     <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-5 py-1.5 shadow-sm">
                         <div className="w-2 h-2 rounded-full bg-black"></div>
-                        <span className="text-gray-800 text-[13px] font-medium tracking-wide">Fox-Taxi App Services</span>
+                        <span className="text-gray-800 text-[13px] font-medium tracking-wide">Vyom Mobility App Services</span>
                     </div>
                 </div>
 
                 {/* Title - Optimized for single row on desktop without cutting */}
                 <div className="text-center mb-12 md:mb-20 px-4">
                     <h2 className="text-2xl md:text-3xl lg:text-[40px] leading-tight font-bold text-[#141414] max-w-[1240px] mx-auto tracking-tight">
-                        All-in-one Taxi Booking App like Uber to Address All Your Business Needs!
+                        A Comprehensive Transportation Suite Built to Support Every Branch of Your Business!
                     </h2>
                 </div>
 

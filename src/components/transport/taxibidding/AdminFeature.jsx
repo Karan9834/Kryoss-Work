@@ -5,48 +5,48 @@ import dashboardImage from "../../../assets/Admin.webp"; // replace
 const features = [
   {
     icon: User,
-    title: "User Management",
-    desc: "Manage user accounts, login credentials and onboarding flow.",
+    title: "Account Oversight",
+    desc: "Supervise user authentication, access rights, and the entire registration lifecycle.",
   },
   {
     icon: Users,
-    title: "Driver Management",
-    desc: "Monitor driver profiles and verify their credentials.",
+    title: "Partner Supervision",
+    desc: "Audit service provider profiles and validate professional documentation.",
   },
   {
     icon: DollarSign,
-    title: "Fare Management",
-    desc: "Define pricing strategies, discounts and revenue models.",
+    title: "Pricing Architecture",
+    desc: "Configure tariff structures, promotional offers, and commission strategies.",
   },
   {
     icon: Car,
-    title: "Ride Management",
-    desc: "Assign drivers and monitor ride requests easily.",
+    title: "Dispatch Logistics",
+    desc: "Coordinate driver allocations and supervise real-time service requests.",
   },
   {
     icon: Settings,
-    title: "App Settings",
-    desc: "Control app configurations and service settings.",
+    title: "System Configuration",
+    desc: "Adjust platform parameters and global service definitions with ease.",
   },
   {
     icon: Shield,
-    title: "Security Control",
-    desc: "Ensure platform safety and secure transactions.",
+    title: "Safety Governance",
+    desc: "Maintain ecosystem integrity with advanced fraud detection and secure protocols.",
   },
   {
     icon: BarChart3,
-    title: "Reports & Analytics",
-    desc: "View revenue insights and booking performance.",
+    title: "Insightful Analytics",
+    desc: "Access detailed financial summaries and operational performance metrics.",
   },
   {
     icon: Bell,
-    title: "Push Notifications",
-    desc: "Send alerts and updates to users instantly.",
+    title: "Automated Alerts",
+    desc: "Broadcast critical messages and promotional updates to your user base.",
   },
   {
     icon: Globe,
-    title: "Multi-Currency",
-    desc: "Support multiple currencies and regional pricing.",
+    title: "Regional Localization",
+    desc: "Manage global operations with multi-currency support and localized settings.",
   },
 ];
 
@@ -65,7 +65,7 @@ const AdminFeaturesSection = () => {
     rounded-full
   ">
     <span className="w-2 h-2 bg-[#5aa114] rounded-full"></span>
-    Admin Features
+    Back-Office Administration
   </span>
 </div>
       <div className="max-w-7xl mx-auto px-4">
@@ -74,14 +74,14 @@ const AdminFeaturesSection = () => {
        <div className="text-center mb-16">
 
   <h2 className="text-2xl md:text-4xl font-semibold text-gray-800">
-    Control Your Business Operations with{" "}
+    Orchestrate Your Enterprise Workflow with{" "}
     <span className="text-[#5aa114]">
-      Kryoss Work
+      Vyom Mobility
     </span>
   </h2>
 
   <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-    Manage every aspect of your ride-hailing and parcel-delivery services from a single platform.
+    Oversee every dimension of your mobility and logistics operations through a centralized command center.
   </p>
 
 </div>

@@ -10,7 +10,7 @@ const AboutSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
 
           {/* LEFT SIDE */}
-          <div className="w-full lg:w-[40%] flex justify-center lg:justify-start">
+          <div className="w-full lg:w-[40%] flex justify-center lg:justify-start order-2 lg:order-1 ">
 
             <div className="relative 
                             bg-gradient-to-br from-[#6dbb1a] to-[#4f8f12]
@@ -39,7 +39,7 @@ const AboutSection = () => {
           <div className="w-full lg:w-[60%] 
                           border border-[#c7d8a4] 
                           rounded-[28px] 
-                          p-8 sm:p-10 lg:p-12">
+                          p-8 sm:p-10 lg:p-12 order-1 lg:order-2">
 
             {/* Badge */}
             <span className="inline-flex items-center gap-2 text-sm font-medium 
@@ -51,30 +51,31 @@ const AboutSection = () => {
 
             {/* Heading */}
             <h2 className="text-2xl sm:text-3xl font-semibold leading-snug mb-6 text-[#1f2937]">
-              Grab Multiple Growth{" "}
+              Capture Vast Scaling{" "}
               <span className="text-[#5aa114]">
-                Opportunities with Our inDriver Clone App
+                Potential with Our Advanced inDrive Clone Solution
               </span>
             </h2>
 
             {/* Content */}
             <div className="space-y-5 text-[#4b5563] leading-relaxed text-[15px]">
               <p>
-                At Kryoss Work, we deploy customized solutions for clients
-                like you who aim to revolutionize the taxi and courier industries.
-                Our feature-rich inDriver clone app is your gateway to unlocking
-                growth opportunities in the digital space.
+                At Vyom Mobility, we provide tailored digital frameworks for entrepreneurs
+                eager to disrupt the transport and delivery sectors. Our comprehensive
+                inDrive clone software serves as your primary tool for securing
+                market leadership.
               </p>
 
               <p>
-                Designed to meet modern demands, our inDriver clone offers
-                transparent customer bidding, real-time tracking, seamless
-                payments, and a versatile interface.
+                Engineered for today's market, our inDriver-style application features
+                open price negotiation, live trip monitoring, integrated
+                payment systems, and an adaptive user experience.
               </p>
 
               <p>
-                Whether you're expanding your services or starting fresh,
-                our scalable solution provides everything you need for growth.
+                No matter if you are diversifying your portfolio or launching a
+                new venture, our robust infrastructure offers all the components
+                required for expansion.
               </p>
             </div>
 

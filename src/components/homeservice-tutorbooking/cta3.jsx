@@ -12,18 +12,18 @@ const CTA3 = () => {
                         {/* LEFT TEXT */}
                         <div className="px-8 py-10 md:px-14 md:py-14 text-white text-center lg:text-left">
                             <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight max-w-[550px] mx-auto lg:mx-0">
-                                Take the First Step Toward Launching Your Tutor App
+                                Initiate Your Journey Toward Establishing a Premier Instructional Platform
                             </h2>
 
                             <p className="mt-4 max-w-xl mx-auto lg:mx-0 text-white/90 leading-relaxed text-sm md:text-base">
-                                Ready to start your own on-demand tutoring business? With White
-                                Label Fox, you can quickly launch a fully functional,
-                                customizable Uber for Tutor app.
+                                Prepared to cultivate your own on-demand instruction enterprise? 
+                                Through Vyom Solutions, you can rapidly deploy a sophisticated, 
+                                fully adaptable expert marketplace.
                             </p>
 
                             <div className="mt-8">
                                 <button className="inline-flex items-center justify-center rounded-full border-2 border-white px-8 py-3 text-white font-semibold hover:bg-white hover:text-[#6a1b9a] transition-all duration-300">
-                                    Start Your App Today
+                                    Begin Your Deployment
                                 </button>
                             </div>
                         </div>

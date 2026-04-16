@@ -6,54 +6,54 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is an Uber for Beauty App and how does it work?",
+      question: "What defines a specialized aesthetic platform and how does it function?",
       answer:
-        "An Uber for Beauty App connects users with beauty professionals for on-demand services. Customers book appointments via the app, and professionals come to their location. The platform simplifies booking, payment, and service management.",
+        "An aesthetic coordination framework connects participants with styling specialists for localized services. Clients orchestrate appointments via the interface, and professionals arrive at the designated site. The system optimizes scheduling, settlements, and operational oversight.",
     },
     {
-      question: "Why is Beauty App Development becoming a trend in the salon industry?",
+      question: "Why is digital styling architecture becoming a standard in the salon sector?",
       answer:
-        "Beauty App Development allows businesses to offer on-demand services, catering to customers seeking convenience and flexibility. It helps beauty professionals expand their reach and enhance customer experience, driving business growth.",
+        "Aesthetic technical development empowers firms to offer immediate service synchronization, meeting modern client demands for flexibility. It assists styling experts in expanding their professional reach and optimizing service interactions, catalyzing enterprise development.",
     },
     {
-      question: "How does an Uber for Beauty App improve the customer experience?",
+      question: "How does a dedicated styling ecosystem improve the participant journey?",
       answer:
-        "An Uber for Beauty App provides easy service booking, real-time updates, and seamless payments. Customers can select beauty professionals based on ratings and reviews, ensuring a smooth and convenient experience every time.",
+        "A specialized aesthetic module provides effortless treatments scheduling, synchronized updates, and frictionless settlements. Participants select practitioners based on validated credentials and peer reviews, ensuring a consistent and elite encounter.",
     },
     {
-      question: "What are the key features of an Uber for Beauty App?",
+      question: "What are the core modules of an integrated aesthetic framework?",
       answer:
-        "Key features include real-time tracking, secure payment processing, user profiles, booking management, and customer ratings. These features ensure a seamless experience for both customers and beauty professionals.",
+        "Vital components include synchronized tracking, protected fiscal processing, participant profiles, reservation orchestration, and performance validation loops. These modules guarantee professional interaction for all platform stakeholders.",
     },
     {
-      question: "Can I customize my Uber for Beauty App to fit my salon's needs?",
+      question: "Can I adapt the aesthetic platform to align with my firm's specific identity?",
       answer:
-        "Yes, the app can be fully customized to reflect your branding, services, and pricing models. You can tailor the app’s functionality to meet your specific business requirements and enhance user engagement.",
+        "Indeed, the architecture is fully versatile to reflect your unique branding, service menus, and valuation strategies. You can modify functional parameters to achieve specific commercial goals and optimize participant interactions.",
     },
     {
-      question: "How does Beauty App Development help beauty professionals grow their business?",
+      question: "How do technical styling frameworks assist practitioners in professional expansion?",
       answer:
-        "Beauty App Development helps beauty professionals reach more customers, manage appointments efficiently, and streamline payment processing. It provides an organized platform for professionals to grow their clientele and manage their business.",
+        "Digital aesthetic engineering helps specialists engage a broader demographic, orchestrate appointments with precision, and optimize fiscal settlements. It provides a systemic platform for practitioners to verify their portfolio and manage their styling enterprise.",
     },
     {
-      question: "What platforms are available for an Uber for Beauty App?",
+      question: "Which technical environments support the aesthetic coordination suite?",
       answer:
-        "Uber for Beauty Apps are typically available on iOS, Android, and web platforms. This ensures accessibility to a larger user base and supports businesses in reaching a wide audience across mobile devices and desktop browsers.",
+        "These frameworks are typically deployed on iOS, Android, and distributed web environments. This guarantees reach across a diverse participant demographic and supports firm accessibility across mobile and workstation interfaces.",
     },
     {
-      question: "How much does it cost to develop an Uber for Beauty App?",
+      question: "What variables influence the engineering cost of an aesthetic platform?",
       answer:
-        "The cost of developing an Uber for Beauty App depends on the complexity and customization of the features. Typically, pre-built solutions are more affordable than custom development, with pricing varying based on functionality and platform.",
+        "The capital requirement for constructing an aesthetic module depends on functional complexity and architectural adaptation. Systemic pre-engineered frameworks generally offer higher capital efficiency compared to ground-up development.",
     },
     {
-      question: "How do I promote my Uber for Beauty App to attract more users?",
+      question: "How should I position my aesthetic ecosystem to maximize participant adoption?",
       answer:
-        "Promote your app through digital marketing, social media campaigns, and referral programs. Collaborating with beauty influencers and offering promotions can help increase visibility and attract more users to the platform.",
+        "Catalyze participant growth through digital marketing, social credential campaigns, and referral incentive protocols. Strategic coordination with industry authorities and specialized promotions can significantly enhance platform authority.",
     },
     {
-      question: "How does Beauty App Development ensure security for users and service providers?",
+      question: "How does aesthetic software engineering safeguard stakeholder data?",
       answer:
-        "If you have any queries or issues, you can contact our Beauty App Development incorporates secure payment gateways, data encryption, and two-factor authentication to protect both users' and service providers' information. Security measures are implemented to prevent unauthorized access and ensure safe transactions.",
+        "Our frameworks incorporate protected settlement protocols, cryptographic data standards, and multi-factor authentication to secure the integrity of participant and specialist information. Vigilant defensive measures are integrated to maintain secure transactional environments.",
     },
   ];
 
@@ -71,11 +71,11 @@ const FAQ = () => {
           <div className="inline-flex items-center gap-2 border border-gray-200 
                           text-black  px-4 py-1.5 rounded-full text-sm mb-6">
             <span className="w-2 h-2 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
-            FAQ’s
+            Operational Intelligence
           </div>
 
           <h2 className="text-3xl md:text-5xl font-semibold bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">
-          Have any questions?
+          Frequent Inquiries
           </h2>
 
         </div>
@@ -107,7 +107,7 @@ const FAQ = () => {
               {/* ANSWER */}
               <div
                 className={`overflow-hidden transition-all duration-300 ${
-                  activeIndex === index ? "max-h-40 mt-4" : "max-h-0"
+                  activeIndex === index ? "max-h-60 mt-4" : "max-h-0"
                 }`}
               >
                 <p className="text-gray-600">

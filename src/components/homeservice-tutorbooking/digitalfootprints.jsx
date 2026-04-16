@@ -24,43 +24,48 @@ const DigitalFootprints = () => {
                         <div className="mb-6">
                             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/40 text-sm w-fit">
                                 <span className="w-2 h-2 bg-white rounded-full" />
-                                Get Your Digital Footprints
+                                Secure Your Digital Presence
                             </span>
                         </div>
 
                         {/* Heading */}
                         <h2 className="text-4xl lg:text-[44px] font-bold leading-[1.2] mb-8">
-                            Launch Your Uber for <span className="text-[#f5b301]">Tutor App</span> in <span className="text-[#f5b301]">Days</span> (Not Weeks)
+                            Activate your <span className="text-[#f5b301]">High-Performance</span> Tutor Platform in <span className="text-[#f5b301]">Days</span>
                         </h2>
 
                         {/* Text Content */}
                         <div className="space-y-6 text-white/80 text-[16px] leading-[1.6]">
                             <p>
-                                Your Uber for Tutor clone app can be live and operational in just days, not
-                                weeks, with our fast and easy-to-deploy solution.
+                                Your specialized instructional ecosystem can be fully 
+                                production-ready within a hyper-brief window, significantly 
+                                outperforming traditional development timelines through our 
+                                refined deployment strategy.
                             </p>
 
                             <p>
-                                Unlike custom development projects that can take weeks or even months, our
-                                ready-made platform accelerates your time-to-market, so you can start
-                                offering tutoring services without delay.
+                                Compared to bespoke architectural initiatives that often consume 
+                                months of engineering, our curated framework drastically reduces 
+                                your time-to-market, enabling immediate educator coordination 
+                                without operational friction.
                             </p>
 
                             <p>
-                                With our turnkey solution, you bypass the lengthy development process,
-                                getting a fully functional on-demand tutor app that connects students with
-                                tutors instantly.
+                                By leveraging our modular architecture, you circumvent the 
+                                complexities of ground-up development, securing an 
+                                enterprise-grade learning platform that synchronizes 
+                                participants effortlessly.
                             </p>
 
                             <p>
-                                Our pre-developed Uber for Tutor clone app comes packed with all the
-                                essential features needed to launch a modern, scalable tutoring service.
+                                Our veteran-engineered tutoring framework is pre-loaded with every 
+                                mission-critical module required for establishing a modern, 
+                                extensible educational marketplace.
                             </p>
 
                             <p>
-                                Say goodbye to long coding, debugging, and testing delays—this means you
-                                can focus on running your business smoothly and efficiently right from the
-                                start.
+                                Eliminate the common frustrations of protracted coding and quality 
+                                assurance cycles—allowing your team to prioritize commercial 
+                                operations and market growth from the very first day.
                             </p>
                         </div>
                     </div>

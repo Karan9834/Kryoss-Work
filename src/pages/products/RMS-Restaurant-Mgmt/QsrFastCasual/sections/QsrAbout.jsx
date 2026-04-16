@@ -1,5 +1,5 @@
 import React from "react";
-import qsrAboutImg from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsabout.jpg";
+import qsrAboutImg from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsabout1.jpeg";
 import { CheckCircle } from "lucide-react";
 
 const QsrAbout = () => {
@@ -9,7 +9,7 @@ const QsrAbout = () => {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
                     {/* Left: Single Image */}
-                    <div className="relative">
+                    <div className="relative order-2 lg:order-1">
                         <div className="relative w-full h-[420px] rounded-[2.5rem] overflow-hidden shadow-xl">
                             <img src={qsrAboutImg} alt="About QSR" className="w-full h-full object-cover" />
                         </div>
@@ -22,7 +22,7 @@ const QsrAbout = () => {
                     </div>
 
                     {/* Right: Text Content */}
-                    <div className="space-y-8">
+                    <div className="space-y-8 order-1 lg:order-2">
                         <div className="space-y-3">
                             <span className="inline-block text-orange-600 font-bold text-sm uppercase tracking-widest">
                                 About the Platform

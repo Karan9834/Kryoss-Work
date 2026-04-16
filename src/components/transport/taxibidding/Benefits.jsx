@@ -21,22 +21,22 @@ const CustomerBenefitsSection = () => {
             rounded-full
           ">
             <span className="w-2 h-2 bg-[#6dbb1a] rounded-full"></span>
-            Customer Benefits
+            User Advantages
           </span>
         </div>
 
         {/* Heading */}
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">
-            How Does{" "}
+            In what ways does our{" "}
             <span className="text-[#6dbb1a]">
-              inDriver Clone Benefit
+              inDrive Replica add value
             </span>{" "}
-            Your Customers ?
+            for your riders?
           </h2>
 
           <p className="text-gray-600 mt-4">
-            Involving Customers in Price Control and Let Them Drive as Per Their Requirements
+            Empowering Users with Fare Autonomy and Personalized Travel Preferences
           </p>
         </div>
 
@@ -47,27 +47,28 @@ const CustomerBenefitsSection = () => {
           <div className="text-gray-700 space-y-6 leading-relaxed">
 
             <p>
-              In the case of other taxi-booking apps, during the whole time of surcharging,
-              there is an increase in the fees associated with the peak hours and the periods
-              of increased pursuit. However, with the inDriver clone, customers enjoy a
-              unique benefit: ultimately, they have the pricing power and can choose their
-              price for a ride.
+              While traditional ride-hailing platforms often impose surge pricing during
+              peak intervals or high-demand cycles, our inDrive-inspired application 
+              offers a distinctive edge: users maintain complete influence over costs 
+              and can propose their own rates for any journey.
             </p>
 
             <p>
-              This unique functionality restores customer control. Drivers and passengers
-              now agree on a price within the user’s budget, and ride prices are no longer
-              subjected to uncontrolled surcharges.
+              This innovative feature returns decision-making authority to the user.
+              Both riders and partners negotiate values that align with individual
+              budgets, ensuring that transportation costs remain predictable and fair.
             </p>
 
             <p>
-              Furthermore, customers can opt for charges they can afford, and the bid-and-choose
-              system lets them select from different fares to match their needs adequately.
+              Additionally, travelers can advocate for prices that suit their financial 
+              comfort, utilizing a bid-selection process to find the most appropriate 
+              service level for their current needs.
             </p>
 
             <p>
-              This induces trust and teamwork among consumers and drivers, leading to
-              a predictive transport system that is both customer-focused and satisfying.
+              This fosters a culture of transparency and mutual cooperation, resulting 
+              in a reliable ecosystem that prioritizes user satisfaction and 
+              long-term loyalty.
             </p>
 
           </div>

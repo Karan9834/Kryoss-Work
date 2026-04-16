@@ -10,19 +10,20 @@ const DemoCTASection = () => {
 
           {/* LEFT CONTENT */}
           <div className="text-white z-10">
-            <h2 className="text-3xl md:text-4xl font-semibold leading-snug mb-6">
-              Want to See an app like <br />
-              inDriver in Action?
-            </h2>
-
+            <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+            Discover why our{" "}
+            <span className="text-[#9FE870]">Vyom Drive Architecture</span> is
+            the Optimal Choice
+          </h2>
             <p className="text-gray-300 max-w-md leading-relaxed mb-8">
-              Curious about how an app like inDriver works and what features it
-              comes with? We're just a click away — contact us and get a
-              complete overview today.
+              Gain a detailed perspective on our sophisticated mobility framework.
+              Our specialists will lead you through our interactive demo
+              environments and management portals to demonstrate how they
+              catalyze enterprise growth.
             </p>
 
             <button className="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300">
-              Get a Demo
+              Schedule Your Live Demo
             </button>
           </div>
 

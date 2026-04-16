@@ -96,7 +96,7 @@ const CRMFeaturesAdvanced = () => {
             <img
               src={crmFeatureImg}
               alt="CRM Features"
-              className="w-full max-w-[600px] object-contain"
+              className="w-full max-w-[600px] rounded-3xl  object-contain"
             />
 
           </div>

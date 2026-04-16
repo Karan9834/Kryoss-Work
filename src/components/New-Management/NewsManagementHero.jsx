@@ -1,10 +1,10 @@
 import React from "react";
 import { ArrowRight, Sparkles, TrendingUp, Globe } from "lucide-react";
-
+import heroimg from "../../assets/News-Management/hero.jpg";
 const NewsManagementHero = () => {
   return (
     <section className="relative w-full overflow-hidden bg-gradient-to-br from-orange-50 via-amber-50 to-white">
-      
+
       {/* Animated Wave Background - Top */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none z-0">
         <svg
@@ -46,7 +46,7 @@ const NewsManagementHero = () => {
       {/* Container */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28 z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
+
           {/* LEFT CONTENT */}
           <div className="text-center lg:text-left">
             {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
@@ -61,8 +61,8 @@ const NewsManagementHero = () => {
               <span className="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-600 text-transparent bg-clip-text relative">
                 News Operations
                 <svg className="absolute bottom-0 left-0 w-full h-3 -z-10" viewBox="0 0 200 10" preserveAspectRatio="none">
-                  <path d="M0,5 Q25,0 50,5 T100,5 T150,5 T200,5" stroke="url(#gradient)" fill="none" strokeWidth="2" strokeDasharray="4 4"/>
-                  <defs><linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#F97316"/><stop offset="100%" stopColor="#F59E0B"/></linearGradient></defs>
+                  <path d="M0,5 Q25,0 50,5 T100,5 T150,5 T200,5" stroke="url(#gradient)" fill="none" strokeWidth="2" strokeDasharray="4 4" />
+                  <defs><linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#F97316" /><stop offset="100%" stopColor="#F59E0B" /></linearGradient></defs>
                 </svg>
               </span>
             </h1>
@@ -88,7 +88,7 @@ const NewsManagementHero = () => {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-[480px] h-[480px] bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full blur-3xl animate-pulse"></div>
             </div>
-            
+
             {/* Floating Elements Decoration - Orange Theme */}
             <div className="absolute -top-6 -right-6 z-20 bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-3 border border-orange-200/50 animate-bounce-slow">
               <TrendingUp size={24} className="text-orange-500" />
@@ -100,13 +100,13 @@ const NewsManagementHero = () => {
             {/* Main Image Card */}
             <div className="relative w-full max-w-md lg:max-w-lg rounded-2xl shadow-2xl overflow-hidden border border-orange-200/30 bg-white/10 backdrop-blur-sm">
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+                src={heroimg}
                 alt="News Management Dashboard"
                 className="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-105"
               />
               {/* Overlay Gradient for depth */}
               <div className="absolute inset-0 bg-gradient-to-t from-orange-500/5 via-transparent to-transparent pointer-events-none"></div>
-              
+
               {/* Floating Card Overlay - Orange Theme - Updated typography */}
               <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-lg border border-orange-100/50">
                 <div className="flex items-center justify-between">

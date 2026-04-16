@@ -12,43 +12,43 @@ import {
 import admincontrol from "../../assets/transport-uber-img/admincontrol.webp"
 const adminFeatures = [
     {
-        title: "Dashboard & Analytics",
-        desc: "Visual reports & metrics help understand what is happening and react to service issues immediately.",
+        title: "Operational Dashboards",
+        desc: "Interactive visual reports provide real-time metrics to monitor platform activity and address service anomalies instantly.",
         icon: BarChart3,
     },
     {
-        title: "User & Driver Management",
-        desc: "No more manual tracking across systems; you can manage everything from a single place.",
+        title: "Unified Profile Oversight",
+        desc: "Eliminate fragmented data management; supervise all user and partner profiles through a centralized administrative hub.",
         icon: Users,
     },
     {
-        title: "Trip Management & History",
-        desc: "Watch trips and access complete historical data in real time with a few taps.",
+        title: "Journey Logs & Archival Data",
+        desc: "Monitor active trips and dive into exhaustive historical records with a streamlined, multi-functional interface.",
         icon: Clock,
     },
     {
-        title: "Pricing & Fare Rules",
-        desc: "Configure how your platform charges by fine-tuning pricing models.",
+        title: "Intelligent Rate Structures",
+        desc: "Define and adjust how your ecosystem generates revenue by fine-tuning sophisticated pricing and fare algorithms.",
         icon: DollarSign,
     },
     {
-        title: "Role-Based Access Control",
-        desc: "Keep sensitive controls restricted, allowing teams to work efficiently within their roles.",
+        title: "Advanced Permissions Control",
+        desc: "Protect critical system settings by implementing rigid, role-based access for different administrative departments.",
         icon: ShieldCheck,
     },
     {
-        title: "Surge Pricing Configuration",
-        desc: "Set dynamic surge rules to protect revenue without manual intervention.",
+        title: "Demand-Driven Rate Logic",
+        desc: "Establish automated surge parameters to protect profit margins during high-activity periods without manual oversight.",
         icon: TrendingUp,
     },
     {
-        title: "Ticket Support",
-        desc: "All the disputes can be handled inside the admin panel, helping you maintain quality.",
+        title: "Centralized Support Desk",
+        desc: "Resolve all participant inquiries and disputes within the administrative portal to maintain service excellence.",
         icon: Headphones,
     },
     {
-        title: "Commission & Revenue",
-        desc: "Monitor total platform earnings and define how much commission you keep.",
+        title: "Revenue & Commission Tracking",
+        desc: "Oversee gross platform income and precisely determine your profit sharing levels for sustainable growth.",
         icon: Percent,
     },
 ];
@@ -64,20 +64,20 @@ const AdminControl = () => {
                 {/* TAG */}
                 <div className="flex justify-center mb-6">
                     <span className="border border-gray-300 rounded-full px-5 py-1 text-sm text-gray-600">
-                        Admin Control
+                        Operational HQ
                     </span>
                 </div>
 
                 {/* HEADING */}
                 <h2 className="text-center text-[32px] md:text-[40px] leading-[44px] md:leading-[54px] font-semibold text-[#2f2f2f] mb-5">
-                    Get Complete Ride-Hailing Business Control with Admin Panel
+                    Exercise Absolute Command Over Your Mobility Enterprise
                 </h2>
 
                 {/* SUBTEXT */}
                 <p className="text-center text-[15px] text-[#5f5f5f] max-w-4xl mx-auto mb-14">
-                    Operating a modern transport business demands complete control. And the
-                    Admin panel gives you full control over your business operations from a
-                    single place.
+                    Managing a modern transportation ecosystem requires granular visibility.
+                    Our administrative suite provides the comprehensive oversight required to
+                    steer your business operations from a single, unified interface.
                 </p>
 
                 {/* GRID */}

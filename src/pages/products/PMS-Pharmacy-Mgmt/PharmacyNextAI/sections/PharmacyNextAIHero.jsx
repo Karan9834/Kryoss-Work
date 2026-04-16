@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, Activity, ShieldCheck, Zap, Heart, ShieldPlus, LayoutDashboard, MessageCircle } from "lucide-react";
-import heroImg from "@/assets/pharmacynextaipms-img/pharmacynextaipmshero.jpg";
+import heroImg from "@/assets/pharmacynextaipms-img/pharmacynextaipmshero.jpeg";
 
 const PharmacyNextAIHero = () => {
     return (

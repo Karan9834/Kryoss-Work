@@ -106,7 +106,7 @@ const FeaturesSection = () => {
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald-500/10 blur-[120px] rounded-full" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6">
+      <div className="relative z-10 container mx-auto px-6 lg:px-24">
 
         {/* HEADING */}
         <div className="text-center mb-14">
@@ -130,11 +130,10 @@ const FeaturesSection = () => {
                 key={c.id}
                 onClick={() => setActiveCategory(c.id)}
                 className={`px-5 py-2 rounded-full text-sm flex items-center gap-2 transition
-                ${
-                  activeCategory === c.id
+                ${activeCategory === c.id
                     ? "bg-green-500 text-white shadow-lg"
                     : "bg-gray-800 text-gray-400 hover:bg-gray-700"
-                }`}
+                  }`}
               >
                 <Icon className="w-4 h-4" />
                 {c.name}

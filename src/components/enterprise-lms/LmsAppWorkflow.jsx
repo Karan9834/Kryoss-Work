@@ -1,5 +1,5 @@
 import React from "react";
-import lmsworkflow from "../../assets/lms-img/lmsworkflow.jpg";
+import lmsworkflow from "../../assets/lms-img/lmsworkflow.jpeg";
 
 const LmsAppWorkflow = () => {
     const steps = [

@@ -39,20 +39,21 @@ const AppGlance = () => {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 border border-white/40 px-4 py-1.5 rounded-full text-xs md:text-sm mb-6">
           <span className="w-2.5 h-2.5 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
-          Uber For Beauty App At A Glance
+          Vyom Beauty Ecosystem Overview
         </div>
 
         {/* Heading */}
         <h2 className="text-[28px] md:text-[40px] font-semibold mb-8 md:mb-10">
-          Discover the Features of{" "}
+          Explore the Capabilities of our{" "}
           <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">
-            Our Customer & Provider Apps
+            Stakeholder Frameworks
           </span>
         </h2>
 
         <p className="text-sm md:text-base max-w-3xl mx-auto">
-          Get a visual overview of the intuitive design and user-friendly interface
-          of our customer and provider apps.
+          Examine a high-fidelity visual demonstration of the sophisticated 
+          architecture and interactive interfaces governing our participant and 
+          specialist modules.
         </p>
 
         {/* Tabs */}

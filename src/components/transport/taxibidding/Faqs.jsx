@@ -2,54 +2,44 @@ import React, { useState } from "react";
 
 const faqs = [
   {
-    question: "Do you provide ownership of the source code for the inDriver clone purchase?",
-    answer:
-      "Yes, we provide complete source code ownership with your purchase. This gives you full control over customization, future updates, scalability, and integrations. You can modify the application as per your business goals without dependency restrictions."
+    question: "Do you provide complete ownership of the source code upon purchase?",
+    answer: "Yes, we grant full source code ownership with every purchase. This empowers you with absolute control over customization, feature updates, scaling, and integration without any restrictive dependencies."
   },
   {
-    question: "What are the Benefits of inDrive Clone App Development?",
-    answer:
-      "An inDriver clone app offers a flexible bidding-based pricing model, faster launch time, scalable infrastructure, and multi-service integration. It helps entrepreneurs enter the ride-hailing market quickly with reduced development costs and maximum customization."
+    question: "What are the primary advantages of developing an inDrive-style application?",
+    answer: "An inDrive-style platform offers a flexible bidding-based pricing structure, rapid market entry, scalable architecture, and the ability to integrate multiple services, allowing for a high-ROI transport business."
   },
   {
-    question: "What is the Revenue Model of the inDriver Like App?",
-    answer:
-      "Revenue can be generated through commission per ride, subscription plans for drivers, surge pricing margins, featured driver listings, advertisement placements, cancellation charges, and payment gateway fees."
+    question: "How does the revenue generation work for this bidding platform?",
+    answer: "Revenue can be successfully generated through trip-based commissions, driver subscription tiers, premium listings, integrated advertisements, and cancellation fee management."
   },
   {
-    question: "How Much inDrive Clone App Development Cost?",
-    answer:
-      "The cost depends on customization level, feature additions, platform support (Android, iOS, Web), and third-party integrations. However, compared to building from scratch, a clone solution significantly reduces time and development expenses."
+    question: "What factors influence the development cost of the inDrive replica?",
+    answer: "The final cost is determined by your specific customization needs, additional feature requests, multi-platform support (iOS, Android, Web), and any third-party API requirements."
   },
   {
-    question: "How Does Kryoss Work Protect My Business Data?",
-    answer:
-      "We implement enterprise-level security protocols including encrypted databases, secure payment gateways, role-based access control, server-side validation, and secure authentication layers to protect business and user data."
+    question: "How is business and user data protected within the system?",
+    answer: "We secondary high-level security protocols including database encryption, secure payment tunnels, multi-factor authentication, and specialized access controls to safeguard all sensitive information."
   },
   {
-    question: "Does Kryoss Work Add More Features to inDriver Like App on My Requirement?",
-    answer:
-      "Absolutely. Our solution is fully customizable. We can integrate additional modules, payment systems, geo-location services, advanced analytics, or any feature specific to your business model."
+    question: "Can you integrate custom features based on my business requirements?",
+    answer: "Absolutely. Our framework is highly adaptable. We can develop and integrate specialized modules, regional payment systems, or advanced logistics tools tailored to your commercial vision."
   },
   {
-    question: "Will Kryoss Work Support Me with an App like inDriver Update?",
-    answer:
-      "Yes, we provide ongoing technical support and version updates. Our team ensures compatibility with the latest OS versions, bug fixes, feature improvements, and security patches."
+    question: "Do you offer technical support for platform updates and maintenance?",
+    answer: "Yes, we provide comprehensive technical assistance and version updates. Our team ensures your platform remains compatible with the latest OS releases and adheres to modern security standards."
   },
   {
-    question: "Can I Offer Multiple Services (e.g., taxi, bike rental, courier) on the App?",
-    answer:
-      "Yes, our multi-service architecture allows you to offer taxi rides, bike rentals, parcel delivery, food delivery, and other on-demand services within a single unified platform."
+    question: "Is it possible to offer multiple services like bike rentals or delivery within one app?",
+    answer: "Yes, our multi-service architecture allows you to deploy various modules—including taxi rides, courier services, and bike rentals—within a single, unified application ecosystem."
   },
   {
-    question: "How Long Does it Take to Develop the inDriver Clone Script?",
-    answer:
-      "With our ready-made solution, deployment can be completed within days. Additional customization may extend the timeline depending on complexity and integrations required."
+    question: "What is the typical timeframe to launch the inDrive clone solution?",
+    answer: "With our production-ready solution, basic deployment can be achieved in a matter of days. Custom branding and feature additions may extend the timeline depending on complexity."
   },
   {
-    question: "How Can I Start Using the inDriver Clone App?",
-    answer:
-      "Simply contact our team, share your requirements, finalize branding, configure your server, and we’ll assist with deployment. Once configured, you can launch your app on app stores immediately."
+    question: "What are the first steps to initiate my project with you?",
+    answer: "Simply reach out to our consulting team to share your vision. We will assist you with branding, server configuration, and the entire deployment lifecycle to get you market-ready."
   }
 ];
 
@@ -68,16 +58,17 @@ const FAQSection = () => {
         <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 border border-[#d6e6c4] bg-white px-4 py-1 rounded-full text-sm text-gray-700">
             <span className="w-2 h-2 bg-[#6dbb1a] rounded-full"></span>
-            FAQs
+            General Inquiries
           </div>
         </div>
 
         {/* Heading */}
-        <h2 className="text-center text-3xl md:text-4xl font-semibold mb-16">
-          Have{" "}
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-gray-800 text-center">
+          Frequently Asked{" "}
           <span className="text-[#6dbb1a]">
-            any questions?
-          </span>
+            Questions Regarding
+          </span>{" "}
+          our inDrive Replica
         </h2>
 
         {/* FAQ Grid */}

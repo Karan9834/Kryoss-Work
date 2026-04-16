@@ -49,7 +49,7 @@ const CRMCTA = () => {
               src={crmCtaImg}
               alt="CRM CTA"
               className="
-                w-[260px] md:w-[320px] 
+                w-[260px] md:w-[320px]  
                 md:absolute md:-right-10 md:bottom-[-20px]
               "
             />
