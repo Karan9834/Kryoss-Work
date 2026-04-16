@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import React from 'react';
-import heroImg from "@/assets/bdtaskhms-img/bdtaskhmshero.webp";
+import heroImg from "../../../../../assets/Bd task hms/1,.jpg";
 
 const BdTaskHMSHero = () => {
     return (

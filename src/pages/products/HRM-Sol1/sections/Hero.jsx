@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArrowRight, Play, CheckCircle, MessageCircle } from 'lucide-react'
-
+import hero from "../../../../assets/hrm/1.jpg"
 const Hero = () => {
   return (
     <section className="relative py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
@@ -89,41 +89,13 @@ const Hero = () => {
             {/* Main Image Container */}
             <div className="relative rounded-xl overflow-hidden shadow-2xl border border-gray-700">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                src={hero}
                 alt="HRM Dashboard"
                 className="w-full h-auto object-cover"
               />
               
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 via-transparent to-transparent" />
-            </div>
-
-            {/* Floating Card 1 */}
-            <div className="absolute -top-4 -left-4 bg-gray-800/90 backdrop-blur-sm rounded-lg p-2.5 shadow-xl border border-gray-700">
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-green-500/20 flex items-center justify-center">
-                  <CheckCircle className="w-3.5 h-3.5 text-green-500" />
-                </div>
-                <div>
-                  <div className="text-[10px] text-gray-400">Today's Attendance</div>
-                  <div className="text-xs font-semibold text-white">94% Present</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Floating Card 2 */}
-            <div className="absolute -bottom-4 -right-4 bg-gray-800/90 backdrop-blur-sm rounded-lg p-2.5 shadow-xl border border-gray-700">
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-blue-500/20 flex items-center justify-center">
-                  <svg className="w-3.5 h-3.5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-[10px] text-gray-400">New Hires</div>
-                  <div className="text-xs font-semibold text-white">+12 This Month</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

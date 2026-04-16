@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
-import mentorAbout from "@/assets/mentorlms-img/mentorlmsabout.png";
+import mentorAbout from "../../../../../assets/Mentor Lms/2,,.jpg";
 
 const MentorLMSAbout = () => {
     return (

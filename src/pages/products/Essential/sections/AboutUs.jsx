@@ -14,6 +14,7 @@ import {
   Box,
   Layers
 } from "lucide-react";
+import about from "../../../../assets/Essential plugins/2.jpg"
 
 const AboutUs = () => {
   return (
@@ -43,26 +44,13 @@ const AboutUs = () => {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-400/20 to-blue-400/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative bg-white rounded-2xl p-2 shadow-xl border border-gray-100">
                 <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                  src={about}
                   alt="Team collaboration in modern workspace"
                   className="w-full rounded-xl shadow-lg transition-transform duration-700 group-hover:scale-105"
                 />
                 
                 {/* Overlay Gradient */}
                 <div className="absolute inset-2 rounded-xl bg-gradient-to-tr from-purple-500/10 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-              </div>
-            </div>
-            
-            {/* Floating Badge */}
-            <div className="absolute -bottom-5 -right-5 bg-white rounded-xl p-3 shadow-xl border border-purple-100 animate-float">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                  <Users size={16} className="text-white" />
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500">Active Installations</p>
-                  <p className="text-sm font-bold bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">50,000+</p>
-                </div>
               </div>
             </div>
           </div>

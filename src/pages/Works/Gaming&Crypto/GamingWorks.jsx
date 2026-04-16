@@ -5,12 +5,13 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+
 const gamingData = [
     {
         id: 1,
         titleRed: "Kinda Heroes RPG",
         titleBlack: "-Rescue the Princess!",
-        description: "Kinda Heroes is a classic medieval RPG made by one indie guy! Welcome to Riverstone - a tiny medieval village in the middle of nowhere! This place hasn’t seen any heroes yet. Choose a character and begin your adventure! Upgrade combat and cooking skills, complete quests, rescue Woody and become a real hero!",
+        description: "Kinda Heroes is a classic medieval RPG made by one indie guy! Welcome to Riverstone - a tiny medieval village in the middle of nowhere! This place hasn't seen any heroes yet. Choose a character and begin your adventure! Upgrade combat and cooking skills, complete quests, rescue Woody and become a real hero!",
         img: "/GamingandCrypto/kind hero.png",
         link: "https://apps.microsoft.com/detail/9p0t94r6pq08?hl=en-US&gl=US",
         bgClass: "bg-white",
@@ -30,7 +31,7 @@ const gamingData = [
         id: 3,
         titleRed: "Hit Master 3D -",
         titleBlack: " Knife Assassin",
-        description: "The game has a lot of interactive items. If you don’t like to defeat enemies one by one silently and slowly, you can throw a knife into an exploding barrel, and defeat a crowd of enemies in one blow! Also, there are various boxes scattered everywhere – break them to slow down your enemies! Do you like action spy movies? Do you like to silently defeat rivals? Then challenge yourself in an epic Hit Master 3D game! Here you must prove that you are the best and most accurate spy of all! Once you’re ambushed, you are attacked by a huge crowd of enemies, and all you have is a lot of knives! Throw knives at your aims, eliminate them one by one and beat ‘em all to survive!",
+        description: "The game has a lot of interactive items. If you don't like to defeat enemies one by one silently and slowly, you can throw a knife into an exploding barrel, and defeat a crowd of enemies in one blow! Also, there are various boxes scattered everywhere – break them to slow down your enemies! Do you like action spy movies? Do you like to silently defeat rivals? Then challenge yourself in an epic Hit Master 3D game! Here you must prove that you are the best and most accurate spy of all! Once you're ambushed, you are attacked by a huge crowd of enemies, and all you have is a lot of knives! Throw knives at your aims, eliminate them one by one and beat 'em all to survive!",
         img: "/GamingandCrypto/hit mater 3d.png",
         link: "https://play.google.com/store/apps/details?id=com.hit.master",
         bgClass: "bg-white",
@@ -70,7 +71,7 @@ const gamingData = [
 
 const GamingWorks = () => {
     return (
-        <div className="w-full relative font-sans overflow-hidden">
+        <div className="w-full bg-white relative font-sans overflow-hidden">
 
             {/* 1. Hero Section */}
             <section
@@ -88,7 +89,10 @@ const GamingWorks = () => {
                     transition={{ duration: 0.8 }}
                     className="relative z-10 container mx-auto px-4"
                 >
-                    <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">Gamming <span className="text-orange-500">Works</span></h1>
+                    <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">Gaming <span className="text-orange-500">Works</span></h1>
+                    <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto text-gray-200">
+                        Immerse yourself in our collection of engaging mobile and PC games, from RPG adventures to action-packed battle arenas.
+                    </p>
                 </motion.div>
             </section>
 
@@ -99,70 +103,86 @@ const GamingWorks = () => {
                     <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
                     <a href="/works" className="hover:text-orange-500 transition-colors duration-300">Gaming & Crypto</a>
                     <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-                    <span className="text-orange-500">Gamming Works</span>
+                    <span className="text-orange-500">Gaming Works</span>
                 </div>
             </section>
 
             {/* 3. Portfolio Projects List (Alternating View) */}
-            <section className="w-full flex flex-col">
-                {gamingData.map((project, index) => (
-                    <React.Fragment key={project.id}>
-                        <div className={`w-full py-16 md:py-24 ${project.bgClass}`}>
-                            <div className="container mx-auto px-4 lg:px-12">
-                                <div
-                                    className={`flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-24 ${project.textLeft ? '' : 'md:flex-row-reverse'
-                                        }`}
-                                >
-                                    {/* Text Content Block */}
-                                    <motion.div
-                                        initial={{ opacity: 0, x: project.textLeft ? -50 : 50 }}
-                                        whileInView={{ opacity: 1, x: 0 }}
-                                        viewport={{ once: true, margin: "-100px" }}
-                                        transition={{ duration: 0.6 }}
-                                        className="w-full md:w-1/2 flex flex-col items-start text-left"
-                                    >
-                                        <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 leading-tight">
-                                            <span className="text-red-500">{project.titleRed}</span>
-                                            <span className="text-gray-800">{project.titleBlack}</span>
-                                        </h2>
-                                        <p className="text-gray-600 text-base lg:text-lg leading-relaxed mb-6 font-medium">
-                                            {project.description}
-                                        </p>
-                                        <a 
-                                            href={project.link || ""} 
-                                            className="inline-block mt-4 hover:opacity-90 transition-opacity"
-                                            target="_blank" 
-                                            rel="noopener noreferrer"
+            <section className="pt-16 md:pt-24 bg-white relative z-10 w-full mb-16">
+                <div className="container mx-auto px-4 lg:px-8">
+                    
+                    <div className="text-center mb-12">
+                        <motion.h2
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-black mb-4"
+                        >
+                            Our <span className="text-orange-500">Gaming</span> Portfolio
+                        </motion.h2>
+                        <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
+                    </div>
+
+                </div>
+
+                <div className="w-full flex flex-col">
+                    {gamingData.map((project, index) => {
+                        const isEven = index % 2 === 0;
+                        return (
+                            <React.Fragment key={project.id}>
+                                <div className={`w-full py-16 lg:py-24 ${isEven ? 'bg-white' : 'bg-orange-50'}`}>
+                                    <div className={`container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
+                                        
+                                        {/* Image Box */}
+                                        <motion.div
+                                            initial={{ opacity: 0, scale: 0.9 }}
+                                            whileInView={{ opacity: 1, scale: 1 }}
+                                            viewport={{ once: true, margin: "-100px" }}
+                                            transition={{ duration: 0.6, delay: 0.2 }}
+                                            className="w-full lg:w-1/2 flex justify-center items-center relative drop-shadow-2xl"
                                         >
                                             <img
-                                                src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
-                                                alt="Get it on Google Play"
-                                                className="h-12 object-contain"
+                                                src={project.img}
+                                                alt={project.titleRed}
+                                                className="max-h-[500px] max-w-full object-contain hover:scale-105 transition-transform duration-500"
+                                                loading="lazy"
                                             />
-                                        </a>
-
                                         </motion.div>
 
-                                    {/* Main App Mockup Image */}
-                                    <motion.div
-                                        initial={{ opacity: 0, scale: 0.9 }}
-                                        whileInView={{ opacity: 1, scale: 1 }}
-                                        viewport={{ once: true, margin: "-100px" }}
-                                        transition={{ duration: 0.6, delay: 0.2 }}
-                                        className="w-full md:w-1/2 flex justify-center items-center"
-                                    >
-                                        <img
-                                            src={project.img}
-                                            alt={project.titleRed}
-                                            className="w-80 md:w-96 lg:w-[420px] h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
-                                            loading="lazy"
-                                        />
-                                    </motion.div>
+                                        {/* Content Box */}
+                                        <motion.div
+                                            initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            viewport={{ once: true, margin: "-100px" }}
+                                            transition={{ duration: 0.6 }}
+                                            className="w-full lg:w-1/2 flex flex-col justify-center z-20"
+                                        >
+                                            <h3 className="text-2xl md:text-3xl font-medium text-black mb-6 leading-tight hover:text-orange-600 transition-colors duration-300">
+                                                <span className="text-red-500">{project.titleRed}</span>
+                                                <span className="text-gray-800">{project.titleBlack}</span>
+                                            </h3>
+                                            <p className="text-gray-600 leading-relaxed mb-8 text-lg font-light">
+                                                {project.description}
+                                            </p>
+                                            <a 
+                                                href={project.link || ""} 
+                                                className="inline-block mt-4 hover:opacity-90 transition-opacity"
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                            >
+                                                <img
+                                                    src="https://kryosssoftech.org/icons/Health-&-Fitness/google%20app%20store.png"
+                                                    alt="Get it on Google Play"
+                                                    className="h-12 object-contain"
+                                                />
+                                            </a>
+                                        </motion.div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </React.Fragment>
-                ))}
+                            </React.Fragment>
+                        );
+                    })}
+                </div>
             </section>
 
             {/* Stats Counter Section */}
@@ -190,11 +210,6 @@ const GamingWorks = () => {
                 </div>
             </section>
 
-            
-            {/* 6. Contact Section as finally requested */}
-            
-
-        
             {/* New Added Sections */}
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />

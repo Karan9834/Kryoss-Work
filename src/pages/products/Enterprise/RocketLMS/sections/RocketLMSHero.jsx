@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Zap, Target, Rocket, Activity, MessageCircle } from "lucide-react";
-import rocketHero from '@/assets/rocketlms-img/rocketlmshero.jpg';
+import rocketHero from '../../../../../assets/Rocket lms/1_.jpeg';
 
 const RocketLMSHero = () => {
     const demoUrl = "https://preview.codecanyon.net/item/rocket-lms-learning-management-academy-script/full_screen_preview/33120735";
@@ -78,16 +78,6 @@ const RocketLMSHero = () => {
                                 alt="Rocket Admin Desk"
                                 className="w-full h-full object-cover"
                             />
-                        </div>
-                        {/* Status badge */}
-                        <div className="absolute -bottom-6 -left-6 bg-white p-5 rounded-3xl shadow-2xl flex items-center gap-4 border border-slate-50">
-                            <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 flex-shrink-0 flex-wrap gap-4">
-                                <Zap size={24} />
-                            </div>
-                            <div>
-                                <p className="text-[10px] font-bold text-slate-400 uppercase leading-none mb-1">Engines</p>
-                                <p className="text-sm font-black text-red-600 leading-none">All Systems Green</p>
-                            </div>
                         </div>
                     </div>
                 </div>

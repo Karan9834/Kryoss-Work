@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImg from "@/assets/smarthms-img/smarthmsabout.jpg";
+import aboutImg from "../../../../../assets/SmartHms/2.,.jpeg";
 
 const SmartHMSAbout = () => {
     return (
@@ -29,17 +29,6 @@ const SmartHMSAbout = () => {
                         <p className="text-slate-600 text-lg leading-relaxed">
                             Smart HMS is designed specifically for multi-specialty hospitals that demand high-performance functionality, seamless integrations, and intuitive interfaces. By centralizing all critical operations—from patient records to pharmacy and billing—we empower healthcare professionals to focus entirely on patient care.
                         </p>
-
-                        <div className="grid grid-cols-2 gap-6 pt-4">
-                            <div className="bg-slate-50 p-4 border border-slate-100 rounded-2xl">
-                                <h3 className="text-3xl font-bold text-indigo-600 mb-2">99%</h3>
-                                <p className="text-sm font-semibold text-slate-500 uppercase tracking-wide">Uptime Reliability</p>
-                            </div>
-                            <div className="bg-slate-50 p-4 border border-slate-100 rounded-2xl">
-                                <h3 className="text-3xl font-bold text-teal-600 mb-2">HIPAA</h3>
-                                <p className="text-sm font-semibold text-slate-500 uppercase tracking-wide">Compliant Security</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

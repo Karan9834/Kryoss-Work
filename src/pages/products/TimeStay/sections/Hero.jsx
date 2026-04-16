@@ -1,5 +1,6 @@
 import React from "react";
 import { Play, ArrowRight, Clock, Calendar, Users, Star, MessageCircle } from "lucide-react";
+import hero from "../../../../assets/Timestay/1.jpg"
 
 const TimeStayHero = () => {
   const liveDemoUrl ="https://preview.codecanyon.net/item/timestay-multivendor-hourly-hotel-booking-laravel-website-saas/full_screen_preview/56212618";
@@ -103,26 +104,13 @@ const TimeStayHero = () => {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500/40 to-teal-500/40 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-xl p-2 border border-emerald-500/30 shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+                  src={hero}
                   alt="Luxury Hotel Suite"
                   className="w-full max-w-md rounded-lg shadow-xl transition-transform duration-700 group-hover:scale-105"
                 />
                 
                 {/* Overlay Gradient */}
                 <div className="absolute inset-2 rounded-lg bg-gradient-to-tr from-emerald-500/10 via-transparent to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-              </div>
-            </div>
-            
-            {/* Floating Stats Card */}
-            <div className="absolute -bottom-5 -left-5 bg-slate-800/90 backdrop-blur-md rounded-xl p-3 shadow-xl border border-emerald-500/30 animate-float">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
-                  <Clock size={16} className="text-white" />
-                </div>
-                <div>
-                  <p className="text-xs text-emerald-300">Avg. Response Time</p>
-                  <p className="text-base font-bold text-white">&lt; 2 minutes</p>
-                </div>
               </div>
             </div>
           </div>

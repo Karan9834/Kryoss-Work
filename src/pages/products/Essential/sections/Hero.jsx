@@ -13,6 +13,8 @@ import {
   Cpu
 } from "lucide-react";
 
+import hero from "../../../../assets/Essential plugins/1.jpg"
+
 const EssentialPluginHero = () => {
   const previewUrl =
     "https://preview.codecanyon.net/item/wp-news-and-scrolling-widgets-pro-wordpress-news-plugin/full_screen_preview/19274189";
@@ -151,32 +153,11 @@ const EssentialPluginHero = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl blur-2xl opacity-50 group-hover:opacity-100 transition"></div>
               <div className="relative bg-gradient-to-br from-purple-900/50 to-blue-900/50 backdrop-blur-xl rounded-2xl p-3 border border-purple-500/30 shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                  src={hero}
                   alt="Plugin Dashboard"
                   className="w-full max-w-md rounded-xl transition-all duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 via-transparent to-blue-500/20 rounded-xl"></div>
-              </div>
-            </div>
-
-            {/* Floating Holographic Badges */}
-            <div className="absolute -top-8 -right-8 bg-black/80 backdrop-blur-lg rounded-2xl p-3 border border-purple-500/50 animate-float-glow">
-              <div className="flex items-center gap-2">
-                <Zap size={20} className="text-yellow-400" />
-                <div>
-                  <p className="text-xs text-gray-400">Performance</p>
-                  <p className="text-sm font-bold text-white">+247%</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="absolute -bottom-8 -left-8 bg-black/80 backdrop-blur-lg rounded-2xl p-3 border border-blue-500/50 animate-float-glow animation-delay-1000">
-              <div className="flex items-center gap-2">
-                <Puzzle size={20} className="text-purple-400" />
-                <div>
-                  <p className="text-xs text-gray-400">Plugins</p>
-                  <p className="text-sm font-bold text-white">50+</p>
-                </div>
               </div>
             </div>
           </div>

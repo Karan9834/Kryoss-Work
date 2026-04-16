@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Activity, ShieldPlus, Zap, BookOpen, MessageCircle } from "lucide-react";
-import mentorHero from '@/assets/mentorlms-img/mentorlmshero.png';
+import mentorHero from '../../../../../assets/Mentor Lms/1,,,.jpeg';
 
 const MentorLMSHero = () => {
     const demoUrl = "https://preview.codecanyon.net/item/mentor-lms-learning-management-system/full_screen_preview/59092700";
@@ -78,16 +78,6 @@ const MentorLMSHero = () => {
                                 alt="Mentor Academy Dashboard"
                                 className="w-full h-full object-cover"
                             />
-                        </div>
-                        {/* Floating elements */}
-                        <div className="absolute -bottom-6 -left-6 bg-white p-5 rounded-3xl shadow-2xl flex items-center gap-4 border border-slate-50">
-                            <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 flex-shrink-0 flex-wrap gap-4">
-                                <ShieldPlus size={24} />
-                            </div>
-                            <div>
-                                <p className="text-[10px] font-bold text-slate-400 uppercase leading-none mb-1">Status</p>
-                                <p className="text-sm font-black text-emerald-600 leading-none">Verified Core</p>
-                            </div>
                         </div>
                     </div>
                 </div>

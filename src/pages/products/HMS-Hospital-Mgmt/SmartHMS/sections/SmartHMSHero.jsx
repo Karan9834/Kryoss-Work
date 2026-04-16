@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import React from 'react';
-import heroImg from "@/assets/smarthms-img/smarthmshero.jpg";
+import heroImg from "../../../../../assets/SmartHms/1.,.jpg";
 
 const SmartHMSHero = () => {
     return (

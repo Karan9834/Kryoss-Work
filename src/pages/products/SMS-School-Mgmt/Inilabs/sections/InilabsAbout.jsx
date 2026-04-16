@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle2 } from "lucide-react";
-import aboutImg from "@/assets/inilabssms-img/inilabssmsabout.jpg";
+import aboutImg from "../../../../../assets/Inilabs/2....jpeg";
 
 const InilabsAbout = () => {
     return (
@@ -11,11 +11,6 @@ const InilabsAbout = () => {
                     <div className="relative group mb-12 lg:mb-0">
                         <div className="relative z-10 w-full h-64 sm:h-80 md:h-96 lg:h-[500px] bg-slate-50 rounded-[2rem] sm:rounded-[3rem] lg:rounded-[4rem] overflow-hidden border-2 border-emerald-50 flex items-center justify-center transition-transform duration-700 group-hover:scale-[1.02]">
                             <img src={aboutImg} alt="iNiLabs Central Hub" className="w-full h-full object-cover" />
-                        </div>
-                        {/* Decorative floating badge */}
-                        <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-emerald-900 text-white p-6 sm:p-8 md:p-10 rounded-[1.5rem] sm:rounded-[2.5rem] md:rounded-[3rem] shadow-2xl z-20">
-                            <p className="text-emerald-400 font-black text-2xl sm:text-3xl md:text-4xl mb-1 leading-none">15+</p>
-                            <p className="text-[10px] sm:text-xs font-bold text-emerald-200 uppercase tracking-widest">Global Locations</p>
                         </div>
                         <div className="absolute -top-10 -left-10 w-48 h-48 sm:w-64 sm:h-64 bg-emerald-50 rounded-full blur-3xl opacity-60 -z-0" />
                     </div>

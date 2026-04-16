@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
-import multistoreAbout from "@/assets/multistoreerp-img/multistoreerpabout.png";
+import multistoreAbout from "../../../../../assets/Multistore/2...jpeg";
 
 const MultistoreERPAbout = () => {
    return (
@@ -15,11 +15,6 @@ const MultistoreERPAbout = () => {
                         alt="Multistore Business Intelligence"
                         className="w-full h-full object-cover"
                      />
-                  </div>
-                  {/* Decorative floating badge */}
-                  <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-indigo-900 text-white p-6 sm:p-8 md:p-10 rounded-[1.5rem] sm:rounded-[2.5rem] md:rounded-[3rem] shadow-2xl z-20">
-                     <p className="text-teal-300 font-black text-3xl sm:text-4xl md:text-5xl mb-1 leading-none">100%</p>
-                     <p className="text-[10px] sm:text-xs font-bold text-teal-100 uppercase tracking-widest leading-none">Inventory Sync</p>
                   </div>
                   <div className="absolute -top-10 -left-10 w-48 h-48 sm:w-64 sm:h-64 bg-indigo-100 rounded-full blur-[100px] opacity-40 -z-0 animate-pulse" />
                </div>

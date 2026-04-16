@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, Play, Zap, Shield, TrendingUp, MessageCircle } from "lucide-react";
-
+import hero from "../../../../assets/Posly/1.,,.jpg"
 const HeroSection = () => {
   const productLink = "https://preview.codecanyon.net/item/posly-pos-with-inventory-management-system/full_screen_preview/46842690";
 
@@ -85,30 +85,10 @@ const HeroSection = () => {
             {/* Image Card */}
             <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-xl border border-white/20 p-3 shadow-2xl">
               <img 
-                src="https://placehold.co/500x400/1e293b/3b82f6?text=POSly+Dashboard"
+                src={hero}
                 alt="POSly Inventory Dashboard"
                 className="rounded-lg w-full h-auto"
               />
-              
-              {/* Floating Badge */}
-              <div className="absolute -top-2 -right-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">
-                Live Demo Active
-              </div>
-              
-              {/* Stats Overlay */}
-              <div className="absolute -bottom-3 -left-3 bg-gray-900/90 backdrop-blur-md rounded-lg p-2 border border-white/10 shadow-xl">
-                <div className="flex gap-3">
-                  <div>
-                    <p className="text-xl font-bold text-white">500+</p>
-                    <p className="text-[10px] text-gray-400">Products</p>
-                  </div>
-                  <div className="w-px bg-white/20"></div>
-                  <div>
-                    <p className="text-xl font-bold text-white">98%</p>
-                    <p className="text-[10px] text-gray-400">Accuracy</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

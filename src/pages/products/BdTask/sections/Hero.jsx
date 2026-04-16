@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowRight, Play, CheckCircle, Users, Clock, BarChart, Shield, MessageCircle } from "lucide-react";
+import hero from "../../../../assets/bdtask/1.jpg"
 
 const Hero = () => {
   return (
@@ -114,7 +115,7 @@ const Hero = () => {
             {/* Main Image Container */}
             <div className="relative rounded-xl overflow-hidden shadow-2xl border border-gray-700">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                src={hero}
                 alt="HRM Dashboard"
                 className="w-full h-auto object-cover"
               />
@@ -123,36 +124,6 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 via-transparent to-transparent" />
             </div>
 
-            {/* Floating Card 1 */}
-            <div className="absolute -top-4 -left-4 bg-gray-800/90 backdrop-blur-sm rounded-lg p-2.5 shadow-xl border border-gray-700">
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-green-500/20 flex items-center justify-center flex-wrap gap-4">
-                  <CheckCircle className="w-3.5 h-3.5 text-green-500" />
-                </div>
-                <div>
-                  <div className="text-[10px] text-gray-400">Today's Attendance</div>
-                  <div className="text-xs font-semibold text-white">94% Present</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Floating Card 2 */}
-            <div className="absolute -bottom-4 -right-4 bg-gray-800/90 backdrop-blur-sm rounded-lg p-2.5 shadow-xl border border-gray-700">
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-emerald-500/20 flex items-center justify-center flex-wrap gap-4">
-                  <Shield className="w-3.5 h-3.5 text-emerald-500" />
-                </div>
-                <div>
-                  <div className="text-[10px] text-gray-400">New Hires</div>
-                  <div className="text-xs font-semibold text-white">+12 This Month</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Floating Badge */}
-            <div className="absolute top-1/2 -right-2 bg-gradient-to-r from-green-500 to-emerald-600 rounded-md px-2 py-1 shadow-lg">
-              <span className="text-white text-[10px] font-semibold">AI-Powered</span>
-            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight, Play, Shield, Clock, Truck, TrendingUp, MessageCircle } from "lucide-react";
-
+import hero from "../../../../assets/Wholesale/1!.jpg"
 const HeroSection = () => {
   const demoLink = "https://preview.codecanyon.net/item/wholesale-inventory-control-and-inventory-management-system/full_screen_preview/20291791";
 
@@ -97,34 +97,10 @@ const HeroSection = () => {
             {/* Image Card with Glassmorphism */}
             <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl border border-white/20 p-3 shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=500&fit=crop"
+                src={hero}
                 alt="Wholesale Food Delivery Dashboard"
                 className="rounded-xl w-full h-auto shadow-lg"
               />
-              
-              {/* Floating Stats Badge */}
-              <div className="absolute -bottom-5 -left-5 bg-slate-900/90 backdrop-blur-md rounded-xl p-3 border border-white/10 shadow-xl">
-                <div className="flex gap-4">
-                  <div>
-                    <p className="text-2xl font-bold text-emerald-400">500+</p>
-                    <p className="text-xs text-gray-400">Active Clients</p>
-                  </div>
-                  <div className="w-px bg-white/20"></div>
-                  <div>
-                    <p className="text-2xl font-bold text-emerald-400">10k+</p>
-                    <p className="text-xs text-gray-400">Daily Orders</p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Floating Badge */}
-              <div className="absolute -top-3 -right-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-3 py-1.5 rounded-lg text-xs font-semibold shadow-lg flex items-center gap-1">
-                <span className="relative flex h-1.5 w-1.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-white"></span>
-                </span>
-                Live Preview
-              </div>
             </div>
           </div>
         </div>

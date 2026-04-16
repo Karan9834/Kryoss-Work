@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
-import rocketAbout from "@/assets/rocketlms-img/rocketlmsabout.png";
+import rocketAbout from "../../../../../assets/Rocket lms/2_.jpeg";
 
 const RocketLMSAbout = () => {
     return (
@@ -15,11 +15,6 @@ const RocketLMSAbout = () => {
                                 alt="Rocket Performance Lab"
                                 className="w-full h-full object-contain"
                             />
-                        </div>
-                        {/* Decorative floating badge */}
-                        <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-red-900 text-white p-6 sm:p-8 md:p-10 rounded-[1.5rem] sm:rounded-[2.5rem] md:rounded-[3rem] shadow-2xl z-20">
-                            <p className="text-orange-300 font-black text-3xl sm:text-4xl md:text-5xl mb-1 leading-none">0.2s</p>
-                            <p className="text-[10px] sm:text-xs font-bold text-orange-100 uppercase tracking-widest leading-none">Server Response</p>
                         </div>
                         <div className="absolute -top-10 -left-10 w-48 h-48 sm:w-64 sm:h-64 bg-red-100 rounded-full blur-[100px] opacity-40 -z-0 animate-pulse" />
                     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import crmproabout from '@/assets/crmpro-img/crmproabout.jpg';
+import crmproabout from '../../../../../../assets/CRM pro/2.,.jpg';
 
 const CRMProAbout = () => {
     return (
