@@ -179,12 +179,12 @@ const FoodDeliveryApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 to-teal-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/fooddelivery.png"
-                                    alt="Taxi App Development"
+                                    src="/images/Solution-images/Food Delivery/Food Delivery.png"
+                                    alt="Food Delivery App Development"
                                     width="2048"
                                     height="1365"
                                     className="relative z-10 w-[115%] max-w-none h-auto object-cover drop-shadow-2xl"
-                                    onError={(e) => { e.target.src = '/SolAps/fooddelivery.png'; }}
+                                    onError={(e) => { e.target.src = '/images/Solution-images/Food Delivery/Food Delivery.png'; }}
                                 />
                             </motion.div>
                         </div>
@@ -205,12 +205,12 @@ const FoodDeliveryApp = () => {
                         >
                             <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
                                 <img
-                                    src="/SolAps/fooddelivery1.png"
-                                    alt="Taxi Booking Solution"
+                                    src="/images/Solution-images/Food Delivery/Complete multi-panel Seamless System.jpg"
+                                    alt="Food Delivery Solution"
                                     width="2048"
                                     height="1365"
                                     className="max-w-full max-h-full object-contain"
-                                    onError={(e) => { e.target.src = "/SolAps/fooddelivery1.png"; }}
+                                    onError={(e) => { e.target.src = "/images/Solution-images/Food Delivery/Complete multi-panel Seamless System.jpg"; }}
                                 />
                             </div>
                             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
@@ -511,7 +511,7 @@ const FoodDeliveryApp = () => {
 
                                 {/* Image - Replace with your actual image */}
                                 <img
-                                    src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                    src="/images/Solution-images/Food Delivery/Complete multi-panel Seamless System.jpg"
                                     alt="Business solutions"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />

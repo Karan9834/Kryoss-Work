@@ -172,12 +172,12 @@ const TaxiBookingApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 to-yellow-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/taxi booking app.png"
+                                    src="/images/Solution-images/taxi-booking/ai-powered-taxi-app-development.png"
                                     alt="Taxi App Development"
                                     width="2048"
                                     height="1365"
                                     className="max-w-full max-h-full object-contain"
-                                    onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
+                                    onError={(e) => { e.target.src = '/images/Solution-images/taxi-booking/ai-powered-taxi-app-development.png'; }}
                                 />
                             </motion.div>
                         </div>
@@ -198,12 +198,12 @@ const TaxiBookingApp = () => {
                         >
                             <div className="absolute -inset-4 bg-orange-50 border border-orange-100 rounded-[2rem] transform -rotate-2" />
                             <img
-                                src="/SolAps/taxiapp.png"
+                                src="/images/Solution-images/taxi-booking/Complete multi-panel Seamless System.png"
                                 alt="Taxi Booking Solution"
                                 width="2048"
                                 height="1365"
                                 className="relative w-full rounded-2xl shadow-xl object-cover h-auto aspect-[2048/1365]"
-                                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800'; }}
+                                onError={(e) => { e.target.src = '/images/Solution-images/taxi-booking/Complete multi-panel Seamless System.png'; }}
                             />
                             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
                                 <div className="flex items-center gap-4">
@@ -503,7 +503,7 @@ const TaxiBookingApp = () => {
 
                                 {/* Image - Replace with your actual image */}
                                 <img
-                                    src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                    src="/images/Solution-images/taxi-booking/Tailored to your unique business needs.jpeg"
                                     alt="Business solutions"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
