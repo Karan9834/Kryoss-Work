@@ -1,18 +1,20 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
+import smartImg from '../../assets/Nft products/Smart NFT/1..jpg';
+import eneftiImg from '../../assets/Nft products/Enefti/1.,.jpg';
 
 const NFTCardSection = () => {
     const products = [
         {
             title: "Smart NFT",
             desc: "A comprehensive, state-of-the-art NFT Marketplace solution designed for creators and investors to trade digital assets.",
-            image: "/Products/SMART.jpg",
+            image: smartImg,
             link: "/products/smart-nft"
         },
         {
             title: "Enefti",
             desc: "An industry-leading virtual asset platform that pioneers the future of NFT-based interactive gaming.",
-            image: "/Products/ENEFTI.jpg",
+            image: eneftiImg,
             link: "/products/enefti"
         }
     ];
@@ -52,7 +54,7 @@ const NFTCardSection = () => {
                                 <img
                                     src={product.image}
                                     alt={product.title}
-                                    className="w-full rounded-xl border-[5px] border-transparent hover:border-violet-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-contain"
+                                    className="w-full h-[300px] object-cover object-top rounded-xl border-[5px] border-transparent hover:border-violet-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03]"
                                 />
                             </Link>
 

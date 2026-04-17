@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle, Zap, Shield, Trophy } from 'lucide-react';
+import bootImg from '../../assets/Casino games/landing page in place of boot image.jpg';
 
 const CasinoWhyUs = () => {
     const reasons = [
@@ -67,7 +68,7 @@ const CasinoWhyUs = () => {
 
                     <div className="lg:w-1/2 relative animate-fadeInRight translate-y-10">
                         <div className="relative z-10 rounded-[40px] overflow-hidden border-8 border-white/5 shadow-2xl">
-                             <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&q=80&w=800" alt="Casino Tech" className="w-full h-full object-cover" />
+                            <img src={bootImg} alt="Casino Tech" className="w-full h-full object-cover" />
                         </div>
                     </div>
                 </div>

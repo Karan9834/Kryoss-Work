@@ -4,6 +4,7 @@ import FantasySportsAbout from '../../../components/FantasySports-Landing/Fantas
 import FantasySportsFeatures from '../../../components/FantasySports-Landing/FantasySportsFeatures';
 import FantasySportsCardSection from '../../../components/FantasySports-Landing/FantasySportsCardSection';
 import FantasySportsWhyUs from '../../../components/FantasySports-Landing/FantasySportsWhyUs';
+import FantasySportsGallery from '../../../components/FantasySports-Landing/FantasySportsGallery';
 
 // Common Sections
 import Testimonial from '../../../components/Common/Testimonial';
@@ -45,6 +46,9 @@ const FantasySports = () => {
 
             {/* 5. Why Us Section */}
             <FantasySportsWhyUs />
+
+            {/* 5.5 Gallery Section - Added from assets */}
+            <FantasySportsGallery />
 
             {/* 6. Testimonial Section (Common) */}
             <div className="bg-white">

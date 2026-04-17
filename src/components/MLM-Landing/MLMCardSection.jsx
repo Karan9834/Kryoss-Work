@@ -29,12 +29,12 @@ const MLMCardSection = () => {
                         </span>
                         <div className="w-8 h-px bg-blue-400"></div>
                     </div>
-                    
+
                     {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
                     <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1E293B]">
                         Ready-made <span className="text-blue-600">MLM Software</span> Clones
                     </h2>
-                    
+
                     {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
                     <p className="text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
                         Highly secure and immutable decentralized MLM scripts for diverse marketing plans.
