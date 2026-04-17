@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pill, Activity, ShieldCheck, HeartPulse } from 'lucide-react';
-import aboutImg from "@/assets/pmslanding-img/pmslandingabout.jpg";
+const aboutImg = "/Products/pms/pms/Clinical Operations Reimagined.jpg";
 
 const PMSAbout = () => {
     const highlights = [

@@ -3,7 +3,7 @@ import React from "react";
 const BetYourDuckGallery = () => {
 
     const images = [
-        "/Products/Duck.avif",
+        "/Products/Duck.jpg",
         "/Products/DuckGallery1.png",
         "/Products/DuckGallery2.png",
         "/Products/DuckGallery3.jpg",

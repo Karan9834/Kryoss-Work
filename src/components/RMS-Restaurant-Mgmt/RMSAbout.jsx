@@ -1,6 +1,6 @@
 import React from 'react';
 import { Leaf, Clock, MapPin, Zap } from 'lucide-react';
-import aboutimg from "@/assets/rmslanding-img/rmslandingabout.jpg";
+const aboutimg = "/Products/rms/A Modern Foundation For Your Culinary Dreams.jpg";
 
 const RMSAbout = () => {
     const highlights = [

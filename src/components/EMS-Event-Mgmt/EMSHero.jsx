@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, CalendarDays, Users, Star, Ticket } from 'lucide-react';
-import heroimg from "@/assets/emslanding-img/emslandinghero.jpg";
+const heroimg = "/Products/Next-Gen Event Management/Next-Gen Event Management.png";
 
 const EMSHero = () => {
     const scrollToProducts = () => {

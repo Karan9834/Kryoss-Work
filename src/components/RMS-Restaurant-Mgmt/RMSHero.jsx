@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Utensils, ChefHat, Flame } from 'lucide-react';
-import heroimg from "@/assets/rmslanding-img/rmslandinghero.jpg";
+const heroimg = "/Products/rms/Ultimate Dining Experience.jpg";
 
 const RMSHero = () => {
     const scrollToProducts = () => {

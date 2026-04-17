@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Pill, Activity, Star, ClipboardList, Shield } from 'lucide-react';
-import heroimg from "@/assets/pmslanding-img/pmslandinghero.jpg";
+const heroimg = "/Products/pms/pms/Future-Proof Your.jpg";
 
 const PMSHero = () => {
     const scrollToProducts = () => {
