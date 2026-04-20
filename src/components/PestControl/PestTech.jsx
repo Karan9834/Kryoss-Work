@@ -24,7 +24,7 @@ const techStack = [
 export default function TechStack() {
   return (
     <section
-      className="py-24 text-white"
+      className="py-24 text-white relative overflow-hidden"
       style={{
         background:
           "linear-gradient(90deg,#5ea3ff,#7b8bff,#9c6bff)"
@@ -38,7 +38,7 @@ export default function TechStack() {
         </span>
 
         {/* Title */}
-        <h2 className="text-4xl font-semibold mt-6 mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-6 mb-6">
           Technologies We Use to Build Scalable Digital Solutions
         </h2>
 

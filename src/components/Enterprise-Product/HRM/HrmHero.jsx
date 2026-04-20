@@ -76,7 +76,7 @@ const HRMHero = () => {
           <img
             src={hrmImage}
             alt="HRM System"
-            className="block max-h-[500px] rounded-3xl w-auto max-w-full object-contain"
+            className="block w-full max-w-[500px] h-auto rounded-3xl object-contain"
           />
         </motion.div>
 

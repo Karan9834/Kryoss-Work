@@ -42,17 +42,17 @@ const ProductsSection = () => {
           </div>
 
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
-          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
+          <h2 className="text-[24px] sm:text-[30px] md:text-[36px] font-bold leading-[1.2] text-[#1A1C2C]">
             Our Premium{" "}
             <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-              Education Solutions
+              HRM Solutions
             </span>
           </h2>
 
           {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
           <p className="text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto">
-            Pick the ideal platform to transform your traditional teaching into a
-            modern, interactive digital learning experience.
+            Choose the perfect HR management platform to streamline your workforce operations, 
+            payroll, and employee engagement today.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ const ProductsSection = () => {
                 <img
                   src={card.image}
                   alt={card.title}
-                  className="w-full h-72 object-cover rounded-xl border-[5px] border-transparent 
+                  className="w-full h-48 sm:h-64 md:h-72 object-cover rounded-xl border-[5px] border-transparent 
                   hover:border-purple-500 transition duration-300 
                   shadow-md group-hover:shadow-xl group-hover:scale-[1.03]"
                 />
@@ -89,7 +89,7 @@ const ProductsSection = () => {
         {/* FOOTER NOTE - Updated typography */}
         <div className="text-center mt-16">
           <p className="text-[12px] font-medium uppercase tracking-[0.05em] text-gray-400">
-            ✦ More educational products coming soon ✦
+            ✦ More HRM products coming soon ✦
           </p>
         </div>
       </div>

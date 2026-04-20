@@ -21,14 +21,14 @@ const DashboardShowcase = () => {
         <div className="flex justify-center relative mb-20">
 
           {/* Subtle Glow */}
-          <div className="absolute w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-purple-500/10 blur-3xl rounded-full"></div>
+          <div className="absolute left-1/2 -translate-x-1/2 w-[280px] md:w-[500px] h-[280px] md:h-[500px] bg-purple-500/10 blur-3xl rounded-full"></div>
 
           <img
             src={dashboardImg}
             alt="HRM Dashboard"
             className="
               relative
-              w-full
+              w-full h-auto
               max-w-5xl
               rounded-xl
               shadow-2xl
@@ -52,7 +52,7 @@ const DashboardShowcase = () => {
             </div> */}
             
             {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
-            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-5">
+            <h2 className="text-[24px] sm:text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-5">
               Everything You Need in One{" "}
               <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
                 Powerful Dashboard

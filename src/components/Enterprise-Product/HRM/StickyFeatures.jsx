@@ -34,7 +34,7 @@ const features = [
 
 const StickyFeatures = () => {
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white py-20 relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -91,8 +91,8 @@ const StickyFeatures = () => {
                 src={hrmImage}
                 alt="HRM Preview"
                 className="
-                  w-[550px]
-                 
+                  w-full
+                  max-w-[550px]
                   h-auto 
                   object-contain rounded-4xl
                 "

@@ -3,7 +3,7 @@ import hrmImage from "../../../assets/Enterprise-Product/hrmabout.jpg";
 
 const HRMAbout = () => {
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white py-24 relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-12">
 
@@ -12,7 +12,7 @@ const HRMAbout = () => {
           <img
             src={hrmImage}
             alt="HRM System"
-            className="w-full max-w-[520px] rounded-3xl object-contain"
+            className="w-full h-auto max-w-[520px] rounded-3xl object-contain"
           />
         </div>
 
@@ -27,7 +27,7 @@ const HRMAbout = () => {
           </div> */}
 
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
-          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-6">
+          <h2 className="text-[24px] sm:text-[30px] md:text-[36px] font-bold leading-[1.2] mb-6">
             <span className="text-purple-600">About</span>{" "}
             <span className="text-gray-900">Our HRM System</span>
           </h2>

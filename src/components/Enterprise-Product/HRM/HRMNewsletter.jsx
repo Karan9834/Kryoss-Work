@@ -3,7 +3,7 @@ import { Mail } from "lucide-react";
 
 const HRMNewsletter = () => {
   return (
-    <section className="w-full py-24 bg-white">
+    <section className="w-full py-24 bg-white relative overflow-hidden">
 
       <div className="max-w-5xl mx-auto px-6">
 
@@ -20,7 +20,7 @@ const HRMNewsletter = () => {
           </span>
 
           {/* HEADING - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
-          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-5">
+          <h2 className="text-[24px] sm:text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-5">
             Stay Ahead with Our{" "}
             <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
               Latest Updates

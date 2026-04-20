@@ -39,8 +39,8 @@ const HRMFeatures = () => {
     <section className="w-full bg-[#050816] py-24 relative overflow-hidden">
 
       {/* Background Glow */}
-      <div className="absolute top-20 left-10 w-[400px] h-[400px] bg-purple-600/20 blur-[140px] rounded-full"></div>
-      <div className="absolute bottom-10 right-10 w-[350px] h-[350px] bg-indigo-500/20 blur-[120px] rounded-full"></div>
+      <div className="absolute top-20 left-0 w-[250px] md:w-[400px] h-[250px] md:h-[400px] bg-purple-600/20 blur-[100px] md:blur-[140px] rounded-full"></div>
+      <div className="absolute bottom-10 right-0 w-[200px] md:w-[350px] h-[200px] md:h-[350px] bg-indigo-500/20 blur-[80px] md:blur-[120px] rounded-full"></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
@@ -54,7 +54,7 @@ const HRMFeatures = () => {
           </div> */}
           
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
-          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-white mb-5">
+          <h2 className="text-[24px] sm:text-[30px] md:text-[36px] font-bold leading-[1.2] text-white mb-5">
             Powerful Features for{" "}
             <span className="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">
               Modern HR Teams

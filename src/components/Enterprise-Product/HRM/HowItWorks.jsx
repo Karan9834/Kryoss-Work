@@ -21,7 +21,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="w-full bg-white py-24">
+    <section className="w-full bg-white py-24 relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -35,7 +35,7 @@ const HowItWorks = () => {
           </div> */}
           
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
-          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-5">
+          <h2 className="text-[24px] sm:text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-5">
             Get Started in{" "}
             <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
               3 Simple Steps

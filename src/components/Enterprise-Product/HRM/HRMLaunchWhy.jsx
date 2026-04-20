@@ -10,7 +10,7 @@ const HRMLaunchWhy = () => {
     ">
 
       {/* glow */}
-      <div className="absolute top-0 left-1/3 w-[400px] h-[400px] bg-purple-500/30 blur-[140px] rounded-full"></div>
+      <div className="absolute top-0 left-1/4 md:left-1/3 w-[200px] md:w-[400px] h-[200px] md:h-[400px] bg-purple-500/30 blur-[100px] md:blur-[140px] rounded-full"></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
@@ -22,7 +22,7 @@ const HRMLaunchWhy = () => {
             <img
               src={launchImg}
               alt="HRM Launch"
-              className="w-full max-w-md object-contain"
+              className="w-full h-auto max-w-md object-contain"
             />
           </div>
 
@@ -36,7 +36,7 @@ const HRMLaunchWhy = () => {
             </span>
 
             {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
-            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-6">
+            <h2 className="text-[24px] sm:text-[30px] md:text-[36px] font-bold leading-[1.2] mb-6">
               Launch Your{" "}
               <span className="text-purple-200">
                 HRM Platform
@@ -67,7 +67,7 @@ const HRMLaunchWhy = () => {
           </span>
 
           {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
-          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] mb-16">
+          <h2 className="text-[24px] sm:text-[30px] md:text-[36px] font-bold leading-[1.2] mb-16">
             Why Choose Our{" "}
             <span className="text-purple-200">
               HRM Solution
@@ -79,7 +79,7 @@ const HRMLaunchWhy = () => {
             <img
               src={whyImg}
               alt="HRM Flow"
-              className="w-full max-w-5xl object-contain"
+              className="w-full h-auto max-w-5xl object-contain"
             />
           </div>
 
