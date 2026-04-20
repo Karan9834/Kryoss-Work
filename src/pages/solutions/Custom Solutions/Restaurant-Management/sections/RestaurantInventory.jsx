@@ -1,6 +1,6 @@
 import React from 'react';
 import { Package, Monitor, TrendingUp, BarChart3 } from 'lucide-react';
-import inventoryImg from "../../../../../assets/Restaurant-Manage/inventory.png"; // Add your image path
+import inventoryImg from "../../../../../assets/Resturant management/3.,.jpg";
 
 const RestaurantInventory = () => {
   const inventoryFeatures = [
@@ -27,15 +27,15 @@ const RestaurantInventory = () => {
   ];
 
   return (
-    <section className="relative w-full py-16 md:py-20 bg-gradient-to-br from-orange-50 via-amber-50 to-white overflow-hidden">
+    <section className="relative w-full py-16 md:py-20 bg-gradient-to-br from-white via-orange-50 to-amber-50 overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, rgba(0,0,0,0.02) 1px, transparent 1px)`,
           backgroundSize: '40px 40px'
         }}></div>
-        <div className="absolute top-0 left-0 w-80 h-80 bg-orange-200/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-amber-200/30 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-0 w-80 h-80 bg-orange-200/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-amber-200/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center z-10">
@@ -63,18 +63,18 @@ const RestaurantInventory = () => {
           </p>
 
           {/* Inventory Features Grid - Transparent Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 mt-8">
             {inventoryFeatures.map((item, index) => (
               <div
                 key={index}
-                className="flex items-start gap-3 p-3 rounded-xl border border-orange-200/50 hover:shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-300"
+                className="flex items-start gap-3 group"
               >
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center text-white shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-orange-600 group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300 shrink-0">
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-gray-900">{item.title}</h3>
-                  <p className="text-gray-500 mt-0.5 text-[14px] md:text-[16px] font-normal leading-[1.6]">{item.description}</p>
+                  <h3 className="text-sm font-bold text-gray-800">{item.title}</h3>
+                  <p className="text-gray-500 text-[12px] leading-relaxed mt-0.5">{item.description}</p>
                 </div>
               </div>
             ))}

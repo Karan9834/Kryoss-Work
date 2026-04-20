@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import crmImage from "../../../../../assets/customer/solution.png";
+import crmImage from "../../../../../assets/Customer Relationship/3,.jpg";
 
 // Icons for each feature
 const icons = {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Star, Utensils, Clock, Users, Shield } from 'lucide-react';
-import hero from "../../../../../assets/Restaurant-Manage/hero.png"
+import hero from "../../../../../assets/Resturant management/1,..jpg"
 
 const Hero = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import crmImage from "../../../../../assets/customer/quality.png";
+import crmImage from "../../../../../assets/Customer Relationship/2,.jpg";
 
 const CRMQualityServices = () => {
   return (
