@@ -1,4 +1,5 @@
 import React from "react";
+import about from "../../../../assets/Mlm products/Hyp invest pro/about us 1.jpg"
 
 const HyipInvestProAboutUs = () => {
     return (
@@ -11,7 +12,7 @@ const HyipInvestProAboutUs = () => {
                     {/* LEFT IMAGE */}
                     <div className="flex justify-center lg:justify-start w-full max-w-[526px] aspect-[526/501]">
                         <img
-                            src="/Products/Hyip1.png"
+                            src={about}
                             alt="Hyip InvestPro Interface"
                             className="w-full h-full rounded-3xl shadow-xl object-cover"
                         />

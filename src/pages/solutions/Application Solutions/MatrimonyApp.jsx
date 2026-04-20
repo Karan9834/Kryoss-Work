@@ -13,7 +13,9 @@ import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import DatingCardSection from '../../../components/Dating-Matrimony-Landing/DatingCardSection';
-
+import hero from "../../../assets/matrimonysolution-img/hero.png"
+import multi from "../../../assets/matrimonysolution-img/multi.png"
+import tail from "../../../assets/matrimonysolution-img/tailored.png"
 const MatrimonyApp = () => {
     const [activeTab, setActiveTab] = useState("User App");
     const [activeFeatureTab, setActiveFeatureTab] = useState("Common");
@@ -180,7 +182,7 @@ const MatrimonyApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/10 to-pink-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/matrimony.png"
+                                    src={hero}
                                     alt="Taxi App Development"
                                     width="2048"
                                     height="1365"
@@ -195,69 +197,54 @@ const MatrimonyApp = () => {
 
 
             {/* 2. Intro Section */}
-            <section className="py-20 lg:py-32 bg-white relative">
-                <div className="container mx-auto px-4 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="w-full lg:w-1/2 relative"
-                        >
-                            <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
-                                <img
-                                    src="/SolAps/matrimoy1.png"
-                                    alt="Taxi Booking Solution"
-                                    width="2048"
-                                    height="1365"
-                                    className="max-w-full max-h-full object-contain"
-                                    onError={(e) => { e.target.src = "/SolAps/matrimoy1.png"; }}
-                                />
-                            </div>
-
-                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                                        <Heart className="text-green-600 w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-semibold mb-1">Rides Completed</p>
-                                        <p className="text-2xl font-bold text-gray-900">+48%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
-
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
-                                Complete multi-panel <span className="text-rose-500">Seamless System</span>
-                            </h2>
-                            <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
-                                Kryoss Softech is a leading one-stop solution that provides impressive features and turnkey solutions using friendly services at affordable prices to give an edge to the competitors.
-                            </p>
-                            <ul className="space-y-4 mb-8">
-                                {[
-                                    "Accelerated Time-to-Market",
-                                    "Multi-Platform (iOS, Android, Web)",
-                                    "Extensive Dispatcher Features",
-                                    "High Performance & Stability"
-                                ].map((item, i) => (
-                                    <li key={i} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0">
-                                            <CheckCircle className="w-4 h-4 text-rose-600 flex-shrink-0" />
-                                        </div>
-                                        <span className="text-gray-700 font-medium">{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <Link to="/company/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-rose-500 transition-all shadow-md">
-                                Request a Consultation
-                            </Link>
-                        </div>
-                    </div>
+<section className="py-20 lg:py-32 bg-white relative">
+    <div className="container mx-auto px-4 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
+            <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="w-full lg:w-1/2 relative"
+            >
+                <div className="relative w-full flex items-center justify-center">
+                    <img
+                        src={multi}
+                        alt="Matrimony Solution"
+                        className="w-full h-auto object-contain rounded-2xl"
+                        onError={(e) => { e.target.src = "/SolAps/matrimoy1.png"; }}
+                    />
                 </div>
-            </section>
+            </motion.div>
 
+            <div className="w-full lg:w-1/2">
+                <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
+                    Complete multi-panel <span className="text-rose-500">Seamless System</span>
+                </h2>
+                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
+                    Kryoss Softech is a leading one-stop solution that provides impressive features and turnkey solutions using friendly services at affordable prices to give an edge to the competitors.
+                </p>
+                <ul className="space-y-4 mb-8">
+                    {[
+                        "Accelerated Time-to-Market",
+                        "Multi-Platform (iOS, Android, Web)",
+                        "Extensive Dispatcher Features",
+                        "High Performance & Stability"
+                    ].map((item, i) => (
+                        <li key={i} className="flex items-center gap-3">
+                            <div className="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0">
+                                <CheckCircle className="w-4 h-4 text-rose-600 flex-shrink-0" />
+                            </div>
+                            <span className="text-gray-700 font-medium">{item}</span>
+                        </li>
+                    ))}
+                </ul>
+                <Link to="/company/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-rose-500 transition-all shadow-md">
+                    Request a Consultation
+                </Link>
+            </div>
+        </div>
+    </div>
+</section>
             {/* 3. Must Have Features (Tabs Layout) */}
             <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-orange-50/40 py-20 px-6">
                 <div className="absolute inset-0 opacity-30 pointer-events-none">
@@ -458,108 +445,73 @@ const MatrimonyApp = () => {
                 </div>
             </section>
 
-            {/* 6. Stats Section (#FFFBF2) */}
-            <section className="py-20 bg-[#FFFBF2] relative">
-                <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {stats.map((stat, idx) => (
-                            <div key={idx} className="text-center group">
-                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
-                                    {stat.value}
-                                </h3>
-                                <p className="text-sm font-bold text-rose-600 uppercase tracking-widest">{stat.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* 7. Our Solution/Package Features */}
-            <section className="py-24 bg-gradient-to-br from-white via-orange-50/30 to-white relative overflow-hidden">
-                {/* Background decorative elements */}
-                <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-rose-200 rounded-full blur-3xl opacity-20" />
-                    <div className="absolute bottom-0 left-0 w-96 h-96 bg-rose-300 rounded-full blur-3xl opacity-10" />
-                </div>
+<section className="py-24 bg-gradient-to-br from-white via-orange-50/30 to-white relative overflow-hidden">
+    {/* Background decorative elements */}
+    <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-rose-200 rounded-full blur-3xl opacity-20" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-rose-300 rounded-full blur-3xl opacity-10" />
+    </div>
 
-                <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                    {/* Heading & Subheading - Top centered */}
-                    <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-                        <span className="text-[12px] font-medium tracking-[0.05em] uppercase inline-block px-4 py-1.5 bg-rose-100 text-rose-600 rounded-full mb-4">
-                            Why Choose Us
-                        </span>
-                        <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
-                            Tailored to your{" "}
-                            <span className="text-rose-500 relative inline-block">
-                                unique business
-                                <svg className="absolute -bottom-2 left-0 w-full h-3 text-rose-200" viewBox="0 0 200 12" fill="currentColor">
-                                    <path d="M0,10 C20,5 40,12 60,8 C80,4 100,10 120,7 C140,4 160,10 180,6 L200,6" stroke="currentColor" strokeWidth="2" fill="none" />
-                                </svg>
-                            </span>{" "}
-                            needs
-                        </h2>
-                        <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
-                            Our solution guarantees power, stability, and lifetime value packed with extraordinary integrations.
-                        </p>
-                    </div>
+    <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        {/* Heading & Subheading - Top centered */}
+        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
+            <span className="text-[12px] font-medium tracking-[0.05em] uppercase inline-block px-4 py-1.5 bg-rose-100 text-rose-600 rounded-full mb-4">
+                Why Choose Us
+            </span>
+            <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
+                Tailored to your{" "}
+                <span className="text-rose-500 relative inline-block">
+                    unique business
+                    <svg className="absolute -bottom-2 left-0 w-full h-3 text-rose-200" viewBox="0 0 200 12" fill="currentColor">
+                        <path d="M0,10 C20,5 40,12 60,8 C80,4 100,10 120,7 C140,4 160,10 180,6 L200,6" stroke="currentColor" strokeWidth="2" fill="none" />
+                    </svg>
+                </span>{" "}
+                needs
+            </h2>
+            <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-500 max-w-2xl mx-auto">
+                Our solution guarantees power, stability, and lifetime value packed with extraordinary integrations.
+            </p>
+        </div>
 
-                    {/* Image + Content Grid */}
-                    <div className="flex flex-col lg:flex-row gap-12 xl:gap-20 items-stretch">
-                        {/* Left Image Section */}
-                        <div className="w-full lg:w-2/5 relative group">
-                            <div className="relative h-full min-h-[400px] lg:min-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
-                                {/* Gradient Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10" />
+        {/* Image + Content Grid */}
+        <div className="flex flex-col lg:flex-row gap-12 xl:gap-20 items-stretch">
+            {/* Left Image Section - No container, just the image */}
+            <div className="w-full lg:w-2/5 relative group">
+                <img
+                    src={tail}
+                    alt="Business solutions"
+                    className="w-full h-auto object-contain rounded-2xl"
+                />
+            </div>
 
-                                {/* Image - Replace with your actual image */}
-                                <img
-                                    src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                    alt="Business solutions"
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
-
-                                {/* Floating badge */}
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
-                                    <div className="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center">
-                                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                        </svg>
+            {/* Right Content Section - Solutions Grid */}
+            <div className="w-full lg:w-3/5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 h-full">
+                    {solutions.map((sol, i) => {
+                        const Icon = sol.icon;
+                        return (
+                            <div
+                                key={i}
+                                className="group/card bg-white rounded-2xl p-6 shadow-md hover:shadow-xl border border-gray-100 hover:border-rose-200 transition-all duration-300 hover:-translate-y-1"
+                            >
+                                <div className="flex items-start gap-4">
+                                    <div className="w-14 h-14 bg-gradient-to-br from-rose-400 to-orange-500 rounded-xl shadow-lg flex items-center justify-center flex-shrink-0 text-white group-hover/card:scale-110 transition-transform duration-300">
+                                        <Icon size={24} strokeWidth={1.8} />
                                     </div>
                                     <div>
-                                        <p className="font-bold text-gray-900">Trusted by 500+ companies</p>
-                                        <p className="text-sm text-gray-500">Worldwide customer base</p>
+                                        <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-900 mb-2">{sol.title}</h4>
+                                        <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-500">{sol.desc}</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        {/* Right Content Section - Solutions Grid */}
-                        <div className="w-full lg:w-3/5">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 h-full">
-                                {solutions.map((sol, i) => {
-                                    const Icon = sol.icon;
-                                    return (
-                                        <div
-                                            key={i}
-                                            className="group/card bg-white rounded-2xl p-6 shadow-md hover:shadow-xl border border-gray-100 hover:border-rose-200 transition-all duration-300 hover:-translate-y-1"
-                                        >
-                                            <div className="flex items-start gap-4">
-                                                <div className="w-14 h-14 bg-gradient-to-br from-rose-400 to-orange-500 rounded-xl shadow-lg flex items-center justify-center flex-shrink-0 text-white group-hover/card:scale-110 transition-transform duration-300">
-                                                    <Icon size={24} strokeWidth={1.8} />
-                                                </div>
-                                                <div>
-                                                    <h4 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-900 mb-2">{sol.title}</h4>
-                                                    <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-500">{sol.desc}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    );
-                                })}
-                            </div>
-                        </div>
-                    </div>
+                        );
+                    })}
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
+</section>
 
             <div id="product-section">
                 <DatingCardSection />

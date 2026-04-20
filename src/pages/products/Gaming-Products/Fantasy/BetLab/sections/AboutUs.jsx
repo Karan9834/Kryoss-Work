@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, CheckCircle, Award, Users, TrendingUp } from 'lucide-react';
-import betlababout from "../../../../../../assets/Games-Product/betlababout.jpg"
+import betlababout from "../../../../../../assets/Betting apps/Betlab/2,.jpg"
 
 const AboutUs = () => {
   return (

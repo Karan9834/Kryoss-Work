@@ -16,6 +16,9 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+import hero from "../../../assets/Car-rental/carretal.png"
+import multi from "../../../assets/Car-rental/about.png"
+import tail from "../../../assets/Car-rental/premium.jpg"
 
 const CarRentalApp = () => {
     const [activeTab, setActiveTab] = useState("Customer App");
@@ -167,7 +170,7 @@ const CarRentalApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-slate-500/10 to-blue-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                    src={hero}
                                     alt="Car Rental App Development"
                                     width="2048"
                                     height="1365"
@@ -192,24 +195,13 @@ const CarRentalApp = () => {
                         >
                             <div className="absolute -inset-4 bg-slate-50 border border-slate-100 rounded-[2rem] transform -rotate-2" />
                             <img
-                                src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                src={multi}
                                 alt="Car Rental App Solution"
                                 width="2048"
                                 height="1365"
                                 className="relative w-full rounded-2xl shadow-xl object-cover h-auto aspect-[2048/1365]"
                                 onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800'; }}
                             />
-                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center">
-                                        <Car className="text-slate-900 w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-semibold mb-1">Fleet Management</p>
-                                        <p className="text-2xl font-bold text-gray-900">2.4k+</p>
-                                    </div>
-                                </div>
-                            </div>
                         </motion.div>
 
                         <div className="w-full lg:w-1/2">
@@ -483,21 +475,10 @@ const CarRentalApp = () => {
                             <div className="relative h-full min-h-[400px] lg:min-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10" />
                                 <img
-                                    src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=compress&cs=tinysrgb&w=1600"
+                                    src={tail}
                                     alt="Car rental support"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
-                                    <div className="w-10 h-10 bg-slate-900 rounded-full flex items-center justify-center">
-                                        <div id="product-section">
-                <PlusCircle className="w-5 h-5 text-white" />
-            </div>
-                                    </div>
-                                    <div>
-                                        <p className="font-bold text-gray-900">Fully Customizable</p>
-                                        <p className="text-sm text-gray-500">Flexible script options</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 

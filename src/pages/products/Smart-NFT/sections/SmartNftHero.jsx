@@ -1,5 +1,6 @@
 import React from "react";
 import { Star, Users, TrendingUp, MessageCircle, ArrowRight } from "lucide-react";
+import hero from "../../../../assets/Nft products/Smart NFT/hero.jpg"
 
 const SmartNftHero = () => {
     return (
@@ -93,7 +94,7 @@ const SmartNftHero = () => {
                         </div>
 
                         <img
-                            src="/Products/Smart Hero.jpg"
+                            src={hero}
                             alt="Smart NFT"
                             className="w-full h-full rounded-3xl shadow-2xl"
                         />

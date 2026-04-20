@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../../../../../../assets/Games-Product/kasinoabout.jpg";
+import aboutImg from "../../../../../../assets/Casino games/Kasino online/2..jpg";
 
 const KasinoAbout = () => {
   return (

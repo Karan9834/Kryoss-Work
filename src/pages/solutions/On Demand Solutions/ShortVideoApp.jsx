@@ -15,7 +15,9 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
-
+import hero from "../../../assets/shortvideo/hero.png"
+import multi from "../../../assets/shortvideo/about.jpg"
+import tail from "../../../assets/shortvideo/tail.jpg"
 const ShortVideoApp = () => {
     const [activeTab, setActiveTab] = useState("User Panel");
     const [activeFeatureTab, setActiveFeatureTab] = useState("Common");
@@ -158,7 +160,7 @@ const ShortVideoApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/10 to-pink-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                    src={hero}
                                     alt="Short Video App Development"
                                     width="2048"
                                     height="1365"
@@ -183,24 +185,13 @@ const ShortVideoApp = () => {
                         >
                             <div className="absolute -inset-4 bg-rose-50 border border-rose-100 rounded-[2rem] transform -rotate-2" />
                             <img
-                                src="https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                src={multi}
                                 alt="Short Video App Solution"
                                 width="2048"
                                 height="1365"
                                 className="relative w-full rounded-2xl shadow-xl object-cover h-auto aspect-[2048/1365]"
                                 onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&q=80&w=800'; }}
                             />
-                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center">
-                                        <Play className="text-rose-600 w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-semibold mb-1">Daily Active Users</p>
-                                        <p className="text-2xl font-bold text-gray-900">+856K</p>
-                                    </div>
-                                </div>
-                            </div>
                         </motion.div>
 
                         <div className="w-full lg:w-1/2">
@@ -438,21 +429,10 @@ const ShortVideoApp = () => {
                             <div className="relative h-full min-h-[400px] lg:min-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10" />
                                 <img
-                                    src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                    src={tail}
                                     alt="Short video app support"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
-                                    <div className="w-10 h-10 bg-rose-600 rounded-full flex items-center justify-center">
-                                        <div id="product-section">
-                <PlusCircle className="w-5 h-5 text-white" />
-            </div>
-                                    </div>
-                                    <div>
-                                        <p className="font-bold text-gray-900">Customized Solutions</p>
-                                        <p className="text-sm text-gray-500">Tailored to your brand</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 

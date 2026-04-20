@@ -1,5 +1,6 @@
 import React from "react";
 import { Star, Users, TrendingUp, MessageCircle } from "lucide-react";
+import hero from "../../../../assets/Fantasy sports/Betpro fantasy/1...jpg"
 
 const BetYourDuckHero = () => {
     return (
@@ -89,7 +90,7 @@ const BetYourDuckHero = () => {
                         </div>
 
                         <img
-                            src="/Products/Duck1.jpg"
+                            src={hero}
                             alt="BetYourDuck Platform"
                             className="w-full h-full rounded-3xl shadow-2xl object-cover"
                         />
