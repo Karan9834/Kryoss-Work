@@ -15,6 +15,9 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+import hero from "../../../assets/medicine-delivery/hero.png"
+import multi from "../../../assets/medicine-delivery/about.png"
+import tail from "../../../assets/medicine-delivery/tail.jpeg"
 
 const MedicineDeliveryApp = () => {
     const [activeTab, setActiveTab] = useState("Customer App");
@@ -174,7 +177,7 @@ const MedicineDeliveryApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-green-500/10 to-teal-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                    src={hero}
                                     alt="Medicine Delivery App Development"
                                     width="2048"
                                     height="1365"
@@ -199,24 +202,13 @@ const MedicineDeliveryApp = () => {
                         >
                             <div className="absolute -inset-4 bg-green-50 border border-green-100 rounded-[2rem] transform -rotate-2" />
                             <img
-                                src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                src={multi}
                                 alt="Medicine Delivery App Solution"
                                 width="2048"
                                 height="1365"
                                 className="relative w-full rounded-2xl shadow-xl object-cover h-auto aspect-[2048/1365]"
                                 onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=800'; }}
                             />
-                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                                        <Pill className="text-green-600 w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-semibold mb-1">Orders Delivered</p>
-                                        <p className="text-2xl font-bold text-gray-900">+65%</p>
-                                    </div>
-                                </div>
-                            </div>
                         </motion.div>
 
                         <div className="w-full lg:w-1/2">
@@ -458,17 +450,6 @@ const MedicineDeliveryApp = () => {
                                     alt="Medicine delivery support"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
-                                    <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                                        <div id="product-section">
-                <PlusCircle className="w-5 h-5 text-white" />
-            </div>
-                                    </div>
-                                    <div>
-                                        <p className="font-bold text-gray-900">Customized Solutions</p>
-                                        <p className="text-sm text-gray-500">Tailored to your brand</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 

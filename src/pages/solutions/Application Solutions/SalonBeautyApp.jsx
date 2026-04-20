@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 
+
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
@@ -20,6 +21,9 @@ import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import SalonCardSection from '../../../components/Salon-Beauty-Landing/SalonCardSection';
+import hero from "../../../assets/saloonlanding-img/SalonBeauty.png"
+import intro from "../../../assets/saloonlanding-img/Completemult.png"
+import tail from "../../../assets/saloonlanding-img/Tailored.jpeg"
 
 const SalonBeautyApp = () => {
     const [activeTab, setActiveTab] = useState('Customer App');
@@ -178,7 +182,7 @@ const SalonBeautyApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/10 to-pink-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/salonapp1.png"
+                                    src={hero}
                                     alt="Taxi App Development"
                                     width="2048"
                                     height="1365"
@@ -193,67 +197,63 @@ const SalonBeautyApp = () => {
 
 
             {/* 2. Intro Section */}
-            <section className="py-20 lg:py-32 bg-white relative">
-                <div className="container mx-auto px-4 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="w-full lg:w-1/2 relative"
-                        >
-                            <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
-                                <img
-                                    src="/SolAps/salonapp.png"
-                                    alt="Taxi Booking Solution"
-                                    width="2048"
-                                    height="1365"
-                                    className="max-w-full max-h-full object-contain"
-                                    onError={(e) => { e.target.src = '/SolAps/salonapp.png'; }}
-                                />
-                            </div>
-                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                                        <Star className="text-green-600 w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-semibold mb-1">Rides Completed</p>
-                                        <p className="text-2xl font-bold text-gray-900">+48%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
-
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
-                                Complete multi-panel <span className="text-rose-500">Seamless System</span>
-                            </h2>
-                            <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
-                                Kryoss Softech is a leading one-stop solution that provides impressive features and turnkey solutions using friendly services at affordable prices to give an edge to the competitors.
-                            </p>
-                            <ul className="space-y-4 mb-8">
-                                {[
-                                    "Accelerated Time-to-Market",
-                                    "Multi-Platform (iOS, Android, Web)",
-                                    "Extensive Dispatcher Features",
-                                    "High Performance & Stability"
-                                ].map((item, i) => (
-                                    <li key={i} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0">
-                                            <CheckCircle className="w-4 h-4 text-rose-600 flex-shrink-0" />
-                                        </div>
-                                        <span className="text-gray-700 font-medium">{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                            <Link to="/company/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-rose-500 transition-all shadow-md">
-                                Request a Consultation
-                            </Link>
+<section className="py-20 lg:py-32 bg-white relative">
+    <div className="container mx-auto px-4 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
+            <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="w-full lg:w-1/2 relative"
+            >
+                <div className="relative w-full flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl p-4">
+                    <img
+                        src={intro}
+                        alt="Grocery Delivery Solution"
+                        width="2048"
+                        height="1365"
+                        className="w-full h-auto object-contain rounded-lg"
+                        onError={(e) => { e.target.src = '/SolAps/salonapp.png'; }}
+                    />
+                </div>
+                <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
+                    <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <Star className="text-green-600 w-6 h-6" />
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.div>
+
+            <div className="w-full lg:w-1/2">
+                <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
+                    Complete multi-panel <span className="text-green-500">Seamless System</span>
+                </h2>
+                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
+                    Kryoss Softech is a leading one-stop solution that provides impressive features and turnkey solutions using friendly services at affordable prices to give an edge to the competitors.
+                </p>
+                <ul className="space-y-4 mb-8">
+                    {[
+                        "Accelerated Time-to-Market",
+                        "Multi-Platform (iOS, Android, Web)",
+                        "Extensive Dispatcher Features",
+                        "High Performance & Stability"
+                    ].map((item, i) => (
+                        <li key={i} className="flex items-center gap-3">
+                            <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                                <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                            </div>
+                            <span className="text-gray-700 font-medium">{item}</span>
+                        </li>
+                    ))}
+                </ul>
+                <Link to="/company/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-green-500 transition-all shadow-md">
+                    Request a Consultation
+                </Link>
+            </div>
+        </div>
+    </div>
+</section>
 
             {/* 3. Must Have Features (Tabs Layout) */}
             <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-orange-50/40 py-20 px-6">
@@ -455,22 +455,6 @@ const SalonBeautyApp = () => {
                 </div>
             </section>
 
-            {/* 6. Stats Section (#FFFBF2) */}
-            <section className="py-20 bg-[#FFFBF2] relative">
-                <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {stats.map((stat, idx) => (
-                            <div key={idx} className="text-center group">
-                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
-                                    {stat.value}
-                                </h3>
-                                <p className="text-sm font-bold text-rose-600 uppercase tracking-widest">{stat.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* 7. Our Solution/Package Features */}
             <section className="py-24 bg-gradient-to-br from-white via-orange-50/30 to-white relative overflow-hidden">
                 {/* Background decorative elements */}
@@ -510,23 +494,10 @@ const SalonBeautyApp = () => {
 
                                 {/* Image - Replace with your actual image */}
                                 <img
-                                    src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                    src={tail}
                                     alt="Business solutions"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-
-                                {/* Floating badge */}
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
-                                    <div className="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center">
-                                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p className="font-bold text-gray-900">Trusted by 500+ companies</p>
-                                        <p className="text-sm text-gray-500">Worldwide customer base</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 

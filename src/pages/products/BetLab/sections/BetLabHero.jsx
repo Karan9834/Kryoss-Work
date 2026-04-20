@@ -1,6 +1,6 @@
 import React from "react";
 import { Star, Users, TrendingUp, MessageCircle, ArrowRight } from "lucide-react";
-
+import hero from "../../../../assets/Fantasy sports/Betlab/1....jpg"
 const BetLabHero = () => {
     return (
         <section className="py-28 bg-gradient-to-br from-[#1e1b4b] via-[#312e81] to-[#4c1d95] text-white relative overflow-hidden">
@@ -93,7 +93,7 @@ const BetLabHero = () => {
                         </div>
 
                         <img
-                            src="/Products/BetLab1.jpg"
+                            src={hero}
                             alt="BetLab Sports Betting"
                             className="w-full h-full rounded-3xl shadow-2xl object-cover"
                         />

@@ -1,6 +1,6 @@
 import React from "react";
 import { Play, MessageCircle } from "lucide-react";
-import heroImg from "../../../../../../assets/Games-Product/stakehero.webp";
+import heroImg from "../../../../../../assets/Casino games/Kasino online/1..png";
 
 const CasinoHero = () => {
   const handleLiveDemo = () => {

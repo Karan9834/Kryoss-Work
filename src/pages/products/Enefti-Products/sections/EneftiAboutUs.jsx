@@ -1,4 +1,5 @@
 import React from "react";
+import about from "../../../../assets/Nft products/Enefti/about.jpg"
 
 const EneftiAboutUs = () => {
     return (
@@ -11,7 +12,7 @@ const EneftiAboutUs = () => {
                     {/* LEFT IMAGE */}
                     <div className="flex justify-center lg:justify-start w-full max-w-[526px] aspect-[526/501]">
                         <img
-                            src="/Products/Enefti2nd.png"
+                            src={about}
                             alt="Enefti Gaming Platform"
                             className="w-full h-full rounded-3xl shadow-xl object-cover"
                         />

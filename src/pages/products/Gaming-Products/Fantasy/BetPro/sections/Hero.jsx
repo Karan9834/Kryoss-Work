@@ -1,5 +1,6 @@
 import React from 'react';
 import { Play, ArrowRight, Zap, MessageCircle } from "lucide-react";
+import hero from "../../../../../../assets/Betting apps/Betyourduck/about.jpg";
 
 const Hero = () => {
   const handleLiveDemo = () => {
@@ -97,7 +98,7 @@ const Hero = () => {
           <div className="absolute -bottom-2 -right-2 w-12 h-12 border-r-3 border-b-3 border-yellow-400 rounded-br-xl"></div>
 
           <img
-            src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=600"
+            src={hero}
             alt="BetPro Platform"
             className="relative w-full max-w-md rounded-xl shadow-xl border border-orange-300/40 hover:scale-105 transition duration-500"
           />

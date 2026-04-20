@@ -1,4 +1,5 @@
 import React from "react";
+import about from "../../../../assets/Fantasy sports/Betpro fantasy/2...jpg";
 
 const BetYourDuckAboutUs = () => {
     return (
@@ -11,7 +12,7 @@ const BetYourDuckAboutUs = () => {
                     {/* LEFT IMAGE */}
                     <div className="flex justify-center lg:justify-start w-full max-w-[526px] aspect-[526/501]">
                         <img
-                            src="/Products/Duck2.png"
+                            src={about}
                             alt="BetYourDuck App"
                             className="w-full h-full rounded-3xl shadow-xl object-cover"
                         />
