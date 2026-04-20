@@ -47,18 +47,23 @@ const CasinoHero = () => {
             and scalable infrastructure.
           </p>
 
-          {/* CTA */}
-          <button
-            onClick={handleLiveDemo}
-            className="mt-6 flex items-center gap-2 px-5 py-2.5 bg-green-500 text-black text-sm font-semibold rounded-md hover:bg-green-400 transition shadow-lg shadow-green-500/20"
-          >
-            <Play size={16} />
-            Live Demo
-          </button>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+         <div className="mt-6 flex flex-wrap gap-4">
+  <button
+    onClick={handleLiveDemo}
+    className="flex items-center gap-2 px-5 py-2.5 bg-green-500 text-black text-sm font-semibold rounded-md hover:bg-green-400 transition shadow-lg shadow-green-500/20"
+  >
+    <Play size={16} />
+    Live Demo
+  </button>
+
+  <a
+    href="/company/contact"
+    className="flex items-center gap-2 px-5 py-2.5 bg-white/10 text-white border border-white/20 rounded-md text-sm font-semibold hover:bg-white/20 transition"
+  >
+    <MessageCircle size={16} />
+    Let's Discuss
+  </a>
+</div>
 
         </div>
 
