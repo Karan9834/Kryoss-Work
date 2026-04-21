@@ -11,6 +11,9 @@ import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import ProductSection from '../../../components/News/Products';
+import hero from "../../../assets/News-Media/hero.png"
+import intro from "../../../assets/News-Media/intro.jpg"
+import why from "../../../assets/News-Media/why.jpg"
 
 const NewsMediaIndustry = () => {
     const [activeTab, setActiveTab] = useState("Reader App");
@@ -142,7 +145,7 @@ const NewsMediaIndustry = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-gray-500/10 to-blue-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="https://images.unsplash.com/photo-1546422904-90eab23c3d7e?q=80&w=800&auto=format&fit=crop"
+                                    src={hero}
                                     alt="News Media App Development"
                                     width="2048"
                                     height="1365"
@@ -166,7 +169,7 @@ const NewsMediaIndustry = () => {
                         >
                             <div className="absolute -inset-4 bg-gray-100 border border-gray-200 rounded-[2rem] transform -rotate-2" />
                             <img
-                                src="/SolIndus/news.jpg"
+                                src={intro}
                                 alt="Media Solution"
                                 width="2048"
                                 height="1365"
@@ -331,20 +334,6 @@ const NewsMediaIndustry = () => {
                 </div>
             </section>
 
-            {/* Stats */}
-            <section className="py-20 bg-[#FFFBF2] relative">
-                <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {stats.map((stat, idx) => (
-                            <div key={idx} className="text-center group">
-                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display">{stat.value}</h3>
-                                <p className="text-sm font-bold text-gray-600 uppercase tracking-widest">{stat.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* Solutions Grid */}
             <section className="py-24 bg-gradient-to-br from-white via-gray-50/30 to-white relative overflow-hidden">
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -359,7 +348,7 @@ const NewsMediaIndustry = () => {
                         <div className="w-full lg:w-2/5 relative group">
                             <div className="relative h-full min-h-[400px] lg:min-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10" />
-                                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Solutions" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                <img src={why} alt="Solutions" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             </div>
                         </div>
 
