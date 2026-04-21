@@ -1,6 +1,4 @@
-import React from "react";
-import heroImg from "../../../../../assets/School-Manage/hero.png";
-
+import heroImg from "../../../../../assets/School management/Landing page_.jpg";
 const SchoolHero = () => {
   return (
     <section className="relative w-full overflow-hidden bg-white font-['Inter']">

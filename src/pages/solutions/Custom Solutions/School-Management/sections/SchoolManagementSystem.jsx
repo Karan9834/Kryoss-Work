@@ -1,5 +1,4 @@
-import React from "react";
-import schoolImg from "../../../../../assets/School-Manage/management.png";
+import schoolImg from "../../../../../assets/School management/Our School management_.jpg";
 
 const SchoolManagementSection = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import pathologyImg from "../../../../../assets/Hospital-Manage/pathology.png"; // update path
+import pathologyImg from "../../../../../assets/Hospital Management/Pathology management_.jpg";
 
 const PathologyManagement = () => {
   return (

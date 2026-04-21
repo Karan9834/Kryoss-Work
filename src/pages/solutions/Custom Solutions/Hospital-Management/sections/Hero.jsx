@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../../../../../assets/Hospital-Manage/hero.png";
+import hero from "../../../../../assets/Hospital Management/Landing page_.jpg";
 
 const Hero = () => {
   return (

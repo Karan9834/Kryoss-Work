@@ -13,6 +13,10 @@ import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import PMSCardSection from '../../../components/PMS-Pharmacy-Mgmt/PMSCardSection';
 
+// Asset Imports
+import HeroImg from '../../../assets/Pharmacy Management/Landing page_.jpg';
+import IntroImg from '../../../assets/Pharmacy Management/What is Pharmacy Management_.jpg';
+
 const PharmacyManagement = () => {
     const [activeFeatureTab, setActiveFeatureTab] = useState("Key");
 
@@ -135,10 +139,8 @@ const PharmacyManagement = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-green-500/10 to-teal-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="https://images.pexels.com/photos/3652097/pexels-photo-3652097.jpeg?auto=compress&cs=tinysrgb&w=800"
-                                    alt="Pharmacy Software Development"
-                                    width="2048"
-                                    height="1365"
+                                    src={HeroImg}
+                                    alt="Pharmacy Management Software Solution"
                                     className="max-w-full max-h-full object-contain rounded-3xl"
                                 />
                             </motion.div>
@@ -159,8 +161,8 @@ const PharmacyManagement = () => {
                         >
                             <div className="absolute -inset-4 bg-green-50 border border-green-100 rounded-[2rem] transform -rotate-2" />
                             <img
-                                src="https://images.pexels.com/photos/5998474/pexels-photo-5998474.jpeg?auto=compress&cs=tinysrgb&w=800"
-                                alt="Pharmacy Management App"
+                                src={IntroImg}
+                                alt="What is Pharmacy Management Software"
                                 className="relative w-full rounded-2xl shadow-xl object-cover h-auto"
                             />
                         </motion.div>

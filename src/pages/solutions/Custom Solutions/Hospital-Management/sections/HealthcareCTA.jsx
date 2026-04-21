@@ -1,5 +1,5 @@
 import React from "react";
-import healthcareImg from "../../../../../assets/Hospital-Manage/cta.png"; // update path
+import healthcareImg from "../../../../../assets/Hospital Management/One stop healthcare solution.jpg";
 
 const HealthcareCTA = () => {
   return (

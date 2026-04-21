@@ -1,5 +1,5 @@
 import React from "react";
-import hospitalImg from "../../../../../assets/Hospital-Manage/management.png"; // update path as needed
+import hospitalImg from "../../../../../assets/Hospital Management/Custom Hms.jpg";
 
 const HMSSoftwareSection = () => {
   return (

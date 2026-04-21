@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
+import customFeatureImg from '../../../../../assets/Learning Management/Custom feature.jpg';
 
 const CustomLMSDevelopment = () => {
   return (
@@ -19,7 +20,7 @@ const CustomLMSDevelopment = () => {
         {/* LEFT SIDE - IMAGE (50% WIDTH, FULL HEIGHT) */}
         <div className="hidden lg:block w-1/2 relative">
           <img 
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=700&fit=crop"
+            src={customFeatureImg}
             alt="Custom LMS Development Services"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -81,7 +82,7 @@ const CustomLMSDevelopment = () => {
       {/* MOBILE IMAGE (SHOWS ONLY ON MOBILE) */}
       <div className="block lg:hidden w-full px-6 pb-8">
         <img 
-          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop"
+          src={customFeatureImg}
           alt="Custom LMS Development Services"
           className="w-full h-64 object-cover rounded-2xl shadow-lg"
         />

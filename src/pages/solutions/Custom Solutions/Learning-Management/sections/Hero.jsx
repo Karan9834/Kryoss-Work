@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImg from '../../../../../assets/Learning Management/Landing page_.jpg';
 
 const Hero = () => {
   return (
@@ -91,7 +92,7 @@ const Hero = () => {
             {/* MAIN IMAGE CARD */}
             <div className="relative bg-white/60 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/40 p-3 transform hover:scale-105 transition-transform duration-500">
               <img 
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"
+                src={heroImg}
                 alt="Students learning together"
                 className="w-full h-auto rounded-xl object-cover"
                 style={{ minHeight: "300px", maxHeight: "500px" }}
