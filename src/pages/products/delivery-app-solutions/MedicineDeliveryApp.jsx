@@ -24,6 +24,9 @@ import IndustryRecognition from '@/components/Delivery-App-Solution/medicine-del
 import FAQ from '@/components/Delivery-App-Solution/medicine-delivery-app/FAQ';
 import TechStack from '@/components/Delivery-App-Solution/medicine-delivery-app/TechStack';
 import CTA from '@/components/Delivery-App-Solution/medicine-delivery-app/CTA';
+import TeamMoments from '../../../components/Common/TeamMoments';
+import Testimonial from '../../../components/Common/Testimonial';
+import ContactUs from '../../../components/Common/ContactUs';
 
 const MedicineDeliveryApp = () => {
     return (
@@ -81,8 +84,7 @@ const MedicineDeliveryApp = () => {
             {/* Versatile Delivery Solutions */}
             <VersatileDelivery />
 
-            {/* Client Testimonials */}
-            <ClientTestimonials />
+            <Testimonial/>
 
             {/* Explore On-Demand Solutions */}
             <ExploreSolutions />
@@ -96,8 +98,11 @@ const MedicineDeliveryApp = () => {
             {/* Tech Stack */}
             <TechStack />
 
+            <ContactUs/>
+
             {/* Final CTA */}
             <CTA />
+            <TeamMoments/>
         </div>
     );
 };
