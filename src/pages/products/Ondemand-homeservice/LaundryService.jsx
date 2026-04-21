@@ -20,7 +20,7 @@ import LaundryProductShowcase from '@/components/homeservice-laundry/LaundryProd
 import LaundryAwards from '@/components/homeservice-laundry/LaundryAwards';
 import LaundryFAQ from '@/components/homeservice-laundry/LaundryFAQ';
 import LaundryTechStack from '@/components/homeservice-laundry/LaundryTechStack';
-import LaundryContact from '@/components/homeservice-laundry/LaundryContact';
+import ContactUs from '../../../components/Common/ContactUs';
 import LaundryBlogs from '@/components/homeservice-laundry/LaundryBlogs';
 import LaundryGetUpdates from '@/components/homeservice-laundry/LaundryGetUpdates';
 
@@ -50,7 +50,14 @@ const LaundryService = () => {
             <LaundryAwards />
             <LaundryFAQ />
             <LaundryTechStack />
-            <LaundryContact />
+            <ContactUs
+                theme="purple"
+                productName="Laundry Service"
+                bgGradient="from-purple-50 via-white to-pink-50"
+                accentGradient="from-purple-500 via-pink-500 to-indigo-500"
+                buttonGradient="from-purple-600 via-pink-600 to-indigo-600"
+                showImage={true}
+            />
             <LaundryBlogs />
             <LaundryGetUpdates />
 

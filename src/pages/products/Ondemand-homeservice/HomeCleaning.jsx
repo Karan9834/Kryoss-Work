@@ -20,7 +20,7 @@ import HomeCleaningProductShowcase from "../../../components/Home-cleaning/HomeC
 import HomeCleaningAwardRecognition from "../../../components/Home-cleaning/HomeCleaningAwardRecognition";
 import HomeCleaningFAQ from "../../../components/Home-cleaning/HomeCleaningFAQ";
 import HomeCleaningTechStack from "../../../components/Home-cleaning/HomeCleaningTechStack";
-import HomeCleaningContact from "../../../components/Home-cleaning/HomeCleaningContact";
+import ContactUs from '../../../components/Common/ContactUs';
 import HomeCleaningBlogsSection from "../../../components/Home-cleaning/HomeCleaningBlogsSection";
 import HomeCleaningNewsletterSection from "../../../components/Home-cleaning/HomeCleaningNewsletterSection";
 import HomeCleaningTeamMoments from "../../../components/Home-cleaning/HomeCleaningTeamMoments";
@@ -49,7 +49,14 @@ const HomeCleaning=()=>{
         <HomeCleaningAwardRecognition/>
         <HomeCleaningFAQ/>
         <HomeCleaningTechStack/>
-        <HomeCleaningContact/>
+        <ContactUs
+          theme="purple"
+          productName="Home Cleaning"
+          bgGradient="from-purple-50 via-white to-pink-50"
+          accentGradient="from-purple-500 via-pink-500 to-indigo-500"
+          buttonGradient="from-purple-600 via-pink-600 to-indigo-600"
+          showImage={true}
+        />
         <HomeCleaningBlogsSection/>
         <HomeCleaningNewsletterSection/>
         <HomeCleaningTeamMoments/>

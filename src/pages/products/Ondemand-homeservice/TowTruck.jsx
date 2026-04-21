@@ -21,7 +21,7 @@ import TowTruckProductShowcase from '@/components/homeservice-towtruck/TowTruckP
 import TowTruckAwards from '@/components/homeservice-towtruck/TowTruckAwards';
 import TowTruckFAQ from '@/components/homeservice-towtruck/TowTruckFAQ';
 import TowTruckTechStack from '@/components/homeservice-towtruck/TowTruckTechStack';
-import TowTruckContact from '@/components/homeservice-towtruck/TowTruckContact';
+import ContactUs from '../../../components/Common/ContactUs';
 import TowTruckBlogs from '@/components/homeservice-towtruck/TowTruckBlogs';
 import TowTruckGetUpdates from '@/components/homeservice-towtruck/TowTruckGetUpdates';
 const TowTruck = () => {
@@ -48,7 +48,14 @@ const TowTruck = () => {
             <TowTruckAwards />
             <TowTruckFAQ />
             <TowTruckTechStack />
-            <TowTruckContact />
+            <ContactUs
+                theme="purple"
+                productName="Tow Truck"
+                bgGradient="from-purple-50 via-white to-pink-50"
+                accentGradient="from-purple-500 via-pink-500 to-indigo-500"
+                buttonGradient="from-purple-600 via-pink-600 to-indigo-600"
+                showImage={true}
+            />
             <TowTruckBlogs />
             <TowTruckGetUpdates />
 

@@ -15,7 +15,7 @@ import HandymanExplore from '../../../components/Handyman-service/HandymanExplor
 import HandymanFeedback from '../../../components/Handyman-service/HandymanFeedback'
 import ProductShowcase from '../../../components/Handyman-service/ProductShowcase'
 import Handmanyfaqs from '../../../components/Handyman-service/Handmanyfaqs'
-import HandmanyContact from '../../../components/Handyman-service/HandmanyContact'
+import ContactUs from '../../../components/Common/ContactUs';
 import HandmanyBlog from '../../../components/Handyman-service/HandmanyBlog'
 import HandmanyFinalCta from '../../../components/Handyman-service/HandmanyFinalCta'
 
@@ -38,7 +38,14 @@ const Handyman_service = () => {
     <HandymanFeedback/>
     <ProductShowcase/>
     <Handmanyfaqs/>
-    <HandmanyContact/>
+    <ContactUs
+      theme="purple"
+      productName="Handyman Services"
+      bgGradient="from-purple-50 via-white to-pink-50"
+      accentGradient="from-purple-500 via-pink-500 to-indigo-500"
+      buttonGradient="from-purple-600 via-pink-600 to-indigo-600"
+      showImage={true}
+    />
     <HandmanyBlog/>
     <HandmanyFinalCta/>
     </>

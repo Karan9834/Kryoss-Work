@@ -49,7 +49,14 @@ const TutorBookingApp = () => {
             <Awards />
             <FAQs />
             <TechStack />
-            <ContactUs theme="orange" productName="Vyom Tutor" />
+            <ContactUs
+                theme="purple"
+                productName="Vyom Tutor"
+                bgGradient="from-purple-50 via-white to-pink-50"
+                accentGradient="from-purple-500 via-pink-500 to-indigo-500"
+                buttonGradient="from-purple-600 via-pink-600 to-indigo-600"
+                showImage={true}
+            />
             <Blogs />
             <GetUpdate />
 
