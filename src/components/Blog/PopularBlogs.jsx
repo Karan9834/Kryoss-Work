@@ -3,26 +3,24 @@ import React from "react";
 const blogs = [
   {
     id: 1,
-    img: "https://journal-portal.whitelabelfox.com/blog-assets/image/blog-images/taxi-booking-apps-in-uk.webp",
-    badge: "Popular",
-    title: "Top 12 Taxi Booking Apps in the UK - 2026 Updated",
-    desc: "Discover the Best 12 Taxi booking apps dominating the UK market and make your travel experiences more convenient than ever!",
+    img: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop",
+    badge: "Case Study",
+    title: "Building a High-Performance Ride Booking Platform for Urban Mobility",
+    desc: "Explore how we engineered a scalable ride-booking solution with real-time tracking, seamless payments, and optimized driver allocation.",
   },
   {
     id: 2,
-    img: "https://journal-portal.whitelabelfox.com/blog-assets/image/blog-images/best-ride-hailing-apps-in-malaysia.webp",
-    badge: "Popular",
-    title:
-      "Best Ride-Hailing Apps in Malaysia 2026: Compare Options in Malaysia",
-    desc: "Find the best ride-hailing apps available in Malaysia with this easy comparison of fares, payment options, and key benefits",
+    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    badge: "Case Study",
+    title: "Designing an Intuitive SaaS Dashboard for Better User Experience",
+    desc: "Learn how we transformed a complex platform into a clean, user-friendly dashboard that improved engagement and streamlined workflows.",
   },
   {
     id: 3,
-    img: "https://journal-portal.whitelabelfox.com/blog-assets/image/blog-images/10-best-ride-sharing-apps-in-italy.webp",
-    badge: "Popular",
-    title:
-      "Is Uber Available in Italy? 10 Best Ride-Sharing Apps for Tourists & Locals",
-    desc: "Find out which ride-sharing apps work best in Italy by comparing prices, coverage, and real-world use cases.",
+    img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop",
+    badge: "Case Study",
+    title: "Scaling a Digital Product with AI-Driven Automation Features",
+    desc: "Discover how we integrated AI capabilities into a product to automate processes, reduce manual effort, and enhance overall efficiency.",
   },
 ];
 
@@ -40,15 +38,15 @@ const PopularBlogs = () => {
       {/* Heading */}
       <div className="text-center mb-4">
         <h2 className="text-4xl font-bold">
-          Browse Our Latest Blogs
+          Explore Our Featured Work
         </h2>
       </div>
 
       {/* Paragraph */}
       <p className="text-gray-600 text-center max-w-5xl mx-auto mb-12">
-        Dive into our collection of insightful blogs, where we share industry
-        trends, helpful guides, and expert advice to empower your business
-        journey.
+        Take a closer look at how we design and develop impactful digital
+        products for our clients, solving real-world challenges with scalable
+        and innovative solutions.
       </p>
 
       {/* Cards */}
@@ -69,7 +67,7 @@ const PopularBlogs = () => {
             {/* Content */}
             <div className="p-6">
 
-              {/* Popular badge */}
+              {/* Badge */}
               <span className="text-orange-500 text-sm font-semibold">
                 {blog.badge}
               </span>

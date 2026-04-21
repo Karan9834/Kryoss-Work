@@ -4,58 +4,59 @@ const blogs = [
   {
     id: 1,
     title:
-      "Best Ride-Hailing Apps in Malaysia 2026: Compare Options in Malaysia",
-    desc: "Find the best ride-hailing apps available in Malaysia with this easy comparison of fares, payment options, and key benefits",
-    img: "https://journal-portal.whitelabelfox.com/blog-assets/image/blog-images/best-ride-hailing-apps-in-malaysia.webp",
-    time: "11 min read",
-    date: "13 February, 2026",
-    author: "Viral Kacha – CEO & Sales Head",
+      "Building a Scalable Ride-Hailing Platform for a Growing Urban Market",
+    desc: "How we helped a mobility startup launch a high-performance ride-hailing app with real-time tracking, smart pricing, and seamless user experience across multiple cities.",
+    img: "https://images.unsplash.com/photo-1556125574-d7f27ec36a06?q=80&w=1200&auto=format&fit=crop",
+    time: "12 min read",
+    date: "18 March, 2026",
+    author: "Product Engineering Team",
   },
   {
     id: 2,
     title:
-      "Is Uber Available in Italy? 10 Best Ride-Sharing Apps for Tourists & Locals",
-    desc: "Find out which ride-sharing apps work best in Italy by comparing prices, coverage, and real-world use cases.",
-    img: "https://journal-portal.whitelabelfox.com/blog-assets/image/blog-images/10-best-ride-sharing-apps-in-italy.webp",
-    time: "18 min read",
-    date: "06 February, 2026",
-    author: "Viral Kacha – CEO & Sales Head",
+      "Designing a Multi-Country Taxi App Experience for Global Travelers",
+    desc: "A deep dive into how we built a cross-border ride-booking solution with localized pricing, multilingual support, and reliable driver networks.",
+    img: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
+    time: "15 min read",
+    date: "10 March, 2026",
+    author: "Product Engineering Team",
   },
   {
     id: 3,
     title:
-      "The Web Design Services Question No One Asks: Who Is This Site Really For?",
-    desc: "Stop designing a website for “everyone.” Find out who your ideal users are and how to create a site that drives better leads and sales.",
-    img: "https://journal-portal.whitelabelfox.com/blog-assets/image/blog-images/Web-Design-Services-Question-No-One-Asks.webp",
-    time: "5 min read",
-    date: "22 January, 2026",
-    author: "Viral Kacha – CEO & Sales Head",
+      "Crafting a Conversion-Focused SaaS Dashboard for Better User Engagement",
+    desc: "Learn how we redesigned a SaaS platform with intuitive UI/UX, improving user retention, simplifying workflows, and boosting overall product efficiency.",
+    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    time: "8 min read",
+    date: "28 February, 2026",
+    author: "Product Engineering Team",
   },
   {
     id: 4,
     title:
-      "No Studio, No Problem: How AI Backgrounds Help Small Brands Compete Visually",
-    desc: "Small brands can now create premium-looking visuals with AI backgrounds. Reduce production costs, launch faster campaigns, and build customer trust in seconds.",
-    img: "https://journal-portal.whitelabelfox.com/blog-assets/image/blog-images/professional-visuals-without-studio.webp",
-    time: "4 min read",
-    date: "19 January, 2026",
-    author: "Viral Kacha – CEO & Sales Head",
+      "Helping Brands Scale Faster with AI-Powered Visual Content Solutions",
+    desc: "Discover how we built an AI-driven design tool that enables businesses to create high-quality marketing visuals instantly without expensive production setups.",
+    img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+    time: "6 min read",
+    date: "20 February, 2026",
+    author: "Product Engineering Team",
   },
 ];
 
 const BlogList = () => {
   return (
     <section className="max-w-7xl mx-auto py-16 px-6">
-      
+
       {/* HEADING */}
       <div className="text-center mb-10">
         <h2 className="text-4xl font-bold mb-4">
-          Discover Insights & <span className="text-orange-500">Latest Trends</span>
+          Explore Our Work & <span className="text-orange-500">Product Stories</span>
         </h2>
 
         <p className="text-gray-600 max-w-5xl mx-auto">
-          Search our blog to explore expert insights, industry trends, and the
-          latest updates on app development, technology, and business solutions.
+          Dive into real-world case studies showcasing how we design, build,
+          and scale digital products that solve complex problems and deliver
+          measurable business results.
         </p>
       </div>
 

@@ -8,29 +8,30 @@ const Hero = () => {
         {/* LEFT CONTENT */}
         <div>
           <p className="text-sm text-gray-600 mb-3">
-            11 min read • 16 February, 2026
+            Case Study • Product Showcase • 2026
           </p>
 
           <h1 className="text-4xl font-bold mb-4 text-black">
-            Top 12 Taxi Booking Apps in the UK - 2026 Updated
+            Smart Digital Products Built for Real-World Impact
           </h1>
 
           <p className="text-gray-700 mb-6">
-            Discover the Best 12 Taxi booking apps dominating the UK market
-            and make your travel experiences more convenient than ever!
+            Explore how we design and develop scalable, high-performance
+            digital products for our clients — from innovative startup ideas
+            to enterprise-grade solutions that drive measurable results.
           </p>
 
           <div className="flex items-center gap-3">
             <img
-              src="https://journal-portal.whitelabelfox.com/blog-assets/image/author-images/Viral-Kacha.webp"
-              alt="author"
+              src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=200&auto=format&fit=crop"
+              alt="team"
               className="w-10 h-10 rounded-full"
             />
 
             <p className="text-sm">
-              written by <br />
+              crafted by <br />
               <span className="font-semibold">
-                Viral Kacha – CEO & Sales Head
+                Product Engineering Team
               </span>
             </p>
           </div>
@@ -39,9 +40,9 @@ const Hero = () => {
         {/* RIGHT IMAGE */}
         <div>
           <img
-            src="https://journal-portal.whitelabelfox.com/blog-assets/image/blog-images/taxi-booking-apps-in-uk.webp"
-            alt="blog"
-            className="rounded-2xl"
+            src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop"
+            alt="Product dashboard showcase"
+            className="rounded-2xl object-cover w-full h-full"
           />
         </div>
 
