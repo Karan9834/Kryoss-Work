@@ -1,62 +1,69 @@
-import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
+import React, { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 // Import modular sections
-import UberHero from '@/components/transport-uber/UberHero';
-import UberCloneForBusiness from '@/components/transport-uber/UberCloneForBusiness';
-import UberServices from '@/components/transport-uber/UberServices';
-import UberRiderFeatures from '@/components/transport-uber/UberRiderFeatures';
-import UberDriverFeatures from '@/components/transport-uber/UberDriverFeatures';
-import UberAIGrowth from '@/components/transport-uber/UberAIGrowth';
-import UberlaunchCTA from '@/components/transport-uber/UberlaunchCTA';
-import UberAppScreenshots from '@/components/transport-uber/UberAppScreenshots';
-import UberAdminPanel from '@/components/transport-uber/UberAdminPanel';
-import UberWhatYouGet from '@/components/transport-uber/UberWhatYouGet';
-import UberStrategy from '@/components/transport-uber/UberStrategy';
-import UberWhyUs from '@/components/transport-uber/UberWhyUs';
-import UberCTA2 from '@/components/transport-uber/UberCTA2';
-import UberAward from '@/components/transport-uber/UberAward';
-import UberIndustries from '@/components/transport-uber/UberIndustries';
-import UberFAQ from '@/components/transport-uber/UberFAQ';
-import UberTechStack from '@/components/transport-uber/UberTechStack';
-import ContactUs from '@/components/Common/ContactUs';
-import UberProductShowCase from '@/components/transport-uber/UberProductShowCase';
-import UberBlogs from '@/components/transport-uber/UberBlogs';
-import UberGetUpdates from '@/components/transport-uber/UberGetUpdates';
-
-
+import UberHero from "@/components/transport-uber/UberHero";
+import UberCloneForBusiness from "@/components/transport-uber/UberCloneForBusiness";
+import UberServices from "@/components/transport-uber/UberServices";
+import UberRiderFeatures from "@/components/transport-uber/UberRiderFeatures";
+import UberDriverFeatures from "@/components/transport-uber/UberDriverFeatures";
+import UberAIGrowth from "@/components/transport-uber/UberAIGrowth";
+import UberlaunchCTA from "@/components/transport-uber/UberlaunchCTA";
+import UberAppScreenshots from "@/components/transport-uber/UberAppScreenshots";
+import UberAdminPanel from "@/components/transport-uber/UberAdminPanel";
+import UberWhatYouGet from "@/components/transport-uber/UberWhatYouGet";
+import UberStrategy from "@/components/transport-uber/UberStrategy";
+import UberWhyUs from "@/components/transport-uber/UberWhyUs";
+import UberCTA2 from "@/components/transport-uber/UberCTA2";
+import UberAward from "@/components/transport-uber/UberAward";
+import UberIndustries from "@/components/transport-uber/UberIndustries";
+import UberFAQ from "@/components/transport-uber/UberFAQ";
+import UberTechStack from "@/components/transport-uber/UberTechStack";
+import ContactUs from "@/components/Common/ContactUs";
+import UberProductShowCase from "@/components/transport-uber/UberProductShowCase";
+import UberBlogs from "@/components/transport-uber/UberBlogs";
+import UberGetUpdates from "@/components/transport-uber/UberGetUpdates";
+import Testimonial from "../../../components/Common/Testimonial";
+import TeamMoments from "../../../components/Common/TeamMoments";
 
 const TaxiBookingUber = () => {
-    // Scroll to top on mount
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-        <>
-            <UberHero />
-            <UberCloneForBusiness />
-            <UberServices />
-            <UberRiderFeatures />
-            <UberDriverFeatures />
-            <UberAIGrowth />
-            <UberlaunchCTA />
-            <UberAppScreenshots />
-            <UberAdminPanel />
-            <UberWhatYouGet />
-            <UberStrategy />
-            <UberWhyUs />
-            <UberCTA2 />
-            <UberAward />
-            <UberIndustries />
-            <UberFAQ />
-            <UberTechStack />
-            <ContactUs theme="blue" productName="Vyom Taxi" />
-            <UberProductShowCase />
-            <UberBlogs />
-            <UberGetUpdates />
-        </>
-    );
+  return (
+    <>
+      <UberHero />
+      <UberCloneForBusiness />
+      <UberServices />
+      <UberRiderFeatures />
+      <UberDriverFeatures />
+      <UberAIGrowth />
+      <UberlaunchCTA />
+      <UberAppScreenshots />
+      <UberAdminPanel />
+      <UberWhatYouGet />
+      <UberStrategy />
+      <UberWhyUs />
+      <UberCTA2 />
+      <Testimonial
+        theme="blue"
+        bgGradient="from-blue-50 via-white to-blue-50"
+        cardGradient="from-blue-500 to-indigo-500"
+        headingText="What Our Clients Say"
+        subheadingText="Trusted by 500+ businesses worldwide"
+      />
+      <UberIndustries />
+      <UberFAQ />
+      <UberTechStack />
+      <ContactUs theme="blue" productName="Vyom Taxi" />
+      <UberProductShowCase />
+      <UberBlogs />
+      <UberGetUpdates />
+      <TeamMoments />
+    </>
+  );
 };
 
 export default TaxiBookingUber;

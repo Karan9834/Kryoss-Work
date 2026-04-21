@@ -1,4 +1,5 @@
 import React from "react";
+
 import HomeCleaningHero from "../../../components/Home-cleaning/HomeCleaningHero";
 import HomeCleaningAbout from "../../../components/Home-cleaning/HomeCleaningAbout";
 import HomeCleaningHowItWorks from "../../../components/Home-cleaning/HomeCleaningHowItWorks";
@@ -15,52 +16,71 @@ import HomeCleaningDevelopmentProcess from "../../../components/Home-cleaning/Ho
 import HomeCleaningCTA3 from "../../../components/Home-cleaning/HomeCleaningCTA3";
 import HomeCleaningDigitalFootprint from "../../../components/Home-cleaning/HomeCleaningDigitalFootprint";
 import HomeCleaningChooseUs from "../../../components/Home-cleaning/HomeCleaningChooseUs";
-import HomeCleaningTestimonialsSection from "../../../components/Home-cleaning/HomeCleaningTestinomialsSection";
+// import HomeCleaningTestimonialsSection from "../../../components/Home-cleaning/HomeCleaningTestinomialsSection";
 import HomeCleaningProductShowcase from "../../../components/Home-cleaning/HomeCleaningProductShowcase";
-import HomeCleaningAwardRecognition from "../../../components/Home-cleaning/HomeCleaningAwardRecognition";
+// import HomeCleaningAwardRecognition from "../../../components/Home-cleaning/HomeCleaningAwardRecognition";
 import HomeCleaningFAQ from "../../../components/Home-cleaning/HomeCleaningFAQ";
 import HomeCleaningTechStack from "../../../components/Home-cleaning/HomeCleaningTechStack";
-import ContactUs from '../../../components/Common/ContactUs';
 import HomeCleaningBlogsSection from "../../../components/Home-cleaning/HomeCleaningBlogsSection";
 import HomeCleaningNewsletterSection from "../../../components/Home-cleaning/HomeCleaningNewsletterSection";
-import HomeCleaningTeamMoments from "../../../components/Home-cleaning/HomeCleaningTeamMoments";
 
-const HomeCleaning=()=>{
-    return(
-        <>
-        <HomeCleaningHero/>
-        <HomeCleaningAbout/>
-        <HomeCleaningHowItWorks/>
-        <HomeCleaningCTA/>
-        <HomeCleaningSnapsot/>
-        <HomeCleaningFeatures/>
-        <HomeCleaningWebAdmin/>
-        <HomeCleaningProviderAdmin/>
-        <HomeCleaningOffer/>
-        <HomeCleaningCTA2/>
-        <HomeCleaningUniqueFeatures/>
-        <HomeCleaningAppDemo/>
-        <HomeCleaningDevelopmentProcess/>
-        <HomeCleaningCTA3/>
-        <HomeCleaningDigitalFootprint/>
-        <HomeCleaningChooseUs/>
-        <HomeCleaningTestimonialsSection/>
-        <HomeCleaningProductShowcase/>
-        <HomeCleaningAwardRecognition/>
-        <HomeCleaningFAQ/>
-        <HomeCleaningTechStack/>
-        <ContactUs
-          theme="purple"
-          productName="Home Cleaning"
-          bgGradient="from-purple-50 via-white to-pink-50"
-          accentGradient="from-purple-500 via-pink-500 to-indigo-500"
-          buttonGradient="from-purple-600 via-pink-600 to-indigo-600"
-          showImage={true}
-        />
-        <HomeCleaningBlogsSection/>
-        <HomeCleaningNewsletterSection/>
-        <HomeCleaningTeamMoments/>
-        </>
-    )
-}
-export default HomeCleaning
+import ContactUs from "../../../components/Common/ContactUs";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import Testimonial from "../../../components/Common/Testimonial";
+
+const HomeCleaning = () => {
+  return (
+    <>
+      <HomeCleaningHero />
+      <HomeCleaningAbout />
+      <HomeCleaningHowItWorks />
+      <HomeCleaningCTA />
+      <HomeCleaningSnapsot />
+      <HomeCleaningFeatures />
+      <HomeCleaningWebAdmin />
+      <HomeCleaningProviderAdmin />
+      <HomeCleaningOffer />
+      <HomeCleaningCTA2 />
+      <HomeCleaningUniqueFeatures />
+      <HomeCleaningAppDemo />
+      <HomeCleaningDevelopmentProcess />
+      <HomeCleaningCTA3 />
+      <HomeCleaningDigitalFootprint />
+      <HomeCleaningChooseUs />
+
+      {/* <HomeCleaningTestimonialsSection/> */}
+
+      {/* ✅ Proper Testimonial */}
+      <Testimonial
+        theme="orange"
+        bgGradient="from-orange-50 via-white to-orange-50"
+        cardGradient="from-orange-500 to-amber-500"
+        headingText="What Our Clients Say"
+        subheadingText="Trusted by 500+ businesses worldwide"
+      />
+
+      <HomeCleaningProductShowcase />
+
+      {/* <HomeCleaningAwardRecognition/> */}
+
+      <HomeCleaningFAQ />
+      <HomeCleaningTechStack />
+
+      {/* ✅ Orange Contact */}
+      <ContactUs
+        theme="orange"
+        productName="Home Cleaning"
+        bgGradient="from-orange-50 via-white to-orange-50"
+        accentGradient="from-orange-500 to-amber-500"
+        buttonGradient="from-orange-600 to-amber-600"
+        showImage={true}
+      />
+
+      <HomeCleaningBlogsSection />
+      <HomeCleaningNewsletterSection />
+      <TeamMoments />
+    </>
+  );
+};
+
+export default HomeCleaning;
