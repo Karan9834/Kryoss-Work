@@ -13,6 +13,9 @@ import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import Products from "../../../components/E-Commerce-App/Products";
+import hero from "../../../assets/services-ecommerce-img/hero.png"
+import multi from "../../../assets/services-ecommerce-img/multi.png"
+import tail from "../../../assets/services-ecommerce-img/tail.jpeg"
 
 const ECommerceApp = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -25,8 +28,6 @@ const ECommerceApp = () => {
             setLeftHeight(leftRef.current.offsetHeight);
         }
     }, [activeTab]);
-
-
 
     const panelFeatures = {
         "User App": {
@@ -85,34 +86,6 @@ const ECommerceApp = () => {
         { icon: Truck, title: "Logistics API Integration", desc: "Connect with native logistics providers for automated routing." }
     ];
 
-    const portfolio = [
-        {
-            title: "Fashion E-commerce",
-            description: "A fast rendering fashion marketplace featuring AR-tryons and swift delivery management.",
-            tags: ["Marketplace", "Fashion", "Scalable"],
-            image: "/SolAps/Ecomport1.png"
-        },
-        {
-            title: "Electronics B2B Portal",
-            description: "Wholesale platform enabling bulk pricing, negotiation workflows, and credit limit features.",
-            tags: ["B2B", "Wholesale", "Custom"],
-            image: "/SolAps/Ecomport2.png"
-        },
-        {
-            title: "SuperMarket Grocery Delivery",
-            description: "On-demand grocery delivery network handling diverse SKUs and local vendor dispatch.",
-            tags: ["Grocery", "On-Demand", "Mobile App"],
-            image: "/SolAps/Ecomport3.png"
-        }
-    ];
-
-    const stats = [
-        { value: "500+", label: "E-commerce Projects" },
-        { value: "99.9%", label: "Uptime Guaranteed" },
-        { value: "50M+", label: "Orders Processed" },
-        { value: "4.9/5", label: "Client Ratings" }
-    ];
-
     const solutions = [
         { icon: CheckCircle, title: "Ready-to-launch Scripts", desc: "Pre-configured setups that drastically reduce time-to-market." },
         { icon: User, title: "Dedicated Development Team", desc: "Hire skilled developers exclusively for your custom requirements." },
@@ -127,7 +100,7 @@ const ECommerceApp = () => {
                 <meta name="description" content="Launch your eCommerce business with our best single/multi-vendor eCommerce software. Readymade scripts for quick customization." />
             </Helmet>
 
-            {/* 1. Hero Section */}
+            {/* 1. Hero Section - Larger image */}
             <section className="relative w-full min-h-[550px] lg:min-h-[600px] flex md:items-center overflow-hidden bg-gradient-to-br from-[#F8FAFC] via-white to-[#FEF9C3]">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute top-10 left-10 w-96 h-96 bg-orange-100/50 rounded-full blur-3xl" />
@@ -176,7 +149,6 @@ const ECommerceApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
                             </motion.div>
                         </div>
 
@@ -185,15 +157,13 @@ const ECommerceApp = () => {
                                 initial={{ opacity: 0, x: 20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.4, duration: 0.8 }}
-                                className="relative z-10"
+                                className="relative z-10 w-full"
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 to-yellow-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/Ecommerce1.png"
-                                    alt="Taxi App Development"
-                                    width="2048"
-                                    height="1365"
-                                    className="relative z-10 w-[115%] max-w-none h-auto object-cover drop-shadow-2xl"
+                                    src={hero}
+                                    alt="E-Commerce App Development"
+                                    className="relative z-10 w-full h-auto max-h-[500px] object-contain drop-shadow-2xl"
                                     onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
                                 />
                             </motion.div>
@@ -201,7 +171,6 @@ const ECommerceApp = () => {
                     </div>
                 </div>
             </section>
-
 
             {/* 2. Intro Section */}
             <section className="py-20 lg:py-32 bg-white relative">
@@ -211,27 +180,15 @@ const ECommerceApp = () => {
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="w-full lg:w-1/2 relative"
+                            className="w-full lg:w-1/2 relative flex justify-center"
                         >
-                            <div className="absolute -inset-4 bg-orange-50 border border-orange-100 rounded-[2rem] transform -rotate-2" />
-                            <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
+                            <div className="relative w-full max-w-md mx-auto lg:max-w-full">
                                 <img
-                                    src="/SolAps/Ecommerce.png"
-                                    alt="Taxi Booking Solution"
-                                    className="max-w-full max-h-full object-contain"
+                                    src={multi}
+                                    alt="E-Commerce Solution"
+                                    className="w-full h-auto object-contain"
                                     onError={(e) => { e.target.src = "/SolAps/Ecommerce.png"; }}
                                 />
-                            </div>
-                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                                        <ShoppingCart className="text-green-600 w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-semibold mb-1">Rides Completed</p>
-                                        <p className="text-2xl font-bold text-gray-900">+48%</p>
-                                    </div>
-                                </div>
                             </div>
                         </motion.div>
 
@@ -273,7 +230,6 @@ const ECommerceApp = () => {
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto">
-                    {/* Heading */}
                     <div className="text-center mb-12">
                         <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-slate-900">
                             <span className="text-[30px] lg:text-[36px] font-bold leading-[1.2] bg-gradient-to-r from-orange-600 to-slate-800 bg-clip-text text-transparent">
@@ -287,7 +243,6 @@ const ECommerceApp = () => {
                         <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-slate-500 rounded-full mx-auto mt-4"></div>
                     </div>
 
-                    {/* Tabs */}
                     <div className="flex justify-center gap-3 md:gap-4 mb-12 flex-wrap">
                         {Object.keys(panelFeatures).map((key) => {
                             const isActive = activeTab === key;
@@ -306,10 +261,7 @@ const ECommerceApp = () => {
                         })}
                     </div>
 
-                    {/* Layout - Simple image, no box */}
                     <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 items-start">
-
-                        {/* LEFT COLUMN */}
                         <div ref={leftRef} className="grid grid-cols-2 gap-3 min-h-[400px]">
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(0, 2).map((item, idx) => (
@@ -353,7 +305,6 @@ const ECommerceApp = () => {
                             </div>
                         </div>
 
-                        {/* CENTER - Just the image, no frame, no box */}
                         <div className="flex justify-center">
                             <img
                                 src={panelFeatures[activeTab].image}
@@ -364,7 +315,6 @@ const ECommerceApp = () => {
                             />
                         </div>
 
-                        {/* RIGHT COLUMN */}
                         <div className="grid grid-cols-2 gap-3 min-h-[400px]">
                             <div className="space-y-3">
                                 {panelFeatures[activeTab].features.slice(4, 6).map((item, idx) => (
@@ -411,7 +361,7 @@ const ECommerceApp = () => {
                 </div>
             </section>
 
-            {/* 5. Features Grid (Light Background matching reference) */}
+            {/* 5. Features Grid */}
             <section className="py-24 bg-[#F8FAFF] relative">
                 <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03]" />
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -453,8 +403,6 @@ const ECommerceApp = () => {
                                     </div>
                                     <h3 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-900 mb-3">{feature.title}</h3>
                                     <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500">{feature.desc}</p>
-                                    
-                                    {/* Subtle Watermark-style icon in background */}
                                     <div className="absolute -bottom-4 -right-4 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity">
                                         <feature.icon size={120} />
                                     </div>
@@ -465,32 +413,14 @@ const ECommerceApp = () => {
                 </div>
             </section>
 
-            {/* 6. Stats Section (#FFFBF2) */}
-            <section className="py-20 bg-[#FFFBF2] relative">
-                <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {stats.map((stat, idx) => (
-                            <div key={idx} className="text-center group">
-                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
-                                    {stat.value}
-                                </h3>
-                                <p className="text-sm font-bold text-orange-600 uppercase tracking-widest">{stat.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* 7. Our Solution/Package Features */}
+            {/* 7. Our Solution/Package Features - Smaller balanced image */}
             <section className="py-24 bg-gradient-to-br from-white via-orange-50/30 to-white relative overflow-hidden">
-                {/* Background decorative elements */}
                 <div className="absolute inset-0 pointer-events-none">
                     <div className="absolute top-0 right-0 w-96 h-96 bg-orange-200 rounded-full blur-3xl opacity-20" />
                     <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-300 rounded-full blur-3xl opacity-10" />
                 </div>
 
                 <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                    {/* Heading & Subheading - Top centered */}
                     <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
                         <span className="text-[12px] font-medium tracking-[0.05em] uppercase inline-block px-4 py-1.5 bg-orange-100 text-orange-600 rounded-full mb-4">
                             Why Choose Us
@@ -510,39 +440,17 @@ const ECommerceApp = () => {
                         </p>
                     </div>
 
-                    {/* Image + Content Grid */}
-                    <div className="flex flex-col lg:flex-row gap-12 xl:gap-20 items-stretch">
-                        {/* Left Image Section */}
-                        <div className="w-full lg:w-2/5 relative group">
-                            <div className="relative h-full min-h-[400px] lg:min-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
-                                {/* Gradient Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10" />
-
-                                {/* Image - Replace with your actual image */}
-                                <img
-                                    src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                    alt="Business solutions"
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
-
-                                {/* Floating badge */}
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
-                                    <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
-                                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p className="font-bold text-gray-900">Trusted by 500+ companies</p>
-                                        <p className="text-sm text-gray-500">Worldwide customer base</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div className="flex flex-col lg:flex-row gap-12 xl:gap-20 items-center">
+                        <div className="w-full lg:w-2/5">
+                            <img
+                                src={tail}
+                                alt="Business solutions"
+                                className="w-full h-auto object-contain rounded-2xl"
+                            />
                         </div>
 
-                        {/* Right Content Section - Solutions Grid */}
                         <div className="w-full lg:w-3/5">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 h-full">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 {solutions.map((sol, i) => {
                                     const Icon = sol.icon;
                                     return (
@@ -572,7 +480,6 @@ const ECommerceApp = () => {
                 <Products />
             </div>
 
-            {/* 9 & 10. Global Components */}
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />

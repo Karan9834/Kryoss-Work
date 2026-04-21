@@ -1,5 +1,4 @@
-import React from "react";
-import processImg from "../../../../../assets/School-Manage/process.png";
+import processImg from "../../../../../assets/School management/Why choose kryoss work_.jpg";
 
 const DevelopmentProcess = () => {
   return (

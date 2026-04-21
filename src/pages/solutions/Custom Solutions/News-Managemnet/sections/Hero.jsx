@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import newsImage from "../../../../../assets/News-Solution/hero.png"
+import newsImage from "../../../../../assets/News management/1...jpg"
 
 const NewsHero = () => {
   return (

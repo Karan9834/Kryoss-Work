@@ -21,6 +21,9 @@ import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import HotelProducts from '../../../components/HMS-Hotel/HotelProducts';
+import hero from "../../../assets/Hotel-Management/hotelbooking.png"
+import multi from "../../../assets/Hotel-Management/multi.jpg"
+import tail from "../../../assets/Hotel-Management/tail.jpg"
 
 const ShoppingCartIcon = () => (
     <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -181,7 +184,7 @@ const HotelBookingApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 to-teal-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolAps/Hotel.png"
+                                    src={hero}
                                     alt="Taxi App Development"
                                     width="2048"
                                     height="1365"
@@ -208,25 +211,13 @@ const HotelBookingApp = () => {
 
                             <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
                                 <img
-                                    src="/SolAps/Hotel1.png"
+                            src={multi}
                                     alt="Taxi Booking Solution"
                                     width="2048"
                                     height="1365"
                                     className="max-w-full max-h-full object-contain"
                                     onError={(e) => { e.target.src = "/SolAps/Hotel1.png"; }}
                                 />
-                            </div>
-
-                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                                        <Building className="text-green-600 w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-semibold mb-1">Rides Completed</p>
-                                        <p className="text-2xl font-bold text-gray-900">+48%</p>
-                                    </div>
-                                </div>
                             </div>
                         </motion.div>
 
@@ -476,22 +467,6 @@ const HotelBookingApp = () => {
                 </div>
             </section>
 
-            {/* 6. Stats Section (#FFFBF2) */}
-            <section className="py-20 bg-[#FFFBF2] relative">
-                <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {stats.map((stat, idx) => (
-                            <div key={idx} className="text-center group">
-                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
-                                    {stat.value}
-                                </h3>
-                                <p className="text-sm font-bold text-cyan-600 uppercase tracking-widest">{stat.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* 7. Our Solution/Package Features */}
             <section className="py-24 bg-gradient-to-br from-white via-orange-50/30 to-white relative overflow-hidden">
                 {/* Background decorative elements */}
@@ -531,23 +506,10 @@ const HotelBookingApp = () => {
 
                                 {/* Image - Replace with your actual image */}
                                 <img
-                                    src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                    src={tail}
                                     alt="Business solutions"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-
-                                {/* Floating badge */}
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
-                                    <div className="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center">
-                                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p className="font-bold text-gray-900">Trusted by 500+ companies</p>
-                                        <p className="text-sm text-gray-500">Worldwide customer base</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 

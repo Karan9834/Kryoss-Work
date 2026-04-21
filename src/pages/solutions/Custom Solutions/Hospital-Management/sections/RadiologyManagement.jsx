@@ -1,5 +1,5 @@
 import React from "react";
-import radioImg from "../../../../../assets/Hospital-Manage/radiology.png"; // update path
+import radioImg from "../../../../../assets/Hospital Management/Radiology management_.jpg";
 
 const RadiologyManagement = () => {
   return (

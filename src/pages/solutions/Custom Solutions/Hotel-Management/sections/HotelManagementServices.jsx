@@ -5,7 +5,7 @@ const HotelManagementServices = () => {
   return (
     <section className="w-full py-24 bg-gradient-to-br from-blue-50 via-white to-cyan-50 px-6 md:px-16">
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -22,7 +22,7 @@ const HotelManagementServices = () => {
 
         {/* MAIN CONTENT */}
         <div className="flex flex-col md:flex-row gap-12 items-center">
-          
+
           {/* IMAGE SIDE - Left */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -50,19 +50,19 @@ const HotelManagementServices = () => {
           >
             {/* Description */}
             <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              Hotel management system is a software which helps hoteliers in managing their 
-              bookings, guests, and other aspects of their hotel. There are many hotel 
+              Hotel management system is a software which helps hoteliers in managing their
+              bookings, guests, and other aspects of their hotel. There are many hotel
               management software solutions popular in the world today.
             </p>
 
             <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              <span className="font-semibold text-cyan-700">Kryoss Softech</span> wants to help 
-              you design, upgrade, and integrate new technology into your site so that you can 
+              <span className="font-semibold text-cyan-700">Kryoss Softech</span> wants to help
+              you design, upgrade, and integrate new technology into your site so that you can
               stand out from the competition and appeal to your clients.
             </p>
 
             <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              Our focus is to provide our customers with a hotel management site that will help 
+              Our focus is to provide our customers with a hotel management site that will help
               you not only in retaining clients but also help you with growing your client base.
             </p>
 

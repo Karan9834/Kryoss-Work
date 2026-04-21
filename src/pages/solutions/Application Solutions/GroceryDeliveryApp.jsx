@@ -14,6 +14,8 @@ import {
     Play, Download, Subtitles, Lock, Chrome, Car, Apple, Scissors, Gift, Image, CalendarCheck, Star as StarIcon, Sparkles
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import intro from "../../../assets/grocerylanding-img/Completemulti.png"
+import tail from "../../../assets/grocerylanding-img/Tailored.jpg"
 
 import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
@@ -202,7 +204,7 @@ const GroceryDeliveryApp = () => {
                         >
                             <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
                                 <img
-                                    src="/SolAps/groceryapp1.png"
+                                    src={intro}
                                     alt="Taxi Booking Solution"
                                     width="2048"
                                     height="1365"
@@ -453,21 +455,6 @@ const GroceryDeliveryApp = () => {
                 </div>
             </section>
 
-            {/* 6. Stats Section (#FFFBF2) */}
-            <section className="py-20 bg-[#FFFBF2] relative">
-                <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {stats.map((stat, idx) => (
-                            <div key={idx} className="text-center group">
-                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
-                                    {stat.value}
-                                </h3>
-                                <p className="text-sm font-bold text-green-600 uppercase tracking-widest">{stat.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* 7. Our Solution/Package Features */}
             <section className="py-24 bg-gradient-to-br from-white via-orange-50/30 to-white relative overflow-hidden">
@@ -508,23 +495,10 @@ const GroceryDeliveryApp = () => {
 
                                 {/* Image - Replace with your actual image */}
                                 <img
-                                    src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                    src={tail}
                                     alt="Business solutions"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-
-                                {/* Floating badge */}
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
-                                    <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p className="font-bold text-gray-900">Trusted by 500+ companies</p>
-                                        <p className="text-sm text-gray-500">Worldwide customer base</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 

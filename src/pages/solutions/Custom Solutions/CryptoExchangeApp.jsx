@@ -13,6 +13,11 @@ import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import CryptoCardSection from '../../../components/CryptoExchange-Landing/CryptoCardSection';
 
+// Asset Imports
+import LandingPageImg from '../../../assets/Crypto & Exchange app/Landing page_.jpg';
+import Extra1Img from '../../../assets/Crypto & Exchange app/Extra 1.jpg';
+import Extra2Img from '../../../assets/Crypto & Exchange app/Extra 2.jpg';
+
 const CryptoExchangeApp = () => {
     const services = [
         {
@@ -160,12 +165,25 @@ const CryptoExchangeApp = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-indigo-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=800"
-                                    alt="Crypto Exchange Development"
-                                    width="2048"
-                                    height="1365"
-                                    className="max-w-full max-h-full object-contain rounded-3xl"
+                                    src={LandingPageImg}
+                                    alt="Crypto Exchange Development Platform"
+                                    className="max-w-full h-auto object-contain rounded-3xl shadow-2xl relative z-10"
                                 />
+                                {/* Decorative elements using extra assets */}
+                                <motion.div
+                                    animate={{ y: [0, -10, 0] }}
+                                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                                    className="absolute -bottom-10 -left-10 w-48 h-auto hidden md:block z-20"
+                                >
+                                    <img src={Extra1Img} alt="Exchange Feature" className="rounded-2xl shadow-xl border-4 border-white" />
+                                </motion.div>
+                                <motion.div
+                                    animate={{ y: [0, 10, 0] }}
+                                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                                    className="absolute -top-10 -right-10 w-48 h-auto hidden md:block z-20"
+                                >
+                                    <img src={Extra2Img} alt="Crypto Portfolio" className="rounded-2xl shadow-xl border-4 border-white" />
+                                </motion.div>
                             </motion.div>
                         </div>
                     </div>

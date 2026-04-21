@@ -1,5 +1,5 @@
 import React from "react";
-import receptionImg from "../../../../../assets/Hospital-Manage/reception.png"; // update path
+import receptionImg from "../../../../../assets/Hospital Management/Reception portal.jpg";
 
 const ReceptionPortal = () => {
   return (

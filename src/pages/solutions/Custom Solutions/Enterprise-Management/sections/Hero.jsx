@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, CheckCircle, Database, Shield, Zap, TrendingUp } from 'lucide-react';
+import heroImg from "../../../../../assets/Enterprise planning/1....jpg";
 
 const Hero = () => {
   const handleExploreProduct = () => {
@@ -108,9 +109,9 @@ const Hero = () => {
           <div className="absolute -bottom-2 -right-2 w-12 h-12 border-r-3 border-b-3 border-purple-400 rounded-br-xl"></div>
 
           <img
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600"
+            src={heroImg}
             alt="ERP Solutions Dashboard"
-            className="relative w-full max-w-md rounded-xl shadow-2xl border border-violet-500/30 hover:scale-105 transition duration-500"
+            className="relative w-full max-w-md rounded-2xl shadow-xl border border-violet-500/30 hover:scale-105 transition duration-500"
           />
         </div>
       </div>

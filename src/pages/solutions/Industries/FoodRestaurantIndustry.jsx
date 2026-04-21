@@ -13,6 +13,9 @@ import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import ProductSection from '../../../components/Food_delivery/ProductSection';
+import hero from "../../../assets/Food-Restaurant/hero.jpeg"
+import intro from "../../../assets/Food-Restaurant/intro.jpeg"
+import why from "../../../assets/Food-Restaurant/why.jpg"
 
 const FoodRestaurantIndustry = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -144,7 +147,7 @@ const FoodRestaurantIndustry = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-red-500/10 to-yellow-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop"
+                                    src={hero}
                                     alt="Restaurant App Development"
                                     width="2048"
                                     height="1365"
@@ -168,7 +171,7 @@ const FoodRestaurantIndustry = () => {
                         >
                             <div className="absolute -inset-4 bg-red-50 border border-red-100 rounded-[2rem] transform -rotate-2" />
                             <img
-                                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop"
+                                src={intro}
                                 alt="Food Platform Solution"
                                 width="2048"
                                 height="1365"
@@ -342,7 +345,7 @@ const FoodRestaurantIndustry = () => {
                         <div className="w-full lg:w-2/5 relative group">
                             <div className="relative h-full min-h-[400px] lg:min-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10" />
-                                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Solutions" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                <img src={why} alt="Solutions" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             </div>
                         </div>
 

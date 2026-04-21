@@ -1,4 +1,5 @@
 import React from 'react';
+import aboutImg from "../../../../../assets/Job portal and app/1..jpg";
 
 const AboutUs = () => {
   return (
@@ -22,7 +23,7 @@ const AboutUs = () => {
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="relative rounded-2xl overflow-hidden shadow-xl shadow-indigo-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=900&fit=crop" 
+                  src={aboutImg} 
                   alt="Job portal development team at work" 
                   className="w-full h-auto object-cover"
                 />

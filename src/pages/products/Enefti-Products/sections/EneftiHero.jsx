@@ -1,5 +1,6 @@
 import React from "react";
 import { Star, Users, TrendingUp, MessageCircle } from "lucide-react";
+import hero from "../../.././../assets/Nft products/Enefti/hero.jpg"
 
 const EneftiHero = () => {
     return (
@@ -90,7 +91,7 @@ const EneftiHero = () => {
 
                         {/* Replace with your downloaded image */}
                         <img
-                            src="/Products/ENEFTIHero.jpg"
+                            src={hero}
                             alt="Enefti NFT Gaming"
                             className="w-full max-w-lg rounded-3xl shadow-2xl object-cover"
                         />

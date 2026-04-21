@@ -1,6 +1,6 @@
 import React from 'react';
 import { Globe, Cloud, Building, Shield, Brain, Award } from 'lucide-react';
-import erpSolutionsImg from "../../../../../assets/ERP-Solution/Modern.png"; 
+import erpSolutionsImg from "../../../../../assets/Enterprise planning/3.....jpg";
 
 const ERPSolutions = () => {
   const solutions = [
@@ -37,7 +37,7 @@ const ERPSolutions = () => {
   ];
 
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-br from-violet-50 via-purple-50 to-indigo-50">
+    <section className="relative w-full py-16 md:py-20 bg-gradient-to-br from-violet-50 via-purple-50 to-indigo-50 overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full" style={{
@@ -48,26 +48,26 @@ const ERPSolutions = () => {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-200/30 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative flex flex-col md:flex-row z-10">
-        
-        {/* LEFT IMAGE - 50% width full height */}
-        <div className="relative md:w-1/2 h-[500px] md:h-auto overflow-hidden">
-          {/* Glow behind image */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-violet-500/20 to-purple-500/20 z-0"></div>
-          
+      <div className="relative max-w-6xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center z-10">
+
+        {/* LEFT IMAGE */}
+        <div className="relative flex justify-center order-1 md:order-1">
           {/* Decorative corner elements */}
-          <div className="absolute top-6 left-6 w-16 h-16 border-l-4 border-t-4 border-violet-500 rounded-tl-2xl z-10"></div>
-          <div className="absolute bottom-6 right-6 w-16 h-16 border-r-4 border-b-4 border-purple-500 rounded-br-2xl z-10"></div>
-          
+          <div className="absolute -top-3 -right-3 w-16 h-16 border-r-4 border-t-4 border-violet-500 rounded-tr-2xl"></div>
+          <div className="absolute -bottom-3 -left-3 w-16 h-16 border-l-4 border-b-4 border-purple-500 rounded-bl-2xl"></div>
+
+          {/* Glow behind image */}
+          <div className="absolute inset-0 bg-gradient-to-tl from-violet-500/20 to-purple-500/20 blur-2xl rounded-full"></div>
+
           <img
             src={erpSolutionsImg}
-            alt="ERP Solutions"
-            className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-700"
+            alt="Why Choose Our ERP Solutions"
+            className="relative w-full max-w-md rounded-2xl shadow-xl border border-gray-200 hover:scale-105 transition duration-500"
           />
         </div>
 
-        {/* RIGHT CONTENT - 50% width */}
-        <div className="md:w-1/2 py-16 md:py-20 px-6 lg:px-10">
+        {/* RIGHT CONTENT */}
+        <div className="order-2 md:order-2">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-violet-100 border border-violet-200 text-violet-700 px-3 py-1.5 rounded-full mb-4 text-xs font-semibold tracking-wide">
             <span className="w-1.5 h-1.5 bg-violet-500 rounded-full animate-pulse"></span>
@@ -82,24 +82,19 @@ const ERPSolutions = () => {
             </span>
           </h2>
 
-          <p className="mt-3 text-gray-500 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-            Comprehensive ERP solutions tailored to your business needs
+          <p className="mt-4 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+            Comprehensive ERP solutions tailored to your business needs. Our experienced ERP specialists
+            help you align business goals with cutting-edge technology for maximum performance.
           </p>
 
           {/* Solutions Grid - 2 columns */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+          <div className="grid grid-cols-2 gap-3 mt-6">
             {solutions.map((item, index) => (
-              <div
-                key={index}
-                className="flex items-start gap-3 p-3 rounded-xl border border-violet-200/50 hover:shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-violet-300 bg-white/40"
-              >
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-purple-500 flex items-center justify-center text-white shrink-0">
+              <div key={index} className="flex items-start gap-2">
+                <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-violet-500 to-purple-500 flex items-center justify-center text-white shrink-0 mt-0.5">
                   {item.icon}
                 </div>
-                <div>
-                  <h3 className="text-sm font-bold text-gray-900">{item.title}</h3>
-                  <p className="leading-[1.6] text-gray-500 mt-0.5 text-[14px] md:text-[16px] font-normal leading-[1.6]">{item.description}</p>
-                </div>
+                <span className="text-gray-700 text-xs leading-snug font-medium">{item.title}</span>
               </div>
             ))}
           </div>

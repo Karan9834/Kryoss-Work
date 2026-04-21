@@ -1,5 +1,5 @@
 import React from "react";
-import sectionImage from "../../../../../assets/human-resources/employee.png";
+import sectionImage from "../../../../../assets/Human resources mgt/3...jpg";
 
 const features = [
   {

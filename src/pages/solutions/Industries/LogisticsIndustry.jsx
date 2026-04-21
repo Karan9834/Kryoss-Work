@@ -15,6 +15,9 @@ import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import LogisticsCardSection from '../../../components/TransportLogistics-Landing/LogisticsCardSection';
+import hero from "../../../assets/Logistic_app/hero.png"
+import intro from "../../../assets/Logistic_app/intro.jpeg"
+import why from "../../../assets/Logistic_app/why.jpg"
 
 const LogisticsIndustry = () => {
     const [activeTab, setActiveTab] = useState("Client App");
@@ -159,7 +162,7 @@ const LogisticsIndustry = () => {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 to-yellow-500/10 rounded-3xl blur-2xl transform rotate-3" />
                                 <img
-                                    src="/SolIndus/Logistics.png"
+                                    src={hero}
                                     alt="Logistics App Development"
                                     width="2048"
                                     height="1365"
@@ -185,24 +188,13 @@ const LogisticsIndustry = () => {
                         >
                             <div className="absolute -inset-4 bg-orange-50 border border-orange-100 rounded-[2rem] transform -rotate-2" />
                             <img
-                                src="/SolIndus/Logistics1.png"
+                                src={intro}
                                 alt="Logistics Solution"
                                 width="2048"
                                 height="1365"
                                 className="relative w-full rounded-2xl shadow-xl object-cover h-auto"
                                 onError={(e) => { e.target.src = '/SolIndus/Logistics1.png'; }}
                             />
-                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                                        <Truck className="text-green-600 w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-semibold mb-1">Deliveries Optimization</p>
-                                        <p className="text-2xl font-bold text-gray-900">+56%</p>
-                                    </div>
-                                </div>
-                            </div>
                         </motion.div>
 
                         <div className="w-full lg:w-1/2">
@@ -429,22 +421,6 @@ const LogisticsIndustry = () => {
                 </div>
             </section>
 
-            {/* 6. Stats Section (#FFFBF2) */}
-            <section className="py-20 bg-[#FFFBF2] relative">
-                <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {stats.map((stat, idx) => (
-                            <div key={idx} className="text-center group">
-                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
-                                    {stat.value}
-                                </h3>
-                                <p className="text-sm font-bold text-orange-600 uppercase tracking-widest">{stat.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* 7. Our Solution/Package Features */}
             <section className="py-24 bg-gradient-to-br from-white via-orange-50/30 to-white relative overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none">
@@ -477,21 +453,10 @@ const LogisticsIndustry = () => {
                             <div className="relative h-full min-h-[400px] lg:min-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10" />
                                 <img
-                                    src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                    src={why}
                                     alt="Business solutions"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
-                                    <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
-                                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p className="font-bold text-gray-900">Trusted by 500+ companies</p>
-                                        <p className="text-sm text-gray-500">Worldwide customer base</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import learning from "../../../../../assets/Learning/learning.png"
+import learning from "../../../../../assets/Learning Management/Custom Learning Management_.jpg"
 const CustomLMSSection = () => {
   return (
     <section className="w-full py-16 md:py-24 font-['Inter'] relative overflow-hidden bg-white">

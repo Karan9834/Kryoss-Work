@@ -1,5 +1,5 @@
 import React from "react";
-import doctorImg from "../../../../../assets/Hospital-Manage/doctor.png"; // update path
+import doctorImg from "../../../../../assets/Hospital Management/Doctor portal.jpg";
 
 const DoctorPortal = () => {
   return (

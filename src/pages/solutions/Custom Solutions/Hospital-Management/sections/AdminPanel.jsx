@@ -1,5 +1,5 @@
 import React from "react";
-import adminImg from "../../../../../assets/Hospital-Manage/admin.png"; // update path
+import adminImg from "../../../../../assets/Hospital Management/Admin panel.jpg";
 
 const AdminPanel = () => {
   return (

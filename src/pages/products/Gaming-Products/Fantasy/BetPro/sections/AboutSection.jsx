@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../../../../../../assets/Games-Product/betproabout.jpg";
+import aboutImg from "../../../../../../assets/Betting apps/Betyourduck/hero.jpg";
 
 const AboutSection = () => {
   return (

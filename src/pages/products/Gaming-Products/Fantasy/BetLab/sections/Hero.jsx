@@ -1,6 +1,6 @@
 import React from 'react';
 import { Play, ArrowRight, Trophy, Zap, Shield, MessageCircle } from "lucide-react";
-import betlab from "../../../../../../assets/Games-Product/betlab.jpg"
+import betlab from "../../../../../../assets/Betting apps/Betlab/1,.jpg"
 
 
 const Hero = () => {

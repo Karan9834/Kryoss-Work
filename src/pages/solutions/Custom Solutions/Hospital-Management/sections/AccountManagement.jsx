@@ -1,5 +1,5 @@
 import React from "react";
-import accountImg from "../../../../../assets/Hospital-Manage/account.png"; // update path
+import accountImg from "../../../../../assets/Hospital Management/Account management_.jpg";
 
 const AccountManagement = () => {
   return (

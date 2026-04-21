@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import smartImg from '../../assets/Nft products/Smart NFT/1..jpg';
-import eneftiImg from '../../assets/Nft products/Enefti/1.,.jpg';
+import smartImg from '../../assets/Nft products/landing.jpg';
+import eneftiImg from '../../assets/Nft products/landing2.jpg';
 
 const NFTCardSection = () => {
     const products = [

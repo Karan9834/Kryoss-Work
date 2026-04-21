@@ -1,5 +1,5 @@
 import React from "react";
-import superAdminImg from "../../../../../assets/Hospital-Manage/superadmin.png"; // update path
+import superAdminImg from "../../../../../assets/Hospital Management/Super admin_.jpg";
 
 const SuperAdmin = () => {
   return (

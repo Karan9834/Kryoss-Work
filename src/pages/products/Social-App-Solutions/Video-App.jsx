@@ -26,6 +26,9 @@ import {
   Plus,
   Minus,
 } from "lucide-react";
+import TeamMoments from '../../../components/Common/TeamMoments';
+import Testimonial from '../../../components/Common/Testimonial';
+import ContactUs from '../../../components/Common/ContactUs';
 
 /* =========================
    PART 1 DATA
@@ -890,46 +893,7 @@ const TikTokClonePage = () => {
         </div>
       </section>
 
-      {/* SECTION 8 TESTIMONIALS */}
-      <section className="w-full py-32 bg-gradient-to-r from-[#d7e4f2] via-[#d7e7d8] to-[#f4e3c9]">
-        <div className="max-w-[1400px] mx-auto px-10 text-center">
-          <span className="text-sm border px-5 py-1 rounded-full border-red-300 text-red-500">
-            Users Admire Our System
-          </span>
-
-          <h2 className="text-4xl font-semibold mt-6 mb-16">
-            Discover{" "}
-            <span className="text-red-500">
-              What Our Patrons Enthusiastically Report!
-            </span>
-          </h2>
-
-          <div className="grid md:grid-cols-4 gap-10">
-            {testimonials.map((item, index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 shadow-lg">
-                <div className="relative w-28 h-28 mx-auto mb-6">
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-full rounded-xl object-cover"
-                  />
-
-                  <div
-                    className="absolute bottom-[-10px] left-1/2 -translate-x-1/2
-            w-9 h-9 bg-red-500 text-white rounded-full flex items-center justify-center flex-wrap gap-4"
-                  >
-                    <Play size={16} />
-                  </div>
-                </div>
-
-                <h4 className="font-semibold text-lg">{item.name}</h4>
-
-                <p className="text-sm text-gray-600 mt-3">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Testimonial/>
 
       {/* SECTION 9 APPS */}
       <section className="w-full bg-gray-50 py-32">
@@ -965,45 +929,7 @@ const TikTokClonePage = () => {
           </div>
         </div>
       </section>
-
-      {/* SECTION 10 RECOGNITION */}
-      <section className="w-full py-32 bg-[#4b0009]">
-        <div className="max-w-[1400px] mx-auto px-10 text-center">
-          <span className="text-sm border border-pink-400 text-pink-300 px-5 py-1 rounded-full">
-            Honors & Accolades
-          </span>
-
-          <h2 className="text-4xl md:text-5xl font-semibold text-white mt-6">
-            Acknowledged by{" "}
-            <span className="text-pink-400">
-              Important Evaluation Boards & Market Pioneers
-            </span>
-          </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-16">
-            {recognitionPlatforms.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl py-8 px-6 flex flex-col items-center shadow-md hover:shadow-lg transition"
-              >
-                <img
-                  src={item.logo}
-                  alt={item.name}
-                  className="h-10 mb-4 object-contain"
-                />
-
-                <div className="flex gap-1 text-yellow-400 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={16} fill="currentColor" />
-                  ))}
-                </div>
-
-                <span className="text-sm text-gray-500">({item.rating})</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ContactUs/>
 
       {/* SECTION 11 FAQ */}
       <section className="w-full bg-white py-32">
@@ -1038,6 +964,7 @@ const TikTokClonePage = () => {
           ))}
         </div>
       </section>
+      <TeamMoments/>
     </div>
   );
 };

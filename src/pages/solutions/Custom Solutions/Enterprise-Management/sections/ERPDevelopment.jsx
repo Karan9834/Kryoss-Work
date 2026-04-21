@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle, TrendingUp, Users, Shield, BarChart3, Settings } from 'lucide-react';
-import erpImg from "../../../../../assets/ERP-Solution/erp.png";
+import erpImg from "../../../../../assets/Enterprise planning/2....jpg";
 
 const ERPDevelopment = () => {
   const services = [

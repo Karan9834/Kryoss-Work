@@ -1,4 +1,5 @@
 import React from "react";
+import about from "../../../../assets/Nft products/Smart NFT/about.jpg"
 
 const SmartNftAboutUs = () => {
     return (
@@ -11,7 +12,7 @@ const SmartNftAboutUs = () => {
                     {/* LEFT IMAGE */}
                     <div className="flex justify-center lg:justify-start w-full max-w-[526px] aspect-[526/501]">
                         <img
-                            src="/Products/Smart2nd.png"
+                            src={about}
                             alt="Smart NFT Platform"
                             className="w-full h-full rounded-3xl shadow-xl object-cover"
                         />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import hotelImage from "../../../../../assets/Hotel-Solutions/hero.png";
+import hotelImage from "../../../../../assets/Hotel management/1,.jpg";
 
 const Hero = () => {
   return (
