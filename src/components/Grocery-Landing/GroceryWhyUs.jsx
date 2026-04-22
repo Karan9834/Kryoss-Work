@@ -88,16 +88,6 @@ const GroceryWhyUs = () => {
                                 Join 500+ businesses that have successfully launched their grocery delivery brands with KryossWork.
                             </p>
                         </div>
-                        <div className="flex gap-6 lg:gap-10 relative z-10 w-full lg:w-auto justify-center lg:justify-end border-t border-white/10 lg:border-none pt-8 lg:pt-0">
-                            <div className="text-center transition-transform duration-500 group-hover:scale-110">
-                                <p className="text-[28px] lg:text-[48px] font-black mb-1">99.9%</p>
-                                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Uptime Guaranteed</p>
-                            </div>
-                            <div className="text-center transition-transform duration-500 group-hover:scale-110">
-                                <p className="text-[28px] lg:text-[48px] font-black mb-1">24/7</p>
-                                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Expert Support</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
 

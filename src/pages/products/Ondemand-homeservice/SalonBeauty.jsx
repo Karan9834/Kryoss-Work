@@ -14,13 +14,14 @@ import TechStack from "../../../components/Salon & Beauty/TechStack";
 import ContactUs from "../../../components/Common/ContactUs";
 import BlogsSection from "../../../components/Salon & Beauty/BlogsSection";
 import NewsletterSection from "../../../components/Salon & Beauty/NewsletterSection";
-import TeamMoments from "../../../components/Salon & Beauty/TeamMoments";
 import DigitalFootprint from "../../../components/Salon & Beauty/DigitalFootprint";
 import WhyChooseUs from "../../../components/Salon & Beauty/WhyChooseUs";
 import CTA2 from "../../../components/Salon & Beauty/CTA2";
 import BusinessSupport from "../../../components/Salon & Beauty/BusinessSupport";
 import WhatWeProvide from "../../../components/Salon & Beauty/WhatWeProvide";
 import DevelopmentProcess from "../../../components/Salon & Beauty/DevelopmentProcess";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import Testimonial from "../../../components/Common/Testimonial";
 
 const SalonBeauty = ()=>{
     return <>
@@ -37,15 +38,14 @@ const SalonBeauty = ()=>{
         <DigitalFootprint/>
         <WhyChooseUs/>
         <BusinessSupport/>
-      <TestinomialsSection/>
-        <ProductShowcase/>
-        <AwardRecognition/>
+        <Testimonial/>
         <FAQ/>
         <TechStack/>
         <ContactUs theme="purple" productName="Vyom Beauty" />
         <BlogsSection/>
         <NewsletterSection/>
         <TeamMoments/>
+        
 </>
 }
 export default SalonBeauty

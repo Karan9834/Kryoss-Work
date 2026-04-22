@@ -169,44 +169,7 @@ const TutorBookingWorkflow = () => {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-16">
-          {stats.map((stat, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all group">
-              <div className={`text-2xl md:text-3xl font-bold ${stat.color} mb-2 group-hover:scale-110 transition-transform`}>
-                {stat.value}
-              </div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* Demo preview */}
-        <div className="mt-16 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 text-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-          <div className="relative flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Ready to start?</h3>
-              <p className="text-indigo-100">Join thousands of students who found their perfect tutor</p>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="flex -space-x-2">
-                {[1,2,3,4].map((i) => (
-                  <div key={i} className="w-8 h-8 rounded-full bg-white/20 border-2 border-white"></div>
-                ))}
-                <div className="w-8 h-8 rounded-full bg-white/10 border-2 border-white flex items-center justify-center text-xs">2k+</div>
-              </div>
-              <span className="text-sm text-indigo-100">New sessions booked today</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom note */}
-        <div className="text-center mt-8">
-          <p className="text-sm text-gray-400">
-            <span className="font-semibold text-indigo-600">2,500+ active tutors</span> available across 100+ subjects
-          </p>
-        </div>
+        
       </div>
 
       <style>{`

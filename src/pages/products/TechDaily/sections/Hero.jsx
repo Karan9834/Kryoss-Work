@@ -81,17 +81,6 @@ const TechDailyHero = () => {
             Your daily dose of technology news, AI insights, and startup trends.
           </p>
 
-          <div className="flex gap-6">
-            <div>
-              <div className="text-white font-bold text-2xl">100K+</div>
-              <div className="text-gray-500 text-sm">Readers</div>
-            </div>
-            <div>
-              <div className="text-white font-bold text-2xl">50+</div>
-              <div className="text-gray-500 text-sm">Categories</div>
-            </div>
-          </div>
-
           {/* BUTTON with Live Demo */}
           <div className="flex flex-wrap gap-4">
             <button

@@ -17,19 +17,6 @@ const TutorAbout = () => {
             alt="Tutor Booking"
             className="rounded-2xl shadow-lg object-cover w-full group-hover:scale-105 transition duration-500"
           />
-
-          {/* floating tutor card */}
-          <div className="absolute -bottom-6 left-6 bg-white shadow-xl rounded-xl px-4 py-3 border w-56">
-            <p className="text-sm font-semibold text-gray-800">Sarah Johnson</p>
-            <p className="text-xs text-gray-500 mb-1">Mathematics Tutor</p>
-            <p className="text-xs text-indigo-600 font-medium">⭐ 4.9 • 1200 sessions</p>
-          </div>
-
-          {/* floating stat */}
-          <div className="absolute -top-6 right-6 bg-white shadow-xl rounded-xl px-4 py-3 border">
-            <p className="text-xs text-gray-500">Sessions Booked</p>
-            <p className="text-lg font-bold text-indigo-600">25K+</p>
-          </div>
         </div>
 
         {/* RIGHT CONTENT */}
@@ -80,22 +67,6 @@ const TutorAbout = () => {
               </div>
             ))}
 
-          </div>
-
-          {/* mini stats */}
-          <div className="flex gap-10 mt-10 text-sm text-gray-500">
-            <div>
-              <p className="text-xl font-bold text-gray-900">5K+</p>
-              Tutors
-            </div>
-            <div>
-              <p className="text-xl font-bold text-gray-900">20K+</p>
-              Students
-            </div>
-            <div>
-              <p className="text-xl font-bold text-gray-900">4.8★</p>
-              Rating
-            </div>
           </div>
 
         </div>

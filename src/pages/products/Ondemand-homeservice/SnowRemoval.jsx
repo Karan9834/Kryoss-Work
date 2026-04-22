@@ -41,7 +41,6 @@ const SnowRemoval = () => {
       <SnowDigitalFootprints />
       <SnowWhyUs />
       <SnowBusinessWeSupport />
-      <SnowProductShowCase />
 
       {/* ✅ Blue Testimonial */}
       <Testimonial

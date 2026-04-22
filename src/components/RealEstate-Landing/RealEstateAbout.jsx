@@ -52,19 +52,6 @@ const RealEstateAbout = () => {
                                 <img src={aboutImg} alt="About Real Estate" className="w-full h-full object-cover" />
                             </div>
                         </div>
-
-                        {/* Metrics Row - Updated Stats Typography */}
-                        <div className="grid grid-cols-3 gap-4">
-                            {metrics.map((m, i) => (
-                                <div key={i} className="bg-gray-50 rounded-2xl p-4 text-center border border-gray-100 hover:shadow-sm transition-all">
-                                    <m.icon size={20} className={`${m.color} mx-auto mb-2`} />
-                                    {/* Stats Number - 20px mobile, 24px desktop, font-weight: 700 */}
-                                    <p className={`text-[20px] md:text-[24px] font-bold ${m.color}`}>{m.value}</p>
-                                    {/* Stats Label - 12px, font-weight: 400, letter-spacing: 0.02em */}
-                                    <p className="text-[12px] font-normal tracking-[0.02em] text-gray-500 mt-1">{m.label}</p>
-                                </div>
-                            ))}
-                        </div>
                     </div>
 
                     {/* Right: Content - Updated Typography */}

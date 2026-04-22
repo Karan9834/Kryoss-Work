@@ -18,18 +18,23 @@ import WhyUs from "@/components/homeservice-tutorbooking/whyus";
 import CTA3 from "@/components/homeservice-tutorbooking/cta3";
 // import ClientsFeedback from '@/components/homeservice-tutorbooking/clientsfeedback';
 import ProductShowcase from "@/components/homeservice-tutorbooking/productshowcase";
-import Awards from "@/components/homeservice-tutorbooking/awards";
 import FAQs from "@/components/homeservice-tutorbooking/faqs";
 import TechStack from "@/components/homeservice-tutorbooking/techstack";
 import ContactUs from "@/components/Common/ContactUs";
 import Blogs from "@/components/homeservice-tutorbooking/blogs";
 import GetUpdate from "@/components/homeservice-tutorbooking/getupdate";
-import TeamMoments from "../../../components/Common/TeamMoments";
-import Testimonial from "../../../components/Common/Testimonial";
+import TeamMoments from "@/components/Common/TeamMoments";
+import Testimonial from "@/components/Common/Testimonial";
 
 const TutorBookingApp = () => {
   return (
-    <>
+    <div>
+      <Helmet>
+        <title>Tutor Booking App - Vyom Tutor | Home Service Platform</title>
+        <meta name="description" content="Professional tutor booking and home service platform - Connect with qualified tutors easily" />
+        <meta name="keywords" content="tutor booking, home service, education, tutoring platform, vyom tutor" />
+      </Helmet>
+
       <Hero />
       <AboutUs />
       <Howitworks />
@@ -45,9 +50,6 @@ const TutorBookingApp = () => {
       <DigitalFootprints />
       <WhyUs />
       <CTA3 />
-
-      {/* <ClientsFeedback /> */}
-      <ProductShowcase />
 
       {/* Your Testimonial */}
       <Testimonial
@@ -74,6 +76,8 @@ const TutorBookingApp = () => {
       <Blogs />
       <GetUpdate />
       <TeamMoments />
-    </>
+    </div>
   );
 };
+
+export default TutorBookingApp;

@@ -56,22 +56,6 @@ const Hero = () => {
             to make smarter financial decisions and scale your business globally.
           </p>
 
-          {/* Stats */}
-          <div className="flex gap-8 pt-2">
-            <div>
-              <div className="text-2xl font-bold text-white">120+</div>
-              <div className="text-sm text-gray-500">Markets</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-white">$10B+</div>
-              <div className="text-sm text-gray-500">Transactions</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-white">99.9%</div>
-              <div className="text-sm text-gray-500">Accuracy</div>
-            </div>
-          </div>
-
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 pt-2">
             
@@ -112,12 +96,6 @@ const Hero = () => {
               alt="financial analytics dashboard"
               className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl shadow-xl"
             />
-          </div>
-
-          {/* floating card */}
-          <div className="absolute -bottom-6 -left-6 bg-black/80 backdrop-blur-md border border-yellow-500/20 rounded-xl p-4">
-            <p className="text-xs text-gray-400">Growth Rate</p>
-            <p className="text-lg font-bold text-yellow-400">+28.5%</p>
           </div>
         </div>
 

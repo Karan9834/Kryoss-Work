@@ -101,42 +101,6 @@ const FinalCTA = () => {
               </Link>
             </div>
 
-            {/* Trust */}
-            <div className="flex flex-wrap justify-center items-center gap-6 pt-4">
-              
-              <div className="flex items-center gap-2">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
-                      key={i}
-                      className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-yellow-400 border-2 border-gray-800 flex items-center justify-center text-white text-xs font-bold flex-wrap gap-4"
-                    >
-                      {String.fromCharCode(64 + i)}
-                    </div>
-                  ))}
-                </div>
-                <span className="text-gray-400 text-sm">
-                  Trusted by 1000+ businesses
-                </span>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <div className="flex text-yellow-400">
-                  {"★★★★★".split("").map((_, i) => (
-                    <span key={i}>★</span>
-                  ))}
-                </div>
-                <span className="text-gray-400 text-sm">4.9/5 Rating</span>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <ShoppingBag className="w-4 h-4 text-gray-400" />
-                <span className="text-gray-400 text-sm">
-                  50k+ Products Sold
-                </span>
-              </div>
-            </div>
-
             {/* Guarantee */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full">
               <Shield className="w-4 h-4 text-green-400" />

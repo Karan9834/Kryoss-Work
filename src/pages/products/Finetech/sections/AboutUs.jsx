@@ -81,12 +81,6 @@ const About = () => {
               className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl shadow-xl"
             />
           </div>
-
-          {/* floating card */}
-          <div className="absolute -bottom-6 -left-6 bg-white shadow-lg rounded-xl p-4 border">
-            <p className="text-xs text-gray-500">Analytics Growth</p>
-            <p className="font-bold text-gray-900">+35% Efficiency</p>
-          </div>
         </div>
       </div>
     </section>

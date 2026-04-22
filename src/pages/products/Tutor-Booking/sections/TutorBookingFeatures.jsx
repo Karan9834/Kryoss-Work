@@ -211,36 +211,6 @@ const TutorBookingFeatures = () => {
             </div>
           ))}
         </div>
-
-        {/* Bottom stats */}
-        <div className="mt-16 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 text-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-          <div className="relative grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">98%</div>
-              <div className="text-indigo-100">Satisfaction Rate</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">50k+</div>
-              <div className="text-indigo-100">Sessions Completed</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">24/7</div>
-              <div className="text-indigo-100">Support Available</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">100%</div>
-              <div className="text-indigo-100">Verified Tutors</div>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA mini */}
-        <div className="text-center mt-12">
-          <p className="text-gray-500">
-            <span className="font-semibold text-indigo-600">2,500+ active tutors</span> ready to help you succeed
-          </p>
-        </div>
       </div>
     </section>
   );

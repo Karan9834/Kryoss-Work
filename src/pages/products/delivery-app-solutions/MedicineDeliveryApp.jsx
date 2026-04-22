@@ -86,12 +86,6 @@ const MedicineDeliveryApp = () => {
 
             <Testimonial/>
 
-            {/* Explore On-Demand Solutions */}
-            <ExploreSolutions />
-
-            {/* Industry Recognition */}
-            <IndustryRecognition />
-
             {/* FAQ */}
             <FAQ />
 

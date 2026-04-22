@@ -155,34 +155,6 @@ const HowItWorks = () => {
             ))}
           </div>
         </div>
-
-        {/* Stats Section with Premium Cards */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-          <div className="group bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl p-4 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-violet-600 mb-1">
-              10min
-            </div>
-            <div className="text-gray-600 text-sm">Setup Time</div>
-          </div>
-          <div className="group bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-4 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-violet-600 mb-1">
-              24/7
-            </div>
-            <div className="text-gray-600 text-sm">Support</div>
-          </div>
-          <div className="group bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-4 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-violet-600 mb-1">
-              100+
-            </div>
-            <div className="text-gray-600 text-sm">Integrations</div>
-          </div>
-          <div className="group bg-gradient-to-br from-violet-50 to-purple-50 rounded-2xl p-4 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-violet-600 mb-1">
-              99.9%
-            </div>
-            <div className="text-gray-600 text-sm">Uptime</div>
-          </div>
-        </div>
       </div>
 
       <style>{`

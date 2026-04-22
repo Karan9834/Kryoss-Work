@@ -39,19 +39,6 @@ const OTTHero = () => {
                                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </button>
                         </div>
-
-                        {/* Social Proof */}
-                        <div className="flex items-center gap-8 pt-8 border-t border-white/5">
-                            <div>
-                                <p className="text-2xl font-black text-white">50M+</p>
-                                <p className="text-xs text-gray-500 font-bold uppercase tracking-widest">Global Streams</p>
-                            </div>
-                            <div className="w-px h-10 bg-white/10"></div>
-                            <div>
-                                <p className="text-2xl font-black text-white">100+</p>
-                                <p className="text-xs text-gray-500 font-bold uppercase tracking-widest">CDNs Deployed</p>
-                            </div>
-                        </div>
                     </div>
 
                     {/* Right Content - Visuals */}
@@ -63,24 +50,6 @@ const OTTHero = () => {
                             {/* Main Image Container */}
                             <div className="relative z-10 w-full max-w-[480px] mx-auto aspect-square bg-gradient-to-br from-white/10 to-transparent rounded-[60px] border-8 border-white/10 shadow-2xl flex items-center justify-center overflow-hidden transition-all duration-700 group-hover:scale-[1.02] lg:-translate-y-10 group-hover:shadow-purple-500/20">
                                 <img src={heroImg} alt="OTT Hero" className="w-full h-full object-cover" />
-
-                                {/* Overlay status badges */}
-                                <div className="absolute bottom-8 left-8 right-8 p-4 bg-black/40 backdrop-blur-lg border border-white/10 rounded-2xl flex items-center justify-between">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-10 h-10 bg-red-600/20 text-red-500 rounded-lg flex items-center justify-center italic font-black text-[10px]">LIVE</div>
-                                        <div>
-                                            <p className="text-[10px] text-gray-400 font-bold uppercase">Streaming Health</p>
-                                            <p className="text-sm font-bold text-white">Optimal (99.9%)</p>
-                                        </div>
-                                    </div>
-                                    <Zap size={20} className="text-white/40" />
-                                </div>
-                            </div>
-
-                            {/* Floating Stats Label */}
-                            <div className="absolute -top-6 -right-6 bg-white/10 backdrop-blur-md px-6 py-4 rounded-3xl border border-white/20 shadow-2xl z-20 animate-bounce">
-                                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mb-1">Active Users</p>
-                                <p className="text-2xl font-black text-white leading-none">5.2k</p>
                             </div>
                         </div>
                     </div>

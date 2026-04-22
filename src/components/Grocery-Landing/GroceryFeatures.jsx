@@ -107,9 +107,6 @@ const GroceryFeatures = () => {
                                             {feature.desc}
                                         </p>
                                     </div>
-                                    <div className="pt-4 flex items-center gap-2 text-[12px] font-bold uppercase tracking-wider text-[#1A1C2C]/30 group-hover:text-emerald-600 transition-colors">
-                                        Explore More <div className="w-8 h-px bg-current"></div>
-                                    </div>
                                 </div>
                             </div>
                         );

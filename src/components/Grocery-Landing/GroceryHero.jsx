@@ -40,26 +40,6 @@ const GroceryHero = () => {
                                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </button>
                         </div>
-
-                        {/* Trust Badges - Updated Stats Typography */}
-                        <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
-                            <div>
-                                {/* Stats Number - Updated: text-xl md:text-2xl font-bold */}
-                                <p className="text-xl md:text-2xl font-bold text-[#1A1C2C]">10k+</p>
-                                {/* Stats Label - Updated: text-xs font-normal tracking-wider uppercase */}
-                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">Active Users</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-xl md:text-2xl font-bold text-[#1A1C2C]">500+</p>
-                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">Dark Stores</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-xl md:text-2xl font-bold text-[#1A1C2C]">4.9/5</p>
-                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">App Ratings</p>
-                            </div>
-                        </div>
                     </div>
 
                     {/* Right Content - Visuals */}

@@ -46,26 +46,6 @@ const Hero = () => {
                             </a>
                         </div>
 
-                        {/* STATS */}
-                        <div className="grid grid-cols-3 gap-4 pt-6">
-
-                            <div className="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur">
-                                <p className="text-2xl font-semibold">4.9</p>
-                                <p className="text-gray-400 text-sm">Rating</p>
-                            </div>
-
-                            <div className="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur">
-                                <p className="text-2xl font-semibold">10k+</p>
-                                <p className="text-gray-400 text-sm">Users</p>
-                            </div>
-
-                            <div className="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur">
-                                <p className="text-2xl font-semibold">99.9%</p>
-                                <p className="text-gray-400 text-sm">Uptime</p>
-                            </div>
-
-                        </div>
-
                     </div>
 
                     {/* RIGHT IMAGE */}

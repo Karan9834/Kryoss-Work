@@ -49,20 +49,6 @@ const WebinarHero = () => {
                             <ArrowRight size={20} />
                         </a>
                     </div>
-
-                    {/* Trust indicators */}
-                    <div className="flex items-center gap-6 pt-8 mt-4 border-t border-slate-200">
-                        <div className="flex -space-x-3">
-                            {[1, 2, 3, 4].map((i) => (
-                                <div key={i} className={`w-10 h-10 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center overflow-hidden`}>
-                                    <div className="w-full h-full bg-gradient-to-br from-sky-100 to-cyan-100"></div>
-                                </div>
-                            ))}
-                        </div>
-                        <div className="text-sm font-medium text-slate-500">
-                            Trusted by <span className="text-slate-900 font-bold">500+</span> Event Organizers
-                        </div>
-                    </div>
                 </div>
 
                 {/* Right Visual Image */}

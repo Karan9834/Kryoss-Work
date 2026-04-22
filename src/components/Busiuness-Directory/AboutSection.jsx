@@ -73,26 +73,6 @@ const AboutSection = () => {
 
           </div>
 
-          {/* Stats - Keep as is (optional typography) */}
-          <div className="mt-10 flex flex-wrap gap-6">
-
-            <div className="flex items-center gap-2">
-              <Building2 className="text-blue-600 w-5 h-5" />
-              <span className="text-gray-700 text-[13px] md:text-[14px] font-normal">50K+ Businesses</span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <Users className="text-blue-600 w-5 h-5" />
-              <span className="text-gray-700 text-[13px] md:text-[14px] font-normal">100K+ Users</span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <Star className="text-blue-600 w-5 h-5" />
-              <span className="text-gray-700 text-[13px] md:text-[14px] font-normal">4.8 Avg Rating</span>
-            </div>
-
-          </div>
-
         </div>
       </div>
     </section>

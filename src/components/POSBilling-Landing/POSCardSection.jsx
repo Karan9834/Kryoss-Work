@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import card1 from '../../assets/pos belling/Elevate EveryDining ExperienceWith Precision POS.jpg';
+import card1 from '../../assets/poslanding-img/card1.jpg';
 import card2 from '../../assets/poslanding-img/card2.jpg';
 
 const POSCardSection = () => {
@@ -23,24 +23,24 @@ const POSCardSection = () => {
       <section id="pos-products" className="py-24 bg-white">
          <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16 space-y-4">
-               {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+               {/* Badge */}
                <div className="flex items-center justify-center gap-2 mb-4">
-                  <div className="w-8 h-px bg-indigo-200"></div>
+                  <div className="w-8 h-px bg-slate-200"></div>
                   <span className="text-amber-600 text-[12px] font-medium tracking-[0.05em] uppercase">
                      Our Products
                   </span>
-                  <div className="w-8 h-px bg-emerald-200"></div>
+                  <div className="w-8 h-px bg-slate-200"></div>
                </div>
 
-               {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+               {/* H2 Heading */}
                <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-emerald-600 to-amber-500">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0F172A] via-slate-700 to-[#0F172A]">
                      Specialized POS Modules
                   </span>
                </h2>
                
-               {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
-               <p className="text-[#4A4B5E] text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto mt-6">
+               {/* Description Text */}
+               <p className="text-slate-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto mt-6">
                   Choose the specialized platform that fits your business model perfectly.
                </p>
             </div>
@@ -56,13 +56,13 @@ const POSCardSection = () => {
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full aspect-square h-full rounded-xl border-[5px] border-transparent hover:border-indigo-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-contain bg-gray-50"
+                           className="w-full rounded-xl border-[5px] border-transparent hover:border-amber-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
                         />
                      </Link>
 
-                     {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                     {/* TITLE AND DESCRIPTION */}
                      <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-                        <Link to={card.path} className="text-indigo-600 font-semibold hover:underline">
+                        <Link to={card.path} className="text-amber-600 font-semibold hover:underline">
                            {card.title}
                         </Link>{" "}
                         <span className="text-gray-700">{card.desc}</span>
@@ -71,6 +71,12 @@ const POSCardSection = () => {
                ))}
             </div>
          </div>
+
+         <style>{`
+            .shadow-inner {
+               box-shadow: inset 0 2px 10px 0 rgba(0, 0, 0, 0.02);
+            }
+         `}</style>
       </section>
    );
 };
