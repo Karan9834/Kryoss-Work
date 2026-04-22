@@ -81,12 +81,6 @@ const AboutSection = () => {
             className="rounded-2xl shadow-xl w-full object-cover"
           />
 
-          {/* floating card */}
-          <div className="absolute -bottom-6 -left-6 bg-white shadow-lg rounded-xl p-4 border">
-            <p className="text-xs text-gray-500">Trusted by</p>
-            <p className="font-bold text-gray-900">100K+ Readers</p>
-          </div>
-
         </div>
       </div>
     </section>

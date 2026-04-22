@@ -102,17 +102,6 @@ const TutorBookingHero = () => {
                 <span className="text-gray-300">Flexible Scheduling</span>
               </div>
             </div>
-
-            {/* Stats */}
-            <div className="flex items-center gap-6 pt-4">
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 border-2 border-[#1A1F35]"></div>
-                ))}
-                <div className="w-8 h-8 rounded-full bg-white/10 border-2 border-[#1A1F35] flex items-center justify-center text-xs text-white">10k+</div>
-              </div>
-              <span className="text-gray-400 text-sm">Trusted by 50,000+ students</span>
-            </div>
           </div>
 
           {/* RIGHT COLUMN */}
@@ -125,47 +114,6 @@ const TutorBookingHero = () => {
                 alt="Tutor Booking"
                 className="relative rounded-2xl shadow-2xl max-h-[400px] w-auto object-cover border border-white/10"
               />
-
-              {/* Floating booking card */}
-              <div className="absolute -bottom-4 -left-4 bg-[#1A1F35] backdrop-blur rounded-xl shadow-2xl p-4 w-56 border border-white/10">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-white">Book Session</p>
-                    <p className="text-xs text-gray-400">Math • John Doe</p>
-                  </div>
-                </div>
-                <button className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-2 rounded-lg text-sm font-medium hover:opacity-90 transition">
-                  Confirm Booking
-                </button>
-              </div>
-
-              {/* Floating rating card */}
-              <div className="absolute top-4 -right-4 bg-[#1A1F35] backdrop-blur rounded-xl shadow-2xl px-4 py-2 border border-white/10">
-                <div className="flex items-center gap-2">
-                  <div className="flex">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <svg key={star} className="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2L15 9H22L16 14L19 21L12 16.5L5 21L8 14L2 9H9L12 2Z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <span className="text-sm font-semibold text-white">4.8</span>
-                  <span className="text-xs text-gray-400">(2.5k)</span>
-                </div>
-              </div>
-
-              {/* Floating time badge */}
-              <div className="absolute top-20 left-4 bg-[#1A1F35]/90 backdrop-blur rounded-lg shadow-xl px-3 py-1.5 border border-white/10">
-                <div className="flex items-center gap-1">
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-xs font-medium text-gray-300">Available today</span>
-                </div>
-              </div>
 
               {/* Live demo indicator */}
               <div className="absolute -top-3 -right-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full p-2 shadow-lg">

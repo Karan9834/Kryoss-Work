@@ -51,22 +51,6 @@ const WealthHero = () => {
             real-time analytics, and data-driven investment strategies.
           </p>
 
-          {/* Stats */}
-          <div className="flex gap-8 pt-2">
-            <div>
-              <div className="text-2xl font-bold text-white">$25B+</div>
-              <div className="text-sm text-gray-500">Assets Managed</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-white">120K+</div>
-              <div className="text-sm text-gray-500">Investors</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-white">98%</div>
-              <div className="text-sm text-gray-500">Satisfaction</div>
-            </div>
-          </div>
-
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 pt-2">
             {/* LIVE DEMO BUTTON */}
@@ -108,12 +92,6 @@ const WealthHero = () => {
             alt="wealth dashboard"
             className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl shadow-xl"
           />
-
-          {/* floating card */}
-          <div className="absolute -bottom-6 -left-6 bg-black/80 backdrop-blur-md border border-cyan-400/20 rounded-xl p-4">
-            <p className="text-xs text-gray-400">Portfolio Growth</p>
-            <p className="text-lg font-bold text-cyan-400">+32.4%</p>
-          </div>
         </div>
 
       </div>

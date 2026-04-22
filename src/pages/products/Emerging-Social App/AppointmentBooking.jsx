@@ -42,7 +42,6 @@ const AppointmentBooking = () => {
       <AppDevelopmentProcess />
       <DoctorAppSolutions />
       <OnDemandApps />
-      <OnDemandSolutions />
       <TechStack />
       <Testimonial
         theme="blue"

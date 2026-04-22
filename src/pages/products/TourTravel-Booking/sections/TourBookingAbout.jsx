@@ -45,18 +45,6 @@ const TourBookingAbout = () => {
             <p className="text-gray-500 text-base leading-relaxed">
               Our OTA platform integrates with leading GDS systems, hotel APIs, and payment gateways to deliver real-time inventory and seamless checkout across web and mobile.
             </p>
-
-            {/* Stats mini-grid */}
-            <div className="grid grid-cols-2 gap-4">
-              {highlights.map((h, i) => (
-                <div key={i} className={`flex items-center gap-3 p-4 ${h.bg} rounded-2xl border border-white shadow-sm hover:shadow-md transition-all`}>
-                  <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm shrink-0">
-                    <h.icon size={20} className={h.color} />
-                  </div>
-                  <span className="text-[#1E293B] font-bold text-sm">{h.label}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>

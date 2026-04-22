@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Eye, Star, CheckCircle } from "lucide-react";
-import prod1 from "../../assets/saas products 1/Generate Content at Lightning Speed.jpg"
-import prod2 from "../../assets/saas products 1/Built to Help You Write Faster & Smarter.jpg"
+import prod1 from "../../assets/SaasProduct/prod1.jpg"
+import prod2 from "../../assets/SaasProduct/prod2.jpg"
 
 const ProductsSection = () => {
   const navigate = useNavigate();
@@ -29,33 +29,29 @@ const ProductsSection = () => {
   };
 
   return (
-    <section className="relative py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden" id="products-section">
-
-      {/* Subtle Background Pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-50/30 via-transparent to-transparent"></div>
-      <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(168,85,247,0.02)_50%,transparent_75%)] bg-[size:40px_40px]"></div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+    <section className="py-24 bg-white" id="products-section">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
-          <div className="inline-flex items-center justify-center mb-6">
-            <div className="px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-100/50 shadow-sm">
-              <span className="text-[12px] font-medium tracking-[0.05em] uppercase bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                Analytics Suite
-              </span>
-            </div>
+        <div className="text-center mb-16 space-y-4">
+          {/* Badge */}
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="w-8 h-px bg-slate-200"></div>
+            <span className="text-purple-600 text-[12px] font-medium tracking-[0.05em] uppercase">
+              Analytics Suite
+            </span>
+            <div className="w-8 h-px bg-slate-200"></div>
           </div>
 
-          {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
-          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] text-gray-900 mb-4">
-            Powerful Analytics Solutions
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600"> For Data-Driven Decisions</span>
+          {/* H2 Heading */}
+          <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0F172A] via-slate-700 to-[#0F172A]">
+              Powerful Analytics Solutions For Data-Driven Decisions
+            </span>
           </h2>
-
-          {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
-          <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+          
+          {/* Description Text */}
+          <p className="text-slate-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto mt-6">
             Discover our range of powerful analytics products designed to help you succeed
           </p>
         </div>
@@ -74,11 +70,11 @@ const ProductsSection = () => {
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full aspect-square rounded-xl border-[5px] border-transparent hover:border-purple-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover h-full"
+                  className="w-full rounded-xl border-[5px] border-transparent hover:border-purple-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
                 />
               </div>
 
-              {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+              {/* TITLE AND DESCRIPTION */}
               <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                 <span
                   onClick={() => handleViewDetails(product.route)}
@@ -94,6 +90,12 @@ const ProductsSection = () => {
           ))}
         </div>
       </div>
+
+      <style>{`
+        .shadow-inner {
+          box-shadow: inset 0 2px 10px 0 rgba(0, 0, 0, 0.02);
+        }
+      `}</style>
     </section>
   );
 };

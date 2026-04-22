@@ -4,7 +4,6 @@ import { Shield, TrendingUp, PieChart, Globe } from "lucide-react";
 const AboutUs = () => {
   return (
     <section className="relative bg-white px-6 md:px-16 py-20 md:py-28 overflow-hidden">
-      
       {/* subtle glow */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-cyan-50 rounded-full blur-3xl"></div>
@@ -12,10 +11,8 @@ const AboutUs = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-
         {/* LEFT CONTENT */}
         <div>
-
           {/* Badge */}
           <p className="text-sm font-semibold text-cyan-600 mb-3 uppercase">
             About Us
@@ -32,18 +29,19 @@ const AboutUs = () => {
 
           {/* Description */}
           <p className="text-gray-600 text-lg mb-6">
-            We help individuals and institutions grow, manage, and protect their wealth 
-            with advanced analytics, strategic insights, and innovative financial solutions.
+            We help individuals and institutions grow, manage, and protect their
+            wealth with advanced analytics, strategic insights, and innovative
+            financial solutions.
           </p>
 
           <p className="text-gray-600 mb-8">
-            Our platform combines data-driven intelligence with intuitive tools, enabling 
-            smarter investment decisions and long-term financial success.
+            Our platform combines data-driven intelligence with intuitive tools,
+            enabling smarter investment decisions and long-term financial
+            success.
           </p>
 
           {/* Points */}
           <div className="space-y-4">
-
             <div className="flex items-start gap-3">
               <PieChart className="text-cyan-500 mt-1" />
               <p className="text-gray-700">
@@ -71,27 +69,17 @@ const AboutUs = () => {
                 Global investment insights and real-time updates
               </p>
             </div>
-
           </div>
         </div>
 
         {/* RIGHT IMAGE */}
         <div className="relative">
-          
           <img
-  src="https://picsum.photos/1200/800"
-  alt="visual"
-  className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl shadow-xl"
-/>
-
-          {/* floating card */}
-          <div className="absolute -bottom-6 -left-6 bg-white shadow-lg rounded-xl p-4 border">
-            <p className="text-xs text-gray-500">Assets Growth</p>
-            <p className="font-bold text-gray-900">+40% ROI</p>
-          </div>
-
+            src="https://picsum.photos/1200/800"
+            alt="visual"
+            className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl shadow-xl"
+          />
         </div>
-
       </div>
     </section>
   );

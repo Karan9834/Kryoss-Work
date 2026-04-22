@@ -22,6 +22,8 @@ import DatingTechStack from '../../../components/DatingApp/DatingTechStack';
 import ContactUs from '../../../components/Common/ContactUs';
 import BlogSection from '../../../components/DatingApp/BlogSection';
 import NewsletterSection from '../../../components/DatingApp/NewsletterSection';
+import TeamMoments from '../../../components/Common/TeamMoments';
+import Testimonial from '../../../components/Common/Testimonial';
 const DatingApp = () => {
   return (
     <>
@@ -41,13 +43,13 @@ const DatingApp = () => {
       <DatingLaunch />
       <DatingWhy />
       <OnDemandApps />
-      <DatingTestimonials />
-      <OnDemandSolutions />
+      <Testimonial/>
       <DatingFaqs />
       <DatingTechStack />
       <ContactUs theme="purple" productName="Dating App" />
       <BlogSection />
       <NewsletterSection />
+      <TeamMoments/>
     </>
   )
 }

@@ -41,26 +41,6 @@ const RealEstateHero = () => {
                                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </button>
                         </div>
-
-                        {/* Trust Badges - Updated Stats Typography */}
-                        <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
-                            <div>
-                                {/* Stats Number - Mobile: 20px, Tablet/Desktop: 24px, font-weight: 700 */}
-                                <p className="text-[20px] md:text-[24px] font-bold text-[#1E293B]">5k+</p>
-                                {/* Stats Label - font-size: 12px, font-weight: 400, letter-spacing: 0.02em */}
-                                <p className="text-[12px] font-normal tracking-[0.02em] text-gray-400 uppercase">Properties Listed</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-[20px] md:text-[24px] font-bold text-[#1E293B]">300+</p>
-                                <p className="text-[12px] font-normal tracking-[0.02em] text-gray-400 uppercase">Agent Partners</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-[20px] md:text-[24px] font-bold text-[#1E293B]">4.8/5</p>
-                                <p className="text-[12px] font-normal tracking-[0.02em] text-gray-400 uppercase">Client Rating</p>
-                            </div>
-                        </div>
                     </div>
 
                     {/* Right Content - Visuals */}

@@ -208,41 +208,6 @@ const GroceryFeatures = () => {
             </div>
           ))}
         </div>
-
-        {/* Premium stats bar */}
-        <div className="mt-16 relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl blur-xl opacity-30"></div>
-          <div className="relative bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl py-8 px-6 text-white overflow-hidden">
-            <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-            <div className="relative grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">50k+</div>
-                <div className="text-green-100 text-sm">Happy Families</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">15k+</div>
-                <div className="text-green-100 text-sm">Products</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">30min</div>
-                <div className="text-green-100 text-sm">Avg Delivery</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">4.9</div>
-                <div className="text-green-100 text-sm">App Store Rating</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Trust badges */}
-        <div className="flex flex-wrap items-center justify-center gap-8 mt-12 opacity-40">
-          <span className="text-sm font-semibold text-gray-400">ORGANIC CERTIFIED</span>
-          <span className="text-sm font-semibold text-gray-400">FARM FRESH</span>
-          <span className="text-sm font-semibold text-gray-400">NON-GMO</span>
-          <span className="text-sm font-semibold text-gray-400">LOCAL GROWN</span>
-          <span className="text-sm font-semibold text-gray-400">SUSTAINABLE</span>
-        </div>
       </div>
     </section>
   );

@@ -58,15 +58,6 @@ const HeroSection = () => {
               </div>
               <span className="text-white/90 text-xs">Secure Payments</span>
             </div>
-
-            <div className="flex items-center gap-1.5">
-              <div className="flex text-yellow-200">
-                {"★★★★★".split("").map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                ))}
-              </div>
-              <span className="text-white/90 text-xs">4.9/5 Rating</span>
-            </div>
           </div>
 
           {/* CTA Buttons */}
@@ -90,22 +81,6 @@ const HeroSection = () => {
               Let's Discuss
               <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition" />
             </a>
-          </div>
-
-          {/* Stats */}
-          <div className="flex gap-6 justify-center lg:justify-start pt-2">
-            <div>
-              <div className="text-xl font-bold text-white">1000+</div>
-              <div className="text-white/80 text-xs">Stores</div>
-            </div>
-            <div>
-              <div className="text-xl font-bold text-white">99.9%</div>
-              <div className="text-white/80 text-xs">Uptime</div>
-            </div>
-            <div>
-              <div className="text-xl font-bold text-white">24/7</div>
-              <div className="text-white/80 text-xs">Support</div>
-            </div>
           </div>
         </div>
 

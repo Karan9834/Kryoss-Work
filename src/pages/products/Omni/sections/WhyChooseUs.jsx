@@ -149,51 +149,6 @@ const WhyChooseUs = () => {
             </div>
           ))}
         </div>
-
-        {/* TRUST SECTION */}
-        <div className="mt-16 pt-8 border-t-2 border-orange-100">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            <div className="flex items-center gap-3 group cursor-pointer transition-all duration-300 hover:scale-105">
-              <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center group-hover:bg-orange-200 transition">
-                <Star size={18} className="text-orange-600" />
-              </div>
-              <div>
-                <div className="text-xs text-gray-500">Customer Rating</div>
-                <div className="font-semibold text-gray-900">4.9/5 (500+ reviews)</div>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-3 group cursor-pointer transition-all duration-300 hover:scale-105">
-              <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center group-hover:bg-orange-200 transition">
-                <Users size={18} className="text-orange-600" />
-              </div>
-              <div>
-                <div className="text-xs text-gray-500">Active Stores</div>
-                <div className="font-semibold text-gray-900">1,000+ Businesses</div>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-3 group cursor-pointer transition-all duration-300 hover:scale-105">
-              <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center group-hover:bg-orange-200 transition">
-                <Globe size={18} className="text-orange-600" />
-              </div>
-              <div>
-                <div className="text-xs text-gray-500">Global Reach</div>
-                <div className="font-semibold text-gray-900">50+ Countries</div>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-3 group cursor-pointer transition-all duration-300 hover:scale-105">
-              <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center group-hover:bg-orange-200 transition">
-                <Clock size={18} className="text-orange-600" />
-              </div>
-              <div>
-                <div className="text-xs text-gray-500">Support Response</div>
-                <div className="font-semibold text-gray-900">&lt; 2 minutes</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

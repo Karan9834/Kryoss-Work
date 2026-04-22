@@ -72,22 +72,6 @@ const OTTWhyUs = () => {
                     </div>
 
                 </div>
-
-                {/* Final Stats Banner */}
-                <div className="mt-24 p-10 rounded-[40px] bg-white/5 border border-white/10 flex flex-wrap justify-center gap-10 lg:gap-20">
-                    <div className="text-center">
-                        <p className="text-4xl lg:text-5xl font-black text-white mb-2">99.9%</p>
-                        <p className="text-xs text-gray-500 font-bold uppercase tracking-widest">Global Availability</p>
-                    </div>
-                    <div className="text-center">
-                        <p className="text-4xl lg:text-5xl font-black text-white mb-2">10M+</p>
-                        <p className="text-xs text-gray-500 font-bold uppercase tracking-widest">Active Devices</p>
-                    </div>
-                    <div className="text-center">
-                        <p className="text-4xl lg:text-5xl font-black text-white mb-2">500+</p>
-                        <p className="text-xs text-gray-500 font-bold uppercase tracking-widest">Satisfied Clients</p>
-                    </div>
-                </div>
             </div>
         </section>
     );

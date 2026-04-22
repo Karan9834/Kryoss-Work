@@ -63,27 +63,7 @@ const AboutUs = () => {
                 className="rounded-xl w-full h-auto shadow-lg"
               />
 
-              {/* Floating Experience Badge */}
-              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-orange-500 to-yellow-500 shadow-xl rounded-xl p-3 border border-white/20">
-                <div className="text-center">
-                  <p className="text-2xl font-bold text-white">5+</p>
-                  <p className="text-xs text-white/90">Years of Excellence</p>
-                </div>
-              </div>
-
-              {/* Floating Rating Badge */}
-              <div className="absolute -top-4 -left-4 bg-white shadow-lg rounded-xl p-2 border border-orange-100">
-                <div className="flex items-center gap-1">
-                  <div className="flex text-yellow-500">
-                    <Star size={14} fill="currentColor" />
-                    <Star size={14} fill="currentColor" />
-                    <Star size={14} fill="currentColor" />
-                    <Star size={14} fill="currentColor" />
-                    <Star size={14} fill="currentColor" />
-                  </div>
-                  <span className="text-xs font-semibold text-gray-900">4.9/5</span>
-                </div>
-              </div>
+              
             </div>
           </div>
 
@@ -129,21 +109,6 @@ const AboutUs = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-
-        {/* Stats Section - Below both columns */}
-        <div className="mt-12 pt-6 border-t-2 border-orange-100">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center group cursor-pointer">
-                <div className="w-12 h-12 mx-auto mb-2 bg-orange-50 rounded-full flex items-center justify-center group-hover:bg-orange-100 transition-all duration-300 group-hover:scale-110">
-                  <div className="text-orange-600">{stat.icon}</div>
-                </div>
-                <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
-                <p className="text-xs text-gray-500">{stat.label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>

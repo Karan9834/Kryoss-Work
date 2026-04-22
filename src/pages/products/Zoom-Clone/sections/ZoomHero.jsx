@@ -48,19 +48,6 @@ const ZoomHero = () => {
                             <ArrowRight size={20} />
                         </a>
                     </div>
-
-                    {/* Stats/badges */}
-                    <div className="flex items-center gap-8 pt-6 border-t border-white/10 mt-8">
-                        <div>
-                            <p className="text-3xl font-bold text-white">1000+</p>
-                            <p className="text-slate-400 text-sm">Active Participants</p>
-                        </div>
-                        <div className="w-px h-10 bg-white/10"></div>
-                        <div>
-                            <p className="text-3xl font-bold text-white"><span>&#60;</span>50ms</p>
-                            <p className="text-slate-400 text-sm">Ultra-low Latency</p>
-                        </div>
-                    </div>
                 </div>
 
                 {/* Right Visual Image */}

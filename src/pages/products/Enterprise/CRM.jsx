@@ -10,6 +10,8 @@ import CRMFinalCTA from '../../../components/Enterprise-Product/CRM/CRMFinalCTA'
 import TechStack from '../../../components/PestControl/PestTech'
 import ContactUs from '@/components/Common/ContactUs'
 import CRMNewsletter from '../../../components/Enterprise-Product/CRM/CRMNewsletter'
+import TeamMoments from '../../../components/Common/TeamMoments'
+import Testimonial from '../../../components/Common/Testimonial'
 
 const CRM = () => {
   return (
@@ -22,9 +24,11 @@ const CRM = () => {
     <CRMDashboard/>
     <CRMLaunchWhy/>
     <CRMFinalCTA/>
+    <Testimonial/>
     <TechStack/>
     <ContactUs theme="blue" productName="CRM" />
     <CRMNewsletter/>
+    <TeamMoments/>
     </>
   )
 }

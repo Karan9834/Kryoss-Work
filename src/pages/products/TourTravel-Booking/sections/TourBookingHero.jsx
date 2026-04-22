@@ -51,24 +51,6 @@ const TourBookingHero = () => {
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
-
-            {/* Stats */}
-            <div className="flex items-center gap-8 pt-8 border-t border-white/10">
-              <div>
-                <p className="text-2xl font-black text-white">120+</p>
-                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Countries</p>
-              </div>
-              <div className="w-px h-10 bg-white/10"></div>
-              <div>
-                <p className="text-2xl font-black text-white">50k+</p>
-                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Bookings</p>
-              </div>
-              <div className="w-px h-10 bg-white/10"></div>
-              <div>
-                <p className="text-2xl font-black text-white">4.9/5</p>
-                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Satisfaction</p>
-              </div>
-            </div>
           </div>
 
           {/* Right — image placeholder */}

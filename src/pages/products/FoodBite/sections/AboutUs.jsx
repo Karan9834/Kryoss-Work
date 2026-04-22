@@ -12,11 +12,6 @@ const About = () => {
               className='w-full h-full object-contain'
               loading="lazy"
             />
-            <div className="floating-card">
-              <i className="fas fa-star"></i>
-              <span>4.9</span>
-              <small>Rating</small>
-            </div>
           </div>
         </div>
 
@@ -39,35 +34,6 @@ const About = () => {
             delivery, zero compromises on quality, and a seamless ordering experience that keeps
             you coming back for more.
           </p>
-
-          {/* Stats Section */}
-          <div className="stats-container">
-            <div className="stat-item">
-              <div className="stat-number">
-                <span className="counter">500</span><span className="plus">+</span>
-              </div>
-              <div className="stat-label">Restaurant Partners</div>
-            </div>
-            <div className="stat-divider"></div>
-            <div className="stat-item">
-              <div className="stat-number">
-                <span className="counter">50</span><span className="k-plus">k+</span>
-              </div>
-              <div className="stat-label">Happy Customers</div>
-            </div>
-            <div className="stat-divider"></div>
-            <div className="stat-item">
-              <div className="stat-number">
-                <span className="counter">30</span><span className="min">min</span>
-              </div>
-              <div className="stat-label">Avg. Delivery Time</div>
-            </div>
-          </div>
-
-          <div className="trust-badge">
-            <i className="fas fa-shield-alt"></i>
-            <span>100% Satisfaction Guaranteed</span>
-          </div>
         </div>
       </div>
 

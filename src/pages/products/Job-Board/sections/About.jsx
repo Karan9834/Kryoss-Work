@@ -34,12 +34,6 @@ const JobAbout = () => {
             <p className="flex gap-2"><CheckCircle className="text-green-500"/> Smart Matching</p>
             <p className="flex gap-2"><CheckCircle className="text-green-500"/> Career Growth</p>
           </div>
-
-          <div className="mt-8 flex gap-6 text-sm text-gray-600">
-            <span><Users className="inline mr-1"/>100K+ Users</span>
-            <span><Briefcase className="inline mr-1"/>10K+ Jobs</span>
-            <span><Star className="inline mr-1"/>4.8 Rating</span>
-          </div>
         </div>
       </div>
     </section>

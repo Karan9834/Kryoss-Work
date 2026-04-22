@@ -19,18 +19,6 @@ const Hero = () => {
             and a seamless experience from checkout to your doorstep.
           </p>
 
-          <div className="features">
-            <div className="feature">
-              <i className="fas fa-clock"></i> 25–35 min delivery
-            </div>
-            <div className="feature">
-              <i className="fas fa-tag"></i> Daily mega discounts
-            </div>
-            <div className="feature">
-              <i className="fas fa-utensils"></i> 500+ restaurants
-            </div>
-          </div>
-
           <div className="btn-group">
             <a
               href="https://preview.codecanyon.net/item/foodbite-multi-restaurant-food-delivery-app-flutter/full_screen_preview/61762849"
@@ -43,9 +31,6 @@ const Hero = () => {
             <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
               <MessageCircle size={18} />
               Let's Discuss
-            </a>
-            <a href="#" className="btn-outline">
-              <i className="fas fa-arrow-right"></i> Explore menu
             </a>
           </div>
         </div>
