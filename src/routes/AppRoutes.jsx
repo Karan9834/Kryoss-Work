@@ -243,8 +243,37 @@ const AppRoutes = () => {
                     <Route path="/products/fantasy/betlab" element={<BetLab />} />
                     <Route path='/products/home-service/HRM' element={<HRMSol />} />
                     <Route path="/products/bdtask" element={<BdTask />} />
-                    {/* 404 */}
 
+                    {/* Works Routes */}
+                    <Route path="/works/real-estate" element={<RealEstateWorks />} />
+                    <Route path="/works/saas" element={<SaasWorks />} />
+                    <Route path="/works/ui-ux" element={<UiUxWorks />} />
+                    <Route path="/works/websites" element={<WebsitesWorks />} />
+                    <Route path="/works/business" element={<BusinessWorks />} />
+                    <Route path="/works/social-media" element={<SocialMedia />} />
+                    <Route path="/works/branding" element={<GraphicBranding />} />
+                    <Route path="/works/news-magazine" element={<NewsMagazine />} />
+                    <Route path="/works/finance" element={<FinanceWorks />} />
+                    <Route path="/works/on-demand" element={<OnDemandWorks />} />
+                    <Route path="/works/fitness-apps" element={<FitnessAppsWorks />} />
+                    <Route path="/works/gaming" element={<GamingWorks />} />
+                    <Route path="/works/fantasy-apps" element={<FantasyApps />} />
+                    <Route path="/works/crypto-apps" element={<CryptoApps />} />
+                    <Route path="/works/exchange-apps" element={<ExchangeApps />} />
+                    <Route path="/works/mlm-apps" element={<MLMAppsWorks />} />
+                    <Route path="/works/betting-apps" element={<BettingAppsWorks />} />
+                    <Route path="/works/health-fitness-apps" element={<HealthFitnessApps />} />
+                    <Route path="/works/shopping-apps" element={<ShoppingApps />} />
+                    <Route path="/works/food-grocery-apps" element={<FoodGroceryApps />} />
+                    <Route path="/works/ott-apps" element={<EntertainmentOTTApps />} />
+                    <Route path="/works/taxi-logistics" element={<TaxiLogisticsApps />} />
+                    <Route path="/works/travel-apps" element={<TourTravelApps />} />
+                    <Route path="/works/education-apps" element={<EducationApps />} />
+                    <Route path="/works/matrimony-apps" element={<MatrimonyApps />} />
+                    <Route path="/works/social-networking" element={<SocialNetworkingApps />} />
+                    <Route path="/works/beauty-salon" element={<BeautySalonApps />} />
+
+                    {/* 404 */}
                     <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
