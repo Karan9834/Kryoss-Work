@@ -1,42 +1,51 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import blog1 from "../../assets/blog/Building a Scalable Ride-Hailing Platform for a Growing Urban Market.png";
+import blog2 from "../../assets/blog/Designing a Multi-Country Taxi App Experience for Global Travelers.png";
+import blog3 from "../../assets/blog/Crafting a Conversion-Focused SaaS Dashboard for Better User Engagement.jpg";
+import blog4 from "../../assets/blog/Helping Brands Scale Faster with AI-Powered Visual Content Solutions.png";
 
 const blogs = [
   {
     id: 1,
+    slug: "scalable-ride-hailing",
     title:
       "Building a Scalable Ride-Hailing Platform for a Growing Urban Market",
     desc: "How we helped a mobility startup launch a high-performance ride-hailing app with real-time tracking, smart pricing, and seamless user experience across multiple cities.",
-    img: "https://images.unsplash.com/photo-1556125574-d7f27ec36a06?q=80&w=1200&auto=format&fit=crop",
+    img: blog1,
     time: "12 min read",
     date: "18 March, 2026",
     author: "Product Engineering Team",
   },
   {
     id: 2,
+    slug: "multi-country-taxi-app",
     title:
       "Designing a Multi-Country Taxi App Experience for Global Travelers",
     desc: "A deep dive into how we built a cross-border ride-booking solution with localized pricing, multilingual support, and reliable driver networks.",
-    img: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
+    img: blog2,
     time: "15 min read",
     date: "10 March, 2026",
     author: "Product Engineering Team",
   },
   {
     id: 3,
+    slug: "conversion-focused-saas",
     title:
       "Crafting a Conversion-Focused SaaS Dashboard for Better User Engagement",
     desc: "Learn how we redesigned a SaaS platform with intuitive UI/UX, improving user retention, simplifying workflows, and boosting overall product efficiency.",
-    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    img: blog3,
     time: "8 min read",
     date: "28 February, 2026",
     author: "Product Engineering Team",
   },
   {
     id: 4,
+    slug: "ai-powered-visual-content",
     title:
       "Helping Brands Scale Faster with AI-Powered Visual Content Solutions",
     desc: "Discover how we built an AI-driven design tool that enables businesses to create high-quality marketing visuals instantly without expensive production setups.",
-    img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+    img: blog4,
     time: "6 min read",
     date: "20 February, 2026",
     author: "Product Engineering Team",
@@ -100,13 +109,21 @@ const BlogList = () => {
               </p>
 
               {/* META */}
-              <div className="text-sm text-gray-500 flex flex-wrap items-center gap-2">
+              <div className="text-sm text-gray-500 flex flex-wrap items-center gap-2 mb-4">
                 <span>{blog.time}</span>
                 <span>|</span>
                 <span>{blog.date}</span>
                 <span>|</span>
                 <span>{blog.author}</span>
               </div>
+
+              {/* VIEW MORE */}
+              <Link
+                to={`/blog/${blog.slug}`}
+                className="text-orange-500 font-semibold flex items-center gap-2 hover:translate-x-1 transition-transform inline-flex"
+              >
+                View More <span>→</span>
+              </Link>
 
             </div>
           </div>

@@ -1,23 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import blog1 from "../../assets/blog/Building a Scalable Ride-Hailing Platform for a Growing Urban Market.png";
+import blog3 from "../../assets/blog/Crafting a Conversion-Focused SaaS Dashboard for Better User Engagement.jpg";
+import blog4 from "../../assets/blog/Helping Brands Scale Faster with AI-Powered Visual Content Solutions.png";
 
 const blogs = [
   {
     id: 1,
-    img: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop",
+    slug: "high-performance-ride-booking",
+    img: blog1,
     badge: "Case Study",
     title: "Building a High-Performance Ride Booking Platform for Urban Mobility",
     desc: "Explore how we engineered a scalable ride-booking solution with real-time tracking, seamless payments, and optimized driver allocation.",
   },
   {
     id: 2,
-    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    slug: "intuitive-saas-dashboard",
+    img: blog3,
     badge: "Case Study",
     title: "Designing an Intuitive SaaS Dashboard for Better User Experience",
     desc: "Learn how we transformed a complex platform into a clean, user-friendly dashboard that improved engagement and streamlined workflows.",
   },
   {
     id: 3,
-    img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop",
+    slug: "ai-driven-automation",
+    img: blog4,
     badge: "Case Study",
     title: "Scaling a Digital Product with AI-Driven Automation Features",
     desc: "Discover how we integrated AI capabilities into a product to automate processes, reduce manual effort, and enhance overall efficiency.",
@@ -78,9 +85,17 @@ const PopularBlogs = () => {
               </h3>
 
               {/* Description */}
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-sm mb-5">
                 {blog.desc}
               </p>
+
+              {/* VIEW MORE */}
+              <Link
+                to={`/blog/${blog.slug}`}
+                className="text-orange-500 text-sm font-semibold flex items-center gap-2 hover:translate-x-1 transition-transform inline-flex"
+              >
+                View More <span>→</span>
+              </Link>
 
             </div>
           </div>

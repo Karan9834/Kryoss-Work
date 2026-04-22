@@ -109,6 +109,15 @@ const BetLab = lazy(() => import('../pages/products/Gaming-Products/Fantasy/BetL
 const HRMSol = lazy(() => import('../pages/products/HRM-Sol1/HRMSol'));
 const BdTask = lazy(() => import('../pages/products/BdTask/BdTask'));
 
+// Blog Pages
+const ScalableRideHailing = lazy(() => import('../pages/blogs/ScalableRideHailing'));
+const MultiCountryTaxiApp = lazy(() => import("../pages/blogs/MultiCountryTaxiApp"));
+const ConversionFocusedSaas = lazy(() => import("../pages/blogs/ConversionFocusedSaas"));
+const AiPoweredVisualContent = lazy(() => import("../pages/blogs/AiPoweredVisualContent"));
+const HighPerformanceRideBooking = lazy(() => import("../pages/blogs/HighPerformanceRideBooking"));
+const IntuitiveSaasDashboard = lazy(() => import("../pages/blogs/IntuitiveSaasDashboard"));
+const AiDrivenAutomation = lazy(() => import("../pages/blogs/AiDrivenAutomation"));
+
 // Loading component
 const PageLoader = () => (
     <div className="flex items-center justify-center min-h-[60vh]">
@@ -130,37 +139,16 @@ const AppRoutes = () => {
                     {ServiceRoutes()}
                     {SolutionRoutes()}
 
-                    {/* Works Routes */}
-                    <Route path="/works/real-estate" element={<RealEstateWorks />} />
-                    <Route path="/works/saas" element={<SaasWorks />} />
-                    <Route path="/works/ui-ux" element={<UiUxWorks />} />
-                    <Route path="/works/websites" element={<WebsitesWorks />} />
-                    <Route path="/works/business" element={<BusinessWorks />} />
-                    <Route path="/works/social-media" element={<SocialMedia />} />
-                    <Route path="/works/branding" element={<GraphicBranding />} />
-                    <Route path="/works/news-magazine" element={<NewsMagazine />} />
-                    <Route path="/works/finance" element={<FinanceWorks />} />
-                    <Route path="/works/on-demand" element={<OnDemandWorks />} />
-                    <Route path="/works/fitness-apps" element={<FitnessAppsWorks />} />
-                    <Route path="/works/gaming" element={<GamingWorks />} />
-                    <Route path="/works/fantasy-apps" element={<FantasyApps />} />
-                    <Route path="/works/crypto-apps" element={<CryptoApps />} />
-                    <Route path="/works/exchange-apps" element={<ExchangeApps />} />
-                    <Route path="/works/mlm-apps" element={<MLMAppsWorks />} />
-                    <Route path="/works/betting-apps" element={<BettingAppsWorks />} />
-                    <Route path="/works/health-fitness-apps" element={<HealthFitnessApps />} />
-                    <Route path="/works/shopping-apps" element={<ShoppingApps />} />
-                    <Route path="/works/food-grocery-apps" element={<FoodGroceryApps />} />
-                    <Route path="/works/ott-apps" element={<EntertainmentOTTApps />} />
-                    <Route path="/works/taxi-logistics" element={<TaxiLogisticsApps />} />
-                    <Route path="/works/travel-apps" element={<TourTravelApps />} />
-                    <Route path="/works/education-apps" element={<EducationApps />} />
-                    <Route path="/works/matrimony-apps" element={<MatrimonyApps />} />
-                    <Route path="/works/social-networking" element={<SocialNetworkingApps />} />
-                    <Route path="/works/beauty-salon" element={<BeautySalonApps />} />
-
                     {/* Blog & Services */}
                     <Route path="/blog" element={<Blog />} />
+                    <Route path="/blog/scalable-ride-hailing" element={<ScalableRideHailing />} />
+                    <Route path="/blog/multi-country-taxi-app" element={<MultiCountryTaxiApp />} />
+                    <Route path="/blog/conversion-focused-saas" element={<ConversionFocusedSaas />} />
+                    <Route path="/blog/ai-powered-visual-content" element={<AiPoweredVisualContent />} />
+                    <Route path="/blog/high-performance-ride-booking" element={<HighPerformanceRideBooking />} />
+                    <Route path="/blog/intuitive-saas-dashboard" element={<IntuitiveSaasDashboard />} />
+                    <Route path="/blog/ai-driven-automation" element={<AiDrivenAutomation />} />
+
                     <Route path="/products" element={<Products />} />
                     <Route path="/services" element={<ServicesPage />} />
                     <Route path="/business-growth" element={<BusinessGrowthPage />} />

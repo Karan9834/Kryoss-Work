@@ -1,4 +1,5 @@
 import React from "react";
+import heroImg from "../../assets/blog/Smart Digital Products Built for Real-World Impact.jpg";
 
 const Hero = () => {
   return (
@@ -40,7 +41,7 @@ const Hero = () => {
         {/* RIGHT IMAGE */}
         <div>
           <img
-            src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop"
+            src={heroImg}
             alt="Product dashboard showcase"
             className="rounded-2xl object-cover w-full h-full"
           />

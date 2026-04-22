@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-
 import React from "react";
+import featureImg from "../../assets/blog/Unlock Your Business Potential Now!.png";
 
 const BlogFeature = () => {
   return (
@@ -37,7 +37,7 @@ backgroundRepeat: "no-repeat"
         <div className="h-full">
 
           <img
-            src="https://whitelabelfox.com/blog-assets/blog-images/main-cta-vector.webp"
+            src={featureImg}
             alt="feature"
             className="w-full h-full object-cover rounded-xl"
           />
