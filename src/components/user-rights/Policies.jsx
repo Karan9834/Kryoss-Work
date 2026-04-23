@@ -3,133 +3,146 @@ import React, { useState } from "react";
 const policies = {
   privacy: {
     title: "Privacy Policy",
-    content: `A Privacy Policy is a statement or legal document explaining how a company collects, handles, and processes user data.
+    content: `Privacy Policy – Kryoss Work
 
-We respect our privacy of our client and who which visit our website for the services. You can visit our site and use our services to get the information without worries about your privacy.
+Kryoss Work ("we", "our", "us") is committed to protecting your privacy and safeguarding your personal data. This Privacy Policy explains how we collect, use, and protect your information when you use our website and services.
 
-We can keep your private information safe and do not use any of the information with your privacy.
+1. Information We Collect
+We may collect the following types of information:
+• Personal information (name, email address, phone number, business details)
+• Project-related data shared for service delivery
+• Technical data (IP address, browser type, device information, usage behavior)
 
-This policy knows about how we collect your information and keep safe from the others.
+2. How We Use Your Information
+We use your information to:
+• Deliver software, consulting, and digital services
+• Communicate updates, support, and service-related information
+• Improve our website, products, and user experience
 
-Kryoss Work respects the privacy rights of our clients and employees and has always been committed to protecting all personal information in our possession or control. We have adopted this Privacy Policy to guide how we collect, use, and disclose the personal information we require in the course of operating our business.
+3. Data Sharing
+• We do not sell your personal data
+• Data may be shared with trusted third-party partners (hosting, analytics, payment providers)
+• Information is shared only as required to deliver services or comply with legal obligations
 
-Information We Collect
-• Information provided by you to communicate or purchase our product.
-• Information about your website usage for analytics and service improvement.
+4. Data Security
+We implement industry-standard security measures to protect your data from unauthorized access, ensuring confidentiality and integrity.
 
-Social Media Support
-To provide information in an easy way, we provide and support through the social platform. If you have any queries regarding our services or need support in your idea; we eager to help you.
+5. Cookies & Tracking
+We use cookies and tracking technologies to enhance user experience, analyze traffic, and improve performance. You may disable cookies through your browser settings.
 
-We can not collect any private information from the social accounts and we encourage you to help in all the way.
+6. Third-Party Services
+Our website may include third-party tools or integrations. These services operate under their own privacy policies.
 
-Cookies
-Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device’s internal memory. This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+7. User Rights
+You may request access, correction, or deletion of your personal data at any time.
 
-We know that protecting the privacy of our clients and employees is important. Any questions or concerns about our privacy and our role in protecting it, please contact at sales@whitelabelfox.com.
+8. Policy Updates
+We may update this Privacy Policy periodically. Continued use of our website implies acceptance of the updated policy.
 
-Payment Service Provider
-Our website accepts payments via Razorpay. The provider of this service is Razorpay Software Limited, 1st Floor, SJR Cyber, 22 Laskar Hosur Road, Adugodi, Bengaluru, 560030, Karnataka, India
-
-Payment transactions using common means of payment (Visa/MasterCard, etc) are only made via encrypted SSL or TLS connections. You can recognise an encrypted connection in your browser’s address line when it changes from “http://” to “https://” and the lock icon in your browser line is visible.
-
-In the case of encrypted communication, any payment details you submit to us cannot be read by third parties.
-
-If you pay via Razorpay, the payment data you provide will be supplied to Razorpay. You have the option to revoke your consent at any time with future effect. It does not affect the processing of data previously collected.
-
-We transmit personally identifiable data to third parties only to the extent required to fulfill the terms of your contract with us, for example, to banks entrusted to process your payments.
-
-Changes in Policy
-We have the right to change or modified our privacy policy to offer a better service to our respected client. We can change our privacy policy at any time.
-
-We are not supported to inform you that we can change our privacy policy. You can regularly check our privacy policy to up to date about our new policy.`
+9. Contact Us
+For privacy-related queries, contact: support@kryoss.com`
   },
 
   refund: {
     title: "Refund & Cancellation Policy",
-    content: `At Kryoss Work, our Refund/Cancellation Policy is based on standardized practices that strictly follow industrial norms. We put up with fair assessment practices and all the refund claims are processed with vigilant parameters to make sure the decisions are justified and mutually agreeable.
+    content: `Refund & Cancellation Policy – Kryoss Work
 
-Our policies are treated with appropriate measures to settle different claims, originating from different assortments of needs and various business situations.
+1. Cancellation Policy
+• Clients may request cancellation before the project or service begins
+• Once a project has started, cancellation requests will be reviewed on a case-by-case basis
+• Advance payments for confirmed services may be non-refundable
 
-Kryoss Work offer the best mobile application which will help you to expand your business with a digital platform. Ou all the product is running in the best way and we offer the support to success your application.
+2. Refund Policy
+• Refunds are applicable only if services have not been initiated
+• Partial refunds may be issued for partially completed work, based on the work delivered
+• No refunds will be provided for completed services or delivered digital products
 
-Our goal is to deliver the best services when we deliver our services to you. Before you purchase our services you can know about our refund and cancellation policy.
+3. Processing Time
+Approved refunds will be processed within 7–10 business days and credited to the original payment method.
 
-Also, you can view our demo which is life on our website so, you can view functionalities and work of the application.
+4. Non-Refundable Services
+• Consultation fees
+• Custom development work
+• Third-party service costs already incurred
 
-Acceptance & Refund Guidelines
-We would like to read our guidelines before purchase our product. Also, you agree with our refund and cancellation guidelines condition of refund policy.
+5. Rescheduling
+Services may be rescheduled upon mutual agreement if requested in advance.
 
-Our develop is love to answer your queries and question regarding the issues and solve it. But we do not consider the refund and product return as an option.
-
-If you want to purchase our services, you need to understand our refund policy. Also, if you have any dubbed in the services we consider to rethink you before purchase services.
-
-Changes
-If any circumstances, we can change or modify our refund or cancellation policy. We consider to you acknowledge our policy changes and allow you to continue the use our services.
-
-Kryoss Work may at any time, without notice to you and in its sole discretion, amend this policy periodically. You are expected to check the policy from time to time for updates. For more information on our Refund Policy, contact us at sales@whitelabelfox.com.`
+6. Contact
+For cancellation or refund requests, contact: support@kryoss.com`
   },
 
   terms: {
     title: "Terms & Conditions",
-    content: `We respect our privacy of our client and who which visit our website for the services. You can visit our site and use our services to get the information without worries about your privacy.
+    content: `Terms & Conditions – Kryoss Work
 
-We can keep your private information safe and do not use any of the information with your privacy.
+These Terms & Conditions govern your use of our website and services.
 
-This policy knows about how we collect your information and keep safe from the others.
+1. Acceptance of Terms
+By accessing this website, you agree to comply with these terms. If you do not agree, please do not use our services.
 
-Kryoss Work respects the privacy rights of our clients and employees and has always been committed to protecting all personal information in our possession or control. We have adopted this Privacy Policy to guide how we collect, use, and disclose the personal information we require in the course of operating our business.
+2. Use of Services
+• You agree to provide accurate and complete information
+• You will not misuse, copy, or exploit our services unlawfully
+• Unauthorized access or malicious activity is strictly prohibited
 
-Kryoss Work policy is to at all times adhere to the requirements of the law and to be responsive to our clients and employees who expect us to respect their privacy and protect their personal information.
+3. Services & Payments
+• All services are subject to agreed pricing and timelines
+• Payments must be made as per agreed terms
+• We reserve the right to suspend services in case of non-payment
 
-Information We Collect
-• Information required for communication or purchasing services.
-• Website usage analytics.
+4. Intellectual Property
+All content, designs, code, and materials are the property of Kryoss Work and may not be reused without permission.
 
+5. Limitation of Liability
+We are not liable for any indirect or consequential damages arising from the use of our services.
 
-Social Media Support
-To provide information in an easy way, we provide and support through the social platform. If you have any queries regarding our services or need support in your idea; we eager to help you.
+6. Third-Party Services
+We may use third-party tools or services and are not responsible for their policies or actions.
 
-We can not collect any private information from the social accounts and we encourage you to help in all the way.
+7. Termination
+We reserve the right to suspend or terminate access if these terms are violated.
 
-Cookies
-Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device’s internal memory. This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+8. Changes to Terms
+We may update these terms at any time. Continued use implies acceptance of the updated terms.
 
-We know that protecting the privacy of our clients and employees is important. Any questions or concerns about our privacy and our role in protecting it, please contact at sales@whitelabelfox.com.`
+9. Contact Us
+For any queries: support@kryoss.com`
   },
 
   disclaimer: {
-    title: "Trademark & Brand Usage Disclaimer",
-    content: `Kryoss Work Pvt. Ltd. is an independent software development company offering white-label and custom app development services. Any references to third-party brands, companies, products, or services—including but not limited to Uber, Gojek, Grab, Zomato, Swiggy, Rapido, Amazon, JustEat, OLA, Binance, Coinbase, WazirX, OpenSea, and similar platforms—are made strictly for descriptive, illustrative, and explanatory purposes only.
+    title: "Trademark & Brand Disclaimer",
+    content: `Trademark & Brand Usage Disclaimer – Kryoss Work
 
-All trademarks, registered trademarks, logos, and brand names are the property of their respective owners. The use of such names on this website does not imply any affiliation, association, endorsement, partnership, or sponsorship between Kryoss Work Pvt. Ltd. and the respective trademark holders.
+This disclaimer outlines the permitted use of Kryoss Work’s brand assets.
 
-Brand names are referenced solely to help users understand the functionality, workflow, and business models of the solutions we develop.
+1. Ownership of Trademarks
+All logos, brand names, trademarks, and service marks displayed on this website are the property of Kryoss Work. Unauthorized use is strictly prohibited.
 
-Trademark Objections
-Kryoss Work Pvt. Ltd. respects the intellectual property rights of all organizations and trademark owners. If any brand owner believes that the use of their trademark, name, or reference on this website is objectionable, inaccurate, or requires modification or removal, they are encouraged to contact us directly.
+2. Permitted Use
+• Brand assets may be used only with prior written permission
+• Usage must be accurate and not misleading
+• Brand identity must not be altered
 
-Upon receiving a valid request or notice, we will review the matter promptly and take appropriate action, including updating or removing the referenced content where necessary, in accordance with applicable laws and fair-use principles.
+3. Prohibited Use
+• No commercial use without permission
+• No reproduction, distribution, or modification
+• No use that harms brand reputation
 
-No Affiliation or Endorsement
-Kryoss Work Pvt. Ltd. does not claim any ownership, rights, or control over any third-party brands mentioned on this website. We are not affiliated with, authorized by, endorsed by, or officially connected to any such organizations, whether directly or indirectly.
+4. Third-Party Trademarks
+Any third-party trademarks mentioned remain the property of their respective owners and do not imply endorsement.
 
-Our products are independently developed, and all software architecture, source code, design, and user interfaces are created by our in-house team unless otherwise stated.
+5. Intellectual Property Rights
+All website content including text, graphics, and designs is protected under applicable copyright and trademark laws.
 
-White-Label Solution Clarification
-All applications and platforms developed by Kryoss Work Pvt. Ltd. are delivered as white-label solutions, meaning:
+6. Enforcement
+We reserve the right to take legal action against misuse of our brand or trademarks.
 
-• Clients receive full branding control
-• No third-party copyrighted materials are used
-• Applications are customized to meet client-specific requirements
-• References to popular platforms are purely conceptual and non-replicative
+7. Updates
+We may update this disclaimer at any time without prior notice.
 
-NDA, Data Security & Deployment
-All client projects are protected under Non-Disclosure Agreements (NDA). Applications are delivered on client-owned servers and accounts, including app store deployments where applicable. Kryoss Work Pvt. Ltd. does not claim ownership of client data, intellectual property, or deployed applications.
-
-We follow commercially reasonable security practices to ensure the confidentiality, integrity, and protection of client information throughout the development and delivery process.
-
-Acceptance of Disclaimer
-By using this website, you acknowledge that you have read, understood, and agreed to this disclaimer in full. If you would like further information or have any questions regarding this disclaimer, please contact us at sales@whitelabelfox.com.`
+8. Contact
+For permissions or queries: support@kryoss.com`
   }
 };
 
