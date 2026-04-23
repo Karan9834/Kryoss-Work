@@ -108,7 +108,6 @@ export const navigationData = {
             // { label: "Our Team", href: "/company/team" },
             { label: "Careers", href: "/company/careers" },
             { label: "User Rights & Policies", href: "/company/policies" },
-            { label: "Sitemap", href: "/company/sitemap" },
         ]
     }
 };

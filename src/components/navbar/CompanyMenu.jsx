@@ -13,7 +13,6 @@ const ITEM_ICONS = {
   'Our Team':              '👥',
   'Careers':               '💼',
   'User Rights & Policies':'📜',
-  'Sitemap':               '🗺️',
 };
 
 const COMPANY_CSS = `

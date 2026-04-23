@@ -1,25 +1,29 @@
 import React from "react";
+import award1 from "../../assets/award/Screenshot 2026-04-23 130006.png";
+import award2 from "../../assets/award/Screenshot 2026-04-23 130020.png";
+import award3 from "../../assets/award/Screenshot 2026-04-23 130033.png";
+import award4 from "../../assets/award/Screenshot 2026-04-23 130059.png";
 
 const AwardRecognition = () => {
   const platforms = [
     {
       name: "Trustpilot",
-      image: "https://whitelabelfox.com/assets/images/gojek-clone-app/Trustpilot-new.webp",
+      image: award1,
       link: "https://www.trustpilot.com/",
     },
     {
       name: "Google Reviews",
-      image: "https://whitelabelfox.com/assets/images/gojek-clone-app/Google.webp",
+      image: award2,
       link: "https://www.google.com/",
     },
     {
       name: "Clutch",
-      image: "https://whitelabelfox.com/assets/images/gojek-clone-app/Clutch.webp",
+      image: award3,
       link: "https://clutch.co/",
     },
     {
       name: "GoodFirms",
-      image: "https://whitelabelfox.com/assets/images/gojek-clone-app/Goodfirms.webp",
+      image: award4,
       link: "https://www.goodfirms.co/",
     },
   ];
@@ -66,12 +70,12 @@ const AwardRecognition = () => {
                          rounded-2xl p-14 flex items-center justify-center
                          hover:bg-white/20 
                          hover:scale-105 
-                         transition duration-300"
+                         transition duration-300 overflow-hidden"
             >
               <img
                 src={platform.image}
                 alt={platform.name}
-                className="h-10 md:h-12 object-contain"
+                className="w-full h-auto object-contain scale-[2.2]"
               />
             </a>
           ))}
