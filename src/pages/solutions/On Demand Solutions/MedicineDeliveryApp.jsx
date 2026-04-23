@@ -18,6 +18,8 @@ import ContactUs from '../../../components/Common/ContactUs';
 import hero from "../../../assets/medicine-delivery/hero.png"
 import multi from "../../../assets/medicine-delivery/about.png"
 import tail from "../../../assets/medicine-delivery/tail.jpeg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const MedicineDeliveryApp = () => {
     const [activeTab, setActiveTab] = useState("Customer App");
@@ -480,7 +482,9 @@ const MedicineDeliveryApp = () => {
             {/* Global Components */}
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#f0fdf4]", primary: "text-green-600", iconBg: "bg-green-100", iconColor: "text-green-600" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { Video, Globe, Zap, Users, ArrowRight } from 'lucide-react';
-import card1 from '../../assets/videolanding-img/image1.jpg';
-import card2 from '../../assets/videolanding-img/image.jpg';
+import card1 from '../../assets/videolanding-img/jupitermeet.jpg';
+import card2 from '../../assets/videolanding-img/bwd.jpg';
 
 const VideoCardSection = () => {
    const cards = [
@@ -21,26 +21,26 @@ const VideoCardSection = () => {
    ];
 
    return (
-      <section id="video-products" className="py-24 bg-white overflow-hidden">
+      <section id="video-products" className="py-24 bg-white">
          <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16 space-y-4">
-               {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+               {/* Badge */}
                <div className="flex items-center justify-center gap-2 mb-4">
-                  <div className="w-8 h-px bg-purple-200"></div>
+                  <div className="w-8 h-px bg-slate-200"></div>
                   <span className="text-sky-600 text-[12px] font-medium tracking-[0.05em] uppercase">
                      Our Products
                   </span>
-                  <div className="w-8 h-px bg-sky-200"></div>
+                  <div className="w-8 h-px bg-slate-200"></div>
                </div>
 
-               {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+               {/* H2 Heading */}
                <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-sky-600 to-pink-600">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0F172A] via-slate-700 to-[#0F172A]">
                      Unified Communication Suite
                   </span>
                </h2>
                
-               {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+               {/* Description Text */}
                <p className="text-slate-500 text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto mt-6">
                   Scale your meetings and webinars with global infrastructure built for clarity.
                </p>
@@ -57,13 +57,13 @@ const VideoCardSection = () => {
                         <img
                            src={card.image}
                            alt={card.title}
-                           className="w-full rounded-xl border-[5px] border-transparent hover:border-purple-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
+                           className="w-full rounded-xl border-[5px] border-transparent hover:border-sky-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover"
                         />
                      </Link>
 
-                     {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                     {/* TITLE AND DESCRIPTION */}
                      <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-                        <Link to={card.path} className="text-purple-600 font-semibold hover:underline">
+                        <Link to={card.path} className="text-sky-600 font-semibold hover:underline">
                            {card.title}
                         </Link>{" "}
                         <span className="text-gray-700">{card.desc}</span>
@@ -72,6 +72,12 @@ const VideoCardSection = () => {
                ))}
             </div>
          </div>
+
+         <style>{`
+            .shadow-inner {
+               box-shadow: inset 0 2px 10px 0 rgba(0, 0, 0, 0.02);
+            }
+         `}</style>
       </section>
    );
 };

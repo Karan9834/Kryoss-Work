@@ -9,6 +9,8 @@ import Industries from '../../../components/Common/Industries'
 import Testimonial from '../../../components/Common/Testimonial'
 import OurWork from '../../../components/Common/OurWork'
 import ContactUs from '../../../components/Common/ContactUs'
+import TeamMoments from '../../../components/Common/TeamMoments'
+import PopularBlogs from '../../../components/Blog/PopularBlogs'
 
 const AccountErpPage = () => {
   return (
@@ -44,6 +46,7 @@ const AccountErpPage = () => {
           accent: "bg-gradient-to-r from-blue-500 to-indigo-500",
         }}
       />
+      <PopularBlogs/>
 
       {/* 🔟 CONTACT */}
       <ContactUs
@@ -54,6 +57,7 @@ const AccountErpPage = () => {
         buttonGradient="from-blue-600 to-indigo-600"
         showImage={true}
       />
+      <TeamMoments/>
     </>
   )
 }

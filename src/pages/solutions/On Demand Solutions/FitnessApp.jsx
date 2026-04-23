@@ -17,6 +17,8 @@ import ContactUs from '../../../components/Common/ContactUs';
 import hero from "../../../assets/Fitness/hero.jpg"
 import intro from "../../../assets/Fitness/intro.jpg"
 import tail from "../../../assets/Fitness/tail.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const FitnessApp = () => {
     const [activeTab, setActiveTab] = useState("User Panel");
@@ -445,7 +447,9 @@ const FitnessApp = () => {
             <OurWork theme={{ primary: "text-orange-600", accent: "bg-orange-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#fff7ed]", primary: "text-orange-600", iconBg: "bg-orange-100", iconColor: "text-orange-600" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

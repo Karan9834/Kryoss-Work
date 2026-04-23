@@ -105,6 +105,8 @@ import ContactUs from "../../../components/Common/ContactUs";
 import ProductsSection from "../../../components/Busiuness-Directory/ProductsSection";
 import multi from "../../../assets/Busiuness-directory/multi.jpg";
 import tail from "../../../assets/Busiuness-directory/tailored.jpg";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 
 const ShoppingCartIcon = () => (
   <svg
@@ -848,7 +850,9 @@ const BusinessDirectoryApp = () => {
       <OurWork
         theme={{ primary: "text-violet-500", accent: "bg-violet-500" }}
       />
+      <PopularBlogs/>
       <ContactUs id="contact-us" theme="violet" />
+      <TeamMoments/>
     </div>
   );
 };

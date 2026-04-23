@@ -18,6 +18,8 @@ import ContactUs from '../../../components/Common/ContactUs';
 import hero from "../../../assets/Courier/hero.png"
 import intro from "../../../assets/Courier/intro.png"
 import tail from "../../../assets/Courier/tail.webp" 
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const CourierDeliveryApp = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -434,7 +436,9 @@ const CourierDeliveryApp = () => {
             <OurWork theme={{ primary: "text-purple-600", accent: "bg-purple-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#faf5ff]", primary: "text-purple-600", iconBg: "bg-purple-100", iconColor: "text-purple-600" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

@@ -22,6 +22,8 @@ import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import GroceryCardSection from '../../../components/Grocery-Landing/GroceryCardSection';
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const GroceryDeliveryApp = () => {
     const [activeTab, setActiveTab] = useState('Customer App');
@@ -538,7 +540,9 @@ const GroceryDeliveryApp = () => {
             <Testimonial theme="green" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-green-500", iconBg: "bg-green-100", iconColor: "text-green-500" }} />
             <OurWork theme={{ primary: "text-green-500", accent: "bg-green-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="green" />
+            <TeamMoments/>
         </div>
     );
 };

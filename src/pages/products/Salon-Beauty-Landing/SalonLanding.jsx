@@ -8,6 +8,8 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const SalonLanding = () => {
     useEffect(() => {
@@ -40,6 +42,9 @@ const SalonLanding = () => {
                     accent: "bg-rose-600",
                 }}
             />
+            <div className="bg-pink-50">
+                <PopularBlogs/>
+            </div>
             <ContactUs 
                 theme="orange"
                 productName="Salon"
@@ -48,6 +53,7 @@ const SalonLanding = () => {
                 buttonGradient="from-[#FF4D29] to-[#E63E1C]"
                 showImage={true}
             />
+            <TeamMoments/>
         </div>
     );
 };

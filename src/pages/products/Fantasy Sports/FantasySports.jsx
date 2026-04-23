@@ -11,6 +11,8 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const FantasySports = () => {
     useEffect(() => {
@@ -83,6 +85,7 @@ const FantasySports = () => {
                     }}
                 />
             </div>
+            <PopularBlogs/>
 
             {/* 9. Contact Us Section (Common) */}
             <div className="bg-[#F0FDF4]">
@@ -93,6 +96,7 @@ const FantasySports = () => {
                     cardBg="bg-white"
                 />
             </div>
+            <TeamMoments/>
         </div>
     );
 };

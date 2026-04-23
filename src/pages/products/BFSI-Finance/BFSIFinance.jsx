@@ -9,6 +9,8 @@ import Testimonial from "../../../components/Common/Testimonial";
 import Industries from "../../../components/Common/Industries";
 import OurWork from "../../../components/Common/OurWork";
 import ContactUs from "../../../components/Common/ContactUs";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 
 const BFSIFinance = () => {
   return (
@@ -45,6 +47,7 @@ const BFSIFinance = () => {
           button: "from-orange-600 to-amber-600",
         }}
       />
+      <PopularBlogs/>
       <ContactUs
         theme="orange"
         productName="Financial Intelligence Platform"
@@ -53,6 +56,7 @@ const BFSIFinance = () => {
         buttonGradient="from-orange-600 via-amber-600 to-rose-600"
         showImage={true}
       />
+      <TeamMoments/>
     </>
   );
 };

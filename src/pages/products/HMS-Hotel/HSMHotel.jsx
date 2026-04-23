@@ -9,6 +9,8 @@ import Testimonial from "../../../components/Common/Testimonial";
 import Industries from "../../../components/Common/Industries";
 import OurWork from "../../../components/Common/OurWork";
 import ContactUs from "../../../components/Common/ContactUs";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 
 const HSMHotel = () => {
   return (
@@ -19,37 +21,39 @@ const HSMHotel = () => {
       <HotelProducts />
       <SolutionsSection />
       <WhyChooseUs />
-      <Testimonial 
-    theme="orange-teal"
-    bgGradient="from-[#FFF7ED] to-white"
-    cardGradient="from-orange-500 to-teal-500"
-/>
+      <Testimonial
+        theme="orange-teal"
+        bgGradient="from-[#FFF7ED] to-white"
+        cardGradient="from-orange-500 to-teal-500"
+      />
 
-<Industries 
-    theme={{
-        bg: "bg-[#FFF7ED]",
-        primary: "text-orange-600",
-        iconBg: "bg-orange-100",
-        iconColor: "text-teal-600",
-    }}
-/>
+      <Industries
+        theme={{
+          bg: "bg-[#FFF7ED]",
+          primary: "text-orange-600",
+          iconBg: "bg-orange-100",
+          iconColor: "text-teal-600",
+        }}
+      />
 
-<OurWork 
-    theme={{
-        primary: "text-orange-600",
-        accent: "bg-teal-600",
-    }}
-/>
+      <OurWork
+        theme={{
+          primary: "text-orange-600",
+          accent: "bg-teal-600",
+        }}
+      />
+      <PopularBlogs />
 
-<ContactUs 
-    theme="orange-teal"
-    productName="Hotel Management"
-    bgGradient="from-[#FFF7ED] to-white"
-    accentGradient="from-orange-500 to-teal-500"
-    buttonGradient="from-orange-500 to-orange-600"
-    showImage={true}
-/>
-</>
+      <ContactUs
+        theme="orange-teal"
+        productName="Hotel Management"
+        bgGradient="from-[#FFF7ED] to-white"
+        accentGradient="from-orange-500 to-teal-500"
+        buttonGradient="from-orange-500 to-orange-600"
+        showImage={true}
+      />
+      <TeamMoments />
+    </>
   );
 };
 

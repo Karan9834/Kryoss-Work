@@ -10,6 +10,8 @@ import LmsCardSection from './sections/LmsCardSection'
 import Industries from '../../../../components/Common/Industries'
 import Testimonial from '../../../../components/Common/Testimonial'
 import ContactUs from '../../../../components/Common/ContactUs'
+import TeamMoments from '../../../../components/Common/TeamMoments'
+import PopularBlogs from '../../../../components/Blog/PopularBlogs'
 
 const Learning = () => {
   return (
@@ -41,7 +43,7 @@ const Learning = () => {
   headingText="What Our Customers Say"
   subheadingText="Trusted by institutions worldwide"
 />
-
+<PopularBlogs/>
 <ContactUs
   theme="blue"
   productName="School Management Software"
@@ -50,6 +52,7 @@ const Learning = () => {
   buttonGradient="from-blue-700 to-indigo-700"
   showImage={true}
 />
+<TeamMoments/>
     </div>
   )
 }

@@ -16,6 +16,8 @@ import Products from "../../../components/E-Commerce-App/Products";
 import hero from "../../../assets/services-ecommerce-img/hero.png"
 import multi from "../../../assets/services-ecommerce-img/multi.png"
 import tail from "../../../assets/services-ecommerce-img/tail.jpeg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const ECommerceApp = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -483,7 +485,9 @@ const ECommerceApp = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="orange" />
+            <TeamMoments/>
         </div>
     );
 };

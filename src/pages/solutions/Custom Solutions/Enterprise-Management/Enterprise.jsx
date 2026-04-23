@@ -9,6 +9,8 @@ import Testimonial from "../../../../components/Common/Testimonial";
 import OurWork from "../../../../components/Common/OurWork";
 import ContactUs from "../../../../components/Common/ContactUs";
 import BusinessBenefits from "./sections/BusinessBenefits";
+import PopularBlogs from "../../../../components/Blog/PopularBlogs";
+import TeamMoments from "../../../../components/Common/TeamMoments";
 
 const Enterprise = () => {
   return (
@@ -43,8 +45,7 @@ const Enterprise = () => {
         subheadingText="Trusted by thousands of businesses worldwide"
       />
 
-      
-
+      <PopularBlogs/>
       <ContactUs
         theme="violet"
         productName="ERP Software"
@@ -53,6 +54,7 @@ const Enterprise = () => {
         buttonGradient="from-violet-600 to-purple-600"
         showImage={true}
       />
+      <TeamMoments/>
     </div>
   );
 };

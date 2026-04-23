@@ -8,6 +8,8 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const EducationLanding = () => {
     useEffect(() => {
@@ -40,6 +42,7 @@ const EducationLanding = () => {
                     accent: "bg-indigo-600",
                 }}
             />
+            <PopularBlogs/>
             <ContactUs 
                 theme="blue"
                 productName="Education"
@@ -48,6 +51,7 @@ const EducationLanding = () => {
                 buttonGradient="from-indigo-600 to-teal-500"
                 showImage={true}
             />
+            <TeamMoments/>
         </div>
     );
 };

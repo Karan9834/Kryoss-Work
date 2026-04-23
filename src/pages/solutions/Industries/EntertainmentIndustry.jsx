@@ -16,6 +16,8 @@ import OTTCardSection from '../../../components/OTT-Landing/OTTCardSection';
 import hero from "../../../assets/Entertaiment/hero.png"
 import intro from "../../../assets/Entertaiment/intro.jpg"
 import why from "../../../assets/Entertaiment/why.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const EntertainmentIndustry = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -367,7 +369,9 @@ const EntertainmentIndustry = () => {
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-blue-50", primary: "text-blue-500", iconBg: "bg-blue-100", iconColor: "text-blue-500" }} />
             <OurWork theme={{ primary: "text-blue-500", accent: "bg-blue-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

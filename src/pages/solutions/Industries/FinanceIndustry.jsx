@@ -18,6 +18,8 @@ import FinanceProducts from '../../../components/BFSI-Finance/Products';
 import hero from "../../../assets/Finance/hero.jpg"
 import intro from "../../../assets/Finance/intro.png"
 import why from "../../../assets/Finance/why.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const FinanceIndustry = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -489,7 +491,9 @@ const FinanceIndustry = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="orange" />
+            <TeamMoments/>
         </div>
     );
 };

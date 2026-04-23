@@ -9,6 +9,8 @@ import Industries from '../../../../components/Common/Industries'
 import Testimonial from '../../../../components/Common/Testimonial'
 import OurWork from '../../../../components/Common/OurWork'
 import ContactUs from '../../../../components/Common/ContactUs'
+import TeamMoments from '../../../../components/Common/TeamMoments'
+import PopularBlogs from '../../../../components/Blog/PopularBlogs'
 
 
 const CustomerPage = () => {
@@ -45,7 +47,7 @@ const CustomerPage = () => {
     accent: "bg-gradient-to-r from-teal-500 to-emerald-500",
   }}
 />
-
+<PopularBlogs/>
 <ContactUs
   theme="teal"
   productName="CRM Software"
@@ -54,6 +56,7 @@ const CustomerPage = () => {
   buttonGradient="from-teal-600 to-emerald-600"
   showImage={true}
 />
+<TeamMoments/>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import prod1 from "../../assets/Products/platfrom.png";
-import prod2 from "../../assets/Products/Tech daily.jpg";
+import prod1 from "../../assets/Products/news.jpg";
+import prod2 from "../../assets/Products/ele.jpg";
 
 const ProductSection = () => {
     const products = [
@@ -54,7 +54,7 @@ const ProductSection = () => {
                                 <img
                                     src={product.image}
                                     alt={product.title}
-                                    className="w-full rounded-xl border-[5px] border-transparent hover:border-blue-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-cover aspect-[16/9]"
+                                    className="w-full rounded-xl border-[5px] border-transparent hover:border-blue-500 transition duration-300 shadow-md group-hover:shadow-xl group-hover:scale-[1.03] object-contain aspect-[16/9]"
                                 />
                             </Link>
 

@@ -8,7 +8,9 @@ import WhyChooseUs from "../../../components/Doctor-Health-App/WhyChooseUs";
 import Products from "../../../components/Doctor-Health-App/Products";
 import Industries from "../../../components/Common/Industries";
 import OurWork from "../../../components/Common/OurWork";
-import ContactUs from "../../../components/Common/ContactUs"; 
+import ContactUs from "../../../components/Common/ContactUs";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 
 const DoctorHealthPage = () => {
   return (
@@ -19,7 +21,7 @@ const DoctorHealthPage = () => {
       <Products />
       <WhyChooseUs />
       <Solutions />
-      
+
       {/* Testimonial with Green Theme */}
       <Testimonial
         theme="green"
@@ -28,7 +30,7 @@ const DoctorHealthPage = () => {
         headingText="What Healthcare Providers Say"
         subheadingText="Join 500+ clinics and hospitals that trust our platform"
       />
-      
+
       {/* Industries with Green Theme */}
       <Industries
         theme={{
@@ -38,7 +40,7 @@ const DoctorHealthPage = () => {
           iconColor: "text-green-600",
         }}
       />
-      
+
       {/* Our Work with Green Theme */}
       <OurWork
         theme={{
@@ -46,7 +48,8 @@ const DoctorHealthPage = () => {
           accent: "bg-green-600",
         }}
       />
-      
+      <PopularBlogs />
+
       {/* Contact Us with Green Theme */}
       <ContactUs
         theme="green"
@@ -56,6 +59,7 @@ const DoctorHealthPage = () => {
         buttonGradient="from-green-600 to-emerald-600"
         showImage={true}
       />
+      <TeamMoments />
     </>
   );
 };

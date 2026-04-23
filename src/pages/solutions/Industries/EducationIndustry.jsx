@@ -7,7 +7,8 @@ import {
     Smartphone, MapPin, CreditCard, Clock, MessageSquare,
     Bell, Star, Settings, FileText, BarChart, Zap,
     Headphones, Server, Code, Database, RefreshCw,
-    UserCheck, Phone, LayoutDashboard, ArrowRight
+    UserCheck, Phone, LayoutDashboard, ArrowRight,
+    TableColumnsSplit
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -19,6 +20,8 @@ import EducationCardSection from '../../../components/Education-Landing/Educatio
 import hero from "../../../assets/Education/hero.png"
 import intro from "../../../assets/Education/intro.jpg"
 import why from "../../../assets/Education/why.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const EducationIndustry = () => {
     const [activeTab, setActiveTab] = useState("LMS Platform");
@@ -499,7 +502,9 @@ const EducationIndustry = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="orange" />
+            <TeamMoments/>
         </div>
     );
 };

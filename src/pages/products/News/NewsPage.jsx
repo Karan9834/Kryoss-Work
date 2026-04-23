@@ -9,6 +9,8 @@ import Industries from "../../../components/Common/Industries";
 import ContactUs from "../../../components/Common/ContactUs";
 import Testimonial from "../../../components/Common/Testimonial";
 import OurWork from "../../../components/Common/OurWork";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 
 const NewsPage = () => {
   return (
@@ -43,6 +45,7 @@ const NewsPage = () => {
           button: "from-blue-600 to-indigo-600",
         }}
       />
+      <PopularBlogs/>
       <ContactUs
         theme="blue"
         productName="News Platform"
@@ -51,6 +54,7 @@ const NewsPage = () => {
         buttonGradient="from-blue-600 via-indigo-600 to-cyan-600"
         showImage={true}
       />
+      <TeamMoments/>
     </>
   );
 };

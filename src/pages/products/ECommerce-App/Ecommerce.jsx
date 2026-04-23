@@ -9,6 +9,9 @@ import Testimonial from "../../../components/Common/Testimonial";
 import Industries from "../../../components/Common/Industries";
 import OurWork from "../../../components/Common/OurWork";
 import ContactUs from "../../../components/Common/ContactUs";
+import TeamMoments from "../../../components/Common/TeamMoments"
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
+
 
 const Ecommerce = () => {
   return (
@@ -29,6 +32,7 @@ const Ecommerce = () => {
         }}
       />
       <OurWork/>
+      <PopularBlogs/>
       <ContactUs
       theme="purple"
         productName="E-Commerce"
@@ -37,6 +41,7 @@ const Ecommerce = () => {
         buttonGradient="from-purple-600 to-pink-600"
         showImage={true}
         />
+       <TeamMoments/>
     </>
   );
 };

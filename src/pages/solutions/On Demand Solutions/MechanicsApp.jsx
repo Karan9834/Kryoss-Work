@@ -18,6 +18,8 @@ import ContactUs from '../../../components/Common/ContactUs';
 import hero from "../../../assets/Mechanics/hero.png"
 import multi from "../../../assets/Mechanics/integrated.png"
 import tail from "../../../assets/Mechanics/tail.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 const MechanicsApp = () => {
     const [activeTab, setActiveTab] = useState("Customer App");
     const [activeFeatureTab, setActiveFeatureTab] = useState("Common");
@@ -506,7 +508,9 @@ const MechanicsApp = () => {
             {/* Global Components */}
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#f0f9ff]", primary: "text-blue-600", iconBg: "bg-blue-100", iconColor: "text-blue-600" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

@@ -14,6 +14,8 @@ import ProductSection from '../../../components/News/Products';
 import hero from "../../../assets/News-Media/hero.png"
 import intro from "../../../assets/News-Media/intro.jpg"
 import why from "../../../assets/News-Media/why.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const NewsMediaIndustry = () => {
     const [activeTab, setActiveTab] = useState("Reader App");
@@ -384,7 +386,9 @@ const NewsMediaIndustry = () => {
             <Testimonial theme="gray" />
             <Industries theme={{ bg: "bg-gray-50", primary: "text-gray-500", iconBg: "bg-gray-100", iconColor: "text-gray-500" }} />
             <OurWork theme={{ primary: "text-gray-500", accent: "bg-gray-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="gray" />
+            <TeamMoments/>
         </div>
     );
 };

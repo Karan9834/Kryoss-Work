@@ -41,6 +41,8 @@ import Products from "../../../components/Doctor-Health-App/Products";
 import hero from "../../../assets/HealthCare/hero.png";
 import intro from "../../../assets/HealthCare/intro.jpg";
 import why from "../../../assets/HealthCare/why.png";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 
 const HealthcareIndustry = () => {
   const [activeTab, setActiveTab] = useState("Appointment Apps");
@@ -746,7 +748,9 @@ const HealthcareIndustry = () => {
       <OurWork
         theme={{ primary: "text-orange-500", accent: "bg-orange-500" }}
       />
+      <PopularBlogs/>
       <ContactUs id="contact-us" theme="orange" />
+      <TeamMoments/>
     </div>
   );
 };

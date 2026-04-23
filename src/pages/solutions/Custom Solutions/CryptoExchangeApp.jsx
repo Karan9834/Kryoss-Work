@@ -17,6 +17,8 @@ import CryptoCardSection from '../../../components/CryptoExchange-Landing/Crypto
 import LandingPageImg from '../../../assets/Crypto & Exchange app/Landing page_.jpg';
 import Extra1Img from '../../../assets/Crypto & Exchange app/Extra 1.jpg';
 import Extra2Img from '../../../assets/Crypto & Exchange app/Extra 2.jpg';
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const CryptoExchangeApp = () => {
     const services = [
@@ -310,7 +312,9 @@ const CryptoExchangeApp = () => {
             <OurWork theme={{ primary: "text-blue-600", accent: "bg-blue-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#eff6ff]", primary: "text-blue-600", iconBg: "bg-blue-100", iconColor: "text-blue-600" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

@@ -16,6 +16,8 @@ import ProductSection from '../../../components/Food_delivery/ProductSection';
 import hero from "../../../assets/Food-Restaurant/hero.jpeg"
 import intro from "../../../assets/Food-Restaurant/intro.jpeg"
 import why from "../../../assets/Food-Restaurant/why.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const FoodRestaurantIndustry = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -381,7 +383,9 @@ const FoodRestaurantIndustry = () => {
             <Testimonial theme="red" />
             <Industries theme={{ bg: "bg-red-50", primary: "text-red-500", iconBg: "bg-red-100", iconColor: "text-red-500" }} />
             <OurWork theme={{ primary: "text-red-500", accent: "bg-red-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="red" />
+            <TeamMoments/>
         </div>
     );
 };

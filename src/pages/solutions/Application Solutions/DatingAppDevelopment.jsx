@@ -16,6 +16,8 @@ import DatingCardSection from '../../../components/Dating-Matrimony-Landing/Dati
 import hero from "../../../assets/datinglanding-img/datingapp.png"
 import multi from "../../../assets/datinglanding-img/multi.png"
 import tail from "../../../assets/datinglanding-img/tail.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const DatingAppDevelopment = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -516,7 +518,9 @@ const DatingAppDevelopment = () => {
             <Testimonial theme="fuchsia" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-fuchsia-500", iconBg: "bg-fuchsia-100", iconColor: "text-fuchsia-500" }} />
             <OurWork theme={{ primary: "text-fuchsia-500", accent: "bg-fuchsia-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="fuchsia" />
+            <TeamMoments/>
         </div>
     );
 };

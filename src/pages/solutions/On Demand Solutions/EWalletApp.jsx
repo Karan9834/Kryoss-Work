@@ -18,6 +18,8 @@ import ContactUs from '../../../components/Common/ContactUs';
 import hero from "../../../assets/e-wallet/hero.png"
 import intro from "../../../assets/e-wallet/intro.png"
 import tail from "../../../assets/e-wallet/tail.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const EWalletApp = () => {
     const [activeTab, setActiveTab] = useState("Admin Panel");
@@ -452,7 +454,9 @@ const EWalletApp = () => {
             {/* Global Components */}
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#fffbeb]", primary: "text-amber-600", iconBg: "bg-amber-100", iconColor: "text-amber-600" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

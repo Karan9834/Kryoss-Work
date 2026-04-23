@@ -9,6 +9,8 @@ import OurWork from '../../../components/Common/OurWork'
 import Testimonial from '../../../components/Common/Testimonial'
 import Industries from '../../../components/Common/Industries'
 import ContactUs from '../../../components/Common/ContactUs'
+import TeamMoments from '../../../components/Common/TeamMoments'
+import PopularBlogs from '../../../components/Blog/PopularBlogs'
 
 const SaasPage = () => {
   return (
@@ -45,6 +47,7 @@ const SaasPage = () => {
           accent: "bg-gradient-to-r from-blue-500 to-indigo-500",
         }}
       />
+      <PopularBlogs/>
 
       {/* Contact */}
       <ContactUs
@@ -55,6 +58,7 @@ const SaasPage = () => {
         buttonGradient="from-blue-600 to-indigo-600"
         showImage={true}
       />
+      <TeamMoments/>
     </>
   )
 }
