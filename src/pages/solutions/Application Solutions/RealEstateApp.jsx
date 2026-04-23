@@ -22,6 +22,8 @@ import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import RealEstateCardSection from '../../../components/RealEstate-Landing/RealEstateCardSection';
 import multi from "../../../assets/realestatelanding-img/multi.png"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const ShoppingCartIcon = () => (
     <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -546,7 +548,9 @@ const RealEstateApp = () => {
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-blue-500", iconBg: "bg-blue-100", iconColor: "text-blue-500" }} />
             <OurWork theme={{ primary: "text-blue-500", accent: "bg-blue-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

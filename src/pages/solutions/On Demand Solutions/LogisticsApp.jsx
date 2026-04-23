@@ -18,6 +18,8 @@ import ContactUs from '../../../components/Common/ContactUs';
 import hero from "../../../assets/Logistic/hero.jpg"
 import intro from "../../../assets/Logistic/intro.jpg"
 import tail from "../../../assets/Logistic/tail.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const LogisticsApp = () => {
     const [activeTab, setActiveTab] = useState("Customer");
@@ -449,7 +451,9 @@ const LogisticsApp = () => {
             <OurWork theme={{ primary: "text-emerald-600", accent: "bg-emerald-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#ecfdf5]", primary: "text-emerald-600", iconBg: "bg-emerald-100", iconColor: "text-emerald-600" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

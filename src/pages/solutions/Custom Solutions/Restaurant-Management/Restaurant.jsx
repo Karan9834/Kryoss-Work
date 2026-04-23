@@ -14,6 +14,8 @@ import Industries from "../../../../components/Common/Industries";
 import Testimonial from "../../../../components/Common/Testimonial";
 import OurWork from "../../../../components/Common/OurWork";
 import ContactUs from "../../../../components/Common/ContactUs";
+import PopularBlogs from "../../../../components/Blog/PopularBlogs";
+import TeamMoments from "../../../../components/Common/TeamMoments";
 
 
 
@@ -56,6 +58,7 @@ const Restaurant = () => {
           iconColor: "text-orange-600",
         }}
       />
+      <PopularBlogs/>
 
       <ContactUs
         theme="orange"
@@ -65,6 +68,7 @@ const Restaurant = () => {
         buttonGradient="from-orange-600 to-orange-700"
         showImage={true}
       />
+      <TeamMoments/>
     </div>
   );
 };

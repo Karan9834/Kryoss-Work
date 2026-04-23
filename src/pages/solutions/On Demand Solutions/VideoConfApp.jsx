@@ -47,6 +47,8 @@ import ContactUs from "../../../components/Common/ContactUs";
 import hero from "../../../assets/vidoeconf/hero.png";
 import about from "../../../assets/vidoeconf/about.avif";
 import tail from "../../../assets/vidoeconf/tail.jpg";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 
 const VideoConfApp = () => {
   const [activeTab, setActiveTab] = useState("User App");
@@ -700,7 +702,9 @@ const VideoConfApp = () => {
           iconColor: "text-indigo-600",
         }}
       />
+      <PopularBlogs/>
       <ContactUs id="contact-us" theme="blue" />
+      <TeamMoments/>
     </div>
   );
 };

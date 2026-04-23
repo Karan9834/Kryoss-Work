@@ -24,6 +24,8 @@ import HotelProducts from '../../../components/HMS-Hotel/HotelProducts';
 import hero from "../../../assets/Hotel-Management/hotelbooking.png"
 import multi from "../../../assets/Hotel-Management/multi.jpg"
 import tail from "../../../assets/Hotel-Management/tail.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const ShoppingCartIcon = () => (
     <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -551,7 +553,9 @@ const HotelBookingApp = () => {
             <Testimonial theme="cyan" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-cyan-500", iconBg: "bg-cyan-100", iconColor: "text-cyan-500" }} />
             <OurWork theme={{ primary: "text-cyan-500", accent: "bg-cyan-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="cyan" />
+            <TeamMoments/>
         </div>
     );
 };

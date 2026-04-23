@@ -10,6 +10,8 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const MatrimonyLanding = () => {
     useEffect(() => {
@@ -59,6 +61,9 @@ const MatrimonyLanding = () => {
                     subtitle="Explore our successful social and matchmaking deployments."
                 />
             </div>
+            <div className="bg-pink-50">
+                <PopularBlogs/>
+            </div>
 
             {/* 9. Contact Us Section (Common) */}
             <div className="bg-slate-50">
@@ -69,6 +74,7 @@ const MatrimonyLanding = () => {
                     cardBg="bg-white"
                 />
             </div>
+            <TeamMoments/>
         </div>
     );
 };

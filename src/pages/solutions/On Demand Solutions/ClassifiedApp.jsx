@@ -17,6 +17,8 @@ import ContactUs from '../../../components/Common/ContactUs';
 import hero from "../../../assets/classified/hero.png"
 import intro from "../../../assets/classified/intro.jpg"
 import tail from "../../../assets/classified/tail.png"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const ClassifiedApp = () => {
     const [activeTab, setActiveTab] = useState("User Panel");
@@ -444,7 +446,9 @@ const ClassifiedApp = () => {
             <OurWork theme={{ primary: "text-cyan-600", accent: "bg-cyan-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#ecfeff]", primary: "text-cyan-600", iconBg: "bg-cyan-100", iconColor: "text-cyan-600" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

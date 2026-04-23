@@ -17,6 +17,8 @@ import ContactUs from '../../../components/Common/ContactUs';
 import hero from "../../../assets/DoctorAppointment/hero.png"
 import intro from "../../../assets/DoctorAppointment/intro.jpg"
 import tail from "../../../assets/DoctorAppointment/tail.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const DoctorAppointmentApp = () => {
     const [activeTab, setActiveTab] = useState("Patient Panel");
@@ -448,7 +450,9 @@ const DoctorAppointmentApp = () => {
             <OurWork theme={{ primary: "text-blue-600", accent: "bg-blue-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#eff6ff]", primary: "text-blue-600", iconBg: "bg-blue-100", iconColor: "text-blue-600" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

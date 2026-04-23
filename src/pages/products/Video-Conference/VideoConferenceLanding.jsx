@@ -8,6 +8,8 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const VideoConferenceLanding = () => {
     useEffect(() => {
@@ -26,7 +28,9 @@ const VideoConferenceLanding = () => {
             <Testimonial />
             <Industries />
             <OurWork />
+            <PopularBlogs/>
             <ContactUs />
+            <TeamMoments/>
         </div>
     );
 };

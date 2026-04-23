@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import prod1 from "../../assets/Home-Service/prod1.png";
+import prod1 from "../../assets/Home-Service/clener.jpg";
 import prod2 from "../../assets/Home-Service/prod2.jpg";
-import prod3 from "../../assets/Home-Service/prod3.png";
-import prod4 from "../../assets/Home-Service/prod4.png";
-import prod5 from "../../assets/Home-Service/prod5.png";
-import prod6 from "../../assets/Home-Service/prod6.png";
-import prod7 from "../../assets/Home-Service/prod7.png";
+import prod3 from "../../assets/Home-Service/suite.jpg";
+import prod4 from "../../assets/Home-Service/headyman.jpg";
+import card1 from '../../assets/transportlanding-img/towy.jpg';
+import card2 from '../../assets/transportlanding-img/flower.jpg';
+import card1Img from '../../assets/educationlanding-img/educationlandingcard1.jpg'
 
 const categories = [
   "Home Essentials",
@@ -61,7 +61,7 @@ const products = [
     category: "On-Demand Services",
     description:
       "Quick roadside assistance whenever needed.",
-    image: prod5,
+    image: card1,
     route: "/products/home-service/tow-truck",
   },
   {
@@ -70,7 +70,7 @@ const products = [
     category: "On-Demand Services",
     description:
       "Efficient snow clearing for your property.",
-    image: prod6,
+    image: card2,
     route: "/products/home-service/snow-removal",
   },
   {
@@ -79,7 +79,7 @@ const products = [
     category: "Learning & Personal",
     description:
       "Find expert tutors for personalized learning.",
-    image: prod7,
+    image: card1Img,
     route: "/products/home-service/tutor",
   },
 ];

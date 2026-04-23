@@ -16,6 +16,8 @@ import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
 import TaxiCardSection from '../../../components/Taxi-Landing/TaxiCardSection';
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const TaxiBookingApp = () => {
     const [activeTab, setActiveTab] = useState("Passenger App");
@@ -448,22 +450,6 @@ const TaxiBookingApp = () => {
                 </div>
             </section>
 
-            {/* 6. Stats Section (#FFFBF2) */}
-            <section className="py-20 bg-[#FFFBF2] relative">
-                <div className="container mx-auto px-4 lg:px-8 relative z-10">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {stats.map((stat, idx) => (
-                            <div key={idx} className="text-center group">
-                                <h3 className="text-4xl md:text-5xl font-extrabold text-[#1E293B] mb-2 font-display group-hover:scale-105 transition-transform">
-                                    {stat.value}
-                                </h3>
-                                <p className="text-sm font-bold text-orange-600 uppercase tracking-widest">{stat.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* 7. Our Solution/Package Features */}
             <section className="py-24 bg-gradient-to-br from-white via-orange-50/30 to-white relative overflow-hidden">
                 {/* Background decorative elements */}
@@ -560,7 +546,9 @@ const TaxiBookingApp = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="orange" />
+            <TeamMoments/>
         </div>
     );
 };

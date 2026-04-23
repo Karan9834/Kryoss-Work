@@ -18,6 +18,8 @@ import ContactUs from '../../../components/Common/ContactUs';
 import hero from "../../../assets/shortvideo/hero.png"
 import multi from "../../../assets/shortvideo/about.jpg"
 import tail from "../../../assets/shortvideo/tail.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 const ShortVideoApp = () => {
     const [activeTab, setActiveTab] = useState("User Panel");
     const [activeFeatureTab, setActiveFeatureTab] = useState("Common");
@@ -466,7 +468,9 @@ const ShortVideoApp = () => {
             {/* Global Components */}
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#fff1f2]", primary: "text-rose-600", iconBg: "bg-rose-100", iconColor: "text-rose-600" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="blue" />
+            <TeamMoments/>
         </div>
     );
 };

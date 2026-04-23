@@ -1,34 +1,40 @@
-import React, { useEffect } from 'react';
-import CryptoHero from '../../../components/CryptoExchange-Landing/CryptoHero';
-import CryptoAbout from '../../../components/CryptoExchange-Landing/CryptoAbout';
-import CryptoFeatures from '../../../components/CryptoExchange-Landing/CryptoFeatures';
-import CryptoCardSection from '../../../components/CryptoExchange-Landing/CryptoCardSection';
-import CryptoWhyUs from '../../../components/CryptoExchange-Landing/CryptoWhyUs';
-import Testimonial from '../../../components/Common/Testimonial';
-import Industries from '../../../components/Common/Industries';
-import OurWork from '../../../components/Common/OurWork';
-import ContactUs from '../../../components/Common/ContactUs';
+import React, { useEffect } from "react";
+import CryptoHero from "../../../components/CryptoExchange-Landing/CryptoHero";
+import CryptoAbout from "../../../components/CryptoExchange-Landing/CryptoAbout";
+import CryptoFeatures from "../../../components/CryptoExchange-Landing/CryptoFeatures";
+import CryptoCardSection from "../../../components/CryptoExchange-Landing/CryptoCardSection";
+import CryptoWhyUs from "../../../components/CryptoExchange-Landing/CryptoWhyUs";
+import Testimonial from "../../../components/Common/Testimonial";
+import Industries from "../../../components/Common/Industries";
+import OurWork from "../../../components/Common/OurWork";
+import ContactUs from "../../../components/Common/ContactUs";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 
 const CryptoExchangeLanding = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-        <div className="bg-[#0A0B14]">
-            <CryptoHero />
-            <CryptoAbout />
-            <CryptoFeatures />
-            <CryptoCardSection />
-            <CryptoWhyUs />
-            
-            {/* Common Sections */}
-            <Testimonial />
-            <Industries />
-            <OurWork />
-            <ContactUs />
-        </div>
-    );
+  return (
+    <div className="bg-[#0A0B14]">
+      <CryptoHero />
+      <CryptoAbout />
+      <CryptoFeatures />
+      <CryptoCardSection />
+      <CryptoWhyUs />
+
+      {/* Common Sections */}
+      <Testimonial />
+      <Industries />
+      <OurWork />
+      <div className="bg-white">
+        <PopularBlogs />
+      </div>
+      <ContactUs />
+      <TeamMoments />
+    </div>
+  );
 };
 
 export default CryptoExchangeLanding;

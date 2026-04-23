@@ -16,6 +16,8 @@ import PMSCardSection from '../../../components/PMS-Pharmacy-Mgmt/PMSCardSection
 // Asset Imports
 import HeroImg from '../../../assets/Pharmacy Management/Landing page_.jpg';
 import IntroImg from '../../../assets/Pharmacy Management/What is Pharmacy Management_.jpg';
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const PharmacyManagement = () => {
     const [activeFeatureTab, setActiveFeatureTab] = useState("Key");
@@ -284,7 +286,9 @@ const PharmacyManagement = () => {
             <OurWork theme={{ primary: "text-green-600", accent: "bg-green-600" }} />
             <Testimonial theme="green" />
             <Industries theme={{ bg: "bg-[#f0fdf4]", primary: "text-green-600", iconBg: "bg-green-100", iconColor: "text-green-600" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="green" />
+            <TeamMoments/>
         </div>
     );
 };

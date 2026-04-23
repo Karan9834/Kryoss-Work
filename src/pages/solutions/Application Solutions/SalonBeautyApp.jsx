@@ -24,6 +24,8 @@ import SalonCardSection from '../../../components/Salon-Beauty-Landing/SalonCard
 import hero from "../../../assets/saloonlanding-img/SalonBeauty.png"
 import intro from "../../../assets/saloonlanding-img/Completemult.png"
 import tail from "../../../assets/saloonlanding-img/Tailored.jpeg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const SalonBeautyApp = () => {
     const [activeTab, setActiveTab] = useState('Customer App');
@@ -537,7 +539,9 @@ const SalonBeautyApp = () => {
             <Testimonial theme="rose" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-rose-500", iconBg: "bg-rose-100", iconColor: "text-rose-500" }} />
             <OurWork theme={{ primary: "text-rose-500", accent: "bg-rose-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="rose" />
+            <TeamMoments/>
         </div>
     );
 };

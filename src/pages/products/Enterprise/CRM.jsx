@@ -12,6 +12,8 @@ import ContactUs from '@/components/Common/ContactUs'
 import CRMNewsletter from '../../../components/Enterprise-Product/CRM/CRMNewsletter'
 import TeamMoments from '../../../components/Common/TeamMoments'
 import Testimonial from '../../../components/Common/Testimonial'
+import OurWork from '../../../components/Common/OurWork'
+import PopularBlogs from '../../../components/Blog/PopularBlogs'
 
 const CRM = () => {
   return (
@@ -26,6 +28,8 @@ const CRM = () => {
     <CRMFinalCTA/>
     <Testimonial/>
     <TechStack/>
+    <OurWork/>
+    <PopularBlogs/>
     <ContactUs theme="blue" productName="CRM" />
     <CRMNewsletter/>
     <TeamMoments/>

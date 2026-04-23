@@ -289,16 +289,6 @@ const Solutions = () => {
             })}
           </div>
         </div>
-
-        {/* Decorative Bottom Element - Updated typography */}
-        <div className="mt-20 md:mt-28 text-center relative z-10">
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/60 backdrop-blur-sm border border-gray-200 shadow-sm">
-            <Shield className="w-4 h-4 text-emerald-500" />
-            <span className="text-[12px] md:text-[13px] font-normal text-gray-600">Trusted by 50,000+ readers worldwide</span>
-            <div className="w-1 h-1 rounded-full bg-blue-400"></div>
-            <span className="text-[12px] md:text-[13px] font-normal text-gray-600">24/7 Live Coverage</span>
-          </div>
-        </div>
       </div>
     </section>
   );

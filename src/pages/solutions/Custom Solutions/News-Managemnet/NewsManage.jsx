@@ -12,6 +12,8 @@ import Industries from "../../../../components/Common/Industries";
 import Testimonial from "../../../../components/Common/Testimonial";
 import OurWork from "../../../../components/Common/OurWork";
 import ContactUs from "../../../../components/Common/ContactUs";
+import PopularBlogs from "../../../../components/Blog/PopularBlogs";
+import TeamMoments from "../../../../components/Common/TeamMoments";
 const NewsManage = () => {
   return (
     <div>
@@ -48,7 +50,7 @@ const NewsManage = () => {
           iconColor: "text-red-600",
         }}
       />
-
+      <PopularBlogs/>
       <ContactUs
         theme="red"
         productName="JobPortal"
@@ -57,6 +59,7 @@ const NewsManage = () => {
         buttonGradient="from-red-600 to-red-700"
         showImage={true}
       />
+      <TeamMoments/>
     </div>
   );
 };

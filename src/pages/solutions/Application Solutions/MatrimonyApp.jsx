@@ -16,6 +16,8 @@ import DatingCardSection from '../../../components/Dating-Matrimony-Landing/Dati
 import hero from "../../../assets/matrimonysolution-img/hero.png"
 import multi from "../../../assets/matrimonysolution-img/multi.png"
 import tail from "../../../assets/matrimonysolution-img/tailored.png"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 const MatrimonyApp = () => {
     const [activeTab, setActiveTab] = useState("User App");
     const [activeFeatureTab, setActiveFeatureTab] = useState("Common");
@@ -521,7 +523,9 @@ const MatrimonyApp = () => {
             <Testimonial theme="rose" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-rose-500", iconBg: "bg-rose-100", iconColor: "text-rose-500" }} />
             <OurWork theme={{ primary: "text-rose-500", accent: "bg-rose-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="rose" />
+            <TeamMoments/>
         </div>
     );
 };

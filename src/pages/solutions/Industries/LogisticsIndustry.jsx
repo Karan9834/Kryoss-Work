@@ -18,6 +18,8 @@ import LogisticsCardSection from '../../../components/TransportLogistics-Landing
 import hero from "../../../assets/Logistic_app/hero.png"
 import intro from "../../../assets/Logistic_app/intro.jpeg"
 import why from "../../../assets/Logistic_app/why.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const LogisticsIndustry = () => {
     const [activeTab, setActiveTab] = useState("Client App");
@@ -496,7 +498,9 @@ const LogisticsIndustry = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="orange" />
+            <TeamMoments/>
         </div>
     );
 };

@@ -37,6 +37,8 @@ import RealEstateCardSection from "../../../components/RealEstate-Landing/RealEs
 import hero from "../../../assets/Real-Estate/hero.png";
 import intro from "../../../assets/Real-Estate/intro.jpeg";
 import why from "../../../assets/Real-Estate/why.png";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 
 const RealEstateIndustry = () => {
   const [activeTab, setActiveTab] = useState("User App");
@@ -667,7 +669,9 @@ const RealEstateIndustry = () => {
       <OurWork
         theme={{ primary: "text-orange-500", accent: "bg-orange-500" }}
       />
+      <PopularBlogs/>
       <ContactUs id="contact-us" theme="orange" />
+      <TeamMoments/>
     </div>
   );
 };

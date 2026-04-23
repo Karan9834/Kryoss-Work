@@ -36,6 +36,8 @@ import ProductSection from "../../../components/Home-Services/ProductSection";
 import hero from "../../../assets/Home-Service/home.png";
 import multi from "../../../assets/Home-Service/multi.png";
 import tail from "../../../assets/Home-Service/tail.jpg";
+import TeamMoments from "../../../components/Common/TeamMoments";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 
 const HomeServiceApp = () => {
   const [activeTab, setActiveTab] = useState("Customer App");
@@ -699,7 +701,9 @@ const HomeServiceApp = () => {
       <OurWork
         theme={{ primary: "text-orange-500", accent: "bg-orange-500" }}
       />
+      <PopularBlogs/>
       <ContactUs id="contact-us" theme="orange" />
+      <TeamMoments/>
     </div>
   );
 };

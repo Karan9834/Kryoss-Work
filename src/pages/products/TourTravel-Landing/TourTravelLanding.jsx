@@ -10,6 +10,8 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import TeamMoments from '../../../components/Common/TeamMoments';
 
 const TourTravelLanding = () => {
     useEffect(() => {
@@ -73,6 +75,10 @@ const TourTravelLanding = () => {
                 />
             </div>
 
+            <div className="bg-cyan-50">
+                <PopularBlogs/>
+            </div>
+
             {/* 9. Contact Us Section (Common) */}
             <div className="bg-[#EFF6FF]">
                 <ContactUs
@@ -82,6 +88,7 @@ const TourTravelLanding = () => {
                     cardBg="bg-white"
                 />
             </div>
+            <TeamMoments/>
         </div>
     );
 };

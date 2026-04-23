@@ -15,6 +15,7 @@ const TrustBadges = lazy(() => import("@/components/home/TrustBadges"));
 const CTASection = lazy(() => import("@/components/home/CTASection"));
 const Contact = lazy(() => import("@/components/home/Contact"));
 const TeamMoments = lazy(() => import("@/components/Common/TeamMoments"));
+const PopularBlogs = lazy(() => import("../../components/Blog/PopularBlogs"))
 
 const SectionLoader = () => (
   <div className="w-full py-20 flex justify-center items-center">
@@ -42,6 +43,7 @@ const Home = () => {
         <FAQ />
         <TrustBadges />
         <CTASection />
+        <PopularBlogs/>
         <Contact />
         <TeamMoments />
       </Suspense>

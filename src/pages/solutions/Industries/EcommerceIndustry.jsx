@@ -19,6 +19,8 @@ import Products from '../../../components/E-Commerce-App/Products';
 import hero from "../../../assets/E-Commerce/hero.png"
 import intro from "../../../assets/E-Commerce/intro.jpg"
 import why from "../../../assets/E-Commerce/why.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const EcommerceIndustry = () => {
     const [activeTab, setActiveTab] = useState("B2C Platforms");
@@ -498,7 +500,9 @@ const EcommerceIndustry = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="orange" />
+            <TeamMoments/>
         </div>
     );
 };

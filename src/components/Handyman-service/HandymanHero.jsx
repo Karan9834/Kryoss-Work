@@ -48,12 +48,16 @@ const HandymanHero = () => {
             payments.
           </p>
 
-          {/* Button */}
-          <button className="group bg-yellow-400 hover:bg-yellow-500 text-black px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-xl hover:scale-105">
-            Let’s Discuss
-            <span className="ml-2 group-hover:ml-4 transition-all duration-300">
-              →
-            </span>
+          <button
+            onClick={() =>
+              window.open(
+                "https://preview.codecanyon.net/item/flutter-handy-service-ondemand-home-services-shopping-androidioswebsite-full-solution-laravel/full_screen_preview/39700102",
+                "_blank",
+              )
+            }
+            className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-base shadow-md hover:scale-105 transition duration-300"
+          >
+            Live Demo →
           </button>
         </div>
 

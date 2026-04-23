@@ -19,6 +19,8 @@ import ContactUs from '../../../components/Common/ContactUs';
 import hero from "../../../assets/Car-rental/carretal.png"
 import multi from "../../../assets/Car-rental/about.png"
 import tail from "../../../assets/Car-rental/premium.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const CarRentalApp = () => {
     const [activeTab, setActiveTab] = useState("Customer App");
@@ -516,7 +518,9 @@ const CarRentalApp = () => {
             {/* Global Components */}
             <Testimonial theme="slate" />
             <Industries theme={{ bg: "bg-[#F8FAFC]", primary: "text-slate-900", iconBg: "bg-slate-100", iconColor: "text-slate-900" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="slate" />
+            <TeamMoments/>
         </div>
     );
 };

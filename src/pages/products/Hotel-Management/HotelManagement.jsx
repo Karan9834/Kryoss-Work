@@ -9,6 +9,8 @@ import Industries from '../../../components/Common/Industries'
 import Testimonial from '../../../components/Common/Testimonial'
 import OurWork from '../../../components/Common/OurWork'
 import ContactUs from '../../../components/Common/ContactUs'
+import TeamMoments from '../../../components/Common/TeamMoments'
+import PopularBlogs from '../../../components/Blog/PopularBlogs'
 const HotelManagement = () => {
   return (
     <>
@@ -43,6 +45,7 @@ const HotelManagement = () => {
       accent: "bg-gradient-to-r from-cyan-500 to-emerald-500",
     }}
   />
+  <PopularBlogs/>
 
   <ContactUs
     theme="teal"
@@ -52,6 +55,7 @@ const HotelManagement = () => {
     buttonGradient="from-cyan-600 to-teal-600"
     showImage={true}
   />
+  <TeamMoments/>
 </>
     </>
   )

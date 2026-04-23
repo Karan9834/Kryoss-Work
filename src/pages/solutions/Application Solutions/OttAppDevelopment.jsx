@@ -23,6 +23,8 @@ import OTTCardSection from '../../../components/OTT-Landing/OTTCardSection';
 import hero from "../../../assets/ottlanding-img/ottplatform.png"
 import multi from "../../../assets/ottlanding-img/multi.png"
 import tail from "../../../assets/ottlanding-img/tailored.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const OttAppDevelopment = () => {
     const [activeTab, setActiveTab] = useState('User App');
@@ -531,7 +533,9 @@ const OttAppDevelopment = () => {
             <Testimonial theme="red" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-red-500", iconBg: "bg-red-100", iconColor: "text-red-500" }} />
             <OurWork theme={{ primary: "text-red-500", accent: "bg-red-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="red" />
+            <TeamMoments/>
         </div>
     );
 };

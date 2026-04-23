@@ -10,6 +10,8 @@ import Testimonial from '../../../components/Common/Testimonial';
 import Industries from '../../../components/Common/Industries';
 import OurWork from '../../../components/Common/OurWork';
 import ContactUs from '../../../components/Common/ContactUs';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import TeamMoments from '../../../components/Common/TeamMoments';
 
 const RealEstateLanding = () => {
     useEffect(() => {
@@ -72,6 +74,9 @@ const RealEstateLanding = () => {
                     }}
                 />
             </div>
+            <div className="bg-orange-50">
+                <PopularBlogs/>
+            </div>
 
             {/* 9. Contact Us Section (Common) */}
             <ContactUs
@@ -82,6 +87,7 @@ const RealEstateLanding = () => {
                 buttonGradient="from-emerald-600 to-amber-500"
                 showImage={true}
             />
+            <TeamMoments/>
         </div>
     );
 };

@@ -19,6 +19,8 @@ import SocialProductSection from '../../../components/Social-Media-App/ProductSe
 import hero from "../../../assets/Social-Networking/hero.png"
 import intro from "../../../assets/Social-Networking/intro.jpg"
 import why from "../../../assets/Social-Networking/why.jpg"
+import TeamMoments from '../../../components/Common/TeamMoments';
+import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
 const SocialNetworkingIndustry = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -509,7 +511,9 @@ const SocialNetworkingIndustry = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
+            <PopularBlogs/>
             <ContactUs id="contact-us" theme="orange" />
+            <TeamMoments/>
         </div>
     );
 };
