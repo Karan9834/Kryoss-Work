@@ -1,5 +1,5 @@
 import React from "react";
-import overview from '../../../../assets/On-Demand/demand.png'
+import overview from '../../../../assets/On-Demand/over.jpg'
 
 const WhatIsOnDemand = ({
   badge = "📊 Product Overview",

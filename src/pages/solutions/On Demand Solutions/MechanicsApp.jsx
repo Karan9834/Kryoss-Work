@@ -20,6 +20,9 @@ import multi from "../../../assets/Mechanics/integrated.png"
 import tail from "../../../assets/Mechanics/tail.jpg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import f1 from "../../../assets/Mehanics/f1.jpg"
+import f2 from "../../../assets/Mehanics/f2.jpg"
+import f3 from "../../../assets/Mehanics/s3.jpg"
 const MechanicsApp = () => {
     const [activeTab, setActiveTab] = useState("Customer App");
     const [activeFeatureTab, setActiveFeatureTab] = useState("Common");
@@ -35,7 +38,7 @@ const MechanicsApp = () => {
     const panelFeatures = {
         "Customer App": {
             icon: User,
-            image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800", // Generic placeholder or relevant image if available
+            image: f1,//images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800", // Generic placeholder or relevant image if available
             features: [
                 "Secure Onboarding", "View Mechanic Profile", "Search, Sort & Filter",
                 "Book Appointment", "Reschedule/Cancel Booking", "Push Notification",
@@ -44,7 +47,7 @@ const MechanicsApp = () => {
         },
         "Mechanic App": {
             icon: Wrench,
-            image: "https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: f2,
             features: [
                 "Mechanic Dashboard", "Availability Status", "New Booking Request",
                 "Accept/Reject Booking", "Optimized Route", "Recent Booking History",
@@ -53,7 +56,7 @@ const MechanicsApp = () => {
         },
         "Admin Panel": {
             icon: Shield,
-            image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: f3,
             features: [
                 "Comprehensive Dashboard", "Manage Users & Mechanics", "Manage Service Orders",
                 "Document Verification", "Offers & Discounts", "Customer Support",
@@ -322,7 +325,7 @@ const MechanicsApp = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-auto object-contain"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                                 onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                             />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import hero from '../../../../../assets/Products/prod3.png';
+import hero from '../../../../../assets/Products/prime.jpg';
 
 const Hero = ({
   title = "Prime",
@@ -85,31 +85,6 @@ const Hero = ({
                 Get Started →
               </button>
 
-            </div>
-
-            {/* Stats Section */}
-            <div className="mt-10 pt-6 border-t border-white/10">
-              <div className="flex flex-wrap gap-8 justify-center md:justify-start">
-
-                {/* Stat 1 */}
-                <div className="text-center md:text-left">
-                  <div className="text-xl font-bold text-white">5000+</div>
-                  <div className="text-xs font-normal text-gray-400 mt-1">Projects Delivered</div>
-                </div>
-
-                {/* Stat 2 */}
-                <div className="text-center md:text-left">
-                  <div className="text-xl font-bold text-white">98%</div>
-                  <div className="text-xs font-normal text-gray-400 mt-1">Client Satisfaction</div>
-                </div>
-
-                {/* Stat 3 */}
-                <div className="text-center md:text-left">
-                  <div className="text-xl font-bold text-white">24/7</div>
-                  <div className="text-xs font-normal text-gray-400 mt-1">Support Available</div>
-                </div>
-
-              </div>
             </div>
 
           </div>

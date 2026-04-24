@@ -1,5 +1,5 @@
 import React from "react";
-import overview from '../../../../../assets/Enterprise-Product/crmdashboard.png'
+import overview from '../../../../../assets/Enterprise-Product/snap.jpg'
 
 const OverviewSection = ({
   badge = "📊 Product Overview",
