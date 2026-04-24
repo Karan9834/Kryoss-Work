@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import hero from "../../../../../assets/Application-Solutions/hero.png";
+import hero from "../../../../../assets/Application-Solutions/hero1.png";
 
 const Hero = ({
   title = "Build Better",
@@ -88,27 +88,6 @@ const Hero = ({
                 <span>Get Started</span>
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
               </button>
-            </div>
-
-            {/* Stats with modern design */}
-            <div className="pt-6 border-t border-white/10">
-              <div className="grid grid-cols-3 gap-6">
-                <div>
-                  <div className="text-2xl font-bold text-white">5000+</div>
-                  <div className="text-xs text-gray-400 mt-1">Projects</div>
-                  <div className="w-8 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 mt-2"></div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-white">98%</div>
-                  <div className="text-xs text-gray-400 mt-1">Satisfaction</div>
-                  <div className="w-8 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 mt-2"></div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-white">24/7</div>
-                  <div className="text-xs text-gray-400 mt-1">Support</div>
-                  <div className="w-8 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 mt-2"></div>
-                </div>
-              </div>
             </div>
 
           </div>

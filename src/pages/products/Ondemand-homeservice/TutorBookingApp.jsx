@@ -73,7 +73,7 @@ const TutorBookingApp = () => {
         showImage={true}
       />
 
-      <Blogs />
+      {/* <Blogs /> */}
       <GetUpdate />
       <TeamMoments />
     </div>
