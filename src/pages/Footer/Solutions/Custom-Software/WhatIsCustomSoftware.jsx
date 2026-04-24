@@ -1,5 +1,5 @@
 import React from "react";
-import overview from '../../../../assets/custom-software/software.png'
+import overview from '../../../../assets/custom-software/over.jpg'
 
 const WhatIsCustomSoftware = ({
   badge = "📊 Product Overview",

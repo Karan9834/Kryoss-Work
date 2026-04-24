@@ -1,5 +1,5 @@
 import React from "react";
-import overview from '../../../../../assets/Products/prod2.png'
+import overview from '../../../../../assets/Products/over.png'
 
 const OverviewSection = ({
   badge = "📊 Product Overview",
