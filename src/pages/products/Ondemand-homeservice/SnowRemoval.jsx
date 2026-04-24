@@ -18,7 +18,7 @@ import SnowProductShowCase from "@/components/homeservice-snowremoval/SnowProduc
 // import SnowAwards from "@/components/homeservice-snowremoval/SnowAwards";
 import SnowFAQ from "@/components/homeservice-snowremoval/SnowFAQ";
 import SnowTechStack from "@/components/homeservice-snowremoval/SnowTechStack";
-import SnowBlogs from "@/components/homeservice-snowremoval/SnowBlogs";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 import SnowGetUpdates from "@/components/homeservice-snowremoval/SnowGetUpdates";
 
 import ContactUs from "../../../components/Common/ContactUs";
@@ -64,7 +64,7 @@ const SnowRemoval = () => {
         showImage={true}
       />
 
-      <SnowBlogs />
+      <PopularBlogs />
       <SnowGetUpdates />
       <TeamMoments />
     </>

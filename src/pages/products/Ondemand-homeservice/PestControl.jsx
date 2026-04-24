@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import PestHome from "../../../components/PestControl/PestHome";
 import PestAbout from "../../../components/PestControl/PestAbout";
 import PestWork from "../../../components/PestControl/PestWork";
@@ -11,11 +11,11 @@ import PestWeProvide from "../../../components/PestControl/PestWeProvide";
 import PestDevelopment from "../../../components/PestControl/PestDevelopment";
 import PestWhy from "../../../components/PestControl/PestWhy";
 import PestAppSection from "../../../components/PestControl/PestAppSection";
-import PestProductShowCase from "../../../components/PestControl/PestProductShowCase";
 import PestFaqs from "../../../components/PestControl/PestFaqs";
 import PestTech from "../../../components/PestControl/PestTech";
-import PestBlog from "../../../components/PestControl/PestBlog";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 import PestFinalCta from "../../../components/PestControl/PestFinalCta";
+const PortfolioShowcase = lazy(() => import("@/components/home/PortfolioShowcase"));
 
 import ContactUs from "../../../components/Common/ContactUs";
 import Testimonial from "../../../components/Common/Testimonial";
@@ -38,6 +38,10 @@ const PestControl = () => {
       <PestWhy />
       <PestAppSection />
 
+      <Suspense fallback={<div className="h-20" />}>
+        <PortfolioShowcase />
+      </Suspense>
+
       {/* Your Testimonial */}
       <Testimonial
         theme="orange"
@@ -47,7 +51,6 @@ const PestControl = () => {
         subheadingText="Trusted by 500+ businesses worldwide"
       />
 
-      <PestProductShowCase />
       <PestFaqs />
       <PestTech />
 
@@ -61,7 +64,7 @@ const PestControl = () => {
         showImage={true}
       />
 
-      <PestBlog />
+      <PopularBlogs />
       <PestFinalCta />
       <TeamMoments />
     </>

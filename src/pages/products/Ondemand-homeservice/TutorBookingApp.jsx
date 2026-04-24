@@ -21,7 +21,7 @@ import ProductShowcase from "@/components/homeservice-tutorbooking/productshowca
 import FAQs from "@/components/homeservice-tutorbooking/faqs";
 import TechStack from "@/components/homeservice-tutorbooking/techstack";
 import ContactUs from "@/components/Common/ContactUs";
-import Blogs from "@/components/homeservice-tutorbooking/blogs";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 import GetUpdate from "@/components/homeservice-tutorbooking/getupdate";
 import TeamMoments from "@/components/Common/TeamMoments";
 import Testimonial from "@/components/Common/Testimonial";
@@ -73,7 +73,7 @@ const TutorBookingApp = () => {
         showImage={true}
       />
 
-      <Blogs />
+      <PopularBlogs />
       <GetUpdate />
       <TeamMoments />
     </div>

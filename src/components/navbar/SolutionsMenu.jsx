@@ -487,9 +487,6 @@ const SolutionsMenu = ({ onLinkClick }) => (
           <span className="pmm-footer-badge">Innovative Tech Solutions</span>
           <span className="pmm-footer-text">Helping businesses scale with robust application and industries expertise</span>
         </div>
-        <Link to="/solutions" className="pmm-footer-cta" onClick={onLinkClick}>
-          Explore All Solutions <ArrowRight size={14} />
-        </Link>
       </div>
     </div>
   </>

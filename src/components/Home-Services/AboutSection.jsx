@@ -27,7 +27,7 @@ const AboutSection = () => {
           >
             <motion.div
               whileHover={{ scale: 1.03 }}
-              className="relative w-[300px] sm:w-[360px] lg:w-[420px]"
+              className="relative w-full max-w-[450px] sm:max-w-[600px] lg:max-w-[700px]"
             >
               {/* Glow */}
               <div className="absolute inset-0 bg-gradient-to-r from-purple-200 via-pink-200 to-indigo-200 blur-2xl opacity-40 rounded-2xl" />

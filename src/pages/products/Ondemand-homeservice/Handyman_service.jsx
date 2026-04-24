@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 
 import HandymanHero from "../../../components/Handyman-service/HandymanHero";
 import HandymanAbout from "../../../components/Handyman-service/HandymanAbout";
@@ -14,10 +14,10 @@ import HandymanProcessSelection from "../../../components/Handyman-service/Handy
 import LaunchAndWhySection from "../../../components/Handyman-service/LaunchAndWhySection";
 import HandymanExplore from "../../../components/Handyman-service/HandymanExplore";
 // import HandymanFeedback from "../../../components/Handyman-service/HandymanFeedback";
-import ProductShowcase from "../../../components/Handyman-service/ProductShowcase";
 import Handmanyfaqs from "../../../components/Handyman-service/Handmanyfaqs";
-import HandmanyBlog from "../../../components/Handyman-service/HandmanyBlog";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 import HandmanyFinalCta from "../../../components/Handyman-service/HandmanyFinalCta";
+const PortfolioShowcase = lazy(() => import("@/components/home/PortfolioShowcase"));
 
 import ContactUs from "../../../components/Common/ContactUs";
 import Testimonial from "../../../components/Common/Testimonial";
@@ -42,6 +42,10 @@ const Handyman_service = () => {
 
       {/* <HandymanFeedback /> */}
 
+      <Suspense fallback={<div className="h-20" />}>
+        <PortfolioShowcase />
+      </Suspense>
+
       {/* ✅ Yellow Theme Testimonial */}
       <Testimonial
         theme="yellow"
@@ -51,7 +55,6 @@ const Handyman_service = () => {
         subheadingText="Trusted by 500+ businesses worldwide"
       />
 
-      <ProductShowcase />
       <Handmanyfaqs />
 
       {/* ✅ Yellow Contact */}
@@ -64,7 +67,7 @@ const Handyman_service = () => {
         showImage={true}
       />
 
-      <HandmanyBlog />
+      <PopularBlogs />
       <HandmanyFinalCta />
       <TeamMoments />
     </>

@@ -629,9 +629,6 @@ const ProductsMegaMenu = ({ onLinkClick }) => (
           <span className="pmm-footer-badge">40+ Ready-Made Products</span>
           <span className="pmm-footer-text">Custom builds & white-label solutions available</span>
         </div>
-        <Link to="/products" className="pmm-footer-cta" onClick={onLinkClick}>
-          Explore All Products <ArrowRight size={14} />
-        </Link>
       </div>
     </div>
   </>

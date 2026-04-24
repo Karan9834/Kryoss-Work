@@ -446,9 +446,6 @@ const WorksMegaMenu = ({ onLinkClick }) => (
           <span className="pmm-footer-badge">Explore Our Portfolio</span>
           <span className="pmm-footer-text">Case studies and live projects across multiple industries</span>
         </div>
-        <Link to="/works" className="pmm-footer-cta" onClick={onLinkClick}>
-          View Case Studies <ArrowRight size={14} />
-        </Link>
       </div>
     </div>
   </>

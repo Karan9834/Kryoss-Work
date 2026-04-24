@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 
 import TowTruckHero from "@/components/homeservice-towtruck/TowTruckHero";
@@ -18,12 +18,11 @@ import TowTruckDevelopment from "@/components/homeservice-towtruck/TowTruckDevel
 import TowTruckCTA3 from "@/components/homeservice-towtruck/TowTruckCTA3";
 import TowTruckBusinessWeSupport from "@/components/homeservice-towtruck/TowTruckBusinessWeSupport";
 // import TowTruckClientFeedback from '@/components/homeservice-towtruck/TowTruckClientFeedback';
-import TowTruckProductShowcase from "@/components/homeservice-towtruck/TowTruckProductShowcase";
-// import TowTruckAwards from "@/components/homeservice-towtruck/TowTruckAwards";
 import TowTruckFAQ from "@/components/homeservice-towtruck/TowTruckFAQ";
 import TowTruckTechStack from "@/components/homeservice-towtruck/TowTruckTechStack";
-import TowTruckBlogs from "@/components/homeservice-towtruck/TowTruckBlogs";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 import TowTruckGetUpdates from "@/components/homeservice-towtruck/TowTruckGetUpdates";
+const PortfolioShowcase = lazy(() => import("@/components/home/PortfolioShowcase"));
 
 import ContactUs from "../../../components/Common/ContactUs";
 import Testimonial from "../../../components/Common/Testimonial";
@@ -51,7 +50,9 @@ const TowTruck = () => {
 
       {/* <TowTruckClientFeedback /> */}
 
-      <TowTruckProductShowcase />
+      <Suspense fallback={<div className="h-20" />}>
+        <PortfolioShowcase />
+      </Suspense>
 
       {/* ✅ Blue Testimonial */}
       <Testimonial
@@ -75,7 +76,7 @@ const TowTruck = () => {
         showImage={true}
       />
 
-      <TowTruckBlogs />
+      <PopularBlogs />
       <TowTruckGetUpdates />
       <TeamMoments />
     </>

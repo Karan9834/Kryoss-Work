@@ -20,7 +20,7 @@ import LaundryBusinessWeSupport from "@/components/homeservice-laundry/LaundryBu
 import LaundryProductShowcase from "@/components/homeservice-laundry/LaundryProductShowcase";
 import LaundryFAQ from "@/components/homeservice-laundry/LaundryFAQ";
 import LaundryTechStack from "@/components/homeservice-laundry/LaundryTechStack";
-import LaundryBlogs from "@/components/homeservice-laundry/LaundryBlogs";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 import LaundryGetUpdates from "@/components/homeservice-laundry/LaundryGetUpdates";
 
 import ContactUs from "../../../components/Common/ContactUs";
@@ -71,7 +71,7 @@ const LaundryService = () => {
         showImage={true}
       />
 
-      <LaundryBlogs />
+      <PopularBlogs />
       <LaundryGetUpdates />
       <TeamMoments />
     </>

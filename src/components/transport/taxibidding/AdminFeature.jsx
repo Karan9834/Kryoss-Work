@@ -89,7 +89,7 @@ const AdminFeaturesSection = () => {
         <div className="grid lg:grid-cols-2 gap-16">
 
           {/* LEFT SIDE - Scrollable Cards */}
-          <div className="space-y-8">
+          <div className="lg:max-h-[580px] lg:overflow-y-auto pr-6 space-y-8 custom-scrollbar">
             {features.map((item, index) => {
               const Icon = item.icon;
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 
 import HomeCleaningHero from "../../../components/Home-cleaning/HomeCleaningHero";
 import HomeCleaningAbout from "../../../components/Home-cleaning/HomeCleaningAbout";
@@ -17,12 +17,13 @@ import HomeCleaningCTA3 from "../../../components/Home-cleaning/HomeCleaningCTA3
 import HomeCleaningDigitalFootprint from "../../../components/Home-cleaning/HomeCleaningDigitalFootprint";
 import HomeCleaningChooseUs from "../../../components/Home-cleaning/HomeCleaningChooseUs";
 // import HomeCleaningTestimonialsSection from "../../../components/Home-cleaning/HomeCleaningTestinomialsSection";
-import HomeCleaningProductShowcase from "../../../components/Home-cleaning/HomeCleaningProductShowcase";
+
 // import HomeCleaningAwardRecognition from "../../../components/Home-cleaning/HomeCleaningAwardRecognition";
 import HomeCleaningFAQ from "../../../components/Home-cleaning/HomeCleaningFAQ";
 import HomeCleaningTechStack from "../../../components/Home-cleaning/HomeCleaningTechStack";
-import HomeCleaningBlogsSection from "../../../components/Home-cleaning/HomeCleaningBlogsSection";
+import PopularBlogs from "../../../components/Blog/PopularBlogs";
 import HomeCleaningNewsletterSection from "../../../components/Home-cleaning/HomeCleaningNewsletterSection";
+const PortfolioShowcase = lazy(() => import("@/components/home/PortfolioShowcase"));
 
 import ContactUs from "../../../components/Common/ContactUs";
 import TeamMoments from "../../../components/Common/TeamMoments";
@@ -48,6 +49,10 @@ const HomeCleaning = () => {
       <HomeCleaningDigitalFootprint />
       <HomeCleaningChooseUs />
 
+      <Suspense fallback={<div className="h-20" />}>
+        <PortfolioShowcase />
+      </Suspense>
+
       {/* <HomeCleaningTestimonialsSection/> */}
 
       {/* ✅ Proper Testimonial */}
@@ -59,7 +64,7 @@ const HomeCleaning = () => {
         subheadingText="Trusted by 500+ businesses worldwide"
       />
 
-      <HomeCleaningProductShowcase />
+
 
       {/* <HomeCleaningAwardRecognition/> */}
 
@@ -76,7 +81,7 @@ const HomeCleaning = () => {
         showImage={true}
       />
 
-      <HomeCleaningBlogsSection />
+      <PopularBlogs />
       <HomeCleaningNewsletterSection />
       <TeamMoments />
     </>
