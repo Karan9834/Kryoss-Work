@@ -21,8 +21,8 @@ const TourTravelHero = () => {
                             <span className="text-sky-800 text-[12px] font-medium tracking-wider uppercase">Explore the World with Ease</span>
                         </div>
 
-                        {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#1E293B]">
+                        {/* Hero H1 */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B]">
                             Your Complete <span className="text-sky-600">Tour & Travel</span> Platform for <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Seamless Adventures</span>
                         </h1>
 

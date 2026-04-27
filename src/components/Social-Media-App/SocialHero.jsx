@@ -82,10 +82,10 @@ const SocialHero = () => {
               </span>
             </motion.div>
 
-            {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
+            {/* Hero H1 */}
             <motion.h1
               variants={itemVariants}
-              className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
             >
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 text-transparent bg-clip-text">
                 Connect, Share,

@@ -21,8 +21,8 @@ const RealEstateHero = () => {
                             <span className="text-emerald-800 text-[12px] font-medium tracking-[0.05em] uppercase">Smart Property Solutions</span>
                         </div>
 
-                        {/* Hero H1 - Mobile: 30px, Tablet/Desktop: 48px, Large Desktop: 60px, weight: 700, line-height: 1.2, letter-spacing: -0.02em */}
-                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-[#1E293B]">
+                        {/* Hero H1 */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B]">
                             The Ultimate <span className="text-emerald-600">Real Estate</span> Platform to Buy, Sell & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-yellow-500">Rent Properties</span>
                         </h1>
 

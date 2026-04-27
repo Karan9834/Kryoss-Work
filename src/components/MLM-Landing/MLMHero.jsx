@@ -17,8 +17,8 @@ const MLMHero = ({ onExplore }) => {
                             <span className="text-blue-800 text-[12px] font-medium tracking-[0.05em] uppercase">Premium MLM Software Solutions</span>
                         </div>
 
-                        {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-[#1E293B]">
+                        {/* H1 */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B]">
                             World-Class <span className="text-blue-600">MLM Software</span> for <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">Unmatched Growth</span>
                         </h1>
 

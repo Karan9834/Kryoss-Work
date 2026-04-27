@@ -103,12 +103,12 @@ const ECommerceHero = () => {
           initial={{ opacity: 0, x: 80, scale: 0.95 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
-          className="md:w-1/2 flex justify-center md:justify-end"
+          className="md:w-1/2 flex justify-center md:justify-end self-end relative"
         >
           <img
             src={hero}
             alt="E-commerce users"
-            className="w-[100%] md:w-[120%] max-w-none h-auto object-contain"
+            className="w-[115%] md:w-[150%] lg:w-[160%] max-w-none h-auto object-contain object-bottom md:translate-x-12 lg:translate-x-20"
             loading="lazy"
           />
         </motion.div>

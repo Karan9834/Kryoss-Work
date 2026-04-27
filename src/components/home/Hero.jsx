@@ -60,7 +60,7 @@ const Hero = () => {
                             </div>
 
                             {/* Heading (H1) */}
-                            <h1 className="text-4xl lg:text-5xl font-semibold text-slate-950 leading-[1.15] tracking-tight mb-6">
+                            <h1 className="text-3xl lg:text-5xl font-bold text-slate-950 leading-[1.15] tracking-tight mb-6">
                                 Building Powerful <br className="hidden sm:block" />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">Digital Solutions</span> <br className="hidden sm:block" />
                                 That <span className="text-orange-500">Drive Success</span>

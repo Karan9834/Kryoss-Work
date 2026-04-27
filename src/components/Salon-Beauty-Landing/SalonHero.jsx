@@ -19,8 +19,8 @@ const SalonHero = () => {
             <span className="bg-gradient-to-r from-rose-600 to-orange-600 bg-clip-text text-transparent text-[12px] font-medium tracking-wider uppercase">Salon Excellence</span>
           </div>
 
-          {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#1A1C2C]">
+          {/* Hero H1 */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1A1C2C]">
             Your Trusted <span className="bg-gradient-to-r from-rose-600 via-orange-500 to-amber-500 bg-clip-text text-transparent">Salon App</span> Development Company
           </h1>
 

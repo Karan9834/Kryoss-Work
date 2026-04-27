@@ -53,42 +53,42 @@ const FoodHero = () => {
             transition={{ duration: 0.6 }}
             className="flex-1 space-y-6 text-center lg:text-left"
           >
-            {/* Badge - Updated: text-xs font-medium tracking-wider uppercase */}
+            {/* Badge */}
             <div className="inline-flex bg-white/70 px-4 py-2 rounded-full shadow">
-              <span className="text-[12px] font-medium tracking-wider uppercase text-orange-600">
+              <span className="text-xs tracking-wider uppercase text-orange-600">
                 FAST DELIVERY • 24/7
               </span>
             </div>
 
-            {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+            {/* Hero H1 */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               <span className="text-orange-600">Craving</span> something <br />
               <span className="text-red-500">delicious</span>? <br />
               Order <span className="text-orange-500">instantly</span>
             </h1>
 
-            {/* Hero Description - Updated: text-base md:text-lg font-normal leading-relaxed */}
-            <p className="text-base md:text-lg font-normal leading-relaxed text-gray-600 max-w-lg">
+            {/* Hero Description */}
+            <p className="text-sm md:text-base font-normal text-gray-600 max-w-lg">
               Discover the best local restaurants and get your favorite meals
               delivered fast & fresh.
             </p>
 
             {/* Tags */}
             <div className="flex gap-3 flex-wrap justify-center lg:justify-start">
-              <span className="bg-white px-3 py-1 rounded-full text-[12px] font-normal tracking-wider uppercase shadow">
+              <span className="bg-white px-3 py-1 rounded-full text-xs font-normal tracking-wider uppercase shadow">
                 30 min delivery
               </span>
-              <span className="bg-white px-3 py-1 rounded-full text-[12px] font-normal tracking-wider uppercase shadow">
+              <span className="bg-white px-3 py-1 rounded-full text-xs font-normal tracking-wider uppercase shadow">
                 1000+ restaurants
               </span>
             </div>
 
-            {/* Hero Button - Updated: text-sm md:text-base font-semibold tracking-wide uppercase */}
+            {/* Hero Button */}
             <div className="flex gap-4 justify-center lg:justify-start">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-orange-500 text-white rounded-full shadow-lg text-sm md:text-base font-semibold tracking-wide uppercase"
+                className="px-6 py-3 bg-orange-500 text-white rounded-full shadow-lg text-sm md:text-base font-semibold"
                 onClick={() => document.getElementById('explore-food')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Explore Now

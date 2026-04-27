@@ -26,16 +26,10 @@ const HeroSection = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="font-bold leading-tight mb-6">
-            <span className="block text-[#19f5a5] text-[32px] md:text-[40px]">
-              Launch Your
-            </span>
-            <span className="block text-white text-[38px] md:text-[46px]">
-              On-Demand Bike Taxi App
-            </span>
-            <span className="block text-white text-[38px] md:text-[46px]">
-              with Ease
-            </span>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+            <span className="text-[#19f5a5]">Launch Your</span> <br />
+            <span className="text-white">On-Demand Bike Taxi App</span> <br />
+            <span className="text-white">with Ease</span>
           </h1>
 
           {/* Description */}

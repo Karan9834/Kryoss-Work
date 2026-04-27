@@ -56,7 +56,7 @@ const NewsManagementHero = () => {
             </div>
 
             {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-            <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-gray-900">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
               Powering the Future of{" "}
               <span className="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-600 text-transparent bg-clip-text relative">
                 News Operations

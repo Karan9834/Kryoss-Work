@@ -4,37 +4,37 @@ import heroImg from '../../assets/grocerylanding-img/grocerylandinghero1.jpg';
 
 const GroceryHero = () => {
     return (
-        <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-gradient-to-br from-[#F0FDF4] via-white to-[#FFF7ED]">
+        <section className="relative min-h-[85vh] flex items-start pt-24 md:pt-32 overflow-hidden bg-gradient-to-br from-[#F0FDF4] via-white to-[#FFF7ED]">
             {/* Background Decorative Elements */}
             <div className="absolute top-0 right-0 w-1/2 h-full bg-[#F0FDF4] -skew-x-12 translate-x-32 z-0 hidden lg:block"></div>
             <div className="absolute top-1/2 left-0 w-72 h-72 bg-orange-100 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 opacity-60"></div>
 
-            <div className="max-w-7xl mx-auto px-6 relative z-10 w-full pt-10 lg:pt-0">
+            <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
 
                     {/* Left Content */}
                     <div className="space-y-8 animate-fadeInLeft">
-                        {/* Hero Badge - Updated: text-xs font-medium tracking-wider uppercase */}
+                        {/* Hero Badge */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 rounded-full border border-emerald-100">
                             <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-                            <span className="text-emerald-700 text-[12px] font-medium tracking-wider uppercase">Freshness Guaranteed</span>
+                            <span className="text-emerald-700 text-xs tracking-wider">Freshness Guaranteed</span>
                         </div>
 
-                        {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#1A1C2C]">
+                        {/* Hero H1 */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1A1C2C]">
                             Your Daily <span className="text-emerald-600">Freshness</span>, Delivered in <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">Minutes</span>
                         </h1>
 
-                        {/* Hero Description - Updated: text-base md:text-lg font-normal leading-relaxed */}
-                        <p className="text-base md:text-lg font-normal leading-relaxed text-[#4A4B5E] max-w-xl">
+                        {/* Hero Description */}
+                        <p className="text-sm md:text-base font-normal text-[#4A4B5E] max-w-xl">
                             Skip the queues and let us bring the best of the market to your doorstep. Hyper-local, hyper-fresh, and exceptionally fast.
                         </p>
 
                         <div className="flex flex-wrap gap-4 pt-4">
-                            {/* Hero Button - Updated: text-sm md:text-base font-semibold tracking-wide uppercase */}
+                            {/* Hero Button */}
                             <button
                                 onClick={() => document.getElementById('grocery-products')?.scrollIntoView({ behavior: 'smooth' })}
-                                className="px-10 py-4 bg-gradient-to-r from-emerald-600 to-teal-500 text-white font-semibold rounded-full shadow-xl shadow-emerald-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group text-sm md:text-base tracking-wide uppercase"
+                                className="px-10 py-4 bg-gradient-to-r from-emerald-600 to-teal-500 text-white font-semibold rounded-full shadow-xl shadow-emerald-200 hover:scale-105 transition-all duration-300 flex items-center gap-2 group text-sm md:text-base"
                             >
                                 Explore Our Products
                                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

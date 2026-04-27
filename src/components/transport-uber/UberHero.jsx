@@ -42,7 +42,7 @@ const UberHero = () => {
             </div>
 
             {/* Title */}
-            <h1 className="text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] font-semibold text-[#303030] mb-5">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#303030] mb-5">
               Launch an AI-Powered Uber Clone in Five Days
             </h1>
 

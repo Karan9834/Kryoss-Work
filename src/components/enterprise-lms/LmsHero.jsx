@@ -35,7 +35,7 @@ const LmsHero = () => {
                     </div>
 
                     {/* Heading */}
-                    <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
                         <span className="text-[#a78bfa]">Learning Management System</span> Product
                         Development
                     </h1>

@@ -35,7 +35,7 @@ const ErpHero = () => {
                     </div>
 
                     {/* Heading - Updated Typography */}
-                    <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
                         <span className="text-[#3b82f6]">Enterprise Resource Planning</span> Product
                         Development
                     </h1>

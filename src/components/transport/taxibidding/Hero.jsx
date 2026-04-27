@@ -43,7 +43,7 @@ const Hero = () => {
             </h4>
           </div>
 
-          <h1 className="text-3xl md:text-5xl font-bold mb-5">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5">
             <span className="text-lime-400">inDrive</span> Clone Script
           </h1>
 

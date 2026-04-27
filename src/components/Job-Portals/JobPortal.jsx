@@ -26,7 +26,7 @@ const HeroSection = () => {
         {/* ===== LEFT CONTENT ===== */}
         <div>
           {/* Hero H1 - Mobile: 30px, Tablet/Desktop: 48px, Large Desktop: 60px, weight: 700, line-height: 1.2, letter-spacing: -0.02em */}
-          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-6">
             Find Your{" "}
             <span className="text-yellow-300">
               Dream Job

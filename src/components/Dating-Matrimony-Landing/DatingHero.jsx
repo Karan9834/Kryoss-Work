@@ -39,7 +39,7 @@ const DatingHero = () => {
                         </div>
 
                         {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-slate-900">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-slate-900">
                             Where Every <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">Story</span> <br />
                             Begins With <span className="text-rose-500">Love</span>
                         </h1>

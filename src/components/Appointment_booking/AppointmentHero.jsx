@@ -24,7 +24,7 @@ const AppointmentHero = () => {
           </div>
 
           {/* Title */}
-          <h1 className="text-3xl md:text-4xl font-semibold leading-snug mb-5">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5">
             Smart Doctor Appointment App –{" "}
             <span className="text-cyan-400 block mt-2">
               Redefining Patient Care

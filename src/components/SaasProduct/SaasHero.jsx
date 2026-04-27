@@ -103,10 +103,10 @@ const SaaSHero = () => {
           </div>
 
           {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-gray-900">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
             Smart SaaS Solutions <br />
             {/* Highlighted Text - Same typography as H1 with gradient */}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600 font-bold">
               Built for Growth
             </span>
           </h1>

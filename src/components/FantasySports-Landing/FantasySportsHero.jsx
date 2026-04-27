@@ -21,7 +21,7 @@ const FantasySportsHero = ({ onExplore }) => {
                         </div>
 
                         {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-[#1E293B]">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B]">
                             Premier <span className="text-green-600">Fantasy Sports</span> App Development for <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-600">Absolute Winning</span>
                         </h1>
 

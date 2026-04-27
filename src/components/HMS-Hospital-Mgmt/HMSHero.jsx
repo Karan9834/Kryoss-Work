@@ -28,8 +28,8 @@ const HMSHero = () => {
                             <span>Next-Gen Healthcare Solutions</span>
                         </div>
 
-                        {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+                        {/* H1 */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                             Elevate Your <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-cyan-300 to-emerald-200">
                                 Hospital Management

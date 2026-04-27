@@ -21,7 +21,7 @@ const CasinoHero = ({ onExplore }) => {
                         </div>
 
                         {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-[#1E293B]">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B]">
                             World-Class <span className="text-orange-600">Casino Gaming</span> Solutions for <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Unmatched Gameplay</span>
                         </h1>
 

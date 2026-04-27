@@ -22,7 +22,7 @@ const OTTHero = () => {
                             <span className="text-gray-300 text-xs font-bold uppercase tracking-widest leading-none">Ultra HD 4K Ready</span>
                         </div>
 
-                        <h1 className="text-4xl lg:text-5xl font-black text-white leading-tight">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                             Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-red-500 to-orange-500">Streaming Empire</span> Without Limits
                         </h1>
 

@@ -35,7 +35,7 @@ const HandymanHero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
             Handyman App <br />
             <span className="text-yellow-300">Like Uber</span>
           </h1>

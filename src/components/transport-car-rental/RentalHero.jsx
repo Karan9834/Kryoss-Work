@@ -35,7 +35,7 @@ const HeroSection = () => {
           </div>
 
           {/* title */}
-          <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-snug mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
             <span className="text-sky-400">Car Rental App Script</span> – Power
             Your Car Rental Business
           </h1>

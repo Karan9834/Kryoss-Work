@@ -20,8 +20,8 @@ const TaxiHero = () => {
                             <span className="text-yellow-800 text-[12px] font-medium tracking-wider uppercase">Reliable & Fast Rides</span>
                         </div>
 
-                        {/* Hero H1 - Updated: text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight */}
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#1E293B]">
+                        {/* Hero H1 */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B]">
                             Smart <span className="text-yellow-600">Taxi Booking</span> Solutions for Modern <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-orange-500">Mobility</span>
                         </h1>
 

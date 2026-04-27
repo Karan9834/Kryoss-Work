@@ -28,8 +28,8 @@ const POSHero = () => {
                             <span>Premium Retail Experience</span>
                         </div>
 
-                        {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+                        {/* H1 */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                             Smart & Seamless <br />
                             <span className="text-white">POS Billing</span> <br />
                             <span className="text-amber-200">Architecture</span>
