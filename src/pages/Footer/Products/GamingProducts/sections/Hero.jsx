@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import hero from '../../../../../assets/Games-Product/hero.jpg';
+import hero from '../../../../../assets/yyy/Gaming Products.jpg';
 
 const Hero = ({
   title = "Gaming",

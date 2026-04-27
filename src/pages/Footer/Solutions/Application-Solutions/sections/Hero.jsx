@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import hero from "../../../../../assets/Application-Solutions/application.jpeg";
+import hero from "../../../../../assets/yyy/application-solutions.jpg";
 
 const Hero = ({
   title = "Application",
