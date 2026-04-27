@@ -62,7 +62,7 @@ const AboutDelivery = () => {
                         </p>
 
                         <p>
-                            At Kryoss Work, we create powerful Android and iOS apps
+                            At KryossOne, we create powerful Android and iOS apps
                             designed for your business success. No matter what you deliver,
                             groceries, meat, water, or anything else, our on-demand delivery
                             system is built to support your business growth.

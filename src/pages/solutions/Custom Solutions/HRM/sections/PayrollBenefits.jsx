@@ -145,7 +145,7 @@ const PayrollBenefits = () => {
           </h2>
 
           <p className="pb-lead text-[14px] md:text-[16px] font-normal leading-[1.6]">
-            Kryoss Work engineers payroll & benefits systems with employee self-service dashboards.
+            KryossOne engineers payroll & benefits systems with employee self-service dashboards.
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>

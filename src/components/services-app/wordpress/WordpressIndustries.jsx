@@ -42,7 +42,7 @@ const Industries = () => {
                     </h2>
 
                     <p className="text-gray-600 max-w-3xl mx-auto">
-                        No matter what industry your client operates in - we've built for it. Kryoss Work brings deep cross-industry WordPress experience so your agency can confidently take on any project, any niche, anywhere in the world.
+                        No matter what industry your client operates in - we've built for it. KryossOne brings deep cross-industry WordPress experience so your agency can confidently take on any project, any niche, anywhere in the world.
                     </p>
 
                 </div>

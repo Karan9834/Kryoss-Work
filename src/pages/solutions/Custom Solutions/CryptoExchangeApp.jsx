@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-    Coins, Shield, LayoutDashboard, Cloud, Smartphone, Database, CheckCircle, 
-    ArrowRight, Globe, BarChart3, Settings, Users, Server, Lock, RefreshCw, 
+    Coins, Shield, LayoutDashboard, Cloud, Smartphone, Database, CheckCircle,
+    ArrowRight, Globe, BarChart3, Settings, Users, Server, Lock, RefreshCw,
     Zap, Code, FileText, CreditCard
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -102,7 +102,7 @@ const CryptoExchangeApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Crypto & Exchange Solutions | KryossWork</title>
+                <title>Crypto & Exchange Solutions | kryossone</title>
                 <meta name="description" content="Top-notch Cryptocurrency Exchange Development Company providing customizable, secure, and advanced blockchain solutions for trade." />
             </Helmet>
 
@@ -312,9 +312,9 @@ const CryptoExchangeApp = () => {
             <OurWork theme={{ primary: "text-blue-600", accent: "bg-blue-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#eff6ff]", primary: "text-blue-600", iconBg: "bg-blue-100", iconColor: "text-blue-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

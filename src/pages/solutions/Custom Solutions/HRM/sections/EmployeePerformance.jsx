@@ -163,7 +163,7 @@ const EmployeePerformance = () => {
           </h2>
 
           <p className="ep-lead text-[14px] md:text-[16px] font-normal leading-[1.6]">
-            Kryoss Work builds performance management systems with analytics, feedback, and employee insights.
+            KryossOne builds performance management systems with analytics, feedback, and employee insights.
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>

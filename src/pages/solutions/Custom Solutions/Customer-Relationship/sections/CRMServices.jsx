@@ -6,7 +6,7 @@ const CRMServices = () => {
   return (
     <section className="w-full py-24 bg-white px-6 md:px-16">
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Heading */}
         <h2 className="text-[1.875rem] md:text-[2.25rem] text-center text-[30px] md:text-[36px] font-bold leading-[1.2]">
           <span className="text-emerald-600">Custom CRM</span>{" "}
@@ -16,7 +16,7 @@ const CRMServices = () => {
 
         {/* MAIN CONTENT */}
         <div className="mt-16 flex flex-col md:flex-row items-center gap-12 relative">
-          
+
           {/* IMAGE SIDE - Left */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -52,28 +52,28 @@ const CRMServices = () => {
 
             {/* Description */}
             <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              Organizations invest in customer relationship management (CRM) 
-              solutions to streamline their customer-centric processes and 
-              boost profitability in sales and marketing. A well-designed CRM 
-              solution provides employees with everything they need to build, 
+              Organizations invest in customer relationship management (CRM)
+              solutions to streamline their customer-centric processes and
+              boost profitability in sales and marketing. A well-designed CRM
+              solution provides employees with everything they need to build,
               improve, and retain customer relationships.
             </p>
 
             <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              Developing a robust CRM solution is key to business growth. Every 
-              company develops meaningful relationships with customers through 
+              Developing a robust CRM solution is key to business growth. Every
+              company develops meaningful relationships with customers through
               marketing campaigns, customer service, sales initiatives, and more.
             </p>
 
             <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              Companies without an integrated CRM solution risk missing growth 
+              Companies without an integrated CRM solution risk missing growth
               opportunities and failing to maximize business relationships.
             </p>
 
             <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              <span className="font-semibold text-emerald-700">Kryoss Work</span>{" "}
-              delivers complete CRM solutions that log and track customer 
-              interactions, providing a 360° view of your company's relationship 
+              <span className="font-semibold text-emerald-700">KryossOne</span>{" "}
+              delivers complete CRM solutions that log and track customer
+              interactions, providing a 360° view of your company's relationship
               with your customer base.
             </p>
           </motion.div>

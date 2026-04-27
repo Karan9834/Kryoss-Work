@@ -4,12 +4,12 @@ import about from "../../../../assets/hrm/2..jpg"
 const AboutUs = () => {
   return (
     <section className="relative py-20 bg-white overflow-hidden">
-      
+
       {/* Background Elements */}
       <div className="absolute inset-0">
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:48px_48px] opacity-40" />
-        
+
         {/* Soft gradient orbs */}
         <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-100/30 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-purple-100/20 rounded-full blur-3xl" />
@@ -17,17 +17,17 @@ const AboutUs = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* LEFT - IMAGE */}
           <div className="relative">
             {/* Glow behind image */}
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl blur-2xl" />
-            
+
             {/* Main Image Container */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
               <img
                 src={about}
-                alt="About KryossWork Team"
+                alt="About kryossone Team"
                 className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
               {/* Overlay Gradient */}
@@ -61,7 +61,7 @@ const AboutUs = () => {
 
             {/* Description */}
             <p className="text-gray-600 leading-relaxed text-base">
-              KryossWork is a product engineering company specializing in on-demand app
+              kryossone is a product engineering company specializing in on-demand app
               development, white-label solutions, and enterprise transformation.
               We've successfully delivered 250+ projects to clients across 70+ countries,
               helping businesses scale and innovate.

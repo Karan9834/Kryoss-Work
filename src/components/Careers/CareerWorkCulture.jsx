@@ -59,11 +59,11 @@ const CareerWorkCulture = () => {
                     </div>
 
                     <h2 className="text-4xl font-semibold mb-4">
-                        Life at <span className="text-orange-500">Kryoss Work</span>
+                        Life at <span className="text-orange-500">KryossOne</span>
                     </h2>
 
                     <p className="text-gray-600 max-w-3xl mx-auto">
-                        Experience the vibrant work culture at Kryoss Work! From office
+                        Experience the vibrant work culture at KryossOne! From office
                         moments to festival celebrations, our team thrives in a dynamic and
                         joyful environment.
                     </p>

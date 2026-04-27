@@ -96,7 +96,7 @@ const EntertainmentIndustry = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Entertainment & OTT App Development | KryossWork</title>
+                <title>Entertainment & OTT App Development | kryossone</title>
                 <meta name="description" content="We develop custom Streaming and OTT applications which provide rich experiences." />
             </Helmet>
 
@@ -369,9 +369,9 @@ const EntertainmentIndustry = () => {
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-blue-50", primary: "text-blue-500", iconBg: "bg-blue-100", iconColor: "text-blue-500" }} />
             <OurWork theme={{ primary: "text-blue-500", accent: "bg-blue-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

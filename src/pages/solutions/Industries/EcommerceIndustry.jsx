@@ -108,7 +108,7 @@ const EcommerceIndustry = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>E-Commerce Development Services | KryossWork</title>
+                <title>E-Commerce Development Services | kryossone</title>
                 <meta name="description" content="At Kryoss Softech we enable retail businesses to transform digitally and succeed in an ever-changing eCommerce landscape." />
             </Helmet>
 
@@ -161,7 +161,7 @@ const EcommerceIndustry = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -500,9 +500,9 @@ const EcommerceIndustry = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="orange" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

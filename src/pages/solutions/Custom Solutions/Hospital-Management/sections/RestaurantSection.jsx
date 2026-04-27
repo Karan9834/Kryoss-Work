@@ -31,7 +31,7 @@ const HMSSoftwareSection = () => {
           </p>
 
           <p className="text-[0.875rem] md:text-[1rem] text-gray-700 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-            At Kryoss Work, our seasoned development team specializes in building robust healthcare medical software tailored to medical clinics of all sizes. Our solutions empower healthcare providers to efficiently manage patient demographics, coordinate appointments, and maintain <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-semibold">systematic electronic health records</span> for every individual under their care.
+            At KryossOne, our seasoned development team specializes in building robust healthcare medical software tailored to medical clinics of all sizes. Our solutions empower healthcare providers to efficiently manage patient demographics, coordinate appointments, and maintain <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-semibold">systematic electronic health records</span> for every individual under their care.
           </p>
         </div>
       </div>

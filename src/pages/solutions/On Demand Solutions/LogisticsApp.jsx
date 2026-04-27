@@ -104,7 +104,7 @@ const LogisticsApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Logistics App Development | KryossWork</title>
+                <title>Logistics App Development | kryossone</title>
                 <meta name="description" content="Top Logistics mobile app development company for automation of your transport fleet, effective organization of routes and resources." />
             </Helmet>
 
@@ -157,7 +157,7 @@ const LogisticsApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -451,9 +451,9 @@ const LogisticsApp = () => {
             <OurWork theme={{ primary: "text-emerald-600", accent: "bg-emerald-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#ecfdf5]", primary: "text-emerald-600", iconBg: "bg-emerald-100", iconColor: "text-emerald-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

@@ -13,7 +13,7 @@ export default function Team() {
               </p>
               <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 leading-tight mb-6">
                 Meet the Minds Behind{" "}
-                <span className="text-primary italic">KryossWork</span>
+                <span className="text-primary italic">kryossone</span>
               </h2>
               <div className="space-y-4">
                 <p className="text-base text-gray-600 leading-relaxed">
@@ -40,7 +40,7 @@ export default function Team() {
           <div className="rounded-2xl overflow-hidden shadow-xl">
             <img
               src="/whitelabel-assets/assets/images/team.jpg"
-              alt="KryossWork Team"
+              alt="kryossone Team"
               className="w-full h-[420px] object-cover"
               onError={(e) => { if (!e.currentTarget.dataset.error) { e.currentTarget.dataset.error = "true"; e.currentTarget.src = "/placeholder.svg"; } }} />
 

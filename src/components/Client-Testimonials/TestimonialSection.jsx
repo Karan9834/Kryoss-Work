@@ -8,7 +8,7 @@ const testimonials = [
     title: "Food Delivery App Success",
     role: "CEO, Tech Startup",
     image: "https://whitelabelfox.com/assets/images/testimonial/Mr-Medyan.webp",
-    text: "Mr. Medyan from Jordan shares his experience working with Kryoss Work after purchasing our food delivery application. He highlights our quick response time and clear communication throughout the project.",
+    text: "Mr. Medyan from Jordan shares his experience working with KryossOne after purchasing our food delivery application. He highlights our quick response time and clear communication throughout the project.",
     rating: 5,
     cardColor: "from-purple-500 to-purple-600",
     badgeColor: "bg-purple-100 text-purple-700 border-purple-200",
@@ -44,7 +44,7 @@ const testimonials = [
     title: "Gojek Clone Enterprise App",
     role: "Operations Head",
     image: "https://whitelabelfox.com/assets/images/testimonial/jacques-rocca-serra.webp",
-    text: "Smooth and successful experience working with Kryoss Work. The team delivered a feature-rich, multi-service super app on time with complete professionalism.",
+    text: "Smooth and successful experience working with KryossOne. The team delivered a feature-rich, multi-service super app on time with complete professionalism.",
     rating: 5,
     cardColor: "from-orange-500 to-orange-600",
     badgeColor: "bg-orange-100 text-orange-700 border-orange-200",
@@ -105,16 +105,16 @@ const TestimonialCard = ({ testimonial }) => {
   return (
     <div className="w-[380px] flex-shrink-0 mx-4 group">
       <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100 hover:border-slate-200 transform hover:-translate-y-1">
-        
+
         {/* TOP SECTION - Different color per card */}
         <div className={`relative h-32 bg-gradient-to-r ${testimonial.cardColor}`}>
-          
+
           {/* Subtle pattern overlay */}
           <div className="absolute inset-0 opacity-10" style={{
             backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 1px)",
             backgroundSize: "20px 20px"
           }}></div>
-          
+
           {/* Soft gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
@@ -155,7 +155,7 @@ const TestimonialCard = ({ testimonial }) => {
             <p className={`text-xs mt-1 font-medium ${testimonial.badgeColor.split(' ')[0]} ${testimonial.badgeColor.split(' ')[1]}`}>
               {testimonial.role}
             </p>
-            
+
             <div className="mt-3 flex items-center justify-between">
               <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${testimonial.badgeColor}`}>
                 {testimonial.title}
@@ -174,7 +174,7 @@ const TestimonialSection = () => {
 
   return (
     <section className="py-24 bg-gradient-to-br from-slate-50 via-white to-slate-50 overflow-hidden">
-      
+
       {/* Background decorative elements */}
       <div className="relative">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
@@ -192,7 +192,7 @@ const TestimonialSection = () => {
           <span className="w-2 h-2 rounded-full bg-purple-600 animate-pulse"></span>
           Trusted by 500+ Happy Clients Worldwide
         </motion.div>
-        
+
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -211,20 +211,20 @@ const TestimonialSection = () => {
           transition={{ delay: 0.2 }}
           className="text-slate-600 text-lg max-w-2xl mx-auto"
         >
-          Hear from our visionary clients who transformed their business with Kryoss Work.
+          Hear from our visionary clients who transformed their business with KryossOne.
           We don't just build apps; we forge long-term partnerships.
         </motion.p>
       </div>
 
       {/* MARQUEE CONTAINER */}
       <div className="relative">
-        
+
         {/* LEFT FADE */}
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-slate-50 via-slate-50/80 to-transparent z-10 pointer-events-none"></div>
-        
+
         {/* RIGHT FADE */}
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent z-10 pointer-events-none"></div>
-        
+
         {/* FIRST ROW - Left to Right */}
         <div className="flex animate-marquee gap-4 py-6">
           {duplicated.map((t, i) => (

@@ -64,7 +64,7 @@ const WhyUs = () => {
                     </h2>
 
                     <p className="text-gray-600 leading-relaxed">
-                        Partnering with Kryoss Work gives your agency the technical
+                        Partnering with KryossOne gives your agency the technical
                         strength to deliver complex Laravel projects without hiring
                         in-house developers. As a trusted white label laravel development
                         company, we help you scale faster, reduce operational costs, and

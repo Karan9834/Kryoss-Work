@@ -104,7 +104,7 @@ export const navigationData = {
             { label: "About Us", href: "/company/about" },
             { label: "Contact Us", href: "/company/contact" },
             { label: "Client Testimonial", href: "/company/testimonials" },
-            { label: "Life @ KryossWork", href: "/company/life-at-kryosswork" },
+            { label: "Life @ kryossone", href: "/company/life-at-kryossone" },
             // { label: "Our Team", href: "/company/team" },
             { label: "Careers", href: "/company/careers" },
             { label: "User Rights & Policies", href: "/company/policies" },

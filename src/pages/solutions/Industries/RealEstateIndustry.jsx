@@ -196,7 +196,7 @@ const RealEstateIndustry = () => {
   return (
     <div className="w-full bg-white relative font-sans overflow-hidden">
       <Helmet>
-        <title>Real Estate App Development | KryossWork</title>
+        <title>Real Estate App Development | kryossone</title>
         <meta
           name="description"
           content="Innovative Real Estate App Development solutions for agencies, property businesses, and agents."
@@ -377,11 +377,10 @@ const RealEstateIndustry = () => {
                 <button
                   key={key}
                   onClick={() => setActiveTab(key)}
-                  className={`px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${
-                    isActive
+                  className={`px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${isActive
                       ? `bg-gradient-to-r from-orange-600 to-slate-700 text-white shadow-lg shadow-orange-200 scale-105`
                       : `bg-white text-slate-600 hover:text-orange-600 hover:bg-orange-50 border-2 border-orange-200 hover:border-orange-400`
-                  }`}
+                    }`}
                 >
                   {key.toUpperCase()}
                 </button>
@@ -514,21 +513,19 @@ const RealEstateIndustry = () => {
             <div className="flex justify-center gap-4 mt-8 bg-blue-900/30 p-2 rounded-2xl w-max mx-auto border border-blue-800/50 backdrop-blur-sm">
               <button
                 onClick={() => setActiveFeatureTab("Common")}
-                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                  activeFeatureTab === "Common"
+                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Common"
                     ? "bg-orange-500 text-white shadow-lg"
                     : "text-gray-300 hover:text-white"
-                }`}
+                  }`}
               >
                 Core Essentials
               </button>
               <button
                 onClick={() => setActiveFeatureTab("Advance")}
-                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                  activeFeatureTab === "Advance"
+                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Advance"
                     ? "bg-orange-500 text-white shadow-lg"
                     : "text-gray-300 hover:text-white"
-                }`}
+                  }`}
               >
                 Premium Tools
               </button>
@@ -669,9 +666,9 @@ const RealEstateIndustry = () => {
       <OurWork
         theme={{ primary: "text-orange-500", accent: "bg-orange-500" }}
       />
-      <PopularBlogs/>
+      <PopularBlogs />
       <ContactUs id="contact-us" theme="orange" />
-      <TeamMoments/>
+      <TeamMoments />
     </div>
   );
 };

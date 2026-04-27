@@ -67,7 +67,7 @@ const WhyUs = () => {
 
                 {/* HEADING */}
                 <h2 className="text-center text-[32px] md:text-[42px] leading-[44px] md:leading-[56px] font-semibold text-[#2f2f2f] mb-6">
-                    What Makes Kryoss Work the Premier Mobility Engineering Partner?
+                    What Makes KryossOne the Premier Mobility Engineering Partner?
                 </h2>
 
                 {/* SUB TEXT */}

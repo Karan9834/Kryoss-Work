@@ -138,7 +138,7 @@ export default About;
 
 //             <p>
 //               Starting a carpooling business requires a reliable, scalable, and
-//               user-friendly solution. At Kryoss Work, we offer a fully
+//               user-friendly solution. At KryossOne, we offer a fully
 //               customizable carpooling app script designed to meet the specific
 //               needs of your business.
 //             </p>

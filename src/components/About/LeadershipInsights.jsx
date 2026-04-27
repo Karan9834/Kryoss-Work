@@ -17,7 +17,7 @@ const LeadershipInsights = () => {
           </h2>
 
           <p className="text-gray-600 max-w-5xl mx-auto">
-            Our Managing Director & Founder shares the vision behind Kryoss Work—building
+            Our Managing Director & Founder shares the vision behind KryossOne—building
             cutting-edge solutions, fostering team growth, and making a lasting impact on
             businesses and society.
           </p>
@@ -44,12 +44,12 @@ const LeadershipInsights = () => {
             </h3>
 
             <p className=" font-medium mb-4">
-              Managing Director & Founder @ Kryoss Work
+              Managing Director & Founder @ KryossOne
             </p>
 
             {/* Quote */}
             <p className="italic text-gray-700 mb-6">
-              “At Kryoss Work Pvt Ltd, our vision is to be the top remote tech
+              “At KryossOne Pvt Ltd, our vision is to be the top remote tech
               agency for enterprises and startups, delivering innovative software
               solutions with exceptional service.”
             </p>

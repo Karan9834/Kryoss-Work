@@ -16,7 +16,7 @@ const CTA3 = () => {
                         </h2>
 
                         <p className="text-white/90 mb-8 max-w-lg">
-                            Launch your Uber for Tow Trucks app with Kryoss Work!
+                            Launch your Uber for Tow Trucks app with KryossOne!
                             Offer seamless, on-demand roadside assistance with a fully
                             customizable and secure solution designed for efficient business growth.
                         </p>

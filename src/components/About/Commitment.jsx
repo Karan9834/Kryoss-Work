@@ -51,7 +51,7 @@ const Commitment = () => {
           </h2>
 
           <p className="text-gray-600 max-w-md">
-            At Kryoss Work, we are committed to delivering seamless,
+            At KryossOne, we are committed to delivering seamless,
             efficient, and future-ready solutions. Our promises ensure that
             your business stays ahead with reliable technology, expert support,
             and cost-effective solutions.

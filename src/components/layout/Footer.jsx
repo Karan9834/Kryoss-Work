@@ -144,7 +144,7 @@ const Footer = () => {
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
 
             <p className="text-[11px] text-slate-500 text-center md:text-left tracking-wide">
-              © {new Date().getFullYear()} KryossWork Pvt. Ltd. All rights reserved.
+              © {new Date().getFullYear()} kryossone Pvt. Ltd. All rights reserved.
             </p>
 
             <div className="flex gap-6 text-[11px] font-medium">
@@ -180,7 +180,7 @@ const Footer = () => {
         {/* 🔥 BIG BRAND TEXT */}
         <div className="absolute bottom-0 w-full flex justify-center pointer-events-none overflow-hidden select-none">
           <h1 className="text-[15vw] font-black tracking-tighter opacity-[0.03] text-white">
-            KRYOSSWORK
+            kryossone
           </h1>
         </div>
 

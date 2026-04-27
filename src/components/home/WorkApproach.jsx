@@ -10,9 +10,9 @@ const WorkApproach = () => {
       {/* 🔝 Curved Wave at Top */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none z-0">
         <svg className="relative block w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-          <path 
-            fill="url(#wave-gradient-top)" 
-            fillOpacity="0.35" 
+          <path
+            fill="url(#wave-gradient-top)"
+            fillOpacity="0.35"
             d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,138.7C672,139,768,181,864,202.7C960,224,1056,224,1152,208C1248,192,1344,160,1392,144L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           />
           <defs>
@@ -48,7 +48,7 @@ const WorkApproach = () => {
 
           {/* heading - matching About section */}
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-            Why <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">Kryoss Work</span>{" "}
+            Why <span className="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">KryossOne</span>{" "}
             Builds Better Digital Products
           </h2>
 
@@ -74,7 +74,7 @@ const WorkApproach = () => {
                   AI-Driven Project Intelligence
                 </h4>
                 <p className="text-gray-600 text-sm mt-2 leading-relaxed font-normal">
-                  Gain real-time visibility into every stage of your project through smart analytics 
+                  Gain real-time visibility into every stage of your project through smart analytics
                   and AI-driven tracking. This enables faster decision-making and optimized execution.
                 </p>
               </div>
@@ -89,7 +89,7 @@ const WorkApproach = () => {
                   Dedicated Experts Team
                 </h4>
                 <p className="text-gray-600 text-sm mt-2 leading-relaxed font-normal">
-                  Our experienced team adapts quickly to your requirements, ensuring flexibility, 
+                  Our experienced team adapts quickly to your requirements, ensuring flexibility,
                   transparency, and alignment with your business goals.
                 </p>
               </div>
@@ -104,7 +104,7 @@ const WorkApproach = () => {
                   Predictive & Fast Delivery
                 </h4>
                 <p className="text-gray-600 text-sm mt-2 leading-relaxed font-normal">
-                  With smart planning and scalable architecture, we ensure on-time delivery 
+                  With smart planning and scalable architecture, we ensure on-time delivery
                   while maintaining high performance and long-term reliability.
                 </p>
               </div>
@@ -119,16 +119,16 @@ const WorkApproach = () => {
           {/* Decorative wave element around image */}
           <div className="absolute -top-6 -right-6 w-32 h-32 opacity-20">
             <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10,50 Q30,30 50,50 T90,50" stroke="#F97316" strokeWidth="2" fill="none"/>
-              <path d="M10,60 Q30,40 50,60 T90,60" stroke="#F59E0B" strokeWidth="2" fill="none"/>
-              <path d="M10,70 Q30,50 50,70 T90,70" stroke="#F97316" strokeWidth="2" fill="none"/>
+              <path d="M10,50 Q30,30 50,50 T90,50" stroke="#F97316" strokeWidth="2" fill="none" />
+              <path d="M10,60 Q30,40 50,60 T90,60" stroke="#F59E0B" strokeWidth="2" fill="none" />
+              <path d="M10,70 Q30,50 50,70 T90,70" stroke="#F97316" strokeWidth="2" fill="none" />
             </svg>
           </div>
 
           <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
             <img
               src={img}
-              alt="Kryoss Work"
+              alt="KryossOne"
               className="w-full h-[420px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             {/* gradient overlay */}
@@ -145,7 +145,7 @@ const WorkApproach = () => {
           </p>
 
           {/* CTA Button */}
-          <Link to="/company/contact" 
+          <Link to="/company/contact"
             className="mt-6 px-7 py-3.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 inline-flex items-center gap-2 group"
           >
             Request a Quote
@@ -158,14 +158,14 @@ const WorkApproach = () => {
       {/* Decorative floating waves */}
       <div className="absolute left-10 top-1/3 w-20 h-20 opacity-10">
         <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,50 Q25,30 50,50 T100,50" stroke="#F97316" strokeWidth="3" fill="none"/>
+          <path d="M0,50 Q25,30 50,50 T100,50" stroke="#F97316" strokeWidth="3" fill="none" />
         </svg>
       </div>
-      
+
       <div className="absolute right-10 bottom-1/4 w-32 h-32 opacity-10">
         <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,50 Q25,30 50,50 T100,50" stroke="#F59E0B" strokeWidth="3" fill="none"/>
-          <path d="M0,60 Q25,40 50,60 T100,60" stroke="#F97316" strokeWidth="2" fill="none"/>
+          <path d="M0,50 Q25,30 50,50 T100,50" stroke="#F59E0B" strokeWidth="3" fill="none" />
+          <path d="M0,60 Q25,40 50,60 T100,60" stroke="#F97316" strokeWidth="2" fill="none" />
         </svg>
       </div>
     </section>

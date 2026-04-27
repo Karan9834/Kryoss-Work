@@ -45,7 +45,7 @@ const About = () => {
 
               <p>
                 Offer your customers the convenience of booking massage therapy anytime,
-                anywhere with our Uber for Massage app solution. Kryoss Work provides
+                anywhere with our Uber for Massage app solution. KryossOne provides
                 a customizable on-demand massage app that helps scale your spa business
                 effortlessly.
               </p>
@@ -65,7 +65,7 @@ const About = () => {
               </p>
 
               <p>
-                At Kryoss Work, we offer a customizable on-demand Uber for Massage
+                At KryossOne, we offer a customizable on-demand Uber for Massage
                 therapy app solution to help you grow your business with quick
                 deployment and easy customization.
               </p>

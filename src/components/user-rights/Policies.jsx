@@ -3,9 +3,9 @@ import React, { useState } from "react";
 const policies = {
   privacy: {
     title: "Privacy Policy",
-    content: `Privacy Policy – Kryoss Work
+    content: `Privacy Policy – KryossOne
 
-Kryoss Work ("we", "our", "us") is committed to protecting your privacy and safeguarding your personal data. This Privacy Policy explains how we collect, use, and protect your information when you use our website and services.
+KryossOne ("we", "our", "us") is committed to protecting your privacy and safeguarding your personal data. This Privacy Policy explains how we collect, use, and protect your information when you use our website and services.
 
 1. Information We Collect
 We may collect the following types of information:
@@ -45,7 +45,7 @@ For privacy-related queries, contact: support@kryoss.com`
 
   refund: {
     title: "Refund & Cancellation Policy",
-    content: `Refund & Cancellation Policy – Kryoss Work
+    content: `Refund & Cancellation Policy – KryossOne
 
 1. Cancellation Policy
 • Clients may request cancellation before the project or service begins
@@ -74,7 +74,7 @@ For cancellation or refund requests, contact: support@kryoss.com`
 
   terms: {
     title: "Terms & Conditions",
-    content: `Terms & Conditions – Kryoss Work
+    content: `Terms & Conditions – KryossOne
 
 These Terms & Conditions govern your use of our website and services.
 
@@ -92,7 +92,7 @@ By accessing this website, you agree to comply with these terms. If you do not a
 • We reserve the right to suspend services in case of non-payment
 
 4. Intellectual Property
-All content, designs, code, and materials are the property of Kryoss Work and may not be reused without permission.
+All content, designs, code, and materials are the property of KryossOne and may not be reused without permission.
 
 5. Limitation of Liability
 We are not liable for any indirect or consequential damages arising from the use of our services.
@@ -112,12 +112,12 @@ For any queries: support@kryoss.com`
 
   disclaimer: {
     title: "Trademark & Brand Disclaimer",
-    content: `Trademark & Brand Usage Disclaimer – Kryoss Work
+    content: `Trademark & Brand Usage Disclaimer – KryossOne
 
-This disclaimer outlines the permitted use of Kryoss Work’s brand assets.
+This disclaimer outlines the permitted use of KryossOne’s brand assets.
 
 1. Ownership of Trademarks
-All logos, brand names, trademarks, and service marks displayed on this website are the property of Kryoss Work. Unauthorized use is strictly prohibited.
+All logos, brand names, trademarks, and service marks displayed on this website are the property of KryossOne. Unauthorized use is strictly prohibited.
 
 2. Permitted Use
 • Brand assets may be used only with prior written permission
@@ -163,7 +163,7 @@ const Policies = () => {
 
         {/* Heading */}
         <h2 className="text-4xl font-bold text-center mb-4">
-          Kryoss Work <span className="text-orange-400">Policies & Terms</span>
+          KryossOne <span className="text-orange-400">Policies & Terms</span>
         </h2>
 
         {/* Paragraph */}
@@ -184,11 +184,10 @@ const Policies = () => {
                 key={key}
                 onClick={() => setActive(key)}
                 className={`w-full text-left p-4 rounded-xl mb-3 transition 
-                ${
-                  active === key
+                ${active === key
                     ? "bg-orange-400 text-white"
                     : "bg-gray-100 hover:bg-gray-200"
-                }`}
+                  }`}
               >
                 {policies[key].title}
               </button>

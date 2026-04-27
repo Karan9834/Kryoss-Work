@@ -40,11 +40,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-white shadow-lg py-3"
           : "bg-white py-4 border-b border-gray-50"
-      }`}
+        }`}
     >
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex justify-between items-center h-full">
@@ -52,7 +51,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center shrink-0">
             <img
               src={logo}
-              alt="Kryoss Work"
+              alt="KryossOne"
               className="h-7 lg:h-8 w-auto object-contain"
             />
           </Link>
@@ -62,7 +61,7 @@ const Navbar = () => {
             className="hidden lg:flex items-center gap-4 h-full ml-auto mr-16"
             onMouseLeave={handleMenuLeave}
           >
-{/* 
+            {/* 
             <NavItem
               label="Gojek Clone"
               isOpen={activeMenu === "Gojek Clone"}
@@ -116,9 +115,8 @@ const Navbar = () => {
 
             <Link
               to="/blog"
-              className={`px-3 py-2 text-[15.5px] font-semibold transition-colors ${
-                location.pathname.startsWith('/blog') ? 'text-primary' : 'text-gray-800 hover:text-primary'
-              }`}
+              className={`px-3 py-2 text-[15.5px] font-semibold transition-colors ${location.pathname.startsWith('/blog') ? 'text-primary' : 'text-gray-800 hover:text-primary'
+                }`}
             >
               Blog
             </Link>
@@ -150,14 +148,13 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-t border-gray-50 p-6 absolute top-full left-0 right-0 shadow-2xl animate-in slide-in-from-top duration-300 max-h-[calc(100vh-80px)] overflow-y-auto">
           <div className="flex flex-col gap-4">
-            
+
             {/* Products Accordion */}
             <div>
-              <button 
+              <button
                 onClick={() => setMobileExpanded(mobileExpanded === 'products' ? '' : 'products')}
-                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${
-                  location.pathname.startsWith('/products') ? 'text-primary' : 'text-gray-800 hover:text-primary'
-                }`}
+                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${location.pathname.startsWith('/products') ? 'text-primary' : 'text-gray-800 hover:text-primary'
+                  }`}
               >
                 <span>Products</span>
                 <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'products' ? 'rotate-180 text-primary' : ''} ${location.pathname.startsWith('/products') ? 'text-primary' : ''}`} size={20} />
@@ -171,11 +168,10 @@ const Navbar = () => {
 
             {/* Solutions Accordion */}
             <div>
-              <button 
+              <button
                 onClick={() => setMobileExpanded(mobileExpanded === 'solutions' ? '' : 'solutions')}
-                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${
-                  (location.pathname.startsWith('/solutions') || location.pathname.startsWith('/industries')) ? 'text-primary' : 'text-gray-800 hover:text-primary'
-                }`}
+                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${(location.pathname.startsWith('/solutions') || location.pathname.startsWith('/industries')) ? 'text-primary' : 'text-gray-800 hover:text-primary'
+                  }`}
               >
                 <span>Solutions</span>
                 <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'solutions' ? 'rotate-180 text-primary' : ''} ${(location.pathname.startsWith('/solutions') || location.pathname.startsWith('/industries')) ? 'text-primary' : ''}`} size={20} />
@@ -189,11 +185,10 @@ const Navbar = () => {
 
             {/* Works Accordion */}
             <div>
-              <button 
+              <button
                 onClick={() => setMobileExpanded(mobileExpanded === 'works' ? '' : 'works')}
-                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${
-                  location.pathname.startsWith('/works') ? 'text-primary' : 'text-gray-800 hover:text-primary'
-                }`}
+                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${location.pathname.startsWith('/works') ? 'text-primary' : 'text-gray-800 hover:text-primary'
+                  }`}
               >
                 <span>Works</span>
                 <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'works' ? 'rotate-180 text-primary' : ''} ${location.pathname.startsWith('/works') ? 'text-primary' : ''}`} size={20} />
@@ -207,11 +202,10 @@ const Navbar = () => {
 
             {/* Company Accordion */}
             <div>
-              <button 
+              <button
                 onClick={() => setMobileExpanded(mobileExpanded === 'company' ? '' : 'company')}
-                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${
-                  location.pathname.startsWith('/company') ? 'text-primary' : 'text-gray-800 hover:text-primary'
-                }`}
+                className={`w-full flex justify-between items-center text-lg font-bold py-2 transition-colors ${location.pathname.startsWith('/company') ? 'text-primary' : 'text-gray-800 hover:text-primary'
+                  }`}
               >
                 <span>Company</span>
                 <ChevronDown className={`transition-transform duration-200 ${mobileExpanded === 'company' ? 'rotate-180 text-primary' : ''} ${location.pathname.startsWith('/company') ? 'text-primary' : ''}`} size={20} />
@@ -224,9 +218,8 @@ const Navbar = () => {
                       <Link
                         key={idx}
                         to={item.href}
-                        className={`block text-[15px] font-semibold py-1 transition-colors ${
-                          isItemActive ? 'text-primary' : 'text-gray-700 hover:text-primary'
-                        }`}
+                        className={`block text-[15px] font-semibold py-1 transition-colors ${isItemActive ? 'text-primary' : 'text-gray-700 hover:text-primary'
+                          }`}
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {item.label}
@@ -239,9 +232,8 @@ const Navbar = () => {
 
             <Link
               to="/blog"
-              className={`text-lg font-bold py-2 transition-colors ${
-                location.pathname.startsWith('/blog') ? 'text-primary' : 'text-gray-800 hover:text-primary'
-              }`}
+              className={`text-lg font-bold py-2 transition-colors ${location.pathname.startsWith('/blog') ? 'text-primary' : 'text-gray-800 hover:text-primary'
+                }`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog

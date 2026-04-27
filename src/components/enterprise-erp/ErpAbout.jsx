@@ -51,7 +51,7 @@ const ErpAbout = () => {
                         </p>
 
                         <p className="mb-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-                            At Kryoss Work, we specialize in offering scalable,
+                            At KryossOne, we specialize in offering scalable,
                             custom-built ERP solutions for enterprises looking to
                             modernize their infrastructure. Our system offers a
                             seamless experience with powerful administrative controls.

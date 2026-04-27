@@ -102,7 +102,7 @@ const LaundryApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Laundry App Development | KryossWork</title>
+                <title>Laundry App Development | kryossone</title>
                 <meta name="description" content="Expert laundry & Dry cleaning app development company providing custom mobile app services all around the globe." />
             </Helmet>
 
@@ -501,9 +501,9 @@ const LaundryApp = () => {
             {/* Global Components */}
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#f0f9ff]", primary: "text-blue-600", iconBg: "bg-blue-100", iconColor: "text-blue-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

@@ -41,7 +41,7 @@ const About = () => {
                                     The clinical sector represents a primary high-growth territory, where the introduction of virtual medication dispatch frameworks has fundamentally altered operations. Rather than seeking out local dispensaries, individuals can now secure prescriptions effortlessly from their primary residences.
                                 </p>
                                 <p>
-                                    At Kryoss Work, we deliver comprehensive clinical distribution software architectures designed to meet the shifting requirements of modern pharmaceutical enterprises. Our ready-to-deploy medical ecosystem incorporates dedicated user portals, courier interfaces, merchant dashboards, and centralized management consoles.
+                                    At KryossOne, we deliver comprehensive clinical distribution software architectures designed to meet the shifting requirements of modern pharmaceutical enterprises. Our ready-to-deploy medical ecosystem incorporates dedicated user portals, courier interfaces, merchant dashboards, and centralized management consoles.
                                 </p>
                                 <p>
                                     Whether you maintain a physical pharmacy aiming for digital expansion or an industry disruptor launching a broad clinical supply network, our tailored pharmaceutical software architectures facilitate your goals.

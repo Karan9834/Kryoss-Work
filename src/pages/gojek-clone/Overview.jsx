@@ -5,7 +5,7 @@ const GojekOverview = () => {
     return (
         <div className="container mx-auto py-20 px-4">
             <Helmet>
-                <title>Gojek Clone Overview | KryossWork</title>
+                <title>Gojek Clone Overview | kryossone</title>
                 <meta name="description" content="Overview of our Multi-Service App solution." />
             </Helmet>
             <h1 className="text-4xl font-bold mb-6">Gojek Clone Overview</h1>

@@ -98,7 +98,7 @@ const TravelTourismIndustry = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Tour & Travel App Development | KryossWork</title>
+                <title>Tour & Travel App Development | kryossone</title>
                 <meta name="description" content="Improve the profitability of your travel company by engaging more effectively with your customers through a dedicated travel app." />
             </Helmet>
 
@@ -151,7 +151,7 @@ const TravelTourismIndustry = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -488,9 +488,9 @@ const TravelTourismIndustry = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="orange" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

@@ -12,7 +12,7 @@ const ContactPage = () => {
     return (
         // <div>
         //     <Helmet>
-        //         <title>Contact Us | KryossWork</title>
+        //         <title>Contact Us | kryossone</title>
         //     </Helmet>
         //     <div className="py-10">
         //         <ContactSection />
@@ -20,10 +20,10 @@ const ContactPage = () => {
         // </div>
 
         <>
-        <Hero/>
-        <ProcessSection/>
-        <NewsletterSection/>
-       <TeamMoments/>
+            <Hero />
+            <ProcessSection />
+            <NewsletterSection />
+            <TeamMoments />
         </>
     );
 };

@@ -101,7 +101,7 @@ const EWalletApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>E-Wallet App Development | KryossWork</title>
+                <title>E-Wallet App Development | kryossone</title>
                 <meta name="description" content="Leading Digital eWallet App Development Company. We create highly-secured ewallet apps for Android and iOS platforms and wearable devices." />
             </Helmet>
 
@@ -154,7 +154,7 @@ const EWalletApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -454,9 +454,9 @@ const EWalletApp = () => {
             {/* Global Components */}
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#fffbeb]", primary: "text-amber-600", iconBg: "bg-amber-100", iconColor: "text-amber-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

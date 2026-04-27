@@ -283,7 +283,7 @@ const PickSection = () => {
                   Join Our Team
                 </h3>
                 <p className="text-gray-500 text-sm mb-4 leading-relaxed">
-                  Build your career with KryossWork and grow together with us
+                  Build your career with kryossone and grow together with us
                 </p>
                 <div className="flex items-center justify-between">
                   <Link to="/business-growth" className="inline-flex items-center gap-2 text-amber-600 text-sm font-semibold group-hover:gap-3 transition-all duration-300">

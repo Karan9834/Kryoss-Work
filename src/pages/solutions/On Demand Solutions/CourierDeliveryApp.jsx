@@ -17,7 +17,7 @@ import LogisticsCardSection from '../../../components/TransportLogistics-Landing
 import ContactUs from '../../../components/Common/ContactUs';
 import hero from "../../../assets/Courier/hero.png"
 import intro from "../../../assets/Courier/intro.png"
-import tail from "../../../assets/Courier/tail.webp" 
+import tail from "../../../assets/Courier/tail.webp"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
 
@@ -95,7 +95,7 @@ const CourierDeliveryApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Courier Delivery App Development | KryossWork</title>
+                <title>Courier Delivery App Development | kryossone</title>
                 <meta name="description" content="Top Courier Delivery App Development Company to automate parcel delivery with real-time tracking." />
             </Helmet>
 
@@ -148,7 +148,7 @@ const CourierDeliveryApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -436,9 +436,9 @@ const CourierDeliveryApp = () => {
             <OurWork theme={{ primary: "text-purple-600", accent: "bg-purple-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#faf5ff]", primary: "text-purple-600", iconBg: "bg-purple-100", iconColor: "text-purple-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

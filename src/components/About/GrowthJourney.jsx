@@ -5,7 +5,7 @@ const timelineData = [
     year: "2025",
     badge: "Our Success Story",
     title: "Global Leadership",
-    desc: "Established Kryoss Work as a global leader by advancing DevOps-driven, secure, and ready-to-launch white-label platforms across Europe and Asia.",
+    desc: "Established KryossOne as a global leader by advancing DevOps-driven, secure, and ready-to-launch white-label platforms across Europe and Asia.",
     image: "/images/company/companyabout/growth1.png",
   },
   {
@@ -120,7 +120,7 @@ const GrowthJourney = () => {
 
               <div className="pt-2 text-center">
                 <p className="text-gray-800 text-sm font-semibold">
-                  Kryoss Work Pvt. Ltd.
+                  KryossOne Pvt. Ltd.
                 </p>
               </div>
             </div>

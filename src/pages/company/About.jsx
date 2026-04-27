@@ -20,7 +20,7 @@ const AboutPage = () => {
   return (
     // <div>
     //     <Helmet>
-    //         <title>About Us | KryossWork</title>
+    //         <title>About Us | kryossone</title>
     //     </Helmet>
     //     <div className="py-10">
     //         <AboutSection />

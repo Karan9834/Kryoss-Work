@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 //     role: "CEO, DeliverEase",
 //     photo: "/whitelabel-assets/assets/images/testimonials/client1.jpg",
 //     fallback: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=80",
-//     text: "KryossWork transformed our business with a feature-rich delivery app. Their team was professional, responsive, and delivered beyond our expectations. Highly recommended!",
+//     text: "kryossone transformed our business with a feature-rich delivery app. Their team was professional, responsive, and delivered beyond our expectations. Highly recommended!",
 //     video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 //   },
 //   {
@@ -24,7 +24,7 @@ import { Link } from 'react-router-dom';
 //     role: "CTO, HomeHelpr",
 //     photo: "/whitelabel-assets/assets/images/testimonials/client3.jpg",
 //     fallback: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80",
-//     text: "Working with KryossWork was a game changer. They understood our vision and built a handyman marketplace that our customers love. The post-launch support is stellar.",
+//     text: "Working with kryossone was a game changer. They understood our vision and built a handyman marketplace that our customers love. The post-launch support is stellar.",
 //     video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 //   }];
 
@@ -106,7 +106,7 @@ const testimonials = [
     role: "CEO, DeliverEase",
     photo: "/whitelabel-assets/assets/images/testimonials/client1.jpg",
     fallback: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=80",
-    text: "KryossWork transformed our business with a feature-rich delivery app. Their team was professional, responsive, and delivered beyond our expectations. Highly recommended!",
+    text: "kryossone transformed our business with a feature-rich delivery app. Their team was professional, responsive, and delivered beyond our expectations. Highly recommended!",
     video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   },
   {
@@ -122,7 +122,7 @@ const testimonials = [
     role: "CTO, HomeHelpr",
     photo: "/whitelabel-assets/assets/images/testimonials/client3.jpg",
     fallback: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80",
-    text: "Working with KryossWork was a game changer. They understood our vision and built a handyman marketplace that our customers love. The post-launch support is stellar.",
+    text: "Working with kryossone was a game changer. They understood our vision and built a handyman marketplace that our customers love. The post-launch support is stellar.",
     video: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   }
 ];
@@ -204,7 +204,7 @@ export default function Testimonials() {
 
         <div className="text-center mt-10">
           <Link to="/company/testimonials"
-            
+
             className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
           >
             View 20 More Testimonials →

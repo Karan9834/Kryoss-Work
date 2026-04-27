@@ -42,12 +42,12 @@ const DevelopmentProcess = () => {
           </div>
 
           <h2 className="text-3xl md:text-5xl font-semibold mb-6">
-           Our Seamless {" "}
+            Our Seamless {" "}
             <span className="bg-gradient-to-r from-[#921E4B] to-[#4A011D] text-transparent bg-clip-text">Alcohol Delivery App Development Process</span>
           </h2>
 
           <p className="text-gray-600">
-       At Kryoss Work, we make launching your alcohol delivery business fast and easy. Our development process is designed to ensure quick deployment and a smooth experience from start to finish. Here’s how we bring your app to life:
+            At KryossOne, we make launching your alcohol delivery business fast and easy. Our development process is designed to ensure quick deployment and a smooth experience from start to finish. Here’s how we bring your app to life:
           </p>
 
         </div>
@@ -91,7 +91,7 @@ const DevelopmentProcess = () => {
                                 backface-hidden 
                                  items-center justify-center text-center">
 
-                                     <h3 className="text-2xl font-semibold bg-gradient-to-r from-[#921E4B] to-[#4A011D] text-transparent bg-clip-text mb-6">
+                  <h3 className="text-2xl font-semibold bg-gradient-to-r from-[#921E4B] to-[#4A011D] text-transparent bg-clip-text mb-6">
                     {step.title}
                   </h3>
 

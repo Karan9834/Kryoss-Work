@@ -25,7 +25,7 @@ const CTASection = () => {
 
             <p className="text-[15px] md:text-[17px] leading-relaxed mb-8 text-white/90 md:ml-10">
               Start your journey with our fully customizable carpooling app script.
-              Contact Kryoss Work today for a live demo and get started on
+              Contact KryossOne today for a live demo and get started on
               building your brand with our cost-effective, feature-rich solution.
             </p>
 

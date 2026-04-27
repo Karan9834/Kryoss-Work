@@ -109,7 +109,7 @@ const OttAppDevelopment = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>OTT App Development | KryossWork</title>
+                <title>OTT App Development | kryossone</title>
                 <meta name="description" content="Create your own OTT app platform now." />
             </Helmet>
 
@@ -162,7 +162,7 @@ const OttAppDevelopment = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -439,7 +439,7 @@ const OttAppDevelopment = () => {
                                     </div>
                                     <h3 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-900 mb-3">{feature.title}</h3>
                                     <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500">{feature.desc}</p>
-                                    
+
                                     {/* Subtle Watermark-style icon in background */}
                                     <div className="absolute -bottom-4 -right-4 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity">
                                         <feature.icon size={120} />
@@ -533,9 +533,9 @@ const OttAppDevelopment = () => {
             <Testimonial theme="red" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-red-500", iconBg: "bg-red-100", iconColor: "text-red-500" }} />
             <OurWork theme={{ primary: "text-red-500", accent: "bg-red-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="red" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

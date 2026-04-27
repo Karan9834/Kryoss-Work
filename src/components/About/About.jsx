@@ -9,7 +9,7 @@ const About = () => {
         <div className="bg-[#F6E7C9] rounded-[40px] p-6">
           <img
             src="/images/company/companyabout/_About%20Us%20(1).png"
-            alt="Kryoss Work Team"
+            alt="KryossOne Team"
             className="w-full h-auto rounded-[30px] object-cover"
           />
         </div>
@@ -25,28 +25,28 @@ const About = () => {
           {/* Heading */}
           <h2 className="text-4xl font-bold leading-snug mb-6">
             <span className="text-orange-500">
-              Kryoss Work:
+              KryossOne:
             </span>{" "}
             Leading the Way in Next-Generation Digital Innovation
           </h2>
 
           {/* Paragraphs */}
           <p className="text-gray-600 mb-4 leading-relaxed">
-            With 5+ years of experience in digital transformation, Kryoss Work
-            has become a reliable technology partner. We merge creativity and 
-            technical excellence to provide adaptable solutions that meet 
+            With 5+ years of experience in digital transformation, KryossOne
+            has become a reliable technology partner. We merge creativity and
+            technical excellence to provide adaptable solutions that meet
             changing business demands.
           </p>
 
           <p className="text-gray-600 mb-4 leading-relaxed">
-            We assist startups, mid-sized companies, and large enterprises in building 
-            efficient, production-ready platforms. From analyzing unique operational 
-            needs to delivering dependable systems, we help our clients maintain 
+            We assist startups, mid-sized companies, and large enterprises in building
+            efficient, production-ready platforms. From analyzing unique operational
+            needs to delivering dependable systems, we help our clients maintain
             a competitive edge in the international marketplace.
           </p>
 
           <p className="text-gray-600 leading-relaxed">
-            Our skilled team of engineers, creatives, and planners 
+            Our skilled team of engineers, creatives, and planners
             utilizes advanced technologies to deliver streamlined,
             cloud-enabled systems engineered for sustained success.
           </p>

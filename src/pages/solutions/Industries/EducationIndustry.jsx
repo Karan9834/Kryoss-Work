@@ -109,7 +109,7 @@ const EducationIndustry = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Education App Development Services | KryossWork</title>
+                <title>Education App Development Services | kryossone</title>
                 <meta name="description" content="Think beyond traditional learning systems & enter the modern era with our education software development services tailored for Education & E-Learning providers." />
             </Helmet>
 
@@ -162,7 +162,7 @@ const EducationIndustry = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -502,9 +502,9 @@ const EducationIndustry = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="orange" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

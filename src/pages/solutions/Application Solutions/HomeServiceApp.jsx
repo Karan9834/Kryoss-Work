@@ -219,7 +219,7 @@ const HomeServiceApp = () => {
   return (
     <div className="w-full bg-white relative font-sans overflow-hidden">
       <Helmet>
-        <title>On-Demand Home Service App Development | KryossWork</title>
+        <title>On-Demand Home Service App Development | kryossone</title>
         <meta
           name="description"
           content="Launch your own on-demand home services platform like Urban Company with verified professional systems."
@@ -317,54 +317,54 @@ const HomeServiceApp = () => {
       </section>
 
       {/* 2. Intro Section */}
-<section className="py-20 lg:py-32 bg-white relative">
-    <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+      <section className="py-20 lg:py-32 bg-white relative">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="w-full lg:w-1/2 relative flex justify-center"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2 relative flex justify-center"
             >
-                <div className="relative w-full max-w-md mx-auto lg:max-w-full">
-                    <img
-                        src={multi}
-                        alt="Home Service Solution"
-                        className="w-full h-auto object-contain"
-                        onError={(e) => { e.target.src = "/SolAps/homeservice1.png"; }}
-                    />
-                </div>
+              <div className="relative w-full max-w-md mx-auto lg:max-w-full">
+                <img
+                  src={multi}
+                  alt="Home Service Solution"
+                  className="w-full h-auto object-contain"
+                  onError={(e) => { e.target.src = "/SolAps/homeservice1.png"; }}
+                />
+              </div>
             </motion.div>
 
             <div className="w-full lg:w-1/2">
-                <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
-                    Complete multi-panel <span className="text-orange-500">Seamless System</span>
-                </h2>
-                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
-                    Kryoss Softech is a leading one-stop solution that provides impressive features and turnkey solutions using friendly services at affordable prices to give an edge to the competitors.
-                </p>
-                <ul className="space-y-4 mb-8">
-                    {[
-                        "Accelerated Time-to-Market",
-                        "Multi-Platform (iOS, Android, Web)",
-                        "Extensive Dispatcher Features",
-                        "High Performance & Stability"
-                    ].map((item, i) => (
-                        <li key={i} className="flex items-center gap-3">
-                            <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                <CheckCircle className="w-4 h-4 text-orange-600 flex-shrink-0" />
-                            </div>
-                            <span className="text-gray-700 font-medium">{item}</span>
-                        </li>
-                    ))}
-                </ul>
-                <Link to="/company/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-orange-500 transition-all shadow-md">
-                    Request a Consultation
-                </Link>
+              <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
+                Complete multi-panel <span className="text-orange-500">Seamless System</span>
+              </h2>
+              <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
+                Kryoss Softech is a leading one-stop solution that provides impressive features and turnkey solutions using friendly services at affordable prices to give an edge to the competitors.
+              </p>
+              <ul className="space-y-4 mb-8">
+                {[
+                  "Accelerated Time-to-Market",
+                  "Multi-Platform (iOS, Android, Web)",
+                  "Extensive Dispatcher Features",
+                  "High Performance & Stability"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3">
+                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="w-4 h-4 text-orange-600 flex-shrink-0" />
+                    </div>
+                    <span className="text-gray-700 font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link to="/company/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-orange-500 transition-all shadow-md">
+                Request a Consultation
+              </Link>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
       {/* 3. Must Have Features (Tabs Layout) */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-orange-50/40 py-20 px-6">
@@ -397,11 +397,10 @@ const HomeServiceApp = () => {
                 <button
                   key={key}
                   onClick={() => setActiveTab(key)}
-                  className={`px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${
-                    isActive
+                  className={`px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${isActive
                       ? `bg-gradient-to-r from-orange-600 to-slate-700 text-white shadow-lg shadow-orange-200 scale-105`
                       : `bg-white text-slate-600 hover:text-orange-600 hover:bg-orange-50 border-2 border-orange-200 hover:border-orange-400`
-                  }`}
+                    }`}
                 >
                   {key.toUpperCase()}
                 </button>
@@ -534,21 +533,19 @@ const HomeServiceApp = () => {
             <div className="flex justify-center gap-4 mt-8 bg-white p-2 rounded-2xl w-max mx-auto border border-slate-200 shadow-sm backdrop-blur-sm">
               <button
                 onClick={() => setActiveFeatureTab("Common")}
-                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                  activeFeatureTab === "Common"
+                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Common"
                     ? "bg-orange-500 text-white shadow-lg"
                     : "text-slate-600 hover:text-orange-600"
-                }`}
+                  }`}
               >
                 Core Essentials
               </button>
               <button
                 onClick={() => setActiveFeatureTab("Advance")}
-                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                  activeFeatureTab === "Advance"
+                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Advance"
                     ? "bg-orange-500 text-white shadow-lg"
                     : "text-slate-600 hover:text-orange-600"
-                }`}
+                  }`}
               >
                 Premium Tools
               </button>
@@ -701,9 +698,9 @@ const HomeServiceApp = () => {
       <OurWork
         theme={{ primary: "text-orange-500", accent: "bg-orange-500" }}
       />
-      <PopularBlogs/>
+      <PopularBlogs />
       <ContactUs id="contact-us" theme="orange" />
-      <TeamMoments/>
+      <TeamMoments />
     </div>
   );
 };

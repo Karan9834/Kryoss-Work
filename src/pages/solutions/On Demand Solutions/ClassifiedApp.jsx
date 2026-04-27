@@ -98,7 +98,7 @@ const ClassifiedApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Classified App Development | KryossWork</title>
+                <title>Classified App Development | kryossone</title>
                 <meta name="description" content="Top-rated classified portal development company offering scalable and robust custom classified app development solutions." />
             </Helmet>
 
@@ -151,7 +151,7 @@ const ClassifiedApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -446,9 +446,9 @@ const ClassifiedApp = () => {
             <OurWork theme={{ primary: "text-cyan-600", accent: "bg-cyan-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#ecfeff]", primary: "text-cyan-600", iconBg: "bg-cyan-100", iconColor: "text-cyan-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

@@ -172,7 +172,7 @@ const EmployeeManagement = () => {
           </h2>
 
           <p className="em-lead text-[14px] md:text-[16px] font-normal leading-[1.6]">
-            Kryoss Work develops employee management software solutions designed as a centralized database.
+            KryossOne develops employee management software solutions designed as a centralized database.
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>

@@ -96,7 +96,7 @@ const FoodRestaurantIndustry = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Food & Restaurant App Development | KryossWork</title>
+                <title>Food & Restaurant App Development | kryossone</title>
                 <meta name="description" content="Kryoss Softech develops comprehensive high-performance food delivery apps for restaurants." />
             </Helmet>
 
@@ -383,9 +383,9 @@ const FoodRestaurantIndustry = () => {
             <Testimonial theme="red" />
             <Industries theme={{ bg: "bg-red-50", primary: "text-red-500", iconBg: "bg-red-100", iconColor: "text-red-500" }} />
             <OurWork theme={{ primary: "text-red-500", accent: "bg-red-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="red" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

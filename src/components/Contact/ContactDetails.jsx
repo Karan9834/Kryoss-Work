@@ -19,7 +19,7 @@ const ContactDetails = () => {
 
       {/* OUR BASE */}
       <div className="bg-[#0d0d0d] border border-gray-800 rounded-2xl p-6 mb-8 flex items-start gap-4">
-        
+
         <div className="bg-orange-500/10 p-3 rounded-xl">
           <MapPin className="text-orange-500" size={22} />
         </div>
@@ -61,7 +61,7 @@ const ContactDetails = () => {
 
         {/* MAIL */}
         <div className="bg-[#0d0d0d] border border-gray-800 rounded-2xl p-6 flex items-start gap-4">
-          
+
           <div className="bg-orange-500/10 p-3 rounded-xl">
             <Mail className="text-orange-500" size={20} />
           </div>
@@ -72,24 +72,24 @@ const ContactDetails = () => {
             </p>
 
             <a
-              href="mailto:hello@kryosswork.com"
+              href="mailto:hello@kryossone.com"
               className="block text-gray-300 hover:text-orange-400 transition"
             >
-              hello@kryosswork.com
+              hello@kryossone.com
             </a>
 
             <a
-              href="mailto:support@kryosswork.com"
+              href="mailto:support@kryossone.com"
               className="block text-gray-300 hover:text-orange-400 transition"
             >
-              support@kryosswork.com
+              support@kryossone.com
             </a>
           </div>
         </div>
 
         {/* CALL */}
         <div className="bg-[#0d0d0d] border border-gray-800 rounded-2xl p-6 flex items-start gap-4">
-          
+
           <div className="bg-orange-500/10 p-3 rounded-xl">
             <Phone className="text-orange-500" size={20} />
           </div>

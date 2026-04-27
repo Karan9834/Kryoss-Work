@@ -26,7 +26,7 @@ const CareerHeroSection = () => {
                     {/* description */}
                     <p className="text-white/90 max-w-xl mb-8">
                         We’re looking for passionate and talented individuals to be part of
-                        Kryoss Work. Explore our current openings and take the next step
+                        KryossOne. Explore our current openings and take the next step
                         in your career with us!
                     </p>
 

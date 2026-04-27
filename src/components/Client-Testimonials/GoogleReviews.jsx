@@ -9,7 +9,7 @@ const reviews = [
     rating: 4,
     title: "Uber Clone Project Success",
     logo: "https://whitelabelfox.com/assets/images/testimonial/HSI.webp",
-    desc: "I worked with Kryoss Work Pvt. Ltd on a ride-hailing project in Africa. The team is very serious, professional, and always attentive. They take the time to understand the project's needs and are constantly available to provide solutions and move things forward.",
+    desc: "I worked with KryossOne Pvt. Ltd on a ride-hailing project in Africa. The team is very serious, professional, and always attentive. They take the time to understand the project's needs and are constantly available to provide solutions and move things forward.",
   },
   {
     name: "Mr. Stan",
@@ -17,7 +17,7 @@ const reviews = [
     rating: 5,
     title: "Exceptional Partnership",
     logo: "https://whitelabelfox.com/assets/images/testimonial/mr-stan-icon.webp",
-    desc: "Working with Kryoss Work Pvt. Ltd to develop our ride-hailing system has been one of the best decisions we've ever made. From day one, their team went above and beyond to understand our vision, guide us through every step, and deliver a platform that exceeded our expectations.",
+    desc: "Working with KryossOne Pvt. Ltd to develop our ride-hailing system has been one of the best decisions we've ever made. From day one, their team went above and beyond to understand our vision, guide us through every step, and deliver a platform that exceeded our expectations.",
   },
   {
     name: "Mr. Jacques Rocca Serra",
@@ -49,7 +49,7 @@ const reviews = [
     rating: 5,
     title: "Highly Recommended",
     logo: "https://whitelabelfox.com/assets/images/testimonial/Developer-EagleSouq.webp",
-    desc: "Kryoss Work one of the best companies that I dealt with from my location here in the Middle East. Full commitment at the time of project delivery and very fast maintenance for any new requirements.",
+    desc: "KryossOne one of the best companies that I dealt with from my location here in the Middle East. Full commitment at the time of project delivery and very fast maintenance for any new requirements.",
   },
 ];
 
@@ -100,8 +100,8 @@ const GoogleReviews = () => {
               Real feedback from real people. We take our reputation seriously and strive to maintain the highest standards of client satisfaction.
             </motion.p>
           </div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             className="flex items-center gap-6 bg-white p-6 rounded-3xl shadow-sm border border-slate-100"
@@ -180,9 +180,9 @@ const GoogleReviews = () => {
               {/* Genuine Badge - Pushed to bottom */}
               <div className="mt-auto pt-4 border-t border-slate-50 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_Logo.svg" 
-                    alt="Google" 
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_Logo.svg"
+                    alt="Google"
                     className="w-4 h-4"
                   />
                   <span className="text-[10px] uppercase tracking-wider font-bold text-slate-400">Verified Review</span>

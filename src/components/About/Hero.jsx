@@ -42,7 +42,7 @@ const Hero = () => {
         </span>
 
         <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
-          Meet <span className="text-orange-500">Kryoss Work</span>
+          Meet <span className="text-orange-500">KryossOne</span>
         </h1>
 
         <h2 className="text-xl md:text-2xl font-medium text-gray-200 mb-6 max-w-2xl mx-auto">

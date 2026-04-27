@@ -46,7 +46,7 @@ const AboutSection = () => {
                             </p>
 
                             <p>
-                                At Kryoss Work, we understand the growing demand for
+                                At KryossOne, we understand the growing demand for
                                 seamless towing solutions. Our tow truck app like Uber is
                                 designed to help businesses connect stranded users with
                                 professional tow truck drivers instantly.

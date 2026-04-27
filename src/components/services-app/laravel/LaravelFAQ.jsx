@@ -48,7 +48,7 @@ const faqData = [
             "Project timelines depend on complexity. Small projects may take a few weeks while enterprise platforms may take several months."
     },
     {
-        question: "Why choose Kryoss Work as your Laravel development partner?",
+        question: "Why choose KryossOne as your Laravel development partner?",
         answer:
             "We provide experienced developers, NDA protection, scalable architecture, and fast delivery so agencies can confidently serve their clients."
     }

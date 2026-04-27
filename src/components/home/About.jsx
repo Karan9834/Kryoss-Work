@@ -11,18 +11,18 @@ const pills = [
 export default function About() {
   return (
     <section id="about" className="relative py-28 bg-white overflow-hidden">
-      
+
       {/* Premium Background Elements */}
       <div className="absolute inset-0">
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:48px_48px] opacity-40" />
-        
+
         {/* Soft gradient orbs */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-100/30 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-100/20 rounded-full blur-3xl" />
-        
+
         {/* 🔥 TECHNOLOGY NODES & CONNECTING LINES */}
-        
+
         {/* Node cluster 1 - Top right */}
         <div className="absolute top-10 right-10 opacity-40">
           <svg width="120" height="120" viewBox="0 0 120 120">
@@ -37,7 +37,7 @@ export default function About() {
             <line x1="60" y1="60" x2="90" y2="90" stroke="#F59E0B" strokeWidth="0.5" strokeDasharray="3,3" />
           </svg>
         </div>
-        
+
         {/* Node cluster 2 - Bottom left */}
         <div className="absolute bottom-10 left-10 opacity-30">
           <svg width="100" height="100" viewBox="0 0 100 100">
@@ -52,7 +52,7 @@ export default function About() {
             <line x1="50" y1="50" x2="80" y2="20" stroke="#F97316" strokeWidth="0.5" />
           </svg>
         </div>
-        
+
         {/* Node cluster 3 - Middle left */}
         <div className="absolute top-1/3 left-5 opacity-25">
           <svg width="80" height="80" viewBox="0 0 80 80">
@@ -65,7 +65,7 @@ export default function About() {
             <line x1="40" y1="40" x2="65" y2="65" stroke="#F97316" strokeWidth="0.5" strokeDasharray="2,2" />
           </svg>
         </div>
-        
+
         {/* 🔥 DATA POINTS (representing 250+ projects, 70+ countries) */}
         <div className="absolute top-1/4 right-20 opacity-30">
           <div className="flex flex-col gap-1">
@@ -87,20 +87,20 @@ export default function About() {
             </div>
           </div>
         </div>
-        
+
         {/* 🔥 GEOMETRIC POLYGONS */}
         <div className="absolute bottom-1/3 right-10 opacity-15">
           <svg width="60" height="60" viewBox="0 0 100 100">
             <polygon points="50,0 93,25 93,75 50,100 7,75 7,25" fill="none" stroke="#F97316" strokeWidth="1" />
           </svg>
         </div>
-        
+
         <div className="absolute top-1/2 left-1/4 opacity-10">
           <svg width="40" height="40" viewBox="0 0 100 100">
             <polygon points="50,10 90,35 90,65 50,90 10,65 10,35" fill="none" stroke="#F59E0B" strokeWidth="1" />
           </svg>
         </div>
-        
+
         {/* 🔥 CIRCUIT TRACE */}
         <div className="absolute bottom-20 right-32 opacity-20">
           <svg width="150" height="80" viewBox="0 0 150 80">
@@ -111,7 +111,7 @@ export default function About() {
             <circle cx="80" cy="20" r="2" fill="#F59E0B" />
           </svg>
         </div>
-        
+
         {/* 🔥 RANDOM MICRO DOTS */}
         {[...Array(40)].map((_, i) => (
           <div
@@ -124,7 +124,7 @@ export default function About() {
             }}
           />
         ))}
-        
+
         {/* 🔥 CONCENTRIC CIRCLES (Global reach) */}
         <div className="absolute top-1/3 right-1/4 opacity-10">
           <div className="w-24 h-24 rounded-full border border-orange-500" />
@@ -142,7 +142,7 @@ export default function About() {
             <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-full px-4 py-1.5">
               <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
               <span className="text-orange-600 text-xs font-semibold uppercase tracking-widest">
-                About KryossWork
+                About kryossone
               </span>
             </div>
 
@@ -156,7 +156,7 @@ export default function About() {
             <div className="w-16 h-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-full" />
 
             <p className="text-gray-600 leading-relaxed text-base">
-              KryossWork is a product engineering company specializing in on-demand app
+              kryossone is a product engineering company specializing in on-demand app
               development, white-label solutions, and enterprise transformation.
               We've successfully delivered 250+ projects to clients across 70+ countries,
               helping businesses scale and innovate.
@@ -194,13 +194,13 @@ export default function About() {
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl" />
             <div className="absolute -bottom-4 -left-4 w-40 h-40 bg-red-500/10 rounded-full blur-2xl" />
-            
+
             {/* Main image container */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
               <img
                 src={aboutImg}
-                alt="KryossWork Team"
+                alt="kryossone Team"
                 loading="lazy"
                 className="w-full h-[480px] object-cover transition-transform duration-700 group-hover:scale-105"
               />

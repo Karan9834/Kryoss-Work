@@ -5,7 +5,7 @@ const EnterprisePlanningERP = () => {
     return (
         <div className="container mx-auto py-20 px-4">
             <Helmet>
-                <title>Enterprise Planning (ERP) | KryossWork</title>
+                <title>Enterprise Planning (ERP) | kryossone</title>
             </Helmet>
             <h1 className="mb-6 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">Enterprise Planning (ERP)</h1>
             <p className="text-gray-600 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">Placeholder for Enterprise Planning (ERP) solution.</p>

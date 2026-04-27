@@ -41,7 +41,7 @@ const LaundryAbout = () => {
                         <p className="mb-6 leading-relaxed">
                             An on-demand dry cleaning app simplifies laundry services by
                             enabling customers to book and receive doorstep service
-                            effortlessly. Kryoss Work offers a scalable solution with a
+                            effortlessly. KryossOne offers a scalable solution with a
                             user app, provider app, and admin panel to streamline your
                             business. Customize your laundry app with all the essential
                             features to meet your unique requirements.
@@ -56,7 +56,7 @@ const LaundryAbout = () => {
                         </p>
 
                         <p className="mb-6 leading-relaxed">
-                            At Kryoss Work, we specialize in offering scalable ready-made
+                            At KryossOne, we specialize in offering scalable ready-made
                             on-demand laundry app solutions for businesses looking to tap into
                             this growing market. Our Uber-like laundry service app offers a
                             seamless user experience with three essential components.

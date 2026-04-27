@@ -69,7 +69,7 @@ const RentalServicesSection = () => {
 
 
           <p className="text-gray-600">
-            Kryoss Work Car Rental App Script offers versatile
+            KryossOne Car Rental App Script offers versatile
             solutions for various rental services.
           </p>
 

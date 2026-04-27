@@ -6,13 +6,13 @@ import { navigationData } from './navbar.data';
 
 /* ── Icons matched to each Company item ── */
 const ITEM_ICONS = {
-  'About Us':              '🏢',
-  'Contact Us':            '📞',
-  'Client Testimonial':    '⭐',
-  'Life @ KryossWork':     '🌟',
-  'Our Team':              '👥',
-  'Careers':               '💼',
-  'User Rights & Policies':'📜',
+  'About Us': '🏢',
+  'Contact Us': '📞',
+  'Client Testimonial': '⭐',
+  'Life @ kryossone': '🌟',
+  'Our Team': '👥',
+  'Careers': '💼',
+  'User Rights & Policies': '📜',
 };
 
 const COMPANY_CSS = `

@@ -47,7 +47,7 @@ const LaundryDevelopmentProcess = () => {
                         </h2>
 
                         <p className="text-white/80 max-w-3xl mx-auto">
-                            At Kryoss Work, we follow a structured and efficient process
+                            At KryossOne, we follow a structured and efficient process
                             to deliver high-quality on-demand laundry app solutions.
                         </p>
 

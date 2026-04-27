@@ -58,7 +58,7 @@ const SnowAboutUs = () => {
                         </p>
 
                         <p>
-                            At Kryoss Work, we create user-friendly and fully
+                            At KryossOne, we create user-friendly and fully
                             customizable snow removal apps. Our solutions are tailored
                             to make your business unique and highly competitive.
                         </p>

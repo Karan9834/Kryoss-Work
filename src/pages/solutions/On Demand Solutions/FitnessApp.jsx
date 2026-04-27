@@ -103,7 +103,7 @@ const FitnessApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Fitness App Development | KryossWork</title>
+                <title>Fitness App Development | kryossone</title>
                 <meta name="description" content="Top Fitness App Development Company providing robust and scalable solutions for personal trainers, fitness athletes and gyms." />
             </Helmet>
 
@@ -156,7 +156,7 @@ const FitnessApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -447,9 +447,9 @@ const FitnessApp = () => {
             <OurWork theme={{ primary: "text-orange-600", accent: "bg-orange-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#fff7ed]", primary: "text-orange-600", iconBg: "bg-orange-100", iconColor: "text-orange-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

@@ -66,12 +66,12 @@ const AdvantagesSection = () => {
             <h2 className="text-gray-900 mb-4 text-[30px] md:text-[36px] font-bold leading-[1.2]">
               Why Choose{" "}
               <span className="leading-[1.2] bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent text-[30px] md:text-[36px] font-bold leading-[1.2]">
-                Kryoss Work?
+                KryossOne?
               </span>
             </h2>
 
             <p className="text-gray-600 mb-8 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              Kryoss Work provides a set of tools, that enables school administrators to smoothly 
+              KryossOne provides a set of tools, that enables school administrators to smoothly
               run the institution and do so in a way that demonstrates efficiency, cost-savings and ingenuity.
             </p>
 
@@ -82,7 +82,7 @@ const AdvantagesSection = () => {
 
             {advantages.map((item) => (
               <div key={item.number} className="group flex gap-4">
-                
+
                 {/* NUMBER BADGE */}
                 <div className="flex-shrink-0">
                   <div className="w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-cyan-500 text-white text-sm font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300">

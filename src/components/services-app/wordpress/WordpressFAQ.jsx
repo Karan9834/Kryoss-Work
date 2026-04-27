@@ -31,7 +31,7 @@ const faqs = [
         a: "Typical projects take anywhere from a few days to several weeks depending on scope and customization."
     },
     {
-        q: "Can Kryoss Work handle maintenance and support?",
+        q: "Can KryossOne handle maintenance and support?",
         a: "Yes, many white label providers offer ongoing maintenance, security updates, and performance monitoring."
     },
     {
@@ -39,8 +39,8 @@ const faqs = [
         a: "Yes, WooCommerce stores, payment integrations, and custom features are commonly handled under white label partnerships."
     },
     {
-        q: "Why should I choose Kryoss Work as my partner?",
-        a: "Kryoss Work provides experienced developers, secure NDA workflows, fast delivery, and scalable WordPress solutions."
+        q: "Why should I choose KryossOne as my partner?",
+        a: "KryossOne provides experienced developers, secure NDA workflows, fast delivery, and scalable WordPress solutions."
     }
 ];
 

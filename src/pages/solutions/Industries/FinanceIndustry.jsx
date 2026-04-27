@@ -98,7 +98,7 @@ const FinanceIndustry = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>BFSI & Finance App Development | KryossWork</title>
+                <title>BFSI & Finance App Development | kryossone</title>
                 <meta name="description" content="Secure and robust FinTech and BFSI Application development for modern financial institutions." />
             </Helmet>
 
@@ -151,7 +151,7 @@ const FinanceIndustry = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -185,7 +185,7 @@ const FinanceIndustry = () => {
                             viewport={{ once: true }}
                             className="w-full lg:w-1/2 relative"
                         >
-                           
+
                             <img
                                 src={intro}
                                 alt="Finance Solution"
@@ -491,9 +491,9 @@ const FinanceIndustry = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="orange" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

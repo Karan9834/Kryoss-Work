@@ -98,7 +98,7 @@ const ECommerceApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>ECommerce App Development | KryossWork</title>
+                <title>ECommerce App Development | kryossone</title>
                 <meta name="description" content="Launch your eCommerce business with our best single/multi-vendor eCommerce software. Readymade scripts for quick customization." />
             </Helmet>
 
@@ -485,9 +485,9 @@ const ECommerceApp = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="orange" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

@@ -24,8 +24,8 @@ const EmpoweringGrowth = () => {
 
             {/* Paragraph */}
             <p className="text-gray-600 mb-6">
-              At Kryoss Work, we believe in building more than just software — 
-              we build lasting partnerships. Every project begins with understanding 
+              At KryossOne, we believe in building more than just software —
+              we build lasting partnerships. Every project begins with understanding
               your vision, challenges, and goals.
             </p>
 
@@ -68,7 +68,7 @@ const EmpoweringGrowth = () => {
           <div className="flex items-center">
             <img
               src="/images/company/companyabout/OK.png"
-              alt="Team collaboration at Kryoss Work"
+              alt="Team collaboration at KryossOne"
               className="w-full max-h-[630px] object-cover rounded-2xl shadow-lg"
             />
           </div>

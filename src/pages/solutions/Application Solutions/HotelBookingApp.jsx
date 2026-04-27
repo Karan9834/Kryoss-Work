@@ -120,7 +120,7 @@ const HotelBookingApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Hotel Booking App Development | KryossWork</title>
+                <title>Hotel Booking App Development | kryossone</title>
                 <meta name="description" content="Create your own hotel booking app platform now." />
             </Helmet>
 
@@ -213,7 +213,7 @@ const HotelBookingApp = () => {
 
                             <div className="relative w-full aspect-[2048/1365] flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl">
                                 <img
-                            src={multi}
+                                    src={multi}
                                     alt="Taxi Booking Solution"
                                     width="2048"
                                     height="1365"
@@ -457,7 +457,7 @@ const HotelBookingApp = () => {
                                     </div>
                                     <h3 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-900 mb-3">{feature.title}</h3>
                                     <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500">{feature.desc}</p>
-                                    
+
                                     {/* Subtle Watermark-style icon in background */}
                                     <div className="absolute -bottom-4 -right-4 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity">
                                         <feature.icon size={120} />
@@ -553,9 +553,9 @@ const HotelBookingApp = () => {
             <Testimonial theme="cyan" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-cyan-500", iconBg: "bg-cyan-100", iconColor: "text-cyan-500" }} />
             <OurWork theme={{ primary: "text-cyan-500", accent: "bg-cyan-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="cyan" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

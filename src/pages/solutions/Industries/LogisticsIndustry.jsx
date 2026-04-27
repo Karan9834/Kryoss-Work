@@ -98,7 +98,7 @@ const LogisticsIndustry = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Transport & Logistics App Development | KryossWork</title>
+                <title>Transport & Logistics App Development | kryossone</title>
                 <meta name="description" content="Enhance productivity with our comprehensive transport and logistics app development solutions." />
             </Helmet>
 
@@ -151,7 +151,7 @@ const LogisticsIndustry = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -498,9 +498,9 @@ const LogisticsIndustry = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="orange" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

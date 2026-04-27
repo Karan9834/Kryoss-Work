@@ -80,7 +80,7 @@ const CareerWhyUs = () => {
                     {/* Why Us Image */}
                     <img
                         src={whyusimg}
-                        alt="Team culture at Kryoss Work"
+                        alt="Team culture at KryossOne"
                         className="mt-8 w-full max-w-[600px] max-h-[480px] rounded-2xl object-cover shadow-lg"
                     />
 

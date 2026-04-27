@@ -113,7 +113,7 @@ const MedicineDeliveryApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Medicine Delivery App Development | KryossWork</title>
+                <title>Medicine Delivery App Development | kryossone</title>
                 <meta name="description" content="Top Medicine Delivery App Development Company. We create on-demand pharmacy delivery app solutions for pharmacies, e-pharmacy startups and hospitals." />
             </Helmet>
 
@@ -166,7 +166,7 @@ const MedicineDeliveryApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -482,9 +482,9 @@ const MedicineDeliveryApp = () => {
             {/* Global Components */}
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#f0fdf4]", primary: "text-green-600", iconBg: "bg-green-100", iconColor: "text-green-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

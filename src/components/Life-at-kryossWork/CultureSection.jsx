@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 // Import images directly
-import image1 from "../../assets/Life/companylife-at-kryosswork/image1.png";
-import image2 from "../../assets/Life/companylife-at-kryosswork/image2.png";
-import image3 from "../../assets/Life/companylife-at-kryosswork/image3.png";
+import image1 from "../../assets/Life/companylife-at-kryossone/image1.png";
+import image2 from "../../assets/Life/companylife-at-kryossone/image2.png";
+import image3 from "../../assets/Life/companylife-at-kryossone/image3.png";
 
 const CultureSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -41,10 +41,10 @@ const CultureSection = () => {
   };
 
   return (
-    <section 
+    <section
       className="py-14 bg-gradient-to-b from-gray-50 to-white overflow-hidden"
       style={{
-        backgroundImage: "url(https://whitelabelfox.com/assets/images/life-at-kryosswork/life-at-white-label-fox-main-slider-bg.webp)",
+        backgroundImage: "url(https://whitelabelfox.com/assets/images/life-at-kryossone/life-at-white-label-fox-main-slider-bg.webp)",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center"
@@ -76,7 +76,7 @@ const CultureSection = () => {
 
       {/* Full Width Image Slider Section */}
       <div className="relative w-full">
-        
+
         {/* Main Image Container - Reduced Height */}
         <div className="relative w-full">
           <img
@@ -84,10 +84,10 @@ const CultureSection = () => {
             alt={images[activeIndex].alt}
             className="w-full h-[300px] md:h-[350px] lg:h-[380px] object-contain transition-all duration-700 ease-in-out"
           />
-          
+
           {/* Gradient Overlay - Lighter for better visibility */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-          
+
           {/* Navigation Arrows */}
           <button
             onClick={prevImage}
@@ -97,7 +97,7 @@ const CultureSection = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          
+
           <button
             onClick={nextImage}
             className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10"
@@ -106,12 +106,12 @@ const CultureSection = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
-          
+
           {/* Image Counter */}
           <div className="absolute bottom-4 right-4 bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs md:text-sm font-medium z-10">
             {String(activeIndex + 1).padStart(2, '0')} / {String(images.length).padStart(2, '0')}
           </div>
-          
+
           {/* Image Title Overlay */}
           <div className="absolute bottom-8 left-0 right-0 text-center z-10">
             <h3 className="text-lg md:text-xl font-semibold text-white drop-shadow-lg bg-black/40 inline-block px-4 py-1 rounded-full">
@@ -119,18 +119,17 @@ const CultureSection = () => {
             </h3>
           </div>
         </div>
-        
+
         {/* Thumbnail Navigation - Positioned below */}
         <div className="flex justify-center gap-2 md:gap-3 mt-6">
           {images.map((image, index) => (
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
-              className={`relative w-14 h-14 md:w-20 md:h-20 rounded-lg overflow-hidden transition-all duration-300 ${
-                activeIndex === index 
-                  ? "ring-2 ring-orange-500 scale-110 shadow-xl" 
+              className={`relative w-14 h-14 md:w-20 md:h-20 rounded-lg overflow-hidden transition-all duration-300 ${activeIndex === index
+                  ? "ring-2 ring-orange-500 scale-110 shadow-xl"
                   : "opacity-70 hover:opacity-100"
-              }`}
+                }`}
             >
               <img
                 src={image.src}
@@ -149,9 +148,8 @@ const CultureSection = () => {
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                activeIndex === index ? "w-6 bg-orange-500" : "w-1.5 bg-gray-300"
-              }`}
+              className={`h-1.5 rounded-full transition-all duration-300 ${activeIndex === index ? "w-6 bg-orange-500" : "w-1.5 bg-gray-300"
+                }`}
             />
           ))}
         </div>

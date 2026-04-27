@@ -16,13 +16,13 @@ const RestaurantSoftware = () => {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center z-10">
-        
+
         {/* LEFT IMAGE */}
         <div className="relative flex justify-center order-1 md:order-1">
           {/* Decorative corner elements */}
           <div className="absolute -top-3 -left-3 w-16 h-16 border-l-4 border-t-4 border-orange-500 rounded-tl-2xl"></div>
           <div className="absolute -bottom-3 -right-3 w-16 h-16 border-r-4 border-b-4 border-amber-500 rounded-br-2xl"></div>
-          
+
           {/* Glow behind image */}
           <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-amber-500/20 blur-2xl rounded-full"></div>
 
@@ -35,10 +35,10 @@ const RestaurantSoftware = () => {
 
         {/* RIGHT CONTENT */}
         <div className="order-2 md:order-2">
-          {/* Kryoss Work Badge */}
+          {/* KryossOne Badge */}
           <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 text-orange-700 px-3 py-1.5 rounded-full mb-4 text-xs font-semibold tracking-wide">
             <span className="w-1.5 h-1.5 bg-orange-500 rounded-full animate-pulse"></span>
-            Kryoss Work
+            KryossOne
           </div>
 
           {/* Heading */}

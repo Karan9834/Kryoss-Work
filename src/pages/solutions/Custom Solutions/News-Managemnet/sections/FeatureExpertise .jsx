@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import expertiseImage from "../../../../../assets/News-Solution/feature.png"; 
+import expertiseImage from "../../../../../assets/News-Solution/feature.png";
 
 const FeatureExpertise = () => {
   const expertiseFeatures = [
@@ -21,7 +21,7 @@ const FeatureExpertise = () => {
   return (
     <section className="w-full py-24 bg-white px-6 md:px-16">
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -38,7 +38,7 @@ const FeatureExpertise = () => {
 
         {/* Content Layout - Text Left, Image Right */}
         <div className="flex flex-col md:flex-row gap-12 items-center">
-          
+
           {/* LEFT SIDE - Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -48,9 +48,9 @@ const FeatureExpertise = () => {
           >
             {/* Description */}
             <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              <span className="font-semibold text-red-700">Kryoss Work</span> provides a one-stop solution 
-              for all your internet existence necessities. We offer web consultancy, web designing, 
-              and redesigning of accessible websites. As a news portal development company, 
+              <span className="font-semibold text-red-700">KryossOne</span> provides a one-stop solution
+              for all your internet existence necessities. We offer web consultancy, web designing,
+              and redesigning of accessible websites. As a news portal development company,
               we are amazingly cost-effective and deliver our web designing projects on time to our customers.
             </p>
 
@@ -86,7 +86,7 @@ const FeatureExpertise = () => {
               {/* Subtle red glow effect */}
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-red-100 rounded-full blur-3xl opacity-50"></div>
               <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-rose-100 rounded-full blur-3xl opacity-50"></div>
-              
+
               <img
                 src={expertiseImage}
                 alt="News Portal & Mobile App Expertise"

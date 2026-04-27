@@ -122,7 +122,7 @@ const RealEstateApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Real Estate App Development | KryossWork</title>
+                <title>Real Estate App Development | kryossone</title>
                 <meta name="description" content="Create your own Real Estate app platform now." />
             </Helmet>
 
@@ -175,7 +175,7 @@ const RealEstateApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -454,7 +454,7 @@ const RealEstateApp = () => {
                                     </div>
                                     <h3 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-900 mb-3">{feature.title}</h3>
                                     <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500">{feature.desc}</p>
-                                    
+
                                     {/* Subtle Watermark-style icon in background */}
                                     <div className="absolute -bottom-4 -right-4 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity">
                                         <feature.icon size={120} />
@@ -548,9 +548,9 @@ const RealEstateApp = () => {
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-blue-500", iconBg: "bg-blue-100", iconColor: "text-blue-500" }} />
             <OurWork theme={{ primary: "text-blue-500", accent: "bg-blue-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

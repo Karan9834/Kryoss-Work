@@ -96,7 +96,7 @@ const ShortVideoApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Short Video App Development | KryossWork</title>
+                <title>Short Video App Development | kryossone</title>
                 <meta name="description" content="Leading Short Video App Development Company in India. Build TikTok-like apps with advanced features, clean code structure and best performance." />
             </Helmet>
 
@@ -149,7 +149,7 @@ const ShortVideoApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -468,9 +468,9 @@ const ShortVideoApp = () => {
             {/* Global Components */}
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#fff1f2]", primary: "text-rose-600", iconBg: "bg-rose-100", iconColor: "text-rose-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

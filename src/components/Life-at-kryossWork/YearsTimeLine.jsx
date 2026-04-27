@@ -5,12 +5,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 // Images
-import journey1 from "../../assets/Life/companylife-at-kryosswork/journey1.png";
-import journey2 from "../../assets/Life/companylife-at-kryosswork/journey2.png";
-import journey3 from "../../assets/Life/companylife-at-kryosswork/journey3.png";
-import journey4 from "../../assets/Life/companylife-at-kryosswork/journey4.png";
-import journey5 from "../../assets/Life/companylife-at-kryosswork/journey5.png";
-import journey6 from "../../assets/Life/companylife-at-kryosswork/journey6.png";
+import journey1 from "../../assets/Life/companylife-at-kryossone/journey1.png";
+import journey2 from "../../assets/Life/companylife-at-kryossone/journey2.png";
+import journey3 from "../../assets/Life/companylife-at-kryossone/journey3.png";
+import journey4 from "../../assets/Life/companylife-at-kryossone/journey4.png";
+import journey5 from "../../assets/Life/companylife-at-kryossone/journey5.png";
+import journey6 from "../../assets/Life/companylife-at-kryossone/journey6.png";
 
 const years = [
   {
@@ -53,7 +53,7 @@ const years = [
     img: journey6,
     bg: "from-teal-200 to-cyan-200",
     // title: "Foundation & Vision",
-    // description: "The inception of Kryoss Work with a clear mission to innovate and excel.",
+    // description: "The inception of KryossOne with a clear mission to innovate and excel.",
   },
 ];
 

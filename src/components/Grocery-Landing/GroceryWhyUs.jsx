@@ -85,7 +85,7 @@ const GroceryWhyUs = () => {
                             </div>
                             <h3 className="text-[24px] md:text-[36px] font-black italic">Transforming the <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Future of Delivery</span></h3>
                             <p className="text-gray-400 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-                                Join 500+ businesses that have successfully launched their grocery delivery brands with KryossWork.
+                                Join 500+ businesses that have successfully launched their grocery delivery brands with kryossone.
                             </p>
                         </div>
                     </div>

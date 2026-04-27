@@ -32,7 +32,7 @@ const KeyFeaturesOfNewsPortal = () => {
   return (
     <section className="w-full py-24 bg-gradient-to-br from-red-50 via-white to-rose-50 px-6 md:px-16">
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -55,9 +55,9 @@ const KeyFeaturesOfNewsPortal = () => {
           className="text-center mb-12 max-w-3xl mx-auto"
         >
           <p className="text-[0.875rem] md:text-[1rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-            <span className="font-semibold text-red-700">Kryoss Work</span> adores designing; we are highly fervent 
-            and motivated about new designing, as well as own a strong awareness of the customary aspects 
-            of design such as structure and font. We believe in ease, manner and honesty! We don't just 
+            <span className="font-semibold text-red-700">KryossOne</span> adores designing; we are highly fervent
+            and motivated about new designing, as well as own a strong awareness of the customary aspects
+            of design such as structure and font. We believe in ease, manner and honesty! We don't just
             like to make websites look attractive. We believe that designing is all about reason.
           </p>
         </motion.div>
@@ -80,7 +80,7 @@ const KeyFeaturesOfNewsPortal = () => {
                     {feature.title}
                   </h3>
                 </div>
-                
+
                 {/* Description */}
                 <p className="text-[0.875rem] md:text-[0.95rem] text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
                   {feature.description}

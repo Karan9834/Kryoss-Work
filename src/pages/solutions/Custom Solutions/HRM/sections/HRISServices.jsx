@@ -218,7 +218,7 @@ const HRISServices = () => {
         <div style={{ marginBottom: "3rem" }}>
           <div className="badge">
             <div className="badge-dot" />
-            Kryoss Work · HR Technology
+            KryossOne · HR Technology
           </div>
           <h1 className="hero-tag">
             Hire Experienced<br />
@@ -226,7 +226,7 @@ const HRISServices = () => {
           </h1>
           <div className="divider-line" />
           <p className="hero-sub text-[14px] md:text-[16px] font-normal leading-[1.6]">
-            Kryoss Work helps companies build a unique culture, facilitate hiring & onboarding,
+            KryossOne helps companies build a unique culture, facilitate hiring & onboarding,
             prepare compensation packages, and establish practices that empower businesses to thrive.
           </p>
         </div>

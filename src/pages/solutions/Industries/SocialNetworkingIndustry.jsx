@@ -99,7 +99,7 @@ const SocialNetworkingIndustry = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Social Media App Development | KryossWork</title>
+                <title>Social Media App Development | kryossone</title>
                 <meta name="description" content="Launch a white-label social media site with valuable apps and integrations with Kryoss Softech." />
             </Helmet>
 
@@ -511,9 +511,9 @@ const SocialNetworkingIndustry = () => {
             <Testimonial theme="orange" />
             <Industries theme={{ bg: "bg-[#fff3eb]", primary: "text-orange-500", iconBg: "bg-orange-100", iconColor: "text-orange-500" }} />
             <OurWork theme={{ primary: "text-orange-500", accent: "bg-orange-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="orange" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

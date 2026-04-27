@@ -3,8 +3,8 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    q: "What services does KryossWork offer?",
-    a: "KryossWork offers a comprehensive range of services including mobile app development, web development, Data & AI solutions, product engineering, DevOps & cloud services, and white-label clone apps for on-demand businesses."
+    q: "What services does kryossone offer?",
+    a: "kryossone offers a comprehensive range of services including mobile app development, web development, Data & AI solutions, product engineering, DevOps & cloud services, and white-label clone apps for on-demand businesses."
   },
   {
     q: "Can you build a custom mobile app for my business?",
@@ -39,7 +39,7 @@ const faqs = [
     a: "Absolutely. We have extensive experience with enterprise-grade projects involving complex integrations, high-traffic architectures, multi-region deployments, and compliance requirements (HIPAA, GDPR, SOC2)."
   },
   {
-    q: "How do I get started with KryossWork?",
+    q: "How do I get started with kryossone?",
     a: "Getting started is easy! Simply click 'Get a Free Quote' or reach out via our contact form. We'll schedule a free discovery call to understand your requirements and provide a detailed proposal within 48 hours."
   }];
 

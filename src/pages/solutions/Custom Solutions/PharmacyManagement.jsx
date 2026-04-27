@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-    Pill, Shield, PlusCircle, LayoutDashboard, Cloud, ShoppingCart, 
-    Smartphone, PenTool, Database, Search, ArrowRight, Activity, 
+    Pill, Shield, PlusCircle, LayoutDashboard, Cloud, ShoppingCart,
+    Smartphone, PenTool, Database, Search, ArrowRight, Activity,
     CheckCircle, List, FileText, Share2, FileDigit, BarChart3, Settings
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -76,7 +76,7 @@ const PharmacyManagement = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Pharmacy Management System Solution | KryossWork</title>
+                <title>Pharmacy Management System Solution | kryossone</title>
                 <meta name="description" content="Custom-made online pharmacy app development solution. Kryoss Softech provides cost-effective pharmacy software development services." />
             </Helmet>
 
@@ -286,9 +286,9 @@ const PharmacyManagement = () => {
             <OurWork theme={{ primary: "text-green-600", accent: "bg-green-600" }} />
             <Testimonial theme="green" />
             <Industries theme={{ bg: "bg-[#f0fdf4]", primary: "text-green-600", iconBg: "bg-green-100", iconColor: "text-green-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="green" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

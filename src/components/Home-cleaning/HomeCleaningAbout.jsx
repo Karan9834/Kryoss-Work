@@ -39,7 +39,7 @@
 
 //             <p>
 //               Starting a carpooling business requires a reliable, scalable, and
-//               user-friendly solution. At Kryoss Work, we offer a fully
+//               user-friendly solution. At KryossOne, we offer a fully
 //               customizable carpooling app script designed to meet the specific
 //               needs of your business. Our white-label carpooling solution includes
 //               a single app that serves both drivers and passengers, along with
@@ -65,7 +65,7 @@
 //               In addition to top-tier customization, we offer our carpooling app
 //               script at a highly competitive price, giving you access to the
 //               source code at a fraction of the cost of other competitors. With
-//               Kryoss Work, you get the best value for your investment while
+//               KryossOne, you get the best value for your investment while
 //               ensuring the launch of a feature-rich and scalable carpooling platform.
 //             </p>
 
@@ -160,13 +160,13 @@ const HomeCleaningAbout = () => {
                             leading-relaxed">
 
               <p>
-             The on-demand industry is rapidly evolving, and house cleaning services are no exception. With our Uber for House Cleaning App, you can offer a streamlined platform for all types of home cleaning services. No more scheduling hassles—users can easily book cleaners online in just a few taps. Our app is designed to meet the needs of modern households, making it easier for users and cleaners to connect effortlessly.   </p>
+                The on-demand industry is rapidly evolving, and house cleaning services are no exception. With our Uber for House Cleaning App, you can offer a streamlined platform for all types of home cleaning services. No more scheduling hassles—users can easily book cleaners online in just a few taps. Our app is designed to meet the needs of modern households, making it easier for users and cleaners to connect effortlessly.   </p>
 
               <p>
-               At Kryoss Work, we specialize in developing fully customized Uber for House Cleaning App solutions. Our comprehensive platform includes a user app, cleaner app, and a powerful super admin panel. Whether you’re starting a new business or scaling your current operations, our app script is packed with all the essential features to ensure a smooth experience for both users and cleaning professionals.  </p>
+                At KryossOne, we specialize in developing fully customized Uber for House Cleaning App solutions. Our comprehensive platform includes a user app, cleaner app, and a powerful super admin panel. Whether you’re starting a new business or scaling your current operations, our app script is packed with all the essential features to ensure a smooth experience for both users and cleaning professionals.  </p>
 
               <p>
-               What sets our solution apart is its flexibility and branding capabilities. Our app script is entirely white-labeled, allowing you to launch your own Uber for House Cleaning Service App under your brand name. With our expertise, you can kickstart your business with a reliable, fully functional app that bridges the gap between homeowners and cleaners.  </p>
+                What sets our solution apart is its flexibility and branding capabilities. Our app script is entirely white-labeled, allowing you to launch your own Uber for House Cleaning Service App under your brand name. With our expertise, you can kickstart your business with a reliable, fully functional app that bridges the gap between homeowners and cleaners.  </p>
 
             </div>
           </div>

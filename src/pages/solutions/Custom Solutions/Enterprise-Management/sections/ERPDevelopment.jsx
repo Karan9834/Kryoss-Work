@@ -25,13 +25,13 @@ const ERPDevelopment = () => {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center z-10">
-        
+
         {/* LEFT CONTENT */}
         <div className="order-1 md:order-1">
-          {/* Kryoss Work Badge */}
+          {/* KryossOne Badge */}
           <div className="inline-flex items-center gap-2 bg-violet-100 border border-violet-200 text-violet-700 px-3 py-1.5 rounded-full mb-4 text-xs font-semibold tracking-wide">
             <span className="w-1.5 h-1.5 bg-violet-500 rounded-full animate-pulse"></span>
-            Kryoss Work
+            KryossOne
           </div>
 
           {/* Heading */}
@@ -44,17 +44,17 @@ const ERPDevelopment = () => {
 
           {/* Description */}
           <p className="mt-4 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-            ERP software development company to help you align your business goals and resource planning 
-            with cutting-edge technology. Resource planning made effortless with solutions that capture 
-            all information with minimal manual intervention. Our experienced ERP specialists have over 
-            a decade of expertise in empowering businesses to achieve superior performance with the 
+            ERP software development company to help you align your business goals and resource planning
+            with cutting-edge technology. Resource planning made effortless with solutions that capture
+            all information with minimal manual intervention. Our experienced ERP specialists have over
+            a decade of expertise in empowering businesses to achieve superior performance with the
             following services.
           </p>
 
           <p className="mt-3 text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-            Overall, an ERP (Enterprise Resource Planning) provides a business with a centralized and 
-            integrated platform to operate efficiently across its core functions including finance, 
-            accounting, human resources, manufacturing, supply chain management, project management, 
+            Overall, an ERP (Enterprise Resource Planning) provides a business with a centralized and
+            integrated platform to operate efficiently across its core functions including finance,
+            accounting, human resources, manufacturing, supply chain management, project management,
             and CRM (Customer Relationship Management).
           </p>
 
@@ -74,7 +74,7 @@ const ERPDevelopment = () => {
           {/* Decorative corner elements */}
           <div className="absolute -top-3 -right-3 w-16 h-16 border-r-4 border-t-4 border-violet-500 rounded-tr-2xl"></div>
           <div className="absolute -bottom-3 -left-3 w-16 h-16 border-l-4 border-b-4 border-purple-500 rounded-bl-2xl"></div>
-          
+
           {/* Glow behind image */}
           <div className="absolute inset-0 bg-gradient-to-tl from-violet-500/20 to-purple-500/20 blur-2xl rounded-full"></div>
 

@@ -55,7 +55,7 @@ const PestAbout = () => {
             </p>
 
             <p>
-              Kryoss Work provides a customizable Uber for pest control clone
+              KryossOne provides a customizable Uber for pest control clone
               script designed to fit your specific needs. The app is ready to use
               and can be tailored to provide seamless booking, payment, and
               service provider management. We offer solutions for both Android

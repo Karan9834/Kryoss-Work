@@ -54,7 +54,7 @@ export default function Contact() {
                 {[
                   { icon: MessageCircle, text: "WhatsApp", link: "https://wa.me/917016842729" },
                   { icon: Phone, text: "+91 70168 42729", link: "tel:+917016842729" },
-                  { icon: Mail, text: "hello@kryosswork.com", link: "mailto:hello@kryosswork.com" },
+                  { icon: Mail, text: "hello@kryossone.com", link: "mailto:hello@kryossone.com" },
                   { icon: Calendar, text: "Book a call", link: "#" }
                 ].map((item, i) => {
                   const Icon = item.icon;

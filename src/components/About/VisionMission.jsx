@@ -16,7 +16,7 @@ const VisionMission = () => {
           </h2>
 
           <p className="text-gray-600 max-w-2xl mx-auto">
-            At Kryoss Work, we are dedicated to advancing digital
+            At KryossOne, we are dedicated to advancing digital
             transformation through creativity, reliability, and meaningful impact.
             Our principles shape the way we build solutions that matter.
           </p>
@@ -65,7 +65,7 @@ const VisionMission = () => {
               infrastructure to boost performance. Our collaborative team works
               alongside startups, established companies, and industry pioneers
               to convert obstacles into opportunities through practical
-              technology adoption. At Kryoss Work, we are committed to quality,
+              technology adoption. At KryossOne, we are committed to quality,
               client success, and lasting relationships that nurture business
               evolution and fresh thinking.
             </div>

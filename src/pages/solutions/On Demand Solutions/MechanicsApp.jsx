@@ -104,7 +104,7 @@ const MechanicsApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Mechanics App Development | KryossWork</title>
+                <title>Mechanics App Development | kryossone</title>
                 <meta name="description" content="Top Mechanics App Development Company providing innovative on-demand mechanic solutions as per your requirements." />
             </Helmet>
 
@@ -157,7 +157,7 @@ const MechanicsApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -466,8 +466,8 @@ const MechanicsApp = () => {
                                 <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
                                     <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
                                         <div id="product-section">
-                <PlusCircle className="w-5 h-5 text-white" />
-            </div>
+                                            <PlusCircle className="w-5 h-5 text-white" />
+                                        </div>
                                     </div>
                                     <div>
                                         <p className="font-bold text-gray-900">Customized Solutions</p>
@@ -511,9 +511,9 @@ const MechanicsApp = () => {
             {/* Global Components */}
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#f0f9ff]", primary: "text-blue-600", iconBg: "bg-blue-100", iconColor: "text-blue-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

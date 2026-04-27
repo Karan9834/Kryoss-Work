@@ -396,7 +396,7 @@ const CannabisDeliveryApp = () => {
                         </p>
 
                         <p className="text-gray-600 text-lg leading-relaxed mb-5">
-                            At Kryoss Work, we offer a cutting-edge weed delivery app that simplifies operations, connects stakeholders, and ensures seamless delivery. With advanced features and an intuitive interface, your business can attract more customers and build loyalty.
+                            At KryossOne, we offer a cutting-edge weed delivery app that simplifies operations, connects stakeholders, and ensures seamless delivery. With advanced features and an intuitive interface, your business can attract more customers and build loyalty.
                         </p>
 
                         <p className="text-gray-600 text-lg leading-relaxed">

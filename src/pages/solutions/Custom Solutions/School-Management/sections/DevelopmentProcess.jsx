@@ -1,4 +1,4 @@
-import processImg from "../../../../../assets/School management/Why choose kryoss work_.jpg";
+import processImg from "../../../../../assets/School management/Why choose KryossOne_.jpg";
 
 const DevelopmentProcess = () => {
   return (

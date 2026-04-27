@@ -19,12 +19,12 @@ const Hero = () => {
 
         {/* Heading */}
         <h2 className="text-4xl font-bold text-center mb-4">
-        <span className="text-orange-400">  User Sitemap  </span>– Quick Access to All
-           Kryoss Work 
+          <span className="text-orange-400">  User Sitemap  </span>– Quick Access to All
+          KryossOne
           On-Demand App Solutions
         </h2>
 
-       
+
 
       </div>
     </section>

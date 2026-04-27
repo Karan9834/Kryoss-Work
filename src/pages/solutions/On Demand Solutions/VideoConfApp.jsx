@@ -239,7 +239,7 @@ const VideoConfApp = () => {
   return (
     <div className="w-full bg-white relative font-sans overflow-hidden">
       <Helmet>
-        <title>Video Conferencing App Development | KryossWork</title>
+        <title>Video Conferencing App Development | kryossone</title>
         <meta
           name="description"
           content="Leading Video Conferencing App Development Company. Make remote work easy and smoother for enterprises, organizations, and students with our custom solutions."
@@ -425,11 +425,10 @@ const VideoConfApp = () => {
                 <button
                   key={key}
                   onClick={() => setActiveTab(key)}
-                  className={`px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${
-                    isActive
+                  className={`px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${isActive
                       ? `bg-gradient-to-r from-indigo-600 to-slate-700 text-white shadow-lg shadow-indigo-200 scale-105`
                       : `bg-white text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 border-2 border-indigo-200 hover:border-indigo-400`
-                  }`}
+                    }`}
                 >
                   {key.toUpperCase()}
                 </button>
@@ -702,9 +701,9 @@ const VideoConfApp = () => {
           iconColor: "text-indigo-600",
         }}
       />
-      <PopularBlogs/>
+      <PopularBlogs />
       <ContactUs id="contact-us" theme="blue" />
-      <TeamMoments/>
+      <TeamMoments />
     </div>
   );
 };

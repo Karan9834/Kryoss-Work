@@ -22,9 +22,9 @@ const AboutUs = () => {
           <div className="flex-1 flex justify-center lg:justify-start">
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="relative rounded-2xl overflow-hidden shadow-xl shadow-indigo-100">
-                <img 
-                  src={aboutImg} 
-                  alt="Job portal development team at work" 
+                <img
+                  src={aboutImg}
+                  alt="Job portal development team at work"
                   className="w-full h-auto object-cover"
                 />
                 {/* Subtle gradient overlay */}
@@ -40,29 +40,29 @@ const AboutUs = () => {
           <div className="flex-1">
             {/* First paragraph */}
             <p className="text-slate-700 mb-5 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              We are a premier <span className="font-semibold text-indigo-600">job portal development company</span> delivering fully responsive and 
-              feature-rich job portal solutions at competitive prices. Our platforms serve as an 
-              essential bridge connecting <span className="font-semibold text-purple-600">job seekers, recruiters, and employers</span> in today's 
+              We are a premier <span className="font-semibold text-indigo-600">job portal development company</span> delivering fully responsive and
+              feature-rich job portal solutions at competitive prices. Our platforms serve as an
+              essential bridge connecting <span className="font-semibold text-purple-600">job seekers, recruiters, and employers</span> in today's
               competitive marketplace.
             </p>
 
             {/* Second paragraph */}
             <p className="text-slate-700 mb-5 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              With our comprehensive job portal development service, job seekers can effortlessly 
-              upload their <span className="font-semibold text-indigo-600">resumes, photographs, signatures, and professional biodata</span>. Simultaneously, 
-              recruiters gain the ability to post job advertisements and manage candidate applications 
-              seamlessly. All these powerful features come integrated into fully customized, 
-              responsive job portals built at <span className="font-semibold text-purple-600">affordable price points</span>. Simply reach out to us, and 
+              With our comprehensive job portal development service, job seekers can effortlessly
+              upload their <span className="font-semibold text-indigo-600">resumes, photographs, signatures, and professional biodata</span>. Simultaneously,
+              recruiters gain the ability to post job advertisements and manage candidate applications
+              seamlessly. All these powerful features come integrated into fully customized,
+              responsive job portals built at <span className="font-semibold text-purple-600">affordable price points</span>. Simply reach out to us, and
               we'll deliver your tailor-made job portal solution.
             </p>
 
             {/* Third paragraph */}
             <p className="text-slate-700 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              As a trusted leader in job portal development, <span className="font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Kryoss Work</span> offers exceptional solutions 
-              for organizations seeking to develop effective, user-friendly, and hassle-free job 
-              portal websites. Our team of specialized professionals brings deep expertise across 
-              diverse job portal requirements for agencies of all sizes. We engineer job portals that 
-              not only streamline and reward the recruitment process but also significantly reduce 
+              As a trusted leader in job portal development, <span className="font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">KryossOne</span> offers exceptional solutions
+              for organizations seeking to develop effective, user-friendly, and hassle-free job
+              portal websites. Our team of specialized professionals brings deep expertise across
+              diverse job portal requirements for agencies of all sizes. We engineer job portals that
+              not only streamline and reward the recruitment process but also significantly reduce
               the administrative burden on <span className="font-semibold text-indigo-600">management systems of large enterprises</span>.
             </p>
           </div>

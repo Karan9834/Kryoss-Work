@@ -7,9 +7,9 @@ import React from "react";
  * @param {string} spanClassName - Optional Tailwind classes for the accent span text.
  * @param {string} accentText - Optional custom accent text (defaults to 'Moments That Matter').
  */
-const TeamMoments = ({ 
-  spanClassName = "text-orange-500", 
-  accentText = "Moments That Matter" 
+const TeamMoments = ({
+  spanClassName = "text-orange-500",
+  accentText = "Moments That Matter"
 }) => {
   return (
     <section className="py-16 bg-gray-50">
@@ -25,7 +25,7 @@ const TeamMoments = ({
         <div className="flex justify-center transition-all duration-500">
           <img
             src="/images/company/Inside -our-team.png"
-            alt="Inside KryossWork Team"
+            alt="Inside kryossone Team"
             className="w-full max-w-8xl rounded-[32px] shadow-2xl"
           />
         </div>

@@ -94,7 +94,7 @@ const NewsMediaIndustry = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>News & Media App Development | KryossWork</title>
+                <title>News & Media App Development | kryossone</title>
                 <meta name="description" content="We specialize in digital press application delivery creating engaging spaces for large editorial companies." />
             </Helmet>
 
@@ -386,9 +386,9 @@ const NewsMediaIndustry = () => {
             <Testimonial theme="gray" />
             <Industries theme={{ bg: "bg-gray-50", primary: "text-gray-500", iconBg: "bg-gray-100", iconColor: "text-gray-500" }} />
             <OurWork theme={{ primary: "text-gray-500", accent: "bg-gray-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="gray" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

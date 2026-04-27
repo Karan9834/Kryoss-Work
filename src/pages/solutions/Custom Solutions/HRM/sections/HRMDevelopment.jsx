@@ -17,7 +17,7 @@ const HRMDevelopment = () => {
 
         {/* Content with Image on Left */}
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
-          
+
           {/* Left Image */}
           <div className="flex-1 w-full">
             <img
@@ -30,7 +30,7 @@ const HRMDevelopment = () => {
           {/* Right Content */}
           <div className="flex-1 space-y-5">
             <p className="text-slate-700 text-[14px] md:text-[16px] font-normal leading-[1.6]">
-              <span className="font-semibold text-orange-600">Kryoss Work</span> has proven experience in delivering and implementing HR management solutions across diverse industries, offering comprehensive functionality tailored to modern business needs.
+              <span className="font-semibold text-orange-600">KryossOne</span> has proven experience in delivering and implementing HR management solutions across diverse industries, offering comprehensive functionality tailored to modern business needs.
             </p>
 
             <p className="text-slate-700 text-[14px] md:text-[16px] font-normal leading-[1.6]">

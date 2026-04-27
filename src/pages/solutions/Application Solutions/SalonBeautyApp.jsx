@@ -118,7 +118,7 @@ const SalonBeautyApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Salon & Beauty App Development | KryossWork</title>
+                <title>Salon & Beauty App Development | kryossone</title>
                 <meta name="description" content="Create your own beauty and salon app platform now." />
             </Helmet>
 
@@ -171,7 +171,7 @@ const SalonBeautyApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -199,63 +199,63 @@ const SalonBeautyApp = () => {
 
 
             {/* 2. Intro Section */}
-<section className="py-20 lg:py-32 bg-white relative">
-    <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
-            <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="w-full lg:w-1/2 relative"
-            >
-                <div className="relative w-full flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl p-4">
-                    <img
-                        src={intro}
-                        alt="Grocery Delivery Solution"
-                        width="2048"
-                        height="1365"
-                        className="w-full h-auto object-contain rounded-lg"
-                        onError={(e) => { e.target.src = '/SolAps/salonapp.png'; }}
-                    />
-                </div>
-                <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
-                    <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                            <Star className="text-green-600 w-6 h-6" />
+            <section className="py-20 lg:py-32 bg-white relative">
+                <div className="container mx-auto px-4 lg:px-8">
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="w-full lg:w-1/2 relative"
+                        >
+                            <div className="relative w-full flex items-center justify-center bg-gray-100 rounded-2xl shadow-xl p-4">
+                                <img
+                                    src={intro}
+                                    alt="Grocery Delivery Solution"
+                                    width="2048"
+                                    height="1365"
+                                    className="w-full h-auto object-contain rounded-lg"
+                                    onError={(e) => { e.target.src = '/SolAps/salonapp.png'; }}
+                                />
+                            </div>
+                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
+                                <div className="flex items-center gap-4">
+                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                        <Star className="text-green-600 w-6 h-6" />
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        <div className="w-full lg:w-1/2">
+                            <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
+                                Complete multi-panel <span className="text-green-500">Seamless System</span>
+                            </h2>
+                            <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
+                                Kryoss Softech is a leading one-stop solution that provides impressive features and turnkey solutions using friendly services at affordable prices to give an edge to the competitors.
+                            </p>
+                            <ul className="space-y-4 mb-8">
+                                {[
+                                    "Accelerated Time-to-Market",
+                                    "Multi-Platform (iOS, Android, Web)",
+                                    "Extensive Dispatcher Features",
+                                    "High Performance & Stability"
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-3">
+                                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                                            <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                                        </div>
+                                        <span className="text-gray-700 font-medium">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                            <Link to="/company/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-green-500 transition-all shadow-md">
+                                Request a Consultation
+                            </Link>
                         </div>
                     </div>
                 </div>
-            </motion.div>
-
-            <div className="w-full lg:w-1/2">
-                <h2 className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-gray-900 mb-6">
-                    Complete multi-panel <span className="text-green-500">Seamless System</span>
-                </h2>
-                <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-gray-600 mb-6 max-w-lg">
-                    Kryoss Softech is a leading one-stop solution that provides impressive features and turnkey solutions using friendly services at affordable prices to give an edge to the competitors.
-                </p>
-                <ul className="space-y-4 mb-8">
-                    {[
-                        "Accelerated Time-to-Market",
-                        "Multi-Platform (iOS, Android, Web)",
-                        "Extensive Dispatcher Features",
-                        "High Performance & Stability"
-                    ].map((item, i) => (
-                        <li key={i} className="flex items-center gap-3">
-                            <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-                                <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
-                            </div>
-                            <span className="text-gray-700 font-medium">{item}</span>
-                        </li>
-                    ))}
-                </ul>
-                <Link to="/company/contact" className="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-green-500 transition-all shadow-md">
-                    Request a Consultation
-                </Link>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
 
             {/* 3. Must Have Features (Tabs Layout) */}
             <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-orange-50/40 py-20 px-6">
@@ -445,7 +445,7 @@ const SalonBeautyApp = () => {
                                     </div>
                                     <h3 className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-900 mb-3">{feature.title}</h3>
                                     <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500">{feature.desc}</p>
-                                    
+
                                     {/* Subtle Watermark-style icon in background */}
                                     <div className="absolute -bottom-4 -right-4 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity">
                                         <feature.icon size={120} />
@@ -539,9 +539,9 @@ const SalonBeautyApp = () => {
             <Testimonial theme="rose" />
             <Industries theme={{ bg: "bg-slate-50", primary: "text-rose-500", iconBg: "bg-rose-100", iconColor: "text-rose-500" }} />
             <OurWork theme={{ primary: "text-rose-500", accent: "bg-rose-500" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="rose" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

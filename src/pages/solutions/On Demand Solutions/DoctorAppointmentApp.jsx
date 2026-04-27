@@ -103,7 +103,7 @@ const DoctorAppointmentApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Doctor Appointment App | KryossWork</title>
+                <title>Doctor Appointment App | kryossone</title>
                 <meta name="description" content="Top Doctor Appointment App Development Company for healthcare entrepreneurs, doctors, clinics and healthcare professionals." />
             </Helmet>
 
@@ -156,7 +156,7 @@ const DoctorAppointmentApp = () => {
                                     Start Exploring
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                                
+
                             </motion.div>
                         </div>
 
@@ -450,9 +450,9 @@ const DoctorAppointmentApp = () => {
             <OurWork theme={{ primary: "text-blue-600", accent: "bg-blue-600" }} />
             <Testimonial theme="blue" />
             <Industries theme={{ bg: "bg-[#eff6ff]", primary: "text-blue-600", iconBg: "bg-blue-100", iconColor: "text-blue-600" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="blue" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };

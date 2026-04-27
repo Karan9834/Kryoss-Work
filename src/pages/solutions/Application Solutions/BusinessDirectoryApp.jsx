@@ -368,7 +368,7 @@ const BusinessDirectoryApp = () => {
   return (
     <div className="w-full bg-white relative font-sans overflow-hidden">
       <Helmet>
-        <title>Business Directory App Development | KryossWork</title>
+        <title>Business Directory App Development | kryossone</title>
         <meta
           name="description"
           content="Create your own business directory app platform now."
@@ -554,11 +554,10 @@ const BusinessDirectoryApp = () => {
                 <button
                   key={key}
                   onClick={() => setActiveTab(key)}
-                  className={`px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${
-                    isActive
+                  className={`px-5 md:px-7 py-2.5 md:py-3 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${isActive
                       ? `bg-gradient-to-r from-violet-600 to-slate-700 text-white shadow-lg shadow-violet-200 scale-105`
                       : `bg-white text-slate-600 hover:text-violet-600 hover:bg-violet-50 border-2 border-violet-200 hover:border-violet-400`
-                  }`}
+                    }`}
                 >
                   {key.toUpperCase()}
                 </button>
@@ -691,21 +690,19 @@ const BusinessDirectoryApp = () => {
             <div className="flex justify-center gap-4 mt-8 bg-white p-2 rounded-2xl w-max mx-auto border border-slate-200 shadow-sm backdrop-blur-sm">
               <button
                 onClick={() => setActiveFeatureTab("Common")}
-                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                  activeFeatureTab === "Common"
+                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Common"
                     ? "bg-violet-500 text-white shadow-lg"
                     : "text-slate-600 hover:text-violet-600"
-                }`}
+                  }`}
               >
                 Core Essentials
               </button>
               <button
                 onClick={() => setActiveFeatureTab("Advance")}
-                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                  activeFeatureTab === "Advance"
+                className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFeatureTab === "Advance"
                     ? "bg-violet-500 text-white shadow-lg"
                     : "text-slate-600 hover:text-violet-600"
-                }`}
+                  }`}
               >
                 Premium Tools
               </button>
@@ -850,9 +847,9 @@ const BusinessDirectoryApp = () => {
       <OurWork
         theme={{ primary: "text-violet-500", accent: "bg-violet-500" }}
       />
-      <PopularBlogs/>
+      <PopularBlogs />
       <ContactUs id="contact-us" theme="violet" />
-      <TeamMoments/>
+      <TeamMoments />
     </div>
   );
 };

@@ -103,7 +103,7 @@ const CarRentalApp = () => {
     return (
         <div className="w-full bg-white relative font-sans overflow-hidden">
             <Helmet>
-                <title>Car Rental App Development | KryossWork</title>
+                <title>Car Rental App Development | kryossone</title>
                 <meta name="description" content="Leading Car Rental App Development Company develops innovative car rental apps for iOS, Android and web platforms." />
             </Helmet>
 
@@ -518,9 +518,9 @@ const CarRentalApp = () => {
             {/* Global Components */}
             <Testimonial theme="slate" />
             <Industries theme={{ bg: "bg-[#F8FAFC]", primary: "text-slate-900", iconBg: "bg-slate-100", iconColor: "text-slate-900" }} />
-            <PopularBlogs/>
+            <PopularBlogs />
             <ContactUs id="contact-us" theme="slate" />
-            <TeamMoments/>
+            <TeamMoments />
         </div>
     );
 };
