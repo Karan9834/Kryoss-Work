@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 const AboutPage = lazy(() => import('../pages/company/About'));
 const ContactPage = lazy(() => import('../pages/company/Contact'));
 const TestimonialPage = lazy(() => import('../pages/company/Testimonial'));
-const LifeAtkryossonePage = lazy(() => import('../pages/company/LifeArkryossone'));
+const LifeAtkryossonePage = lazy(() => import('../pages/company/LifeArKryossWork'));
 // const TeamPage = lazy(() => import('../pages/company/Team'));
 const PoliciesPage = lazy(() => import('../pages/company/Policies'));
 const SiteMapPage = lazy(() => import('../pages/company/SiteMap'));

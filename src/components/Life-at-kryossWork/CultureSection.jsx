@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 // Import images directly
-import image1 from "../../assets/Life/companylife-at-kryossone/image1.png";
-import image2 from "../../assets/Life/companylife-at-kryossone/image2.png";
-import image3 from "../../assets/Life/companylife-at-kryossone/image3.png";
+import image1 from "../../assets/Life/companylife-at-kryosswork/image1.png";
+import image2 from "../../assets/Life/companylife-at-kryosswork/image2.png";
+import image3 from "../../assets/Life/companylife-at-kryosswork/image3.png";
 
 const CultureSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);

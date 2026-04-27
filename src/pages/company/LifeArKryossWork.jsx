@@ -1,6 +1,6 @@
 import React from "react";
-import CultureSection from "../../components/Life-at-kryossone/CultureSection";
-import YearsTimeline from "../../components/Life-at-kryossone/YearsTimeLine";
+import CultureSection from "../../components/Life-at-kryossWork/CultureSection";
+import YearsTimeline from "../../components/Life-at-kryossWork/YearsTimeLine";
 
 const LifeAtkryossonePage = () => {
   return (
