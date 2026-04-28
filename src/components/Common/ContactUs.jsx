@@ -95,8 +95,28 @@ const ContactUs = ({
   const [formStatus, setFormStatus] = useState({
     submitted: false,
     success: false,
+    error: false,
     message: "",
   });
+
+  const [errors, setErrors] = useState({});
+
+  const validate = () => {
+    let tempErrors = {};
+    if (!formData.name.trim()) tempErrors.name = "Full name is required";
+    if (!formData.email.trim()) {
+      tempErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      tempErrors.email = "Email is invalid";
+    }
+    if (formData.phone.trim() && !/^\d{10,15}$/.test(formData.phone.replace(/[\s\-\+\(\)]/g, ""))) {
+      tempErrors.phone = "Please enter a valid phone number";
+    }
+    if (!formData.message.trim()) tempErrors.message = "Message is required";
+
+    setErrors(tempErrors);
+    return Object.keys(tempErrors).length === 0;
+  };
 
   // Set product name in message when component mounts
   useEffect(() => {
@@ -110,29 +130,48 @@ const ContactUs = ({
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    if (errors[name]) {
+      setErrors((prev) => ({ ...prev, [name]: "" }));
+    }
   };
 
   // Handle form submission (simulated for now)
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!validate()) {
+      setFormStatus({
+        submitted: false,
+        success: false,
+        error: true,
+        message: "Please fix the errors in the form.",
+      });
+      return;
+    }
+
     setFormStatus({
       submitted: true,
-      success: true,
-      message: "Thank you! We'll contact you soon.",
+      success: false,
+      error: false,
+      message: "",
     });
 
     console.log("Form submitted:", formData);
 
     setTimeout(() => {
-      setFormStatus({ submitted: false, success: false, message: "" });
+      setFormStatus({
+        submitted: false,
+        success: true,
+        error: false,
+        message: "Thank you! Your message has been sent successfully.",
+      });
       setFormData({
         name: "",
         email: "",
         phone: "",
         message: `I'm interested in your ${productName} solution. Please provide more details.`,
       });
-    }, 3000);
+    }, 1500);
   };
 
   // Function to generate Google Maps link from address
@@ -381,12 +420,21 @@ const ContactUs = ({
                 </p>
               </div>
 
-              {/* Success Message */}
+              {/* Status Message */}
               {formStatus.success && (
                 <div
-                  className={`mb-4 p-2.5 bg-gradient-to-r ${currentAccentGradient} text-white rounded-lg flex items-center gap-2 text-sm`}
+                  className="mb-4 p-3 bg-green-50 border border-green-200 text-green-700 rounded-lg flex items-center gap-2 text-sm animate-in fade-in slide-in-from-top-2"
                 >
-                  <CheckCircle size={14} />
+                  <CheckCircle size={16} />
+                  <span>{formStatus.message}</span>
+                </div>
+              )}
+
+              {formStatus.error && (
+                <div
+                  className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 rounded-lg flex items-center gap-2 text-sm animate-in fade-in slide-in-from-top-2"
+                >
+                  <AlertCircle size={16} className="text-red-500" />
                   <span>{formStatus.message}</span>
                 </div>
               )}
@@ -403,10 +451,10 @@ const ContactUs = ({
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    required
-                    className={`w-full px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[13px] md:text-[14px]`}
+                    className={`w-full px-3 py-2 rounded-lg border ${errors.name ? 'border-red-500 bg-red-50' : 'border-gray-200'} focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[13px] md:text-[14px]`}
                     placeholder="John Doe"
                   />
+                  {errors.name && <p className="text-red-500 text-[11px] mt-1">{errors.name}</p>}
                 </div>
 
                 {/* Email Field */}
@@ -419,10 +467,10 @@ const ContactUs = ({
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    required
-                    className={`w-full px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[13px] md:text-[14px]`}
+                    className={`w-full px-3 py-2 rounded-lg border ${errors.email ? 'border-red-500 bg-red-50' : 'border-gray-200'} focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[13px] md:text-[14px]`}
                     placeholder="john@example.com"
                   />
+                  {errors.email && <p className="text-red-500 text-[11px] mt-1">{errors.email}</p>}
                 </div>
 
                 {/* Phone Field */}
@@ -435,9 +483,10 @@ const ContactUs = ({
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className={`w-full px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[13px] md:text-[14px]`}
+                    className={`w-full px-3 py-2 rounded-lg border ${errors.phone ? 'border-red-500 bg-red-50' : 'border-gray-200'} focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 text-[13px] md:text-[14px]`}
                     placeholder="+1 (555) 000-0000"
                   />
+                  {errors.phone && <p className="text-red-500 text-[11px] mt-1">{errors.phone}</p>}
                 </div>
 
                 {/* Message Field - Increased textarea height */}
@@ -449,11 +498,11 @@ const ContactUs = ({
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    required
                     rows="5"
-                    className={`w-full px-3 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 resize-none text-[13px] md:text-[14px]`}
+                    className={`w-full px-3 py-2 rounded-lg border ${errors.message ? 'border-red-500 bg-red-50' : 'border-gray-200'} focus:outline-none focus:ring-2 ${colors.focusRing} focus:border-transparent transition-all duration-300 resize-none text-[13px] md:text-[14px]`}
                     placeholder="Tell us about your project..."
                   />
+                  {errors.message && <p className="text-red-500 text-[11px] mt-1">{errors.message}</p>}
                 </div>
 
                 {/* Submit Button - Reduced top margin to close gap */}

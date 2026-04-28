@@ -13,7 +13,7 @@ const WhatIsOnDemand = ({
   badge2Val = "1M+"
 }) => {
   return (
-    <section className="relative w-full bg-gradient-to-br from-cyan-50 via-blue-50 to-white py-20 md:py-28 overflow-hidden">
+    <section className="relative w-full bg-gradient-to-br from-cyan-50 via-blue-50 to-white py-12 md:py-16 overflow-hidden">
 
       {/* Modern diagonal background pattern */}
       <div className="absolute inset-0">
@@ -37,7 +37,7 @@ const WhatIsOnDemand = ({
       {/* Main Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
 
-        <div className="grid md:grid-cols-2 gap-16 lg:gap-20 items-start">
+        <div className="grid md:grid-cols-2 gap-16 lg:gap-20 items-center">
 
           {/* LEFT CONTENT - Modern Layout */}
           <div className="relative">
@@ -84,7 +84,7 @@ const WhatIsOnDemand = ({
           </div>
 
           {/* RIGHT IMAGE - Modern Design */}
-          <div className="relative">
+          <div className="relative pb-12">
 
             {/* Main image container with modern styling */}
             <div className="relative">
@@ -97,10 +97,10 @@ const WhatIsOnDemand = ({
 
                 {/* Image */}
                 <img
-                  src={overview}
-                  alt="Start-up Growth Illustration"
-                  className="relative w-full h-auto"
-                />
+                   src={overview}
+                   alt="Start-up Growth Illustration"
+                   className="relative w-full h-[450px] object-cover"
+                 />
 
               </div>
 
