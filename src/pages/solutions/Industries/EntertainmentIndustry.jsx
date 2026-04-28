@@ -121,13 +121,14 @@ const EntertainmentIndustry = () => {
                                 <span className="text-sm font-semibold text-gray-700">Premium Solution Available</span>
                             </motion.div>
 
+                            {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
                             <motion.h1
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
+                                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900"
                             >
-                                OTT Platform & <br /> <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500">App Development</span>
+                                OTT Platform & <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500">App Development</span>
                             </motion.h1>
 
                             <motion.p
@@ -138,6 +139,19 @@ const EntertainmentIndustry = () => {
                             >
                                 Kryoss Softech develops custom Streaming and OTT applications providing rich, intuitive, and omni-channel experiences to viewers utilizing modern web tech and infrastructure across screens.
                             </motion.p>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.6, duration: 0.8 }}
+                                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                            >
+                                <button className="text-[16px] font-semibold tracking-[0.01em] normal-case group px-8 py-4 bg-gray-900 text-white rounded-full hover:bg-blue-500 transition-all duration-300 flex items-center justify-center gap-2" onClick={() => document.getElementById('product-section')?.scrollIntoView({ behavior: 'smooth' })}>
+                                    Start Exploring
+                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </button>
+
+                            </motion.div>
                         </div>
 
                         <div className="w-full lg:w-[55%] relative flex justify-center">

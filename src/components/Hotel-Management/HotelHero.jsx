@@ -1,5 +1,6 @@
 import React from 'react';
 import heroimg from "../../assets/Hotel-Management/hero.jpg"
+
 const HeroSection = () => {
   return (
     <section className="relative w-full bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950 overflow-hidden">
@@ -15,8 +16,8 @@ const HeroSection = () => {
 
           {/* Left side - Content */}
           <div className="text-center lg:text-left space-y-6">
-            {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-            <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-white">
+            {/* H1 - Updated with responsive text sizes */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-[-0.02em] text-white">
               Streamline Your
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-cyan-400">
                 Hotel Management

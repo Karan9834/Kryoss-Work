@@ -276,14 +276,15 @@ const HealthcareIndustry = () => {
                 </span>
               </motion.div>
 
+              {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
+                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900"
               >
                 Healthcare <br />{" "}
-                <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">
                   App Development
                 </span>
               </motion.h1>
@@ -295,8 +296,8 @@ const HealthcareIndustry = () => {
                 className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto lg:mx-0 mb-6 text-gray-600"
               >
                 The smart solutions to help improve and automate patient
-                services and promote efficient Medical Care. Save patients’ and
-                doctors’ time with modern mobile healthcare apps.
+                services and promote efficient Medical Care. Save patients' and
+                doctors' time with modern mobile healthcare apps.
               </motion.p>
 
               <motion.div
@@ -423,7 +424,7 @@ const HealthcareIndustry = () => {
             </h2>
             <p className="text-[14px] lg:text-[16px] font-normal leading-[1.6] text-slate-500 mt-4 max-w-2xl mx-auto">
               We offer impeccable health app solutions and services from
-              doctor’s appointment to medication tracking and everything in
+              doctor's appointment to medication tracking and everything in
               between.
             </p>
             <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-slate-500 rounded-full mx-auto mt-4"></div>

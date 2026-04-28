@@ -30,16 +30,16 @@ const Hero = () => {
               </span>
             </motion.div>
 
-            {/* Heading - Size: 1.875rem (30px) mobile, 3rem (48px) desktop, Weight: 700 */}
+            {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="text-[1.875rem] md:text-[3rem] font-bold leading-tight"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
             >
               <span className="text-gray-800">Streamline Your</span>
               <br />
-              <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">
                 Hotel Operations
               </span>
             </motion.h1>
@@ -74,18 +74,6 @@ const Hero = () => {
               transition={{ delay: 0.9 }}
               className="flex gap-8 justify-center md:justify-start pt-4 flex-wrap"
             >
-              <div>
-                <div className="text-[1.25rem] font-bold text-gray-800">5K+</div>
-                <div className="text-[0.75rem] font-normal text-gray-500">HOTELS</div>
-              </div>
-              <div>
-                <div className="text-[1.25rem] font-bold text-gray-800">98%</div>
-                <div className="text-[0.75rem] font-normal text-gray-500">SATISFACTION</div>
-              </div>
-              <div>
-                <div className="text-[1.25rem] font-bold text-gray-800">24/7</div>
-                <div className="text-[0.75rem] font-normal text-gray-500">SUPPORT</div>
-              </div>
             </motion.div>
           </motion.div>
 

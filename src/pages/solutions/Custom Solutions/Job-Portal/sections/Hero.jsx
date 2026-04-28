@@ -17,9 +17,10 @@ const Hero = () => {
       <div className="relative w-full max-w-7xl mx-auto">
         {/* LEFT CONTENT */}
         <div className="max-w-xl">
-          <h1 className="text-white text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+          {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Find your{" "}
-            <span className="leading-[1.2] bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+            <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
               dream job
             </span>{" "}
             faster & smarter
@@ -34,13 +35,6 @@ const Hero = () => {
             <button className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:from-indigo-700 hover:to-purple-700 shadow-lg transition text-[16px] font-semibold tracking-[0.01em] normal-case">
               Explore Jobs
             </button>
-          </div>
-
-          {/* Stats */}
-          <div className="mt-6 flex gap-6 text-sm text-slate-300 flex-wrap">
-            <span>✔ 10,000+ Jobs</span>
-            <span>✔ 5,000+ Companies</span>
-            <span>✔ 50K+ Candidates</span>
           </div>
         </div>
       </div>

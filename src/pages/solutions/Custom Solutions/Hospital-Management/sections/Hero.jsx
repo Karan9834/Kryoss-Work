@@ -33,10 +33,10 @@ const Hero = () => {
             Smart Healthcare Platform
           </div>
 
-          {/* Heading */}
-          <h1 className="text-gray-900 mb-6 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+          {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-gray-900 mb-6 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Modern Hospital <br />
-            <span className="leading-[1.2] bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Management System
             </span>
           </h1>

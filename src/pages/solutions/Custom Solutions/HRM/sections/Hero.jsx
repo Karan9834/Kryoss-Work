@@ -30,9 +30,10 @@ const Hero = () => {
 
           {/* LEFT CONTENT */}
           <div>
-            <h1 className="text-white text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+            {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Smart{" "}
-              <span className="leading-[1.2] bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+              <span className="bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
                 HR Management
               </span>{" "}
               for Modern Teams

@@ -3,12 +3,12 @@ import { ArrowRight, Cpu, ShieldCheck, Zap } from 'lucide-react';
 
 const NFTHero = ({ onExplore }) => {
     return (
-        <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-gradient-to-br from-[#F5F3FF] via-white to-[#EDE9FE]">
+        <section className="relative min-h-[70vh] flex items-center py-12 overflow-hidden bg-gradient-to-br from-[#F5F3FF] via-white to-[#EDE9FE]">
             <div className="absolute top-0 right-0 w-1/2 h-full bg-[#EDE9FE] -skew-x-12 translate-x-32 z-0 hidden lg:block opacity-50"></div>
             <div className="absolute top-1/2 left-0 w-72 h-72 bg-violet-200 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 opacity-40"></div>
             <div className="absolute bottom-10 right-20 w-48 h-48 bg-fuchsia-200 rounded-full blur-[80px] opacity-30"></div>
 
-            <div className="max-w-7xl mx-auto px-6 relative z-10 w-full pt-10 lg:pt-0">
+            <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="space-y-8 animate-fadeInLeft">
                         {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
@@ -17,7 +17,7 @@ const NFTHero = ({ onExplore }) => {
                             <span className="text-violet-800 text-[12px] font-medium tracking-[0.05em] uppercase">Premium NFT Marketplace Software</span>
                         </div>
 
-                        {/* H1 */}
+                        {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#1E293B]">
                             World-Class <span className="text-violet-600">NFT Marketplace</span> Solutions for <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-fuchsia-500">Digital Assets</span>
                         </h1>

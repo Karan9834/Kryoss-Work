@@ -32,10 +32,10 @@ const CRMHero = () => {
               </span>
             </div>
 
-            {/* Heading - Mobile: 2rem (32px), Desktop: 3.5rem (56px), Weight: 700 */}
-            <h1 className="text-[2rem] md:text-[3.5rem] text-white text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+            {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
               Build Stronger <br />
-              <span className="text-emerald-200 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">Customer Relationships</span>
+              <span className="text-emerald-200">Customer Relationships</span>
             </h1>
 
             {/* Description - Size: 1rem (16px), Weight: 400 */}
@@ -49,22 +49,6 @@ const CRMHero = () => {
             <button className="px-8 py-3 bg-white text-emerald-900 rounded-xl text-[1rem] hover:scale-105 transition duration-300 text-[16px] font-semibold tracking-[0.01em] normal-case">
               EXPLORE PRODUCTS
             </button>
-
-            {/* Stats Numbers - Size: 1.25rem (20px), Weight: 700 | Labels - Size: 0.75rem (12px), Weight: 400 */}
-            <div className="flex gap-8 pt-4 flex-wrap text-white">
-              <div>
-                <div className="text-[1.25rem] font-bold">10K+</div>
-                <div className="text-[0.75rem] font-normal text-white/50">ACTIVE CLIENTS</div>
-              </div>
-              <div>
-                <div className="text-[1.25rem] font-bold">99%</div>
-                <div className="text-[0.75rem] font-normal text-white/50">SATISFACTION</div>
-              </div>
-              <div>
-                <div className="text-[1.25rem] font-bold">24/7</div>
-                <div className="text-[0.75rem] font-normal text-white/50">SUPPORT</div>
-              </div>
-            </div>
           </motion.div>
 
           {/* RIGHT SIDE - Image full height */}

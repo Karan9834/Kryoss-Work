@@ -20,6 +20,10 @@ import multi from "../../../assets/medicine-delivery/about.png"
 import tail from "../../../assets/medicine-delivery/tail.jpeg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import user from "../../../assets/medicine-delivery/user.png"
+import pannel from "../../../assets/medicine-delivery/pannel.png" 
+import driver from "../../../assets/medicine-delivery/driver.jpeg"
+import customer from "../../../assets/medicine-delivery/customer.jpg"
 
 const MedicineDeliveryApp = () => {
     const [activeTab, setActiveTab] = useState("Customer App");
@@ -36,7 +40,7 @@ const MedicineDeliveryApp = () => {
     const panelFeatures = {
         "Customer App": {
             icon: User,
-            image: "https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: customer,
             features: [
                 "User Registration", "Profile Management", "Prescription Upload",
                 "Add to Cart", "Expert Consultation", "Various Payment Methods",
@@ -45,7 +49,7 @@ const MedicineDeliveryApp = () => {
         },
         "Pharmacy Panel": {
             icon: Pill,
-            image: "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: pannel,
             features: [
                 "Pharmacy Dashboard", "Inventory Management", "Price Management",
                 "Manage Orders", "Delivery Management", "Rating & Reviews",
@@ -54,7 +58,7 @@ const MedicineDeliveryApp = () => {
         },
         "User Panel": {
             icon: UserCheck,
-            image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: user,
             features: [
                 "Easy Dashboard", "Upload Prescription", "Find Products",
                 "Expert Consult", "Secure Payment", "Order Tracking",
@@ -63,7 +67,7 @@ const MedicineDeliveryApp = () => {
         },
         "Driver Panel": {
             icon: Truck,
-            image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: driver,
             features: [
                 "Driver Dashboard", "Assigned Orders", "Earnings Tracking",
                 "GPS Navigation", "Real-time Tracking", "Easy Calling",
@@ -138,13 +142,14 @@ const MedicineDeliveryApp = () => {
                                 <span className="text-sm font-semibold text-gray-700">Online Medicine Delivery Solution</span>
                             </motion.div>
 
+                            {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
                             <motion.h1
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
+                                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900"
                             >
-                                Medicine Delivery App <br /> <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">Development</span>
+                                Medicine Delivery App <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">Development</span>
                             </motion.h1>
 
                             <motion.p
@@ -316,7 +321,7 @@ const MedicineDeliveryApp = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-auto object-contain"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                                 onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                             />

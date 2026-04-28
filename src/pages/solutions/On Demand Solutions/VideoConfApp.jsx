@@ -49,6 +49,10 @@ import about from "../../../assets/vidoeconf/about.avif";
 import tail from "../../../assets/vidoeconf/tail.jpg";
 import TeamMoments from "../../../components/Common/TeamMoments";
 import PopularBlogs from "../../../components/Blog/PopularBlogs";
+import advance from "../../../assets/video-conf/advance.jpg"
+import user from "../../../assets/video-conf/user.jpg"
+import admin from "../../../assets/video-conf/admin.jpg"
+
 
 const VideoConfApp = () => {
   const [activeTab, setActiveTab] = useState("User App");
@@ -66,7 +70,7 @@ const VideoConfApp = () => {
     "User App": {
       icon: User,
       image:
-        "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&w=800",
+        user,
       features: [
         "Enter Meeting ID",
         "Host Video Meetings",
@@ -81,7 +85,7 @@ const VideoConfApp = () => {
     "Admin Panel": {
       icon: Shield,
       image:
-        "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800",
+        admin,
       features: [
         "Active Users Management",
         "Subdomain Management",
@@ -96,7 +100,7 @@ const VideoConfApp = () => {
     "Advance Features": {
       icon: Zap,
       image:
-        "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
+        advance,
       features: [
         "End-to-End Encryption",
         "Virtual Background",
@@ -269,14 +273,15 @@ const VideoConfApp = () => {
                 </span>
               </motion.div>
 
+              {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
+                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900"
               >
                 Video Conferencing App <br />{" "}
-                <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">
                   Development
                 </span>
               </motion.h1>
@@ -325,7 +330,7 @@ const VideoConfApp = () => {
                 <img
                   src={hero}
                   alt="Video Conferencing App Development"
-                  className="relative z-10 w-full h-auto object-contain drop-shadow-[0_30px_80px_rgba(0,0,0,0.25)]"
+                  className="relative z-10 w-full h-auto object-contain"
                 />
               </motion.div>
             </div>
@@ -488,7 +493,7 @@ const VideoConfApp = () => {
               <img
                 src={panelFeatures[activeTab].image}
                 alt={`${activeTab} panel`}
-                className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
+                className="w-full max-w-[300px] h-auto object-contain"
                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : "auto" }}
                 onError={(e) => {
                   e.target.src =

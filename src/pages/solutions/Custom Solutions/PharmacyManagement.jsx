@@ -55,7 +55,7 @@ const PharmacyManagement = () => {
         { icon: Pill, title: "Add Available Drugs", desc: "Update the medicines available in your inventory and share information corresponding to them across users." },
         { icon: FileDigit, title: "In-built e-billing", desc: "Invoice creation made easier. Just enter the details of billable items, and the system takes care of the rest." },
         { icon: ShoppingCart, title: "Electronic Wholesaler Ordering", desc: "Ensure updated costing and inventory at all times, helping with reliable margin reporting and inventory valuations." },
-        { icon: Share2, title: "Auto-Fax", desc: "Lets doctors call or fax the patient's refill to the pharmacist, saving the patient’s visit to the pharmacy." },
+        { icon: Share2, title: "Auto-Fax", desc: "Lets doctors call or fax the patient's refill to the pharmacist, saving the patient's visit to the pharmacy." },
         { icon: BarChart3, title: "Reporting and Analytics", desc: "View comprehensive details easily and analyze parameters like customer details, revenue, inventory, and more." },
         { icon: FileText, title: "e-Prescriptions", desc: "Access to prescriptions available online. Use the same to ensure accurate order delivery." },
         { icon: Database, title: "Inventory Management", desc: "Manage your inventory better with an inbuilt system that brings all the information on a single screen." }
@@ -101,13 +101,14 @@ const PharmacyManagement = () => {
                                 <span className="text-sm font-semibold text-gray-700">ERP & Account Software Development</span>
                             </motion.div>
 
+                            {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
                             <motion.h1
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
+                                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900"
                             >
-                                Pharmacy Management <br /> <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">System Solution</span>
+                                Pharmacy Management <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">System Solution</span>
                             </motion.h1>
 
                             <motion.p

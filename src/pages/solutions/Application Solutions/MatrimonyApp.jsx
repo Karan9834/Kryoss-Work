@@ -143,13 +143,14 @@ const MatrimonyApp = () => {
                                 <span className="text-sm font-semibold text-gray-700">Premium Solution Available</span>
                             </motion.div>
 
+                            {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
                             <motion.h1
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
+                                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900"
                             >
-                                Matrimony <br /> <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500">App Development</span>
+                                Matrimony <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500">App Development</span>
                             </motion.h1>
 
                             <motion.p

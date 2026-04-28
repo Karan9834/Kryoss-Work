@@ -52,13 +52,13 @@ const NewsHero = () => {
             <span className="text-[12px] font-medium tracking-[0.05em] uppercase text-gray-700">Trusted News Platform</span>
           </div>
 
-          {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-gray-900">
+          {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
             Stories That
             <br />
             <span className="relative inline-block mt-2">
               {/* Highlighted Text - Same typography as H1 with gradient */}
-              <span className="relative z-10 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+              <span className="relative z-10 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                 Shape Our World
               </span>
               {/* Subtle underline */}

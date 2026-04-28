@@ -71,7 +71,7 @@ const ClassifiedApp = () => {
         { icon: ImageIcon, title: "Advertisements", desc: "Sellers can run banner ads to promote their products, services, and brand on the application." },
         { icon: Lock, title: "Password recovery", desc: "This feature can enable app users to retrieve their login username and password easily." },
         { icon: ShoppingBag, title: "Affiliate program", desc: "Sellers can partner with affiliates for specific product categories, leading to improved sales." },
-        { icon: MapPin, title: "Store pickup", desc: "Customers can pick products from the seller’s premises directly based on location listings." },
+        { icon: MapPin, title: "Store pickup", desc: "Customers can pick products from the seller's premises directly based on location listings." },
         { icon: CreditCard, title: "Credit facility", desc: "This feature allows buyers to pay for expensive goods in manageable installments." },
         { icon: Share2, title: "Social media integration", desc: "Allow users to log in to their accounts on the app using their social media credentials." }
     ];
@@ -123,13 +123,14 @@ const ClassifiedApp = () => {
                                 <span className="text-sm font-semibold text-gray-700">Premium Classified Solution</span>
                             </motion.div>
 
+                            {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
                             <motion.h1
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
+                                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900"
                             >
-                                Classified App <br /> <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">Development</span>
+                                Classified App <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">Development</span>
                             </motion.h1>
 
                             <motion.p

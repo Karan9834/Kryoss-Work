@@ -28,11 +28,11 @@ const CryptoHero = () => {
                             <span>Next-Gen Crypto Infrastructure</span>
                         </div>
 
-                        {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-                        <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-white">
+                        {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
                             Build Your Own <br />
                             {/* Highlighted Text - Same typography as H1 with gradient */}
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                                 Crypto Exchange
                             </span>
                         </h1>

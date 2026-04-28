@@ -35,10 +35,10 @@ const Hero = () => {
               </span>
             </div>
             
-            {/* HEADING - Mobile: 1.875rem (30px), Desktop: 3rem (48px), Weight: 700 */}
-            <h1 className="text-[1.875rem] md:text-[3rem] text-gray-900 mb-6 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+            {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 mb-6">
               Transform Your
-              <span className="leading-[1.2] bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                 {" "}Learning Experience
               </span>
             </h1>
@@ -59,29 +59,6 @@ const Hero = () => {
               <button className="px-8 py-3.5 bg-white text-gray-700 rounded-full shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-blue-300 hover:text-blue-600 text-[16px] font-semibold tracking-[0.01em] normal-case">
                 <span className="text-base font-semibold">Watch Demo 🎥</span>
               </button>
-            </div>
-            
-            {/* STATS SECTION */}
-            <div className="mt-10 flex flex-wrap gap-8 justify-center lg:justify-start">
-              
-              {/* STAT 1 */}
-              <div className="text-center lg:text-left">
-                <div className="text-[1.25rem] font-bold text-gray-900">10K+</div>
-                <div className="text-[0.75rem] font-normal text-gray-500">Students</div>
-              </div>
-              
-              {/* STAT 2 */}
-              <div className="text-center lg:text-left">
-                <div className="text-[1.25rem] font-bold text-gray-900">500+</div>
-                <div className="text-[0.75rem] font-normal text-gray-500">Institutions</div>
-              </div>
-              
-              {/* STAT 3 */}
-              <div className="text-center lg:text-left">
-                <div className="text-[1.25rem] font-bold text-gray-900">98%</div>
-                <div className="text-[0.75rem] font-normal text-gray-500">Satisfaction</div>
-              </div>
-              
             </div>
             
           </div>
