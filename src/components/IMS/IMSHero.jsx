@@ -9,7 +9,7 @@ const IMSHero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] w-full py-16 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 overflow-hidden">
+    <section className="relative min-h-[70vh] w-full py-12 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 overflow-hidden">
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -21,7 +21,7 @@ const IMSHero = () => {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:40px_40px]"></div>
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-8 lg:pt-20 grid md:grid-cols-2 gap-14 items-center z-10">
+      <div className="relative max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-14 items-center z-10">
 
         {/* LEFT CONTENT */}
         <div className="space-y-4">
@@ -42,8 +42,8 @@ const IMSHero = () => {
             </div>
           </div>
 
-          {/* H1 - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+          {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             <span className="text-white">Manage Inventory</span>
             <br />
             <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">

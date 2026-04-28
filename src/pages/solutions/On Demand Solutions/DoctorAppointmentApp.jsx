@@ -74,7 +74,7 @@ const DoctorAppointmentApp = () => {
     ];
 
     const advanceFeatures = [
-        { icon: Smartphone, title: "User Friendly", desc: "The hospital appointment app is user friendly, everyone can use it. It doesn’t require any specific skills." },
+        { icon: Smartphone, title: "User Friendly", desc: "The hospital appointment app is user friendly, everyone can use it. It doesn't require any specific skills." },
         { icon: Database, title: "Data Management", desc: "Manage data and records is imperative. Each and every case should be in records in a secure and organised way." },
         { icon: Clock, title: "Save Resources", desc: "The Online Doctor Scheduling app saves time of human resources as documentation and data management are handled by it." },
         { icon: Server, title: "24*7 Hours Available", desc: "Users can contact at anytime and from anywhere, bookings are available on the booking system for 24*7 hours." },
@@ -128,13 +128,14 @@ const DoctorAppointmentApp = () => {
                                 <span className="text-sm font-semibold text-gray-700">Digital Healthcare Solution</span>
                             </motion.div>
 
+                            {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
                             <motion.h1
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
+                                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900"
                             >
-                                Doctor Appointment <br /> App <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-600">Development</span>
+                                Doctor Appointment <br /> App <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-600">Development</span>
                             </motion.h1>
 
                             <motion.p

@@ -19,11 +19,11 @@ const BusinessHero = () => {
             Business Directory
           </span>
 
-          {/* Heading - Updated: text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] */}
-          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+          {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Discover Top{" "}
             {/* Highlighted Text - Same typography as H1 */}
-            <span className="text-blue-400 text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+            <span className="text-blue-400 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Businesses
             </span>{" "}
             Around You

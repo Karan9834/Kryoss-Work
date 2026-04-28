@@ -11,7 +11,7 @@ const SMSHero = () => {
     };
 
     return (
-        <section className="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-900 via-indigo-800 to-emerald-500 text-white">
+        <section className="relative min-h-[70vh] flex items-center py-12 overflow-hidden bg-gradient-to-br from-blue-900 via-indigo-800 to-emerald-500 text-white">
             {/* Background Decorative Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute top-[-20%] right-[-10%] w-[60%] h-[60%] bg-blue-500/20 blur-[120px] rounded-full"></div>
@@ -28,7 +28,7 @@ const SMSHero = () => {
                             <span>Empowering Education Everywhere</span>
                         </div>
 
-                        {/* H1 */}
+                        {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                             Streamline Your <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-cyan-300 to-emerald-200">

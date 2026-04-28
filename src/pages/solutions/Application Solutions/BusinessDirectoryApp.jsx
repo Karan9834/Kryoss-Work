@@ -331,7 +331,7 @@ const BusinessDirectoryApp = () => {
       description:
         "Take the initial steps towards hiring the best talents for your project with the 24Task Employers app.",
       tags: ["Freelance", "Jobs", "Hiring"],
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+      image: "https://images.unsplash.com/photo-1557804506-669a65ba6800",
     },
   ];
 
@@ -398,14 +398,15 @@ const BusinessDirectoryApp = () => {
                 </span>
               </motion.div>
 
+              {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
+                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900"
               >
                 Business Directory <br />{" "}
-                <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-fuchsia-500">
                   App Development
                 </span>
               </motion.h1>

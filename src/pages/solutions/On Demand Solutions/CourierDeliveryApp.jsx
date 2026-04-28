@@ -68,7 +68,7 @@ const CourierDeliveryApp = () => {
         { icon: MapPin, title: "Pick/Destination", desc: "Hassle-free setup for picking up and delivering the product with precise location pinning." },
         { icon: CreditCard, title: "Digital Payment", desc: "Convenient online payment with varied payment modes for quick transactions." },
         { icon: Edit, title: "Change Address", desc: "Easily change the desired location for parcel delivery via auto-complete or map pinning." },
-        { icon: Navigation, title: "Real-Time Tracking", desc: "Quickly track the delivery provider’s real-time location and overall shipment details." },
+        { icon: Navigation, title: "Real-Time Tracking", desc: "Quickly track the delivery provider's real-time location and overall shipment details." },
         { icon: MessageSquare, title: "In-app chat", desc: "Chat with the drivers to discuss package delivery instructions and drop-off locations." },
         { icon: PhoneIcon, title: "Call driver with one tap", desc: "Call the driver with a single tap to communicate directly about the shipment." },
         { icon: Bell, title: "Notifications", desc: "Instant notifications for order confirmation, status updates, and delivery completion." }
@@ -120,13 +120,14 @@ const CourierDeliveryApp = () => {
                                 <span className="text-sm font-semibold text-gray-700">On-Demand Delivery Solution</span>
                             </motion.div>
 
+                            {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
                             <motion.h1
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.8 }}
-                                className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6 text-gray-900"
+                                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900"
                             >
-                                Courier Delivery <br /> App <span className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-fuchsia-600">Development</span>
+                                Courier Delivery <br /> App <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-fuchsia-600">Development</span>
                             </motion.h1>
 
                             <motion.p

@@ -3,7 +3,7 @@ import { Twitter, Linkedin, Facebook, Instagram, Youtube, ArrowRight } from "luc
 import { FaWhatsapp } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
-import logo from "../../assets/Logo/worklogo.png";
+import logo from "../../assets/Logo/download.png";
 
 const footerLinks = {
   Products: [
@@ -75,7 +75,12 @@ const Footer = () => {
 
             {/* LEFT SECTION */}
             <div className="lg:col-span-2 space-y-6">
-              <img src={logo} alt="logo" className="h-10 brightness-0 invert" />
+              {/* Logo - Updated with better sizing */}
+              <img 
+                src={logo} 
+                alt="logo" 
+                className="h-12 md:h-24 w-auto brightness-0 invert object-contain" 
+              />
 
               <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
                 Building world-class digital solutions, helping startups and enterprises scale with modern technology and innovative AI-driven strategies.
@@ -212,12 +217,9 @@ const Footer = () => {
           <ArrowRight size={20} className="-rotate-90 group-hover:-translate-y-1 transition-transform" />
         </button>
 
-
-
       </footer>
     </>
   );
 };
 
 export default Footer;
-

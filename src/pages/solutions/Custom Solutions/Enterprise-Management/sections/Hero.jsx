@@ -37,11 +37,11 @@ const Hero = () => {
             <span>Enterprise Resource Planning</span>
           </div>
 
-          {/* Heading - Smaller */}
-          <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
-            <span className="text-white text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">Streamline Your</span>
+          {/* H1 - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            <span className="text-white">Streamline Your</span>
             <br />
-            <span className="leading-[1.2] bg-gradient-to-r from-violet-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em]">
+            <span className="bg-gradient-to-r from-violet-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent">
               Business Operations
             </span>
           </h1>
@@ -51,22 +51,6 @@ const Hero = () => {
             All-in-one ERP solutions to manage finance, inventory, HR, and customer relationships. 
             Boost efficiency and scale your business with our integrated platform.
           </p>
-
-          {/* Stats - Smaller */}
-          <div className="mt-6 flex gap-6">
-            <div>
-              <p className="text-violet-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">500+</p>
-              <p className="text-gray-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">Businesses</p>
-            </div>
-            <div>
-              <p className="text-violet-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">99.9%</p>
-              <p className="text-gray-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">Uptime</p>
-            </div>
-            <div>
-              <p className="text-violet-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">24/7</p>
-              <p className="text-gray-300 text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem]">Support</p>
-            </div>
-          </div>
 
           {/* Buttons - Smaller */}
           <div className="mt-6 flex flex-wrap gap-3">
