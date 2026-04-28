@@ -9,7 +9,7 @@ import ServicesMegaMenu from "./ServicesMegaMenu";
 import SolutionsMenu, { SolutionsMobileAccordion } from "./SolutionsMenu";
 import WorksMegaMenu, { WorksMobileAccordion } from "./WorksMegaMenu";
 import CompanyMenu from "./CompanyMenu";
-import logo from "../../assets/Logo/newlogo.png";
+import logo from "../../assets/Logo/image.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
