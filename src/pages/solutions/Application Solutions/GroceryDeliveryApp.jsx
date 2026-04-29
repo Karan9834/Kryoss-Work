@@ -215,17 +215,7 @@ const GroceryDeliveryApp = () => {
                                     onError={(e) => { e.target.src = "/SolAps/groceryapp1.png"; }}
                                 />
                             </div>
-                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:block">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                                        <ShoppingCart className="text-green-600 w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-semibold mb-1">Rides Completed</p>
-                                        <p className="text-2xl font-bold text-gray-900">+48%</p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </motion.div>
 
                         <div className="w-full lg:w-1/2">

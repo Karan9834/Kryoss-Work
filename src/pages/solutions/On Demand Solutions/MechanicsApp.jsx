@@ -464,17 +464,7 @@ const MechanicsApp = () => {
                                     alt="Mechanic support"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4">
-                                    <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                                        <div id="product-section">
-                                            <PlusCircle className="w-5 h-5 text-white" />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p className="font-bold text-gray-900">Customized Solutions</p>
-                                        <p className="text-sm text-gray-500">Tailored to your brand</p>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
 
