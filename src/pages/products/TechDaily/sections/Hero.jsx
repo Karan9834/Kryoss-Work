@@ -69,7 +69,8 @@ const TechDailyHero = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             <span className="text-white">Stay Ahead with</span>
             <br />
             <span className="bg-gradient-to-r from-amber-400 via-orange-400 to-rose-400 bg-clip-text text-transparent">

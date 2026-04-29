@@ -21,8 +21,8 @@ const BetLabHero = () => {
                             {"</>"} Sports Betting
                         </div>
 
-                        {/* Heading */}
-                        <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                             BetLab <span className="text-emerald-300">Sports Betting</span> Platform
                         </h1>
 
@@ -53,44 +53,12 @@ const BetLabHero = () => {
                             </a>
                         </div>
 
-                        {/* Stats */}
-                        <div className="grid grid-cols-3 gap-6 pt-4">
-
-                            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center gap-3">
-                                <Star size={20} className="text-emerald-300" />
-                                <div>
-                                    <p className="font-semibold">4.8</p>
-                                    <p className="text-sm text-gray-300">Rating</p>
-                                </div>
-                            </div>
-
-                            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center gap-3">
-                                <Users size={20} className="text-emerald-300" />
-                                <div>
-                                    <p className="font-semibold">30k+</p>
-                                    <p className="text-sm text-gray-300">Users</p>
-                                </div>
-                            </div>
-
-                            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center gap-3">
-                                <TrendingUp size={20} className="text-emerald-300" />
-                                <div>
-                                    <p className="font-semibold">99.9%</p>
-                                    <p className="text-sm text-gray-300">Uptime</p>
-                                </div>
-                            </div>
-
-                        </div>
-
                     </div>
 
                     {/* RIGHT IMAGE */}
                     <div className="relative flex justify-center lg:justify-end w-full lg:w-[526px] h-[501px] order-1 lg:order-2 ml-auto">
 
-                        {/* Premium Badge */}
-                        <div className="absolute top-4 right-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm px-4 py-1 rounded-full z-10">
-                            ✨ Premium
-                        </div>
+                        {/* Premium Badge - Removed as requested */}
 
                         <img
                             src={hero}

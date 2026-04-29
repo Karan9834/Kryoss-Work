@@ -19,6 +19,9 @@ import intro from "../../../assets/DoctorAppointment/intro.jpg"
 import tail from "../../../assets/DoctorAppointment/tail.jpg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import doctor from "../../../assets/DoctorAppointment/doctor.jpg"
+import admin from "../../../assets/DoctorAppointment/admin.jpg"
+import patient from "../../../assets/DoctorAppointment/patient.jpg"
 
 const DoctorAppointmentApp = () => {
     const [activeTab, setActiveTab] = useState("Patient Panel");
@@ -35,7 +38,7 @@ const DoctorAppointmentApp = () => {
     const panelFeatures = {
         "Patient Panel": {
             icon: User,
-            image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: patient,
             features: [
                 "Social Media Login", "Personal Profile", "Profile of Family Members",
                 "Appointment booking For OPD", "Scheduling For House call", "inApp Payments",
@@ -44,7 +47,7 @@ const DoctorAppointmentApp = () => {
         },
         "Doctor Panel": {
             icon: Stethoscope,
-            image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: doctor,
             features: [
                 "Profile Management", "Available Schedule", "Today's Appointments",
                 "Real-time Treatment Requests", "Accept/Reject Patient requests", "Treatment History",
@@ -53,7 +56,7 @@ const DoctorAppointmentApp = () => {
         },
         "Admin Panel": {
             icon: Shield,
-            image: "https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: admin,
             features: [
                 "Create Sub Admins", "Approve Doctor Profile", "Healthcare Provider Mgmt",
                 "Manage Specialists", "Promotions & Referral", "Commission Setup",
@@ -305,7 +308,7 @@ const DoctorAppointmentApp = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-auto object-contain"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                                 onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                             />

@@ -18,8 +18,8 @@ const Hero = () => {
                             Web Apps
                         </div>
 
-                        {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                             Property Listing Portal
                         </h1>
 
@@ -46,33 +46,13 @@ const Hero = () => {
                             </a>
                         </div>
 
-                        {/* STATS */}
-                        <div className="grid grid-cols-3 gap-4 pt-6">
-
-                            <div className="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur">
-                                <p className="text-2xl font-semibold">4.9</p>
-                                <p className="text-gray-400 text-sm">Rating</p>
-                            </div>
-
-                            <div className="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur">
-                                <p className="text-2xl font-semibold">10k+</p>
-                                <p className="text-gray-400 text-sm">Users</p>
-                            </div>
-
-                            <div className="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur">
-                                <p className="text-2xl font-semibold">99.9%</p>
-                                <p className="text-gray-400 text-sm">Uptime</p>
-                            </div>
-
-                        </div>
-
                     </div>
 
                     {/* RIGHT IMAGE */}
                     <div className="relative flex justify-center lg:justify-end">
 
                         {/* glow */}
-                        <div className="absolute w-[420px] h-[420px]  blur-[120px] rounded-full"></div>
+                        <div className="absolute w-[420px] h-[420px] blur-[120px] rounded-full"></div>
 
                         {/* IMAGE PLACEHOLDER */}
                         <div className="relative w-full max-w-md h-[420px] rounded-2xl flex items-center justify-center text-gray-300">

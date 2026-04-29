@@ -23,7 +23,8 @@ const MultistoreERPHero = () => {
                         <span className="text-teal-100 text-sm font-bold tracking-wide uppercase">Integrated Global ERP</span>
                     </div>
 
-                    <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-[1.15]">
+                    {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
                         Unify Your <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(90deg, #5eead4, #818cf8)" }}>Retail Empire</span> with Total Control.
                     </h1>
 
@@ -50,7 +51,7 @@ const MultistoreERPHero = () => {
                         ))}
                     </div>
 
-                    <div className="pt-2">
+                    <div className="pt-2 flex flex-wrap gap-4">
                         <a
                             href={demoUrl}
                             target="_blank"
@@ -61,10 +62,10 @@ const MultistoreERPHero = () => {
                             Live Demo
                             <ArrowRight size={22} />
                         </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+                        <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                            <MessageCircle size={18} />
+                            Let's Discuss
+                        </a>
                     </div>
                 </div>
 

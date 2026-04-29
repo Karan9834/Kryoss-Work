@@ -19,6 +19,9 @@ import intro from "../../../assets/Fitness/intro.jpg"
 import tail from "../../../assets/Fitness/tail.jpg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import train from "../../../assets/Fitness/train.png"
+import admin from "../../../assets/Fitness/user.png"
+import user from "../../../assets/Fitness/admin.png"
 
 const FitnessApp = () => {
     const [activeTab, setActiveTab] = useState("User Panel");
@@ -35,7 +38,7 @@ const FitnessApp = () => {
     const panelFeatures = {
         "User Panel": {
             icon: User,
-            image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: user,
             features: [
                 "Easy Registration", "Set Fitness Goals", "View Workout Schedules",
                 "Video Library Access", "Track Progress", "Live Chat",
@@ -44,7 +47,7 @@ const FitnessApp = () => {
         },
         "Trainer Panel": {
             icon: Activity,
-            image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: train,
             features: [
                 "Manage Trainees", "Create Diet Plans", "Schedule Sessions",
                 "Track Earnings", "Set Reminders", "Upload Sessions",
@@ -53,7 +56,7 @@ const FitnessApp = () => {
         },
         "Admin Panel": {
             icon: Shield,
-            image: "https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: admin,
             features: [
                 "Manage Trainers", "Manage Trainees", "Promotions Management",
                 "Subscription Control", "Feature Access Control", "Notifications Management",
@@ -305,7 +308,7 @@ const FitnessApp = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-auto object-contain"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                                 onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                             />

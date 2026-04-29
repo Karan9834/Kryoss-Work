@@ -42,33 +42,33 @@ const GroceryHero = () => {
               <span className="text-green-700 text-sm font-medium">Fresh Grocery Delivery</span>
             </div>
 
-            {/* Heading */}
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
               Ready Grocery
               <span className="block text-green-600 mt-2">
                 Delivered in Minutes
               </span>
             </h1>
 
-            {/* Description */}
-            <p className="text-gray-600 text-lg max-w-lg">
-              Shop from 10,000+ fresh products. Get your groceries delivered to your doorstep in as little as 30 minutes.
-            </p>
-
-            {/* CTA Button */}
-            <button
-              onClick={handleLiveDemo}
-              className="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-3.5 rounded-xl font-semibold text-lg shadow-lg shadow-green-200 hover:bg-green-700 transform hover:scale-105 transition-all duration-300"
-            >
-              Live Demo
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
-            <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-              <MessageCircle size={18} />
-              Let's Discuss
-            </a>
+            {/* CTA Buttons - Fixed the layout */}
+            <div className="flex flex-wrap gap-4">
+              <button
+                onClick={handleLiveDemo}
+                className="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-3.5 rounded-xl font-semibold text-lg shadow-lg shadow-green-200 hover:bg-green-700 transform hover:scale-105 transition-all duration-300"
+              >
+                Live Demo
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+              <a 
+                href="/company/contact" 
+                className="group inline-flex items-center gap-2 px-8 py-3 bg-white text-gray-800 border border-gray-300 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 hover:bg-gray-50"
+              >
+                <MessageCircle size={18} />
+                Let's Discuss
+              </a>
+            </div>
           </div>
 
           {/* RIGHT COLUMN */}
@@ -81,24 +81,6 @@ const GroceryHero = () => {
                 alt="Fresh groceries"
                 className="relative rounded-3xl shadow-2xl max-h-[450px] w-auto object-cover border-8 border-white"
               />
-
-              {/* Floating delivery card */}
-              <div className="absolute top-6 -right-5 bg-white rounded-xl shadow-xl p-3 border border-green-100">
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 7h-1V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h1c0 1.66 1.34 3 3 3s3-1.34 3-3h4c0 1.66 1.34 3 3 3s3-1.34 3-3h1c1.1 0 2-.9 2-2v-3l-3-5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
-                  </svg>
-                  <div>
-                    <p className="text-xs text-gray-500">Delivery in</p>
-                    <p className="text-sm font-bold text-gray-900">30 min</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Fresh badge */}
-              <div className="absolute bottom-20 right-0 bg-green-600 text-white rounded-lg shadow-lg px-3 py-1.5">
-                <span className="text-xs font-semibold">✨ 100% Fresh</span>
-              </div>
             </div>
           </div>
         </div>

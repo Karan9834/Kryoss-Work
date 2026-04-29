@@ -19,7 +19,8 @@ const MatrimonyHero = () => {
                             Next-Gen Matrimony Portal
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-900 leading-[1.1] tracking-tight">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
                             Build <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">Meaningful</span> <br />
                             Connections.
                         </h1>
@@ -68,24 +69,8 @@ const MatrimonyHero = () => {
 
                             {/* Main Frame */}
                             <div className="relative bg-white p-2 rounded-[3rem] shadow-2xl border border-slate-100 transform -rotate-2 hover:rotate-0 transition-transform duration-700">
-                                <div className="aspect-[5/5]  bg-rose-50 rounded-[2.5rem] overflow-hidden flex items-center justify-center relative border border-slate-100">
+                                <div className="aspect-[5/5] bg-rose-50 rounded-[2.5rem] overflow-hidden flex items-center justify-center relative border border-slate-100">
                                     <img src={heroImg} alt="Matrimony Hero UI" className="w-full h-full object-cover" />
-
-                                    {/* Overlay Match Card */}
-                                    <div className="absolute bottom-6 inset-x-6 bg-white/95 backdrop-blur-xl p-4 rounded-2xl shadow-xl border border-white">
-                                        <div className="flex justify-between items-center mb-3">
-                                            <div>
-                                                <p className="text-sm font-bold text-slate-900">New Perfect Match</p>
-                                                <p className="text-xs text-rose-500 font-semibold">98% Compatibility</p>
-                                            </div>
-                                            <div className="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center shadow-sm">
-                                                <Heart size={18} fill="currentColor" />
-                                            </div>
-                                        </div>
-                                        <div className="h-2 w-full bg-slate-100 rounded-full overflow-hidden">
-                                            <div className="h-full bg-gradient-to-r from-rose-400 to-purple-500 w-[98%]"></div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

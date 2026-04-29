@@ -15,7 +15,8 @@ const BdTaskHMSHero = () => {
                             Agile Clinical Software
                         </div>
 
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight mb-6 leading-tight text-white">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-6">
                             Streamline Your <br className="hidden md:block" />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-purple-400">
                                 Clinic Operations
@@ -26,7 +27,7 @@ const BdTaskHMSHero = () => {
                             BdTask HMS is the lightweight, scalable, and intuitive management solution built specifically for independent clinics, diagnostic centers, and outpatient networks.
                         </p>
 
-                        <div>
+                        <div className="flex flex-wrap gap-4">
                             <a
                                 href="https://preview.codecanyon.net/item/hospital-hospital-management-system-with-website/full_screen_preview/18955750"
                                 target="_blank"
@@ -38,10 +39,10 @@ const BdTaskHMSHero = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+                            <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                                <MessageCircle size={18} />
+                                Let's Discuss
+                            </a>
                         </div>
                     </div>
 

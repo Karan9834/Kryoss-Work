@@ -26,7 +26,8 @@ const HeroSection = () => {
               <span className="text-xs text-white/90">AI-Powered Inventory Management</span>
             </div>
             
-            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+            {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-4">
               Manage Your
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 {" "}Inventory

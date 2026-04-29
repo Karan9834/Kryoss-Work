@@ -18,12 +18,13 @@ const SmartHMSHero = () => {
                         <span className="text-sm font-semibold tracking-wider font-sans uppercase">Intelligent Healthcare Solution</span>
                     </div>
 
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight mb-8">
+                    {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-300 to-indigo-300">
                             Smart HMS
                         </span>
                         <br />
-                        <span className="text-white text-3xl md:text-4xl lg:text-5xl lg:leading-tight mt-4 block font-bold leading-tight">
+                        <span className="text-white font-bold leading-tight block mt-2">
                             The Central Nervous System for Hospitals
                         </span>
                     </h1>
@@ -37,7 +38,7 @@ const SmartHMSHero = () => {
                             href="https://preview.codecanyon.net/item/smart-hospital-hospital-management-system/full_screen_preview/23205038"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group relative px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-xl font-semibold text-white overflow-hidden  text-lg transition-transform hover:scale-[1.02]"
+                            className="group relative px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-xl font-semibold text-white overflow-hidden text-lg transition-transform hover:scale-[1.02]"
                         >
                             <span className="relative z-10 flex items-center justify-center gap-2 flex-wrap gap-4">
                                 Live Demo
@@ -47,10 +48,10 @@ const SmartHMSHero = () => {
                             </span>
                             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-teal-400 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                         </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+                        <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                            <MessageCircle size={18} />
+                            Let's Discuss
+                        </a>
                     </div>
                 </div>
 
@@ -65,16 +66,6 @@ const SmartHMSHero = () => {
                             <img src={heroImg} alt="Smart HMS Dashboard" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                         </div>
                     </div>
-                    {/* Floating badge */}
-                    {/* <div className="absolute top-1/2 -translate-y-1/2 -left-6 lg:-left-12 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce hover:animate-none">
-                        <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold text-xl flex-wrap gap-4">
-                            +
-                        </div>
-                        <div>
-                            <p className="text-slate-800 font-bold text-sm">Trusted By</p>
-                            <p className="text-cyan-600 font-black text-xl">500+ Clinics</p>
-                        </div>
-                    </div> */}
                 </div>
 
             </div>

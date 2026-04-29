@@ -31,8 +31,8 @@ const HotelHero = () => {
               </span>
             </div>
 
-            {/* Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
               Complete{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-violet-400">
                 Hotel Management
@@ -97,35 +97,7 @@ const HotelHero = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               </div>
 
-              {/* Floating Card */}
-              <div className="absolute -bottom-6 -left-6 bg-black/80 backdrop-blur-md rounded-xl p-3 border border-purple-500/30 hidden md:block">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-violet-600 flex items-center justify-center">
-                    <svg
-                      className="w-5 h-5 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-white text-sm font-bold">
-                      All-in-One
-                    </div>
-                    <div className="text-purple-300 text-xs">
-                      PMS + Booking
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+              {/* Floating Card - Removed as requested */}
             </div>
           </div>
         </div>

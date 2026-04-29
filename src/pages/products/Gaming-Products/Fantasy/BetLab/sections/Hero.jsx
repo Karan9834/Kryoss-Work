@@ -35,8 +35,8 @@ const Hero = () => {
             <span>Official Betting Partner</span>
           </div>
 
-          {/* Heading */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
+          {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             <span className="text-white">Bet Smarter With</span>
             <br />
             <span className="bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
@@ -50,22 +50,6 @@ const Hero = () => {
             and lightning-fast payouts. Join thousands of satisfied users worldwide.
           </p>
 
-          {/* Stats */}
-          <div className="mt-6 flex gap-6">
-            <div>
-              <p className="text-xl font-bold text-blue-500">50K+</p>
-              <p className="text-xs text-gray-500">Active Users</p>
-            </div>
-            <div>
-              <p className="text-xl font-bold text-blue-500">99.9%</p>
-              <p className="text-xs text-gray-500">Payout Rate</p>
-            </div>
-            <div>
-              <p className="text-xl font-bold text-blue-500">24/7</p>
-              <p className="text-xs text-gray-500">Support</p>
-            </div>
-          </div>
-
           {/* Buttons */}
           <div className="mt-6 flex flex-wrap gap-3">
             <button
@@ -74,10 +58,10 @@ const Hero = () => {
             >
               <Play size={16} /> Live Demo
             </button>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+            <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+              <MessageCircle size={18} />
+              Let's Discuss
+            </a>
           </div>
 
           {/* Trust Badges */}

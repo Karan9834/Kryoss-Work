@@ -20,6 +20,9 @@ import intro from "../../../assets/Logistic/intro.jpg"
 import tail from "../../../assets/Logistic/tail.jpg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import cust from "../../../assets/Logistic_app/cust.jpg"
+import driver from "../../../assets/Logistic_app/driver.jpg"
+import admin from "../../../assets/Logistic_app/admin.jpg"
 
 const LogisticsApp = () => {
     const [activeTab, setActiveTab] = useState("Customer");
@@ -36,7 +39,7 @@ const LogisticsApp = () => {
     const panelFeatures = {
         "Customer": {
             icon: User,
-            image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: cust,
             features: [
                 "Easy Registration", "Select Vehicles", "Estimate fare charges",
                 "Get a quote", "Track shipments", "Alerts and notifications",
@@ -45,7 +48,7 @@ const LogisticsApp = () => {
         },
         "Driver": {
             icon: Truck,
-            image: "https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: driver,
             features: [
                 "Driver Registration", "Accept/Decline Requests", "Shipper Details",
                 "Freight Details", "In-app Navigation", "Multiple Payment Integration",
@@ -54,7 +57,7 @@ const LogisticsApp = () => {
         },
         "Admin Panel": {
             icon: Shield,
-            image: "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: admin,
             features: [
                 "Monitor Drivers", "Manage Shippers & Trucks", "Tariffs Management",
                 "Fuel Consumption Tracking", "Vehicle Management", "Billing & Invoice",
@@ -306,7 +309,7 @@ const LogisticsApp = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-auto object-contain"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                                 onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                             />

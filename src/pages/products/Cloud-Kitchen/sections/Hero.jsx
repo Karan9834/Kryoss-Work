@@ -18,8 +18,8 @@ const Hero = () => {
                             SaaS
                         </div>
 
-                        {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                             FoodHat
                         </h1>
 

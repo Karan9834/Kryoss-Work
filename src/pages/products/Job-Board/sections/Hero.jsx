@@ -23,8 +23,8 @@ const JobHero = () => {
             Job Board Platform
           </span>
 
-          {/* Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Find Your Next{" "}
             <span className="bg-gradient-to-r from-green-400 via-emerald-400 to-green-500 bg-clip-text text-transparent">
               Dream Job

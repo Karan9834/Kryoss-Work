@@ -42,8 +42,8 @@ const TutorBookingHero = () => {
               <span className="text-indigo-300 text-sm font-medium">✨ Smart Tutor Booking Platform</span>
             </div>
 
-            {/* Heading */}
-            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+            {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
               Find & Book the Perfect Tutor
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 mt-2">
                 in Just a Few Clicks
@@ -56,7 +56,7 @@ const TutorBookingHero = () => {
               and manage learning seamlessly with our modern tutor booking solution.
             </p>
 
-            {/* CTA Button */}
+            {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
               <button
                 onClick={handleLiveDemo}
@@ -74,34 +74,6 @@ const TutorBookingHero = () => {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
-
-            {/* Features row */}
-            <div className="flex flex-wrap gap-6 pt-4">
-              <div className="flex items-center gap-2">
-                <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
-                  <svg className="w-3 h-3 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
-                  </svg>
-                </div>
-                <span className="text-gray-300">Instant Booking</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
-                  <svg className="w-3 h-3 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
-                  </svg>
-                </div>
-                <span className="text-gray-300">Verified Tutors</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
-                  <svg className="w-3 h-3 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
-                  </svg>
-                </div>
-                <span className="text-gray-300">Flexible Scheduling</span>
-              </div>
-            </div>
           </div>
 
           {/* RIGHT COLUMN */}
@@ -114,13 +86,6 @@ const TutorBookingHero = () => {
                 alt="Tutor Booking"
                 className="relative rounded-2xl shadow-2xl max-h-[400px] w-auto object-cover border border-white/10"
               />
-
-              {/* Live demo indicator */}
-              <div className="absolute -top-3 -right-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full p-2 shadow-lg">
-                <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
             </div>
           </div>
         </div>

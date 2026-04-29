@@ -41,13 +41,12 @@ const Hero = () => {
             </span>
           </div>
 
-          {/* Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-snug text-white">
+          {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
             Establish Your{" "}
             <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] bg-clip-text text-transparent">
-              {" "}
-              Premiere On-Demand Aesthetic{" "}
-            </span>
+              Premiere On-Demand Aesthetic
+            </span>{" "}
             Ecosystem
           </h1>
 
@@ -57,11 +56,9 @@ const Hero = () => {
             sophisticated styling application. Our team provides specialized beauty
             platform engineering, supplying elite logical frameworks customized to
             your unique commercial objectives.
-
           </p>
 
           {/* Button */}
-
           <a
             href="https://preview.codecanyon.net/item/dtsalon-salon-booking-app-for-android-ios-with-admin-panel-hair-beauty-skin-spa-services/full_screen_preview/57786518"
             target="_blank"
@@ -73,10 +70,6 @@ const Hero = () => {
               →
             </span>
           </a>
-
-          {/* <button className=" w-fit bg-gradient-to-r from-[#FF2485] to-[#C739FF] px-6 sm:px-8 py-3 rounded-full text-white font-semibold text-base shadow-md hover:scale-105 transition duration-300 mx-auto md:mx-0">
-            Live Demo →
-          </button> */}
         </div>
 
         {/* RIGHT IMAGE */}
@@ -88,7 +81,6 @@ const Hero = () => {
           />
         </div>
       </div>
-
     </section>
   );
 };

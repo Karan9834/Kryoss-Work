@@ -13,14 +13,6 @@ const RestulatorAbout = () => {
                         <div className="relative w-full h-[440px] rounded-[2.5rem] overflow-hidden shadow-xl">
                             <img src={RestulatorAboutImg} alt="About Fine Dining" className="w-full h-full object-cover" />
                         </div>
-                        {/* Decorative corner accents */}
-                        <div className="absolute top-4 left-4 w-14 h-14 border-t-4 border-l-4 border-amber-400 rounded-tl-2xl" />
-                        <div className="absolute bottom-4 right-4 w-14 h-14 border-b-4 border-r-4 border-amber-300 rounded-br-2xl" />
-                        {/* Floating stat badge */}
-                        <div className="absolute -bottom-5 -right-5 bg-amber-700 text-white px-5 py-3 rounded-2xl shadow-xl">
-                            <p className="text-xs text-amber-300 font-semibold">Restaurants Onboarded</p>
-                            <p className="text-2xl font-black">800+</p>
-                        </div>
                     </div>
 
                     {/* Right: Text Content */}

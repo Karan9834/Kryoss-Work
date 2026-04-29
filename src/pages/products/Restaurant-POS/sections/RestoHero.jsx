@@ -21,10 +21,11 @@ const RestoHero = () => {
                             <span>Ultimate Dining OS</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight tracking-tight">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                             Elevate Every <br />
                             <span className="text-amber-300">Dining Experience</span> <br />
-                            <span className="text-emerald-200 text-3xl lg:text-4xl xl:text-5xl ">With Precision POS</span>
+                            <span className="text-emerald-200">With Precision POS</span>
                         </h1>
 
                         <p className="text-indigo-50 text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-semibold opacity-90">

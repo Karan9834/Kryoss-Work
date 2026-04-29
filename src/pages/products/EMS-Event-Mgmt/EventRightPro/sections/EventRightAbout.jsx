@@ -20,27 +20,6 @@ const EventRightAbout = () => {
                         <div className="relative w-full h-[420px] rounded-[2.5rem] overflow-hidden shadow-xl">
                             <img src={corpAboutImg} alt="About corporate Events" className="w-full h-full object-cover" />
                         </div>
-                        {/* Glassmorphic stats cards overlapping */}
-                        <div className="absolute -bottom-8 -right-6 grid grid-cols-2 gap-3">
-                            {stats.map((s, i) => (
-                                <div key={i}
-                                    className="bg-white/80 backdrop-blur-md border border-indigo-100 shadow-lg rounded-2xl px-4 py-3 flex items-center gap-3 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                                    <div className="w-9 h-9 rounded-xl flex items-center justify-center text-indigo-600"
-                                        style={{ background: "linear-gradient(135deg, #e0e7ff, #c7d2fe)" }}>
-                                        {s.icon}
-                                    </div>
-                                    <div>
-                                        <p className="text-slate-900 font-bold text-lg leading-none">{s.value}</p>
-                                        <p className="text-slate-500 text-xs mt-0.5">{s.label}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        {/* Top floating label */}
-                        <div className="absolute -top-5 -left-5 bg-indigo-600 text-white px-5 py-3 rounded-2xl shadow-xl">
-                            <p className="text-indigo-200 text-xs font-semibold">Built for</p>
-                            <p className="text-white font-bold text-base">Enterprise Scale</p>
-                        </div>
                     </div>
 
                     {/* Right: Text Content */}

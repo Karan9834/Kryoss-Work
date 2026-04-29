@@ -32,20 +32,6 @@ const GroceryAbout = () => {
                         <div className="relative z-10 w-full  bg-gradient-to-br from-emerald-50 to-white rounded-[60px] border-8 border-white shadow-2xl flex items-center justify-center overflow-hidden transition-transform duration-700 group-hover:scale-[1.02]">
                             <img src={aboutImg} alt="Grocery About" className="w-full h-auto object-contain" />
                         </div>
-
-                        {/* Interactive Stats Overlay */}
-                        <div className="absolute -right-2 top-10 lg:-right-4 lg:top-1/4 space-y-3 lg:space-y-4 z-20">
-                            {stats.map((stat, idx) => (
-                                <div
-                                    key={idx}
-                                    className="bg-white p-3 lg:p-4 rounded-xl lg:rounded-2xl shadow-xl flex items-center gap-2 lg:gap-3 border border-emerald-50 animate-float"
-                                    style={{ animationDelay: `${idx * 0.5}s` }}
-                                >
-                                    <stat.icon className={`${stat.color} w-5 h-5 lg:w-6 lg:h-6`} />
-                                    <span className="font-bold text-xs lg:text-sm whitespace-nowrap">{stat.label}</span>
-                                </div>
-                            ))}
-                        </div>
                     </div>
 
                     {/* Right: Content - Updated Typography */}

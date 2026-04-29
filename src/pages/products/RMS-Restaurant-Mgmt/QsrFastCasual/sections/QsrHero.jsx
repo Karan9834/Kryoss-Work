@@ -30,7 +30,8 @@ const QsrHero = () => {
                         <span className="text-yellow-100 text-sm font-bold tracking-wide uppercase">QSR & Fast Casual Management</span>
                     </div>
 
-                    <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
+                    {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
                         Speed. Scale.{" "}
                         <span className="text-transparent bg-clip-text"
                             style={{ backgroundImage: "linear-gradient(90deg, #fef08a, #fbbf24)" }}>
@@ -41,24 +42,6 @@ const QsrHero = () => {
                     <p className="text-lg text-orange-100 max-w-xl leading-relaxed">
                         Built for the relentless pace of quick-service restaurants and fast casual chains — self-service kiosks, drive-thru sync, digital menu boards, and franchise-wide scaling from one platform.
                     </p>
-
-                    <div className="flex flex-wrap gap-6 py-4 border-t border-white/10">
-                        {[
-                            { icon: <Zap size={18} />, value: "< 90s", label: "Avg. Order Time" },
-                            { icon: <Clock size={18} />, value: "2,500+", label: "QSR Chains" },
-                            { icon: <TrendingUp size={18} />, value: "+40%", label: "Revenue per Location" },
-                        ].map((stat, i) => (
-                            <div key={i} className="flex items-center gap-3">
-                                <div className="w-9 h-9 rounded-xl bg-orange-900/40 border border-orange-400/30 flex items-center justify-center text-yellow-300">
-                                    {stat.icon}
-                                </div>
-                                <div>
-                                    <p className="text-white font-bold text-xl leading-none">{stat.value}</p>
-                                    <p className="text-orange-300 text-xs mt-1">{stat.label}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
 
                     <div className="pt-2 flex flex-wrap gap-4">
                         <a
@@ -90,14 +73,7 @@ const QsrHero = () => {
                         <div className="w-full h-[380px] rounded-[2.5rem] border border-orange-400/20 overflow-hidden shadow-2xl">
                             <img src={qsrHeroImg} alt="QSR Management" className="w-full h-full object-cover" />
                         </div>
-                        <div className="absolute -bottom-4 -right-4 flex items-center gap-2 bg-white px-5 py-3 rounded-2xl shadow-xl">
-                            <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
-                            <span className="text-slate-800 text-sm font-bold">Kiosk Active — Order #1,284</span>
-                        </div>
-                        <div className="absolute -top-4 -left-4 bg-orange-500 text-white px-4 py-3 rounded-2xl shadow-xl">
-                            <p className="text-xs font-semibold text-orange-200">Orders Today</p>
-                            <p className="text-2xl font-black">4,720</p>
-                        </div>
+                        {/* Floating badges - Removed as requested */}
                     </div>
                 </div>
             </div>

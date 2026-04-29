@@ -13,14 +13,6 @@ const EventNextAbout = () => {
                         <div className="relative w-full h-[420px] rounded-[2.5rem] overflow-hidden shadow-xl">
                             <img src={festAboutImg} alt="About Event Next" className="w-full h-full object-cover" />
                         </div>
-                        {/* Decorative corner frames */}
-                        <div className="absolute top-4 left-4 w-16 h-16 border-t-4 border-l-4 border-blue-400 rounded-tl-2xl" />
-                        <div className="absolute bottom-4 right-4 w-16 h-16 border-b-4 border-r-4 border-blue-600 rounded-br-2xl" />
-                        {/* Floating label */}
-                        <div className="absolute -bottom-5 left-8 bg-gradient-to-r from-blue-700 to-indigo-600 text-white px-6 py-3 rounded-2xl shadow-xl">
-                            <p className="text-xs text-blue-200 font-semibold">Powered By</p>
-                            <p className="text-white font-bold text-sm">KRYOSSEvents™</p>
-                        </div>
                     </div>
 
                     {/* Right: Text */}

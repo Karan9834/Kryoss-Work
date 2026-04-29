@@ -3,7 +3,7 @@ import { Twitter, Linkedin, Facebook, Instagram, Youtube, ArrowRight } from "luc
 import { FaWhatsapp } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
-import logo from "../../assets/Logo/download.png";
+import logo from "../../assets/Logo/image.png";
 
 const footerLinks = {
   Products: [

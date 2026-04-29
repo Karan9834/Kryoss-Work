@@ -66,26 +66,6 @@ const AboutUs = () => {
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-blue-500/10 via-transparent to-indigo-500/10 rounded-xl"></div>
             </div>
-
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-3 animate-float-delayed">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-                  <Globe size={18} className="text-white" />
-                </div>
-                <div>
-                  <p className="text-[10px] font-medium uppercase tracking-[0.05em] text-gray-500">Global Reach</p>
-                  <p className="text-sm font-semibold text-gray-900">Worldwide Presence</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Experience Badge - Stats Removed */}
-            <div className="absolute top-1/2 -left-4 -translate-y-1/2 bg-white rounded-lg shadow-lg p-2 hidden lg:block">
-              <div className="flex flex-col items-center">
-                <span className="text-lg font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Trusted</span>
-                <span className="text-[10px] font-medium uppercase tracking-[0.05em] text-gray-500">Globally</span>
-              </div>
-            </div>
           </div>
 
           {/* RIGHT - Content Section */}

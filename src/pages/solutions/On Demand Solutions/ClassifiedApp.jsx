@@ -19,6 +19,8 @@ import intro from "../../../assets/classified/intro.jpg"
 import tail from "../../../assets/classified/tail.png"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import user from "../../../assets/classified/user.png"
+import admin from "../../../assets/classified/admin.webp"
 
 const ClassifiedApp = () => {
     const [activeTab, setActiveTab] = useState("User Panel");
@@ -35,7 +37,7 @@ const ClassifiedApp = () => {
     const panelFeatures = {
         "User Panel": {
             icon: User,
-            image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: user,
             features: [
                 "Browse or search online", "Search by filters", "Discover ads near you",
                 "Multiple product images", "In app chat with buyers", "Easy product uploading",
@@ -44,7 +46,7 @@ const ClassifiedApp = () => {
         },
         "Admin Panel": {
             icon: Shield,
-            image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image:admin,
             features: [
                 "User Management", "Manage Content", "Advertisement Requests",
                 "Payment Management", "Database Backup", "Update Ad Status",
@@ -302,7 +304,7 @@ const ClassifiedApp = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-auto object-contain"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                                 onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                             />
