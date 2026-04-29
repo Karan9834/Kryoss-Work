@@ -40,26 +40,6 @@ const TaxiHero = () => {
                                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </button>
                         </div>
-
-                        {/* Trust Badges - Updated Stats Typography */}
-                        <div className="flex items-center gap-8 pt-8 border-t border-gray-100">
-                            <div>
-                                {/* Stats Number - text-xl md:text-2xl font-bold */}
-                                <p className="text-xl md:text-2xl font-bold text-[#1E293B]">50k+</p>
-                                {/* Stats Label - text-xs font-normal tracking-wider uppercase */}
-                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">Global Rides</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-xl md:text-2xl font-bold text-[#1E293B]">200+</p>
-                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">Fleet Owners</p>
-                            </div>
-                            <div className="w-px h-10 bg-gray-100"></div>
-                            <div>
-                                <p className="text-xl md:text-2xl font-bold text-[#1E293B]">4.8/5</p>
-                                <p className="text-[12px] font-normal tracking-wider uppercase text-gray-400">User Satisfaction</p>
-                            </div>
-                        </div>
                     </div>
 
                     {/* Right Content - Visuals */}

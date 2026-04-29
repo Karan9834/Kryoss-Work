@@ -31,7 +31,8 @@ const RestulatorHero = () => {
                         <span className="text-amber-300 text-sm font-bold tracking-wide uppercase">Restulator Restaurant Management</span>
                     </div>
 
-                    <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
+                    {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
                         Power Your Restaurant with{" "}
                         <span className="text-transparent bg-clip-text"
                             style={{ backgroundImage: "linear-gradient(90deg, #fbbf24, #f59e0b, #d97706)" }}>
@@ -42,24 +43,6 @@ const RestulatorHero = () => {
                     <p className="text-lg text-amber-100/80 max-w-xl leading-relaxed">
                         A comprehensive restaurant management system with integrated POS and live kitchen tracking — Restulator ensures efficient service, accurate order management, and real-time business insights.
                     </p>
-
-                    <div className="flex flex-wrap gap-6 py-4 border-t border-white/10">
-                        {[
-                            { icon: <Star size={18} />, value: "4.9★", label: "Avg. Restaurant Rating" },
-                            { icon: <UtensilsCrossed size={18} />, value: "800+", label: "Restaurants Onboarded" },
-                            { icon: <Clock size={18} />, value: "30%", label: "Faster Table Turnover" },
-                        ].map((stat, i) => (
-                            <div key={i} className="flex items-center gap-3">
-                                <div className="w-9 h-9 rounded-xl bg-amber-900/40 border border-amber-700/40 flex items-center justify-center text-amber-400">
-                                    {stat.icon}
-                                </div>
-                                <div>
-                                    <p className="text-white font-bold text-xl leading-none">{stat.value}</p>
-                                    <p className="text-amber-400/70 text-xs mt-1">{stat.label}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
 
                     <div className="pt-2 flex flex-wrap gap-4">
                         <a
@@ -91,14 +74,7 @@ const RestulatorHero = () => {
                         <div className="w-full h-[380px] rounded-[2.5rem] border border-amber-700/30 overflow-hidden shadow-2xl">
                             <img src={RestulatorHeroImg} alt="Fine Dining Management" className="w-full h-full object-cover" />
                         </div>
-                        <div className="absolute -bottom-4 -left-4 flex items-center gap-2 bg-white px-5 py-3 rounded-2xl shadow-xl">
-                            <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
-                            <span className="text-slate-800 text-sm font-bold">Table 12 — Seated</span>
-                        </div>
-                        <div className="absolute -top-4 -right-4 bg-amber-600 text-white px-4 py-3 rounded-2xl shadow-xl">
-                            <p className="text-xs font-semibold text-amber-200">Covers Tonight</p>
-                            <p className="text-2xl font-black">248</p>
-                        </div>
+                        {/* Floating badges - Removed as requested */}
                     </div>
                 </div>
             </div>

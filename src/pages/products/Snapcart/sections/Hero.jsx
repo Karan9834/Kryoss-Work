@@ -22,8 +22,8 @@ const Hero = () => {
             🚀 Modern E-Commerce Platform
           </div>
 
-          {/* Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
             Launch Your{" "}
             <span className="bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent">
               Online Store
@@ -78,15 +78,6 @@ const Hero = () => {
               alt="E-commerce dashboard"
               className="rounded-lg w-[500px] object-cover"
             />
-          </div>
-
-          {/* Floating Tags */}
-          <div className="absolute -top-4 left-6 bg-white px-3 py-1 rounded-md shadow text-xs">
-            🛒 Smart Orders
-          </div>
-
-          <div className="absolute -bottom-4 right-6 bg-white px-3 py-1 rounded-md shadow text-xs">
-            ⚡ Fast Checkout
           </div>
         </div>
       </div>

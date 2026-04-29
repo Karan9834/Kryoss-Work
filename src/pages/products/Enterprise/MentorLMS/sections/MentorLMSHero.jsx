@@ -23,8 +23,9 @@ const MentorLMSHero = () => {
                         <span className="text-fuchsia-100 text-sm font-bold tracking-wide uppercase">Next-Gen LMS Platform</span>
                     </div>
 
-                    <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-[1.15]">
-                        Empower <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(90deg, #f0abfc, #818cf8)" }}>The Future</span> of Learning Management.
+                    {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
+                        Fastest <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(90deg, #f0abfc, #818cf8)" }}>Learning</span> Platform.
                     </h1>
 
                     <p className="text-lg text-fuchsia-50/80 max-w-xl leading-relaxed">
@@ -50,7 +51,7 @@ const MentorLMSHero = () => {
                         ))}
                     </div>
 
-                    <div className="pt-2">
+                    <div className="pt-2 flex flex-wrap gap-4">
                         <a
                             href={demoUrl}
                             target="_blank"
@@ -61,10 +62,10 @@ const MentorLMSHero = () => {
                             Live Demo
                             <ArrowRight size={22} />
                         </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+                        <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                            <MessageCircle size={18} />
+                            Let's Discuss
+                        </a>
                     </div>
                 </div>
 

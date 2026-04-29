@@ -29,7 +29,8 @@ const EventRightHero = () => {
                         <span className="text-indigo-200 text-sm font-bold tracking-wide uppercase">Enterprise Event Management</span>
                     </div>
 
-                    <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
+                    {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
                         Power Your{" "}
                         <span className="text-transparent bg-clip-text"
                             style={{ backgroundImage: "linear-gradient(90deg, #a5b4fc, #67e8f9)" }}>
@@ -42,26 +43,7 @@ const EventRightHero = () => {
                         An advanced SaaS-based ticket sales and event booking management system built for scalability — from seamless registrations and QR verification to real-time analytics.
                     </p>
 
-                    {/* Stats row */}
-                    <div className="flex flex-wrap gap-8 py-4 border-t border-white/10">
-                        {[
-                            { icon: <Calendar size={18} />, label: "Events Managed", value: "5,000+" },
-                            { icon: <Users size={18} />, label: "Attendees Tracked", value: "2M+" },
-                            { icon: <Shield size={18} />, label: "Enterprise Clients", value: "300+" },
-                        ].map((stat, i) => (
-                            <div key={i} className="flex items-center gap-3">
-                                <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-indigo-200 flex-wrap gap-4">
-                                    {stat.icon}
-                                </div>
-                                <div>
-                                    <p className="text-white font-bold text-xl leading-none">{stat.value}</p>
-                                    <p className="text-indigo-300 text-xs mt-1">{stat.label}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="pt-2">
+                    <div className="pt-2 flex flex-wrap gap-4">
                         <a
                             href="https://preview.codecanyon.net/item/eventright-pro-ticket-sales-and-event-booking-management-system-with-website-web-panels-saas/full_screen_preview/43938835"
                             target="_blank"
@@ -88,15 +70,7 @@ const EventRightHero = () => {
                         <div className="w-full h-[380px] rounded-[2.5rem] border-8 border-white/10 overflow-hidden shadow-2xl">
                             <img src={corporateEmsHero} alt="corporate Events Dashboard" className="w-full h-full object-cover" />
                         </div>
-                        {/* Floating badge */}
-                        <div className="absolute -bottom-4 -left-6 flex items-center gap-2 bg-white px-5 py-3 rounded-2xl shadow-xl">
-                            <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
-                            <span className="text-slate-800 text-sm font-bold">Live Event Active</span>
-                        </div>
-                        <div className="absolute -top-4 -right-4 bg-indigo-600 text-white px-4 py-3 rounded-2xl shadow-xl">
-                            <p className="text-xs font-semibold text-indigo-200">Registered</p>
-                            <p className="text-2xl font-black">12,840</p>
-                        </div>
+                        {/* Floating badges - Removed as requested */}
                     </div>
                 </div>
             </div>

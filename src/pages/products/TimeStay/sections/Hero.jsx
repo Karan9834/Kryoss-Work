@@ -43,8 +43,8 @@ const TimeStayHero = () => {
               <span className="text-sm font-medium text-emerald-200">Smart Time Management</span>
             </div>
             
-            {/* Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] tracking-tight">
+            {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Smart Time &
               <span className="block bg-gradient-to-r from-emerald-400 to-teal-400 text-transparent bg-clip-text">
                 Stay Management

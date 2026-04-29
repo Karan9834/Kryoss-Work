@@ -33,7 +33,8 @@ const HeroSection = () => {
               <span className="text-xs font-medium text-white/90">Trusted by 500+ Wholesalers</span>
             </div>
             
-            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
+            {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mb-6">
               Streamline Your 
               <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
                 {" "}Wholesale Food

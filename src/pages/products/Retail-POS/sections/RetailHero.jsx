@@ -20,7 +20,8 @@ const RetailHero = () => {
                             <span>Premium Retailing Software</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight tracking-tighter">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
                             Modern Commerce <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-indigo-400 to-amber-400">
                                 Starts Here.

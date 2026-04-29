@@ -25,7 +25,8 @@ const EventNextHero = () => {
                         <span className="text-blue-100 text-sm font-bold tracking-wide uppercase">Event Next Management</span>
                     </div>
 
-                    <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
+                    {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
                         The Stage is Set.{" "}
                         <span className="text-transparent bg-clip-text"
                             style={{ backgroundImage: "linear-gradient(90deg, #60a5fa, #fbbf24)" }}>
@@ -51,7 +52,7 @@ const EventNextHero = () => {
                         ))}
                     </div>
 
-                    <div className="pt-2">
+                    <div className="pt-2 flex flex-wrap gap-4">
                         <a
                             href="https://preview.codecanyon.net/item/eventnext-revolutionizing-multivendor-event-management-and-ticketing/full_screen_preview/55771342"
                             target="_blank"
@@ -77,11 +78,7 @@ const EventNextHero = () => {
                         <div className="w-full h-[380px] rounded-[2.5rem] border-8 border-white/10 overflow-hidden shadow-2xl">
                             <img src={festHeroImg} alt="Event Next Management" className="w-full h-full object-cover" />
                         </div>
-                        {/* Floating badges */}
-                        <div className="absolute -bottom-4 -right-4 flex items-center gap-2 bg-white px-5 py-3 rounded-2xl shadow-xl">
-                            <div className="w-3 h-3 rounded-full bg-blue-500 animate-pulse" />
-                            <span className="text-slate-800 text-sm font-bold">READY • Next Gen Events</span>
-                        </div>
+                        {/* Floating badges - Removed as requested */}
                     </div>
                 </div>
             </div>

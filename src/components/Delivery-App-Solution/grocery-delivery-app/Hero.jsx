@@ -12,27 +12,6 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in-left">
-            {/* <div className="flex items-center gap-3 mb-6">
-              <div
-                className="w-12 h-12 flex items-center justify-center rounded-lg
-      bg-gradient-to-br from-emerald-400 to-[#10B981]
-      shadow-[0_0_16px_rgba(16,185,129,0.8)]"
-              >
-                <span className="text-xl drop-shadow-[0_0_6px_rgba(255,255,255,0.9)]">
-                  🛒
-                </span>
-              </div>
-              <span className="text-lg font-semibold tracking-wide uppercase">
-                <span
-                  className="text-[#10B981] 
-            drop-shadow-[0_0_6px_rgba(16,185,129,0.8)]"
-                >
-                  VYOM
-                </span>
-
-                <span className="text-gray-900 ml-1">GROCERY</span>
-              </span>
-            </div> */}
             <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-emerald-100">
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -43,9 +22,9 @@ const Hero = () => {
               </span>
             </div>
 
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              DTBasket App<br />
-
+            {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+              DTBasket App
             </h1>
 
             <p className="text-lg text-gray-600 max-w-xl leading-relaxed">
@@ -76,15 +55,11 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-
                 <button className="bg-[#10B981] hover:bg-[#059669] text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-2 shadow-xl shadow-emerald-500/20">
                   Live Demo
                   <ArrowRight size={20} />
                 </button>
               </a>
-              {/* <button className="bg-white border-2 border-emerald-100 text-emerald-700 px-8 py-4 rounded-xl font-bold transition-all hover:bg-emerald-50">
-                View Live Demo
-              </button> */}
             </div>
           </div>
 

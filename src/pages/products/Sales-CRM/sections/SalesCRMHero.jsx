@@ -9,8 +9,6 @@ const SalesCRMHero = () => {
 
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-
-
                     {/* LEFT CONTENT */}
                     <div>
 
@@ -19,8 +17,8 @@ const SalesCRMHero = () => {
                             &lt;/&gt; SaaS
                         </span>
 
-                        {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
                             Enterprise Sales <span className="text-indigo-600">CRM</span>
                         </h1>
 
@@ -50,43 +48,12 @@ const SalesCRMHero = () => {
                             </a>
                         </div>
 
-                        {/* Stats */}
-                        <div className="grid grid-cols-3 gap-6 mt-10 max-w-lg">
-
-                            <div className="border border-indigo-200 rounded-xl p-4 flex items-center gap-3 bg-white">
-                                <Star className="text-indigo-600" size={20} />
-                                <div>
-                                    <p className="font-semibold text-gray-900">4.9</p>
-                                    <p className="text-sm text-gray-500">Rating</p>
-                                </div>
-                            </div>
-
-                            <div className="border border-indigo-200 rounded-xl p-4 flex items-center gap-3 bg-white">
-                                <Users className="text-indigo-600" size={20} />
-                                <div>
-                                    <p className="font-semibold text-gray-900">10k+</p>
-                                    <p className="text-sm text-gray-500">Users</p>
-                                </div>
-                            </div>
-
-                            <div className="border border-indigo-200 rounded-xl p-4 flex items-center gap-3 bg-white">
-                                <TrendingUp className="text-indigo-600" size={20} />
-                                <div>
-                                    <p className="font-semibold text-gray-900">99.9%</p>
-                                    <p className="text-sm text-gray-500">Uptime</p>
-                                </div>
-                            </div>
-
-                        </div>
-
                     </div>
+
                     {/* RIGHT IMAGE */}
                     <div className="relative">
 
-                        {/* Premium badge */}
-                        <span className="absolute top-4 right-4 bg-white text-indigo-600 px-4 py-1 rounded-full text-sm shadow">
-                            ✨ Premium
-                        </span>
+                        {/* Premium badge - Removed as requested */}
 
                         {/* Replace with your image */}
                         <img

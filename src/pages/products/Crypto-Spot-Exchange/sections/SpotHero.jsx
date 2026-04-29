@@ -20,7 +20,8 @@ const SpotHero = () => {
                             <span>Institutional Spot Trading</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight tracking-tight">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
                             Build the Next <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-cyan-400">
                                 Crypto Giant.
@@ -41,19 +42,10 @@ const SpotHero = () => {
                                 Try Live Demo
                                 <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
                             </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
-                        </div>
-
-                        <div className="pt-8 flex flex-wrap items-center justify-center lg:justify-start gap-8 opacity-60">
-                            <div className="flex items-center gap-2 text-white font-black text-sm uppercase tracking-widest">
-                                <Shield className="text-blue-500" size={18} /> Bank-grade Security
-                            </div>
-                            <div className="flex items-center gap-2 text-white font-black text-sm uppercase tracking-widest">
-                                <Zap className="text-indigo-500" size={18} /> 100k+ TPS Engine
-                            </div>
+                            <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                                <MessageCircle size={18} />
+                                Let's Discuss
+                            </a>
                         </div>
                     </div>
 

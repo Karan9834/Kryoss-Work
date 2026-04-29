@@ -13,8 +13,6 @@ const AIContentGeneratorHero = () => {
 
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-
-
                     {/* LEFT CONTENT */}
                     <div className="space-y-8 order-1">
 
@@ -23,8 +21,8 @@ const AIContentGeneratorHero = () => {
                             {"</>"} AI Tools
                         </div>
 
-                        {/* Heading */}
-                        <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                             AI Content Generator <span className="text-purple-300">SaaS</span>
                         </h1>
 
@@ -56,44 +54,13 @@ const AIContentGeneratorHero = () => {
                             </a>
                         </div>
 
-                        {/* Stats */}
-                        <div className="grid grid-cols-3 gap-6 pt-4">
-
-                            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center gap-3">
-                                <Star size={20} className="text-purple-300" />
-                                <div>
-                                    <p className="font-semibold">4.9</p>
-                                    <p className="text-sm text-gray-300">Rating</p>
-                                </div>
-                            </div>
-
-                            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center gap-3">
-                                <Users size={20} className="text-purple-300" />
-                                <div>
-                                    <p className="font-semibold">10k+</p>
-                                    <p className="text-sm text-gray-300">Users</p>
-                                </div>
-                            </div>
-
-                            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center gap-3">
-                                <TrendingUp size={20} className="text-purple-300" />
-                                <div>
-                                    <p className="font-semibold">99.9%</p>
-                                    <p className="text-sm text-gray-300">Uptime</p>
-                                </div>
-                            </div>
-
-                        </div>
-
                     </div>
+
                     {/* RIGHT IMAGE */}
                     <div className="relative flex justify-center lg:justify-start order-2">
 
-                        {/* Premium Badge */}
-                        <div className="absolute top-4 right-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm px-4 py-1 rounded-full">
-                            ✨ Premium
-                        </div>
-
+                        {/* Premium Badge - Removed as requested */}
+                        
                         {/* Replace with your downloaded image */}
                         <img
                             src={aicontentheroimg}

@@ -101,20 +101,6 @@ const HeroERP = () => {
               className="w-full h-[420px] object-cover"
             />
           </div>
-
-          {/* FLOATING STATS - Updated typography */}
-          <div className="absolute -bottom-6 left-6 bg-white rounded-xl shadow-md px-4 py-3">
-            <p className="text-[11px] font-medium uppercase tracking-[0.05em] text-gray-500">Monthly Revenue</p>
-            <p className="font-bold text-[16px] text-gray-900">$124,582</p>
-          </div>
-
-          <div className="absolute -top-6 right-6 bg-white rounded-xl shadow-md px-4 py-2">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-              <span className="text-[12px] font-medium uppercase tracking-[0.05em] text-gray-700">Live Dashboard</span>
-            </span>
-          </div>
-
         </div>
       </div>
 

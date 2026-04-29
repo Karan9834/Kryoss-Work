@@ -22,7 +22,8 @@ const AcadifyEduERPHero = () => {
                         <span className="text-slate-600 text-sm font-bold tracking-wide uppercase font-sans">Next-Gen Education ERP</span>
                     </div>
 
-                    <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-900 leading-[1.15]">
+                    {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
                         Manage Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-900 uppercase">Campus</span> with Pure Intelligence.
                     </h1>
 
@@ -30,7 +31,7 @@ const AcadifyEduERPHero = () => {
                         AcadifyEdu is the ultimate all-in-one education management system that bridges the gap between administrators, teachers, and students.
                     </p>
 
-                    <div className="pt-2">
+                    <div className="pt-2 flex flex-wrap gap-4">
                         <a
                             href={demoUrl}
                             target="_blank"
@@ -40,10 +41,10 @@ const AcadifyEduERPHero = () => {
                             Live Demo
                             <ArrowRight size={22} />
                         </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+                        <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                            <MessageCircle size={18} />
+                            Let's Discuss
+                        </a>
                     </div>
                 </div>
 

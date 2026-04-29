@@ -16,8 +16,8 @@ const HeroWriteFlow = () => {
             AI Writing Assistant
           </div>
 
-          {/* HEADING */}
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          {/* HEADING - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Generate Content at{" "}
             <span className="text-yellow-400">Lightning Speed</span>
           </h1>
@@ -29,7 +29,7 @@ const HeroWriteFlow = () => {
           </p>
 
           {/* CTA */}
-          <div className="mt-10">
+          <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="http://preview.codecanyon.net/item/chat-gpt-with-html-5-and-javascript/full_screen_preview/44832114"
               target="_blank"
@@ -38,10 +38,10 @@ const HeroWriteFlow = () => {
             >
               Live Demo
             </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
+            <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+              <MessageCircle size={18} />
+              Let's Discuss
+            </a>
           </div>
 
           {/* MINI TEXT */}
@@ -64,10 +64,7 @@ const HeroWriteFlow = () => {
             />
           </div>
 
-          {/* FLOATING BADGE */}
-          <div className="absolute -top-6 right-6 bg-black border border-white/10 px-4 py-2 rounded-xl text-sm text-yellow-400 shadow-lg">
-            ⚡ AI Generated
-          </div>
+          {/* FLOATING BADGE - Removed as requested */}
         </div>
       </div>
 

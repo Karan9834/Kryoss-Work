@@ -48,8 +48,8 @@ const HotelHero = () => {
               </span>
             </div>
             
-            {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] tracking-tight">
+            {/* Main Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Smart Hospitality
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-indigo-200">
                 Management

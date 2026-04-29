@@ -148,14 +148,6 @@ const SaaSHero = () => {
               className="relative w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
             />
           </div>
-
-          {/* Premium Badge */}
-          <div className="absolute -bottom-4 -right-4 bg-white/90 backdrop-blur-md rounded-xl px-4 py-2 shadow-lg border border-gray-200/50">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-              <span className="text-[10px] font-semibold uppercase tracking-[0.05em] text-gray-700">Live Preview</span>
-            </div>
-          </div>
         </div>
       </div>
 

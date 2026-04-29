@@ -28,7 +28,8 @@ const PharmacyNextAIHero = () => {
                         <span className="text-cyan-100 text-sm font-bold tracking-wide uppercase">AI-Powered Pharmacy Management</span>
                     </div>
 
-                    <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
+                    {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
                         Smart Billing.{" "}
                         <span className="text-transparent bg-clip-text"
                             style={{ backgroundImage: "linear-gradient(90deg, #6ee7b7, #22d3ee, #818cf8)" }}>
@@ -40,25 +41,6 @@ const PharmacyNextAIHero = () => {
                     <p className="text-lg text-teal-50/80 max-w-xl leading-relaxed">
                         PharmacyNext AI is the ultimate retail pharmacy OS. From AI-driven stock predictions and drug interaction alerts to lightning-fast POS billing—running your pharmacy has never been this smart.
                     </p>
-
-                    {/* Stats row */}
-                    <div className="flex flex-wrap gap-6 sm:gap-8 py-6 border-t border-white/10">
-                        {[
-                            { icon: <Zap size={20} />, label: "Billing Speed", value: "3x Faster" },
-                            { icon: <ShieldPlus size={20} />, label: "Safety Checks", value: "Real-time" },
-                            { icon: <LayoutDashboard size={20} />, label: "Insights", value: "AI-Driven" },
-                        ].map((stat, i) => (
-                            <div key={i} className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-cyan-300 flex-shrink-0">
-                                    {stat.icon}
-                                </div>
-                                <div>
-                                    <p className="text-white font-bold text-lg sm:text-xl leading-none">{stat.value}</p>
-                                    <p className="text-cyan-200/60 text-[10px] sm:text-xs mt-1 font-medium">{stat.label}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
 
                     <div className="pt-2 flex flex-wrap gap-4">
                         <a
@@ -90,16 +72,7 @@ const PharmacyNextAIHero = () => {
                         <div className="w-full h-64 sm:h-80 lg:h-[400px] rounded-[2rem] sm:rounded-[3rem] border-4 sm:border-8 border-white/10 shadow-2xl bg-slate-900/40 backdrop-blur-md flex items-center justify-center overflow-hidden">
                             <img src={heroImg} alt="PharmacyNext AI Dashboard" className="w-full h-full object-cover" />
                         </div>
-                        {/* Floating elements */}
-                        <div className="absolute -bottom-6 -left-6 sm:-bottom-8 sm:-left-8 bg-white p-3 sm:p-5 rounded-2xl sm:rounded-3xl shadow-2xl flex items-center gap-3 sm:gap-4">
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 flex-shrink-0">
-                                <ShieldPlus size={20} className="sm:w-[24px] sm:h-[24px]" />
-                            </div>
-                            <div>
-                                <p className="text-[10px] font-bold text-slate-400 uppercase leading-none mb-1">Interaction Check</p>
-                                <p className="text-xs sm:text-sm font-black text-emerald-600 leading-none">100% Secure</p>
-                            </div>
-                        </div>
+                        {/* Floating elements - Removed as requested */}
                     </div>
                 </div>
             </div>

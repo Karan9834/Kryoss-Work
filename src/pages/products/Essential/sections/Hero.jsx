@@ -95,8 +95,8 @@ const EssentialPluginHero = () => {
               <span className="text-xs font-mono text-purple-300 tracking-wider">[ PLUGIN ECOSYSTEM v2.0 ]</span>
             </div>
 
-            {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight">
+            {/* Main Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               <span className="text-white">Essential</span>
               <span className="block bg-gradient-to-r from-purple-400 via-fuchsia-400 to-blue-400 text-transparent bg-clip-text">
                 Plugins

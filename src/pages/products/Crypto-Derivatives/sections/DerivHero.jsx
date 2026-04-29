@@ -20,7 +20,8 @@ const DerivHero = () => {
                             <span>Institutional Derivatives Engine</span>
                         </div>
 
-                        <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight tracking-tight">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
                             The Future of <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-400 to-indigo-400">
                                 Leverage Trading.
@@ -41,19 +42,10 @@ const DerivHero = () => {
                                 Try Live Demo
                                 <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
                             </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
-                        </div>
-
-                        <div className="pt-8 flex flex-wrap items-center justify-center lg:justify-start gap-8 opacity-60">
-                            <div className="flex items-center gap-2 text-white font-black text-sm uppercase tracking-widest">
-                                <ShieldCheck className="text-purple-500" size={18} /> Insurance Fund Support
-                            </div>
-                            <div className="flex items-center gap-2 text-white font-black text-sm uppercase tracking-widest">
-                                <TrendingUp className="text-blue-500" size={18} /> 100x Leverage Core
-                            </div>
+                            <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                                <MessageCircle size={18} />
+                                Let's Discuss
+                            </a>
                         </div>
                     </div>
 

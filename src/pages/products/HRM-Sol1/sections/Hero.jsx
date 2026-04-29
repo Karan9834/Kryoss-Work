@@ -21,8 +21,8 @@ const Hero = () => {
           
           {/* LEFT CONTENT */}
           <div className="space-y-6">
-            {/* Heading */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            {/* Heading - Already has correct typography */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
               Transform Your{' '}
               <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                 HR Management

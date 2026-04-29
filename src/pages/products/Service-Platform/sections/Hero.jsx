@@ -23,8 +23,8 @@ const ServiceHero = () => {
             Service Booking Platform
           </span>
 
-          {/* Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Book Trusted{" "}
             <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-yellow-400 bg-clip-text text-transparent">
               Services

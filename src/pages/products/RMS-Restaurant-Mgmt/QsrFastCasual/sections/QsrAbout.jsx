@@ -13,12 +13,7 @@ const QsrAbout = () => {
                         <div className="relative w-full h-[420px] rounded-[2.5rem] overflow-hidden shadow-xl">
                             <img src={qsrAboutImg} alt="About QSR" className="w-full h-full object-cover" />
                         </div>
-                        {/* Decorative accent */}
-                        <div className="absolute -bottom-5 -left-5 w-20 h-20 rounded-[1.5rem] bg-gradient-to-br from-orange-500 to-amber-400 opacity-20" />
-                        <div className="absolute -top-4 -right-4 bg-orange-500 text-white px-4 py-3 rounded-2xl shadow-xl">
-                            <p className="text-xs font-semibold text-orange-200">Locations Served</p>
-                            <p className="text-2xl font-black">2,500+</p>
-                        </div>
+                        
                     </div>
 
                     {/* Right: Text Content */}

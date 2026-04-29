@@ -62,22 +62,6 @@ const AboutWriteFlow = () => {
             ))}
           </div>
 
-          {/* STATS */}
-          <div className="grid grid-cols-3 gap-6 mt-10">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900">10k+</h3>
-              <p className="text-gray-500 text-sm">Users</p>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900">1M+</h3>
-              <p className="text-gray-500 text-sm">Content Generated</p>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900">99%</h3>
-              <p className="text-gray-500 text-sm">Satisfaction</p>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>

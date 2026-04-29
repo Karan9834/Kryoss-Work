@@ -26,7 +26,8 @@ const InilabsHero = () => {
                         <span className="text-emerald-100 text-sm font-bold tracking-wide uppercase">All-In-One School OS</span>
                     </div>
 
-                    <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
+                    {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
                         Revolutionize Your{" "}
                         <span className="text-transparent bg-clip-text"
                             style={{ backgroundImage: "linear-gradient(90deg, #6ee7b7, #3b82f6)" }}>
@@ -37,25 +38,6 @@ const InilabsHero = () => {
                     <p className="text-lg text-emerald-50/80 max-w-xl leading-relaxed">
                         iNiLabs School Management System provides a comprehensive digital infrastructure for modern K-12 schools.
                     </p>
-
-                    {/* Stats row */}
-                    <div className="flex flex-wrap gap-6 sm:gap-8 py-6 border-t border-white/10">
-                        {[
-                            { icon: <BookOpen size={20} />, label: "Modules", value: "45+" },
-                            { icon: <Clock size={20} />, label: "Automation", value: "Real-time" },
-                            { icon: <ShieldCheck size={20} />, label: "Secure Data", value: "256-bit" },
-                        ].map((stat, i) => (
-                            <div key={i} className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-emerald-300 flex-shrink-0">
-                                    {stat.icon}
-                                </div>
-                                <div>
-                                    <p className="text-white font-bold text-lg sm:text-xl leading-none">{stat.value}</p>
-                                    <p className="text-emerald-200/60 text-[10px] sm:text-xs mt-1 font-medium">{stat.label}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
 
                     <div className="pt-2 flex flex-wrap gap-4">
                         <a

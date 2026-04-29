@@ -20,7 +20,8 @@ const AgencyManagementHero = () => {
               <span className="text-gray-300 text-xs font-bold uppercase tracking-widest">Agency Management Solution</span>
             </div>
 
-            <h1 className="text-3xl lg:text-4xl font-semibold text-white leading-tight">
+            {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
               Powerful <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-400">
                 Back-Office Management
@@ -59,11 +60,6 @@ const AgencyManagementHero = () => {
               <div className="absolute -inset-10 bg-gradient-to-tr from-amber-600/30 to-orange-400/20 rounded-[60px] blur-3xl opacity-40 group-hover:opacity-60 transition-all duration-700"></div>
               <div className="relative z-10 w-full h-[250px] md:h-[400px] max-w-[500px] mx-auto bg-white/5 rounded-[40px] border-8 border-white/10 shadow-2xl overflow-hidden transition-all duration-700 group-hover:scale-[1.02] flex items-center justify-center">
                 <img src={heroImg} alt="Travel Agency Management Hero" className="w-full h-full object-cover" />
-                {/* Live badge */}
-                <div className="absolute bottom-6 right-6 p-3 bg-black/60 backdrop-blur-md border border-white/10 rounded-xl flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.8)]"></div>
-                  <span className="text-[10px] text-white font-bold uppercase tracking-wider">Cloud Management</span>
-                </div>
               </div>
             </div>
           </div>

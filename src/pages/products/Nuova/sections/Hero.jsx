@@ -44,7 +44,8 @@ const NuovaNewsHero = () => {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+            {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               <span className="text-white">BREAK</span>
               <span className="block bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
                 THE NEWS
@@ -53,8 +54,8 @@ const NuovaNewsHero = () => {
             </h1>
 
             <p className="text-gray-400 max-w-lg leading-relaxed">
-  Our next-generation news management platform is designed to transform how you create, manage, and distribute content. Powered by AI-driven insights and automation, it streamlines workflows, enhances efficiency, and gives you the edge needed to dominate the modern media landscape.
-</p>
+              Our next-generation news management platform is designed to transform how you create, manage, and distribute content. Powered by AI-driven insights and automation, it streamlines workflows, enhances efficiency, and gives you the edge needed to dominate the modern media landscape.
+            </p>
 
             {/* BUTTONS */}
             <div className="flex flex-wrap gap-4">

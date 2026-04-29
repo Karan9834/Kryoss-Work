@@ -22,8 +22,8 @@ const BetYourDuckHero = () => {
                             {"</>"} Betting Exchange
                         </div>
 
-                        {/* Heading */}
-                        <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                             BetYourDuck <span className="text-emerald-300">Sports Betting</span> App
                         </h1>
 
@@ -35,7 +35,7 @@ const BetYourDuckHero = () => {
                         </p>
 
                         {/* CTA */}
-                        <div>
+                        <div className="flex flex-wrap gap-4">
                             <a
                                 href="https://preview.codecanyon.net/item/bet-your-duck/full_screen_preview/55832766"
                                 target="_blank"
@@ -44,39 +44,10 @@ const BetYourDuckHero = () => {
                             >
                                 Live Demo
                             </a>
-                    <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
-                        <MessageCircle size={18} />
-                        Let's Discuss
-                    </a>
-                        </div>
-
-                        {/* Stats */}
-                        <div className="grid grid-cols-3 gap-6 pt-4">
-
-                            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center gap-3">
-                                <Star size={20} className="text-emerald-300" />
-                                <div>
-                                    <p className="font-semibold">4.9</p>
-                                    <p className="text-sm text-gray-300">Rating</p>
-                                </div>
-                            </div>
-
-                            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center gap-3">
-                                <Users size={20} className="text-emerald-300" />
-                                <div>
-                                    <p className="font-semibold">50k+</p>
-                                    <p className="text-sm text-gray-300">Gamers</p>
-                                </div>
-                            </div>
-
-                            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center gap-3">
-                                <TrendingUp size={20} className="text-emerald-300" />
-                                <div>
-                                    <p className="font-semibold">99.9%</p>
-                                    <p className="text-sm text-gray-300">Uptime</p>
-                                </div>
-                            </div>
-
+                            <a href="/company/contact" className="group inline-flex items-center gap-2 px-8 py-3 bg-white/20 text-white border border-white/30 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 backdrop-blur-md">
+                                <MessageCircle size={18} />
+                                Let's Discuss
+                            </a>
                         </div>
 
                     </div>
@@ -84,10 +55,7 @@ const BetYourDuckHero = () => {
                     {/* RIGHT IMAGE */}
                     <div className="relative flex justify-center lg:justify-end w-full lg:w-[526px] h-[501px] order-1 lg:order-2 ml-auto flex-wrap gap-4">
 
-                        {/* Premium Badge */}
-                        <div className="absolute top-4 right-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm px-4 py-1 rounded-full z-10">
-                            ✨ Premium
-                        </div>
+                        {/* Premium Badge - Removed as requested */}
 
                         <img
                             src={hero}

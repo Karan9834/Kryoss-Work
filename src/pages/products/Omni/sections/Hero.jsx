@@ -28,8 +28,8 @@ const HeroSection = () => {
             </span>
           </div>
 
-          {/* Heading */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
             Build Your
             <span className="block">E-commerce Empire</span>
             <span className="bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
@@ -42,23 +42,6 @@ const HeroSection = () => {
             Launch your online store with a powerful mobile-first platform.
             Fast, secure, and built for high conversions.
           </p>
-
-          {/* Features Row */}
-          <div className="flex flex-wrap justify-center lg:justify-start gap-3">
-            <div className="flex items-center gap-1.5">
-              <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center">
-                <Truck className="w-3.5 h-3.5 text-white" />
-              </div>
-              <span className="text-white/90 text-xs">Fast Delivery</span>
-            </div>
-
-            <div className="flex items-center gap-1.5">
-              <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center">
-                <Shield className="w-3.5 h-3.5 text-white" />
-              </div>
-              <span className="text-white/90 text-xs">Secure Payments</span>
-            </div>
-          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
@@ -97,15 +80,6 @@ const HeroSection = () => {
               alt="Ecommerce Platform"
               className="rounded-lg w-[500px] object-cover transition duration-500 hover:scale-105"
             />
-          </div>
-
-          {/* Floating Tags */}
-          <div className="absolute -top-3 left-4 bg-white px-2.5 py-0.5 rounded-md shadow text-xs">
-            🛒 Smart Orders
-          </div>
-
-          <div className="absolute -bottom-3 right-4 bg-white px-2.5 py-0.5 rounded-md shadow text-xs">
-            ⚡ Fast Checkout
           </div>
         </div>
       </div>

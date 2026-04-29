@@ -20,6 +20,9 @@ import intro from "../../../assets/Courier/intro.png"
 import tail from "../../../assets/Courier/tail.webp"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import admin from "../../../assets/Courier/admin.jpg"
+import user from "../../../assets/Courier/user.jpg"
+import driver from "../../../assets/Courier/driver.jpg"
 
 const CourierDeliveryApp = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -36,7 +39,7 @@ const CourierDeliveryApp = () => {
     const panelFeatures = {
         "User App": {
             icon: User,
-            image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: user,
             features: [
                 "Easy Onboarding", "Book Parcel", "Live Tracking",
                 "Check Booked Parcels List", "Real Time ETA", "In-app Payment",
@@ -45,7 +48,7 @@ const CourierDeliveryApp = () => {
         },
         "Driver App": {
             icon: Truck,
-            image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: driver,
             features: [
                 "Driver Profile Management", "Accept/Reject Trips", "In-app Navigation",
                 "Earnings Tracking", "Contact Customer", "Pick Up/Drop Confirmation",
@@ -54,7 +57,7 @@ const CourierDeliveryApp = () => {
         },
         "Admin Panel": {
             icon: Shield,
-            image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: admin,
             features: [
                 "Manage Drivers", "Manage Customer Orders", "Manage Categories",
                 "Trip Tracking Live", "Vehicle Tracking", "Instant Notifications",
@@ -297,7 +300,7 @@ const CourierDeliveryApp = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-auto object-contain"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                                 onError={(e) => { e.target.src = 'https://images.pexels.com/photos/5082567/pexels-photo-5082567.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                             />

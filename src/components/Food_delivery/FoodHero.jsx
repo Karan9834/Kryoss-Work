@@ -73,16 +73,6 @@ const FoodHero = () => {
               delivered fast & fresh.
             </p>
 
-            {/* Tags */}
-            <div className="flex gap-3 flex-wrap justify-center lg:justify-start">
-              <span className="bg-white px-3 py-1 rounded-full text-xs font-normal tracking-wider uppercase shadow">
-                30 min delivery
-              </span>
-              <span className="bg-white px-3 py-1 rounded-full text-xs font-normal tracking-wider uppercase shadow">
-                1000+ restaurants
-              </span>
-            </div>
-
             {/* Hero Button */}
             <div className="flex gap-4 justify-center lg:justify-start">
               <motion.button

@@ -18,8 +18,8 @@ const Hero = () => {
                             Saas
                         </div>
 
-                        {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight">
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                             Real Estate Agency
                         </h1>
 
@@ -52,13 +52,13 @@ const Hero = () => {
                     <div className="relative flex justify-center lg:justify-end">
 
                         {/* glow */}
-                        <div className="absolute w-[420px] h-[420px]  blur-[120px] rounded-full"></div>
+                        <div className="absolute w-[420px] h-[420px] blur-[120px] rounded-full"></div>
 
                         {/* IMAGE PLACEHOLDER */}
                         <div className="relative w-full max-w-md h-[420px] rounded-2xl flex items-center justify-center text-gray-300">
                             <img
                                 src={realEstateHero}
-                                alt="Carpool App"
+                                alt="Real Estate Agency"
                                 className="w-full h-full object-cover rounded-2xl"
                             />
                         </div>

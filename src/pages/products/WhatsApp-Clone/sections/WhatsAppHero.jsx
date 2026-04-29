@@ -85,9 +85,10 @@ const WhatsAppHero = () => {
               </span>
             </motion.div>
 
+            {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
             <motion.h1
               variants={itemVariants}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
             >
               <span className="text-white">Connect with</span>
               <br />
@@ -172,24 +173,10 @@ const WhatsAppHero = () => {
                 />
               </div>
 
-              {/* FLOATING MESSAGE */}
-              <div className="absolute -top-4 left-2 bg-gray-900/90 rounded-xl p-3 flex gap-2 text-white text-xs shadow-lg">
-                <MessageCircle className="w-4 h-4 text-green-400" />
-                Hey! How are you?
-              </div>
-
-              {/* CALL */}
-              <div className="absolute -bottom-4 right-2 bg-gray-900/90 rounded-xl p-3 flex gap-2 text-white text-xs shadow-lg">
-                <Video className="w-4 h-4 text-blue-400" />
-                Incoming Call
-              </div>
-
-              {/* LOCK */}
-              <div className="absolute bottom-16 left-2 bg-gray-900/80 px-3 py-1 rounded-lg text-xs flex gap-1 items-center text-gray-300">
-                <Lock className="w-3 h-3 text-green-400" />
-                Encrypted
-              </div>
-
+              {/* Removed all floating cards/badges: */}
+              {/* - Removed "FLOATING MESSAGE" badge */}
+              {/* - Removed "CALL" badge */}
+              {/* - Removed "LOCK" badge */}
             </div>
           </motion.div>
 

@@ -59,19 +59,6 @@ const DatingHero = () => {
                                 <Heart size={20} className="group-hover:fill-white transition-all" />
                             </button>
                         </div>
-
-                        {/* Social Proof */}
-                        <div className="flex items-center gap-8 pt-8 opacity-70">
-                            <div className="flex -space-x-3">
-                                {[1, 2, 3, 4].map(i => (
-                                    <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-rose-100 flex items-center justify-center text-rose-500 font-bold text-xs">U{i}</div>
-                                ))}
-                            </div>
-                            <div className="text-sm font-medium text-slate-500">
-                                <span className="text-slate-900 font-bold block">1M+ Connects</span>
-                                Trusted by globally.
-                            </div>
-                        </div>
                     </div>
 
                     {/* Right: Visual Mockup */}
@@ -82,17 +69,6 @@ const DatingHero = () => {
                             <div className="relative bg-white p-6 rounded-[3rem] shadow-2xl border-4 border-white transform hover:rotate-2 transition-transform duration-700">
                                 <div className="aspect-[5/5] bg-rose-50 rounded-[2.5rem] overflow-hidden flex items-center justify-center relative">
                                     <img src={heroImg} alt="Dating App UI" className="w-full h-full object-cover" />
-                                </div>
-                            </div>
-
-                            {/* Floating decorative elements */}
-                            <div className="absolute -top-10 -right-10 bg-white p-4 rounded-2xl shadow-xl z-20 animate-float hidden lg:flex items-center gap-3">
-                                <div className="w-10 h-10 bg-rose-100 rounded-full flex items-center justify-center text-rose-600">
-                                    <ShieldCheck size={20} />
-                                </div>
-                                <div>
-                                    <p className="text-xs font-bold text-slate-400 uppercase">Verified</p>
-                                    <p className="text-sm font-bold text-slate-900">Trust Badge</p>
                                 </div>
                             </div>
                         </div>

@@ -19,13 +19,6 @@ const RestoAbout = () => {
                             />
                         </div>
 
-                        {/* Floating stat card */}
-                        <div className="absolute -bottom-10 -right-10 bg-white p-6 rounded-3xl shadow-2xl z-20 border border-emerald-50 animate-bounce-subtle">
-                            <div className="flex items-center gap-4 text-emerald-600">
-                                <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center font-black">99%</div>
-                                <p className="text-xs font-bold text-gray-800 uppercase leading-none">Customer <br />Satisfaction</p>
-                            </div>
-                        </div>
                     </div>
 
                     {/* Right: Content */}

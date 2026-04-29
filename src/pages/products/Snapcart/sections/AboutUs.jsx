@@ -48,11 +48,6 @@ const AboutUs = () => {
               className="rounded-lg w-[650px] object-cover"
             />
           </div>
-
-          {/* Floating Tag */}
-          <div className="absolute -bottom-4 left-6 bg-white px-4 py-2 rounded-lg shadow text-xs font-medium">
-            🚀 Growing Fast
-          </div>
         </div>
 
         {/* RIGHT CONTENT */}
