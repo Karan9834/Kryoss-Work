@@ -42,18 +42,18 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white shadow-lg py-3"
-          : "bg-white py-0 border-b border-gray-50"
+          ? "bg-white shadow-lg"
+          : "bg-white border-b border-gray-50"
       }`}
     >
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="flex justify-between items-center h-18">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center h-full">
             <img
               src={logo}
               alt="KryossOne"
-              className="h-24 w-auto object-contain"
+              className="h-8 md:h-10 w-auto object-contain"
             />
           </Link>
 

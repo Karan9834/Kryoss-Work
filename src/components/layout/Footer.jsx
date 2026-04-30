@@ -76,10 +76,10 @@ const Footer = () => {
             {/* LEFT SECTION */}
             <div className="lg:col-span-2 space-y-6">
               {/* Logo - Updated with better sizing */}
-              <img 
-                src={logo} 
-                alt="logo" 
-                className="h-12 md:h-24 w-auto brightness-0 invert object-contain" 
+              <img
+                src={logo}
+                alt="logo"
+                className="h-8 md:h-10 w-auto brightness-0 invert object-contain"
               />
 
               <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
@@ -182,9 +182,9 @@ const Footer = () => {
         </div>
 
         {/* 🔥 BIG BRAND TEXT */}
-        <div className="absolute bottom-0 w-full flex justify-center pointer-events-none overflow-hidden select-none">
-          <h1 className="text-[15vw] font-black tracking-tighter opacity-[0.03] text-white">
-            kryossone
+        <div className="absolute bottom-0 left-0 right-0 w-full flex justify-center items-end pointer-events-none overflow-hidden select-none">
+          <h1 className="w-full text-center text-[19vw] sm:text-[17vw] md:text-[16vw] lg:text-[15vw] font-black tracking-tighter opacity-[0.03] text-white leading-none whitespace-nowrap">
+            KRYOSSONE
           </h1>
         </div>
 

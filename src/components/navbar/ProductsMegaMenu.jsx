@@ -255,7 +255,7 @@ const PMM_CSS = `
     max-height: 88vh;
     overflow-y: auto;
     position: absolute;
-    top: calc(100% + 10px);
+    top: calc(100% + 2px);
     left: 50%;
     transform: translateX(-50%) translateY(0);
     /* Smooth spring-style entrance */

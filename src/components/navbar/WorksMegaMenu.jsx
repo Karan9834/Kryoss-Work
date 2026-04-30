@@ -156,7 +156,7 @@ const PMM_CSS = `
     max-height: 88vh;
     overflow-y: auto;
     position: absolute;
-    top: calc(100% + 10px);
+    top: calc(100% + 2px);
     left: 50%;
     /* Works uses -50% same as Products */
     transform: translateX(-70%) translateY(0);

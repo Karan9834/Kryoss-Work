@@ -198,7 +198,7 @@ const PMM_CSS = `
     max-height: 88vh;
     overflow-y: auto;
     position: absolute;
-    top: calc(100% + 10px);
+    top: calc(100% + 2px);
     left: 50%;
     transform: translateX(-60%) translateY(0);
     animation: pmmSpringIn 0.28s cubic-bezier(0.22,1,0.36,1) forwards;

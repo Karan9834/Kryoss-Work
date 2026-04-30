@@ -26,7 +26,7 @@ const COMPANY_CSS = `
   /* ── Container ── */
   .cm-dropdown {
     position: absolute;
-    top: calc(100% + 10px);
+    top: calc(100% + 2px);
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
