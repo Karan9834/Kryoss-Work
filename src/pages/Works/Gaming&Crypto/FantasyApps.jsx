@@ -45,7 +45,7 @@ const FantasyApps = () => {
 
             {/* 1. Hero Section */}
             <section
-                className="relative pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center items-center text-center text-white"
+                className="relative pt-32 pb-16 md:pt-40 md:pb-20 flex flex-col justify-center items-center text-center text-white"
                 style={{
                     backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('/Hero/gamingWork.png')",
                     backgroundSize: 'cover',
@@ -59,34 +59,29 @@ const FantasyApps = () => {
                     transition={{ duration: 0.8 }}
                     className="relative z-10 container mx-auto px-4"
                 >
-                    <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">Fantasy <span className="text-orange-500">Apps</span></h1>
+                    {/* Hero H1 - Updated typography */}
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+                        Fantasy <span className="text-orange-500">Apps</span>
+                    </h1>
                     <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto text-gray-200">
                         Experience the thrill of fantasy sports with our cutting-edge platforms designed for cricket and sports enthusiasts.
                     </p>
                 </motion.div>
             </section>
 
-            {/* 2. Breadcrumb / Page Routing Section */}
-            <section className="bg-gray-100/80 py-4 border-b border-gray-200 backdrop-blur-md sticky top-0 z-40 shadow-sm">
-                <div className="container mx-auto px-4 flex flex-wrap items-center text-sm md:text-base font-semibold text-gray-600">
-                    <a href="/" className="hover:text-orange-500 transition-colors duration-300">Home</a>
-                    <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-                    <a href="/works" className="hover:text-orange-500 transition-colors duration-300">Gaming & Crypto</a>
-                    <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-                    <span className="text-orange-500">Fantasy Apps</span>
-                </div>
-            </section>
+            {/* 2. Breadcrumb - REMOVED */}
 
             {/* 3, 4, 5. Portfolio Projects List (Alternating View) */}
-            <section className="pt-16 md:pt-24 bg-white relative z-10 w-full mb-16">
+            <section className="pt-12 md:pt-16 bg-white relative z-10 w-full mb-16">
                 <div className="container mx-auto px-4 lg:px-8">
                     
                     <div className="text-center mb-12">
+                        {/* Section H2 - Updated typography */}
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-black mb-4"
+                            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-black mb-4"
                         >
                             Our <span className="text-orange-500">Fantasy</span> Portfolio
                         </motion.h2>
@@ -127,11 +122,13 @@ const FantasyApps = () => {
                                             transition={{ duration: 0.6 }}
                                             className="w-full lg:w-1/2 flex flex-col justify-center z-20"
                                         >
-                                            <h3 className="text-2xl md:text-3xl font-medium text-black mb-6 leading-tight hover:text-orange-600 transition-colors duration-300">
+                                            {/* Project Title - Updated: changed to font-bold */}
+                                            <h3 className="text-2xl md:text-4xl font-bold text-black mb-6 leading-tight hover:text-orange-600 transition-colors duration-300">
                                                 <span className="text-red-500">{project.titleRed}</span>
                                                 <span className="text-gray-800">{project.titleBlack}</span>
                                             </h3>
-                                            <p className="text-gray-600 leading-relaxed mb-8 text-lg font-light">
+                                            {/* Description - Updated: changed from font-light to font-normal */}
+                                            <p className="text-gray-600 leading-relaxed mb-8 text-lg font-normal">
                                                 {project.description}
                                             </p>
                                             <a 
@@ -155,25 +152,25 @@ const FantasyApps = () => {
                 </div>
             </section>
 
-            {/* 6. Stats Counter Section */}
+            {/* 6. Stats Counter Section - Updated: changed from font-extrabold to font-bold */}
             <section className="py-20 bg-gray-900 text-white relative overflow-hidden" style={{ backgroundImage: "url('https://kryosssoftech.org/assets/images/indexImg/Counter.png')", backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center' }}>
                 <div className="absolute inset-0 bg-black/80"></div>
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-700/50">
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">750+</h3>
+                            <h3 className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">750+</h3>
                             <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Project Delivered</p>
                         </div>
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">150+</h3>
+                            <h3 className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">150+</h3>
                             <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Development Staff</p>
                         </div>
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">5+</h3>
+                            <h3 className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">5+</h3>
                             <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Years of Experience</p>
                         </div>
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">450+</h3>
+                            <h3 className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">450+</h3>
                             <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Satisfied Clients</p>
                         </div>
                     </div>
