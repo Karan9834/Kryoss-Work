@@ -52,7 +52,7 @@ const FinanceWorks = () => {
                     transition={{ duration: 0.8 }}
                     className="relative z-10 container mx-auto px-4"
                 >
-                    <h1 className="text-[30px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] tracking-[-0.02em] mb-6">Finance <span className="text-orange-500">Works</span></h1>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">Finance <span className="text-orange-500">Works</span></h1>
                     <p className="text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-[29rem] mx-auto text-gray-200">
                         Precision-driven financial technology solutions that empower businesses and streamline wealth management.
                     </p>
@@ -79,7 +79,7 @@ const FinanceWorks = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-[30px] lg:text-[36px] font-bold leading-[1.2] text-black mb-4"
+                            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-black mb-4"
                         >
                             Our <span className="text-orange-500">Finance</span> Portfolio
                         </motion.h2>
@@ -134,10 +134,10 @@ const FinanceWorks = () => {
                                             {/* Content Box */}
                                             <div className="w-full lg:w-1/2 flex flex-col justify-center z-20">
                                                 <h3
-                                                    className="text-2xl md:text-4xl font-medium text-black mb-6 leading-tight hover:text-orange-600 transition-colors duration-300"
+                                                    className="text-2xl md:text-4xl font-bold text-black mb-6 leading-tight hover:text-orange-600 transition-colors duration-300"
                                                     dangerouslySetInnerHTML={{ __html: item.titleHtml || item.titleText }}
                                                 />
-                                                <p className="text-gray-600 leading-relaxed mb-8 text-lg font-light">
+                                                <p className="text-gray-600 leading-relaxed mb-8 text-lg font-normal">
                                                     {item.description}
                                                 </p>
                                                 <a href={item.link || "https://play.google.com/store/games?hl=en_IN"} className="inline-block mt-4 hover:opacity-90 transition-opacity">
@@ -173,19 +173,19 @@ const FinanceWorks = () => {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-700/50">
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">450+</h3>
+                            <h3 className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">450+</h3>
                             <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Satisfied Clients</p>
                         </div>
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">750+</h3>
+                            <h3 className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">750+</h3>
                             <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Project Delivered</p>
                         </div>
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">5+</h3>
+                            <h3 className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">5+</h3>
                             <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Years of Experience</p>
                         </div>
                         <div className="p-4">
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-orange-500 mb-2">150+</h3>
+                            <h3 className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">150+</h3>
                             <p className="text-gray-300 font-medium uppercase tracking-wider text-sm">Development Staff</p>
                         </div>
                     </div>

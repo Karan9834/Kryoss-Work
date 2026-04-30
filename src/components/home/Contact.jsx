@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MessageCircle, Mail, Phone, Calendar, Send, CheckCircle, X, User, Globe } from "lucide-react";
+import { MessageCircle, Mail, Phone, Calendar, Send, CheckCircle, X, User, Globe, AlertCircle } from "lucide-react";
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
@@ -41,18 +41,12 @@ export default function Contact() {
 
       if (response.status === 200) {
         setSubmitted(true);
-        setShowPopup(true);
         setForm({
           name: "",
           email: "",
           phone: "",
           message: ""
         });
-        
-        // Auto close popup after 5 seconds
-        setTimeout(() => {
-          setShowPopup(false);
-        }, 5000);
       } else {
         throw new Error("Failed to send message");
       }
@@ -61,7 +55,12 @@ export default function Contact() {
       setError("Something went wrong. Please try again later.");
     } finally {
       setLoading(false);
+      setShowPopup(true);
       setTimeout(() => setSubmitted(false), 3000);
+      // Auto close popup after 8 seconds for errors, 5 for success
+      setTimeout(() => {
+        setShowPopup(false);
+      }, error ? 8000 : 5000);
     }
   };
 
@@ -154,12 +153,7 @@ export default function Contact() {
                   </p>
                 </div>
 
-                {/* Error Message */}
-                {error && (
-                  <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 rounded-lg text-sm">
-                    {error}
-                  </div>
-                )}
+
 
                 <div className="space-y-5">
 
@@ -224,15 +218,16 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Professional Success Popup */}
+      {/* Professional Status Popup */}
       {showPopup && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 animate-in fade-in duration-300">
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-[100] animate-in fade-in duration-300">
           <div className="bg-white rounded-2xl max-w-md w-full mx-4 overflow-hidden shadow-2xl animate-in zoom-in-95 duration-300">
             {/* Header */}
-            <div className="bg-gradient-to-r from-green-500 to-emerald-600 px-6 py-4 flex justify-between items-center">
+            <div className={`bg-gradient-to-r ${error ? "from-red-500 to-rose-600" : "from-green-500 to-emerald-600"} px-6 py-4 flex justify-between items-center`}>
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-6 h-6 text-white" />
-                <h3 className="text-white font-bold text-lg">Success!</h3>
+                <h3 className="text-white font-bold text-lg">
+                  {error ? "Error!" : "Success!"}
+                </h3>
               </div>
               <button 
                 onClick={closePopup}
@@ -245,34 +240,14 @@ export default function Contact() {
             {/* Body */}
             <div className="p-6">
               <div className="text-center mb-4">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="w-8 h-8 text-green-600" />
-                </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">Message Sent Successfully!</h4>
+                <h4 className="text-xl font-bold text-gray-900 mb-2">
+                  {error ? "Failed to Send Message" : "Message Sent Successfully!"}
+                </h4>
                 <p className="text-gray-600 text-sm">
-                  Thank you for reaching out to us. We've received your message and will get back to you within 24 hours.
+                  {error 
+                    ? "We encountered an issue while sending your message. Please check your connection or try again later."
+                    : "Thank you for reaching out to us. We've received your message and will get back to you within 24 hours."}
                 </p>
-              </div>
-              
-              {/* Summary */}
-              <div className="bg-gray-50 rounded-xl p-4 mt-4">
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Message Summary</p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm">
-                    <User className="w-4 h-4 text-orange-500" />
-                    <span className="text-gray-600">{form.name}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <Mail className="w-4 h-4 text-orange-500" />
-                    <span className="text-gray-600">{form.email}</span>
-                  </div>
-                  {form.phone && (
-                    <div className="flex items-center gap-2 text-sm">
-                      <Phone className="w-4 h-4 text-orange-500" />
-                      <span className="text-gray-600">{form.phone}</span>
-                    </div>
-                  )}
-                </div>
               </div>
             </div>
             
@@ -280,9 +255,9 @@ export default function Contact() {
             <div className="bg-gray-50 px-6 py-4 border-t border-gray-100">
               <button
                 onClick={closePopup}
-                className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-2.5 rounded-xl transition-all duration-300"
+                className={`w-full ${error ? "bg-gray-800 hover:bg-gray-900" : "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700"} text-white font-semibold py-2.5 rounded-xl transition-all duration-300`}
               >
-                Got it, Thanks!
+                {error ? "Close and Try Again" : "Got it, Thanks!"}
               </button>
             </div>
           </div>

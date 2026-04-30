@@ -190,18 +190,12 @@ const ContactUs = ({
           error: false,
           message: "Thank you! Your message has been sent successfully.",
         });
-        setShowPopup(true);
         setFormData({
           name: "",
           email: "",
           phone: "",
           message: `I'm interested in your ${productName} solution. Please provide more details.`,
         });
-        
-        // Auto close popup after 5 seconds
-        setTimeout(() => {
-          setShowPopup(false);
-        }, 5000);
       } else {
         throw new Error("Failed to send message");
       }
@@ -215,6 +209,11 @@ const ContactUs = ({
       });
     } finally {
       setLoading(false);
+      setShowPopup(true);
+      // Auto close popup after 8 seconds for errors, 5 for success
+      setTimeout(() => {
+        setShowPopup(false);
+      }, formStatus.error ? 8000 : 5000);
     }
   };
 
@@ -468,24 +467,7 @@ const ContactUs = ({
                   </p>
                 </div>
 
-                {/* Status Message */}
-                {formStatus.success && !showPopup && (
-                  <div
-                    className="mb-4 p-3 bg-green-50 border border-green-200 text-green-700 rounded-lg flex items-center gap-2 text-sm animate-in fade-in slide-in-from-top-2"
-                  >
-                    <CheckCircle size={16} />
-                    <span>{formStatus.message}</span>
-                  </div>
-                )}
 
-                {formStatus.error && (
-                  <div
-                    className="mb-4 p-3 bg-red-50 border border-red-200 text-red-700 rounded-lg flex items-center gap-2 text-sm animate-in fade-in slide-in-from-top-2"
-                  >
-                    <AlertCircle size={16} className="text-red-500" />
-                    <span>{formStatus.message}</span>
-                  </div>
-                )}
 
                 {/* Form - Increased textarea height and reduced gap */}
                 <form onSubmit={handleSubmit} className="space-y-3 flex-1 flex flex-col">
@@ -584,15 +566,16 @@ const ContactUs = ({
         </div>
       </section>
 
-      {/* Professional Success Popup */}
+      {/* Professional Status Popup */}
       {showPopup && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 animate-in fade-in duration-300">
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-[100] animate-in fade-in duration-300">
           <div className="bg-white rounded-2xl max-w-md w-full mx-4 overflow-hidden shadow-2xl animate-in zoom-in-95 duration-300">
             {/* Header */}
-            <div className="bg-gradient-to-r from-green-500 to-emerald-600 px-6 py-4 flex justify-between items-center">
+            <div className={`bg-gradient-to-r ${formStatus.error ? "from-red-500 to-rose-600" : "from-green-500 to-emerald-600"} px-6 py-4 flex justify-between items-center`}>
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-6 h-6 text-white" />
-                <h3 className="text-white font-bold text-lg">Success!</h3>
+                <h3 className="text-white font-bold text-lg">
+                  {formStatus.error ? "Error!" : "Success!"}
+                </h3>
               </div>
               <button 
                 onClick={closePopup}
@@ -605,38 +588,14 @@ const ContactUs = ({
             {/* Body */}
             <div className="p-6">
               <div className="text-center mb-4">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="w-8 h-8 text-green-600" />
-                </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">Message Sent Successfully!</h4>
+                <h4 className="text-xl font-bold text-gray-900 mb-2">
+                  {formStatus.error ? "Failed to Send Message" : "Message Sent Successfully!"}
+                </h4>
                 <p className="text-gray-600 text-sm">
-                  Thank you for reaching out to us. We've received your inquiry about <span className="font-semibold text-orange-600">{productName}</span> and will get back to you within 24 hours.
+                  {formStatus.error 
+                    ? "We encountered an issue while sending your message. Please check your connection or try again later."
+                    : `Thank you for reaching out to us. We've received your inquiry about ${productName} and will get back to you within 24 hours.`}
                 </p>
-              </div>
-              
-              {/* Summary */}
-              <div className="bg-gray-50 rounded-xl p-4 mt-4">
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Message Summary</p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm">
-                    <User className="w-4 h-4 text-orange-500" />
-                    <span className="text-gray-600">{formData.name}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <Mail className="w-4 h-4 text-orange-500" />
-                    <span className="text-gray-600">{formData.email}</span>
-                  </div>
-                  {formData.phone && (
-                    <div className="flex items-center gap-2 text-sm">
-                      <Phone className="w-4 h-4 text-orange-500" />
-                      <span className="text-gray-600">{formData.phone}</span>
-                    </div>
-                  )}
-                  <div className="flex items-center gap-2 text-sm">
-                    <MessageCircle className="w-4 h-4 text-orange-500" />
-                    <span className="text-gray-600 font-medium">{productName}</span>
-                  </div>
-                </div>
               </div>
             </div>
             
@@ -644,9 +603,9 @@ const ContactUs = ({
             <div className="bg-gray-50 px-6 py-4 border-t border-gray-100">
               <button
                 onClick={closePopup}
-                className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-2.5 rounded-xl transition-all duration-300"
+                className={`w-full ${formStatus.error ? "bg-gray-800 hover:bg-gray-900" : "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700"} text-white font-semibold py-2.5 rounded-xl transition-all duration-300`}
               >
-                Got it, Thanks!
+                {formStatus.error ? "Close and Try Again" : "Got it, Thanks!"}
               </button>
             </div>
           </div>

@@ -12,7 +12,7 @@ const ElearningHero = () => {
 
   return (
     <section className="w-full bg-[#0b1f3a] text-white relative overflow-hidden">
-      
+
       {/* subtle gradient glow */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-purple-600 opacity-20 blur-3xl rounded-full"></div>
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-500 opacity-20 blur-3xl rounded-full"></div>
@@ -79,7 +79,7 @@ const ElearningHero = () => {
 
         {/* RIGHT IMAGE */}
         <div className="relative flex justify-center">
-          
+
           {/* floating card */}
           <div className="absolute -top-6 -left-6 bg-white/10 backdrop-blur rounded-xl px-4 py-2 text-sm">
             🎓 1000+ Courses

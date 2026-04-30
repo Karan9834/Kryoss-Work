@@ -8,11 +8,11 @@ import Newsletter from "../components/Blog/Newsletter";
 const Blog = () => {
   return (
     <>
-    <Hero/>
-    <BlogList/>
-    <PopularBlogs/>
-    <BlogFeature/>
-    <Newsletter/>
+      <Hero />
+      <BlogList />
+      <PopularBlogs />
+      <BlogFeature />
+      <Newsletter />
     </>
   );
 };
