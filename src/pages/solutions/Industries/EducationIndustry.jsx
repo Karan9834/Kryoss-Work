@@ -22,6 +22,10 @@ import intro from "../../../assets/Education/intro.jpg"
 import why from "../../../assets/Education/why.jpg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import online from "../../../assets/education-sol/online.jpg"
+import learn from "../../../assets/education-sol/learn.jpg"
+import lms from "../../../assets/education-sol/lms.jpg"
+import school from "../../../assets/education-sol/school.jpg"
 
 const EducationIndustry = () => {
     const [activeTab, setActiveTab] = useState("LMS Platform");
@@ -38,7 +42,7 @@ const EducationIndustry = () => {
     const panelFeatures = {
         "LMS Platform": {
             icon: MonitorPlay,
-            image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800",
+            image: lms,
             features: [
                 "Course Management", "Student Tracking", "Online Assessments",
                 "Resource Booking", "Collaboration Tools", "Social Networking",
@@ -47,7 +51,7 @@ const EducationIndustry = () => {
         },
         "School Mgmt": {
             icon: BookOpen,
-            image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800",
+            image: school,
             features: [
                 "Parent-Teacher Portal", "Staff Management", "Fee Management",
                 "Timetable Scheduling", "Library Management", "Route Tracking",
@@ -56,7 +60,7 @@ const EducationIndustry = () => {
         },
         "E-Learning App": {
             icon: Smartphone,
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
+            image: learn,
             features: [
                 "Video Lessons", "Interactive Quizzes", "Offline Access",
                 "Progress Tracking", "Discussion Forums", "Learning Paths",
@@ -65,7 +69,7 @@ const EducationIndustry = () => {
         },
         "Online Tutoring": {
             icon: Users,
-            image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800",
+            image: online,
             features: [
                 "Tutor Matching", "Virtual Whiteboard", "Screen Sharing",
                 "Session Recording", "Secure Payments", "Feedback System",
@@ -327,7 +331,7 @@ const EducationIndustry = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-auto object-cover rounded-2xl drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-auto object-cover rounded-2xl"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                                 onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
                             />

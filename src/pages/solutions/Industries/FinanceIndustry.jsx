@@ -20,6 +20,9 @@ import intro from "../../../assets/Finance/intro.png"
 import why from "../../../assets/Finance/why.jpg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import admin from "../../../assets/finance-sol/admin.jpg"
+import merchant from "../../../assets/finance-sol/merchant.jpg"
+import user from "../../../assets/finance-sol/user.jpg"
 
 const FinanceIndustry = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -36,7 +39,7 @@ const FinanceIndustry = () => {
     const panelFeatures = {
         "User App": {
             icon: Smartphone,
-            image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800",
+            image: user,
             features: [
                 "Biometric Login", "Account Dashboard", "P2P Transfers",
                 "Bill Payments", "Transaction History", "Card Management",
@@ -45,7 +48,7 @@ const FinanceIndustry = () => {
         },
         "Merchant Panel": {
             icon: Briefcase,
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
+            image: merchant,
             features: [
                 "Easy Onboarding", "Payment Gateway", "Settlements Tracker",
                 "QR Code Payments", "Refund Management", "Invoicing",
@@ -54,7 +57,7 @@ const FinanceIndustry = () => {
         },
         "Admin Console": {
             icon: Shield,
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+            image: admin,
             features: [
                 "KYC Verification", "Fraud Monitoring", "User Management",
                 "Revenue Analytics", "Role-based Access", "Audit Logs",
@@ -316,7 +319,7 @@ const FinanceIndustry = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] object-cover rounded-xl shadow-lg border border-gray-100"
+                                className="w-full max-w-[300px] object-contain rounded-xl border border-gray-100"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : '400px' }}
                             />
                         </div>

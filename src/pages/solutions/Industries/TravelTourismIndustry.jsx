@@ -20,6 +20,10 @@ import intro from "../../../assets/Travel-Tourism/intro.jpg"
 import why from "../../../assets/Travel-Tourism/why.jpg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import travel from "../../../assets/tour-sol/travel.png"
+import hotel from "../../../assets/tour-sol/hotel.png"
+import trans from "../../../assets/tour-sol/trans.jpg"
+
 
 const TravelTourismIndustry = () => {
     const [activeTab, setActiveTab] = useState("Travel Portals");
@@ -36,7 +40,7 @@ const TravelTourismIndustry = () => {
     const panelFeatures = {
         "Travel Portals": {
             icon: Globe,
-            image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200&auto=format&fit=crop",
+            image: travel,
             features: [
                 "Custom Travel Portals", "Multi-Vendor Solutions", "API Integrations",
                 "Dedicated Agency Platforms", "Secure Payment Gateway", "Search Filtering",
@@ -45,7 +49,7 @@ const TravelTourismIndustry = () => {
         },
         "Hotel Booking": {
             icon: Hotel,
-            image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop",
+            image: hotel,
             features: [
                 "Hotel & Resort Booking", "Property Management", "Guest Tracking",
                 "Real-time Availability", "Dynamic Pricing Models", "Reviews & Ratings",
@@ -54,7 +58,7 @@ const TravelTourismIndustry = () => {
         },
         "Transportation": {
             icon: Plane,
-            image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1200&auto=format&fit=crop",
+            image: trans,
             features: [
                 "Flight Booking Module", "Cab/Taxi Booking", "Transit Schedules",
                 "Smart Routing & Tracking", "Trip History Logs", "Seat Selection Maps",
@@ -315,7 +319,7 @@ const TravelTourismIndustry = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-[400px] object-cover rounded-xl drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-[400px] object-contain rounded-xl"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                             />
                         </div>

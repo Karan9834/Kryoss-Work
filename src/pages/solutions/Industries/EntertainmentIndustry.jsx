@@ -18,6 +18,9 @@ import intro from "../../../assets/Entertaiment/intro.jpg"
 import why from "../../../assets/Entertaiment/why.jpg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import admin from "../../../assets/ent-sol/admin.jpg"
+import web from "../../../assets/ent-sol/web.jpg"
+import user from "../../../assets/ent-sol/user.jpg"
 
 const EntertainmentIndustry = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -34,7 +37,7 @@ const EntertainmentIndustry = () => {
     const panelFeatures = {
         "User App": {
             icon: User,
-            image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1200&auto=format&fit=crop",
+            image:user,
             features: [
                 "Sign-up/Social Login", "Help Center & FAQs", "Push Notifications",
                 "Video Recommendation", "Password Recovery", "Share Video Easily",
@@ -43,7 +46,7 @@ const EntertainmentIndustry = () => {
         },
         "Admin Dashboard": {
             icon: Shield,
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            image: admin,
             features: [
                 "Promotions Management", "Financial Analytics", "Audience Data",
                 "Manage Ads", "Manage Categories", "Subscription Management",
@@ -52,7 +55,7 @@ const EntertainmentIndustry = () => {
         },
         "Web Platforms": {
             icon: PlayCircle,
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+            image:web,
             features: [
                 "Cross-browser Support", "Secure Payment Option", "Dynamic Subtitles",
                 "Reviews & Ratings", "Add to Watchlist", "HD Streaming Quality",
@@ -269,7 +272,7 @@ const EntertainmentIndustry = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-auto object-contain"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                             />
                         </div>
