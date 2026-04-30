@@ -18,6 +18,9 @@ import intro from "../../../assets/Food-Restaurant/intro.jpeg"
 import why from "../../../assets/Food-Restaurant/why.jpg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import del from "../../../assets/food-sol/del.jpg"
+import store from "../../../assets/food-sol/store.jpg"
+import user from "../../../assets/food-sol/user.jpg"
 
 const FoodRestaurantIndustry = () => {
     const [activeTab, setActiveTab] = useState("User App");
@@ -34,7 +37,7 @@ const FoodRestaurantIndustry = () => {
     const panelFeatures = {
         "User App": {
             icon: User,
-            image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop",
+            image: user,
             features: [
                 "Easy Search & Filter", "Real-Time Tracking", "Interactive Menus",
                 "Multiple Payment Gateways", "Discounts & Offers", "Reviews & Ratings",
@@ -43,7 +46,7 @@ const FoodRestaurantIndustry = () => {
         },
         "Store Panel": {
             icon: Store,
-            image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200&auto=format&fit=crop",
+            image: store,
             features: [
                 "Menu Management", "Accept/Decline Orders", "Payment History",
                 "Review Customer Feedbacks", "Dynamic Pricing Tools", "Daily Sales Analytics",
@@ -52,7 +55,7 @@ const FoodRestaurantIndustry = () => {
         },
         "Delivery App": {
             icon: Truck,
-            image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1200&auto=format&fit=crop",
+            image: del,
             features: [
                 "Optimized Routing Maps", "Accept/Decline Requests", "Earning History",
                 "Calling In App", "Navigation Guidance", "Profile Uploads",
@@ -268,7 +271,7 @@ const FoodRestaurantIndustry = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-auto object-contain drop-shadow-2xl rounded-xl"
+                                className="w-full max-w-[300px] h-auto object-contain rounded-xl"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                             />
                         </div>

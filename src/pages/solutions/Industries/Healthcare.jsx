@@ -43,6 +43,10 @@ import intro from "../../../assets/HealthCare/intro.jpg";
 import why from "../../../assets/HealthCare/why.png";
 import TeamMoments from "../../../components/Common/TeamMoments";
 import PopularBlogs from "../../../components/Blog/PopularBlogs";
+import tele from "../../../assets/health-sol/tele.jpg"
+import app from "../../../assets/health-sol/app.jpg"
+import fitness from "../../../assets/health-sol/fitness.jpg"
+import phar from "../../../assets/health-sol/phar.jpg"
 
 const HealthcareIndustry = () => {
   const [activeTab, setActiveTab] = useState("Appointment Apps");
@@ -60,7 +64,7 @@ const HealthcareIndustry = () => {
     "Appointment Apps": {
       icon: Stethoscope,
       image:
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+        app,
       features: [
         "Easy Registration & Sign-In",
         "Search Top Doctors",
@@ -75,7 +79,7 @@ const HealthcareIndustry = () => {
     "Pharmacy Apps": {
       icon: HeartPulse,
       image:
-        "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=800",
+        phar,
       features: [
         "Search Medicines",
         "Upload Prescription",
@@ -90,7 +94,7 @@ const HealthcareIndustry = () => {
     "Telemedicine Apps": {
       icon: Smartphone,
       image:
-        "https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=800",
+        tele,
       features: [
         "Video Consultations",
         "Chat with Doctors",
@@ -105,7 +109,7 @@ const HealthcareIndustry = () => {
     "Fitness Apps": {
       icon: Activity,
       image:
-        "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=800",
+        fitness,
       features: [
         "Workout Plans",
         "Diet Tracking",
@@ -504,7 +508,7 @@ const HealthcareIndustry = () => {
               <img
                 src={panelFeatures[activeTab].image}
                 alt={`${activeTab} panel`}
-                className="w-full max-w-[300px] h-auto object-cover rounded-2xl drop-shadow-2xl"
+                className="w-full max-w-[300px] h-auto object-cover rounded-2xl"
                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : "auto" }}
                 onError={(e) => {
                   e.target.src = "/SolAps/FallbackEcom.png";

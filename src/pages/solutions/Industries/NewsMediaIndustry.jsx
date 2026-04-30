@@ -16,6 +16,9 @@ import intro from "../../../assets/News-Media/intro.jpg"
 import why from "../../../assets/News-Media/why.jpg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import admin from "../../../assets/news-sol/admin.jpg"
+import author from "../../../assets/news-sol/author.jpg"
+import reader from "../../../assets/news-sol/reader.jpg"
 
 const NewsMediaIndustry = () => {
     const [activeTab, setActiveTab] = useState("Reader App");
@@ -32,7 +35,7 @@ const NewsMediaIndustry = () => {
     const panelFeatures = {
         "Reader App": {
             icon: User,
-            image: "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?q=80&w=1200&auto=format&fit=crop",
+            image: reader,
             features: [
                 "Profile Management", "Category Selection", "Push Notifications",
                 "Save & Read Later", "Social Media Sharing", "Content Discovery",
@@ -41,7 +44,7 @@ const NewsMediaIndustry = () => {
         },
         "Author Panel": {
             icon: PenTool,
-            image: "https://images.unsplash.com/photo-1542385151-efd9000785a0?q=80&w=1200&auto=format&fit=crop",
+            image: author,
             features: [
                 "Post Management", "Content Editor", "Analytics Tracking",
                 "Publish Scheduling", "Media Library", "Earnings Dashboard",
@@ -50,7 +53,7 @@ const NewsMediaIndustry = () => {
         },
         "Admin Dashboard": {
             icon: Shield,
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            image: admin,
             features: [
                 "Manage Users/Authors", "Category Management", "Revenue Analytics",
                 "Ad Integration", "System Settings", "Content Moderation",
@@ -264,7 +267,7 @@ const NewsMediaIndustry = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-[400px] object-cover rounded-xl drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-[400px] object-contain rounded-xl"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                             />
                         </div>

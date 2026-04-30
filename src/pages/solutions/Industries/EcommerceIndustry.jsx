@@ -21,6 +21,10 @@ import intro from "../../../assets/E-Commerce/intro.jpg"
 import why from "../../../assets/E-Commerce/why.jpg"
 import TeamMoments from '../../../components/Common/TeamMoments';
 import PopularBlogs from '../../../components/Blog/PopularBlogs';
+import pwa from "../../../assets/ecomm-sol/pwa.jpg"
+import market from "../../../assets/ecomm-sol/market.jpg"
+import b2b from "../../../assets/ecomm-sol/b2b.jpg"
+import b2c from "../../../assets/ecomm-sol/b2c.jpg"
 
 const EcommerceIndustry = () => {
     const [activeTab, setActiveTab] = useState("B2C Platforms");
@@ -37,7 +41,7 @@ const EcommerceIndustry = () => {
     const panelFeatures = {
         "B2C Platforms": {
             icon: ShoppingCart,
-            image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=800",
+            image: b2c,
             features: [
                 "Personalized Experience", "Pre-order Management", "Marketing Suite",
                 "Product Recommendations", "Registered & Guest Checkout", "Social Media Login",
@@ -46,7 +50,7 @@ const EcommerceIndustry = () => {
         },
         "B2B Portals": {
             icon: ShoppingBag,
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
+            image: b2b,
             features: [
                 "Buyer Segmentation", "Complex Pricing", "Quote Management",
                 "Bulk Ordering", "Multiple Ship-to", "Inventory Tracking",
@@ -55,7 +59,7 @@ const EcommerceIndustry = () => {
         },
         "Marketplaces": {
             icon: Store,
-            image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800",
+            image: market,
             features: [
                 "Multi-vendor Management", "Seller Onboarding", "Commission Automation",
                 "Concurrent Checkout", "Marketplace Analytics", "Seller Dashboards",
@@ -64,7 +68,7 @@ const EcommerceIndustry = () => {
         },
         "Headless & PWA": {
             icon: Globe,
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
+            image: pwa,
             features: [
                 "Instant Loading", "Offline Availability", "Push Notifications",
                 "Customizable Front-end", "Dynamic Personalization", "Enhanced Security",
@@ -325,7 +329,7 @@ const EcommerceIndustry = () => {
                             <img
                                 src={panelFeatures[activeTab].image}
                                 alt={`${activeTab} panel`}
-                                className="w-full max-w-[300px] h-auto object-cover rounded-2xl drop-shadow-2xl"
+                                className="w-full max-w-[300px] h-auto object-cover rounded-2xl"
                                 style={{ height: leftHeight > 0 ? `${leftHeight}px` : 'auto' }}
                                 onError={(e) => { e.target.src = '/SolAps/FallbackEcom.png'; }}
                             />
