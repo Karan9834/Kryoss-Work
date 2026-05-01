@@ -33,13 +33,13 @@ const ProcessSection = () => {
     <section className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
 
-       {/* Badge */}
-<div className="flex justify-center mb-6">
-  <div className="inline-flex items-center gap-2 border border-white/40 px-4 py-1.5 rounded-full text-sm">
-    <span className="w-2.5 h-2.5 bg-orange-400 rounded-full"></span>
-    What’s Next?
-  </div>
-</div>
+        {/* Badge */}
+        <div className="flex justify-center mb-6">
+          <div className="inline-flex items-center gap-2 border border-white/40 px-4 py-1.5 rounded-full text-sm">
+            <span className="w-2.5 h-2.5 bg-orange-400 rounded-full"></span>
+            What’s Next?
+          </div>
+        </div>
 
 
         {/* Heading */}

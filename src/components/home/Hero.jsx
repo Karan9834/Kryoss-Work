@@ -60,39 +60,39 @@ const Hero = () => {
                             </div>
 
                             {/* Heading (H1) */}
-                            <h1 className="text-3xl lg:text-5xl font-bold text-slate-950 leading-[1.15] tracking-tight mb-6">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-950 leading-tight tracking-tight mb-6 px-4 lg:px-0">
                                 Building Powerful <br className="hidden sm:block" />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">Digital Solutions</span> <br className="hidden sm:block" />
                                 That <span className="text-orange-500">Drive Success</span>
                             </h1>
 
                             {/* Description (Body Text) */}
-                            <div className="relative mb-6">
+                            <div className="relative mb-6 px-4 lg:px-0">
                                 <div className="absolute -inset-4 bg-white/20 backdrop-blur-[2px] rounded-2xl pointer-events-none lg:-left-6" />
-                                <p className="relative text-lg text-slate-800 max-w-lg font-normal leading-relaxed">
+                                <p className="relative text-base sm:text-lg text-slate-800 max-w-lg font-normal leading-relaxed">
                                     Explore our innovative projects that showcase how we create
                                     impactful web and app solutions tailored to drive growth and
                                     deliver exceptional results for forward-thinking businesses.
                                 </p>
                             </div>
 
-                            <div className="flex flex-col space-y-4 pt-2 items-center lg:items-start w-full mb-8">
-                                <Link to="/company/contact" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full text-[17.5px] font-light shadow-xl shadow-orange-500/10 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center gap-2.5 group w-fit cursor-pointer">
+                            <div className="flex flex-col space-y-4 pt-2 items-center lg:items-start w-full mb-8 px-4 lg:px-0">
+                                <Link to="/company/contact" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 sm:py-2 rounded-full text-base sm:text-[17.5px] font-light shadow-xl shadow-orange-500/10 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center gap-2.5 group w-fit cursor-pointer">
                                     Consult Our Experts
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </Link>
 
                                 {/* Micro Trust Signals (Small Text) */}
-                                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-3 font-medium">
-                                    <div className="flex items-center gap-2 text-base text-slate-700">
+                                <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-3 font-medium w-full">
+                                    <div className="flex items-center gap-2 text-sm sm:text-base text-slate-700 whitespace-nowrap">
                                         <span className="text-orange-500 font-bold">✓</span>
                                         <span>Ready-to-launch solutions</span>
                                     </div>
-                                    <div className="flex items-center gap-2 text-base text-slate-700">
+                                    <div className="flex items-center gap-2 text-sm sm:text-base text-slate-700 whitespace-nowrap">
                                         <span className="text-orange-500 font-bold">✓</span>
                                         <span>Custom scalable architecture</span>
                                     </div>
-                                    <div className="flex items-center gap-2 text-base text-slate-700">
+                                    <div className="flex items-center gap-2 text-sm sm:text-base text-slate-700 whitespace-nowrap">
                                         <span className="text-orange-500 font-bold">✓</span>
                                         <span>Built with modern tech</span>
                                     </div>

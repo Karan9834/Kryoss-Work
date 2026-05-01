@@ -227,14 +227,14 @@ const ContactForm = () => {
                   {status.error ? "Error!" : "Success!"}
                 </h3>
               </div>
-              <button 
+              <button
                 onClick={closePopup}
                 className="text-white/80 hover:text-white transition-colors"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
-            
+
             {/* Body */}
             <div className="p-6">
               <div className="text-center mb-4">
@@ -242,13 +242,13 @@ const ContactForm = () => {
                   {status.error ? "Failed to Send Message" : "Message Sent Successfully!"}
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  {status.error 
+                  {status.error
                     ? "We encountered an issue while sending your message. Please check your connection or try again later."
                     : "Thank you for reaching out to us. We've received your message and will get back to you within 24 hours."}
                 </p>
               </div>
             </div>
-            
+
             {/* Footer */}
             <div className="bg-gray-50 px-6 py-4 border-t border-gray-100">
               <button

@@ -6,10 +6,10 @@ const NewsletterSection = () => {
       <div className="max-w-4xl mx-auto px-6 text-center">
 
         {/* Badge */}
-         <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 border px-4 py-1.5 rounded-full text-sm text-gray-700 bg-white">
             <span className="w-2.5 h-2.5 bg-orange-500 rounded-full"></span>
-          Get Updates
+            Get Updates
           </div>
         </div>
 

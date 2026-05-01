@@ -13,7 +13,7 @@ const Hero = () => {
         }}
       >
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          
+
           {/* LEFT CONTENT */}
           <div>
             <h1 className="text-5xl font-bold mb-6">

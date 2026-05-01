@@ -65,45 +65,48 @@ const WorkApproach = () => {
           {/* FEATURES LIST */}
           <div className="mt-10 space-y-8">
 
-            <div className="flex gap-5 items-start group">
-              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-orange-100 text-orange-600 shrink-0 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white group-hover:shadow-lg">
-                <Cpu size={26} />
+            <div className="flex gap-4 sm:gap-5 items-start group">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl bg-orange-100 text-orange-600 shrink-0 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white group-hover:shadow-lg">
+                <Cpu size={22} className="sm:hidden" />
+                <Cpu size={26} className="hidden sm:block" />
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
+                <h4 className="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
                   AI-Driven Project Intelligence
                 </h4>
-                <p className="text-gray-600 text-sm mt-2 leading-relaxed font-normal">
+                <p className="text-gray-600 text-xs sm:text-sm mt-2 leading-relaxed font-normal">
                   Gain real-time visibility into every stage of your project through smart analytics
                   and AI-driven tracking. This enables faster decision-making and optimized execution.
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-5 items-start group">
-              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-orange-100 text-orange-600 shrink-0 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white group-hover:shadow-lg">
-                <Users size={26} />
+            <div className="flex gap-4 sm:gap-5 items-start group">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl bg-orange-100 text-orange-600 shrink-0 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white group-hover:shadow-lg">
+                <Users size={22} className="sm:hidden" />
+                <Users size={26} className="hidden sm:block" />
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
+                <h4 className="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
                   Dedicated Experts Team
                 </h4>
-                <p className="text-gray-600 text-sm mt-2 leading-relaxed font-normal">
+                <p className="text-gray-600 text-xs sm:text-sm mt-2 leading-relaxed font-normal">
                   Our experienced team adapts quickly to your requirements, ensuring flexibility,
                   transparency, and alignment with your business goals.
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-5 items-start group">
-              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-orange-100 text-orange-600 shrink-0 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white group-hover:shadow-lg">
-                <Rocket size={26} />
+            <div className="flex gap-4 sm:gap-5 items-start group">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-xl bg-orange-100 text-orange-600 shrink-0 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white group-hover:shadow-lg">
+                <Rocket size={22} className="sm:hidden" />
+                <Rocket size={26} className="hidden sm:block" />
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
+                <h4 className="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
                   Predictive & Fast Delivery
                 </h4>
-                <p className="text-gray-600 text-sm mt-2 leading-relaxed font-normal">
+                <p className="text-gray-600 text-xs sm:text-sm mt-2 leading-relaxed font-normal">
                   With smart planning and scalable architecture, we ensure on-time delivery
                   while maintaining high performance and long-term reliability.
                 </p>
@@ -129,7 +132,7 @@ const WorkApproach = () => {
             <img
               src={img}
               alt="KryossOne"
-              className="w-full h-[420px] object-cover transition-transform duration-700 group-hover:scale-105"
+              className="w-full h-[300px] sm:h-[380px] lg:h-[420px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             {/* gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

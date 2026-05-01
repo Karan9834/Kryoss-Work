@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import MainLayout from '../components/layout/MainLayout';
 
 // ✅ Route configuration files MUST be statically imported — they return <Route> elements,
@@ -138,6 +138,11 @@ const AppRoutes = () => {
                     {CompanyRoutes()}
                     {ServiceRoutes()}
                     {SolutionRoutes()}
+
+                    {/* Root Redirects to avoid 404s */}
+                    <Route path="/works" element={<Navigate to="/works/websites" replace />} />
+                    <Route path="/solutions" element={<Navigate to="/solutions/application-solutions" replace />} />
+                    <Route path="/company" element={<Navigate to="/company/about" replace />} />
 
                     {/* Blog & Services */}
                     <Route path="/blog" element={<Blog />} />

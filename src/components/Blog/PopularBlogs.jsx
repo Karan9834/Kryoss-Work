@@ -33,7 +33,7 @@ const blogs = [
 
 const PopularBlogs = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
 
       {/* Badge */}
       <div className="text-center mb-4">

@@ -179,19 +179,20 @@ const Footer = () => {
 
         {/* 🔥 WHATSAPP FLOATING BUTTON */}
         <a
-          href="https://wa.me/918448909389" // Replace with your actual WhatsApp number
+          href="https://wa.me/918448909389"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-8 right-8 w-12 h-12 bg-[#25D366] rounded-2xl text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300 z-50 group overflow-visible"
+          className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 bg-[#25D366] rounded-xl sm:rounded-2xl text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300 z-[100] group overflow-visible"
           aria-label="Chat on WhatsApp"
         >
           {/* Pulsing ring animation */}
-          <span className="absolute inset-0 bg-[#25D366] rounded-2xl animate-ping opacity-20 group-hover:opacity-40"></span>
+          <span className="absolute inset-0 bg-[#25D366] rounded-xl sm:rounded-2xl animate-ping opacity-20 group-hover:opacity-40"></span>
 
-          <FaWhatsapp size={24} className="relative z-10" />
+          <FaWhatsapp size={20} className="relative z-10 sm:hidden" />
+          <FaWhatsapp size={24} className="relative z-10 hidden sm:block" />
 
           {/* Label Tooltip */}
-          <span className="absolute right-full mr-3 px-3 py-1 bg-[#25D366] text-white text-xs font-semibold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-lg">
+          <span className="absolute right-full mr-3 px-3 py-1 bg-[#25D366] text-white text-xs font-semibold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-lg hidden sm:block">
             Chat with us
           </span>
         </a>
@@ -199,11 +200,12 @@ const Footer = () => {
         {/* 🔥 BACK TO TOP */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className={`fixed bottom-24 right-8 w-12 h-12 bg-gradient-to-br from-[#5B8CFF] to-[#00C2A8] rounded-2xl text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 z-50 group ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
+          className={`fixed bottom-16 right-4 sm:bottom-24 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#5B8CFF] to-[#00C2A8] rounded-xl sm:rounded-2xl text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 z-[100] group ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
             }`}
           aria-label="Back to top"
         >
-          <ArrowRight size={20} className="-rotate-90 group-hover:-translate-y-1 transition-transform" />
+          <ArrowRight size={18} className="-rotate-90 group-hover:-translate-y-1 transition-transform sm:hidden" />
+          <ArrowRight size={20} className="-rotate-90 group-hover:-translate-y-1 transition-transform hidden sm:block" />
         </button>
 
       </footer>

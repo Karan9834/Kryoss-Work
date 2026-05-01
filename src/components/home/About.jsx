@@ -202,7 +202,7 @@ export default function About() {
                 src={aboutImg}
                 alt="kryossone Team"
                 loading="lazy"
-                className="w-full h-[480px] object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-[300px] sm:h-[380px] lg:h-[420px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
 

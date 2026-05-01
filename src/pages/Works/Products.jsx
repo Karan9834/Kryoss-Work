@@ -252,11 +252,11 @@ export default function Products() {
 
           {/* LEFT CONTENT */}
           <div>
-            <h1 className="text-5xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Explore Our Digital Product Solutions
             </h1>
 
-            <p className="text-lg mb-8">
+            <p className="text-base sm:text-lg mb-8 opacity-90">
               Discover 200+ ready‑made solutions for web development, mobile
               apps, SaaS platforms and AI tools designed to help startups and
               enterprises launch products faster.
@@ -293,12 +293,12 @@ export default function Products() {
             Browse Product Categories
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
             {categories.map((cat, i) => (
               <a
                 key={i}
-                href={`#${cat.replace(/\\s+/g, "-")}`}
-                className="bg-white rounded-xl shadow hover:shadow-lg p-6 text-center font-semibold hover:bg-indigo-50 transition border"
+                href={`#${cat.replace(/\s+/g, "-")}`}
+                className="bg-white rounded-xl shadow hover:shadow-lg p-4 sm:p-6 text-center font-semibold hover:bg-indigo-50 transition border text-sm sm:text-base"
               >
                 {cat}
               </a>
@@ -315,7 +315,7 @@ export default function Products() {
 
           <h3 className="text-xl font-semibold mb-6">Filter Products</h3>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2 sm:gap-3">
             {[
               "All",
               "Web Solutions",
@@ -327,7 +327,7 @@ export default function Products() {
               <button
                 key={f}
                 onClick={() => setFilter(f)}
-                className={`px-5 py-2 rounded-full border transition ${filter === f
+                className={`px-4 sm:px-5 py-2 rounded-full border transition text-sm sm:text-base ${filter === f
                   ? "bg-indigo-600 text-white"
                   : "bg-gray-100 hover:bg-gray-200"
                   }`}
@@ -421,16 +421,16 @@ export default function Products() {
                       </div>
 
                       {/* Buttons */}
-                      <div className="grid grid-cols-2 gap-3 mt-auto">
+                      <div className="flex flex-col sm:grid sm:grid-cols-2 gap-3 mt-auto">
                         <button
                           onClick={() => navigate(product.demoLink)}
-                          className="flex items-center justify-center text-[13px] font-bold text-gray-700 bg-gray-50 hover:bg-gray-100 hover:text-gray-900 py-3 rounded-xl transition-all border border-transparent hover:border-gray-200"
+                          className="w-full flex items-center justify-center text-[13px] font-bold text-gray-700 bg-gray-50 hover:bg-gray-100 hover:text-gray-900 py-3 rounded-xl transition-all border border-transparent hover:border-gray-200 order-2 sm:order-1"
                         >
                           Live Demo
                         </button>
                         <button
                           onClick={() => navigate(product.detailsLink)}
-                          className="flex items-center justify-center text-[13px] font-bold text-white bg-indigo-600 hover:bg-indigo-700 py-3 rounded-xl transition-all shadow-lg shadow-indigo-200 hover:shadow-indigo-300 active:scale-95"
+                          className="w-full flex items-center justify-center text-[13px] font-bold text-white bg-indigo-600 hover:bg-indigo-700 py-3 rounded-xl transition-all shadow-lg shadow-indigo-200 hover:shadow-indigo-300 active:scale-95 order-1 sm:order-2"
                         >
                           View Details
                         </button>
