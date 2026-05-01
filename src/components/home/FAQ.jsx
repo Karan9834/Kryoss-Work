@@ -3,8 +3,8 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    q: "What services does KryossWork offer?",
-    a: "KryossWork offers a comprehensive range of services including mobile app development, web development, Data & AI solutions, product engineering, DevOps & cloud services, and white-label clone apps for on-demand businesses."
+    q: "What services does kryossone offer?",
+    a: "kryossone offers a comprehensive range of services including mobile app development, web development, Data & AI solutions, product engineering, DevOps & cloud services, and white-label clone apps for on-demand businesses."
   },
   {
     q: "Can you build a custom mobile app for my business?",
@@ -39,49 +39,51 @@ const faqs = [
     a: "Absolutely. We have extensive experience with enterprise-grade projects involving complex integrations, high-traffic architectures, multi-region deployments, and compliance requirements (HIPAA, GDPR, SOC2)."
   },
   {
-    q: "How do I get started with KryossWork?",
+    q: "How do I get started with kryossone?",
     a: "Getting started is easy! Simply click 'Get a Free Quote' or reach out via our contact form. We'll schedule a free discovery call to understand your requirements and provide a detailed proposal within 48 hours."
   }];
 
 
 export default function FAQ() {
-  const [open, setOpen] = useState(0);
+  const [open, setOpen] = useState(null);
 
   return (
-    <section id="faq" className="py-20 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         <div className="text-center mb-12">
-          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">FAQ</p>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground">
-            Frequently Asked <span className="text-primary">Questions</span>
+          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">FAQ</p>
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-6">
+            Frequently Asked <span className="text-primary italic">Questions</span>
           </h2>
-          <p className="mt-4 text-muted-foreground">
+          <p className="text-base text-gray-600 leading-relaxed max-w-2xl mx-auto">
             Have questions? We've got answers. If you don't find what you're looking for, feel free
             to contact us.
           </p>
         </div>
 
-        <div className="space-y-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           {faqs.map((faq, i) =>
             <div
               key={i}
-              className={`border rounded-xl overflow-hidden transition-all ${open === i ? "border-primary shadow-sm" : "border-border"}`
+              className={`border rounded-2xl overflow-hidden transition-all duration-300 ${open === i ? "border-primary shadow-lg bg-white" : "border-gray-300 bg-gray-50/50 hover:border-gray-400 hover:bg-white"}`
               }>
 
               <button
                 onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors">
+                className="w-full flex items-center justify-between p-6 text-left outline-none">
 
-                <span className="font-semibold text-foreground pr-4">{faq.q}</span>
-                {open === i ?
-                  <Minus className="h-5 w-5 text-primary shrink-0" /> :
-
-                  <Plus className="h-5 w-5 text-muted-foreground shrink-0" />
-                }
+                <span className={`text-[17px] font-semibold leading-tight pr-4 ${open === i ? "text-primary" : "text-gray-900"}`}>{faq.q}</span>
+                <div className={`shrink-0 transition-transform duration-300 ${open === i ? "rotate-180" : ""}`}>
+                  {open === i ?
+                    <Minus className="h-5 w-5 text-primary" /> :
+                    <Plus className="h-5 w-5 text-gray-400" />
+                  }
+                </div>
               </button>
               {open === i &&
-                <div className="px-5 pb-5">
-                  <p className="text-muted-foreground leading-relaxed text-sm">{faq.a}</p>
+                <div className="px-6 pb-6 animate-in fade-in slide-in-from-top-2 duration-300">
+                  <p className="text-base text-gray-600 leading-relaxed">{faq.a}</p>
                 </div>
               }
             </div>

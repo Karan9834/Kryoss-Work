@@ -1,0 +1,152 @@
+import React, { useState } from "react";
+
+const featuresData = {
+  user: {
+    image:
+      "https://whitelabelfox.com/assets/images/uber-beauty-app/Fox-Beauty-user-app-features-Ui.webp",
+    items: [
+      { title: "Integrated Authentication", desc: "Participants can fluidly initialize accounts or authenticate via established social platforms like Meta or Google." },
+      { title: "Real-time Communication", desc: "Upon specialist confirmation, participants can engage in immediate synchronized dialogue within the module." },
+      { title: "Specialist Discovery", desc: "Determine proximate practitioners by evaluating credentials, peer benchmarks, service menus, and geographic distance." },
+      { title: "Portfolio Investigation", desc: "Examine comprehensive stylist credentials, service history, and aesthetic results prior to commitment." },
+      { title: "Multi-Service Bundling", desc: "Participants may consolidate diverse aesthetic treatments into a unified scheduling assignment provided by the specialist." },
+      { title: "Fiscal Versatility", desc: "Multiple settlement channels are available including digital wallets, protected card protocols, and traditional tender." },
+      { title: "Experience Validation", desc: "Provide categorical feedback and credential verification for specialists upon fulfillment of the aesthetic assignment." },
+      { title: "Engagement Records", desc: "Audit historical treatments and effortlessly re-initialize preferred aesthetic sessions." },
+    ],
+  },
+  provider: {
+    image:
+      "https://whitelabelfox.com/assets/images/uber-beauty-app/Fox-Beauty-Provider-app-features-Ui.webp",
+    items: [
+      { title: "Service Menu Configuration", desc: "Specialists categorize diverse aesthetic bundles, specifying valuations, nomenclature, and treatment details." },
+      { title: "Assignment Orchestration", desc: "Practitioners evaluate comprehensive engagement metrics with the authority to authorize or decline service requests." },
+      { title: "Geographic Guidance", desc: "Following engagement authorization, specialists utilize integrated navigation protocols to locate the participant's site." },
+      { title: "Professional Showcase", desc: "Demonstrate technical methodology, archive past results, and engage a broader demographic of clients." },
+      { title: "Credential Management", desc: "Practitioners can systematically organize and submit mandatory certification required for professional aesthetic delivery." },
+      { title: "Operational Radius", desc: "Define localized service boundaries relative to the specialist's hub for efficient treatment deployment." },
+      { title: "Financial Analytics", desc: "Examine comprehensive fiscal trajectories including finalized, annulled, and anticipated revenue assignments." },
+      { title: "Reputation Metrics", desc: "Analyze participant testimonials to optimize technical delivery and reinforce professional authority." },
+    ],
+  },
+};
+
+const Features = () => {
+  const [activeTab, setActiveTab] = useState("user");
+
+  const currentData = featuresData[activeTab];
+
+  return (
+    <section className="bg-white py-16 sm:py-20 md:py-24 px-4 overflow-x-hidden">
+      <div className="max-w-7xl mx-auto text-center">
+
+        {/* ===== Top Content ===== */}
+        <div className="max-w-3xl mx-auto mb-12">
+          <div className="flex items-center justify-center gap-2 bg-white px-4 py-1.5 rounded-full mb-6 w-fit mx-auto border-2">
+            <span className="w-2.5 h-2.5 bg-gradient-to-r from-[#FF2485] to-[#C739FF] rounded-full"></span>
+            Technical Features
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
+            <span className="bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-transparent bg-clip-text">Key Capabilities </span> of the Stakeholder Ecosystem
+          </h2>
+
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+            The participant interface facilitates effortless scheduling and tracking, while the practitioner module empowers specialists to orchestrate treatments and deliver services with high efficiency.   </p>
+        </div>
+
+        {/* ===== Toggle Buttons ===== */}
+        <div className="flex justify-center gap-4 mb-14">
+          {["user", "provider"].map((type) => (
+            <button
+              key={type}
+              onClick={() => setActiveTab(type)}
+              className={`px-6 py-2 rounded-full font-semibold transition duration-300 ${activeTab === type
+                  ? "bg-gradient-to-r from-[#FF2485] to-[#C739FF] text-white"
+                  : "border border-gray-300 text-gray-700"
+                }`}
+            >
+              {type === "user" ? "Participant App" : "Specialist App"}
+            </button>
+          ))}
+        </div>
+
+        {/* ===== 3 Column Layout ===== */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-stretch ">
+
+          {/* LEFT CARDS */}
+          <div className="space-y-10 ">
+            {currentData.items.slice(0, 4).map((item, i) => (
+              <FeatureCard key={i} item={item} />
+            ))}
+          </div>
+
+          {/* CENTER IMAGE (Dynamic) */}
+          <div className="flex justify-center ">
+            <img
+              src={currentData.image}
+              alt="App Features"
+              className="w-full 
+                         max-w-md sm:max-w-lg lg:max-w-xl
+                         h-150
+                         object-contain
+                         rounded-3xl 
+                         shadow-xl 
+                         transition duration-500"
+            />
+          </div>
+
+          {/* RIGHT CARDS */}
+          <div className="space-y-10">
+            {currentData.items.slice(4, 8).map((item, i) => (
+              <FeatureCard key={i} item={item} />
+            ))}
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+const FeatureCard = ({ item }) => {
+  return (
+    <div className="group  
+                    rounded-2xl p-5 text-left 
+                    transition duration-300 
+                    hover:bg-gradient-to-r 
+                    hover:from-[#FF2485] 
+                    hover:to-[#C739FF] 
+                      
+                    hover:text-white border-2 border-[#FF2485]">
+
+      <div className="flex items-start gap-4">
+
+        {/* Icon */}
+        <div className="w-12 h-12 flex shrink-0 flex items-center justify-center 
+                        rounded-full 
+                        bg-[#C739FF]/20 
+                        text-[#FF2485] 
+                        font-bold text-lg
+                        group-hover:bg-white 
+                        group-hover:text-[#009ACA]">
+          ✓
+        </div>
+
+        {/* Text */}
+        <div>
+          <h4 className="font-semibold mb-1">
+            {item.title}
+          </h4>
+          <p className="text-sm opacity-80 group-hover:opacity-100">
+            {item.desc}
+          </p>
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default Features;

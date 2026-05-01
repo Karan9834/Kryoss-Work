@@ -1,0 +1,66 @@
+{
+  "tabs": [
+    {
+      "id": "finance",
+      "name": "Finance Projects"
+    }
+  ],
+  "sections": {
+    "finance": [
+      {
+        "asset": "1.png",
+        "img": "icons/finance/moneycloud.png",
+        "alt": "Money Cloud",
+        "titleText": "Money Cloud - Expense and income manager",
+        "description": "With Money Cloud you can store your income and expense. When open app you have an overview of the current month, week, day and year to check how much money you have available. You can see graphs and create custom budget spending, to set future transactions. For example, create a monthly limit for the supply or a weekly limit for purchases.",
+        "links": []
+      },
+      {
+        "asset": "2.png",
+        "img": "icons/finance/smartloan.png",
+        "alt": "Smart loan",
+        "titleText": "Smart loan - Quick Online Loans",
+        "description": "Fulfill your financial needs 7*24 completely online. SmartLoan is one of India's loan platforms which provide Indian mobile users with high quality loan services. With intelligent online loan process customers could apply a loan anytime anywhere. Computer review process makes users wait little time after the loan application.",
+        "links": []
+      },
+      {
+        "asset": "3.png",
+        "img": "icons/finance/muun.png",
+        "alt": "Muun",
+        "titleText": "Muun - Bitcoin and Lightning Wallet",
+        "description": "Muun is the most powerful wallet for bitcoin and lightning network. It is simple, fast, and secure. We provide the best user experience for sending and receiving bitcoin (BTC). Lightning fast payments: send and receive instant payments using bitcoin's latest tech, lightning network. Lightning is the most popular scaling solution.",
+        "links": []
+      },
+      {
+        "asset": "4.png",
+        "img": "icons/finance/migom.png",
+        "alt": "Migom",
+        "titleText": "Migom Bank - Global Banking",
+        "description": "Bank with confidence from almost anywhere in the world with the Migom Mobile® app. Manage your accounts, pay bills, pay people, request payments due you and transfer money. And do it all safely and securely with your device.",
+        "links": []
+      },
+      {
+        "asset": "5.png",
+        "img": "icons/finance/ducatus.png",
+        "alt": "Ducatus",
+        "titleText": "Ducatus Wallet - Crypto Payments",
+        "description": "Ducatus Wallet for Android. Manage your funds. Now supporting Bitcoin, Bitcoin Cash and Ethereum. The Ducatus wallet provides safe and easy access to your Ducatus coins. Ducatus is a fully decentralised cryptocurrency which works just like Bitcoin but faster! Your wallet can be used to send coins anywhere in the world.",
+        "links": []
+      },
+      {
+        "asset": "6.png",
+        "img": "icons/finance/dipocket.png",
+        "alt": "Di Pocket",
+        "titleText": "DiPocket | Finance & Payments",
+        "description": "DiPocket is the financial app that makes managing your money a joy. Whether you're transferring funds internationally, travelling abroad, or simply making or receiving payments DiPocket is secure, easy to use, and gives you total control. DiPocket card is accepted wherever Mastercard is accepted. Open an account in 3 minutes.",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=org.dipocket.dipocket&hl=en&gl=US"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=org.dipocket.dipocket&hl=en&gl=US"
+      }
+    ]
+  }
+}

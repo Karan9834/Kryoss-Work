@@ -1,0 +1,206 @@
+
+D:\kryoss\Kryoss-Work\fix_layout.mjs
+  64:9  error  'console' is not defined  no-undef
+  74:1  error  'console' is not defined  no-undef
+
+D:\kryoss\Kryoss-Work\src\components\Common\ContactUs.jsx
+  96:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  94 |   // Set product name in message when component mounts
+  95 |   useEffect(() => {
+> 96 |     setFormData((prev) => ({
+     |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  97 |       ...prev,
+  98 |       message: `I'm interested in your ${productName} solution. Please provide more details.`,
+  99 |     }));  react-hooks/set-state-in-effect
+
+D:\kryoss\Kryoss-Work\src\components\Food_delivery\SolutionSection.jsx
+   96:23  error  React Hook "useMotionValue" cannot be called inside a callback. React Hooks must be called in a React function component or a custom React Hook function  react-hooks/rules-of-hooks
+   97:23  error  React Hook "useMotionValue" cannot be called inside a callback. React Hooks must be called in a React function component or a custom React Hook function  react-hooks/rules-of-hooks
+  135:26  error  React Hook "useTransform" cannot be called inside a callback. React Hooks must be called in a React function component or a custom React Hook function    react-hooks/rules-of-hooks
+
+D:\kryoss\Kryoss-Work\src\components\Home-Services\SolutionsSection.jsx
+  147:23  error  React Hook "useTransform" cannot be called inside a callback. React Hooks must be called in a React function component or a custom React Hook function  react-hooks/rules-of-hooks
+
+D:\kryoss\Kryoss-Work\src\components\Social-Media-App\SolutionsSection.jsx
+  105:23  error  React Hook "useTransform" cannot be called inside a callback. React Hooks must be called in a React function component or a custom React Hook function  react-hooks/rules-of-hooks
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Products\EnterpriseProducts\sections\OverviewSection.jsx
+  115:14  error  Unknown property 'jsx' found  react/no-unknown-property
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Products\GamingProducts\sections\OverviewSection.jsx
+  115:14  error  Unknown property 'jsx' found  react/no-unknown-property
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Products\OthersProducts\sections\OverviewSection.jsx
+  115:14  error  Unknown property 'jsx' found  react/no-unknown-property
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Products\OurProducts\sections\OverviewSection.jsx
+  115:14  error  Unknown property 'jsx' found  react/no-unknown-property
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Products\PrimeProducts\sections\OverviewSection.jsx
+  115:14  error  Unknown property 'jsx' found  react/no-unknown-property
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Solutions\Application-Solutions\sections\OverviewSection.jsx
+  115:14  error  Unknown property 'jsx' found  react/no-unknown-property
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Solutions\Custom-Software\ServicesSection.jsx
+   26:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   36:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   46:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   56:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   66:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   76:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   86:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   96:5  error  Duplicate key 'iconBg'  no-dupe-keys
+  106:5  error  Duplicate key 'iconBg'  no-dupe-keys
+  116:5  error  Duplicate key 'iconBg'  no-dupe-keys
+  126:5  error  Duplicate key 'iconBg'  no-dupe-keys
+  136:5  error  Duplicate key 'iconBg'  no-dupe-keys
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Solutions\Custom-Software\WhatIsCustomSoftware.jsx
+  115:14  error  Unknown property 'jsx' found  react/no-unknown-property
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Solutions\Industries\IndustriesSection.jsx
+   25:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   35:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   45:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   55:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   65:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   75:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   85:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   95:5  error  Duplicate key 'iconBg'  no-dupe-keys
+  105:5  error  Duplicate key 'iconBg'  no-dupe-keys
+  115:5  error  Duplicate key 'iconBg'  no-dupe-keys
+  125:5  error  Duplicate key 'iconBg'  no-dupe-keys
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Solutions\Industries\WhatIsIndustrySolution.jsx
+  115:14  error  Unknown property 'jsx' found  react/no-unknown-property
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Solutions\On-Demand\ServicesSection.jsx
+   26:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   36:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   46:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   56:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   66:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   76:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   86:5  error  Duplicate key 'iconBg'  no-dupe-keys
+   96:5  error  Duplicate key 'iconBg'  no-dupe-keys
+  106:5  error  Duplicate key 'iconBg'  no-dupe-keys
+  116:5  error  Duplicate key 'iconBg'  no-dupe-keys
+  126:5  error  Duplicate key 'iconBg'  no-dupe-keys
+  136:5  error  Duplicate key 'iconBg'  no-dupe-keys
+
+D:\kryoss\Kryoss-Work\src\pages\Footer\Solutions\On-Demand\WhatIsOnDemand.jsx
+  115:14  error  Unknown property 'jsx' found  react/no-unknown-property
+
+D:\kryoss\Kryoss-Work\src\pages\products\Enterprise\MultistoreERP\sections\MultistoreERPHowItWorks.jsx
+  100:20  error  Unknown property 'jsx' found  react/no-unknown-property
+
+D:\kryoss\Kryoss-Work\src\pages\products\Essential\sections\GallerySection.jsx
+  20:5  error  Error: This value cannot be modified
+
+Modifying a variable defined outside a component or hook is not allowed. Consider using an effect.
+
+  18 |     setCurrentIndex(index);
+  19 |     setSelectedImage(images[index]);
+> 20 |     document.body.style.overflow = "hidden";
+     |     ^^^^^^^^^^^^^^^^^^^ value cannot be modified
+  21 |   };
+  22 |
+  23 |   const closeLightbox = () => {  react-hooks/immutability
+
+D:\kryoss\Kryoss-Work\src\pages\products\Gaming-Products\Casino-Games\sections\StakeFeatures.jsx
+  168:14  error  Unknown property 'jsx' found  react/no-unknown-property
+
+D:\kryoss\Kryoss-Work\src\pages\products\Hotel-Booking\sections\GallerySection.jsx
+  47:5  error  Error: This value cannot be modified
+
+Modifying a variable defined outside a component or hook is not allowed. Consider using an effect.
+
+  45 |   const openModal = (image) => {
+  46 |     setSelectedImage(image);
+> 47 |     document.body.style.overflow = 'hidden';
+     |     ^^^^^^^^^^^^^^^^^^^ value cannot be modified
+  48 |   };
+  49 |
+  50 |   const closeModal = () => {  react-hooks/immutability
+
+D:\kryoss\Kryoss-Work\src\pages\products\Hotel-Management-System\section\GallerySection.jsx
+  60:5  error  Error: This value cannot be modified
+
+Modifying a variable defined outside a component or hook is not allowed. Consider using an effect.
+
+  58 |   const openModal = (image) => {
+  59 |     setSelectedImage(image);
+> 60 |     document.body.style.overflow = 'hidden';
+     |     ^^^^^^^^^^^^^^^^^^^ value cannot be modified
+  61 |   };
+  62 |
+  63 |   const closeModal = () => {  react-hooks/immutability
+
+D:\kryoss\Kryoss-Work\src\pages\products\Mars\sections\GallerySection.jsx
+  65:5  error  Error: This value cannot be modified
+
+Modifying a variable defined outside a component or hook is not allowed. Consider using an effect.
+
+  63 |     setCurrentIndex(index);
+  64 |     setSelectedImage(galleryImages[index]);
+> 65 |     document.body.style.overflow = "hidden";
+     |     ^^^^^^^^^^^^^^^^^^^ value cannot be modified
+  66 |   };
+  67 |
+  68 |   const closeLightbox = () => {  react-hooks/immutability
+
+D:\kryoss\Kryoss-Work\src\pages\products\ProductsShowcase.jsx
+  30:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  28 |     // Trigger filtering effect to simulate network/processing
+  29 |     useEffect(() => {
+> 30 |         setIsLoading(true);
+     |         ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  31 |         // Reset page automatically on filter/search change, but NOT on initial mount
+  32 |         if (!isFirstRender.current) {
+  33 |             setCurrentPage(1);                                                                             react-hooks/set-state-in-effect
+  60:38  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  58 |         const urlQuery = searchParams.get('query') || '';
+  59 |
+> 60 |         if (urlPage !== currentPage) setCurrentPage(urlPage);
+     |                                      ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  61 |         if (urlCategory !== selectedCategory) setSelectedCategory(urlCategory);
+  62 |         if (urlFilter !== selectedFilter) setSelectedFilter(urlFilter);
+  63 |         if (urlQuery !== searchQuery) {  react-hooks/set-state-in-effect
+
+D:\kryoss\Kryoss-Work\src\pages\products\TimeStay\sections\GallerySection.jsx
+  63:5  error  Error: This value cannot be modified
+
+Modifying a variable defined outside a component or hook is not allowed. Consider using an effect.
+
+  61 |     setCurrentIndex(index);
+  62 |     setSelectedImage(galleryImages[index]);
+> 63 |     document.body.style.overflow = "hidden";
+     |     ^^^^^^^^^^^^^^^^^^^ value cannot be modified
+  64 |   };
+  65 |
+  66 |   const closeLightbox = () => {  react-hooks/immutability
+
+✖ 61 problems (61 errors, 0 warnings)
+

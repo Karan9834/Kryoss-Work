@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo, memo } from "react";
 import { CheckCircle, ArrowRight } from "lucide-react";
 
 const products = [
@@ -158,37 +158,70 @@ const products = [
       "https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&q=80"],
 
     dark: true
+  },
+  {
+    id: "specialized",
+    label: "Specialized Apps",
+    heading: "Niche On-Demand Service Solutions",
+    description:
+      "Target specific markets with our curated niche app solutions. From wellness and laundry to pet care and vehicle recovery.",
+    features: [
+      "Massage Therapy App",
+      "Laundry & Dry Cleaning",
+      "Tow-Truck & Roadside",
+      "Dog Walking & Pet Care",
+      "Snow Removal & Plowing",
+      "Pest Control Solutions"],
+    logos: [
+      "/whitelabel-assets/assets/images/products/specialized/logo1.png",
+      "/whitelabel-assets/assets/images/products/specialized/logo2.png",
+      "/whitelabel-assets/assets/images/products/specialized/logo3.png",
+      "/whitelabel-assets/assets/images/products/specialized/logo4.png",
+      "/whitelabel-assets/assets/images/products/specialized/logo5.png",
+      "/whitelabel-assets/assets/images/products/specialized/logo6.png"],
+    screenshots: [
+      "/whitelabel-assets/assets/images/products/specialized/app1.png",
+      "/whitelabel-assets/assets/images/products/specialized/app2.png",
+      "/whitelabel-assets/assets/images/products/specialized/app3.png",
+      "/whitelabel-assets/assets/images/products/specialized/app4.png",
+      "/whitelabel-assets/assets/images/products/specialized/app5.png",
+      "/whitelabel-assets/assets/images/products/specialized/app6.png"],
+    fallbackScreenshots: [
+      "https://images.unsplash.com/photo-1544161515-4ae6ce6ca8b8?w=200&q=80",
+      "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=200&q=80",
+      "https://images.unsplash.com/photo-1586191582151-f73972d10737?w=200&q=80",
+      "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=200&q=80",
+      "https://images.unsplash.com/photo-1517204324032-fb3012de9b59?w=200&q=80",
+      "https://images.unsplash.com/photo-1587324438673-56c507c6f085?w=200&q=80"]
   }];
 
 
-export default function Products() {
+const Products = () => {
   const [active, setActive] = useState("delivery");
-  const current = products.find((p) => p.id === active);
+  const current = useMemo(() => products.find((p) => p.id === active), [active]);
 
   return (
-    <section id="products" className="py-20 bg-white">
+    <section id="products" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="text-center mb-10">
-          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">
+        <div className="text-center mb-16">
+          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
             Our Products
           </p>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground">
-            Ready-to-Launch <span className="text-primary">White-Label</span> Products
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-6">
+            Ready-to-Launch <span className="text-primary italic">White-Label</span> Products
           </h2>
         </div>
-
         {/* Tabs */}
-        <div className="flex flex-wrap gap-2 justify-center mb-10">
+        <div className="flex flex-wrap gap-3 justify-center mb-12">
           {products.map((p) =>
             <button
               key={p.id}
               onClick={() => setActive(p.id)}
-              className={`px-5 py-2.5 rounded-full text-sm font-semibold border transition-all ${active === p.id ?
-                  "bg-primary text-white border-primary" :
-                  "bg-white text-foreground border-border hover:border-primary hover:text-primary"}`
+              className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${active === p.id ?
+                  "bg-primary text-white shadow-lg shadow-orange-500/20 active:scale-95" :
+                  "bg-white text-gray-500 border border-gray-200 hover:border-primary/40 hover:text-primary active:scale-95"}`
               }>
-
               {p.label}
             </button>
           )}
@@ -196,42 +229,40 @@ export default function Products() {
 
         {/* Tab Content */}
         <div
-          className={`rounded-2xl p-8 grid md:grid-cols-2 gap-10 items-start ${current.dark ? "bg-[#1a1a1a]" : "bg-orange-50 border border-orange-100"}`
+          className={`rounded-3xl p-10 grid md:grid-cols-2 gap-12 items-center transition-all duration-500 shadow-sm ${current.dark ? "bg-[#0B0F1A]" : "bg-orange-50 border border-orange-100"}`
           }>
 
           {/* Left */}
-          <div className="space-y-5">
+          <div className="space-y-6">
             <h3
-              className={`text-2xl font-bold ${current.dark ? "text-white" : "text-foreground"}`
+              className={`text-2xl font-semibold leading-tight ${current.dark ? "text-white" : "text-gray-900"}`
               }>
-
               {current.heading}
             </h3>
-            <p className={current.dark ? "text-white/70" : "text-muted-foreground"}>
+            <p className={`text-base leading-relaxed ${current.dark ? "text-slate-400" : "text-gray-600"}`}>
               {current.description}
             </p>
-            <ul className="space-y-2">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4">
               {current.features.map((f) =>
-                <li key={f} className="flex items-center gap-2">
+                <li key={f} className="flex items-start gap-2">
                   <CheckCircle
-                    className={`h-4 w-4 shrink-0 ${current.dark ? "text-primary" : "text-primary"}`
+                    className={`h-4 w-4 shrink-0 mt-1 ${current.dark ? "text-primary" : "text-primary"}`
                     } />
-
                   <span
-                    className={`text-sm ${current.dark ? "text-white/80" : "text-foreground"}`
+                    className={`text-sm ${current.dark ? "text-slate-300" : "text-gray-700"}`
                     }>
-
                     {f}
                   </span>
                 </li>
               )}
             </ul>
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition-colors">
-
-              Get This Product <ArrowRight className="h-4 w-4" />
-            </a>
+            <div className="pt-4">
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-orange-600 transition-all hover:scale-105 shadow-md shadow-orange-500/10">
+                Get This Product <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
           </div>
 
           {/* Right — Screenshots */}
@@ -244,6 +275,7 @@ export default function Products() {
                 <img
                   src={src}
                   alt={`App screenshot ${i + 1}`}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     if (!e.currentTarget.dataset.error) {
@@ -258,5 +290,6 @@ export default function Products() {
         </div>
       </div>
     </section>);
+};
 
-}
+export default memo(Products);

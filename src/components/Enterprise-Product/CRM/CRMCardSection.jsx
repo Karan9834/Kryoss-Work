@@ -1,0 +1,83 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import card1img from '@/assets/Enterprise-Product/crmlandingcard1.jpg';
+import card2img from '@/assets/Enterprise-Product/crmlandingcard2.jpg';
+
+const CRMCardSection = () => {
+    const cards = [
+        {
+            title: "CRM PRO",
+            path: "/products/enterprise/crm/crm-pro",
+            description: "Professional Business Relationships",
+            image: card1img
+        },
+        {
+            title: "Onest CRM",
+            path: "/products/enterprise/crm/onest-crm",
+            description: "One Stop Business Hub",
+            image: card2img
+        }
+    ];
+
+    return (
+        <section id="crm-cards" className="py-24 bg-white relative">
+            <div className="max-w-7xl mx-auto px-6">
+                <div className="text-center mb-16 space-y-4">
+                    {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                    <div className="flex items-center justify-center gap-2 mb-4">
+                        <div className="w-8 h-px bg-blue-200"></div>
+                        <span className="text-blue-600 text-[12px] font-medium tracking-[0.05em] uppercase">
+                            Our Products
+                        </span>
+                        <div className="w-8 h-px bg-blue-200"></div>
+                    </div>
+
+                    {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                    <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2] tracking-tight">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-blue-500 uppercase">
+                            Specialized CRM Solutions
+                        </span>
+                    </h2>
+                    
+                    {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                    <p className="text-[#4A4B5E] text-[14px] md:text-[16px] font-normal leading-[1.6] max-w-2xl mx-auto mt-6">
+                        Elevate your customer interactions with our specialized CRM platforms tailored for specific business needs.
+                    </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                    {cards.map((card, index) => (
+                        <div key={index} className="text-center">
+                            {/* CLICKABLE IMAGE */}
+                            <Link
+                                to={card.path}
+                                className="cursor-pointer group block"
+                            >
+                                <img
+                                    src={card.image}
+                                    alt={card.title}
+                                    className="w-full h-full border-[5px] border-transparent group-hover:border-blue-500 transition duration-300 group-hover:scale-[1.03] object-cover"
+                                />
+                            </Link>
+
+                            {/* TITLE AND DESCRIPTION - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                            <p className="mt-4 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+                                <Link
+                                    to={card.path}
+                                    className="text-blue-600 font-semibold hover:underline"
+                                >
+                                    {card.title}
+                                </Link>{" "}
+                                <span className="text-gray-700">
+                                    - {card.description}
+                                </span>
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default CRMCardSection;

@@ -1,0 +1,66 @@
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import businessHero from "../../assets/Business Directory product 1/Discover & Connect with Trusted Businesses.jpg";
+
+const BusinessHero = () => {
+  return (
+    <section className="relative bg-gradient-to-br from-[#0B1D3A] via-[#102A56] to-[#1E3A8A] text-white py-24 px-6 overflow-hidden">
+
+      {/* Subtle Glow */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 blur-3xl rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-500/10 blur-3xl rounded-full"></div>
+
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
+
+        {/* ===== LEFT CONTENT ===== */}
+        <div>
+          {/* Badge - Updated: text-sm (14px) */}
+          <span className="inline-block text-sm bg-white/10 px-4 py-1.5 rounded-full border border-white/20 mb-6">
+            Business Directory
+          </span>
+
+          {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            Discover Top{" "}
+            {/* Highlighted Text - Same typography as H1 */}
+            <span className="text-blue-400 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+              Businesses
+            </span>{" "}
+            Around You
+          </h1>
+
+          {/* Subtext/Description - Updated: text-[16px] md:text-[18px] font-normal leading-[1.6] max-w-lg */}
+          <p className="mt-6 text-[16px] md:text-[18px] font-normal leading-[1.6] text-gray-300 max-w-lg">
+            Explore verified businesses, compare services, and connect with the best options near you.
+          </p>
+
+          {/* ===== CTA BUTTONS ===== */}
+          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+
+            {/* Primary CTA - Updated: text-[16px] tracking-[0.01em] font-semibold */}
+            <button
+              className="group bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition flex items-center gap-2 text-[16px] tracking-[0.01em]"
+              onClick={() => document.getElementById('explore-business')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              🚀 Explore Products
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
+            </button>
+
+          </div>
+        </div>
+
+        {/* ===== RIGHT IMAGE ===== */}
+        <div className="relative flex justify-center">
+          <img
+            src={businessHero}
+            alt="Business directory"
+            className="w-full max-w-lg object-contain rounded-3xl drop-shadow-2xl"
+          />
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default BusinessHero;

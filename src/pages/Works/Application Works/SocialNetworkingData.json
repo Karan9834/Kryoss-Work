@@ -1,0 +1,109 @@
+{
+  "tabs": [
+    {
+      "id": "social-networking",
+      "name": "Social Networking Projects"
+    }
+  ],
+  "sections": {
+    "social-networking": [
+      {
+        "img": "/ApplicationsWorks/Social Media.png",
+        "alt": "Comera",
+        "titleText": "Comera- Video Calls & Chat",
+        "description": "Camera is a free-messaging app that allows you to talk to your friends and family via one-to-one chats, voice calls, and video calls through connectivity over mobile data or Wi-Fi. It also enables you to connect through group chats and lets you share photos, videos, documents, locations, and a whole lot more.",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.is.core.app"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.is.core.app"
+      },
+      {
+        "img": "/ApplicationsWorks/Social Media1.png",
+        "alt": "iFlirts",
+        "titleText": "iFlirts – Flirt, Dating & Chatting for Singles",
+        "description": "Flirt, chat and meet new people easily[Text Wrapping Break]Find singles to flirt, chat and date near you now! Search the countless profiles of our members for the things you like. It' s never been easier to meet someone who really suits you!With iFlirts it' extremely easy to get instantly get in touch with other members! If you are too shy to contact them directly, just leave them a Like",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "img": "/ApplicationsWorks/Social Media2.png",
+        "alt": "Swipr",
+        "titleText": "Swipr - Make new Snapchat friends",
+        "description": "Swipr - Best app to find new friends on Snapchat Wanna find new people and meet your lifelong best friend on Snapchat? Simply SWIPE right and start to make new Snapchat friends from all over the worl Swipr makes it super easy to find a friend who is perfect for you, and you for them! On Swipr you can",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.guppir.swipr"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.guppir.swipr"
+      },
+      {
+        "img": "/ApplicationsWorks/Social Media3.png",
+        "alt": "Love Horoscope",
+        "titleText": "Love Horoscope & Zodiac Compatibility",
+        "description": "Daily Love Horoscope 2021 – one of the most sensational love astrology apps for Android!\n\nGet your personal predictions of future Love, Life and Health according to your zodiac sign along with today’s horoscope. Find out right now what the future holds for you and your closest ones. The most reliable astrology chart is already analyzed and summarized for your convenience.",
+        "links": []
+      },
+      {
+        "img": "/ApplicationsWorks/Social Media4.png",
+        "alt": "KingsChat",
+        "titleText": "KingsChat- Chatting App",
+        "description": "With KingsChat, you can send messages, make HD voice or video calls and share timeline stories — for FREE!\n\nKingsChat uses your phone's internet connection (4G/3G/2G or WiFI) to let you message or call loved ones around the world at no cost. There are no subscription fees or hidden fees, and with push notifications, KingsChat is always on and always connected.",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.joinkingschat.android"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.joinkingschat.android"
+      },
+      {
+        "img": "/ApplicationsWorks/Social Media5.png",
+        "alt": "Hookle",
+        "titleText": "Hookle: Social media manage",
+        "description": "Hookle is the all-in-one social media management tool for busy entrepreneurs and small businesses. Save time and manage all your business’s social media in one app at speed. Hookle is an easy-to-use tool to schedule posts to Instagram and other social media networks – wherever you are.Basic version of the Hookle app is free to use for up to three social media accounts and includes integration with Facebook, Instagram, Twitter, LinkedIn, and Google My Business.",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=net.hookle&hl=en&gl=US"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=net.hookle&hl=en&gl=US"
+      },
+      {
+        "img": "/ApplicationsWorks/Social Media6.png",
+        "alt": "Agorapulse",
+        "titleText": "Agorapulse Companion App",
+        "description": "The official app for Agorapulse users.Benefit from most of your favorite Agorapulse features while on the go.Keep track of what is going on on your social profiles: create and schedule posts, engage with your audience, & measure and analyze your social media performance from anywhere",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.agorapulse.app&hl=en&gl=US"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.agorapulse.app&hl=en&gl=US"
+      },
+      {
+        "img": "/ApplicationsWorks/Social Media7.png",
+        "alt": "CinchShare",
+        "titleText": "CinchShare",
+        "description": "CinchShare is a super user friendly software that was created to help direct sellers save time and have a hassle free workflow when it comes to social media marketing. You do the planning and let us execute and deliver your posts to Facebook, Instagram, Twitter, Pinterest and LinkedIn. Plan now. Play later. We've got your back!",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "https://play.google.com/store/apps/details?id=com.cinchshare&hl=en&gl=US"
+          }
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.cinchshare&hl=en&gl=US"
+      }
+    ]
+  }
+}

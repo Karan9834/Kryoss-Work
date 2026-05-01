@@ -1,0 +1,41 @@
+import React from "react";
+import gallery1 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery1.png";
+import gallery2 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery2.png";
+import gallery3 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery3.png";
+import gallery4 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery4.png";
+import gallery5 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery5.png";
+import gallery6 from "../../../../../assets/qsrfastcasualrms-img/qsrfastcasualrmsgallery6.png";
+
+const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
+
+const QsrGallery = () => {
+    return (
+        <section className="py-24 bg-white overflow-hidden">
+            <div className="max-w-7xl mx-auto px-6">
+                <div className="text-center mb-16 space-y-4">
+                    <span className="text-orange-600 font-bold text-sm uppercase tracking-widest block">Dashboard Preview</span>
+                    <h2 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-slate-900">
+                        Your Chain,{" "}
+                        <span className="text-transparent bg-clip-text"
+                            style={{ backgroundImage: "linear-gradient(90deg, #ea580c, #d97706)" }}>
+                            One Dashboard
+                        </span>
+                    </h2>
+                    <p className="text-slate-500 mt-6 max-w-2xl mx-auto text-lg leading-relaxed font-medium">
+                        Kiosk views, drive-thru screens, kitchen order queues, franchise performance maps and digital menu boards — all in one platform.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {galleryImages.map((img, index) => (
+                        <div key={index}
+                            className="aspect-video bg-white border-8 border-white rounded-[3rem] shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
+                            <img src={img} alt={`Gallery ${index + 1}`} className="w-full h-full object-cover" />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default QsrGallery;

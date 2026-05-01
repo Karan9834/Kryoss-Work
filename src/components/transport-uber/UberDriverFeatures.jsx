@@ -16,64 +16,63 @@ import {
 
 const driverFeatures = [
     {
-        title: "Driver Registration & Verification",
-        desc: "Drivers can register and upload their documents in the driver app to pass the safety checks.",
+        title: "Onboarding & Document Validation",
+        desc: "Partners can complete enrollment and submit necessary credentials within the platform to undergo essential safety protocols.",
         icon: UserCheck,
     },
     {
-        title: "Availability Toggle (Online / Offline)",
-        desc: "Drivers get complete flexibility to choose when to work & when not to work.",
+        title: "Availability Management (Active / Inactive)",
+        desc: "Service providers benefit from absolute autonomy in determining their operational hours and schedule.",
         icon: ToggleLeft,
     },
     {
-        title: "Smart Ride Request Allocation",
-        desc: "Ride requests are assigned smartly, helping drivers to receive higher-probability bookings.",
+        title: "Intelligent Dispatch Allocation",
+        desc: "Service requests are distributed through smart algorithms, ensuring partners maximize their successful fulfillment rate.",
         icon: Brain,
-
     },
     {
-        title: "In-App Navigation (Google / Mapbox)",
-        desc: "Google or Mapbox helps drivers reach their pickup and drop-off destinations without delays.",
+        title: "Native Route Guidance (Mapping Services)",
+        desc: "Advanced geolocation tools assist partners in navigating to collection and drop-off points efficiently.",
         icon: Navigation,
     },
     {
-        title: "Heat Map for High-Demand Areas",
-        desc: "Highlighted zones help drivers indicate busy areas, increasing their chances of getting a ride.",
+        title: "Dynamic Activity Heatmaps",
+        desc: "Visual demand indicators highlight high-volume zones, helping partners position themselves for peak opportunities.",
         icon: Map,
     },
     {
-        title: "Multi-Vehicle Support",
-        desc: "Switching between multiple vehicle categories for drivers becomes easier with the Uber clone app.",
+        title: "Versatile Fleet Integration",
+        desc: "Transitioning between various service categories is straightforward for partners utilizing the mobility framework.",
         icon: Car,
     },
     {
-        title: "Trip Start & End Controls",
-        desc: "Easy-to-use trip control option allows drivers to start and end rides with just one tap.",
+        title: "Service Lifecycle Management",
+        desc: "Intuitive operational controls empower partners to initiate and conclude assignments with a single interaction.",
         icon: PlayCircle,
     },
     {
-        title: "Scheduled Ride Reminder",
-        desc: "Drivers receive notifications before the pickup time, helping them plan their availability.",
+        title: "Pre-Booking Reminders",
+        desc: "Partners receive automated alerts ahead of scheduled appointments, facilitating better availability planning.",
         icon: Bell,
     },
     {
-        title: "Wallet Management",
-        desc: "Built-in wallet in app helps drivers track their earnings details to avoid any confusion about payouts.",
+        title: "Earnings Dashboard",
+        desc: "An integrated financial module allows partners to monitor their income streams with absolute transparency.",
         icon: Wallet,
     },
     {
-        title: "Ratings & Feedback",
-        desc: "Strong ratings help drivers to know what they need to work on, encouraging consistent service.",
+        title: "Feedback & Performance Scores",
+        desc: "Detailed performance metrics provide partners with actionable insights to maintain superior service standards.",
         icon: Star,
     },
     {
-        title: "In-App Chat with Rider",
-        desc: "Drivers can communicate with riders to solve their doubts with the secure in-app chat functionality.",
+        title: "Encrypted In-App Messaging",
+        desc: "Partners can interact with passengers through a secure communication channel to clarify specific request details.",
         icon: MessageSquare,
     },
     {
-        title: "Ride History & Earnings",
-        desc: "A complete trip history helps drivers to measure their productivity.",
+        title: "Activity Logs & Revenue Metrics",
+        desc: "Comprehensive historical data enables partners to evaluate their professional output and productivity levels.",
         icon: BarChart3,
     },
 ];
@@ -95,14 +94,14 @@ const UberDriverFeatures = () => {
 
                 {/* HEADING */}
                 <h2 className="text-center text-[34px] md:text-[42px] leading-[46px] md:leading-[56px] font-semibold text-[#2f2f2f] mb-6">
-                    Functionalities That Help Drivers Work Smarter
+                    Operational Tools That Empower Partners to Earn Smarter
                 </h2>
 
                 {/* SUBTEXT */}
                 <p className="text-center text-[16px] text-[#5f5f5f] max-w-4xl mx-auto mb-16">
-                    Our AI-powered Uber clone script is developed to support drivers in real-world
-                    conditions. Every feature of the app aims to provide everything to drivers for
-                    a smooth experience.
+                    Our AI-enhanced mobility framework is engineered to assist partners in complex
+                    real-world environments. Every attribute of the interface is optimized to provide
+                    a frictionless and efficient operational experience.
                 </p>
 
                 {/* CARDS */}

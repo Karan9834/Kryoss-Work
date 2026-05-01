@@ -1,62 +1,122 @@
-import React from 'react';
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion";
+import React, { useState } from "react";
+import { Plus, Minus } from "lucide-react";
 
-const faqs = [
+const uberFaqs = [
     {
-        q: "What is an Uber clone script?",
-        a: "An Uber clone script is a ready-to-launch software solution that replicates the core features and functionality of the Uber ride-hailing app, allowing entrepreneurs to start their own taxi booking business quickly."
+        q: "How does an integrated mobility framework serve transportation enterprises?",
+        a: "A high-performance mobility platform bridges the gap between passengers and service partners through a robust digital interface. This allows for real-time request handling, automated tracking, and secure financial reconciliation."
     },
     {
-        q: "How much does it cost to build a taxi app like Uber?",
-        a: "The cost varies based on features, customization, and platform (iOS, Android, or both). Our ready-made solution is significantly more cost-effective than building from scratch."
+        q: "What is the most effective strategy for a rapid market entry?",
+        a: "The most efficient path is leveraging a sophisticated, white-label architectural core that can be rapidly customized with your specific branding and feature requirements before deployment."
     },
     {
-        q: "Is the Uber clone script scalable?",
-        a: "Yes, our solution is built on a robust architecture that can handle thousands of drivers and concurrent ride requests as your business grows."
+        q: "Which organizations should consider a dedicated transportation solution?",
+        a: "A range of entities, including established fleet owners, ambitious tech entrepreneurs, regional mobility startups, and corporate logistics providers, can derive significant value from these platforms."
     },
     {
-        q: "Do you provide the source code?",
-        a: "Yes, we provide 100% source code ownership, allowing you to customize and host the software on your own servers."
+        q: "Is it possible to adapt the platform for regional operational nuances?",
+        a: "Certainly. Our mobility framework can be precision-tuned to accommodate localized rate structures, city-specific logistics, partner management protocols, and regional regulatory compliance."
     },
     {
-        q: "Can I add more features in the future?",
-        a: "Absolutely! The modular code structure allows for easy integration of new features and third-party services as your business evolves."
+        q: "Does the architecture support heterogeneous service types in a single interface?",
+        a: "Yes. The system is designed to seamlessly orchestrate diverse offerings—such as car-shares, courier services, premium executive transit, and last-mile delivery—within a unified user environment."
+    },
+    {
+        q: "What is the typical timeframe from implementation to market launch?",
+        a: "Subject to the level of custom engineering and rigorous quality assurance required, a full platform deployment generally occurs within a 4 to 8-week window."
+    },
+    {
+        q: "Can the infrastructure handle significant volume increases over time?",
+        a: "Absolutely. The platform utilizes an elastic architecture designed to scale effortlessly, supporting a growing volume of partners, participants, geographical regions, and service categories."
+    },
+    {
+        q: "What diversified revenue structures are integrated into the system?",
+        a: "The framework supports numerous monetization strategies, including per-journey commissions, partner subscription tiers, intelligent demand-based pricing, and structured service fees."
+    },
+    {
+        q: "How are administrative tasks and journey oversight managed?",
+        a: "Administrative leads maintain granular control through a centralized operational headquarters, enabling real-time journey monitoring, partner management, and financial auditing."
+    },
+    {
+        q: "Are comprehensive safety protocols and security features standard?",
+        a: "Yes. The platform incorporates rigid security measures, including multi-factor partner verification, integrated emergency response alerts, live trip telemetry, and encrypted payment processing."
     }
 ];
 
-const UberFAQ = () => {
+const UberFaqs = () => {
+    const [open, setOpen] = useState(null);
+
+    const toggle = (index) => {
+        setOpen(open === index ? null : index);
+    };
+
     return (
-        <section className="py-24 bg-gray-50">
-            <div className="container mx-auto px-4 sm:px-10 lg:px-20">
-                <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                    <h2 className="text-sm uppercase tracking-[0.2em] font-bold text-primary">Support</h2>
-                    <h3 className="text-3xl md:text-5xl font-extrabold text-gray-900">
-                        Frequently Asked <span className="text-primary">Questions</span>
-                    </h3>
+        <section className="py-24 bg-white">
+
+            <div className="max-w-7xl mx-auto px-6">
+
+                {/* heading */}
+                <div className="text-center mb-16">
+
+                    <span className="border rounded-full px-4 py-1 text-sm inline-flex items-center gap-2 mb-4">
+                        <span className="w-2 h-2 bg-black rounded-full"></span>
+                        Project Queries
+                    </span>
+
+                    <h2 className="text-4xl font-semibold">
+                        Core System Intelligence & Inquiries
+                    </h2>
+
                 </div>
 
-                <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-[3rem] border border-gray-100 shadow-sm">
-                    <Accordion type="single" collapsible className="w-full">
-                        {faqs.map((faq, idx) => (
-                            <AccordionItem key={idx} value={`item-${idx}`} className="border-b border-gray-100 last:border-0 py-2">
-                                <AccordionTrigger className="text-left text-lg font-bold text-gray-800 hover:text-primary transition-colors hover:no-underline">
+
+                {/* grid */}
+                <div className="grid md:grid-cols-2 gap-x-16">
+
+                    {uberFaqs.map((faq, index) => {
+
+                        const isOpen = open === index;
+
+                        return (
+                            <div key={index} className="border-b py-6">
+
+                                <button
+                                    onClick={() => toggle(index)}
+                                    className="flex justify-between items-center w-full text-left text-lg font-medium"
+                                >
+
                                     {faq.q}
-                                </AccordionTrigger>
-                                <AccordionContent className="text-gray-600 text-base leading-relaxed pt-4">
-                                    {faq.a}
-                                </AccordionContent>
-                            </AccordionItem>
-                        ))}
-                    </Accordion>
+
+                                    <span className="border rounded-full p-1 ml-4">
+
+                                        {isOpen ? (
+                                            <Minus size={18} />
+                                        ) : (
+                                            <Plus size={18} />
+                                        )}
+
+                                    </span>
+
+                                </button>
+
+                                {isOpen && (
+                                    <p className="mt-4 text-gray-600 leading-relaxed">
+                                        {faq.a}
+                                    </p>
+                                )}
+
+                            </div>
+                        );
+
+                    })}
+
                 </div>
+
             </div>
+
         </section>
     );
 };
 
-export default UberFAQ;
+export default UberFaqs;

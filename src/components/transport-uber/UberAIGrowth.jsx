@@ -10,29 +10,29 @@ import {
 import AIpoweredgrowth from "../../assets/transport-uber-img/aigrowth.webp";
 const aiFeatures = [
     {
-        title: "AI Chatbot",
+        title: "Intelligent Assistant",
         icon: Bot,
-        content: `More than 93% of customers expect a brand to reply within 24 hours, and an AI chatbot helps you with the same. Your valued customers don't have to wait long, as the AI chatbot handles everything in real time.
+        content: `A vast majority of users expect a response within a very short timeframe, and our integrated AI assistant ensures you meet those expectations. Your users receive immediate, automated help, ensuring no request goes unanswered in real time.
 
-Support costs also stay in control as AI handles the repetitive conversations automatically. As a result, customer satisfaction is high, and your business profit increases continuously.`,
+Operating expenses remain manageable as the AI handles routine inquiries without human intervention. This results in superior user satisfaction and a steady growth in business performance.`,
     },
     {
-        title: "AI-Based Pricing Engine",
+        title: "Algorithmic Fare Calculator",
         icon: DollarSign,
         content:
-            "AI-powered pricing engine dynamically adjusts fares based on demand, distance, traffic, and availability to maximize profitability and fairness.",
+            "Our intelligent pricing framework dynamically modulates rates based on real-time factors like localized demand, trip distance, and current traffic density to optimize both revenue and user trust.",
     },
     {
-        title: "AI-Powered Route Optimization",
+        title: "Smart Navigation Logic",
         icon: Route,
         content:
-            "Intelligent routing algorithms help drivers choose the shortest and fastest routes, reducing fuel costs and trip duration.",
+            "Sophisticated pathfinding algorithms empower partners to utilize the most efficient routes available, effectively lowering operational costs and minimizing trip duration.",
     },
     {
-        title: "AI/ML Driver Assignment",
+        title: "Predictive Assignment Logic",
         icon: Cpu,
         content:
-            "AI/ML algorithms assign the best-suited drivers based on proximity, performance, availability, and ratings.",
+            "Advanced machine learning models identify and assign the most compatible service provider based on physical proximity, past performance metrics, and current availability.",
     },
 ];
 
@@ -58,21 +58,20 @@ const UberAIGrowth = () => {
                     {/* TAG */}
                     <span className="inline-flex items-center gap-2 border border-gray-500 rounded-full px-4 py-1 text-sm mb-4">
                         <span className="w-2 h-2 bg-white rounded-full" />
-                        AI-Powered Growth
+                        AI-Enhanced Scaling
                     </span>
 
                     {/* HEADING */}
                     <h2 className="text-[36px] md:text-[44px] leading-[48px] md:leading-[56px] font-semibold mb-6">
-                        Differentiate Your Business with an AI-Powered Uber Clone App
+                        Scale Your Mobility Venture with an Advanced Digital Solution
                     </h2>
 
                     {/* DESC */}
                     <p className="text-[#d0d0d0] text-[16px] leading-[26px] max-w-xl">
-                        As a known taxi app development company, White Label Fox develops
-                        AI-powered solutions that help you operate smarter. No more relying
-                        on manual decisions, as our platform uses real-time data and
-                        intelligence to deliver an improved experience for everyone
-                        involved.
+                        As a premier engineering partner, we offer intelligent mobility
+                        frameworks that empower your business to operate with greater precision.
+                        By moving beyond manual decision-making, our platform leverages deep
+                        insights to deliver an optimized experience for all platform participants.
                     </p>
 
                     {/* AI VISUAL */}

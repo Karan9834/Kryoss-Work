@@ -1,0 +1,69 @@
+import { Link } from 'react-router-dom';
+import React from "react";
+import hrmImage from "../../../assets/Enterprise-Product/hrmctaimg.png";
+
+const HRMCTA = () => {
+  return (
+    <section className="w-full bg-[#f5f5f5] py-20">
+
+      <div className="max-w-6xl mx-auto px-6">
+
+        {/* CTA BOX */}
+        <div className="
+          relative overflow-hidden
+          bg-gradient-to-r from-purple-600 to-indigo-700
+          rounded-[40px] md:rounded-[120px]
+          px-8 md:px-16 py-12 md:py-16
+          flex flex-col md:flex-row items-center justify-between
+        ">
+
+          {/* LEFT CONTENT */}
+          <div className="text-white max-w-xl z-10">
+
+            {/* Heading - Updated: text-[24px] md:text-[32px] font-bold leading-[1.2] */}
+            <h2 className="text-[24px] md:text-[32px] font-bold leading-[1.2] mb-5">
+              Ready to Transform Your HR Operations?
+            </h2>
+
+            {/* Description - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+            <p className="text-purple-100 mb-6 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+              Streamline hiring, payroll, and workforce management with our powerful
+              HRM solution. Start your journey today with a scalable and intelligent system.
+            </p>
+
+            {/* CTA BUTTON - Updated typography */}
+            <Link to="/company/contact" className="
+              bg-white text-purple-700 font-semibold
+              px-6 py-3 rounded-full
+              hover:scale-105 transition duration-300
+              text-[14px] md:text-[15px] tracking-[0.01em]
+            ">
+              Request a Consultation
+            </Link>
+
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="relative mt-10 md:mt-0">
+
+            <img
+              src={hrmImage}
+              alt="HRM"
+              className="
+                w-[220px] md:w-[350px]
+                object-contain rounded-3xl
+                md:translate-x-6 md:-translate-y-4
+              "
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+};
+
+export default HRMCTA;

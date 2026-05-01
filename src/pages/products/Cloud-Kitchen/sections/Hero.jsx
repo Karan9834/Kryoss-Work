@@ -1,0 +1,97 @@
+import React from "react";
+import cloudHero from "@/assets/cloud-kitchen-img/cloudHero.png"
+import { MessageCircle } from "lucide-react";
+const Hero = () => {
+    return (
+        <section className="relative bg-gradient-to-b from-[#0b2239] to-[#061726] text-white overflow-hidden">
+
+            <div className="max-w-7xl mx-auto px-6 pt-20 pb-0 lg:py-28">
+
+                <div className="grid lg:grid-cols-2 gap-6 lg:gap-14 items-center">
+
+                    {/* LEFT CONTENT */}
+                    <div className="space-y-6 lg:space-y-8">
+
+                        {/* Badge */}
+                        <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-sm px-4 py-2 rounded-full backdrop-blur w-fit">
+                            <span className="text-blue-400">&lt;/&gt;</span>
+                            SaaS
+                        </div>
+
+                        {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                            FoodHat
+                        </h1>
+
+                        {/* Description */}
+                        <p className="text-gray-300 text-lg max-w-xl leading-relaxed">
+                            Complete centralized order management for cloud kitchens.
+                        </p>
+
+                        {/* CTA */}
+                        <div className="flex flex-wrap gap-4">
+                            <a
+                                href="http://preview.codecanyon.net/item/foodhat-restaurant-menu-food-ordering-system/full_screen_preview/46780682"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 transition px-7 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue-500/30"
+                            >
+                                👁 Live Demo
+                            </a>
+                            <a
+                                href="/company/contact"
+                                className="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 px-7 py-3 rounded-lg font-medium hover:bg-white/20 transition shadow-lg backdrop-blur-md"
+                            >
+                                <MessageCircle size={18} />
+                                Let's Discuss
+                            </a>
+                        </div>
+
+                        {/* STATS */}
+                        <div className="grid grid-cols-3 gap-4 pt-6">
+
+                            <div className="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur">
+                                <p className="text-2xl font-semibold">4.9</p>
+                                <p className="text-gray-400 text-sm">Rating</p>
+                            </div>
+
+                            <div className="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur">
+                                <p className="text-2xl font-semibold">10k+</p>
+                                <p className="text-gray-400 text-sm">Users</p>
+                            </div>
+
+                            <div className="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur">
+                                <p className="text-2xl font-semibold">99.9%</p>
+                                <p className="text-gray-400 text-sm">Uptime</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {/* RIGHT IMAGE */}
+                    <div className="relative flex justify-center lg:justify-end lg:mt-0 mt-4">
+
+                        {/* glow */}
+                        <div className="absolute w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] blur-[120px] rounded-full"></div>
+
+                        {/* IMAGE PLACEHOLDER */}
+                        <div className="relative w-full max-w-lg h-[400px] lg:h-[500px] rounded-2xl flex items-center justify-center text-gray-300">
+                            <img
+                                src={cloudHero}
+                                alt="Carpool App"
+                                className="w-full h-full object-contain rounded-2xl object-bottom lg:object-center"
+                            />
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    );
+};
+
+export default Hero;

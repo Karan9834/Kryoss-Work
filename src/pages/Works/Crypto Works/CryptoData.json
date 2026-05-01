@@ -1,0 +1,106 @@
+{
+  "tabs": [
+    {
+      "id": "crypto-apps",
+      "name": "Crypto Applications"
+    }
+  ],
+  "sections": {
+    "crypto-apps": [
+      {
+        "asset": "/GamingandCrypto/Crypto.png",
+        "img": "/GamingandCrypto/Crypto.png",
+        "alt": "Bitbns Pay",
+        "titleText": "Bitbns Pay-Crypto trading, 0 fee payments",
+        "description": "You can send your bitcoin to your friends or your friends can send it to you for free with Bitbns Pay. Even merchants can start accepting bitcoin or crypto payments through BItbns Pay app. Bitbns Pay is a simple buying and selling app for users from India: - Instant UPI IMPS deposits- Instant withdrawals- Quick 10 min KYC- Free bitcoin transfers and payments- Best price for any token- Wide token variety",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          },
+          {
+            "text": "App Store",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "asset": "/GamingandCrypto/Crypto1.png",
+        "img": "/GamingandCrypto/Crypto1.png",
+        "alt": "Coin98 Wallet",
+        "titleText": "Coin98 Wallet- Crypto Wallet & DeFi Gateway",
+        "description": "Coin98 Wallet is the #1 non-custodial, multi-chain wallet and DeFi gateway, designed to seamlessly connect users to the crypto world in a safe and secure manner.Coin98 Wallet offers you fast, convenient and secure procedures of storing, sending, receiving and trading on 12 popular blockchains, including Bitcoin, Ethereum (ETH & ERC20 tokens), Binance Smart Chain (BNB & BEP20 tokens), Solana (SOL & SPL tokens), Polkadot, Kusama, Avalanche, Huobi ECO Chain, Binance Chain (BNB & BEP2 tokens), Celo, TomoChain and Tron. We expect to support Thorchain, Polygon (Matic), Cosmos, Band, Fantom, Terra (Luna), Cardano, and Dfinity in the near future......",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "asset": "/GamingandCrypto/Crypto2.png",
+        "img": "/GamingandCrypto/Crypto2.png",
+        "alt": "Bitdroplet",
+        "titleText": "Bitdroplet - Bitcoin SIP investment app",
+        "description": "Bitdroplet is a platform that allows you to create long-term monetary goals for yourself and start saving for them by investing in cryptocurrencies in small amounts at regular intervalsWith bitdroplet, a user can invest in cryptocurrencies through the world’s first SPP (Systematic Purchase Plan), which is similar to SIP (Systematic Investment Plan) with its regular investment model. As of now, one can invest only in Bitcoin via Bitdroplet, but the list grows soon.",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "asset": "/GamingandCrypto/Crypto3.png",
+        "img": "/GamingandCrypto/Crypto3.png",
+        "alt": "100xAltbase",
+        "titleText": "100xAltbase: Buy Crypto Altcoins, Altcoin Exchange",
+        "description": "As a new crypto coins app, 100xAltbase is set to bridge the masses to alternative currencies, seamlessly integrating wallets and networks with one easy-to-use app. 100xAltbase your all-in-one crypto alt coin app to buy alt coins, meme coins, 100x coins and soon - a variety of pancakeswap coins!Buy Crypto with 100xAltbase- Buy/Sell 100xCoin- Buy/Sell SafeMoon- Buy/Sell FEG- Buy/Sell BabyDoge- Buy/Sell MMACoin",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          },
+          {
+            "text": "App Store",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "asset": "/GamingandCrypto/Crypto4.png",
+        "img": "/GamingandCrypto/Crypto4.png",
+        "alt": "Crypto.com",
+        "titleText": "Crypto.com l DeFi Wallet",
+        "description": "Crypto.com DeFi Wallet is the best crypto wallet to store, earn and grow your crypto assets. It is a non-custodial DeFi wallet where you own your crypto and your private keys.You can safely store your crypto in a highly secure environment. Send and receive up to 200 cryptocurrencies like Bitcoin(BTC), Ethereum(ETH), DeFi coins like Uniswap(UNI), Compound(COMP), yearn.finance(YFI), stablecoins and other ERC20 tokens. Ethereum-Based NFTs: ERC721 and ERC1155 NFTs are also supported.",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "asset": "/GamingandCrypto/Crypto5.png",
+        "img": "/GamingandCrypto/Crypto5.png",
+        "alt": "BitWallet",
+        "titleText": "BitWallet- Buy & Sell Bitcoin",
+        "description": "BitWallet is the fastest, simplest way for both individuals and businesses to start using Bitcoin.Customers can now buy Bitcoin with debit card directly through BitWallet in over 160 countries including the USA. BUY, SELL, & ACCEPT BITCOIN• Buy Bitcoin Instantly; Receive It Same Day• Sell Bitcoin For Direct Deposit 24/7• Accept Bitcoin At Your Business",
+        "links": []
+      },
+      {
+        "asset": "/GamingandCrypto/Crypto6.png",
+        "img": "/GamingandCrypto/Crypto6.png",
+        "alt": "Bitcoin Ethereum App",
+        "titleText": "Bitcoin, Ethereum, IOTA Ripple Price, Crypto News",
+        "description": "The Investing.com crypto app currently offers data from the following exchanges:ANX, BTC Indonesia, BTCC, BTCTurk, BitBay, BitStamp, Bitfinex, Bithumb, Bittrex, CHBTC, FoxBit, GDAX, Huobi, Kraken, MercadoBitcoin, OKCoin, Poloniex, itBit, xBTCe, Yunbi, Coinone, Binance, HitBTC, Exmo. Investing.com offers an overview of cryptocurrency markets, ideal for tracking prices and exchange rates.* Real-Time and historical price data tracking for a variety of digital assets* Quotes for more than 1300 altcoins and fiat currencies* Market capitalization per altcoin* Market dominance* Trading volume* Percentage change in price for 1D, 7D",
+        "links": [
+          {
+            "text": "Play Store",
+            "href": "#"
+          }
+        ]
+      }
+    ]
+  }
+}

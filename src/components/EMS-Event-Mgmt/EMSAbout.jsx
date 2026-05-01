@@ -1,0 +1,68 @@
+import React from 'react';
+import { CalendarCheck, ShieldCheck, TrendingUp, Target } from 'lucide-react';
+import aboutimg from "@/assets/emslanding-img/emslandingabout.jpg";
+
+const EMSAbout = () => {
+    const highlights = [
+        { title: "Dynamic Venues", icon: <Target size={20} className="text-pink-500" /> },
+        { title: "Secure Ticketing", icon: <ShieldCheck size={20} className="text-purple-500" /> },
+        { title: "Sponsor Analytics", icon: <TrendingUp size={20} className="text-orange-500" /> },
+        { title: "Automated Scheduling", icon: <CalendarCheck size={20} className="text-fuchsia-500" /> },
+    ];
+
+    return (
+        <section className="py-24 bg-white relative overflow-hidden">
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
+                <div className="grid lg:grid-cols-2 gap-20 items-center">
+
+                    {/* Left: Single Image Container */}
+                    <div className="relative group order-2 lg:order-1 h-[400px] sm:h-[500px] w-full flex items-center justify-center">
+                        <div className="absolute inset-0 bg-gradient-to-tr from-pink-100 to-orange-50 rounded-[3rem] blur-2xl opacity-60 group-hover:opacity-100 transition duration-1000 transform group-hover:scale-105"></div>
+
+                        <div className="relative w-full h-full bg-white rounded-[3rem] shadow-2xl overflow-hidden transition-transform duration-700 border-4 border-white">
+                            <img src={aboutimg} alt="Event Dashboard" className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" />
+                            <div className="absolute inset-0 bg-pink-500/10 mix-blend-overlay"></div>
+                        </div>
+                    </div>
+
+                    {/* Right: Content */}
+                    <div className="space-y-8 order-1 lg:order-2">
+                        <div className="space-y-4">
+                            {/* Badge - Updated: text-[12px] font-medium tracking-[0.05em] uppercase */}
+                            <span className="inline-block text-fuchsia-600 text-[12px] font-medium tracking-[0.05em] uppercase mb-2 px-3 py-1 bg-fuchsia-50 w-max rounded-full border border-fuchsia-100">
+                                Redefining Experiences
+                            </span>
+                            
+                            {/* H2 Heading - Updated: text-[30px] md:text-[36px] font-bold leading-[1.2] */}
+                            <h2 className="text-[30px] md:text-[36px] font-bold leading-[1.2]">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-700 via-pink-600 to-orange-500">
+                                    Master Every Moment of Your Event
+                                </span>
+                            </h2>
+                            
+                            {/* Description Text - Updated: text-[14px] md:text-[16px] font-normal leading-[1.6] */}
+                            <p className="text-gray-600 text-[14px] md:text-[16px] font-normal leading-[1.6]">
+                                Our Event Management System is crafted for visionaries. Whether you are hosting an intimate corporate seminar or a massive multi-day festival, we provide the tools to orchestrate everything effortlessly in one unified platform.
+                            </p>
+                        </div>
+
+                        {/* Feature Highlights - Updated typography */}
+                        <div className="grid sm:grid-cols-2 gap-4">
+                            {highlights.map((item, index) => (
+                                <div key={index} className="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
+                                    <div className="p-2 bg-gray-50 rounded-lg group-hover:scale-110 transition-transform">
+                                        {item.icon}
+                                    </div>
+                                    <span className="text-gray-800 font-semibold text-[14px] md:text-[15px]">{item.title}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default EMSAbout;

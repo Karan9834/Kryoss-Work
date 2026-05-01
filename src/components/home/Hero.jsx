@@ -1,151 +1,113 @@
-import { ArrowRight, Star } from "lucide-react";
+import { Link } from 'react-router-dom';
 
-const reviewBadges = [
-  {
-    name: "Google Review",
-    rating: "4.9",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-    border: "border-orange-500/30",
-    color: "text-orange-600"
-  },
-  {
-    name: "Goodfirm Review",
-    rating: "4.9",
-    logo: "https://cdn.iconscout.com/icon/free/png-256/free-goodfirms-logo-icon-download-in-svg-png-gif-file-formats--brand-brands-pack-logos-icons-2630044.png",
-    border: "border-blue-500/30",
-    color: "text-blue-600"
-  },
-  {
-    name: "Clutch Review",
-    rating: "4.9",
-    logo: "https://clutch.co/sites/all/themes/clutch/logo.svg",
-    border: "border-red-500/30",
-    color: "text-red-600"
-  },
-  {
-    name: "Trustpilot Review",
-    rating: "4.3",
-    logo: "https://cdn-icons-png.flaticon.com/512/5968/5968936.png",
-    border: "border-green-500/30",
-    color: "text-green-600"
-  }
-];
+"use client";
 
+import React, { memo, useState, useEffect } from "react";
+import { ArrowRight } from "lucide-react";
+import { FaGoogle, FaAmazon, FaSlack, FaMicrosoft, FaApple } from "react-icons/fa";
+import HeroParticles from "../HeroParticles";
 
-const floatingTags = [
-  { label: "Enterprise Solutions", icon: "🏢" },
-  { label: "Urban E-Commerce", icon: "🛒" },
-  { label: "On-Demand Apps", icon: "📱" },
-  { label: "Custom Development", icon: "⚙️" },
-  { label: "Digital Products", icon: "💡" },
-  { label: "Software Consultancy", icon: "🤝" }];
+const Hero = () => {
+    // Defer HeroParticles rendering until after the hero content has painted
+    // This frees up the main thread for LCP (H1 + hero image) to render first
+    const [showParticles, setShowParticles] = useState(false);
+    useEffect(() => {
+        const timer = setTimeout(() => setShowParticles(true), 1500);
+        return () => clearTimeout(timer);
+    }, []);
+    return (
+        <section className="relative h-auto min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] flex items-center overflow-hidden bg-white">
+            {/* LAYER 1: Hero Background — real <img> so browser preload scanner finds it immediately.
+                CSS background-image is NOT visible to the preload scanner, causing ~100s LCP.
+                This img is visually identical: absolute-fill + object-cover + same filter. */}
+            <img
+                src="/images/hero-visual.png"
+                alt=""
+                aria-hidden="true"
+                fetchpriority="high"
+                loading="eager"
+                decoding="sync"
+                className="absolute inset-0 z-0 w-full h-full object-cover object-right"
+                style={{ filter: "brightness(1.05) contrast(1.02)" }}
+            />
 
+            {/* LAYER 2: Particles Effect — deferred 1.5s to not compete with LCP */}
+            {showParticles && (
+                <div className="absolute inset-0 z-[5] pointer-events-none">
+                    <HeroParticles />
+                </div>
+            )}
 
-export default function Hero() {
-  return (
-    <section className="relative min-h-screen flex items-center bg-white overflow-hidden py-4">
-      {/* Background Grid Pattern */}
-      <div className="absolute inset-0 z-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+            {/* LAYER 3: Subtle Gradient Overlay (Above Image & Particles) */}
+            <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-white/60 via-white/20 to-transparent" />
 
-      <div className="max-w-full mx-auto px-4 sm:px-10 lg:px-20 relative z-10 w-full">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          {/* Left Content */}
-          <div className="space-y-6 lg:max-w-2xl">
-            {/* Pill Badge */}
-            <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 shadow-sm">
-              <span className="w-2.5 h-2.5 rounded-full bg-orange-500" />
-              <span className="text-sm font-semibold text-gray-700">Digital Solutions</span>
-            </div>
+            {/* LAYER 4: Content (Top Layer) */}
+            <div className="w-full relative z-20 px-6 lg:pl-20 lg:pr-12">
+                <div className="max-w-7xl">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
-            {/* Heading */}
-            <h1 className="text-4xl lg:text-[48px] font-semibold text-gray-900 leading-[1.1] tracking-tight">
-              Transforming Ideas With <br />
-              <span className="text-primary">Product Engineering</span>
-            </h1>
+                        {/* Left Column (Content area) */}
+                        <div className="flex flex-col space-y-4 animate-fade-in-left items-center lg:items-start text-center lg:text-left py-12 lg:py-0">
+                            {/* Status Badge */}
+                            <div className="inline-flex items-center gap-2 border border-slate-200 rounded-full px-4 py-1.5 w-fit bg-white/40 backdrop-blur-md shadow-sm transition-all hover:bg-white/60 mb-6">
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                                </span>
+                                <span className="text-xs font-semibold text-slate-900 uppercase tracking-widest">
+                                    Showcasing Our Work
+                                </span>
+                            </div>
 
-            <p className="text-[15px] lg:text-[16px] text-gray-600 font-normal leading-[1.5] max-w-xl">
-              As a leading clone app development company, we provide scalable product engineering services & deliver ready-to-launch or custom app, Website & Software for diverse industries. Our high-performance enterprise solutions are tailored to your business needs, driving efficiency and sustainable growth.
-            </p>
+                            {/* Heading (H1) */}
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-950 leading-tight tracking-tight mb-6 px-4 lg:px-0">
+                                Building Powerful <br className="hidden sm:block" />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">Digital Solutions</span> <br className="hidden sm:block" />
+                                That <span className="text-orange-500">Drive Success</span>
+                            </h1>
 
-            {/* CTA */}
-            <div className="pt-1">
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-full font-bold text-[16px] hover:bg-orange-600 transition-all shadow-xl shadow-orange-500/20 active:scale-95"
-              >
-                Consult Our Experts
-                <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-1">
-                  <ArrowRight className="h-3.5 w-3.5" />
-                </span>
-              </a>
-            </div>
+                            {/* Description (Body Text) */}
+                            <div className="relative mb-6 px-4 lg:px-0">
+                                <div className="absolute -inset-4 bg-white/20 backdrop-blur-[2px] rounded-2xl pointer-events-none lg:-left-6" />
+                                <p className="relative text-base sm:text-lg text-slate-800 max-w-lg font-normal leading-relaxed">
+                                    Explore our innovative projects that showcase how we create
+                                    impactful web and app solutions tailored to drive growth and
+                                    deliver exceptional results for forward-thinking businesses.
+                                </p>
+                            </div>
 
-            {/* Review Grid */}
-            <div className="grid grid-cols-2 gap-4 max-w-lg pt-4">
-              {reviewBadges.map((badge) => (
-                <div
-                  key={badge.name}
-                  className={`flex items-center gap-4 bg-white border-2 ${badge.border} rounded-2xl p-4 shadow-sm hover:shadow-md transition-all group`}
-                >
-                  <div className="w-12 h-12 flex items-center justify-center shrink-0">
-                    <img src={badge.logo} alt={badge.name} className="w-full h-full object-contain" />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-[14px] font-bold text-gray-800">{badge.name}</span>
-                    <div className="flex items-center gap-1">
-                      <span className="text-[15px] font-bold text-gray-900">{badge.rating}</span>
-                      <Star className="h-3.5 w-3.5 fill-orange-400 text-orange-400" />
+                            <div className="flex flex-col space-y-4 pt-2 items-center lg:items-start w-full mb-8 px-4 lg:px-0">
+                                <Link to="/company/contact" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 sm:py-2 rounded-full text-base sm:text-[17.5px] font-light shadow-xl shadow-orange-500/10 transition-all transform hover:-translate-y-1 active:scale-95 flex items-center gap-2.5 group w-fit cursor-pointer">
+                                    Consult Our Experts
+                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </Link>
+
+                                {/* Micro Trust Signals (Small Text) */}
+                                <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-3 font-medium w-full">
+                                    <div className="flex items-center gap-2 text-sm sm:text-base text-slate-700 whitespace-nowrap">
+                                        <span className="text-orange-500 font-bold">✓</span>
+                                        <span>Ready-to-launch solutions</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-sm sm:text-base text-slate-700 whitespace-nowrap">
+                                        <span className="text-orange-500 font-bold">✓</span>
+                                        <span>Custom scalable architecture</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-sm sm:text-base text-slate-700 whitespace-nowrap">
+                                        <span className="text-orange-500 font-bold">✓</span>
+                                        <span>Built with modern tech</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Right Column (Focus Area for background) */}
+                        <div className="hidden lg:block h-full pointer-events-none" />
+
                     </div>
-                  </div>
                 </div>
-              ))}
             </div>
-          </div>
+        </section>
+    );
+};
 
-          {/* Right Side — Hero Image Composition */}
-          <div className="relative">
-            <div className="relative mx-auto w-full max-w-[550px]">
-              {/* Main Image Mask/Shape */}
-              <div className="aspect-square rounded-full border-[1px] border-gray-100 flex items-center justify-center p-3">
-                <div className="w-full h-full rounded-full overflow-hidden relative">
-                  <img
-                    src="https://img.freepik.com/free-photo/diverse-business-people-meeting-modern-office_53876-103975.jpg"
-                    alt="Product Engineering"
-                    className="w-full h-full object-cover scale-150"
-                  />
-                  {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                </div>
-              </div>
-
-              {/* Floating Tags */}
-              {floatingTags.map((tag, i) => {
-                const positions = [
-                  "top-[5%] left-[5%]",
-                  "top-[10%] right-[5%]",
-                  "top-[35%] -left-[15%]",
-                  "bottom-[20%] -right-[15%]",
-                  "bottom-[5%] left-[10%]",
-                  "bottom-[0%] right-[30%]"
-                ];
-
-                return (
-                  <div
-                    key={tag.label}
-                    className={`absolute ${positions[i]} bg-white rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] px-4 py-3 flex items-center gap-3 border border-gray-50 animate-bounce-slow`}
-                    style={{ animationDelay: `${i * 0.2}s` }}
-                  >
-                    <span className="text-xl bg-gray-50 w-8 h-8 flex items-center justify-center rounded-lg">{tag.icon}</span>
-                    <span className="text-[14px] font-bold text-gray-800 whitespace-nowrap">
-                      {tag.label}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>);
-
-}
+export default memo(Hero);

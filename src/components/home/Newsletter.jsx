@@ -1,3 +1,78 @@
+// import { useState } from "react";
+// import { Mail } from "lucide-react";
+
+// export default function Newsletter() {
+//   const [email, setEmail] = useState("");
+//   const [submitted, setSubmitted] = useState(false);
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     if (email) {
+//       setSubmitted(true);
+//       setEmail("");
+//       setTimeout(() => setSubmitted(false), 3000);
+//     }
+//   };
+
+//   return (
+//     <section className="py-16 bg-primary">
+//       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+//         <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-4">
+//           <Mail className="h-5 w-5 text-white" />
+//         </div>
+//         <h2 className="text-2xl lg:text-3xl font-extrabold text-white mb-3">
+//           Stay Ahead with Our Latest Updates
+//         </h2>
+//         <p className="text-white/80 mb-8">
+//           Subscribe to get insights on app development, industry trends, and exclusive offers
+//           delivered to your inbox.
+//         </p>
+
+//         <form
+//           onSubmit={handleSubmit}
+//           className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+
+//           <input
+//             type="email"
+//             required
+//             value={email}
+//             onChange={(e) => setEmail(e.target.value)}
+//             placeholder="Enter your email address"
+//             className="flex-1 px-5 py-3 rounded-lg text-foreground bg-white focus:outline-none focus:ring-2 focus:ring-white/50" />
+
+//           <button
+//             type="submit"
+//             className="bg-[#1a1a1a] text-white px-7 py-3 rounded-lg font-bold hover:bg-black transition-colors whitespace-nowrap">
+
+//             {submitted ? "Subscribed! ✓" : "Subscribe"}
+//           </button>
+//         </form>
+//       </div>
+//     </section>);
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { useState } from "react";
 import { Mail } from "lucide-react";
 
@@ -15,39 +90,53 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="py-16 bg-primary">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-4">
-          <Mail className="h-5 w-5 text-white" />
+    <section className="py-24 bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
+
+      {/* gradient blobs */}
+      <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-100 rounded-full blur-3xl opacity-30"></div>
+
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+
+        {/* icon */}
+        <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mb-8 shadow-lg shadow-indigo-500/20">
+          <Mail className="h-6 w-6 text-white" />
         </div>
-        <h2 className="text-2xl lg:text-3xl font-extrabold text-white mb-3">
+
+        {/* heading */}
+        <h2 className="text-3xl lg:text-4xl font-semibold text-gray-900 mb-6">
           Stay Ahead with Our Latest Updates
         </h2>
-        <p className="text-white/80 mb-8">
-          Subscribe to get insights on app development, industry trends, and exclusive offers
-          delivered to your inbox.
+
+        {/* description */}
+        <p className="text-base text-gray-600 mb-10 leading-relaxed">
+          Subscribe to get insights on app development, industry trends,
+          and exclusive offers delivered to your inbox.
         </p>
 
+        {/* form */}
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
-          
+          className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto bg-white p-2 rounded-2xl shadow-xl border border-gray-100"
+        >
           <input
             type="email"
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email address"
-            className="flex-1 px-5 py-3 rounded-lg text-foreground bg-white focus:outline-none focus:ring-2 focus:ring-white/50" />
-          
+            className="flex-1 px-6 py-3 rounded-xl text-gray-700 bg-transparent focus:outline-none text-sm"
+          />
+
           <button
             type="submit"
-            className="bg-[#1a1a1a] text-white px-7 py-3 rounded-lg font-bold hover:bg-black transition-colors whitespace-nowrap">
-            
+            className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white px-8 py-3 rounded-xl text-sm font-medium hover:scale-105 transition-transform shadow-md shadow-indigo-600/20"
+          >
             {submitted ? "Subscribed! ✓" : "Subscribe"}
           </button>
         </form>
-      </div>
-    </section>);
 
+      </div>
+    </section>
+  );
 }

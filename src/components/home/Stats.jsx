@@ -48,28 +48,28 @@ function Counter({ target, prefix }) {
 
 export default function Stats() {
   return (
-    <section className="py-20 bg-[#1a1a1a]">
+    <section className="py-24 bg-[#0B0F1A]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">
+        <div className="text-center mb-16">
+          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
             Key Milestones
           </p>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-white">
-            Our Growth in <span className="text-primary">Numbers</span>
+          <h2 className="text-3xl lg:text-4xl font-semibold text-white mb-6">
+            Our Growth in <span className="text-primary italic">Numbers</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((s) =>
           <div
             key={s.label}
-            className="text-center p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+            className="text-center p-10 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-all duration-300 group">
             
-              <div className="text-4xl lg:text-5xl font-extrabold text-primary mb-2">
+              <div className="text-4xl lg:text-5xl font-semibold text-primary mb-3">
                 <Counter target={s.value} prefix={s.prefix} />
                 {s.suffix}
               </div>
-              <p className="text-white/70 font-medium">{s.label}</p>
+              <p className="text-sm font-medium text-slate-400 uppercase tracking-widest group-hover:text-white transition-colors">{s.label}</p>
             </div>
           )}
         </div>

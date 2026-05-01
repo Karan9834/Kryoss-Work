@@ -1,0 +1,23 @@
+import React from "react";
+import Hero from "./sections/Hero";
+import TechStackSection from "./sections/TechStack";
+import Gallery from "./sections/Gallery";
+import CTA from "./sections/CTA";
+import About from "./sections/About";
+import Features from "./sections/Features";
+import HowItWorks from "./sections/HowItWorks";
+const CustomerSupportBotPage = ()=>{
+    return(
+        <>
+        <Hero/>
+        <About/>
+        <Features/>
+        <HowItWorks/>
+        <TechStackSection/>
+        <Gallery/>
+        <CTA/>
+        </>
+    )
+}
+
+export default CustomerSupportBotPage

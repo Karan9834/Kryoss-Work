@@ -6,12 +6,8 @@ const ReadyToLaunch = () => {
             <div className="max-w-[1400px] mx-auto px-4">
                 <div className="  relative
                                   overflow-hidden
-                                  w-full                 /* ✅ mobile safe */
-                                  lg:w-[100vw]           /* ✅ desktop full viewport */
-                                  lg:ml-auto             /* ✅ right stick ONLY on desktop */
-                                  rounded-l-[120px]      /* mobile radius */
-                                  lg:rounded-l-[220px]   /* desktop radius */
-                                  rounded-r-none
+                                  w-full
+                                  rounded-[40px] md:rounded-[60px] lg:rounded-l-[180px] lg:rounded-r-none
                                   bg-gradient-to-r from-[#5b0a05] to-[#7a0d06]">
 
                     {/* CONTENT */}
@@ -20,17 +16,17 @@ const ReadyToLaunch = () => {
                         {/* LEFT TEXT */}
                         <div className="text-white max-w-xl py-16">
                             <h2 className="text-[36px] md:text-[44px] leading-[48px] md:leading-[56px] font-semibold mb-6">
-                                Ready to Launch an AI-Powered Uber Clone?
+                                Ready to Deploy Your Intelligent Transportation Network?
                             </h2>
 
                             <p className="text-[15.5px] leading-[26px] text-[#f1dada] mb-8">
-                                Looking to invest in an AI-powered Uber clone app? We've got you
-                                covered. An easy-to-customize solution meets the requirements
-                                of different transportation businesses, including yours.
+                                Interested in acquiring a robust, AI-enhanced mobility framework? We provide
+                                a comprehensive, white-label solution designed to meet the unique operational
+                                demands of modern transportation firms like yours.
                             </p>
 
                             <button className="border border-white text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-white hover:text-[#7a0d06] transition">
-                                Book a Free Demo
+                                Request a Product Tour
                             </button>
                         </div>
 

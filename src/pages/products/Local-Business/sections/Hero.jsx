@@ -1,0 +1,69 @@
+import React from "react";
+import { ArrowRight } from "lucide-react";
+
+const Hero = () => {
+  const handleViewDemo = () => {
+    window.open("https://preview.codecanyon.net/item/atlas-laravel-business-directory-listing/full_screen_preview/56469797", "_blank");
+  };
+
+  return (
+    <section className="relative bg-[#0A0F1C] text-white py-28 px-6 overflow-hidden">
+
+      {/* Subtle Glow */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-600/10 blur-3xl rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-600/10 blur-3xl rounded-full"></div>
+
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
+
+        {/* ===== LEFT CONTENT ===== */}
+        <div>
+
+          {/* Tag */}
+          <span className="inline-block text-sm border border-white/20 px-4 py-1.5 rounded-full text-gray-300 mb-6">
+            Business Directory Platform
+          </span>
+
+          {/* Heading - Updated: text-3xl md:text-4xl lg:text-5xl font-bold leading-tight */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            Discover & Connect with{" "}
+            <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-blue-500 bg-clip-text text-transparent">
+              Trusted Businesses
+            </span>
+          </h1>
+
+          {/* Subtext */}
+          <p className="mt-6 text-gray-400 text-lg max-w-lg">
+            Explore verified businesses, compare services, and make smarter decisions —
+            all in one powerful platform.
+          </p>
+
+          {/* ===== CTA BUTTON ===== */}
+          <div className="mt-10 flex gap-4 flex-wrap">
+
+            {/* Primary CTA with Demo Link */}
+            <button
+              onClick={handleViewDemo}
+              className="group bg-gradient-to-r from-blue-500 to-indigo-600 px-8 py-4 rounded-xl font-semibold flex items-center gap-2 hover:opacity-90 transition"
+            >
+              🎯 View Demo
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
+            </button>
+
+          </div>
+        </div>
+
+        {/* ===== RIGHT IMAGE (UNSPLASH) ===== */}
+        <div className="flex justify-center">
+          <img
+            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1170&q=80"
+            alt="Business Directory"
+            className="w-full max-w-lg rounded-2xl object-cover shadow-2xl"
+          />
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

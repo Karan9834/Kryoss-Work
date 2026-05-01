@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 
 const services = [
@@ -50,66 +51,62 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-20 bg-[#1a1a1a] relative overflow-hidden">
+      className="py-24 bg-[#0B0F1A] relative overflow-hidden">
       
-      {/* Hexagon Pattern */}
-      <div
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0-6l22-12.7V22.7L28 10 6 22.7v24.6L28 60z' fill='%23f97316'/%3E%3C/svg%3E")`
-        }} />
+      {/* Background Decor */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/2 rounded-full blur-3xl" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Heading */}
-        <div className="text-center mb-12">
-          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">
+        <div className="text-center mb-16">
+          <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
             Services We Offer
           </p>
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold text-white leading-tight">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-white leading-tight mb-6">
             Innovative{" "}
-            <span className="text-primary">Cloud, AI, Web & Mobile App</span>{" "}
+            <span className="text-primary italic">Cloud, AI, Web & Mobile App</span>{" "}
             Development Solutions
           </h2>
         </div>
 
         {/* Tab Buttons */}
-        <div className="flex flex-wrap gap-2 justify-center mb-10">
+        <div className="flex flex-wrap gap-3 justify-center mb-12">
           {services.map((s) =>
           <button
             key={s.id}
             onClick={() => setActive(s.id)}
-            className={`px-4 py-2.5 rounded-full text-sm font-semibold transition-all ${
+            className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
             active === s.id ?
-            "bg-primary text-white" :
-            "bg-white/10 text-white hover:bg-white/20"}`
+            "bg-primary text-white shadow-lg shadow-orange-500/20" :
+            "bg-white/5 text-slate-400 hover:bg-white/10 hover:text-white"}`
             }>
-            
               {s.label}
             </button>
           )}
         </div>
 
         {/* Service Card */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-5">
-            <h3 className="text-2xl font-bold text-white">{current.label}</h3>
-            <p className="text-white/70 leading-relaxed">{current.description}</p>
-            <div className="flex flex-wrap gap-2">
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-10 grid md:grid-cols-2 gap-12 items-center transition-all duration-500">
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-white">{current.label}</h3>
+            <p className="text-base text-slate-400 leading-relaxed">{current.description}</p>
+            <div className="flex flex-wrap gap-2 pt-2">
               {current.tags.map((tag) =>
               <span
                 key={tag}
-                className="bg-white/10 text-white/90 text-xs font-medium px-3 py-1.5 rounded-full border border-white/20">
-                
+                className="bg-white/5 text-slate-400 text-xs font-medium px-3.5 py-1.5 rounded-full border border-white/5">
                   {tag}
                 </span>
               )}
             </div>
-            <a
-              href="#contact"
-              className="inline-block bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition-colors">
-              
-              Get Started
-            </a>
+            <div className="pt-4">
+              <Link
+                to="/company/contact"
+                className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3 rounded-xl text-sm font-medium hover:bg-orange-600 transition-all hover:scale-105 shadow-md shadow-orange-500/10">
+                Get Started
+              </Link>
+            </div>
           </div>
           <div className="flex justify-center">
             <img

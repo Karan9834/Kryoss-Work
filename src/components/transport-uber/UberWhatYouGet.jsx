@@ -10,21 +10,20 @@ const WhatYouGet = () => {
                 {/* TOP TAG */}
                 <div className="flex justify-center mb-4">
                     <span className="border border-gray-300 rounded-full px-5 py-1 text-sm text-gray-600">
-                        What You Get
+                        Solution Components
                     </span>
                 </div>
 
                 {/* HEADING */}
                 <h2 className="text-center text-[32px] md:text-[42px] leading-[44px] md:leading-[56px] font-semibold text-[#2f2f2f] mb-6">
-                    Complete Deliverables Included in Our Uber Clone Script
+                    Comprehensive Deliverables Included in Our Mobility Suite
                 </h2>
 
                 {/* SUBTEXT */}
                 <p className="text-center text-[16px] text-[#5f5f5f] max-w-4xl mx-auto mb-16">
-                    The ready-to-launch Uber clone app comes with every component you need
-                    to operate a successful business. From ride booking to driver
-                    operations, all modules are designed to work smoothly across all
-                    platforms.
+                    The rapid-deployment mobility solution arrives with every structural component required
+                    to launch a market-leading enterprise. From passenger interfaces to partner
+                    operations, all modules are engineered for cross-platform excellence.
                 </p>
 
                 {/* CARDS */}
